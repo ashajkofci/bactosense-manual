@@ -57,7 +57,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "cb944dd1df8f438182d7c41cc935da5efae6a8dba77e2f0ca6927a84cef9aa8d",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "individual final full-size visual inspection",
+        "notes": "Current Manage system services screen is readable; HTTP,HTTPS,Modbus,VNC,FTP,SMB and ports visible."
+      }
     },
     {
       "id": "en-digital-input-configuration",
@@ -182,7 +190,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "62cc11bb76f9593261b85cf9450544e183863c95993e9e3b6471cde5376255d3",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "individual final full-size visual inspection",
+        "notes": "Callouts1–5 and field outline align with triggers, input selection and scheduler. No text or control overlap."
+      }
     },
     {
       "id": "en-analog-output-configuration",
@@ -299,7 +315,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "63f582c379d11d14e693c7ef60c9753a293cda016e24fb2fc6fdc1822f47e0ce",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "individual final full-size visual inspection",
+        "notes": "Callouts1–5 align with port mapping, min/max/count fields and clear button."
+      }
     },
     {
       "id": "en-output-test-controls",
@@ -450,7 +474,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "1671cedd7993031880e8b3f3638f447c6f863cdb0e3677fbcf49451904339ac9",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "individual final full-size visual inspection",
+        "notes": "Callouts1–7 map values, digital/analog tests, reset and two selected analog ports."
+      }
     },
     {
       "id": "en-import-settings-options",
@@ -485,7 +517,15 @@
       "pixelSize": [
         1000,
         310
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "fc6095bb68b775e468d8977d0b2606faee0fd873787784c2d03964e7f4e79ecf",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "individual final full-size visual inspection",
+        "notes": "Crop shows exactly the three current import checkboxes, entire labels visible."
+      }
     },
     {
       "id": "en-usb-import-and-export",
@@ -517,7 +557,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "1f77e2e1028d16aad4fb37f346207915e1b84c0bf8d403cdc0185243b672f5fe",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "individual final full-size visual inspection",
+        "notes": "Full selectedUSB and folder context plus Refresh/Import/Export controls visible."
+      }
     },
     {
       "id": "en-alarm-configuration",
@@ -659,7 +707,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "532d80ddc6a9c03e4ec560ce909f71d9b792d531f461cd1d05c486860de07500",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "individual final full-size visual inspection",
+        "notes": "Callouts1–6 and red plot-display/color outline align with editable alarm controls."
+      }
     },
     {
       "id": "en-cartridge-alarm-source",
@@ -694,7 +750,15 @@
       "pixelSize": [
         1200,
         600
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "d5eec191c4ac1b46a2b0aeac59db6c0ee5cc479da8b7a16b03aeea29d3e8bf4a",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "individual final full-size visual inspection",
+        "notes": "Full metrics chooser crop retains the selected Cartridge Remaining state and Cancel/Confirm controls."
+      }
     },
     {
       "id": "en-network-configuration",
@@ -768,7 +832,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "bbc2635a687d1925f289c3a35a7cbed9fb0ec384ccdf2cc02d0a363edea0fb12",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "individual final full-size visual inspection",
+        "notes": "Label1DHCP and label2static field region match. DHCP currently selected; disabled static fields remain readable beside actualIP192.0.2.50."
+      }
     },
     {
       "id": "en-date-and-time-settings",
@@ -797,7 +869,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "c8be2b2b69a88ebffecd5db754605592d4a942569aede9bccf6519f0ac91747c",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "individual final full-size visual inspection",
+        "notes": "Current calendar/time/Zurich zone and reset/synchronization/set controls readable."
+      }
     },
     {
       "id": "en-time-synchronization-settings",
@@ -826,7 +906,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "e3043359c94136ac6e7a51367b227224c3e153ee1af968d98ad0108ea3eb10c7",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "individual final full-size visual inspection",
+        "notes": "NTP/Modbus source, both NTP fields, test/reset/OK visible."
+      }
     },
     {
       "id": "en-home-overview",
@@ -1066,7 +1154,15 @@
       "pixelSize": [
         1808,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "d2f1a516a0163a63ebbbfebe1c5678932de5df6d44fc8a04a7598de31eaa4f6e",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "individual final full-size visual inspection",
+        "notes": "All labels1–9 and regions A/B/C target the current Home controls; legend7Results,8Mode,9Measure. Settings remains visible."
+      }
     },
     {
       "id": "en-online-results-chart",
@@ -1113,7 +1209,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "4eea4e088b978b42d724002f2e032889c9e270a9eb0266a9e2e9cc774f86c4bc",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "individual final full-size visual inspection",
+        "notes": "Arrow points to the current line-chart settings/time-selector; populated genuine plots remain visible."
+      }
     },
     {
       "id": "en-online-chart-settings",
@@ -1230,7 +1334,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "59acc85eb7aa774e2a539f4abfa8462765e1f41eac4f0586264f03c57840c29f",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "individual final full-size visual inspection",
+        "notes": "Callouts1–5 target ratio/count ranges, interval settings, scale and displayed metrics without overlap."
+      }
     },
     {
       "id": "en-icc-result-details",
@@ -1490,7 +1602,15 @@
       "pixelSize": [
         1816,
         1896
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "51ce3ef417fc3faef1095f1d69716b057125a51b428a502ab08c09a786b1dd2f",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "individual final full-size visual inspection",
+        "notes": "Three panels show the same ICC104050 record with66970LNAC+37080HNAC and35.64HNAP; labels1–10 align with info/dialog/plots/metrics/gate fields."
+      }
     },
     {
       "id": "en-gate-settings-list",
@@ -1675,7 +1795,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "54723810107821fa45ebb183a26bad05eb4468ff923b814b2460dcbe17a28f96",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "individual final full-size visual inspection",
+        "notes": "Callouts1–9 align with custom/default/doubledefault gate, type, delete, preview, copy, edit and New controls; masked icons render."
+      }
     },
     {
       "id": "en-tcc-gate-definition",
@@ -1940,7 +2068,15 @@
       "pixelSize": [
         1776,
         1808
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "f6768520f6adab7c4930e8c395a37605a417f88e16fa0e4702c776cd7d0ff6d9",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "individual final full-size visual inspection",
+        "notes": "Latest labels1/2/3 below coordinates/delete/add; a–d vertices match(4,0),(4,3),(6.7,5.7),(6.7,0);5HNA and6preview correct."
+      }
     },
     {
       "id": "en-icc-gate-definition",
@@ -1969,7 +2105,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "a145975fbd9a6ae4e4bcd01120e55c887a6d44e0bb6239fe097062026374bce0",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "individual final full-size visual inspection",
+        "notes": "ActualICC coordinates and visible delete/add/selector/preview controls preserve original screen context."
+      }
     },
     {
       "id": "en-hna-lower-limit",
@@ -1998,7 +2142,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "47754a5ccb4106bd4dd51b24433e6a0c4598c4858e092df23b2ca9a2d75ddf9c",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "individual final full-size visual inspection",
+        "notes": "HNA5.10 field and selector/preview/save context visible."
+      }
     },
     {
       "id": "en-support-and-service-information",
@@ -2027,7 +2179,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "108dc24fde7860ee1992850f88d29fb1ee86ab3e7d87d31638d7ed89351b9755",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "individual final full-size visual inspection",
+        "notes": "Current Support & Service header, maintenance status, manual/support contacts and diagnostic action entirely visible."
+      }
     },
     {
       "id": "en-warning-high-ssc-baseline",
@@ -2056,7 +2216,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "92563b7c75e0d68d62b52bcab2e772ae118a11b8a0df13ead490ab8e5984a1d2",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "individual final full-size visual inspection",
+        "notes": "Current W04 detail, sample metadata, three real scientific plots and Close visible."
+      }
     },
     {
       "id": "en-noncritical-error-empty-sample",
@@ -2085,7 +2253,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "bbec0c4ff3f49e1c52720514b330aea930c35b98ff30fc0b5f86ba9d78221e24",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "individual final full-size visual inspection",
+        "notes": "Current E15 detail and full remedy/Close visible; correct noncritical glyph."
+      }
     },
     {
       "id": "en-critical-error-missing-cartridge",
@@ -2114,7 +2290,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "fcd56f1cd6ff349c990b5c504a23521c9aea0902acdd5a0681fea294fbe20894",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "individual final full-size visual inspection",
+        "notes": "Current E04 detail and full remedy/Close visible; correct critical glyph."
+      }
     },
     {
       "id": "en-error-log",
@@ -2231,7 +2415,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "cb9a60c21a7c473bb8d571c6e1fcf670ae9744566a43455b6a86acd11e67b046",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "individual final full-size visual inspection",
+        "notes": "Callouts1date,2type,3description,4Clear errors and5time range correct without text overlap."
+      }
     },
     {
       "id": "en-self-check-results",
@@ -2260,7 +2452,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "5786949c4729c4ba379897959d14c8bfc622e6bddad79f5fc39c049d1a14006b",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "individual final full-size visual inspection",
+        "notes": "Real PASS records and Back/Rerun visible; no clipped lines."
+      }
     },
     {
       "id": "en-error-log-clear-errors",
@@ -2303,7 +2503,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "b30dcc04c0d108f7bdbb8a4c41dce2379bc7d3e87c59b5b158a9d44b64dc352f",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "individual final full-size visual inspection",
+        "notes": "Red outline fits Clear errors and retains full log/time range."
+      }
     },
     {
       "id": "en-home-settings-button",
@@ -2338,7 +2546,15 @@
       "pixelSize": [
         228,
         126
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "ba87ba065fe8826de30dbe716dae5a5d1d7b834f32d3c17aeb14219acb2c5d5a",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "individual final full-size visual inspection",
+        "notes": "Exact current Home Settings control crop retains full glyph and text."
+      }
     },
     {
       "id": "en-web-dashboard",
@@ -2478,7 +2694,15 @@
       "pixelSize": [
         2736,
         936
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "65477ded88e830462e4bf7f634f5df41476d20f72eac457937a6be57cd901e2a",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet and full-size image inspection",
+        "notes": "Labels 1–6 point to left navigation, instrument state, latest result dashboard, language, user menu and actual progress. No annotation obscures a control label."
+      }
     },
     {
       "id": "en-web-fcs-download",
@@ -2544,7 +2768,15 @@
       "pixelSize": [
         724,
         476
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "31a8f57bda3fc90b572824197e0bee92d4718fa1accc49467585c49c24c92dfb",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet and full-size image inspection",
+        "notes": "Position X and red arrow both identify the current fcs link beside img; real three-row result context retained."
+      }
     },
     {
       "id": "en-web-zip-download",
@@ -2573,7 +2805,15 @@
       "pixelSize": [
         850,
         84
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "e43f355e67c218440979d2fea659ba3cebfa66c323a06edf483ca4e0f4c5755d",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet and full-size image inspection",
+        "notes": "Date range and localized ZIP action are complete and readable."
+      }
     },
     {
       "id": "en-web-results-download-formats",
@@ -2626,7 +2866,15 @@
       "pixelSize": [
         2100,
         578
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "ea6e7286bae110da31fa81264cbcf4beccc96d54c5cb4558a34a3540f1bc151b",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet and full-size image inspection",
+        "notes": "XLSX, CSV and PDF actions shown for Online, Manual and instrument validation; arrow touches panel heading edge."
+      }
     },
     {
       "id": "en-web-plots-navigation",
@@ -2685,7 +2933,15 @@
       "pixelSize": [
         588,
         190
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "f3220a1f24aa166060a04b8dae8d307461a30510a8d10a4a21f2663e49cc2dc1",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet and full-size image inspection",
+        "notes": "Arrow identifies actual localized selected Plots navigation entry, with complete icon and label."
+      }
     },
     {
       "id": "en-web-measurement-interval",
@@ -2753,7 +3009,15 @@
       "pixelSize": [
         2560,
         630
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "561da737ceab1d81cd896e4f011464a4b3df5306ff5ebee66f4c556bbdb2a2f1",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet and full-size image inspection",
+        "notes": "Settings navigation and actual 120-minute interval field identified; sample and SAVE controls remain readable."
+      }
     },
     {
       "id": "en-web-plots-play",
@@ -2806,7 +3070,15 @@
       "pixelSize": [
         1080,
         190
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "00d7dbe338adfefbc546ec178b4841d9f0205a7e0e55a8bf202420912d50bc9a",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet and full-size image inspection",
+        "notes": "Arrow touches Play button upper edge and leaves its icon clear. Genuine localized toolbar wrapping retained."
+      }
     },
     {
       "id": "en-web-plots-date-range",
@@ -2888,7 +3160,15 @@
       "pixelSize": [
         2120,
         380
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "e7f4bc40670a114b6713a2c42f976132d61f449818656ddc6f275a0b6473e5a4",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet and full-size image inspection",
+        "notes": "Previous/Next highlight and arrow from upper white margin identify actual first-row stepping buttons, avoiding wrapped Download FCS; slider arrow identifies handle, with both endpoint dates readable."
+      }
     },
     {
       "id": "en-web-user-reboot-menu",
@@ -2917,7 +3197,15 @@
       "pixelSize": [
         424,
         248
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "690c88f7eb4113b95d6942a2c60d9a899ecd5ce3dd5bde5f42432bbe3396b384",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet and full-size image inspection",
+        "notes": "Current Admin dropdown has actual localized Reboot and Sign out actions; menu fully visible without triggering either."
+      }
     },
     {
       "id": "en-web-system-info-navigation",
@@ -2952,7 +3240,15 @@
       "pixelSize": [
         460,
         100
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "87a3a1483060253c8c4a966636b7f2fd01b86321932b73b00686c81052a34a9f",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet and full-size image inspection",
+        "notes": "Complete localized current System info navigation row and icon with clean adjacent-row strips; no clipped neighboring label."
+      }
     },
     {
       "id": "de-system-services",
@@ -2984,7 +3280,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "1d261eaa681802c411fccde0f8c3ebe60960b8693cd44dcf0b69bae70da894df",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Current Manage system services screen is readable; HTTP,HTTPS,Modbus,VNC,FTP,SMB and ports visible."
+      }
     },
     {
       "id": "de-digital-input-configuration",
@@ -3109,7 +3413,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "a4a3d41600458125079007ad0da50cc8d310f69cd374711b33d83e5473700243",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Callouts1–5 and field outline align with triggers, input selection and scheduler. No text or control overlap."
+      }
     },
     {
       "id": "de-analog-output-configuration",
@@ -3226,7 +3538,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "f8e563157ebf85e5a677e78bc2c25ed4625f7b22896f6f12530e6a6f0e81946c",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Callouts1–5 align with port mapping, min/max/count fields and clear button."
+      }
     },
     {
       "id": "de-output-test-controls",
@@ -3377,7 +3697,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "b29b3df849640a8cf4842b15ad4db4386f837e860c9979e0742aaa357c915dc4",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Callouts1–7 map values, digital/analog tests, reset and two selected analog ports."
+      }
     },
     {
       "id": "de-import-settings-options",
@@ -3412,7 +3740,15 @@
       "pixelSize": [
         1000,
         310
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "95667a04ce85d0dda7c0fadb575f373efb910b6d45170c2d9957a8454cbdad9c",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Crop shows exactly the three current import checkboxes, entire labels visible."
+      }
     },
     {
       "id": "de-usb-import-and-export",
@@ -3444,7 +3780,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "53f7fdf336d3304d6cb2395eebb32780d68948af2a6337aad89adfeb00a35674",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Full selectedUSB and folder context plus Refresh/Import/Export controls visible."
+      }
     },
     {
       "id": "de-alarm-configuration",
@@ -3535,35 +3879,55 @@
         {
           "label": "4",
           "at": [
-            505,
+            755,
             221
           ],
           "target": [
-            540,
-            221
+            555,
+            236
+          ],
+          "via": [
+            [
+              715,
+              244
+            ],
+            [
+              555,
+              244
+            ]
           ],
           "meaning": "Greater-than/less-than condition"
         },
         {
           "label": "5",
           "at": [
-            505,
-            290
+            822,
+            320
           ],
           "target": [
-            540,
+            700,
             290
+          ],
+          "via": [
+            [
+              780,
+              310
+            ],
+            [
+              715,
+              310
+            ]
           ],
           "meaning": "Threshold field"
         },
         {
           "label": "6",
           "at": [
-            485,
-            324
+            514,
+            329
           ],
           "target": [
-            472,
+            496,
             313
           ],
           "meaning": "Display-alarm and color controls"
@@ -3573,7 +3937,7 @@
         [
           296,
           177,
-          177,
+          200,
           137
         ]
       ],
@@ -3582,11 +3946,19 @@
         480
       ],
       "inputSha256": "4c7349c51a7ee534d1cd91b37ba477391743cb5d7050f2bb2f8a9c9949163f14",
-      "sha256": "a92b02b6384aa3d1b01b77315b163a63fa1e73b6591348a4d1b1681d738c5e21",
+      "sha256": "8b29c2634e275feb13207afa606faa123148d9f75cf0a1129e1562afab768709",
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "8b29c2634e275feb13207afa606faa123148d9f75cf0a1129e1562afab768709",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Wider red frame, comparison badge4 and bent leader below checkboxes, threshold badge5 outside screen below units. Translated Alarm darstellen and Grenzwert fully visible."
+      }
     },
     {
       "id": "de-cartridge-alarm-source",
@@ -3621,7 +3993,15 @@
       "pixelSize": [
         1200,
         600
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "b545f2c93aa7ce866405e62f07911ec1ff95e45f7ae1bc16ccdf6a1e9d598342",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Full metrics chooser crop retains the selected Cartridge Remaining state and Cancel/Confirm controls."
+      }
     },
     {
       "id": "de-network-configuration",
@@ -3695,7 +4075,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "8d7482e312a46636a34b27ff02410b97ccfed55390c544c150f2f82be590177a",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Label1DHCP and label2static field region match. DHCP currently selected; disabled static fields remain readable beside actualIP192.0.2.50."
+      }
     },
     {
       "id": "de-date-and-time-settings",
@@ -3724,7 +4112,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "607498889be569476f3141b6c2e083e70b6ec48ca54a28697d3993e95a64661f",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Current calendar/time/Zurich zone and reset/synchronization/set controls readable."
+      }
     },
     {
       "id": "de-time-synchronization-settings",
@@ -3753,7 +4149,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "1918ec0e306e2cdb065cf68c749496ae1eab1367b582c3bc95e02158c94629c7",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "NTP/Modbus source, both NTP fields, test/reset/OK visible."
+      }
     },
     {
       "id": "de-home-overview",
@@ -3993,7 +4397,15 @@
       "pixelSize": [
         1808,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "1b2bd0d50fd24e3aea212db42504f30637283911904af42a27a557f474ad5014",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "All labels1–9 and regions A/B/C target the current Home controls; legend7Results,8Mode,9Measure. Settings remains visible."
+      }
     },
     {
       "id": "de-online-results-chart",
@@ -4040,7 +4452,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "e2cf896ac59f9804439f9cd6a6337dcd8c944f4ef5d3da3951e38f963c650e4c",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Arrow points to the current line-chart settings/time-selector; populated genuine plots remain visible."
+      }
     },
     {
       "id": "de-online-chart-settings",
@@ -4157,7 +4577,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "23f57aad921439c12876920c8924305e976d163253eb01425c20ab835b8422d5",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Callouts1–5 target ratio/count ranges, interval settings, scale and displayed metrics without overlap."
+      }
     },
     {
       "id": "de-icc-result-details",
@@ -4417,7 +4845,15 @@
       "pixelSize": [
         1816,
         1896
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "68576b3e909e6f26e9cbc2cf40364ff49234d5c667b36e937fd5a87089cb7f2e",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Three panels show the same ICC104050 record with66970LNAC+37080HNAC and35.64HNAP; labels1–10 align with info/dialog/plots/metrics/gate fields."
+      }
     },
     {
       "id": "de-gate-settings-list",
@@ -4602,7 +5038,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "16391c3c4156f845581a8954b07d3565bec04d0be548659aa0621358f4e70184",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Callouts1–9 align with custom/default/doubledefault gate, type, delete, preview, copy, edit and New controls; masked icons render."
+      }
     },
     {
       "id": "de-tcc-gate-definition",
@@ -4867,7 +5311,15 @@
       "pixelSize": [
         1776,
         1808
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "07bcdbcc834c0dae696614ee9b5d6fb4242ceee14e5e37e8b3fb618d66871861",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Latest labels1/2/3 below coordinates/delete/add; a–d vertices match(4,0),(4,3),(6.7,5.7),(6.7,0);5HNA and6preview correct."
+      }
     },
     {
       "id": "de-icc-gate-definition",
@@ -4896,7 +5348,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "334425c3e5d31193d21acb7e79f92feaa00a6f66aa11585845b67068fe3ea6fa",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "ActualICC coordinates and visible delete/add/selector/preview controls preserve original screen context."
+      }
     },
     {
       "id": "de-hna-lower-limit",
@@ -4925,7 +5385,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "02644b00002c91a9dbaac07bacf5c3c8c14f47556165b9c9ad73cb07570bba77",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "HNA5.10 field and selector/preview/save context visible."
+      }
     },
     {
       "id": "de-support-and-service-information",
@@ -4954,7 +5422,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "4fb31da33b622fbbb2b62489f1948fda912e6399a615aa9c15b4abe44a6d82b1",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Current Support & Service header, maintenance status, manual/support contacts and diagnostic action entirely visible."
+      }
     },
     {
       "id": "de-warning-high-ssc-baseline",
@@ -4983,7 +5459,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "817225c958d1fba9b13da8f97d5d875d9f75b84e0d35fde417ee0a6519097653",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Current W04 detail, sample metadata, three real scientific plots and Close visible."
+      }
     },
     {
       "id": "de-noncritical-error-empty-sample",
@@ -5012,7 +5496,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "84c4c21ae2b3ac64040414eee5ba65602ca96520238fd256f69dc6c1c63ba538",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Current E15 detail and full remedy/Close visible; correct noncritical glyph."
+      }
     },
     {
       "id": "de-critical-error-missing-cartridge",
@@ -5041,7 +5533,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "5382beedcf915ef6813b1ca31e9eb8163f0debb5cae6fed5f16e364414628762",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Current E04 detail and full remedy/Close visible; correct critical glyph."
+      }
     },
     {
       "id": "de-error-log",
@@ -5158,7 +5658,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "82bc4f85071c1bdf30bc3d71f6c43d7f894767e32ada9b0fb77fad15a0b6d1ee",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Callouts1date,2type,3description,4Clear errors and5time range correct without text overlap."
+      }
     },
     {
       "id": "de-self-check-results",
@@ -5187,7 +5695,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "fbac3afa31b21a41613a05a76b2b41e9e402df12a507684aed19ae518320f38c",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Real PASS records and Back/Rerun visible; no clipped lines."
+      }
     },
     {
       "id": "de-error-log-clear-errors",
@@ -5230,7 +5746,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "d8ec596f446e8b837e23ccabbddc0ce3ae51871fa792dd99d2343d97cf2f0f06",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Red outline fits Clear errors and retains full log/time range."
+      }
     },
     {
       "id": "de-home-settings-button",
@@ -5265,7 +5789,15 @@
       "pixelSize": [
         320,
         126
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "598362f95daef62e9883d2184c2bf2b33933d6b99caf8e58dad3c982e38be9d3",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Exact current Home Settings control crop retains full glyph and text."
+      }
     },
     {
       "id": "de-web-dashboard",
@@ -5405,7 +5937,15 @@
       "pixelSize": [
         2736,
         936
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "588a5386641edb16a343f959778cc9e7bd22019fd68e75ee0996493c2c3b0436",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet inspection; raw source previously inspected at full size",
+        "notes": "Labels 1–6 point to left navigation, instrument state, latest result dashboard, language, user menu and actual progress. No annotation obscures a control label."
+      }
     },
     {
       "id": "de-web-fcs-download",
@@ -5471,7 +6011,15 @@
       "pixelSize": [
         724,
         476
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "31a8f57bda3fc90b572824197e0bee92d4718fa1accc49467585c49c24c92dfb",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet inspection; raw source previously inspected at full size",
+        "notes": "Position X and red arrow both identify the current fcs link beside img; real three-row result context retained."
+      }
     },
     {
       "id": "de-web-zip-download",
@@ -5500,7 +6048,15 @@
       "pixelSize": [
         904,
         84
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "c2b088d848165a96e1d96342f4a8861c953f346ae9c6367a22826b3e1c78ec8f",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet inspection; raw source previously inspected at full size",
+        "notes": "Date range and localized ZIP action are complete and readable."
+      }
     },
     {
       "id": "de-web-results-download-formats",
@@ -5553,7 +6109,15 @@
       "pixelSize": [
         2100,
         578
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "7eb24b6e7b7aebc288834f811b1fe2a44a364a43b3060f9dec4ac67945a62240",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet inspection; raw source previously inspected at full size",
+        "notes": "XLSX, CSV and PDF actions shown for Online, Manual and instrument validation; arrow touches panel heading edge."
+      }
     },
     {
       "id": "de-web-plots-navigation",
@@ -5612,7 +6176,15 @@
       "pixelSize": [
         588,
         190
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "f3220a1f24aa166060a04b8dae8d307461a30510a8d10a4a21f2663e49cc2dc1",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet inspection; raw source previously inspected at full size",
+        "notes": "Arrow identifies actual localized selected Plots navigation entry, with complete icon and label."
+      }
     },
     {
       "id": "de-web-measurement-interval",
@@ -5680,7 +6252,15 @@
       "pixelSize": [
         2560,
         630
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "adf52635738e89a1541aa7f23fbcdd65007dbd9e5448891d10140d0e665ee8b2",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet and full-size image inspection",
+        "notes": "Settings navigation and actual 120-minute interval field identified; sample and SAVE controls remain readable."
+      }
     },
     {
       "id": "de-web-plots-play",
@@ -5733,7 +6313,15 @@
       "pixelSize": [
         1080,
         258
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "15b7675281a0aa3ffd2a4a8efa896fdc5feb6c8e4d02388f7a627bd6cb19df39",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet and full-size image inspection",
+        "notes": "Arrow touches Play button upper edge and leaves its icon clear. Genuine localized toolbar wrapping retained."
+      }
     },
     {
       "id": "de-web-plots-date-range",
@@ -5815,7 +6403,15 @@
       "pixelSize": [
         2120,
         448
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "09c509b3bb07558409dbf9b3f3ffa4b188c8b08c6e022db07850719b50c8d584",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet and full-size image inspection",
+        "notes": "Previous/Next highlight and arrow from upper white margin identify actual first-row stepping buttons, avoiding wrapped Download FCS; slider arrow identifies handle, with both endpoint dates readable."
+      }
     },
     {
       "id": "de-web-user-reboot-menu",
@@ -5844,7 +6440,15 @@
       "pixelSize": [
         424,
         248
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "b19268415779105e2d5dfcad7977300bfec9698af4d33bb7825d7191fc4411df",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet inspection; raw source previously inspected at full size",
+        "notes": "Current Admin dropdown has actual localized Reboot and Sign out actions; menu fully visible without triggering either."
+      }
     },
     {
       "id": "de-web-system-info-navigation",
@@ -5879,7 +6483,15 @@
       "pixelSize": [
         460,
         100
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "ac24bf232152487fe4003d4e56a8048d522d1df3a8d7b1310b5feddf031d44fa",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet inspection; raw source previously inspected at full size",
+        "notes": "Complete localized current System info navigation row and icon with clean adjacent-row strips; no clipped neighboring label."
+      }
     },
     {
       "id": "fr-system-services",
@@ -5911,7 +6523,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "32e227563a818fc5287f9b77a149d963cacc7fa8b2089fccbf81f03689bde74b",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Current Manage system services screen is readable; HTTP,HTTPS,Modbus,VNC,FTP,SMB and ports visible."
+      }
     },
     {
       "id": "fr-digital-input-configuration",
@@ -6036,7 +6656,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "d69725b05ae4483334a5aef5195cbbb01f1bcb60ffe0de1eaebdcbdac2cd89f7",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Callouts1–5 and field outline align with triggers, input selection and scheduler. No text or control overlap."
+      }
     },
     {
       "id": "fr-analog-output-configuration",
@@ -6153,7 +6781,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "c576bd760e9f08181f471bf12a62231dacc837e6334e353c224c86c42556539e",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Callouts1–5 align with port mapping, min/max/count fields and clear button."
+      }
     },
     {
       "id": "fr-output-test-controls",
@@ -6304,7 +6940,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "c854efa1f05d7bd8af107f8654311de1f43a0a4904167e8a514d2803c09b6c2c",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Callouts1–7 map values, digital/analog tests, reset and two selected analog ports."
+      }
     },
     {
       "id": "fr-import-settings-options",
@@ -6339,7 +6983,15 @@
       "pixelSize": [
         1000,
         310
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "5473fbb01b0789d6c993f357f09f608640c4d75196bbf0d7d074065e8fde4624",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Crop shows exactly the three current import checkboxes, entire labels visible."
+      }
     },
     {
       "id": "fr-usb-import-and-export",
@@ -6371,7 +7023,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "222ef2573f94a8a0edd4d92c41f6595a95817832cd5916512f7ab201bee84af4",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Full selectedUSB and folder context plus Refresh/Import/Export controls visible."
+      }
     },
     {
       "id": "fr-alarm-configuration",
@@ -6462,35 +7122,55 @@
         {
           "label": "4",
           "at": [
-            505,
+            755,
             221
           ],
           "target": [
-            540,
-            221
+            555,
+            236
+          ],
+          "via": [
+            [
+              715,
+              244
+            ],
+            [
+              555,
+              244
+            ]
           ],
           "meaning": "Greater-than/less-than condition"
         },
         {
           "label": "5",
           "at": [
-            505,
-            290
+            822,
+            320
           ],
           "target": [
-            540,
+            700,
             290
+          ],
+          "via": [
+            [
+              780,
+              310
+            ],
+            [
+              715,
+              310
+            ]
           ],
           "meaning": "Threshold field"
         },
         {
           "label": "6",
           "at": [
-            485,
-            324
+            514,
+            329
           ],
           "target": [
-            472,
+            496,
             313
           ],
           "meaning": "Display-alarm and color controls"
@@ -6500,7 +7180,7 @@
         [
           296,
           177,
-          177,
+          200,
           137
         ]
       ],
@@ -6509,11 +7189,19 @@
         480
       ],
       "inputSha256": "a8d2108b7cb9e1de71362fb13662084524256b6695324f537f4911cb0de3707b",
-      "sha256": "260d3065b264dd0abce147e3bb023a68c23d43b672ee66ea80a4873ab3f74eb4",
+      "sha256": "4d0916498dec409b6556f20617e7d3d80638f1dda72b9d27cd6dc721afbd255a",
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "4d0916498dec409b6556f20617e7d3d80638f1dda72b9d27cd6dc721afbd255a",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Wider red frame, comparison badge4 and bent leader below checkboxes, threshold badge5 outside screen below units. Translated Afficher l’alarme and Limite fully visible."
+      }
     },
     {
       "id": "fr-cartridge-alarm-source",
@@ -6548,7 +7236,15 @@
       "pixelSize": [
         1200,
         600
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "41eaa644926b716d03730066b0510b0be0bf9c0550a76e47401db9c55652417c",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Full metrics chooser crop retains the selected Cartridge Remaining state and Cancel/Confirm controls."
+      }
     },
     {
       "id": "fr-network-configuration",
@@ -6622,7 +7318,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "8b147a485016cc39d5098082ac9970cac4511027fb1b9c0e7faa0adecc02fa64",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Label1DHCP and label2static field region match. DHCP currently selected; disabled static fields remain readable beside actualIP192.0.2.50."
+      }
     },
     {
       "id": "fr-date-and-time-settings",
@@ -6651,7 +7355,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "2aff05484d72a835213932ba50fdaceec0f696ae059e33fefe57d71d46aa11d5",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Current calendar/time/Zurich zone and reset/synchronization/set controls readable."
+      }
     },
     {
       "id": "fr-time-synchronization-settings",
@@ -6680,7 +7392,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "8dbfb9e6f3957a2f1633e3d16d4dc6986601fb8c9bba76eb48f833d2ae5bae32",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "NTP/Modbus source, both NTP fields, test/reset/OK visible."
+      }
     },
     {
       "id": "fr-home-overview",
@@ -6920,7 +7640,15 @@
       "pixelSize": [
         1808,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "50cfe8f522657ae47a5f8e644e3d848e1e8e9f80fb6c632c447404df26d747ca",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "All labels1–9 and regions A/B/C target the current Home controls; legend7Results,8Mode,9Measure. Settings remains visible."
+      }
     },
     {
       "id": "fr-online-results-chart",
@@ -6967,7 +7695,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "034ec63fe3e9010ed20ca889769617a34dec154d30408b35abedf7b84846ec77",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Arrow points to the current line-chart settings/time-selector; populated genuine plots remain visible."
+      }
     },
     {
       "id": "fr-online-chart-settings",
@@ -7084,7 +7820,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "0b34893430d75b9374fa3b668bf099d800c1187bf2a2f11f2ee23f54cfa60422",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Callouts1–5 target ratio/count ranges, interval settings, scale and displayed metrics without overlap."
+      }
     },
     {
       "id": "fr-icc-result-details",
@@ -7344,7 +8088,15 @@
       "pixelSize": [
         1816,
         1896
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "363b80a6c46aaad3a75230bd09a3431f92b40ec26421e45333836701327f13c2",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Three panels show the same ICC104050 record with66970LNAC+37080HNAC and35.64HNAP; labels1–10 align with info/dialog/plots/metrics/gate fields."
+      }
     },
     {
       "id": "fr-gate-settings-list",
@@ -7529,7 +8281,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "a3c7032664ffdc9138a0b283ffa8f3a4a4b8c66ccbb778863a9b23f06ded182c",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Callouts1–9 align with custom/default/doubledefault gate, type, delete, preview, copy, edit and New controls; masked icons render."
+      }
     },
     {
       "id": "fr-tcc-gate-definition",
@@ -7794,7 +8554,15 @@
       "pixelSize": [
         1776,
         1808
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "1cf73ca1c4a15d6a0374ae2007730ba3402b7effe65f14256786a4cca9ce793c",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Latest labels1/2/3 below coordinates/delete/add; a–d vertices match(4,0),(4,3),(6.7,5.7),(6.7,0);5HNA and6preview correct."
+      }
     },
     {
       "id": "fr-icc-gate-definition",
@@ -7823,7 +8591,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "02d864d52bcb96fb03f68a8427cbf1480f4a6c85a75f753c306842d213849886",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "ActualICC coordinates and visible delete/add/selector/preview controls preserve original screen context."
+      }
     },
     {
       "id": "fr-hna-lower-limit",
@@ -7852,7 +8628,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "c7bce26c5aed56ea0cc8166b819c70ab78740ccb577c13059c369b27dc117777",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "HNA5.10 field and selector/preview/save context visible."
+      }
     },
     {
       "id": "fr-support-and-service-information",
@@ -7881,7 +8665,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "10ece6098b34b179a2b5528a772aa2609ed75b6aa61e9f47c673f0061aef5c2e",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Current Support & Service header, maintenance status, manual/support contacts and diagnostic action entirely visible."
+      }
     },
     {
       "id": "fr-warning-high-ssc-baseline",
@@ -7910,7 +8702,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "e326e2d8e953c8972040e0c993f38d677f56639b863186892a20e4549c55f23a",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Current W04 detail, sample metadata, three real scientific plots and Close visible."
+      }
     },
     {
       "id": "fr-noncritical-error-empty-sample",
@@ -7939,7 +8739,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "8240b778ba2dbc36723e84bc69fe8b638b7f1cc22e7c73eb082b7d9b9389ca9f",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Current E15 detail and full remedy/Close visible; correct noncritical glyph."
+      }
     },
     {
       "id": "fr-critical-error-missing-cartridge",
@@ -7968,7 +8776,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "ebbd1925d52e2be712c0b313c36e15f8a9f233bc488dcca3d9c4179f4f9f2136",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Current E04 detail and full remedy/Close visible; correct critical glyph."
+      }
     },
     {
       "id": "fr-error-log",
@@ -8085,7 +8901,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "606b64fef8c20aa65faba0d8d2a41854910f50f287b4b6dafd70763bcf462c52",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Callouts1date,2type,3description,4Clear errors and5time range correct without text overlap."
+      }
     },
     {
       "id": "fr-self-check-results",
@@ -8114,7 +8938,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "0222e6b308de43d1be3b6d40db30e1f3f6dbdc9cf03e4bfaed458814de8b182f",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Real PASS records and Back/Rerun visible; no clipped lines."
+      }
     },
     {
       "id": "fr-error-log-clear-errors",
@@ -8157,7 +8989,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "9103d814f5a26f8a4b9416e3bc13ec1967400da57881e58bc9da8e4a1cfd9581",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Red outline fits Clear errors and retains full log/time range."
+      }
     },
     {
       "id": "fr-home-settings-button",
@@ -8192,7 +9032,15 @@
       "pixelSize": [
         286,
         126
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "1dd1a76c727b92179412ba79478069d9b25347131d5d39e3ac54d619fe197d11",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Exact current Home Settings control crop retains full glyph and text."
+      }
     },
     {
       "id": "fr-web-dashboard",
@@ -8332,7 +9180,15 @@
       "pixelSize": [
         2736,
         936
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "b0c40d234c617f4da238ed7df4d1648cf00c8e874cf803a688c912445f98bc0e",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet inspection; raw source previously inspected at full size",
+        "notes": "Labels 1–6 point to left navigation, instrument state, latest result dashboard, language, user menu and actual progress. No annotation obscures a control label."
+      }
     },
     {
       "id": "fr-web-fcs-download",
@@ -8398,7 +9254,15 @@
       "pixelSize": [
         724,
         476
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "31a8f57bda3fc90b572824197e0bee92d4718fa1accc49467585c49c24c92dfb",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet inspection; raw source previously inspected at full size",
+        "notes": "Position X and red arrow both identify the current fcs link beside img; real three-row result context retained."
+      }
     },
     {
       "id": "fr-web-zip-download",
@@ -8427,7 +9291,15 @@
       "pixelSize": [
         876,
         84
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "782ae920f54c8532c0c36211573817eb77e654e5bc0353c90ba3c43a6b94daaa",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet inspection; raw source previously inspected at full size",
+        "notes": "Date range and localized ZIP action are complete and readable."
+      }
     },
     {
       "id": "fr-web-results-download-formats",
@@ -8480,7 +9352,15 @@
       "pixelSize": [
         2100,
         578
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "1a3b8babc2b62863275c3b97ede39ad5d19a33961fc94f744c8979f669fc9d5f",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet inspection; raw source previously inspected at full size",
+        "notes": "XLSX, CSV and PDF actions shown for Online, Manual and instrument validation; arrow touches panel heading edge."
+      }
     },
     {
       "id": "fr-web-plots-navigation",
@@ -8539,7 +9419,15 @@
       "pixelSize": [
         588,
         190
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "8c0630c375c922d31129f55bf98a1e1d5c1f0fcebe812d22981dcf5b8aee11d8",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet inspection; raw source previously inspected at full size",
+        "notes": "Arrow identifies actual localized selected Plots navigation entry, with complete icon and label."
+      }
     },
     {
       "id": "fr-web-measurement-interval",
@@ -8607,7 +9495,15 @@
       "pixelSize": [
         2560,
         630
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "05bfc50c9f99a28efbfb6077a7d24773b616cafe1f5754c47a8017fac65f6f9e",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet and full-size image inspection",
+        "notes": "Settings navigation and actual 120-minute interval field identified; sample and SAVE controls remain readable."
+      }
     },
     {
       "id": "fr-web-plots-play",
@@ -8660,7 +9556,15 @@
       "pixelSize": [
         1080,
         258
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "28a5a96ec18fb1d07ba25da7b36c42175bcfa3ccec49135012bfd1817d0d7be5",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet and full-size image inspection",
+        "notes": "Arrow touches Play button upper edge and leaves its icon clear. Genuine localized toolbar wrapping retained."
+      }
     },
     {
       "id": "fr-web-plots-date-range",
@@ -8742,7 +9646,15 @@
       "pixelSize": [
         2120,
         448
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "b5f7bf8be2147a98dcb610b153eabbac6ba08f149d7c0268de14d4983687d586",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet and full-size image inspection",
+        "notes": "Previous/Next highlight and arrow from upper white margin identify actual first-row stepping buttons, avoiding wrapped Download FCS; slider arrow identifies handle, with both endpoint dates readable."
+      }
     },
     {
       "id": "fr-web-user-reboot-menu",
@@ -8771,7 +9683,15 @@
       "pixelSize": [
         424,
         248
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "cf8f831802a4b5e31dc24c4e9fb6f6aa69135537a5e7eefb7362fceb326205a0",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet inspection; raw source previously inspected at full size",
+        "notes": "Current Admin dropdown has actual localized Reboot and Sign out actions; menu fully visible without triggering either."
+      }
     },
     {
       "id": "fr-web-system-info-navigation",
@@ -8806,7 +9726,15 @@
       "pixelSize": [
         460,
         100
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "a0360d85db2db943046dfe414636011b27c2a124cc9d323bded27cff6f0f2224",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet inspection; raw source previously inspected at full size",
+        "notes": "Complete localized current System info navigation row and icon with clean adjacent-row strips; no clipped neighboring label."
+      }
     },
     {
       "id": "it-system-services",
@@ -8838,7 +9766,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "d5a081d6acca0c8f7d91ef2122e1aaf5e2564742a5dc24c81adf009d5900e5f1",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Current Manage system services screen is readable; HTTP,HTTPS,Modbus,VNC,FTP,SMB and ports visible."
+      }
     },
     {
       "id": "it-digital-input-configuration",
@@ -8963,7 +9899,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "ea40322b0ba1e816798af9589d45771db15af6c6692c2d25db31beab675ba014",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Callouts1–5 and field outline align with triggers, input selection and scheduler. No text or control overlap."
+      }
     },
     {
       "id": "it-analog-output-configuration",
@@ -9080,7 +10024,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "fb5e135453116a49af6296a75a808a564efe78aa8881b13862579bea7afe45b3",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Callouts1–5 align with port mapping, min/max/count fields and clear button."
+      }
     },
     {
       "id": "it-output-test-controls",
@@ -9231,7 +10183,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "fef39253348dcb344ed2adc391265dd1abdba9c3bff6a78cdc571a23db591dff",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Callouts1–7 map values, digital/analog tests, reset and two selected analog ports."
+      }
     },
     {
       "id": "it-import-settings-options",
@@ -9266,7 +10226,15 @@
       "pixelSize": [
         1000,
         310
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "dd143013c6391d5bf9870d8fa42cd4c32b0230ee4c581acce31c4df6bf5a9775",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Crop shows exactly the three current import checkboxes, entire labels visible."
+      }
     },
     {
       "id": "it-usb-import-and-export",
@@ -9298,7 +10266,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "62f1cf30183fe51647910a47e9c25c261022e286db33afd4c0cfb723a9e31284",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Full selectedUSB and folder context plus Refresh/Import/Export controls visible."
+      }
     },
     {
       "id": "it-alarm-configuration",
@@ -9389,35 +10365,55 @@
         {
           "label": "4",
           "at": [
-            505,
+            755,
             221
           ],
           "target": [
-            540,
-            221
+            555,
+            236
+          ],
+          "via": [
+            [
+              715,
+              244
+            ],
+            [
+              555,
+              244
+            ]
           ],
           "meaning": "Greater-than/less-than condition"
         },
         {
           "label": "5",
           "at": [
-            505,
-            290
+            822,
+            320
           ],
           "target": [
-            540,
+            700,
             290
+          ],
+          "via": [
+            [
+              780,
+              310
+            ],
+            [
+              715,
+              310
+            ]
           ],
           "meaning": "Threshold field"
         },
         {
           "label": "6",
           "at": [
-            485,
-            324
+            544,
+            329
           ],
           "target": [
-            472,
+            526,
             313
           ],
           "meaning": "Display-alarm and color controls"
@@ -9427,7 +10423,7 @@
         [
           296,
           177,
-          177,
+          230,
           137
         ]
       ],
@@ -9436,11 +10432,19 @@
         480
       ],
       "inputSha256": "740c9bc8b4a118b3ce27106d80749ab74b944766eb43581bb7aa9058aaa5bdd0",
-      "sha256": "827762e44fc5de76b95204175f113d8b410876daeea7487ceecad0d6b204a421",
+      "sha256": "bf436cac72cd037cd10c95be18b990eaf71212121ba15a536ea25cf3e93d3141",
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "bf436cac72cd037cd10c95be18b990eaf71212121ba15a536ea25cf3e93d3141",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Wider red frame accommodates Visualizza l’allarme; badge4/5 and bent leaders clear checkbox/threshold captions. Entire Soglia visible."
+      }
     },
     {
       "id": "it-cartridge-alarm-source",
@@ -9475,7 +10479,15 @@
       "pixelSize": [
         1200,
         600
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "a09e227c50891fa316b9e89e472cac9bb3ab00766794d41d22e5372eab88dd8f",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Full metrics chooser crop retains the selected Cartridge Remaining state and Cancel/Confirm controls."
+      }
     },
     {
       "id": "it-network-configuration",
@@ -9549,7 +10561,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "3b104ffba12179ee12c5e510d3b734b4d04f39f019712e12df880314f133823a",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Label1DHCP and label2static field region match. DHCP currently selected; disabled static fields remain readable beside actualIP192.0.2.50."
+      }
     },
     {
       "id": "it-date-and-time-settings",
@@ -9578,7 +10598,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "8bbadff0750cecad304fe8b2d5b359771cd135d6e61173113d7fa0ac2cb6e8a5",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Current calendar/time/Zurich zone and reset/synchronization/set controls readable."
+      }
     },
     {
       "id": "it-time-synchronization-settings",
@@ -9607,7 +10635,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "717420672a6d8ec18d29ca641e61925ed2ef4f36134b35efc1aa9ff539a8be00",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "NTP/Modbus source, both NTP fields, test/reset/OK visible."
+      }
     },
     {
       "id": "it-home-overview",
@@ -9847,7 +10883,15 @@
       "pixelSize": [
         1808,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "b42073c7e705d10eb0bf93c0c152d7f41a9445414ad8a10dfa7cabde070367b2",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "All labels1–9 and regions A/B/C target the current Home controls; legend7Results,8Mode,9Measure. Settings remains visible."
+      }
     },
     {
       "id": "it-online-results-chart",
@@ -9894,7 +10938,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "0250f23d440998239cf8d967cede5ba7630a819301536825a4a6da8c02e7a81d",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Arrow points to the current line-chart settings/time-selector; populated genuine plots remain visible."
+      }
     },
     {
       "id": "it-online-chart-settings",
@@ -10011,7 +11063,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "a29574cf55d14eb4438e8aa92bba8a312e028503b06c9f8642f2a94068fd4bdb",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Callouts1–5 target ratio/count ranges, interval settings, scale and displayed metrics without overlap."
+      }
     },
     {
       "id": "it-icc-result-details",
@@ -10271,7 +11331,15 @@
       "pixelSize": [
         1816,
         1896
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "11de1ec231a512ff8cd097db1afec528931ad22980e0e3b99bb44b7e3b83e369",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Three panels show the same ICC104050 record with66970LNAC+37080HNAC and35.64HNAP; labels1–10 align with info/dialog/plots/metrics/gate fields."
+      }
     },
     {
       "id": "it-gate-settings-list",
@@ -10377,12 +11445,18 @@
         {
           "label": "4",
           "at": [
-            460,
-            111
+            545,
+            82
           ],
           "target": [
-            422,
-            111
+            480,
+            100
+          ],
+          "via": [
+            [
+              520,
+              92
+            ]
           ],
           "meaning": "Gate/cartridge type column"
         },
@@ -10452,11 +11526,19 @@
         480
       ],
       "inputSha256": "7ab0164261a3619786725c509a89daf94d6cfb1d10cc3731f4655931df9a0b8f",
-      "sha256": "d11790e3cefa6e46e263dc0e655c9f7a3893745dc656d16f80f7cd986c7db90d",
+      "sha256": "cdb25825f2da1207bd21d74fff4d7cf7fe51e12b85b248d25dd86a6ee0f78658",
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "cdb25825f2da1207bd21d74fff4d7cf7fe51e12b85b248d25dd86a6ee0f78658",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Badge4 now above and right of header with bent leader; Tipologia entirely visible."
+      }
     },
     {
       "id": "it-tcc-gate-definition",
@@ -10721,7 +11803,15 @@
       "pixelSize": [
         1776,
         1808
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "88036166079f22db343ab375858302de83be4815680da5d4c36e2e21aeec5016",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Latest labels1/2/3 below coordinates/delete/add; a–d vertices match(4,0),(4,3),(6.7,5.7),(6.7,0);5HNA and6preview correct."
+      }
     },
     {
       "id": "it-icc-gate-definition",
@@ -10750,7 +11840,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "2e4fd97953d54edb982061509b5ecda8bf194845fc8a453cae9ae4d68a8eb478",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "ActualICC coordinates and visible delete/add/selector/preview controls preserve original screen context."
+      }
     },
     {
       "id": "it-hna-lower-limit",
@@ -10779,7 +11877,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "437eb2f283ab06d2c72e17fb881c9dc61423ecef2ae1ed2e37c434224acbffe4",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "HNA5.10 field and selector/preview/save context visible."
+      }
     },
     {
       "id": "it-support-and-service-information",
@@ -10808,7 +11914,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "74feaff5bb36388f035834effa8aad5e5b2be43b6c2371c8c213a0a32c71b0b7",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Current Support & Service header, maintenance status, manual/support contacts and diagnostic action entirely visible."
+      }
     },
     {
       "id": "it-warning-high-ssc-baseline",
@@ -10837,7 +11951,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "601e1ad3a920d9cbaaecf7e9cb844c9ef948f806b27493dd51c515bf54f46c4b",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Current W04 detail, sample metadata, three real scientific plots and Close visible."
+      }
     },
     {
       "id": "it-noncritical-error-empty-sample",
@@ -10866,7 +11988,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "8d7fc04185a5ee406f0923ef8e8b129334500d8122da9695f06de70f83185f55",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Current E15 detail and full remedy/Close visible; correct noncritical glyph."
+      }
     },
     {
       "id": "it-critical-error-missing-cartridge",
@@ -10895,7 +12025,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "b08e38fa1a001704d1609d5b3e5d2fd2e0c86e3e411fd10397e7cd436f285766",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Current E04 detail and full remedy/Close visible; correct critical glyph."
+      }
     },
     {
       "id": "it-error-log",
@@ -10957,12 +12095,22 @@
         {
           "label": "2",
           "at": [
-            215,
+            240,
             111
           ],
           "target": [
-            150,
-            147
+            170,
+            139
+          ],
+          "via": [
+            [
+              240,
+              135
+            ],
+            [
+              177,
+              135
+            ]
           ],
           "meaning": "Event-type/severity icon column"
         },
@@ -11008,11 +12156,19 @@
         480
       ],
       "inputSha256": "314efd196a1bd7109f1b3390c716cab35ca63f1ece2928cce2309b02750a5869",
-      "sha256": "a56285cf7438caf20ba759eeab5300eb16e7f3bb44daf77aaa6758fad1aaa766",
+      "sha256": "31199daa667e6c683295311f00cb5636ccd887eebfcff83845f6fe4cb967e709",
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "31199daa667e6c683295311f00cb5636ccd887eebfcff83845f6fe4cb967e709",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Badge2 now after header with bent leader to green event icon; Tipologia entirely visible."
+      }
     },
     {
       "id": "it-self-check-results",
@@ -11041,7 +12197,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "6f10da4e367433b8a880205530cdb19912f64022f080be72f49f1ba4357befd3",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Real PASS records and Back/Rerun visible; no clipped lines."
+      }
     },
     {
       "id": "it-error-log-clear-errors",
@@ -11084,7 +12248,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "4cf66f477951f7f4ca8ecafdaa72b8244afa38879f8c4357ddd335d4507eb538",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Red outline fits Clear errors and retains full log/time range."
+      }
     },
     {
       "id": "it-home-settings-button",
@@ -11119,7 +12291,15 @@
       "pixelSize": [
         308,
         126
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "cbbfd266212695339c3dfb097686512949a44c60d0deca7eac7529ae0b9bb6a0",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Exact current Home Settings control crop retains full glyph and text."
+      }
     },
     {
       "id": "it-web-dashboard",
@@ -11259,7 +12439,15 @@
       "pixelSize": [
         2736,
         936
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "df1ec63363682276597797eef86b3b3739e87843d2f087f9db04101ff04ed828",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet inspection; raw source previously inspected at full size",
+        "notes": "Labels 1–6 point to left navigation, instrument state, latest result dashboard, language, user menu and actual progress. No annotation obscures a control label."
+      }
     },
     {
       "id": "it-web-fcs-download",
@@ -11325,7 +12513,15 @@
       "pixelSize": [
         724,
         476
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "e6c093ba24b5d8a69e1b17942414e5c321b6749363f24b036081cfdd02478cbb",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet inspection; raw source previously inspected at full size",
+        "notes": "Position X and red arrow both identify the current fcs link beside img; real three-row result context retained."
+      }
     },
     {
       "id": "it-web-zip-download",
@@ -11354,7 +12550,15 @@
       "pixelSize": [
         984,
         84
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "cd693b3c4e5b68f7b4ff90808d07e591c0292a482b8f318913332aafd7304a92",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet inspection; raw source previously inspected at full size",
+        "notes": "Date range and localized ZIP action are complete and readable."
+      }
     },
     {
       "id": "it-web-results-download-formats",
@@ -11407,7 +12611,15 @@
       "pixelSize": [
         2100,
         582
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "1a2e12b8f19cba9c5c4035846d4da6a2bcc20acd501178fb2189b8c218598ab2",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet inspection; raw source previously inspected at full size",
+        "notes": "XLSX, CSV and PDF actions shown for Online, Manual and instrument validation; arrow touches panel heading edge."
+      }
     },
     {
       "id": "it-web-plots-navigation",
@@ -11466,7 +12678,15 @@
       "pixelSize": [
         588,
         190
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "36e60cff78d8585fc7464b31f39843eece5aec02aef279bd6d4e71efa5c2cc5b",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet inspection; raw source previously inspected at full size",
+        "notes": "Arrow identifies actual localized selected Plots navigation entry, with complete icon and label."
+      }
     },
     {
       "id": "it-web-measurement-interval",
@@ -11534,7 +12754,15 @@
       "pixelSize": [
         2560,
         630
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "5e279ab1ef37ad5e73de627b9da223ee63571424e15b676218b39beb282c5680",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet and full-size image inspection",
+        "notes": "Settings navigation and actual 120-minute interval field identified; sample and SAVE controls remain readable."
+      }
     },
     {
       "id": "it-web-plots-play",
@@ -11587,7 +12815,15 @@
       "pixelSize": [
         1080,
         258
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "84e13334665ffbcd4de2b01376f6da58064cffc5f0f5ce21b870aa76efbdbd03",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet and full-size image inspection",
+        "notes": "Arrow touches Play button upper edge and leaves its icon clear. Genuine localized toolbar wrapping retained."
+      }
     },
     {
       "id": "it-web-plots-date-range",
@@ -11669,7 +12905,15 @@
       "pixelSize": [
         2120,
         448
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "0cb68066e6e6fb79a1084df4b804b73fffec7885056648034321c5d7f54b0ba5",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet and full-size image inspection",
+        "notes": "Previous/Next highlight and arrow from upper white margin identify actual first-row stepping buttons, avoiding wrapped Download FCS; slider arrow identifies handle, with both endpoint dates readable."
+      }
     },
     {
       "id": "it-web-user-reboot-menu",
@@ -11698,7 +12942,15 @@
       "pixelSize": [
         424,
         248
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "b99b150a6ff3a6607a75309ddb740b334d7a751d4845d9d03a654689e0200446",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet inspection; raw source previously inspected at full size",
+        "notes": "Current Admin dropdown has actual localized Reboot and Sign out actions; menu fully visible without triggering either."
+      }
     },
     {
       "id": "it-web-system-info-navigation",
@@ -11733,7 +12985,15 @@
       "pixelSize": [
         460,
         100
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "827334c6a8241ec9c57cb6ab8efd84d52c3f73a39137219016e9e543d6964a07",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet inspection; raw source previously inspected at full size",
+        "notes": "Complete localized current System info navigation row and icon with clean adjacent-row strips; no clipped neighboring label."
+      }
     },
     {
       "id": "es-system-services",
@@ -11765,7 +13025,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "5cf187ede2fe12a629462af97c759243772be5145c88caad2e633a6e85302cf2",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Current Manage system services screen is readable; HTTP,HTTPS,Modbus,VNC,FTP,SMB and ports visible."
+      }
     },
     {
       "id": "es-digital-input-configuration",
@@ -11890,7 +13158,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "215abaecfae45fd256a7d75bac814eb4f836d9e7cfe3a0972c44b5b644571e17",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Callouts1–5 and field outline align with triggers, input selection and scheduler. No text or control overlap."
+      }
     },
     {
       "id": "es-analog-output-configuration",
@@ -12007,7 +13283,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "999a12f5d0339ed2717edf02c24e278870053840e85dceae80548132b8165722",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Callouts1–5 align with port mapping, min/max/count fields and clear button."
+      }
     },
     {
       "id": "es-output-test-controls",
@@ -12158,7 +13442,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "79c7e6ffc39f023b2fac1a6a52497b7ba57dedc35f4092cbf27bdeca1df96d24",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Callouts1–7 map values, digital/analog tests, reset and two selected analog ports."
+      }
     },
     {
       "id": "es-import-settings-options",
@@ -12193,7 +13485,15 @@
       "pixelSize": [
         1000,
         310
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "2e49d2ed144c064fde8082f25d5af49858e9c6b1ce856ed394022ad30c88c25a",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Crop shows exactly the three current import checkboxes, entire labels visible."
+      }
     },
     {
       "id": "es-usb-import-and-export",
@@ -12225,7 +13525,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "a4b46605d3a871dfd220250b82d86f66d77fc6a5c901fc39e1dcacd862dccfc1",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Full selectedUSB and folder context plus Refresh/Import/Export controls visible."
+      }
     },
     {
       "id": "es-alarm-configuration",
@@ -12316,35 +13624,55 @@
         {
           "label": "4",
           "at": [
-            505,
+            755,
             221
           ],
           "target": [
-            540,
-            221
+            555,
+            236
+          ],
+          "via": [
+            [
+              715,
+              244
+            ],
+            [
+              555,
+              244
+            ]
           ],
           "meaning": "Greater-than/less-than condition"
         },
         {
           "label": "5",
           "at": [
-            505,
-            290
+            822,
+            320
           ],
           "target": [
-            540,
+            700,
             290
+          ],
+          "via": [
+            [
+              780,
+              310
+            ],
+            [
+              715,
+              310
+            ]
           ],
           "meaning": "Threshold field"
         },
         {
           "label": "6",
           "at": [
-            485,
-            324
+            506,
+            329
           ],
           "target": [
-            472,
+            488,
             313
           ],
           "meaning": "Display-alarm and color controls"
@@ -12354,7 +13682,7 @@
         [
           296,
           177,
-          177,
+          192,
           137
         ]
       ],
@@ -12363,11 +13691,19 @@
         480
       ],
       "inputSha256": "b25899ca8ff1d972e72bea0ea3436cb5a36f69a555211952898030fc3301fee0",
-      "sha256": "5992022f0b6e2cacfd0ec3c0cc879a8483fb416cf8881a9099de2c49aebb524c",
+      "sha256": "7ed5b6f029a5c38249e4e93ace861722f336a76566737e0f9060e5f4476816d6",
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "7ed5b6f029a5c38249e4e93ace861722f336a76566737e0f9060e5f4476816d6",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Wider red frame accommodates Mostrar alarma; badge4/5 and bent leaders clear checkbox/threshold captions. Entire Umbral visible."
+      }
     },
     {
       "id": "es-cartridge-alarm-source",
@@ -12402,7 +13738,15 @@
       "pixelSize": [
         1200,
         600
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "ddb423200d4af76c444e01a7f4e5becc947e6ea96d4ceacebd5ff4d940358074",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Full metrics chooser crop retains the selected Cartridge Remaining state and Cancel/Confirm controls."
+      }
     },
     {
       "id": "es-network-configuration",
@@ -12476,7 +13820,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "0807ed0cdb9822a92de25539bfffbd2d4e2f37992f7e1763ce10599311226564",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Label1DHCP and label2static field region match. DHCP currently selected; disabled static fields remain readable beside actualIP192.0.2.50."
+      }
     },
     {
       "id": "es-date-and-time-settings",
@@ -12505,7 +13857,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "4daa2b2e2eb047fdf8d75d79ba0ad66198e11dca6068d8ace8e33ec11756e89d",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Current calendar/time/Zurich zone and reset/synchronization/set controls readable."
+      }
     },
     {
       "id": "es-time-synchronization-settings",
@@ -12534,7 +13894,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "905adfd2be4696b62aae19b66884ad506cd6d5e24285c7e49c969dba4b41eca9",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "NTP/Modbus source, both NTP fields, test/reset/OK visible."
+      }
     },
     {
       "id": "es-home-overview",
@@ -12774,7 +14142,15 @@
       "pixelSize": [
         1808,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "533bb154bfda0a2df6711f87f45bbc2b53f326f6894743c601b54f7b910ac81e",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "All labels1–9 and regions A/B/C target the current Home controls; legend7Results,8Mode,9Measure. Settings remains visible."
+      }
     },
     {
       "id": "es-online-results-chart",
@@ -12821,7 +14197,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "ded911f02e92eeefb3ba8b99450e60346644c37c3af4b8b147d50c27e49650d5",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Arrow points to the current line-chart settings/time-selector; populated genuine plots remain visible."
+      }
     },
     {
       "id": "es-online-chart-settings",
@@ -12938,7 +14322,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "d933bcf93afb8a7138968017c34b2af323a907ccda9acf294042de0fc9243067",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Callouts1–5 target ratio/count ranges, interval settings, scale and displayed metrics without overlap."
+      }
     },
     {
       "id": "es-icc-result-details",
@@ -13198,7 +14590,15 @@
       "pixelSize": [
         1816,
         1896
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "2064f896c8530f4c6d5c0825eaffc9adc85b2bb6e56c0c6db8dc27b42ead48a2",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Three panels show the same ICC104050 record with66970LNAC+37080HNAC and35.64HNAP; labels1–10 align with info/dialog/plots/metrics/gate fields."
+      }
     },
     {
       "id": "es-gate-settings-list",
@@ -13383,7 +14783,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "fee02289db9cab8c6cd25a6c6c31669d68744a5c190e7fd58519566f49a79fae",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Callouts1–9 align with custom/default/doubledefault gate, type, delete, preview, copy, edit and New controls; masked icons render."
+      }
     },
     {
       "id": "es-tcc-gate-definition",
@@ -13648,7 +15056,15 @@
       "pixelSize": [
         1776,
         1808
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "36bf1e46090e2f6631eb5f47364557fc2a0482608648ed0b2108c286b6887e8f",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Latest labels1/2/3 below coordinates/delete/add; a–d vertices match(4,0),(4,3),(6.7,5.7),(6.7,0);5HNA and6preview correct."
+      }
     },
     {
       "id": "es-icc-gate-definition",
@@ -13677,7 +15093,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "a52cbee333907acfe9f8b8e87f2f813e55731cf205f800ab3da22cc18e16da8a",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "ActualICC coordinates and visible delete/add/selector/preview controls preserve original screen context."
+      }
     },
     {
       "id": "es-hna-lower-limit",
@@ -13706,7 +15130,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "323dd89e46cad35b54dc83249af037eb37940df20230de4edab02a2fe5a5457d",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "HNA5.10 field and selector/preview/save context visible."
+      }
     },
     {
       "id": "es-support-and-service-information",
@@ -13735,7 +15167,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "87e3f60c9ca30f368fbfc36715b1b5b5d656a37cae85880a17e1e4b94fd5fa8b",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Current Support & Service header, maintenance status, manual/support contacts and diagnostic action entirely visible."
+      }
     },
     {
       "id": "es-warning-high-ssc-baseline",
@@ -13764,7 +15204,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "d11e79eb2e554aa77f6852d5b34d9fdfdefc473c3f6a56516c9e0a02dedb9e6b",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Current W04 detail, sample metadata, three real scientific plots and Close visible."
+      }
     },
     {
       "id": "es-noncritical-error-empty-sample",
@@ -13793,7 +15241,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "d416cbfa0a69f653df419f2fa37987bab68a0b5fdc2d79b9dad64462eb2f99b1",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Current E15 detail and full remedy/Close visible; correct noncritical glyph."
+      }
     },
     {
       "id": "es-critical-error-missing-cartridge",
@@ -13822,7 +15278,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "6e952b062041ad6c05f625209f1945d017b41c2099838abc02051a0ee2c7b997",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Current E04 detail and full remedy/Close visible; correct critical glyph."
+      }
     },
     {
       "id": "es-error-log",
@@ -13939,7 +15403,15 @@
       "pixelSize": [
         1776,
         1136
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "adc4dedb54ef45302d95ceb83bd8d236dc380c065485d99dbe07c0ee385d1395",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Individual final full-size visual review plus complete locale contact sheets",
+        "notes": "Callouts1date,2type,3description,4Clear errors and5time range correct without text overlap."
+      }
     },
     {
       "id": "es-self-check-results",
@@ -13968,7 +15440,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "a604e9293d330e78bfc95429373f14f3bad75c5b3706dfa856ab070ad033616c",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Real PASS records and Back/Rerun visible; no clipped lines."
+      }
     },
     {
       "id": "es-error-log-clear-errors",
@@ -14011,7 +15491,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "1ca2180077fda52901ff8339ed40cf1e63b919a240bc157e6d9accfe8548aa70",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Red outline fits Clear errors and retains full log/time range."
+      }
     },
     {
       "id": "es-home-settings-button",
@@ -14046,7 +15534,15 @@
       "pixelSize": [
         214,
         126
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "a056caf9929c8a9f73100af9806331dc0fb98b613e3b72091667286612490c7f",
+        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "Complete final locale contact-sheet visual review; production raw full-size screen independently reviewed by gui_runtime",
+        "notes": "Exact current Home Settings control crop retains full glyph and text."
+      }
     },
     {
       "id": "es-web-dashboard",
@@ -14186,7 +15682,15 @@
       "pixelSize": [
         2736,
         936
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "dd59a2bd37ae473de8ea9596ce7743a53b833952002e35569319df30b4f9a875",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet inspection; raw source previously inspected at full size",
+        "notes": "Labels 1–6 point to left navigation, instrument state, latest result dashboard, language, user menu and actual progress. No annotation obscures a control label."
+      }
     },
     {
       "id": "es-web-fcs-download",
@@ -14252,7 +15756,15 @@
       "pixelSize": [
         724,
         476
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "31a8f57bda3fc90b572824197e0bee92d4718fa1accc49467585c49c24c92dfb",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet inspection; raw source previously inspected at full size",
+        "notes": "Position X and red arrow both identify the current fcs link beside img; real three-row result context retained."
+      }
     },
     {
       "id": "es-web-zip-download",
@@ -14281,7 +15793,15 @@
       "pixelSize": [
         854,
         84
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "0ad1d8a8f4854550ac59e27bc9fe4e8857cd7c55f5fe639c010f7b983017cffe",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet inspection; raw source previously inspected at full size",
+        "notes": "Date range and localized ZIP action are complete and readable."
+      }
     },
     {
       "id": "es-web-results-download-formats",
@@ -14334,7 +15854,15 @@
       "pixelSize": [
         2100,
         578
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "107b6d39726d90f4fde31e6214e7f569ecd20cbcd78fd2d476c4424874c3b85b",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet inspection; raw source previously inspected at full size",
+        "notes": "XLSX, CSV and PDF actions shown for Online, Manual and instrument validation; arrow touches panel heading edge."
+      }
     },
     {
       "id": "es-web-plots-navigation",
@@ -14393,7 +15921,15 @@
       "pixelSize": [
         588,
         190
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "22072967ae31871562f714bbe0bf08a4f82b6445c1339a1b7cd58406b5faa03c",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet inspection; raw source previously inspected at full size",
+        "notes": "Arrow identifies actual localized selected Plots navigation entry, with complete icon and label."
+      }
     },
     {
       "id": "es-web-measurement-interval",
@@ -14461,7 +15997,15 @@
       "pixelSize": [
         2560,
         630
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "bb45d403488a4fec3ed909c1374ad786e4d41c8e2741d4e0ef966ff2122ee9cb",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet and full-size image inspection",
+        "notes": "Settings navigation and actual 120-minute interval field identified; sample and SAVE controls remain readable."
+      }
     },
     {
       "id": "es-web-plots-play",
@@ -14514,7 +16058,15 @@
       "pixelSize": [
         1080,
         190
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "339328bb9d09903500d6736c3e0d76217d6d5eeea151f79579d5a5095b7beb90",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet and full-size image inspection",
+        "notes": "Arrow touches Play button upper edge and leaves its icon clear. Genuine localized toolbar wrapping retained."
+      }
     },
     {
       "id": "es-web-plots-date-range",
@@ -14596,7 +16148,15 @@
       "pixelSize": [
         2120,
         380
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "6202e4ffd4d8bf5dd1d7ba744fed92bcc222b9baf27002fe68684b4d05ccb733",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet and full-size image inspection",
+        "notes": "Previous/Next highlight and arrow from upper white margin identify actual first-row stepping buttons, avoiding wrapped Download FCS; slider arrow identifies handle, with both endpoint dates readable."
+      }
     },
     {
       "id": "es-web-user-reboot-menu",
@@ -14625,7 +16185,15 @@
       "pixelSize": [
         424,
         248
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "e5f55c821776334df63cc7237f186db5a9ca9d4dd0e91c6686b3cd592613875c",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet inspection; raw source previously inspected at full size",
+        "notes": "Current Admin dropdown has actual localized Reboot and Sign out actions; menu fully visible without triggering either."
+      }
     },
     {
       "id": "es-web-system-info-navigation",
@@ -14660,7 +16228,15 @@
       "pixelSize": [
         460,
         100
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "cd1913fcaed5bfa55cd6a46a3212c0a48885f9b543d5b3849f3c604ceaa27a55",
+        "reviewedAt": "2026-10-11T19:39:12.242Z",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Contact sheet inspection; raw source previously inspected at full size",
+        "notes": "Complete localized current System info navigation row and icon with clean adjacent-row strips; no clipped neighboring label."
+      }
     },
     {
       "id": "icon-back-button",
@@ -14679,7 +16255,7 @@
         60
       ],
       "output": "/img/gui/icons/back-button.png",
-      "alt": "BactoSense back button",
+      "alt": "BactoSense — Back button",
       "replaces": [
         "/img/manual/cell-05da61fc8424.png"
       ],
@@ -14692,7 +16268,22 @@
       "pixelSize": [
         160,
         120
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "3611f615bc964ba559a2e1688cf5762600e0709c989b733da5b9a6a7cc3c3ea1",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — Back button",
+        "de": "BactoSense — Schaltfläche Zurück",
+        "fr": "BactoSense — Bouton de retour",
+        "it": "BactoSense — Pulsante Indietro",
+        "es": "BactoSense — Botón Volver"
+      }
     },
     {
       "id": "icon-date-time-button",
@@ -14711,7 +16302,7 @@
         80
       ],
       "output": "/img/gui/icons/date-time-button.png",
-      "alt": "BactoSense date time button",
+      "alt": "BactoSense — Date and time settings",
       "replaces": [
         "/img/manual/asset-a42806c7c455.png"
       ],
@@ -14724,7 +16315,22 @@
       "pixelSize": [
         160,
         160
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "3785a1a5120b366512dbad05a0cc9b6a24b7c4592e270d52ace1f22822f06945",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — Date and time settings",
+        "de": "BactoSense — Datum und Uhrzeit",
+        "fr": "BactoSense — Réglage de la date et de l’heure",
+        "it": "BactoSense — Impostazioni di data e ora",
+        "es": "BactoSense — Configuración de fecha y hora"
+      }
     },
     {
       "id": "icon-demo-mode-button",
@@ -14743,7 +16349,7 @@
         80
       ],
       "output": "/img/gui/icons/demo-mode-button.png",
-      "alt": "BactoSense demo mode button",
+      "alt": "BactoSense — Demo mode settings",
       "replaces": [
         "/img/manual/asset-65a7aba669db.png"
       ],
@@ -14756,7 +16362,22 @@
       "pixelSize": [
         160,
         160
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "477ce6e2811fc16d143edb7ae9a98cc501babf2ce2cfc48a69664aa312358c76",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — Demo mode settings",
+        "de": "BactoSense — Einstellungen für den Demomodus",
+        "fr": "BactoSense — Paramètres du mode démo",
+        "it": "BactoSense — Impostazioni della modalità demo",
+        "es": "BactoSense — Configuración del modo de demostración"
+      }
     },
     {
       "id": "icon-edit-gate-button",
@@ -14775,7 +16396,7 @@
         48
       ],
       "output": "/img/gui/icons/edit-gate-button.png",
-      "alt": "BactoSense edit gate button",
+      "alt": "BactoSense — Edit gate",
       "replaces": [
         "/img/manual/cell-95fee81e2625.png",
         "/img/manual/cell-fd72b5bdcc2a.png"
@@ -14790,7 +16411,22 @@
       "pixelSize": [
         96,
         96
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "f20cedfff61579b2e3083454c0b7a177a139a674d5badbe4817692fd769d788e",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — Edit gate",
+        "de": "BactoSense — Gate bearbeiten",
+        "fr": "BactoSense — Modifier la fenêtre",
+        "it": "BactoSense — Modificare il gate",
+        "es": "BactoSense — Editar la región de análisis"
+      }
     },
     {
       "id": "icon-factory-reset-button",
@@ -14809,7 +16445,7 @@
         80
       ],
       "output": "/img/gui/icons/factory-reset-button.png",
-      "alt": "BactoSense factory reset button",
+      "alt": "BactoSense — Restore factory settings",
       "replaces": [
         "/img/manual/asset-e6d546463675.png"
       ],
@@ -14822,7 +16458,22 @@
       "pixelSize": [
         160,
         160
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "47f41d17e580b951a7a5d388f8e456748b44851261981deae74f8d28ca1d467f",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — Restore factory settings",
+        "de": "BactoSense — Werkseinstellungen wiederherstellen",
+        "fr": "BactoSense — Rétablir les paramètres d’usine",
+        "it": "BactoSense — Ripristinare le impostazioni di fabbrica",
+        "es": "BactoSense — Restablecer la configuración de fábrica"
+      }
     },
     {
       "id": "icon-gate-settings-button",
@@ -14841,7 +16492,7 @@
         80
       ],
       "output": "/img/gui/icons/gate-settings-button.png",
-      "alt": "BactoSense gate settings button",
+      "alt": "BactoSense — Gate settings",
       "replaces": [
         "/img/manual/cell-882cf24141b5.png"
       ],
@@ -14854,7 +16505,22 @@
       "pixelSize": [
         160,
         160
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "ce56d9dedb82a424cf12e982ae031bf5a0bd5639571e7d6858e48760e5365970",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — Gate settings",
+        "de": "BactoSense — Gate-Einstellungen",
+        "fr": "BactoSense — Paramètres des fenêtres",
+        "it": "BactoSense — Impostazioni dei gate",
+        "es": "BactoSense — Configuración de las regiones de análisis"
+      }
     },
     {
       "id": "icon-home-button",
@@ -14873,7 +16539,7 @@
         60
       ],
       "output": "/img/gui/icons/home-button.png",
-      "alt": "BactoSense home button",
+      "alt": "BactoSense — Home button",
       "replaces": [
         "/img/manual/asset-c4707aba8b28.png",
         "/img/manual/cell-d07318a281b1.png",
@@ -14892,7 +16558,22 @@
       "pixelSize": [
         160,
         120
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "aff2a930b7079e39c09f77818b8f26fc31d96e1462e6cbf784c7f9008d684da3",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — Home button",
+        "de": "BactoSense — Schaltfläche Startseite",
+        "fr": "BactoSense — Bouton d’accueil",
+        "it": "BactoSense — Pulsante della schermata iniziale",
+        "es": "BactoSense — Botón Inicio"
+      }
     },
     {
       "id": "icon-intervention-info-button",
@@ -14911,7 +16592,7 @@
         80
       ],
       "output": "/img/gui/icons/intervention-info-button.png",
-      "alt": "BactoSense intervention info button",
+      "alt": "BactoSense — Support and maintenance information",
       "replaces": [
         "/img/manual/cell-c75e8c1aa658.png"
       ],
@@ -14924,7 +16605,22 @@
       "pixelSize": [
         160,
         160
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "84a02116bfb7b9cf886c2ebb06f4544208a72c80c2c56db9bc35b7d1b0d334f5",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — Support and maintenance information",
+        "de": "BactoSense — Informationen zu Support und Wartung",
+        "fr": "BactoSense — Informations de support et de maintenance",
+        "it": "BactoSense — Informazioni su assistenza e manutenzione",
+        "es": "BactoSense — Información de soporte y mantenimiento"
+      }
     },
     {
       "id": "icon-intervention-log-button",
@@ -14943,7 +16639,7 @@
         80
       ],
       "output": "/img/gui/icons/intervention-log-button.png",
-      "alt": "BactoSense intervention log button",
+      "alt": "BactoSense — Maintenance log",
       "replaces": [
         "/img/manual/cell-c425fdd03b9b.png"
       ],
@@ -14956,7 +16652,22 @@
       "pixelSize": [
         160,
         160
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "cf562eaf162e8b603037254cfdbd289d3bd7a59bb5fead127914e17cbc29231a",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — Maintenance log",
+        "de": "BactoSense — Wartungsprotokoll",
+        "fr": "BactoSense — Journal de maintenance",
+        "it": "BactoSense — Registro di manutenzione",
+        "es": "BactoSense — Registro de mantenimiento"
+      }
     },
     {
       "id": "icon-maintenance-button",
@@ -14975,7 +16686,7 @@
         80
       ],
       "output": "/img/gui/icons/maintenance-button.png",
-      "alt": "BactoSense maintenance button",
+      "alt": "BactoSense — Maintenance menu",
       "replaces": [
         "/img/manual/asset-41c98df7efd4.png",
         "/img/manual/cell-fbee6be10e98.png"
@@ -14996,7 +16707,22 @@
       "pixelSize": [
         160,
         160
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "18ff864254b34b9273f849b873c7f474b24340fd0da24a217af6968c4007c296",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — Maintenance menu",
+        "de": "BactoSense — Wartungsmenü",
+        "fr": "BactoSense — Menu de maintenance",
+        "it": "BactoSense — Menu di manutenzione",
+        "es": "BactoSense — Menú de mantenimiento"
+      }
     },
     {
       "id": "icon-network-button",
@@ -15015,7 +16741,7 @@
         80
       ],
       "output": "/img/gui/icons/network-button.png",
-      "alt": "BactoSense network button",
+      "alt": "BactoSense — Network settings",
       "replaces": [
         "/img/manual/asset-74d2c341d686.png"
       ],
@@ -15028,7 +16754,22 @@
       "pixelSize": [
         160,
         160
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "92172d3f13db8f62e12446ac5ea7c2fe1d111ebb4db7aefcc7eb002d1899bcd3",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — Network settings",
+        "de": "BactoSense — Netzwerkeinstellungen",
+        "fr": "BactoSense — Paramètres réseau",
+        "it": "BactoSense — Impostazioni di rete",
+        "es": "BactoSense — Configuración de red"
+      }
     },
     {
       "id": "icon-special-import-export-button",
@@ -15047,7 +16788,7 @@
         80
       ],
       "output": "/img/gui/icons/special-import-export-button.png",
-      "alt": "BactoSense special import export button",
+      "alt": "BactoSense — Special export and import options",
       "replaces": [
         "/img/manual/asset-e8682259cb34.png"
       ],
@@ -15060,7 +16801,22 @@
       "pixelSize": [
         160,
         160
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "20f70dc2259661507ba17dcac66a606d8b0b935406046fcc116e60131e188c38",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — Special export and import options",
+        "de": "BactoSense — Spezielle Export- und Importoptionen",
+        "fr": "BactoSense — Options spéciales d’exportation et d’importation",
+        "it": "BactoSense — Opzioni speciali di esportazione e importazione",
+        "es": "BactoSense — Opciones especiales de exportación e importación"
+      }
     },
     {
       "id": "icon-system-info-button",
@@ -15079,7 +16835,7 @@
         80
       ],
       "output": "/img/gui/icons/system-info-button.png",
-      "alt": "BactoSense system info button",
+      "alt": "BactoSense — System information",
       "replaces": [
         "/img/manual/cell-fc64c36946da.png"
       ],
@@ -15092,7 +16848,22 @@
       "pixelSize": [
         160,
         160
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "37d6ee7ae16dbe7a7c9ab3d246bd7eb364c515d3bd4d46806db580052ed792b0",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — System information",
+        "de": "BactoSense — Systeminformationen",
+        "fr": "BactoSense — Informations système",
+        "it": "BactoSense — Informazioni di sistema",
+        "es": "BactoSense — Información del sistema"
+      }
     },
     {
       "id": "icon-system-settings-button",
@@ -15111,7 +16882,7 @@
         80
       ],
       "output": "/img/gui/icons/system-settings-button.png",
-      "alt": "BactoSense system settings button",
+      "alt": "BactoSense — System settings",
       "replaces": [
         "/img/manual/asset-a7a911718f1c.png"
       ],
@@ -15124,7 +16895,22 @@
       "pixelSize": [
         160,
         160
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "8418bf7386984173e4e41ceffdcc6457e82a6dcd95cad089b6113ecdb70749fc",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — System settings",
+        "de": "BactoSense — Systemeinstellungen",
+        "fr": "BactoSense — Paramètres système",
+        "it": "BactoSense — Impostazioni di sistema",
+        "es": "BactoSense — Configuración del sistema"
+      }
     },
     {
       "id": "icon-alarm-status",
@@ -15143,7 +16929,7 @@
         32
       ],
       "output": "/img/gui/icons/alarm-status.png",
-      "alt": "BactoSense alarm status",
+      "alt": "BactoSense — Alarm active",
       "replaces": [
         "/img/manual/asset-601829975ed7.png"
       ],
@@ -15156,7 +16942,22 @@
       "pixelSize": [
         64,
         64
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "9e7f4aafee7b1efdec80a17b0ea85702963ac94e5e9a5e735f4484d420f299d7",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — Alarm active",
+        "de": "BactoSense — Alarm aktiv",
+        "fr": "BactoSense — Alarme active",
+        "it": "BactoSense — Allarme attivo",
+        "es": "BactoSense — Alarma activa"
+      }
     },
     {
       "id": "icon-cartridge-almost-empty-status",
@@ -15175,7 +16976,7 @@
         32
       ],
       "output": "/img/gui/icons/cartridge-almost-empty-status.png",
-      "alt": "BactoSense cartridge almost empty status",
+      "alt": "BactoSense — Cartridge almost empty",
       "replaces": [
         "/img/manual/asset-f8c9ed6e595a.png"
       ],
@@ -15188,7 +16989,22 @@
       "pixelSize": [
         64,
         64
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "f275713fef5893f0b4b3129f793b618906d9daf31afdf3f414df62340d3db2e7",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — Cartridge almost empty",
+        "de": "BactoSense — Kartusche fast leer",
+        "fr": "BactoSense — Cartouche presque vide",
+        "it": "BactoSense — Cartuccia quasi vuota",
+        "es": "BactoSense — Cartucho casi vacío"
+      }
     },
     {
       "id": "icon-cartridge-almost-expired-status",
@@ -15207,7 +17023,7 @@
         32
       ],
       "output": "/img/gui/icons/cartridge-almost-expired-status.png",
-      "alt": "BactoSense cartridge almost expired status",
+      "alt": "BactoSense — Cartridge nearing expiration",
       "replaces": [
         "/img/manual/asset-c3efc86358a9.png"
       ],
@@ -15220,7 +17036,22 @@
       "pixelSize": [
         64,
         64
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "be51c8bb44997b935c8a7e9a6939cb1b1fd6f56bef1866f3b0dcae375ef538d9",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — Cartridge nearing expiration",
+        "de": "BactoSense — Kartusche läuft bald ab",
+        "fr": "BactoSense — Cartouche bientôt périmée",
+        "it": "BactoSense — Cartuccia prossima alla scadenza",
+        "es": "BactoSense — Cartucho próximo a caducar"
+      }
     },
     {
       "id": "icon-cartridge-empty-status",
@@ -15239,7 +17070,7 @@
         32
       ],
       "output": "/img/gui/icons/cartridge-empty-status.png",
-      "alt": "BactoSense cartridge empty status",
+      "alt": "BactoSense — Cartridge empty",
       "replaces": [
         "/img/manual/cell-ec16f9129509.png"
       ],
@@ -15252,7 +17083,22 @@
       "pixelSize": [
         64,
         64
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "2f0737e20fde9b11dc5f76b540fbd08d79639dcb621b4e4569838780c4d4a159",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — Cartridge empty",
+        "de": "BactoSense — Kartusche leer",
+        "fr": "BactoSense — Cartouche vide",
+        "it": "BactoSense — Cartuccia vuota",
+        "es": "BactoSense — Cartucho vacío"
+      }
     },
     {
       "id": "icon-cartridge-expired-status",
@@ -15271,7 +17117,7 @@
         32
       ],
       "output": "/img/gui/icons/cartridge-expired-status.png",
-      "alt": "BactoSense cartridge expired status",
+      "alt": "BactoSense — Cartridge expired",
       "replaces": [
         "/img/manual/cell-9447c1d395cc.png"
       ],
@@ -15284,7 +17130,22 @@
       "pixelSize": [
         64,
         64
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "453326104989b63795d5347b8d36464d5ad5b61a2a481857f400a271bad5ef5c",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — Cartridge expired",
+        "de": "BactoSense — Kartusche abgelaufen",
+        "fr": "BactoSense — Cartouche périmée",
+        "it": "BactoSense — Cartuccia scaduta",
+        "es": "BactoSense — Cartucho caducado"
+      }
     },
     {
       "id": "icon-cartridge-level-status",
@@ -15303,7 +17164,7 @@
         32
       ],
       "output": "/img/gui/icons/cartridge-level-status.png",
-      "alt": "BactoSense cartridge level status",
+      "alt": "BactoSense — Cartridge filling level",
       "replaces": [
         "/img/manual/cell-7b30939634a3.png"
       ],
@@ -15316,7 +17177,22 @@
       "pixelSize": [
         64,
         64
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "a64d48ecdf122fb2f7b33229a50f941d853a8a82c51b8a4467fbaface6558196",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — Cartridge filling level",
+        "de": "BactoSense — Kartuschenfüllstand",
+        "fr": "BactoSense — Niveau de remplissage de la cartouche",
+        "it": "BactoSense — Livello di riempimento della cartuccia",
+        "es": "BactoSense — Nivel de llenado del cartucho"
+      }
     },
     {
       "id": "icon-cartridge-not-ready-status",
@@ -15335,7 +17211,7 @@
         32
       ],
       "output": "/img/gui/icons/cartridge-not-ready-status.png",
-      "alt": "BactoSense cartridge not ready status",
+      "alt": "BactoSense — Cartridge not ready",
       "replaces": [
         "/img/manual/cell-7bf18abd5784.png",
         "/img/manual/asset-b2065e0aa4d5.png"
@@ -15350,7 +17226,22 @@
       "pixelSize": [
         64,
         64
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "64563afed7d886202391906b1d8f3c9606d084b1fbdd3aa82fe155aa55e4b63b",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — Cartridge not ready",
+        "de": "BactoSense — Kartusche nicht bereit",
+        "fr": "BactoSense — Cartouche non prête",
+        "it": "BactoSense — Cartuccia non pronta",
+        "es": "BactoSense — Cartucho no preparado"
+      }
     },
     {
       "id": "icon-critical-error-event",
@@ -15369,7 +17260,7 @@
         32
       ],
       "output": "/img/gui/icons/critical-error-event.png",
-      "alt": "BactoSense critical error event",
+      "alt": "BactoSense — Critical error log entry",
       "replaces": [
         "/img/manual/cell-67d152256921.png"
       ],
@@ -15382,7 +17273,22 @@
       "pixelSize": [
         64,
         64
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "b46277703d602328e0f1cef2b15b85fc605a66e8cea70c1727888de5edadef1f",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — Critical error log entry",
+        "de": "BactoSense — Protokolleintrag: kritischer Fehler",
+        "fr": "BactoSense — Entrée du journal : erreur critique",
+        "it": "BactoSense — Voce del registro: errore critico",
+        "es": "BactoSense — Entrada del registro: error crítico"
+      }
     },
     {
       "id": "icon-critical-error-status",
@@ -15401,7 +17307,7 @@
         32
       ],
       "output": "/img/gui/icons/critical-error-status.png",
-      "alt": "BactoSense critical error status",
+      "alt": "BactoSense — Critical error",
       "replaces": [
         "/img/manual/asset-1bbc128332f2.png"
       ],
@@ -15414,7 +17320,22 @@
       "pixelSize": [
         64,
         64
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "2689da89613b15ae0c39a07188e23869fab2b18c9cdd7f7379d08496c6ddce8c",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — Critical error",
+        "de": "BactoSense — Kritischer Fehler",
+        "fr": "BactoSense — Erreur critique",
+        "it": "BactoSense — Errore critico",
+        "es": "BactoSense — Error crítico"
+      }
     },
     {
       "id": "icon-demo-mode-status",
@@ -15433,7 +17354,7 @@
         32
       ],
       "output": "/img/gui/icons/demo-mode-status.png",
-      "alt": "BactoSense demo mode status",
+      "alt": "BactoSense — Demo mode active",
       "replaces": [
         "/img/manual/asset-0a659e5a284a.png"
       ],
@@ -15446,7 +17367,22 @@
       "pixelSize": [
         64,
         64
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "c6b0bbb61fba420689e5030c0f0e84936d617288596c0d2862a90539f313b0e5",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — Demo mode active",
+        "de": "BactoSense — Demomodus aktiv",
+        "fr": "BactoSense — Mode démo actif",
+        "it": "BactoSense — Modalità demo attiva",
+        "es": "BactoSense — Modo de demostración activo"
+      }
     },
     {
       "id": "icon-errors-cleared-event",
@@ -15465,7 +17401,7 @@
         32
       ],
       "output": "/img/gui/icons/errors-cleared-event.png",
-      "alt": "BactoSense errors cleared event",
+      "alt": "BactoSense — Log entry: errors cleared",
       "replaces": [
         "/img/manual/cell-b4d48ec33659.png"
       ],
@@ -15478,7 +17414,22 @@
       "pixelSize": [
         64,
         64
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "fcd4b7dc35c9d9019afe1c7cb024bee6127a6a5eca675aabadb27922e56a377e",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — Log entry: errors cleared",
+        "de": "BactoSense — Protokolleintrag: Fehler gelöscht",
+        "fr": "BactoSense — Entrée du journal : erreurs acquittées",
+        "it": "BactoSense — Voce del registro: errori azzerati",
+        "es": "BactoSense — Entrada del registro: errores borrados"
+      }
     },
     {
       "id": "icon-noncritical-error-event",
@@ -15497,7 +17448,7 @@
         32
       ],
       "output": "/img/gui/icons/noncritical-error-event.png",
-      "alt": "BactoSense noncritical error event",
+      "alt": "BactoSense — Non-critical error log entry",
       "replaces": [
         "/img/manual/cell-168772cd9e6b.png"
       ],
@@ -15510,7 +17461,22 @@
       "pixelSize": [
         64,
         64
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "4b5f5f9d4ca3322d8345df1d19e0815c2373c5f50cc291bdfdf7de46d648306b",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — Non-critical error log entry",
+        "de": "BactoSense — Protokolleintrag: unkritischer Fehler",
+        "fr": "BactoSense — Entrée du journal : erreur non critique",
+        "it": "BactoSense — Voce del registro: errore non critico",
+        "es": "BactoSense — Entrada del registro: error no crítico"
+      }
     },
     {
       "id": "icon-noncritical-error-status",
@@ -15529,7 +17495,7 @@
         32
       ],
       "output": "/img/gui/icons/noncritical-error-status.png",
-      "alt": "BactoSense noncritical error status",
+      "alt": "BactoSense — Non-critical error",
       "replaces": [
         "/img/manual/asset-4b23f6b46f1e.png"
       ],
@@ -15542,7 +17508,22 @@
       "pixelSize": [
         64,
         64
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "c8d81de4eb85f7bc45cbc2a28ca6fd38769b69db49dd52c8abf164e34903183f",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — Non-critical error",
+        "de": "BactoSense — Unkritischer Fehler",
+        "fr": "BactoSense — Erreur non critique",
+        "it": "BactoSense — Errore non critico",
+        "es": "BactoSense — Error no crítico"
+      }
     },
     {
       "id": "icon-process-running-status",
@@ -15561,7 +17542,7 @@
         32
       ],
       "output": "/img/gui/icons/process-running-status.png",
-      "alt": "BactoSense process running status",
+      "alt": "BactoSense — Process running",
       "replaces": [
         "/img/manual/asset-dc77eba566ee.png"
       ],
@@ -15574,7 +17555,22 @@
       "pixelSize": [
         64,
         64
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "f9c532861dcc26ce03414ebb805f5b76075393f17d3cd806795943ec8cc557f6",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — Process running",
+        "de": "BactoSense — Prozess läuft",
+        "fr": "BactoSense — Processus en cours",
+        "it": "BactoSense — Processo in corso",
+        "es": "BactoSense — Proceso en curso"
+      }
     },
     {
       "id": "icon-service-required-status",
@@ -15593,7 +17589,7 @@
         32
       ],
       "output": "/img/gui/icons/service-required-status.png",
-      "alt": "BactoSense service required status",
+      "alt": "BactoSense — Service required",
       "replaces": [
         "/img/manual/cell-c721cca85bf4.png"
       ],
@@ -15606,7 +17602,36 @@
       "pixelSize": [
         64,
         64
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "9963e4c2c0f343b8fbce8bb51c03c8820156e61d33d7530c0a1e2ba844f28c86",
+        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
+        "reviewer": "screenshot_inventory",
+        "method": "final published icons contact sheet at usable size; exact pixel crop comparison to production atlas",
+        "notes": "Distinct real production component glyph and full control/status boundary visible; correct semantic filename and severity color."
+      },
+      "alts": {
+        "en": "BactoSense — Service required",
+        "de": "BactoSense — Wartung erforderlich",
+        "fr": "BactoSense — Maintenance nécessaire",
+        "it": "BactoSense — Manutenzione necessaria",
+        "es": "BactoSense — Mantenimiento necesario"
+      }
     }
-  ]
+  ],
+  "reviewSummary": {
+    "completedAt": "2026-10-11T19:49:59.878Z",
+    "figures": 214,
+    "native": 135,
+    "web": 50,
+    "icons": 29,
+    "allLocalesReviewed": true,
+    "unresolvedFindings": 0,
+    "privateEvidence": [
+      "output/gui-capture/native/annotated-en-review.json",
+      "output/gui-capture/native/annotated-localized-review.json",
+      "output/gui-capture/web/annotated-review.json"
+    ]
+  }
 }

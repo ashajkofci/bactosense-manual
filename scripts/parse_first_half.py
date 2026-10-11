@@ -176,8 +176,6 @@ def page_content(n):
   else:value=markup_block(b)
   if n==11 and txt.startswith('Practical procedures'):
    value=image_tag('/img/manual/icon-procedure.png','Practical procedure',40)+'\n\n'+value
-  if n==11 and txt.startswith('The screenshot is an example'):
-   value=image_tag('/img/manual/icon-screenshot.png','Example screenshot',40)+'\n\n'+value
   events.append((b['bbox'][1],value))
  for ii,img in enumerate(images):
   if ii in used_images:continue
@@ -191,14 +189,14 @@ def page_content(n):
   else:path=img['path']
   events.append((img_y,image_tag(path,f'Original manual illustration, printed page {n-6}',min(950,max(40,r.width*1.7)))))
  for icon in MANIFEST[n].get('vector_icons',[]):
-  if icon['name'] not in ['screenshot','procedure','gloves']:continue
+  if icon['name'] not in ['procedure','gloves']:continue
   if any(inside(icon['bbox'],r) for r in exclude):continue
   if any(inside(icon['bbox'],img['bbox']) for img in images):continue
   if n==11:continue
   iy=icon['bbox'][1]
   for t in tables:
    if t.bbox[1]-5 < iy < t.bbox[1]+50:iy=t.bbox[1]-1
-  events.append((iy,image_tag(icon['path'],{'screenshot':'Example screenshot','procedure':'Practical procedure','gloves':'Wear protective gloves'}[icon['name']],32)))
+  events.append((iy,image_tag(icon['path'],{'procedure':'Practical procedure','gloves':'Wear protective gloves'}[icon['name']],32)))
  return '\n\n'.join(v for _,v in sorted(events,key=lambda x:x[0]) if v),dict(pdf_page=n,tables=len(tables),images=len(images),notices=notice_count)
 
 def main():

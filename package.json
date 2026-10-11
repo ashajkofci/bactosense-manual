@@ -14,7 +14,11 @@
     "browser:install": "playwright install chromium",
     "manual:pdf": "node scripts/compile-pdf.mjs",
     "translations:check": "node scripts/check-translations.mjs",
-    "prebuild": "npm run translations:check",
+    "screenshots:prepare": "node scripts/gui-capture/prepare-figures.mjs",
+    "screenshots:render": "node scripts/gui-capture/render-figures.mjs",
+    "screenshots:apply": "node scripts/gui-capture/apply-figures.mjs",
+    "screenshots:check": "node scripts/gui-capture/check-figures.mjs",
+    "prebuild": "npm run translations:check && npm run screenshots:check",
     "manual:format": "node scripts/simplify-markdown.mjs"
   },
   "dependencies": {

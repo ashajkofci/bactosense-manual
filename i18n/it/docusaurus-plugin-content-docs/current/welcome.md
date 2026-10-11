@@ -1,14 +1,14 @@
 ---
-title: Manuale d’uso BactoSense
+title: BactoSense
 sidebar_label: Informazioni sul manuale
 sidebar_position: 0
 slug: /
 description: Manuale d’uso dei sistemi BactoSense per il monitoraggio batterico rapido.
 ---
 
-# Manuale d’uso BactoSense
+# BactoSense
 
-Versione del manuale **3.2.0** · Software BactoSense **3.2.0**
+Versione software **3.2.0**
 
 Sistemi per il monitoraggio batterico rapido
 
@@ -41,7 +41,7 @@ Questa edizione online segue i capitoli del manuale d’uso fornito. Utilizzare 
 
 ## Editore
 
-<img src="/img/manual/asset-53eb3be5b297.png" alt="bNovate Technologies" width="160" />
+![bNovate Technologies](/img/manual/asset-53eb3be5b297.png "width=160")
 
 bNovate Technologies SA  
 Ch. Dent d’Oche 1A  

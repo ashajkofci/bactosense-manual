@@ -24,12 +24,15 @@ for (const { locale, directory } of directories) {
     if (!/\.mdx?$/.test(file)) continue;
     const filename = path.join(root, directory, file);
     const original = await readFile(filename, 'utf8');
-    const updated = original.replace(/<img\b[^>]*>/g, (match,offset) => {
-      const source = match.match(/\bsrc="([^"]+)"/)?.[1];
-      const alt = match.match(/\balt="([^"]+)"/)?.[1] || '';
+    const choose = (source, alt) => {
       const override = contextual.find(context=>(context.locale==='all' || context.locale===locale) && context.source===source &&
         (!context.printedPage || new RegExp(`(^|\\D)${context.printedPage}(\\D|$)`).test(alt)));
-      const replacement = override?.figure || localeReplacements.get(source);
+      return override?.figure || localeReplacements.get(source);
+    };
+    let updated = original.replace(/<img\b[^>]*>/g, match => {
+      const source = match.match(/\bsrc="([^"]+)"/)?.[1];
+      const alt = match.match(/\balt="([^"]+)"/)?.[1] || '';
+      const replacement = choose(source, alt);
       if (!replacement) return match;
       count++;
       let result=match.replace(`src="${source}"`, `src="${replacement.output}"`)
@@ -39,8 +42,21 @@ for (const { locale, directory } of directories) {
         result=result.replace(/\bwidth="[^"]*"/,`width="${width}"`);
         if (/\bclassName=/.test(result)) result=result.replace(/\bclassName="[^"]*"/,'className="manual-icon"');
         else result=result.replace('<img ','<img className="manual-icon" ');
-      } else if (replacement.id.endsWith('home-settings-button')) result=result.replace(/\bwidth="[^"]*"/,`width="${Math.ceil(replacement.crop[2])}"`);
+      } else if (replacement.id.endsWith('home-settings-button') && !/\bwidth="/.test(result)) result=result.replace('<img ',`<img width="${Math.ceil(replacement.crop[2])}" `);
       return result;
+    });
+    updated = updated.replace(/!\[((?:\\.|[^\]\\])*)\]\((\/img\/[^\s)]+)(?:\s+"([^"]*)")?\)/g, (match,alt,source,title) => {
+      const replacement = choose(source, alt);
+      if (!replacement) return match;
+      count++;
+      const attributes = new Map((title || '').split(' ').filter(Boolean).map(value=>value.split('=')));
+      if (replacement.kind==='icon') {
+        attributes.set('width',String(Math.min(48,replacement.crop[2],Number(attributes.get('width') || 48))));
+        attributes.set('class','manual-icon');
+      } else if (replacement.id.endsWith('home-settings-button') && !attributes.has('width')) attributes.set('width',String(Math.ceil(replacement.crop[2])));
+      const layout=[...attributes].map(([key,value])=>`${key}=${value}`).join(' ');
+      const description=(replacement.alts?.[locale] || replacement.alt).replace(/[\\[\]]/g,'\\$&');
+      return `![${description}](${replacement.output}${layout ? ` "${layout}"` : ''})`;
     });
     if (updated !== original) await writeFile(filename, updated);
   }

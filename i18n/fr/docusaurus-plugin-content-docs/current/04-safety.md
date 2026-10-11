@@ -37,7 +37,7 @@ Toucher un bloc secteur mouillé ou endommagé peut entraîner des chocs électr
 Le raccordement de l’instrument à une tension d’alimentation incorrecte peut endommager l’instrument.
 
 - L’instrument ne doit être raccordé qu’aux sources de tension indiquées sur sa plaque signalétique.
-- L’instrument ne doit être utilisé qu’avec le bloc d’alimentation fourni, comme décrit à la section 5.3.
+- L’instrument ne doit être utilisé qu’avec le bloc d’alimentation fourni, comme décrit à la section [Raccordement du BactoSense à l’alimentation électrique](05-installation.md#section-5-3).
 
 :::
 
@@ -120,7 +120,7 @@ Même si aucun symbole d’avertissement ou de danger n’est apposé sur l’in
 
 ## 4.5 Prévention de l’accès en ligne non autorisé {#section-4-5}
 
-<img src="/img/manual/asset-96ca4e251d8b.png" alt="Illustration du manuel original, page imprimée 16" width="627" loading="lazy" />
+![Illustration du manuel original, page imprimée 16](/img/manual/asset-96ca4e251d8b.png "width=627")
 
 :::warning[Protégez l’accès réseau]
 

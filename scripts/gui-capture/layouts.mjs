@@ -103,6 +103,29 @@ export const nativeLayouts = [
   native('home-settings-button', 'home', [87]),
 ];
 
+// Longer translated captions need their own callout geometry.
+export function nativeLayoutForLocale(layout, locale) {
+  const localized = structuredClone(layout);
+  const move = (number, at, target, via) => {
+    Object.assign(localized.callouts.find(row => row.label === String(number)),
+      { at, target, ...(via ? { via } : {}) });
+  };
+  if (layout.name === 'alarm-configuration' && ['de', 'fr', 'it', 'es'].includes(locale)) {
+    const right = locale === 'it' ? 526 : locale === 'es' ? 488 : 496;
+    localized.highlights[0][2] = right - localized.highlights[0][0];
+    move(4, [755,221], [555,236], [[715,244],[555,244]]);
+    move(5, [822,320], [700,290], [[780,310],[715,310]]);
+    move(6, [right+18,329], [right,313]);
+  }
+  if (locale === 'it' && layout.name === 'gate-settings-list') {
+    move(4, [545,82], [480,100], [[520,92]]);
+  }
+  if (locale === 'it' && layout.name === 'error-log') {
+    move(2, [240,111], [170,139], [[240,135],[177,135]]);
+  }
+  return localized;
+}
+
 export function webLayouts(record) {
   const state = name => record.screenshots.find(row => row.filename === `${name}.png`);
   const cropSize = name => [state(name).bounds.width, state(name).bounds.height];
@@ -139,7 +162,7 @@ export function webLayouts(record) {
     }),
     web('web-plots-date-range', 'web-dotplots', [83], {
       crop:rangeCrop,padding:[20,20,20,35],
-      arrows:[{from:[407,-8],to:[407,play.y-155]},
+      arrows:[{from:[407,-8],to:[407,16]},
         {from:[955,rangeCrop[3]+18],to:[1003,slider.y+slider.height-155-12]}],
       highlights:[[play.x+99-250,play.y-155,90,34]],
     }),

@@ -37,7 +37,7 @@ Tocar una fuente de alimentación mojada o dañada puede provocar descargas elé
 Si el instrumento se conecta a una tensión de servicio incorrecta, puede resultar dañado.
 
 - El instrumento solo debe conectarse a fuentes de tensión que cumplan las especificaciones de la placa de características.
-- El instrumento solo debe utilizarse con la fuente de alimentación suministrada, tal como se describe en la sección 5.3.
+- El instrumento solo debe utilizarse con la fuente de alimentación suministrada, tal como se describe en la sección [Conexión de BactoSense a la alimentación eléctrica](05-installation.md#section-5-3).
 
 :::
 
@@ -120,7 +120,7 @@ Los usuarios deben observar en todo momento las medidas de seguridad especificad
 
 ## 4.5 Prevención del acceso no autorizado a través de Internet {#section-4-5}
 
-<img src="/img/manual/asset-96ca4e251d8b.png" alt="Ilustración del manual original, página impresa 16" width="627" loading="lazy" />
+![Ilustración del manual original, página impresa 16](/img/manual/asset-96ca4e251d8b.png "width=627")
 
 :::warning[Proteja el acceso a la red]
 

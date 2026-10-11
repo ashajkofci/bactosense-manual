@@ -19,13 +19,13 @@ Il *pacchetto Scientific* è destinato ai professionisti della ricerca sulle acq
 
 - È disponibile per le cartucce TCC e ICC.
 - Il parametro risultante è una concentrazione cellulare denominata “Gate+”.
-- Il gate può essere regolato come i gate predefiniti TCC o ICC. Consultare la sezione 11.4.
+- Il gate può essere regolato come i gate predefiniti TCC o ICC. Consultare la sezione [Modifica dei gate](11-results-and-data-analysis.md#section-11-4).
 
 **Rilevatori di diffusione in avanti e laterale** Il rilevatore Forward Scatter (FSC) misura la luce diffusa dai batteri o da altre particelle. È posizionato a un piccolo angolo rispetto alla direzione del fascio laser e misura quindi i segnali luminosi “in avanti”. Il rilevatore Side Scatter (SSC), invece, è posizionato a 90 gradi rispetto al fascio e misura la luce diffusa lateralmente. La combinazione delle informazioni di fluorescenza e diffusione fornisce dati ricchi di informazioni, consentendo applicazioni quali impronta microbiologica, profilazione e rilevamento di anomalie.
 
 I dati di diffusione sono disponibili nei seguenti modi:
 
-- nei file Flow Cytometry Standard (FCS). Per ulteriori informazioni su questo formato, consultare la sezione 11.5.
+- nei file Flow Cytometry Standard (FCS). Per ulteriori informazioni su questo formato, consultare la sezione [Analisi avanzata dei dati](11-results-and-data-analysis.md#section-11-5).
 - nell’interfaccia utente di BactoSense come diagramma a punti FSC / SSC
 - nell’interfaccia web come diagramma a punti FSC / SSC
 - scaricando i diagrammi a punti come immagini
@@ -36,13 +36,10 @@ I dati di diffusione sono disponibili nei seguenti modi:
 | --- | --- | --- |
 | 1. | Contattare il rappresentante commerciale bNovate per acquistare una chiave di attivazione. |  |
 | 2. | Dopo aver ricevuto la chiave di attivazione, accedere a BactoSense come utente Admin. |  |
-| 3. | Accedere al menu Home dell’interfaccia utente di BactoSense. |  |
-| 4. | Premere il pulsante System settings. |  |
-
-|  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINE |
-| --- | --- | --- |
-| 5. | Premere il pulsante Upgrades. |  |
-| 6. | Premere il pulsante Upgrade. |  |
+| 3. | Nella schermata Home, premere Impostazioni. |  |
+| 4. | Premere il pulsante Impostazioni di sistema. |  |
+| 5. | Premere il pulsante Aggiornamenti. |  |
+| 6. | Premere il pulsante Aggiornamento. |  |
 | 7. | Inserire la chiave di attivazione e premere OK. |  |
 
 ## 9.2 Pacchetto Management {#section-9-2}
@@ -56,9 +53,9 @@ Il *pacchetto Management* è destinato all’utilizzo dello strumento in ambient
 
 **Audit Trail** L’*Audit Trail* è un registro di tutte le operazioni o modifiche rilevanti effettuate sullo strumento. Fornisce una cronologia dettagliata delle azioni compiute dall’utilizzatore o dallo strumento stesso. L’*Audit Trail* è accessibile nei seguenti modi:
 
-- Nell’interfaccia utente. Nel *menu Home*, premere *Logs* e poi *Audit trail*.
-- Esportando tutti i dati su un’unità USB, vedere sezione 12.1.
-- Dall’interfaccia utente web. L’accesso all’interfaccia web è descritto nel capitolo 13.
+- Nell’interfaccia utente dello strumento, aprire Home → Impostazioni → Registri → Audit trail.
+- Esportando tutti i dati su un’unità USB, vedere sezione [Esportazione dei dati su un dispositivo USB](12-data-access-and-export.md#section-12-1).
+- Dall’interfaccia utente web. L’accesso all’interfaccia web è descritto nel capitolo [Interfaccia utente web](13-web-user-interface.md).
 
 **Attivazione del** **pacchetto Management**
 
@@ -66,16 +63,13 @@ Il *pacchetto Management* è destinato all’utilizzo dello strumento in ambient
 | --- | --- | --- |
 | 1. | Contattare il rappresentante commerciale bNovate per acquistare una chiave di attivazione. |  |
 | 2. | Dopo aver ricevuto la chiave di attivazione, accedere a BactoSense come utente Admin. |  |
-| 3. | Accedere al menu Home dell’interfaccia utente di BactoSense. |  |
-| 4. | Premere il pulsante System settings. |  |
-| 5. | Premere il pulsante Upgrades. |  |
-| 6. | Premere il pulsante Upgrade. |  |
-
-|  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINE |
-| --- | --- | --- |
+| 3. | Nella schermata Home, premere Impostazioni. |  |
+| 4. | Premere il pulsante Impostazioni di sistema. |  |
+| 5. | Premere il pulsante Aggiornamenti. |  |
+| 6. | Premere il pulsante Aggiornamento. |  |
 | 7. | Inserire la chiave di attivazione e premere OK. | Nota: la gestione avanzata degli utenti non è ancora attivata. Per attivarla, seguire i passaggi successivi. |
-| 8. | Accedere al menu Home dell’interfaccia utente di BactoSense. |  |
-| 9. | Premere il pulsante System settings. |  |
-| 10. | Premere il pulsante System configuration. |  |
-| 11. | Selezionare la casella Advanced user management mode. |  |
-| 12. | Premere Save. |  |
+| 8. | Nella schermata Home, premere Impostazioni. |  |
+| 9. | Premere il pulsante Impostazioni di sistema. |  |
+| 10. | Premere il pulsante Configurazione del sistema. |  |
+| 11. | Selezionare la casella Modalità di gestione avanzata degli utenti. |  |
+| 12. | Premere Salva, quindi confermare il messaggio con OK. |  |

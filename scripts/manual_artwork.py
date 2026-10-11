@@ -1,6 +1,7 @@
 """Apply the online manual's artwork choices after PDF parsing."""
 import json
 import re
+from html import escape
 from pathlib import Path
 from native_notices import markdown, plain
 
@@ -12,7 +13,8 @@ WORK_STEP_ASSETS = {
  '/img/manual/asset-45698338cb50.png',
 }
 # Include rendered variants of the same verified hand pictogram.
-for page in json.loads((ROOT/'extraction/manifest.json').read_text())['pages']:
+extraction_manifest = ROOT/'extraction/manifest.json'
+for page in json.loads(extraction_manifest.read_text())['pages'] if extraction_manifest.is_file() else []:
  for image in page['images']:
   if image['path'] in WORK_STEP_ASSETS:
    WORK_STEP_ASSETS.update(image[k] for k in ('original_path','rendered_path') if k in image)
@@ -33,6 +35,63 @@ INFO_TITLES = [
  ('If time synchronization', 'Automatic time synchronization'),
  ('Ask your network', 'Network settings'),
 ]
+
+def normalize_gui_artwork(content):
+ """Keep reviewed current figures and their navigation when importing the old PDF."""
+ manifest_path = ROOT/'maintenance/gui-screenshots.json'
+ if not manifest_path.is_file():
+  return content
+ updates_path = ROOT/'maintenance/gui-content-updates.json'
+ if updates_path.is_file():
+  for entry in json.loads(updates_path.read_text())['entries']:
+   if entry['locale'] == 'en':
+    # Protect a previously applied fragment when its replacement contains the old text.
+    content = entry['new'].join(part.replace(entry['old'],entry['new']) for part in content.split(entry['new']))
+ figures = [figure for figure in json.loads(manifest_path.read_text())['figures'] if figure['locale'] in ('en','all')]
+ replacements = {source:figure for figure in figures for source in figure['replaces']}
+ contextual = [(context,figure) for figure in figures for context in figure.get('contextReplacements',[])]
+ def choose(source,alt):
+  for context,figure in contextual:
+   if context['source'] == source and (not context.get('printedPage') or re.search(r'(^|\D)'+str(context['printedPage'])+r'(\D|$)',alt)):
+    return figure
+  return replacements.get(source)
+ def image(match):
+  tag = match[0]
+  source = re.search(r'\bsrc="([^"]+)"',tag)
+  alt = re.search(r'\balt="([^"]*)"',tag)
+  figure = choose(source[1],alt[1] if alt else '') if source else None
+  if not figure:
+   return tag
+  tag = tag.replace('src="'+source[1]+'"','src="'+figure['output']+'"')
+  description = escape(figure.get('alts',{}).get('en',figure['alt']),quote=True)
+  tag = re.sub(r'\balt="[^"]*"','alt="'+description+'"',tag) if alt else tag.replace('<img ','<img alt="'+description+'" ')
+  width = re.search(r'\bwidth="(\d+)"',tag)
+  if figure['kind'] == 'icon':
+   value = min(48,figure['crop'][2],int(width[1]) if width else 48)
+   tag = re.sub(r'\bwidth="[^"]*"',f'width="{value}"',tag) if width else tag.replace('<img ',f'<img width="{value}" ')
+   tag = re.sub(r'\bclassName="[^"]*"','className="manual-icon"',tag) if 'className=' in tag else tag.replace('<img ','<img className="manual-icon" ')
+  elif figure['id'].endswith('home-settings-button') and not width:
+   from math import ceil
+   tag = tag.replace('<img ','<img width="'+str(ceil(figure['crop'][2]))+'" ',1)
+  return tag
+ content = re.sub(r'<img\b[^>]*>',image,content)
+ def markdown_image(match):
+  alt,source,title = match.groups()
+  figure = choose(source,alt)
+  if not figure:
+   return match[0]
+  attributes = dict(part.split('=',1) for part in (title or '').split() if '=' in part)
+  if figure['kind'] == 'icon':
+   attributes['width'] = str(min(48,figure['crop'][2],int(attributes.get('width',48))))
+   attributes['class'] = 'manual-icon'
+  elif figure['id'].endswith('home-settings-button') and 'width' not in attributes:
+   from math import ceil
+   attributes['width'] = str(ceil(figure['crop'][2]))
+  layout = ' '.join(key+'='+value for key,value in attributes.items())
+  title = ' "'+layout+'"' if layout else ''
+  description = re.sub(r'([\\\[\]])',r'\\\1',figure.get('alts',{}).get('en',figure['alt']))
+  return '!['+description+']('+figure['output']+title+')'
+ return re.sub(r'!\[((?:\\.|[^\]\\])*)\]\((/img/[^\s)]+)(?:\s+"([^"]*)")?\)',markdown_image,content)
 
 def normalize_artwork(content):
  def image(match):
@@ -63,7 +122,7 @@ def normalize_artwork(content):
  content = re.sub(INFO+r'\s*'+body,block,content,flags=re.S)
  if re.search(INFO,content):
   raise ValueError('Unmatched information icon: inspect its surrounding content')
- return re.sub(r'\n{3,}', '\n\n', content)
+ return normalize_gui_artwork(re.sub(r'\n{3,}', '\n\n', content))
 
 if __name__ == '__main__':
  for path in (ROOT/'docs').glob('*.md'):

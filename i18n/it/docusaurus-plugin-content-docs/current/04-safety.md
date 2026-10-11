@@ -37,7 +37,7 @@ Toccare un alimentatore bagnato o danneggiato può causare scosse elettriche o m
 Se lo strumento viene collegato a una tensione di esercizio errata, può subire danni.
 
 - Lo strumento deve essere collegato esclusivamente a sorgenti di tensione conformi a quanto specificato sulla targhetta identificativa.
-- Lo strumento deve essere utilizzato esclusivamente con l’alimentatore fornito, come descritto nella sezione 5.3.
+- Lo strumento deve essere utilizzato esclusivamente con l’alimentatore fornito, come descritto nella sezione [Collegamento di BactoSense all’alimentazione](05-installation.md#section-5-3).
 
 :::
 
@@ -120,7 +120,7 @@ Gli utilizzatori devono assicurarsi di rispettare sempre le misure di sicurezza 
 
 ## 4.5 Prevenzione degli accessi online non autorizzati {#section-4-5}
 
-<img src="/img/manual/asset-96ca4e251d8b.png" alt="Illustrazione del manuale originale, pagina stampata 16" width="627" loading="lazy" />
+![Illustrazione del manuale originale, pagina stampata 16](/img/manual/asset-96ca4e251d8b.png "width=627")
 
 :::warning[Proteggere l’accesso alla rete]
 

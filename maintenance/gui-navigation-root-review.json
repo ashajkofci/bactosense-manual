@@ -1,0 +1,945 @@
+{
+  "reviewedUtc": "2026-10-11T20:48:11.818022+00:00",
+  "status": "source-reviewed",
+  "chapters": [
+    "06",
+    "07",
+    "09",
+    "17"
+  ],
+  "sourceFiles": [
+    "../gui/controllers/settingsScreens/SettingsMenuHomeScreen.qml",
+    "../gui/controllers/settingsScreens/SettingsMenuAutoModeSettingsScreen.qml",
+    "../gui/controllers/settingsScreens/SettingsMenuMaintenanceScreen.qml",
+    "../gui/controllers/settingsScreens/SettingsMenuSystemSettingsScreen.qml",
+    "../gui/controllers/settingsScreens/SettingsDigitalInputsScreen.qml",
+    "../gui/controllers/settingsScreens/SettingsSystemConfig.qml",
+    "../gui/controllers/settingsScreens/SettingsUpgrades.qml",
+    "../gui/gui_*.ts"
+  ],
+  "entries": [
+    {
+      "id": "en-navigation-root-001",
+      "locale": "en",
+      "file": "docs/06-io-box.md",
+      "old": "Navigate to the Home menu of the BactoSense user interface.",
+      "new": "On the Home screen, press Settings.",
+      "reason": "The current Home dashboard opens these menus through Settings.",
+      "expected_count": 4,
+      "kind": "text"
+    },
+    {
+      "id": "en-navigation-root-002",
+      "locale": "en",
+      "file": "docs/09-upgrade-packages.md",
+      "old": "Navigate to the Home menu of the BactoSense user interface.",
+      "new": "On the Home screen, press Settings.",
+      "reason": "The current Home dashboard opens these menus through Settings.",
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "en-navigation-root-003",
+      "locale": "en",
+      "file": "docs/06-io-box.md",
+      "old": "in the Inputs list",
+      "new": "in the Input list",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-navigation-root-004",
+      "locale": "en",
+      "file": "docs/06-io-box.md",
+      "old": "“Scheduler activated”",
+      "new": "“Use scheduler”",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-navigation-root-005",
+      "locale": "en",
+      "file": "docs/07-field-bus-interface.md",
+      "old": "- The BactoSense must have the Modbus TCP service activated in the System settings /  System services menu.",
+      "new": "- The BactoSense must have the Modbus TCP service activated under Home → Settings → System settings → System services.",
+      "reason": "Complete current Modbus service menu route, using production translations.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-navigation-root-006",
+      "locale": "en",
+      "file": "docs/09-upgrade-packages.md",
+      "old": "- On the user interface. In the *Home Menu*, press on *Logs* and then *Audit trail*.",
+      "new": "- On the instrument user interface, open Home → Settings → Logs → Audit trail.",
+      "reason": "Audit trail is reached through Home > Settings > Logs.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-navigation-root-007",
+      "locale": "en",
+      "file": "docs/09-upgrade-packages.md",
+      "old": "Press Save.",
+      "new": "Press Save, then acknowledge the confirmation with OK.",
+      "reason": "The current configuration save reports Settings changed and requires OK to dismiss.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-navigation-root-008",
+      "locale": "en",
+      "file": "docs/17-storage-transport-and-disposal.md",
+      "old": "or can be found on the System info page on the user interface, accessible from the Home menu.",
+      "new": "or can be found on the instrument user interface under Home → Settings → System info.",
+      "reason": "System info is an instrument screen accessed through Home > Settings, not the old Home menu or web interface.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-navigation-root-009",
+      "locale": "en",
+      "file": "docs/17-storage-transport-and-disposal.md",
+      "old": "Remove the cartridge using the Remove cartridge procedure in the Cartridge change menu.",
+      "new": "Remove the cartridge using the Remove cartridge procedure under Home → Settings → Maintenance → Cartridge change. Basic users open Cartridge change directly from Settings.",
+      "reason": "Complete the role-dependent Cartridge change route without changing the removal procedure.",
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "de-navigation-root-010",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense.",
+      "new": "Drücken Sie auf dem Startbildschirm Einstellungen.",
+      "reason": "The current Home dashboard opens these menus through Settings.",
+      "expected_count": 4,
+      "kind": "text"
+    },
+    {
+      "id": "de-navigation-root-011",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense.",
+      "new": "Drücken Sie auf dem Startbildschirm Einstellungen.",
+      "reason": "The current Home dashboard opens these menus through Settings.",
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "de-navigation-root-012",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "Drücken Sie die Taste Einstellungen des Online-Modus.",
+      "new": "Drücken Sie die Taste Online-Modus Einstellungen.",
+      "reason": "Use the actual localized Online mode settings label.",
+      "expected_count": 4,
+      "kind": "text"
+    },
+    {
+      "id": "de-navigation-root-013",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "in der Eingängeliste",
+      "new": "in der Liste Eingänge",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-navigation-root-014",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "„Scheduler aktiviert”",
+      "new": "„Planer verwenden”",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-navigation-root-015",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "„Sofort starten”",
+      "new": "„Sofort beginnen”",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-navigation-root-016",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "Test outputs (Ausgänge testen)",
+      "new": "Ausgänge testen",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-navigation-root-017",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "Reset (Zurücksetzen)",
+      "new": "Zurücksetzen",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-navigation-root-018",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "Wählen Sie Port 1 oder Port 2",
+      "new": "Wählen Sie Ausgang 1 oder Ausgang 2",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-navigation-root-019",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/07-field-bus-interface.md",
+      "old": "- Im BactoSense muss im Menü Systemeinstellungen / Systemdienste der Modbus-TCP- Dienst aktiviert sein.",
+      "new": "- Der Modbus-TCP-Dienst des BactoSense muss unter Startbildschirm → Einstellungen → Einstellungen → Systemdienste aktiviert sein.",
+      "reason": "Complete current Modbus service menu route, using production translations.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-navigation-root-020",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Drücken Sie die Taste Systemeinstellungen.",
+      "new": "Drücken Sie im Einstellungsmenü erneut die Taste Einstellungen, um die Systemeinstellungen zu öffnen.",
+      "reason": "Match the actual localized System settings button.",
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "de-navigation-root-021",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Aktivieren Sie den Erweiterten Benutzerverwaltungsmodus.",
+      "new": "Aktivieren Sie das Kontrollkästchen Erweiterter Benutzerverwaltungsmodus.",
+      "reason": "Match the actual localized upgrades or system configuration control.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-navigation-root-022",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "- Auf der Benutzeroberfläche. Öffnen Sie das *Home-Menü*, drücken Sie *Logs (Protokolle)* und anschließend *Audit Trail*.",
+      "new": "- Öffnen Sie auf der Benutzeroberfläche des Geräts Startbildschirm → Einstellungen → Logs → Prüfpfad.",
+      "reason": "Audit trail is reached through Home > Settings > Logs.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-navigation-root-023",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Drücken Sie Speichern.",
+      "new": "Drücken Sie Speichern und bestätigen Sie die Meldung mit OK.",
+      "reason": "The current configuration save reports Settings changed and requires OK to dismiss.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-navigation-root-024",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/17-storage-transport-and-disposal.md",
+      "old": "oder kann in der Web-Oberfläche auf der Seite System info, erreichbar über die Startseite, gefunden werden.",
+      "new": "oder kann auf der Benutzeroberfläche des Geräts unter Startbildschirm → Einstellungen → Informationen gefunden werden.",
+      "reason": "System info is an instrument screen accessed through Home > Settings, not the old Home menu or web interface.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-navigation-root-025",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/17-storage-transport-and-disposal.md",
+      "old": "Entfernen Sie die Kartusche mittels der Prozedur Kartusche entfernen im Menü Kartuschenwechsel.",
+      "new": "Entfernen Sie die Kartusche mit der Prozedur Kartusche entfernen unter Startbildschirm → Einstellungen → Wartung → Kartusche wechseln. Basic-Benutzer öffnen Kartusche wechseln direkt unter Einstellungen.",
+      "reason": "Complete the role-dependent Cartridge change route without changing the removal procedure.",
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "fr-navigation-root-026",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "Accédez au Menu principal de l’interface utilisateur de BactoSense.",
+      "new": "Sur l’écran d’accueil, appuyez sur Paramètres.",
+      "reason": "The current Home dashboard opens these menus through Settings.",
+      "expected_count": 4,
+      "kind": "text"
+    },
+    {
+      "id": "fr-navigation-root-027",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Accédez au Menu principal de l’interface utilisateur de BactoSense.",
+      "new": "Sur l’écran d’accueil, appuyez sur Paramètres.",
+      "reason": "The current Home dashboard opens these menus through Settings.",
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "fr-navigation-root-028",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "Appuyez sur le bouton Paramètres du mode en ligne.",
+      "new": "Appuyez sur le bouton Paramètres mode en ligne.",
+      "reason": "Use the actual localized Online mode settings label.",
+      "expected_count": 4,
+      "kind": "text"
+    },
+    {
+      "id": "fr-navigation-root-029",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "réglé sur Activées",
+      "new": "réglé sur Activé",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-navigation-root-030",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "dans la liste des entrées",
+      "new": "dans la Liste entrées",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-navigation-root-031",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "«Minuteur activé»",
+      "new": "«Utiliser le planificateur»",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-navigation-root-032",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "«Démarrer immédiatement»",
+      "new": "«Démarrage immédiat»",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-navigation-root-033",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "Appuyez sur le bouton Réinitialiser.",
+      "new": "Appuyez sur le bouton Remise à zéro.",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-navigation-root-034",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/07-field-bus-interface.md",
+      "old": "- Le service Modbus TCP doit être activé sur le BactoSense dans le menu Paramètres système et Services système.",
+      "new": "- Le service Modbus TCP doit être activé sur le BactoSense sous Accueil → Paramètres → Paramètres système → Services système.",
+      "reason": "Complete current Modbus service menu route, using production translations.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-navigation-root-035",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Appuyez sur le bouton Upgrades.",
+      "new": "Appuyez sur le bouton Mises à niveau.",
+      "reason": "Match the actual localized upgrades or system configuration control.",
+      "expected_count": 2,
+      "kind": "text"
+    },
+    {
+      "id": "fr-navigation-root-036",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Appuyez sur le bouton Upgrade.",
+      "new": "Appuyez sur le bouton Mise à niveau.",
+      "reason": "Match the actual localized upgrades or system configuration control.",
+      "expected_count": 2,
+      "kind": "text"
+    },
+    {
+      "id": "fr-navigation-root-037",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Appuyez sur le bouton Paramètres système. |  |\n| 11.",
+      "new": "Dans le menu Paramètres système, appuyez sur Paramètres système pour ouvrir la configuration. |  |\n| 11.",
+      "reason": "Match the actual localized upgrades or system configuration control.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-navigation-root-038",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "- Sur l’interface utilisateur. Dans le *menu Home*, appuyez sur *Logs* , puis sur *Journal d’audit*.",
+      "new": "- Sur l’interface utilisateur de l’instrument, ouvrez Accueil → Paramètres → Journaux → Journal d’audit.",
+      "reason": "Audit trail is reached through Home > Settings > Logs.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-navigation-root-039",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Appuyez sur Enregistrer.",
+      "new": "Appuyez sur Enregistrer, puis confirmez le message avec OK.",
+      "reason": "The current configuration save reports Settings changed and requires OK to dismiss.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-navigation-root-040",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/17-storage-transport-and-disposal.md",
+      "old": "ou disponible sur la page System info de l’interface utilisateur, accessible depuis le menu Home.",
+      "new": "ou disponible sur l’interface utilisateur de l’instrument sous Accueil → Paramètres → Infos système.",
+      "reason": "System info is an instrument screen accessed through Home > Settings, not the old Home menu or web interface.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-navigation-root-041",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/17-storage-transport-and-disposal.md",
+      "old": "Retirez la cartouche en suivant la procédure Retirer la cartouche dans le menu Changement cartouche .",
+      "new": "Retirez la cartouche en suivant la procédure Retirer la cartouche sous Accueil → Paramètres → Maintenance → Changement cartouche. Les utilisateurs Basic ouvrent Changement cartouche directement depuis Paramètres.",
+      "reason": "Complete the role-dependent Cartridge change route without changing the removal procedure.",
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "it-navigation-root-042",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "Accedere al menu Home dell’interfaccia utente di BactoSense.",
+      "new": "Nella schermata Home, premere Impostazioni.",
+      "reason": "The current Home dashboard opens these menus through Settings.",
+      "expected_count": 4,
+      "kind": "text"
+    },
+    {
+      "id": "it-navigation-root-043",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Accedere al menu Home dell’interfaccia utente di BactoSense.",
+      "new": "Nella schermata Home, premere Impostazioni.",
+      "reason": "The current Home dashboard opens these menus through Settings.",
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "it-navigation-root-044",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "Premere il pulsante Online mode settings.",
+      "new": "Premere il pulsante Impostazioni della Modalità Online.",
+      "reason": "Use the actual localized Online mode settings label.",
+      "expected_count": 4,
+      "kind": "text"
+    },
+    {
+      "id": "it-navigation-root-045",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "pulsante Digital inputs",
+      "new": "pulsante Input digitali",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-navigation-root-046",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "pulsante Digital outputs",
+      "new": "pulsante Output digitali",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-navigation-root-047",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "pulsante Analog outputs",
+      "new": "pulsante Output analogici",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-navigation-root-048",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "pulsante Test outputs",
+      "new": "pulsante Testa gli output",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-navigation-root-049",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "interruttore sia impostato su Enabled",
+      "new": "interruttore sia impostato su Abilitato",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-navigation-root-050",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "nell’elenco Inputs",
+      "new": "nell’Elenco degli input",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-navigation-root-051",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "“Scheduler activated”",
+      "new": "“Utilizzare lo scheduler”",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-navigation-root-052",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "“Start immediately”",
+      "new": "“Avvia ora”",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-navigation-root-053",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "pulsante Save",
+      "new": "pulsante Salva",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "it-navigation-root-054",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "pulsante Reset",
+      "new": "pulsante Ripristina",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-navigation-root-055",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "Scegliere Port 1 o Port 2",
+      "new": "Scegliere Porta 1 o Porta 2",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-navigation-root-056",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/07-field-bus-interface.md",
+      "old": "- Il servizio Modbus TCP di BactoSense deve essere attivato nel menu System settings / System services.",
+      "new": "- Il servizio Modbus TCP di BactoSense deve essere attivato in Home → Impostazioni → Impostazioni di sistema → Servizi di sistema.",
+      "reason": "Complete current Modbus service menu route, using production translations.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-navigation-root-057",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Premere il pulsante System settings.",
+      "new": "Premere il pulsante Impostazioni di sistema.",
+      "reason": "Match the actual localized System settings button.",
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "it-navigation-root-058",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Premere il pulsante Upgrades.",
+      "new": "Premere il pulsante Aggiornamenti.",
+      "reason": "Match the actual localized upgrades or system configuration control.",
+      "expected_count": 2,
+      "kind": "text"
+    },
+    {
+      "id": "it-navigation-root-059",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Premere il pulsante Upgrade.",
+      "new": "Premere il pulsante Aggiornamento.",
+      "reason": "Match the actual localized upgrades or system configuration control.",
+      "expected_count": 2,
+      "kind": "text"
+    },
+    {
+      "id": "it-navigation-root-060",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Premere il pulsante System configuration.",
+      "new": "Premere il pulsante Configurazione del sistema.",
+      "reason": "Match the actual localized upgrades or system configuration control.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-navigation-root-061",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Selezionare la casella Advanced user management mode.",
+      "new": "Selezionare la casella Modalità di gestione avanzata degli utenti.",
+      "reason": "Match the actual localized upgrades or system configuration control.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-navigation-root-062",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "- Nell’interfaccia utente. Nel *menu Home*, premere *Logs* e poi *Audit trail*.",
+      "new": "- Nell’interfaccia utente dello strumento, aprire Home → Impostazioni → Registri → Audit trail.",
+      "reason": "Audit trail is reached through Home > Settings > Logs.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-navigation-root-063",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Premere Save.",
+      "new": "Premere Salva, quindi confermare il messaggio con OK.",
+      "reason": "The current configuration save reports Settings changed and requires OK to dismiss.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-navigation-root-064",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/17-storage-transport-and-disposal.md",
+      "old": "oppure è disponibile nella pagina System info, accessibile dal menu Home dell’interfaccia utente.",
+      "new": "oppure è disponibile nell’interfaccia utente dello strumento in Home → Impostazioni → Informazioni sul sistema.",
+      "reason": "System info is an instrument screen accessed through Home > Settings, not the old Home menu or web interface.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-navigation-root-065",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/17-storage-transport-and-disposal.md",
+      "old": "Rimuovere la cartuccia con la procedura Remove cartridge nel menu Cartridge change.",
+      "new": "Rimuovere la cartuccia con la procedura Rimuovi la cartuccia in Home → Impostazioni → Manutenzione → Sostituzione della cartuccia. Gli utenti Basic aprono Sostituzione della cartuccia direttamente da Impostazioni.",
+      "reason": "Complete the role-dependent Cartridge change route without changing the removal procedure.",
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "es-navigation-root-066",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "Vaya al menú Home de la interfaz de usuario de BactoSense.",
+      "new": "En la pantalla Home, pulse Ajustes.",
+      "reason": "The current Home dashboard opens these menus through Settings.",
+      "expected_count": 4,
+      "kind": "text"
+    },
+    {
+      "id": "es-navigation-root-067",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Vaya al menú Home de la interfaz de usuario de BactoSense.",
+      "new": "En la pantalla Home, pulse Ajustes.",
+      "reason": "The current Home dashboard opens these menus through Settings.",
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "es-navigation-root-068",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "Pulse el botón de ajustes del modo en línea.",
+      "new": "Pulse el botón Ajustes del modo en línea.",
+      "reason": "Use the actual localized Online mode settings label.",
+      "expected_count": 4,
+      "kind": "text"
+    },
+    {
+      "id": "es-navigation-root-069",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "botón Digital inputs",
+      "new": "botón Entradas digitales",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-navigation-root-070",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "botón Digital outputs",
+      "new": "botón Salidas digitales",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-navigation-root-071",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "botón Analog outputs",
+      "new": "botón Salidas analógicas",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-navigation-root-072",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "botón Test outputs",
+      "new": "botón Probar salidas",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-navigation-root-073",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "interruptor esté en Enabled",
+      "new": "interruptor esté en Habilitado",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-navigation-root-074",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "en la lista Inputs",
+      "new": "en la Lista de entradas",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-navigation-root-075",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "“Scheduler activated”",
+      "new": "“Utilizar el programador”",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-navigation-root-076",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "“Start immediately”",
+      "new": "“Inicio inmediato”",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-navigation-root-077",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "botón Save",
+      "new": "botón Guardar",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "es-navigation-root-078",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "botón Reset",
+      "new": "botón Restablecer",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 2,
+      "kind": "text"
+    },
+    {
+      "id": "es-navigation-root-079",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "Elija Port 1 o Port 2",
+      "new": "Elija Puerto 1 o Puerto 2",
+      "reason": "Match visible current input/output controls and production locale.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-navigation-root-080",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/07-field-bus-interface.md",
+      "old": "- BactoSense debe tener activado el servicio Modbus TCP en el menú System settings / System services.",
+      "new": "- BactoSense debe tener activado el servicio Modbus TCP en Home → Ajustes → Ajustes del sistema → Servicios del sistema.",
+      "reason": "Complete current Modbus service menu route, using production translations.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-navigation-root-081",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Pulse el botón System settings.",
+      "new": "Pulse el botón Ajustes del sistema.",
+      "reason": "Match the actual localized System settings button.",
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "es-navigation-root-082",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Pulse el botón Upgrades.",
+      "new": "Pulse el botón Actualizaciones.",
+      "reason": "Match the actual localized upgrades or system configuration control.",
+      "expected_count": 2,
+      "kind": "text"
+    },
+    {
+      "id": "es-navigation-root-083",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Pulse el botón Upgrade.",
+      "new": "Pulse el botón Actualizar.",
+      "reason": "Match the actual localized upgrades or system configuration control.",
+      "expected_count": 2,
+      "kind": "text"
+    },
+    {
+      "id": "es-navigation-root-084",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Pulse el botón System configuration.",
+      "new": "Pulse el botón Configuración del sistema.",
+      "reason": "Match the actual localized upgrades or system configuration control.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-navigation-root-085",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Marque la casilla Advanced user management mode.",
+      "new": "Marque la casilla Modo avanzado de gestión de usuarios.",
+      "reason": "Match the actual localized upgrades or system configuration control.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-navigation-root-086",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "- En la interfaz de usuario. En el menú *Home*, pulse *Logs* y, a continuación, *Audit trail*.",
+      "new": "- En la interfaz de usuario del instrumento, abra Home → Ajustes → Registros → Auditoria de registro.",
+      "reason": "Audit trail is reached through Home > Settings > Logs.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-navigation-root-087",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Pulse Save.",
+      "new": "Pulse Guardar y confirme el mensaje con OK.",
+      "reason": "The current configuration save reports Settings changed and requires OK to dismiss.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-navigation-root-088",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/17-storage-transport-and-disposal.md",
+      "old": "o puede consultarse en la página System info de la interfaz, accesible desde el menú Home.",
+      "new": "o puede consultarse en la interfaz del instrumento en Home → Ajustes → Información del sistema.",
+      "reason": "System info is an instrument screen accessed through Home > Settings, not the old Home menu or web interface.",
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-navigation-root-089",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/17-storage-transport-and-disposal.md",
+      "old": "Retire el cartucho mediante el procedimiento Remove cartridge del menú Cartridge change.",
+      "new": "Retire el cartucho mediante el procedimiento Retire el cartucho en Home → Ajustes → Mantenimiento → Cambio de cartucho. Los usuarios Basic abren Cambio de cartucho directamente desde Ajustes.",
+      "reason": "Complete the role-dependent Cartridge change route without changing the removal procedure.",
+      "expected_count": 3,
+      "kind": "text"
+    }
+  ],
+  "validPaths": [
+    {
+      "section": "6.5–6.8",
+      "path": "Home → Settings → Online mode settings → Digital inputs / Digital outputs / Analog outputs / Test outputs",
+      "note": "Test outputs is also available under Maintenance; the existing Online mode settings route is valid and retained."
+    },
+    {
+      "section": "7.1",
+      "path": "Home → Settings → System settings → System services"
+    },
+    {
+      "section": "9.1/9.2",
+      "path": "Home → Settings → System settings → Upgrades → Upgrade → activation-key keyboard",
+      "role": "Admin/Service; unavailable during protocols, PLC or Simulation mode, or on AquaSense/PURE variants"
+    },
+    {
+      "section": "9.2",
+      "path": "Home → Settings → System settings → System configuration → Advanced user management mode → Save → OK"
+    },
+    {
+      "section": "9.2",
+      "path": "Home → Settings → Logs → Audit trail"
+    },
+    {
+      "section": "17.1.2",
+      "path": "Home → Settings → System info"
+    },
+    {
+      "section": "17.2",
+      "path": "Home → Settings → Maintenance → Cartridge change → Remove cartridge",
+      "note": "Basic users access Cartridge change directly under Settings."
+    }
+  ]
+}

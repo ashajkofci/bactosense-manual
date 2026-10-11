@@ -17,4 +17,4 @@ Quando si contatta il servizio clienti, tenere a disposizione:
 - Documentazione dei prodotti di terzi utilizzati insieme al BactoSense.
 - Descrizione delle condizioni di funzionamento (luogo, alimentazione, mezzo misurato, temperatura ecc.).
 - Questo manuale d’uso.
-- Esportazione delle ultime misure al momento dell’errore; vedere sezione 10.8.
+- Esportazione delle ultime misure al momento dell’errore; vedere sezione [Esportazione delle misurazioni](10-measurements.md#section-10-8).

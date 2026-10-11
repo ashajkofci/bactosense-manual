@@ -19,13 +19,13 @@ El *Scientific Package* está destinado a los profesionales de investigación de
 
 - Está disponible para los cartuchos TCC e ICC.
 - El parámetro de resultado es una concentración celular denominada “Gate+”.
-- La región puede ajustarse de forma similar a las regiones predeterminadas TCC o ICC. Consulte la sección 11.4.
+- La región puede ajustarse de forma similar a las regiones predeterminadas TCC o ICC. Consulte la sección [Cambio de las regiones de análisis](11-results-and-data-analysis.md#section-11-4).
 
 **Detectores de dispersión frontal y lateral** El detector de dispersión frontal (FSC) mide la luz dispersada por bacterias u otras partículas. El detector se coloca formando un ángulo pequeño respecto a la dirección del haz láser y mide así las señales de luz en dirección “frontal”. En cambio, el detector de dispersión lateral (SSC) se sitúa a 90 grados respecto a la dirección del haz y mide la luz dispersada lateralmente. La combinación de la información de fluorescencia y dispersión proporciona datos de alto contenido, lo que permite aplicaciones como la obtención de huellas microbiológicas, la caracterización de perfiles o la detección de anomalías.
 
 Los datos de dispersión están disponibles de las siguientes formas:
 
-- En los archivos Flow Cytometry Standard (FCS). Para obtener más información sobre este formato de archivo, consulte la sección 11.5.
+- En los archivos Flow Cytometry Standard (FCS). Para obtener más información sobre este formato de archivo, consulte la sección [Análisis avanzado de datos](11-results-and-data-analysis.md#section-11-5).
 - En la interfaz de usuario de BactoSense, como diagrama de puntos FSC / SSC.
 - En la interfaz web, como diagrama de puntos FSC / SSC.
 - Al descargar los diagramas de puntos como imágenes.
@@ -36,13 +36,10 @@ Los datos de dispersión están disponibles de las siguientes formas:
 | --- | --- | --- |
 | 1. | Póngase en contacto con su representante comercial de bNovate para adquirir una clave de activación. |  |
 | 2. | Tras recibir la clave de activación, inicie sesión como usuario Admin en BactoSense. |  |
-| 3. | Vaya al menú Home de la interfaz de usuario de BactoSense. |  |
-| 4. | Pulse el botón System settings. |  |
-
-|  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN |
-| --- | --- | --- |
-| 5. | Pulse el botón Upgrades. |  |
-| 6. | Pulse el botón Upgrade. |  |
+| 3. | En la pantalla Home, pulse Ajustes. |  |
+| 4. | Pulse el botón Ajustes del sistema. |  |
+| 5. | Pulse el botón Actualizaciones. |  |
+| 6. | Pulse el botón Actualizar. |  |
 | 7. | Introduzca la clave de activación y pulse OK. |  |
 
 ## 9.2 Paquete Management {#section-9-2}
@@ -56,9 +53,9 @@ El *Management Package* está destinado al uso del instrumento en entornos con m
 
 **Pista de auditoría** La *Audit Trail* es un registro de todas las operaciones o cambios relevantes realizados en el instrumento. Proporciona un historial detallado de las acciones del usuario o del propio instrumento. Se puede acceder a la *Audit Trail* de las siguientes formas:
 
-- En la interfaz de usuario. En el menú *Home*, pulse *Logs* y, a continuación, *Audit trail*.
-- Al exportar todos los datos a una memoria USB; véase la sección 12.1.
-- Desde la interfaz web de usuario. El acceso a esta interfaz se describe en el capítulo 13.
+- En la interfaz de usuario del instrumento, abra Home → Ajustes → Registros → Auditoria de registro.
+- Al exportar todos los datos a una memoria USB; véase la sección [Exportación de datos a un dispositivo USB](12-data-access-and-export.md#section-12-1).
+- Desde la interfaz web de usuario. El acceso a esta interfaz se describe en el capítulo [Interfaz web de usuario](13-web-user-interface.md).
 
 **Activación del** **Management Package**
 
@@ -66,16 +63,13 @@ El *Management Package* está destinado al uso del instrumento en entornos con m
 | --- | --- | --- |
 | 1. | Póngase en contacto con su representante comercial de bNovate para adquirir una clave de activación. |  |
 | 2. | Tras recibir la clave de activación, inicie sesión como usuario Admin en BactoSense. |  |
-| 3. | Vaya al menú Home de la interfaz de usuario de BactoSense. |  |
-| 4. | Pulse el botón System settings. |  |
-| 5. | Pulse el botón Upgrades. |  |
-| 6. | Pulse el botón Upgrade. |  |
-
-|  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN |
-| --- | --- | --- |
+| 3. | En la pantalla Home, pulse Ajustes. |  |
+| 4. | Pulse el botón Ajustes del sistema. |  |
+| 5. | Pulse el botón Actualizaciones. |  |
+| 6. | Pulse el botón Actualizar. |  |
 | 7. | Introduzca la clave de activación y pulse OK. | Nota: la función de gestión avanzada de usuarios todavía no está activada. Si desea activarla, siga los pasos siguientes. |
-| 8. | Vaya al menú Home de la interfaz de usuario de BactoSense. |  |
-| 9. | Pulse el botón System settings. |  |
-| 10. | Pulse el botón System configuration. |  |
-| 11. | Marque la casilla Advanced user management mode. |  |
-| 12. | Pulse Save. |  |
+| 8. | En la pantalla Home, pulse Ajustes. |  |
+| 9. | Pulse el botón Ajustes del sistema. |  |
+| 10. | Pulse el botón Configuración del sistema. |  |
+| 11. | Marque la casilla Modo avanzado de gestión de usuarios. |  |
+| 12. | Pulse Guardar y confirme el mensaje con OK. |  |

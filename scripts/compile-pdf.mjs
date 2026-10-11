@@ -7,11 +7,11 @@ import { chromium } from 'playwright';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const COPY = {
-  en: { title: 'BactoSense user manual', contents: 'Contents', compiled: 'Compiled on', software: 'Software' },
-  de: { title: 'BactoSense Bedienungsanleitung', contents: 'Inhalt', compiled: 'Erstellt am', software: 'Software' },
-  fr: { title: 'Manuel d’utilisation BactoSense', contents: 'Sommaire', compiled: 'Généré le', software: 'Logiciel' },
-  it: { title: 'Manuale d’uso BactoSense', contents: 'Indice', compiled: 'Generato il', software: 'Software' },
-  es: { title: 'Manual de usuario de BactoSense', contents: 'Índice', compiled: 'Generado el', software: 'Software' },
+  en: { title: 'BactoSense', documentId: 'Document ID', contents: 'Contents', compiled: 'Compiled on', software: 'Software' },
+  de: { title: 'BactoSense', documentId: 'Dokument-ID', contents: 'Inhalt', compiled: 'Erstellt am', software: 'Software' },
+  fr: { title: 'BactoSense', documentId: 'Identifiant du document', contents: 'Sommaire', compiled: 'Généré le', software: 'Logiciel' },
+  it: { title: 'BactoSense', documentId: 'ID documento', contents: 'Indice', compiled: 'Generato il', software: 'Software' },
+  es: { title: 'BactoSense', documentId: 'ID del documento', contents: 'Índice', compiled: 'Generado el', software: 'Software' },
 };
 const MIME = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.svg': 'image/svg+xml', '.png': 'image/png', '.woff2': 'font/woff2', '.woff': 'font/woff', '.pdf': 'application/pdf', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp' };
 const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
@@ -71,6 +71,8 @@ export async function compileManualPdf(root, manifest) {
   const generatedAt = new Date();
   const date = new Intl.DateTimeFormat(manifest.htmlLang, { dateStyle: 'long' }).format(generatedAt);
   const css = await readFile(path.join(ROOT, 'scripts/pdf.css'), 'utf8');
+  const guiFigures = JSON.parse(await readFile(path.join(root, 'maintenance/gui-screenshots.json'), 'utf8'));
+  const guiScreenshotAlts = guiFigures.figures.filter(figure => figure.locale === manifest.locale && figure.kind === 'screenshot').map(figure => figure.alt);
   const chapters = await Promise.all(manifest.chapters.map((chapter) => readChapter(outDir, manifest.baseUrl, chapter)));
   const shell = `<!doctype html><html lang="${escapeHtml(manifest.htmlLang)}" data-theme="light"><head><meta charset="utf-8"><title>${escapeHtml(copy.title)}</title></head><body><main id="manual-pdf"></main></body></html>`;
   const { server, origin } = await startServer(outDir, manifest.baseUrl, shell);
@@ -118,8 +120,11 @@ export async function compileManualPdf(root, manifest) {
       language.textContent = meta.languageLabel;
       cover.appendChild(language);
       const version = document.createElement('p');
-      version.textContent = `BactoSense ${meta.manualVersion} · ${labels.software} ${meta.softwareVersion}`;
+      version.textContent = `${labels.software} ${meta.softwareVersion}`;
       cover.appendChild(version);
+      const documentId = document.createElement('p');
+      documentId.textContent = `${labels.documentId}: ${meta.documentId}`;
+      cover.appendChild(documentId);
       const dateLine = document.createElement('p');
       dateLine.className = 'pdf-date';
       dateLine.textContent = `${labels.compiled} ${compiledDate}`;
@@ -196,7 +201,7 @@ export async function compileManualPdf(root, manifest) {
     }, { chapters, manifest, copy, date });
     await page.waitForFunction(() => [...document.querySelectorAll('link[rel="stylesheet"]')].every((link) => link.sheet));
     await page.addStyleTag({ content: css });
-    await page.evaluate(async () => {
+    const { expandedScreenshotRows, pairedScreenshotCaptions } = await page.evaluate(async (guiScreenshotAlts) => {
       // Force font requests after injecting print styles; fonts.ready can otherwise
       // resolve before Chromium schedules the first layout using those styles.
       await Promise.all([
@@ -208,11 +213,44 @@ export async function compileManualPdf(root, manifest) {
         if (![...document.fonts].some((font) => font.family.includes(family) && font.status === 'loaded')) throw new Error(`PDF font did not load: ${family}.`);
       }
       await Promise.all([...document.images].map((image) => image.decode()));
-    });
+      // Keep a GUI screenshot and its following localized figure caption together.
+      // Markdown emits separate paragraphs, which can otherwise split at a page break.
+      let paired = 0;
+      for (const image of document.querySelectorAll('.pdf-chapter img')) {
+        if (!guiScreenshotAlts.includes(image.alt)) continue;
+        const paragraph = image.closest('p');
+        const caption = paragraph?.nextElementSibling;
+        if (!paragraph || paragraph.closest('td') || paragraph.querySelectorAll('img').length !== 1 ||
+            caption?.tagName !== 'P' || !/^(?:Figure|Abbildung|Figura)\s+\d/.test(caption.textContent.trim())) continue;
+        const figure = document.createElement('div');
+        figure.className = 'pdf-figure';
+        paragraph.before(figure);
+        figure.append(paragraph, caption);
+        paired++;
+      }
+      // A full GUI screen becomes unreadable in a narrow procedure column.
+      // Keep it beside the same instruction, in a full-width following print row.
+      const wideImages = [...document.querySelectorAll('.pdf-chapter td img')].filter(image =>
+        guiScreenshotAlts.includes(image.alt) && image.naturalWidth >= 1600);
+      let expanded = 0;
+      for (const image of wideImages) {
+        const cell = image.closest('td'), row = cell.closest('tr'), table = row.closest('table');
+        const columns = Math.max(...[...table.rows].map(row => [...row.cells].reduce((sum, cell) => sum + cell.colSpan, 0)));
+        const illustrationRow = document.createElement('tr');
+        illustrationRow.className = 'pdf-screenshot-row';
+        const illustrationCell = document.createElement('td');
+        illustrationCell.colSpan = columns;
+        illustrationCell.appendChild(image.closest('a.manual-screenshot') || image);
+        illustrationRow.appendChild(illustrationCell);
+        row.after(illustrationRow);
+        expanded++;
+      }
+      return { expandedScreenshotRows: expanded, pairedScreenshotCaptions: paired };
+    }, guiScreenshotAlts);
     if (resourceErrors.length) throw new Error(`PDF resources did not load:\n${[...new Set(resourceErrors)].join('\n')}`);
     await mkdir(publicDir, { recursive: true });
     await mkdir(evidenceDir, { recursive: true });
-    const footer = `<div style="font-family:Arial,sans-serif;font-size:10px;color:#526474;width:100%;padding:0 18mm;display:flex;justify-content:space-between"><span>BactoSense · ${escapeHtml(manifest.languageLabel)}</span><span><span class="pageNumber"></span> / <span class="totalPages"></span></span></div>`;
+    const footer = `<div style="font-family:Arial,sans-serif;font-size:10px;color:#526474;width:100%;padding:0 18mm;display:flex;justify-content:space-between"><span>BactoSense · ${escapeHtml(manifest.documentId)} · ${escapeHtml(manifest.languageLabel)}</span><span><span class="pageNumber"></span> / <span class="totalPages"></span></span></div>`;
     const pdf = await page.pdf({
       path: temporaryPdf,
       format: 'A4',
@@ -235,9 +273,13 @@ export async function compileManualPdf(root, manifest) {
     await rename(path.join(devDir, `${pdfFile}.tmp`), path.join(devDir, pdfFile));
     const report = {
       locale: manifest.locale,
+      documentId: manifest.documentId,
+      manualVersion: manifest.manualVersion,
       generatedAt: generatedAt.toISOString(),
       chapters: assembled.titles,
       imageCount: assembled.imageCount,
+      expandedScreenshotRows,
+      pairedScreenshotCaptions,
       tableCount: assembled.tableCount,
       noticeCount: assembled.noticeCount,
       sha256: createHash('sha256').update(pdf).digest('hex'),

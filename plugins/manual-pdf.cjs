@@ -45,6 +45,7 @@ module.exports = function manualPdfPlugin(context) {
       const manifest = {
         locale,
         manualVersion: require('../package.json').version,
+        documentId: 'UM-0006',
         softwareVersion: '3.2.0',
         htmlLang: context.i18n.localeConfigs[locale].htmlLang,
         languageLabel: context.i18n.localeConfigs[locale].label,

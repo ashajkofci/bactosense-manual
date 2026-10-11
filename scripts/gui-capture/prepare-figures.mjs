@@ -1,6 +1,7 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import { nativeLayouts, webLayouts, localizedTitles } from './layouts.mjs';
+import { nativeLayouts, nativeLayoutForLocale, webLayouts, localizedTitles } from './layouts.mjs';
+import { iconTitles } from './icon-titles.mjs';
 
 const root = path.resolve(import.meta.dirname, '../..');
 const readJson = async file => JSON.parse(await readFile(path.join(root,file),'utf8'));
@@ -20,7 +21,7 @@ const pngSize = async capture => {
 };
 for (const locale of locales) {
   if (!localizedTitles[locale] || !webEvidence.locales[locale]) throw new Error(`Missing current captures for ${locale}.`);
-  const layouts = [...nativeLayouts,...webLayouts(webEvidence.locales[locale])];
+  const layouts = [...nativeLayouts.map(layout=>nativeLayoutForLocale(layout,locale)),...webLayouts(webEvidence.locales[locale])];
   if (layouts.length!==localizedTitles[locale].length) throw new Error('Figure titles do not match the catalog.');
   for (const [index,layout] of layouts.entries()) {
     const {name,sourceIds,surface} = layout;
@@ -59,7 +60,8 @@ for (const icon of icons.icons) {
   const replaces=icon.old_source_assets.filter(source=>!['/img/manual/cell-f60b02982fd9.png','/img/manual/cell-71bc4e13a72d.png','/img/manual/cell-2633a4bc793a.png'].includes(source));
   figures.push({id:`icon-${icon.name}`,locale:'all',kind:'icon',surface:'native',
     capture:icon.raw_path,captureSize:icon.logical_size,crop:icon.crop,
-    output:icon.output,alt:`BactoSense ${icon.name.replaceAll('-',' ')}`,replaces,
+    output:icon.output,alt:`BactoSense — ${iconTitles[icon.name].en}`,
+    alts:Object.fromEntries(Object.entries(iconTitles[icon.name]).map(([locale,title])=>[locale,`BactoSense — ${title}`])),replaces,
     sourceIds:icons.replacements.filter(row=>replaces.includes(row.old)).map(row=>row.id),
     productionComponent:icon.production_component,
     ...(icon.name==='maintenance-button' ? {contextReplacements:[{source:'/img/manual/asset-a7a911718f1c.png',printedPage:84}]} : {})});

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "prepared_utc": "2026-10-11T19:29:57+00:00",
-  "status": "prepared_for_root_review_not_applied",
+  "status": "reviewed_and_applied",
   "locales": [
     "en",
     "de",
@@ -2628,6 +2628,201 @@
       ],
       "expected_count": 2,
       "kind": "text"
+    },
+    {
+      "id": "de-web-navigation-final-1",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "Wählen Sie in der Web-Oberfläche im Navigationsfeld links die Seite Systeminfo.",
+      "new": "Wählen Sie in der Web-Oberfläche im Navigationsfeld links die Seite Diagnose.",
+      "reason": "Exact current localized web navigation label, verified in the final screenshot.",
+      "sections": [
+        "13-9"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-web-navigation-final-2",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "Sur l’interface web, sélectionnez la page Paramètres dans le panneau de navigation à gauche.",
+      "new": "Sur l’interface web, sélectionnez la page Réglages dans le panneau de navigation à gauche.",
+      "reason": "Exact current localized web navigation label, verified in the final screenshot.",
+      "sections": [
+        "13-8"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-web-navigation-final-3",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "Sur l’interface web, sélectionnez la page Infos système dans le panneau de navigation à gauche.",
+      "new": "Sur l’interface web, sélectionnez la page Informations Système dans le panneau de navigation à gauche.",
+      "reason": "Exact current localized web navigation label, verified in the final screenshot.",
+      "sections": [
+        "13-9"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-web-navigation-final-4",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "Nell’interfaccia web, selezionare la pagina System info nel pannello di navigazione a sinistra.",
+      "new": "Nell’interfaccia web, selezionare la pagina Informazioni di sistema nel pannello di navigazione a sinistra.",
+      "reason": "Exact current localized web navigation label, verified in the final screenshot.",
+      "sections": [
+        "13-9"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-web-navigation-final-5",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "En la interfaz web, seleccione la página System info en el panel de navegación de la izquierda.",
+      "new": "En la interfaz web, seleccione la página Información del sistema en el panel de navegación de la izquierda.",
+      "reason": "Exact current localized web navigation label, verified in the final screenshot.",
+      "sections": [
+        "13-9"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-web-print-review-label-1",
+      "locale": "en",
+      "file": "docs/13-web-user-interface.md",
+      "old": "Find the DOWNLOAD RESULTS section, just below the top PLOT section.",
+      "new": "Find the DOWNLOAD RESULTS section below the results chart.",
+      "reason": "Exact current web heading/button label verified from rendered capture and production locale/template source.",
+      "sections": [
+        "13-6"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-web-print-review-label-2",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "Suchen Sie unterhalb des Abschnitts PLOT den Abschnitt ERGEBNISSE HERUNTERLADEN.",
+      "new": "Suchen Sie den Abschnitt ERGEBNISSE HERUNTERLADEN unterhalb des Ergebnisdiagramms.",
+      "reason": "Exact current web heading/button label verified from rendered capture and production locale/template source.",
+      "sections": [
+        "13-6"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-web-print-review-label-3",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "Trouvez la section TÉLÉCHARGER LES RÉSULTATS, juste en dessous de la section GRAPHIQUE du haut.",
+      "new": "Repérez la section TÉLÉCHARGEMENT sous le graphique des résultats.",
+      "reason": "Exact current web heading/button label verified from rendered capture and production locale/template source.",
+      "sections": [
+        "13-6"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-web-print-review-label-4",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "Individuare la sezione DOWNLOAD RESULTS, appena sotto la sezione PLOT superiore.",
+      "new": "Individuare la sezione SCARICA I RISULTATI sotto il grafico dei risultati.",
+      "reason": "Exact current web heading/button label verified from rendered capture and production locale/template source.",
+      "sections": [
+        "13-6"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-web-print-review-label-5",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "Busque la sección DOWNLOAD RESULTS, situada justo debajo de la sección superior PLOT.",
+      "new": "Busque la sección DESCARGAR RESULTADOS debajo del gráfico de resultados.",
+      "reason": "Exact current web heading/button label verified from rendered capture and production locale/template source.",
+      "sections": [
+        "13-6"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-web-print-review-label-6",
+      "locale": "en",
+      "file": "docs/13-web-user-interface.md",
+      "old": "Click Save to confirm.",
+      "new": "Click SAVE to confirm.",
+      "reason": "Exact current web heading/button label verified from rendered capture and production locale/template source.",
+      "sections": [
+        "13-8"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-web-print-review-label-7",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "Klicken Sie Speichern, um zu bestätigen.",
+      "new": "Klicken Sie auf SAVE, um zu bestätigen.",
+      "reason": "Exact current web heading/button label verified from rendered capture and production locale/template source.",
+      "sections": [
+        "13-8"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-web-print-review-label-8",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "Cliquez sur Enregistrer pour confirmer.",
+      "new": "Cliquez sur SAVE pour confirmer.",
+      "reason": "Exact current web heading/button label verified from rendered capture and production locale/template source.",
+      "sections": [
+        "13-8"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-web-print-review-label-9",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "Fare clic su Save per confermare.",
+      "new": "Fare clic su SAVE per confermare.",
+      "reason": "Exact current web heading/button label verified from rendered capture and production locale/template source.",
+      "sections": [
+        "13-8"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-web-print-review-label-10",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "Haga clic en Save para confirmar.",
+      "new": "Haga clic en SAVE para confirmar.",
+      "reason": "Exact current web heading/button label verified from rendered capture and production locale/template source.",
+      "sections": [
+        "13-8"
+      ],
+      "expected_count": 1,
+      "kind": "text"
     }
   ],
   "counts_by_locale": {
@@ -2889,5 +3084,6 @@
     "finding": "Idle mode cards immediately call saveMode; there is no Confirm button. Back returns to the prior Home screen, where Measure opens the Manual wizard.",
     "active_operation_note": "The current GUI separately prompts to stop an active scheduler or wait/stop a running operation. Those existing active-operation confirmations are not changed by the idle navigation wording."
   },
-  "supplemental_review_utc": "2026-10-11T19:34:13+00:00"
+  "supplemental_review_utc": "2026-10-11T19:34:13+00:00",
+  "reviewedUtc": "2026-10-11T20:02:26.279Z"
 }

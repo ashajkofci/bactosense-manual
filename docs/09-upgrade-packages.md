@@ -19,13 +19,13 @@ The *Scientific Package* is intended for water research professionals to perform
 
 - It is available for TCC and ICC cartridges.
 - The result parameter is a cell concentration named “Gate+”.
-- The gate can be adjusted similar to the TCC or ICC default gates. Please refer to section  11.4.
+- The gate can be adjusted similar to the TCC or ICC default gates. Please refer to [Change gates](11-results-and-data-analysis.md#section-11-4).
 
 **Forward and side scatter detector** The Forward Scatter (FSC) detector measures light that is scattered by bacteria or other  particles. The detector is placed at a small angle to the laser beam’s direction, thus  measuring light signals in “forward” direction.  In contrast, the Side Scatter (SSC) detector is placed at 90 degrees from the beam’s  direction, measuring light scattered towards the side.  The combination of fluorescence and scattering information provides high content data,  enabling applications like microbiological fingerprinting, profiling or anomaly detection.
 
 Scattering data is available in the following ways:
 
-- in the flow cytometry standard (FCS) files. For more information about this file format  please refer to section 11.5.
+- in the flow cytometry standard (FCS) files. For more information about this file format  please refer to [Advanced data analysis](11-results-and-data-analysis.md#section-11-5).
 - on the BactoSense user interface as a FSC / SSC dotplot
 - on the web interface as a FSC / SSC dotplot
 - when downloading the dotplots as images
@@ -36,11 +36,8 @@ Scattering data is available in the following ways:
 | --- | --- | --- |
 | 1. | Contact your bNovate Sales representative to purchase an activation key. |  |
 | 2. | After receiving the activation key, log in as Admin user on the BactoSense. |  |
-| 3. | Navigate to the Home menu of the BactoSense user interface. |  |
+| 3. | On the Home screen, press Settings. |  |
 | 4. | Press the System settings button. |  |
-
-|  | WORK STEP | ADDITIONAL INFO / IMAGE |
-| --- | --- | --- |
 | 5. | Press the Upgrades button. |  |
 | 6. | Press the Upgrade button. |  |
 | 7. | Enter the activation key and press OK. |  |
@@ -56,9 +53,9 @@ The *Management Package* is intended for instrument operation in environments wi
 
 **Audit Trail** The *Audit Trail* is a record of all relevant operations or changes that have been made with  the instrument. It provides a detailed history of actions taken by the user or the instrument  itself.  The *Audit Trail* can be accessed in the following ways:
 
-- On the user interface. In the *Home Menu*, press on *Logs* and then *Audit trail*.
-- When exporting all data to a USB drive, see section 12.1.
-- From the web user interface. The access to the web user interface is described in  chapter 13.
+- On the instrument user interface, open Home → Settings → Logs → Audit trail.
+- When exporting all data to a USB drive, see [Export data to USB device](12-data-access-and-export.md#section-12-1).
+- From the web user interface. The access to the web user interface is described in  [Web User Interface](13-web-user-interface.md).
 
 **Activation of the** **Management Package**
 
@@ -66,16 +63,13 @@ The *Management Package* is intended for instrument operation in environments wi
 | --- | --- | --- |
 | 1. | Contact your bNovate Sales representative to purchase an activation key. |  |
 | 2. | After receiving the activation key, log in as Admin user on the BactoSense. |  |
-| 3. | Navigate to the Home menu of the BactoSense user interface. |  |
+| 3. | On the Home screen, press Settings. |  |
 | 4. | Press the System settings button. |  |
 | 5. | Press the Upgrades button. |  |
 | 6. | Press the Upgrade button. |  |
-
-|  | WORK STEP | ADDITIONAL INFO / IMAGE |
-| --- | --- | --- |
 | 7. | Enter the activation key and press OK. | Note: The advanced user management feature is not activated yet. If you wish to activate the advanced user management, follow the next steps. |
-| 8. | Navigate to the Home menu of the BactoSense user interface. |  |
+| 8. | On the Home screen, press Settings. |  |
 | 9. | Press the System settings button. |  |
 | 10. | Press the System configuration button. |  |
 | 11. | Check the Advanced user management mode check box. |  |
-| 12. | Press Save. |  |
+| 12. | Press Save, then acknowledge the confirmation with OK. |  |

@@ -37,7 +37,7 @@ Das Berühren eines nassen oder beschädigten Netzgeräts kann zu Elektroschläg
 Wird das Gerät an eine falsche Betriebsspannung angeschlossen, könnte es Schaden nehmen.
 
 - Das Gerät darf nur mit der auf dem Typenschild angegebenen Betriebsspannung betrieben werden.
-- Das Gerät darf nur mit dem mitgelieferten Original-Netzteil betrieben werden, siehe Abschnitt 5.3.
+- Das Gerät darf nur mit dem mitgelieferten Original-Netzteil betrieben werden, siehe [Anschluss des BactoSense an die Spannungsversorgung](05-installation.md#section-5-3).
 
 :::
 
@@ -118,7 +118,7 @@ Die Benutzer müssen sicherstellen, dass sie die in dieser Bedienungsanleitung a
 
 ## 4.5 Verhinderung von unberechtigtem Online-Zugriff {#section-4-5}
 
-<img src="/img/manual/asset-96ca4e251d8b.png" alt="Abbildung aus dem Originalhandbuch, gedruckte Seite 16" width="627" loading="lazy" />
+![Abbildung aus dem Originalhandbuch, gedruckte Seite 16](/img/manual/asset-96ca4e251d8b.png "width=627")
 
 :::warning[Netzwerkzugriff schützen]
 

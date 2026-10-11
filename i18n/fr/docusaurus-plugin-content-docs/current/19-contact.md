@@ -17,4 +17,4 @@ Lorsque vous contactez un point de service bNovate ou le service client, veuille
 - Documentation des produits tiers que vous utilisez conjointement avec le BactoSense.
 - Description des conditions de fonctionnement (lieu, alimentation électrique, milieu mesuré, température, etc.).
 - Ce manuel d’utilisation
-- Exportation des dernières mesures lorsque l’erreur s’est produite (voir section 10.8).
+- Exportation des dernières mesures lorsque l’erreur s’est produite (voir section [Exportation des mesures](10-measurements.md#section-10-8)).

@@ -19,10 +19,6 @@ Selezionare un numero di sezione per aprire l’argomento corrispondente in ques
   - Test [6.8](/io-box#section-6-8)
 - Assemblaggio [5.5](/installation#section-5-5)
 - Notifiche sonore [8.3.4](/general-operations-and-configurations#section-8-3-4)
-- Modalità Auto
-  - Misura [10.1](/measurements#section-10-1)
-  - Protocolli [10.9.1](/measurements#section-10-9-1)
-  - Risultati [10.2.3](/measurements#section-10-2-3)
 - Accensione automatica [8.3.4](/general-operations-and-configurations#section-8-3-4)
 - Autodiagnosi automatica [16.5](/warnings-errors-and-troubleshooting#section-16-5)
 - Riavvio automatico [8.3.4](/general-operations-and-configurations#section-8-3-4)
@@ -45,6 +41,7 @@ Selezionare un numero di sezione per aprire l’argomento corrispondente in ques
   - Rimozione [8.9.5](/general-operations-and-configurations#section-8-9-5)
   - Conservazione [17.1.3](/storage-transport-and-disposal#section-17-1-3)
   - Trasporto [17.2.2](/storage-transport-and-disposal#section-17-2-2)
+- CBC (Conteggio delle cellule coliformi) [11.3.4](/results-and-data-analysis#section-11-3-4)
 - CE [2.2](/general-user-information#section-2-2)
 - Certificazione
   - CE [2.2](/general-user-information#section-2-2)
@@ -107,6 +104,7 @@ Selezionare un numero di sezione per aprire l’argomento corrispondente in ques
 
 ## E
 
+- EBC (Conteggio delle cellule di E. coli) [11.3.5](/results-and-data-analysis#section-11-3-5)
 - Installazione elettrica
   - alimentazione [5.1](/installation#section-5-1)
 - Errori
@@ -236,6 +234,7 @@ Selezionare un numero di sezione per aprire l’argomento corrispondente in ques
 
 ## N
 
+- NBC (Conteggio delle cellule di Enterococcus) [11.3.6](/results-and-data-analysis#section-11-3-6)
 - Configurazione della rete [8.6](/general-operations-and-configurations#section-8-6)
 - Nuovo gate [11.4.2](/results-and-data-analysis#section-11-4-2)
 - Errori non critici [16.2](/warnings-errors-and-troubleshooting#section-16-2)
@@ -243,11 +242,12 @@ Selezionare un numero di sezione per aprire l’argomento corrispondente in ques
 
 ## O
 
-- Modalità in linea
+- Modalità online
   - Configurazione [10.1](/measurements#section-10-1)
   - Misura [10.1](/measurements#section-10-1)
   - Risultati [10.1](/measurements#section-10-1), [10.2.3](/measurements#section-10-2-3)
   - Arresto [10.2.2](/measurements#section-10-2-2)
+  - Protocolli [10.9.1](/measurements#section-10-9-1)
 - Dispositivo di campionamento in linea [18.2](/supply-scope-accessories-and-consumables#section-18-2)
   - Sostituzione [8.10](/general-operations-and-configurations#section-8-10)
   - Ogive [18.3](/supply-scope-accessories-and-consumables#section-18-3)
@@ -284,7 +284,7 @@ Selezionare un numero di sezione per aprire l’argomento corrispondente in ques
 - Protocollo [10.9](/measurements#section-10-9), [10.9.1](/measurements#section-10-9-1)
 - Protocolli
   - Analisi [10.9](/measurements#section-10-9)
-  - Modalità Auto [10.9.1](/measurements#section-10-9-1)
+  - Modalità online [10.9.1](/measurements#section-10-9-1)
   - Analisi delle microsfere [10.9](/measurements#section-10-9)
   - Pulizia del dispositivo di campionamento manuale
   - dispositivo [15.2.2](/maintenance#section-15-2-2), [15.2.2](/maintenance#section-15-2-2)
@@ -310,7 +310,10 @@ Selezionare un numero di sezione per aprire l’argomento corrispondente in ques
 - Rischio residuo [4.1](/safety#section-4-1)
 - Riavvio [8.3.4](/general-operations-and-configurations#section-8-3-4)
 - Risultati [11.1](/results-and-data-analysis#section-11-1)
-  - Modalità Auto [10.2.3](/measurements#section-10-2-3)
+  - CBC [11.3.4](/results-and-data-analysis#section-11-3-4)
+  - EBC [11.3.5](/results-and-data-analysis#section-11-3-5)
+  - NBC [11.3.6](/results-and-data-analysis#section-11-3-6)
+  - Modalità online [10.2.3](/measurements#section-10-2-3)
   - HNAC [11.3.2](/results-and-data-analysis#section-11-3-2), [11.3.3](/results-and-data-analysis#section-11-3-3)
   - HNAP [11.3.2](/results-and-data-analysis#section-11-3-2), [11.3.3](/results-and-data-analysis#section-11-3-3)
   - ICC [11.3.2](/results-and-data-analysis#section-11-3-2), [11.3.3](/results-and-data-analysis#section-11-3-3)

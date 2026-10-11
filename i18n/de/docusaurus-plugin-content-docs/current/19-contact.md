@@ -17,4 +17,4 @@ Bitte halten Sie folgende Informationen bereit, wenn Sie ein Service-Center oder
 - Dokumentation der Drittanbieterprodukte, die Sie zusammen mit dem BactoSense verwenden.
 - Beschreibung der Lagerungsbedingungen (Einsatzort, Spannungsversorgung, vermessenes Medium, Temperatur usw.).
 - Diese Bedienungsanleitung
-- Export der letzten Messungen, als der Fehler auftrat, siehe Abschnitt 10.8.
+- Export der letzten Messungen, als der Fehler auftrat, siehe [Export von Messungen](10-measurements.md#section-10-8).

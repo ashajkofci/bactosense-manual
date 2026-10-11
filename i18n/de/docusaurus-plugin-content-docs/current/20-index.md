@@ -19,10 +19,6 @@ Wählen Sie eine Abschnittsnummer, um das entsprechende Thema in dieser Anleitun
   - Testen [6.8](/io-box#section-6-8)
 - Montage [5.5](/installation#section-5-5)
 - Akustische Benachrichtigungen [8.3.4](/general-operations-and-configurations#section-8-3-4)
-- Auto-Modus
-  - Messung [10.1](/measurements#section-10-1)
-  - Protokolle [10.9.1](/measurements#section-10-9-1)
-  - Ergebnisse [10.2.3](/measurements#section-10-2-3)
 - Automatisches Einschalten [8.3.4](/general-operations-and-configurations#section-8-3-4)
 - Automatischer Selbsttest [16.5](/warnings-errors-and-troubleshooting#section-16-5)
 - Automatischer Neustart [8.3.4](/general-operations-and-configurations#section-8-3-4)
@@ -45,6 +41,7 @@ Wählen Sie eine Abschnittsnummer, um das entsprechende Thema in dieser Anleitun
   - Entnahme [8.9.5](/general-operations-and-configurations#section-8-9-5)
   - Lagerung [17.1.3](/storage-transport-and-disposal#section-17-1-3)
   - Transport [17.2.2](/storage-transport-and-disposal#section-17-2-2)
+- CBC (Anzahl coliformer Zellen) [11.3.4](/results-and-data-analysis#section-11-3-4)
 - CE [2.2](/general-user-information#section-2-2)
 - Zertifizierung
   - CE [2.2](/general-user-information#section-2-2)
@@ -107,6 +104,7 @@ Wählen Sie eine Abschnittsnummer, um das entsprechende Thema in dieser Anleitun
 
 ## E
 
+- EBC (Anzahl der E.-coli-Zellen) [11.3.5](/results-and-data-analysis#section-11-3-5)
 - Elektroinstallation
   - Stromversorgung [5.1](/installation#section-5-1)
 - Fehler
@@ -236,6 +234,7 @@ Wählen Sie eine Abschnittsnummer, um das entsprechende Thema in dieser Anleitun
 
 ## N
 
+- NBC (Enterokokken-Zellzahl) [11.3.6](/results-and-data-analysis#section-11-3-6)
 - Netzwerkkonfiguration [8.6](/general-operations-and-configurations#section-8-6)
 - Neues Gate [11.4.2](/results-and-data-analysis#section-11-4-2)
 - Unkritische Fehler [16.2](/warnings-errors-and-troubleshooting#section-16-2)
@@ -248,6 +247,7 @@ Wählen Sie eine Abschnittsnummer, um das entsprechende Thema in dieser Anleitun
   - Messung [10.1](/measurements#section-10-1)
   - Ergebnisse [10.1](/measurements#section-10-1), [10.2.3](/measurements#section-10-2-3)
   - Beenden [10.2.2](/measurements#section-10-2-2)
+  - Protokolle [10.9.1](/measurements#section-10-9-1)
 - Online-Probenahmegerät [18.2](/supply-scope-accessories-and-consumables#section-18-2)
   - Austausch [8.10](/general-operations-and-configurations#section-8-10)
   - Aderendhülsen [18.3](/supply-scope-accessories-and-consumables#section-18-3)
@@ -284,7 +284,7 @@ Wählen Sie eine Abschnittsnummer, um das entsprechende Thema in dieser Anleitun
 - Protokoll [10.9](/measurements#section-10-9), [10.9.1](/measurements#section-10-9-1)
 - Protokolle
   - Analyse [10.9](/measurements#section-10-9)
-  - Auto-Modus [10.9.1](/measurements#section-10-9-1)
+  - Online-Modus [10.9.1](/measurements#section-10-9-1)
   - Perlen-Analyse [10.9](/measurements#section-10-9)
   - Manuelles Probenahme-
   - gerät reinigen [15.2.2](/maintenance#section-15-2-2), [15.2.2](/maintenance#section-15-2-2)
@@ -310,7 +310,10 @@ Wählen Sie eine Abschnittsnummer, um das entsprechende Thema in dieser Anleitun
 - Restrisiko [4.1](/safety#section-4-1)
 - Neustart [8.3.4](/general-operations-and-configurations#section-8-3-4)
 - Ergebnisse [11.1](/results-and-data-analysis#section-11-1)
-  - Auto-Modus [10.2.3](/measurements#section-10-2-3)
+  - CBC [11.3.4](/results-and-data-analysis#section-11-3-4)
+  - EBC [11.3.5](/results-and-data-analysis#section-11-3-5)
+  - NBC [11.3.6](/results-and-data-analysis#section-11-3-6)
+  - Online-Modus [10.2.3](/measurements#section-10-2-3)
   - HNAC [11.3.2](/results-and-data-analysis#section-11-3-2), [11.3.3](/results-and-data-analysis#section-11-3-3)
   - HNAP [11.3.2](/results-and-data-analysis#section-11-3-2), [11.3.3](/results-and-data-analysis#section-11-3-3)
   - ICC [11.3.2](/results-and-data-analysis#section-11-3-2), [11.3.3](/results-and-data-analysis#section-11-3-3)

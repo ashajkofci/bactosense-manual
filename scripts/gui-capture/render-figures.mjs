@@ -88,7 +88,7 @@ try {
   const reportDir = path.join(root, 'output/gui-capture');
   await mkdir(reportDir, { recursive: true });
   await writeFile(path.join(reportDir, 'render-report.json'), `${JSON.stringify({ renderedAt: new Date().toISOString(), figures: rendered }, null, 2)}\n`);
-  console.log(`Rendered ${rendered.length} current GUI figures with ${rendered.reduce((n, row) => n + (manifest.figures.find(f => f.id === row.id).callouts?.length || 0), 0)} numbered callouts.`);
+  console.log(`Rendered ${rendered.length} current GUI figures with ${rendered.reduce((n, row) => n + (manifest.figures.find(f => f.id === row.id).callouts?.length || 0), 0)} labeled callouts.`);
 } finally {
   await browser.close();
 }

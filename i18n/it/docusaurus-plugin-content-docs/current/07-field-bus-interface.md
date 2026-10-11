@@ -14,7 +14,7 @@ BactoSense può essere utilizzato tramite il protocollo Modbus Transmission Cont
 
 - Il computer e/o il sistema di gestione o controllo devono essere compatibili con Modbus TCP.
 - Il computer e/o il sistema di gestione o controllo devono disporre di un software in grado di elaborare correttamente i dati forniti da BactoSense.
-- Il servizio Modbus TCP di BactoSense deve essere attivato nel menu System settings / System services.
+- Il servizio Modbus TCP di BactoSense deve essere attivato in Home → Impostazioni → Impostazioni di sistema → Servizi di sistema.
 - BactoSense deve essere collegato al sistema bus.
 - Per poter utilizzare Modbus TCP, le impostazioni di rete devono essere configurate correttamente.
 
@@ -22,43 +22,3130 @@ Informazioni aggiuntive
 
 - L’interfaccia Modbus TCP è integrata di serie in BactoSense.
 - La presa Ethernet si trova sul lato destro dello strumento.
-- La tabella degli indirizzi necessaria per la programmazione è riportata separatamente nella sezione 7.1.2.
+- La tabella degli indirizzi necessaria per la programmazione è riportata separatamente nella sezione [Elenco degli indirizzi Modbus TCP](07-field-bus-interface.md#section-7-1-2).
 - Tutti i registri sono codificati in big-endian.
 - La comunicazione Modbus TCP utilizza la porta 502.
-- L’elenco dei codici di errore è riportato nelle sezioni 16.2 (errori non critici) e 16.3 (errori critici).
-- Modbus TCP può essere utilizzato per la sincronizzazione dell’ora. Seguire le istruzioni della sezione 8.7 e selezionare *Modbus TCP* come sorgente di sincronizzazione.
+- L’elenco dei codici di errore è riportato nelle sezioni [Errori non critici](16-warnings-errors-and-troubleshooting.md#section-16-2) (errori non critici) e [Errori critici](16-warnings-errors-and-troubleshooting.md#section-16-3) (errori critici).
+- Modbus TCP può essere utilizzato per la sincronizzazione dell’ora. Seguire le istruzioni della sezione [Impostazione dei server NTP](08-general-operations-and-configurations.md#section-8-7) e selezionare *Modbus TCP* come sorgente di sincronizzazione.
 
 ### 7.1.2 Elenco degli indirizzi Modbus TCP: {#section-7-1-2}
 
 I seguenti valori possono essere letti con la funzione Modbus 3 o 4 e scritti con la funzione Modbus 16.
 
-| N. REGISTRO | INDIRIZZO (OFFSET) | TIPO DI DATO | FUNZIONE | VALORI |
-| --- | --- | --- | --- | --- |
-| 300201 400201 | 0x00C8 | Intero senza segno, bit 0-15 | Ingressi digitali. Ignorati a meno che “Modbus TCP” sia selezionato come sorgente nella schermata delle impostazioni Digital Inputs. | Bit 0: ingresso 1 Bit 1: ingresso 2 Bit 2: ingresso 3 Bit 3: ingresso 4 Per la corretta corrispondenza tra bit e ingressi, consultare la sezione 6.5, in particolare la tabella 6-2 e la figura 6-5. Ingresso 1111 = 15 significa interruzione. |
-| 300202 400202 | 0x00C9 | Intero senza segno, bit 0-15 | Controllo dell’alimentazione | Bit 0: spegnimento Bit 1: riavvio |
-| 300203 400203 | 0x00CA | Uint16 | Watchdog | Scrivere il valore di riferimento in secondi per attivare o riavviare il conto alla rovescia. Dopo la scrittura, un conto alla rovescia lo decrementa di 1 ogni secondo. Durante il conto alla rovescia, la lettura del registro restituisce il valore di riferimento. Se il conto alla rovescia raggiunge 0, qualsiasi protocollo in corso viene interrotto. La lettura del registro restituisce 0. Scrivere 0 per disabilitare il conto alla rovescia. |
-| 300204 400204 | 0x00CB | Uint16 | Registro di prova | Scrivere 1 per visualizzare un messaggio nella pagina della sorgente DI dell’interfaccia grafica. Si ripristina a 0 all’avvio. |
+<div className="manual-modbus-address-scroll">
 
-<table><tbody><tr><th>N. REGISTRO</th><th>INDIRIZZO (OFFSET)</th><th>TIPO DI DATO</th><th>FUNZIONE</th><th>VALORI</th></tr><tr><td>300211 400211</td><td>0x00D2</td><td>UInt16: anno</td><td rowSpan="6">Lettura/impostazione di data e ora. L’ora viene modificata non appena termina la scrittura. Vengono modificati solo i campi i cui registri sono stati scritti: se viene scritto solo il mese, viene aggiornato solo il mese.</td><td>[0,9999]</td></tr><tr><td>300212 400212</td><td>0x00D3</td><td>UInt16: mese</td><td>[1,12]</td></tr><tr><td>300213 400213</td><td>0x00D4</td><td>UInt16: giorno</td><td>[0,31]</td></tr><tr><td>300214 400214</td><td>0x00D5</td><td>UInt16: ora</td><td>[0,24]</td></tr><tr><td>300215 400215</td><td>0x00D6</td><td>UInt16: minuto</td><td>[0,59]</td></tr><tr><td>300216 400216</td><td>0x00D7</td><td>UInt16: secondo</td><td>[0,59]</td></tr></tbody></table>
+<table className="manual-modbus-address-list">
+
+<colgroup>
+
+<col className="modbus-register-column" />
+
+<col className="modbus-address-column" />
+
+<col className="modbus-type-column" />
+
+<col className="modbus-function-column" />
+
+<col className="modbus-values-column" />
+
+</colgroup>
+
+<thead>
+
+<tr>
+
+<th scope="col">
+
+N. REGISTRO
+
+</th>
+
+<th scope="col">
+
+INDIRIZZO (OFFSET)
+
+</th>
+
+<th scope="col">
+
+TIPO DI DATO
+
+</th>
+
+<th scope="col">
+
+FUNZIONE
+
+</th>
+
+<th scope="col">
+
+VALORI
+
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+
+300201 400201
+
+</td>
+
+<td>
+
+0x00C8
+
+</td>
+
+<td>
+
+Intero senza segno, bit 0-15
+
+</td>
+
+<td>
+
+Ingressi digitali. Ignorati a meno che “Modbus TCP” sia selezionato come sorgente nella schermata delle impostazioni Digital Inputs.
+
+</td>
+
+<td>
+
+Bit 0: ingresso 1 Bit 1: ingresso 2 Bit 2: ingresso 3 Bit 3: ingresso 4 Per la corretta corrispondenza tra bit e ingressi, consultare la sezione [Configurazione degli ingressi digitali e modalità PLC](06-io-box.md#section-6-5), in particolare la tabella 6-2 e la figura 6-5. Ingresso 1111 = 15 significa interruzione.
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300202 400202
+
+</td>
+
+<td>
+
+0x00C9
+
+</td>
+
+<td>
+
+Intero senza segno, bit 0-15
+
+</td>
+
+<td>
+
+Controllo dell’alimentazione
+
+</td>
+
+<td>
+
+Bit 0: spegnimento Bit 1: riavvio
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300203 400203
+
+</td>
+
+<td>
+
+0x00CA
+
+</td>
+
+<td>
+
+Uint16
+
+</td>
+
+<td>
+
+Watchdog
+
+</td>
+
+<td>
+
+Scrivere il valore di riferimento in secondi per attivare o riavviare il conto alla rovescia. Dopo la scrittura, un conto alla rovescia lo decrementa di 1 ogni secondo. Durante il conto alla rovescia, la lettura del registro restituisce il valore di riferimento. Se il conto alla rovescia raggiunge 0, qualsiasi protocollo in corso viene interrotto. La lettura del registro restituisce 0. Scrivere 0 per disabilitare il conto alla rovescia.
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300204 400204
+
+</td>
+
+<td>
+
+0x00CB
+
+</td>
+
+<td>
+
+Uint16
+
+</td>
+
+<td>
+
+Registro di prova
+
+</td>
+
+<td>
+
+Scrivere 1 per visualizzare un messaggio nella pagina della sorgente DI dell’interfaccia grafica. Si ripristina a 0 all’avvio.
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300211 400211
+
+</td>
+
+<td>
+
+0x00D2
+
+</td>
+
+<td>
+
+UInt16: anno
+
+</td>
+
+<td rowSpan="6">
+
+Lettura/impostazione di data e ora. L’ora viene modificata non appena termina la scrittura. Vengono modificati solo i campi i cui registri sono stati scritti: se viene scritto solo il mese, viene aggiornato solo il mese.
+
+</td>
+
+<td>
+
+[0,9999]
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300212 400212
+
+</td>
+
+<td>
+
+0x00D3
+
+</td>
+
+<td>
+
+UInt16: mese
+
+</td>
+
+<td>
+
+[1,12]
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300213 400213
+
+</td>
+
+<td>
+
+0x00D4
+
+</td>
+
+<td>
+
+UInt16: giorno
+
+</td>
+
+<td>
+
+[0,31]
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300214 400214
+
+</td>
+
+<td>
+
+0x00D5
+
+</td>
+
+<td>
+
+UInt16: ora
+
+</td>
+
+<td>
+
+[0,24]
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300215 400215
+
+</td>
+
+<td>
+
+0x00D6
+
+</td>
+
+<td>
+
+UInt16: minuto
+
+</td>
+
+<td>
+
+[0,59]
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300216 400216
+
+</td>
+
+<td>
+
+0x00D7
+
+</td>
+
+<td>
+
+UInt16: secondo
+
+</td>
+
+<td>
+
+[0,59]
+
+</td>
+
+</tr>
+<tr className="modbus-address-group-note">
+
+<td colSpan="5">
 
 I seguenti valori possono essere letti con la funzione Modbus 3 o 4.
 
-<table><tbody><tr><th>N. REGISTRO</th><th>INDIRIZZO (OFFSET)</th><th>TIPO DI DATO</th><th>FUNZIONE</th><th>VALORI</th></tr><tr><td>300001 400001</td><td>0x0000</td><td>UInt16 (singoli bit)</td><td>Uscite digitali</td><td>Bit 0: uscita 1 Bit 1: uscita 2 Bit 2: uscita 3 Bit 3: uscita 4 Per la corretta corrispondenza tra bit e uscite, consultare la sezione 6.6 oppure utilizzare l’interfaccia di prova delle uscite come descritto nella sezione 6.8.</td></tr><tr><td>300002 400002</td><td>0x0001</td><td>UInt16 (singoli bit)</td><td>Stato dello strumento 0 = No 1 = Sì</td><td>Bit 0: processo in corso Bit 1: errore critico Bit 2: errore non critico Bit 3: modalità PLC attiva Bit 4: riscaldamento rapido (in modalità invernale) Bit 5: riscaldamento di fondo (modalità invernale) Bit 6: dispositivo di campionamento in uso</td></tr><tr><td>300003 400003</td><td>0x0002</td><td>UInt16 (singoli bit)</td><td><Admonition type="info" title="Informazioni aggiuntive">Stato degli allarmi, ossia allarmi generati durante l’ultima misurazione.</Admonition></td><td>Bit 0: allarme 1 Bit 1: allarme 2 Bit 2: allarme 3 …</td></tr><tr><td>300004 400004</td><td>0x0003</td><td>UInt32 MSB (singoli bit)</td><td rowSpan="2"><Admonition type="info" title="Informazioni aggiuntive">Stato degli avvertimenti, ossia avvertimenti generati durante l’ultima misurazione.</Admonition></td><td rowSpan="2">Bit 0: avvertimento W01 Bit 1: avvertimento W02 ... Bit 31: avvertimento W32</td></tr><tr><td>300005 400005</td><td>0x0004</td><td>UInt32 LSB (singoli bit)</td></tr><tr><td>300006 400006</td><td>0x0005</td><td>UInt16</td><td>Codice di errore</td><td>Vedere l’elenco dei codici di errore. Nota: E00 (errore software non gestito) viene rinominato 999 per evitare confusione con “nessun errore”. I codici degli errori non critici permangono finché non vengono cancellati automaticamente da un protocollo riuscito o manualmente.</td></tr></tbody></table>
+</td>
 
-<table><tbody><tr><th>N. REGISTRO</th><th>INDIRIZZO (OFFSET)</th><th>TIPO DI DATO</th><th>FUNZIONE</th><th>VALORI</th></tr><tr><td>300007 400007</td><td>0x0006</td><td>UInt16</td><td>Segnale di attività (heartbeat)</td><td>Secondi dell’orologio. Il valore cambia ogni secondo; utilizzarlo per monitorare la reattività del sistema.</td></tr><tr><td>300008 400008</td><td>0x0007</td><td>UInt16</td><td>Fase di misurazione</td><td>INATTIVO (IDLE) 0 INIZIALIZZAZIONE (INITIALIZING) 1 RISCALDAMENTO (HEATING) 2 RIEMPIMENTO (FILLING) 3 ADESCAMENTO (PRIMING) 4 MISCELAZIONE (MIXING) 5 INCUBAZIONE (INCUBATING) 6 ANALISI (ANALYZING) 7 PULIZIA (CLEANING) 8 RISCIACQUO (FLUSHING) 9 ELABORAZIONE (PROCESSING) 10 VALIDAZIONE (VALIDATING) 11 MOVIMENTO (MOVING) 12 ESPULSIONE (EJECTING) 13 ESPORTAZIONE (EXPORTING) 14 RINOMINA (RENAMING) 15 ELIMINAZIONE (DELETING) 16 SALVATAGGIO (SAVING) 17 AUTOVERIFICA (SELFCHECK) 18 INTERROTTO (ABORTED) 19 SCONOSCIUTO (UNKNOWN) 98 ERRORE (ERROR) 99</td></tr><tr><td>300011 400011</td><td>0x000A</td><td>UInt16</td><td>Avanzamento della misurazione</td><td>[0, 100] 0 .. 100 %</td></tr><tr><td>300012 400012</td><td>0x000B</td><td>Float 32 MSB</td><td rowSpan="2">Temperatura della scheda I/O</td><td rowSpan="2">Celsius</td></tr><tr><td>300013 400013</td><td>0x000C</td><td>Float 32 LSB</td></tr><tr><td>300014 400014</td><td>0x000D</td><td>UInt16</td><td>Umidità presso la scheda I/O</td><td>[0, 100] 0 .. 100 %</td></tr></tbody></table>
+</tr>
+<tr>
 
-<table><tbody><tr><th>N. REGISTRO</th><th>INDIRIZZO (OFFSET)</th><th>TIPO DI DATO</th><th>FUNZIONE</th><th>VALORI</th></tr><tr><td>300015 400015</td><td>0x000E</td><td>UInt16: anno</td><td colSpan="2" rowSpan="6">Data e ora dell’ultimo campionamento</td></tr><tr><td>300016 400016</td><td>0x000F</td><td>UInt16: mese</td></tr><tr><td>300017 400017</td><td>0x0010</td><td>UInt16: giorno</td></tr><tr><td>300018 400018</td><td>0x0011</td><td>UInt16: ora</td></tr><tr><td>300019 400019</td><td>0x0012</td><td>UInt16: minuto</td></tr><tr><td>300020 400020</td><td>0x0013</td><td>UInt16: secondo</td></tr><tr><td>300021 400021</td><td>0x0014</td><td>UInt16</td><td>Percentuale della cartuccia</td><td>[0, 100] 0 .. 100 %</td></tr><tr><td>300022 400022</td><td>0x0015</td><td>UInt32 MSB</td><td rowSpan="2">Numero di serie della cartuccia</td><td rowSpan="2"></td></tr><tr><td>300023 400023</td><td>0x0016</td><td>UInt32 LSB</td></tr><tr><td>300024 400024</td><td>0x0017</td><td>UInt32 MSB</td><td>Numero di serie del riempimento</td><td rowSpan="2"></td></tr><tr><td>300025 400025</td><td>0x0018</td><td>UInt32 LSB</td><td></td></tr><tr><td>300026 400026</td><td>0x0019</td><td>Uint16</td><td>Tipo di cartuccia</td><td>1 = TCC 1002 = ICC 1030 = ACC</td></tr><tr><td>300027 400027</td><td>0x001A</td><td>UInt16: anno</td><td rowSpan="3">Data di scadenza della cartuccia</td><td rowSpan="3">Data UTC</td></tr><tr><td>300028 400028</td><td>0x001B</td><td>UInt16: mese</td></tr><tr><td>300029 400029</td><td>0x001c</td><td>UInt16: giorno</td></tr><tr><td>300031 400031</td><td>0x001E</td><td>UInt32 MSB</td><td rowSpan="2">Numero di serie dello strumento</td><td rowSpan="2"></td></tr><tr><td>300032 400032</td><td>0x001F</td><td>UInt32 LSB</td></tr></tbody></table>
+<td>
 
-<table><tbody><tr><th>N. REGISTRO</th><th>INDIRIZZO (OFFSET)</th><th>TIPO DI DATO</th><th>FUNZIONE</th><th>VALORI</th></tr><tr><td>300033 400033</td><td>0x0020</td><td>Caratteri 1-2 della stringa</td><td rowSpan="5">Versione software</td><td rowSpan="5">Se la stringa è più corta di 16 caratteri, viene completata con caratteri nulli. Esempio: '1.4.0-BS\0\0\0\0...'</td></tr><tr><td>300034 400034</td><td>0x0021</td><td>Caratteri 3-4 della stringa</td></tr><tr><td>300035 400035</td><td>0x0022</td><td>Caratteri 5-6 della stringa</td></tr><tr><td>300036 400036</td><td>0x0023</td><td>Caratteri 7-8 della stringa</td></tr><tr><td>300037 400037</td><td>0x0024</td><td>Caratteri 9-10 della stringa</td></tr><tr><td>300038 400038</td><td>0x0025</td><td>Caratteri 11-12 della stringa</td><td rowSpan="3"></td><td rowSpan="3"></td></tr><tr><td>300039 400039</td><td>0x0026</td><td>Caratteri 13-14 della stringa</td></tr><tr><td>300040 400040</td><td>0x0027</td><td>Caratteri 15-16 della stringa</td></tr><tr><td>300041 400041</td><td>0x0028</td><td>UInt16</td><td>Memoria rimanente</td><td>Numero approssimativo di misurazioni rimanenti prima che il disco sia pieno</td></tr><tr><td>300042 400042</td><td>0x0029</td><td>UInt16</td><td>Vita utile residua della valvola</td><td>[0, 100], percentuale di movimenti rimanenti prima della manutenzione.</td></tr><tr><td>300043 400043</td><td>0x002A</td><td>UInt16</td><td>Vita utile residua dello stantuffo</td><td>[0, 100], percentuale di movimenti rimanenti prima della manutenzione.</td></tr><tr><td>300044 400044</td><td>0x002B</td><td>UInt16: anno</td><td rowSpan="3">Data della prossima manutenzione</td><td rowSpan="3">Data UTC</td></tr><tr><td>300045 400045</td><td>0x002C</td><td>UInt16: mese</td></tr><tr><td>300046 400046</td><td>0x002D</td><td>UInt16: giorno</td></tr><tr><td>300101 400101</td><td>0x0064</td><td>UInt32 MSB</td><td rowSpan="2">TCC</td><td rowSpan="2">Si azzera dopo un protocollo di pulizia o al riavvio.</td></tr><tr><td>300102 400102</td><td>0x0065</td><td>UInt32 LSB</td></tr><tr><td>300103 400103</td><td>0x0066</td><td>UInt32 MSB</td><td rowSpan="2">ICC</td><td rowSpan="2">Sempre 0 se la cartuccia non fornisce ICC.</td></tr><tr><td>300104 400104</td><td>0x0067</td><td>UInt32 LSB</td></tr></tbody></table>
+300001 400001
 
-<table><tbody><tr><th>N. REGISTRO</th><th>INDIRIZZO (OFFSET)</th><th>TIPO DI DATO</th><th>FUNZIONE</th><th>VALORI</th></tr><tr><td>300105 400105</td><td>0x0068</td><td>UInt32 MSB</td><td rowSpan="2">Gate+</td><td rowSpan="2">Sempre 0 se la cartuccia non fornisce Gate+</td></tr><tr><td>300106 400106</td><td>0x0069</td><td>UInt32 LSB</td></tr><tr><td>300107 400107</td><td>0x006A</td><td>UInt32 MSB</td><td rowSpan="2">HNAC</td><td rowSpan="2"></td></tr><tr><td>300108 400108</td><td>0x006B</td><td>UInt32 LSB</td></tr><tr><td>300109 400109</td><td>0x006C</td><td>UInt32 MSB</td><td rowSpan="2">LNAC</td><td rowSpan="2"></td></tr><tr><td>300110 400110</td><td>0x006D</td><td>UInt32 LSB</td></tr><tr><td>300111 400111</td><td>0x006E</td><td>Float 32 MSB</td><td rowSpan="2">HNAP</td><td rowSpan="2"></td></tr><tr><td>300112 400112</td><td>0x006F</td><td>Float 32 LSB</td></tr><tr><td>300113 400113</td><td>0x0070</td><td>UInt32 MSB</td><td rowSpan="2">ACC</td><td rowSpan="2">Sempre 0 se non è una cartuccia ACC.</td></tr><tr><td>300114 400114</td><td>0x0071</td><td>UInt32 LSB</td></tr><tr><td>300115 400115</td><td>0x0072</td><td>UInt32 MSB</td><td rowSpan="2">HACC</td><td rowSpan="2">Sempre 0 se non è una cartuccia ACC.</td></tr><tr><td>300116 400116</td><td>0x0073</td><td>UInt32 LSB</td></tr><tr><td>300117 400117</td><td>0x0074</td><td>UInt32 MSB</td><td rowSpan="2">LACC</td><td rowSpan="2">Sempre 0 se non è una cartuccia ACC.</td></tr><tr><td>300118 400118</td><td>0x0075</td><td>UInt32 LSB</td></tr><tr><td>300119 400119</td><td>0x0076</td><td>Float 32 MSB</td><td rowSpan="2">HACP</td><td rowSpan="2">Sempre 0 se non è una cartuccia ACC.</td></tr><tr><td>300120 400120</td><td>0x0077</td><td>Float 32 LSB</td></tr><tr><td>300121 400121</td><td>0x0078</td><td>UInt32 MSB</td><td rowSpan="2">TCC in tempo reale</td><td rowSpan="2">Come TCC, ma il valore viene aggiornato in tempo reale durante una misurazione. Torna a zero al termine della misurazione.</td></tr><tr><td>300122 400122</td><td>0x0079</td><td>UInt32 LSB</td></tr></tbody></table>
+</td>
 
-<table><tbody><tr><th>N. REGISTRO</th><th>INDIRIZZO (OFFSET)</th><th>TIPO DI DATO</th><th>FUNZIONE</th><th>VALORI</th></tr><tr><td>300123 400123</td><td>0x007A</td><td>UInt32 MSB</td><td rowSpan="2">ICC in tempo reale</td><td rowSpan="2">Vedere sopra.</td></tr><tr><td>300124 400124</td><td>0x007B</td><td>UInt32 LSB</td></tr><tr><td>300125 400125</td><td>0x007C</td><td>UInt32 MSB</td><td rowSpan="2">Gate+ in tempo reale</td><td rowSpan="2">Vedere sopra.</td></tr><tr><td>300126 400126</td><td>0x007D</td><td>UInt32 LSB</td></tr><tr><td>300127 400127</td><td>0x007E</td><td>UInt32 MSB</td><td rowSpan="2">HNAC in tempo reale</td><td rowSpan="2">Vedere sopra.</td></tr><tr><td>300128 400128</td><td>0x007F</td><td>UInt32 LSB</td></tr><tr><td>300129 400129</td><td>0x0080</td><td>UInt32 MSB</td><td rowSpan="2">LNAC in tempo reale</td><td rowSpan="2">Vedere sopra.</td></tr><tr><td>300130 400130</td><td>0x0081</td><td>UInt32 LSB</td></tr><tr><td>300131 400131</td><td>0x0082</td><td>Float 32 MSB</td><td rowSpan="2">HNAP in tempo reale</td><td rowSpan="2">Vedere sopra.</td></tr><tr><td>300132 400132</td><td>0x0083</td><td>Float 32 LSB</td></tr><tr><td>300135 400135</td><td>0x0086</td><td>UInt32 MSB</td><td rowSpan="2">ACC in tempo reale</td><td rowSpan="2">Vedere sopra.</td></tr><tr><td>300136 400136</td><td>0x0087</td><td>UInt32 LSB</td></tr><tr><td>300137 400137</td><td>0x0088</td><td>UInt32 MSB</td><td rowSpan="2">HACC in tempo reale</td><td rowSpan="2">Vedere sopra.</td></tr><tr><td>300138 400138</td><td>0x0089</td><td>UInt32 LSB</td></tr><tr><td>300139 400139</td><td>0x008A</td><td>UInt32 MSB</td><td rowSpan="2">LACC in tempo reale</td><td rowSpan="2">Vedere sopra.</td></tr><tr><td>300140 400140</td><td>0x008B</td><td>UInt32 LSB</td></tr><tr><td>300141 400141</td><td>0x008C</td><td>Float 32 MSB</td><td rowSpan="2">HACP in tempo reale</td><td rowSpan="2">Vedere sopra.</td></tr><tr><td>300142 400142</td><td>0x008D</td><td>Float 32 LSB</td></tr></tbody></table>
+<td>
 
-<table><tbody><tr><th>N. REGISTRO</th><th>INDIRIZZO (OFFSET)</th><th>TIPO DI DATO</th><th>FUNZIONE</th><th>VALORI</th></tr><tr><td>300151 400151</td><td>0x0096</td><td>UInt16: anno</td><td colSpan="2" rowSpan="6">Data e ora dell’ultimo arresto improvviso.</td></tr><tr><td>300152 400152</td><td>0x0097</td><td>UInt16: mese</td></tr><tr><td>300153 400153</td><td>0x0098</td><td>UInt16: giorno</td></tr><tr><td>300154 400154</td><td>0x0099</td><td>UInt16: ora</td></tr><tr><td>300155 400155</td><td>0x009A</td><td>UInt16: minuto</td></tr><tr><td>300156 400156</td><td>0x009B</td><td>UInt16: secondo</td></tr><tr><td>300157 400157</td><td>0x009C</td><td>UInt16</td><td>Tempo di spegnimento</td><td>In secondi</td></tr><tr><td>300165 400165</td><td>0x00A4</td><td>UInt16: anno</td><td colSpan="2" rowSpan="6">Data e ora dell’ultimo avvio di un protocollo.</td></tr><tr><td>300166 400166</td><td>0x00A5</td><td>UInt16: mese</td></tr><tr><td>300167 400167</td><td>0x00A6</td><td>UInt16: giorno</td></tr><tr><td>300168 400168</td><td>0x00A7</td><td>UInt16: ora</td></tr><tr><td>300169 400169</td><td>0x00A8</td><td>UInt16: minuto</td></tr><tr><td>300170 400170</td><td>0x00A9</td><td>UInt16: secondo</td></tr><tr><td>300171 400171</td><td>0x00AA</td><td>UInt16</td><td>Linea di misurazione corrente di BactoSwitch</td><td>Da 1 a 4</td></tr><tr><td>300172 400172</td><td>0x00AB</td><td>UInt16</td><td>Linea di misurazione successiva di BactoSwitch</td><td>Da 1 a 4</td></tr><tr><td>300173 400173</td><td>0x00AC</td><td>UInt16</td><td>Portata di BactoSwitch</td><td>mL/min</td></tr></tbody></table>
+0x0000
 
-| N. REGISTRO | INDIRIZZO (OFFSET) | TIPO DI DATO | FUNZIONE | VALORI |
-| --- | --- | --- | --- | --- |
-| 300174 400174 | 0x00AD | UInt16 | Stato di BactoSwitch | 0 significa nessun errore. |
-| 300175 400175 | 0x00AE | UInt16 | Collegamento di BactoSwitch | 0 = non collegato 1 = collegato correttamente |
-| 300176 400176 | 0x00AF | UInt16 | Stato delle valvole di BactoSwitch | Maschera di bit 0x01 = valvola della linea 1, ecc. int 15 = tutte aperte |
+</td>
+
+<td>
+
+UInt16 (singoli bit)
+
+</td>
+
+<td>
+
+Uscite digitali
+
+</td>
+
+<td>
+
+Bit 0: uscita 1 Bit 1: uscita 2 Bit 2: uscita 3 Bit 3: uscita 4 Per la corretta corrispondenza tra bit e uscite, consultare la sezione [Configurazione delle uscite digitali](../io-box/#section-6-6) oppure utilizzare l’interfaccia di prova delle uscite come descritto nella sezione [Prova delle uscite digitali e analogiche](../io-box/#section-6-8).
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300002 400002
+
+</td>
+
+<td>
+
+0x0001
+
+</td>
+
+<td>
+
+UInt16 (singoli bit)
+
+</td>
+
+<td>
+
+Stato dello strumento 0 = No 1 = Sì
+
+</td>
+
+<td>
+
+Bit 0: processo in corso Bit 1: errore critico Bit 2: errore non critico Bit 3: modalità PLC attiva Bit 4: riscaldamento rapido (in modalità invernale) Bit 5: riscaldamento di fondo (modalità invernale) Bit 6: dispositivo di campionamento in uso
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300003 400003
+
+</td>
+
+<td>
+
+0x0002
+
+</td>
+
+<td>
+
+UInt16 (singoli bit)
+
+</td>
+
+<td>
+
+:::info[Informazioni aggiuntive]
+
+Stato degli allarmi, ossia allarmi generati durante l’ultima misurazione.
+
+:::
+
+</td>
+
+<td>
+
+Bit 0: allarme 1 Bit 1: allarme 2 Bit 2: allarme 3 …
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300004 400004
+
+</td>
+
+<td>
+
+0x0003
+
+</td>
+
+<td>
+
+UInt32 MSB (singoli bit)
+
+</td>
+
+<td rowSpan="2">
+
+:::info[Informazioni aggiuntive]
+
+Stato degli avvertimenti, ossia avvertimenti generati durante l’ultima misurazione.
+
+:::
+
+</td>
+
+<td rowSpan="2">
+
+Bit 0: avvertimento W01 Bit 1: avvertimento W02 ... Bit 31: avvertimento W32
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300005 400005
+
+</td>
+
+<td>
+
+0x0004
+
+</td>
+
+<td>
+
+UInt32 LSB (singoli bit)
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300006 400006
+
+</td>
+
+<td>
+
+0x0005
+
+</td>
+
+<td>
+
+UInt16
+
+</td>
+
+<td>
+
+Codice di errore
+
+</td>
+
+<td>
+
+Vedere l’elenco dei codici di errore. Nota: E00 (errore software non gestito) viene rinominato 999 per evitare confusione con “nessun errore”. I codici degli errori non critici permangono finché non vengono cancellati automaticamente da un protocollo riuscito o manualmente.
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300007 400007
+
+</td>
+
+<td>
+
+0x0006
+
+</td>
+
+<td>
+
+UInt16
+
+</td>
+
+<td>
+
+Segnale di attività (heartbeat)
+
+</td>
+
+<td>
+
+Secondi dell’orologio. Il valore cambia ogni secondo; utilizzarlo per monitorare la reattività del sistema.
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300008 400008
+
+</td>
+
+<td>
+
+0x0007
+
+</td>
+
+<td>
+
+UInt16
+
+</td>
+
+<td>
+
+Fase di misurazione
+
+</td>
+
+<td>
+
+INATTIVO (IDLE) 0 INIZIALIZZAZIONE (INITIALIZING) 1 RISCALDAMENTO (HEATING) 2 RIEMPIMENTO (FILLING) 3 ADESCAMENTO (PRIMING) 4 MISCELAZIONE (MIXING) 5 INCUBAZIONE (INCUBATING) 6 ANALISI (ANALYZING) 7 PULIZIA (CLEANING) 8 RISCIACQUO (FLUSHING) 9 ELABORAZIONE (PROCESSING) 10 VALIDAZIONE (VALIDATING) 11 MOVIMENTO (MOVING) 12 ESPULSIONE (EJECTING) 13 ESPORTAZIONE (EXPORTING) 14 RINOMINA (RENAMING) 15 ELIMINAZIONE (DELETING) 16 SALVATAGGIO (SAVING) 17 AUTOVERIFICA (SELFCHECK) 18 INTERROTTO (ABORTED) 19 SCONOSCIUTO (UNKNOWN) 98 ERRORE (ERROR) 99
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300011 400011
+
+</td>
+
+<td>
+
+0x000A
+
+</td>
+
+<td>
+
+UInt16
+
+</td>
+
+<td>
+
+Avanzamento della misurazione
+
+</td>
+
+<td>
+
+[0, 100] 0 .. 100 %
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300012 400012
+
+</td>
+
+<td>
+
+0x000B
+
+</td>
+
+<td>
+
+Float 32 MSB
+
+</td>
+
+<td rowSpan="2">
+
+Temperatura della scheda I/O
+
+</td>
+
+<td rowSpan="2">
+
+Celsius
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300013 400013
+
+</td>
+
+<td>
+
+0x000C
+
+</td>
+
+<td>
+
+Float 32 LSB
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300014 400014
+
+</td>
+
+<td>
+
+0x000D
+
+</td>
+
+<td>
+
+UInt16
+
+</td>
+
+<td>
+
+Umidità presso la scheda I/O
+
+</td>
+
+<td>
+
+[0, 100] 0 .. 100 %
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300015 400015
+
+</td>
+
+<td>
+
+0x000E
+
+</td>
+
+<td>
+
+UInt16: anno
+
+</td>
+
+<td colSpan="2" rowSpan="6">
+
+Data e ora dell’ultimo campionamento
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300016 400016
+
+</td>
+
+<td>
+
+0x000F
+
+</td>
+
+<td>
+
+UInt16: mese
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300017 400017
+
+</td>
+
+<td>
+
+0x0010
+
+</td>
+
+<td>
+
+UInt16: giorno
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300018 400018
+
+</td>
+
+<td>
+
+0x0011
+
+</td>
+
+<td>
+
+UInt16: ora
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300019 400019
+
+</td>
+
+<td>
+
+0x0012
+
+</td>
+
+<td>
+
+UInt16: minuto
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300020 400020
+
+</td>
+
+<td>
+
+0x0013
+
+</td>
+
+<td>
+
+UInt16: secondo
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300021 400021
+
+</td>
+
+<td>
+
+0x0014
+
+</td>
+
+<td>
+
+UInt16
+
+</td>
+
+<td>
+
+Percentuale della cartuccia
+
+</td>
+
+<td>
+
+[0, 100] 0 .. 100 %
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300022 400022
+
+</td>
+
+<td>
+
+0x0015
+
+</td>
+
+<td>
+
+UInt32 MSB
+
+</td>
+
+<td rowSpan="2">
+
+Numero di serie della cartuccia
+
+</td>
+
+<td rowSpan="2">
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300023 400023
+
+</td>
+
+<td>
+
+0x0016
+
+</td>
+
+<td>
+
+UInt32 LSB
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300024 400024
+
+</td>
+
+<td>
+
+0x0017
+
+</td>
+
+<td>
+
+UInt32 MSB
+
+</td>
+
+<td>
+
+Numero di serie del riempimento
+
+</td>
+
+<td rowSpan="2">
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300025 400025
+
+</td>
+
+<td>
+
+0x0018
+
+</td>
+
+<td>
+
+UInt32 LSB
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300026 400026
+
+</td>
+
+<td>
+
+0x0019
+
+</td>
+
+<td>
+
+Uint16
+
+</td>
+
+<td>
+
+Tipo di cartuccia
+
+</td>
+
+<td>
+
+1 = TCC 1002 = ICC 1030 = ACC
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300027 400027
+
+</td>
+
+<td>
+
+0x001A
+
+</td>
+
+<td>
+
+UInt16: anno
+
+</td>
+
+<td rowSpan="3">
+
+Data di scadenza della cartuccia
+
+</td>
+
+<td rowSpan="3">
+
+Data UTC
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300028 400028
+
+</td>
+
+<td>
+
+0x001B
+
+</td>
+
+<td>
+
+UInt16: mese
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300029 400029
+
+</td>
+
+<td>
+
+0x001c
+
+</td>
+
+<td>
+
+UInt16: giorno
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300031 400031
+
+</td>
+
+<td>
+
+0x001E
+
+</td>
+
+<td>
+
+UInt32 MSB
+
+</td>
+
+<td rowSpan="2">
+
+Numero di serie dello strumento
+
+</td>
+
+<td rowSpan="2">
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300032 400032
+
+</td>
+
+<td>
+
+0x001F
+
+</td>
+
+<td>
+
+UInt32 LSB
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300033 400033
+
+</td>
+
+<td>
+
+0x0020
+
+</td>
+
+<td>
+
+Caratteri 1-2 della stringa
+
+</td>
+
+<td rowSpan="5">
+
+Versione software
+
+</td>
+
+<td rowSpan="5">
+
+Se la stringa è più corta di 16 caratteri, viene completata con caratteri nulli. Esempio: '1.4.0-BS\0\0\0\0...'
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300034 400034
+
+</td>
+
+<td>
+
+0x0021
+
+</td>
+
+<td>
+
+Caratteri 3-4 della stringa
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300035 400035
+
+</td>
+
+<td>
+
+0x0022
+
+</td>
+
+<td>
+
+Caratteri 5-6 della stringa
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300036 400036
+
+</td>
+
+<td>
+
+0x0023
+
+</td>
+
+<td>
+
+Caratteri 7-8 della stringa
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300037 400037
+
+</td>
+
+<td>
+
+0x0024
+
+</td>
+
+<td>
+
+Caratteri 9-10 della stringa
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300038 400038
+
+</td>
+
+<td>
+
+0x0025
+
+</td>
+
+<td>
+
+Caratteri 11-12 della stringa
+
+</td>
+
+<td rowSpan="3">
+
+</td>
+
+<td rowSpan="3">
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300039 400039
+
+</td>
+
+<td>
+
+0x0026
+
+</td>
+
+<td>
+
+Caratteri 13-14 della stringa
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300040 400040
+
+</td>
+
+<td>
+
+0x0027
+
+</td>
+
+<td>
+
+Caratteri 15-16 della stringa
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300041 400041
+
+</td>
+
+<td>
+
+0x0028
+
+</td>
+
+<td>
+
+UInt16
+
+</td>
+
+<td>
+
+Memoria rimanente
+
+</td>
+
+<td>
+
+Numero approssimativo di misurazioni rimanenti prima che il disco sia pieno
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300042 400042
+
+</td>
+
+<td>
+
+0x0029
+
+</td>
+
+<td>
+
+UInt16
+
+</td>
+
+<td>
+
+Vita utile residua della valvola
+
+</td>
+
+<td>
+
+[0, 100], percentuale di movimenti rimanenti prima della manutenzione.
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300043 400043
+
+</td>
+
+<td>
+
+0x002A
+
+</td>
+
+<td>
+
+UInt16
+
+</td>
+
+<td>
+
+Vita utile residua dello stantuffo
+
+</td>
+
+<td>
+
+[0, 100], percentuale di movimenti rimanenti prima della manutenzione.
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300044 400044
+
+</td>
+
+<td>
+
+0x002B
+
+</td>
+
+<td>
+
+UInt16: anno
+
+</td>
+
+<td rowSpan="3">
+
+Data della prossima manutenzione
+
+</td>
+
+<td rowSpan="3">
+
+Data UTC
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300045 400045
+
+</td>
+
+<td>
+
+0x002C
+
+</td>
+
+<td>
+
+UInt16: mese
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300046 400046
+
+</td>
+
+<td>
+
+0x002D
+
+</td>
+
+<td>
+
+UInt16: giorno
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300101 400101
+
+</td>
+
+<td>
+
+0x0064
+
+</td>
+
+<td>
+
+UInt32 MSB
+
+</td>
+
+<td rowSpan="2">
+
+TCC
+
+</td>
+
+<td rowSpan="2">
+
+Si azzera dopo un protocollo di pulizia o al riavvio.
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300102 400102
+
+</td>
+
+<td>
+
+0x0065
+
+</td>
+
+<td>
+
+UInt32 LSB
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300103 400103
+
+</td>
+
+<td>
+
+0x0066
+
+</td>
+
+<td>
+
+UInt32 MSB
+
+</td>
+
+<td rowSpan="2">
+
+ICC
+
+</td>
+
+<td rowSpan="2">
+
+Sempre 0 se la cartuccia non fornisce ICC.
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300104 400104
+
+</td>
+
+<td>
+
+0x0067
+
+</td>
+
+<td>
+
+UInt32 LSB
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300105 400105
+
+</td>
+
+<td>
+
+0x0068
+
+</td>
+
+<td>
+
+UInt32 MSB
+
+</td>
+
+<td rowSpan="2">
+
+Gate+
+
+</td>
+
+<td rowSpan="2">
+
+Sempre 0 se la cartuccia non fornisce Gate+
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300106 400106
+
+</td>
+
+<td>
+
+0x0069
+
+</td>
+
+<td>
+
+UInt32 LSB
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300107 400107
+
+</td>
+
+<td>
+
+0x006A
+
+</td>
+
+<td>
+
+UInt32 MSB
+
+</td>
+
+<td rowSpan="2">
+
+HNAC
+
+</td>
+
+<td rowSpan="2">
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300108 400108
+
+</td>
+
+<td>
+
+0x006B
+
+</td>
+
+<td>
+
+UInt32 LSB
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300109 400109
+
+</td>
+
+<td>
+
+0x006C
+
+</td>
+
+<td>
+
+UInt32 MSB
+
+</td>
+
+<td rowSpan="2">
+
+LNAC
+
+</td>
+
+<td rowSpan="2">
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300110 400110
+
+</td>
+
+<td>
+
+0x006D
+
+</td>
+
+<td>
+
+UInt32 LSB
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300111 400111
+
+</td>
+
+<td>
+
+0x006E
+
+</td>
+
+<td>
+
+Float 32 MSB
+
+</td>
+
+<td rowSpan="2">
+
+HNAP
+
+</td>
+
+<td rowSpan="2">
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300112 400112
+
+</td>
+
+<td>
+
+0x006F
+
+</td>
+
+<td>
+
+Float 32 LSB
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300113 400113
+
+</td>
+
+<td>
+
+0x0070
+
+</td>
+
+<td>
+
+UInt32 MSB
+
+</td>
+
+<td rowSpan="2">
+
+ACC
+
+</td>
+
+<td rowSpan="2">
+
+Sempre 0 se non è una cartuccia ACC.
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300114 400114
+
+</td>
+
+<td>
+
+0x0071
+
+</td>
+
+<td>
+
+UInt32 LSB
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300115 400115
+
+</td>
+
+<td>
+
+0x0072
+
+</td>
+
+<td>
+
+UInt32 MSB
+
+</td>
+
+<td rowSpan="2">
+
+HACC
+
+</td>
+
+<td rowSpan="2">
+
+Sempre 0 se non è una cartuccia ACC.
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300116 400116
+
+</td>
+
+<td>
+
+0x0073
+
+</td>
+
+<td>
+
+UInt32 LSB
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300117 400117
+
+</td>
+
+<td>
+
+0x0074
+
+</td>
+
+<td>
+
+UInt32 MSB
+
+</td>
+
+<td rowSpan="2">
+
+LACC
+
+</td>
+
+<td rowSpan="2">
+
+Sempre 0 se non è una cartuccia ACC.
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300118 400118
+
+</td>
+
+<td>
+
+0x0075
+
+</td>
+
+<td>
+
+UInt32 LSB
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300119 400119
+
+</td>
+
+<td>
+
+0x0076
+
+</td>
+
+<td>
+
+Float 32 MSB
+
+</td>
+
+<td rowSpan="2">
+
+HACP
+
+</td>
+
+<td rowSpan="2">
+
+Sempre 0 se non è una cartuccia ACC.
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300120 400120
+
+</td>
+
+<td>
+
+0x0077
+
+</td>
+
+<td>
+
+Float 32 LSB
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300121 400121
+
+</td>
+
+<td>
+
+0x0078
+
+</td>
+
+<td>
+
+UInt32 MSB
+
+</td>
+
+<td rowSpan="2">
+
+TCC in tempo reale
+
+</td>
+
+<td rowSpan="2">
+
+Come TCC, ma il valore viene aggiornato in tempo reale durante una misurazione. Torna a zero al termine della misurazione.
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300122 400122
+
+</td>
+
+<td>
+
+0x0079
+
+</td>
+
+<td>
+
+UInt32 LSB
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300123 400123
+
+</td>
+
+<td>
+
+0x007A
+
+</td>
+
+<td>
+
+UInt32 MSB
+
+</td>
+
+<td rowSpan="2">
+
+ICC in tempo reale
+
+</td>
+
+<td rowSpan="2">
+
+Vedere sopra.
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300124 400124
+
+</td>
+
+<td>
+
+0x007B
+
+</td>
+
+<td>
+
+UInt32 LSB
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300125 400125
+
+</td>
+
+<td>
+
+0x007C
+
+</td>
+
+<td>
+
+UInt32 MSB
+
+</td>
+
+<td rowSpan="2">
+
+Gate+ in tempo reale
+
+</td>
+
+<td rowSpan="2">
+
+Vedere sopra.
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300126 400126
+
+</td>
+
+<td>
+
+0x007D
+
+</td>
+
+<td>
+
+UInt32 LSB
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300127 400127
+
+</td>
+
+<td>
+
+0x007E
+
+</td>
+
+<td>
+
+UInt32 MSB
+
+</td>
+
+<td rowSpan="2">
+
+HNAC in tempo reale
+
+</td>
+
+<td rowSpan="2">
+
+Vedere sopra.
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300128 400128
+
+</td>
+
+<td>
+
+0x007F
+
+</td>
+
+<td>
+
+UInt32 LSB
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300129 400129
+
+</td>
+
+<td>
+
+0x0080
+
+</td>
+
+<td>
+
+UInt32 MSB
+
+</td>
+
+<td rowSpan="2">
+
+LNAC in tempo reale
+
+</td>
+
+<td rowSpan="2">
+
+Vedere sopra.
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300130 400130
+
+</td>
+
+<td>
+
+0x0081
+
+</td>
+
+<td>
+
+UInt32 LSB
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300131 400131
+
+</td>
+
+<td>
+
+0x0082
+
+</td>
+
+<td>
+
+Float 32 MSB
+
+</td>
+
+<td rowSpan="2">
+
+HNAP in tempo reale
+
+</td>
+
+<td rowSpan="2">
+
+Vedere sopra.
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300132 400132
+
+</td>
+
+<td>
+
+0x0083
+
+</td>
+
+<td>
+
+Float 32 LSB
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300135 400135
+
+</td>
+
+<td>
+
+0x0086
+
+</td>
+
+<td>
+
+UInt32 MSB
+
+</td>
+
+<td rowSpan="2">
+
+ACC in tempo reale
+
+</td>
+
+<td rowSpan="2">
+
+Vedere sopra.
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300136 400136
+
+</td>
+
+<td>
+
+0x0087
+
+</td>
+
+<td>
+
+UInt32 LSB
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300137 400137
+
+</td>
+
+<td>
+
+0x0088
+
+</td>
+
+<td>
+
+UInt32 MSB
+
+</td>
+
+<td rowSpan="2">
+
+HACC in tempo reale
+
+</td>
+
+<td rowSpan="2">
+
+Vedere sopra.
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300138 400138
+
+</td>
+
+<td>
+
+0x0089
+
+</td>
+
+<td>
+
+UInt32 LSB
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300139 400139
+
+</td>
+
+<td>
+
+0x008A
+
+</td>
+
+<td>
+
+UInt32 MSB
+
+</td>
+
+<td rowSpan="2">
+
+LACC in tempo reale
+
+</td>
+
+<td rowSpan="2">
+
+Vedere sopra.
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300140 400140
+
+</td>
+
+<td>
+
+0x008B
+
+</td>
+
+<td>
+
+UInt32 LSB
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300141 400141
+
+</td>
+
+<td>
+
+0x008C
+
+</td>
+
+<td>
+
+Float 32 MSB
+
+</td>
+
+<td rowSpan="2">
+
+HACP in tempo reale
+
+</td>
+
+<td rowSpan="2">
+
+Vedere sopra.
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300142 400142
+
+</td>
+
+<td>
+
+0x008D
+
+</td>
+
+<td>
+
+Float 32 LSB
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300151 400151
+
+</td>
+
+<td>
+
+0x0096
+
+</td>
+
+<td>
+
+UInt16: anno
+
+</td>
+
+<td colSpan="2" rowSpan="6">
+
+Data e ora dell’ultimo arresto improvviso.
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300152 400152
+
+</td>
+
+<td>
+
+0x0097
+
+</td>
+
+<td>
+
+UInt16: mese
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300153 400153
+
+</td>
+
+<td>
+
+0x0098
+
+</td>
+
+<td>
+
+UInt16: giorno
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300154 400154
+
+</td>
+
+<td>
+
+0x0099
+
+</td>
+
+<td>
+
+UInt16: ora
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300155 400155
+
+</td>
+
+<td>
+
+0x009A
+
+</td>
+
+<td>
+
+UInt16: minuto
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300156 400156
+
+</td>
+
+<td>
+
+0x009B
+
+</td>
+
+<td>
+
+UInt16: secondo
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300157 400157
+
+</td>
+
+<td>
+
+0x009C
+
+</td>
+
+<td>
+
+UInt16
+
+</td>
+
+<td>
+
+Tempo di spegnimento
+
+</td>
+
+<td>
+
+In secondi
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300165 400165
+
+</td>
+
+<td>
+
+0x00A4
+
+</td>
+
+<td>
+
+UInt16: anno
+
+</td>
+
+<td colSpan="2" rowSpan="6">
+
+Data e ora dell’ultimo avvio di un protocollo.
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300166 400166
+
+</td>
+
+<td>
+
+0x00A5
+
+</td>
+
+<td>
+
+UInt16: mese
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300167 400167
+
+</td>
+
+<td>
+
+0x00A6
+
+</td>
+
+<td>
+
+UInt16: giorno
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300168 400168
+
+</td>
+
+<td>
+
+0x00A7
+
+</td>
+
+<td>
+
+UInt16: ora
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300169 400169
+
+</td>
+
+<td>
+
+0x00A8
+
+</td>
+
+<td>
+
+UInt16: minuto
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300170 400170
+
+</td>
+
+<td>
+
+0x00A9
+
+</td>
+
+<td>
+
+UInt16: secondo
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300171 400171
+
+</td>
+
+<td>
+
+0x00AA
+
+</td>
+
+<td>
+
+UInt16
+
+</td>
+
+<td>
+
+Linea di misurazione corrente di BactoSwitch
+
+</td>
+
+<td>
+
+Da 1 a 4
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300172 400172
+
+</td>
+
+<td>
+
+0x00AB
+
+</td>
+
+<td>
+
+UInt16
+
+</td>
+
+<td>
+
+Linea di misurazione successiva di BactoSwitch
+
+</td>
+
+<td>
+
+Da 1 a 4
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300173 400173
+
+</td>
+
+<td>
+
+0x00AC
+
+</td>
+
+<td>
+
+UInt16
+
+</td>
+
+<td>
+
+Portata di BactoSwitch
+
+</td>
+
+<td>
+
+mL/min
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300174 400174
+
+</td>
+
+<td>
+
+0x00AD
+
+</td>
+
+<td>
+
+UInt16
+
+</td>
+
+<td>
+
+Stato di BactoSwitch
+
+</td>
+
+<td>
+
+0 significa nessun errore.
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300175 400175
+
+</td>
+
+<td>
+
+0x00AE
+
+</td>
+
+<td>
+
+UInt16
+
+</td>
+
+<td>
+
+Collegamento di BactoSwitch
+
+</td>
+
+<td>
+
+0 = non collegato 1 = collegato correttamente
+
+</td>
+
+</tr>
+<tr>
+
+<td>
+
+300176 400176
+
+</td>
+
+<td>
+
+0x00AF
+
+</td>
+
+<td>
+
+UInt16
+
+</td>
+
+<td>
+
+Stato delle valvole di BactoSwitch
+
+</td>
+
+<td>
+
+Maschera di bit 0x01 = valvola della linea 1, ecc. int 15 = tutte aperte
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>

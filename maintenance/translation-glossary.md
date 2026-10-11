@@ -27,7 +27,7 @@ The DE/FR columns contain normalized editorial forms grounded in those sources, 
 ## Rules that take precedence over the term tables
 
 1. **Preserve literal controls.** When referring to an English label visible in a retained screenshot, keep its exact wording: **Home**, **Settings**, **System settings**, **System info**, **Start**, **Next**, **Save**, **Cancel**, **Re-gate**, **Clear Errors**, **Prime**, **Self-check**, **Clean Optics**, **Clean Sampling Device**, **Enrol**, etc. Translate the surrounding instruction. Use a localized label only when verified against the corresponding localized interface; do not invent it from this glossary.
-2. **Preserve product names and identifiers.** Keep BactoSense CORE/SMART/PURE/Online, BactoCloud, BactoLink, BactoSwitch, BactoCare Essential/Plus, Washstation, Scientific Package, Management Package and Gate+ unchanged. Keep Modbus TCP, HTTP, HTTPS, FTP, VNC, VPN, NTP, FCS, CSV and XLSX unchanged.
+2. **Preserve product names and identifiers.** Keep BactoSense CORE/ID/SMART/PURE/Online, BactoCloud, BactoLink, BactoSwitch, BactoCare Essential/Plus, Washstation, Scientific Package, Management Package and Gate+ unchanged. Keep Modbus TCP, HTTP, HTTPS, FTP, VNC, VPN, NTP, FCS, CSV and XLSX unchanged.
 3. **Preserve result acronyms.** Keep TCC, ICC, ACC, HACC, LACC, HACP, HNA, LNA, HNAC, LNAC, HNAP, CBC, EBC, NBC, FL1, FL2, FSC and SSC unchanged. The old German PDF uses GZZ/IZZ/AZZ and related localized forms; do not restore them. Translate their explanations.
 4. **Preserve values and references.** Do not translate register addresses, bit indices, error codes, part numbers, filenames, extensions, URL parameters, account names (**basic**, **advanced**, **admin**), formulas, section identifiers or image paths. Preserve numerical values, inequalities and units. Do not substitute limits from an older translation.
 5. **Distinguish quantities.** A cell count, a concentration in cells/mL and a percentage are different quantities. Do not turn “intact” into “active”, “total” into “viable”, or a cytometry “gate” into a physical door or valve.
@@ -80,7 +80,7 @@ Reference basis: DE-PDF and FR-PDF chapters 5, 8.10 and 10. “Online” here me
 | manual sampling device | manuelles Probenahmegerät | dispositif d’échantillonnage manuel | dispositivo di campionamento manuale | dispositivo de muestreo manual |
 | online sampling device | Online-Probenahmegerät | dispositif d’échantillonnage en ligne | dispositivo di campionamento in linea | dispositivo de muestreo en línea |
 | manual mode (prose) | manueller Modus | mode manuel | modalità manuale | modo manual |
-| automatic / auto mode (prose) | automatischer Modus | mode automatique | modalità automatica | modo automático |
+| Online mode | Online-Modus | mode en ligne | modalità online | modo en línea |
 | measurement | Messung | mesure | misura | medición |
 | measurement interval | Messintervall | intervalle de mesure | intervallo di misura | intervalo de medición |
 | replicate | Wiederholungsmessung | répétition | ripetizione | réplica |

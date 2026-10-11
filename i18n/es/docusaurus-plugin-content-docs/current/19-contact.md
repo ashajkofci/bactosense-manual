@@ -17,4 +17,4 @@ Tenga preparada la siguiente información cuando se ponga en contacto con el ser
 - Documentación de los productos de otros fabricantes que utiliza junto con BactoSense.
 - Descripción de las condiciones de funcionamiento (ubicación, alimentación eléctrica, medio medido, temperatura, etc.).
 - Este manual de usuario.
-- Exportación de las últimas mediciones cuando se produjo el error; véase la sección 10.8.
+- Exportación de las últimas mediciones cuando se produjo el error; véase la sección [Exportación de mediciones](10-measurements.md#section-10-8).

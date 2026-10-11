@@ -24,9 +24,9 @@ Siga cuidadosamente el procedimiento siguiente para sacar el instrumento BactoSe
 
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMÁGENES |
 | --- | --- | --- |
-| 1. | Abra la caja y retire la tapa. | <img src="/img/manual/asset-506937d5bb36.png" alt="Ilustración del procedimiento, página impresa 17" width="197" loading="lazy"/> |
-| 2. | Retire los compartimentos que contienen los accesorios. | <img src="/img/manual/asset-13aea257fd6b.png" alt="Ilustración del procedimiento, página impresa 17" width="187" loading="lazy"/> |
-| 3. | Saque con cuidado BactoSense de la caja. | <img src="/img/manual/asset-71b361f89d98.png" alt="Ilustración del procedimiento, página impresa 17" width="196" loading="lazy"/> |
+| 1. | Abra la caja y retire la tapa. | ![Ilustración del procedimiento, página impresa 17](/img/manual/asset-506937d5bb36.png "width=197") |
+| 2. | Retire los compartimentos que contienen los accesorios. | ![Ilustración del procedimiento, página impresa 17](/img/manual/asset-13aea257fd6b.png "width=187") |
+| 3. | Saque con cuidado BactoSense de la caja. | ![Ilustración del procedimiento, página impresa 17](/img/manual/asset-71b361f89d98.png "width=196") |
 | 4. | Conserve el embalaje y las espumas para un uso futuro. |  |
 
 ## 5.2 Colocación de BactoSense {#section-5-2}
@@ -48,7 +48,103 @@ Tenga en cuenta los puntos siguientes al elegir una ubicación adecuada para el 
 
 El procedimiento siguiente describe el montaje de BactoSense en una pared o panel vertical:
 
-<table><tbody><tr><th></th><th>PASO DE TRABAJO</th><th>INFORMACIÓN ADICIONAL / IMÁGENES</th></tr><tr><td>1.</td><td>Instale dos tornillos M8 a la misma altura, separados horizontalmente 265 mm (10.4”), en una pared. El diámetro de la cabeza del tornillo debe estar entre 12 mm y 18 mm (0.47” – 0.71”).</td><td><Admonition type="warning" title="Montaje seguro en la pared">La fijación debe soportar al menos 60 kg (132 lbs).</Admonition></td></tr><tr><td>2.</td><td>Ajuste la distancia entre la cabeza de los tornillos y la pared según la imagen de la derecha. X: pared; Y: tornillo.</td><td><img src="/img/manual/asset-3668009808e6.png" alt="Ilustración del procedimiento, página impresa 18" width="256" loading="lazy" /></td></tr><tr><td>3.</td><td>Monte BactoSense en la pared utilizando su sistema de montaje mural (flechas rojas). Apriete los dos tornillos para que BactoSense quede firmemente sujeto a la pared.</td><td><img src="/img/manual/asset-63d339bcf0dc.png" alt="Ilustración del procedimiento, página impresa 18" width="240" loading="lazy" /></td></tr></tbody></table>
+<table>
+
+<tbody>
+
+<tr>
+
+<th>
+
+</th>
+
+<th>
+
+PASO DE TRABAJO
+
+</th>
+
+<th>
+
+INFORMACIÓN ADICIONAL / IMÁGENES
+
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+
+1\.
+
+</td>
+
+<td>
+
+Instale dos tornillos M8 a la misma altura, separados horizontalmente 265 mm (10.4”), en una pared. El diámetro de la cabeza del tornillo debe estar entre 12 mm y 18 mm (0.47” – 0.71”).
+
+</td>
+
+<td>
+
+:::warning[Montaje seguro en la pared]
+
+La fijación debe soportar al menos 60 kg (132 lbs).
+
+:::
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+2\.
+
+</td>
+
+<td>
+
+Ajuste la distancia entre la cabeza de los tornillos y la pared según la imagen de la derecha. X: pared; Y: tornillo.
+
+</td>
+
+<td>
+
+![Ilustración del procedimiento, página impresa 18](/img/manual/asset-3668009808e6.png "width=256")
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+3\.
+
+</td>
+
+<td>
+
+Monte BactoSense en la pared utilizando su sistema de montaje mural (flechas rojas). Apriete los dos tornillos para que BactoSense quede firmemente sujeto a la pared.
+
+</td>
+
+<td>
+
+![Ilustración del procedimiento, página impresa 18](/img/manual/asset-63d339bcf0dc.png "width=240")
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 ## 5.3 Conexión de BactoSense a la alimentación eléctrica {#section-5-3}
 
@@ -56,7 +152,7 @@ El procedimiento siguiente describe el montaje de BactoSense en una pared o pane
 
 BactoSense debe utilizarse con la fuente de alimentación original suministrada para garantizar:
 
-- El cumplimiento de las normas aplicables de seguridad, compatibilidad electromagnética, protección contra la entrada de cuerpos extraños y agua, y RoHS, indicadas en la sección 2.2.
+- El cumplimiento de las normas aplicables de seguridad, compatibilidad electromagnética, protección contra la entrada de cuerpos extraños y agua, y RoHS, indicadas en la sección [Conformidad y normas aplicadas](02-general-user-information.md#section-2-2).
 - Las prestaciones del instrumento de acuerdo con los protocolos de validación de instrumentos de bNovate.
 - La cobertura de la garantía. El funcionamiento con otras fuentes de alimentación requiere una evaluación específica y la autorización de bNovate.
 
@@ -64,11 +160,11 @@ BactoSense debe utilizarse con la fuente de alimentación original suministrada 
 
 :::warning[Alimentación eléctrica estable]
 
-Debe garantizarse una alimentación eléctrica ininterrumpida y estable, conforme a lo especificado en la información técnica de la sección 3.2.
+Debe garantizarse una alimentación eléctrica ininterrumpida y estable, conforme a lo especificado en la información técnica de la sección [Datos técnicos](03-instrument-overview.md#section-3-2).
 
 :::
 
-La fuente de alimentación se suministra en una carcasa IP67 y con un cable con enchufe de tipo J, E o G. Para conectar BactoSense a la alimentación con uno de estos enchufes suministrados por bNovate, siga las instrucciones de la sección 5.3.1. Para la conexión mediante otro enchufe o conectores de alimentación, utilice el procedimiento descrito en la sección 5.3.2.
+La fuente de alimentación se suministra en una carcasa IP67 y con un cable con enchufe de tipo J, E o G. Para conectar BactoSense a la alimentación con uno de estos enchufes suministrados por bNovate, siga las instrucciones de la sección [Conexión mediante el enchufe estándar de la fuente de alimentación](05-installation.md#section-5-3-1). Para la conexión mediante otro enchufe o conectores de alimentación, utilice el procedimiento descrito en la sección [Modificación de la fuente de alimentación estándar con otro conector](05-installation.md#section-5-3-2).
 
 :::info[Mantenga accesible la desconexión de la alimentación]
 
@@ -81,7 +177,137 @@ La fuente de alimentación se suministra en una carcasa IP67 y con un cable con 
 
 El procedimiento siguiente describe cómo conectar BactoSense a la alimentación mediante la fuente de alimentación estándar y el enchufe de tipo J, E, G o B.
 
-<table><tbody><tr><th></th><th>PASO DE TRABAJO</th><th>INFORMACIÓN ADICIONAL / IMÁGENES</th></tr><tr><td>1.</td><td>Asegúrese de que la fuente de alimentación esté seca y no presente ningún signo de daño.</td><td></td></tr><tr><td>2.</td><td>Conecte el enchufe de tipo J, E, G o B de la fuente de alimentación a una toma que suministre la tensión indicada.</td><td></td></tr><tr><td>3.</td><td>Retire la tapa de la toma del conector de alimentación de BactoSense.</td><td></td></tr><tr><td>4.</td><td>Inserte la clavija de alimentación en la toma correspondiente.</td><td><img src="/img/manual/asset-93ac2cd7577d.png" alt="Ilustración del procedimiento, página impresa 20" width="241" loading="lazy" /></td></tr><tr><td>5.</td><td><Admonition type="info" title="Información adicional">Apriete el anillo de bloqueo de la clavija de alimentación (X). Si el conector está correctamente conectado y el instrumento recibe alimentación, el botón de encendido del instrumento comienza a parpadear.</Admonition></td><td><img src="/img/manual/asset-fb64782b7a1f.png" alt="Ilustración del procedimiento, página impresa 20" width="240" loading="lazy" /></td></tr></tbody></table>
+<table>
+
+<tbody>
+
+<tr>
+
+<th>
+
+</th>
+
+<th>
+
+PASO DE TRABAJO
+
+</th>
+
+<th>
+
+INFORMACIÓN ADICIONAL / IMÁGENES
+
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+
+1\.
+
+</td>
+
+<td>
+
+Asegúrese de que la fuente de alimentación esté seca y no presente ningún signo de daño.
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+2\.
+
+</td>
+
+<td>
+
+Conecte el enchufe de tipo J, E, G o B de la fuente de alimentación a una toma que suministre la tensión indicada.
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+3\.
+
+</td>
+
+<td>
+
+Retire la tapa de la toma del conector de alimentación de BactoSense.
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+4\.
+
+</td>
+
+<td>
+
+Inserte la clavija de alimentación en la toma correspondiente.
+
+</td>
+
+<td>
+
+![Ilustración del procedimiento, página impresa 20](/img/manual/asset-93ac2cd7577d.png "width=241")
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+5\.
+
+</td>
+
+<td>
+
+Apriete el anillo de bloqueo de la clavija de alimentación (X). Si el conector está correctamente conectado y el instrumento recibe alimentación, el botón de encendido del instrumento comienza a parpadear.
+
+</td>
+
+<td>
+
+![Ilustración del procedimiento, página impresa 20](/img/manual/asset-fb64782b7a1f.png "width=240")
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 :::warning[Desconecte la alimentación de forma segura]
 
@@ -113,44 +339,402 @@ El procedimiento siguiente solo se aplica si BactoSense debe conectarse a una fu
 
 :::
 
-<table><tbody><tr><th></th><th>PASO DE TRABAJO</th><th>INFORMACIÓN ADICIONAL / IMÁGENES</th></tr><tr><td>1.</td><td><Admonition type="danger" title="Desconecte la fuente de alimentación">Asegúrese de que la fuente de alimentación no esté conectada a la red. Retire la tapa de la carcasa desenroscando los cuatro tornillos (círculos).</Admonition></td><td><img src="/img/manual/asset-a4e9bfa03293.png" alt="Ilustración del procedimiento, página impresa 21" width="241" loading="lazy" /></td></tr><tr><td>2.</td><td>Retire el conector C13 (A) y desenrósquelo para abrirlo.<br /><img src="/img/manual/asset-3c26b4a767ec.png" alt="Ilustración de la retirada y apertura del conector C13 (A)." width="240" loading="lazy" /></td><td><img src="/img/manual/asset-27e4522382d5.png" alt="Ilustración del procedimiento, página impresa 21" width="241" loading="lazy" /></td></tr><tr><td>3.</td><td>Abra el prensaestopas (Y) e introduzca el cable nuevo. Longitudes de cable y secciones de conductor: • 0 – 9 m (0 – 30 ft), 1 mm2 • 9 – 21 m (30 – 69 ft), 1.5 mm2 (máximo). El prensaestopas está dimensionado para un diámetro de cable de 3 – 10 mm (0.12” – 0.39”).</td><td rowSpan="2">.<br /><img src="/img/manual/asset-00540f644f60.png" alt="Ilustración del procedimiento." width="240" loading="lazy" /></td></tr><tr><td>4.</td><td><Admonition type="danger" title="Conecte la tierra de protección">Apriete los 3 conductores (N, PE, L) en el borne eléctrico y sujete el aislamiento del cable. Asegúrese de utilizar un enchufe con tierra de protección (PE) y de que el dispositivo esté correctamente conectado a ella.</Admonition></td></tr></tbody></table>
+<table>
 
-|  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMÁGENES |
-| --- | --- | --- |
-| 5. | Cierre el conector C13 (A) con el tornillo y enchúfelo en la fuente de alimentación. Apriete el prensaestopas. Tire del cable para comprobar si el prensaestopas está suficientemente apretado. | <img src="/img/manual/asset-27e4522382d5.png" alt="Ilustración del procedimiento, página impresa 22" width="241" loading="lazy"/> |
-| 6. | Opcional: la fuente de alimentación puede montarse en una pared. Deben utilizarse tornillos M4 de al menos 20 mm de longitud. Con la tapa aún retirada, coloque los 4 tornillos y fije la carcasa a la pared. | <img src="/img/manual/asset-0ee15b02c033.png" alt="Ilustración del procedimiento, página impresa 22" width="257" loading="lazy"/> |
-| 7. | Vuelva a colocar la tapa de la carcasa y apriete los cuatro tornillos para sellarla. | <img src="/img/manual/asset-a4e9bfa03293.png" alt="Ilustración del procedimiento, página impresa 22" width="239" loading="lazy"/> |
-| 8. | Conecte la fuente de alimentación a la red y al instrumento como se describe en la sección 5.3.1. |  |
+<thead>
 
+<tr>
+
+<th>
+
+</th>
+
+<th>
+
+PASO DE TRABAJO
+
+</th>
+
+<th>
+
+INFORMACIÓN ADICIONAL / IMÁGENES
+
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+
+1\.
+
+</td>
+
+<td>
+
+:::danger[Desconecte la fuente de alimentación]
+
+Asegúrese de que la fuente de alimentación no esté conectada a la red. Retire la tapa de la carcasa desenroscando los cuatro tornillos (círculos).
+
+:::
+
+</td>
+
+<td>
+
+![Ilustración del procedimiento, página impresa 21](/img/manual/asset-a4e9bfa03293.png "width=241")
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+2\.
+
+</td>
+
+<td>
+
+Retire el conector C13 (A) y desenrósquelo para abrirlo.<br />![Ilustración de la retirada y apertura del conector C13 (A).](/img/manual/asset-3c26b4a767ec.png "width=240")
+
+</td>
+
+<td>
+
+![Ilustración del procedimiento, página impresa 21](/img/manual/asset-27e4522382d5.png "width=241")
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+3\.
+
+</td>
+
+<td>
+
+Abra el prensaestopas (Y) e introduzca el cable nuevo. Longitudes de cable y secciones de conductor: • 0 – 9 m (0 – 30 ft), 1 mm2 • 9 – 21 m (30 – 69 ft), 1.5 mm2 (máximo). El prensaestopas está dimensionado para un diámetro de cable de 3 – 10 mm (0.12” – 0.39”).
+
+</td>
+
+<td rowSpan="2">
+
+.<br />![Ilustración del procedimiento.](/img/manual/asset-00540f644f60.png "width=240")
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+4\.
+
+</td>
+
+<td>
+
+:::danger[Conecte la tierra de protección]
+
+Apriete los 3 conductores (N, PE, L) en el borne eléctrico y sujete el aislamiento del cable. Asegúrese de utilizar un enchufe con tierra de protección (PE) y de que el dispositivo esté correctamente conectado a ella.
+
+:::
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+5\.
+
+</td>
+
+<td>
+
+Cierre el conector C13 (A) con el tornillo y enchúfelo en la fuente de alimentación. Apriete el prensaestopas. Tire del cable para comprobar si el prensaestopas está suficientemente apretado.
+
+</td>
+
+<td>
+
+![Ilustración del procedimiento, página impresa 22](/img/manual/asset-27e4522382d5.png "width=241")
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+6\.
+
+</td>
+
+<td>
+
+Opcional: la fuente de alimentación puede montarse en una pared. Deben utilizarse tornillos M4 de al menos 20 mm de longitud. Con la tapa aún retirada, coloque los 4 tornillos y fije la carcasa a la pared.
+
+</td>
+
+<td>
+
+![Ilustración del procedimiento, página impresa 22](/img/manual/asset-0ee15b02c033.png "width=257")
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+7\.
+
+</td>
+
+<td>
+
+Vuelva a colocar la tapa de la carcasa y apriete los cuatro tornillos para sellarla.
+
+</td>
+
+<td>
+
+![Ilustración del procedimiento, página impresa 22](/img/manual/asset-a4e9bfa03293.png "width=239")
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+8\.
+
+</td>
+
+<td>
+
+Conecte la fuente de alimentación a la red y al instrumento como se describe en la sección [Conexión mediante el enchufe estándar de la fuente de alimentación](05-installation.md#section-5-3-1).
+
+</td>
+
+<td>
+
+
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 ## 5.4 Instalación del dispositivo de muestreo manual {#section-5-4}
 
 El dispositivo de muestreo manual está destinado a medir muestras puntuales individuales, recogidas en tubos de 5 mL con tapón de rosca. El procedimiento siguiente describe cómo instalar el dispositivo de muestreo manual.
 
-<img src="/img/manual/asset-d4b1ce33478f.png" alt="Ilustración del manual original, página impresa 23" width="212" loading="lazy" />
+![Ilustración del manual original, página impresa 23](/img/manual/asset-d4b1ce33478f.png "width=53")
 
 *Figura 5-1 Dispositivo de muestreo manual.* *1: pasadores de posicionamiento, 2: tapón, 3: anillo de fijación, 4: tubo de 5 mL con tapón de rosca.*
 
-<img src="/img/manual/icon-gloves.png" alt="Utilice guantes de protección" width="32" loading="lazy" />
+![Utilice guantes de protección](/img/manual/icon-gloves.png "width=32")
 
 Evite la contaminación del equipo. Utilice guantes de nitrilo al manipular muestras, dispositivos de muestreo y cualquier componente que entre en contacto con ellos.
 
-|  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMÁGENES |
-| --- | --- | --- |
-| 1. | Inspeccione el dispositivo de muestreo manual. • Asegúrese de que no tenga polvo ni fibras. Si los tiene, límpielo con un paño sin pelusa humedecido con agua estéril o etanol. • Asegúrese de que el tapón de sellado blanco esté bien asentado en el conector. | <img src="/img/manual/asset-990519e959c3.png" alt="Ilustración del procedimiento, página impresa 23" width="115" loading="lazy"/> |
-| 2. | Coloque un tubo vacío de 5 mL con tapón de rosca o la Washstation en el dispositivo de muestreo. | <img src="/img/manual/asset-cdd539f42468.png" alt="Ilustración del procedimiento, página impresa 23" width="92" loading="lazy"/> |
-| 3. | Inserte con cuidado el conector del dispositivo de muestreo en el puerto situado en el lateral izquierdo de BactoSense, introduciendo los pasadores metálicos de posicionamiento que hay en el interior del conector del dispositivo de muestreo en las aberturas del puerto de muestreo de BactoSense. | <img src="/img/manual/asset-7f15e58174d9.png" alt="Ilustración del procedimiento, página impresa 23" width="125" loading="lazy"/> |
+<table>
 
-<table><tbody><tr><th></th><th>PASO DE TRABAJO</th><th>INFORMACIÓN ADICIONAL / IMÁGENES</th></tr><tr><td>4.</td><td><Admonition type="warning" title="Apriete solo a mano">A continuación, apriete el anillo de fijación moleteado hasta que el dispositivo de muestreo quede firmemente instalado. Apriete únicamente con los dedos. No utilice herramientas.</Admonition></td><td><img src="/img/manual/asset-0c86ff9377ac.png" alt="Ilustración del procedimiento, página impresa 24" width="188" loading="lazy" /></td></tr><tr><td>5.</td><td>Se recomienda limpiar el dispositivo de muestreo después de la instalación. Si dispone de una Washstation, siga el procedimiento de la sección 15.2.2; en caso contrario, siga el procedimiento de la sección 15.2.3.</td><td></td></tr><tr><td>6.</td><td>Después de la limpieza, se recomienda realizar un cebado (Prime) antes de medir la primera muestra. Siga el procedimiento de la sección 10.9.3.</td><td></td></tr></tbody></table>
+<thead>
+
+<tr>
+
+<th scope="col">
+
+
+
+</th>
+
+<th scope="col">
+
+PASO DE TRABAJO
+
+</th>
+
+<th scope="col">
+
+INFORMACIÓN ADICIONAL / IMÁGENES
+
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+
+1\.
+
+</td>
+
+<td>
+
+Inspeccione el dispositivo de muestreo manual. • Asegúrese de que no tenga polvo ni fibras. Si los tiene, límpielo con un paño sin pelusa humedecido con agua estéril o etanol. • Asegúrese de que el tapón de sellado blanco esté bien asentado en el conector.
+
+</td>
+
+<td>
+
+![Ilustración del procedimiento, página impresa 23](/img/manual/asset-990519e959c3.png "width=58")
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+2\.
+
+</td>
+
+<td>
+
+Coloque un tubo vacío de 5 mL con tapón de rosca o la Washstation en el dispositivo de muestreo.
+
+</td>
+
+<td>
+
+![Ilustración del procedimiento, página impresa 23](/img/manual/asset-cdd539f42468.png "width=46")
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+3\.
+
+</td>
+
+<td>
+
+Inserte con cuidado el conector del dispositivo de muestreo en el puerto situado en el lateral izquierdo de BactoSense, introduciendo los pasadores metálicos de posicionamiento que hay en el interior del conector del dispositivo de muestreo en las aberturas del puerto de muestreo de BactoSense.
+
+</td>
+
+<td>
+
+![Ilustración del procedimiento, página impresa 23](/img/manual/asset-7f15e58174d9.png "width=63")
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+4\.
+
+</td>
+
+<td>
+
+:::warning[Apriete solo a mano]
+
+A continuación, apriete el anillo de fijación moleteado hasta que el dispositivo de muestreo quede firmemente instalado. Apriete únicamente con los dedos. No utilice herramientas.
+
+:::
+
+</td>
+
+<td>
+
+![Ilustración del procedimiento, página impresa 24](/img/manual/asset-0c86ff9377ac.png "width=94")
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+5\.
+
+</td>
+
+<td>
+
+Se recomienda limpiar el dispositivo de muestreo después de la instalación. Si dispone de una Washstation, siga el procedimiento de la sección [Limpieza del dispositivo de muestreo manual con Washstation](../maintenance/#section-15-2-2); en caso contrario, siga el procedimiento de la sección [Limpieza básica del dispositivo de muestreo manual](../maintenance/#section-15-2-3).
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+6\.
+
+</td>
+
+<td>
+
+Después de la limpieza, se recomienda realizar un cebado (Prime) antes de medir la primera muestra. Siga el procedimiento de la sección [Realización de un cebado (Prime)](../measurements/#section-10-9-3).
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 ## 5.5 Instalación del dispositivo de muestreo en línea {#section-5-5}
 
 El dispositivo de muestreo en línea está destinado a medir muestras de forma continua a intervalos de medición predefinidos; por ello, se conecta directamente a una fuente de agua y a un desagüe mediante tubos de entrada y salida. El procedimiento siguiente describe cómo instalar el dispositivo de muestreo en línea.
 
-<img src="/img/manual/asset-f2c9efc5b449.png" alt="Ilustración del manual original, página impresa 25" width="585" loading="lazy" />
+![Ilustración del manual original, página impresa 25](/img/manual/asset-f2c9efc5b449.png "width=585")
 
 *Figura 5-2 Dispositivo de muestreo en línea.* *1: tubo de salida conectado a un desagüe, 2: tubo de entrada conectado a una fuente de agua, 3: tuerca del conector,* *4: anillo de fijación, 5: pasadores de posicionamiento, 6: tapón.*
 
-<img src="/img/manual/icon-gloves.png" alt="Utilice guantes de protección" width="32" loading="lazy" />
+![Utilice guantes de protección](/img/manual/icon-gloves.png "width=32")
 
 Evite la contaminación del equipo. Utilice guantes de nitrilo al manipular muestras, dispositivos de muestreo y cualquier componente que entre en contacto con ellos.
 
@@ -172,30 +756,410 @@ En las instalaciones de agua potable, conecte el tubo de salida a un desagüe pa
 
 ### 5.5.1 Conexión de los tubos al dispositivo de muestreo en línea {#section-5-5-1}
 
-Las instrucciones siguientes describen cómo conectar los tubos de entrada y salida al cuerpo del dispositivo de muestreo en línea. Las especificaciones de los tubos figuran en los datos técnicos de la sección 3.2. La sustitución de los tubos contaminados o dañados se describe en la sección 15.2.5.
+Las instrucciones siguientes describen cómo conectar los tubos de entrada y salida al cuerpo del dispositivo de muestreo en línea. Las especificaciones de los tubos figuran en los datos técnicos de la sección [Datos técnicos](03-instrument-overview.md#section-3-2). La sustitución de los tubos contaminados o dañados se describe en la sección [Sustitución de los tubos del dispositivo de muestreo en línea](15-maintenance.md#section-15-2-5).
 
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMÁGENES |
 | --- | --- | --- |
 | 1. | Asegúrese de que el dispositivo de muestreo no esté instalado en BactoSense. |  |
-| 2. | Desenrosque las tuercas de los dos conectores del dispositivo de muestreo. Si es necesario, utilice una llave. Tenga cuidado de no perder las férulas situadas dentro de las tuercas. | <img src="/img/manual/asset-2046d3cea402.png" alt="Ilustración del procedimiento, página impresa 26" width="224" loading="lazy"/> |
+| 2. | Desenrosque las tuercas de los dos conectores del dispositivo de muestreo. Si es necesario, utilice una llave. Tenga cuidado de no perder las férulas situadas dentro de las tuercas. | ![Ilustración del procedimiento, página impresa 26](/img/manual/asset-2046d3cea402.png "width=112") |
 | 3. | Inspeccione los dos tubos para detectar contaminación o daños. Utilice únicamente tubos limpios e intactos con cortes rectos. |  |
-| 4. | Para ambos tubos, introduzca un extremo a través de una tuerca y una férula como se muestra en la ilustración. | <img src="/img/manual/asset-2bc6b8a18de4.png" alt="Ilustración del procedimiento, página impresa 26" width="241" loading="lazy"/> |
-| 5. | Conecte el tubo azul (salida) al conector más próximo al puerto de acoplamiento del dispositivo de muestreo. Conecte el tubo transparente (entrada) al conector más alejado del puerto de acoplamiento del dispositivo de muestreo. Utilice unos alicates para apretar las tuercas. | <img src="/img/manual/asset-836efcb76d2f.png" alt="Ilustración del procedimiento, página impresa 26" width="232" loading="lazy"/> |
-| 6. | Si desea acoplar el dispositivo de muestreo, continúe con la sección 5.5.2. |  |
+| 4. | Para ambos tubos, introduzca un extremo a través de una tuerca y una férula como se muestra en la ilustración. | ![Ilustración del procedimiento, página impresa 26](/img/manual/asset-2bc6b8a18de4.png "width=121") |
+| 5. | Conecte el tubo azul (salida) al conector más próximo al puerto de acoplamiento del dispositivo de muestreo. Conecte el tubo transparente (entrada) al conector más alejado del puerto de acoplamiento del dispositivo de muestreo. Utilice unos alicates para apretar las tuercas. | ![Ilustración del procedimiento, página impresa 26](/img/manual/asset-836efcb76d2f.png "width=116") |
+| 6. | Si desea acoplar el dispositivo de muestreo, continúe con la sección [Instalación del dispositivo de muestreo en línea en BactoSense](05-installation.md#section-5-5-2). |  |
 
 ### 5.5.2 Instalación del dispositivo de muestreo en línea en BactoSense {#section-5-5-2}
 
 Esta sección describe la instalación del dispositivo de muestreo en línea con los tubos de entrada y salida conectados.
 
-<img src="/img/manual/asset-caee9d05e1f9.png" alt="Ilustración del manual original, página impresa 27" width="634" loading="lazy" />
+![Ilustración del manual original, página impresa 27](/img/manual/asset-caee9d05e1f9.png "width=634")
 
 *Figura 5-3 Instalación típica para el modo de análisis en línea con el dispositivo de muestreo en línea.*
 
-<table><tbody><tr><td colSpan="2">Ajuste de caudal y presión</td></tr><tr><td>1</td><td>Válvula de cierre</td></tr><tr><td>2</td><td>Válvula de presión con manómetro</td></tr><tr><td>3</td><td>Válvula de caudal</td></tr><tr><td>4</td><td>Racores reductores</td></tr><tr><td colSpan="2">Tubos de entrada y salida</td></tr><tr><td>5</td><td>Bucle de contrapresión</td></tr><tr><td>6</td><td>Fijación de los tubos</td></tr><tr><td>7</td><td>Tubo de entrada horizontal</td></tr><tr><td>8</td><td>Tubo de salida conectado al desagüe</td></tr><tr><td colSpan="2">Dispositivo de muestreo en línea</td></tr><tr><td>9</td><td>Tubo de salida</td></tr><tr><td>10</td><td>Tubo de entrada</td></tr><tr><td>11</td><td>Condiciones de entrada<br />• Caudal continuo<br />• 200 – 400 mL/min (0.05 – 0.10 gal/min)<br />• Máx. 0.5 bar (7.3 psi)</td></tr></tbody></table>
+<table>
 
-<table><tbody><tr><th></th><th>PASO DE TRABAJO</th><th>INFORMACIÓN ADICIONAL / IMÁGENES</th></tr><tr><td>1.</td><td>Asegúrese de que los tubos de entrada y salida estén firmemente conectados al dispositivo de muestreo en línea.</td><td></td></tr><tr><td>2.</td><td>Inserte con cuidado el conector del dispositivo de muestreo en el puerto situado en el lateral izquierdo de BactoSense, introduciendo los pasadores metálicos de posicionamiento que hay en el interior del conector del dispositivo de muestreo en las aberturas del puerto de muestreo de BactoSense.</td><td><img src="/img/manual/asset-255f328ed935.png" alt="Ilustración del procedimiento, página impresa 28" width="153" loading="lazy" /></td></tr><tr><td>3.</td><td><Admonition type="warning" title="Apriete solo a mano">A continuación, apriete el anillo de fijación moleteado (rojo) hasta que el dispositivo de muestreo quede firmemente instalado. Apriete únicamente con los dedos. No utilice herramientas.</Admonition></td><td><img src="/img/manual/asset-ae907dad8418.png" alt="Ilustración del procedimiento, página impresa 28" width="196" loading="lazy" /></td></tr></tbody></table>
+<tbody>
 
-<table><tbody><tr><th></th><th>PASO DE TRABAJO</th><th>INFORMACIÓN ADICIONAL / IMÁGENES</th></tr><tr><td>4.</td><td><Admonition type="warning" title="Conecte los tubos de muestreo de forma segura">Conecte con cuidado los extremos libres de los tubos a la fuente de agua de entrada y al desagüe de salida. • Coloque el tubo de entrada a la misma altura que la fuente de agua para evitar la acumulación de burbujas de aire. • Reduzca al mínimo la longitud de los tubos. • Instale el tubo de salida formando un bucle en una posición elevada. • Reduzca al mínimo el número de conectores para disminuir las posibles fuentes de contaminación. • Para evitar daños en el dispositivo de muestreo y en BactoSense, asegúrese de que los tubos no transmitan ninguna fuerza. Si es posible, fije los tubos a una estructura sólida cerca del dispositivo de muestreo (30 – 50 cm). En las instalaciones de agua potable, conecte el tubo de salida a un desagüe para asegurarse de que el agua desviada del sistema de tuberías de agua potable no regrese a este tras pasar por los racores adicionales, los tubos y el dispositivo de muestreo de BactoSense.</Admonition></td><td>Véase la figura 5-3.</td></tr><tr><td>5.</td><td>Abra el suministro de agua con cuidado y compruebe si hay fugas en la instalación.</td><td></td></tr><tr><td>6.</td><td><Admonition type="info" title="Información adicional"><Admonition type="warning" title="Compruebe el caudal y la presión">  Ajuste el caudal procedente del suministro de agua. Rango de caudal: de 200 a 400 mL/min (0.05 – 0.10 gal/min). Si el caudal no está dentro de los límites especificados, los resultados pueden ser inexactos o BactoSense puede resultar dañado. Asegúrese de que la presión en el dispositivo de muestreo no supere 0.5 bar (7.3 psi). Instale un reductor de presión si es necesario.</Admonition></Admonition></td><td>Véase la figura 5-3.</td></tr></tbody></table>
+<tr>
+
+<td colSpan="2">
+
+Ajuste de caudal y presión
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+1
+
+</td>
+
+<td>
+
+Válvula de cierre
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+2
+
+</td>
+
+<td>
+
+Válvula de presión con manómetro
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+3
+
+</td>
+
+<td>
+
+Válvula de caudal
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+4
+
+</td>
+
+<td>
+
+Racores reductores
+
+</td>
+
+</tr>
+
+<tr>
+
+<td colSpan="2">
+
+Tubos de entrada y salida
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+5
+
+</td>
+
+<td>
+
+Bucle de contrapresión
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+6
+
+</td>
+
+<td>
+
+Fijación de los tubos
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+7
+
+</td>
+
+<td>
+
+Tubo de entrada horizontal
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+8
+
+</td>
+
+<td>
+
+Tubo de salida conectado al desagüe
+
+</td>
+
+</tr>
+
+<tr>
+
+<td colSpan="2">
+
+Dispositivo de muestreo en línea
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+9
+
+</td>
+
+<td>
+
+Tubo de salida
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+10
+
+</td>
+
+<td>
+
+Tubo de entrada
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+11
+
+</td>
+
+<td>
+
+Condiciones de entrada<br />• Caudal continuo<br />• 200 – 400 mL/min (0.05 – 0.10 gal/min)<br />• Máx. 0.5 bar (7.3 psi)
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>
+
+</th>
+
+<th>
+
+PASO DE TRABAJO
+
+</th>
+
+<th>
+
+INFORMACIÓN ADICIONAL / IMÁGENES
+
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+
+1\.
+
+</td>
+
+<td>
+
+Asegúrese de que los tubos de entrada y salida estén firmemente conectados al dispositivo de muestreo en línea.
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+2\.
+
+</td>
+
+<td>
+
+Inserte con cuidado el conector del dispositivo de muestreo en el puerto situado en el lateral izquierdo de BactoSense, introduciendo los pasadores metálicos de posicionamiento que hay en el interior del conector del dispositivo de muestreo en las aberturas del puerto de muestreo de BactoSense.
+
+</td>
+
+<td>
+
+![Ilustración del procedimiento, página impresa 28](/img/manual/asset-255f328ed935.png "width=77")
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+3\.
+
+</td>
+
+<td>
+
+:::warning[Apriete solo a mano]
+
+A continuación, apriete el anillo de fijación moleteado (rojo) hasta que el dispositivo de muestreo quede firmemente instalado. Apriete únicamente con los dedos. No utilice herramientas.
+
+:::
+
+</td>
+
+<td>
+
+![Ilustración del procedimiento, página impresa 28](/img/manual/asset-ae907dad8418.png "width=98")
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+4\.
+
+</td>
+
+<td>
+
+:::warning[Conecte los tubos de muestreo de forma segura]
+
+Conecte con cuidado los extremos libres de los tubos a la fuente de agua de entrada y al desagüe de salida. • Coloque el tubo de entrada a la misma altura que la fuente de agua para evitar la acumulación de burbujas de aire. • Reduzca al mínimo la longitud de los tubos. • Instale el tubo de salida formando un bucle en una posición elevada. • Reduzca al mínimo el número de conectores para disminuir las posibles fuentes de contaminación. • Para evitar daños en el dispositivo de muestreo y en BactoSense, asegúrese de que los tubos no transmitan ninguna fuerza. Si es posible, fije los tubos a una estructura sólida cerca del dispositivo de muestreo (30 – 50 cm). En las instalaciones de agua potable, conecte el tubo de salida a un desagüe para asegurarse de que el agua desviada del sistema de tuberías de agua potable no regrese a este tras pasar por los racores adicionales, los tubos y el dispositivo de muestreo de BactoSense.
+
+:::
+
+</td>
+
+<td>
+
+Véase la figura 5-3.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+5\.
+
+</td>
+
+<td>
+
+Abra el suministro de agua con cuidado y compruebe si hay fugas en la instalación.
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+6\.
+
+</td>
+
+<td>
+
+:::warning[Compruebe el caudal y la presión]
+
+Ajuste el caudal procedente del suministro de agua. Rango de caudal: de 200 a 400 mL/min (0.05 – 0.10 gal/min). Si el caudal no está dentro de los límites especificados, los resultados pueden ser inexactos o BactoSense puede resultar dañado. Asegúrese de que la presión en el dispositivo de muestreo no supere 0.5 bar (7.3 psi). Instale un reductor de presión si es necesario.
+
+:::
+
+</td>
+
+<td>
+
+Véase la figura 5-3.
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 ## 5.6 Opciones de conectividad {#section-5-6}
 
@@ -205,13 +1169,13 @@ BactoSense ofrece varias opciones de integración y acceso a los datos en línea
 
 | Opción de conectividad | Documentación |
 | --- | --- |
-| I/O Box | Capítulo 6 |
-| Modbus TCP | Sección 7.1 |
-| FTP | Sección 12.2 |
-| HTTP y HTTPS | Sección 12.3 |
-| Transmisión de la interfaz de usuario mediante Virtual Network Computing (VNC)<br/>(control remoto) | Sección 12.4 |
-| Interfaz web de usuario | Capítulo 13 |
+| I/O Box | Capítulo [Caja de E/S](06-io-box.md) |
+| Modbus TCP | Sección [Modbus TCP](07-field-bus-interface.md#section-7-1) |
+| FTP | Sección [Obtención de datos mediante FTP](12-data-access-and-export.md#section-12-2) |
+| HTTP y HTTPS | Sección [Obtención de archivos mediante HTTP o HTTPS](12-data-access-and-export.md#section-12-3) |
+| Transmisión de la interfaz de usuario mediante Virtual Network Computing (VNC)<br/>(control remoto) | Sección [Transmisión de la interfaz gráfica mediante VNC](12-data-access-and-export.md#section-12-4) |
+| Interfaz web de usuario | Capítulo [Interfaz web de usuario](13-web-user-interface.md) |
 
-<img src="/img/manual/asset-bf9346bebae6.png" alt="Ilustración del manual original, página impresa 30" width="507" loading="lazy" />
+![BactoSense — Servicios del sistema](/img/gui/es/system-services.png "width=507")
 
 *Figura 5-4 Menú de configuración de los servicios del sistema de BactoSense. Permite activar servicios individuales* *y configurar los puertos de comunicación.*

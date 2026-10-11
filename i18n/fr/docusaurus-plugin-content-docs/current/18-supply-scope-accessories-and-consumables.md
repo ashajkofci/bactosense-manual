@@ -11,9 +11,10 @@ slug: /supply-scope-accessories-and-consumables
 
 | NUMÉRO D’ARTICLE | NOM | IMAGE |
 | --- | --- | --- |
-| 200157 | BactoSense Core | <img src="/img/manual/cell-337f1584af11.png" alt="Illustration du tableau, page du manuel 159" width="168" className="manual-figure" loading="lazy"/> |
-| 200158 | BactoSense Smart | <img src="/img/manual/cell-db50b00c4b42.png" alt="Illustration du tableau, page du manuel 159" width="168" className="manual-figure" loading="lazy"/> |
-| 200159 | BactoSense Pure | <img src="/img/manual/cell-f14bfd2bec40.png" alt="Illustration du tableau, page du manuel 159" width="168" className="manual-figure" loading="lazy"/> |
+| 200157 | BactoSense CORE | ![Illustration du tableau, page du manuel 159](/img/manual/cell-337f1584af11.png "width=143 class=manual-article-image") |
+| 200158 | BactoSense Smart | ![Illustration du tableau, page du manuel 159](/img/manual/cell-db50b00c4b42.png "width=143 class=manual-article-image") |
+| 200159 | BactoSense Pure | ![Illustration du tableau, page du manuel 159](/img/manual/cell-f14bfd2bec40.png "width=143 class=manual-article-image") |
+| 200216 | BactoSense ID | ![BactoSense ID](/img/manual/bactosense-id.png "width=143 class=manual-article-image") |
 | 200172 | BactoCare Essential contrat de service annuel |  |
 | 200173 | BactoCare Plus contrat de service annuel |  |
 
@@ -23,16 +24,310 @@ slug: /supply-scope-accessories-and-consumables
 
 **Tableau 18-2 Accessoires pour le BactoSense**
 
-<table className="manual-table"><tbody><tr><th scope="col">NUMÉRO D’ARTICLE</th><th scope="col">NOM</th><th scope="col">IMAGE</th></tr><tr><td>200048 200049 200050 200152</td><td>Bloc d’alimentation 200048: Type J 200049: Type E 200050: Type G 200152: Type B</td><td><img src="/img/manual/cell-30cea9826aaf.png" alt="Illustration du tableau, page du manuel 160" width="168" className="manual-figure" loading="lazy" /></td></tr><tr><td>200017</td><td>Nouvelle cartouche TCC</td><td rowSpan="4"><img src="/img/manual/cell-5c20365a1e46.png" alt="Illustration du tableau, page du manuel 160" width="168" className="manual-figure" loading="lazy" /></td></tr><tr><td>200053</td><td>Nouvelle cartouche ICC</td></tr><tr><td>200174</td><td>Nouvelle cartouche ICC pour BactoSense PURE</td></tr><tr><td>200160</td><td>Nouvelle cartouche ACC</td></tr><tr><td>200169</td><td>Manuel d’utilisation BactoSense, Englais</td><td></td></tr><tr><td>200170</td><td>Manuel d’utilisation BactoSense, Français</td><td></td></tr><tr><td>200171</td><td>Manuel d’utilisation BactoSense, Allemand</td><td></td></tr><tr><td>200006</td><td>Dispositif d’échantillonnage manuel</td><td><img src="/img/manual/cell-78e276ee409d.png" alt="Illustration du tableau, page du manuel 160" width="168" className="manual-figure" loading="lazy" /></td></tr><tr><td>200007</td><td>Dispositif d’échantillonnage en ligne</td><td><img src="/img/manual/cell-3f47feb06665.png" alt="Illustration du tableau, page du manuel 160" width="168" className="manual-figure" loading="lazy" /></td></tr><tr><td>200145</td><td>Accès à distance de l’instrument BactoLink</td><td><img src="/img/manual/cell-0ae3a8fa20ab.png" alt="Illustration du tableau, page du manuel 160" width="168" className="manual-figure" loading="lazy" /></td></tr></tbody></table>
+<table className="manual-table">
+
+<tbody>
+
+<tr>
+
+<th scope="col">
+
+NUMÉRO D’ARTICLE
+
+</th>
+
+<th scope="col">
+
+NOM
+
+</th>
+
+<th scope="col">
+
+IMAGE
+
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+
+200048 200049 200050 200152
+
+</td>
+
+<td>
+
+Bloc d’alimentation 200048: Type J 200049: Type E 200050: Type G 200152: Type B
+
+</td>
+
+<td>
+
+![Illustration du tableau, page du manuel 160](/img/manual/cell-30cea9826aaf.png "width=143 class=manual-article-image")
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+200017
+
+</td>
+
+<td>
+
+Nouvelle cartouche TCC
+
+</td>
+
+<td rowSpan="7">
+
+![Illustration du tableau, page du manuel 160](/img/manual/cell-5c20365a1e46.png "width=143 class=manual-article-image")
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+200053
+
+</td>
+
+<td>
+
+Nouvelle cartouche ICC
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+200174
+
+</td>
+
+<td>
+
+Nouvelle cartouche ICC pour BactoSense PURE
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+200160
+
+</td>
+
+<td>
+
+Nouvelle cartouche ACC
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+200214
+
+</td>
+
+<td>
+
+Nouvelle cartouche CBC
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+200219
+
+</td>
+
+<td>
+
+Nouvelle cartouche EBC
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+200217
+
+</td>
+
+<td>
+
+Nouvelle cartouche NBC
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+200169
+
+</td>
+
+<td>
+
+Manuel d’utilisation BactoSense, Englais
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+200170
+
+</td>
+
+<td>
+
+Manuel d’utilisation BactoSense, Français
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+200171
+
+</td>
+
+<td>
+
+Manuel d’utilisation BactoSense, Allemand
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+200006
+
+</td>
+
+<td>
+
+Dispositif d’échantillonnage manuel
+
+</td>
+
+<td>
+
+![Illustration du tableau, page du manuel 160](/img/manual/cell-78e276ee409d.png "width=77 class=manual-article-image")
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+200007
+
+</td>
+
+<td>
+
+Dispositif d’échantillonnage en ligne
+
+</td>
+
+<td>
+
+![Illustration du tableau, page du manuel 160](/img/manual/cell-3f47feb06665.png "width=143 class=manual-article-image")
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+200145
+
+</td>
+
+<td>
+
+Accès à distance de l’instrument BactoLink
+
+</td>
+
+<td>
+
+![Illustration du tableau, page du manuel 160](/img/manual/cell-0ae3a8fa20ab.png "width=143 class=manual-article-image")
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 | NUMÉRO D’ARTICLE | NOM | IMAGE |
 | --- | --- | --- |
-| 200008 | Boîte de transport du BactoSense | <img src="/img/manual/cell-1067c40e23eb.png" alt="Illustration du tableau, page du manuel 161" width="168" className="manual-figure" loading="lazy"/> |
-| 200009 | Boîte d’E/S externe BactoSense | <img src="/img/manual/cell-7ef25cff0403.png" alt="Illustration du tableau, page du manuel 161" width="168" className="manual-figure" loading="lazy"/> |
+| 200008 | Boîte de transport du BactoSense | ![Illustration du tableau, page du manuel 161](/img/manual/cell-1067c40e23eb.png "width=143 class=manual-article-image") |
+| 200009 | Boîte d’E/S externe BactoSense | ![Illustration du tableau, page du manuel 161](/img/manual/cell-7ef25cff0403.png "width=143 class=manual-article-image") |
 | 200162 | Clé de licence du paquet scientifique |  |
 | 200163 | Clé de licence du paquet management |  |
-| 100173 | Washstation | <img src="/img/manual/cell-2b1a1ade91a1.png" alt="Illustration du tableau, page du manuel 161" width="168" className="manual-figure" loading="lazy"/> |
-| 200131 | Tournevis hexagonal, 7 mm, pour la porte du compartiment de la cartouche | <img src="/img/manual/cell-d1322ea50ff0.png" alt="Illustration du tableau, page du manuel 161" width="168" className="manual-figure" loading="lazy"/> |
+| 100173 | Washstation | ![Illustration du tableau, page du manuel 161](/img/manual/cell-2b1a1ade91a1.png "width=142 class=manual-article-image") |
+| 200131 | Tournevis hexagonal, 7 mm, pour la porte du compartiment de la cartouche | ![Illustration du tableau, page du manuel 161](/img/manual/cell-d1322ea50ff0.png "width=143 class=manual-article-image") |
 
 ## 18.3 Consommables {#section-18-3}
 
@@ -52,6 +347,9 @@ Les consommables disponibles sont répertoriés ci-dessous. Ils peuvent être co
 | 200054 | Recharge de cartouche ICC |
 | 200176 | Recharge de cartouche ICC pour BactoSense PURE |
 | 200161 | Recharge de cartouche ACC |
+| 200215 | Recharge de cartouche CBC |
+| 200220 | Recharge de cartouche EBC |
+| 200218 | Recharge de cartouche NBC |
 | 200030 | Tubulure d’entrée pour dispositif d’échantillonnage en ligne |
 | 200029 | Tubulure de sortie pour dispositif d’échantillonnage en ligne |
 | 200065 | Embouts pour dispositif d’échantillonnage en ligne |

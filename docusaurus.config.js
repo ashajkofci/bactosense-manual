@@ -1,6 +1,6 @@
 /** @type {import('@docusaurus/types').Config} */
 module.exports = {
-  title: 'BactoSense Manual',
+  title: 'BactoSense',
   tagline: 'Rapid Bacterial Monitoring Systems',
   url: process.env.MANUAL_SITE_URL || 'https://manual.bnovate.net',
   baseUrl: process.env.MANUAL_BASE_PATH || '/',
@@ -27,14 +27,14 @@ module.exports = {
   }]],
   plugins: [require.resolve('./plugins/manual-pdf.cjs')],
   presets: [['classic', {
-    docs: { routeBasePath: '/', sidebarPath: './sidebars.js', remarkPlugins: [require('./plugins/manual-images.cjs')] },
+    docs: { routeBasePath: '/', sidebarPath: './sidebars.js', remarkPlugins: [require('./plugins/manual-images.cjs')], rehypePlugins: [require('./plugins/manual-tables.cjs')] },
     blog: false,
     theme: { customCss: './src/css/custom.css' },
   }]],
   themeConfig: {
     colorMode: { defaultMode: 'light', respectPrefersColorScheme: true },
     navbar: {
-      title: `BactoSense · ${require('./package.json').version}`,
+      title: 'BactoSense',
       items: [
         { type: 'docSidebar', sidebarId: 'manual', label: 'User manual', position: 'left' },
         { type: 'custom-pdfDownload', position: 'right' },
@@ -43,7 +43,7 @@ module.exports = {
     },
     footer: {
       style: 'dark',
-      links: [{ title: `BactoSense · ${require('./package.json').version}`, items: [
+      links: [{ title: 'BactoSense', items: [
         { label: 'User manual', to: '/' },
         { label: 'BactoCloud', href: 'https://www.bactocloud.com' },
         { label: 'BactoCloud Manual', href: 'https://manual.bactocloud.com' },

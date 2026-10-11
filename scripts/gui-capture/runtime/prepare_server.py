@@ -99,7 +99,10 @@ def start_server():
         if server.poll() is not None:
             raise RuntimeError("Disposable Bactoserver exited; inspect server.log")
         try:
-            with urllib.request.urlopen("http://127.0.0.1:18889/api/status", timeout=1) as response:
+            ready = urllib.request.Request("http://127.0.0.1:18889/api/status", headers={
+                "Authorization": "Basic YWRtaW46",  # Shipped disposable admin with blank PIN.
+            })
+            with urllib.request.urlopen(ready, timeout=1) as response:
                 if response.status == 200:
                     break
         except OSError:

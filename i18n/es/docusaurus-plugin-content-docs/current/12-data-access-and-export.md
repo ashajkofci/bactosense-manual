@@ -7,7 +7,7 @@ slug: /data-access-and-export
 
 ## 12.1 Exportación de datos a un dispositivo USB {#section-12-1}
 
-Para exportar datos de medición, consulte la sección 10.8.1.
+Para exportar datos de medición, consulte la sección [Exportación a una memoria USB](10-measurements.md#section-10-8-1).
 
 ### 12.1.1 Exportación de ajustes, diagnósticos o todos los datos a USB {#section-12-1-1}
 
@@ -18,7 +18,7 @@ La función “Special import/export” permite exportar todos los datos de medi
 | 1. | En la pantalla Home, pulse Ajustes para abrir el menú de ajustes. |  |
 | 2. | Pulse el botón Maintenance y, a continuación, Special export import. |  |
 | 3. | Conecte un dispositivo de almacenamiento masivo USB. La memoria USB debe estar formateada en FAT32. Si es necesario, pulse Refresh USB list hasta que aparezca el dispositivo. |  |
-| 4. | El nombre de la carpeta que se creará en el dispositivo USB se muestra en el campo Folder name. Introduzca otro nombre si lo desea. | <img src="/img/manual/cell-2af37708a475.png" alt="Ilustración de la tabla de la página 114 del manual" width="261" className="manual-figure" loading="lazy"/> |
+| 4. | El nombre de la carpeta que se creará en el dispositivo USB se muestra en el campo Folder name. Introduzca otro nombre si lo desea. | ![BactoSense — Importación y exportación USB](/img/gui/es/usb-import-and-export.png "width=261 class=manual-figure") |
 | 5. | • Para exportar todos los datos, pulse Export all.<br/>• Para exportar datos de diagnóstico, pulse Export diagnostics.<br/>• Para exportar los ajustes, pulse Export diagnostics. No retire el dispositivo de almacenamiento masivo USB durante la transferencia de datos. | La exportación de todos los datos puede tardar varias horas. Si la capacidad disponible del dispositivo USB es insuficiente, aparecerá una notificación. |
 | 6. | Cuando termine la exportación, pulse OK y retire el dispositivo USB. |  |
 
@@ -29,42 +29,358 @@ Puede accederse a distancia a los datos de BactoSense mediante el protocolo FTP 
 - La autenticación FTP utiliza los pares de nombre de usuario/contraseña de la interfaz gráfica del instrumento. Los nombres de cuenta predeterminados son: basic, advanced y admin.
 - Los archivos CSV y Excel se generan al solicitarlos, por lo que siempre contienen los datos de medición más recientes.
 
-<img src="/img/figures-second/figure-f9252ec82a57de.webp" alt="Figura 12-1 Vista Manage services de la interfaz de usuario de BactoSense." width="559" className="manual-figure" loading="lazy" />
-
-<img src="/img/manual/icon-screenshot.png" alt="Ilustración del manual de usuario de BactoSense" width="57" className="manual-icon" loading="lazy" />
+![BactoSense — Servicios del sistema](/img/gui/es/system-services.png "width=559 class=manual-figure")
 
 *Figura 12-1 Vista Manage services de la interfaz de usuario de BactoSense.*
 
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN |
 | --- | --- | --- |
 | 1. | • Instale un cliente FTP en el dispositivo con el que desee obtener los datos, p. ej., su portátil.<br/>• Como alternativa, puede utilizar el Explorador de archivos de Windows. |  |
-| 2. | Conecte BactoSense mediante Ethernet a una red segura (p. ej., LAN). Conecte su dispositivo a la misma red. | Para obtener información sobre la configuración de red (ajustes de IP estática y dinámica), consulte la sección 8.6. |
+| 2. | Conecte BactoSense mediante Ethernet a una red segura (p. ej., LAN). Conecte su dispositivo a la misma red. | Para obtener información sobre la configuración de red (ajustes de IP estática y dinámica), consulte la sección [Configuración de red](08-general-operations-and-configurations.md#section-8-6). |
 | 3. | En la pantalla Home, pulse Ajustes para abrir el menú de ajustes. |  |
 | 4. | Pulse el botón Ajustes del sistema. |  |
 | 5. | Pulse el botón Servicios del sistema. |  |
 | 6. | Asegúrese de que esté marcada la casilla Enable FTP data access. |  |
 | 7. | Elija un puerto para el servidor FTP. | El puerto predeterminado es el 21. |
-
-|  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN |
-| --- | --- | --- |
 | 8. | Pulse el botón Apply para reiniciar BactoSense. | Solo es necesario si ha cambiado la configuración. |
-| 9. | En la pantalla Home, pulse Ajustes y, a continuación, Información del sistema para obtener la dirección IP de BactoSense. | Para obtener información sobre la configuración de red (ajustes de IP estática y dinámica), consulte la sección 8.6. |
+| 9. | En la pantalla Home, pulse Ajustes y, a continuación, Información del sistema para obtener la dirección IP de BactoSense. | Para obtener información sobre la configuración de red (ajustes de IP estática y dinámica), consulte la sección [Configuración de red](08-general-operations-and-configurations.md#section-8-6). |
 | 10. | Para un cliente FTP: abra el cliente e introduzca los datos de acceso. Para el Explorador de archivos de Windows: introduzca la siguiente dirección en la barra de direcciones: ftp://user:password@ip:port | • User/username: nombre de usuario para iniciar sesión en BactoSense.<br/>• Password: contraseña para iniciar sesión en BactoSense.<br/>• Host/ip: dirección IP de BactoSense.<br/>• Port: puerto configurado en la vista System services (véase la figura 12-1). |
 
 ## 12.3 Obtención de archivos mediante HTTP o HTTPS {#section-12-3}
 
-Los servidores HTTP y HTTPS están activados por defecto y pueden utilizarse mediante un navegador web o cualquier biblioteca de peticiones HTTP. Utilice el procedimiento siguiente para obtener archivos concretos mediante HTTP o HTTPS. Como alternativa, puede utilizar la interfaz web (capítulo 13) o FTP (sección 12.2).
+Los servidores HTTP y HTTPS están activados por defecto y pueden utilizarse mediante un navegador web o cualquier biblioteca de peticiones HTTP. Utilice el procedimiento siguiente para obtener archivos concretos mediante HTTP o HTTPS. Como alternativa, puede utilizar la interfaz web (capítulo [Interfaz web de usuario](13-web-user-interface.md)) o FTP (sección [Obtención de datos mediante FTP](12-data-access-and-export.md#section-12-2)).
 
-|  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN |
-| --- | --- | --- |
-| 1. | Conecte BactoSense mediante Ethernet a una red segura (p. ej., LAN). Conecte su dispositivo a la misma red. | Para obtener información sobre la configuración de red (ajustes de IP estática y dinámica), consulte la sección 8.6. |
-| 2. | En la pantalla Home, pulse Ajustes para abrir el menú de ajustes. |  |
-| 3. | Pulse el botón Ajustes del sistema. |  |
-| 4. | Pulse el botón Servicios del sistema. |  |
-| 5. | Para HTTP: asegúrese de que esté marcada la casilla Habilitar el acceso web HTTP. Para HTTPS: asegúrese de que esté marcada la casilla Habilitar el acceso web HTTPS. |  |
-| 6. | Elija un puerto para el servidor HTTP o HTTPS. | El puerto predeterminado de HTTP es el 80. El de HTTPS es el 443. |
+<table className="manual-table">
 
-<table className="manual-table"><tbody><tr><th scope="col"></th><th scope="col">PASO DE TRABAJO</th><th scope="col">INFORMACIÓN ADICIONAL / IMAGEN</th></tr><tr><td>7.</td><td>Pulse el botón Apply para reiniciar BactoSense.</td><td>Solo es necesario si ha cambiado la configuración.</td></tr><tr><td>8.</td><td>En la pantalla Home, pulse Ajustes y, a continuación, Información del sistema para obtener la dirección IP de BactoSense.</td><td></td></tr><tr><td>9.</td><td colSpan="2">Abra un navegador web en su dispositivo e introduzca la dirección del archivo de destino en el campo de dirección. La dirección tiene el formato siguiente. Para HTTP: <code>http&#58;//ipaddress&#58;port/export/filename.extension?hash=myhash</code> Ejemplo: http://192.168.1.2/export/history_auto.xlsx?hash=QWRtaW46MTExMQ Para HTTPS: <code>https&#58;//ipaddress&#58;port/export/filename.extension?hash=myhash</code> Ejemplo: https://192.168.1.2/export/history_auto.xlsx?hash=QWRtaW46MTExMQ <table><thead><tr><th>Nombre</th><th>Descripción</th></tr></thead><tbody><tr><td><code>ipaddress</code></td><td>Dirección IP local del instrumento</td></tr><tr><td><code>port</code></td><td>Puerto del servidor HTTP o HTTPS (por defecto, 80 y 443, respectivamente)</td></tr><tr><td><code>filename</code></td><td>Nombre del archivo de destino. Ejemplo: history_auto</td></tr><tr><td><code>extension</code></td><td>Extensión del archivo (csv, xlsx, pdf)</td></tr><tr><td><code>myhash</code></td><td>Clave de seguridad que contiene la identificación del usuario. La clave es única para cada combinación de usuario y contraseña. Puede encontrarla en la interfaz web (capítulo 13) copiando el enlace que se muestra al descargar un archivo. Por ejemplo: hash=QWRtaW46MTExMQ</td></tr></tbody></table></td></tr></tbody></table>
+<thead>
+
+<tr>
+
+<th scope="col">
+
+
+
+</th>
+
+<th scope="col">
+
+PASO DE TRABAJO
+
+</th>
+
+<th scope="col">
+
+INFORMACIÓN ADICIONAL / IMAGEN
+
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+
+1\.
+
+</td>
+
+<td>
+
+Conecte BactoSense mediante Ethernet a una red segura (p. ej., LAN). Conecte su dispositivo a la misma red.
+
+</td>
+
+<td>
+
+Para obtener información sobre la configuración de red (ajustes de IP estática y dinámica), consulte la sección [Configuración de red](08-general-operations-and-configurations.md#section-8-6).
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+2\.
+
+</td>
+
+<td>
+
+En la pantalla Home, pulse Ajustes para abrir el menú de ajustes.
+
+</td>
+
+<td>
+
+
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+3\.
+
+</td>
+
+<td>
+
+Pulse el botón Ajustes del sistema.
+
+</td>
+
+<td>
+
+
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+4\.
+
+</td>
+
+<td>
+
+Pulse el botón Servicios del sistema.
+
+</td>
+
+<td>
+
+
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+5\.
+
+</td>
+
+<td>
+
+Para HTTP: asegúrese de que esté marcada la casilla Habilitar el acceso web HTTP. Para HTTPS: asegúrese de que esté marcada la casilla Habilitar el acceso web HTTPS.
+
+</td>
+
+<td>
+
+
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+6\.
+
+</td>
+
+<td>
+
+Elija un puerto para el servidor HTTP o HTTPS.
+
+</td>
+
+<td>
+
+El puerto predeterminado de HTTP es el 80. El de HTTPS es el 443.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+7\.
+
+</td>
+
+<td>
+
+Pulse el botón Apply para reiniciar BactoSense.
+
+</td>
+
+<td>
+
+Solo es necesario si ha cambiado la configuración.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+8\.
+
+</td>
+
+<td>
+
+En la pantalla Home, pulse Ajustes y, a continuación, Información del sistema para obtener la dirección IP de BactoSense.
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+9\.
+
+</td>
+
+<td colSpan="2">
+
+Abra un navegador web en su dispositivo e introduzca la dirección del archivo de destino en el campo de dirección. La dirección tiene el formato siguiente. Para HTTP: `http://ipaddress:port/export/filename.extension?hash=myhash` Ejemplo: http://192.168.1.2/export/history_auto.xlsx?hash=QWRtaW46MTExMQ Para HTTPS: `https://ipaddress:port/export/filename.extension?hash=myhash` Ejemplo: https://192.168.1.2/export/history_auto.xlsx?hash=QWRtaW46MTExMQ
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>
+
+Nombre
+
+</th>
+
+<th>
+
+Descripción
+
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+
+`ipaddress`
+
+</td>
+
+<td>
+
+Dirección IP local del instrumento
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+`port`
+
+</td>
+
+<td>
+
+Puerto del servidor HTTP o HTTPS (por defecto, 80 y 443, respectivamente)
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+`filename`
+
+</td>
+
+<td>
+
+Nombre del archivo de destino. Ejemplo: history_auto
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+`extension`
+
+</td>
+
+<td>
+
+Extensión del archivo (csv, xlsx, pdf)
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+`myhash`
+
+</td>
+
+<td>
+
+Clave de seguridad que contiene la identificación del usuario. La clave es única para cada combinación de usuario y contraseña. Puede encontrarla en la interfaz web (capítulo [Interfaz web de usuario](../web-user-interface/)) copiando el enlace que se muestra al descargar un archivo. Por ejemplo: hash=QWRtaW46MTExMQ
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 ## 12.4 Transmisión de la interfaz gráfica mediante VNC {#section-12-4}
 
@@ -85,7 +401,7 @@ Una conexión VNC puede ralentizar la interfaz, ya que exige muchos recursos de 
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN |
 | --- | --- | --- |
 | 1. | Instale un cliente VNC en su ordenador. |  |
-| 2. | Conecte BactoSense mediante Ethernet a una red segura (LAN). Conecte su ordenador a la misma red. | Para obtener información sobre la configuración de red (ajustes de IP estática y dinámica), consulte la sección 8.6. |
+| 2. | Conecte BactoSense mediante Ethernet a una red segura (LAN). Conecte su ordenador a la misma red. | Para obtener información sobre la configuración de red (ajustes de IP estática y dinámica), consulte la sección [Configuración de red](08-general-operations-and-configurations.md#section-8-6). |
 | 3. | En la pantalla Home, pulse Ajustes para abrir el menú de ajustes. |  |
 | 4. | Pulse el botón Ajustes del sistema. |  |
 | 5. | Pulse el botón Servicios del sistema. |  |

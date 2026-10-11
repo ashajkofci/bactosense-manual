@@ -19,10 +19,6 @@ Select a section number to open the corresponding topic in this manual.
   - Testing [6.8](/io-box#section-6-8)
 - Assembly [5.5](/installation#section-5-5)
 - Audio notifications [8.3.4](/general-operations-and-configurations#section-8-3-4)
-- Auto mode
-  - Measurement [10.1](/measurements#section-10-1)
-  - Protocols [10.9.1](/measurements#section-10-9-1)
-  - Results [10.2.3](/measurements#section-10-2-3)
 - Automatic power-on [8.3.4](/general-operations-and-configurations#section-8-3-4)
 - Automatic self-check [16.5](/warnings-errors-and-troubleshooting#section-16-5)
 - Auto-restart [8.3.4](/general-operations-and-configurations#section-8-3-4)
@@ -45,6 +41,7 @@ Select a section number to open the corresponding topic in this manual.
   - Removal [8.9.5](/general-operations-and-configurations#section-8-9-5)
   - Storage [17.1.3](/storage-transport-and-disposal#section-17-1-3)
   - Transport [17.2.2](/storage-transport-and-disposal#section-17-2-2)
+- CBC (Coliform Cell Count) [11.3.4](/results-and-data-analysis#section-11-3-4)
 - CE [2.2](/general-user-information#section-2-2)
 - Certification
   - CE [2.2](/general-user-information#section-2-2)
@@ -107,6 +104,7 @@ Select a section number to open the corresponding topic in this manual.
 
 ## E
 
+- EBC (E. coli Cell Count) [11.3.5](/results-and-data-analysis#section-11-3-5)
 - Electrical installation
   - power [5.1](/installation#section-5-1)
 - Errors
@@ -236,6 +234,7 @@ Select a section number to open the corresponding topic in this manual.
 
 ## N
 
+- NBC (Enterococcus Cell Count) [11.3.6](/results-and-data-analysis#section-11-3-6)
 - Network configuration [8.6](/general-operations-and-configurations#section-8-6)
 - New gate [11.4.2](/results-and-data-analysis#section-11-4-2)
 - Non-critical errors [16.2](/warnings-errors-and-troubleshooting#section-16-2)
@@ -248,6 +247,7 @@ Select a section number to open the corresponding topic in this manual.
   - Measurement [10.1](/measurements#section-10-1)
   - Results [10.1](/measurements#section-10-1), [10.2.3](/measurements#section-10-2-3)
   - Termination [10.2.2](/measurements#section-10-2-2)
+  - Protocols [10.9.1](/measurements#section-10-9-1)
 - Online sampling device [18.2](/supply-scope-accessories-and-consumables#section-18-2)
   - Exchange [8.10](/general-operations-and-configurations#section-8-10)
   - Ferrules [18.3](/supply-scope-accessories-and-consumables#section-18-3)
@@ -284,7 +284,7 @@ Select a section number to open the corresponding topic in this manual.
 - Protocol [10.9](/measurements#section-10-9), [10.9.1](/measurements#section-10-9-1)
 - Protocols
   - Analysis [10.9](/measurements#section-10-9)
-  - Auto mode [10.9.1](/measurements#section-10-9-1)
+  - Online mode [10.9.1](/measurements#section-10-9-1)
   - Beads Analysis [10.9](/measurements#section-10-9)
   - Clean manual sampling
   - device [15.2.2](/maintenance#section-15-2-2), [15.2.2](/maintenance#section-15-2-2)
@@ -310,7 +310,10 @@ Select a section number to open the corresponding topic in this manual.
 - Residual risk [4.1](/safety#section-4-1)
 - Restart [8.3.4](/general-operations-and-configurations#section-8-3-4)
 - Results [11.1](/results-and-data-analysis#section-11-1)
-  - Auto mode [10.2.3](/measurements#section-10-2-3)
+  - CBC [11.3.4](/results-and-data-analysis#section-11-3-4)
+  - EBC [11.3.5](/results-and-data-analysis#section-11-3-5)
+  - NBC [11.3.6](/results-and-data-analysis#section-11-3-6)
+  - Online mode [10.2.3](/measurements#section-10-2-3)
   - HNAC [11.3.2](/results-and-data-analysis#section-11-3-2), [11.3.3](/results-and-data-analysis#section-11-3-3)
   - HNAP [11.3.2](/results-and-data-analysis#section-11-3-2), [11.3.3](/results-and-data-analysis#section-11-3-3)
   - ICC [11.3.2](/results-and-data-analysis#section-11-3-2), [11.3.3](/results-and-data-analysis#section-11-3-3)

@@ -37,7 +37,7 @@ Touching a wet or damaged mains device may lead to electrical shocks or death.
 If the instrument is connected to an incorrect service voltage, the instrument can be  damaged.
 
 - The instrument must only be connected to voltage sources as specified on the type  plate.
-- The instrument must only be operated with the supplied power supply unit, as  described in section 5.3.
+- The instrument must only be operated with the supplied power supply unit, as  described in [Connecting the BactoSense to power](05-installation.md#section-5-3).
 
 :::
 
@@ -120,11 +120,11 @@ Users must ensure that they observe the safety measures as specified in the user
 
 ## 4.5 Preventing unauthorized online access {#section-4-5}
 
-<img src="/img/manual/asset-96ca4e251d8b.png" alt="Original manual illustration, printed page 16" width="627" loading="lazy" />
+![Original manual illustration, printed page 16](/img/manual/asset-96ca4e251d8b.png "width=627")
 
 :::warning[Protect network access]
 
-**BactoSense is equipped with an integrated web user interface. If directly ** **connected to the internet without appropriate protection, unauthorized internet ** **users can access your instrument. ** Please follow these recommendations:
+**BactoSense is equipped with an integrated web user interface. If directly connected to the internet without appropriate protection, unauthorized internet users can access your instrument.** Please follow these recommendations:
 
 - Never expose the instrument’s network ports unprotected to the internet.
 - Operate it behind a firewall and block access to the instrument.

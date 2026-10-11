@@ -1,14 +1,14 @@
 ---
-title: "BactoSense-Bedienungsanleitung"
+title: BactoSense
 sidebar_label: "Über dieses Handbuch"
 sidebar_position: 0
 slug: /
 description: "Bedienungsanleitung für BactoSense-Systeme zur schnellen Bakterienüberwachung."
 ---
 
-# BactoSense-Bedienungsanleitung
+# BactoSense
 
-Handbuchversion **3.2.0** · BactoSense-Software **3.2.0**
+Softwareversion **3.2.0**
 
 Systeme zur schnellen Bakterienüberwachung
 
@@ -41,7 +41,7 @@ Diese Onlineausgabe folgt den Kapiteln der mitgelieferten Bedienungsanleitung. V
 
 ## Herausgeber
 
-<img src="/img/manual/asset-53eb3be5b297.png" alt="bNovate Technologies" width="160" />
+![bNovate Technologies](/img/manual/asset-53eb3be5b297.png "width=160")
 
 bNovate Technologies SA  
 Ch. Dent d’Oche 1A  

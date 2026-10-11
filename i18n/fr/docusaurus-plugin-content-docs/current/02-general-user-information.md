@@ -20,7 +20,15 @@ Vous trouverez ci-dessous une table de la documentation supplémentaire associé
 
 :::info[Documentation complémentaire]
 
-<table><tbody><tr><td>40101</td><td>Guide rapide</td><td>Informations de base nécessaires pour utiliser<br />le BactoSense.</td></tr><tr><td>40108</td><td>Kit de nettoyage<br />Manuel d’utilisation</td><td>Utilisation du kit de réactifs pour décontaminer<br />le BactoSense.</td></tr><tr><td>UM_0003</td><td>Kit de validation<br />Manuel d’utilisation</td><td>Utilisation du kit de réactifs permettant de valider<br />le bon fonctionnement du BactoSense.</td></tr><tr><td>UM_0004</td><td>Manuel d’utilisation du kit<br />SST BactoSense PURE</td><td>Utilisation du kit de réactifs pour effectuer le test d'adéquation du<br />système (system suitability test)</td></tr><tr><td>50115</td><td>Déclaration de conformité<br />CE</td><td>Conformité aux directives et normes<br />sous-jacentes.</td></tr><tr><td>50116</td><td>Déclaration de conformité<br />UKCA</td><td>Conformité aux directives et normes<br />sous-jacentes.</td></tr><tr><td>50117</td><td>Rapport d’essai CB</td><td>Rapport de conformité UL/CSA/FCC,<br />également sous<br />CH-12116 sur https://certificates.iecee.org</td></tr></tbody></table>
+|  |  |  |
+| --- | --- | --- |
+| 40101 | Guide rapide | Informations de base nécessaires pour utiliser<br/>le BactoSense. |
+| 40108 | Kit de nettoyage<br/>Manuel d’utilisation | Utilisation du kit de réactifs pour décontaminer<br/>le BactoSense. |
+| UM_0003 | Kit de validation<br/>Manuel d’utilisation | Utilisation du kit de réactifs permettant de valider<br/>le bon fonctionnement du BactoSense. |
+| UM_0004 | Manuel d’utilisation du kit<br/>SST BactoSense PURE | Utilisation du kit de réactifs pour effectuer le test d'adéquation du<br/>système (system suitability test) |
+| 50115 | Déclaration de conformité<br/>CE | Conformité aux directives et normes<br/>sous-jacentes. |
+| 50116 | Déclaration de conformité<br/>UKCA | Conformité aux directives et normes<br/>sous-jacentes. |
+| 50117 | Rapport d’essai CB | Rapport de conformité UL/CSA/FCC,<br/>également sous<br/>CH-12116 sur https://certificates.iecee.org |
 
 :::
 
@@ -28,11 +36,11 @@ Vous trouverez ci-dessous une table de la documentation supplémentaire associé
 
 Le BactoSense a été conçu et fabriqué pour respecter ou dépasser les normes reconnues par l’industrie afin de garantir la sécurité, les performances et la fiabilité du produit.
 
-<img src="/img/manual/asset-5b67a16d691d.png" alt="Marquage de conformité CE" width="72" loading="lazy" />
+![Marquage de conformité CE](/img/manual/asset-5b67a16d691d.png "width=32 class=compliance-mark")
 
 L’appareil répond à toutes les exigences applicables pour porter le marquage CE. Pour plus de détails, veuillez consulter la déclaration de conformité séparée.
 
-<img src="/img/manual/asset-fdc39c428b7f.png" alt="Marquage de conformité UKCA" width="72" loading="lazy" />
+![Marquage de conformité UKCA](/img/manual/asset-fdc39c428b7f.png "width=32 class=compliance-mark")
 
 L’appareil répond à toutes les exigences applicables pour porter le marquage UKCA. Pour plus de détails, veuillez consulter la déclaration de conformité séparée.
 
@@ -48,9 +56,89 @@ Les normes suivantes ont été appliquées pour garantir la conformité aux exig
 
 *Tableau 2-2 Normes appliquées*
 
-<table><tbody><tr><th colSpan="2">NORMES APPLIQUÉES</th></tr><tr><td>Sécurité<br />(Données<br />générales) (Élément chauffant)<br />(Laser)</td><td>IEC 61010-1:2010<br />IEC 61010-1:2010/A1:2016 CAN/CSA-C22.2<br />No. 61010-1 + A1 UL<br />61010-1, 3e édition<br />A1 JIS<br />C 1010-1:2019 IEC<br />61010-2-010:2019 CSA C22.2 No.<br />61010-2-010:19 EN 60825-1:2014<br />+ A11:2021 CAN/CSA-E60825-1:15</td></tr><tr><td>EMC</td><td>EN IEC<br />61326-1:2021 EN 61326-1:2013,<br />Classe B, Groupe<br />1 CISPR<br />11:2015/A1:2016/A2:2019 EN 61000-3-2:2018<br />EN<br />61000-3-3:2013/A1:2017 EN<br />61000-3-11:2017 EN<br />61000-3-12:2011 EN 61000-4-2:2008<br />EN 61000-4-3:2006/A1:2007/A2:2017<br />EN 61000-4-4:2012 EN<br />61000-4-5:2014/A1:2017 EN<br />61000-4-6:2016<br />EN 61000-4-8:2009<br />EN 61000-4-11:2020 EN 55011:2016/A1:2017/A2:2021/A11:2020</td></tr><tr><td>Protection contre les infiltrations</td><td>IEC<br />60529:1989 IEC<br />60529:1989/A1:1999 IEC<br />60529:1989/A2:2013 IEC 60529:1989/A2:2013/C1:2019<br />EN 60529:1991/A1:2000/A2:2013</td></tr><tr><td>RoHS</td><td>EN IEC 63000:2018</td></tr></tbody></table>
+<table>
 
-<img src="/img/manual/asset-454a03d782e7.png" alt="Illustration du manuel original, page imprimée 4" width="146" loading="lazy" />
+<tbody>
+
+<tr>
+
+<th colSpan="2">
+
+NORMES APPLIQUÉES
+
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+
+Sécurité<br />(Données<br />générales) (Élément chauffant)<br />(Laser)
+
+</td>
+
+<td>
+
+IEC 61010-1:2010<br />IEC 61010-1:2010/A1:2016 CAN/CSA-C22.2<br />No. 61010-1 + A1 UL<br />61010-1, 3e édition<br />A1 JIS<br />C 1010-1:2019 IEC<br />61010-2-010:2019 CSA C22.2 No.<br />61010-2-010:19 EN 60825-1:2014<br />+ A11:2021 CAN/CSA-E60825-1:15
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+EMC
+
+</td>
+
+<td>
+
+EN IEC<br />61326-1:2021 EN 61326-1:2013,<br />Classe B, Groupe<br />1 CISPR<br />11:2015/A1:2016/A2:2019 EN 61000-3-2:2018<br />EN<br />61000-3-3:2013/A1:2017 EN<br />61000-3-11:2017 EN<br />61000-3-12:2011 EN 61000-4-2:2008<br />EN 61000-4-3:2006/A1:2007/A2:2017<br />EN 61000-4-4:2012 EN<br />61000-4-5:2014/A1:2017 EN<br />61000-4-6:2016<br />EN 61000-4-8:2009<br />EN 61000-4-11:2020 EN 55011:2016/A1:2017/A2:2021/A11:2020
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+Protection contre les infiltrations
+
+</td>
+
+<td>
+
+IEC<br />60529:1989 IEC<br />60529:1989/A1:1999 IEC<br />60529:1989/A2:2013 IEC 60529:1989/A2:2013/C1:2019<br />EN 60529:1991/A1:2000/A2:2013
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+RoHS
+
+</td>
+
+<td>
+
+EN IEC 63000:2018
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+![Illustration du manuel original, page imprimée 4](/img/manual/asset-454a03d782e7.png "width=73")
 
 Le BactoSense est classé comme produit laser de classe 1 selon la norme IEC 60825-1:2014/A11:2021.
 
@@ -97,8 +185,6 @@ Tous les pictogrammes utilisés dans ce document sont expliqués ci-dessous :
 Informations supplémentaires sur le sujet en cours.
 
 :::
-
-<img src="/img/manual/icon-screenshot.png" alt="Exemple de capture d’écran" width="40" loading="lazy" />
 
 La capture d’écran est un exemple de l’interface utilisateur graphique et peut être différente sur votre instrument.
 

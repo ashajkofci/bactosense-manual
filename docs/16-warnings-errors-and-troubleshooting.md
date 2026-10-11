@@ -13,7 +13,7 @@ Warnings appear when unusual behaviour is detected during an otherwise successfu
 
 | WARNING | IMAGE |
 | --- | --- |
-| When unusual behavior is detected, a warning is shown next to the measurement results. More information on the warning can be found by clicking on the corresponding warning entry next to the measurement results or directly in the warning log. | <img src="/img/manual/cell-16a091792775.png" alt="Illustration for table on manual page 139" width="252" className="manual-figure" loading="lazy"/> |
+| When unusual behavior is detected, a warning is shown next to the measurement results. More information on the warning can be found by clicking on the corresponding warning entry next to the measurement results or directly in the warning log. | ![BactoSense — High SSC baseline warning](/img/gui/en/warning-high-ssc-baseline.png "width=252 class=manual-figure") |
 
 The following warning messages can be displayed:
 
@@ -41,7 +41,7 @@ Non-critical errors prevent a measurement from terminating successfully, but do 
 
 | NON-CRITICAL ERRORS |  |
 | --- | --- |
-| The protocol stops. The cause of the error is usually fixed by repeating the analysis or waiting.<br/>• Another measurement can immediately be started. If it completes successfully, the error state is cleared.<br/>• More information on the error can be found in the error log, by clicking on the corresponding error entry. | <img src="/img/manual/cell-7a9639648396.png" alt="Illustration for table on manual page 141" width="255" className="manual-figure" loading="lazy"/> |
+| The protocol stops. The cause of the error is usually fixed by repeating the analysis or waiting.<br/>• Another measurement can immediately be started. If it completes successfully, the error state is cleared.<br/>• More information on the error can be found in the error log, by clicking on the corresponding error entry. | ![BactoSense — Non-critical empty sample error](/img/gui/en/noncritical-error-empty-sample.png "width=255 class=manual-figure") |
 
 The following non-critical error messages can be displayed:
 
@@ -50,16 +50,16 @@ The following non-critical error messages can be displayed:
 | ERROR CODE | NAME | DESCRIPTION | CAUSES / WHAT TO DO |
 | --- | --- | --- | --- |
 | E01 | Cartridge door open | Cartridge door is open and prevents measurements from running. | • Close door and retry the measurement. |
-| E08 | Enclosure too damp | Enclosure humidity is too high for safe operation. | • Replace desiccant bag, by unscrewing the large cap on the left-hand-side of the instrument (see section 15.2.6).<br/>• If the problem persists, please contact customer service. |
+| E08 | Enclosure too damp | Enclosure humidity is too high for safe operation. | • Replace desiccant bag, by unscrewing the large cap on the left-hand-side of the instrument (see [Replacement of the desiccant bag](15-maintenance.md#section-15-2-6)).<br/>• If the problem persists, please contact customer service. |
 | E09 | System overheated | Inside temperature is too high for safe operation. | • Reduce ambient temperature or increase measurement interval to allow instrument to cool down. |
 | E14 | Laser too hot | Laser temperature is too high for safe operation. | • Reduce ambient temperature or increase measurement interval to allow instrument to cool down. |
 
 | ERROR CODE | NAME | DESCRIPTION | CAUSES / WHAT TO DO |
 | --- | --- | --- | --- |
-| E15 | Mixer inflation error | Underpressure detected during mix or dispense. | • Missing sample.<br/>• Air in the input.<br/>• Leak in the system.<br/>• Please execute the Clean Optics protocol (see section 10.9.1). |
-| E18 | Pump underpressure error | Underpressure detected during dispense. | • Missing sample.<br/>• Air in the input.<br/>• Leak in the system.<br/>• Please execute the Clean Optics protocol (see section 10.9.1). |
+| E15 | Mixer inflation error | Underpressure detected during mix or dispense. | • Missing sample.<br/>• Air in the input.<br/>• Leak in the system.<br/>• Please execute the Clean Optics protocol (see [Overview of protocols in manual mode](10-measurements.md#section-10-9-1)). |
+| E18 | Pump underpressure error | Underpressure detected during dispense. | • Missing sample.<br/>• Air in the input.<br/>• Leak in the system.<br/>• Please execute the Clean Optics protocol (see [Overview of protocols in manual mode](10-measurements.md#section-10-9-1)). |
 | E19 | System overheated | The inner temperature is too high for operation. | • Reduce ambient temperature, or increase measurement interval to allow instrument to cool down. |
-| E33 | Processing memory overflow | Signal processing circuits memory has overflown. | • Please execute the Clean Optics protocol (see section 10.9.1).<br/>• Retry the measurement. |
+| E33 | Processing memory overflow | Signal processing circuits memory has overflown. | • Please execute the Clean Optics protocol (see [Overview of protocols in manual mode](10-measurements.md#section-10-9-1)).<br/>• Retry the measurement. |
 | E42 | Enclosure too cold despite heating | Enclosure temperature remains too cold after heating procedure. | • Ambient temperature is less than 5 °C (41 °F).<br/>• Increase ambient temperature. |
 | E44 | Pump module startup error | The pump module failed to power on correctly. | • Simply retry the measurement. |
 | E45 | Low valid volume ratio error | The valid volume ratio is too low. This can be caused by a too elevated bacterial content in the water or turbidity/debris. | • The accuracy of the measurement is probably very low. Repeat the measurement while diluting the sample with clear water. |
@@ -87,7 +87,7 @@ Critical errors interrupt the workflows of the instrument and require human inte
 
 | CRITICAL ERRORS | IMAGE |
 | --- | --- |
-| If a critical error occurs during operation, it has the following effects:<br/>• The protocol immediately stops.<br/>• The instrument goes into a critical error state, and manual intervention is needed before any new protocol can be launched.<br/>• The cause of the error must be solved by an operator. The errors can then be manually cleared from the Error log, as described in sections 16.4 and 16.5. | <img src="/img/manual/cell-2ba5234a6f92.png" alt="Illustration for table on manual page 145" width="253" className="manual-figure" loading="lazy"/> |
+| If a critical error occurs during operation, it has the following effects:<br/>• The protocol immediately stops.<br/>• The instrument goes into a critical error state, and manual intervention is needed before any new protocol can be launched.<br/>• The cause of the error must be solved by an operator. The errors can then be manually cleared from the Error log, as described in [Error and warning logs](16-warnings-errors-and-troubleshooting.md#section-16-4) and [Clearing errors](16-warnings-errors-and-troubleshooting.md#section-16-5). | ![BactoSense — Critical missing cartridge error](/img/gui/en/critical-error-missing-cartridge.png "width=253 class=manual-figure") |
 
 The following critical error messages can be displayed:
 
@@ -96,18 +96,18 @@ The following critical error messages can be displayed:
 | ERROR CODE | NAME | DESCRIPTION | CAUSES / WHAT TO DO |
 | --- | --- | --- | --- |
 | E00 | General error | Unhandled error. | • Please contact customer service |
-| E02 | Cartridge empty | Cartridge is empty. | • Replace cartridge (see section 8.9.4) |
-| E04 | Cartridge missing | Cartridge is missing. | • Insert a cartridge (see section 8.9.6) |
-| E05 | Full waste bag | Cartridge waste bag is full. | • Replace cartridge (see section 8.9.4) |
+| E02 | Cartridge empty | Cartridge is empty. | • Replace cartridge (see [Change cartridges](08-general-operations-and-configurations.md#section-8-9-4)) |
+| E04 | Cartridge missing | Cartridge is missing. | • Insert a cartridge (see [Installing a cartridge](08-general-operations-and-configurations.md#section-8-9-6)) |
+| E05 | Full waste bag | Cartridge waste bag is full. | • Replace cartridge (see [Change cartridges](08-general-operations-and-configurations.md#section-8-9-4)) |
 | E06 | Cartridge communication impossible | Cartridge is disconnected, door is open, or cartridge electronics are damaged. | • Make sure the cartridge’s electronic cable is connected properly, and that the door is properly closed.<br/>• If that doesn’t help, replace the cartridge and inform customer service. |
 
 | ERROR CODE | NAME | DESCRIPTION | CAUSES / WHAT TO DO |
 | --- | --- | --- | --- |
-| E07 | Storage disk full | Insufficient storage space to continue operation. | • Delete old measurements and try again (see section 15.2.8)<br/>• This will delete the measurements permanently from the device.<br/>• Export measurements as backup solution. |
+| E07 | Storage disk full | Insufficient storage space to continue operation. | • Delete old measurements and try again (see [Clearing of disk space](15-maintenance.md#section-15-2-8))<br/>• This will delete the measurements permanently from the device.<br/>• Export measurements as backup solution. |
 | E12 | FPGA initialization error | Failed to initialize the signal processing chip. | • Reboot the instrument. |
 | E16 | Processing error | An error was discovered while processing the signals. | • The accuracy of the latest result is not guaranteed. Please repeat the analysis. |
 | E17 | Overpressure detected | Overpressure detected during dispense. | • Likely cause: The output filter is probably clogged.<br/>• Optical flow cell blocked.<br/>• Please call customer service. |
-| E20 | Abnormal shutdown | Protocol interrupted for unknown reasons, usually due to a power cut. | • Usually indicates a power cut, or other external interruption to the measurement.<br/>• Perform a Clean Optics and Clean Sampling Device protocol before starting a new measurement (see section 10.9.1). |
+| E20 | Abnormal shutdown | Protocol interrupted for unknown reasons, usually due to a power cut. | • Usually indicates a power cut, or other external interruption to the measurement.<br/>• Perform a Clean Optics and Clean Sampling Device protocol before starting a new measurement (see [Overview of protocols in manual mode](10-measurements.md#section-10-9-1)). |
 | E23 | Temperature Sensor Communication Error | Communication with temperature sensor on IO board failed. | • Please contact customer service. |
 | E24 | Laser Communication Error | Communication with optical unit failed. | • Please contact customer service. |
 | E25 | Pump Communication Error | Communication with pump module impossible. | • Please contact customer service. |
@@ -121,11 +121,11 @@ The following critical error messages can be displayed:
 | E30 | Empty bleach supply | Bleach tube connected to cartridge is empty | • The tube is disconnected.<br/>• Cartridge is defective.<br/>• Repeat the cartridge change procedure, making sure that all tubes are properly connected. |
 | E31 | Cartridge electronics failure | Cartridge level can no longer be determined accurately. | • Replace cartridge and contact customer service. |
 | E32 | Incompatible cartridge | Cartridge type is incompatible with this instrument or software. | • Make sure that you have the correct cartridge type for this instrument. |
-| E33 | Processing memory overflow | Signal processing circuits memory has overflowed. | • Please execute the Clean Optics protocol (see section 10.9.1).<br/>• Retry the measurement. |
+| E33 | Processing memory overflow | Signal processing circuits memory has overflowed. | • Please execute the Clean Optics protocol (see [Overview of protocols in manual mode](10-measurements.md#section-10-9-1)).<br/>• Retry the measurement. |
 
 | ERROR CODE | NAME | DESCRIPTION | CAUSES / WHAT TO DO |
 | --- | --- | --- | --- |
-| E38 | Cartridge not ready error | The new cartridge has not been initialized correctly | • Execute the “Cartridge Change” procedure (see section 8.9.4). |
+| E38 | Cartridge not ready error | The new cartridge has not been initialized correctly | • Execute the “Cartridge Change” procedure (see [Change cartridges](08-general-operations-and-configurations.md#section-8-9-4)). |
 | E39 | Laser current limit reached | The laser has reached its upper current limit; indicating end of life. | • The laser needs to be replaced. Contact a service technician. |
 | E40 | Set of gates not found | Reference to the set of gates selected for the measurement cannot be found in the instrument settings. | • The set of gates has been deleted.<br/>• Change the set of gates and retry the measurement. |
 | E41 | Set of gates incompatible | The set of gates selected for the measurement cannot be used with this cartridge. | • Correct cartridge change procedure was not followed.<br/>• Incorrect digital input configuration.<br/>• Change the set of gates and retry the measurement. |
@@ -138,13 +138,145 @@ The following critical error messages can be displayed:
 
 The error and warning log views can be accessed separately through the user interface Home menu when pressing the Logs button.
 
-<img src="/img/figures-second/figure-3bdcc49f453689.webp" alt="Figure 16-1 : Error logs" width="558" className="manual-figure" loading="lazy" />
-
-<img src="/img/manual/icon-screenshot.png" alt="Illustration from the BactoSense user manual" width="57" className="manual-icon" loading="lazy" />
+![BactoSense — Error log](/img/gui/en/error-log.png "width=558 class=manual-figure")
 
 *Figure 16-1 : Error logs*
 
-<table className="manual-table"><tbody><tr><td rowSpan="4">①</td><td rowSpan="4">Date and time of the event</td><td rowSpan="4">②</td><td colSpan="2">Type of the event</td></tr><tr><td><img src="/img/manual/cell-67d152256921.png" alt="Illustration for table on manual page 149" width="56" className="manual-icon" loading="lazy" /></td><td>Critical error</td></tr><tr><td><img src="/img/manual/cell-168772cd9e6b.png" alt="Illustration for table on manual page 149" width="56" className="manual-icon" loading="lazy" /></td><td>Non-critical error</td></tr><tr><td><img src="/img/manual/cell-b4d48ec33659.png" alt="Illustration for table on manual page 149" width="56" className="manual-icon" loading="lazy" /></td><td>Errors cleared</td></tr><tr><td>③</td><td>Short description of the error or event</td><td>④</td><td colSpan="2">Button to manually clear errors (only available for Admin and Service users)</td></tr><tr><td>⑤</td><td>Date range of displayed events. Click to change the range.</td><td></td><td colSpan="2"></td></tr></tbody></table>
+<table className="manual-table">
+
+<tbody>
+
+<tr>
+
+<td rowSpan="4">
+
+①
+
+</td>
+
+<td rowSpan="4">
+
+Date and time of the event
+
+</td>
+
+<td rowSpan="4">
+
+②
+
+</td>
+
+<td colSpan="2">
+
+Type of the event
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+![BactoSense — Critical error log entry](/img/gui/icons/critical-error-event.png "width=32 class=manual-icon")
+
+</td>
+
+<td>
+
+Critical error
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+![BactoSense — Non-critical error log entry](/img/gui/icons/noncritical-error-event.png "width=32 class=manual-icon")
+
+</td>
+
+<td>
+
+Non-critical error
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+![BactoSense — Log entry: errors cleared](/img/gui/icons/errors-cleared-event.png "width=32 class=manual-icon")
+
+</td>
+
+<td>
+
+Errors cleared
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+③
+
+</td>
+
+<td>
+
+Short description of the error or event
+
+</td>
+
+<td>
+
+④
+
+</td>
+
+<td colSpan="2">
+
+Button to manually clear errors (only available for Admin and Service users)
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+⑤
+
+</td>
+
+<td>
+
+Date range of displayed events. Click to change the range.
+
+</td>
+
+<td>
+
+</td>
+
+<td colSpan="2">
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 :::info[View event details]
 
@@ -160,18 +292,130 @@ Critical errors must be cleared manually. Make sure to first solve the origin of
 | --- | --- | --- |
 | 1. | Navigate to the Home menu of the BactoSense user interface. |  |
 | 2. | Press the Logs button, and then the Error log button |  |
-| 3. | Make sure you have resolved the problem leading to the displayed error(s). Then press the Clear Errors button. | <img src="/img/manual/cell-df45180c59d7.png" alt="Illustration for table on manual page 150" width="245" className="manual-figure" loading="lazy"/> |
+| 3. | Make sure you have resolved the problem leading to the displayed error(s). Then press the Clear Errors button. | ![BactoSense — Clear errors control](/img/gui/en/error-log-clear-errors.png "width=245 class=manual-figure") |
 | 4. | Cleared errors appear with grey error symbols and an “Errors cleared” event is added to the log. The instrument is ready to analyze again. |  |
 
 ## 16.6 Automatic self-check {#section-16-6}
 
 The automatic self-check tool checks that each component of the BactoSense is functioning correctly and identifies those that are not. It can be used to identify problems with the instrument.
 
-<table className="manual-table"><tbody><tr><th scope="col"></th><th scope="col">WORK STEP</th><th scope="col">ADDITIONAL INFO / IMAGE</th></tr><tr><td>1.</td><td>Navigate to the Home menu of the BactoSense user interface.</td><td></td></tr><tr><td>2.</td><td>Press the Maintenance button.</td><td></td></tr><tr><td>3.</td><td>Press the Self-check button.</td><td></td></tr><tr><td>4.</td><td><Admonition type="info" title="Additional information">Press the Run or Rerun button to start the self- check. Once execution has terminated, the instrument shows a list of all tests, with a green PASS or red FAIL indicator. Some tests may be skipped: if the system cannot communicate with the cartridge, all the tests that require cartridge communication are skipped.</Admonition></td><td><img src="/img/manual/cell-725c4037614b.png" alt="Illustration for table on manual page 150" width="245" className="manual-figure" loading="lazy" /></td></tr></tbody></table>
+<table className="manual-table">
+
+<tbody>
+
+<tr>
+
+<th scope="col">
+
+</th>
+
+<th scope="col">
+
+WORK STEP
+
+</th>
+
+<th scope="col">
+
+ADDITIONAL INFO / IMAGE
+
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+
+1\.
+
+</td>
+
+<td>
+
+Navigate to the Home menu of the BactoSense user interface.
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+2\.
+
+</td>
+
+<td>
+
+Press the Maintenance button.
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+3\.
+
+</td>
+
+<td>
+
+Press the Self-check button.
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+4\.
+
+</td>
+
+<td>
+
+:::info[Additional information]
+
+Press the Run or Rerun button to start the self- check. Once execution has terminated, the instrument shows a list of all tests, with a green PASS or red FAIL indicator. Some tests may be skipped: if the system cannot communicate with the cartridge, all the tests that require cartridge communication are skipped.
+
+:::
+
+</td>
+
+<td>
+
+![BactoSense — Self-check results](/img/gui/en/self-check-results.png "width=245 class=manual-figure")
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 ## 16.7 Operation at low temperature {#section-16-7}
 
-The instrument must be operated within a specific temperature range to prevent damage and ensure reliable and reproducible measurement results (see section 3.2). At very low and very high ambient temperatures (below 5 °C (41 °F) or above 30 °C (86 °F)), protocols are not executed. At low ambient temperatures, the instrument automatically warms up prior to a measurement to reach the required temperature. During this heating process, the instrument status shows “Heating...”. If the target temperature cannot be reached after several hours, the protocol exits with an error (table 16-2, E42).
+The instrument must be operated within a specific temperature range to prevent damage and ensure reliable and reproducible measurement results (see [Technical data](03-instrument-overview.md#section-3-2)). At very low and very high ambient temperatures (below 5 °C (41 °F) or above 30 °C (86 °F)), protocols are not executed. At low ambient temperatures, the instrument automatically warms up prior to a measurement to reach the required temperature. During this heating process, the instrument status shows “Heating...”. If the target temperature cannot be reached after several hours, the protocol exits with an error (table 16-2, E42).
 
 :::info[Allow time for heating]
 
@@ -181,8 +425,14 @@ Measurements can be delayed if extensive heating is necessary. To avoid this, ke
 
 ## 16.8 Troubleshooting {#section-16-8}
 
-The following table provides an overview of issues and resolutions. If the issue cannot be resolved, please contact your local service representative or bNovate customer service. Contact information for bNovate customer service can be found in section 19.1.
+The following table provides an overview of issues and resolutions. If the issue cannot be resolved, please contact your local service representative or bNovate customer service. Contact information for bNovate customer service can be found in [Contacting customer service](19-contact.md#section-19-1).
 
 **Table 16-4 Troubleshooting instructions**
 
-<table className="manual-table"><tbody><tr><td>OBSERVATION</td><td>INSTRUCTION</td></tr><tr><td>Nothing on display</td><td>• Check whether the BactoSense is connected to power and switched on.</td></tr><tr><td>Unresponsive or flickering user interface</td><td>• Potential electromagnetic interference from nearby machine (e.g. pump). Relocate BactoSense.</td></tr><tr><td>Error message on the display</td><td>• Respond to the error message as described in this chapter.</td></tr><tr><td>The measurements appear to be wrong</td><td>• Ensure that the sample and operating conditions described in section 3.2 are met.<br />• Check whether the instrument is correctly installed according to chapter 5.<br />• Ensure that the servicing duties have been performed according to the servicing schedules described in sections 15.1 and 15.2.<br />• Perform an instrument cleaning using the Cleaning Kit.<br />• Perform an instrument validation using the Validation Kit.</td></tr></tbody></table>
+|  |  |
+| --- | --- |
+| OBSERVATION | INSTRUCTION |
+| Nothing on display | • Check whether the BactoSense is connected to power and switched on. |
+| Unresponsive or flickering user interface | • Potential electromagnetic interference from nearby machine (e.g. pump). Relocate BactoSense. |
+| Error message on the display | • Respond to the error message as described in this chapter. |
+| The measurements appear to be wrong | • Ensure that the sample and operating conditions described in [Technical data](../instrument-overview/#section-3-2) are met.<br/>• Check whether the instrument is correctly installed according to [Installation](../installation/).<br/>• Ensure that the servicing duties have been performed according to the servicing schedules described in [Periodic preventive maintenance by service professional](../maintenance/#section-15-1) and [Maintenance by the user](../maintenance/#section-15-2).<br/>• Perform an instrument cleaning using the Cleaning Kit.<br/>• Perform an instrument validation using the Validation Kit. |

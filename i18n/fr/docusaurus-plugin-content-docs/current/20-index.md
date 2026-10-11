@@ -19,10 +19,6 @@ Sélectionnez un numéro de section pour ouvrir la rubrique correspondante de ce
   - Test [6.8](/io-box#section-6-8)
 - Assemblage [5.5](/installation#section-5-5)
 - Notifications sonores [8.3.4](/general-operations-and-configurations#section-8-3-4)
-- Mode Auto
-  - Mesure [10.1](/measurements#section-10-1)
-  - Protocoles [10.9.1](/measurements#section-10-9-1)
-  - Résultats [10.2.3](/measurements#section-10-2-3)
 - Mise en marche automatique [8.3.4](/general-operations-and-configurations#section-8-3-4)
 - Autovérification automatique [16.5](/warnings-errors-and-troubleshooting#section-16-5)
 - Redémarrage automatique [8.3.4](/general-operations-and-configurations#section-8-3-4)
@@ -45,6 +41,7 @@ Sélectionnez un numéro de section pour ouvrir la rubrique correspondante de ce
   - Retrait [8.9.5](/general-operations-and-configurations#section-8-9-5)
   - Stockage [17.1.3](/storage-transport-and-disposal#section-17-1-3)
   - Transport [17.2.2](/storage-transport-and-disposal#section-17-2-2)
+- CBC (Nombre de cellules coliformes) [11.3.4](/results-and-data-analysis#section-11-3-4)
 - CE [2.2](/general-user-information#section-2-2)
 - Certification
   - CE [2.2](/general-user-information#section-2-2)
@@ -107,6 +104,7 @@ Sélectionnez un numéro de section pour ouvrir la rubrique correspondante de ce
 
 ## E
 
+- EBC (Nombre de cellules E. coli) [11.3.5](/results-and-data-analysis#section-11-3-5)
 - Installation électrique
   - alimentation [5.1](/installation#section-5-1)
 - Erreurs
@@ -236,6 +234,7 @@ Sélectionnez un numéro de section pour ouvrir la rubrique correspondante de ce
 
 ## N
 
+- NBC (Nombre de cellules Enterococcus) [11.3.6](/results-and-data-analysis#section-11-3-6)
 - Configuration du réseau [8.6](/general-operations-and-configurations#section-8-6)
 - Nouvelle fenêtre [11.4.2](/results-and-data-analysis#section-11-4-2)
 - Erreurs non critiques [16.2](/warnings-errors-and-troubleshooting#section-16-2)
@@ -248,6 +247,7 @@ Sélectionnez un numéro de section pour ouvrir la rubrique correspondante de ce
   - Mesure [10.1](/measurements#section-10-1)
   - Résultats [10.1](/measurements#section-10-1), [10.2.3](/measurements#section-10-2-3)
   - Arrêt [10.2.2](/measurements#section-10-2-2)
+  - Protocoles [10.9.1](/measurements#section-10-9-1)
 - Dispositif d’échantillonnage en ligne [18.2](/supply-scope-accessories-and-consumables#section-18-2)
   - Remplacement [8.10](/general-operations-and-configurations#section-8-10)
   - Bagues de serrage [18.3](/supply-scope-accessories-and-consumables#section-18-3)
@@ -284,7 +284,7 @@ Sélectionnez un numéro de section pour ouvrir la rubrique correspondante de ce
 - Protocole [10.9](/measurements#section-10-9), [10.9.1](/measurements#section-10-9-1)
 - Protocoles
   - Analyse [10.9](/measurements#section-10-9)
-  - Mode Auto [10.9.1](/measurements#section-10-9-1)
+  - Mode en ligne [10.9.1](/measurements#section-10-9-1)
   - Analyse de billes [10.9](/measurements#section-10-9)
   - Nettoyage du dispositif d’échantillonnage manuel
   - dispositif [15.2.2](/maintenance#section-15-2-2), [15.2.2](/maintenance#section-15-2-2)
@@ -310,7 +310,10 @@ Sélectionnez un numéro de section pour ouvrir la rubrique correspondante de ce
 - Risque résiduel [4.1](/safety#section-4-1)
 - Redémarrage [8.3.4](/general-operations-and-configurations#section-8-3-4)
 - Résultats [11.1](/results-and-data-analysis#section-11-1)
-  - Mode Auto [10.2.3](/measurements#section-10-2-3)
+  - CBC [11.3.4](/results-and-data-analysis#section-11-3-4)
+  - EBC [11.3.5](/results-and-data-analysis#section-11-3-5)
+  - NBC [11.3.6](/results-and-data-analysis#section-11-3-6)
+  - Mode en ligne [10.2.3](/measurements#section-10-2-3)
   - HNAC [11.3.2](/results-and-data-analysis#section-11-3-2), [11.3.3](/results-and-data-analysis#section-11-3-3)
   - HNAP [11.3.2](/results-and-data-analysis#section-11-3-2), [11.3.3](/results-and-data-analysis#section-11-3-3)
   - ICC [11.3.2](/results-and-data-analysis#section-11-3-2), [11.3.3](/results-and-data-analysis#section-11-3-3)

@@ -20,7 +20,15 @@ La documentazione aggiuntiva relativa al prodotto è riportata nella tabella seg
 
 :::info[Documentazione di supporto]
 
-<table><tbody><tr><td>40101</td><td>Guida rapida</td><td>Informazioni di base necessarie per utilizzare BactoSense.</td></tr><tr><td>40108</td><td>Manuale d’uso del kit di pulizia</td><td>Utilizzo del kit di reagenti per decontaminare BactoSense.</td></tr><tr><td>UM_0003</td><td>Manuale d’uso del kit di validazione</td><td>Utilizzo del kit di reagenti per verificare il corretto funzionamento di BactoSense.</td></tr><tr><td>UM_0004</td><td>Manuale d’uso del kit SST BactoSense PURE</td><td>Utilizzo del kit di reagenti per eseguire il test di idoneità del sistema.</td></tr><tr><td>50115</td><td>Dichiarazione di conformità CE</td><td>Conformità alle direttive e alle norme applicabili.</td></tr><tr><td>50116</td><td>Dichiarazione di conformità UKCA</td><td>Conformità alle direttive e alle norme applicabili.</td></tr><tr><td>50117</td><td>Rapporto di prova CB</td><td>Rapporto di conformità UL/CSA/FCC, disponibile anche con il riferimento CH-12116 su https://certificates.iecee.org</td></tr></tbody></table>
+|  |  |  |
+| --- | --- | --- |
+| 40101 | Guida rapida | Informazioni di base necessarie per utilizzare BactoSense. |
+| 40108 | Manuale d’uso del kit di pulizia | Utilizzo del kit di reagenti per decontaminare BactoSense. |
+| UM_0003 | Manuale d’uso del kit di validazione | Utilizzo del kit di reagenti per verificare il corretto funzionamento di BactoSense. |
+| UM_0004 | Manuale d’uso del kit SST BactoSense PURE | Utilizzo del kit di reagenti per eseguire il test di idoneità del sistema. |
+| 50115 | Dichiarazione di conformità CE | Conformità alle direttive e alle norme applicabili. |
+| 50116 | Dichiarazione di conformità UKCA | Conformità alle direttive e alle norme applicabili. |
+| 50117 | Rapporto di prova CB | Rapporto di conformità UL/CSA/FCC, disponibile anche con il riferimento CH-12116 su https://certificates.iecee.org |
 
 :::
 
@@ -28,11 +36,11 @@ La documentazione aggiuntiva relativa al prodotto è riportata nella tabella seg
 
 BactoSense è stato progettato e fabbricato per soddisfare o superare le norme riconosciute del settore, al fine di garantire la sicurezza, le prestazioni e l’affidabilità del prodotto.
 
-<img src="/img/manual/asset-5b67a16d691d.png" alt="Marchio di conformità CE" width="72" loading="lazy" />
+![Marchio di conformità CE](/img/manual/asset-5b67a16d691d.png "width=32 class=compliance-mark")
 
 Il dispositivo soddisfa tutti i requisiti applicabili per l’apposizione del marchio CE. Per ulteriori dettagli, consultare la dichiarazione di conformità separata.
 
-<img src="/img/manual/asset-fdc39c428b7f.png" alt="Marchio di conformità UKCA" width="72" loading="lazy" />
+![Marchio di conformità UKCA](/img/manual/asset-fdc39c428b7f.png "width=32 class=compliance-mark")
 
 Il dispositivo soddisfa tutti i requisiti applicabili per l’apposizione del marchio UKCA. Per ulteriori dettagli, consultare la dichiarazione di conformità separata.
 
@@ -48,9 +56,89 @@ Sono state applicate le norme seguenti per garantire la conformità ai requisiti
 
 *Tabella 2-2 Norme applicate*
 
-<table><tbody><tr><th colSpan="2">NORME APPLICATE</th></tr><tr><td>Sicurezza (Generale) (Elemento riscaldante) (Laser)</td><td>IEC 61010-1:2010 IEC 61010-1:2010/A1:2016 CAN/CSA-C22.2 No. 61010-1 + A1 UL 61010-1, 3ª edizione A1 JIS C 1010-1:2019 IEC 61010-2-010:2019 CSA C22.2 No. 61010-2-010:19 EN 60825-1:2014 + A11:2021 CAN/CSA-E60825-1:15</td></tr><tr><td>EMC</td><td>EN IEC 61326-1:2021 EN 61326-1:2013, Classe B, Gruppo 1 CISPR 11:2015/A1:2016/A2:2019 EN 61000-3-2:2018 EN 61000-3-3:2013/A1:2017 EN 61000-3-11:2017 EN 61000-3-12:2011 EN 61000-4-2:2008 EN 61000-4-3:2006/A1:2007/A2:2017 EN 61000-4-4:2012 EN 61000-4-5:2014/A1:2017 EN 61000-4-6:2016 EN 61000-4-8:2009 EN 61000-4-11:2020 EN 55011:2016/A1:2017/A2:2021/A11:2020</td></tr><tr><td>Protezione contro l’ingresso di corpi estranei e acqua</td><td>IEC 60529:1989 IEC 60529:1989/A1:1999 IEC 60529:1989/A2:2013 IEC 60529:1989/A2:2013/C1:2019 EN 60529:1991/A1:2000/A2:2013</td></tr><tr><td>RoHS</td><td>EN IEC 63000:2018</td></tr></tbody></table>
+<table>
 
-<img src="/img/manual/asset-454a03d782e7.png" alt="Illustrazione del manuale originale, pagina stampata 4" width="146" loading="lazy" />
+<tbody>
+
+<tr>
+
+<th colSpan="2">
+
+NORME APPLICATE
+
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+
+Sicurezza (Generale) (Elemento riscaldante) (Laser)
+
+</td>
+
+<td>
+
+IEC 61010-1:2010 IEC 61010-1:2010/A1:2016 CAN/CSA-C22.2 No. 61010-1 + A1 UL 61010-1, 3ª edizione A1 JIS C 1010-1:2019 IEC 61010-2-010:2019 CSA C22.2 No. 61010-2-010:19 EN 60825-1:2014 + A11:2021 CAN/CSA-E60825-1:15
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+EMC
+
+</td>
+
+<td>
+
+EN IEC 61326-1:2021 EN 61326-1:2013, Classe B, Gruppo 1 CISPR 11:2015/A1:2016/A2:2019 EN 61000-3-2:2018 EN 61000-3-3:2013/A1:2017 EN 61000-3-11:2017 EN 61000-3-12:2011 EN 61000-4-2:2008 EN 61000-4-3:2006/A1:2007/A2:2017 EN 61000-4-4:2012 EN 61000-4-5:2014/A1:2017 EN 61000-4-6:2016 EN 61000-4-8:2009 EN 61000-4-11:2020 EN 55011:2016/A1:2017/A2:2021/A11:2020
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+Protezione contro l’ingresso di corpi estranei e acqua
+
+</td>
+
+<td>
+
+IEC 60529:1989 IEC 60529:1989/A1:1999 IEC 60529:1989/A2:2013 IEC 60529:1989/A2:2013/C1:2019 EN 60529:1991/A1:2000/A2:2013
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+RoHS
+
+</td>
+
+<td>
+
+EN IEC 63000:2018
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+![Illustrazione del manuale originale, pagina stampata 4](/img/manual/asset-454a03d782e7.png "width=73")
 
 BactoSense è classificato come prodotto laser di Classe 1 secondo la norma IEC 60825-1:2014/A11:2021.
 
@@ -97,8 +185,6 @@ Tutti i pittogrammi utilizzati in questo documento sono spiegati di seguito:
 Informazioni aggiuntive sull’argomento trattato.
 
 :::
-
-<img src="/img/manual/icon-screenshot.png" alt="Schermata di esempio" width="40" loading="lazy" />
 
 La schermata è un esempio dell’interfaccia grafica e può differire da quella dello strumento in uso.
 

@@ -8,7 +8,7 @@ description: "Manuel d’utilisation BactoSense : Boîte d’E/S."
 
 La boîte d’E/S est un accessoire du BactoSense. Elle permet de connecter les entrées et sorties du BactoSense à un système PLC/SCADA.
 
-Modbus TCP peut être utilisé à la place de la boîte d’E/S. Pour plus de détails, consultez la section 7.1.
+Modbus TCP peut être utilisé à la place de la boîte d’E/S. Pour plus de détails, consultez la section [Modbus TCP](07-field-bus-interface.md#section-7-1).
 
 ## 6.1 Spécifications techniques {#section-6-1}
 
@@ -40,22 +40,76 @@ Notes complémentaires
 
 ### 6.1.3 Sorties analogiques {#section-6-1-3}
 
-- Utilisation: 2 sorties analogiques (4 - 20 mA) permettent de rapporter deux valeurs analogiques, par exemple le nombre total de cellules et le HNAP. Note: Pour la transmission de résultats précis, l'utilisation de Modbus TCP est recommandée. Voir section 7.1.
+- Utilisation: 2 sorties analogiques (4 - 20 mA) permettent de rapporter deux valeurs analogiques, par exemple le nombre total de cellules et le HNAP. Note: Pour la transmission de résultats précis, l'utilisation de Modbus TCP est recommandée. Voir section [Modbus TCP](07-field-bus-interface.md#section-7-1).
 - Spécifications: 2 x 0/4 - 20 mA, charge recommandée de 250 Ω
 
 ### 6.1.4 Schémas de la boîte d’E/S {#section-6-1-4}
 
-<img src="/img/manual/asset-da9ff033639d.png" alt="Illustration du manuel original, page imprimée 32" width="633" loading="lazy" />
+![Illustration du manuel original, page imprimée 32](/img/manual/asset-da9ff033639d.png "width=633")
 
-*Figure 6-1 Schémas de la boîte d’E/S.* 
+*Figure 6-1 Schémas de la boîte d’E/S.*
 
 ### 6.1.5 Vue d’ensemble de la boîte d’E/S {#section-6-1-5}
 
-<img src="/img/manual/asset-30fbce76cafa.png" alt="Illustration du manuel original, page imprimée 33" width="634" loading="lazy" />
+![Illustration du manuel original, page imprimée 33](/img/manual/asset-30fbce76cafa.png "width=240")
 
 *Figure 6-2 Vue d’ensemble de la boîte d’E/S de BactoSense*
 
-<table><tbody><tr><th>①</th><th>Position des sorties numériques Bornes 1 – 8<br />Exigences en matière de<br />câble : • AWG<br />12 – 22 •<br />Section transversale : 0,25 – 2,5<br />mm2</th><th>②</th><th>Position des sorties analogiques Bornes 9 – 12<br />Exigences en matière de<br />câble : • AWG<br />12 – 22<br />• Section transversale : 0,25 – 2,5 mm2</th></tr><tr><td>③</td><td>Position des entrées numériques Bornes 14 –<br />18 Exigences en matière de<br />câble : • AWG<br />12 – 22 •<br />Section transversale : 0,25 – 2,5<br />mm2</td><td colSpan="2"></td></tr></tbody></table>
+<table>
+
+<tbody>
+
+<tr>
+
+<td>
+
+①
+
+</td>
+
+<td>
+
+Position des sorties numériques Bornes 1 – 8<br />Exigences en matière de<br />câble : • AWG<br />12 – 22 •<br />Section transversale : 0,25 – 2,5<br />mm2
+
+</td>
+
+<td>
+
+②
+
+</td>
+
+<td>
+
+Position des sorties analogiques Bornes 9 – 12<br />Exigences en matière de<br />câble : • AWG<br />12 – 22<br />• Section transversale : 0,25 – 2,5 mm2
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+③
+
+</td>
+
+<td>
+
+Position des entrées numériques Bornes 14 –<br />18 Exigences en matière de<br />câble : • AWG<br />12 – 22 •<br />Section transversale : 0,25 – 2,5<br />mm2
+
+</td>
+
+<td colSpan="2">
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 ### 6.1.6 Tableau de référence de la boîte d’E/S {#section-6-1-6}
 
@@ -86,72 +140,609 @@ Notes complémentaires
 
 :::info[Vérifiez les raccordements d’E/S]
 
-Consultez les spécifications techniques des sections 6.1.1 à 6.1.3 et les schémas de la section 6.1.4 pour assurer une installation correcte.
+Consultez les spécifications techniques des sections [Entrées numériques](06-io-box.md#section-6-1-1), [Sorties numériques](06-io-box.md#section-6-1-2) et [Sorties analogiques](06-io-box.md#section-6-1-3) et les schémas de la section [Schémas de la boîte d’E/S](06-io-box.md#section-6-1-4) pour assurer une installation correcte.
 
 :::
 
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
-| 1. | Insérez les deux fiches M16 de la boîte d’E/S sur le côté droit de l’instrument. | <img src="/img/manual/asset-6a48e9fcafbe.png" alt="Illustration de la procédure, page imprimée 35" width="241" loading="lazy"/> |
-| 2. | Retirez le couvercle du boîtier en dévissant les quatre vis (cercles). | <img src="/img/manual/asset-9f5e3eb5f1fd.png" alt="Illustration de la procédure, page imprimée 35" width="225" loading="lazy"/> |
-| 3. | Faites passer le câble par le presse-étoupe (A, B ou C) et connectez les fils aux bornes correspondantes selon le tableau de référence de la boîte d’E/S présenté dans la section 6.1.6. | <img src="/img/manual/asset-fb6376380698.png" alt="Illustration de la procédure, page imprimée 35" width="222" loading="lazy"/> |
+| 1. | Insérez les deux fiches M16 de la boîte d’E/S sur le côté droit de l’instrument. | ![Illustration de la procédure, page imprimée 35](/img/manual/asset-6a48e9fcafbe.png "width=241") |
+| 2. | Retirez le couvercle du boîtier en dévissant les quatre vis (cercles). | ![Illustration de la procédure, page imprimée 35](/img/manual/asset-9f5e3eb5f1fd.png "width=225") |
+| 3. | Faites passer le câble par le presse-étoupe (A, B ou C) et connectez les fils aux bornes correspondantes selon le tableau de référence de la boîte d’E/S présenté dans la section [Tableau de référence de la boîte d’E/S](06-io-box.md#section-6-1-6). | ![Illustration de la procédure, page imprimée 35](/img/manual/asset-fb6376380698.png "width=222") |
 | 4. | Serrez le presse-étoupe. Essayez de tirer sur le câble pour voir si le presse-étoupe est suffisamment serré. |  |
-| 5. | En option : la boîte d’E/S peut être montée sur un mur. Utilisez des vis M4 d’une longueur minimale de 20 mm. Le couvercle étant toujours retiré, placez les 4 vis et fixez le boîtier au mur. | <img src="/img/manual/asset-3e67c8d4a4e6.png" alt="Illustration de la procédure, page imprimée 35" width="242" loading="lazy"/> |
+| 5. | En option : la boîte d’E/S peut être montée sur un mur. Utilisez des vis M4 d’une longueur minimale de 20 mm. Le couvercle étant toujours retiré, placez les 4 vis et fixez le boîtier au mur. | ![Illustration de la procédure, page imprimée 35](/img/manual/asset-3e67c8d4a4e6.png "width=242") |
 | 6. | Remettez le couvercle du boîtier et serrez les quatre vis pour le sceller. |  |
 
 ## 6.3 Raccordement des sorties sans boîte d’E/S {#section-6-3}
 
 Le BactoSense expose les sorties sur un connecteur femelle M16 à 12 broches. Cependant, l’utilisation d’une boîte d’E/S est recommandée. Le brochage du connecteur est indiqué ci-dessous.
 
-<img src="/img/manual/asset-223bcd55d2e3.png" alt="Illustration du manuel original, page imprimée 36" width="311" loading="lazy" />
+![Illustration du manuel original, page imprimée 36](/img/manual/asset-223bcd55d2e3.png "width=80")
 
 *Figure 6-3 Vue d’ensemble du brochage du connecteur de sortie*
 
-<table><tbody><tr><td>A</td><td>Sortie numérique 4 - B</td><td>G</td><td>Sortie numérique 1 - B</td></tr><tr><td>B</td><td>Sortie numérique 4 - A</td><td>H</td><td>Sortie numérique 1 - A</td></tr><tr><td>C</td><td>Sortie numérique 3 - B</td><td>J</td><td>Analogique 1+</td></tr><tr><td>D</td><td>Sortie numérique 3 - A</td><td>K</td><td>Analogique 1-</td></tr><tr><td>E</td><td>Sortie numérique 2 - B</td><td>L</td><td>Analogique 2+</td></tr><tr><td>F</td><td>Sortie numérique 2 - A</td><td>M</td><td>Analogique 2-</td></tr></tbody></table>
+|  |  |  |  |
+| --- | --- | --- | --- |
+| A | Sortie numérique 4 - B | G | Sortie numérique 1 - B |
+| B | Sortie numérique 4 - A | H | Sortie numérique 1 - A |
+| C | Sortie numérique 3 - B | J | Analogique 1+ |
+| D | Sortie numérique 3 - A | K | Analogique 1- |
+| E | Sortie numérique 2 - B | L | Analogique 2+ |
+| F | Sortie numérique 2 - A | M | Analogique 2- |
 
 ## 6.4 Raccordement des entrées sans boîte d’E/S {#section-6-4}
 
 Le BactoSense expose les entrées sur un connecteur femelle M16 à 5 broches. L’utilisation d’une boîte d’E/S est recommandée. Le brochage du connecteur est indiqué ci-dessous.
 
-<img src="/img/manual/asset-b6ab0aef5737.png" alt="Illustration du manuel original, page imprimée 37" width="320" loading="lazy" />
+![Illustration du manuel original, page imprimée 37](/img/manual/asset-b6ab0aef5737.png "width=120")
 
 *Figure 6-4 Vue d’ensemble du brochage du connecteur d’entrée*
 
-<table><tbody><tr><td>1</td><td>Entrée numérique 1</td><td>2</td><td>Entrée numérique 2</td></tr><tr><td>3</td><td>Entrée numérique 3</td><td>4</td><td>Entrée numérique 4</td></tr><tr><td>5</td><td>Commun</td><td colSpan="2"></td></tr></tbody></table>
+<table>
+
+<tbody>
+
+<tr>
+
+<td>
+
+1
+
+</td>
+
+<td>
+
+Entrée numérique 1
+
+</td>
+
+<td>
+
+2
+
+</td>
+
+<td>
+
+Entrée numérique 2
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+3
+
+</td>
+
+<td>
+
+Entrée numérique 3
+
+</td>
+
+<td>
+
+4
+
+</td>
+
+<td>
+
+Entrée numérique 4
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+5
+
+</td>
+
+<td>
+
+Commun
+
+</td>
+
+<td colSpan="2">
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 ## 6.5 Configuration des entrées numériques et du mode PLC {#section-6-5}
 
 L’instrument peut être contrôlé à partir d’un contrôleur logique programmable (PLC) externe. Pour éviter tout conflit lors du démarrage d’un processus, le PLC verrouille d’abord l’instrument en « Mode PLC », dans lequel l’instrument agit comme un esclave du PLC. Dans ce mode, toutes les fonctions de l’interface utilisateur liées à l’exécution des protocoles et autres processus sont bloquées. Une fois en mode PLC, les protocoles peuvent être démarrés et arrêtés par le PLC en utilisant les entrées numériques de l’instrument. Les sorties numériques fournissent ensuite des retours au PLC pour garantir un fonctionnement sécurisé.
 
-Le mode PLC est un mode Auto contrôlé à distance : le PLC peut demander une mesure unique ou démarrer le minuteur pour exécuter des protocoles à des intervalles prédéfinis. Les mesures démarrées par le PLC apparaissent également dans les résultats du mode Auto.
+Le mode PLC est un mode en ligne contrôlé à distance : le PLC peut demander une mesure unique ou démarrer le minuteur pour exécuter des protocoles à des intervalles prédéfinis. Les mesures démarrées par le PLC apparaissent également dans les résultats du mode en ligne.
 
 Lorsqu’aucun fil n’est connecté aux entrées numériques, leur état est 0000.
 
 *Tableau 6-2 Vue d’ensemble des états des entrées numériques et des fonctions associées*
 
-<table><tbody><tr><th rowSpan="2">DESCRIPTION</th><th colSpan="4">ENTRÉES NUMÉRIQUES</th></tr><tr><td>1</td><td>2</td><td>3</td><td>4</td></tr><tr><td>Forcer le mode PLC : L’instrument est inactif, mais esclave<br />du PLC.</td><td>1</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Exécuter un protocole/intervalle de mesure configurable</td><td>1</td><td>0</td><td>0</td><td>1</td></tr><tr><td>Exécuter un protocole/intervalle de mesure configurable</td><td>1</td><td>0</td><td>1</td><td>0</td></tr><tr><td>Exécuter un protocole/intervalle de mesure configurable</td><td>1</td><td>0</td><td>1</td><td>1</td></tr><tr><td>Exécuter un protocole/intervalle de mesure configurable</td><td>1</td><td>1</td><td>0</td><td>0</td></tr><tr><td>Exécuter un protocole/intervalle de mesure configurable</td><td>1</td><td>1</td><td>0</td><td>1</td></tr><tr><td>Exécuter un protocole/intervalle de mesure configurable</td><td>1</td><td>1</td><td>1</td><td>0</td></tr><tr><td>Abandonner le protocole en cours</td><td>1</td><td>1</td><td>1</td><td>1</td></tr><tr><td>Mode esclave désactivé. Fin du mode PLC.</td><td>0</td><td>0</td><td>0</td><td>0</td></tr></tbody></table>
+<table>
+
+<tbody>
+
+<tr>
+
+<th rowSpan="2">
+
+DESCRIPTION
+
+</th>
+
+<th colSpan="4">
+
+ENTRÉES NUMÉRIQUES
+
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+
+1
+
+</td>
+
+<td>
+
+2
+
+</td>
+
+<td>
+
+3
+
+</td>
+
+<td>
+
+4
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+Forcer le mode PLC : L’instrument est inactif, mais esclave<br />du PLC.
+
+</td>
+
+<td>
+
+1
+
+</td>
+
+<td>
+
+0
+
+</td>
+
+<td>
+
+0
+
+</td>
+
+<td>
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+Exécuter un protocole/intervalle de mesure configurable
+
+</td>
+
+<td>
+
+1
+
+</td>
+
+<td>
+
+0
+
+</td>
+
+<td>
+
+0
+
+</td>
+
+<td>
+
+1
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+Exécuter un protocole/intervalle de mesure configurable
+
+</td>
+
+<td>
+
+1
+
+</td>
+
+<td>
+
+0
+
+</td>
+
+<td>
+
+1
+
+</td>
+
+<td>
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+Exécuter un protocole/intervalle de mesure configurable
+
+</td>
+
+<td>
+
+1
+
+</td>
+
+<td>
+
+0
+
+</td>
+
+<td>
+
+1
+
+</td>
+
+<td>
+
+1
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+Exécuter un protocole/intervalle de mesure configurable
+
+</td>
+
+<td>
+
+1
+
+</td>
+
+<td>
+
+1
+
+</td>
+
+<td>
+
+0
+
+</td>
+
+<td>
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+Exécuter un protocole/intervalle de mesure configurable
+
+</td>
+
+<td>
+
+1
+
+</td>
+
+<td>
+
+1
+
+</td>
+
+<td>
+
+0
+
+</td>
+
+<td>
+
+1
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+Exécuter un protocole/intervalle de mesure configurable
+
+</td>
+
+<td>
+
+1
+
+</td>
+
+<td>
+
+1
+
+</td>
+
+<td>
+
+1
+
+</td>
+
+<td>
+
+0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+Abandonner le protocole en cours
+
+</td>
+
+<td>
+
+1
+
+</td>
+
+<td>
+
+1
+
+</td>
+
+<td>
+
+1
+
+</td>
+
+<td>
+
+1
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+Mode esclave désactivé. Fin du mode PLC.
+
+</td>
+
+<td>
+
+0
+
+</td>
+
+<td>
+
+0
+
+</td>
+
+<td>
+
+0
+
+</td>
+
+<td>
+
+0
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 Pour exécuter un protocole plusieurs fois, utilisez l’option de planification ou déclenchez une nouvelle mesure à partir du PLC en remettant l’état des entrées à 1000, puis en revenant à l’état « Exécution » correspondant.
 
-<img src="/img/manual/asset-6d53ddd3d47c.png" alt="Illustration du manuel original, page imprimée 39" width="532" loading="lazy" />
-
-<img src="/img/manual/icon-screenshot.png" alt="Exemple de capture d’écran" width="32" loading="lazy" />
+![BactoSense — Configuration des entrées numériques](/img/gui/fr/digital-input-configuration.png "width=532")
 
 *Figure 6-5 Configuration des entrées numériques*
 
-<table><tbody><tr><td>1</td><td>Activez ou désactiver les entrées numériques. Si elles<br />sont désactivées, le mode PLC ne sera<br />jamais actif.</td><td>2</td><td>Paramètres du protocole : Nom, Protocole<br />et Fenêtres.</td></tr><tr><td>3</td><td>Sélectionnez l’état des entrées que vous souhaitez<br />configurer. Lorsque l’état sélectionné<br />à (3) est appliqué aux entrées numériques<br />(DI), le protocole défini à (2), (4)<br />et (5) sera exécuté.</td><td>4</td><td>Si activé, démarrez le protocole<br />immédiatement après le changement d’état des<br />entrées. Sinon, attendez la durée de<br />l’intervalle du minuteur avant de<br />démarrer.</td></tr><tr><td>5</td><td>Paramètres du minuteur : si<br />le minuteur est activé, le<br />protocole sera répété à l’intervalle<br />sélectionné, jusqu’à ce que l’état des entrées<br />soit modifié. Si le minuteur est<br />désactivé, le protocole ne s’exécutera qu’une<br />seule fois.</td><td colSpan="2"></td></tr></tbody></table>
+<table className="manual-digital-input-config">
+
+<colgroup>
+
+<col className="di-config-step-column" />
+
+<col className="di-config-description-column" />
+
+<col className="di-config-marker-column" />
+
+<col className="di-config-detail-column" />
+
+</colgroup>
+
+<tbody>
+
+<tr>
+
+<td>
+
+1
+
+</td>
+
+<td>
+
+Activez ou désactiver les entrées numériques. Si elles sont désactivées, le mode PLC ne sera jamais actif.
+
+</td>
+
+<td>
+
+2
+
+</td>
+
+<td>
+
+Paramètres du protocole : Nom, Protocole et Fenêtres.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+3
+
+</td>
+
+<td>
+
+Sélectionnez l’état des entrées que vous souhaitez configurer. Lorsque l’état sélectionné à (3) est appliqué aux entrées numériques (DI), le protocole défini à (2), (4) et (5) sera exécuté.
+
+</td>
+
+<td>
+
+4
+
+</td>
+
+<td>
+
+Si activé, démarrez le protocole immédiatement après le changement d’état des entrées. Sinon, attendez la durée de l’intervalle du minuteur avant de démarrer.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+5
+
+</td>
+
+<td>
+
+Paramètres du minuteur : si le minuteur est activé, le protocole sera répété à l’intervalle sélectionné, jusqu’à ce que l’état des entrées soit modifié. Si le minuteur est désactivé, le protocole ne s’exécutera qu’une seule fois.
+
+</td>
+
+<td colSpan="2">
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 Pour configurer les états des entrées numériques configurables, suivez ces étapes :
 
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
-| 1. | Accédez au Menu principal de l’interface utilisateur de BactoSense. |  |
-| 2. | Appuyez sur le bouton Paramètres mode auto. |  |
+| 1. | Sur l’écran d’accueil, appuyez sur Paramètres. |  |
+| 2. | Appuyez sur le bouton Paramètres mode en ligne. |  |
 | 3. | Appuyez sur le bouton Entrées numériques. |  |
-| 4. | Assurez-vous que le bouton bascule est réglé sur Activées. |  |
-| 5. | Activez et sélectionnez l’état que vous souhaitez configurer dans la liste des entrées, entrez un nom pour l’échantillon, choisissez un protocole et sélectionnez une fenêtre. |  |
-| 6. | Si vous souhaitez que le protocole se répète automatiquement, cochez la case «Minuteur activé» et choisissez un intervalle. |  |
-| 7. | Dans le cas ci-dessus, choisissez si vous souhaitez que le protocole s’exécute immédiatement ou à la fin du premier intervalle en cochant la case «Démarrer immédiatement». | Cette option n’est utile que si le minuteur est activé. |
+| 4. | Assurez-vous que le bouton bascule est réglé sur Activé. |  |
+| 5. | Activez et sélectionnez l’état que vous souhaitez configurer dans la Liste entrées, entrez un nom pour l’échantillon, choisissez un protocole et sélectionnez une fenêtre. |  |
+| 6. | Si vous souhaitez que le protocole se répète automatiquement, cochez la case «Utiliser le planificateur» et choisissez un intervalle. |  |
+| 7. | Dans le cas ci-dessus, choisissez si vous souhaitez que le protocole s’exécute immédiatement ou à la fin du premier intervalle en cochant la case «Démarrage immédiat». | Cette option n’est utile que si le minuteur est activé. |
 | 8. | Appuyez sur le bouton Enregistrer. |  |
 
 ## 6.6 Configuration des sorties numériques {#section-6-6}
@@ -160,7 +751,7 @@ Les valeurs des sorties numériques sont modifiées dans les situations suivante
 
 - Lorsque l’instrument est hors tension, toutes les sorties sont mises à 0.
 - Lorsque l’instrument est sous tension, les sorties indiquent l’état d’erreur actuel : aucune/ critique/non-critique.
-- À la fin d’une mesure en mode Auto, les sorties sont modifiées pour indiquer les erreurs et les alarmes, selon les paramètres définis par l’utilisateur.
+- À la fin d’une mesure en mode en ligne, les sorties sont modifiées pour indiquer les erreurs et les alarmes, selon les paramètres définis par l’utilisateur.
 - Lorsque l’on clique sur Réinitialiser sur l’écran de test de sortie ou lorsque l’on appuie sur Enregistrer sur les paramètres de sortie numérique, les sorties sont mises à jour pour afficher uniquement l’état d’erreur (les alarmes sont ignorées).
 - Après avoir effacé manuellement les erreurs, les sorties sont automatiquement réinitialisées (et affichent donc le nouvel état d’erreur et aucune alarme).
 - À des moments précis de la mesure, des signaux supplémentaires peuvent être relayés. Par défaut, aucun de ces signaux n’est relayé vers les sorties. Ces signaux sont :
@@ -197,7 +788,201 @@ Seuls les utilisateurs Admin peuvent modifier les paramètres de sortie, car ceu
 
 La procédure suivante décrit comment régler les sorties numériques.
 
-<table><tbody><tr><th></th><th>OPÉRATION</th><th>INFORMATIONS SUPPLÉMENTAIRES/IMAGE</th></tr><tr><td>1.</td><td>Accédez au Menu principal de l’interface utilisateur de BactoSense.</td><td></td></tr><tr><td>2.</td><td>Appuyez sur le bouton Paramètres mode auto.</td><td></td></tr><tr><td>3.</td><td>Appuyez sur le bouton Sorties numériques.</td><td></td></tr><tr><td>4.</td><td><Admonition type="info" title="Informations supplémentaires">Choisissez l’état de base, c’est-à-dire l’état de la sortie lorsque tout fonctionne normalement : Sortie 1 2 3 4 État de base 1 1 1 1</Admonition></td><td>1 : L’interrupteur est fermé. 0 : L’interrupteur est ouvert.</td></tr><tr><td>5.</td><td>Choisissez la sortie sur laquelle signaler l’état d’erreur critique : Sortie 1 2 3 4 Erreur critique 0 / / /</td><td>Par défaut, une erreur critique ouvre la sortie 1. 1 : L’interrupteur est fermé. 0 : L’interrupteur est ouvert. / : L’interrupteur n’est pas affecté par cette erreur.</td></tr><tr><td>6.</td><td>Choisissez la sortie sur laquelle signaler l’état d’erreur non critique : Sortie 1 2 3 4 Erreur non critique / 0 / /</td><td>Par défaut, une erreur non critique ouvre la sortie 2.</td></tr><tr><td>7.</td><td>Attribuez des alarmes aux sorties restantes : Sortie 1 2 3 4 Alarme 1 / / 0 0 Alarme 2 ... ... ... ... ...</td><td>Vous ne pouvez attribuer que des alarmes activées. Vous pouvez attribuer plusieurs alarmes à la même sortie.</td></tr><tr><td>8.</td><td>Appuyez sur le bouton Enregistrer.</td><td></td></tr></tbody></table>
+<table>
+
+<tbody>
+
+<tr>
+
+<th>
+
+</th>
+
+<th>
+
+OPÉRATION
+
+</th>
+
+<th>
+
+INFORMATIONS SUPPLÉMENTAIRES/IMAGE
+
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+
+1\.
+
+</td>
+
+<td>
+
+Sur l’écran d’accueil, appuyez sur Paramètres.
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+2\.
+
+</td>
+
+<td>
+
+Appuyez sur le bouton Paramètres mode en ligne.
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+3\.
+
+</td>
+
+<td>
+
+Appuyez sur le bouton Sorties numériques.
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+4\.
+
+</td>
+
+<td>
+
+Choisissez l’état de base, c’est-à-dire l’état de la sortie lorsque tout fonctionne normalement : Sortie 1 2 3 4 État de base 1 1 1 1
+
+</td>
+
+<td>
+
+1 : L’interrupteur est fermé. 0 : L’interrupteur est ouvert.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+5\.
+
+</td>
+
+<td>
+
+Choisissez la sortie sur laquelle signaler l’état d’erreur critique : Sortie 1 2 3 4 Erreur critique 0 / / /
+
+</td>
+
+<td>
+
+Par défaut, une erreur critique ouvre la sortie 1. 1 : L’interrupteur est fermé. 0 : L’interrupteur est ouvert. / : L’interrupteur n’est pas affecté par cette erreur.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+6\.
+
+</td>
+
+<td>
+
+Choisissez la sortie sur laquelle signaler l’état d’erreur non critique : Sortie 1 2 3 4 Erreur non critique / 0 / /
+
+</td>
+
+<td>
+
+Par défaut, une erreur non critique ouvre la sortie 2.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+7\.
+
+</td>
+
+<td>
+
+Attribuez des alarmes aux sorties restantes : Sortie 1 2 3 4 Alarme 1 / / 0 0 Alarme 2 ... ... ... ... ...
+
+</td>
+
+<td>
+
+Vous ne pouvez attribuer que des alarmes activées. Vous pouvez attribuer plusieurs alarmes à la même sortie.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+8\.
+
+</td>
+
+<td>
+
+Appuyez sur le bouton Enregistrer.
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 ## 6.7 Configuration des sorties analogiques {#section-6-7}
 
@@ -205,31 +990,111 @@ La sortie de courant analogique change dans les situations suivantes :
 
 - Lorsque l’instrument est éteint, les deux sorties sont réglées sur 0 mA.
 - Lorsque l’instrument est allumé, les deux sorties sont réglées sur 2 mA.
-- Lorsqu’une mesure en mode Auto se termine après le comptage des cellules, la valeur est réglée entre 4 et 20 mA selon la plage et la source définies dans les paramètres de sortie analogique. Si la mesure échoue en raison d’une erreur avant le début du comptage, la sortie conserve sa valeur précédente.
+- Lorsqu’une mesure en mode en ligne se termine après le comptage des cellules, la valeur est réglée entre 4 et 20 mA selon la plage et la source définies dans les paramètres de sortie analogique. Si la mesure échoue en raison d’une erreur avant le début du comptage, la sortie conserve sa valeur précédente.
 - Lorsqu’un utilisateur teste manuellement la sortie, le courant prend la valeur choisie. Le bouton de réinitialisation règle les sorties sur 4 mA.
 
 :::info[Valeurs de sortie précises]
 
-Pour transmettre des résultats précis, il est recommandé d’utiliser Modbus TCP. Voir section 7.1
+Pour transmettre des résultats précis, il est recommandé d’utiliser Modbus TCP. Voir section [Modbus TCP](07-field-bus-interface.md#section-7-1)
 
 Seuls les utilisateurs **Admin** peuvent modifier les sorties analogiques 4 .. 20 mA.
 
 :::
 
-<img src="/img/manual/asset-9b0542204c11.png" alt="Illustration du manuel original, page imprimée 43" width="553" loading="lazy" />
-
-<img src="/img/manual/icon-screenshot.png" alt="Exemple de capture d’écran" width="32" loading="lazy" />
+![BactoSense — Configuration des sorties analogiques](/img/gui/fr/analog-output-configuration.png "width=553")
 
 *Figure 6-6 Paramètres des sorties analogiques*
 
-<table><tbody><tr><td>1</td><td>Sélection du port de sortie</td><td>2</td><td>Source : Définit quel résultat de<br />mesure est transmis par ce port de<br />sortie.</td></tr><tr><td>3</td><td>Limite inférieure 4 mA: Quelle valeur<br />du résultat de mesure doit<br />correspondre à 4 mA.</td><td>4</td><td>Limite supérieure 20 mA : Quelle<br />valeur du résultat de mesure doit<br />correspondre à 20 mA.</td></tr><tr><td>5</td><td>Si cette option est sélectionnée, interpole la plage de comptage cellulaire choisie selon une échelle logarithmique, comme suit<br />: <code>ratio = 1 + 9 × (counts − low) / (high − low)</code><br /><code>output = 4 mA + log<sub>10</sub>(ratio) × 16 mA</code><br /><br />counts: Nombre de cellules mesuré<br />low: Limite inférieure du nombre de cellules<br />high: Limite supérieure du nombre de cellules<br />output: Intensité du courant en mA</td><td colSpan="2"></td></tr></tbody></table>
+<table>
+
+<tbody>
+
+<tr>
+
+<td>
+
+1
+
+</td>
+
+<td>
+
+Sélection du port de sortie
+
+</td>
+
+<td>
+
+2
+
+</td>
+
+<td>
+
+Source : Définit quel résultat de<br />mesure est transmis par ce port de<br />sortie.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+3
+
+</td>
+
+<td>
+
+Limite inférieure 4 mA: Quelle valeur<br />du résultat de mesure doit<br />correspondre à 4 mA.
+
+</td>
+
+<td>
+
+4
+
+</td>
+
+<td>
+
+Limite supérieure 20 mA : Quelle<br />valeur du résultat de mesure doit<br />correspondre à 20 mA.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+5
+
+</td>
+
+<td>
+
+Si cette option est sélectionnée, interpole la plage de comptage cellulaire choisie selon une échelle logarithmique, comme suit<br />: `ratio = 1 + 9 × (counts − low) / (high − low)`<br />`output = 4 mA + log<sub>10</sub>(ratio) × 16 mA`<br /><br />counts: Nombre de cellules mesuré<br />low: Limite inférieure du nombre de cellules<br />high: Limite supérieure du nombre de cellules<br />output: Intensité du courant en mA
+
+</td>
+
+<td colSpan="2">
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 La procédure suivante décrit le réglage des sorties analogiques.
 
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
-| 1. | Accédez au Menu principal de l’interface utilisateur de BactoSense. |  |
-| 2. | Appuyez sur le bouton Paramètres mode auto. |  |
+| 1. | Sur l’écran d’accueil, appuyez sur Paramètres. |  |
+| 2. | Appuyez sur le bouton Paramètres mode en ligne. |  |
 | 3. | Appuyez sur le bouton Sorties analogiques. |  |
 | 4. | Choisissez Port 1 ou Port 2 (figure 6-6) |  |
 | 5. | Choisissez la source (figure 6-6, position 2). |  |
@@ -245,24 +1110,129 @@ L’interface Test outputs permet de générer un signal de sortie physique à d
 
 :::
 
-<img src="/img/manual/asset-c774c093b426.png" alt="Illustration du manuel original, page imprimée 45" width="523" loading="lazy" />
-
-<img src="/img/manual/icon-screenshot.png" alt="Exemple de capture d’écran" width="32" loading="lazy" />
+![BactoSense — Test des sorties](/img/gui/fr/output-test-controls.png "width=523")
 
 *Figure 6-7 Test des sorties analogiques et numériques*
 
-<table><tbody><tr><td>1</td><td>Définissez l’état des sorties numériques pour le<br />test.</td><td>2</td><td>Réglez les sorties numériques sur l’état<br />défini en (1).</td></tr><tr><td>3</td><td>Réglez toutes les sorties numériques et<br />analogiques en même temps.</td><td>4</td><td>Réglez le courant sur les deux<br />sorties analogiques.</td></tr><tr><td>5</td><td>Réinitialisez les sorties à leur état avant<br />les tests.</td><td>6</td><td>Réglez le courant sur le port 2.</td></tr><tr><td>7</td><td>Réglez le courant sur le port 1.</td><td colSpan="2"></td></tr></tbody></table>
+<table>
+
+<tbody>
+
+<tr>
+
+<td>
+
+1
+
+</td>
+
+<td>
+
+Définissez l’état des sorties numériques pour le<br />test.
+
+</td>
+
+<td>
+
+2
+
+</td>
+
+<td>
+
+Réglez les sorties numériques sur l’état<br />défini en (1).
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+3
+
+</td>
+
+<td>
+
+Réglez toutes les sorties numériques et<br />analogiques en même temps.
+
+</td>
+
+<td>
+
+4
+
+</td>
+
+<td>
+
+Réglez le courant sur les deux<br />sorties analogiques.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+5
+
+</td>
+
+<td>
+
+Réinitialisez les sorties à leur état avant<br />les tests.
+
+</td>
+
+<td>
+
+6
+
+</td>
+
+<td>
+
+Réglez le courant sur le port 2.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+7
+
+</td>
+
+<td>
+
+Réglez le courant sur le port 1.
+
+</td>
+
+<td colSpan="2">
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 La procédure suivante décrit le test des sorties analogiques et numériques.
 
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
-| 1. | Accédez au Menu principal de l’interface utilisateur de BactoSense. |  |
-| 2. | Appuyez sur le bouton Paramètres mode auto. |  |
+| 1. | Sur l’écran d’accueil, appuyez sur Paramètres. |  |
+| 2. | Appuyez sur le bouton Paramètres mode en ligne. |  |
 | 3. | Appuyez sur le bouton Test sorties. |  |
-
-|  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
-| --- | --- | --- |
 | 4. | Saisissez les valeurs de test que vous souhaitez envoyer au PLC. | Pour les sorties numériques : 1: L’interrupteur est fermé. 0: L’interrupteur est ouvert. |
 | 5. | Les tests peuvent être déclenchés individuellement ou ensemble (voir figure 6-7) : • Tester uniquement les sorties numériques sur les bornes 1- 4. • Tester uniquement les sorties analogiques sur les ports 1, 2 ou les deux. • Tester toutes les sorties. | Les signaux de sortie peuvent être mesurés sur les bornes. |
-| 6. | Appuyez sur le bouton Réinitialiser. |  |
+| 6. | Appuyez sur le bouton Remise à zéro. |  |

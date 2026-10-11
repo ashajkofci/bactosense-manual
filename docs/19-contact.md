@@ -17,4 +17,4 @@ Please have the following information ready when you contact customer service:
 - Documentation of the third-party products you use in conjunction with the BactoSense.
 - Description of operation conditions (place, power supply, measured medium, temperature etc.).
 - This user manual.
-- Export of the last measurements when the error occurred, see section 10.8.
+- Export of the last measurements when the error occurred, see [Exporting measurements](10-measurements.md#section-10-8).

@@ -13,7 +13,7 @@ Wird bei einer ansonsten erfolgreichen Messung etwas Ungewöhnliches festgestell
 
 | WARNUNG | ABBILDUNG |
 | --- | --- |
-| Wird etwas Ungewöhnliches festgestellt, wird neben den Messergebnissen eine Warnmeldung angezeigt. Weitere Informationen über die Warnung können eingesehen werden, wenn Sie im Warnungsprotokoll auf den entsprechenden Warnungseintrag neben den Messergebnissen klicken. | <img src="/img/manual/cell-16a091792775.png" alt="Abbildung zur Tabelle auf Handbuchseite 139" width="252" className="manual-figure" loading="lazy"/> |
+| Wird etwas Ungewöhnliches festgestellt, wird neben den Messergebnissen eine Warnmeldung angezeigt. Weitere Informationen über die Warnung können eingesehen werden, wenn Sie im Warnungsprotokoll auf den entsprechenden Warnungseintrag neben den Messergebnissen klicken. | ![BactoSense — Warnung bei hohem SSC-Basissignal](/img/gui/de/warning-high-ssc-baseline.png "width=252 class=manual-figure") |
 
 Es können folgende Warnmeldungen angezeigt werden:
 
@@ -41,7 +41,7 @@ Unkritische Fehler sorgen dafür, dass eine Messung nicht erfolgreich abgeschlos
 
 | UNKRITISCHE FEHLER |  |
 | --- | --- |
-| Das Protokoll stoppt. Die Fehlerursache wird in der Regel durch Wiederholen der Analyse oder Warten behoben. • Eine weitere Messung kann sofort gestartet werden. Wird sie erfolgreich abgeschlossen, wird der Fehlerzustand gelöscht. • Weitere Informationen finden Sie im Fehlerprotokoll, indem Sie den entsprechenden Fehlereintrag auswählen. | <img src="/img/manual/cell-7a9639648396.png" alt="Abbildung zur Tabelle auf Handbuchseite 141" width="255" className="manual-figure" loading="lazy"/> |
+| Das Protokoll stoppt. Die Fehlerursache wird in der Regel durch Wiederholen der Analyse oder Warten behoben. • Eine weitere Messung kann sofort gestartet werden. Wird sie erfolgreich abgeschlossen, wird der Fehlerzustand gelöscht. • Weitere Informationen finden Sie im Fehlerprotokoll, indem Sie den entsprechenden Fehlereintrag auswählen. | ![BactoSense — Unkritischer Fehler: leere Probe](/img/gui/de/noncritical-error-empty-sample.png "width=255 class=manual-figure") |
 
 Die folgenden unkritischen Fehlermeldungen können angezeigt werden:
 
@@ -50,16 +50,16 @@ Die folgenden unkritischen Fehlermeldungen können angezeigt werden:
 | FEHLERCODE | NAME | BESCHREIBUNG | URSACHEN / ABHILFE |
 | --- | --- | --- | --- |
 | E01 | Kartuschenfachtür offen | Die Kartuschenfachtür ist offen und verhindert die Durchführung von Messungen. | • Bitte schließen Sie die Tür und versuchen Sie erneut, die Analyse zu starten. |
-| E08 | Gehäuse zu feucht | Die Feuchtigkeit im Gehäuse ist für einen sicheren Betrieb zu hoch. | • Bitte tauschen Sie den Trockenmittelbeutel aus, indem Sie den großen Deckel auf der linken Seite des Geräts abschrauben (siehe Abschnitt 15.2.6). • Besteht das Problem weiterhin, wenden Sie sich bitte an den Kundendienst. |
+| E08 | Gehäuse zu feucht | Die Feuchtigkeit im Gehäuse ist für einen sicheren Betrieb zu hoch. | • Bitte tauschen Sie den Trockenmittelbeutel aus, indem Sie den großen Deckel auf der linken Seite des Geräts abschrauben (siehe [Ersetzen des Trockenmittelbeutels](15-maintenance.md#section-15-2-6)). • Besteht das Problem weiterhin, wenden Sie sich bitte an den Kundendienst. |
 | E09 | System überhitzt | Die Innentemperatur ist für einen sicheren Betrieb zu hoch. | • Bitte reduzieren Sie die Umgebungstemperatur oder erhöhen Sie das Messintervall, damit das Gerät abkühlen kann. |
 | E14 | Laser zu heiß | Die Lasertemperatur ist für einen sicheren Betrieb zu hoch. | • Bitte reduzieren Sie die Umgebungstemperatur oder erhöhen Sie das Messintervall, damit das Gerät abkühlen kann. |
 
 | FEHLERCODE | NAME | BESCHREIBUNG | URSACHEN / ABHILFE |
 | --- | --- | --- | --- |
-| E15 | Fehler beim Aufblasen des Mischers | Beim Mischen oder Dosieren wurde Unterdruck erkannt. | • Fehlende Probe. • Luft im Einlass. • Undichtigkeit im System. • Bitte führen Sie das Optik- Reinigungsprotokoll aus (siehe Abschnitt 10.9.1). |
-| E18 | Pumpenunterdruckfehler | Beim Dosieren wurde Unterdruck erkannt. | • Fehlende Probe. • Luft im Einlass. • Undichtigkeit im System. • Bitte führen Sie das Optik- Reinigungsprotokoll aus (siehe Abschnitt 10.9.1). |
+| E15 | Fehler beim Aufblasen des Mischers | Beim Mischen oder Dosieren wurde Unterdruck erkannt. | • Fehlende Probe. • Luft im Einlass. • Undichtigkeit im System. • Bitte führen Sie das Optik- Reinigungsprotokoll aus (siehe [Protokollübersicht im manuellen Modus](10-measurements.md#section-10-9-1)). |
+| E18 | Pumpenunterdruckfehler | Beim Dosieren wurde Unterdruck erkannt. | • Fehlende Probe. • Luft im Einlass. • Undichtigkeit im System. • Bitte führen Sie das Optik- Reinigungsprotokoll aus (siehe [Protokollübersicht im manuellen Modus](10-measurements.md#section-10-9-1)). |
 | E19 | System überhitzt | Die Innentemperatur ist für den Betrieb zu hoch. | • Vermindern Sie die Umgebungstemperatur des Gerätes oder erhöhen Sie das Messintervall, damit das Gerät abkühlen kann. |
-| E33 | Speicherüberlauf bei der Verarbeitung | Der Speicher der Signalverarbeitungsschaltungen ist übergelaufen. | • Bitte führen Sie das Optik- Reinigungsprotokoll aus (siehe Abschnitt 10.9.1). • Wiederholen Sie die Messung. |
+| E33 | Speicherüberlauf bei der Verarbeitung | Der Speicher der Signalverarbeitungsschaltungen ist übergelaufen. | • Bitte führen Sie das Optik- Reinigungsprotokoll aus (siehe [Protokollübersicht im manuellen Modus](10-measurements.md#section-10-9-1)). • Wiederholen Sie die Messung. |
 | E42 | Gehäuse trotz Heizung zu kalt | Die Temperatur im Gerät bleibt trotz aktiver Erwärmung zu tief. | • Die Umgebungstemperatur liegt unter 5°C (41°F). • Bitte erhöhen Sie die Umgebungstemperatur. |
 | E44 | Startfehler des Pumpenmoduls | Das Pumpenmodul konnte nicht korrekt eingeschaltet werden. | • Bitte wiederholen Sie die Messung einfach. |
 | E45 | Anteil des gültigen Volumens zu niedrig | Das gültige Volumenverhältnis ist zu gering. Dies kann durch zu viel bakteriellen Inhalt im Wasser oder Trübung/ Schmutzpartikel verursacht werden. | • Die Messgenauigkeit ist wahrscheinlich sehr gering. Bitte wiederholen Sie die Messung, während Sie die Probe mit klarem Wasser verdünnen. |
@@ -87,7 +87,7 @@ Kritische Fehler unterbrechen die Geräteworkflows und erfordern Eingriffe vom B
 
 | KRITISCHE FEHLER | ABBILDUNG |
 | --- | --- |
-| Tritt während des Betriebs ein kritischer Fehler auf, hat dies folgende Auswirkungen: • Das Protokoll stoppt sofort. • Das Gerät wechselt in einen kritischen Fehlerzustand. Vor dem Start eines neuen Protokolls ist ein manueller Eingriff erforderlich. • Ein Bediener muss die Fehlerursache beheben. Anschließend können die Fehler wie in den Abschnitten 16.4 und 16.5 beschrieben manuell im Fehlerprotokoll gelöscht werden. | <img src="/img/manual/cell-2ba5234a6f92.png" alt="Abbildung zur Tabelle auf Handbuchseite 145" width="253" className="manual-figure" loading="lazy"/> |
+| Tritt während des Betriebs ein kritischer Fehler auf, hat dies folgende Auswirkungen: • Das Protokoll stoppt sofort. • Das Gerät wechselt in einen kritischen Fehlerzustand. Vor dem Start eines neuen Protokolls ist ein manueller Eingriff erforderlich. • Ein Bediener muss die Fehlerursache beheben. Anschließend können die Fehler wie unter [Fehler- und Warnungsprotokolle](16-warnings-errors-and-troubleshooting.md#section-16-4) und [Fehler löschen](16-warnings-errors-and-troubleshooting.md#section-16-5) beschrieben manuell im Fehlerprotokoll gelöscht werden. | ![BactoSense — Kritischer Fehler: fehlende Kartusche](/img/gui/de/critical-error-missing-cartridge.png "width=253 class=manual-figure") |
 
 Die folgenden kritischen Fehlermeldungen können angezeigt werden:
 
@@ -96,18 +96,18 @@ Die folgenden kritischen Fehlermeldungen können angezeigt werden:
 | FEHLERCODE | NAME | BESCHREIBUNG | URSACHEN / ABHILFE |
 | --- | --- | --- | --- |
 | E00 | Allgemeiner Fehler | Unbehandelter Fehler. | • Bitte wenden Sie sich an den Kundendienst. |
-| E02 | Kartusche leer | Die Kartusche ist leer. | • Kartusche ersetzen (siehe Abschnitt 8.9.4). |
-| E04 | Kartusche fehlt | Es ist keine Kartusche vorhanden. | • Kartusche einsetzen (siehe Abschnitt 8.9.6). |
-| E05 | Abfallbeutel voll | Der Abfallbeutel der Kartusche ist voll. | • Kartusche ersetzen (siehe Abschnitt 8.9.4). |
+| E02 | Kartusche leer | Die Kartusche ist leer. | • Kartusche ersetzen (siehe [Kartuschen wechseln](08-general-operations-and-configurations.md#section-8-9-4)). |
+| E04 | Kartusche fehlt | Es ist keine Kartusche vorhanden. | • Kartusche einsetzen (siehe [Einsetzen einer Kartusche](08-general-operations-and-configurations.md#section-8-9-6)). |
+| E05 | Abfallbeutel voll | Der Abfallbeutel der Kartusche ist voll. | • Kartusche ersetzen (siehe [Kartuschen wechseln](08-general-operations-and-configurations.md#section-8-9-4)). |
 | E06 | Kommunikation mit der Kartusche nicht möglich | Die Kartusche ist nicht installiert, die Tür ist offen oder die Elektronik der Kartusche ist beschädigt. | • Bitte stellen Sie sicher, dass das Kartuschenkabel korrekt angeschlossen ist und dass die Tür korrekt geschlossen ist. • Hilft dies nicht, ersetzen Sie bitte die Kartusche und informieren Sie den Kundendienst. |
 
 | FEHLERCODE | NAME | BESCHREIBUNG | URSACHEN / ABHILFE |
 | --- | --- | --- | --- |
-| E07 | Datenträger voll | Nicht genügend Speicherplatz zum Fortsetzen des Betriebs. | • Bitte löschen Sie alte Messungen und versuchen Sie es erneut (siehe Abschnitt 15.2.8) • Hiermit löschen Sie die Messungen dauerhaft von Ihrem Gerät. • Sie könnten zur Datensicherung Ihre Messungen exportieren. |
+| E07 | Datenträger voll | Nicht genügend Speicherplatz zum Fortsetzen des Betriebs. | • Bitte löschen Sie alte Messungen und versuchen Sie es erneut (siehe [Freigeben von Speicherplatz](15-maintenance.md#section-15-2-8)) • Hiermit löschen Sie die Messungen dauerhaft von Ihrem Gerät. • Sie könnten zur Datensicherung Ihre Messungen exportieren. |
 | E12 | FPGA-Initialisierungsfehler | Die Initialisierung der Signalverarbeitungs- Hardware ist fehlgeschlagen. | • Starten Sie das Gerät neu. |
 | E16 | Verarbeitungsfehler | Bei der Verarbeitung der Signale wurde ein Fehler erkannt. | • Die Genauigkeit des neuesten Messergebnisses kann nicht gewährleistet werden. Bitte wiederholen Sie die Analyse. |
 | E17 | Überdruck erkannt | Beim Dosieren wurde Überdruck erkannt. | • Wahrscheinliche Ursache: Der Ausgabefilter ist wahrscheinlich verstopft. • Optische Durchflusszelle blockiert. • Bitte wenden Sie sich an den Kundendienst. |
-| E20 | Unerwartetes Ausschalten | Das Protokoll wurde aus unbekanntem Grund unterbrochen, meist durch einen Stromausfall. | • Deutet normalerweise auf einen Spannungsausfall oder eine andere externe Messungsunterbrechun g hin. • Bitte führen Sie die Protokolle „Optik reinigen“ und „Probenahmegerät reinigen“ durch, bevor Sie eine neue Messung starten (siehe Abschnitt 10.9.1). |
+| E20 | Unerwartetes Ausschalten | Das Protokoll wurde aus unbekanntem Grund unterbrochen, meist durch einen Stromausfall. | • Deutet normalerweise auf einen Spannungsausfall oder eine andere externe Messungsunterbrechun g hin. • Bitte führen Sie die Protokolle „Optik reinigen“ und „Probenahmegerät reinigen“ durch, bevor Sie eine neue Messung starten (siehe [Protokollübersicht im manuellen Modus](10-measurements.md#section-10-9-1)). |
 | E23 | Kommunikationsfehler des Temperatursensors | Kommunikation mit dem Temperatursensor auf dem IO-Board nicht möglich. | • Nehmen Sie Kontakt mit dem Kundendienst auf. |
 | E24 | Kommunikationsfehler des Lasers | Kommunikation mit der Optikeinheit nicht möglich. | • Nehmen Sie Kontakt mit dem Kundendienst auf. |
 | E25 | Pumpen- Kommunikations- fehler | Kommunikation mit dem Pumpenmodul nicht möglich. | • Nehmen Sie Kontakt mit dem Kundendienst auf. |
@@ -121,11 +121,11 @@ Die folgenden kritischen Fehlermeldungen können angezeigt werden:
 | E30 | Bleichmittelzufuhr leer | Der mit der Kartusche verbundene Bleichmittelschlauch ist leer. | • Der Schlauch ist nicht angeschlossen. • Die Kartusche ist defekt. • Bitte wiederholen Sie den Kartuschenwechsel und stellen Sie sicher, dass alle Schläuche korrekt angeschlossen sind. |
 | E31 | Ausfall der Kartuschenelektronik | Der Kartuschenfüllstand kann nicht mehr genau bestimmt werden. | • Ersetzen Sie die Kartusche und wenden Sie sich an den Kundendienst. |
 | E32 | Inkompatible Kartusche | Der Kartuschentyp ist mit diesem Gerät oder dieser Software nicht kompatibel. | • Versichern Sie sich, dass sie den richtigen Kartuschentyp für dieses Gerät nutzen. |
-| E33 | Speicherüberlauf bei der Verarbeitung | Der Speicher der Signalverarbeitungsschaltungen ist übergelaufen. | • Bitte führen Sie das Optik- Reinigungsprotokoll aus (siehe Abschnitt 10.9.1). • Wiederholen Sie die Messung. |
+| E33 | Speicherüberlauf bei der Verarbeitung | Der Speicher der Signalverarbeitungsschaltungen ist übergelaufen. | • Bitte führen Sie das Optik- Reinigungsprotokoll aus (siehe [Protokollübersicht im manuellen Modus](10-measurements.md#section-10-9-1)). • Wiederholen Sie die Messung. |
 
 | FEHLERCODE | NAME | BESCHREIBUNG | URSACHEN / ABHILFE |
 | --- | --- | --- | --- |
-| E38 | Kartusche nicht bereit | Die neue Kartusche wurde nicht korrekt initialisiert. | • Führen Sie das Verfahren „Cartridge Change“ aus (siehe Abschnitt 8.9.4). |
+| E38 | Kartusche nicht bereit | Die neue Kartusche wurde nicht korrekt initialisiert. | • Führen Sie das Verfahren „Cartridge Change“ aus (siehe [Kartuschen wechseln](08-general-operations-and-configurations.md#section-8-9-4)). |
 | E39 | Laserstromgrenze erreicht | Der Laser hat seine obere Stromgrenze erreicht. Dies weist auf das Ende seiner Lebensdauer hin. | • Der Laser muss ersetzt werden. Bitte wenden Sie sich an einen Servicetechniker. |
 | E40 | Gating-Set nicht gefunden | Der Verweis auf das für die Messung ausgewählte Gating-Set ist in den Geräteeinstellungen nicht auffindbar. | • Das Gating-Set wurde gelöscht. • Wechseln Sie das Gating-Set und wiederholen Sie die Messung. |
 | E41 | Inkompatibles Gating-Set | Das für die Messung ausgewählte Gating-Set kann mit dieser Kartusche nicht verwendet werden. | • Der Kartuschenwechselprozess wurde nicht eingehalten. • Falsche Konfiguration des digitalen Eingangs. • Bitte ändern Sie das Gate-Set und wiederholen Sie die Messung. |
@@ -138,13 +138,145 @@ Die folgenden kritischen Fehlermeldungen können angezeigt werden:
 
 Auf die Fehler- und Warnungsprotokollansichten kann separat über die Startseite der Benutzeroberfläche und Drücken der Taste Protokolle zugegriffen werden.
 
-<img src="/img/figures-second/figure-3bdcc49f453689.webp" alt="Abbildung 16-1 : Fehlerprotokolle" width="558" className="manual-figure" loading="lazy" />
-
-<img src="/img/manual/icon-screenshot.png" alt="Abbildung aus der BactoSense-Bedienungsanleitung" width="57" className="manual-icon" loading="lazy" />
+![BactoSense — Fehlerprotokoll](/img/gui/de/error-log.png "width=558 class=manual-figure")
 
 *Abbildung 16-1 : Fehlerprotokolle*
 
-<table className="manual-table"><tbody><tr><td rowSpan="4">①</td><td rowSpan="4">Datum und Uhrzeit des Ereignisses</td><td rowSpan="4">②</td><td colSpan="2">Ereignistyp</td></tr><tr><td><img src="/img/manual/cell-67d152256921.png" alt="Abbildung zur Tabelle auf Handbuchseite 149" width="56" className="manual-icon" loading="lazy" /></td><td>Kritischer Fehler</td></tr><tr><td><img src="/img/manual/cell-168772cd9e6b.png" alt="Abbildung zur Tabelle auf Handbuchseite 149" width="56" className="manual-icon" loading="lazy" /></td><td>Unkritischer Fehler</td></tr><tr><td><img src="/img/manual/cell-b4d48ec33659.png" alt="Abbildung zur Tabelle auf Handbuchseite 149" width="56" className="manual-icon" loading="lazy" /></td><td>Fehler gelöscht</td></tr><tr><td>③</td><td>Kurzbeschreibung des Fehlers oder Ereignisses</td><td>④</td><td colSpan="2">Taste, um Fehler manuell zu löschen (nur für Admin und Service verfügbar)</td></tr><tr><td>⑤</td><td>Datumsbereich der angezeigten Ereignisse. Klicken, um den Bereich zu bearbeiten.</td><td></td><td colSpan="2"></td></tr></tbody></table>
+<table className="manual-table">
+
+<tbody>
+
+<tr>
+
+<td rowSpan="4">
+
+①
+
+</td>
+
+<td rowSpan="4">
+
+Datum und Uhrzeit des Ereignisses
+
+</td>
+
+<td rowSpan="4">
+
+②
+
+</td>
+
+<td colSpan="2">
+
+Ereignistyp
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+![BactoSense — Protokolleintrag: kritischer Fehler](/img/gui/icons/critical-error-event.png "width=32 class=manual-icon")
+
+</td>
+
+<td>
+
+Kritischer Fehler
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+![BactoSense — Protokolleintrag: unkritischer Fehler](/img/gui/icons/noncritical-error-event.png "width=32 class=manual-icon")
+
+</td>
+
+<td>
+
+Unkritischer Fehler
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+![BactoSense — Protokolleintrag: Fehler gelöscht](/img/gui/icons/errors-cleared-event.png "width=32 class=manual-icon")
+
+</td>
+
+<td>
+
+Fehler gelöscht
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+③
+
+</td>
+
+<td>
+
+Kurzbeschreibung des Fehlers oder Ereignisses
+
+</td>
+
+<td>
+
+④
+
+</td>
+
+<td colSpan="2">
+
+Taste, um Fehler manuell zu löschen (nur für Admin und Service verfügbar)
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+⑤
+
+</td>
+
+<td>
+
+Datumsbereich der angezeigten Ereignisse. Klicken, um den Bereich zu bearbeiten.
+
+</td>
+
+<td>
+
+</td>
+
+<td colSpan="2">
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 :::info[Ereignisdetails anzeigen]
 
@@ -160,18 +292,130 @@ Kritische Fehler müssen manuell gelöscht werden. Stellen Sie sicher, dass Sie 
 | --- | --- | --- |
 | 1. | Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense. |  |
 | 2. | Drücken Sie die Taste Protokolle und dann die Taste Fehlerprotokoll |  |
-| 3. | Stellen Sie sicher, dass Sie das Problem, das die Fehlermeldung(en) verursacht hat, gelöst haben. Drücken Sie dann die Taste Fehler löschen. | <img src="/img/manual/cell-df45180c59d7.png" alt="Abbildung zur Tabelle auf Handbuchseite 150" width="245" className="manual-figure" loading="lazy"/> |
+| 3. | Stellen Sie sicher, dass Sie das Problem, das die Fehlermeldung(en) verursacht hat, gelöst haben. Drücken Sie dann die Taste Fehler löschen. | ![BactoSense — Fehler löschen](/img/gui/de/error-log-clear-errors.png "width=245 class=manual-figure") |
 | 4. | Gelöschte Fehler erscheinen mit grauen Fehlersymbolen, und es wird ein Ereignis „Fehler gelöscht” zum Protokoll hinzugefügt. Das Gerät kann nun weitere Analysen durchführen. |  |
 
 ## 16.6 Automatischer Selbsttest {#section-16-6}
 
 Das Tool Automatischer Selbsttest überprüft, ob jede Komponente des BactoSense korrekt funktioniert und identifiziert jene, die nicht korrekt funktionieren. Es kann verwendet werden, um geräteinterne Probleme zu erkennen.
 
-<table className="manual-table"><tbody><tr><th scope="col"></th><th scope="col">ARBEITSSCHRITT</th><th scope="col">ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG</th></tr><tr><td>1.</td><td>Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense.</td><td></td></tr><tr><td>2.</td><td>Auf der Startseite der BactoSense Benutzeroberfläche, drücken Sie auf Wartung.</td><td></td></tr><tr><td>3.</td><td>Drücken Sie die Taste Selbsttest.</td><td></td></tr><tr><td>4.</td><td><Admonition type="info" title="Zusätzliche Informationen">Drücken Sie die Taste Start oder Neustart, um den Selbsttest zu starten. Sobald die Ausführung abgeschlossen wurde, zeigt das Gerät eine Liste aller Tests mit grünen PASS- oder roten FAIL-Anzeigen. Möglicherweise wurden einige Tests übersprungen: Kann das System mit der Kartusche nicht kommunizieren, werden alle Tests, die Kartuschenkommunikation erfordern, ausgelassen.</Admonition></td><td><img src="/img/manual/cell-725c4037614b.png" alt="Abbildung zur Tabelle auf Handbuchseite 150" width="245" className="manual-figure" loading="lazy" /></td></tr></tbody></table>
+<table className="manual-table">
+
+<tbody>
+
+<tr>
+
+<th scope="col">
+
+</th>
+
+<th scope="col">
+
+ARBEITSSCHRITT
+
+</th>
+
+<th scope="col">
+
+ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG
+
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+
+1\.
+
+</td>
+
+<td>
+
+Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense.
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+2\.
+
+</td>
+
+<td>
+
+Auf der Startseite der BactoSense Benutzeroberfläche, drücken Sie auf Wartung.
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+3\.
+
+</td>
+
+<td>
+
+Drücken Sie die Taste Selbsttest.
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+4\.
+
+</td>
+
+<td>
+
+:::info[Zusätzliche Informationen]
+
+Drücken Sie die Taste Start oder Neustart, um den Selbsttest zu starten. Sobald die Ausführung abgeschlossen wurde, zeigt das Gerät eine Liste aller Tests mit grünen PASS- oder roten FAIL-Anzeigen. Möglicherweise wurden einige Tests übersprungen: Kann das System mit der Kartusche nicht kommunizieren, werden alle Tests, die Kartuschenkommunikation erfordern, ausgelassen.
+
+:::
+
+</td>
+
+<td>
+
+![BactoSense — Selbstprüfergebnisse](/img/gui/de/self-check-results.png "width=245 class=manual-figure")
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 ## 16.7 Betrieb bei niedriger Temperatur {#section-16-7}
 
-Das Gerät muss innerhalb eines festgelegten Temperaturbereichs betrieben werden, um Schäden zu vermeiden und zuverlässige, reproduzierbare Messergebnisse sicherzustellen (siehe Abschnitt 3.2). Bei sehr niedrigen oder sehr hohen Umgebungstemperaturen unter 5 °C (41 °F) oder über 30 °C (86 °F) werden keine Protokolle ausgeführt. Bei niedrigen Umgebungstemperaturen wärmt sich das Gerät vor einer Messung automatisch auf die erforderliche Temperatur auf. Währenddessen zeigt der Gerätestatus „Heating...“ an. Wird die Zieltemperatur auch nach mehreren Stunden nicht erreicht, endet das Protokoll mit einem Fehler (Tabelle 16-2, E42).
+Das Gerät muss innerhalb eines festgelegten Temperaturbereichs betrieben werden, um Schäden zu vermeiden und zuverlässige, reproduzierbare Messergebnisse sicherzustellen (siehe [Technische Daten](03-instrument-overview.md#section-3-2)). Bei sehr niedrigen oder sehr hohen Umgebungstemperaturen unter 5 °C (41 °F) oder über 30 °C (86 °F) werden keine Protokolle ausgeführt. Bei niedrigen Umgebungstemperaturen wärmt sich das Gerät vor einer Messung automatisch auf die erforderliche Temperatur auf. Währenddessen zeigt der Gerätestatus „Heating...“ an. Wird die Zieltemperatur auch nach mehreren Stunden nicht erreicht, endet das Protokoll mit einem Fehler (Tabelle 16-2, E42).
 
 :::info[Aufwärmzeit berücksichtigen]
 
@@ -181,8 +425,14 @@ Messungen können sich verzögern, wenn längeres Aufheizen erforderlich ist. Ha
 
 ## 16.8 Fehlerbehebung {#section-16-8}
 
-In der folgenden Tabelle finden Sie eine Übersicht von Problemen und Lösungen. Kann ein Problem nicht Gelöst werden, wenden Sie sich bitte an Ihren lokalen Vertriebsbeauftragten oder den bNovate-Kundendienst. Kontaktinformationen des bNovate-Kundendienstes finden Sie im Abschnitt 19.1.
+In der folgenden Tabelle finden Sie eine Übersicht von Problemen und Lösungen. Kann ein Problem nicht Gelöst werden, wenden Sie sich bitte an Ihren lokalen Vertriebsbeauftragten oder den bNovate-Kundendienst. Kontaktinformationen des bNovate-Kundendienstes finden Sie unter [Kontakt mit dem Kundendienst](19-contact.md#section-19-1).
 
 **Tabelle 16-4 Anweisungen zur Fehlerbehebung**
 
-<table className="manual-table"><tbody><tr><td>BEOBACHTUNG</td><td>ANWEISUNG</td></tr><tr><td>Das Display zeigt nichts an</td><td>• Prüfen Sie, ob der BactoSense mit Strom versorgt wird und eingeschaltet ist.</td></tr><tr><td>Display nicht responsiv oder flackert</td><td>• Mögliche elektromagnetische Störung durch nahegelegene Maschine (z.B. Pumpe). Platzieren Sie den BactoSense um.</td></tr><tr><td>Fehlermeldung auf dem Display</td><td>• Reagieren Sie auf die Fehlermeldung gemäß Kapitel 16 dieser Bedienungsanleitung.</td></tr><tr><td>Die Messergebnisse sind augenscheinlich falsch</td><td>• Stellen Sie sicher, dass die Proben- und Betriebsbedingungen in Abschnitt 3.2 erfüllt sind. • Überprüfen Sie, ob das Gerät gemäß Kapitel 5 korrekt installiert ist. • Stellen Sie sicher, dass die notwendigen Wartungsarbeiten gemäß den in den Abschnitten 15.1 und 15.2 beschriebenen Wartungsplänen durchgeführt wurden. • Führen Sie eine Gerätereinigung mittels des Reinigungskits durch. • Führen Sie eine Gerätevalidierung mittels des Validierungskits durch.</td></tr></tbody></table>
+|  |  |
+| --- | --- |
+| BEOBACHTUNG | ANWEISUNG |
+| Das Display zeigt nichts an | • Prüfen Sie, ob der BactoSense mit Strom versorgt wird und eingeschaltet ist. |
+| Display nicht responsiv oder flackert | • Mögliche elektromagnetische Störung durch nahegelegene Maschine (z.B. Pumpe). Platzieren Sie den BactoSense um. |
+| Fehlermeldung auf dem Display | • Reagieren Sie auf die Fehlermeldung gemäß den Anweisungen in diesem Kapitel. |
+| Die Messergebnisse sind augenscheinlich falsch | • Stellen Sie sicher, dass die Proben- und Betriebsbedingungen unter [Technische Daten](../instrument-overview/#section-3-2) erfüllt sind. • Überprüfen Sie, ob das Gerät gemäß [Installation](../installation/) korrekt installiert ist. • Stellen Sie sicher, dass die notwendigen Wartungsarbeiten gemäß den unter [Regelmäßige Vorsorgewartung durch Fachpersonal](../maintenance/#section-15-1) und [Wartung durch den Benutzer](../maintenance/#section-15-2) beschriebenen Wartungsplänen durchgeführt wurden. • Führen Sie eine Gerätereinigung mittels des Reinigungskits durch. • Führen Sie eine Gerätevalidierung mittels des Validierungskits durch. |

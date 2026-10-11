@@ -19,13 +19,13 @@ Das *Scientific Package* richtet sich an Fachleute der Wasserforschung zur erwei
 
 - Das zusätzliche Gate ist für TCC- und ICC-Kartuschen verfügbar.
 - Der Ergebnisparameter ist eine Zellkonzentration namens „Gate+“.
-- Das Gate kann ähnlich wie die TCC- oder ICC-Standardgates angepasst werden. Bitte beachten Sie Abschnitt 11.4.
+- Das Gate kann ähnlich wie die TCC- oder ICC-Standardgates angepasst werden. Bitte beachten Sie [Gates ändern](11-results-and-data-analysis.md#section-11-4).
 
 **Vorwärts- und Seitenstreudetektor** Der Vorwärtsstreudetektor (FSC) misst von Bakterien oder anderen Partikeln gestreutes Licht. Er ist in einem kleinen Winkel zur Richtung des Laserstrahls angeordnet und misst dadurch Lichtsignale in Vorwärtsrichtung. Der Seitenstreudetektor (SSC) ist dagegen im Winkel von 90 Grad zum Laserstrahl angeordnet und misst seitlich gestreutes Licht. Die Kombination aus Fluoreszenz- und Streulichtinformationen liefert detaillierte Daten für Anwendungen wie mikrobiologische Fingerabdrücke, Profile oder die Erkennung von Abweichungen.
 
 FSC-Daten sind auf folgende Arten verfügbar:
 
-- In Durchflusszytometriestandarddateien (FCS). Weitere Informationen zu diesem Dateiformat finden Sie im Abschnitt 11.5.
+- In Durchflusszytometriestandarddateien (FCS). Weitere Informationen zu diesem Dateiformat finden Sie unter [Erweiterte Datenanalyse](11-results-and-data-analysis.md#section-11-5).
 - In der Benutzeroberfläche des BactoSense als FSC/SSC-Punktdiagramm
 - In der Web-Oberfläche als FSC/SSC-Punktdiagramm
 - Durch Herunterladen der Punktdiagramme in Bildformat
@@ -36,11 +36,8 @@ FSC-Daten sind auf folgende Arten verfügbar:
 | --- | --- | --- |
 | 1. | Kontaktieren Sie Ihren bNovate- Vertriebspartner, um einen Aktivierungsschlüssel zu erwerben. |  |
 | 2. | Nachdem Sie den Aktivierungsschlüssel erhalten haben, loggen Sie sich als Admin in den BactoSense ein. |  |
-| 3. | Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense. |  |
-| 4. | Drücken Sie die Taste Systemeinstellungen. |  |
-
-|  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG |
-| --- | --- | --- |
+| 3. | Drücken Sie auf dem Startbildschirm Einstellungen. |  |
+| 4. | Drücken Sie im Einstellungsmenü erneut die Taste Einstellungen, um die Systemeinstellungen zu öffnen. |  |
 | 5. | Drücken Sie die Taste Upgrades. |  |
 | 6. | Drücken Sie die Taste Upgrade. |  |
 | 7. | Geben Sie den Aktivierungsschlüssel ein und drücken Sie OK. |  |
@@ -56,9 +53,9 @@ Das *Management Package* ist für den Gerätebetrieb in Umgebungen mit höheren 
 
 **Audit Trail** Der *Audit Trail* zeichnet alle relevanten Vorgänge und Änderungen am Gerät auf. Es liefert einen detaillierten Verlauf der vom Benutzer oder vom Gerät selbst ausgeführten Aktionen. Der *Audit Trail* kann folgendermaßen aufgerufen werden:
 
-- Auf der Benutzeroberfläche. Öffnen Sie das *Home-Menü*, drücken Sie *Logs (Protokolle)* und anschließend *Audit Trail*.
-- Beim Export von allen Daten auf einen USB Stick, siehe Abschnitt 12.1.
-- Über die Web-Benutzeroberfläche. Der Zugang zur Web-Benutzeroberfläche ist in Kapitel 13 beschrieben.
+- Öffnen Sie auf der Benutzeroberfläche des Geräts Startbildschirm → Einstellungen → Logs → Prüfpfad.
+- Beim Export von allen Daten auf einen USB Stick, siehe [Export von Daten auf ein USB-Gerät](12-data-access-and-export.md#section-12-1).
+- Über die Web-Benutzeroberfläche. Der Zugang zur Web-Benutzeroberfläche ist unter [Web-Benutzeroberfläche](13-web-user-interface.md) beschrieben.
 
 **Aktivierung des** **Management Package**
 
@@ -66,16 +63,13 @@ Das *Management Package* ist für den Gerätebetrieb in Umgebungen mit höheren 
 | --- | --- | --- |
 | 1. | Kontaktieren Sie Ihren bNovate- Vertriebspartner, um einen Aktivierungsschlüssel zu erwerben. |  |
 | 2. | Nachdem Sie den Aktivierungsschlüssel erhalten haben, loggen Sie sich als Admin in den BactoSense ein. |  |
-| 3. | Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense. |  |
-| 4. | Drücken Sie die Taste Systemeinstellungen. |  |
+| 3. | Drücken Sie auf dem Startbildschirm Einstellungen. |  |
+| 4. | Drücken Sie im Einstellungsmenü erneut die Taste Einstellungen, um die Systemeinstellungen zu öffnen. |  |
 | 5. | Drücken Sie die Taste Upgrades. |  |
 | 6. | Drücken Sie die Taste Upgrade. |  |
-
-|  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG |
-| --- | --- | --- |
 | 7. | Geben Sie den Aktivierungsschlüssel ein und drücken Sie OK. | Hinweis: Die erweiterte Benutzerverwaltung ist noch nicht aktiviert. Führen Sie zur Aktivierung die folgenden Schritte aus. |
-| 8. | Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense. |  |
-| 9. | Drücken Sie die Taste Systemeinstellungen. |  |
+| 8. | Drücken Sie auf dem Startbildschirm Einstellungen. |  |
+| 9. | Drücken Sie im Einstellungsmenü erneut die Taste Einstellungen, um die Systemeinstellungen zu öffnen. |  |
 | 10. | Drücken Sie auf Systemparameter. |  |
-| 11. | Aktivieren Sie den Erweiterten Benutzerverwaltungsmodus. |  |
-| 12. | Drücken Sie Speichern. |  |
+| 11. | Aktivieren Sie das Kontrollkästchen Erweiterter Benutzerverwaltungsmodus. |  |
+| 12. | Drücken Sie Speichern und bestätigen Sie die Meldung mit OK. |  |

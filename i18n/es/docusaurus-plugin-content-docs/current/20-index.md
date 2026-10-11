@@ -19,10 +19,6 @@ Seleccione un número de sección para abrir el tema correspondiente de este man
   - Prueba [6.8](/io-box#section-6-8)
 - Montaje [5.5](/installation#section-5-5)
 - Notificaciones sonoras [8.3.4](/general-operations-and-configurations#section-8-3-4)
-- Modo Auto
-  - Medición [10.1](/measurements#section-10-1)
-  - Protocolos [10.9.1](/measurements#section-10-9-1)
-  - Resultados [10.2.3](/measurements#section-10-2-3)
 - Encendido automático [8.3.4](/general-operations-and-configurations#section-8-3-4)
 - Autocomprobación automática [16.5](/warnings-errors-and-troubleshooting#section-16-5)
 - Reinicio automático [8.3.4](/general-operations-and-configurations#section-8-3-4)
@@ -45,6 +41,7 @@ Seleccione un número de sección para abrir el tema correspondiente de este man
   - Retirada [8.9.5](/general-operations-and-configurations#section-8-9-5)
   - Almacenamiento [17.1.3](/storage-transport-and-disposal#section-17-1-3)
   - Transporte [17.2.2](/storage-transport-and-disposal#section-17-2-2)
+- CBC (Recuento de células coliformes) [11.3.4](/results-and-data-analysis#section-11-3-4)
 - CE [2.2](/general-user-information#section-2-2)
 - Certificación
   - CE [2.2](/general-user-information#section-2-2)
@@ -107,6 +104,7 @@ Seleccione un número de sección para abrir el tema correspondiente de este man
 
 ## E
 
+- EBC (Recuento de células de E. coli) [11.3.5](/results-and-data-analysis#section-11-3-5)
 - Instalación eléctrica
   - alimentación eléctrica [5.1](/installation#section-5-1)
 - Errores
@@ -236,6 +234,7 @@ Seleccione un número de sección para abrir el tema correspondiente de este man
 
 ## N
 
+- NBC (Recuento de células de enterococos) [11.3.6](/results-and-data-analysis#section-11-3-6)
 - Configuración de red [8.6](/general-operations-and-configurations#section-8-6)
 - Región nueva [11.4.2](/results-and-data-analysis#section-11-4-2)
 - Errores no críticos [16.2](/warnings-errors-and-troubleshooting#section-16-2)
@@ -248,6 +247,7 @@ Seleccione un número de sección para abrir el tema correspondiente de este man
   - Medición [10.1](/measurements#section-10-1)
   - Resultados [10.1](/measurements#section-10-1), [10.2.3](/measurements#section-10-2-3)
   - Finalización [10.2.2](/measurements#section-10-2-2)
+  - Protocolos [10.9.1](/measurements#section-10-9-1)
 - Dispositivo de muestreo en línea [18.2](/supply-scope-accessories-and-consumables#section-18-2)
   - Cambio [8.10](/general-operations-and-configurations#section-8-10)
   - Férulas [18.3](/supply-scope-accessories-and-consumables#section-18-3)
@@ -284,7 +284,7 @@ Seleccione un número de sección para abrir el tema correspondiente de este man
 - Protocolo [10.9](/measurements#section-10-9), [10.9.1](/measurements#section-10-9-1)
 - Protocolos
   - Análisis [10.9](/measurements#section-10-9)
-  - Modo Auto [10.9.1](/measurements#section-10-9-1)
+  - Modo en línea [10.9.1](/measurements#section-10-9-1)
   - Análisis de microesferas (Beads Analysis) [10.9](/measurements#section-10-9)
   - Limpieza del dispositivo de muestreo manual
   - dispositivo [15.2.2](/maintenance#section-15-2-2), [15.2.2](/maintenance#section-15-2-2)
@@ -310,7 +310,10 @@ Seleccione un número de sección para abrir el tema correspondiente de este man
 - Riesgo residual [4.1](/safety#section-4-1)
 - Reinicio [8.3.4](/general-operations-and-configurations#section-8-3-4)
 - Resultados [11.1](/results-and-data-analysis#section-11-1)
-  - Modo Auto [10.2.3](/measurements#section-10-2-3)
+  - CBC [11.3.4](/results-and-data-analysis#section-11-3-4)
+  - EBC [11.3.5](/results-and-data-analysis#section-11-3-5)
+  - NBC [11.3.6](/results-and-data-analysis#section-11-3-6)
+  - Modo en línea [10.2.3](/measurements#section-10-2-3)
   - HNAC [11.3.2](/results-and-data-analysis#section-11-3-2), [11.3.3](/results-and-data-analysis#section-11-3-3)
   - HNAP [11.3.2](/results-and-data-analysis#section-11-3-2), [11.3.3](/results-and-data-analysis#section-11-3-3)
   - ICC [11.3.2](/results-and-data-analysis#section-11-3-2), [11.3.3](/results-and-data-analysis#section-11-3-3)

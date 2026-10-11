@@ -9,15 +9,22 @@ slug: /results-and-data-analysis
 
 La figura siguiente muestra el resultado de una medición seleccionada. Desde aquí, el usuario puede eliminar la medición o cambiarle el nombre, consultar resultados anteriores (y exportarlos) o exportar el resultado. Los usuarios expertos pueden repetir el recuento celular con nuevas regiones de análisis. Algunos elementos o acciones de la interfaz solo están disponibles para determinadas funciones de usuario (Basic, Advanced o Admin).
 
-<img src="/img/figures-second/figure-1dc7da95b4adc8.webp" alt="Figura 11-1 Visualización del resultado de una medición ICC." width="674" className="manual-figure" loading="lazy" />
-
-<img src="/img/manual/icon-screenshot.png" alt="Ilustración del manual de usuario de BactoSense" width="57" className="manual-icon" loading="lazy" />
+![BactoSense — Detalles y gráficos del resultado ICC](/img/gui/es/icc-result-details.png "width=674 class=manual-figure")
 
 *Figura 11-1 Visualización del resultado de una medición ICC.*
 
-<table className="manual-table"><tbody><tr><td>1</td><td>Parámetros principales del resultado, según el tipo de cartucho utilizado. Encontrará más información en la sección 11.3. Pulse el icono de información junto al resultado principal para mostrar todos los parámetros del resultado (2).</td></tr><tr><td>2</td><td>Ventana de información del resultado con todos los parámetros disponibles y el diagrama de puntos principal.</td></tr><tr><td>3</td><td>Diagrama de puntos principal en la ventana de información del resultado. El diagrama FL1 frente a FL2 muestra todos los eventos detectados según la amplitud de sus señales de fluorescencia FL1 (535 nm, eje X) y FL2 (715 nm, eje Y). El polígono rojo y la línea vertical muestran la región configurada. Para obtener más detalles, consulte la sección 11.3. Al pulsar esta vista previa, se abre una ventana emergente con acceso a todos los diagramas de puntos (4).</td></tr></tbody></table>
-
-<table className="manual-table"><tbody><tr><td>4</td><td>Ventana emergente con acceso a todos los diagramas de puntos. El diagrama FL1 frente a SSC muestra solo las células dentro de la región poligonal FL1 - FL2, según su señal de fluorescencia FL1 (535 nm) y su señal de luz dispersada SSC (488 nm). El histograma FL1 muestra todas las células dentro de la región poligonal FL1 - FL2, agrupadas en intervalos según su fluorescencia FL1. Los diagramas disponibles dependen del modelo y la configuración del instrumento.</td></tr><tr><td>5</td><td>El campo opcional de advertencias indica si se ha generado alguna advertencia durante la medición. Pulse el campo para obtener más información.</td></tr><tr><td>6</td><td>El botón Delete elimina la medición de forma permanente (requiere confirmación).</td></tr><tr><td>7</td><td>El botón Rename permite cambiar el nombre de la medición.</td></tr><tr><td>8</td><td>El botón Re-Gate result permite aplicar otras regiones de análisis a los datos de medición. Para obtener más detalles, consulte la sección 11.4.1.</td></tr><tr><td>9</td><td>El botón Export permite guardar este resultado en una memoria USB. Encontrará más información en la sección 10.8.1.</td></tr><tr><td>10</td><td>Los botones de navegación a la izquierda y derecha de la vista de resultados permiten ir a las mediciones anterior y siguiente, respectivamente.</td></tr></tbody></table>
+|  |  |
+| --- | --- |
+| 1 | Parámetros principales del resultado, según el tipo de cartucho utilizado. Encontrará más información en la sección [Cartuchos, regiones de análisis y parámetros de resultados](../results-and-data-analysis/#section-11-3). Pulse el icono de información junto al resultado principal para mostrar todos los parámetros del resultado (2). |
+| 2 | Ventana de información del resultado con todos los parámetros disponibles y el diagrama de puntos principal. |
+| 3 | Diagrama de puntos principal en la ventana de información del resultado. El diagrama FL1 frente a FL2 muestra todos los eventos detectados según la amplitud de sus señales de fluorescencia FL1 (535 nm, eje X) y FL2 (715 nm, eje Y). El polígono rojo y la línea vertical muestran la región configurada. Para obtener más detalles, consulte la sección [Cartuchos, regiones de análisis y parámetros de resultados](../results-and-data-analysis/#section-11-3). Al pulsar esta vista previa, se abre una ventana emergente con acceso a todos los diagramas de puntos (4). |
+| 4 | Ventana emergente con acceso a todos los diagramas de puntos. El diagrama FL1 frente a SSC muestra solo las células dentro de la región poligonal FL1 - FL2, según su señal de fluorescencia FL1 (535 nm) y su señal de luz dispersada SSC (488 nm). El histograma FL1 muestra todas las células dentro de la región poligonal FL1 - FL2, agrupadas en intervalos según su fluorescencia FL1. Los diagramas disponibles dependen del modelo y la configuración del instrumento. |
+| 5 | El campo opcional de advertencias indica si se ha generado alguna advertencia durante la medición. Pulse el campo para obtener más información. |
+| 6 | El botón Delete elimina la medición de forma permanente (requiere confirmación). |
+| 7 | El botón Rename permite cambiar el nombre de la medición. |
+| 8 | El botón Re-Gate result permite aplicar otras regiones de análisis a los datos de medición. Para obtener más detalles, consulte la sección [Reanálisis de mediciones con otras regiones](../results-and-data-analysis/#section-11-4-1). |
+| 9 | El botón Export permite guardar este resultado en una memoria USB. Encontrará más información en la sección [Exportación a una memoria USB](../measurements/#section-10-8-1). |
+| 10 | Los botones de navegación a la izquierda y derecha de la vista de resultados permiten ir a las mediciones anterior y siguiente, respectivamente. |
 
 :::info[Seleccione varias mediciones]
 
@@ -43,23 +50,35 @@ BactoSense dispone de conjuntos de regiones preconfigurados para todos los tipos
 
 - Las regiones predeterminadas de BactoSense se encuentran pulsando Gate settings en el menú Home de la interfaz de usuario.
 - Los conjuntos de regiones predeterminados no pueden modificarse ni eliminarse.
-- Pueden crearse nuevos conjuntos de regiones editando una copia de un conjunto existente, como se describe en la sección 11.4.2.
+- Pueden crearse nuevos conjuntos de regiones editando una copia de un conjunto existente, como se describe en la sección [Creación de un conjunto de regiones nuevo](11-results-and-data-analysis.md#section-11-4-2).
 
 ### 11.2.2 Lista de conjuntos de regiones y operaciones disponibles {#section-11-2-2}
 
 La lista de todos los conjuntos de regiones disponibles en BactoSense se encuentra pulsando Gate settings en el menú Home de la interfaz de usuario.
 
-<img src="/img/figures-second/figure-899e3c5869ed8f.webp" alt="Figura 11-2 Lista de conjuntos de regiones disponibles y opciones para copiar y crear conjuntos nuevos. Las regiones predeterminadas están preconfiguradas y no pueden eliminarse ni editarse." width="599" className="manual-figure" loading="lazy" />
-
-<img src="/img/manual/icon-screenshot.png" alt="Ilustración del manual de usuario de BactoSense" width="57" className="manual-icon" loading="lazy" />
+![BactoSense — Lista de gates](/img/gui/es/gate-settings-list.png "width=599 class=manual-figure")
 
 *Figura 11-2 Lista de conjuntos de regiones disponibles y opciones para copiar y crear conjuntos nuevos. Las regiones predeterminadas están preconfiguradas y no pueden eliminarse ni editarse.*
 
-<table className="manual-table"><tbody><tr><td>1</td><td>Ejemplo de una región personalizada para el cartucho ICC.</td><td>2</td><td>Región predeterminada ICC. Las regiones predeterminadas están preconfiguradas.</td></tr><tr><td>3</td><td>Región predeterminada doble ICC. Este conjunto contiene una región poligonal adicional configurable. Nota: algunos modelos requieren una función adicional para utilizar esta región (véase la sección 9.1).</td><td>4</td><td>Tipos de regiones, para utilizar con el tipo de cartucho correspondiente.</td></tr><tr><td>5</td><td>Eliminar un conjunto de regiones existente. Las regiones predeterminadas no pueden eliminarse.</td><td>6</td><td>Vista previa del conjunto de regiones.</td></tr><tr><td>7</td><td>Crear una copia del conjunto de regiones.</td><td>8</td><td>Editar el conjunto de regiones. Las regiones predeterminadas no pueden editarse.</td></tr><tr><td>9</td><td>Crear un conjunto de regiones nuevo.</td><td></td><td></td></tr></tbody></table>
+|  |  |  |  |
+| --- | --- | --- | --- |
+| 1 | Ejemplo de una región personalizada para el cartucho ICC. | 2 | Región predeterminada ICC. Las regiones predeterminadas están preconfiguradas. |
+| 3 | Región predeterminada doble ICC. Este conjunto contiene una región poligonal adicional configurable. Nota: algunos modelos requieren una función adicional para utilizar esta región (véase la sección [Paquete Scientific](../upgrade-packages/#section-9-1)). | 4 | Tipos de regiones, para utilizar con el tipo de cartucho correspondiente. |
+| 5 | Eliminar un conjunto de regiones existente. Las regiones predeterminadas no pueden eliminarse. | 6 | Vista previa del conjunto de regiones. |
+| 7 | Crear una copia del conjunto de regiones. | 8 | Editar el conjunto de regiones. Las regiones predeterminadas no pueden editarse. |
+| 9 | Crear un conjunto de regiones nuevo. |  |  |
 
 ## 11.3 Cartuchos, regiones de análisis y parámetros de resultados {#section-11-3}
 
-Según el cartucho utilizado en una medición, se miden distintos parámetros. Los tipos de cartucho disponibles son TCC (recuento total de células), ICC (recuento de células intactas), EBC (recuento de células de E. coli), ACC (recuento de células activas), CBC (recuento de células coliformes) y NBC (recuento de células de enterococos). Las subsecciones siguientes describen los conjuntos de regiones y los parámetros de resultados de los cartuchos TCC, ICC y ACC.
+Según el cartucho utilizado en una medición, se miden distintos parámetros. Las subsecciones siguientes describen los conjuntos de regiones de análisis y los parámetros de resultados de TCC (recuento total de células), ICC (recuento de células intactas), ACC (recuento de células activas), CBC (recuento de células coliformes), EBC (recuento de células de E. coli) y NBC (recuento de células de enterococos).
+
+Los cartuchos CBC, EBC y NBC son compatibles con BactoSense ID y BactoSense SMART. Cada uno utiliza un marcaje enzimático selectivo y una única región poligonal y proporciona una concentración celular. Para estos cartuchos no se calculan subpoblaciones HNA ni definidas según su actividad.
+
+:::info[Interpretación de los resultados CBC, EBC y NBC]
+
+CBC, EBC y NBC son concentraciones celulares expresadas en células por mililitro (1/mL). Los recuentos celulares y los resultados de cultivo expresados en unidades formadoras de colonias (CFU) miden propiedades diferentes de una muestra y no pueden compararse directamente.
+
+:::
 
 ### 11.3.1 Cartucho TCC {#section-11-3-1}
 
@@ -81,7 +100,7 @@ TCC significa Total Cell Count (recuento total de células). Por tanto, el cartu
 | LNAC | 1/mL | Recuento de células con bajo contenido de ácidos nucleicos | Número de células dentro de la región TCC, pero por debajo del límite inferior HNA (región de línea vertical). |
 | HNAC | 1/mL | Recuento de células con alto contenido de ácidos nucleicos | Número de células dentro de la región TCC y por encima del límite inferior HNA (región de línea vertical). |
 
-Para obtener más información sobre el ajuste de las regiones, consulte la sección 11.4.
+Para obtener más información sobre el ajuste de las regiones, consulte la sección [Cambio de las regiones de análisis](11-results-and-data-analysis.md#section-11-4).
 
 ### 11.3.2 Cartucho ICC {#section-11-3-2}
 
@@ -103,7 +122,7 @@ ICC significa Intact Cell Count (recuento de células intactas). Por tanto, el c
 | LNAC | 1/mL | Recuento de células con bajo contenido de ácidos nucleicos | Número de células LNA dentro de la región ICC, pero por debajo del límite inferior HNA (región de línea vertical). |
 | HNAC | 1/mL | Recuento de células con alto contenido de ácidos nucleicos | Número de células HNA dentro de la región ICC y por encima del límite inferior HNA (región de línea vertical). |
 
-Para obtener más información sobre el ajuste de las regiones, consulte la sección 11.4.
+Para obtener más información sobre el ajuste de las regiones, consulte la sección [Cambio de las regiones de análisis](11-results-and-data-analysis.md#section-11-4).
 
 ### 11.3.3 Cartucho ACC {#section-11-3-3}
 
@@ -125,7 +144,61 @@ ACC significa Active Cell Count (recuento de células activas). Por tanto, el ca
 | LACC | 1/mL | Recuento de células con baja actividad | Número de células activas cuya intensidad FL1 está por debajo de la región vertical HACC. |
 | HACP | % | Porcentaje de células altamente activas | Porcentaje de HACC respecto a ACC.<br/>HACP = (HACC / ACC) × 100 |
 
-Para obtener más información sobre el ajuste de las regiones, consulte la sección 11.4.
+Para obtener más información sobre el ajuste de las regiones, consulte la sección [Cambio de las regiones de análisis](11-results-and-data-analysis.md#section-11-4).
+
+### 11.3.4 Cartucho CBC {#section-11-3-4}
+
+CBC significa Coliform Cell Count (recuento de células coliformes). El cartucho CBC mide la concentración de bacterias coliformes mediante un ensayo enzimático basado en la actividad de la β-galactosidasa. La enzima convierte el sustrato del cartucho en un producto fluorescente, lo que permite detectar las células marcadas mediante citometría de flujo.
+
+**Tabla 11-7 Conjunto de regiones utilizado para el cartucho CBC.**
+
+| REGIÓN | TIPO | DESCRIPCIÓN |
+| --- | --- | --- |
+| CBC | Polígono | Polígono definido en el plano FL1-FL2. Las células coliformes marcadas con fluorescencia dentro de este polígono contribuyen a CBC. |
+
+**Tabla 11-8 Parámetro de resultado obtenido con el cartucho CBC.**
+
+| PARÁMETRO | UNIDAD | NOMBRE | DESCRIPCIÓN |
+| --- | --- | --- | --- |
+| CBC | 1/mL | Recuento de células coliformes | Concentración de células coliformes marcadas dentro de la región CBC, calculada a partir del recuento celular y del volumen de muestra analizado. |
+
+Para obtener más información sobre el ajuste de las regiones, consulte la sección [Cambio de las regiones de análisis](11-results-and-data-analysis.md#section-11-4).
+
+### 11.3.5 Cartucho EBC {#section-11-3-5}
+
+EBC significa E. coli Cell Count (recuento de células de E. coli). El cartucho EBC mide la concentración de bacterias *Escherichia coli* mediante un ensayo enzimático basado en la actividad de la β-glucuronidasa. La enzima convierte el sustrato del cartucho en un producto fluorescente, lo que permite detectar las células marcadas mediante citometría de flujo.
+
+**Tabla 11-9 Conjunto de regiones utilizado para el cartucho EBC.**
+
+| REGIÓN | TIPO | DESCRIPCIÓN |
+| --- | --- | --- |
+| EBC | Polígono | Polígono definido en el plano FL1-FL2. Las células de E. coli marcadas con fluorescencia dentro de este polígono contribuyen a EBC. |
+
+**Tabla 11-10 Parámetro de resultado obtenido con el cartucho EBC.**
+
+| PARÁMETRO | UNIDAD | NOMBRE | DESCRIPCIÓN |
+| --- | --- | --- | --- |
+| EBC | 1/mL | Recuento de células de E. coli | Concentración de células de E. coli marcadas dentro de la región EBC, calculada a partir del recuento celular y del volumen de muestra analizado. |
+
+Para obtener más información sobre el ajuste de las regiones, consulte la sección [Cambio de las regiones de análisis](11-results-and-data-analysis.md#section-11-4).
+
+### 11.3.6 Cartucho NBC {#section-11-3-6}
+
+NBC significa Enterococcus Cell Count (recuento de células de enterococos). El cartucho NBC mide la concentración de enterococos mediante un ensayo enzimático basado en la actividad de la β-glucosidasa. La enzima convierte el sustrato del cartucho en un producto fluorescente, lo que permite detectar las células marcadas mediante citometría de flujo.
+
+**Tabla 11-11 Conjunto de regiones utilizado para el cartucho NBC.**
+
+| REGIÓN | TIPO | DESCRIPCIÓN |
+| --- | --- | --- |
+| NBC | Polígono | Polígono definido en el plano FL1-FL2. Los enterococos marcados con fluorescencia dentro de este polígono contribuyen a NBC. |
+
+**Tabla 11-12 Parámetro de resultado obtenido con el cartucho NBC.**
+
+| PARÁMETRO | UNIDAD | NOMBRE | DESCRIPCIÓN |
+| --- | --- | --- | --- |
+| NBC | 1/mL | Recuento de células de enterococos | Concentración de enterococos marcados dentro de la región NBC, calculada a partir del recuento celular y del volumen de muestra analizado. |
+
+Para obtener más información sobre el ajuste de las regiones, consulte la sección [Cambio de las regiones de análisis](11-results-and-data-analysis.md#section-11-4).
 
 ## 11.4 Cambio de las regiones de análisis {#section-11-4}
 
@@ -134,9 +207,181 @@ Para obtener más información sobre el ajuste de las regiones, consulte la secc
 El reanálisis (regating) consiste en aplicar un conjunto de regiones diferente a datos de medición existentes.
 
 - Para reanalizar, es necesario disponer de ese conjunto adicional. Encontrará todos los conjuntos disponibles para su tipo de cartucho pulsando Gate settings en el menú Home de la interfaz de BactoSense.
-- La modificación de un conjunto de regiones existente se describe en la sección 11.4.3.
+- La modificación de un conjunto de regiones existente se describe en la sección [Edición de conjuntos de regiones existentes](11-results-and-data-analysis.md#section-11-4-3).
 
-<table className="manual-table"><tbody><tr><th scope="col"></th><th scope="col">PASO DE TRABAJO</th><th scope="col">INFORMACIÓN ADICIONAL / IMÁGENES</th></tr><tr><td>1.</td><td>Vaya al menú Home de la interfaz de usuario de BactoSense.</td><td></td></tr><tr><td>2.</td><td>Según cómo se haya realizado la medición, pulse Results (manual) o Results (auto) para ver la lista de resultados.</td><td></td></tr><tr><td>3.</td><td>Para reanalizar una sola medición, selecciónela para acceder a la página de detalles del resultado. Para reanalizar varias mediciones (por lotes), mantenga pulsada una medición hasta que quede resaltada y aparezca una casilla a la izquierda. A continuación, pulse otras mediciones para seleccionarlas también.</td><td></td></tr><tr><td>4.</td><td>Pulse el botón Re-gate.</td><td></td></tr><tr><td>5.</td><td>Seleccione el conjunto de regiones deseado marcando su casilla.</td><td></td></tr><tr><td>6.</td><td>Pulse el botón Confirm para iniciar el reanálisis.</td><td><Admonition type="info" title="Información adicional">Según el número de mediciones, el reanálisis puede tardar varios minutos.</Admonition></td></tr><tr><td>7.</td><td>Al finalizar, pulse OK.</td><td></td></tr></tbody></table>
+<table className="manual-table">
+
+<tbody>
+
+<tr>
+
+<th scope="col">
+
+</th>
+
+<th scope="col">
+
+PASO DE TRABAJO
+
+</th>
+
+<th scope="col">
+
+INFORMACIÓN ADICIONAL / IMÁGENES
+
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+
+1\.
+
+</td>
+
+<td>
+
+Vaya al menú Home de la interfaz de usuario de BactoSense.
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+2\.
+
+</td>
+
+<td>
+
+Según cómo se haya realizado la medición, pulse Results (manual) o Results (Online) para ver la lista de resultados.
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+3\.
+
+</td>
+
+<td>
+
+Para reanalizar una sola medición, selecciónela para acceder a la página de detalles del resultado. Para reanalizar varias mediciones (por lotes), mantenga pulsada una medición hasta que quede resaltada y aparezca una casilla a la izquierda. A continuación, pulse otras mediciones para seleccionarlas también.
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+4\.
+
+</td>
+
+<td>
+
+Pulse el botón Re-gate.
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+5\.
+
+</td>
+
+<td>
+
+Seleccione el conjunto de regiones deseado marcando su casilla.
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+6\.
+
+</td>
+
+<td>
+
+Pulse el botón Confirm para iniciar el reanálisis.
+
+</td>
+
+<td>
+
+:::info[Información adicional]
+
+Según el número de mediciones, el reanálisis puede tardar varios minutos.
+
+:::
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+7\.
+
+</td>
+
+<td>
+
+Al finalizar, pulse OK.
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 
 ### 11.4.2 Creación de un conjunto de regiones nuevo {#section-11-4-2}
 
@@ -150,7 +395,7 @@ Creación de un conjunto de regiones nuevo a partir de una copia
 | 2. | Pulse el botón Gate settings. |  |
 | 3. | En la lista de conjuntos de regiones disponibles, identifique el conjunto del que desea hacer una copia para crear el nuevo conjunto. | Asegúrese de que el tipo de región (p. ej., TCC, ICC) coincida con la aplicación prevista. |
 | 4. | Pulse el icono Copy para crear una copia del conjunto de regiones. |  |
-| 5. | En la copia recién generada, pulse el icono Edit y siga las instrucciones de edición de la sección 11.4.3. | <img src="/img/manual/cell-95fee81e2625.png" alt="Ilustración de la tabla de la página 105 del manual" width="264" className="manual-figure" loading="lazy"/> |
+| 5. | En la copia recién generada, pulse el icono Edit y siga las instrucciones de edición de la sección [Edición de conjuntos de regiones existentes](11-results-and-data-analysis.md#section-11-4-3). | ![BactoSense — Editar la región de análisis](/img/gui/icons/edit-gate-button.png "width=48 class=manual-icon") |
 
 Creación de un conjunto de regiones nuevo desde cero
 
@@ -160,61 +405,570 @@ Creación de un conjunto de regiones nuevo desde cero
 | 2. | Pulse el botón Gate settings. |  |
 | 3. | En la barra de acciones de la parte inferior, pulse New. |  |
 | 4. | En el campo de nombre, escriba un nombre para el conjunto de regiones. En el campo de tipo, seleccione el tipo de cartucho con el que se utilizará. |  |
-| 5. | A continuación, siga el asistente de configuración de regiones en pantalla, tal como se describe en las instrucciones de edición de la sección 11.4.3. |  |
-| 6. | Al finalizar, podrá seleccionar el conjunto nuevo al crear mediciones o reanalizar mediciones existentes, como se describe en la sección 11.4.1. |  |
+| 5. | A continuación, siga el asistente de configuración de regiones en pantalla, tal como se describe en las instrucciones de edición de la sección [Edición de conjuntos de regiones existentes](11-results-and-data-analysis.md#section-11-4-3). |  |
+| 6. | Al finalizar, podrá seleccionar el conjunto nuevo al crear mediciones o reanalizar mediciones existentes, como se describe en la sección [Reanálisis de mediciones con otras regiones](11-results-and-data-analysis.md#section-11-4-1). |  |
 
 ### 11.4.3 Edición de conjuntos de regiones existentes {#section-11-4-3}
 
 Excepto los conjuntos predeterminados, todos los conjuntos de regiones pueden modificarse. La edición puede incluir el cambio de nombre, la modificación de la posición de la región vertical y el cambio del número y la posición de los vértices de la región poligonal.
 
-Esta sección describe el proceso general de edición de un conjunto de regiones. La sección 11.4.4 describe una estrategia específica para ajustar conjuntos de regiones de mediciones TCC e ICC.
+Esta sección describe el proceso general de edición de un conjunto de regiones. La sección [Estrategia de ajuste de regiones para TCC e ICC](11-results-and-data-analysis.md#section-11-4-4) describe una estrategia específica para ajustar conjuntos de regiones de mediciones TCC e ICC.
 
-<img src="/img/figures-second/figure-8dc71f8c5efcd4.webp" alt="Figura 11-3 Ajustes de regiones para TCC" width="576" className="manual-figure" loading="lazy" />
-
-<img src="/img/manual/icon-screenshot.png" alt="Ilustración del manual de usuario de BactoSense" width="57" className="manual-icon" loading="lazy" />
+![BactoSense — Definición y vista previa del gate TCC](/img/gui/es/tcc-gate-definition.png "width=576 class=manual-figure")
 
 *Figura 11-3 Ajustes de regiones para TCC*
 
-<table className="manual-table"><tbody><tr><td>①</td><td>Coordenadas de los puntos de la región. a: primer punto; b: segundo punto; c: tercer punto; d: cuarto punto.</td><td>②</td><td>Eliminar un punto de la región.</td></tr><tr><td>③</td><td>Añadir un nuevo punto a la región.</td><td>④</td><td>Modificar la coordenada seleccionada. En esta captura está seleccionada la coordenada FL1 (a, FL1) del primer punto, por lo que podemos mover ese punto de la región a lo largo del eje FL1 (eje X).</td></tr><tr><td>⑤</td><td>Límite inferior HNA: esta región se define en la pantalla siguiente.</td><td>⑥</td><td>Vista previa</td></tr></tbody></table>
+|  |  |  |  |
+| --- | --- | --- | --- |
+| ① | Coordenadas de los puntos de la región. a: primer punto; b: segundo punto; c: tercer punto; d: cuarto punto. | ② | Eliminar un punto de la región. |
+| ③ | Añadir un nuevo punto a la región. | ④ | Modificar la coordenada seleccionada. En esta captura está seleccionada la coordenada FL1 (a, FL1) del primer punto, por lo que podemos mover ese punto de la región a lo largo del eje FL1 (eje X). |
+| ⑤ | Límite inferior HNA: esta región se define en la pantalla siguiente. | ⑥ | Vista previa |
 
 El procedimiento siguiente describe cómo ajustar una región:
 
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN |
 | --- | --- | --- |
-| 1. | Vaya al menú Home de la interfaz de usuario de BactoSense. | <img src="/img/manual/cell-d07318a281b1.png" alt="Ilustración de la tabla de la página 107 del manual" width="282" className="manual-figure" loading="lazy"/> |
-| 2. | Pulse el botón Gate settings. | <img src="/img/manual/cell-882cf24141b5.png" alt="Ilustración de la tabla de la página 107 del manual" width="282" className="manual-figure" loading="lazy"/> |
-| 3. | Pulse el botón Edit de la región que desea editar. | <img src="/img/manual/cell-fd72b5bdcc2a.png" alt="Ilustración de la tabla de la página 107 del manual" width="282" className="manual-figure" loading="lazy"/> |
+| 1. | Vaya al menú Home de la interfaz de usuario de BactoSense. | ![BactoSense — Botón Inicio](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
+| 2. | Pulse el botón Gate settings. | ![BactoSense — Configuración de las regiones de análisis](/img/gui/icons/gate-settings-button.png "width=48 class=manual-icon") |
+| 3. | Pulse el botón Edit de la región que desea editar. | ![BactoSense — Editar la región de análisis](/img/gui/icons/edit-gate-button.png "width=48 class=manual-icon") |
 | 4. | Cambie el nombre si lo desea y pulse el botón Next. |  |
-| 5. | Ajuste el número y la posición de los vértices del polígono (para TCC e ICC, consulte la sección 11.4.4). Una región poligonal puede tener entre 3 y 6 vértices. | <img src="/img/manual/cell-7440601f6ebb.png" alt="Ilustración de la tabla de la página 107 del manual" width="282" className="manual-figure" loading="lazy"/> |
+| 5. | Ajuste el número y la posición de los vértices del polígono (para TCC e ICC, consulte la sección [Estrategia de ajuste de regiones para TCC e ICC](11-results-and-data-analysis.md#section-11-4-4)). Una región poligonal puede tener entre 3 y 6 vértices. | ![BactoSense — Definición del gate ICC](/img/gui/es/icc-gate-definition.png "width=282 class=manual-figure") |
 | 6. | Pulse el botón Next. |  |
-| 7. | Introduzca el límite inferior HNA (para TCC e ICC, consulte la sección 11.4.4). | <img src="/img/manual/cell-ec7e624b3c7f.png" alt="Ilustración de la tabla de la página 107 del manual" width="282" className="manual-figure" loading="lazy"/> |
+| 7. | Introduzca el límite inferior HNA (para TCC e ICC, consulte la sección [Estrategia de ajuste de regiones para TCC e ICC](11-results-and-data-analysis.md#section-11-4-4)). | ![BactoSense — Límite inferior de HNA](/img/gui/es/hna-lower-limit.png "width=282 class=manual-figure") |
 | 8. | Pulse el botón Save y confirme. |  |
-| 9. | Al finalizar, podrá seleccionar el conjunto modificado al crear mediciones o reanalizar mediciones existentes, como se describe en la sección 11.4.1. |  |
+| 9. | Al finalizar, podrá seleccionar el conjunto modificado al crear mediciones o reanalizar mediciones existentes, como se describe en la sección [Reanálisis de mediciones con otras regiones](11-results-and-data-analysis.md#section-11-4-1). |  |
 
 ### 11.4.4 Estrategia de ajuste de regiones para TCC e ICC {#section-11-4-4}
 
 BactoSense se suministra con conjuntos de regiones predeterminados adecuados para la gran mayoría de las muestras. No obstante, los usuarios avanzados pueden ajustar las regiones si es necesario. A continuación se explica un procedimiento general de ajuste válido tanto para los cartuchos TCC como para los ICC.
 
-<table className="manual-table"><tbody><tr><th scope="col"></th><th scope="col">PASO DE TRABAJO</th><th scope="col">INFORMACIÓN ADICIONAL / IMAGEN</th></tr><tr><td>1.</td><td>Mida una muestra de agua con el protocolo estándar Water analysis. En la página Result details, el diagrama FL1 frente a FL2 muestra: 1) células LNA y HNA del agua; 2) ruido eléctrico de los detectores ópticos; 3) residuos/ruido de fondo (puede incluir células dañadas, agregados u otras partículas).</td><td><img src="/img/manual/cell-564a3512838d.png" alt="Ilustración de la tabla de la página 108 del manual" width="252" className="manual-figure" loading="lazy" /></td></tr><tr><td>2.</td><td>Vaya al menú Home de la interfaz de BactoSense y pulse el botón Gate settings.</td><td></td></tr><tr><td>3.</td><td>Según sus necesidades, realice una de las acciones siguientes:<br />• Crear un conjunto de regiones nuevo.<br />• Editar un conjunto existente.<br />• Copiar un conjunto existente y editar la copia.</td><td></td></tr><tr><td>4.</td><td>Asigne un nombre a este conjunto de regiones y pulse Next.</td><td></td></tr><tr><td>5.</td><td>Coloque la región poligonal en ambos extremos (izquierdo y derecho). Por ejemplo, utilice estos cuatro puntos:<table className="manual-table"><tbody><tr><td>FL1</td><td>FL2</td></tr><tr><td>3.0</td><td>0.0</td></tr><tr><td>3.0</td><td>6.1</td></tr><tr><td>6.5</td><td>6.1</td></tr><tr><td>6.5</td><td>0.0</td></tr></tbody></table></td><td><img src="/img/manual/cell-374bfaa7d23b.png" alt="Ilustración de la tabla de la página 108 del manual" width="252" className="manual-figure" loading="lazy" /></td></tr><tr><td>6.</td><td>Pulse Next y Save. Confirme que desea guardar el conjunto nuevo.</td><td></td></tr><tr><td>7.</td><td>Vaya a la vista de resultados de la muestra de agua medida anteriormente.</td><td></td></tr></tbody></table>
+<table className="manual-table">
 
-|  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN |
-| --- | --- | --- |
-| 8. | En la vista de resultados, pulse el botón Re-gate result. |  |
-| 9. | Seleccione la región recién creada y vuelva a procesar los datos con ella pulsando Confirm. |  |
-| 10. | Abra el histograma FL1 y localice el primer valle después del pico de ruido, es decir, el primer mínimo después del pico situado en el extremo izquierdo (flecha en la imagen). Anote el valor FL1 de ese mínimo (p. ej., 3.8). | <img src="/img/manual/cell-d44e977152e1.png" alt="Ilustración de la tabla de la página 109 del manual" width="252" className="manual-figure" loading="lazy"/> |
-| 11. | Vuelva a Gate settings y edite de nuevo la región. Coloque sus límites izquierdos en el valor FL1 determinado anteriormente. Así se excluye el ruido eléctrico de los detectores ópticos. Si es necesario, para el eje FL2, coloque los puntos “b” y “c” de la región justo por debajo de la zona de residuos/fondo (que suele aparecer como diagonales rectas). | <img src="/img/manual/cell-67de70c6bd1f.png" alt="Ilustración de la tabla de la página 109 del manual" width="252" className="manual-figure" loading="lazy"/> |
-| 12. | Guarde la región ajustada. |  |
-| 13. | Vaya de nuevo a la vista de resultados de la muestra de agua medida anteriormente. |  |
-| 14. | En la vista de resultados, pulse el botón Re-gate result. |  |
-| 15. | Seleccione la región recién creada y vuelva a procesar los datos con ella pulsando Confirm. |  |
+<thead>
 
-|  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN |
-| --- | --- | --- |
-| 16. | Para colocar el límite inferior HNA, abra de nuevo el histograma FL1 y localice el mínimo entre los picos LNA y HNA (línea vertical de la imagen). Anote su valor FL1 (p. ej., 4.8). | <img src="/img/manual/cell-3dd4365d2ad3.png" alt="Ilustración de la tabla de la página 110 del manual" width="252" className="manual-figure" loading="lazy"/> |
-| 17. | Vuelva a Gate settings y edite de nuevo la región. |  |
-| 18. | Vaya al paso de configuración del límite inferior HNA. Introduzca el límite identificado anteriormente en el campo FL1, pulse Save y confirme. |  |
-| 19. | Reanalice de nuevo la medición del agua y compruebe que la región sea adecuada. Ajústela de nuevo si es necesario. |  |
+<tr>
 
+<th scope="col">
+
+</th>
+
+<th scope="col">
+
+PASO DE TRABAJO
+
+</th>
+
+<th scope="col">
+
+INFORMACIÓN ADICIONAL / IMAGEN
+
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+
+1\.
+
+</td>
+
+<td>
+
+Mida una muestra de agua con el protocolo estándar Water analysis. En la página Result details, el diagrama FL1 frente a FL2 muestra: 1) células LNA y HNA del agua; 2) ruido eléctrico de los detectores ópticos; 3) residuos/ruido de fondo (puede incluir células dañadas, agregados u otras partículas).
+
+</td>
+
+<td>
+
+![Ilustración de la tabla de la página 108 del manual](/img/manual/cell-564a3512838d.png "width=126 class=manual-figure")
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+2\.
+
+</td>
+
+<td>
+
+Vaya al menú Home de la interfaz de BactoSense y pulse el botón Gate settings.
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+3\.
+
+</td>
+
+<td>
+
+Según sus necesidades, realice una de las acciones siguientes:<br />• Crear un conjunto de regiones nuevo.<br />• Editar un conjunto existente.<br />• Copiar un conjunto existente y editar la copia.
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+4\.
+
+</td>
+
+<td>
+
+Asigne un nombre a este conjunto de regiones y pulse Next.
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+5\.
+
+</td>
+
+<td>
+
+Coloque la región poligonal en ambos extremos (izquierdo y derecho). Por ejemplo, utilice estos cuatro puntos:
+
+<table className="manual-table">
+
+<tbody>
+
+<tr>
+
+<td>
+
+FL1
+
+</td>
+
+<td>
+
+FL2
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+3.0
+
+</td>
+
+<td>
+
+0.0
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+3.0
+
+</td>
+
+<td>
+
+6.1
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+6.5
+
+</td>
+
+<td>
+
+6.1
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+6.5
+
+</td>
+
+<td>
+
+0.0
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</td>
+
+<td>
+
+![Ilustración de la tabla de la página 108 del manual](/img/manual/cell-374bfaa7d23b.png "width=126 class=manual-figure")
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+6\.
+
+</td>
+
+<td>
+
+Pulse Next y Save. Confirme que desea guardar el conjunto nuevo.
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+7\.
+
+</td>
+
+<td>
+
+Vaya a la vista de resultados de la muestra de agua medida anteriormente.
+
+</td>
+
+<td>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+8\.
+
+</td>
+
+<td>
+
+En la vista de resultados, pulse el botón Re-gate result.
+
+</td>
+
+<td>
+
+
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+9\.
+
+</td>
+
+<td>
+
+Seleccione la región recién creada y vuelva a procesar los datos con ella pulsando Confirm.
+
+</td>
+
+<td>
+
+
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+10\.
+
+</td>
+
+<td>
+
+Abra el histograma FL1 y localice el primer valle después del pico de ruido, es decir, el primer mínimo después del pico situado en el extremo izquierdo (flecha en la imagen). Anote el valor FL1 de ese mínimo (p. ej., 3.8).
+
+</td>
+
+<td>
+
+![Ilustración de la tabla de la página 109 del manual](/img/manual/cell-d44e977152e1.png "width=126 class=manual-figure")
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+11\.
+
+</td>
+
+<td>
+
+Vuelva a Gate settings y edite de nuevo la región. Coloque sus límites izquierdos en el valor FL1 determinado anteriormente. Así se excluye el ruido eléctrico de los detectores ópticos. Si es necesario, para el eje FL2, coloque los puntos “b” y “c” de la región justo por debajo de la zona de residuos/fondo (que suele aparecer como diagonales rectas).
+
+</td>
+
+<td>
+
+![Ilustración de la tabla de la página 109 del manual](/img/manual/cell-67de70c6bd1f.png "width=126 class=manual-figure")
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+12\.
+
+</td>
+
+<td>
+
+Guarde la región ajustada.
+
+</td>
+
+<td>
+
+
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+13\.
+
+</td>
+
+<td>
+
+Vaya de nuevo a la vista de resultados de la muestra de agua medida anteriormente.
+
+</td>
+
+<td>
+
+
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+14\.
+
+</td>
+
+<td>
+
+En la vista de resultados, pulse el botón Re-gate result.
+
+</td>
+
+<td>
+
+
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+15\.
+
+</td>
+
+<td>
+
+Seleccione la región recién creada y vuelva a procesar los datos con ella pulsando Confirm.
+
+</td>
+
+<td>
+
+
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+16\.
+
+</td>
+
+<td>
+
+Para colocar el límite inferior HNA, abra de nuevo el histograma FL1 y localice el mínimo entre los picos LNA y HNA (línea vertical de la imagen). Anote su valor FL1 (p. ej., 4.8).
+
+</td>
+
+<td>
+
+![Ilustración de la tabla de la página 110 del manual](/img/manual/cell-3dd4365d2ad3.png "width=126 class=manual-figure")
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+17\.
+
+</td>
+
+<td>
+
+Vuelva a Gate settings y edite de nuevo la región.
+
+</td>
+
+<td>
+
+
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+18\.
+
+</td>
+
+<td>
+
+Vaya al paso de configuración del límite inferior HNA. Introduzca el límite identificado anteriormente en el campo FL1, pulse Save y confirme.
+
+</td>
+
+<td>
+
+
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+19\.
+
+</td>
+
+<td>
+
+Reanalice de nuevo la medición del agua y compruebe que la región sea adecuada. Ajústela de nuevo si es necesario.
+
+</td>
+
+<td>
+
+
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
 ## 11.5 Análisis avanzado de datos {#section-11-5}
 
 Los datos de medición de BactoSense pueden exportarse en formato de archivo Flow Cytometry Standard (FCS) 3.1. El formato FCS está normalizado por la International Society for Advancement of Cytometry (ISAC) para garantizar la interoperabilidad entre distintos instrumentos de citometría de flujo y programas de análisis. Existen distintas versiones del formato FCS, cada una con mejoras y funciones adicionales. Los datos FCS pueden utilizarse para un procesamiento posterior personalizado sin conexión, como la aplicación de estrategias complejas de regiones, la obtención de “huellas microbianas”, la detección automática de anomalías y muchas otras aplicaciones.
@@ -223,13 +977,13 @@ Los datos de medición de BactoSense pueden exportarse en formato de archivo Flo
 
 Los archivos FCS pueden obtenerse de las siguientes formas:
 
-- Descarga a una memoria USB: mediante la función Export all (véase la sección 12.1.1).
+- Descarga a una memoria USB: mediante la función Export all (véase la sección [Exportación de ajustes, diagnósticos o todos los datos a USB](12-data-access-and-export.md#section-12-1-1)).
 
-- Descarga desde la interfaz web, como archivos individuales (véase la sección 13.4) o varios archivos (véase la sección 13.5).
+- Descarga desde la interfaz web, como archivos individuales (véase la sección [Descarga de un archivo FCS](13-web-user-interface.md#section-13-4)) o varios archivos (véase la sección [Descarga de un archivo ZIP con varios resultados](13-web-user-interface.md#section-13-5)).
 
-- Acceso mediante FTP (véase la sección 12.2).
+- Acceso mediante FTP (véase la sección [Obtención de datos mediante FTP](12-data-access-and-export.md#section-12-2)).
 
-- Acceso mediante HTTPS (véase la sección 12.3).
+- Acceso mediante HTTPS (véase la sección [Obtención de archivos mediante HTTP o HTTPS](12-data-access-and-export.md#section-12-3)).
 
 Si necesita ayuda para configurar una cadena de herramientas de análisis avanzado de datos, póngase en contacto con support@bnovate.com.
 
@@ -237,10 +991,300 @@ Si necesita ayuda para configurar una cadena de herramientas de análisis avanza
 
 Para comparar los resultados de BactoSense con los de otro citómetro de flujo, puede analizarse una solución de referencia con microesferas autofluorescentes. Este método permite comparar las escalas de medición de distintos dispositivos.
 
-<table className="manual-table"><tbody><tr><th scope="col"></th><th scope="col">PASO DE TRABAJO</th><th scope="col" colSpan="2">INFORMACIÓN ADICIONAL / IMAGEN</th></tr><tr><td>1.</td><td>Se recomienda utilizar el Validation Kit, que contiene una solución de microesferas lista para usar.</td><td colSpan="2">Lea las instrucciones del Validation Kit para obtener más información.</td></tr><tr><td>2.</td><td>Instale el dispositivo de muestreo manual según el manual de usuario.</td><td colSpan="2"></td></tr><tr><td>3.</td><td>Tome una de las soluciones de microesferas del Validation Kit y colóquela en el dispositivo de muestreo.</td><td colSpan="2">Lea las instrucciones del Validation Kit para obtener más información.</td></tr><tr><td>4.</td><td><Admonition type="info" title="Información adicional">Pulse el botón Home. Pulse Back tantas veces como sea necesario para que aparezca Home.</Admonition></td><td><img src="/img/manual/cell-d07318a281b1.png" alt="Ilustración de la tabla de la página 112 del manual" width="119" className="manual-figure" loading="lazy" /></td><td><img src="/img/manual/cell-05da61fc8424.png" alt="Ilustración de la tabla de la página 112 del manual" width="119" className="manual-figure" loading="lazy" /></td></tr><tr><td>5.</td><td>En la pantalla Home, pulse Modo y seleccione Modo manual. Pulse Volver y, a continuación, Iniciar para abrir el asistente de medición.</td><td colSpan="2"></td></tr><tr><td>6.</td><td>Elija el protocolo Prime en la lista.</td><td colSpan="2">Véase la sección 10.9.3.</td></tr><tr><td>7.</td><td>Pulse los botones Next y Start. Espere a que termine el protocolo de cebado.</td><td colSpan="2"></td></tr><tr><td>8.</td><td>Elija el protocolo Beads Analysis en la lista y ejecútelo.</td><td colSpan="2"></td></tr><tr><td>9.</td><td>Espere a los resultados y, si es necesario, ajuste con precisión la región del diagrama FL1 frente a FL2 para contar solo las 4 poblaciones de microesferas. Asegúrese de que el ruido, el fondo y los residuos no se cuenten dentro de la región.</td><td colSpan="2">Consulte la sección 11.4.3 para ajustar la región.<br /><img src="/img/manual/render-fa85ea9255cb.webp" alt="Ilustración de la tabla de la página 112 del manual" width="246" className="manual-figure" loading="lazy" /></td></tr></tbody></table>
+<table className="manual-table">
 
-|  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN |
-| --- | --- | --- |
-| 10. | En el histograma FL1 frente a recuentos, estime el valor logarítmico del centro de cada pico en el eje FL1. En este ejemplo, se obtiene aproximadamente (en log): 1.<sup>er</sup> pico = 4.05; 2.<sup>º</sup> pico = 4.3; 3.<sup>er</sup> pico = 5.35; 4.<sup>º</sup> pico = 6.2. | <img src="/img/manual/cell-c2ba9a559620.png" alt="Ilustración de la tabla de la página 113 del manual" width="248" className="manual-figure" loading="lazy"/> |
-| 11. | Mida las mismas microesferas con el otro citómetro de flujo que desea comparar y repita los pasos 10 y 11. En este ejemplo, se obtiene aproximadamente (en log): 1.<sup>er</sup> pico = log(10<sup>3</sup>) = 3; 2.<sup>º</sup> pico = log(2*10<sup>3</sup>) = 3.3; 3.<sup>er</sup> pico = log(2.4*10<sup>4</sup>) = 4.4; 4.<sup>º</sup> pico = log(1.6*10<sup>5</sup>) = 5.2. | <img src="/img/manual/cell-4c2343e0bbfe.png" alt="Ilustración de la tabla de la página 113 del manual" width="248" className="manual-figure" loading="lazy"/> |
-| 12. | Con los distintos valores obtenidos para ambos dispositivos, ya es posible comparar sus escalas y sus ventanas de medición. |  |
+<thead>
+
+<tr>
+
+<th scope="col">
+
+</th>
+
+<th scope="col">
+
+PASO DE TRABAJO
+
+</th>
+
+<th scope="col" colSpan="2">
+
+INFORMACIÓN ADICIONAL / IMAGEN
+
+</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+
+1\.
+
+</td>
+
+<td>
+
+Se recomienda utilizar el Validation Kit, que contiene una solución de microesferas lista para usar.
+
+</td>
+
+<td colSpan="2">
+
+Lea las instrucciones del Validation Kit para obtener más información.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+2\.
+
+</td>
+
+<td>
+
+Instale el dispositivo de muestreo manual según el manual de usuario.
+
+</td>
+
+<td colSpan="2">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+3\.
+
+</td>
+
+<td>
+
+Tome una de las soluciones de microesferas del Validation Kit y colóquela en el dispositivo de muestreo.
+
+</td>
+
+<td colSpan="2">
+
+Lea las instrucciones del Validation Kit para obtener más información.
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+4\.
+
+</td>
+
+<td>
+
+:::info[Información adicional]
+
+Pulse el botón Home. Pulse Back tantas veces como sea necesario para que aparezca Home.
+
+:::
+
+</td>
+
+<td>
+
+![BactoSense — Botón Inicio](/img/gui/icons/home-button.png "width=48 class=manual-icon")
+
+</td>
+
+<td>
+
+![BactoSense — Botón Volver](/img/gui/icons/back-button.png "width=48 class=manual-icon")
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+5\.
+
+</td>
+
+<td>
+
+En la pantalla Home, pulse Modo y seleccione Modo manual. Pulse Volver y, a continuación, Iniciar para abrir el asistente de medición.
+
+</td>
+
+<td colSpan="2">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+6\.
+
+</td>
+
+<td>
+
+Elija el protocolo Prime en la lista.
+
+</td>
+
+<td colSpan="2">
+
+Véase la sección [Realización de un cebado (Prime)](../measurements/#section-10-9-3).
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+7\.
+
+</td>
+
+<td>
+
+Pulse los botones Next y Start. Espere a que termine el protocolo de cebado.
+
+</td>
+
+<td colSpan="2">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+8\.
+
+</td>
+
+<td>
+
+Elija el protocolo Beads Analysis en la lista y ejecútelo.
+
+</td>
+
+<td colSpan="2">
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+9\.
+
+</td>
+
+<td>
+
+Espere a los resultados y, si es necesario, ajuste con precisión la región del diagrama FL1 frente a FL2 para contar solo las 4 poblaciones de microesferas. Asegúrese de que el ruido, el fondo y los residuos no se cuenten dentro de la región.
+
+</td>
+
+<td colSpan="2">
+
+Consulte la sección [Edición de conjuntos de regiones existentes](../results-and-data-analysis/#section-11-4-3) para ajustar la región.<br />![Ilustración de la tabla de la página 112 del manual](/img/manual/render-fa85ea9255cb.webp "width=246 class=manual-figure")
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+10\.
+
+</td>
+
+<td>
+
+En el histograma FL1 frente a recuentos, estime el valor logarítmico del centro de cada pico en el eje FL1. En este ejemplo, se obtiene aproximadamente (en log): 1.<sup>er</sup> pico = 4.05; 2.<sup>º</sup> pico = 4.3; 3.<sup>er</sup> pico = 5.35; 4.<sup>º</sup> pico = 6.2.
+
+</td>
+
+<td>
+
+![Ilustración de la tabla de la página 113 del manual](/img/manual/cell-c2ba9a559620.png "width=246 class=manual-figure")
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+11\.
+
+</td>
+
+<td>
+
+Mida las mismas microesferas con el otro citómetro de flujo que desea comparar y repita los pasos 10 y 11. En este ejemplo, se obtiene aproximadamente (en log): 1.<sup>er</sup> pico = log(10<sup>3</sup>) = 3; 2.<sup>º</sup> pico = log(2*10<sup>3</sup>) = 3.3; 3.<sup>er</sup> pico = log(2.4*10<sup>4</sup>) = 4.4; 4.<sup>º</sup> pico = log(1.6*10<sup>5</sup>) = 5.2.
+
+</td>
+
+<td>
+
+![Ilustración de la tabla de la página 113 del manual](/img/manual/cell-4c2343e0bbfe.png "width=246 class=manual-figure")
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+12\.
+
+</td>
+
+<td>
+
+Con los distintos valores obtenidos para ambos dispositivos, ya es posible comparar sus escalas y sus ventanas de medición.
+
+</td>
+
+<td>
+
+
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
