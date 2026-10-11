@@ -14,7 +14,7 @@ El botón de encendido de BactoSense se encuentra en el lateral derecho del inst
 
 *Figura 8-1 Botón de encendido de BactoSense*
 
-:::warning[Compruebe la alimentación eléctrica]
+:::caution[Compruebe la alimentación eléctrica]
 
 Antes de encender BactoSense, asegúrese de que el instrumento esté conectado a una alimentación eléctrica estable que cumpla los requisitos descritos en la sección [Conexión de BactoSense a la alimentación eléctrica](05-installation.md#section-5-3).
 
@@ -22,9 +22,9 @@ Antes de encender BactoSense, asegúrese de que el instrumento esté conectado a
 
 **Encendido** Para encender BactoSense, pulse brevemente el botón de encendido. El LED del botón permanece encendido y, tras unos segundos, aparece la pantalla de bienvenida en la interfaz de usuario.
 
-**Apagado** Si ha iniciado sesión y desea apagar BactoSense, pulse el botón de cierre de sesión situado en la esquina superior derecha de la interfaz y seleccione *Power off*. Si desea apagarlo desde la propia página de inicio de sesión, mantenga pulsado el botón de encendido durante 10 segundos.
+**Apagado** Si ha iniciado sesión y desea apagar BactoSense, pulse el botón de cierre de sesión situado en la esquina superior derecha de la interfaz y seleccione *Apagar*. Si desea apagarlo desde la propia página de inicio de sesión, mantenga pulsado el botón de encendido durante 10 segundos.
 
-:::warning[Desconecte la alimentación de forma segura]
+:::caution[Desconecte la alimentación de forma segura]
 
 Para desconectar BactoSense de la alimentación, apague primero el instrumento. A continuación, desenchufe la fuente de alimentación de la red antes de desconectar la clavija de alimentación de BactoSense.
 
@@ -52,7 +52,7 @@ El inicio y el cierre de sesión se realizan mediante el botón situado en la es
 | --- | --- |
 | 1. | Asegúrese de que todos los procesos (p. ej., mediciones o limpiezas) hayan finalizado. El estado inactivo del instrumento se indica en el lado izquierdo de la barra superior de la interfaz de BactoSense. |
 | 2. | Pulse el botón de cierre de sesión situado en la esquina superior derecha de la interfaz. |
-| 3. | Seleccione Log out Lock screen. |
+| 3. | Seleccione Cerrar sesión / Bloquear pantalla. |
 | 4. | Para volver a iniciar sesión, siga el procedimiento descrito en la sección [Inicio de sesión](08-general-operations-and-configurations.md#section-8-2-1). |
 
 ### 8.2.3 Cierre de sesión automático {#section-8-2-3}
@@ -61,12 +61,12 @@ Es posible configurar el cierre de sesión automático tras un período de inact
 
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN |
 | --- | --- | --- |
-| 1. | En la pantalla Home, pulse Ajustes para abrir el menú de ajustes. |  |
-| 2. | Pulse el botón System settings. |  |
-| 3. | Pulse el botón Users. |  |
-| 4. | Pulse el botón Settings. |  |
+| 1. | Como usuario Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes. |  |
+| 2. | Pulse el botón Ajustes del sistema. |  |
+| 3. | Pulse el botón Usuarios. |  |
+| 4. | Pulse el botón Ajustes. |  |
 | 5. | Configure el período deseado para el cierre de sesión automático. |  |
-| 6. | Pulse Save. |  |
+| 6. | Pulse Guardar. |  |
 
 ### 8.2.4 Activación del modo de gestión avanzada de usuarios {#section-8-2-4}
 
@@ -76,11 +76,11 @@ El modo de gestión avanzada de usuarios está disponible en BactoSense SMART y 
 
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN |
 | --- | --- | --- |
-| 1. | En la pantalla Home, pulse Ajustes para abrir el menú de ajustes. |  |
-| 2. | Pulse el botón System settings. |  |
-| 3. | Pulse el botón System configuration. |  |
-| 4. | Marque la casilla Advanced user management mode. |  |
-| 5. | Pulse Save. |  |
+| 1. | Como usuario Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes. |  |
+| 2. | Pulse el botón Ajustes del sistema. |  |
+| 3. | Pulse el botón Configuración del sistema. |  |
+| 4. | Marque la casilla Modo avanzado de gestión de usuarios. |  |
+| 5. | Pulse Guardar. |  |
 
 ### 8.2.5 Establecimiento y cambio de contraseñas {#section-8-2-5}
 
@@ -92,9 +92,9 @@ Cada función de usuario está protegida por contraseña.
 
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMÁGENES |
 | --- | --- | --- |
-| 1. | En la pantalla Home, pulse Ajustes y, a continuación, Ajustes del sistema. |  |
-| 2. | Pulse Users y seleccione el perfil de usuario que desea editar. Pulse Edit después de marcar una casilla. | Los usuarios Admin pueden cambiar las contraseñas de otros perfiles de usuario. |
-| 3. | Pulse Change PIN, introduzca el nuevo PIN dos veces y pulse Save. |  |
+| 1. | En la pantalla Home, pulse Ajustes. Los usuarios Basic pulsan Cambiar contraseña; los usuarios Advanced y Admin pulsan Ajustes del sistema y, a continuación, Usuarios. |  |
+| 2. | Seleccione el perfil de usuario que desea editar y pulse Editar. | Los usuarios Basic y Advanced pueden cambiar su propio PIN. Los usuarios Admin también pueden cambiar el PIN de los usuarios Basic y Advanced. |
+| 3. | Pulse Cambiar PIN. Introduzca el nuevo PIN en PIN y Confirmar PIN, después pulse Guardar. |  |
 
 ### 8.2.6 Cambio de los ajustes de contraseñas {#section-8-2-6}
 
@@ -102,65 +102,85 @@ Pueden configurarse varias características de las contraseñas, como la caducid
 
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN |
 | --- | --- | --- |
-| 1. | En la pantalla Home, pulse Ajustes para abrir el menú de ajustes. |  |
-| 2. | Pulse el botón System settings. |  |
-| 3. | Pulse el botón Users. |  |
-| 4. | Pulse el botón Settings. |  |
+| 1. | Como usuario Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes. |  |
+| 2. | Pulse el botón Ajustes del sistema. |  |
+| 3. | Pulse el botón Usuarios. |  |
+| 4. | Pulse el botón Ajustes. |  |
 | 5. | Configure los requisitos de las contraseñas según sus preferencias. |  |
-| 6. | Pulse Save. |  |
+| 6. | Pulse Guardar. |  |
 
 ### 8.2.7 Funciones de usuario y permisos {#section-8-2-7}
 
 *Tabla 8-1 Funciones de usuario y permisos*
 
-| PERMISO | BASIC | ADVANCED | ADMIN |
-| --- | --- | --- | --- |
-| Ver el último resultado | ✓ | ✓ | ✓ |
-| Ver todos los resultados y exportar | ✓ | ✓ | ✓ |
-| Iniciar, detener y programar mediciones | ✓ | ✓ | ✓ |
-| Cambiar entre los modos en línea y Manual | ✓ | ✓ | ✓ |
-| Ver el registro de errores y advertencias | ✓ | ✓ | ✓ |
-| Cambiar el nombre de resultados | ✓ | ✓ | ✓ |
-| Validar el dispositivo | ✓ | ✓ | ✓ |
-| Cambiar la contraseña propia | ✓ | ✓ | ✓ |
-| Ver la información del sistema | ✓ | ✓ | ✓ |
-| Ver los ajustes de red | ✓ | ✓ | ✓ |
-| Ver la última autocomprobación | ✓ | ✓ | ✓ |
-| Cambiar el cartucho | ✓ | ✓ | ✓ |
-| Borrar errores | ✓ | ✓ | ✓ |
-| Ver el registro de intervenciones | ✓ | ✓ | ✓ |
-| Ver los resultados de validación | ✓ | ✓ | ✓ |
-| Eliminar resultados |  | ✓ | ✓ |
-| Reanalizar resultados con otras regiones |  | ✓ | ✓ |
-| Ajustar alarmas |  | ✓ | ✓ |
-| Ajustar regiones de análisis |  | ✓ | ✓ |
-| Reiniciar |  | ✓ | ✓ |
-| Ejecutar una autocomprobación |  | ✓ | ✓ |
-| Eliminar mediciones antiguas |  | ✓ | ✓ |
-| Exportar todo |  | ✓ | ✓ |
-| Ver la información de intervenciones |  | ✓ | ✓ |
-| Exportar diagnósticos |  | ✓ | ✓ |
-| Cambiar las salidas analógicas y digitales |  |  | ✓ |
-| Probar las salidas analógicas y digitales |  |  | ✓ |
-| Cambiar las contraseñas de otros usuarios |  |  | ✓ |
-| Crear otros usuarios |  |  | ✓ |
-| Cambiar los ajustes de autenticación |  |  | ✓ |
+<div className="manual-user-roles-scroll">
 
-| PERMISO | BASIC | ADVANCED | ADMIN |
-| --- | --- | --- | --- |
-| Establecer el nombre del dispositivo |  |  | ✓ |
-| Establecer la fecha y la hora |  |  | ✓ |
-| Cambiar los ajustes de red |  |  | ✓ |
-| Cambiar los ajustes de los servicios |  |  | ✓ |
-| Activar Modbus con una clave o desactivarlo |  |  | ✓ |
-| Cambiar el idioma |  |  | ✓ |
-| Cambiar al modo de demostración |  |  | ✓ |
-| Restablecer los ajustes |  |  | ✓ |
-| Restablecimiento completo de fábrica (excepto el registro de intervenciones) |  |  | ✓ |
-| Importar ajustes |  |  | ✓ |
-| Cambiar los ajustes de encendido automático |  |  | ✓ |
-| Activar paquetes de ampliación mediante código |  |  | ✓ |
+<table className="manual-user-roles-permissions">
 
+<colgroup>
+<col className="user-role-permission-column" />
+<col className="user-role-basic-column" />
+<col className="user-role-advanced-column" />
+<col className="user-role-admin-column" />
+</colgroup>
+
+<thead>
+<tr>
+<th scope="col">PERMISO</th>
+<th scope="col">BASIC</th>
+<th scope="col">ADVANCED</th>
+<th scope="col">ADMIN</th>
+</tr>
+</thead>
+
+<tbody>
+<tr><td>Ver el último resultado</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Ver todos los resultados y exportar</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Iniciar, detener y programar mediciones</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Cambiar entre los modos en línea y Manual</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Ver el registro de errores y advertencias</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Cambiar el nombre de resultados</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Validar el dispositivo</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Cambiar la contraseña propia</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Ver la información del sistema</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Ver los ajustes de red</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Ver la última autocomprobación</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Cambiar el cartucho</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Borrar errores</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Ver el registro de intervenciones</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Ver los resultados de validación</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Eliminar resultados</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Reanalizar resultados con otras regiones</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Ajustar alarmas</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Ajustar regiones de análisis</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Reiniciar</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Ejecutar una autocomprobación</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Eliminar mediciones antiguas</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Exportar todo</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Ver la información de intervenciones</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Exportar diagnósticos</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Cambiar las salidas analógicas y digitales</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Probar las salidas analógicas y digitales</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Cambiar las contraseñas de otros usuarios</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Crear otros usuarios</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Cambiar los ajustes de autenticación</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Establecer el nombre del dispositivo</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Establecer la fecha y la hora</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Cambiar los ajustes de red</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Cambiar los ajustes de los servicios</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Activar Modbus con una clave o desactivarlo</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Cambiar el idioma</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Cambiar al modo de demostración</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Restablecer los ajustes</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Restablecimiento completo de fábrica (excepto el registro de intervenciones)</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Importar ajustes</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Cambiar los ajustes de encendido automático</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Activar paquetes de ampliación mediante código</td><td></td><td></td><td>✓</td></tr>
+</tbody>
+
+</table>
+
+</div>
 ## 8.3 Configuraciones básicas {#section-8-3}
 
 ### 8.3.1 Idioma de la interfaz de usuario {#section-8-3-1}
@@ -169,10 +189,10 @@ Solo los usuarios Admin pueden cambiar el idioma.
 
 |  | PASO DE TRABAJO |
 | --- | --- |
-| 1. | En la pantalla Home, pulse Ajustes para abrir el menú de ajustes. |
-| 2. | Pulse System settings y, a continuación, Language. |
+| 1. | Como usuario Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes. |
+| 2. | Pulse el botón Ajustes del sistema. Pulse el botón Idioma. |
 | 3. | Elija el idioma y pulse el botón OK. |
-| 4. | Aparece un mensaje que solicita recargar la interfaz de usuario. Confirme el mensaje. |
+| 4. | Cuando se solicite recargar la interfaz, pulse Interfaz de recarga. |
 
 ### 8.3.2 Fecha y hora {#section-8-3-2}
 
@@ -180,18 +200,18 @@ Solo los usuarios Admin pueden cambiar la fecha y la hora.
 
 :::info[Sincronización automática de la hora]
 
-Si la sincronización horaria está activada, ya sea mediante servidores NTP o a través de Modbus TCP, los ajustes manuales de fecha y hora se sobrescribirán en la próxima sincronización. Los ajustes se encuentran en **System settings** &gt; **Date &amp; Time** &gt; **Time synchronization settings**. Para configurar un servidor NTP, consulte la sección [Configuración de servidores NTP](08-general-operations-and-configurations.md#section-8-7).
+Si la sincronización horaria está activada, ya sea mediante servidores NTP o a través de Modbus TCP, los ajustes manuales de fecha y hora se sobrescribirán en la próxima sincronización. Los ajustes se encuentran en Home > Ajustes > Ajustes del sistema > Fecha y hora > Ajustes de sincronización horaria. Para configurar un servidor NTP, consulte la sección [Configuración de servidores NTP](08-general-operations-and-configurations.md#section-8-7).
 
 :::
 
 |  | PASO DE TRABAJO |
 | --- | --- |
-| 1. | En la pantalla Home, pulse Ajustes para abrir el menú de ajustes. |
-| 2. | Pulse el botón System settings. |
-| 3. | Pulse el botón Date &amp; Time. |
+| 1. | Como usuario Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes. |
+| 2. | Pulse el botón Ajustes del sistema. |
+| 3. | Pulse el botón Fecha y hora. |
 | 4. | Introduzca la fecha y la hora. |
-| 5. | Seleccione la zona horaria en Time zone. |
-| 6. | Pulse el botón Set. |
+| 5. | Seleccione la zona horaria. |
+| 6. | Pulse el botón Configurar. |
 
 ### 8.3.3 Nombre del dispositivo {#section-8-3-3}
 
@@ -199,12 +219,12 @@ Solo los usuarios Admin pueden cambiar el nombre del dispositivo.
 
 |  | PASO DE TRABAJO |
 | --- | --- |
-| 1. | En la pantalla Home, pulse Ajustes para abrir el menú de ajustes. |
-| 2. | Pulse el botón System settings. |
-| 3. | Pulse el botón System configuration. |
-| 4. | Pulse el botón Device name. |
-| 5. | Introduzca el nombre deseado para el dispositivo en el campo de entrada. |
-| 6. | Pulse el botón Save. |
+| 1. | Como usuario Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes. |
+| 2. | Pulse el botón Ajustes del sistema. |
+| 3. | Pulse el botón Configuración del sistema. |
+| 4. | Pulse el campo Nombre del dispositivo. |
+| 5. | Introduzca el nombre del dispositivo con el teclado y pulse OK. |
+| 6. | Pulse el botón Guardar. |
 
 ### 8.3.4 Encendido automático {#section-8-3-4}
 
@@ -213,10 +233,10 @@ BactoSense incorpora una función de reinicio automático para recuperarse de in
 |  | PASO DE TRABAJO |
 | --- | --- |
 | 1. | Como usuario Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes. |
-| 2. | Pulse el botón System settings. |
-| 3. | Pulse el botón System configuration. |
+| 2. | Pulse el botón Ajustes del sistema. |
+| 3. | Pulse el botón Configuración del sistema. |
 | 4. | Seleccione sus preferencias de encendido automático. Nota: la autolimpieza solo se realiza si la alimentación se ha interrumpido durante una medición. |
-| 5. | Pulse el botón Save. |
+| 5. | Pulse el botón Guardar. |
 
 ### 8.3.5 Notificaciones sonoras {#section-8-3-5}
 
@@ -225,10 +245,10 @@ Puede activar notificaciones sonoras para indicar la finalización de una medici
 |  | PASO DE TRABAJO |
 | --- | --- |
 | 1. | Como usuario Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes. |
-| 2. | Pulse el botón System settings. |
-| 3. | Pulse el botón System configuration. |
-| 4. | Active la opción Sound notifications. |
-| 5. | Pulse el botón Save. |
+| 2. | Pulse el botón Ajustes del sistema. |
+| 3. | Pulse el botón Configuración del sistema. |
+| 4. | Active Notificaciones sonoras. |
+| 5. | Pulse el botón Guardar. |
 
 ## 8.4 Importación y exportación de ajustes {#section-8-4}
 
@@ -236,13 +256,13 @@ Los ajustes se exportan a una memoria USB como se indica en la sección [Exporta
 
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN |
 | --- | --- | --- |
-| 1. | En la pantalla Home, pulse Ajustes para abrir el menú de ajustes. | ![BactoSense — Botón Inicio](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
-| 2. | Pulse el botón Maintenance. | ![BactoSense — Menú de mantenimiento](/img/gui/icons/maintenance-button.png "width=48 class=manual-icon") |
-| 3. | Pulse el botón Special export import. | ![BactoSense — Opciones especiales de exportación e importación](/img/gui/icons/special-import-export-button.png "width=48 class=manual-icon") |
-| 4. | Conecte una memoria USB. Si es necesario, pulse Refresh USB list hasta que se detecte la memoria. | Asegúrese de que el archivo *.bnv esté en la raíz de la memoria USB. La memoria debe estar formateada en FAT32, que es el estándar habitual. |
-| 5. | Pulse Import settings. | ![BactoSense — Importación y exportación USB](/img/gui/es/usb-import-and-export.png "width=263") |
+| 1. | Como usuario Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes. | ![BactoSense — Botón Ajustes](/img/gui/es/home-settings-button.png "width=57 class=manual-icon-settings-button-half") |
+| 2. | Pulse el botón Mantenimiento. | ![BactoSense — Menú de mantenimiento](/img/gui/icons/maintenance-button.png "width=48 class=manual-icon") |
+| 3. | Pulse el botón Exportación importación especial. | ![BactoSense — Opciones especiales de exportación e importación](/img/gui/icons/special-import-export-button.png "width=48 class=manual-icon") |
+| 4. | Conecte una memoria USB. Si es necesario, pulse Actualizar lista USB hasta que se detecte la memoria. | Asegúrese de que el archivo *.bnv esté en la raíz de la memoria USB. La memoria debe estar formateada en FAT32, que es el estándar habitual. |
+| 5. | Pulse el botón Importar configuración. | ![BactoSense — Importación y exportación USB](/img/gui/es/usb-import-and-export.png "width=263") |
 | 6. | Seleccione los ajustes que desea importar. Los ajustes de medición incluyen conjuntos de regiones de análisis, ajustes de E/S, alarmas y ajustes de fecha y hora. Los ajustes de red incluyen las direcciones IP, DNS y NTP. | ![BactoSense — Opciones de importación de ajustes](/img/gui/es/import-settings-options.png "width=269") |
-| 7. | Pulse Import settings y espere a que el dispositivo se reinicie. |  |
+| 7. | Pulse Importar configuración y después Reiniciar ahora en el mensaje de confirmación; espere a que el dispositivo se reinicie. |  |
 
 ## 8.5 Configuración de alarmas {#section-8-5}
 
@@ -276,10 +296,10 @@ El procedimiento siguiente describe cómo configurar la alarma:
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMÁGENES |
 | --- | --- | --- |
 | 1. | En la pantalla Home, pulse Ajustes para abrir el menú de ajustes. |  |
-| 2. | Pulse el botón de ajustes del modo en línea. |  |
-| 3. | Pulse Alarms. |  |
+| 2. | Pulse el botón Ajustes del modo en línea. |  |
+| 3. | Pulse el botón Alarma. |  |
 | 4. | Active, seleccione y configure las alarmas (según las figuras 8-2 y 8-3). | Por defecto, no hay alarmas activas. |
-| 5. | Pulse Save para guardar la configuración de las alarmas. |  |
+| 5. | Pulse Guardar para guardar la configuración de las alarmas. |  |
 
 ## 8.6 Configuración de red {#section-8-6}
 
@@ -323,13 +343,13 @@ INFORMACIÓN ADICIONAL / IMAGEN
 
 <td>
 
-En la pantalla Home, pulse Ajustes para abrir el menú de ajustes.
+Como usuario Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes.
 
 </td>
 
 <td>
 
-![BactoSense — Botón Inicio](/img/gui/icons/home-button.png "width=48 class=manual-icon")
+![BactoSense — Botón Ajustes](/img/gui/es/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
 
 </td>
 
@@ -367,7 +387,7 @@ Pulse el botón Ajustes del sistema.
 
 <td>
 
-Pulse el botón Network.
+Pulse el botón Red.
 
 </td>
 
@@ -381,7 +401,7 @@ Pulse el botón Network.
 
 <tr>
 
-<td rowSpan="2">
+<td>
 
 4\.
 
@@ -391,21 +411,13 @@ Pulse el botón Network.
 
 A: para una IP dinámica, marque la casilla DHCP (1). Nota: esta es la configuración preferida en la mayoría de los casos cuando BactoSense está conectado a un router o conmutador.
 
-</td>
-
-<td rowSpan="2">
-
-![BactoSense — Configuración de red](/img/gui/es/network-configuration.png "width=260")
+B: para una IP estática, desmarque la casilla DHCP (1) e introduzca la configuración de red deseada (2). Nota: esta es la configuración preferida cuando BactoSense está conectado directamente a un portátil mediante Ethernet. Asegúrese de ajustar también la configuración de red del portátil de forma correspondiente.
 
 </td>
-
-</tr>
-
-<tr>
 
 <td>
 
-B: para una IP estática, desmarque la casilla DHCP (1) e introduzca la configuración de red deseada (2). Nota: esta es la configuración preferida cuando BactoSense está conectado directamente a un portátil mediante Ethernet. Asegúrese de ajustar también la configuración de red del portátil de forma correspondiente.
+![BactoSense — Configuración de red](/img/gui/es/network-configuration.png "width=260")
 
 </td>
 
@@ -421,7 +433,7 @@ B: para una IP estática, desmarque la casilla DHCP (1) e introduzca la configur
 
 <td>
 
-Pulse el botón Save.
+Pulse el botón Guardar.
 
 </td>
 
@@ -441,7 +453,7 @@ Pulse el botón Save.
 
 <td>
 
-Pulse el botón Reboot now.
+Pulse el botón Reiniciar ahora.
 
 </td>
 
@@ -457,7 +469,7 @@ Pulse el botón Reboot now.
 
 ## 8.7 Configuración de servidores NTP {#section-8-7}
 
-Network Time Protocol (NTP) es un protocolo de red utilizado para sincronizar la hora de los ordenadores de una red. Por defecto, la sincronización utiliza los servidores de Network Time Foundation (ntp.org). Puede establecer servidores NTP personalizados en el menú *Date and Time*.
+Network Time Protocol (NTP) es un protocolo de red utilizado para sincronizar la hora de los ordenadores de una red. Por defecto, la sincronización utiliza los servidores de Network Time Foundation (ntp.org). Puede establecer servidores NTP personalizados en el menú *Fecha y hora*.
 
 <table>
 
@@ -493,13 +505,13 @@ INFORMACIÓN ADICIONAL / IMAGEN
 
 <td>
 
-En la pantalla Home, pulse Ajustes para abrir el menú de ajustes.
+Como usuario Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes.
 
 </td>
 
 <td>
 
-![BactoSense — Botón Inicio](/img/gui/icons/home-button.png "width=48 class=manual-icon")
+![BactoSense — Botón Ajustes](/img/gui/es/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
 
 </td>
 
@@ -537,7 +549,7 @@ Pulse el botón Ajustes del sistema.
 
 <td>
 
-Pulse el botón Date &amp; Time.
+Pulse el botón Fecha y hora.
 
 </td>
 
@@ -559,7 +571,7 @@ Pulse el botón Date &amp; Time.
 
 <td>
 
-Pulse el botón Time synchronization settings.
+Pulse el botón Ajustes de sincronización horaria.
 
 </td>
 
@@ -581,7 +593,7 @@ Pulse el botón Time synchronization settings.
 
 <td>
 
-Seleccione la fuente de sincronización deseada en Sync Source.
+Seleccione la fuente deseada en «Fuente de sincronización.».
 
 </td>
 
@@ -637,7 +649,7 @@ Pulse el botón OK.
 
 :::info[Información adicional]
 
-Al editar y cambiar la dirección de un servidor y pulsar OK, el sistema hace ping al servidor y actualiza automáticamente la fecha y la hora.
+Pulse Prueba NTP para comprobar si los servidores configurados son accesibles. Pulse OK para guardar los ajustes de sincronización.
 
 :::
 
@@ -651,7 +663,7 @@ Al editar y cambiar la dirección de un servidor y pulsar OK, el sistema hace pi
 
 ## 8.8 Interfaz de usuario de BactoSense {#section-8-8}
 
-### 8.8.1 Estructura general y menú de inicio {#section-8-8-1}
+### 8.8.1 Estructura general, pantalla Home y menú de ajustes {#section-8-8-1}
 
 ![BactoSense — Vista general de la pantalla de inicio](/img/gui/es/home-overview.png "width=587")
 
@@ -669,7 +681,16 @@ La interfaz de usuario de BactoSense se divide en 3 secciones principales:
 
 Los elementos principales de la interfaz de usuario son:
 
-<table>
+<div className="manual-ui-elements-scroll">
+
+<table className="manual-ui-elements">
+
+<colgroup>
+<col className="ui-element-number" />
+<col className="ui-element-description" />
+<col className="ui-element-number" />
+<col className="ui-element-description" />
+</colgroup>
 
 <tbody>
 
@@ -809,6 +830,8 @@ Iniciar: abrir el asistente de medición y elegir un protocolo de análisis (mod
 
 </table>
 
+</div>
+
 Según la función de usuario, algunas opciones pueden no ser visibles o estar desactivadas.
 
 ### 8.8.2 Iconos de estado de la barra superior {#section-8-8-2}
@@ -839,7 +862,7 @@ Al manipular el cartucho, deben seguirse las instrucciones siguientes:
 |  |  |  |  |
 | --- | --- | --- | --- |
 | ![Siga los procedimientos descritos en este manual.](/img/manual/cell-28af480709ce.png "width=31 class=cartridge-handling-icon-31") | Siga los procedimientos<br/>descritos en este manual. | ![Ilustración del procedimiento, página impresa 73](/img/manual/asset-32c675a70f3d.png "width=24 class=cartridge-handling-icon-24") | Almacene y transporte entre<br/>15 °C – 25 °C (59 °F –<br/>77 °F). La temperatura<br/>óptima es de 15 °C (59 °F). |
-| ![Utilice guantes de nitrilo al manipular el cartucho.](/img/manual/cell-27e561e22ac1.png "width=31 class=cartridge-handling-icon-31") | Utilice guantes de nitrilo al<br/>manipular el cartucho. | ![Ilustración del procedimiento, página impresa 73](/img/manual/asset-65d703b8ec50.png "width=24 class=cartridge-handling-icon-24") | Almacene y transporte entre<br/>un 20 % y un 60 % de humedad<br/>relativa. |
+| ![Utilice guantes de nitrilo al manipular el cartucho.](/img/safety/gloves.svg "width=31 class=cartridge-handling-icon-31") | Utilice guantes de nitrilo al<br/>manipular el cartucho. | ![Ilustración del procedimiento, página impresa 73](/img/manual/asset-65d703b8ec50.png "width=24 class=cartridge-handling-icon-24") | Almacene y transporte entre<br/>un 20 % y un 60 % de humedad<br/>relativa. |
 | ![Utilice gafas de seguridad al manipular el cartucho.](/img/manual/cell-d6353e538e2e.png "width=31 class=cartridge-handling-icon-31") | Utilice gafas de seguridad al<br/>manipular el cartucho. | ![El cartucho está diseñado para su recarga.](/img/manual/cell-a80baea9abca.png "width=29 class=cartridge-handling-icon-29") | El cartucho está diseñado para<br/>su recarga. |
 | ![Transporte, instale y almacene en la orientación indicada.](/img/manual/cell-7ac996bd1fed.png "width=31 class=cartridge-handling-icon-31") | Transporte, instale y almacene en<br/>la orientación indicada. | ![No tire el cartucho a la basura.](/img/manual/cell-bc083b74fc3c.png "width=29 class=cartridge-handling-icon-29") | No tire el cartucho<br/>a la basura. |
 
@@ -862,7 +885,7 @@ El cartucho de BactoSense se instala en un compartimento específico del instrum
 | --- | --- | --- | --- |
 | 1 | Tuercas hexagonales de 7 mm para asegurar la puerta<br/>del compartimento del cartucho | 2 | Puerta del compartimento del cartucho |
 
-:::warning[Utilice la herramienta correcta para la puerta]
+:::caution[Utilice la herramienta correcta para la puerta]
 
 Abra y cierre la puerta del compartimento del cartucho únicamente con la llave específica para tuercas hexagonales de 7 mm.
 
@@ -1042,7 +1065,7 @@ Puerta del compartimento del cartucho
 
 </table>
 
-:::warning[Proteja el conector no utilizado]
+:::caution[Proteja el conector no utilizado]
 
 BactoSense tiene cinco conectores de fluidos. Según el tipo de cartucho, solo se necesitan cuatro o los cinco conectores. En el caso de los cartuchos TCC o ICC, asegúrese de que el quinto conector no utilizado esté siempre colocado en el soporte de conectores para evitar la contaminación.
 
@@ -1052,7 +1075,7 @@ BactoSense tiene cinco conectores de fluidos. Según el tipo de cartucho, solo s
 
 El procedimiento siguiente describe el cambio de cartuchos. Utilícelo si desea retirar un cartucho e instalar otro inmediatamente. Si solo desea retirar un cartucho sin instalar otro, siga las instrucciones de la sección [Retirada de un cartucho](08-general-operations-and-configurations.md#section-8-9-5). El cambio de cartucho dura aproximadamente 35 min.
 
-:::warning[Siga el asistente de cartuchos]
+:::caution[Siga el asistente de cartuchos]
 
 Siga estrictamente el procedimiento del asistente en pantalla. **No retire ni instale cartuchos sin seguir este procedimiento.**
 
@@ -1132,7 +1155,7 @@ En la pantalla Home, pulse Ajustes para abrir el menú de ajustes.
 
 <td>
 
-Pulse el botón Maintenance.
+Pulse el botón Mantenimiento.
 
 </td>
 
@@ -1154,7 +1177,7 @@ Los usuarios Basic omiten este paso.
 
 <td>
 
-Pulse el botón Cartridge change.
+Pulse el botón Cambio de cartucho.
 
 </td>
 
@@ -1174,7 +1197,7 @@ Pulse el botón Cartridge change.
 
 <td>
 
-Seleccione la opción Change cartridge.
+Seleccione Cambiar cartucho.
 
 </td>
 
@@ -1242,7 +1265,7 @@ Manipulación del cartucho retirado. • Si desea almacenar el cartucho retirado
 
 Este procedimiento sirve para retirar un cartucho sin instalar inmediatamente otro. Si desea cambiar cartuchos, siga el procedimiento descrito en la sección [Cambio de cartuchos](08-general-operations-and-configurations.md#section-8-9-4). La retirada del cartucho dura aproximadamente 5 min.
 
-:::warning[Siga el asistente de cartuchos]
+:::caution[Siga el asistente de cartuchos]
 
 Siga estrictamente el procedimiento del asistente en pantalla. **No retire ni instale cartuchos sin seguir este procedimiento.**
 
@@ -1302,7 +1325,7 @@ En la pantalla Home, pulse Ajustes para abrir el menú de ajustes.
 
 <td>
 
-Pulse el botón Maintenance.
+Pulse el botón Mantenimiento.
 
 </td>
 
@@ -1324,7 +1347,7 @@ Los usuarios Basic omiten este paso.
 
 <td>
 
-Pulse el botón Cartridge change.
+Pulse el botón Cambio de cartucho.
 
 </td>
 
@@ -1344,7 +1367,7 @@ Pulse el botón Cartridge change.
 
 <td>
 
-Seleccione la opción Remove cartridge.
+Seleccione Retire el cartucho.
 
 </td>
 
@@ -1400,7 +1423,7 @@ Manipulación del cartucho retirado. • Si desea almacenar el cartucho retirado
 
 <td>
 
-La barra superior de la interfaz indica que no hay ningún cartucho conectado. El botón Maintenance del menú Home aparece ahora en naranja.<br />![BactoSense — Cartucho no preparado](/img/gui/icons/cartridge-not-ready-status.png "width=30 class=manual-icon")
+La barra superior de la interfaz indica que no hay ningún cartucho conectado. En el menú Ajustes, Mantenimiento aparece resaltado; los usuarios Basic ven directamente el botón Cambio de cartucho resaltado.<br />![BactoSense — Cartucho no preparado](/img/gui/icons/cartridge-not-ready-status.png "width=30 class=manual-icon")
 
 </td>
 
@@ -1414,7 +1437,7 @@ La barra superior de la interfaz indica que no hay ningún cartucho conectado. E
 
 Este procedimiento sirve para instalar un cartucho cuando no hay otro instalado en BactoSense. Si ya hay un cartucho y desea cambiarlo, siga el procedimiento descrito en la sección [Cambio de cartuchos](08-general-operations-and-configurations.md#section-8-9-4). La instalación del cartucho dura aproximadamente 30 min.
 
-:::warning[Siga el asistente de cartuchos]
+:::caution[Siga el asistente de cartuchos]
 
 Siga estrictamente el procedimiento del asistente en pantalla. **No retire ni instale cartuchos sin seguir este procedimiento.**
 
@@ -1494,7 +1517,7 @@ En la pantalla Home, pulse Ajustes para abrir el menú de ajustes.
 
 <td>
 
-Pulse el botón Maintenance.
+Pulse el botón Mantenimiento.
 
 </td>
 
@@ -1516,7 +1539,7 @@ El botón Maintenance aparece resaltado en naranja cuando no hay ningún cartuch
 
 <td>
 
-Pulse el botón Cartridge change.
+Pulse el botón Cambio de cartucho.
 
 </td>
 
@@ -1536,7 +1559,7 @@ Pulse el botón Cartridge change.
 
 <td>
 
-Seleccione la opción Install cartridge.
+Seleccione Instalar cartucho.
 
 </td>
 
@@ -1615,9 +1638,11 @@ BactoSense puede utilizarse con el dispositivo de muestreo manual o con el de mu
 
 Al cambiar al dispositivo de muestreo manual, debe retirarse el dispositivo de muestreo en línea. Siga el procedimiento siguiente para retirarlo de forma segura y prepararlo para el almacenamiento.
 
-![Utilice guantes de protección](/img/manual/icon-gloves.png "width=32")
+:::gloves[Usar guantes de protección]
 
 Evite la contaminación del equipo. Utilice guantes de nitrilo al manipular muestras, dispositivos de muestreo y cualquier componente que entre en contacto con ellos.
+
+:::
 
 |  | PASO DE TRABAJO |
 | --- | --- |
@@ -1634,9 +1659,11 @@ Evite la contaminación del equipo. Utilice guantes de nitrilo al manipular mues
 
 Al cambiar al dispositivo de muestreo en línea, debe retirarse el dispositivo de muestreo manual. Siga el procedimiento siguiente para retirarlo de forma segura y prepararlo para el almacenamiento.
 
-![Utilice guantes de protección](/img/manual/icon-gloves.png "width=32")
+:::gloves[Usar guantes de protección]
 
 Evite la contaminación del equipo. Utilice guantes de nitrilo al manipular muestras, dispositivos de muestreo y cualquier componente que entre en contacto con ellos.
+
+:::
 
 |  | PASO DE TRABAJO |
 | --- | --- |
@@ -1670,20 +1697,20 @@ Para otros entornos, se recomienda cualificar el instrumento con el *Validation 
 | 1. | Asegúrese de que el dispositivo de muestreo manual esté firmemente instalado como se describe en la sección [Instalación del dispositivo de muestreo manual](05-installation.md#section-5-4). |
 | 2. | Limpie el dispositivo de muestreo con dos repeticiones: si dispone de una Washstation, siga el procedimiento de la sección [Limpieza del dispositivo de muestreo manual con Washstation](15-maintenance.md#section-15-2-2); en caso contrario, el de la sección [Limpieza básica del dispositivo de muestreo manual](15-maintenance.md#section-15-2-3). |
 | 3. | Prepare la muestra en blanco en un tubo de 5 mL con tapón de rosca. Hay dos opciones: A) utilice agua libre de células, p. ej., una alícuota de solución estéril del Validation Kit. Si utiliza la alícuota de solución estéril del Validation Kit, retire su tapón y colóquela en un tubo vacío de 5 mL con tapón de rosca, como se describe en el manual de usuario del Validation Kit. B) Tome agua mineral sin gas y fíltrela dos veces con un filtro de membrana de tamaño de poro de 0.22 µm o inferior. |
-| 4. | En la interfaz de usuario de BactoSense, vaya al menú Home. |
+| 4. | Vaya a la pantalla Home de la interfaz de usuario de BactoSense. |
 | 5. | En la pantalla Home, pulse Modo y seleccione Modo manual. Pulse Volver y, a continuación, Iniciar para abrir el asistente de medición. |
-| 6. | Elija el protocolo Prime en la lista de protocolos disponibles. |
-| 7. | Pulse el botón Next. |
+| 6. | Seleccione Preparar en la lista de protocolos disponibles. |
+| 7. | Pulse el botón Siguiente. |
 | 8. | Retire el tubo o la Washstation del dispositivo de muestreo manual y coloque la muestra en blanco. |
-| 9. | Pulse el botón Start para ejecutar el protocolo Prime. |
-| 10. | Una vez finalizado Prime, pulse el botón New para volver a la lista de protocolos. |
-| 11. | Seleccione el protocolo Water Analysis en la lista de protocolos disponibles. |
+| 9. | Pulse el botón Inicio para ejecutar el protocolo Prime. |
+| 10. | Una vez finalizado Prime, pulse el botón Nuevo para volver a la lista de protocolos. |
+| 11. | Seleccione Análisis del agua en la lista de protocolos disponibles. |
 | 12. | Configure dos repeticiones. |
-| 13. | Introduzca un nombre de muestra pulsando el campo de texto Sample name, escribiendo el nombre y pulsando OK. |
-| 14. | Compruebe que esté configurada la región predeterminada ICC o TCC y, de lo contrario, cámbiela pulsando el campo Gates. |
-| 15. | Pulse el botón Next. |
-| 16. | Pulse el botón Start y espere a que finalicen las dos mediciones. |
-| 17. | Al finalizar, pulse el botón Next para revisar los resultados. |
+| 13. | Introduzca un nombre de muestra pulsando el campo de texto Nombre de la muestra, escribiendo el nombre y pulsando OK. |
+| 14. | Compruebe que esté configurada la región predeterminada ICC o TCC y, de lo contrario, cámbiela pulsando el campo Compuertas. |
+| 15. | Pulse el botón Siguiente. |
+| 16. | Pulse el botón Inicio y espere a que finalicen las dos mediciones. |
+| 17. | Al finalizar, pulse el botón Siguiente para revisar los resultados. |
 | 18. | Examine los resultados y compárelos con los valores de referencia indicados a continuación. BactoSense está limpio si se cumplen los siguientes criterios: • Para cartuchos TCC: TCC [/mL] &lt; 300 • Para cartuchos ICC: ICC [/mL] &lt; 100. |
 | 19. | Si las concentraciones celulares superan los límites especificados, aplique el procedimiento siguiente: • Repita el procedimiento con una muestra en blanco recién preparada. • Repita el procedimiento después de una descontaminación con el Cleaning Kit (véase la sección [Consumibles](18-supply-scope-accessories-and-consumables.md#section-18-3)). • Si la prueba sigue fallando, póngase en contacto con el soporte de bNovate o con su representante local de servicio. |
 | 20. | Al finalizar, coloque un tubo limpio y vacío de 5 mL con tapón de rosca o la Washstation en el dispositivo de muestreo manual. |
@@ -1726,13 +1753,13 @@ INFORMACIÓN ADICIONAL / IMAGEN
 
 <td>
 
-En la pantalla Home, pulse Ajustes para abrir el menú de ajustes.
+Como usuario Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes.
 
 </td>
 
 <td colSpan="2">
 
-![BactoSense — Botón Inicio](/img/gui/icons/home-button.png "width=48 class=manual-icon")
+![BactoSense — Botón Ajustes](/img/gui/es/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
 
 </td>
 
@@ -1748,7 +1775,7 @@ En la pantalla Home, pulse Ajustes para abrir el menú de ajustes.
 
 <td>
 
-Pulse el botón System settings y, a continuación, Demo mode.
+Pulse el botón Ajustes del sistema. Pulse el botón Modo demostración.
 
 </td>
 
@@ -1776,7 +1803,7 @@ Pulse el botón System settings y, a continuación, Demo mode.
 
 <td>
 
-Marque la casilla Activate demo mode.
+Marque la casilla Activar el modo demo.
 
 </td>
 
@@ -1796,7 +1823,7 @@ Marque la casilla Activate demo mode.
 
 <td>
 
-Pulse el botón Save and restart.
+Pulse el botón Guardar y reiniciar.
 
 </td>
 
@@ -1830,7 +1857,7 @@ El dispositivo se reinicia automáticamente.
 
 </table>
 
-Para volver al modo normal, siga el mismo procedimiento, pero desmarque la casilla **Activate demo** **mode**.
+Para volver al modo normal, siga el mismo procedimiento, pero desmarque la casilla **Activar el modo demo**.
 
 ## 8.13 Restablecimiento de fábrica {#section-8-13}
 
@@ -1872,13 +1899,13 @@ INFORMACIÓN ADICIONAL / IMAGEN
 
 <td>
 
-En la pantalla Home, pulse Ajustes para abrir el menú de ajustes.
+Como usuario Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes.
 
 </td>
 
 <td colSpan="2">
 
-![BactoSense — Botón Inicio](/img/gui/icons/home-button.png "width=48 class=manual-icon")
+![BactoSense — Botón Ajustes](/img/gui/es/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
 
 </td>
 
@@ -1948,7 +1975,7 @@ Los registros de servicio, los resultados de validación y el historial de actua
 
 <td>
 
-A continuación, pulse el botón Reset the device and reboot.
+Pulse Restablecer el dispositivo y reiniciar y confirme con Sí.
 
 </td>
 

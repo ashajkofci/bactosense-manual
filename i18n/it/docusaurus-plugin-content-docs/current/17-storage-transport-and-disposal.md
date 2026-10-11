@@ -49,7 +49,7 @@ Preparativi
 |  | FASE OPERATIVA | INFORMAZIONI AGGIUNTIVE / IMMAGINI |
 | --- | --- | --- |
 | 1. | Rimuovere e pulire il dispositivo secondo la sezione [Rimozione del dispositivo di campionamento manuale](08-general-operations-and-configurations.md#section-8-10-2) (dispositivo manuale) o [Rimozione del dispositivo di campionamento in linea](08-general-operations-and-configurations.md#section-8-10-1) (dispositivo in linea). | Indossare guanti durante la procedura per evitare contaminazioni. Se i tubi del dispositivo in linea presentano contaminazione o danni, non riutilizzarli e smaltirli. |
-| 2. | Coprire il dispositivo pulito con il tappo dedicato, se disponibile. | ![Illustrazione della tabella a pagina 153](/img/manual/cell-8fdb2d0e492f.png "width=132 class=manual-figure") |
+| 2. | Coprire il dispositivo pulito con il tappo dedicato, se disponibile. | ![Illustrazione della tabella a pagina 153](/img/manual/cell-8fdb2d0e492f.png "width=66 class=manual-figure") |
 | 3. | Conservare il dispositivo pulito in un sacchetto di plastica pulito e asciutto. |  |
 
 **Conservazione**
@@ -177,7 +177,7 @@ Gli strumenti entrati in contatto con sostanze pericolose non devono essere sped
 
 :::
 
-:::warning[Seguire le istruzioni di spedizione]
+:::caution[Seguire le istruzioni di spedizione]
 
 Rispettare le istruzioni di spedizione
 
@@ -366,7 +366,7 @@ Cartuccia
 
 <td>
 
-:::warning[Restituire le cartucce usate]
+:::caution[Restituire le cartucce usate]
 
 Non smontare né smaltire la cartuccia.
 

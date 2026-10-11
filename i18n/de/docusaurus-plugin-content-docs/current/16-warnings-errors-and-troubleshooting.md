@@ -24,9 +24,6 @@ Es können folgende Warnmeldungen angezeigt werden:
 | W01 | Kartusche abgelaufen | Die Reagenzien der Kartusche sind abgelaufen. Die Messgenauigkeit kann beeinträchtigt sein. | • Bitte wechseln Sie die Kartusche baldmöglichst aus. |
 | W02-04 | Hohes Basisliniensignal in FL1 / FL2 / SSC | Die Basisliniensignale sind zu hoch. Dies liegt normalerweise an Blasen oder Partikeln in der Probenlösung. Die Messgenauigkeit könnte beeinträchtigt sein. | • Überprüfen Sie das Einlassschlauchsystem auf jegliche Anzeichen von Ablagerungen. • Überprüfen Sie die Wasserverbindungen und stellen Sie sicher, dass sie korrekt befestigt sind (kein Lufteintritt) • Erscheint die Warnung weiterhin, führen Sie bitte mittels des Reinigungskits eine Gerätereinigung durch. |
 | W05 | Inkubatortemperatur weicht vom Sollwert ab | Die Bruttemperatur wich um mehr als 2°C vom Sollwert ab. Die Zellanzahl könnte beeinflusst sein. Der Brutapparat könnte defekt sein. | • Besteht das Problem weiterhin, wenden Sie sich bitte an den Kundendienst. |
-
-| FEHLERCODE | NAME | BESCHREIBUNG | URSACHEN / ABHILFE |
-| --- | --- | --- | --- |
 | W06 | Keine Ereignisse erkannt | Während der Messung wurden keine Ereignisse erkannt. | • Besteht das Problem weiterhin, wenden Sie sich bitte an den Kundendienst. |
 | W07 | TCC außerhalb des Messbereichs | TCC liegt über der BactoSense-Spezifikationsgrenze von 2’000’000 Zellen/ml. | • Bitte verdünnen Sie die Probe, um die Messgenauigkeit sicherzustellen. |
 | W08 | Luftblasen erkannt | Die Probe scheint Luftblasen zu enthalten. | • Bitte überprüfen Sie, ob das Probenahmegerät korrekt eingebaut ist. • Bitte überprüfen Sie die Probe auf Blasen. • Arbeiten Sie mit einem Online- Probenahmegerät, so überprüfen Sie bitte, ob das Wasser unter korrektem Druck geliefert wird. |
@@ -53,9 +50,6 @@ Die folgenden unkritischen Fehlermeldungen können angezeigt werden:
 | E08 | Gehäuse zu feucht | Die Feuchtigkeit im Gehäuse ist für einen sicheren Betrieb zu hoch. | • Bitte tauschen Sie den Trockenmittelbeutel aus, indem Sie den großen Deckel auf der linken Seite des Geräts abschrauben (siehe [Ersetzen des Trockenmittelbeutels](15-maintenance.md#section-15-2-6)). • Besteht das Problem weiterhin, wenden Sie sich bitte an den Kundendienst. |
 | E09 | System überhitzt | Die Innentemperatur ist für einen sicheren Betrieb zu hoch. | • Bitte reduzieren Sie die Umgebungstemperatur oder erhöhen Sie das Messintervall, damit das Gerät abkühlen kann. |
 | E14 | Laser zu heiß | Die Lasertemperatur ist für einen sicheren Betrieb zu hoch. | • Bitte reduzieren Sie die Umgebungstemperatur oder erhöhen Sie das Messintervall, damit das Gerät abkühlen kann. |
-
-| FEHLERCODE | NAME | BESCHREIBUNG | URSACHEN / ABHILFE |
-| --- | --- | --- | --- |
 | E15 | Fehler beim Aufblasen des Mischers | Beim Mischen oder Dosieren wurde Unterdruck erkannt. | • Fehlende Probe. • Luft im Einlass. • Undichtigkeit im System. • Bitte führen Sie das Optik- Reinigungsprotokoll aus (siehe [Protokollübersicht im manuellen Modus](10-measurements.md#section-10-9-1)). |
 | E18 | Pumpenunterdruckfehler | Beim Dosieren wurde Unterdruck erkannt. | • Fehlende Probe. • Luft im Einlass. • Undichtigkeit im System. • Bitte führen Sie das Optik- Reinigungsprotokoll aus (siehe [Protokollübersicht im manuellen Modus](10-measurements.md#section-10-9-1)). |
 | E19 | System überhitzt | Die Innentemperatur ist für den Betrieb zu hoch. | • Vermindern Sie die Umgebungstemperatur des Gerätes oder erhöhen Sie das Messintervall, damit das Gerät abkühlen kann. |
@@ -64,9 +58,6 @@ Die folgenden unkritischen Fehlermeldungen können angezeigt werden:
 | E44 | Startfehler des Pumpenmoduls | Das Pumpenmodul konnte nicht korrekt eingeschaltet werden. | • Bitte wiederholen Sie die Messung einfach. |
 | E45 | Anteil des gültigen Volumens zu niedrig | Das gültige Volumenverhältnis ist zu gering. Dies kann durch zu viel bakteriellen Inhalt im Wasser oder Trübung/ Schmutzpartikel verursacht werden. | • Die Messgenauigkeit ist wahrscheinlich sehr gering. Bitte wiederholen Sie die Messung, während Sie die Probe mit klarem Wasser verdünnen. |
 | E46 | Kartusche noch beschäftigt | Beim Start der Messung wurde die Kartusche noch initialisiert. | • Unkritischer Fehler. Bitte wiederholen Sie die Messung. Besteht dieses Problem weiterhin, wenden Sie sich bitte an einen Servicetechniker. |
-
-| FEHLERCODE | NAME | BESCHREIBUNG | URSACHEN / ABHILFE |
-| --- | --- | --- | --- |
 | E48 | Mikrofluidisches Subsystem beschäftigt | Der Mikrofluidik-Controller führt während der Messung eine andere Aufgabe aus. | • Unkritischer Fehler. Bitte wiederholen Sie die Messung. Besteht dieses Problem weiterhin, wenden Sie sich bitte an einen Servicetechniker. |
 | E49 | GPIO-Zeitüberschreitung | Die Verarbeitungsplatine wartet auf die Antwort eines anderen Moduls. | • Unkritischer Fehler. Bitte wiederholen Sie die Messung. Besteht dieses Problem weiterhin, wenden Sie sich bitte an einen Servicetechniker. |
 | E50 | Pumpenbewegung blockiert | Die Bewegung der Pumpe ist blockiert. | • Unkritischer Fehler. Bitte wiederholen Sie die Messung. Besteht dieses Problem weiterhin, wenden Sie sich bitte an einen Servicetechniker. |
@@ -74,9 +65,6 @@ Die folgenden unkritischen Fehlermeldungen können angezeigt werden:
 | E52 | Bewegung des Kartuschenventils blockiert | Die Bewegung des Kartuschenventils ist blockiert. | • Unkritischer Fehler. Bitte wiederholen Sie die Messung. Besteht das Problem weiterhin, wenden Sie sich bitte an den Kundendienst. |
 | E55 | M7 nicht verbunden | Der Erfassungsprozessor kann nicht initialisiert werden. | • Starten Sie das Gerät neu. • Besteht das Problem weiterhin, wenden Sie sich bitte an den Kundendienst. |
 | E56 | Leere Erfassung | Während der Erfassung wurden keine Ereignisse erkannt. | • Bitte reinigen Sie das Probenahmegerät mittels der Washstation. Dann führen Sie bitte eine Klarwassermessung durch. • Besteht das Problem weiterhin, wenden Sie sich bitte an den Kundendienst. |
-
-| FEHLERCODE | NAME | BESCHREIBUNG | URSACHEN / ABHILFE |
-| --- | --- | --- | --- |
 | E57 | Kartusche beschäftigt (Spezialbefehl aktiv) | Die Kommunikation mit der Kartusche ist fehlgeschlagen. | • Unkritischer Fehler. Bitte wiederholen Sie die Messung. • Besteht das Problem weiterhin, wenden Sie sich bitte an den Kundendienst. |
 | E58 | Kartusche beschäftigt (Zeitüberschreitung) | Die Kommunikation mit der Kartusche ist fehlgeschlagen. | • Bitte überprüfen Sie die elektronische Verbindung zwischen der Kartusche und dem Gerät. • Bitte wiederholen Sie die Messung. • Besteht das Problem weiterhin, wenden Sie sich bitte an den Kundendienst. |
 | E59 | Ventilsensorfehler | Ventilposition kann nicht gelesen werden. | • Nehmen Sie Kontakt mit dem Kundendienst auf. |
@@ -100,9 +88,6 @@ Die folgenden kritischen Fehlermeldungen können angezeigt werden:
 | E04 | Kartusche fehlt | Es ist keine Kartusche vorhanden. | • Kartusche einsetzen (siehe [Einsetzen einer Kartusche](08-general-operations-and-configurations.md#section-8-9-6)). |
 | E05 | Abfallbeutel voll | Der Abfallbeutel der Kartusche ist voll. | • Kartusche ersetzen (siehe [Kartuschen wechseln](08-general-operations-and-configurations.md#section-8-9-4)). |
 | E06 | Kommunikation mit der Kartusche nicht möglich | Die Kartusche ist nicht installiert, die Tür ist offen oder die Elektronik der Kartusche ist beschädigt. | • Bitte stellen Sie sicher, dass das Kartuschenkabel korrekt angeschlossen ist und dass die Tür korrekt geschlossen ist. • Hilft dies nicht, ersetzen Sie bitte die Kartusche und informieren Sie den Kundendienst. |
-
-| FEHLERCODE | NAME | BESCHREIBUNG | URSACHEN / ABHILFE |
-| --- | --- | --- | --- |
 | E07 | Datenträger voll | Nicht genügend Speicherplatz zum Fortsetzen des Betriebs. | • Bitte löschen Sie alte Messungen und versuchen Sie es erneut (siehe [Freigeben von Speicherplatz](15-maintenance.md#section-15-2-8)) • Hiermit löschen Sie die Messungen dauerhaft von Ihrem Gerät. • Sie könnten zur Datensicherung Ihre Messungen exportieren. |
 | E12 | FPGA-Initialisierungsfehler | Die Initialisierung der Signalverarbeitungs- Hardware ist fehlgeschlagen. | • Starten Sie das Gerät neu. |
 | E16 | Verarbeitungsfehler | Bei der Verarbeitung der Signale wurde ein Fehler erkannt. | • Die Genauigkeit des neuesten Messergebnisses kann nicht gewährleistet werden. Bitte wiederholen Sie die Analyse. |
@@ -111,9 +96,6 @@ Die folgenden kritischen Fehlermeldungen können angezeigt werden:
 | E23 | Kommunikationsfehler des Temperatursensors | Kommunikation mit dem Temperatursensor auf dem IO-Board nicht möglich. | • Nehmen Sie Kontakt mit dem Kundendienst auf. |
 | E24 | Kommunikationsfehler des Lasers | Kommunikation mit der Optikeinheit nicht möglich. | • Nehmen Sie Kontakt mit dem Kundendienst auf. |
 | E25 | Pumpen- Kommunikations- fehler | Kommunikation mit dem Pumpenmodul nicht möglich. | • Nehmen Sie Kontakt mit dem Kundendienst auf. |
-
-| FEHLERCODE | NAME | BESCHREIBUNG | URSACHEN / ABHILFE |
-| --- | --- | --- | --- |
 | E26 | Kommunikationsfehler der Spannungsversorgung | Kommunikation mit dem Netzteilmodul nicht möglich. | • Nehmen Sie Kontakt mit dem Kundendienst auf. |
 | E27 | Zeitüberschreitung bei der Pumpenkommunikation | Zeitüberschreitung der Kommunikation mit der Pumpe. | • Die Kartuschentür ist offen. • Ein Kabel ist nicht angeschlossen. • Eine Leiterplatte ist beschädigt, entweder in der Pumpe oder in der Kartusche. |
 | E28 | Farbstoffzufuhr leer | Der mit der Kartusche verbundene Farbstoffschlauch ist leer. | • Der Schlauch ist nicht angeschlossen. • Die Kartusche ist defekt. • Bitte wiederholen Sie den Kartuschenwechsel und stellen Sie sicher, dass alle Schläuche korrekt angeschlossen sind. |
@@ -122,9 +104,6 @@ Die folgenden kritischen Fehlermeldungen können angezeigt werden:
 | E31 | Ausfall der Kartuschenelektronik | Der Kartuschenfüllstand kann nicht mehr genau bestimmt werden. | • Ersetzen Sie die Kartusche und wenden Sie sich an den Kundendienst. |
 | E32 | Inkompatible Kartusche | Der Kartuschentyp ist mit diesem Gerät oder dieser Software nicht kompatibel. | • Versichern Sie sich, dass sie den richtigen Kartuschentyp für dieses Gerät nutzen. |
 | E33 | Speicherüberlauf bei der Verarbeitung | Der Speicher der Signalverarbeitungsschaltungen ist übergelaufen. | • Bitte führen Sie das Optik- Reinigungsprotokoll aus (siehe [Protokollübersicht im manuellen Modus](10-measurements.md#section-10-9-1)). • Wiederholen Sie die Messung. |
-
-| FEHLERCODE | NAME | BESCHREIBUNG | URSACHEN / ABHILFE |
-| --- | --- | --- | --- |
 | E38 | Kartusche nicht bereit | Die neue Kartusche wurde nicht korrekt initialisiert. | • Führen Sie das Verfahren „Cartridge Change“ aus (siehe [Kartuschen wechseln](08-general-operations-and-configurations.md#section-8-9-4)). |
 | E39 | Laserstromgrenze erreicht | Der Laser hat seine obere Stromgrenze erreicht. Dies weist auf das Ende seiner Lebensdauer hin. | • Der Laser muss ersetzt werden. Bitte wenden Sie sich an einen Servicetechniker. |
 | E40 | Gating-Set nicht gefunden | Der Verweis auf das für die Messung ausgewählte Gating-Set ist in den Geräteeinstellungen nicht auffindbar. | • Das Gating-Set wurde gelöscht. • Wechseln Sie das Gating-Set und wiederholen Sie die Messung. |
@@ -136,7 +115,7 @@ Die folgenden kritischen Fehlermeldungen können angezeigt werden:
 
 ## 16.4 Fehler- und Warnungsprotokolle {#section-16-4}
 
-Auf die Fehler- und Warnungsprotokollansichten kann separat über die Startseite der Benutzeroberfläche und Drücken der Taste Protokolle zugegriffen werden.
+Drücken Sie auf der Startseite Einstellungen und dann Logs. Wählen Sie Fehlerliste oder Liste aller Warnungen, um die entsprechende Liste zu öffnen.
 
 ![BactoSense — Fehlerprotokoll](/img/gui/de/error-log.png "width=558 class=manual-figure")
 
@@ -244,7 +223,7 @@ Kurzbeschreibung des Fehlers oder Ereignisses
 
 <td colSpan="2">
 
-Taste, um Fehler manuell zu löschen (nur für Admin und Service verfügbar)
+Taste zum manuellen Quittieren von Fehlern (für Basic-, Advanced- und Admin-Benutzer verfügbar, wenn das Gerät nicht läuft)
 
 </td>
 
@@ -290,9 +269,9 @@ Kritische Fehler müssen manuell gelöscht werden. Stellen Sie sicher, dass Sie 
 
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG |
 | --- | --- | --- |
-| 1. | Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense. |  |
-| 2. | Drücken Sie die Taste Protokolle und dann die Taste Fehlerprotokoll |  |
-| 3. | Stellen Sie sicher, dass Sie das Problem, das die Fehlermeldung(en) verursacht hat, gelöst haben. Drücken Sie dann die Taste Fehler löschen. | ![BactoSense — Fehler löschen](/img/gui/de/error-log-clear-errors.png "width=245 class=manual-figure") |
+| 1. | Drücken Sie auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. |  |
+| 2. | Drücken Sie Logs und anschließend Fehlerliste. |  |
+| 3. | Stellen Sie sicher, dass Sie das Problem, das die Fehlermeldung(en) verursacht hat, gelöst haben. Drücken Sie dann die Taste Fehlermeldung quittieren. | ![BactoSense — Fehler löschen](/img/gui/de/error-log-clear-errors.png "width=245 class=manual-figure") |
 | 4. | Gelöschte Fehler erscheinen mit grauen Fehlersymbolen, und es wird ein Ereignis „Fehler gelöscht” zum Protokoll hinzugefügt. Das Gerät kann nun weitere Analysen durchführen. |  |
 
 ## 16.6 Automatischer Selbsttest {#section-16-6}
@@ -333,7 +312,7 @@ ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG
 
 <td>
 
-Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense.
+Drücken Sie als Advanced- oder Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen.
 
 </td>
 
@@ -353,7 +332,7 @@ Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense.
 
 <td>
 
-Auf der Startseite der BactoSense Benutzeroberfläche, drücken Sie auf Wartung.
+Drücken Sie die Taste Wartung.
 
 </td>
 
@@ -373,7 +352,7 @@ Auf der Startseite der BactoSense Benutzeroberfläche, drücken Sie auf Wartung.
 
 <td>
 
-Drücken Sie die Taste Selbsttest.
+Drücken Sie die Taste Selbstkontrolle.
 
 </td>
 
@@ -395,7 +374,7 @@ Drücken Sie die Taste Selbsttest.
 
 :::info[Zusätzliche Informationen]
 
-Drücken Sie die Taste Start oder Neustart, um den Selbsttest zu starten. Sobald die Ausführung abgeschlossen wurde, zeigt das Gerät eine Liste aller Tests mit grünen PASS- oder roten FAIL-Anzeigen. Möglicherweise wurden einige Tests übersprungen: Kann das System mit der Kartusche nicht kommunizieren, werden alle Tests, die Kartuschenkommunikation erfordern, ausgelassen.
+Drücken Sie die Taste Wiederholen. Sobald die Ausführung abgeschlossen wurde, zeigt das Gerät eine Liste aller Tests mit grünen PASS- oder roten FAIL-Anzeigen. Möglicherweise wurden einige Tests übersprungen: Kann das System mit der Kartusche nicht kommunizieren, werden alle Tests, die Kartuschenkommunikation erfordern, ausgelassen.
 
 :::
 

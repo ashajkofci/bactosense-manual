@@ -15,8 +15,8 @@ The “Special import/export” function allows users to export either all measu
 
 |  | WORK STEP | ADDITIONAL INFO / IMAGE |
 | --- | --- | --- |
-| 1. | On the Home screen, press Settings to open the settings menu. |  |
-| 2. | Press the Maintenance button and then the Special export import button. |  |
+| 1. | As an Advanced or Admin user, press Settings on the Home screen to open the settings menu. |  |
+| 2. | Press the Maintenance button. Press the Special export import button. |  |
 | 3. | Connect a USB mass storage device. The USB flash drive should be formatted in FAT32. If needed, press the Refresh USB list button until the device is displayed. |  |
 | 4. | The name of the folder which will be created on the USB device is displayed in the Folder name field. Enter a new folder name if desired. | ![BactoSense — USB import and export](/img/gui/en/usb-import-and-export.png "width=261 class=manual-figure") |
 | 5. | • To export all data, press the Export all button.<br/>• To export diagnostics data, press the Export diagnostics button.<br/>• To export settings, press the Export diagnostics button. Do not remove the USB mass storage device during the data transfer. | Exporting all data can take several hours. If the available storage capacity of the USB mass storage device is too small, a notification will be shown. |
@@ -37,12 +37,12 @@ BactoSense data can be remotely accessed using the FTP protocol (RFC 3659).
 | --- | --- | --- |
 | 1. | • Install an FTP client on the device you want to use to retrieve data, e.g. your laptop.<br/>• Alternatively, the Windows file explorer can be used. |  |
 | 2. | Connect the BactoSense via Ethernet to a safe network (e.g. LAN). Connect your device to the same network. | For information about network configurations (i.e. static and dynamic IP settings), refer to [Network configuration](08-general-operations-and-configurations.md#section-8-6). |
-| 3. | On the Home screen, press Settings to open the settings menu. |  |
+| 3. | As an Admin user, press Settings on the Home screen to open the settings menu. |  |
 | 4. | Press the System settings button. |  |
-| 5. | Press the Services button. |  |
+| 5. | Press the System services button. |  |
 | 6. | Make sure the Enable FTP data access check box is checked. |  |
 | 7. | Choose a port for the FTP server. | The default port is port 21. |
-| 8. | Press the Apply button to reboot the BactoSense. | Only needed in case you changed the configuration. |
+| 8. | Press Apply to save the changes. If a reboot is requested, press Reboot now. | Only needed in case you changed the configuration. |
 | 9. | On the Home screen, press Settings, then System info to retrieve the IP address of the BactoSense. | For information about network configurations (i.e. static and dynamic IP settings), refer to [Network configuration](08-general-operations-and-configurations.md#section-8-6). |
 | 10. | For FTP client: Open the client and enter the login details. For the Windows file explorer: Enter the following address in the address bar: ftp://user:password@ip:port | • User/username: Username to log in to the BactoSense<br/>• Password: Password to log in to the BactoSense<br/>• Host/ip: IP address of the BactoSense<br/>• Port: Port configured in System services view (see figure 12-1) |
 
@@ -50,7 +50,12 @@ BactoSense data can be remotely accessed using the FTP protocol (RFC 3659).
 
 The HTTP and HTTPS servers are enabled by default and available through a web browser or any HTTP request library. Use the following procedure to retrieve specific files via HTTP or HTTPS. As an alternative, consider the web interface ([Web User Interface](13-web-user-interface.md)) or FTP ([Retrieve data via FTP](12-data-access-and-export.md#section-12-2)).
 
-<table className="manual-table">
+<table className="manual-table manual-http-retrieval">
+<colgroup>
+<col className="http-step-column" />
+<col className="http-instruction-column" />
+<col className="http-detail-column" />
+</colgroup>
 
 <thead>
 
@@ -112,7 +117,7 @@ For information about network configurations (i.e. static and dynamic IP setting
 
 <td>
 
-On the Home screen, press Settings to open the settings menu.
+As an Admin user, press Settings on the Home screen to open the settings menu.
 
 </td>
 
@@ -156,7 +161,7 @@ Press the System settings button.
 
 <td>
 
-Press the Services button.
+Press the System services button.
 
 </td>
 
@@ -222,7 +227,7 @@ The default port for HTTP is 80. The default port for HTTPS is 443.
 
 <td>
 
-Press the Apply button to reboot the BactoSense.
+Press Apply to save the changes. If a reboot is requested, press Reboot now.
 
 </td>
 
@@ -266,7 +271,11 @@ On the Home screen, press Settings, then System info to retrieve the IP address 
 
 Open a web browser on your device and enter the target file address into the address field. The file address has the following form: For HTTP: `http://ipaddress:port/export/filename.extension?hash=myhash` Example: http://192.168.1.2/export/history_auto.xlsx?hash=QWRtaW46MTExMQ For HTTPS: `https://ipaddress:port/export/filename.extension?hash=myhash` Example: https://192.168.1.2/export/history_auto.xlsx?hash=QWRtaW46MTExMQ
 
-<table>
+<table className="manual-http-parameters">
+<colgroup>
+<col className="http-parameter-column" />
+<col className="http-description-column" />
+</colgroup>
 
 <thead>
 
@@ -386,7 +395,7 @@ Security key containing user identification. The key is unique to any user-passw
 
 Virtual Network Computing (VNC) is a graphical desktop-sharing system to remotely control another computer. It transmits the keyboard and mouse input from one computer to another, relaying the graphical-screen updates, over a network. The embedded VNC server in the BactoSense is capable of sharing the user interface over the local area network (LAN) only (exception: remote access using a VPN).
 
-:::warning[Restrict VNC access]
+:::caution[Restrict VNC access]
 
 VNC is an insecure protocol and is not recommended outside of a local network or with a VPN connection.
 
@@ -402,12 +411,12 @@ A VNC connection can slow down the user interface since it is very taxing in ter
 | --- | --- | --- |
 | 1. | Install a VNC client on your computer. |  |
 | 2. | Connect the BactoSense via Ethernet to a safe network (LAN). Connect your computer to the same network. | For information about network configurations (i.e. static and dynamic IP settings), refer to [Network configuration](08-general-operations-and-configurations.md#section-8-6). |
-| 3. | On the Home screen, press Settings to open the settings menu. |  |
+| 3. | As an Admin user, press Settings on the Home screen to open the settings menu. |  |
 | 4. | Press the System settings button. |  |
-| 5. | Press the Services button. |  |
+| 5. | Press the System services button. |  |
 | 6. | Make sure the Enable VNC remote control check box is checked. |  |
 | 7. | Choose a port for the VNC server. | The default port is port 5900. |
-| 8. | Press the Apply button to reboot the BactoSense. | Only needed in case you changed the configuration. |
+| 8. | Press Apply to save the changes. If a reboot is requested, press Reboot now. | Only needed in case you changed the configuration. |
 | 9. | On the Home screen, press Settings, then System info to retrieve the IP address of the BactoSense. |  |
 | 10. | Open the VNC client on your computer and connect to the BactoSense using the IP address and port identified previously. | Your VNC client may allow you to change connection settings to optimize the speed of the connection if needed. |
-| 11. | Disable the VNC connection in the BactoSense System services page after finishing. | The VNC connection can slow down the user interface on the BactoSense. |
+| 11. | After finishing, return to System services, disable the VNC checkbox and press Apply. If a reboot is requested, press Reboot now. | The VNC connection can slow down the user interface on the BactoSense. |

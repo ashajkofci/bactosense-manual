@@ -20,7 +20,7 @@ Untenstehende Abbildung zeigt das Ergebnis einer ausgewählten Messung. Von hier
 | 3 | Primärer Dotplot im Fenster mit den Resultatinformationen. Dieser FL1/FL2 Dotplot zeigt alle registrierten Events anhand deren gemessenen Fluoreszenzsignal an. X-Achse = FL1 bei 535 nm. Y-Achse = FL2 bei 715 nm. Das rote Polygon und die rote vertikale Linie zeigen das konfigurierte Gate. Details dazu unter [Kartuschen, Gates und Ergebnisparameter](../results-and-data-analysis/#section-11-3). Drücken Sie auf diese Dotplot-Vorschau, um ein neues Fenster mit allen Dotplots zu öffnen (4). |
 | 4 | Popup-Fenster mit Zugriff auf alle Dotplots. Der FL1/SSC-Dotplot zeigt nur Zellen innerhalb des FL1-FL2-Polygon-Gates anhand ihres Fluoreszenzsignals FL1 (535 nm) und ihres Streulichtsignals SSC (488 nm). Das FL1-Histogramm zeigt alle Zellen innerhalb des FL1-FL2-Polygon-Gates, gruppiert nach ihrer FL1-Fluoreszenz. Die verfügbaren Dotplots hängen vom Gerätemodell und der Konfiguration ab. |
 | 5 | Das Warnungsfeld zeigt an, falls Warnungen generiert wurden während der Messung. Drücken Sie auf die Warnung, um mehr zu erfahren. |
-| 6 | Die Taste Delete löscht die Messung dauerhaft; eine Bestätigung ist erforderlich. |
+| 6 | Die Taste Löschen löscht die Messung dauerhaft; eine Bestätigung ist erforderlich. |
 | 7 | Mit dem Umbenennen-Knopf können Messungen umbenannt werden. |
 | 8 | Mit dem Resultat neu gaten-Knopf können Messungen neu gegatet werden. Mehr Details dazu unter [Messungen regaten](../results-and-data-analysis/#section-11-4-1). |
 | 9 | Mit dem Exportieren-Knopf können Messungen auf einen USB Stick exportiert werden. Mehr Details dazu unter [Export auf einen USB-Datenträger](../measurements/#section-10-8-1). |
@@ -28,7 +28,7 @@ Untenstehende Abbildung zeigt das Ergebnis einer ausgewählten Messung. Von hier
 
 :::info[Mehrere Messungen auswählen]
 
-Mehrfachauswahl und gemeinsame Aktionen: Halten Sie in der Messungsliste eine Messung gedrückt, um die Mehrfachauswahl zu aktivieren. Wählen Sie anschließend Delete / Re-gate oder Export.
+Mehrfachauswahl und gemeinsame Aktionen: Halten Sie in der Messungsliste eine Messung gedrückt, um die Mehrfachauswahl zu aktivieren. Wählen Sie anschließend Löschen / Neu-gaten oder Exportieren.
 
 :::
 
@@ -48,13 +48,13 @@ Gating Sets sind spezifisch für einen Kartuschentyp. Beispielsweise können fü
 
 Der BactoSense verfügt über voreingestellte Gating Sets für alle verfügbaren Kartuschentypen. Diese Gating Sets nennt man Default-Gating-Sets. Sie wurden sorgfältig entwickelt, um mit einer Vielzahl an Proben einsetzbar zu sein.
 
-- Die Standardgates am BactoSense finden Sie, wenn Sie auf der Startseite der Benutzeroberfläche des BactoSense auf Gateeinstellungen drücken.
+- Drücken Sie auf der Startseite Einstellungen und dann Gate Einstellungen, um die verfügbaren Gating-Sets anzuzeigen.
 - Standard-Gating-Sets können weder bearbeitet noch gelöscht werden.
 - Neue Gating Sets können erstellt werden, indem Sie eine Kopie eines existierenden Gating Sets anlegen, wie unter [Erstellen eines neuen Gating Sets](11-results-and-data-analysis.md#section-11-4-2) beschrieben.
 
 ### 11.2.2 Liste verfügbarer Gating Sets und Vorgänge {#section-11-2-2}
 
-Einer Liste aller am BactoSense verfügbaren Standardgates finden Sie, wenn Sie auf der Startseite der Benutzeroberfläche des BactoSense auf Gateeinstellungen drücken.
+Drücken Sie auf der Startseite Einstellungen und dann Gate Einstellungen, um die verfügbaren Gating-Sets anzuzeigen.
 
 ![BactoSense — Liste der Gates](/img/gui/de/gate-settings-list.png "width=599 class=manual-figure")
 
@@ -86,12 +86,18 @@ TCC bedeutet Total Cell Count (Gesamtzellzahl). Die TCC-Kartusche wird daher ver
 
 **Tabelle 11-1 Für die TCC-Kartusche verwendetes Gating Set.**
 
+<div className="manual-cartridge-table-scroll manual-cartridge-gates">
+
 | GATE | TYP | BESCHREIBUNG |
 | --- | --- | --- |
 | TCC | Vieleck | Ein auf der FL1-FL2-Ebene definiertes Polygon. Punkte innerhalb dieses Polygons werden als Zellen (TCC) gezählt. |
 | HNA- Untergrenze | Vertikale Linie | Ein Grenzwert auf FL1. Punkte innerhalb des TCC-Gates oberhalb der HNA-Untergrenze in FL1 werden als HNAC gezählt. Punkte innerhalb des TCC-Gates unterhalb dieser Grenze werden als LNAC gezählt. |
 
+</div>
+
 **Tabelle 11-2 Von der TCC-Kartusche erhaltene Ergebnisparameter.**
+
+<div className="manual-cartridge-table-scroll manual-cartridge-parameters">
 
 | PARAMETER | EINHEIT | NAME | BESCHREIBUNG |
 | --- | --- | --- | --- |
@@ -99,6 +105,8 @@ TCC bedeutet Total Cell Count (Gesamtzellzahl). Die TCC-Kartusche wird daher ver
 | HNAP | % | Prozentanteil der Zellen mit hohem Nukleinsäuregehalt | Anteil der HNA-Zellen an TCC in Prozent: HNAP = (HNAC / TCC) × 100 |
 | LNAC | 1/mL | Anzahl der Zellen mit niedrigem Nukleinsäuregehalt | Anzahl der Zellen innerhalb des TCC-Gates unterhalb der HNA-Untergrenze (vertikales Linien-Gate). |
 | HNAC | 1/mL | Anzahl der Zellen mit hohem Nukleinsäuregehalt | Anzahl der Zellen innerhalb des TCC-Gates oberhalb der HNA-Untergrenze (vertikales Linien-Gate). |
+
+</div>
 
 Weitere Informationen zum Anpassen der Gates finden Sie unter [Gates ändern](11-results-and-data-analysis.md#section-11-4).
 
@@ -108,12 +116,18 @@ ICC bedeutet Intact Cell Count (Intaktzellzahl). Die ICC-Kartusche wird daher ve
 
 **Tabelle 11-3 Für die ICC-Kartusche verwendetes Gating Set.**
 
+<div className="manual-cartridge-table-scroll manual-cartridge-gates">
+
 | GATE | TYP | BESCHREIBUNG |
 | --- | --- | --- |
 | ICC | Vieleck | Ein auf der FL1-FL2-Fläche definiertes Vieleck. Punkte innerhalb dieses Vielecks werden als intakte Zellen gezählt (ICC). |
 | HNA- Untergrenze | Vertikale Linie | Ein Grenzwert auf FL1. Punkte innerhalb des ICC, aber größer als die HNA-Untergrenze in FL1 werden als HNAC gezählt. Punkte innerhalb des ICC, aber kleiner als die Grenze werden als LNAC gezählt. |
 
+</div>
+
 **Tabelle 11-4 Von der ICC-Kartusche erhaltene Ergebnisparameter.**
+
+<div className="manual-cartridge-table-scroll manual-cartridge-parameters">
 
 | PARAMETER | EINHEIT | NAME | BESCHREIBUNG |
 | --- | --- | --- | --- |
@@ -121,6 +135,8 @@ ICC bedeutet Intact Cell Count (Intaktzellzahl). Die ICC-Kartusche wird daher ve
 | HNAP | % | Prozentanteil der Zellen mit hohem Nukleinsäuregehalt | Anteil der HNA-Zellen an ICC in Prozent: HNAP = (HNAC / ICC) × 100 |
 | LNAC | 1/mL | Anzahl der Zellen mit niedrigem Nukleinsäuregehalt | Anzahl der LNA-Zellen innerhalb des ICC-Gates unterhalb der HNA-Untergrenze (vertikales Linien-Gate). |
 | HNAC | 1/mL | Anzahl der Zellen mit hohem Nukleinsäuregehalt | Anzahl der HNA-Zellen innerhalb des ICC-Gates oberhalb der HNA-Untergrenze (vertikales Linien-Gate). |
+
+</div>
 
 Weitere Informationen zum Anpassen der Gates finden Sie unter [Gates ändern](11-results-and-data-analysis.md#section-11-4).
 
@@ -130,12 +146,18 @@ ACC steht für Aktiv-Zellzahl. Die ACC Kartusche wird verwendet, um die Konzentr
 
 **Tabelle 11-5 Für die ACC-Kartusche verwendetes Gating Set.**
 
+<div className="manual-cartridge-table-scroll manual-cartridge-gates">
+
 | GATE | TYP | BESCHREIBUNG |
 | --- | --- | --- |
 | ACC | Vieleck | Ein auf der FL1-FL2-Ebene definiertes Polygon. Punkte innerhalb dieses Polygons werden als aktive Zellen (ACC) gezählt. |
 | HACC-Untergrenze | Vertikale Linie | Ein Grenzwert auf FL1. Punkte innerhalb des ACC-Gates oberhalb der HACC-Untergrenze in FL1 werden als HACC gezählt. Punkte innerhalb des ACC-Gates unterhalb dieser Grenze werden als LACC gezählt. |
 
+</div>
+
 **Tabelle 11-6 Von der ACC-Kartusche erhaltene Ergebnisparameter.**
+
+<div className="manual-cartridge-table-scroll manual-cartridge-parameters">
 
 | PARAMETER | EINHEIT | NAME | BESCHREIBUNG |
 | --- | --- | --- | --- |
@@ -143,6 +165,8 @@ ACC steht für Aktiv-Zellzahl. Die ACC Kartusche wird verwendet, um die Konzentr
 | HACC | 1/mL | Anzahl hochaktiver Zellen | Anzahl aktiver Zellen mit einer FL1-Intensität oberhalb des vertikalen HACC-Gates. |
 | LACC | 1/mL | Anzahl gering aktiver Zellen | Anzahl aktiver Zellen mit einer FL1-Intensität unterhalb des vertikalen HACC-Gates. |
 | HACP | % | Prozentanteil hochaktiver Zellen | Anteil von HACC an ACC in Prozent: HACP = (HACC / ACC) × 100 |
+
+</div>
 
 Weitere Informationen zum Anpassen der Gates finden Sie unter [Gates ändern](11-results-and-data-analysis.md#section-11-4).
 
@@ -152,15 +176,23 @@ CBC steht für Coliform Cell Count (Anzahl coliformer Zellen). Die CBC-Kartusche
 
 **Tabelle 11-7 Für die CBC-Kartusche verwendetes Gate-Set.**
 
+<div className="manual-cartridge-table-scroll manual-cartridge-gates">
+
 | GATE | TYP | BESCHREIBUNG |
 | --- | --- | --- |
 | CBC | Polygon | Ein auf der FL1-FL2-Ebene definiertes Polygon. Fluoreszenzmarkierte coliforme Zellen innerhalb dieses Polygons tragen zu CBC bei. |
 
+</div>
+
 **Tabelle 11-8 Von der CBC-Kartusche erhaltener Ergebnisparameter.**
+
+<div className="manual-cartridge-table-scroll manual-cartridge-parameters">
 
 | PARAMETER | EINHEIT | NAME | BESCHREIBUNG |
 | --- | --- | --- | --- |
 | CBC | 1/mL | Anzahl coliformer Zellen | Konzentration markierter coliformer Zellen innerhalb des CBC-Gates, berechnet aus der Zellzahl und dem analysierten Probenvolumen. |
+
+</div>
 
 Weitere Informationen zum Anpassen der Gates finden Sie unter [Gates ändern](11-results-and-data-analysis.md#section-11-4).
 
@@ -170,15 +202,23 @@ EBC steht für E. coli Cell Count (Anzahl der E.-coli-Zellen). Die EBC-Kartusche
 
 **Tabelle 11-9 Für die EBC-Kartusche verwendetes Gate-Set.**
 
+<div className="manual-cartridge-table-scroll manual-cartridge-gates">
+
 | GATE | TYP | BESCHREIBUNG |
 | --- | --- | --- |
 | EBC | Polygon | Ein auf der FL1-FL2-Ebene definiertes Polygon. Fluoreszenzmarkierte E.-coli-Zellen innerhalb dieses Polygons tragen zu EBC bei. |
 
+</div>
+
 **Tabelle 11-10 Von der EBC-Kartusche erhaltener Ergebnisparameter.**
+
+<div className="manual-cartridge-table-scroll manual-cartridge-parameters">
 
 | PARAMETER | EINHEIT | NAME | BESCHREIBUNG |
 | --- | --- | --- | --- |
 | EBC | 1/mL | Anzahl der E.-coli-Zellen | Konzentration markierter E.-coli-Zellen innerhalb des EBC-Gates, berechnet aus der Zellzahl und dem analysierten Probenvolumen. |
+
+</div>
 
 Weitere Informationen zum Anpassen der Gates finden Sie unter [Gates ändern](11-results-and-data-analysis.md#section-11-4).
 
@@ -188,15 +228,23 @@ NBC steht für Enterococcus Cell Count (Enterokokken-Zellzahl). Die NBC-Kartusch
 
 **Tabelle 11-11 Für die NBC-Kartusche verwendetes Gate-Set.**
 
+<div className="manual-cartridge-table-scroll manual-cartridge-gates">
+
 | GATE | TYP | BESCHREIBUNG |
 | --- | --- | --- |
 | NBC | Polygon | Ein auf der FL1-FL2-Ebene definiertes Polygon. Fluoreszenzmarkierte Enterokokken innerhalb dieses Polygons tragen zu NBC bei. |
 
+</div>
+
 **Tabelle 11-12 Von der NBC-Kartusche erhaltener Ergebnisparameter.**
+
+<div className="manual-cartridge-table-scroll manual-cartridge-parameters">
 
 | PARAMETER | EINHEIT | NAME | BESCHREIBUNG |
 | --- | --- | --- | --- |
 | NBC | 1/mL | Enterokokken-Zellzahl | Konzentration markierter Enterokokken innerhalb des NBC-Gates, berechnet aus der Zellzahl und dem analysierten Probenvolumen. |
+
+</div>
 
 Weitere Informationen zum Anpassen der Gates finden Sie unter [Gates ändern](11-results-and-data-analysis.md#section-11-4).
 
@@ -206,7 +254,7 @@ Weitere Informationen zum Anpassen der Gates finden Sie unter [Gates ändern](11
 
 Regating ist der Prozess des Anwendens eines anderen Gating Sets auf bestehende Messdaten.
 
-- Eine Voraussetzung für Regating ist das Vorhandensein eines solchen zusätzlichen Gating Sets. Einer Liste aller für Ihren Kartuschentyp verfügbaren Gating Sets finden Sie, wenn Sie auf der Startseite der Benutzeroberfläche des BactoSense auf Gateeinstellungen drücken.
+- Eine Voraussetzung für Regating ist das Vorhandensein eines solchen zusätzlichen Gating Sets. Drücken Sie auf der Startseite Einstellungen und dann Gate Einstellungen, um die verfügbaren Gating-Sets anzuzeigen.
 - Der Prozess des Bearbeiten eines bestehenden Gating Sets wird unter [Bearbeiten bestehender Gating Sets](11-results-and-data-analysis.md#section-11-4-3) beschrieben.
 
 <table className="manual-table">
@@ -243,7 +291,7 @@ ZUSÄTZLICHE INFORMATIONEN / ABBILDUNGEN
 
 <td>
 
-Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense.
+Drücken Sie auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen.
 
 </td>
 
@@ -263,7 +311,7 @@ Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense.
 
 <td>
 
-Anhängig davon, wie die Messung durchgeführt wurde, drücken Sie Ergebnisse (manuell) oder Ergebnisse (Online), um die Ergebnisliste zu sehen.
+Drücken Sie Logs und je nach Messart Results (manual mode) oder Results (online mode).
 
 </td>
 
@@ -303,7 +351,7 @@ Um eine Einzelmessung zu regaten, wählen Sie die Messung aus, um die Ergebnisde
 
 <td>
 
-Drücken Sie dann die Taste Regate.
+Drücken Sie in der Einzelresultatansicht Resultat neu gaten oder bei mehreren ausgewählten Messungen Neu-gaten.
 
 </td>
 
@@ -343,7 +391,7 @@ Wählen Sie den das gewünschte Gating Set, indem Sie das entsprechende Kästche
 
 <td>
 
-Drücken Sie Confirm (Bestätigen), um die erneute Gate-Auswertung zu starten.
+Drücken Sie Bestätigen, um die erneute Gate-Auswertung zu starten.
 
 </td>
 
@@ -391,8 +439,8 @@ Erstellen eines neuen Gating-Sets aus einer Kopie
 
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNGEN |
 | --- | --- | --- |
-| 1. | Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense. |  |
-| 2. | Drücken Sie die Taste Gateeinstellungen. |  |
+| 1. | Drücken Sie als Advanced- oder Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. |  |
+| 2. | Drücken Sie die Taste Gate Einstellungen. |  |
 | 3. | Identifizieren Sie in der Liste der verfügbaren Gating Sets das Gating Set, von dem Sie eine Kopie erstellen wollen, um das neue Gating Set zu erstellen. | Stellen Sie sicher, dass der Gatingtyp (z.B. TCC, ICC) zu Ihrer Zielanwendung passt. |
 | 4. | Drücken Sie das Kopieren-Symbol, um eine Kopie des Gating Sets zu erstellen. |  |
 | 5. | In der neu erstellten Kopie drücken Sie das Bearbeiten-Symbol und folgen den Bearbeitungsanweisungen unter [Bearbeiten bestehender Gating Sets](11-results-and-data-analysis.md#section-11-4-3). | ![BactoSense — Gate bearbeiten](/img/gui/icons/edit-gate-button.png "width=48 class=manual-icon") |
@@ -401,10 +449,10 @@ Erstellen eines neuen Gating-Sets von Grund auf
 
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNGEN |
 | --- | --- | --- |
-| 1. | Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense. |  |
-| 2. | Drücken Sie die Taste Gateeinstellungen. |  |
+| 1. | Drücken Sie als Advanced- oder Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. |  |
+| 2. | Drücken Sie die Taste Gate Einstellungen. |  |
 | 3. | Drücken Sie unten in der Aktionsleiste Neu. |  |
-| 4. | Geben Sie in das Namensfeld einen Namen für das Gateset ein. Wählen Sie im Typfeld aus, für welche Kartusche das Gateset genutzt werden soll. |  |
+| 4. | Geben Sie einen Namen für das Gating-Set ein und wählen Sie eine der verfügbaren Vorlagen für die eingesetzte Kartusche. |  |
 | 5. | Folgen Sie dann dem Gatekonfigurations- assistenten auf dem Bildschirm, wie in den Gatebearbeitungsanweisungen unter [Bearbeiten bestehender Gating Sets](11-results-and-data-analysis.md#section-11-4-3) beschrieben. |  |
 | 6. | Wenn Sie fertig sind, können Sie das neue Gating Set auswählen, wenn Sie neue Messungen erstellen oder bestehende Messungen regaten möchten, siehe Beschreibung unter [Messungen regaten](11-results-and-data-analysis.md#section-11-4-1). |  |
 
@@ -428,21 +476,29 @@ Die folgenden Schritte beschreiben, wie Sie ein Gate anpassen:
 
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG |
 | --- | --- | --- |
-| 1. | Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense. | ![BactoSense — Schaltfläche Startseite](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
-| 2. | Drücken Sie die Taste Gateeinstellungen. | ![BactoSense — Gate-Einstellungen](/img/gui/icons/gate-settings-button.png "width=48 class=manual-icon") |
+| 1. | Drücken Sie als Advanced- oder Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. | ![BactoSense — Schaltfläche Einstellungen](/img/gui/de/home-settings-button.png "width=57 class=manual-icon-settings-button-half") |
+| 2. | Drücken Sie die Taste Gate Einstellungen. | ![BactoSense — Gate-Einstellungen](/img/gui/icons/gate-settings-button.png "width=48 class=manual-icon") |
 | 3. | Drücken Sie die Taste Bearbeiten des zu bearbeitenden Gates. | ![BactoSense — Gate bearbeiten](/img/gui/icons/edit-gate-button.png "width=48 class=manual-icon") |
 | 4. | Falls gewünscht, ändern Sie den Namen und drücken dann die Taste Weiter. |  |
 | 5. | Passen Sie die Anzahl und die Positionen der Ecken des Vielecks an (für TCC und ICC schauen Sie unter [Strategie zur Anpassung von Gates für TCC und ICC](11-results-and-data-analysis.md#section-11-4-4) nach). Ein Vieleck-Gate kann zwischeb 3 und 6 Ecken haben. | ![BactoSense — ICC-Gatedefinition](/img/gui/de/icc-gate-definition.png "width=282 class=manual-figure") |
 | 6. | Drücken Sie die Taste Weiter. |  |
 | 7. | Geben Sie die HNA-Untergrenze ein (für TCC und ICC schauen Sie unter [Strategie zur Anpassung von Gates für TCC und ICC](11-results-and-data-analysis.md#section-11-4-4) nach). | ![BactoSense — HNA-Untergrenze](/img/gui/de/hna-lower-limit.png "width=282 class=manual-figure") |
-| 8. | Drücken Sie die Taste Speichern und bestätigen Sie. |  |
+| 8. | Drücken Sie Speichern. Wählen Sie im Dialog Speichern, um das vorhandene Set zu aktualisieren, oder Speichern als neues Gating, um das Original zu behalten und ein neues Set anzulegen. |  |
 | 9. | Wenn Sie fertig sind, können Sie das bearbeitete Gating Set auswählen, wenn Sie neue Messungen erstellen oder bestehende Messungen regaten möchten, siehe Beschreibung unter [Messungen regaten](11-results-and-data-analysis.md#section-11-4-1). |  |
 
 ### 11.4.4 Strategie zur Anpassung von Gates für TCC und ICC {#section-11-4-4}
 
 Der BactoSense wird mit Standard-Gate-Sets geliefert, die sich für die Mehrheit der Proben eignen. Falls erforderlich können erfahrene Benutzer jedoch Gates anpassen. Eine allgemeine Prozedur zum Anpassen eines Gates wird unten dargestellt und gilt sowohl für TCC- als auch ICC-Kartuschen.
 
-<table className="manual-table">
+<div className="manual-narrow-details-scroll">
+
+<table className="manual-table manual-narrow-details">
+
+<colgroup>
+<col className="procedure-step-column" />
+<col className="procedure-instruction-column" />
+<col className="procedure-detail-column" />
+</colgroup>
 
 <thead>
 
@@ -502,7 +558,7 @@ Messen Sie mittels des Standard- Wasseranalyse-Protokolls eine Wasserprobe. Auf 
 
 <td>
 
-Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense und drücken Sie die Taste Gateeinstellungen.
+Drücken Sie auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. Drücken Sie die Taste Gate Einstellungen.
 
 </td>
 
@@ -672,7 +728,7 @@ FL2
 
 <td>
 
-Drücken Sie Weiter und Speichern. Bestätigen Sie, dass Sie das neue Gateset speichern möchten.
+Drücken Sie Weiter und Speichern. Bestätigen Sie eine neue Vorlage mit Ja. Wählen Sie bei einem bearbeiteten Set im Dialog Speichern oder Speichern als neues Gating.
 
 </td>
 
@@ -969,6 +1025,8 @@ Regaten Sie nochmals die Wasseranalyse und stellen Sie sicher, dass das Gate gee
 </tbody>
 
 </table>
+
+</div>
 ## 11.5 Erweiterte Datenanalyse {#section-11-5}
 
 BactoSense-Messdaten können im Durchflusszytometrie-(FCS)-3.1-Standard-Dateiformat exportiert werden. Das FCS-Dateiformat wurde durch die International Society for Advancement of Cytometry (ISAC) standardisiert, um die Interoperabilität zwischen verschiedenen Durchflusszytometriegeräten und Analysesoftware sicherzustellen. Es gibt verschiedene Versionen des FCS-Formats, wobei jede Version Verbesserungen und zusätzliche Funktionen mitbringt. FCS-Daten können für benutzerdefiniertes Offline-Postprocessing benutzt werden, z.B. die Anwendung komplexer Gatingstrategien, „microbial fingerprinting”, automatisierter Anomalienerkennung und viele mehr.
@@ -991,7 +1049,16 @@ Für Hilfestellung bei der Einführung einer erweiterten Datenanalysetoolkette w
 
 Um die Ergebnisse des BactoSense mit einem anderen Durchflusszytometer vergleichen zu können, kann eine Referenzlösung mit autofluoreszierenden Perlen analysiert werden. Diese Methode erlaubt es dem Benutzer, die Messskalen verschiedener Geräte zu vergleichen.
 
-<table className="manual-table">
+<div className="manual-narrow-details-scroll">
+
+<table className="manual-table manual-narrow-details manual-narrow-details-split">
+
+<colgroup>
+<col className="procedure-step-column" />
+<col className="procedure-instruction-column" />
+<col className="procedure-detail-column" />
+<col className="procedure-detail-column" />
+</colgroup>
 
 <thead>
 
@@ -1145,7 +1212,7 @@ Drücken Sie auf der Startseite Modus und wählen Sie „Manueller Modus“. Dr�
 
 <td>
 
-Wählen Sie aus der Liste das Protokoll Prime (Ansaugen).
+Wählen Sie Ansaugen aus der Protokollliste.
 
 </td>
 
@@ -1187,7 +1254,7 @@ Drücken Sie die Tasten Weiter und Starten. Lassen Sie das Ansaugprotokoll zu En
 
 <td>
 
-Wählen Sie aus der Liste das Perlenanalyse-Protokoll aus und starten Sie es.
+Drücken Sie Neu, wählen Sie Beads Analyse aus der Liste und drücken Sie Weiter und Start.
 
 </td>
 
@@ -1288,3 +1355,5 @@ Mit den unterschiedlichen Werten für die beiden Geräte ist es nun möglich, ih
 </tbody>
 
 </table>
+
+</div>

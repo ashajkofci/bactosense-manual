@@ -32,15 +32,19 @@ Los datos de dispersión están disponibles de las siguientes formas:
 
 **Activación del** **Scientific Package**
 
+Active el paquete cuando el instrumento esté inactivo, con Modo PLC y Modo demostración desactivados.
+
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN |
 | --- | --- | --- |
 | 1. | Póngase en contacto con su representante comercial de bNovate para adquirir una clave de activación. |  |
-| 2. | Tras recibir la clave de activación, inicie sesión como usuario Admin en BactoSense. |  |
+| 2. | Tras recibir la clave de activación, inicie sesión como Administrador (Admin) en BactoSense. |  |
 | 3. | En la pantalla Home, pulse Ajustes. |  |
-| 4. | Pulse el botón Ajustes del sistema. |  |
-| 5. | Pulse el botón Actualizaciones. |  |
-| 6. | Pulse el botón Actualizar. |  |
-| 7. | Introduzca la clave de activación y pulse OK. |  |
+| 4. | Pulse el botón Ajustes del sistema. | ![BactoSense — Menú Ajustes: Ajustes del sistema](/img/gui/es/settings-menu-system-settings.png "width=360") |
+| 5. | Pulse el botón Actualizaciones. | ![BactoSense — Ajustes del sistema: Actualizaciones](/img/gui/es/scientific-package-upgrades-menu.png "width=360") |
+| 6. | Pulse el botón Actualizar. | ![BactoSense — Licencia del paquete Scientific y botón Actualizar](/img/gui/es/scientific-package-upgrades.png "width=360") |
+| 7. | Introduzca la clave de activación y pulse OK. | OK estará disponible cuando introduzca una clave.<br />![BactoSense — Introducción de la clave de activación del paquete Scientific](/img/gui/es/scientific-package-activation-key.png "width=360") |
+
+Tras la activación correcta, pulse OK en el mensaje de confirmación. Si el instrumento se reinicia, espere a que termine y vuelva a abrir Actualizaciones. Compruebe que Paquete científico muestre Activado.
 
 ## 9.2 Paquete Management {#section-9-2}
 
@@ -59,10 +63,12 @@ El *Management Package* está destinado al uso del instrumento en entornos con m
 
 **Activación del** **Management Package**
 
+Active el paquete cuando el instrumento esté inactivo, con Modo PLC y Modo demostración desactivados.
+
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN |
 | --- | --- | --- |
 | 1. | Póngase en contacto con su representante comercial de bNovate para adquirir una clave de activación. |  |
-| 2. | Tras recibir la clave de activación, inicie sesión como usuario Admin en BactoSense. |  |
+| 2. | Tras recibir la clave de activación, inicie sesión como Administrador (Admin) en BactoSense. |  |
 | 3. | En la pantalla Home, pulse Ajustes. |  |
 | 4. | Pulse el botón Ajustes del sistema. |  |
 | 5. | Pulse el botón Actualizaciones. |  |

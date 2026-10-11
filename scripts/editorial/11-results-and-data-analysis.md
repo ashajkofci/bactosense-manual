@@ -15,7 +15,7 @@ The figure below shows the result of a selected measurement. From here, the user
 | 5 | The optional warnings field indicates whether any warnings were generated during the measurement. Tap on the field to learn more. |
 | 6 | The Delete button removes the measurement permanently (requires confirmation). |
 | 7 | The Rename button can be used to change the measurement name. |
-| 8 | The Re-Gate result button allows to apply a different gating to the measurement data. For details refer to [Regate measurements](../results-and-data-analysis/#section-11-4-1). |
+| 8 | The Re-gate result button allows to apply a different gating to the measurement data. For details refer to [Regate measurements](../results-and-data-analysis/#section-11-4-1). |
 | 9 | The Export button allows to save this result to a USB stick. More information can be found in [Export to a USB drive](../measurements/#section-10-8-1). |
 | 10 | The navigation buttons on the left and right of the result view allow you to navigate to the previous and next measurements, respectively. |
 
@@ -41,13 +41,13 @@ Gating sets are specific for a type of cartridge. As an example, only gating set
 
 The BactoSense has preconfigured gating sets for all available cartridge types. These gating sets are called Default gating sets. They have been carefully designed to be applicable to the vast majority of samples.
 
-- The default gates on the BactoSense can be found when pressing on Gate settings in the Home menu of the BactoSense user interface.
+- On the Home screen, press Settings, then Gate settings to view the available gating sets.
 - Default gating sets can neither be modified nor deleted.
 - New gating sets can be created by editing a copy of an existing gating set, as described in [Create a new gating set](11-results-and-data-analysis.md#section-11-4-2).
 
 ### 11.2.2 List of available gating sets and operations {#section-11-2-2}
 
-A list of all available gating sets on the BactoSense can be found when pressing Gate settings in the Home menu of the BactoSense user interface.
+On the Home screen, press Settings, then Gate settings to view the available gating sets.
 
 ![BactoSense — Gate settings list](/img/gui/en/gate-settings-list.png "width=599 class=manual-figure")
 
@@ -79,12 +79,18 @@ TCC refers to Total Cell Count. The TCC cartridge is therefore used to measure t
 
 **Table 11-1 Gating set used for the TCC cartridge.**
 
+<div className="manual-cartridge-table-scroll manual-cartridge-gates">
+
 | GATE | TYPE | DESCRIPTION |
 | --- | --- | --- |
 | TCC | Polygon | A polygon defined on the FL1-FL2 plane. Points inside this polygon are counted as cells (TCC). |
 | HNA lower limit | Vertical line | A threshold on FL1. Points within TCC but larger than the HNA lower limit in FL1 are counted as HNAC. Points within TCC but smaller than the limit are counted as LNAC. |
 
+</div>
+
 **Table 11-2 Result parameters obtained from the TCC cartridge.**
+
+<div className="manual-cartridge-table-scroll manual-cartridge-parameters">
 
 | PARAMETER | UNIT | NAME | DESCRIPTION |
 | --- | --- | --- | --- |
@@ -92,6 +98,8 @@ TCC refers to Total Cell Count. The TCC cartridge is therefore used to measure t
 | HNAP | % | High Nucleic Acid Percentage | The percentage of HNA cells relative to TCC:<br/>HNAP = (HNAC / TCC) × 100 |
 | LNAC | 1/mL | Low Nucleic Acid Count | The number of cells inside the TCC gate, but below the HNA lower limit (vertical line gate). |
 | HNAC | 1/mL | High Nucleic Acid Count | The number of cells inside the TCC gate and above the HNA lower limit (vertical line gate). |
+
+</div>
 
 For further information on how to adjust the gates see [Change gates](11-results-and-data-analysis.md#section-11-4).
 
@@ -101,12 +109,18 @@ ICC refers to Intact Cell Count. The ICC cartridge is therefore used to measure 
 
 **Table 11-3 Gating set used for the ICC cartridge.**
 
+<div className="manual-cartridge-table-scroll manual-cartridge-gates">
+
 | GATE | TYPE | DESCRIPTION |
 | --- | --- | --- |
 | ICC | Polygon | A polygon defined on the FL1-FL2 plane. Points inside this polygon are counted as intact cells (ICC). |
 | HNA lower limit | Vertical line | A threshold on FL1. Points within ICC but larger than the HNA lower limit in FL1 are counted as HNAC. Points within ICC but smaller than the limit are counted as LNAC. |
 
+</div>
+
 **Table 11-4 Result parameters obtained from the ICC cartridge.**
+
+<div className="manual-cartridge-table-scroll manual-cartridge-parameters">
 
 | PARAMETER | UNIT | NAME | DESCRIPTION |
 | --- | --- | --- | --- |
@@ -114,6 +128,8 @@ ICC refers to Intact Cell Count. The ICC cartridge is therefore used to measure 
 | HNAP | % | High Nucleic Acid Percentage | The percentage of HNA cells relative to ICC:<br/>HNAP = (HNAC / ICC) × 100 |
 | LNAC | 1/mL | Low Nucleic Acid Count | The number of LNA cells inside the ICC gate, but below the HNA lower limit (vertical line gate). |
 | HNAC | 1/mL | High Nucleic Acid Count | The number of HNA cells inside the ICC gate and above the HNA lower limit (vertical line gate). |
+
+</div>
 
 For further information on how to adjust the gates see [Change gates](11-results-and-data-analysis.md#section-11-4).
 
@@ -123,12 +139,18 @@ ACC refers to Active Cell Count. The ACC cartridge is therefore used to measure 
 
 **Table 11-5 Gating set used for the ACC cartridge.**
 
+<div className="manual-cartridge-table-scroll manual-cartridge-gates">
+
 | GATE | TYPE | DESCRIPTION |
 | --- | --- | --- |
 | ACC | Polygon | A polygon defined on the FL1-FL2 plane. Points inside this polygon are counted as active cells (ACC). |
 | HACC lower limit | Vertical line | A threshold on FL1. Points within ACC but larger than the HACC lower limit in FL1 are counted as HACC. Points within ACC but smaller than the limit are counted as LACC. |
 
+</div>
+
 **Table 11-6 Result parameters obtained from the ACC cartridge.**
+
+<div className="manual-cartridge-table-scroll manual-cartridge-parameters">
 
 | PARAMETER | UNIT | NAME | DESCRIPTION |
 | --- | --- | --- | --- |
@@ -136,6 +158,8 @@ ACC refers to Active Cell Count. The ACC cartridge is therefore used to measure 
 | HACC | 1/mL | Highly Active Cell Count | The number of active cells with FL1 intensity higher than the HACC vertical gate. |
 | LACC | 1/mL | Lowly Active Cell Count | The number of active cells with FL1 intensity lower than the HACC vertical gate. |
 | HACP | % | Highly Active Cell Percentage | The percentage of HACC among ACC.<br/>HACP = (HACC / ACC) × 100 |
+
+</div>
 
 For further information on how to adjust the gates see [Change gates](11-results-and-data-analysis.md#section-11-4).
 
@@ -145,15 +169,23 @@ CBC refers to Coliform Cell Count. The CBC cartridge measures the concentration 
 
 **Table 11-7 Gating set used for the CBC cartridge.**
 
+<div className="manual-cartridge-table-scroll manual-cartridge-gates">
+
 | GATE | TYPE | DESCRIPTION |
 | --- | --- | --- |
 | CBC | Polygon | A polygon defined on the FL1-FL2 plane. Fluorescently labelled coliform cells inside this polygon contribute to CBC. |
 
+</div>
+
 **Table 11-8 Result parameter obtained from the CBC cartridge.**
+
+<div className="manual-cartridge-table-scroll manual-cartridge-parameters">
 
 | PARAMETER | UNIT | NAME | DESCRIPTION |
 | --- | --- | --- | --- |
 | CBC | 1/mL | Coliform Cell Count | Concentration of labelled coliform cells inside the CBC gate, calculated from the cell count and analysed sample volume. |
+
+</div>
 
 For further information on how to adjust the gates see [Change gates](11-results-and-data-analysis.md#section-11-4).
 
@@ -163,15 +195,23 @@ EBC refers to E. coli Cell Count. The EBC cartridge measures the concentration o
 
 **Table 11-9 Gating set used for the EBC cartridge.**
 
+<div className="manual-cartridge-table-scroll manual-cartridge-gates">
+
 | GATE | TYPE | DESCRIPTION |
 | --- | --- | --- |
 | EBC | Polygon | A polygon defined on the FL1-FL2 plane. Fluorescently labelled E. coli cells inside this polygon contribute to EBC. |
 
+</div>
+
 **Table 11-10 Result parameter obtained from the EBC cartridge.**
+
+<div className="manual-cartridge-table-scroll manual-cartridge-parameters">
 
 | PARAMETER | UNIT | NAME | DESCRIPTION |
 | --- | --- | --- | --- |
 | EBC | 1/mL | E. coli Cell Count | Concentration of labelled E. coli cells inside the EBC gate, calculated from the cell count and analysed sample volume. |
+
+</div>
 
 For further information on how to adjust the gates see [Change gates](11-results-and-data-analysis.md#section-11-4).
 
@@ -181,15 +221,23 @@ NBC refers to Enterococcus Cell Count. The NBC cartridge measures the concentrat
 
 **Table 11-11 Gating set used for the NBC cartridge.**
 
+<div className="manual-cartridge-table-scroll manual-cartridge-gates">
+
 | GATE | TYPE | DESCRIPTION |
 | --- | --- | --- |
 | NBC | Polygon | A polygon defined on the FL1-FL2 plane. Fluorescently labelled enterococci inside this polygon contribute to NBC. |
 
+</div>
+
 **Table 11-12 Result parameter obtained from the NBC cartridge.**
+
+<div className="manual-cartridge-table-scroll manual-cartridge-parameters">
 
 | PARAMETER | UNIT | NAME | DESCRIPTION |
 | --- | --- | --- | --- |
 | NBC | 1/mL | Enterococcus Cell Count | Concentration of labelled enterococci inside the NBC gate, calculated from the cell count and analysed sample volume. |
+
+</div>
 
 For further information on how to adjust the gates see [Change gates](11-results-and-data-analysis.md#section-11-4).
 
@@ -199,7 +247,7 @@ For further information on how to adjust the gates see [Change gates](11-results
 
 Regating is the process of applying a different gating set to existing measurement data.
 
-- A prerequisite for regating is the presence of such additional gating set. Find all available gating sets for your cartridge type when pressing Gate settings on the Home menu of the BactoSense user interface.
+- A prerequisite for regating is the presence of such additional gating set. On the Home screen, press Settings, then Gate settings to view the available gating sets.
 - The process of modifying an existing gating set is described in [Edit existing gating sets](11-results-and-data-analysis.md#section-11-4-3).
 
 <table className="manual-table">
@@ -236,7 +284,7 @@ ADDITIONAL INFO / IMAGES
 
 <td>
 
-Navigate to the Home menu of the BactoSense user interface.
+On the Home screen, press Settings to open the settings menu.
 
 </td>
 
@@ -256,7 +304,7 @@ Navigate to the Home menu of the BactoSense user interface.
 
 <td>
 
-Depending on how the measurement was performed, press Results (manual) or Results (Online) to see the list of results.
+Press Logs, then Results (manual mode) or Results (online mode), depending on how the measurement was performed.
 
 </td>
 
@@ -296,7 +344,7 @@ To regate a single measurement, select the measurement to see the result details
 
 <td>
 
-Then press the Re-gate button.
+Press Re-gate result in the single-result view, or Re-gate when several measurements are selected.
 
 </td>
 
@@ -384,7 +432,7 @@ Creating a new gating set from a copy
 
 |  | WORK STEP | ADDITIONAL INFO / IMAGES |
 | --- | --- | --- |
-| 1. | Navigate to the Home menu of the BactoSense user interface. |  |
+| 1. | As an Advanced or Admin user, press Settings on the Home screen to open the settings menu. |  |
 | 2. | Press the Gate settings button. |  |
 | 3. | In the list of available gating sets, identify the gating set from which you want to make a copy to create the new gating set. | Make sure the gating type (e.g. TCC, ICC) matches with your target application. |
 | 4. | Press the Copy icon to create a copy of the gating set. |  |
@@ -394,10 +442,10 @@ Creating a new gating set from scratch
 
 |  | WORK STEP | ADDITIONAL INFO / IMAGES |
 | --- | --- | --- |
-| 1. | Navigate to the Home menu of the BactoSense user interface. |  |
+| 1. | As an Advanced or Admin user, press Settings on the Home screen to open the settings menu. |  |
 | 2. | Press the Gate settings button. |  |
 | 3. | In the action bar at the bottom, press New. |  |
-| 4. | In the name field, type a name for the set of gates. In the type field, select for which cartridge type the set of gates will be used. |  |
+| 4. | Enter a name for the set of gates and select one of the available templates for the installed cartridge. |  |
 | 5. | Then follow the gate configuration on- screen wizard as describe in the gate editing instructions in [Edit existing gating sets](11-results-and-data-analysis.md#section-11-4-3). |  |
 | 6. | After finishing, you can select the new gating set when creating new measurements, or regate existing measurements, as described in [Regate measurements](11-results-and-data-analysis.md#section-11-4-1). |  |
 
@@ -421,21 +469,29 @@ The following procedure describes how to adjust a gate:
 
 |  | WORK STEP | ADDITIONAL INFO / IMAGE |
 | --- | --- | --- |
-| 1. | Navigate to the Home menu of the BactoSense user interface. | ![BactoSense — Home button](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
+| 1. | As an Advanced or Admin user, press Settings on the Home screen to open the settings menu. | ![BactoSense — Settings button](/img/gui/en/home-settings-button.png "width=57 class=manual-icon-settings-button-half") |
 | 2. | Press the Gate settings button. | ![BactoSense — Gate settings](/img/gui/icons/gate-settings-button.png "width=48 class=manual-icon") |
 | 3. | Press the Edit button of the gate you wish to edit. | ![BactoSense — Edit gate](/img/gui/icons/edit-gate-button.png "width=48 class=manual-icon") |
 | 4. | Change the name if desired, then press the Next button. |  |
 | 5. | Adjust the number and position of polygon corners (for TCC and ICC refer to [Strategy to adjust gates for TCC and ICC](11-results-and-data-analysis.md#section-11-4-4)). A polygon gate can have between 3 and 6 corners. | ![BactoSense — ICC gate definition](/img/gui/en/icc-gate-definition.png "width=282 class=manual-figure") |
 | 6. | Press the Next button. |  |
 | 7. | Enter the HNA lower limit (for TCC and ICC refer to [Strategy to adjust gates for TCC and ICC](11-results-and-data-analysis.md#section-11-4-4)). | ![BactoSense — HNA lower limit](/img/gui/en/hna-lower-limit.png "width=282 class=manual-figure") |
-| 8. | Press the Save button and confirm. |  |
+| 8. | Press Save. In the save dialog, choose Save to update the existing set, or Save as new set to keep the original and create a new set. |  |
 | 9. | After finishing, you can select the modified gating set when creating new measurements, or regate existing measurements, as described in [Regate measurements](11-results-and-data-analysis.md#section-11-4-1). |  |
 
 ### 11.4.4 Strategy to adjust gates for TCC and ICC {#section-11-4-4}
 
 The BactoSense is delivered with default gate sets that are suitable for the vast majority of samples. If needed however, advanced users have the possibility to adjust the gate. A general procedure to adjust the gate is explained below and is valid for both TCC and ICC cartridges.
 
-<table className="manual-table">
+<div className="manual-narrow-details-scroll">
+
+<table className="manual-table manual-narrow-details">
+
+<colgroup>
+<col className="procedure-step-column" />
+<col className="procedure-instruction-column" />
+<col className="procedure-detail-column" />
+</colgroup>
 
 <thead>
 
@@ -479,7 +535,7 @@ Measure a water sample using the standard Water analysis protocol. On the Result
 
 <td>
 
-![Illustration for table on manual page 108](/img/manual/cell-564a3512838d.png "width=252 class=manual-figure")
+![Illustration for table on manual page 108](/img/manual/cell-564a3512838d.png "width=126 class=manual-figure")
 
 </td>
 
@@ -495,7 +551,7 @@ Measure a water sample using the standard Water analysis protocol. On the Result
 
 <td>
 
-Navigate to the Home menu of the BactoSense user interface and press the Gate settings button.
+On the Home screen, press Settings to open the settings menu. Press the Gate settings button.
 
 </td>
 
@@ -649,7 +705,7 @@ FL2
 
 <td>
 
-![Illustration for table on manual page 108](/img/manual/cell-374bfaa7d23b.png "width=252 class=manual-figure")
+![Illustration for table on manual page 108](/img/manual/cell-374bfaa7d23b.png "width=126 class=manual-figure")
 
 </td>
 
@@ -665,7 +721,7 @@ FL2
 
 <td>
 
-Press Next and Save. Confirm that you wish to Save the new set of gates.
+Press Next and Save. For a new template, confirm with Yes. For an edited set, choose Save or Save as new set in the save dialog.
 
 </td>
 
@@ -755,7 +811,7 @@ Open the FL1 histogram and locate the first valley after the noise peak, i.e. th
 
 <td>
 
-![Illustration for table on manual page 109](/img/manual/cell-d44e977152e1.png "width=252 class=manual-figure")
+![Illustration for table on manual page 109](/img/manual/cell-d44e977152e1.png "width=126 class=manual-figure")
 
 </td>
 
@@ -777,7 +833,7 @@ Return to Gate settings and again edit your gate. Place the left limits of the g
 
 <td>
 
-![Illustration for table on manual page 109](/img/manual/cell-67de70c6bd1f.png "width=252 class=manual-figure")
+![Illustration for table on manual page 109](/img/manual/cell-67de70c6bd1f.png "width=126 class=manual-figure")
 
 </td>
 
@@ -887,7 +943,7 @@ To place the HNA lower limit, open again the FL1 histogram and locate the minimu
 
 <td>
 
-![Illustration for table on manual page 110](/img/manual/cell-3dd4365d2ad3.png "width=252 class=manual-figure")
+![Illustration for table on manual page 110](/img/manual/cell-3dd4365d2ad3.png "width=126 class=manual-figure")
 
 </td>
 
@@ -925,7 +981,7 @@ Return to Gate settings and again edit your gate.
 
 <td>
 
-Navigate to the HNA lower limit configuration step. Enter the previously identified HNA lower limit to the FL1 field, press Save and confirm.
+Navigate to the HNA lower limit configuration step. Enter the previously identified HNA lower limit to the FL1 field, press Save and select Save in the save dialog.
 
 </td>
 
@@ -962,6 +1018,8 @@ Regate the water analysis measurement again and verify that the gate is suitable
 </tbody>
 
 </table>
+
+</div>
 ## 11.5 Advanced data analysis {#section-11-5}
 
 BactoSense measurement data can be exported in Flow Cytometry Standard (FCS) 3.1 file format. The FCS file format is standardized by the International Society for Advancement of Cytometry (ISAC) to ensure interoperability between different flow cytometry instruments and analysis software. There are different versions of the FCS format with each version introducing improvements and additional features. FCS data can be used for custom offline postprocessing, such as the application of complex gating strategies, “microbial fingerprinting”, automated anomaly detection and many more.
@@ -984,7 +1042,16 @@ For help with the setup of an advanced data analysis tool chain, please contact 
 
 To compare results of the BactoSense to another flow cytometer, a reference solution containing auto fluorescent beads can be analyzed. This method allows the user to compare the measurement scales of different devices.
 
-<table className="manual-table">
+<div className="manual-narrow-details-scroll">
+
+<table className="manual-table manual-narrow-details manual-narrow-details-split">
+
+<colgroup>
+<col className="procedure-step-column" />
+<col className="procedure-instruction-column" />
+<col className="procedure-detail-column" />
+<col className="procedure-detail-column" />
+</colgroup>
 
 <thead>
 
@@ -1138,7 +1205,7 @@ On the Home screen, press Mode and select Manual mode. Press Back, then Measure 
 
 <td>
 
-Choose the Prime protocol from the list.
+Select Prime from the protocol list.
 
 </td>
 
@@ -1180,7 +1247,7 @@ Press the Next and Start button. Let the priming protocol finish.
 
 <td>
 
-Choose the Beads Analysis protocol from the list and run it.
+Press New, choose Beads Analysis from the list, then press Next and Start.
 
 </td>
 
@@ -1228,7 +1295,7 @@ On the FL1 vs counts histogram, estimate the log value of each peak’s center o
 
 <td>
 
-![Illustration for table on manual page 113](/img/manual/cell-c2ba9a559620.png "width=248 class=manual-figure")
+![Illustration for table on manual page 113](/img/manual/cell-c2ba9a559620.png "width=246 class=manual-figure")
 
 </td>
 
@@ -1250,7 +1317,7 @@ Measure the same beads with the other flow cytometer you want to compare and rep
 
 <td>
 
-![Illustration for table on manual page 113](/img/manual/cell-4c2343e0bbfe.png "width=248 class=manual-figure")
+![Illustration for table on manual page 113](/img/manual/cell-4c2343e0bbfe.png "width=246 class=manual-figure")
 
 </td>
 
@@ -1281,3 +1348,5 @@ With the different values obtained for both devices, it is now possible to compa
 </tbody>
 
 </table>
+
+</div>

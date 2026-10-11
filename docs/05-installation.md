@@ -88,7 +88,7 @@ Install two M8 screws at the same height, separated horizontally by 265 mm (10.4
 
 <td>
 
-:::warning[Secure wall mounting]
+:::caution[Secure wall mounting]
 
 The fixation must carry at least 60 kg (132 lbs).
 
@@ -158,7 +158,7 @@ The BactoSense must be operated using the supplied original power supply unit to
 
 :::
 
-:::warning[Stable power supply]
+:::caution[Stable power supply]
 
 An uninterrupted and stable power supply as specified in [Technical data](03-instrument-overview.md#section-3-2) must be guaranteed.
 
@@ -309,7 +309,7 @@ Fasten the power connector plug lock ring (X). If the power connector is connect
 
 </table>
 
-:::warning[Disconnect power safely]
+:::caution[Disconnect power safely]
 
 To disconnect the BactoSense from power, first switch the instrument off. Then unplug  the power supply unit from the mains power source, before unplugging the power  supply plug from the BactoSense.
 
@@ -552,15 +552,17 @@ Connect the power supply unit to power and the instrument as described in [Conne
 
 The manual sampling device is intended for measuring individual grab samples, collected in  5 mL screw-cap tubes. The following procedure describes how to install the manual  sampling device.
 
-![Original manual illustration, printed page 23](/img/manual/asset-d4b1ce33478f.png "width=53")
+![Original manual illustration, printed page 23](/img/manual/asset-d4b1ce33478f.png "width=282 class=manual-sampling-illustration")
 
 *Figure 5-1 Manual sampling device*                                                                                                                  *1: Positioning pins, 2: Plug, 3: Fixation ring, 4: 5 mL screw-cap tube.*
 
-![Wear protective gloves](/img/manual/icon-gloves.png "width=32")
+:::gloves[Wear protective gloves]
 
 Avoid contamination of the equipment. Wear nitrile gloves when handling samples,  sampling devices and any components which come in contact with them.
 
-<table>
+:::
+
+<table className="manual-sampling-installation">
 
 <thead>
 
@@ -606,7 +608,7 @@ Inspect the manual sampling device • Make sure it is free of dust and fibers. 
 
 <td>
 
-![Procedure illustration, printed page 23](/img/manual/asset-990519e959c3.png "width=58")
+![Procedure illustration, printed page 23](/img/manual/asset-990519e959c3.png "width=282 class=manual-sampling-illustration")
 
 </td>
 
@@ -628,7 +630,7 @@ Attach an empty 5 mL screw-cap tube or the Washstation at the sampling device.
 
 <td>
 
-![Procedure illustration, printed page 23](/img/manual/asset-cdd539f42468.png "width=46")
+![Procedure illustration, printed page 23](/img/manual/asset-cdd539f42468.png "width=282 class=manual-sampling-illustration")
 
 </td>
 
@@ -650,7 +652,7 @@ Carefully insert the connector of the sampling device into the sampling device p
 
 <td>
 
-![Procedure illustration, printed page 23](/img/manual/asset-7f15e58174d9.png "width=63")
+![Procedure illustration, printed page 23](/img/manual/asset-7f15e58174d9.png "width=282 class=manual-sampling-illustration")
 
 </td>
 
@@ -666,7 +668,7 @@ Carefully insert the connector of the sampling device into the sampling device p
 
 <td>
 
-:::warning[Tighten by hand only]
+:::caution[Tighten by hand only]
 
 Then tighten the knurled fixation ring until the sampling device is installed tightly. Finger-tightening only. Do not use any tools.
 
@@ -676,7 +678,7 @@ Then tighten the knurled fixation ring until the sampling device is installed ti
 
 <td>
 
-![Procedure illustration, printed page 24](/img/manual/asset-0c86ff9377ac.png "width=94")
+![Procedure illustration, printed page 24](/img/manual/asset-0c86ff9377ac.png "width=282 class=manual-sampling-illustration")
 
 </td>
 
@@ -734,11 +736,13 @@ The online sampling device is intended to measure samples continuously at predef
 
 *Figure 5-2 Online sampling device*                                                                                                                         *1: Outlet tubing connected to a drain, 2: Inlet tubing connected to a water source, 3: Connector*  *nut, 4: Fixation ring, 5: Positioning pins, 6: Plug.*
 
-![Wear protective gloves](/img/manual/icon-gloves.png "width=32")
+:::gloves[Wear protective gloves]
 
 Avoid contamination of the equipment. Wear nitrile gloves when handling samples,  sampling devices and any components which come in contact with them.
 
-:::warning[Secure tubing connections]
+:::
+
+:::caution[Secure tubing connections]
 
 **Firmly attach tubings and sampling device**
 
@@ -775,391 +779,62 @@ In this section, the installation of the online sampling device with attached in
 
 *Figure 5-3 Typical installation for the online analysis mode using the online sampling device.*
 
-<table>
+#### Flow and pressure adjustment
 
-<tbody>
+1. On-off valve
+2. Pressure valve with gauge
+3. Flow valve
+4. Reduction fittings
 
-<tr>
+#### In and outlet tubings
 
-<td colSpan="2">
+5. Backpressure loop
+6. Tubing fixation
+7. Horizontal inlet tubing
+8. Outlet tubing connected to drain
 
-Flow and pressure adjustment
+#### Online sampling device
 
-</td>
+9. Outlet tubing
+10. Inlet tubing
+11. Inlet conditions:
+    - Continuous flow
+    - 200 – 400 mL/min (0.05 – 0.10 gal/min)
+    - Max. 0.5 bar (7.3 psi)
 
-</tr>
+#### Installation steps
 
-<tr>
+1. Make sure the inlet and outlet tubings are firmly attached to the online sampling device.
 
-<td>
+2. Carefully insert the connector of the sampling device into the sampling device port on the left hand-side of the BactoSense by inserting the metallic positioning pins located inside of the sampling device connector into the openings on the BactoSense sampling device port.
 
-1
+    ![Procedure illustration, printed page 28](/img/manual/asset-255f328ed935.png "width=77")
 
-</td>
+3. :::caution[Tighten by hand only]
 
-<td>
+    Then tighten the knurled fixation ring (red) until the sampling device is installed tightly. Finger-tightening only. Do not use any tools.
 
-On-off valve
+    :::
 
-</td>
+    ![Procedure illustration, printed page 28](/img/manual/asset-ae907dad8418.png "width=98")
 
-</tr>
+4. :::caution[Connect the sampling tubing safely]
 
-<tr>
+    Carefully connect the free ends of the tubings to the inlet water source and outlet drain. • Level the inlet tubing with the water source to prevent trapping of air bubbles • Shorten the length of the tubings as much as possible • Install the outlet tube with a loop in high position • Minimize the amount of connectors to reduce potential sources of contamination • To prevent any damage to the sampling device and BactoSense, make sure no force is exerted via the tubings. Fixate the tubings to a solid structure in the proximity of the sampling device (30 – 50 cm) if possible. In drinking water installations, connect the outlet tubing to a drain to make sure that the water diverted from the drinking water  pipe system is not returned after flowing through the additional fittings, tubings and BactoSense sampling device.
 
-<td>
+    :::
 
-2
+    See figure 5-3.
 
-</td>
+5. Open the water supply carefully and check the appliance for leaks.
 
-<td>
+6. :::caution[Check flow rate and pressure]
 
-Pressure valve with gauge
+    Adjust the flow rate coming from the water supply. Flow rate range: 200 to 400 mL/min (0.05 – 0.10 gal/min) If the flow rate is not within the specified limits, results may be  inaccurate or the BactoSense may be damaged. Make sure the pressure in the sampling device does not exceed  0.5 bar (7.3 psi). Install a pressure reducer if needed.
 
-</td>
+    :::
 
-</tr>
-
-<tr>
-
-<td>
-
-3
-
-</td>
-
-<td>
-
-Flow valve
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4
-
-</td>
-
-<td>
-
-Reduction fittings
-
-</td>
-
-</tr>
-
-<tr>
-
-<td colSpan="2">
-
-In and outlet tubings
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5
-
-</td>
-
-<td>
-
-Backpressure loop
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6
-
-</td>
-
-<td>
-
-Tubing fixation
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7
-
-</td>
-
-<td>
-
-Horizontal inlet tubing
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-8
-
-</td>
-
-<td>
-
-Outlet tubing connected to drain
-
-</td>
-
-</tr>
-
-<tr>
-
-<td colSpan="2">
-
-Online sampling device
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-9
-
-</td>
-
-<td>
-
-Outlet tubing
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-10
-
-</td>
-
-<td>
-
-Inlet tubing
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-11
-
-</td>
-
-<td>
-
-Inlet conditions<br />• Continuous flow<br />• 200 – 400 mL/min (0.05 – 0.10 gal/min)<br />• Max. 0.5 bar (7.3 psi)
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-WORK STEP
-
-</th>
-
-<th>
-
-ADDITIONAL INFO / IMAGES
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Make sure the inlet and outlet tubings are firmly attached to the online sampling device.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Carefully insert the connector of the sampling device into the sampling device port on the left hand-side of the BactoSense by inserting the metallic positioning pins located inside of the sampling device connector into the openings on the BactoSense sampling device port.
-
-</td>
-
-<td>
-
-![Procedure illustration, printed page 28](/img/manual/asset-255f328ed935.png "width=77")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-:::warning[Tighten by hand only]
-
-Then tighten the knurled fixation ring (red) until the sampling device is installed tightly. Finger-tightening only. Do not use any tools.
-
-:::
-
-</td>
-
-<td>
-
-![Procedure illustration, printed page 28](/img/manual/asset-ae907dad8418.png "width=98")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-:::warning[Connect the sampling tubing safely]
-
-Carefully connect the free ends of the tubings to the inlet water source and outlet drain. • Level the inlet tubing with the water source to prevent trapping of air bubbles • Shorten the length of the tubings as much as possible • Install the outlet tube with a loop in high position • Minimize the amount of connectors to reduce potential sources of contamination • To prevent any damage to the sampling device and BactoSense, make sure no force is exerted via the tubings. Fixate the tubings to a solid structure in the proximity of the sampling device (30 – 50 cm) if possible. In drinking water installations, connect the outlet tubing to a drain to make sure that the water diverted from the drinking water  pipe system is not returned after flowing through the additional fittings, tubings and BactoSense sampling device.
-
-:::
-
-</td>
-
-<td>
-
-See figure 5-3.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Open the water supply carefully and check the appliance for leaks.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-:::warning[Check flow rate and pressure]
-
-Adjust the flow rate coming from the water supply. Flow rate range: 200 to 400 mL/min (0.05 – 0.10 gal/min) If the flow rate is not within the specified limits, results may be  inaccurate or the BactoSense may be damaged. Make sure the pressure in the sampling device does not exceed  0.5 bar (7.3 psi). Install a pressure reducer if needed.
-
-:::
-
-</td>
-
-<td>
-
-See figure 5-3.
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+    See figure 5-3.
 
 ## 5.6 Connectivity options {#section-5-6}
 

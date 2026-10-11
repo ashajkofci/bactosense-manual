@@ -13,6 +13,8 @@
     "manual:check": "node scripts/check-manual.mjs",
     "browser:install": "playwright install chromium",
     "manual:pdf": "node scripts/compile-pdf.mjs",
+    "manual:device": "node scripts/build-device-manual.mjs",
+    "manual:preview": "node scripts/preview-device-manual.mjs",
     "translations:check": "node scripts/check-translations.mjs",
     "screenshots:prepare": "node scripts/gui-capture/prepare-figures.mjs",
     "screenshots:render": "node scripts/gui-capture/render-figures.mjs",
@@ -32,7 +34,8 @@
     "react-dom": "19.3.0"
   },
   "devDependencies": {
-    "playwright": "1.64.0",
-    "cheerio": "1.0.0-rc.12"
+    "cheerio": "1.0.0-rc.12",
+    "image-size": "2.0.4",
+    "playwright": "1.64.0"
   }
 }

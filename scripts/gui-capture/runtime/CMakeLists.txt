@@ -10,5 +10,6 @@ add_executable(gui-capture
   "${GUI_ROOT}/UserActivityFilter.cpp"
   "${GUI_ROOT}/QmlTranslator.cpp"
   "${GUI_ROOT}/qml.qrc"
-  "${GUI_ROOT}/image.qrc")
+  "${GUI_ROOT}/image.qrc"
+  "${GUI_ROOT}/manual/manual.qrc")
 target_link_libraries(gui-capture PRIVATE Qt5::QuickTest Qt5::Quick Qt5::Widgets)

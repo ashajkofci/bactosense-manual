@@ -2,7 +2,8 @@
 """Rebuild chapters 1–9 from PDF text, table geometry and figures.
 
 Run parse_second_half.py next; that final pass normalizes both halves with
-simplify-markdown.mjs. Reviewed documents must be backed up before regeneration.
+simplify-markdown.mjs. Reviewed chapter bodies in scripts/editorial/ override
+PDF-derived content; back up other reviewed documents before regeneration.
 """
 import fitz, re, json, html, hashlib
 from native_notices import normalize_notices
@@ -157,7 +158,7 @@ def page_content(n):
   body=[x for x in blocks if inside(x['bbox'],box)]
   if not body:continue
   title=plain(' '.join(s['text'] for l in body[0]['lines'] for s in l['spans']))
-  kind='danger' if 'DANGER' in text or 'EXPLOSION' in text else 'warning'
+  kind='explosion' if 'EXPLOSION' in text else 'danger' if 'DANGER' in text else 'caution' if 'CAUTION' in text else 'warning'
   icon='/img/manual/icon-'+('explosion' if 'EXPLOSION' in text else 'danger' if 'DANGER' in text else 'warning')+'.png'
   content=f':::{kind}[{text if text!="EXPLOSION" else "EXPLOSION HAZARD!"}]\n\n'+image_tag(icon,text,62)+'\n\n'+'\n\n'.join(markup_block(x) for x in sorted(body,key=lambda b:b['bbox'][1]))+'\n\n:::'
   events.append((top,content));exclude.append((65,top,552,bottom));notice_count+=1
@@ -205,7 +206,10 @@ def main():
   for n in range(start,end+1):
    body,audit=page_content(n);coverage.append(audit)
    chunks.append(body)
-  (OUT/f'{ch:02}-{slug}.md').write_text(normalize_artwork(normalize_notices('\n\n'.join(chunks)+'\n')))
+  editorial=ROOT/'scripts/editorial'/f'{ch:02}-{slug}.md'
+  if editorial.is_file():chunks=[chunks[0],editorial.read_text().strip()]
+  filename=f'docs/{ch:02}-{slug}.md'
+  (ROOT/filename).write_text(normalize_artwork(normalize_notices('\n\n'.join(chunks)+'\n'),filename))
  (ROOT/'extraction/first-half-coverage.json').write_text(json.dumps(coverage,indent=2)+'\n')
  print('Generated',len(CHAPTERS),'chapters from',len(coverage),'pages')
  print('Next: run scripts/parse_second_half.py to finish extraction and normalize Markdown for both halves.')

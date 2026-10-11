@@ -1,0 +1,424 @@
+{
+  "reviewedUtc": "2026-10-11T22:05:18.940834+00:00",
+  "scope": "Chapter 6.6 procedure steps 4-7 in all five languages. No output settings or hardware actions were executed.",
+  "sourceFiles": [
+    {
+      "file": "../gui/controllers/settingsScreens/SettingsDigitalOutputsScreen.qml",
+      "sha256": "1ad1392efc7759f718b275847d17b8f5023e3537fa23b7cb2fc300bddb5dcde5"
+    },
+    {
+      "file": "../gui/views/singleComponents/ListItemDigitalOutput.qml",
+      "sha256": "feacf4ed0a956efcafc7edf86838965a0f497979543a14f66d5c17dd0c7e8063"
+    },
+    {
+      "file": "../bactoserver/settings-default.yaml",
+      "sha256": "6856f703546f49e2f81dd69cd1369039c4ff4b0d6a404bebc369d1f9621c45e3"
+    }
+  ],
+  "privateCaptureReview": "output/gui-capture/digital-output/capture-review.json",
+  "privateCropReview": "output/gui-digital-output-review/capture-and-crop-review.json",
+  "guiCommit": "afa2595ffe3b9d8dda369d22805fef5b266b5547",
+  "bactoserverCommit": "26b9cbaad199dc1387d1a8ace72fef02b3fa1c64",
+  "cropComposition": "Clean English numeric header 1-4 plus localized actual value rows, without stretching or changing control pixels.",
+  "expectedValues": {
+    "base": [
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "critical": [
+      "0",
+      "/",
+      "/",
+      "/"
+    ],
+    "non-critical": [
+      "/",
+      "0",
+      "/",
+      "/"
+    ],
+    "High TCC": [
+      "/",
+      "/",
+      "0",
+      "/"
+    ],
+    "High HNAP": [
+      "/",
+      "/",
+      "/",
+      "0"
+    ]
+  },
+  "changes": [
+    {
+      "locale": "en",
+      "file": "docs/06-io-box.md",
+      "section": "6.6",
+      "step": 4,
+      "column": 2,
+      "old": "Choose the base state, .e. the output state when everything is fine: Output 1 2 3 4 Base state 1 1 1 1",
+      "new": "Set **Base state** for outputs 1–4 when no errors or alarms are active."
+    },
+    {
+      "locale": "en",
+      "file": "docs/06-io-box.md",
+      "section": "6.6",
+      "step": 4,
+      "column": 3,
+      "old": "1: The switch is closed. 0: The switch is open.",
+      "new": "1: The switch is closed. 0: The switch is open.\n\n![BactoSense — Digital outputs: base-state controls](/img/gui/en/digital-output-base-state.png \"width=280\")"
+    },
+    {
+      "locale": "en",
+      "file": "docs/06-io-box.md",
+      "section": "6.6",
+      "step": 5,
+      "column": 2,
+      "old": "Choose which output the critical error state should be signaled on: Output 1 2 3 4 Critical error 0 / / /",
+      "new": "Set the response of each output in the **Critical error** row."
+    },
+    {
+      "locale": "en",
+      "file": "docs/06-io-box.md",
+      "section": "6.6",
+      "step": 5,
+      "column": 3,
+      "old": "By default, a critical error opens output 1. 1: The switch is closed. 0: The switch is open. /: The switch is not affected by this error.",
+      "new": "By default, a critical error opens output 1. 1: The switch is closed. 0: The switch is open. /: The switch is not affected by this error.\n\n![BactoSense — Digital outputs: critical-error controls](/img/gui/en/digital-output-critical-error.png \"width=280\")"
+    },
+    {
+      "locale": "en",
+      "file": "docs/06-io-box.md",
+      "section": "6.6",
+      "step": 6,
+      "column": 2,
+      "old": "Choose which output the non-critical error state should be signaled on: Output 1 2 3 4 Non-critical error / 0 / /",
+      "new": "Set the response of each output in the **Non-critical error** row."
+    },
+    {
+      "locale": "en",
+      "file": "docs/06-io-box.md",
+      "section": "6.6",
+      "step": 6,
+      "column": 3,
+      "old": "By default, a non-critical error opens output 2.",
+      "new": "By default, a non-critical error opens output 2.\n\n![BactoSense — Digital outputs: non-critical-error controls](/img/gui/en/digital-output-noncritical-error.png \"width=280\")"
+    },
+    {
+      "locale": "en",
+      "file": "docs/06-io-box.md",
+      "section": "6.6",
+      "step": 7,
+      "column": 2,
+      "old": "Assign alarms to the remaining outputs: Output 1 2 3 4 Alarm 1 / / 0 0 Alarm 2 ... ... ... ... ...",
+      "new": "Assign each enabled alarm to the required outputs in its alarm row."
+    },
+    {
+      "locale": "en",
+      "file": "docs/06-io-box.md",
+      "section": "6.6",
+      "step": 7,
+      "column": 3,
+      "old": "You can only assign alarms that are enabled. You can assign several alarms to the same output.",
+      "new": "You can only assign alarms that are enabled. You can assign several alarms to the same output.\n\nExample alarm rows: High TCC (top), High HNAP (bottom).\n\n![BactoSense — Digital outputs: enabled-alarm assignments](/img/gui/en/digital-output-alarm-assignment.png \"width=280\")"
+    },
+    {
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 4,
+      "column": 2,
+      "old": "Wählen Sie den Grundzustand, also den Ausgangszustand bei störungsfreiem Betrieb: Ausgang 1 2 3 4; Grundzustand 1 1 1 1",
+      "new": "Stellen Sie den **Normalzustand** für die Ausgänge 1–4 ein, wenn keine Fehler oder Alarme aktiv sind."
+    },
+    {
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 4,
+      "column": 3,
+      "old": "1: Der Schalter ist geschlossen. 0: Der Schalter ist offen.",
+      "new": "1: Der Schalter ist geschlossen. 0: Der Schalter ist offen.\n\n![BactoSense — Digitale Ausgänge: Bedienelemente für den Normalzustand](/img/gui/de/digital-output-base-state.png \"width=280\")"
+    },
+    {
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 5,
+      "column": 2,
+      "old": "Wählen Sie den Ausgang, über den kritische Fehler signalisiert werden: Ausgang 1 2 3 4; Kritischer Fehler 0 / / /",
+      "new": "Stellen Sie die Reaktion jedes Ausgangs in der Zeile **Kritischer Fehler** ein."
+    },
+    {
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 5,
+      "column": 3,
+      "old": "Standardmäßig öffnet ein kritischer Fehler Ausgang 1. 1: Der Schalter ist geschlossen. 0: Der Schalter ist offen. /: Der Fehler beeinflusst den Schalter nicht.",
+      "new": "Standardmäßig öffnet ein kritischer Fehler Ausgang 1. 1: Der Schalter ist geschlossen. 0: Der Schalter ist offen. /: Der Fehler beeinflusst den Schalter nicht.\n\n![BactoSense — Digitale Ausgänge: Bedienelemente für kritische Fehler](/img/gui/de/digital-output-critical-error.png \"width=280\")"
+    },
+    {
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 6,
+      "column": 2,
+      "old": "Wählen Sie den Ausgang, über den unkritische Fehler signalisiert werden: Ausgang 1 2 3 4; Unkritischer Fehler / 0 / /",
+      "new": "Stellen Sie die Reaktion jedes Ausgangs in der Zeile **Unkritischer Fehler** ein."
+    },
+    {
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 6,
+      "column": 3,
+      "old": "Standardmäßig öffnet ein unkritischer Fehler Ausgang 2.",
+      "new": "Standardmäßig öffnet ein unkritischer Fehler Ausgang 2.\n\n![BactoSense — Digitale Ausgänge: Bedienelemente für unkritische Fehler](/img/gui/de/digital-output-noncritical-error.png \"width=280\")"
+    },
+    {
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 7,
+      "column": 2,
+      "old": "Weisen Sie den übrigen Ausgängen Alarme zu: Ausgang 1 2 3 4; Alarm 1 / / 0 0; Alarm 2 ... ... ... ... ...",
+      "new": "Ordnen Sie jeden aktivierten Alarm in seiner Alarmzeile den vorgesehenen Ausgängen zu."
+    },
+    {
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 7,
+      "column": 3,
+      "old": "Sie können nur aktivierte Alarme zuweisen. Einem Ausgang können mehrere Alarme zugewiesen werden.",
+      "new": "Sie können nur aktivierte Alarme zuweisen. Einem Ausgang können mehrere Alarme zugewiesen werden.\n\nBeispiel für Alarmzeilen: High TCC (oben), High HNAP (unten).\n\n![BactoSense — Digitale Ausgänge: Zuordnung aktivierter Alarme](/img/gui/de/digital-output-alarm-assignment.png \"width=280\")"
+    },
+    {
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 4,
+      "column": 2,
+      "old": "Choisissez l’état de base, c’est-à-dire l’état de la sortie lorsque tout fonctionne normalement : Sortie 1 2 3 4 État de base 1 1 1 1",
+      "new": "Définissez l’état des sorties 1–4 dans la ligne **Etat initial** lorsqu’aucune erreur ni alarme n’est active."
+    },
+    {
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 4,
+      "column": 3,
+      "old": "1 : L’interrupteur est fermé. 0 : L’interrupteur est ouvert.",
+      "new": "1 : L’interrupteur est fermé. 0 : L’interrupteur est ouvert.\n\n![BactoSense — Sorties numériques : commandes de l’état initial](/img/gui/fr/digital-output-base-state.png \"width=280\")"
+    },
+    {
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 5,
+      "column": 2,
+      "old": "Choisissez la sortie sur laquelle signaler l’état d’erreur critique : Sortie 1 2 3 4 Erreur critique 0 / / /",
+      "new": "Définissez la réaction de chaque sortie dans la ligne **Erreur critique**."
+    },
+    {
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 5,
+      "column": 3,
+      "old": "Par défaut, une erreur critique ouvre la sortie 1. 1 : L’interrupteur est fermé. 0 : L’interrupteur est ouvert. / : L’interrupteur n’est pas affecté par cette erreur.",
+      "new": "Par défaut, une erreur critique ouvre la sortie 1. 1 : L’interrupteur est fermé. 0 : L’interrupteur est ouvert. / : L’interrupteur n’est pas affecté par cette erreur.\n\n![BactoSense — Sorties numériques : commandes des erreurs critiques](/img/gui/fr/digital-output-critical-error.png \"width=280\")"
+    },
+    {
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 6,
+      "column": 2,
+      "old": "Choisissez la sortie sur laquelle signaler l’état d’erreur non critique : Sortie 1 2 3 4 Erreur non critique / 0 / /",
+      "new": "Définissez la réaction de chaque sortie dans la ligne **Erreur non-critique**."
+    },
+    {
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 6,
+      "column": 3,
+      "old": "Par défaut, une erreur non critique ouvre la sortie 2.",
+      "new": "Par défaut, une erreur non critique ouvre la sortie 2.\n\n![BactoSense — Sorties numériques : commandes des erreurs non critiques](/img/gui/fr/digital-output-noncritical-error.png \"width=280\")"
+    },
+    {
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 7,
+      "column": 2,
+      "old": "Attribuez des alarmes aux sorties restantes : Sortie 1 2 3 4 Alarme 1 / / 0 0 Alarme 2 ... ... ... ... ...",
+      "new": "Attribuez chaque alarme activée aux sorties requises dans sa ligne d’alarme."
+    },
+    {
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 7,
+      "column": 3,
+      "old": "Vous ne pouvez attribuer que des alarmes activées. Vous pouvez attribuer plusieurs alarmes à la même sortie.",
+      "new": "Vous ne pouvez attribuer que des alarmes activées. Vous pouvez attribuer plusieurs alarmes à la même sortie.\n\nExemples de lignes d’alarme : High TCC (en haut), High HNAP (en bas).\n\n![BactoSense — Sorties numériques : affectation des alarmes activées](/img/gui/fr/digital-output-alarm-assignment.png \"width=280\")"
+    },
+    {
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 4,
+      "column": 2,
+      "old": "Scegliere lo stato di base, ossia lo stato delle uscite quando tutto funziona correttamente: Uscita 1 2 3 4 Stato di base 1 1 1 1",
+      "new": "Impostare lo **Stato di riferimento** per le uscite 1–4 quando non sono attivi errori o allarmi."
+    },
+    {
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 4,
+      "column": 3,
+      "old": "1: l’interruttore è chiuso. 0: l’interruttore è aperto.",
+      "new": "1: l’interruttore è chiuso. 0: l’interruttore è aperto.\n\n![BactoSense — Uscite digitali: controlli per lo stato di riferimento](/img/gui/it/digital-output-base-state.png \"width=280\")"
+    },
+    {
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 5,
+      "column": 2,
+      "old": "Scegliere su quale uscita segnalare lo stato di errore critico: Uscita 1 2 3 4 Errore critico 0 / / /",
+      "new": "Impostare la risposta di ciascuna uscita nella riga **Errore critico**."
+    },
+    {
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 5,
+      "column": 3,
+      "old": "Per impostazione predefinita, un errore critico apre l’uscita 1. 1: l’interruttore è chiuso. 0: l’interruttore è aperto. /: l’interruttore non è influenzato da questo errore.",
+      "new": "Per impostazione predefinita, un errore critico apre l’uscita 1. 1: l’interruttore è chiuso. 0: l’interruttore è aperto. /: l’interruttore non è influenzato da questo errore.\n\n![BactoSense — Uscite digitali: controlli per gli errori critici](/img/gui/it/digital-output-critical-error.png \"width=280\")"
+    },
+    {
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 6,
+      "column": 2,
+      "old": "Scegliere su quale uscita segnalare lo stato di errore non critico: Uscita 1 2 3 4 Errore non critico / 0 / /",
+      "new": "Impostare la risposta di ciascuna uscita nella riga **Errore non critico**."
+    },
+    {
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 6,
+      "column": 3,
+      "old": "Per impostazione predefinita, un errore non critico apre l’uscita 2.",
+      "new": "Per impostazione predefinita, un errore non critico apre l’uscita 2.\n\n![BactoSense — Uscite digitali: controlli per gli errori non critici](/img/gui/it/digital-output-noncritical-error.png \"width=280\")"
+    },
+    {
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 7,
+      "column": 2,
+      "old": "Assegnare gli allarmi alle uscite rimanenti: Uscita 1 2 3 4 Allarme 1 / / 0 0 Allarme 2 ... ... ... ... ...",
+      "new": "Assegnare ciascun allarme abilitato alle uscite richieste nella relativa riga di allarme."
+    },
+    {
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 7,
+      "column": 3,
+      "old": "È possibile assegnare solo allarmi abilitati. È possibile assegnare più allarmi alla stessa uscita.",
+      "new": "È possibile assegnare solo allarmi abilitati. È possibile assegnare più allarmi alla stessa uscita.\n\nEsempio di righe di allarme: High TCC (in alto), High HNAP (in basso).\n\n![BactoSense — Uscite digitali: assegnazione degli allarmi abilitati](/img/gui/it/digital-output-alarm-assignment.png \"width=280\")"
+    },
+    {
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 4,
+      "column": 2,
+      "old": "Elija el estado base, es decir, el estado de las salidas cuando todo funciona correctamente: salida 1 2 3 4; estado base 1 1 1 1.",
+      "new": "Configure el **Estado base** de las salidas 1–4 cuando no haya errores ni alarmas activos."
+    },
+    {
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 4,
+      "column": 3,
+      "old": "1: el contacto está cerrado. 0: el contacto está abierto.",
+      "new": "1: el contacto está cerrado. 0: el contacto está abierto.\n\n![BactoSense — Salidas digitales: controles del estado base](/img/gui/es/digital-output-base-state.png \"width=280\")"
+    },
+    {
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 5,
+      "column": 2,
+      "old": "Elija la salida en la que debe señalarse el estado de error crítico: salida 1 2 3 4; error crítico 0 / / /.",
+      "new": "Configure la respuesta de cada salida en la fila **Error crítico**."
+    },
+    {
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 5,
+      "column": 3,
+      "old": "Por defecto, un error crítico abre la salida 1. 1: el contacto está cerrado. 0: el contacto está abierto. /: el error no afecta al contacto.",
+      "new": "Por defecto, un error crítico abre la salida 1. 1: el contacto está cerrado. 0: el contacto está abierto. /: el error no afecta al contacto.\n\n![BactoSense — Salidas digitales: controles de errores críticos](/img/gui/es/digital-output-critical-error.png \"width=280\")"
+    },
+    {
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 6,
+      "column": 2,
+      "old": "Elija la salida en la que debe señalarse el estado de error no crítico: salida 1 2 3 4; error no crítico / 0 / /.",
+      "new": "Configure la respuesta de cada salida en la fila **Error no crítico**."
+    },
+    {
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 6,
+      "column": 3,
+      "old": "Por defecto, un error no crítico abre la salida 2.",
+      "new": "Por defecto, un error no crítico abre la salida 2.\n\n![BactoSense — Salidas digitales: controles de errores no críticos](/img/gui/es/digital-output-noncritical-error.png \"width=280\")"
+    },
+    {
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 7,
+      "column": 2,
+      "old": "Asigne alarmas a las salidas restantes: salida 1 2 3 4; alarma 1 / / 0 0; alarma 2 ... ... ... ... ...",
+      "new": "Asigne cada alarma activada a las salidas necesarias en su fila de alarma."
+    },
+    {
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "section": "6.6",
+      "step": 7,
+      "column": 3,
+      "old": "Solo puede asignar alarmas activadas. Puede asignar varias alarmas a la misma salida.",
+      "new": "Solo puede asignar alarmas activadas. Puede asignar varias alarmas a la misma salida.\n\nFilas de alarma de ejemplo: High TCC (arriba), High HNAP (abajo).\n\n![BactoSense — Salidas digitales: asignación de alarmas activadas](/img/gui/es/digital-output-alarm-assignment.png \"width=280\")"
+    }
+  ],
+  "status": "source-and-images-reviewed",
+  "imageReview": {
+    "count": 20,
+    "nativePanels": 45,
+    "method": "Individual native-size visual inspection and exact decoded pixel comparison to every source crop",
+    "unresolvedFindings": 0
+  }
+}

@@ -157,7 +157,7 @@ Review the technical specifications in [Digital inputs](06-io-box.md#section-6-1
 
 The BactoSense exposes the outputs on a 12 pin M16 female connector. The use of an IO- box is recommended however. The pinout of the connector is given below.
 
-![Original manual illustration, printed page 36](/img/manual/asset-223bcd55d2e3.png "width=80")
+![Original manual illustration, printed page 36](/img/manual/asset-223bcd55d2e3.png "width=160")
 
 *Figure 6-3 Overview of the output connector pinout*
 
@@ -178,89 +178,11 @@ The BactoSense exposes the inputs on a 5 pin M16 female connector. The use of an
 
 *Figure 6-4 Overview of the input connector pinouts*
 
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-1
-
-</td>
-
-<td>
-
-Digital input 1
-
-</td>
-
-<td>
-
-2
-
-</td>
-
-<td>
-
-Digital input 2
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3
-
-</td>
-
-<td>
-
-Digital input 3
-
-</td>
-
-<td>
-
-4
-
-</td>
-
-<td>
-
-Digital input 4
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5
-
-</td>
-
-<td>
-
-Common
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+1. Digital input 1
+2. Digital input 2
+3. Digital input 3
+4. Digital input 4
+5. Common
 
 ## 6.5 Digital inputs configuration and PLC mode {#section-6-5}
 
@@ -756,13 +678,13 @@ The values of digital outputs are modified in the following situations:
 - After manually clearing the errors, the outputs are automatically reset (and therefore  show the new error state and no alarms).
 - At specific times during the measurement, extra signals can be relayed. By default,  neither of them is relayed to the outputs. These are:
 
-**-** Process running. Active when a protocol is running.
+  - Process running. Active when a protocol is running.
 
-**-** Sampling device in use. Active when the sampling device is being used. It drops back  to inactive after the sample preparation step of measurement protocols.
+  - Sampling device in use. Active when the sampling device is being used. It drops back  to inactive after the sample preparation step of measurement protocols.
 
-**-** Low cartridge. Active when the cartridge level is below 15 %, or if the cartridge is  estimated to be empty within a month based on the current measurement  frequency.
+  - Low cartridge. Active when the cartridge level is below 15 %, or if the cartridge is  estimated to be empty within a month based on the current measurement  frequency.
 
-**-** Expired cartridge. Active when the cartridge is expired.
+  - Expired cartridge. Active when the cartridge is expired.
 
 The digital output state at the end of a measurement is defined according to these default  values, which can be changed in the settings:
 
@@ -772,13 +694,13 @@ The digital output state at the end of a measurement is defined according to the
 - Alarms set the third and fourth output to 0.
 - In case of conflict in the output settings, priority is given to:
 
-**-** 1. Critical errors
+  1. Critical errors
 
-**-** 2. Non-critical errors
+  2. Non-critical errors
 
-**-** 3. Cartridge states
+  3. Cartridge states
 
-**-** 4. Alarm
+  4. Alarm
 
 :::info[Admin access required]
 
@@ -882,13 +804,15 @@ Press the Digital outputs button.
 
 <td>
 
-Choose the base state, .e. the output state when everything is fine: Output 1 2 3 4 Base state 1 1 1 1
+Set **Base state** for outputs 1–4 when no errors or alarms are active.
 
 </td>
 
 <td>
 
 1: The switch is closed. 0: The switch is open.
+
+![BactoSense — Digital outputs: base-state controls](/img/gui/en/digital-output-base-state.png "width=280")
 
 </td>
 
@@ -904,13 +828,15 @@ Choose the base state, .e. the output state when everything is fine: Output 1 2 
 
 <td>
 
-Choose which output the critical error state should be signaled on: Output 1 2 3 4 Critical error 0 / / /
+Set the response of each output in the **Critical error** row.
 
 </td>
 
 <td>
 
 By default, a critical error opens output 1. 1: The switch is closed. 0: The switch is open. /: The switch is not affected by this error.
+
+![BactoSense — Digital outputs: critical-error controls](/img/gui/en/digital-output-critical-error.png "width=280")
 
 </td>
 
@@ -926,13 +852,15 @@ By default, a critical error opens output 1. 1: The switch is closed. 0: The swi
 
 <td>
 
-Choose which output the non-critical error state should be signaled on: Output 1 2 3 4 Non-critical error / 0 / /
+Set the response of each output in the **Non-critical error** row.
 
 </td>
 
 <td>
 
 By default, a non-critical error opens output 2.
+
+![BactoSense — Digital outputs: non-critical-error controls](/img/gui/en/digital-output-noncritical-error.png "width=280")
 
 </td>
 
@@ -948,13 +876,17 @@ By default, a non-critical error opens output 2.
 
 <td>
 
-Assign alarms to the remaining outputs: Output 1 2 3 4 Alarm 1 / / 0 0 Alarm 2 ... ... ... ... ...
+Assign each enabled alarm to the required outputs in its alarm row.
 
 </td>
 
 <td>
 
 You can only assign alarms that are enabled. You can assign several alarms to the same output.
+
+Example alarm rows: High TCC (top), High HNAP (bottom).
+
+![BactoSense — Digital outputs: enabled-alarm assignments](/img/gui/en/digital-output-alarm-assignment.png "width=280")
 
 </td>
 
@@ -1091,6 +1023,8 @@ If selected, interpolates the chosen cell count value range with a logarithmic s
 
 The following procedure describes how to adjust the analogue outputs.
 
+<div className="manual-output-steps-scroll">
+
 |  | WORK STEP | ADDITIONAL INFO / IMAGES |
 | --- | --- | --- |
 | 1. | On the Home screen, press Settings. |  |
@@ -1102,9 +1036,13 @@ The following procedure describes how to adjust the analogue outputs.
 | 7. | Define the upper limit of the range (figure 6-6, position 4). | When the source is equal to this value, 20 mA will be output on the selected port. |
 | 8. | Press the Save button. |  |
 
+</div>
+
 ## 6.8 Digital and analogue output testing {#section-6-8}
 
-:::warning[Prevent unintended alarms]
+Log in as Admin and use Test outputs while the instrument is idle, with PLC mode disabled.
+
+:::caution[Prevent unintended alarms]
 
 The Test outputs interface allows to generate a physical output signal for testing  purposes. Make sure that such tests do not generate an alarm on your control system.
 
@@ -1228,6 +1166,8 @@ Set current on port 1.
 
 The following procedure describes how to test the analogue and digital outputs.
 
+<div className="manual-output-steps-scroll">
+
 |  | WORK STEP | ADDITIONAL INFO / IMAGES |
 | --- | --- | --- |
 | 1. | On the Home screen, press Settings. |  |
@@ -1236,3 +1176,5 @@ The following procedure describes how to test the analogue and digital outputs.
 | 4. | Enter the test values that you wish to send to the PLC. | For digital outputs: 1: The switch is closed. 0: The switch is open. |
 | 5. | Tests can be triggered individually or together (see figure 6-7): • Testing only the digital outputs on the terminals 1 – 4. • Testing only the analogue outputs on ports 1, 2 or both. • Testing all outputs. | The output signals can be measured on the terminals. |
 | 6. | Press the Reset button. |  |
+
+</div>

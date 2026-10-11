@@ -54,99 +54,59 @@ Cet appareil est conforme aux exigences FCC, UL/CAN/CSA-C22.2/IEC 61010-1 et JIS
 
 Les normes suivantes ont été appliquées pour garantir la conformité aux exigences réglementaires :
 
-*Tableau 2-2 Normes appliquées*
+**NORMES APPLIQUÉES**
 
-<table>
+### Sécurité (Données générales) (Élément chauffant) (Laser)
 
-<tbody>
+- IEC 61010-1:2010
+- IEC 61010-1:2010/A1:2016
+- CAN/CSA-C22.2 No. 61010-1 + A1
+- UL 61010-1, 3e édition A1
+- JIS C 1010-1:2019
+- IEC 61010-2-010:2019
+- CSA C22.2 No. 61010-2-010:19
+- EN 60825-1:2014 + A11:2021
+- CAN/CSA-E60825-1:15
 
-<tr>
+### EMC
 
-<th colSpan="2">
+- EN IEC 61326-1:2021
+- EN 61326-1:2013, Classe B, Groupe 1
+- CISPR 11:2015/A1:2016/A2:2019
+- EN 61000-3-2:2018
+- EN 61000-3-3:2013/A1:2017
+- EN 61000-3-11:2017
+- EN 61000-3-12:2011
+- EN 61000-4-2:2008
+- EN 61000-4-3:2006/A1:2007/A2:2017
+- EN 61000-4-4:2012
+- EN 61000-4-5:2014/A1:2017
+- EN 61000-4-6:2016
+- EN 61000-4-8:2009
+- EN 61000-4-11:2020
+- EN 55011:2016/A1:2017/A2:2021/A11:2020
 
-NORMES APPLIQUÉES
+### Protection contre les infiltrations
 
-</th>
+- IEC 60529:1989
+- IEC 60529:1989/A1:1999
+- IEC 60529:1989/A2:2013
+- IEC 60529:1989/A2:2013/C1:2019
+- EN 60529:1991/A1:2000/A2:2013
 
-</tr>
+### RoHS
 
-<tr>
+- EN IEC 63000:2018
 
-<td>
-
-Sécurité<br />(Données<br />générales) (Élément chauffant)<br />(Laser)
-
-</td>
-
-<td>
-
-IEC 61010-1:2010<br />IEC 61010-1:2010/A1:2016 CAN/CSA-C22.2<br />No. 61010-1 + A1 UL<br />61010-1, 3e édition<br />A1 JIS<br />C 1010-1:2019 IEC<br />61010-2-010:2019 CSA C22.2 No.<br />61010-2-010:19 EN 60825-1:2014<br />+ A11:2021 CAN/CSA-E60825-1:15
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-EMC
-
-</td>
-
-<td>
-
-EN IEC<br />61326-1:2021 EN 61326-1:2013,<br />Classe B, Groupe<br />1 CISPR<br />11:2015/A1:2016/A2:2019 EN 61000-3-2:2018<br />EN<br />61000-3-3:2013/A1:2017 EN<br />61000-3-11:2017 EN<br />61000-3-12:2011 EN 61000-4-2:2008<br />EN 61000-4-3:2006/A1:2007/A2:2017<br />EN 61000-4-4:2012 EN<br />61000-4-5:2014/A1:2017 EN<br />61000-4-6:2016<br />EN 61000-4-8:2009<br />EN 61000-4-11:2020 EN 55011:2016/A1:2017/A2:2021/A11:2020
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-Protection contre les infiltrations
-
-</td>
-
-<td>
-
-IEC<br />60529:1989 IEC<br />60529:1989/A1:1999 IEC<br />60529:1989/A2:2013 IEC 60529:1989/A2:2013/C1:2019<br />EN 60529:1991/A1:2000/A2:2013
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-RoHS
-
-</td>
-
-<td>
-
-EN IEC 63000:2018
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-![Illustration du manuel original, page imprimée 4](/img/manual/asset-454a03d782e7.png "width=73")
+![Illustration du manuel original, page imprimée 4](/img/manual/asset-454a03d782e7.png "width=24 class=manual-laser-label")
 
 Le BactoSense est classé comme produit laser de classe 1 selon la norme IEC 60825-1:2014/A11:2021.
 
 ## 2.3 Symboles de sécurité {#section-2-3}
 
-Les symboles de sécurité utilisés dans ce document sont expliqués ci-dessous :
+Les symboles ci-dessous indiquent les dangers et les équipements de protection obligatoires. Avertissement et Attention utilisent le même point d’exclamation ; lisez le titre et les consignes de chaque encadré.
 
-:::danger[Choc électrique]
+:::danger[Danger : choc électrique]
 
 **Décharge électrique pouvant entraîner des blessures graves, voire la mort**
 
@@ -154,7 +114,7 @@ Le non-respect de cette consigne peut entraîner des décharges électriques et 
 
 :::
 
-:::danger[Risque d’explosion]
+:::explosion[Danger : risque d’explosion]
 
 **Explosion pouvant entraîner des blessures graves, voire la mort**
 
@@ -162,7 +122,7 @@ Le non-respect de cette consigne peut provoquer des explosions entraînant de gr
 
 :::
 
-:::warning[Risque de blessure]
+:::warning[Avertissement : risque de blessure]
 
 **Blessures ou risques pour la santé avec des effets à long terme**
 
@@ -170,9 +130,17 @@ Le non-respect de cette consigne peut entraîner des blessures avec des effets p
 
 :::
 
-:::warning[Dommages matériels]
+:::caution[Attention : dommages matériels]
 
 Le non-respect de cette consigne peut entraîner des dommages matériels à l’instrument et à ses périphériques.
+
+:::
+
+:::gloves[Porter des gants de protection]
+
+**Équipement de protection obligatoire**
+
+Portez les gants de protection prescrits lors de la manipulation d’échantillons, de dispositifs de prélèvement, de cartouches ou de composants en contact avec les échantillons.
 
 :::
 
@@ -200,7 +168,7 @@ L’instrument doit être utilisé par du personnel technique formé qui a lu et
 
 ## 2.6 Restrictions d’utilisation {#section-2-6}
 
-:::danger[Atmosphères explosives]
+:::explosion[Atmosphères explosives]
 
 L’utilisation dans une atmosphère explosive peut provoquer des explosions entraînant des blessures ou la mort des personnes à proximité.
 

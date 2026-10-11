@@ -166,7 +166,7 @@ Select a section number to open the corresponding topic in this manual.
 
 - HNAC [1](/glossary), [11.3.2](/results-and-data-analysis#section-11-3-2), [11.3.3](/results-and-data-analysis#section-11-3-3)
 - HNAP [1](/glossary), [11.3.2](/results-and-data-analysis#section-11-3-2), [11.3.3](/results-and-data-analysis#section-11-3-3)
-- Home menu [8.2.7](/general-operations-and-configurations#section-8-2-7), [8.3.2](/general-operations-and-configurations#section-8-3-2), [8.8](/general-operations-and-configurations#section-8-8)
+- Home screen and Settings menu [8.2.7](/general-operations-and-configurations#section-8-2-7), [8.3.2](/general-operations-and-configurations#section-8-3-2), [8.8](/general-operations-and-configurations#section-8-8)
 - HTTP [5.6](/installation#section-5-6), [12.2](/data-access-and-export#section-12-2)
 - HTTPS [5.6](/installation#section-5-6), [12.2](/data-access-and-export#section-12-2)
 - Humidity [3.2](/instrument-overview#section-3-2), [3.2](/instrument-overview#section-3-2)
@@ -245,6 +245,7 @@ Select a section number to open the corresponding topic in this manual.
 - Online mode
   - Configuration [10.1](/measurements#section-10-1)
   - Measurement [10.1](/measurements#section-10-1)
+  - Advanced scheduling [10.2.4](/measurements#section-10-2-4)
   - Results [10.1](/measurements#section-10-1), [10.2.3](/measurements#section-10-2-3)
   - Termination [10.2.2](/measurements#section-10-2-2)
   - Protocols [10.9.1](/measurements#section-10-9-1)
@@ -388,7 +389,7 @@ Select a section number to open the corresponding topic in this manual.
   - Requirements [2.5](/general-user-information#section-2-5)
   - Roles [8.2.7](/general-operations-and-configurations#section-8-2-7)
 - User interface [8.8](/general-operations-and-configurations#section-8-8)
-  - Home menu [8.8](/general-operations-and-configurations#section-8-8)
+  - Home screen and Settings menu [8.8](/general-operations-and-configurations#section-8-8)
 - User interface relay [5.6](/installation#section-5-6)
 
 ## V

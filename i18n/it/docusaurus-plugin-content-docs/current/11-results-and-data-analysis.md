@@ -20,15 +20,15 @@ La figura seguente mostra il risultato di una misurazione selezionata. Da questa
 | 3 | Diagramma a punti principale nella finestra delle informazioni sul risultato. Il diagramma FL1 rispetto a FL2 mostra tutti gli eventi rilevati in base all’ampiezza dei segnali di fluorescenza FL1 (535 nm, asse X) e FL2 (715 nm, asse Y). Il poligono rosso e la linea verticale mostrano il gate configurato. Per i dettagli, consultare la sezione [Cartucce, gate e parametri dei risultati](../results-and-data-analysis/#section-11-3). Toccando questa anteprima si apre una finestra popup con accesso a tutti i diagrammi a punti (4). |
 | 4 | Finestra popup con accesso a tutti i diagrammi a punti. Il diagramma FL1 rispetto a SSC mostra solo le cellule all’interno del gate poligonale FL1 - FL2, in base al segnale di fluorescenza FL1 (535 nm) e al segnale di luce diffusa SSC (488 nm). L’istogramma FL1 mostra tutte le cellule all’interno del gate poligonale FL1 - FL2, raggruppate per intervalli di fluorescenza FL1. I diagrammi disponibili dipendono dal modello e dalla configurazione dello strumento. |
 | 5 | Il campo facoltativo degli avvertimenti indica se durante la misurazione sono stati generati avvertimenti. Toccare il campo per ulteriori informazioni. |
-| 6 | Il pulsante Delete elimina definitivamente la misurazione (è richiesta una conferma). |
-| 7 | Il pulsante Rename consente di modificare il nome della misurazione. |
-| 8 | Il pulsante Re-Gate result consente di applicare gate diversi ai dati di misurazione. Per i dettagli, consultare la sezione [Rianalisi delle misurazioni con altri gate](../results-and-data-analysis/#section-11-4-1). |
-| 9 | Il pulsante Export consente di salvare questo risultato su una chiavetta USB. Ulteriori informazioni sono riportate nella sezione [Esportazione su un’unità USB](../measurements/#section-10-8-1). |
+| 6 | Il pulsante Cancella elimina definitivamente la misurazione (è richiesta una conferma). |
+| 7 | Il pulsante Rinomina consente di modificare il nome della misurazione. |
+| 8 | Il pulsante Risultato del re-gate consente di applicare gate diversi ai dati di misurazione. Per i dettagli, consultare la sezione [Rianalisi delle misurazioni con altri gate](../results-and-data-analysis/#section-11-4-1). |
+| 9 | Il pulsante Esporta consente di salvare questo risultato su una chiavetta USB. Ulteriori informazioni sono riportate nella sezione [Esportazione su un’unità USB](../measurements/#section-10-8-1). |
 | 10 | I pulsanti di navigazione a sinistra e a destra della vista del risultato consentono di passare rispettivamente alla misurazione precedente e successiva. |
 
 :::info[Selezionare più misurazioni]
 
-Selezione multipla e operazioni in gruppo: nell’elenco delle misurazioni, tenere premuta una misurazione per attivare la selezione multipla, quindi selezionare Delete / Re-gate o Export.
+Selezione multipla e operazioni in gruppo: nell’elenco delle misurazioni, tenere premuta una misurazione per attivare la selezione multipla, quindi selezionare Cancella / Re-gate o Esporta.
 
 :::
 
@@ -48,13 +48,13 @@ I gruppi di gate sono specifici per un tipo di cartuccia. Ad esempio, solo i gru
 
 BactoSense dispone di gruppi di gate preconfigurati per tutti i tipi di cartuccia disponibili. Sono denominati gruppi di gate predefiniti e sono stati progettati con cura per essere applicabili alla grande maggioranza dei campioni.
 
-- I gate predefiniti di BactoSense sono accessibili premendo Gate settings nel menu Home dell’interfaccia utente.
+- Nella schermata Home, premere Impostazioni, quindi Impostazioni del gate per visualizzare i gruppi di gate disponibili.
 - I gruppi di gate predefiniti non possono essere modificati né eliminati.
 - È possibile creare nuovi gruppi modificando una copia di un gruppo esistente, come descritto nella sezione [Creazione di un nuovo gruppo di gate](11-results-and-data-analysis.md#section-11-4-2).
 
 ### 11.2.2 Elenco dei gruppi di gate disponibili e delle operazioni {#section-11-2-2}
 
-L’elenco di tutti i gruppi di gate disponibili su BactoSense è accessibile premendo Gate settings nel menu Home dell’interfaccia utente.
+Nella schermata Home, premere Impostazioni, quindi Impostazioni del gate per visualizzare i gruppi di gate disponibili.
 
 ![BactoSense — Elenco dei gate](/img/gui/it/gate-settings-list.png "width=599 class=manual-figure")
 
@@ -86,12 +86,18 @@ TCC significa Total Cell Count, ossia conteggio cellulare totale. La cartuccia T
 
 **Tabella 11-1 Gruppo di gate utilizzato per la cartuccia TCC.**
 
+<div className="manual-cartridge-table-scroll manual-cartridge-gates">
+
 | GATE | TIPO | DESCRIZIONE |
 | --- | --- | --- |
 | TCC | Poligono | Poligono definito sul piano FL1-FL2. I punti al suo interno vengono contati come cellule (TCC). |
 | Limite inferiore HNA | Linea verticale | Soglia su FL1. I punti all’interno di TCC ma superiori al limite inferiore HNA in FL1 vengono contati come HNAC. Quelli all’interno di TCC ma inferiori al limite vengono contati come LNAC. |
 
+</div>
+
 **Tabella 11-2 Parametri dei risultati ottenuti con la cartuccia TCC.**
+
+<div className="manual-cartridge-table-scroll manual-cartridge-parameters">
 
 | PARAMETRO | UNITÀ | NOME | DESCRIZIONE |
 | --- | --- | --- | --- |
@@ -99,6 +105,8 @@ TCC significa Total Cell Count, ossia conteggio cellulare totale. La cartuccia T
 | HNAP | % | Percentuale di cellule ad alto contenuto di acidi nucleici | Percentuale di cellule HNA rispetto a TCC: HNAP = (HNAC / TCC) × 100 |
 | LNAC | 1/mL | Conteggio delle cellule a basso contenuto di acidi nucleici | Numero di cellule all’interno del gate TCC ma al di sotto del limite inferiore HNA (gate a linea verticale). |
 | HNAC | 1/mL | Conteggio delle cellule ad alto contenuto di acidi nucleici | Numero di cellule all’interno del gate TCC e al di sopra del limite inferiore HNA (gate a linea verticale). |
+
+</div>
 
 Per ulteriori informazioni sulla regolazione dei gate, vedere sezione [Modifica dei gate](11-results-and-data-analysis.md#section-11-4).
 
@@ -108,12 +116,18 @@ ICC significa Intact Cell Count, ossia conteggio delle cellule integre. La cartu
 
 **Tabella 11-3 Gruppo di gate utilizzato per la cartuccia ICC.**
 
+<div className="manual-cartridge-table-scroll manual-cartridge-gates">
+
 | GATE | TIPO | DESCRIZIONE |
 | --- | --- | --- |
 | ICC | Poligono | Poligono definito sul piano FL1-FL2. I punti al suo interno vengono contati come cellule integre (ICC). |
 | Limite inferiore HNA | Linea verticale | Soglia su FL1. I punti all’interno di ICC ma superiori al limite inferiore HNA in FL1 vengono contati come HNAC. Quelli all’interno di ICC ma inferiori al limite vengono contati come LNAC. |
 
+</div>
+
 **Tabella 11-4 Parametri dei risultati ottenuti con la cartuccia ICC.**
+
+<div className="manual-cartridge-table-scroll manual-cartridge-parameters">
 
 | PARAMETRO | UNITÀ | NOME | DESCRIZIONE |
 | --- | --- | --- | --- |
@@ -121,6 +135,8 @@ ICC significa Intact Cell Count, ossia conteggio delle cellule integre. La cartu
 | HNAP | % | Percentuale di cellule ad alto contenuto di acidi nucleici | Percentuale di cellule HNA rispetto a ICC: HNAP = (HNAC / ICC) × 100 |
 | LNAC | 1/mL | Conteggio delle cellule a basso contenuto di acidi nucleici | Numero di cellule LNA all’interno del gate ICC ma al di sotto del limite inferiore HNA (gate a linea verticale). |
 | HNAC | 1/mL | Conteggio delle cellule ad alto contenuto di acidi nucleici | Numero di cellule HNA all’interno del gate ICC e al di sopra del limite inferiore HNA (gate a linea verticale). |
+
+</div>
 
 Per ulteriori informazioni sulla regolazione dei gate, vedere sezione [Modifica dei gate](11-results-and-data-analysis.md#section-11-4).
 
@@ -130,12 +146,18 @@ ACC significa Active Cell Count, ossia conteggio delle cellule attive. La cartuc
 
 **Tabella 11-5 Gruppo di gate utilizzato per la cartuccia ACC.**
 
+<div className="manual-cartridge-table-scroll manual-cartridge-gates">
+
 | GATE | TIPO | DESCRIZIONE |
 | --- | --- | --- |
 | ACC | Poligono | Poligono definito sul piano FL1-FL2. I punti al suo interno vengono contati come cellule attive (ACC). |
 | Limite inferiore HACC | Linea verticale | Soglia su FL1. I punti all’interno di ACC ma superiori al limite inferiore HACC in FL1 vengono contati come HACC. Quelli all’interno di ACC ma inferiori al limite vengono contati come LACC. |
 
+</div>
+
 **Tabella 11-6 Parametri dei risultati ottenuti con la cartuccia ACC.**
+
+<div className="manual-cartridge-table-scroll manual-cartridge-parameters">
 
 | PARAMETRO | UNITÀ | NOME | DESCRIZIONE |
 | --- | --- | --- | --- |
@@ -143,6 +165,8 @@ ACC significa Active Cell Count, ossia conteggio delle cellule attive. La cartuc
 | HACC | 1/mL | Conteggio delle cellule altamente attive | Numero di cellule attive con intensità FL1 superiore al gate verticale HACC. |
 | LACC | 1/mL | Conteggio delle cellule a bassa attività | Numero di cellule attive con intensità FL1 inferiore al gate verticale HACC. |
 | HACP | % | Percentuale di cellule altamente attive | Percentuale di HACC rispetto ad ACC. HACP = (HACC / ACC) × 100 |
+
+</div>
 
 Per ulteriori informazioni sulla regolazione dei gate, vedere sezione [Modifica dei gate](11-results-and-data-analysis.md#section-11-4).
 
@@ -152,15 +176,23 @@ CBC significa Coliform Cell Count, ossia conteggio delle cellule coliformi. La c
 
 **Tabella 11-7 Set di gate utilizzato per la cartuccia CBC.**
 
+<div className="manual-cartridge-table-scroll manual-cartridge-gates">
+
 | GATE | TIPO | DESCRIZIONE |
 | --- | --- | --- |
 | CBC | Poligono | Poligono definito sul piano FL1-FL2. Le cellule coliformi marcate con fluorescenza all’interno di questo poligono contribuiscono a CBC. |
 
+</div>
+
 **Tabella 11-8 Parametro del risultato ottenuto con la cartuccia CBC.**
+
+<div className="manual-cartridge-table-scroll manual-cartridge-parameters">
 
 | PARAMETRO | UNITÀ | NOME | DESCRIZIONE |
 | --- | --- | --- | --- |
 | CBC | 1/mL | Conteggio delle cellule coliformi | Concentrazione di cellule coliformi marcate all’interno del gate CBC, calcolata dal conteggio cellulare e dal volume di campione analizzato. |
+
+</div>
 
 Per ulteriori informazioni sulla regolazione dei gate, vedere sezione [Modifica dei gate](11-results-and-data-analysis.md#section-11-4).
 
@@ -170,15 +202,23 @@ EBC significa E. coli Cell Count, ossia conteggio delle cellule di E. coli. La c
 
 **Tabella 11-9 Set di gate utilizzato per la cartuccia EBC.**
 
+<div className="manual-cartridge-table-scroll manual-cartridge-gates">
+
 | GATE | TIPO | DESCRIZIONE |
 | --- | --- | --- |
 | EBC | Poligono | Poligono definito sul piano FL1-FL2. Le cellule di E. coli marcate con fluorescenza all’interno di questo poligono contribuiscono a EBC. |
 
+</div>
+
 **Tabella 11-10 Parametro del risultato ottenuto con la cartuccia EBC.**
+
+<div className="manual-cartridge-table-scroll manual-cartridge-parameters">
 
 | PARAMETRO | UNITÀ | NOME | DESCRIZIONE |
 | --- | --- | --- | --- |
 | EBC | 1/mL | Conteggio delle cellule di E. coli | Concentrazione di cellule di E. coli marcate all’interno del gate EBC, calcolata dal conteggio cellulare e dal volume di campione analizzato. |
+
+</div>
 
 Per ulteriori informazioni sulla regolazione dei gate, vedere sezione [Modifica dei gate](11-results-and-data-analysis.md#section-11-4).
 
@@ -188,15 +228,23 @@ NBC significa Enterococcus Cell Count, ossia conteggio delle cellule di Enteroco
 
 **Tabella 11-11 Set di gate utilizzato per la cartuccia NBC.**
 
+<div className="manual-cartridge-table-scroll manual-cartridge-gates">
+
 | GATE | TIPO | DESCRIZIONE |
 | --- | --- | --- |
 | NBC | Poligono | Poligono definito sul piano FL1-FL2. Gli enterococchi marcati con fluorescenza all’interno di questo poligono contribuiscono a NBC. |
 
+</div>
+
 **Tabella 11-12 Parametro del risultato ottenuto con la cartuccia NBC.**
+
+<div className="manual-cartridge-table-scroll manual-cartridge-parameters">
 
 | PARAMETRO | UNITÀ | NOME | DESCRIZIONE |
 | --- | --- | --- | --- |
 | NBC | 1/mL | Conteggio delle cellule di Enterococcus | Concentrazione di enterococchi marcati all’interno del gate NBC, calcolata dal conteggio cellulare e dal volume di campione analizzato. |
+
+</div>
 
 Per ulteriori informazioni sulla regolazione dei gate, vedere sezione [Modifica dei gate](11-results-and-data-analysis.md#section-11-4).
 
@@ -206,7 +254,7 @@ Per ulteriori informazioni sulla regolazione dei gate, vedere sezione [Modifica 
 
 La rianalisi con altri gate consiste nell’applicare un gruppo di gate diverso ai dati di misurazione esistenti.
 
-- Un prerequisito è la disponibilità di tale gruppo aggiuntivo. Tutti i gruppi disponibili per il tipo di cartuccia in uso sono accessibili premendo Gate settings nel menu Home dell’interfaccia di BactoSense.
+- Un prerequisito è la disponibilità di tale gruppo aggiuntivo. Nella schermata Home, premere Impostazioni, quindi Impostazioni del gate per visualizzare i gruppi di gate disponibili.
 - La modifica di un gruppo di gate esistente è descritta nella sezione [Modifica dei gruppi di gate esistenti](11-results-and-data-analysis.md#section-11-4-3).
 
 <table className="manual-table">
@@ -243,7 +291,7 @@ INFORMAZIONI AGGIUNTIVE / IMMAGINI
 
 <td>
 
-Accedere al menu Home dell’interfaccia utente di BactoSense.
+Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni.
 
 </td>
 
@@ -263,7 +311,7 @@ Accedere al menu Home dell’interfaccia utente di BactoSense.
 
 <td>
 
-In base alla modalità di esecuzione della misurazione, premere Results (manual) o Results (Online) per visualizzare l’elenco dei risultati.
+Premere Registri, quindi Results (manual mode) o Results (online mode) in base alla modalità di misurazione utilizzata.
 
 </td>
 
@@ -303,7 +351,7 @@ Per rianalizzare una singola misurazione, selezionarla per visualizzare la pagin
 
 <td>
 
-Premere quindi il pulsante Re-gate.
+Premere Risultato del re-gate nella vista di un singolo risultato oppure Re-gate quando sono selezionate più misurazioni.
 
 </td>
 
@@ -391,20 +439,20 @@ Creazione di un nuovo gruppo di gate da una copia
 
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINI |
 | --- | --- | --- |
-| 1. | Accedere al menu Home dell’interfaccia utente di BactoSense. |  |
-| 2. | Premere il pulsante Gate settings. |  |
+| 1. | Come utente Advanced o Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni. |  |
+| 2. | Premere il pulsante Impostazioni del gate. |  |
 | 3. | Nell’elenco dei gruppi disponibili, individuare quello da copiare per creare il nuovo gruppo. | Assicurarsi che il tipo di gate (ad esempio TCC, ICC) corrisponda all’applicazione prevista. |
 | 4. | Premere l’icona Copy per creare una copia del gruppo di gate. |  |
-| 5. | Nella copia appena creata, premere l’icona Edit e seguire le istruzioni di modifica nella sezione [Modifica dei gruppi di gate esistenti](11-results-and-data-analysis.md#section-11-4-3). | ![BactoSense — Modificare il gate](/img/gui/icons/edit-gate-button.png "width=48 class=manual-icon") |
+| 5. | Nella copia appena creata, premere l’icona Modifica e seguire le istruzioni di modifica nella sezione [Modifica dei gruppi di gate esistenti](11-results-and-data-analysis.md#section-11-4-3). | ![BactoSense — Modificare il gate](/img/gui/icons/edit-gate-button.png "width=48 class=manual-icon") |
 
 Creazione di un nuovo gruppo di gate da zero
 
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINI |
 | --- | --- | --- |
-| 1. | Accedere al menu Home dell’interfaccia utente di BactoSense. |  |
-| 2. | Premere il pulsante Gate settings. |  |
-| 3. | Nella barra delle azioni in basso, premere New. |  |
-| 4. | Nel campo del nome, digitare un nome per il gruppo di gate. Nel campo del tipo, selezionare il tipo di cartuccia con cui verrà utilizzato. |  |
+| 1. | Come utente Advanced o Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni. |  |
+| 2. | Premere il pulsante Impostazioni del gate. |  |
+| 3. | Nella barra delle azioni in basso, premere Nuovo. |  |
+| 4. | Inserire un nome per il gruppo di gate e selezionare uno dei modelli disponibili per la cartuccia installata. |  |
 | 5. | Seguire quindi la procedura guidata di configurazione sullo schermo, come descritto nelle istruzioni di modifica dei gate nella sezione [Modifica dei gruppi di gate esistenti](11-results-and-data-analysis.md#section-11-4-3). |  |
 | 6. | Al termine, è possibile selezionare il nuovo gruppo quando si creano nuove misurazioni oppure rianalizzare misurazioni esistenti, come descritto nella sezione [Rianalisi delle misurazioni con altri gate](11-results-and-data-analysis.md#section-11-4-1). |  |
 
@@ -428,21 +476,29 @@ La procedura seguente descrive come regolare un gate:
 
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINE |
 | --- | --- | --- |
-| 1. | Accedere al menu Home dell’interfaccia utente di BactoSense. | ![BactoSense — Pulsante della schermata iniziale](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
-| 2. | Premere il pulsante Gate settings. | ![BactoSense — Impostazioni dei gate](/img/gui/icons/gate-settings-button.png "width=48 class=manual-icon") |
-| 3. | Premere Edit per il gate da modificare. | ![BactoSense — Modificare il gate](/img/gui/icons/edit-gate-button.png "width=48 class=manual-icon") |
-| 4. | Modificare il nome se desiderato, quindi premere Next. |  |
+| 1. | Come utente Advanced o Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni. | ![BactoSense — Pulsante Impostazioni](/img/gui/it/home-settings-button.png "width=57 class=manual-icon-settings-button-half") |
+| 2. | Premere il pulsante Impostazioni del gate. | ![BactoSense — Impostazioni dei gate](/img/gui/icons/gate-settings-button.png "width=48 class=manual-icon") |
+| 3. | Premere Modifica per il gate da modificare. | ![BactoSense — Modificare il gate](/img/gui/icons/edit-gate-button.png "width=48 class=manual-icon") |
+| 4. | Modificare il nome se desiderato, quindi premere Avanti. |  |
 | 5. | Regolare il numero e la posizione dei vertici del poligono (per TCC e ICC, consultare la sezione [Strategia di regolazione dei gate per TCC e ICC](11-results-and-data-analysis.md#section-11-4-4)). Un gate poligonale può avere da 3 a 6 vertici. | ![BactoSense — Definizione del gate ICC](/img/gui/it/icc-gate-definition.png "width=282 class=manual-figure") |
-| 6. | Premere il pulsante Next. |  |
+| 6. | Premere il pulsante Avanti. |  |
 | 7. | Inserire il limite inferiore HNA (per TCC e ICC, consultare la sezione [Strategia di regolazione dei gate per TCC e ICC](11-results-and-data-analysis.md#section-11-4-4)). | ![BactoSense — Limite inferiore HNA](/img/gui/it/hna-lower-limit.png "width=282 class=manual-figure") |
-| 8. | Premere Save e confermare. |  |
+| 8. | Premere Salva. Nella finestra di dialogo, scegliere Salva per aggiornare il gruppo esistente oppure Salva come nuovo set per conservare l’originale e creare un nuovo gruppo. |  |
 | 9. | Al termine, è possibile selezionare il gruppo modificato quando si creano nuove misurazioni oppure rianalizzare misurazioni esistenti, come descritto nella sezione [Rianalisi delle misurazioni con altri gate](11-results-and-data-analysis.md#section-11-4-1). |  |
 
 ### 11.4.4 Strategia di regolazione dei gate per TCC e ICC {#section-11-4-4}
 
 BactoSense è fornito con gruppi di gate predefiniti adatti alla grande maggioranza dei campioni. Se necessario, gli utenti avanzati possono tuttavia regolarli. Di seguito è descritta una procedura generale di regolazione, valida sia per le cartucce TCC sia per quelle ICC.
 
-<table className="manual-table">
+<div className="manual-narrow-details-scroll">
+
+<table className="manual-table manual-narrow-details">
+
+<colgroup>
+<col className="procedure-step-column" />
+<col className="procedure-instruction-column" />
+<col className="procedure-detail-column" />
+</colgroup>
 
 <thead>
 
@@ -502,7 +558,7 @@ Misurare un campione d’acqua utilizzando il protocollo standard Water analysis
 
 <td>
 
-Accedere al menu Home dell’interfaccia di BactoSense e premere Gate settings.
+Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni. Premere il pulsante Impostazioni del gate.
 
 </td>
 
@@ -542,7 +598,7 @@ In base alle necessità, eseguire una delle seguenti operazioni: • creare un n
 
 <td>
 
-Assegnare un nome al gruppo di gate e premere Next.
+Assegnare un nome al gruppo di gate e premere Avanti.
 
 </td>
 
@@ -672,7 +728,7 @@ FL2
 
 <td>
 
-Premere Next e Save. Confermare il salvataggio del nuovo gruppo di gate.
+Premere Avanti e Salva. Per un nuovo modello, confermare con Sì. Per un gruppo modificato, scegliere Salva o Salva come nuovo set nella finestra di dialogo.
 
 </td>
 
@@ -712,7 +768,7 @@ Accedere alla vista del risultato del campione d’acqua misurato in precedenza.
 
 <td>
 
-Nella vista del risultato, premere Re-gate result.
+Nella vista del risultato, premere Risultato del re-gate.
 
 </td>
 
@@ -734,7 +790,7 @@ Nella vista del risultato, premere Re-gate result.
 
 <td>
 
-Selezionare il gate appena creato e rielaborare i dati con il nuovo gate premendo Confirm.
+Selezionare il gate appena creato e rielaborare i dati con il nuovo gate premendo Conferma.
 
 </td>
 
@@ -844,7 +900,7 @@ Accedere nuovamente alla vista del risultato del campione d’acqua misurato in 
 
 <td>
 
-Nella vista del risultato, premere Re-gate result.
+Nella vista del risultato, premere Risultato del re-gate.
 
 </td>
 
@@ -866,7 +922,7 @@ Nella vista del risultato, premere Re-gate result.
 
 <td>
 
-Selezionare il gate appena creato e rielaborare i dati con il nuovo gate premendo Confirm.
+Selezionare il gate appena creato e rielaborare i dati con il nuovo gate premendo Conferma.
 
 </td>
 
@@ -932,7 +988,7 @@ Tornare a Gate settings e modificare nuovamente il gate.
 
 <td>
 
-Accedere al passaggio di configurazione del limite inferiore HNA. Inserire il limite precedentemente individuato nel campo FL1, premere Save e confermare.
+Accedere al passaggio di configurazione del limite inferiore HNA. Inserire il limite precedentemente individuato nel campo FL1, premere Salva e scegliere Salva nella finestra di dialogo.
 
 </td>
 
@@ -969,6 +1025,8 @@ Rianalizzare nuovamente la misurazione dell’acqua e verificare che il gate sia
 </tbody>
 
 </table>
+
+</div>
 ## 11.5 Analisi avanzata dei dati {#section-11-5}
 
 I dati di misurazione di BactoSense possono essere esportati nel formato Flow Cytometry Standard (FCS) 3.1. Il formato FCS è standardizzato dall’International Society for Advancement of Cytometry (ISAC) per garantire l’interoperabilità tra diversi strumenti di citometria a flusso e software di analisi. Esistono diverse versioni del formato, ciascuna delle quali introduce miglioramenti e funzioni aggiuntive. I dati FCS possono essere utilizzati per elaborazioni successive personalizzate offline, come l’applicazione di strategie complesse di selezione tramite gate, l’“impronta microbiologica”, il rilevamento automatico di anomalie e molto altro.
@@ -991,7 +1049,16 @@ Per assistenza nella configurazione di una catena di strumenti per l’analisi a
 
 Per confrontare i risultati di BactoSense con quelli di un altro citometro a flusso, è possibile analizzare una soluzione di riferimento contenente microsfere autofluorescenti. Questo metodo consente di confrontare le scale di misurazione di dispositivi diversi.
 
-<table className="manual-table">
+<div className="manual-narrow-details-scroll">
+
+<table className="manual-table manual-narrow-details manual-narrow-details-split">
+
+<colgroup>
+<col className="procedure-step-column" />
+<col className="procedure-instruction-column" />
+<col className="procedure-detail-column" />
+<col className="procedure-detail-column" />
+</colgroup>
 
 <thead>
 
@@ -1145,7 +1212,7 @@ Nella schermata Home, premere Modalità e selezionare Modalità manuale. Premere
 
 <td>
 
-Scegliere il protocollo Prime dall’elenco.
+Selezionare Prepara dall’elenco dei protocolli.
 
 </td>
 
@@ -1167,7 +1234,7 @@ Vedere sezione [Esecuzione di un adescamento (Prime)](../measurements/#section-1
 
 <td>
 
-Premere Next e Start. Attendere il completamento del protocollo di adescamento.
+Premere Avanti e Avvio. Attendere il completamento del protocollo di adescamento.
 
 </td>
 
@@ -1187,7 +1254,7 @@ Premere Next e Start. Attendere il completamento del protocollo di adescamento.
 
 <td>
 
-Scegliere il protocollo Beads Analysis dall’elenco ed eseguirlo.
+Premere Nuovo, scegliere Analisi delle sferette dall’elenco, quindi premere Avanti e Avvio.
 
 </td>
 
@@ -1288,3 +1355,5 @@ Con i diversi valori ottenuti per entrambi i dispositivi, è ora possibile confr
 </tbody>
 
 </table>
+
+</div>

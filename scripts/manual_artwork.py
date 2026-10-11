@@ -19,6 +19,7 @@ for page in json.loads(extraction_manifest.read_text())['pages'] if extraction_m
   if image['path'] in WORK_STEP_ASSETS:
    WORK_STEP_ASSETS.update(image[k] for k in ('original_path','rendered_path') if k in image)
 INFO = r'<img\b[^>]*src="/img/manual/icon-information\.png"[^>]*/?>'
+GLOVES = r'<img\b[^>]*src="/img/manual/icon-gloves\.png"[^>]*/?>'
 INFO_TITLES = [
  ('Additional information about', 'Additional information'),
  ('The intended use', 'Intended use'),
@@ -36,17 +37,63 @@ INFO_TITLES = [
  ('Ask your network', 'Network settings'),
 ]
 
-def normalize_gui_artwork(content):
+def _replace_gui_fragment(content, entry):
+ """Apply a reviewed fragment only inside its named section, when supplied."""
+ def literal(body):
+  # A replacement can contain its source fragment (for example, added instructions).
+  return entry['new'].join(part.replace(entry['old'],entry['new']) for part in body.split(entry['new']))
+ def replace(body):
+  if 'table_step' not in entry:
+   return literal(body)
+  def step(value):
+   return re.sub(r'<[^>]*>','',value).strip().replace('\\.','.')
+  def markdown_row(match):
+   parts = re.split(r'((?<!\\)\|)',match[0])
+   index = entry['table_column']*2
+   if len(parts) > index and step(parts[2]) == entry['table_step']:
+    parts[index] = literal(parts[index])
+   return ''.join(parts)
+  def html_row(match):
+   row = match[0]
+   cells = list(re.finditer(r'<td\b[^>]*>(.*?)</td>',row,re.S))
+   index = entry['table_column']-1
+   if len(cells) > index and step(cells[0][1]) == entry['table_step']:
+    cell = cells[index]
+    row = row[:cell.start(1)]+literal(cell[1])+row[cell.end(1):]
+   return row
+  body = re.sub(r'^[ \t]*\|[^\n]*\|[ \t]*$',markdown_row,body,flags=re.M)
+  return re.sub(r'<tr\b[^>]*>.*?</tr>',html_row,body,flags=re.S)
+ sections = entry.get('sections')
+ if not sections:
+  return replace(content)
+ headings = list(re.finditer(r'^#{1,6}[^\n]*\{#section-([\d-]+)\}[^\n]*(?:\n|$)',content,re.M))
+ # Work backwards so an earlier insertion cannot move a later section boundary.
+ for index in range(len(headings)-1,-1,-1):
+  heading = headings[index]
+  if heading[1] in sections:
+   end = headings[index+1].start() if index+1 < len(headings) else len(content)
+   content = content[:heading.start()]+replace(content[heading.start():end])+content[end:]
+ return content
+
+def normalize_gui_artwork(content, source_file=None):
  """Keep reviewed current figures and their navigation when importing the old PDF."""
  manifest_path = ROOT/'maintenance/gui-screenshots.json'
  if not manifest_path.is_file():
   return content
  updates_path = ROOT/'maintenance/gui-content-updates.json'
- if updates_path.is_file():
-  for entry in json.loads(updates_path.read_text())['entries']:
-   if entry['locale'] == 'en':
-    # Protect a previously applied fragment when its replacement contains the old text.
-    content = entry['new'].join(part.replace(entry['old'],entry['new']) for part in content.split(entry['new']))
+ if updates_path.is_file() and source_file is not None:
+  source = Path(source_file)
+  if source.is_absolute():
+   source = source.relative_to(ROOT)
+  source = source.as_posix()
+  # Editorial bodies are imported as their corresponding English chapter.
+  files = {source}
+  if source.startswith('scripts/editorial/'):
+   files.add('docs/'+source.removeprefix('scripts/editorial/'))
+  updates = json.loads(updates_path.read_text())
+  for entry in updates['entries']+updates.get('navigation_import_entries',[]):
+   if entry['locale'] == 'en' and entry['file'] in files:
+    content = _replace_gui_fragment(content,entry)
  figures = [figure for figure in json.loads(manifest_path.read_text())['figures'] if figure['locale'] in ('en','all')]
  replacements = {source:figure for figure in figures for source in figure['replaces']}
  contextual = [(context,figure) for figure in figures for context in figure.get('contextReplacements',[])]
@@ -93,7 +140,7 @@ def normalize_gui_artwork(content):
   return '!['+description+']('+figure['output']+title+')'
  return re.sub(r'!\[((?:\\.|[^\]\\])*)\]\((/img/[^\s)]+)(?:\s+"([^"]*)")?\)',markdown_image,content)
 
-def normalize_artwork(content):
+def normalize_artwork(content, source_file=None):
  def image(match):
   return '' if match[1] in WORK_STEP_ASSETS else match[0]
  content = re.sub(r'<img\b[^>]*src="([^"]+)"[^>]*/?>', image, content)
@@ -122,12 +169,28 @@ def normalize_artwork(content):
  content = re.sub(INFO+r'\s*'+body,block,content,flags=re.S)
  if re.search(INFO,content):
   raise ValueError('Unmatched information icon: inspect its surrounding content')
- return normalize_gui_artwork(re.sub(r'\n{3,}', '\n\n', content))
+ # Mandatory glove reminders use the same native box as the maintenance notices.
+ def gloves(match):
+  return ':::gloves[Wear protective gloves]\n\n'+markdown(match[1])+'\n\n:::\n\n'
+ content = re.sub(GLOVES+r'\s*'+body,gloves,content,flags=re.S)
+ if re.search(GLOVES,content):
+  raise ValueError('Unmatched gloves icon: inspect its surrounding content')
+ content = content.replace('/img/manual/cell-27e561e22ac1.png', '/img/safety/gloves.svg')
+ # Keep the reviewed legend, including the mandatory-gloves symbol, on re-import.
+ legend = ROOT/'scripts/editorial/02-safety-symbols.md'
+ if legend.is_file():
+  content = re.sub(r'^## 2\.3[^\n]*\n.*?(?=^## 2\.4)', lambda _: legend.read_text().rstrip()+'\n\n', content, flags=re.M|re.S)
+ # Keep the reviewed scheduler supplement when importing the older source PDF.
+ if source_file == 'docs/10-measurements.md' and '{#section-10-2-4}' not in content:
+  scheduler = ROOT/'scripts/editorial/10-advanced-scheduler.md'
+  if scheduler.is_file():
+   content = re.sub(r'(?=^## 10\.3\b)', lambda _: scheduler.read_text().rstrip()+'\n\n', content, count=1, flags=re.M)
+ return normalize_gui_artwork(re.sub(r'\n{3,}', '\n\n', content), source_file)
 
 if __name__ == '__main__':
  for path in (ROOT/'docs').glob('*.md'):
   original = path.read_text()
-  converted = normalize_artwork(original)
+  converted = normalize_artwork(original, str(path.relative_to(ROOT)))
   if original != converted:
    path.write_text(converted)
    print(path.name)

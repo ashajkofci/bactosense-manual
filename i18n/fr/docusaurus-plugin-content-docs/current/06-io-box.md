@@ -157,7 +157,7 @@ Consultez les spécifications techniques des sections [Entrées numériques](06-
 
 Le BactoSense expose les sorties sur un connecteur femelle M16 à 12 broches. Cependant, l’utilisation d’une boîte d’E/S est recommandée. Le brochage du connecteur est indiqué ci-dessous.
 
-![Illustration du manuel original, page imprimée 36](/img/manual/asset-223bcd55d2e3.png "width=80")
+![Illustration du manuel original, page imprimée 36](/img/manual/asset-223bcd55d2e3.png "width=160")
 
 *Figure 6-3 Vue d’ensemble du brochage du connecteur de sortie*
 
@@ -178,89 +178,11 @@ Le BactoSense expose les entrées sur un connecteur femelle M16 à 5 broches. L�
 
 *Figure 6-4 Vue d’ensemble du brochage du connecteur d’entrée*
 
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-1
-
-</td>
-
-<td>
-
-Entrée numérique 1
-
-</td>
-
-<td>
-
-2
-
-</td>
-
-<td>
-
-Entrée numérique 2
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3
-
-</td>
-
-<td>
-
-Entrée numérique 3
-
-</td>
-
-<td>
-
-4
-
-</td>
-
-<td>
-
-Entrée numérique 4
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5
-
-</td>
-
-<td>
-
-Commun
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+1. Entrée numérique 1
+2. Entrée numérique 2
+3. Entrée numérique 3
+4. Entrée numérique 4
+5. Commun
 
 ## 6.5 Configuration des entrées numériques et du mode PLC {#section-6-5}
 
@@ -752,17 +674,17 @@ Les valeurs des sorties numériques sont modifiées dans les situations suivante
 - Lorsque l’instrument est hors tension, toutes les sorties sont mises à 0.
 - Lorsque l’instrument est sous tension, les sorties indiquent l’état d’erreur actuel : aucune/ critique/non-critique.
 - À la fin d’une mesure en mode en ligne, les sorties sont modifiées pour indiquer les erreurs et les alarmes, selon les paramètres définis par l’utilisateur.
-- Lorsque l’on clique sur Réinitialiser sur l’écran de test de sortie ou lorsque l’on appuie sur Enregistrer sur les paramètres de sortie numérique, les sorties sont mises à jour pour afficher uniquement l’état d’erreur (les alarmes sont ignorées).
+- Lorsque l’on clique sur Remise à zéro sur l’écran de test de sortie ou lorsque l’on appuie sur Enregistrer sur les paramètres de sortie numérique, les sorties sont mises à jour pour afficher uniquement l’état d’erreur (les alarmes sont ignorées).
 - Après avoir effacé manuellement les erreurs, les sorties sont automatiquement réinitialisées (et affichent donc le nouvel état d’erreur et aucune alarme).
 - À des moments précis de la mesure, des signaux supplémentaires peuvent être relayés. Par défaut, aucun de ces signaux n’est relayé vers les sorties. Ces signaux sont :
 
-**-** Processus en cours. Active lorsqu’un protocole est en cours d’exécution.
+  - Processus en cours. Active lorsqu’un protocole est en cours d’exécution.
 
-**-** Dispositif d’échantillonnage utilisé. Active lorsque le dispositif d’échantillonnage est utilisé. Elle redevient inactive après l’étape de préparation de l’échantillon des protocoles de mesure.
+  - Dispositif d’échantillonnage utilisé. Active lorsque le dispositif d’échantillonnage est utilisé. Elle redevient inactive après l’étape de préparation de l’échantillon des protocoles de mesure.
 
-**-** Cartouche presque vide. Active lorsque le niveau de la cartouche est inférieur à 15 %, ou si la cartouche devrait être vide dans le mois selon la fréquence de mesure actuelle.
+  - Cartouche presque vide. Active lorsque le niveau de la cartouche est inférieur à 15 %, ou si la cartouche devrait être vide dans le mois selon la fréquence de mesure actuelle.
 
-**-** Cartouche périmée. Active lorsque la cartouche est périmée.
+  - Cartouche périmée. Active lorsque la cartouche est périmée.
 
 L’état des sorties numériques à la fin d’une mesure est défini selon ces valeurs par défaut, qui peuvent être modifiées dans les paramètres :
 
@@ -772,13 +694,13 @@ L’état des sorties numériques à la fin d’une mesure est défini selon ces
 - Les alarmes règlent la troisième et la quatrième sortie sur 0.
 - En cas de conflit dans les réglages des sorties, la priorité est donnée aux :
 
-**-** 1. Erreurs critiques
+  1. Erreurs critiques
 
-**-** 2. Erreurs non critiques
+  2. Erreurs non critiques
 
-**-** 3. États de la cartouche
+  3. États de la cartouche
 
-**-** 4. Alarme
+  4. Alarme
 
 :::info[Accès Admin requis]
 
@@ -882,13 +804,15 @@ Appuyez sur le bouton Sorties numériques.
 
 <td>
 
-Choisissez l’état de base, c’est-à-dire l’état de la sortie lorsque tout fonctionne normalement : Sortie 1 2 3 4 État de base 1 1 1 1
+Définissez l’état des sorties 1–4 dans la ligne **Etat initial** lorsqu’aucune erreur ni alarme n’est active.
 
 </td>
 
 <td>
 
 1 : L’interrupteur est fermé. 0 : L’interrupteur est ouvert.
+
+![BactoSense — Sorties numériques : commandes de l’état initial](/img/gui/fr/digital-output-base-state.png "width=280")
 
 </td>
 
@@ -904,13 +828,15 @@ Choisissez l’état de base, c’est-à-dire l’état de la sortie lorsque tou
 
 <td>
 
-Choisissez la sortie sur laquelle signaler l’état d’erreur critique : Sortie 1 2 3 4 Erreur critique 0 / / /
+Définissez la réaction de chaque sortie dans la ligne **Erreur critique**.
 
 </td>
 
 <td>
 
 Par défaut, une erreur critique ouvre la sortie 1. 1 : L’interrupteur est fermé. 0 : L’interrupteur est ouvert. / : L’interrupteur n’est pas affecté par cette erreur.
+
+![BactoSense — Sorties numériques : commandes des erreurs critiques](/img/gui/fr/digital-output-critical-error.png "width=280")
 
 </td>
 
@@ -926,13 +852,15 @@ Par défaut, une erreur critique ouvre la sortie 1. 1 : L’interrupteur est fer
 
 <td>
 
-Choisissez la sortie sur laquelle signaler l’état d’erreur non critique : Sortie 1 2 3 4 Erreur non critique / 0 / /
+Définissez la réaction de chaque sortie dans la ligne **Erreur non-critique**.
 
 </td>
 
 <td>
 
 Par défaut, une erreur non critique ouvre la sortie 2.
+
+![BactoSense — Sorties numériques : commandes des erreurs non critiques](/img/gui/fr/digital-output-noncritical-error.png "width=280")
 
 </td>
 
@@ -948,13 +876,17 @@ Par défaut, une erreur non critique ouvre la sortie 2.
 
 <td>
 
-Attribuez des alarmes aux sorties restantes : Sortie 1 2 3 4 Alarme 1 / / 0 0 Alarme 2 ... ... ... ... ...
+Attribuez chaque alarme activée aux sorties requises dans sa ligne d’alarme.
 
 </td>
 
 <td>
 
 Vous ne pouvez attribuer que des alarmes activées. Vous pouvez attribuer plusieurs alarmes à la même sortie.
+
+Exemples de lignes d’alarme : High TCC (en haut), High HNAP (en bas).
+
+![BactoSense — Sorties numériques : affectation des alarmes activées](/img/gui/fr/digital-output-alarm-assignment.png "width=280")
 
 </td>
 
@@ -1091,6 +1023,8 @@ Si cette option est sélectionnée, interpole la plage de comptage cellulaire ch
 
 La procédure suivante décrit le réglage des sorties analogiques.
 
+<div className="manual-output-steps-scroll">
+
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
 | 1. | Sur l’écran d’accueil, appuyez sur Paramètres. |  |
@@ -1102,11 +1036,15 @@ La procédure suivante décrit le réglage des sorties analogiques.
 | 7. | Définissez la limite supérieure de la plage (figure 6-6, position 4). | Lorsque la source est égale à cette valeur, 20 mA seront émis sur le port sélectionné. |
 | 8. | Appuyez sur le bouton Enregistrer. |  |
 
+</div>
+
 ## 6.8 Test des sorties numériques et analogiques {#section-6-8}
 
-:::warning[Évitez les alarmes involontaires]
+Connectez-vous en tant qu’Admin et utilisez Test des sorties lorsque l’instrument est au repos, avec le mode PLC désactivé.
 
-L’interface Test outputs permet de générer un signal de sortie physique à des fins de test. Assurez-vous que ces tests ne déclenchent pas d’alarme sur votre système de commande.
+:::caution[Évitez les alarmes involontaires]
+
+L’interface Test des sorties permet de générer un signal de sortie physique à des fins de test. Assurez-vous que ces tests ne déclenchent pas d’alarme sur votre système de commande.
 
 :::
 
@@ -1228,6 +1166,8 @@ Réglez le courant sur le port 1.
 
 La procédure suivante décrit le test des sorties analogiques et numériques.
 
+<div className="manual-output-steps-scroll">
+
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
 | 1. | Sur l’écran d’accueil, appuyez sur Paramètres. |  |
@@ -1236,3 +1176,5 @@ La procédure suivante décrit le test des sorties analogiques et numériques.
 | 4. | Saisissez les valeurs de test que vous souhaitez envoyer au PLC. | Pour les sorties numériques : 1: L’interrupteur est fermé. 0: L’interrupteur est ouvert. |
 | 5. | Les tests peuvent être déclenchés individuellement ou ensemble (voir figure 6-7) : • Tester uniquement les sorties numériques sur les bornes 1- 4. • Tester uniquement les sorties analogiques sur les ports 1, 2 ou les deux. • Tester toutes les sorties. | Les signaux de sortie peuvent être mesurés sur les bornes. |
 | 6. | Appuyez sur le bouton Remise à zéro. |  |
+
+</div>

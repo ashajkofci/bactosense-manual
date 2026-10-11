@@ -24,9 +24,6 @@ The following warning messages can be displayed:
 | W01 | Cartridge expired | Cartridge reagents have expired. Measurement accuracy could be affected. | • Please replace the cartridge as soon as possible. |
 | W02-04 | High baseline signal in FL1 / FL2 / SSC | Baseline signals are too high. This is usually due to bubbles or particles in suspension in the sample. Measurement accuracy could be affected. | • Check the inlet tubing for any signs of deposits.<br/>• Check the water connections, be sure that they are all tight (no air entry).<br/>• If the warning persists, please perform cleaning of instrument with the cleaning kit. |
 | W05 | Incubator temperature off target | Temperature during incubation was more than 2 °C off target. Cell counts may be affected. The incubator may be defective. | • If the problem persists, please contact customer service. |
-
-| ERROR CODE | NAME | DESCRIPTION | CAUSES / WHAT TO DO |
-| --- | --- | --- | --- |
 | W06 | No events detected | No events detected during the measurement. | • If the problem persists, please contact customer service. |
 | W07 | TCC out of range | TCC is above the specification limit of BactoSense of 2’000’000 cells/ml. | • Please dilute the sample to ensure accuracy of the measurement. |
 | W08 | Air bubbles detected | The sample appears to contain air bubbles. | • Check sampling device is installed properly.<br/>• Check the sample for bubbles.<br/>• If using online sampling device, check water is supplied at correct pressure. |
@@ -53,9 +50,6 @@ The following non-critical error messages can be displayed:
 | E08 | Enclosure too damp | Enclosure humidity is too high for safe operation. | • Replace desiccant bag, by unscrewing the large cap on the left-hand-side of the instrument (see [Replacement of the desiccant bag](15-maintenance.md#section-15-2-6)).<br/>• If the problem persists, please contact customer service. |
 | E09 | System overheated | Inside temperature is too high for safe operation. | • Reduce ambient temperature or increase measurement interval to allow instrument to cool down. |
 | E14 | Laser too hot | Laser temperature is too high for safe operation. | • Reduce ambient temperature or increase measurement interval to allow instrument to cool down. |
-
-| ERROR CODE | NAME | DESCRIPTION | CAUSES / WHAT TO DO |
-| --- | --- | --- | --- |
 | E15 | Mixer inflation error | Underpressure detected during mix or dispense. | • Missing sample.<br/>• Air in the input.<br/>• Leak in the system.<br/>• Please execute the Clean Optics protocol (see [Overview of protocols in manual mode](10-measurements.md#section-10-9-1)). |
 | E18 | Pump underpressure error | Underpressure detected during dispense. | • Missing sample.<br/>• Air in the input.<br/>• Leak in the system.<br/>• Please execute the Clean Optics protocol (see [Overview of protocols in manual mode](10-measurements.md#section-10-9-1)). |
 | E19 | System overheated | The inner temperature is too high for operation. | • Reduce ambient temperature, or increase measurement interval to allow instrument to cool down. |
@@ -64,9 +58,6 @@ The following non-critical error messages can be displayed:
 | E44 | Pump module startup error | The pump module failed to power on correctly. | • Simply retry the measurement. |
 | E45 | Low valid volume ratio error | The valid volume ratio is too low. This can be caused by a too elevated bacterial content in the water or turbidity/debris. | • The accuracy of the measurement is probably very low. Repeat the measurement while diluting the sample with clear water. |
 | E46 | Cartridge is still busy | The cartridge was still initializing when the measurement started. | • Non-critical error. Repeat the measurement. If the problem persists, contact a service technician. |
-
-| ERROR CODE | NAME | DESCRIPTION | CAUSES / WHAT TO DO |
-| --- | --- | --- | --- |
 | E48 | Microfluidic subsystem busy | The microfluidic controller is performing another task while the measurement was taken. | • Non-critical error. Repeat the measurement. If the problem persists, contact a service technician. |
 | E49 | GPIO Timeout error | The processing board is waiting for another module to respond. | • Non-critical error. Repeat the measurement. If the problem persists, contact a service technician. |
 | E50 | Pump motion blocked | The motion of the pump is blocked. | • Non-critical error. Repeat the measurement. If the problem persists, contact a service technician. |
@@ -74,9 +65,6 @@ The following non-critical error messages can be displayed:
 | E52 | Cartridge valve motion blocked | The motion of the cartridge valve is blocked. | • Non-critical error. Repeat the measurement. If the problem persists, contact customer service. |
 | E55 | M7 not connected | The acquisition processor cannot be initialized. | • Reboot the instrument.<br/>• If the problem persists, contact customer service. |
 | E56 | Empty acquisition | No events detected during acquisition | • Clean the sampling device using the Washstation, then perform a measurement of clean water.<br/>• If the problem persists, contact customer service. |
-
-| ERROR CODE | NAME | DESCRIPTION | CAUSES / WHAT TO DO |
-| --- | --- | --- | --- |
 | E57 | Cartridge busy (special command busy) | Communication with the cartridge failed. | • Non-critical error. Repeat the measurement.<br/>• If the problem persists, contact customer service. |
 | E58 | Cartridge busy (timeout) | Communication with the cartridge failed. | • Check the electronic connector between the cartridge and the instrument.<br/>• Repeat the measurement.<br/>• If the problem persists, contact customer service. |
 | E59 | Valve sensor error | Unable to read valve position. | • Please contact customer service. |
@@ -100,9 +88,6 @@ The following critical error messages can be displayed:
 | E04 | Cartridge missing | Cartridge is missing. | • Insert a cartridge (see [Installing a cartridge](08-general-operations-and-configurations.md#section-8-9-6)) |
 | E05 | Full waste bag | Cartridge waste bag is full. | • Replace cartridge (see [Change cartridges](08-general-operations-and-configurations.md#section-8-9-4)) |
 | E06 | Cartridge communication impossible | Cartridge is disconnected, door is open, or cartridge electronics are damaged. | • Make sure the cartridge’s electronic cable is connected properly, and that the door is properly closed.<br/>• If that doesn’t help, replace the cartridge and inform customer service. |
-
-| ERROR CODE | NAME | DESCRIPTION | CAUSES / WHAT TO DO |
-| --- | --- | --- | --- |
 | E07 | Storage disk full | Insufficient storage space to continue operation. | • Delete old measurements and try again (see [Clearing of disk space](15-maintenance.md#section-15-2-8))<br/>• This will delete the measurements permanently from the device.<br/>• Export measurements as backup solution. |
 | E12 | FPGA initialization error | Failed to initialize the signal processing chip. | • Reboot the instrument. |
 | E16 | Processing error | An error was discovered while processing the signals. | • The accuracy of the latest result is not guaranteed. Please repeat the analysis. |
@@ -111,9 +96,6 @@ The following critical error messages can be displayed:
 | E23 | Temperature Sensor Communication Error | Communication with temperature sensor on IO board failed. | • Please contact customer service. |
 | E24 | Laser Communication Error | Communication with optical unit failed. | • Please contact customer service. |
 | E25 | Pump Communication Error | Communication with pump module impossible. | • Please contact customer service. |
-
-| ERROR CODE | NAME | DESCRIPTION | CAUSES / WHAT TO DO |
-| --- | --- | --- | --- |
 | E26 | Power Supply Communication Error | Communication with power supply module impossible. | • Please contact customer service. |
 | E27 | Pump Communication timeout | Communication with pump module timed out. | • The cartridge door is open.<br/>• A cable is disconnected.<br/>• A circuit board is damaged, either in the pump or cartridge. |
 | E28 | Empty dye supply | Dye tube connected to cartridge is empty. | • The tube is disconnected.<br/>• Cartridge is defective.<br/>• Repeat the cartridge change procedure, making sure that all tubes are properly connected. |
@@ -122,9 +104,6 @@ The following critical error messages can be displayed:
 | E31 | Cartridge electronics failure | Cartridge level can no longer be determined accurately. | • Replace cartridge and contact customer service. |
 | E32 | Incompatible cartridge | Cartridge type is incompatible with this instrument or software. | • Make sure that you have the correct cartridge type for this instrument. |
 | E33 | Processing memory overflow | Signal processing circuits memory has overflowed. | • Please execute the Clean Optics protocol (see [Overview of protocols in manual mode](10-measurements.md#section-10-9-1)).<br/>• Retry the measurement. |
-
-| ERROR CODE | NAME | DESCRIPTION | CAUSES / WHAT TO DO |
-| --- | --- | --- | --- |
 | E38 | Cartridge not ready error | The new cartridge has not been initialized correctly | • Execute the “Cartridge Change” procedure (see [Change cartridges](08-general-operations-and-configurations.md#section-8-9-4)). |
 | E39 | Laser current limit reached | The laser has reached its upper current limit; indicating end of life. | • The laser needs to be replaced. Contact a service technician. |
 | E40 | Set of gates not found | Reference to the set of gates selected for the measurement cannot be found in the instrument settings. | • The set of gates has been deleted.<br/>• Change the set of gates and retry the measurement. |
@@ -136,7 +115,7 @@ The following critical error messages can be displayed:
 
 ## 16.4 Error and warning logs {#section-16-4}
 
-The error and warning log views can be accessed separately through the user interface Home menu when pressing the Logs button.
+On the Home screen, press Settings, then Logs. Select Error log or Warning log to open the corresponding log.
 
 ![BactoSense — Error log](/img/gui/en/error-log.png "width=558 class=manual-figure")
 
@@ -244,7 +223,7 @@ Short description of the error or event
 
 <td colSpan="2">
 
-Button to manually clear errors (only available for Admin and Service users)
+Button to manually clear errors (available to Basic, Advanced and Admin users when the instrument is idle)
 
 </td>
 
@@ -290,9 +269,9 @@ Critical errors must be cleared manually. Make sure to first solve the origin of
 
 |  | WORK STEP | ADDITIONAL INFO / IMAGE |
 | --- | --- | --- |
-| 1. | Navigate to the Home menu of the BactoSense user interface. |  |
-| 2. | Press the Logs button, and then the Error log button |  |
-| 3. | Make sure you have resolved the problem leading to the displayed error(s). Then press the Clear Errors button. | ![BactoSense — Clear errors control](/img/gui/en/error-log-clear-errors.png "width=245 class=manual-figure") |
+| 1. | On the Home screen, press Settings to open the settings menu. |  |
+| 2. | Press Logs, then Error log. |  |
+| 3. | Make sure you have resolved the problem leading to the displayed error(s). Then press the Clear errors button. | ![BactoSense — Clear errors control](/img/gui/en/error-log-clear-errors.png "width=245 class=manual-figure") |
 | 4. | Cleared errors appear with grey error symbols and an “Errors cleared” event is added to the log. The instrument is ready to analyze again. |  |
 
 ## 16.6 Automatic self-check {#section-16-6}
@@ -333,7 +312,7 @@ ADDITIONAL INFO / IMAGE
 
 <td>
 
-Navigate to the Home menu of the BactoSense user interface.
+As an Advanced or Admin user, press Settings on the Home screen to open the settings menu.
 
 </td>
 
@@ -395,7 +374,7 @@ Press the Self-check button.
 
 :::info[Additional information]
 
-Press the Run or Rerun button to start the self- check. Once execution has terminated, the instrument shows a list of all tests, with a green PASS or red FAIL indicator. Some tests may be skipped: if the system cannot communicate with the cartridge, all the tests that require cartridge communication are skipped.
+Press the Rerun button. Once execution has terminated, the instrument shows a list of all tests, with a green PASS or red FAIL indicator. Some tests may be skipped: if the system cannot communicate with the cartridge, all the tests that require cartridge communication are skipped.
 
 :::
 

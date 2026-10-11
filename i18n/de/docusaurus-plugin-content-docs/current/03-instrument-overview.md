@@ -45,177 +45,21 @@ Das Typenschild des BactoSense befindet sich auf der rechten Seite des Geräts.
 
 Das Typenschild des Netzteils des BactoSense befindet sich auf dem Netzteil und besteht aus den folgenden Elementen:
 
-![Abbildung aus dem Originalhandbuch, gedruckte Seite 9](/img/manual/asset-af22eddd339f.png "width=150")
+![Abbildung aus dem Originalhandbuch, gedruckte Seite 9](/img/manual/asset-af22eddd339f.png "width=300")
 
 *Abbildung 3-3 Typenschild des Netzteils des BactoSense.*
 
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-1
-
-</td>
-
-<td>
-
-Hersteller
-
-</td>
-
-<td>
-
-2
-
-</td>
-
-<td>
-
-Produktname
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3
-
-</td>
-
-<td>
-
-Teilenummer
-
-</td>
-
-<td>
-
-4
-
-</td>
-
-<td>
-
-Herstellungsdatum
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5
-
-</td>
-
-<td>
-
-Dienstspannung und -frequenz
-
-</td>
-
-<td>
-
-6
-
-</td>
-
-<td>
-
-Leistungsaufnahme
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7
-
-</td>
-
-<td>
-
-CE-Logo
-
-</td>
-
-<td>
-
-8
-
-</td>
-
-<td>
-
-UKCA-Logo
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-9
-
-</td>
-
-<td>
-
-Entspricht kanadischen EMV- und Interferenzstandards
-
-</td>
-
-<td>
-
-10
-
-</td>
-
-<td>
-
-Bedienungsanleitung lesen und umsichtig bedienen.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-11
-
-</td>
-
-<td>
-
-Informationen zur Entsorgung
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+1. Hersteller
+2. Produktname
+3. Teilenummer
+4. Herstellungsdatum
+5. Dienstspannung und -frequenz
+6. Leistungsaufnahme
+7. CE-Logo
+8. UKCA-Logo
+9. Entspricht kanadischen EMV- und Interferenzstandards
+10. Bedienungsanleitung lesen und umsichtig bedienen.
+11. Informationen zur Entsorgung
 
 ## 3.2 Technische Daten {#section-3-2}
 
@@ -563,34 +407,6 @@ Konfigurierbarer automatischer Neustart
 
 </tr>
 
-</tbody>
-
-</table>
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>
-
-Eigenschaft
-
-</th>
-
-<th>
-
-Spezifikation
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
 <tr>
 
 <th colSpan="2">
@@ -899,34 +715,6 @@ Alle 30 min bis alle 6 Stunden
 
 </tr>
 
-</tbody>
-
-</table>
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>
-
-Eigenschaft
-
-</th>
-
-<th>
-
-Spezifikation
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
 <tr>
 
 <th colSpan="2">
@@ -1074,34 +862,6 @@ Relative Luftfeuchtigkeit 20 % – 60 %
 </td>
 
 </tr>
-
-</tbody>
-
-</table>
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>
-
-Eigenschaft
-
-</th>
-
-<th>
-
-Spezifikation
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
 
 <tr>
 

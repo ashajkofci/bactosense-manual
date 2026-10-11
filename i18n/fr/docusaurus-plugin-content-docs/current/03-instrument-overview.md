@@ -45,177 +45,21 @@ La plaque signalétique du BactoSense se trouve sur le côté droit de l’instr
 
 La plaque signalétique du bloc d’alimentation électrique du BactoSense se trouve sur le bloc d’alimentation électrique et comporte les éléments suivants :
 
-![Illustration du manuel original, page imprimée 9](/img/manual/asset-af22eddd339f.png "width=150")
+![Illustration du manuel original, page imprimée 9](/img/manual/asset-af22eddd339f.png "width=300")
 
 *Figure 3-3 Plaque signalétique du bloc d’alimentation électrique du BactoSense*
 
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-1
-
-</td>
-
-<td>
-
-Fabricant
-
-</td>
-
-<td>
-
-2
-
-</td>
-
-<td>
-
-Nom du produit
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3
-
-</td>
-
-<td>
-
-Référence
-
-</td>
-
-<td>
-
-4
-
-</td>
-
-<td>
-
-Date de fabrication
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5
-
-</td>
-
-<td>
-
-Tension et fréquence de service
-
-</td>
-
-<td>
-
-6
-
-</td>
-
-<td>
-
-Consommation électrique
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7
-
-</td>
-
-<td>
-
-Marquage CE
-
-</td>
-
-<td>
-
-8
-
-</td>
-
-<td>
-
-Marquage UKCA
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-9
-
-</td>
-
-<td>
-
-Conformité aux normes canadiennes en<br />matière de CEM et d’interférences
-
-</td>
-
-<td>
-
-10
-
-</td>
-
-<td>
-
-Lire les instructions et utiliser<br />avec prudence.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-11
-
-</td>
-
-<td>
-
-Informations sur l’élimination
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+1. Fabricant
+2. Nom du produit
+3. Référence
+4. Date de fabrication
+5. Tension et fréquence de service
+6. Consommation électrique
+7. Marquage CE
+8. Marquage UKCA
+9. Conformité aux normes canadiennes en matière de CEM et d’interférences
+10. Lire les instructions et utiliser avec prudence.
+11. Informations sur l’élimination
 
 ## 3.2 Données techniques {#section-3-2}
 
@@ -563,34 +407,6 @@ Redémarrage automatique configurable
 
 </tr>
 
-</tbody>
-
-</table>
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>
-
-Propriété
-
-</th>
-
-<th>
-
-Spécification
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
 <tr>
 
 <th colSpan="2">
@@ -899,34 +715,6 @@ De toutes les 30 min à toutes les 6 heures
 
 </tr>
 
-</tbody>
-
-</table>
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>
-
-Propriété
-
-</th>
-
-<th>
-
-Spécification
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
 <tr>
 
 <th colSpan="2">
@@ -1074,34 +862,6 @@ Humidité de stockage
 </td>
 
 </tr>
-
-</tbody>
-
-</table>
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>
-
-Propriété
-
-</th>
-
-<th>
-
-Spécification
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
 
 <tr>
 

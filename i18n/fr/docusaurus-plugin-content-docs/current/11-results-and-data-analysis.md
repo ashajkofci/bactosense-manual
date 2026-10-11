@@ -22,13 +22,13 @@ La figure ci-dessous montre le résultat d'une mesure sélectionnée. À partir 
 | 5 | Le champ des avertissements facultatifs indique si des avertissements ont été générés pendant la mesure. Tapez sur le champ pour en savoir plus. |
 | 6 | Le bouton Supprimer supprime définitivement la mesure (confirmation nécessaire). |
 | 7 | Le bouton Renommer permet de modifier le nom de la mesure. |
-| 8 | Le bouton Re-Gate result permet d’appliquer un autre jeu de fenêtres aux données de mesure. Pour plus de détails, voir la section [Re-fenêtrage des mesures](../results-and-data-analysis/#section-11-4-1). |
+| 8 | Le bouton Re-fenêtrer permet d’appliquer un autre jeu de fenêtres aux données de mesure. Pour plus de détails, voir la section [Re-fenêtrage des mesures](../results-and-data-analysis/#section-11-4-1). |
 | 9 | Le bouton Exporter permet d'enregistrer ce résultat sur une clé USB. Pour plus d'informations, voir la section [Exportation vers une clé USB](../measurements/#section-10-8-1). |
 | 10 | Les boutons de navigation situés à gauche et à droite de l'affichage des résultats vous permettent de passer respectivement aux mesures précédentes et suivantes. |
 
 :::info[Sélectionnez plusieurs mesures]
 
-Sélection multiple et opérations par lot : dans la liste des mesures, maintenez une mesure appuyée pour activer la sélection multiple, puis sélectionnez Delete / Re-gate ou Export.
+Sélection multiple et opérations par lot : dans la liste des mesures, maintenez une mesure appuyée pour activer la sélection multiple, puis sélectionnez Supprimer / Re-Fenêtrer ou Exporter.
 
 :::
 
@@ -48,13 +48,13 @@ Les jeux de fenêtres sont spécifiques à un type de cartouche. Par exemple, se
 
 Le BactoSense propose des jeux de fenêtres préconfigurés pour tous les types de cartouches disponibles. Appelés jeux de fenêtres par défaut, ils ont été soigneusement conçus pour convenir à la grande majorité des échantillons.
 
-- Les fenêtres par défaut sur le BactoSense peuvent être trouvées en appuyant sur Fenêtres dans le Menu principal de l’interface utilisateur du BactoSense.
+- Sur l’écran d’accueil, appuyez sur Paramètres, puis sur Fenêtres pour afficher les jeux de fenêtres disponibles.
 - Les jeux de fenêtres par défaut ne peuvent ni être modifiés ni supprimés.
 - De nouveaux fenêtrages peuvent être créés en modifiant une copie d’un fenêtrage existant, comme décrit dans la section [Création d’un nouveau fenêtrage](11-results-and-data-analysis.md#section-11-4-2).
 
 ### 11.2.2 Liste des ensembles et opérations de délimitation disponibles {#section-11-2-2}
 
-Une liste de tous les ensembles de fenêtres disponibles sur le BactoSense peut être trouvée en appuyant sur Fenêtres dans le Menu principal de l’interface utilisateur du BactoSense.
+Sur l’écran d’accueil, appuyez sur Paramètres, puis sur Fenêtres pour afficher les jeux de fenêtres disponibles.
 
 ![BactoSense — Liste des gates](/img/gui/fr/gate-settings-list.png "width=599 class=manual-figure")
 
@@ -86,12 +86,18 @@ TCC désigne le nombre total de cellules. La cartouche TCC mesure donc la concen
 
 **Tableau 11-1 Fenêtrage utilisé pour la cartouche TCC.**
 
+<div className="manual-cartridge-table-scroll manual-cartridge-gates">
+
 | FENÊTRE | TYPE | DESCRIPTION |
 | --- | --- | --- |
 | TCC | Polygone | Un polygone défini sur le plan FL1-FL2. Les points à l’intérieur de ce polygone sont comptés comme des cellules (TCC). |
 | Limite inférieure HNA | Ligne verticale | Un seuil sur FL1. Les points situés à l’intérieur du TCC et supérieurs à la limite inférieure HNA dans FL1 sont comptés comme HNAC. Les points situés à l’intérieur du TCC, mais inférieurs à la limite sont comptés comme LNAC. |
 
+</div>
+
 **Tableau 11-2 Paramètres des résultats obtenus avec la cartouche TCC.**
+
+<div className="manual-cartridge-table-scroll manual-cartridge-parameters">
 
 | PARAMÈTRE | UNITÉ | NOM | DESCRIPTION |
 | --- | --- | --- | --- |
@@ -99,6 +105,8 @@ TCC désigne le nombre total de cellules. La cartouche TCC mesure donc la concen
 | HNAP | % | Pourcentage de bactéries avec un haut taux d'acide nucléique | Pourcentage de cellules HNA par rapport à TCC : HNAP<br/>= (HNAC / TCC) × 100 |
 | LNAC | 1/mL | Nombre de bactéries à faible taux d'acide nucléique | Le nombre de cellules à l’intérieur de la fenêtre TCC, mais en dessous de la limite inférieure HNA (fenêtre de ligne verticale). |
 | HNAC | 1/mL | Nombre de bactéries avec un haut taux d'acide nucléique | Le nombre de cellules à l’intérieur de la fenêtre TCC et au-dessus de la limite inférieure HNA (fenêtre de ligne verticale). |
+
+</div>
 
 Pour plus d’informations sur la façon d’ajuster les fenêtres, voir la section [Modification des fenêtres](11-results-and-data-analysis.md#section-11-4).
 
@@ -108,12 +116,18 @@ ICC désigne le nombre de cellules intactes. La cartouche ICC mesure donc la con
 
 **Tableau 11-3 Fenêtrage utilisé pour la cartouche ICC.**
 
+<div className="manual-cartridge-table-scroll manual-cartridge-gates">
+
 | FENÊTRE | TYPE | DESCRIPTION |
 | --- | --- | --- |
 | ICC | Polygone | Un polygone défini sur le plan FL1-FL2. Les points à l’intérieur de ce polygone sont comptés comme des cellules intactes (ICC). |
 | Limite inférieure HNA | Ligne verticale | Un seuil sur FL1. Les points situés à l’intérieur de l’ICC, mais au-dessus de la limite inférieure HNA dans FL1 sont comptés comme HNAC. Les points situés à l’intérieur de l’ICC, mais en dessous de la limite sont comptés comme LNAC. |
 
+</div>
+
 **Tableau 11-4 Paramètres des résultat obtenus avec la cartouche ICC.**
+
+<div className="manual-cartridge-table-scroll manual-cartridge-parameters">
 
 | PARAMÈTRE | UNITÉ | NOM | DESCRIPTION |
 | --- | --- | --- | --- |
@@ -121,6 +135,8 @@ ICC désigne le nombre de cellules intactes. La cartouche ICC mesure donc la con
 | HNAP | % | Pourcentage de bactéries avec un haut taux d'acide nucléique | Pourcentage de cellules HNA par rapport à ICC : HNAP<br/>= (HNAC / ICC) × 100 |
 | LNAC | 1/mL | Nombre de bactéries à faible taux d'acide nucléique | Le nombre de cellules LNA à l’intérieur de la fenêtre ICC, mais en dessous de la limite inférieure HNA (fenêtre de ligne verticale). |
 | HNAC | 1/mL | Nombre de bactéries avec un haut taux d'acide nucléique | Le nombre de cellules HNA à l’intérieur de la fenêtre ICC et au-dessus de la limite inférieure HNA (fenêtre de la ligne verticale). |
+
+</div>
 
 Pour plus d’informations sur la façon d’ajuster les fenêtres, voir la section [Modification des fenêtres](11-results-and-data-analysis.md#section-11-4).
 
@@ -130,12 +146,18 @@ ACC désigne le nombre de cellules actives. La cartouche ACC mesure donc la conc
 
 **Table 11-5 Fenêtrage utilisé pour la cartouche ACC.**
 
+<div className="manual-cartridge-table-scroll manual-cartridge-gates">
+
 | FENÊTRE | TYPE | DESCRIPTION |
 | --- | --- | --- |
 | ACC | Polygone | Un polygone défini sur le plan FL1-FL2. Les points à l’intérieur de ce polygone sont comptés comme des cellules actives (ACC). |
 | Limite inférieure HACC | Ligne verticale | Un seuil sur FL1. Les points situés à l’intérieur de l’ACC, mais au-dessus de la limite inférieure HACC dans FL1 sont comptés comme HACC. Les points situés à l’intérieur de l’ACC, mais en dessous de la limite sont comptés comme LACC. |
 
+</div>
+
 **Table 11-6 Paramètres des résultat obtenus avec la cartouche ACC.**
+
+<div className="manual-cartridge-table-scroll manual-cartridge-parameters">
 
 | PARAMÈTRE | UNITÉ | NOM | DESCRIPTION |
 | --- | --- | --- | --- |
@@ -143,6 +165,8 @@ ACC désigne le nombre de cellules actives. La cartouche ACC mesure donc la conc
 | HACC | 1/mL | Nombre de cellules hautement actives | Nombre de cellules actives dont l’intensité FL1 est supérieure à la fenêtre verticale HACC. |
 | LACC | 1/mL | Nombre de cellules faiblement actives | Nombre de cellules actives dont l’intensité FL1 est inférieure à la fenêtre verticale HACC. |
 | HACP | % | Pourcentage de cellules hautement actives | Pourcentage de HACC parmi les ACC : HACP<br/>= (HACC / ACC) × 100 |
+
+</div>
 
 Pour plus d’informations sur la façon d’ajuster les fenêtres, voir la section [Modification des fenêtres](11-results-and-data-analysis.md#section-11-4).
 
@@ -152,15 +176,23 @@ CBC désigne le nombre de cellules coliformes (Coliform Cell Count). La cartouch
 
 **Tableau 11-7 Jeu de fenêtres utilisé pour la cartouche CBC.**
 
+<div className="manual-cartridge-table-scroll manual-cartridge-gates">
+
 | FENÊTRE | TYPE | DESCRIPTION |
 | --- | --- | --- |
 | CBC | Polygone | Un polygone défini sur le plan FL1-FL2. Les cellules coliformes marquées par fluorescence à l’intérieur de ce polygone contribuent à CBC. |
 
+</div>
+
 **Tableau 11-8 Paramètre de résultat obtenu avec la cartouche CBC.**
+
+<div className="manual-cartridge-table-scroll manual-cartridge-parameters">
 
 | PARAMÈTRE | UNITÉ | NOM | DESCRIPTION |
 | --- | --- | --- | --- |
 | CBC | 1/mL | Nombre de cellules coliformes | Concentration de cellules coliformes marquées à l’intérieur de la fenêtre CBC, calculée à partir du nombre de cellules et du volume d’échantillon analysé. |
+
+</div>
 
 Pour plus d’informations sur la façon d’ajuster les fenêtres, voir la section [Modification des fenêtres](11-results-and-data-analysis.md#section-11-4).
 
@@ -170,15 +202,23 @@ EBC désigne le nombre de cellules E. coli (E. coli Cell Count). La cartouche EB
 
 **Tableau 11-9 Jeu de fenêtres utilisé pour la cartouche EBC.**
 
+<div className="manual-cartridge-table-scroll manual-cartridge-gates">
+
 | FENÊTRE | TYPE | DESCRIPTION |
 | --- | --- | --- |
 | EBC | Polygone | Un polygone défini sur le plan FL1-FL2. Les cellules E. coli marquées par fluorescence à l’intérieur de ce polygone contribuent à EBC. |
 
+</div>
+
 **Tableau 11-10 Paramètre de résultat obtenu avec la cartouche EBC.**
+
+<div className="manual-cartridge-table-scroll manual-cartridge-parameters">
 
 | PARAMÈTRE | UNITÉ | NOM | DESCRIPTION |
 | --- | --- | --- | --- |
 | EBC | 1/mL | Nombre de cellules E. coli | Concentration de cellules E. coli marquées à l’intérieur de la fenêtre EBC, calculée à partir du nombre de cellules et du volume d’échantillon analysé. |
+
+</div>
 
 Pour plus d’informations sur la façon d’ajuster les fenêtres, voir la section [Modification des fenêtres](11-results-and-data-analysis.md#section-11-4).
 
@@ -188,15 +228,23 @@ NBC désigne le nombre de cellules Enterococcus (Enterococcus Cell Count). La ca
 
 **Tableau 11-11 Jeu de fenêtres utilisé pour la cartouche NBC.**
 
+<div className="manual-cartridge-table-scroll manual-cartridge-gates">
+
 | FENÊTRE | TYPE | DESCRIPTION |
 | --- | --- | --- |
 | NBC | Polygone | Un polygone défini sur le plan FL1-FL2. Les entérocoques marqués par fluorescence à l’intérieur de ce polygone contribuent à NBC. |
 
+</div>
+
 **Tableau 11-12 Paramètre de résultat obtenu avec la cartouche NBC.**
+
+<div className="manual-cartridge-table-scroll manual-cartridge-parameters">
 
 | PARAMÈTRE | UNITÉ | NOM | DESCRIPTION |
 | --- | --- | --- | --- |
 | NBC | 1/mL | Nombre de cellules Enterococcus | Concentration d’entérocoques marqués à l’intérieur de la fenêtre NBC, calculée à partir du nombre de cellules et du volume d’échantillon analysé. |
+
+</div>
 
 Pour plus d’informations sur la façon d’ajuster les fenêtres, voir la section [Modification des fenêtres](11-results-and-data-analysis.md#section-11-4).
 
@@ -206,7 +254,7 @@ Pour plus d’informations sur la façon d’ajuster les fenêtres, voir la sect
 
 Le re-fenêtrage est le processus consistant à appliquer un fenêtrage différent aux données de mesure existantes.
 
-- Une condition préalable au re-fenêtrage est la présence d’un tel fenêtrage supplémentaire. Trouvez tous les fenêtrages disponibles pour votre type de cartouche en appuyant sur Fenêtres dans le Menu principal de l’interface utilisateur BactoSense.
+- Une condition préalable au re-fenêtrage est la présence d’un tel fenêtrage supplémentaire. Sur l’écran d’accueil, appuyez sur Paramètres, puis sur Fenêtres pour afficher les jeux de fenêtres disponibles.
 - Le processus de modification d’un fenêtrage existant est décrit dans la section [Modification des fenêtrages existants](11-results-and-data-analysis.md#section-11-4-3).
 
 <table className="manual-table">
@@ -243,7 +291,7 @@ INFORMATIONS SUPPLÉMENTAIRES/IMAGE
 
 <td>
 
-Accédez au Menu principal de l’interface utilisateur de BactoSense.
+Sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres.
 
 </td>
 
@@ -263,7 +311,7 @@ Accédez au Menu principal de l’interface utilisateur de BactoSense.
 
 <td>
 
-Selon la méthode de mesure utilisée, appuyez sur Résultats (Manuel) ou Résultats (En ligne) pour voir la liste des résultats.
+Appuyez sur Journaux, puis sur Results (manual mode) ou Results (online mode) selon le mode de mesure utilisé.
 
 </td>
 
@@ -303,7 +351,7 @@ Pour re-fenêtrer une seule mesure, sélectionnez-la pour afficher la page des d
 
 <td>
 
-Appuyez ensuite sur Re-gate.
+Appuyez sur Re-fenêtrer dans la vue d’une mesure, ou sur Re-Fenêtrer lorsque plusieurs mesures sont sélectionnées.
 
 </td>
 
@@ -343,7 +391,7 @@ Sélectionnez le fenêtrage souhaité en cochant sa case.
 
 <td>
 
-Appuyez sur le bouton Confirmer pour lancer le processus de re-fenêtrage.
+Appuyez sur Confirmer pour lancer le re-fenêtrage.
 
 </td>
 
@@ -391,7 +439,7 @@ Création d’un nouveau fenêtrage à partir d’une copie
 
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
-| 1. | Accédez au Menu principal de l’interface utilisateur de BactoSense. |  |
+| 1. | En tant qu’utilisateur Advanced ou Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. |  |
 | 2. | Appuyez sur le bouton Fenêtres. |  |
 | 3. | Dans la liste des fenêtrages disponibles, identifiez le fenêtrage à partir duquel vous souhaitez effectuer une copie pour créer le nouveau fenêtrage. | Assurez-vous que le type de fenêtrage (par exemple TCC, ICC) correspond à votre application cible. |
 | 4. | Appuyez sur l’icône Copier pour créer une copie du fenêtrage. |  |
@@ -401,10 +449,10 @@ Création d’un nouveau fenêtrage à partir de zéro
 
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
-| 1. | Accédez au Menu principal de l’interface utilisateur de BactoSense. |  |
+| 1. | En tant qu’utilisateur Advanced ou Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. |  |
 | 2. | Appuyez sur le bouton Fenêtres. |  |
 | 3. | Dans la barre d’action en bas, appuyez sur Nouveau. |  |
-| 4. | Dans le champ Nom, saisissez un nom pour l’ensemble de fenêtres. Dans le champ Type, sélectionnez pour quel type de cartouche l’ensemble de fenêtres sera utilisé. |  |
+| 4. | Saisissez un nom pour le jeu de fenêtres et sélectionnez l’un des modèles disponibles pour la cartouche installée. |  |
 | 5. | Suivez ensuite l’assistant de configuration des fenêtres à l’écran, tel que décrit dans les instructions de modification des fenêtres de la section [Modification des fenêtrages existants](11-results-and-data-analysis.md#section-11-4-3). |  |
 | 6. | Une fois terminé, vous pouvez sélectionner le nouveau fenêtrage lors de la création de nouvelles mesures ou du fenêtrage des mesures existantes, comme décrit dans la section [Re-fenêtrage des mesures](11-results-and-data-analysis.md#section-11-4-1). |  |
 
@@ -428,21 +476,29 @@ La procédure suivante décrit comment ajuster une fenêtre :
 
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
-| 1. | Accédez au Menu principal de l’interface utilisateur de BactoSense. | ![BactoSense — Bouton d’accueil](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
+| 1. | En tant qu’utilisateur Advanced ou Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. | ![BactoSense — Bouton Paramètres](/img/gui/fr/home-settings-button.png "width=57 class=manual-icon-settings-button-half") |
 | 2. | Appuyez sur le bouton Fenêtres. | ![BactoSense — Paramètres des fenêtres](/img/gui/icons/gate-settings-button.png "width=48 class=manual-icon") |
 | 3. | Appuyez sur le bouton Modifier de la fenêtre que vous souhaitez modifier. | ![BactoSense — Modifier la fenêtre](/img/gui/icons/edit-gate-button.png "width=48 class=manual-icon") |
 | 4. | Modifiez le nom si vous le souhaitez, puis appuyez sur le bouton Suivant. |  |
 | 5. | Ajustez le nombre et la position des sommets du polygone (pour TCC et ICC, voir section [Stratégie d’ajustement des fenêtres pour TCC et ICC](11-results-and-data-analysis.md#section-11-4-4)). Une fenêtre polygonale peut avoir de 3 à 6 sommets. | ![BactoSense — Définition du gate ICC](/img/gui/fr/icc-gate-definition.png "width=282 class=manual-figure") |
 | 6. | Appuyez sur le bouton Suivant. |  |
 | 7. | Saisissez la limite inférieure HNA (pour TCC et ICC, consultez la section [Stratégie d’ajustement des fenêtres pour TCC et ICC](11-results-and-data-analysis.md#section-11-4-4)). | ![BactoSense — Limite inférieure HNA](/img/gui/fr/hna-lower-limit.png "width=282 class=manual-figure") |
-| 8. | Appuyez sur le bouton Enregistrer et confirmez. |  |
+| 8. | Appuyez sur Enregistrer. Dans la boîte de dialogue, choisissez Enregistrer pour modifier le jeu existant, ou Enregistrer comme nouveau jeu pour conserver l’original et créer un nouveau jeu. |  |
 | 9. | Une fois terminé, vous pouvez sélectionner le fenêtrage modifié lors de la création de nouvelles mesures ou du fenêtrage des mesures existantes, comme décrit dans la section [Re-fenêtrage des mesures](11-results-and-data-analysis.md#section-11-4-1). |  |
 
 ### 11.4.4 Stratégie d’ajustement des fenêtres pour TCC et ICC {#section-11-4-4}
 
 Le BactoSense est livré avec des fenêtrages par défaut qui conviennent à la grande majorité des échantillons. Cependant, si nécessaire, les utilisateurs avancés ont la possibilité d’ajuster le fenêtrage. Une procédure générale d’ajustement du fenêtrage est expliquée ci-dessous et s’applique aux cartouches TCC et ICC.
 
-<table className="manual-table">
+<div className="manual-narrow-details-scroll">
+
+<table className="manual-table manual-narrow-details">
+
+<colgroup>
+<col className="procedure-step-column" />
+<col className="procedure-instruction-column" />
+<col className="procedure-detail-column" />
+</colgroup>
 
 <thead>
 
@@ -502,7 +558,7 @@ Mesurez un échantillon d’eau avec le protocole standard Water analysis. Sur l
 
 <td>
 
-Ouvrez le menu Home de l’interface BactoSense et appuyez sur Gate settings.
+Sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. Appuyez sur le bouton Fenêtres.
 
 </td>
 
@@ -542,7 +598,7 @@ Selon vos besoins, effectuez l’une des opérations suivantes : •<br />Créer
 
 <td>
 
-Nommez ce jeu de fenêtres et appuyez sur Next.
+Nommez ce jeu de fenêtres et appuyez sur Suivant.
 
 </td>
 
@@ -672,7 +728,7 @@ FL2
 
 <td>
 
-Appuyez sur Next, puis Save. Confirmez l’enregistrement du nouveau jeu de fenêtres avec Save.
+Appuyez sur Suivant et Enregistrer. Pour un nouveau modèle, confirmez avec Oui. Pour un jeu modifié, choisissez Enregistrer ou Enregistrer comme nouveau jeu dans la boîte de dialogue.
 
 </td>
 
@@ -712,7 +768,7 @@ Affichez le résultat de l’échantillon d’eau mesuré précédemment.
 
 <td>
 
-Dans l’affichage du résultat, appuyez sur Re-gate result.
+Dans l’affichage du résultat, appuyez sur Re-fenêtrer.
 
 </td>
 
@@ -734,7 +790,7 @@ Dans l’affichage du résultat, appuyez sur Re-gate result.
 
 <td>
 
-Sélectionnez la fenêtre que vous venez de créer et retraitez les données avec celle-ci en appuyant sur Confirm.
+Sélectionnez la fenêtre que vous venez de créer et retraitez les données avec celle-ci en appuyant sur Confirmer.
 
 </td>
 
@@ -844,7 +900,7 @@ Affichez à nouveau le résultat de l’échantillon d’eau mesuré précédemm
 
 <td>
 
-Dans l’affichage du résultat, appuyez sur Re-gate result.
+Dans l’affichage du résultat, appuyez sur Re-fenêtrer.
 
 </td>
 
@@ -866,7 +922,7 @@ Dans l’affichage du résultat, appuyez sur Re-gate result.
 
 <td>
 
-Sélectionnez la fenêtre que vous venez de créer et retraitez les données avec celle-ci en appuyant sur Confirm.
+Sélectionnez la fenêtre que vous venez de créer et retraitez les données avec celle-ci en appuyant sur Confirmer.
 
 </td>
 
@@ -932,7 +988,7 @@ Retournez au menu Fenêtres et modifiez à nouveau votre fenêtre.
 
 <td>
 
-Accédez à l’étape de configuration de la limite inférieure HNA. Saisissez la limite inférieure HNA précédemment identifiée dans le champ FL1, appuyez sur Enregistrer et confirmez.
+Accédez à l’étape de configuration de la limite inférieure HNA. Saisissez la limite inférieure HNA précédemment identifiée dans le champ FL1, appuyez sur Enregistrer et choisissez Enregistrer dans la boîte de dialogue.
 
 </td>
 
@@ -969,6 +1025,8 @@ Re-fenêtrez à nouveau la mesure d’analyse de l’eau et vérifiez que la fen
 </tbody>
 
 </table>
+
+</div>
 ## 11.5 Analyse avancée des données {#section-11-5}
 
 Les données de mesure BactoSense peuvent être exportées au format de fichier Flow Cytometry Standard (FCS) 3.1. Le format de fichier FCS est normalisé par la Société internationale pour l’avancement de la cytométrie (ISAC) afin d’assurer l’interopérabilité entre différents instruments de cytométrie en flux et logiciels d’analyse. Il existe différentes versions du format FCS, chacune introduisant des améliorations et des fonctionnalités supplémentaires. Les données FCS peuvent être utilisées pour un post-traitement hors ligne personnalisé, tel que l’application de stratégies de délimitation complexes, l’empreinte digitale microbienne, la détection automatisée d’anomalies et bien plus encore.
@@ -991,7 +1049,16 @@ Pour obtenir de l’aide sur la configuration d’une chaîne d’outils d’ana
 
 Pour comparer les résultats du BactoSense à ceux d’un autre cytomètre en flux, une solution de référence contenant des billes autofluorescentes peut être analysée. Cette méthode permet à l’utilisateur de comparer les échelles de mesure de différents instruments.
 
-<table className="manual-table">
+<div className="manual-narrow-details-scroll">
+
+<table className="manual-table manual-narrow-details manual-narrow-details-split">
+
+<colgroup>
+<col className="procedure-step-column" />
+<col className="procedure-instruction-column" />
+<col className="procedure-detail-column" />
+<col className="procedure-detail-column" />
+</colgroup>
 
 <thead>
 
@@ -1145,7 +1212,7 @@ Sur l’écran d’accueil, appuyez sur Mode et sélectionnez Mode manuel. Appuy
 
 <td>
 
-Choisissez le protocole Amorçage dans la liste.
+Sélectionnez Amorçage dans la liste des protocoles.
 
 </td>
 
@@ -1187,7 +1254,7 @@ Appuyez sur les boutons Suivant et Démarrer. Laissez le protocole d’amorçage
 
 <td>
 
-Choisissez le protocole Analyse Billes dans la liste et exécutez-le.
+Appuyez sur Nouveau, choisissez Analyse Billes dans la liste, puis appuyez sur Suivant et Démarrer.
 
 </td>
 
@@ -1288,3 +1355,5 @@ Avec les différentes valeurs obtenues pour les deux instruments, il est mainten
 </tbody>
 
 </table>
+
+</div>

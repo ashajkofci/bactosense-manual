@@ -88,7 +88,7 @@ Bringen Sie zwei M8-Schrauben in der selben Höhe im horizontalen Abstand von 26
 
 <td>
 
-:::warning[Sichere Wandmontage]
+:::caution[Sichere Wandmontage]
 
 Die Halterung muss mindestens 60kg (132lbs) tragen können.
 
@@ -158,7 +158,7 @@ Der BactoSense muss mit dem mitgelieferten Original-Netzteil betrieben werden, u
 
 :::
 
-:::warning[Stabile Spannungsversorgung]
+:::caution[Stabile Spannungsversorgung]
 
 Eine unterbrechungsfreie und stabile Spannungsversorgung gemäß den Angaben unter [Technische Daten](03-instrument-overview.md#section-3-2) muss sichergestellt sein.
 
@@ -309,7 +309,7 @@ Ziehen Sie den Verriegelungsring (X) des Stromsteckers fest. Ist der Stromstecke
 
 </table>
 
-:::warning[Stromversorgung sicher trennen]
+:::caution[Stromversorgung sicher trennen]
 
 Um den BactoSense von der Spannungsversorgung zu trennen, schalten Sie das Gerät zunächst aus. Trennen Sie dann das Netzteil von der Spannungsquelle, bevor Sie das Netzteil vom BactoSense trennen.
 
@@ -552,15 +552,17 @@ Verbinden Sie das Netzteil mit der Spannungsversorgung und dem Gerät, wie unter
 
 Das manuelle Probenahmegerät dient der Messung von Einzelproben, die sich in 5 mL- Röhrchen mit Schraubverschluss befinden. Die folgenden Schritte beschreiben, wie Sie das manuelle Probenahmegerät installieren.
 
-![Abbildung aus dem Originalhandbuch, gedruckte Seite 23](/img/manual/asset-d4b1ce33478f.png "width=53")
+![Abbildung aus dem Originalhandbuch, gedruckte Seite 23](/img/manual/asset-d4b1ce33478f.png "width=282 class=manual-sampling-illustration")
 
 *Abbildung 5-1 Manuelles Probenahmegerät* *1: Positionierungsstifte, 2: Stecker, 3: Fixierring, 4: 5-mL-Röhrchen mit Schraubverschluss.*
 
-![Schutzhandschuhe tragen](/img/manual/icon-gloves.png "width=32")
+:::gloves[Schutzhandschuhe tragen]
 
 Vermeiden Sie die Kontaminierung des Geräts. Tragen Sie beim Hantieren mit Proben, Probenahmegeräten und Komponenten, die damit in Kontakt kommen, Nitrilhandschuhe.
 
-<table>
+:::
+
+<table className="manual-sampling-installation">
 
 <thead>
 
@@ -606,7 +608,7 @@ Prüfen Sie das manuelle Probenahmegerät. • Stellen Sie sicher, dass es frei 
 
 <td>
 
-![Abbildung zum Arbeitsschritt, gedruckte Seite 23](/img/manual/asset-990519e959c3.png "width=58")
+![Abbildung zum Arbeitsschritt, gedruckte Seite 23](/img/manual/asset-990519e959c3.png "width=282 class=manual-sampling-illustration")
 
 </td>
 
@@ -628,7 +630,7 @@ Setzen Sie ein leeres 5-mL-Schraubver- schlussröhrchen bzw. die Washstation auf
 
 <td>
 
-![Abbildung zum Arbeitsschritt, gedruckte Seite 23](/img/manual/asset-cdd539f42468.png "width=46")
+![Abbildung zum Arbeitsschritt, gedruckte Seite 23](/img/manual/asset-cdd539f42468.png "width=282 class=manual-sampling-illustration")
 
 </td>
 
@@ -650,7 +652,7 @@ Führen Sie den Stecker des Probenahmegeräts vorsichtig in den Probenahmegerät
 
 <td>
 
-![Abbildung zum Arbeitsschritt, gedruckte Seite 23](/img/manual/asset-7f15e58174d9.png "width=63")
+![Abbildung zum Arbeitsschritt, gedruckte Seite 23](/img/manual/asset-7f15e58174d9.png "width=282 class=manual-sampling-illustration")
 
 </td>
 
@@ -666,7 +668,7 @@ Führen Sie den Stecker des Probenahmegeräts vorsichtig in den Probenahmegerät
 
 <td>
 
-:::warning[Nur von Hand festziehen]
+:::caution[Nur von Hand festziehen]
 
 Ziehen Sie dann den Rändelring an, bis die Probenahmevorrichtung fest sitzt. Nur mit bloßen Fingern anziehen. Keine Werkzeuge verwenden.
 
@@ -676,7 +678,7 @@ Ziehen Sie dann den Rändelring an, bis die Probenahmevorrichtung fest sitzt. Nu
 
 <td>
 
-![Abbildung zum Arbeitsschritt, gedruckte Seite 24](/img/manual/asset-0c86ff9377ac.png "width=94")
+![Abbildung zum Arbeitsschritt, gedruckte Seite 24](/img/manual/asset-0c86ff9377ac.png "width=282 class=manual-sampling-illustration")
 
 </td>
 
@@ -734,11 +736,13 @@ Das Online-Probenahmegerät dient dem kontinuierlichen Messen in vorgegebenen Me
 
 *Abbildung 5-2 Online-Probenahmegerät* *1: Mit einem Ablauf verbundener Auslassschlauch, 2: Mit einer Wasserquelle verbundener Einlassschlauch, 3: Anschluss-* *mutter, 4: Fixierring, 5: Positionierungsstifte, 6: Stecker.*
 
-![Schutzhandschuhe tragen](/img/manual/icon-gloves.png "width=32")
+:::gloves[Schutzhandschuhe tragen]
 
 Vermeiden Sie die Kontaminierung des Geräts. Tragen Sie beim Hantieren mit Proben, Probenahmegeräten und Komponenten, die damit in Kontakt kommen, Nitrilhandschuhe.
 
-:::warning[Schlauchverbindungen sichern]
+:::
+
+:::caution[Schlauchverbindungen sichern]
 
 **Bringen Sie Schläuche und Probenahmegerät fest am Gerät an**
 
@@ -775,391 +779,62 @@ In diesem Abschnitt wird der Einbau des Online-Probenahmegeräts mit bereits ang
 
 *Abbildung 5-3 Typische Installation für die Onlineanalyse mittels des Online-Probenahmegeräts.*
 
-<table>
+#### Durchfluss- und Druckmanagement
 
-<tbody>
+1. Ein/Aus-Ventil
+2. Druckventil mit Manometer
+3. Durchflussventil
+4. Reduzierstücke
 
-<tr>
+#### Ein- und Auslassschläuche
 
-<td colSpan="2">
+5. Gegendruckschleife
+6. Schlauchfixierung
+7. Horizontaler Einlassschlauch
+8. An den Ablauf angeschlossener Auslassschlauch
 
-Durchfluss- und Druckmanagement
+#### Online-Probenahmegerät
 
-</td>
+9. Auslassschlauch
+10. Einlassschlauch
+11. Einlassbedingungen:
+    - Kontinuierlicher Durchfluss
+    - 200 – 400 mL/min (0.05 – 0.10 gal/min)
+    - Max. 0.5 bar (7.3 psi)
 
-</tr>
+#### Installationsschritte
 
-<tr>
+1. Stellen Sie sicher, dass Ein- und Auslassschlauch fest mit dem Online-Probenahmegerät verbunden sind.
 
-<td>
+2. Führen Sie den Stecker des Probenahmegeräts vorsichtig in den Probenahmegeräteanschluss auf der linken Seite des BactoSense ein, indem Sie die darin befindlichen metallischen Positionierungsstifte in die Öffnungen des Probenahmegeräteanschlusses des BactoSense einstecken.
 
-1
+    ![Abbildung zum Arbeitsschritt, gedruckte Seite 28](/img/manual/asset-255f328ed935.png "width=77")
 
-</td>
+3. :::caution[Nur von Hand festziehen]
 
-<td>
+    Ziehen Sie anschließend den gerändelten Fixierring (rot) fest, bis das Probenahmegerät sicher sitzt. Nur von Hand festziehen. Verwenden Sie keine Werkzeuge.
 
-Ein/Aus-Ventil
+    :::
 
-</td>
+    ![Abbildung zum Arbeitsschritt, gedruckte Seite 28](/img/manual/asset-ae907dad8418.png "width=98")
 
-</tr>
+4. :::caution[Probenahmeschläuche sicher anschließen]
 
-<tr>
+    Verbinden Sie die freien Schlauchenden vorsichtig mit der Wasserquelle am Einlass und dem Ablauf am Auslass. • Richten Sie den Einlassschlauch auf Höhe der Wasserquelle aus, um eingeschlossene Luftblasen zu vermeiden. • Kürzen Sie die Schläuche so weit wie möglich. • Verlegen Sie den Auslassschlauch mit einer hochliegenden Schleife. • Verwenden Sie möglichst wenige Verbindungsstücke, um mögliche Verunreinigungsquellen zu reduzieren. • Stellen Sie sicher, dass über die Schläuche keine Kräfte auf das Probenahmegerät oder den BactoSense wirken, um Schäden zu vermeiden. Befestigen Sie die Schläuche nach Möglichkeit an einer festen Struktur in der Nähe des Probenahmegeräts (30 – 50 cm). Verbinden Sie den Auslassschlauch bei Trinkwasserinstallationen mit einem Ablauf, damit das aus dem Trinkwassernetz abgeleitete Wasser nach dem Durchströmen der zusätzlichen Armaturen, Schläuche und des BactoSense-Probenahmegeräts nicht zurückgeführt wird.
 
-<td>
+    :::
 
-2
+    Siehe Abbildung 5-3.
 
-</td>
+5. Öffnen Sie vorsichtig den Wasserhahn und überprüfen Sie Ihren Aufbau auf Undichtigkeiten.
 
-<td>
+6. :::caution[Durchfluss und Druck prüfen]
 
-Druckventil mit Manometer
+    Stellen Sie den Durchfluss der Wasserversorgung ein. Durchflussbereich: 200 bis 400 mL/min (0.05 – 0.10 gal/min). Liegt der Durchfluss außerhalb der angegebenen Grenzen, können die Ergebnisse ungenau sein oder der BactoSense beschädigt werden. Stellen Sie sicher, dass der Druck im Probenahmegerät 0.5 bar (7.3 psi) nicht überschreitet. Installieren Sie bei Bedarf einen Druckminderer.
 
-</td>
+    :::
 
-</tr>
-
-<tr>
-
-<td>
-
-3
-
-</td>
-
-<td>
-
-Durchflussventil
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4
-
-</td>
-
-<td>
-
-Reduzierstücke
-
-</td>
-
-</tr>
-
-<tr>
-
-<td colSpan="2">
-
-Ein- und Auslassschläuche
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5
-
-</td>
-
-<td>
-
-Gegendruckschleife
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6
-
-</td>
-
-<td>
-
-Schlauchfixierung
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7
-
-</td>
-
-<td>
-
-Horizontaler Einlassschlauch
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-8
-
-</td>
-
-<td>
-
-An den Ablauf angeschlossener Auslassschlauch
-
-</td>
-
-</tr>
-
-<tr>
-
-<td colSpan="2">
-
-Online-Probenahmegerät
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-9
-
-</td>
-
-<td>
-
-Auslassschlauch
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-10
-
-</td>
-
-<td>
-
-Einlassschlauch
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-11
-
-</td>
-
-<td>
-
-Einlassbedingungen • Kontinuierlicher Durchfluss • 200 – 400 mL/min (0.05 – 0.10 gal/min) • Max. 0.5 bar (7.3 psi)
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-ARBEITSSCHRITT
-
-</th>
-
-<th>
-
-ZUSÄTZLICHE INFORMATIONEN / ABBILDUNGEN
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Stellen Sie sicher, dass Ein- und Auslassschlauch fest mit dem Online-Probenahmegerät verbunden sind.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Führen Sie den Stecker des Probenahmegeräts vorsichtig in den Probenahmegeräteanschluss auf der linken Seite des BactoSense ein, indem Sie die darin befindlichen metallischen Positionierungsstifte in die Öffnungen des Probenahmegeräteanschlusses des BactoSense einstecken.
-
-</td>
-
-<td>
-
-![Abbildung zum Arbeitsschritt, gedruckte Seite 28](/img/manual/asset-255f328ed935.png "width=77")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-:::warning[Nur von Hand festziehen]
-
-Ziehen Sie anschließend den gerändelten Fixierring (rot) fest, bis das Probenahmegerät sicher sitzt. Nur von Hand festziehen. Verwenden Sie keine Werkzeuge.
-
-:::
-
-</td>
-
-<td>
-
-![Abbildung zum Arbeitsschritt, gedruckte Seite 28](/img/manual/asset-ae907dad8418.png "width=98")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-:::warning[Probenahmeschläuche sicher anschließen]
-
-Verbinden Sie die freien Schlauchenden vorsichtig mit der Wasserquelle am Einlass und dem Ablauf am Auslass. • Richten Sie den Einlassschlauch auf Höhe der Wasserquelle aus, um eingeschlossene Luftblasen zu vermeiden. • Kürzen Sie die Schläuche so weit wie möglich. • Verlegen Sie den Auslassschlauch mit einer hochliegenden Schleife. • Verwenden Sie möglichst wenige Verbindungsstücke, um mögliche Verunreinigungsquellen zu reduzieren. • Stellen Sie sicher, dass über die Schläuche keine Kräfte auf das Probenahmegerät oder den BactoSense wirken, um Schäden zu vermeiden. Befestigen Sie die Schläuche nach Möglichkeit an einer festen Struktur in der Nähe des Probenahmegeräts (30 – 50 cm). Verbinden Sie den Auslassschlauch bei Trinkwasserinstallationen mit einem Ablauf, damit das aus dem Trinkwassernetz abgeleitete Wasser nach dem Durchströmen der zusätzlichen Armaturen, Schläuche und des BactoSense-Probenahmegeräts nicht zurückgeführt wird.
-
-:::
-
-</td>
-
-<td>
-
-Siehe Abbildung 5-3.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Öffnen Sie vorsichtig den Wasserhahn und überprüfen Sie Ihren Aufbau auf Undichtigkeiten.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-:::warning[Durchfluss und Druck prüfen]
-
-Stellen Sie den Durchfluss der Wasserversorgung ein. Durchflussbereich: 200 bis 400 mL/min (0.05 – 0.10 gal/min). Liegt der Durchfluss außerhalb der angegebenen Grenzen, können die Ergebnisse ungenau sein oder der BactoSense beschädigt werden. Stellen Sie sicher, dass der Druck im Probenahmegerät 0.5 bar (7.3 psi) nicht überschreitet. Installieren Sie bei Bedarf einen Druckminderer.
-
-:::
-
-</td>
-
-<td>
-
-Siehe Abbildung 5-3.
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+    Siehe Abbildung 5-3.
 
 ## 5.6 Anschlussmöglichkeiten {#section-5-6}
 

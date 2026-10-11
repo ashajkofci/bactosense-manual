@@ -82,7 +82,7 @@ export function simplifyMarkdown(text, tablePlan) {
   });
   result = result.replace(/<a href="([^"]+)">([\s\S]*?)<\/a>/g, (_, href, label) => `[${label}](${href})`);
   // Convert innermost notices first; longer outer fences preserve nested notices.
-  const notice = /<Admonition type="(info|warning|danger|tip|note)" title="([^"]*)">((?:(?!<Admonition)[\s\S])*?)<\/Admonition>/g;
+  const notice = /<Admonition type="(info|warning|danger|caution|explosion|gloves|tip|note)" title="([^"]*)">((?:(?!<Admonition)[\s\S])*?)<\/Admonition>/g;
   while (/<Admonition\b/.test(result)) {
     const updated = result.replace(notice, (_, type, title, body) => {
       const longest = Math.max(2, ...[...body.matchAll(/^(:{3,})/gm)].map(match => match[1].length));

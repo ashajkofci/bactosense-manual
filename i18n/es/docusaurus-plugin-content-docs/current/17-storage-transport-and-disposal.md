@@ -49,7 +49,7 @@ Preparación
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMÁGENES |
 | --- | --- | --- |
 | 1. | Retire y limpie el dispositivo de muestreo según las instrucciones de la sección [Retirada del dispositivo de muestreo manual](08-general-operations-and-configurations.md#section-8-10-2) (dispositivo de muestreo manual) o de la sección [Retirada del dispositivo de muestreo en línea](08-general-operations-and-configurations.md#section-8-10-1) (dispositivo de muestreo en línea). | Utilice guantes durante el proceso para evitar contaminar el dispositivo de muestreo. Si los tubos del dispositivo en línea muestran signos de contaminación o daños, no los reutilice y deséchelos. |
-| 2. | Cubra el dispositivo de muestreo limpio con la tapa específica, si dispone de ella. | ![Ilustración de la tabla de la página 153 del manual](/img/manual/cell-8fdb2d0e492f.png "width=132 class=manual-figure") |
+| 2. | Cubra el dispositivo de muestreo limpio con la tapa específica, si dispone de ella. | ![Ilustración de la tabla de la página 153 del manual](/img/manual/cell-8fdb2d0e492f.png "width=66 class=manual-figure") |
 | 3. | Guarde el dispositivo de muestreo limpio en una bolsa de plástico limpia y seca. |  |
 
 **Almacenamiento**
@@ -177,7 +177,7 @@ Los instrumentos que hayan estado en contacto con medios peligrosos no deben env
 
 :::
 
-:::warning[Siga las instrucciones de envío]
+:::caution[Siga las instrucciones de envío]
 
 Respete las instrucciones de envío.
 
@@ -366,7 +366,7 @@ Cartucho
 
 <td>
 
-:::warning[Devuelva los cartuchos usados.]
+:::caution[Devuelva los cartuchos usados.]
 
 No desmonte ni deseche el cartucho.
 

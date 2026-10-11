@@ -166,7 +166,7 @@ Seleccione un número de sección para abrir el tema correspondiente de este man
 
 - HNAC [1](/glossary), [11.3.2](/results-and-data-analysis#section-11-3-2), [11.3.3](/results-and-data-analysis#section-11-3-3)
 - HNAP [1](/glossary), [11.3.2](/results-and-data-analysis#section-11-3-2), [11.3.3](/results-and-data-analysis#section-11-3-3)
-- Menú Home [8.2.7](/general-operations-and-configurations#section-8-2-7), [8.3.2](/general-operations-and-configurations#section-8-3-2), [8.8](/general-operations-and-configurations#section-8-8)
+- Pantalla Home y menú Ajustes [8.2.7](/general-operations-and-configurations#section-8-2-7), [8.3.2](/general-operations-and-configurations#section-8-3-2), [8.8](/general-operations-and-configurations#section-8-8)
 - HTTP [5.6](/installation#section-5-6), [12.2](/data-access-and-export#section-12-2)
 - HTTPS [5.6](/installation#section-5-6), [12.2](/data-access-and-export#section-12-2)
 - Humedad [3.2](/instrument-overview#section-3-2), [3.2](/instrument-overview#section-3-2)
@@ -245,6 +245,7 @@ Seleccione un número de sección para abrir el tema correspondiente de este man
 - Modo en línea
   - Configuración [10.1](/measurements#section-10-1)
   - Medición [10.1](/measurements#section-10-1)
+  - Programación avanzada [10.2.4](/measurements#section-10-2-4)
   - Resultados [10.1](/measurements#section-10-1), [10.2.3](/measurements#section-10-2-3)
   - Finalización [10.2.2](/measurements#section-10-2-2)
   - Protocolos [10.9.1](/measurements#section-10-9-1)
@@ -388,7 +389,7 @@ Seleccione un número de sección para abrir el tema correspondiente de este man
   - Requisitos [2.5](/general-user-information#section-2-5)
   - Funciones [8.2.7](/general-operations-and-configurations#section-8-2-7)
 - Interfaz de usuario [8.8](/general-operations-and-configurations#section-8-8)
-  - Menú Home [8.8](/general-operations-and-configurations#section-8-8)
+  - Pantalla Home y menú Ajustes [8.8](/general-operations-and-configurations#section-8-8)
 - Transmisión de la interfaz de usuario [5.6](/installation#section-5-6)
 
 ## V

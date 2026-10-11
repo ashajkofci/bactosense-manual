@@ -166,7 +166,7 @@ Selezionare un numero di sezione per aprire l’argomento corrispondente in ques
 
 - HNAC [1](/glossary), [11.3.2](/results-and-data-analysis#section-11-3-2), [11.3.3](/results-and-data-analysis#section-11-3-3)
 - HNAP [1](/glossary), [11.3.2](/results-and-data-analysis#section-11-3-2), [11.3.3](/results-and-data-analysis#section-11-3-3)
-- Menu Home [8.2.7](/general-operations-and-configurations#section-8-2-7), [8.3.2](/general-operations-and-configurations#section-8-3-2), [8.8](/general-operations-and-configurations#section-8-8)
+- Schermata Home e menu Impostazioni [8.2.7](/general-operations-and-configurations#section-8-2-7), [8.3.2](/general-operations-and-configurations#section-8-3-2), [8.8](/general-operations-and-configurations#section-8-8)
 - HTTP [5.6](/installation#section-5-6), [12.2](/data-access-and-export#section-12-2)
 - HTTPS [5.6](/installation#section-5-6), [12.2](/data-access-and-export#section-12-2)
 - Umidità [3.2](/instrument-overview#section-3-2), [3.2](/instrument-overview#section-3-2)
@@ -245,6 +245,7 @@ Selezionare un numero di sezione per aprire l’argomento corrispondente in ques
 - Modalità online
   - Configurazione [10.1](/measurements#section-10-1)
   - Misura [10.1](/measurements#section-10-1)
+  - Pianificazione avanzata [10.2.4](/measurements#section-10-2-4)
   - Risultati [10.1](/measurements#section-10-1), [10.2.3](/measurements#section-10-2-3)
   - Arresto [10.2.2](/measurements#section-10-2-2)
   - Protocolli [10.9.1](/measurements#section-10-9-1)
@@ -388,7 +389,7 @@ Selezionare un numero di sezione per aprire l’argomento corrispondente in ques
   - Requisiti [2.5](/general-user-information#section-2-5)
   - Ruoli [8.2.7](/general-operations-and-configurations#section-8-2-7)
 - Interfaccia utente [8.8](/general-operations-and-configurations#section-8-8)
-  - Menu Home [8.8](/general-operations-and-configurations#section-8-8)
+  - Schermata Home e menu Impostazioni [8.8](/general-operations-and-configurations#section-8-8)
 - Controllo remoto dell’interfaccia utente [5.6](/installation#section-5-6)
 
 ## V

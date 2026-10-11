@@ -49,7 +49,7 @@ Préparations
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
 | 1. | Retirez et nettoyez le dispositif d’échantillonnage conformément aux instructions de la section [Retrait du dispositif d’échantillonnage manuel](08-general-operations-and-configurations.md#section-8-10-2) (dispositif d’échantillonnage manuel) ou section [Retrait du dispositif d’échantillonnage en ligne](08-general-operations-and-configurations.md#section-8-10-1) (dispositif d’échantillonnage en ligne). | Portez des gants pendant la procédure pour éviter de contaminer le dispositif d’échantillonnage. Si les tuyaux du dispositif en ligne présentent des signes de contamination ou de dommages, ne les réutilisez pas et jetez-les. |
-| 2. | Couvrez le dispositif de prélèvement nettoyé avec le couvercle à vis, si disponible. | ![Illustration du tableau, page du manuel 153](/img/manual/cell-8fdb2d0e492f.png "width=132 class=manual-figure") |
+| 2. | Couvrez le dispositif de prélèvement nettoyé avec le couvercle à vis, si disponible. | ![Illustration du tableau, page du manuel 153](/img/manual/cell-8fdb2d0e492f.png "width=66 class=manual-figure") |
 | 3. | Emballez le dispositif d’échantillonnage propre dans un sac en plastique propre et sec. |  |
 
 **Stockage**
@@ -177,7 +177,7 @@ Les instruments ayant été en contact avec des substances dangereuses ne doiven
 
 :::
 
-:::warning[Respectez les instructions d’expédition]
+:::caution[Respectez les instructions d’expédition]
 
 Respecter les instructions d’expédition
 
@@ -366,7 +366,7 @@ Cartouche
 
 <td>
 
-:::warning[Renvoyez les cartouches usagées]
+:::caution[Renvoyez les cartouches usagées]
 
 Ne démontez pas la cartouche et ne la jetez pas.
 

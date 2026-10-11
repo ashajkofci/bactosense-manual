@@ -32,15 +32,19 @@ Scattering data is available in the following ways:
 
 **Activation of the** **Scientific Package**
 
+Activate the package while the instrument is idle, with PLC mode and Demo mode disabled.
+
 |  | WORK STEP | ADDITIONAL INFO / IMAGE |
 | --- | --- | --- |
 | 1. | Contact your bNovate Sales representative to purchase an activation key. |  |
 | 2. | After receiving the activation key, log in as Admin user on the BactoSense. |  |
 | 3. | On the Home screen, press Settings. |  |
-| 4. | Press the System settings button. |  |
-| 5. | Press the Upgrades button. |  |
-| 6. | Press the Upgrade button. |  |
-| 7. | Enter the activation key and press OK. |  |
+| 4. | Press the System settings button. | ![BactoSense — Settings menu: System settings](/img/gui/en/settings-menu-system-settings.png "width=360") |
+| 5. | Press the Upgrades button. | ![BactoSense — System settings menu: Upgrades](/img/gui/en/scientific-package-upgrades-menu.png "width=360") |
+| 6. | Press the Upgrade button. | ![BactoSense — Scientific Package licence and Upgrade button](/img/gui/en/scientific-package-upgrades.png "width=360") |
+| 7. | Enter the activation key and press OK. | OK becomes available after you enter a key.<br />![BactoSense — Scientific Package activation-key entry](/img/gui/en/scientific-package-activation-key.png "width=360") |
+
+After successful activation, press OK in the confirmation message. If the instrument restarts, wait for it to finish, then open Upgrades again. Check that Scientific package shows Activated.
 
 ## 9.2 Management package {#section-9-2}
 
@@ -58,6 +62,8 @@ The *Management Package* is intended for instrument operation in environments wi
 - From the web user interface. The access to the web user interface is described in  [Web User Interface](13-web-user-interface.md).
 
 **Activation of the** **Management Package**
+
+Activate the package while the instrument is idle, with PLC mode and Demo mode disabled.
 
 |  | WORK STEP | ADDITIONAL INFO / IMAGE |
 | --- | --- | --- |

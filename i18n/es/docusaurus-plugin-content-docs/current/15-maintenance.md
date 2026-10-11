@@ -7,7 +7,7 @@ slug: /maintenance
 
 El mantenimiento de BactoSense comprende las actividades y los procedimientos realizados para garantizar el correcto funcionamiento, la exactitud y la fiabilidad del instrumento a lo largo de su vida útil.
 
-:::warning[Siga el programa de mantenimiento]
+:::caution[Siga el programa de mantenimiento]
 
 Obligaciones de mantenimiento de BactoSense
 
@@ -51,7 +51,7 @@ Póngase en contacto con el soporte de bNovate o con su colaborador local de ser
 
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN |
 | --- | --- | --- |
-| 1. | Vaya a la pantalla Home de la interfaz de usuario de BactoSense. | ![BactoSense — Botón Inicio](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
+| 1. | Inicie sesión como usuario Advanced o Admin y vaya a la pantalla Home. | ![BactoSense — Botón Inicio](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
 | 2. | Pulse el botón Ajustes. | ![BactoSense — Botón Ajustes](/img/gui/es/home-settings-button.png "width=54 class=manual-icon-settings-button-half") |
 | 3. | Pulse el botón Asistencia y servicios. | ![BactoSense — Información de soporte y mantenimiento](/img/gui/icons/intervention-info-button.png "width=48 class=manual-icon") |
 | 4. | Si se necesita mantenimiento, se adjunta una advertencia al resultado de medición. Programe el mantenimiento preventivo antes de la fecha prevista. |  |
@@ -62,9 +62,9 @@ El procedimiento siguiente describe cómo consultar los detalles de las interven
 
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN |
 | --- | --- | --- |
-| 1. | Vaya al menú Home de la interfaz de usuario de BactoSense. | ![BactoSense — Botón Inicio](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
-| 2. | Pulse el botón Maintenance. | ![BactoSense — Menú de mantenimiento](/img/gui/icons/maintenance-button.png "width=48 class=manual-icon") |
-| 3. | Pulse el botón Intervention log. | ![BactoSense — Registro de mantenimiento](/img/gui/icons/intervention-log-button.png "width=48 class=manual-icon") |
+| 1. | Como usuario Advanced o Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes. | ![BactoSense — Botón Ajustes](/img/gui/es/home-settings-button.png "width=57 class=manual-icon-settings-button-half") |
+| 2. | Pulse el botón Mantenimiento. | ![BactoSense — Menú de mantenimiento](/img/gui/icons/maintenance-button.png "width=48 class=manual-icon") |
+| 3. | Pulse el botón Registro de intervenciones. | ![BactoSense — Registro de mantenimiento](/img/gui/icons/intervention-log-button.png "width=48 class=manual-icon") |
 | 4. | Las intervenciones de servicio anteriores se enumeran en esta pantalla de registro. |  |
 
 ## 15.2 Mantenimiento por el usuario {#section-15-2}
@@ -102,13 +102,13 @@ Este protocolo describe cómo limpiar el dispositivo de muestreo manual con Wash
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMÁGENES |
 | --- | --- | --- |
 | 1. | Asegúrese de que el dispositivo de muestreo manual esté firmemente instalado como se describe en la sección [Instalación del dispositivo de muestreo manual](05-installation.md#section-5-4). |  |
-| 2. | Vaya al menú Home de la interfaz de usuario de BactoSense. |  |
+| 2. | Vaya a la pantalla Home de la interfaz de usuario de BactoSense. |  |
 | 3. | En la pantalla Home, pulse Modo y seleccione Modo manual. Pulse Volver y, a continuación, Iniciar para abrir el asistente de medición. |  |
-| 4. | En la lista de protocolos disponibles, seleccione Clean Sampling Device with Washstation. |  |
-| 5. | Asegúrese de que haya 1 repetición configurada en la columna Replications. | Pueden realizarse más repeticiones para una limpieza más intensa. |
-| 6. | Pulse el botón Next. |  |
+| 4. | Seleccione Limpiar Dispositivo de Muestreo con Estación de Lavado en la lista de protocolos disponibles. |  |
+| 5. | Asegúrese de que haya 1 repetición configurada en la columna Réplicas. | Pueden realizarse más repeticiones para una limpieza más intensa. |
+| 6. | Pulse el botón Siguiente. |  |
 | 7. | Monte la Washstation enroscándola en el dispositivo de muestreo manual, de forma similar a un tubo de muestra. Asegúrese de enroscarla hasta el final de la rosca. |  |
-| 8. | Pulse el botón Start y espere 15 min a que finalice el protocolo. |  |
+| 8. | Pulse el botón Inicio y espere 15 min a que finalice el protocolo. |  |
 | 9. | Si el instrumento va a quedar inactivo o fuera de servicio, deje la Washstation colocada en el dispositivo de muestreo manual. Si desea seguir midiendo, retire la Washstation y ciérrela con un tapón de un tubo de 5 mL con tapón de rosca. |  |
 | 10. | Si la contaminación persiste, repita el procedimiento con más repeticiones. Si continúa, utilice el Cleaning Kit para descontaminar el instrumento (véase la sección [Consumibles](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
 
@@ -120,18 +120,18 @@ Este protocolo describe cómo limpiar el dispositivo de muestreo manual sin Wash
 | --- | --- | --- |
 | 1. | Asegúrese de que el dispositivo de muestreo manual esté firmemente instalado como se describe en la sección [Instalación del dispositivo de muestreo manual](05-installation.md#section-5-4). |  |
 | 2. | Coloque en el dispositivo de muestreo manual un tubo nuevo de 5 mL con tapón de rosca que contenga 2 – 5 mL de agua estéril. |  |
-| 3. | Vaya al menú Home de la interfaz de usuario de BactoSense. |  |
+| 3. | Vaya a la pantalla Home de la interfaz de usuario de BactoSense. |  |
 | 4. | En la pantalla Home, pulse Modo y seleccione Modo manual. Pulse Volver y, a continuación, Iniciar para abrir el asistente de medición. |  |
-| 5. | En la lista de protocolos disponibles, seleccione Clean Optics. |  |
-| 6. | Asegúrese de que haya 1 repetición configurada en la columna Replications. | Configure más repeticiones para una limpieza más intensa. |
-| 7. | Pulse el botón Next. |  |
-| 8. | Pulse el botón Start y espere 5 min a que finalice el protocolo. |  |
-| 9. | Pulse New para volver a la lista de protocolos. Seleccione Clean Sampling Device en la lista de protocolos disponibles. |  |
-| 10. | Asegúrese de que haya 1 repetición configurada en la columna Replications. | Configure más repeticiones para una limpieza más intensa. |
-| 11. | Pulse el botón Next. |  |
-| 12. | Pulse el botón Start y espere 5 min a que finalice el protocolo. |  |
+| 5. | Seleccione Limpiar Ópticas en la lista de protocolos disponibles. |  |
+| 6. | Asegúrese de que haya 1 repetición configurada en la columna Réplicas. | Configure más repeticiones para una limpieza más intensa. |
+| 7. | Pulse el botón Siguiente. |  |
+| 8. | Pulse el botón Inicio y espere 5 min a que finalice el protocolo. |  |
+| 9. | Pulse Nuevo para volver a la lista de protocolos y seleccione Limpiar Dispositivo de Muestreo. |  |
+| 10. | Asegúrese de que haya 1 repetición configurada en la columna Réplicas. | Configure más repeticiones para una limpieza más intensa. |
+| 11. | Pulse el botón Siguiente. |  |
+| 12. | Pulse el botón Inicio y espere 5 min a que finalice el protocolo. |  |
 | 13. | Una vez finalizado el protocolo, retire el tubo de 5 mL con tapón de rosca y deséchelo. |  |
-| 14. | Pulse el botón Home en la parte superior izquierda de la interfaz para volver al menú Home. |  |
+| 14. | Pulse el icono Home en la parte superior izquierda de la interfaz para volver a la pantalla Home. |  |
 | 15. | Si desea continuar con las mediciones, realice un cebado (Prime) antes de la primera medición. Encontrará las instrucciones en la sección [Realización de un cebado (Prime)](10-measurements.md#section-10-9-3). Si el instrumento va a quedar inactivo o apagado, coloque un tubo de muestra nuevo en el dispositivo de muestreo manual. |  |
 | 16. | Si la contaminación persiste, repita primero el procedimiento con más repeticiones. Si continúa, utilice el Cleaning Kit para descontaminar el instrumento (véanse los consumibles de la sección [Consumibles](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
 
@@ -142,25 +142,25 @@ El procedimiento siguiente ayuda a eliminar contaminaciones biológicas del disp
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMÁGENES |
 | --- | --- | --- |
 | 1. | Asegúrese de que el dispositivo de muestreo en línea esté correctamente instalado y se cumplan las condiciones de caudal de agua (véase la sección [Instalación del dispositivo de muestreo en línea en BactoSense](05-installation.md#section-5-5-2)). | Importante: asegúrese de que el tubo de salida esté conectado a un desagüe, ya que se libera líquido de limpieza en el dispositivo de muestreo en línea. |
-| 2. | Entre en el modo Manual y pulse Start para ver la lista de protocolos disponibles. |  |
-| 3. | Seleccione el protocolo Clean Sampling Device y configure 5 repeticiones. |  |
-| 4. | Pulse Next y Start para iniciar la limpieza. |  |
-| 5. | Al finalizar, vuelva a la lista de protocolos. |  |
-| 6. | Seleccione el protocolo Prime y configure 2 repeticiones. |  |
-| 7. | Pulse Next y Start para iniciar el cebado. |  |
+| 2. | En la pantalla Home, pulse Modo y seleccione Modo manual. Pulse Volver y, a continuación, Iniciar para abrir el asistente de medición. |  |
+| 3. | Seleccione el protocolo Limpiar Dispositivo de Muestreo y configure 5 repeticiones. |  |
+| 4. | Pulse Siguiente y Inicio para iniciar la limpieza. |  |
+| 5. | Al finalizar, pulse Nuevo para volver a la lista de protocolos. |  |
+| 6. | Seleccione el protocolo Preparar y configure 2 repeticiones. |  |
+| 7. | Pulse Siguiente y Inicio para iniciar el cebado. |  |
 | 8. | Al finalizar, el dispositivo de muestreo en línea debería estar libre de contaminaciones biológicas menores y podrá volver al funcionamiento habitual. Si la contaminación persiste o se sospecha una contaminación no biológica, solicite asistencia a support@bnovate.com. |  |
 
 ### 15.2.5 Sustitución de los tubos del dispositivo de muestreo en línea {#section-15-2-5}
 
 Los tubos de entrada y salida del dispositivo de muestreo en línea deben sustituirse si muestran signos de daño o contaminación. Los materiales necesarios son los tubos de entrada y salida y dos férulas. Para las especificaciones, consulte la información técnica de la sección [Datos técnicos](03-instrument-overview.md#section-3-2); para las referencias, consulte la sección [Consumibles](18-supply-scope-accessories-and-consumables.md#section-18-3).
 
-:::warning[No utilice una llave]
+:::caution[No utilice una llave]
 
 Nunca utilice una llave en el dispositivo de muestreo cuando esté acoplado a BactoSense.
 
 :::
 
-:::warning[Utilice guantes de protección]
+:::gloves[Utilice guantes de protección]
 
 Utilice guantes de nitrilo al manipular el dispositivo de muestreo u otros componentes que entren en contacto con la muestra.
 
@@ -185,7 +185,7 @@ El procedimiento siguiente describe cómo sustituir la bolsa desecante. La bolsa
 
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN |
 | --- | --- | --- |
-| 1. | Abra el compartimento de la bolsa desecante desenroscando la tapa grande situada en el lateral izquierdo del instrumento. | ![Ilustración de la tabla de la página 135 del manual](/img/manual/cell-7272265c5bc4.png "width=260 class=manual-figure") |
+| 1. | Abra el compartimento de la bolsa desecante desenroscando la tapa grande situada en el lateral izquierdo del instrumento. | ![Ilustración de la tabla de la página 135 del manual](/img/manual/cell-7272265c5bc4.png "width=130 class=manual-figure") |
 | 2. | Sustituya la bolsa desecante usada por una nueva. |  |
 | 3. | Cierre el compartimento de la bolsa desecante volviendo a enroscar la tapa grande. |  |
 
@@ -193,7 +193,7 @@ El procedimiento siguiente describe cómo sustituir la bolsa desecante. La bolsa
 
 El dispositivo de muestreo de BactoSense contiene un filtro de 25 μm que el usuario puede sustituir. El filtro es un consumible incluido en la sección [Consumibles](18-supply-scope-accessories-and-consumables.md#section-18-3).
 
-:::warning[Utilice guantes de protección nuevos]
+:::gloves[Utilice guantes de protección nuevos]
 
 Utilice guantes de nitrilo nuevos y sin polvo al manipular las muestras, el dispositivo de muestreo o cualquier componente que entre en contacto con ellos.
 
@@ -202,15 +202,15 @@ Utilice guantes de nitrilo nuevos y sin polvo al manipular las muestras, el disp
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN |
 | --- | --- | --- |
 | 1. | Desenrosque el dispositivo de muestreo de BactoSense, como se describe en la sección [Retirada del dispositivo de muestreo en línea](08-general-operations-and-configurations.md#section-8-10-1) para el dispositivo en línea y en la [Retirada del dispositivo de muestreo manual](08-general-operations-and-configurations.md#section-8-10-2) para el manual. |  |
-| 2. | Coloque unas pinzas planas debajo del tapón blanco. | ![Ilustración de la tabla de la página 136 del manual](/img/manual/cell-efadbaaeb60b.png "width=251 class=manual-figure") |
-| 3. | Retire el tapón blanco y preste atención al disco de filtro transparente. El filtro puede quedar dentro de la cavidad o adherido al tapón blanco. | ![Ilustración de la tabla de la página 136 del manual](/img/manual/cell-4636f1f749e9.png "width=251 class=manual-figure") |
-| 4. | Retire el filtro y coloque uno nuevo. No aplique fuerza; deje que el filtro caiga por gravedad. No lo empuje hacia dentro con las pinzas. | ![Ilustración de la tabla de la página 136 del manual](/img/manual/cell-6d2af8024fd1.png "width=251 class=manual-figure") |
+| 2. | Coloque unas pinzas planas debajo del tapón blanco. | ![Ilustración de la tabla de la página 136 del manual](/img/manual/cell-efadbaaeb60b.png "width=126 class=manual-figure") |
+| 3. | Retire el tapón blanco y preste atención al disco de filtro transparente. El filtro puede quedar dentro de la cavidad o adherido al tapón blanco. | ![Ilustración de la tabla de la página 136 del manual](/img/manual/cell-4636f1f749e9.png "width=126 class=manual-figure") |
+| 4. | Retire el filtro y coloque uno nuevo. No aplique fuerza; deje que el filtro caiga por gravedad. No lo empuje hacia dentro con las pinzas. | ![Ilustración de la tabla de la página 136 del manual](/img/manual/cell-6d2af8024fd1.png "width=126 class=manual-figure") |
 | 5. | Vuelva a insertar el tapón blanco. Asegúrese de presionarlo hasta el fondo. La fuerza del tapón colocará el filtro en la posición correcta. |  |
 | 6. | Vuelva a instalar el dispositivo de muestreo como se describe en la sección [Instalación del dispositivo de muestreo manual](05-installation.md#section-5-4) para el dispositivo manual y en la [Instalación del dispositivo de muestreo en línea](05-installation.md#section-5-5) para el dispositivo en línea. |  |
 
 ### 15.2.8 Liberación de espacio en disco {#section-15-2-8}
 
-:::warning[Haga una copia de seguridad antes de eliminar]
+:::caution[Haga una copia de seguridad antes de eliminar]
 
 Cuando se agota el espacio en disco, pueden eliminarse datos antiguos.
 
@@ -220,12 +220,12 @@ Asegúrese de obtener todos los datos de otros usuarios y los suyos antes de eli
 
 |  | PASO DE TRABAJO |
 | --- | --- |
-| 1. | Vaya al menú Home de la interfaz de usuario de BactoSense. |
-| 2. | Pulse el botón Maintenance. |
-| 3. | Pulse el botón Delete old measurements. Esta función solo está disponible para la función Admin. |
+| 1. | Como usuario Advanced o Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes. |
+| 2. | Pulse el botón Mantenimiento. |
+| 3. | Pulse Borrar mediciones antiguas. Esta función está disponible para los usuarios Advanced y Admin. |
 | 4. | Si está disponible, elija uno de los modos de medición siguientes: Online / Manual. |
 | 5. | Elija el intervalo de tiempo de las mediciones que desea conservar. Se eliminarán las mediciones anteriores a este intervalo. |
-| 6. | Pulse Delete measurements para eliminar los datos de forma permanente. |
+| 6. | Pulse Borrar mediciones y confirme con Sí, borrar para borrar los datos de forma permanente. |
 
 ## 15.3 Actualización del software {#section-15-3}
 
@@ -235,9 +235,9 @@ Las actualizaciones de software pueden instalarse desde una memoria USB o desde 
 | --- | --- |
 | 1. | Asegúrese de que el instrumento tenga una conexión a Internet rápida y estable y de haber iniciado sesión con permisos Admin. |
 | 2. | Recomendado: haga una copia de seguridad de sus datos, p. ej., mediante la exportación a USB descrita en la sección [Exportación de datos a un dispositivo USB](12-data-access-and-export.md#section-12-1). |
-| 3. | Pulse el botón Maintenance. |
-| 4. | Pulse el botón System update. Las actualizaciones disponibles aparecerán en una lista de casillas en la parte superior. Si no aparece ninguna, pulse Refresh list. Si sigue sin aparecer ninguna, no hay actualizaciones para su instrumento o hay un problema con la conexión a Internet. |
-| 5. | Marque la casilla de la actualización deseada. |
-| 6. | Lea atentamente las notas de la versión de la sección Changelog de la interfaz para comprender los cambios introducidos desde su versión actual del software. |
-| 7. | Si desea actualizar, pulse Update y siga las instrucciones. Nota: no es necesario reiniciar manualmente después de la actualización. |
+| 3. | En la pantalla Home, pulse Ajustes para abrir el menú de ajustes. Pulse el botón Mantenimiento. |
+| 4. | Pulse Actualización del sistema. Las memorias USB disponibles y el repositorio en línea aparecen en la lista superior. Si no se muestra ninguna actualización, pulse Actualizar lista. Si sigue sin aparecer ninguna, no hay actualizaciones para su instrumento o hay un problema con la conexión a Internet. |
+| 5. | Seleccione la memoria USB o el repositorio en línea que contiene la actualización deseada. |
+| 6. | Lea atentamente las notas de la versión de la sección Registro de cambios de la interfaz para comprender los cambios introducidos desde su versión actual del software. |
+| 7. | Para actualizar, pulse Actualizar, confirme con Sí y siga las instrucciones. Nota: no es necesario reiniciar manualmente después de la actualización. |
 | 8. | Tras la actualización, compruebe que todas las configuraciones del instrumento sigan siendo correctas. |

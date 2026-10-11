@@ -7,7 +7,7 @@ slug: /maintenance
 
 La maintenance du BactoSense fait référence aux activités et procédures effectuées pour assurer le bon fonctionnement, la précision et la fiabilité de l’instrument tout au long de son cycle de vie.
 
-:::warning[Respectez le calendrier de maintenance]
+:::caution[Respectez le calendrier de maintenance]
 
 Interventions d’entretien et de réparation du BactoSense
 
@@ -51,7 +51,7 @@ Contactez l’assistance bNovate ou votre partenaire local en entretien et en r�
 
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
-| 1. | Accédez à l’écran d’accueil de l’interface utilisateur de BactoSense. | ![BactoSense — Bouton d’accueil](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
+| 1. | Connectez-vous en tant qu’utilisateur Advanced ou Admin, puis accédez à l’écran d’accueil. | ![BactoSense — Bouton d’accueil](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
 | 2. | Appuyez sur le bouton Paramètres. | ![BactoSense — Bouton Paramètres](/img/gui/fr/home-settings-button.png "width=72 class=manual-icon-settings-button-half") |
 | 3. | Appuyez sur le bouton Support & Service. | ![BactoSense — Informations de support et de maintenance](/img/gui/icons/intervention-info-button.png "width=48 class=manual-icon") |
 | 4. | Si un entretien est nécessaire, un avertissement est joint au résultat de mesure. Planifiez une maintenance préventive avant la date d’échéance. |  |
@@ -62,9 +62,9 @@ La procédure suivante décrit comment consulter les détails des interventions 
 
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
-| 1. | Accédez au Menu principal de l’interface utilisateur de BactoSense. | ![BactoSense — Bouton d’accueil](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
+| 1. | En tant qu’utilisateur Advanced ou Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. | ![BactoSense — Bouton Paramètres](/img/gui/fr/home-settings-button.png "width=57 class=manual-icon-settings-button-half") |
 | 2. | Appuyez sur le bouton Maintenance. | ![BactoSense — Menu de maintenance](/img/gui/icons/maintenance-button.png "width=48 class=manual-icon") |
-| 3. | Appuyez sur le bouton Journal d’interventions. | ![BactoSense — Journal de maintenance](/img/gui/icons/intervention-log-button.png "width=48 class=manual-icon") |
+| 3. | Appuyez sur le bouton Journal d'interventions. | ![BactoSense — Journal de maintenance](/img/gui/icons/intervention-log-button.png "width=48 class=manual-icon") |
 | 4. | Les interventions d’entretien passées sont répertoriées dans cet écran de journal. |  |
 
 ## 15.2 Maintenance par l’utilisateur {#section-15-2}
@@ -102,10 +102,10 @@ Ce protocole décrit comment nettoyer le dispositif d’échantillonnage manuel 
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
 | 1. | Assurez-vous que le dispositif d’échantillonnage manuel est bien installé comme décrit dans la section [Installation du dispositif d’échantillonnage manuel](05-installation.md#section-5-4). |  |
-| 2. | Accédez au Menu principal de l’interface utilisateur de BactoSense. |  |
+| 2. | Accédez à l’écran d’accueil de l’interface utilisateur du BactoSense. |  |
 | 3. | Sur l’écran d’accueil, appuyez sur Mode et sélectionnez Mode manuel. Appuyez sur Retour, puis sur Mesurer pour ouvrir l’assistant de mesure. |  |
-| 4. | Dans la liste des protocoles disponibles, sélectionnez Nettoyage échantillonneur avec Washstation. |  |
-| 5. | Assurez-vous que 1 répétition est configurée dans la colonne Replications. | Vous pouvez effectuer plus de répétitions pour un nettoyage plus intense. |
+| 4. | Sélectionnez Nettoyage échantillonneur avec Washstation dans la liste des protocoles disponibles. |  |
+| 5. | Assurez-vous que 1 répétition est configurée dans la colonne Réplications. | Vous pouvez effectuer plus de répétitions pour un nettoyage plus intense. |
 | 6. | Appuyez sur le bouton Suivant. |  |
 | 7. | Montez la Washstation en la vissant sur le dispositif d’échantillonnage manuel, comme vous le feriez avec un tube à échantillon. Assurez-vous de la visser complètement. |  |
 | 8. | Appuyez sur le bouton Démarrer et attendez 15 minutes pour que le protocole se termine. |  |
@@ -120,18 +120,18 @@ Ce protocole décrit comment nettoyer le dispositif d’échantillonnage manuel 
 | --- | --- | --- |
 | 1. | Assurez-vous que le dispositif d’échantillonnage manuel est bien installé comme décrit dans la section [Installation du dispositif d’échantillonnage manuel](05-installation.md#section-5-4). |  |
 | 2. | Fixez au dispositif d’échantillonnage manuel un tube neuf à bouchon fileté de 5 mL contenant 2 – 5 mL d’eau stérile. |  |
-| 3. | Accédez au Menu principal de l’interface utilisateur de BactoSense. |  |
+| 3. | Accédez à l’écran d’accueil de l’interface utilisateur du BactoSense. |  |
 | 4. | Sur l’écran d’accueil, appuyez sur Mode et sélectionnez Mode manuel. Appuyez sur Retour, puis sur Mesurer pour ouvrir l’assistant de mesure. |  |
-| 5. | Dans la liste des protocoles disponibles, sélectionnez Clean Optics. |  |
-| 6. | Assurez-vous que 1 répétition est configurée dans la colonne Replications. | Configurez davantage de répétitions pour un nettoyage plus intense. |
+| 5. | Sélectionnez Nettoyage Optique dans la liste des protocoles disponibles. |  |
+| 6. | Assurez-vous que 1 répétition est configurée dans la colonne Réplications. | Configurez davantage de répétitions pour un nettoyage plus intense. |
 | 7. | Appuyez sur le bouton Suivant. |  |
-| 8. | Appuyez sur Start et attendez 5 min que le protocole se termine. |  |
-| 9. | Appuyez ensuite sur New pour revenir à la liste des protocoles. Sélectionnez Clean Sampling Device. |  |
-| 10. | Assurez-vous que 1 répétition est configurée dans la colonne Replications. | Configurez davantage de répétitions pour un nettoyage plus intense. |
+| 8. | Appuyez sur Démarrer et attendez 5 min que le protocole se termine. |  |
+| 9. | Appuyez sur Nouveau pour revenir à la liste des protocoles, puis sélectionnez Nettoyage Échantillonneur. |  |
+| 10. | Assurez-vous que 1 répétition est configurée dans la colonne Réplications. | Configurez davantage de répétitions pour un nettoyage plus intense. |
 | 11. | Appuyez sur le bouton Suivant. |  |
-| 12. | Appuyez sur Start et attendez 5 min que le protocole se termine. |  |
+| 12. | Appuyez sur Démarrer et attendez 5 min que le protocole se termine. |  |
 | 13. | Une fois le protocole terminé, retirez le tube à bouchon fileté de 5 mL et jetez-le. |  |
-| 14. | Appuyez sur Home en haut à gauche de l’interface pour revenir au menu Home. |  |
+| 14. | Appuyez sur l’icône d’accueil en haut à gauche de l’interface pour revenir à l’écran d’accueil. |  |
 | 15. | Pour poursuivre les mesures, effectuez un Prime avant la première mesure. Les instructions figurent à la section [Réalisation d’un amorçage](10-measurements.md#section-10-9-3). Si l’instrument doit rester inactif ou être éteint, fixez un tube neuf au dispositif d’échantillonnage manuel. |  |
 | 16. | Si la contamination persiste, répétez d’abord la procédure avec davantage de répétitions. Si elle persiste encore, utilisez le kit de nettoyage pour décontaminer l’instrument (voir les consommables à la section [Consommables](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
 
@@ -142,25 +142,25 @@ La procédure suivante permet d'éliminer les contaminations biologiques du disp
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
 | 1. | Assurez-vous que le dispositif d’échantillonnage en ligne est correctement installé et que les conditions de débit d’eau sont respectées (voir section [Installation du dispositif d’échantillonnage en ligne sur le BactoSense](05-installation.md#section-5-5-2)). | Important : vérifiez que le tuyau de sortie est raccordé à une évacuation, car du liquide de nettoyage est rejeté dans le dispositif d’échantillonnage en ligne. |
-| 2. | Passez en mode Manual et appuyez sur Start pour afficher les protocoles disponibles. |  |
-| 3. | Sélectionnez Clean Sampling Device et configurez 5 répétitions. |  |
-| 4. | Appuyez sur Next, puis Start pour lancer le nettoyage. |  |
-| 5. | Une fois le nettoyage terminé, revenez à la liste des protocoles. |  |
-| 6. | Sélectionnez Prime et configurez 2 répétitions. |  |
-| 7. | Appuyez sur Next, puis Start pour lancer l’amorçage. |  |
+| 2. | Sur l’écran d’accueil, appuyez sur Mode et sélectionnez Mode manuel. Appuyez sur Retour, puis sur Mesurer pour ouvrir l’assistant de mesure. |  |
+| 3. | Sélectionnez Nettoyage Échantillonneur et configurez 5 répétitions. |  |
+| 4. | Appuyez sur Suivant, puis Démarrer pour lancer le nettoyage. |  |
+| 5. | Après la fin du protocole, appuyez sur Nouveau pour revenir à la liste des protocoles. |  |
+| 6. | Sélectionnez Amorçage et configurez 2 répétitions. |  |
+| 7. | Appuyez sur Suivant, puis Démarrer pour lancer l’amorçage. |  |
 | 8. | À la fin, les contaminations biologiques mineures devraient avoir été éliminées du dispositif d’échantillonnage en ligne et vous pouvez reprendre le fonctionnement normal. Si elles persistent ou si vous suspectez une contamination non biologique, contactez support@bnovate.com. |  |
 
 ### 15.2.5 Remplacement des tuyaux du dispositif d’échantillonnage en ligne {#section-15-2-5}
 
 Les tuyaux d’entrée et de sortie du dispositif d’échantillonnage en ligne doivent être remplacés s’ils présentent des signes de dommages ou de contamination. Les matériaux nécessaires sont les tuyaux d’entrée et de sortie et deux bagues de serrage. Pour connaître les spécifications, consultez les informations techniques de la section [Données techniques](03-instrument-overview.md#section-3-2). Les numéros de référence se trouvent dans la section [Consommables](18-supply-scope-accessories-and-consumables.md#section-18-3).
 
-:::warning[N’utilisez pas de clé]
+:::caution[N’utilisez pas de clé]
 
 N’utilisez jamais de clé sur le dispositif d’échantillonnage lorsqu’il est fixé au BactoSense.
 
 :::
 
-:::warning[Portez des gants de protection]
+:::gloves[Portez des gants de protection]
 
 Portez des gants en nitrile lors de la manipulation du dispositif d’échantillonnage ou de tout autre composant entrant en contact avec l’échantillon.
 
@@ -185,7 +185,7 @@ La procédure suivante décrit comment remplacer le sachet déshydratant. Le sac
 
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
-| 1. | Ouvrez le compartiment du sachet déshydratant en dévissant le grand bouchon situé sur le côté gauche de l’instrument. | ![Illustration du tableau, page du manuel 135](/img/manual/cell-7272265c5bc4.png "width=260 class=manual-figure") |
+| 1. | Ouvrez le compartiment du sachet déshydratant en dévissant le grand bouchon situé sur le côté gauche de l’instrument. | ![Illustration du tableau, page du manuel 135](/img/manual/cell-7272265c5bc4.png "width=130 class=manual-figure") |
 | 2. | Remplacez le sachet déshydratant usagé par un neuf. |  |
 | 3. | Fermez le compartiment du sachet déshydratant en revissant le grand bouchon. |  |
 
@@ -193,7 +193,7 @@ La procédure suivante décrit comment remplacer le sachet déshydratant. Le sac
 
 Le dispositif d’échantillonnage du BactoSense contient un filtre de 25 µm remplaçable par l’utilisateur. Le filtre est un consommable répertorié dans la section [Consommables](18-supply-scope-accessories-and-consumables.md#section-18-3).
 
-:::warning[Utilisez des gants propres]
+:::gloves[Utilisez des gants propres]
 
 Portez des gants en nitrile neufs et non poudrés lorsque vous manipulez les échantillons, le dispositif d’échantillonnage ou tout composant entrant en contact avec eux.
 
@@ -202,15 +202,15 @@ Portez des gants en nitrile neufs et non poudrés lorsque vous manipulez les éc
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
 | 1. | Dévissez le dispositif d’échantillonnage du BactoSense, comme décrit dans la section [Retrait du dispositif d’échantillonnage en ligne](08-general-operations-and-configurations.md#section-8-10-1) pour le dispositif d’échantillonnage en ligne et [Retrait du dispositif d’échantillonnage manuel](08-general-operations-and-configurations.md#section-8-10-2) pour le dispositif d’échantillonnage manuel. |  |
-| 2. | Placez une pince plate sous le bouchon blanc. | ![Illustration du tableau, page du manuel 136](/img/manual/cell-efadbaaeb60b.png "width=251 class=manual-figure") |
-| 3. | Retirez le bouchon blanc en faisant attention au disque filtrant transparent. Le filtre reste parfois à l’intérieur de la cavité et parfois reste attaché au bouchon blanc. | ![Illustration du tableau, page du manuel 136](/img/manual/cell-4636f1f749e9.png "width=251 class=manual-figure") |
-| 4. | Retirez le filtre et placez-en un nouveau. Ne forcez pas, laissez le filtre tomber par gravité. Ne poussez pas le filtre à l’intérieur avec une pince. | ![Illustration du tableau, page du manuel 136](/img/manual/cell-6d2af8024fd1.png "width=251 class=manual-figure") |
+| 2. | Placez une pince plate sous le bouchon blanc. | ![Illustration du tableau, page du manuel 136](/img/manual/cell-efadbaaeb60b.png "width=126 class=manual-figure") |
+| 3. | Retirez le bouchon blanc en faisant attention au disque filtrant transparent. Le filtre reste parfois à l’intérieur de la cavité et parfois reste attaché au bouchon blanc. | ![Illustration du tableau, page du manuel 136](/img/manual/cell-4636f1f749e9.png "width=126 class=manual-figure") |
+| 4. | Retirez le filtre et placez-en un nouveau. Ne forcez pas, laissez le filtre tomber par gravité. Ne poussez pas le filtre à l’intérieur avec une pince. | ![Illustration du tableau, page du manuel 136](/img/manual/cell-6d2af8024fd1.png "width=126 class=manual-figure") |
 | 5. | Réinsérez le bouchon blanc. Veillez à le presser jusqu’à ce qu’il atteigne le fond. La force du bouchon blanc poussera le filtre dans la bonne position. |  |
 | 6. | Réinstallez le dispositif d’échantillonnage comme décrit dans la section [Installation du dispositif d’échantillonnage manuel](05-installation.md#section-5-4) pour le dispositif d’échantillonnage manuel et [Installation du dispositif d’échantillonnage en ligne](05-installation.md#section-5-5) pour le dispositif d’échantillonnage en ligne. |  |
 
 ### 15.2.8 Libération d’espace disque {#section-15-2-8}
 
-:::warning[Sauvegardez les données avant suppression]
+:::caution[Sauvegardez les données avant suppression]
 
 Lorsque l’espace disque est saturé, d’anciennes données peuvent être supprimées.
 
@@ -220,12 +220,12 @@ Assurez-vous de récupérer toutes les données des autres utilisateurs et vos p
 
 |  | OPÉRATION |
 | --- | --- |
-| 1. | Accédez au Menu principal de l’interface utilisateur du BactoSense. |
+| 1. | En tant qu’utilisateur Advanced ou Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. |
 | 2. | Appuyez sur le bouton Maintenance. |
-| 3. | Appuyez sur le bouton Suppression d’anciennes mesures. Cette fonction est uniquement accessible au rôle Admin. |
+| 3. | Appuyez sur Suppression d'anciennes mesures. Cette fonction est accessible aux utilisateurs Advanced et Admin. |
 | 4. | Si disponible, choisissez l’un des modes de mesure suivants : En ligne / Manuel |
 | 5. | Choisissez l’intervalle de temps pendant lequel les mesures seront conservées. Les mesures plus anciennes seront supprimées. |
-| 6. | Appuyez sur Supprimer les mesures pour effacer définitivement les données. |
+| 6. | Appuyez sur Supprimer les mesures, puis confirmez avec Oui, supprimer pour supprimer définitivement les données. |
 
 ## 15.3 Mise à jour du système {#section-15-3}
 
@@ -235,9 +235,9 @@ Les mises à jour du logiciel peuvent être installées à partir d'une clé USB
 | --- | --- |
 | 1. | Assurez-vous que votre instrument dispose d'une connexion internet rapide et stable et que vous êtes connecté avec les droits d’admin. |
 | 2. | Recommandé: Sauvegardez vos données, par exemple en utilisant l'exportation vers une clé USB comme décrit dans la section [Exportation des données vers un périphérique USB](12-data-access-and-export.md#section-12-1). |
-| 3. | Appuyez sur le bouton Maintenance. |
-| 4. | Appuyez sur le bouton Mise a jour du système. Les mises à jour disponibles seront affichées dans une liste de cases à cocher en haut. Si aucune mise à jour n'est affichée, appuyez sur le bouton Rafraîchir liste. Si aucune mise à jour n'est affichée, cela signifie qu'aucune mise à jour n'est disponible pour votre instrument ou qu'il y a un problème avec la connexion internet. |
-| 5. | Cochez la case de la mise à jour souhaitée. |
+| 3. | Sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. Appuyez sur le bouton Maintenance. |
+| 4. | Appuyez sur Mise à jour du système. Les clés USB disponibles et le référentiel en ligne apparaissent dans la liste en haut. Si aucune mise à jour n’est affichée, appuyez sur Rafraîchir liste USB. Si aucune mise à jour n’est encore affichée, aucune mise à jour n’est disponible pour votre instrument ou il y a un problème avec la connexion internet. |
+| 5. | Sélectionnez la clé USB ou le référentiel en ligne contenant la mise à jour souhaitée. |
 | 6. | Lisez attentivement les notes de version dans la section Journal des modifications de l'interface utilisateur pour comprendre les changements introduits depuis la version actuelle du logiciel. |
-| 7. | Si vous souhaitez effectuer une mise à jour, appuyez sur le bouton Mettre à jour et suivez les instructions. Remarque: Aucun redémarrage manuel n'est nécessaire après la mise à jour. |
+| 7. | Pour effectuer la mise à jour, appuyez sur Mettre à jour, confirmez avec Oui, puis suivez les instructions. Remarque: Aucun redémarrage manuel n'est nécessaire après la mise à jour. |
 | 8. | Après la mise à jour, vérifiez que toutes les configurations de l'instrument sont toujours correctes. |

@@ -54,7 +54,7 @@ www.bnovate.com/contact.
 
 :::
 
-:::warning[Prevenire la condensa]
+:::caution[Prevenire la condensa]
 
 **Umidità o condensa sui componenti elettrici**
 
@@ -65,7 +65,7 @@ Se l’umidità penetra nello strumento, BactoSense può subire danni.
 
 :::
 
-:::warning[Evitare sostanze chimiche aggressive]
+:::caution[Evitare sostanze chimiche aggressive]
 
 **Utilizzo di sostanze chimiche aggressive**
 
@@ -79,7 +79,7 @@ L’utilizzo di sostanze chimiche aggressive può danneggiare i componenti dello
 
 ## 4.2 Manipolazione sicura delle sostanze chimiche {#section-4-2}
 
-:::warning[Manipolare le sostanze chimiche in sicurezza]
+:::caution[Manipolare le sostanze chimiche in sicurezza]
 
 **Manipolazione impropria delle sostanze chimiche**
 
@@ -94,7 +94,7 @@ Osservare le seguenti istruzioni per manipolare le sostanze chimiche in sicurezz
 
 ## 4.3 Rischio residuo {#section-4-3}
 
-:::warning[Accuratezza delle misurazioni]
+:::caution[Accuratezza delle misurazioni]
 
 **Rischio residuo**
 
@@ -107,7 +107,7 @@ Secondo la valutazione dei rischi prevista dalla direttiva di sicurezza applicat
 
 ## 4.4 Simboli di avvertimento e pericolo sullo strumento {#section-4-4}
 
-:::warning[Seguire le istruzioni di sicurezza]
+:::caution[Seguire le istruzioni di sicurezza]
 
 **Assenza di simboli di avvertimento o pericolo sullo strumento**
 
@@ -122,7 +122,7 @@ Gli utilizzatori devono assicurarsi di rispettare sempre le misure di sicurezza 
 
 ![Illustrazione del manuale originale, pagina stampata 16](/img/manual/asset-96ca4e251d8b.png "width=627")
 
-:::warning[Proteggere l’accesso alla rete]
+:::caution[Proteggere l’accesso alla rete]
 
 **BactoSense è dotato di un’interfaccia utente web integrata. Se viene collegato direttamente a Internet senza una protezione adeguata, utenti Internet non autorizzati possono accedere allo strumento.** Seguire queste raccomandazioni:
 

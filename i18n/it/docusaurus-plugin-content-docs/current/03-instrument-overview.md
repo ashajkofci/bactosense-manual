@@ -45,177 +45,21 @@ La targhetta identificativa di BactoSense si trova sul lato destro dello strumen
 
 La targhetta identificativa dell’alimentatore di BactoSense si trova sull’alimentatore e presenta i seguenti elementi:
 
-![Illustrazione del manuale originale, pagina stampata 9](/img/manual/asset-af22eddd339f.png "width=150")
+![Illustrazione del manuale originale, pagina stampata 9](/img/manual/asset-af22eddd339f.png "width=300")
 
 *Figura 3-3 Targhetta identificativa dell’alimentatore di BactoSense.*
 
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-1
-
-</td>
-
-<td>
-
-Produttore
-
-</td>
-
-<td>
-
-2
-
-</td>
-
-<td>
-
-Nome del prodotto
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3
-
-</td>
-
-<td>
-
-Codice articolo
-
-</td>
-
-<td>
-
-4
-
-</td>
-
-<td>
-
-Data di fabbricazione
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5
-
-</td>
-
-<td>
-
-Tensione e frequenza di esercizio
-
-</td>
-
-<td>
-
-6
-
-</td>
-
-<td>
-
-Consumo energetico
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7
-
-</td>
-
-<td>
-
-Marchio CE
-
-</td>
-
-<td>
-
-8
-
-</td>
-
-<td>
-
-Marchio UKCA
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-9
-
-</td>
-
-<td>
-
-Conformità alle norme canadesi sulla compatibilità elettromagnetica e sulle interferenze
-
-</td>
-
-<td>
-
-10
-
-</td>
-
-<td>
-
-Leggere le istruzioni e utilizzare con cautela.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-11
-
-</td>
-
-<td>
-
-Informazioni sullo smaltimento
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+1. Produttore
+2. Nome del prodotto
+3. Codice articolo
+4. Data di fabbricazione
+5. Tensione e frequenza di esercizio
+6. Consumo energetico
+7. Marchio CE
+8. Marchio UKCA
+9. Conformità alle norme canadesi sulla compatibilità elettromagnetica e sulle interferenze
+10. Leggere le istruzioni e utilizzare con cautela.
+11. Informazioni sullo smaltimento
 
 ## 3.2 Dati tecnici {#section-3-2}
 
@@ -563,34 +407,6 @@ Riavvio automatico configurabile
 
 </tr>
 
-</tbody>
-
-</table>
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>
-
-Proprietà
-
-</th>
-
-<th>
-
-Specifica
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
 <tr>
 
 <th colSpan="2">
@@ -899,34 +715,6 @@ Da ogni 30 min a ogni 6 ore
 
 </tr>
 
-</tbody>
-
-</table>
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>
-
-Proprietà
-
-</th>
-
-<th>
-
-Specifica
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
 <tr>
 
 <th colSpan="2">
@@ -1074,34 +862,6 @@ Umidità di conservazione
 </td>
 
 </tr>
-
-</tbody>
-
-</table>
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>
-
-Proprietà
-
-</th>
-
-<th>
-
-Specifica
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
 
 <tr>
 

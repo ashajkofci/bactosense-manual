@@ -32,6 +32,8 @@ TestCase {
             var value=body.toString()
             verify(!(path==="/api/settings" && value.indexOf("scientificPackageOptionKey")>=0),
                    "No activation request may be submitted")
+            verify(path.indexOf("/api/run")!==0 && path.indexOf("/api/clear")!==0,
+                   "Navigation must not execute measurement, maintenance or clearing")
             requestRecords.push({path:path,body:value,route:routeName})
         }
     }
@@ -53,6 +55,7 @@ TestCase {
     }
     function createUi(row) {
         localeCode=row.tag
+        Models.System.mode="manual"
         Models.System.language_index=row.index
         Models.System.cloudModalSuppressUntil=new Date(Date.now()+86400000)
         Models.System.updateModalSuppressUntil=new Date(Date.now()+86400000)
@@ -85,8 +88,9 @@ TestCase {
         return null
     }
     function renderFrame(item) {
-        ui.opacity=0.999;ui.opacity=1
-        verify(waitForRendering(item),"The native Cocoa window must render")
+        renderWindow.raise();renderWindow.requestActivate()
+        ui.opacity=0.999;wait(20);ui.opacity=1
+        verify(waitForRendering(ui,5000),"The native Cocoa window must render")
     }
     function clickItem(item) {
         verify(item!==null,"Missing real clickable production object")
@@ -175,6 +179,7 @@ TestCase {
                 x:point.x,y:point.y,width:item.width,height:item.height,
                 source:item.source ? item.source.toString():"",state:item.state || "",
                 disabled:item.disabled===undefined?null:item.disabled,
+                selected:item.selected===undefined?null:item.selected,
                 levelMax:item.levelMax===undefined?null:item.levelMax})
         }
         var children=item.children || []
@@ -240,6 +245,11 @@ TestCase {
             "SettingsSystemInfoScreen.qml","SettingsInterventionInfoScreen.qml"]
         for(var i=0;i<mainTargets.length;++i){
             openSettings();var main=clickMenu(mainTargets[i]);record("settings/"+mainTargets[i],{clicked:main})
+            if(mainTargets[i]==="SettingsGateSettingsScreen.qml"){
+                clickName("actionBarButton1")
+                tryVerify(function(){return screenSource.indexOf("GateWizardScreen.qml")>=0},10000)
+                record("settings/gates/new",{installedCartridge:Models.Status.vars.cartridgeType,template:Models.Settings.gates_to_edit,saveNotClicked:true})
+            }
         }
         var systemTargets=["SettingsNetworkScreen.qml","SettingsDateTimeScreen.qml",
             "SettingsSystemConfig.qml","SettingsSystemServiceScreen.qml","SettingsUserManagementScreen.qml",
@@ -247,6 +257,22 @@ TestCase {
         for(i=0;i<systemTargets.length;++i){
             openSettings();clickMenu("SettingsMenuSystemSettingsScreen.qml")
             var system=clickMenu(systemTargets[i]);record("system/"+systemTargets[i],{clicked:system})
+            if(systemTargets[i]==="SettingsSystemConfig.qml"){
+                var label=findProperty(screen,"text",qsTranslate("SettingsSystemConfig","Advanced user management mode"),"CustomText")
+                verify(label!==null,"Current Advanced user management label must exist")
+                var management=null
+                for(var c=0;c<screen.children.length;++c){
+                    var candidate=screen.children[c]
+                    if(candidate.toString().indexOf("CheckBoxButton")===0 && Math.abs(candidate.y-label.y)<5)management=candidate
+                }
+                verify(management!==null,"Find the production management checkbox next to its label")
+                var originalSelected=management.selected
+                clickItem(label)
+                compare(management.selected,!originalSelected)
+                record("system/configuration/advanced-user-management-unsaved",{saveLabel:screen.ab_texts[0],hasNext:false})
+                clickItem(label)
+                compare(management.selected,originalSelected)
+            }
             if(systemTargets[i]==="SettingsDateTimeScreen.qml"){
                 clickName("actionBarButton1")
                 tryVerify(function(){return screenSource.indexOf("SettingsTimeSync.qml")>=0},10000)
@@ -282,9 +308,60 @@ TestCase {
         goHome();clickHomeAction(Models.Dico.text.Measure)
         tryVerify(function(){return screenSource.indexOf("ManualMeasurementWizardScreen.qml")>=0},10000)
         record("home/manual-measurement-wizard")
+        var prime=findProperty(screen,"protocol_key","prime_no_clean","ListItemProtocol")
+        verify(prime!==null,"The shipped real Prime protocol must be available")
+        clickItem(prime)
+        record("home/manual-wizard/select-prime",{protocol:Models.Protocols.getNext()})
+        clickName("actionBarButton2")
+        compare(screen.state,"infoMaintenance")
+        record("home/manual-wizard/prime-instructions",{protocol:Models.Protocols.getNext(),startNotClicked:true})
+        goHome();clickHomeAction(Models.Dico.text.Results)
+        tryVerify(function(){return screenSource.indexOf("ResultListScreen.qml")>=0},10000)
+        record("home/results/manual",{actualBucket:Models.Protocols.getBucket()})
+        goHome();clickHomeAction(Models.Dico.text.Mode)
+        tryVerify(function(){return screenSource.indexOf("ModeSelectionScreen.qml")>=0},10000)
+        record("home/mode-selection")
+        clickItem(findProperty(screen,"mode","auto","ThemedButton"))
+        compare(Models.System.mode,"auto")
+        clickName("actionBarButton0")
+        tryVerify(function(){return screenSource.indexOf("HomeScreen.qml")>=0},10000)
+        if(modal!==null)clickItem(findProperty(modal,"text",Models.Dico.text.No,"ModalZoomButton"))
+        record("home/online",{schedulerRunning:Models.Settings.vars.autoMode})
+        clickHomeAction(Models.Dico.text.Start)
+        tryVerify(function(){return screenSource.indexOf("AutoInstructionWizardScreen.qml")>=0},10000)
+        record("home/online-measurement-wizard")
+        clickName("actionBarButton1")
+        compare(screen.state,"schedule")
+        record("home/online-wizard/scheduler",{startNotClicked:true})
+        goHome();clickHomeAction(Models.Dico.text.Results)
+        tryVerify(function(){return screenSource.indexOf("ResultListScreen.qml")>=0},10000)
+        record("home/results/online",{actualBucket:Models.Protocols.getBucket()})
+        goHome();clickHomeAction(Models.Dico.text.Mode)
+        clickItem(findProperty(screen,"mode","manual","ThemedButton"))
+        compare(Models.System.mode,"manual")
+        clickName("actionBarButton0")
         record("navigation-network-requests",{requests:requestRecords})
     }
     function test_roles_data(){return localeRows()}
+    // Focused follow-up for the two menu facts added after EN/DE completed.
+    // A fresh full navigation/role capture already includes these checks.
+    function test_additional_data(){return localeRows()}
+    function test_additional(row) {
+        routeName="additional"
+        receive(signedIn,function(){http.login("admin","")})
+        createUi(row)
+        openSettings();clickMenu("SettingsGateSettingsScreen.qml")
+        clickName("actionBarButton1")
+        tryVerify(function(){return screenSource.indexOf("GateWizardScreen.qml")>=0},10000)
+        record("settings/gates/new",{installedCartridge:Models.Status.vars.cartridgeType,template:Models.Settings.gates_to_edit,saveNotClicked:true})
+        receive(signedIn,function(){http.login("advanced","")})
+        createUi(row);compare(http.level,1)
+        openSettings();clickMenu("SettingsMenuMaintenanceScreen.qml")
+        verify(menuEntries().every(function(entry){return entry.screen.indexOf("SettingsTestOutputsScreen.qml")<0}),
+               "Maintenance Test outputs tile is hidden from Advanced")
+        record("advanced/maintenance-menu")
+        record("additional-network-requests",{requests:requestRecords})
+    }
     function test_roles(row) {
         routeName="roles"
         receive(signedIn,function(){http.login("basic","")})
@@ -295,10 +372,37 @@ TestCase {
         verify(menu.every(function(entry){return entry.screen.indexOf("SettingsMenuSystemSettingsScreen.qml")<0
             && entry.screen.indexOf("SettingsMenuMaintenanceScreen.qml")<0}),"Basic must use current limited menu")
         var change=clickMenu("SettingsUserManagementScreen.qml");record("basic/change-password",{clicked:change})
+        tryVerify(function(){return Models.Users.vars.length>0},10000)
+        var basicUser=-1
+        for(var u=0;u<Models.Users.vars.length;++u)if(Models.Users.vars[u].username==="basic")basicUser=u
+        verify(basicUser>=0,"The disposable Basic account must exist")
+        clickName("userRow"+basicUser);clickName("actionBarButton3")
+        tryVerify(function(){return screenSource.indexOf("SettingsUserDetailsScreen.qml")>=0},10000)
+        clickItem(findProperty(screen,"text",qsTranslate("SettingsUserDetailsScreen","Change PIN"),"SmallButton"))
+        record("basic/change-password/edit/change-pin")
         openSettings();var cartridge=clickMenu("SettingsCartridgeChangeScreenNew.qml")
         record("basic/cartridge-change",{clicked:cartridge})
         openSettings();clickMenu("SettingsMenuLogsScreen.qml");clickMenu("SettingsErrorLogScreen.qml")
+        verify(!findChild(ui,"actionBarButton2").disabled,"Idle BactoSense permits Basic error clearing")
         record("basic/error-list-clear-permission")
+        receive(signedIn,function(){http.login("advanced","")})
+        createUi(row);compare(http.level,1)
+        openSettings();record("advanced/settings-menu")
+        clickMenu("SettingsMenuMaintenanceScreen.qml");record("advanced/maintenance-menu")
+        verify(menuEntries().every(function(entry){return entry.screen.indexOf("SettingsTestOutputsScreen.qml")<0}),
+               "Maintenance Test outputs tile is hidden from Advanced")
+        openSettings()
+        clickMenu("SettingsMenuSystemSettingsScreen.qml");record("advanced/system-settings-menu")
+        var restricted=clickMenu("SettingsUpgrades.qml")
+        verify(restricted.disabled,"Upgrades requires Admin or Service")
+        record("advanced/upgrades-restricted",{clicked:restricted})
+        restricted=clickMenu("SettingsSystemServiceScreen.qml")
+        verify(restricted.disabled,"System services requires Admin or Service")
+        record("advanced/system-services-restricted",{clicked:restricted})
+        openSettings();clickMenu("SettingsMenuLogsScreen.qml")
+        restricted=clickMenu("SettingsAuditTrailScreen.qml")
+        verify(restricted.disabled,"Audit trail requires Admin or Service")
+        record("advanced/audit-trail-restricted",{clicked:restricted})
         receive(signedIn,function(){http.login("admin","")})
         createUi(row)
         openSettings();clickMenu("SettingsMenuSystemSettingsScreen.qml");clickMenu("SettingsUserManagementScreen.qml")
@@ -308,12 +412,16 @@ TestCase {
         record("admin/users/settings")
         openSettings();clickMenu("SettingsMenuSystemSettingsScreen.qml");clickMenu("SettingsUserManagementScreen.qml")
         tryVerify(function(){return Models.Users.vars.length>0},10000)
-        clickName("userRow0")
+        var ownUser=-1
+        for(var i=0;i<Models.Users.vars.length;++i)if(Models.Users.vars[i].username==="admin")ownUser=i
+        verify(ownUser>=0,"The real disposable admin account must exist")
+        clickName("userRow"+ownUser)
         clickName("actionBarButton3")
         tryVerify(function(){return screenSource.indexOf("SettingsUserDetailsScreen.qml")>=0},10000)
         record("admin/users/edit")
-        var pin=findProperty(screen,"text",qsTranslate("SettingsUserDetailsScreen","Change PIN"))
-        if(pin){clickItem(pin);record("admin/users/edit/change-pin")}
+        var pin=findProperty(screen,"text",qsTranslate("SettingsUserDetailsScreen","Change PIN"),"SmallButton")
+        verify(pin!==null,"Current translated Change PIN control must exist")
+        clickItem(pin);record("admin/users/edit/change-pin")
         record("role-network-requests",{requests:requestRecords})
     }
 }

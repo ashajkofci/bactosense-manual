@@ -49,7 +49,7 @@ Preparations
 |  | WORK STEP | ADDITIONAL INFO / IMAGES |
 | --- | --- | --- |
 | 1. | Remove and clean the sampling device according to the instructions in [Removal of the manual sampling device](08-general-operations-and-configurations.md#section-8-10-2) (manual sampling device) or [Removal of the online sampling device](08-general-operations-and-configurations.md#section-8-10-1) (online sampling device). | Wear gloves during the process to prevent sampling device contamination. If the tubings of the online sampling device show any signs of contamination or damage, do not reuse and discard. |
-| 2. | Cover the cleaned sampling device with the dedicated cap if available. | ![Illustration for table on manual page 153](/img/manual/cell-8fdb2d0e492f.png "width=132 class=manual-figure") |
+| 2. | Cover the cleaned sampling device with the dedicated cap if available. | ![Illustration for table on manual page 153](/img/manual/cell-8fdb2d0e492f.png "width=66 class=manual-figure") |
 | 3. | Store the clean sampling device in a clean and dry plastic bag. |  |
 
 **Storage**
@@ -177,7 +177,7 @@ Instruments that have come into contact with hazardous media must not be sent wi
 
 :::
 
-:::warning[Follow the shipping instructions]
+:::caution[Follow the shipping instructions]
 
 Adhere to shipping instructions
 
@@ -366,7 +366,7 @@ Cartridge
 
 <td>
 
-:::warning[Return used cartridges]
+:::caution[Return used cartridges]
 
 Do not disassemble nor dispose the cartridge.
 

@@ -14,7 +14,18 @@ slug: /web-user-interface
 
 ## 13.2 Collegamento all’interfaccia utente web {#section-13-2}
 
-<table className="manual-table">
+Un **admin** deve prima attivare l’accesso web HTTP o HTTPS in **Impostazioni → Impostazioni di sistema → Servizi di sistema**, applicare le modifiche e riavviare lo strumento quando richiesto. Per i servizi e le porte, vedere [Recupero di file tramite HTTP o HTTPS](12-data-access-and-export.md#section-12-3).
+
+<div className="manual-narrow-details-scroll">
+
+<table className="manual-table manual-narrow-details manual-narrow-details-split">
+
+<colgroup>
+<col className="procedure-step-column" />
+<col className="procedure-instruction-column" />
+<col className="procedure-detail-column" />
+<col className="procedure-detail-column" />
+</colgroup>
 
 <tbody>
 
@@ -68,13 +79,13 @@ Collegare BactoSense via Ethernet a una rete sicura (ad esempio LAN). Collegare 
 
 <td>
 
-Nella schermata Home dell’interfaccia utente di BactoSense, premere Impostazioni, quindi Informazioni sul sistema.
+Nella schermata iniziale dell’interfaccia utente di BactoSense, premere **Impostazioni**, quindi **Informazioni sul sistema**.
 
 </td>
 
 <td>
 
-![BactoSense — Pulsante della schermata iniziale](/img/gui/icons/home-button.png "width=48 class=manual-icon")
+![BactoSense — Pulsante Impostazioni](/img/gui/it/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
 
 </td>
 
@@ -96,7 +107,7 @@ Nella schermata Home dell’interfaccia utente di BactoSense, premere Impostazio
 
 <td>
 
-Recuperare l’indirizzo IP di BactoSense mostrato nella pagina System info.
+Leggere l’indirizzo IP di BactoSense nella pagina **Informazioni sul sistema**.
 
 </td>
 
@@ -136,7 +147,7 @@ Aprire un browser web sul proprio dispositivo.
 
 <td>
 
-Inserire l’indirizzo IP di BactoSense nella barra degli indirizzi e premere Invio.
+Inserire `http://<indirizzo IP>` o `https://<indirizzo IP>` nella barra degli indirizzi, in base al servizio attivato. Aggiungere `:<porta>` se la porta è diversa da quella predefinita, quindi premere Invio.
 
 </td>
 
@@ -156,7 +167,7 @@ Inserire l’indirizzo IP di BactoSense nella barra degli indirizzi e premere In
 
 <td>
 
-Nella pagina di accesso, utilizzare lo stesso nome utente e la stessa password di BactoSense e premere Login.
+Nella pagina di accesso, utilizzare lo stesso nome utente e la stessa password di BactoSense, quindi premere **Accedi**.
 
 </td>
 
@@ -170,6 +181,8 @@ Nella pagina di accesso, utilizzare lo stesso nome utente e la stessa password d
 
 </table>
 
+</div>
+
 ## 13.3 Pagina iniziale in modalità manuale {#section-13-3}
 
 ![BactoSense — Dashboard Web](/img/gui/it/web-dashboard.png "width=654 class=manual-figure")
@@ -180,15 +193,15 @@ Nella pagina di accesso, utilizzare lo stesso nome utente e la stessa password d
 | --- | --- | --- | --- |
 | 1 | Menu | 2 | Stato dello strumento |
 | 3 | Pannello riepilogativo con gli ultimi risultati | 4 | Lingua: menu a discesa per cambiare la lingua. |
-| 5 | Opzioni di disconnessione dall’interfaccia web e riavvio di BactoSense | 6 | Avanzamento della misurazione corrente |
+| 5 | Menu utente: disconnessione; gli account admin e di assistenza possono anche riavviare BactoSense | 6 | Avanzamento della misurazione corrente |
 
 ## 13.4 Download di un file FCS {#section-13-4}
 
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINI |
 | --- | --- | --- |
 | 1. | Nell’interfaccia web, selezionare la pagina Risultati nel pannello di navigazione a sinistra. |  |
-| 2. | Accedere al risultato da esportare. |  |
-| 3. | Fare clic sul collegamento fcs (posizione X). | ![BactoSense — Link di download FCS](/img/gui/it/web-fcs-download.png "width=271 class=manual-figure") |
+| 2. | Individuare la misurazione nella tabella dei risultati appropriata sotto il grafico. Se necessario, scorrere orizzontalmente fino ai collegamenti a destra della riga. |  |
+| 3. | Fare clic sul collegamento **fcs** (posizione X). | ![BactoSense — Link di download FCS](/img/gui/it/web-fcs-download.png "width=271 class=manual-figure") |
 | 4. | Attendere il completamento del download. |  |
 
 ## 13.5 Download di un file ZIP con più risultati {#section-13-5}
@@ -198,19 +211,18 @@ I risultati di più misurazioni possono essere scaricati come file ZIP. L’arch
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINI |
 | --- | --- | --- |
 | 1. | Nell’interfaccia web, selezionare la pagina Risultati nel pannello di navigazione a sinistra. |  |
-| 2. | Individuare i risultati della modalità desiderata: Modalità online o Modalità Manuale. |  |
-| 3. | Selezionare l’intervallo di date desiderato e fare clic su Download ZIP. Una barra di avanzamento viene visualizzata nella parte superiore del browser fino all’avvio del download. | ![BactoSense — Download ZIP](/img/gui/it/web-zip-download.png "width=282 class=manual-figure") |
+| 2. | Individuare la tabella **Risultati della Modalità online** o **Risultati della Modalità Manuale** per le misurazioni desiderate. |  |
+| 3. | Selezionare l’intervallo di date per la tabella e fare clic su **Scaricare in formato ZIP**. Una barra di avanzamento appare nella parte superiore del browser fino all’avvio del download ZIP. | ![BactoSense — Download ZIP](/img/gui/it/web-zip-download.png "width=282 class=manual-figure") |
 | 4. | Attendere il completamento del download. |  |
 
 ## 13.6 Download di tutti i risultati in formato CSV, XLSX o PDF {#section-13-6}
-
-L’elenco di tutti i risultati può essere scaricato dall’interfaccia web in formato Excel XLSX, CSV o PDF. I risultati della modalità online sono separati da quelli della Modalità Manuale.
+L’elenco di tutti i risultati può essere scaricato dall’interfaccia web in formato Excel XLSX, CSV o PDF. I risultati della modalità online, della Modalità Manuale e della convalida dello strumento hanno download separati.
 
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINI |
 | --- | --- | --- |
 | 1. | Nell’interfaccia web, selezionare la pagina Risultati nel pannello di navigazione a sinistra. |  |
-| 2. | Individuare la sezione SCARICA I RISULTATI sotto il grafico dei risultati. |  |
-| 3. | Fare clic sul file desiderato (xlsx, csv o PDF) per avviare il download. | ![BactoSense — Formati di download dei risultati](/img/gui/it/web-results-download-formats.png "width=282 class=manual-figure") |
+| 2. | Individuare la sezione **SCARICA I RISULTATI** sotto il grafico dei risultati e scegliere la riga della modalità di misurazione desiderata o della convalida dello strumento. |  |
+| 3. | Fare clic su **Scaricare in formato XLSX**, **Scaricare in formato CSV** o **Scaricare in formato PDF** nella riga per avviare il download. | ![BactoSense — Formati di download dei risultati](/img/gui/it/web-results-download-formats.png "width=282 class=manual-figure") |
 | 4. | Attendere il completamento del download. |  |
 
 ## 13.7 Animazione dell’evoluzione dei diagrammi a punti {#section-13-7}
@@ -220,20 +232,19 @@ L’interfaccia web può animare i diagrammi a punti della modalità online per 
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINI |
 | --- | --- | --- |
 | 1. | Nell’interfaccia web, selezionare la pagina Grafici nel pannello di navigazione a sinistra. | ![BactoSense — Navigazione a Grafici](/img/gui/it/web-plots-navigation.png "width=283 class=manual-figure") |
-| 2. | Utilizzare le frecce precedente e successiva o il cursore per centrare quest’ultimo sull’intervallo di date desiderato. | ![BactoSense — Intervallo di date dei grafici](/img/gui/it/web-plots-date-range.png "width=283 class=manual-figure") |
-| 3. | Premere Play per avviare l’animazione. | ![BactoSense — Controlli di riproduzione dei grafici](/img/gui/it/web-plots-play.png "width=283 class=manual-figure") |
-| 4. | Se necessario, regolare la velocità tramite l’apposito campo. |  |
-| 5. | L’animazione può essere scaricata come file GIF premendo Scaricare in formato GIF. |  |
+| 2. | Utilizzare le frecce precedente e successiva o il cursore per selezionare una misurazione in base alla sua marca temporale. | ![BactoSense — Selezione della marca temporale del grafico](/img/gui/it/web-plots-measurement-time.png "width=283 class=manual-figure") |
+| 3. | Premere il pulsante Play triangolare per avviare l’animazione. Premerlo di nuovo per metterla in pausa. | ![BactoSense — Controlli di riproduzione dei grafici](/img/gui/it/web-plots-play.png "width=283 class=manual-figure") |
+| 4. | Impostare **Velocità di animazione** sul numero positivo desiderato di grafici al secondo. |  |
+| 5. | Premere **Scaricare in formato GIF** per esportare fino a 60 dei grafici più recenti della modalità online alla velocità scelta. L’esportazione utilizza gli ultimi grafici, indipendentemente dalla posizione del cursore. |  |
 
 ## 13.8 Modifica dell’intervallo di misurazione {#section-13-8}
-
-Se lo strumento è in modalità online, l’intervallo di misurazione può essere modificato dall’interfaccia web.
+L’intervallo utilizzato per le misurazioni in modalità online può essere modificato dall’interfaccia web.
 
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINI |
 | --- | --- | --- |
 | 1. | Nell’interfaccia web, selezionare la pagina Impostazioni nel pannello di navigazione a sinistra. | ![BactoSense — Intervallo di misura](/img/gui/it/web-measurement-interval.png "width=283 class=manual-figure") |
-| 2. | Modificare la durata dell’intervallo di misurazione. |  |
-| 3. | Fare clic su SAVE per confermare. |  |
+| 2. | Inserire un intervallo da 30 a 360 minuti nel campo **Intervallo di misurazione [minuti]**. |  |
+| 3. | Fare clic su **SAVE** per applicare l’intervallo. |  |
 
 ## 13.9 Acquisizione di schermate dell’interfaccia grafica {#section-13-9}
 
@@ -242,12 +253,11 @@ Acquisire schermate dell’interfaccia grafica di BactoSense dall’interfaccia 
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINI |
 | --- | --- | --- |
 | 1. | Nell’interfaccia web, selezionare la pagina Informazioni di sistema nel pannello di navigazione a sinistra. | ![BactoSense — Navigazione alle informazioni di sistema Web](/img/gui/it/web-system-info-navigation.png "width=284 class=manual-figure") |
-| 2. | Premere Get screenshot nella parte inferiore della pagina. |  |
+| 2. | Premere **Fai uno screenshot** nella parte inferiore della pagina. |  |
 | 3. | La schermata viene visualizzata sotto. |  |
 
 ## 13.10 Riavvio dall’interfaccia utente web {#section-13-10}
-
-BactoSense può essere riavviato dall’interfaccia web secondo la procedura seguente.
+Un **admin** o un account di assistenza può riavviare BactoSense dall’interfaccia web con la procedura seguente.
 
 :::info[L’accensione remota non è disponibile]
 
@@ -258,5 +268,5 @@ Lo strumento non può essere acceso da remoto.
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINI |
 | --- | --- | --- |
 | 1. | Nell’angolo superiore destro dell’interfaccia web, fare clic sul nome utente per aprire il menu utente. | ![BactoSense — Menu utente per il riavvio](/img/gui/it/web-user-reboot-menu.png "width=284 class=manual-figure") |
-| 2. | Selezionare Riavvia e confermare la richiesta. |  |
-| 3. | Lo strumento si riavvia ed è necessario effettuare nuovamente l’accesso. |  |
+| 2. | Selezionare **Riavvia**, quindi fare clic su **Riavvia** nella finestra di conferma. |  |
+| 3. | Attendere il riavvio dello strumento, ricaricare l’interfaccia web e accedere nuovamente se richiesto. |  |

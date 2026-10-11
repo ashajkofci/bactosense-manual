@@ -6,7 +6,13 @@
     "message": "Descargar PDF"
   },
   "manual.image.open": {
-    "message": "Abrir imagen a tamaño completo"
+    "message": "Ampliar imagen"
+  },
+  "manual.image.close": {
+    "message": "Cerrar la vista previa de la imagen"
+  },
+  "manual.image.preview": {
+    "message": "Vista previa de la imagen"
   },
   "theme.ErrorPageContent.title": {
     "message": "Esta página ha fallado.",
@@ -369,5 +375,13 @@
   "theme.tags.tagsPageTitle": {
     "message": "Etiquetas",
     "description": "The title of the tag list page"
+  },
+  "theme.admonition.explosion": {
+    "message": "Riesgo de explosión",
+    "description": "The default label used for an explosion hazard notice."
+  },
+  "theme.admonition.gloves": {
+    "message": "Guantes de protección",
+    "description": "The default label used for a mandatory protective gloves notice."
   }
 }

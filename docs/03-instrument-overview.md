@@ -45,177 +45,21 @@ The type plate of the BactoSense can be found on the right hand-side of the inst
 
 The type plate of the BactoSense power supply can be found on the power supply and has  the following elements:
 
-![Original manual illustration, printed page 9](/img/manual/asset-af22eddd339f.png "width=150")
+![Original manual illustration, printed page 9](/img/manual/asset-af22eddd339f.png "width=300")
 
 *Figure 3-3  Type plate of the BactoSense power supply.*
 
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-1
-
-</td>
-
-<td>
-
-Manufacturer
-
-</td>
-
-<td>
-
-2
-
-</td>
-
-<td>
-
-Product name
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3
-
-</td>
-
-<td>
-
-Part number
-
-</td>
-
-<td>
-
-4
-
-</td>
-
-<td>
-
-Manufacturing date
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5
-
-</td>
-
-<td>
-
-Service voltage and frequency
-
-</td>
-
-<td>
-
-6
-
-</td>
-
-<td>
-
-Power consumption
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7
-
-</td>
-
-<td>
-
-CE mark
-
-</td>
-
-<td>
-
-8
-
-</td>
-
-<td>
-
-UKCA mark
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-9
-
-</td>
-
-<td>
-
-Compliance with Canadian EMC<br />and interference standards
-
-</td>
-
-<td>
-
-10
-
-</td>
-
-<td>
-
-Read the instructions and operate<br />with caution.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-11
-
-</td>
-
-<td>
-
-Disposal information
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+1. Manufacturer
+2. Product name
+3. Part number
+4. Manufacturing date
+5. Service voltage and frequency
+6. Power consumption
+7. CE mark
+8. UKCA mark
+9. Compliance with Canadian EMC and interference standards
+10. Read the instructions and operate with caution.
+11. Disposal information
 
 ## 3.2 Technical data {#section-3-2}
 
@@ -563,34 +407,6 @@ Configurable auto-restart
 
 </tr>
 
-</tbody>
-
-</table>
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>
-
-Property
-
-</th>
-
-<th>
-
-Specification
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
 <tr>
 
 <th colSpan="2">
@@ -899,34 +715,6 @@ From every 30 min to every 6 hours
 
 </tr>
 
-</tbody>
-
-</table>
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>
-
-Property
-
-</th>
-
-<th>
-
-Specification
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
 <tr>
 
 <th colSpan="2">
@@ -1074,34 +862,6 @@ Storage humidity
 </td>
 
 </tr>
-
-</tbody>
-
-</table>
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>
-
-Property
-
-</th>
-
-<th>
-
-Specification
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
 
 <tr>
 

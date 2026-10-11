@@ -7,7 +7,7 @@ slug: /maintenance
 
 BactoSense maintenance refers to the activities and procedures performed to ensure the proper functioning, accuracy and reliability of the instrument over its life cycle.
 
-:::warning[Follow the maintenance schedule]
+:::caution[Follow the maintenance schedule]
 
 BactoSense service duty
 
@@ -51,7 +51,7 @@ Contact bNovate support or your local service partner to see available options. 
 
 |  | WORK STEP | ADDITIONAL INFO / IMAGE |
 | --- | --- | --- |
-| 1. | Navigate to the Home screen of the BactoSense user interface. | ![BactoSense — Home button](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
+| 1. | Log in as an Advanced or Admin user, then navigate to the Home screen. | ![BactoSense — Home button](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
 | 2. | Press the Settings button. | ![BactoSense — Settings button](/img/gui/en/home-settings-button.png "width=57 class=manual-icon-settings-button-half") |
 | 3. | Press the Support & Service button. | ![BactoSense — Support and maintenance information](/img/gui/icons/intervention-info-button.png "width=48 class=manual-icon") |
 | 4. | If a service is needed, a warning will be attached to the measurement result. Schedule a preventive maintenance before the service due date. |  |
@@ -62,7 +62,7 @@ The following procedure describes how to view details of past service interventi
 
 |  | WORK STEP | ADDITIONAL INFO / IMAGE |
 | --- | --- | --- |
-| 1. | Navigate to the Home menu of the BactoSense user interface. | ![BactoSense — Home button](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
+| 1. | As an Advanced or Admin user, press Settings on the Home screen to open the settings menu. | ![BactoSense — Settings button](/img/gui/en/home-settings-button.png "width=57 class=manual-icon-settings-button-half") |
 | 2. | Press the Maintenance button. | ![BactoSense — Maintenance menu](/img/gui/icons/maintenance-button.png "width=48 class=manual-icon") |
 | 3. | Press the Intervention log button. | ![BactoSense — Maintenance log](/img/gui/icons/intervention-log-button.png "width=48 class=manual-icon") |
 | 4. | Past service interventions are listed in this log screen. |  |
@@ -102,9 +102,9 @@ This protocol describes how to clean the manual sampling device using the Washst
 |  | WORK STEP | ADDITIONAL INFO / IMAGES |
 | --- | --- | --- |
 | 1. | Make sure the manual sampling device is tightly installed as described in [Installation of the manual sampling device](05-installation.md#section-5-4). |  |
-| 2. | Navigate to the Home menu of the BactoSense user interface. |  |
+| 2. | Navigate to the Home screen of the BactoSense user interface. |  |
 | 3. | On the Home screen, press Mode and select Manual mode. Press Back, then Measure to open the measurement wizard. |  |
-| 4. | In the list of available protocols, select Clean Sampling Device with Washstation. |  |
+| 4. | Select Clean Sampling Device with Washstation from the list of available protocols. |  |
 | 5. | Make sure 1 replication is configured in the Replications column. | More replications can be conducted for stronger cleanings. |
 | 6. | Press the Next button. |  |
 | 7. | Mount the Washstation by screwing it on the manual sampling device, similar to a sample tube. Make sure you install it to the end of the thread. |  |
@@ -120,18 +120,18 @@ This protocol describes how to clean the manual sampling device without the Wash
 | --- | --- | --- |
 | 1. | Make sure the manual sampling device is tightly installed as described in [Installation of the manual sampling device](05-installation.md#section-5-4). |  |
 | 2. | Attach a fresh 5 mL screw-cap tube containing 2 – 5 mL sterile water to the manual sampling device. |  |
-| 3. | Navigate to the Home menu of the BactoSense user interface. |  |
+| 3. | Navigate to the Home screen of the BactoSense user interface. |  |
 | 4. | On the Home screen, press Mode and select Manual mode. Press Back, then Measure to open the measurement wizard. |  |
-| 5. | In the list of available protocols, select Clean Optics. |  |
+| 5. | Select Clean Optics from the list of available protocols. |  |
 | 6. | Make sure 1 replication is configured in the Replications column. | Configure more replications for a stronger cleaning. |
 | 7. | Press the Next button. |  |
 | 8. | Press the Start button and wait for 5 min for the protocol to complete. |  |
-| 9. | Then press the New button to navigate back to the protocol list. In the list of available protocols, select Clean Sampling Device. |  |
+| 9. | Press New to return to the protocol list, then select Clean Sampling Device. |  |
 | 10. | Make sure 1 replication is configured in the Replications column. | Configure more replications for a stronger cleaning. |
 | 11. | Press the Next button. |  |
 | 12. | Press the Start button and wait for 5 min for the protocol to complete. |  |
 | 13. | Once the protocol is finished, remove the 5 mL screw-cap tube and discard it. |  |
-| 14. | Press the Home button on the top left of the user interface to return to the Home menu. |  |
+| 14. | Press the Home icon at the top left of the user interface to return to the Home screen. |  |
 | 15. | If you want to continue with measurements, perform a Prime prior to the first measurement. The instructions can be found in [Performing a Prime](10-measurements.md#section-10-9-3). If the instrument will be idle or shut off, attach a fresh sample tube to the manual sampling device. |  |
 | 16. | If you face a persisting contamination, first repeat the procedure with more replications. If it still persists, use the Cleaning Kit to decontaminate the instrument (see [Consumables](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
 
@@ -142,10 +142,10 @@ The following procedure helps clearing biological contaminations of the online s
 |  | WORK STEP | ADDITIONAL INFO / IMAGES |
 | --- | --- | --- |
 | 1. | Make sure the online sampling device is correctly installed and water flow conditions are fulfilled (see [Installing the online sampling device at the BactoSense](05-installation.md#section-5-5-2)). | Important: Make sure the outlet tubing is connected to a drain, as cleaning liquid is released into the online sampling device. |
-| 2. | Enter the Manual Mode and press Start to see the list of available protocols. |  |
+| 2. | On the Home screen, press Mode and select Manual mode. Press Back, then Measure to open the measurement wizard. |  |
 | 3. | Select the Clean Sampling Device protocol and configure 5 replications. |  |
 | 4. | Press Next and Start to launch the cleaning. |  |
-| 5. | After finishing, return to the list of protocols. |  |
+| 5. | After finishing, press New to return to the protocol list. |  |
 | 6. | Select the Prime protocol and configure 2 replications. |  |
 | 7. | Press Next and Start to launch the priming. |  |
 | 8. | After completion the online sampling device should be clear of minor biological contaminations and you can return to regular operation. In case contaminations persist or if a non- biological contamination is suspected, contact support@bnovate.com for assistance. |  |
@@ -154,13 +154,13 @@ The following procedure helps clearing biological contaminations of the online s
 
 The inlet- and outlet tubings of the online sampling device must be exchanged if they show signs of damage or contamination. The required materials are the inlet and outlet tubing and two ferrules. For specifications refer to [Technical data](03-instrument-overview.md#section-3-2), and for the part numbers to [Consumables](18-supply-scope-accessories-and-consumables.md#section-18-3).
 
-:::warning[Do not use a spanner]
+:::caution[Do not use a spanner]
 
 Never use a spanner on the sampling device when attached to the BactoSense
 
 :::
 
-:::warning[Wear protective gloves]
+:::gloves[Wear protective gloves]
 
 Wear nitrile gloves when manipulating the sampling device or any other components which come in contact with the sample.
 
@@ -185,7 +185,7 @@ The following procedure describes how to replace the desiccant bag. The desiccan
 
 |  | WORK STEP | ADDITIONAL INFO / IMAGE |
 | --- | --- | --- |
-| 1. | Open the desiccant bag container by unscrewing the large cap on the left-hand side of the instrument. | ![Illustration for table on manual page 135](/img/manual/cell-7272265c5bc4.png "width=260 class=manual-figure") |
+| 1. | Open the desiccant bag container by unscrewing the large cap on the left-hand side of the instrument. | ![Illustration for table on manual page 135](/img/manual/cell-7272265c5bc4.png "width=130 class=manual-figure") |
 | 2. | Replace the used desiccant bag by a new one. |  |
 | 3. | Close the desiccant bag container by screwing back the large cap. |  |
 
@@ -193,7 +193,7 @@ The following procedure describes how to replace the desiccant bag. The desiccan
 
 The sampling device of the BactoSense contains a 25 μm filter which can be replaced by the user. The filter is a consumable listed in [Consumables](18-supply-scope-accessories-and-consumables.md#section-18-3).
 
-:::warning[Use fresh protective gloves]
+:::gloves[Use fresh protective gloves]
 
 Wear fresh, non-powdered nitrile gloves when handling the samples, sampling device, or any components which come in contact with them.
 
@@ -202,15 +202,15 @@ Wear fresh, non-powdered nitrile gloves when handling the samples, sampling devi
 |  | WORK STEP | ADDITIONAL INFO / IMAGE |
 | --- | --- | --- |
 | 1. | Unscrew the sampling device from the BactoSense, as described in [Removal of the online sampling device](08-general-operations-and-configurations.md#section-8-10-1) for the online sampling device, and [Removal of the manual sampling device](08-general-operations-and-configurations.md#section-8-10-2) for the manual sampling device. |  |
-| 2. | Place flat tweezers under the white plug. | ![Illustration for table on manual page 136](/img/manual/cell-efadbaaeb60b.png "width=251 class=manual-figure") |
-| 3. | Remove the white plug and mind the transparent filter disc. The filter sometimes stays inside the cavity and sometimes remains attached to the white plug. | ![Illustration for table on manual page 136](/img/manual/cell-4636f1f749e9.png "width=251 class=manual-figure") |
-| 4. | Remove the filter and place a new one. Do not use force, let the filter sink with gravity. Do not push the filter inside with tweezers. | ![Illustration for table on manual page 136](/img/manual/cell-6d2af8024fd1.png "width=251 class=manual-figure") |
+| 2. | Place flat tweezers under the white plug. | ![Illustration for table on manual page 136](/img/manual/cell-efadbaaeb60b.png "width=126 class=manual-figure") |
+| 3. | Remove the white plug and mind the transparent filter disc. The filter sometimes stays inside the cavity and sometimes remains attached to the white plug. | ![Illustration for table on manual page 136](/img/manual/cell-4636f1f749e9.png "width=126 class=manual-figure") |
+| 4. | Remove the filter and place a new one. Do not use force, let the filter sink with gravity. Do not push the filter inside with tweezers. | ![Illustration for table on manual page 136](/img/manual/cell-6d2af8024fd1.png "width=126 class=manual-figure") |
 | 5. | Re-insert the white plug. Be sure to press it until it reaches the bottom. The force of the white plug will press the filter in the right position. |  |
 | 6. | Re-install the sampling device as described in [Installation of the manual sampling device](05-installation.md#section-5-4) for the manual sampling device and [Installation of the online sampling device](05-installation.md#section-5-5) for the online sampling device. |  |
 
 ### 15.2.8 Clearing of disk space {#section-15-2-8}
 
-:::warning[Back up data before deleting]
+:::caution[Back up data before deleting]
 
 When running out of disk space, old data can be deleted.
 
@@ -220,12 +220,12 @@ Make sure you retrieve all data from other users and your data before deleting i
 
 |  | WORK STEP |
 | --- | --- |
-| 1. | Navigate to the Home menu in the BactoSense user interface. |
+| 1. | As an Advanced or Admin user, press Settings on the Home screen to open the settings menu. |
 | 2. | Press the Maintenance button. |
-| 3. | Press the Delete old measurements button. This function is only available for the Admin role. |
+| 3. | Press Delete old measurements. This function is available to Advanced and Admin users. |
 | 4. | If available, choose one of the following measuring modes: Online / Manual |
 | 5. | Choose the time interval for the measurements to keep. Measurements older than this will be deleted. |
-| 6. | Press Delete measurements to permanently delete the data. |
+| 6. | Press Delete measurements, then confirm with Yes, delete to permanently delete the data. |
 
 ## 15.3 Software update {#section-15-3}
 
@@ -235,9 +235,9 @@ Software updates can either be installed from a USB stick, or from an online rep
 | --- | --- |
 | 1. | Make sure your instrument has a fast and stable internet connection and you are logged in with Admin permissions. |
 | 2. | Recommended: Back up your data, e.g. using export to USB as described in [Export data to USB device](12-data-access-and-export.md#section-12-1). |
-| 3. | Press the Maintenance button. |
-| 4. | Press the System udpate button. Available updates will be shown in a check box list on top. If no update is shown, press the Refresh list button. If still no update is shown, no update is available for your instrument or there is an issue with the internet connection. |
-| 5. | Check the check box of the desired update. |
+| 3. | On the Home screen, press Settings to open the settings menu. Press the Maintenance button. |
+| 4. | Press System update. Available USB drives and the online repository appear in the list at the top. If no update is shown, press Refresh list. If still no update is shown, no update is available for your instrument or there is an issue with the internet connection. |
+| 5. | Select the USB drive or online repository containing the desired update. |
 | 6. | Carefully read through the release notes in the Changelog section of the user interface to understand the changes introduced since your current software version. |
-| 7. | If you wish to update, press the Update button and follow the instructions. Note: No manual reboot is necessary after the update. |
+| 7. | To update, press Update, confirm with Yes, and follow the instructions. Note: No manual reboot is necessary after the update. |
 | 8. | After the update, verify that all instrument configurations are still correct. |

@@ -45,177 +45,21 @@ La placa de características de BactoSense se encuentra en el lateral derecho de
 
 La placa de características de la fuente de alimentación de BactoSense se encuentra en la propia fuente de alimentación y contiene los siguientes elementos:
 
-![Ilustración del manual original, página impresa 9](/img/manual/asset-af22eddd339f.png "width=150")
+![Ilustración del manual original, página impresa 9](/img/manual/asset-af22eddd339f.png "width=300")
 
 *Figura 3-3 Placa de características de la fuente de alimentación de BactoSense.*
 
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-1
-
-</td>
-
-<td>
-
-Fabricante
-
-</td>
-
-<td>
-
-2
-
-</td>
-
-<td>
-
-Nombre del producto
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3
-
-</td>
-
-<td>
-
-Referencia
-
-</td>
-
-<td>
-
-4
-
-</td>
-
-<td>
-
-Fecha de fabricación
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5
-
-</td>
-
-<td>
-
-Tensión y frecuencia de servicio
-
-</td>
-
-<td>
-
-6
-
-</td>
-
-<td>
-
-Consumo de potencia
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7
-
-</td>
-
-<td>
-
-Marcado CE
-
-</td>
-
-<td>
-
-8
-
-</td>
-
-<td>
-
-Marcado UKCA
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-9
-
-</td>
-
-<td>
-
-Conformidad con las normas canadienses sobre<br />compatibilidad electromagnética e interferencias
-
-</td>
-
-<td>
-
-10
-
-</td>
-
-<td>
-
-Lea las instrucciones y utilice el instrumento<br />con precaución.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-11
-
-</td>
-
-<td>
-
-Información sobre la eliminación
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+1. Fabricante
+2. Nombre del producto
+3. Referencia
+4. Fecha de fabricación
+5. Tensión y frecuencia de servicio
+6. Consumo de potencia
+7. Marcado CE
+8. Marcado UKCA
+9. Conformidad con las normas canadienses sobre compatibilidad electromagnética e interferencias
+10. Lea las instrucciones y utilice el instrumento con precaución.
+11. Información sobre la eliminación
 
 ## 3.2 Datos técnicos {#section-3-2}
 
@@ -563,34 +407,6 @@ Reinicio automático configurable
 
 </tr>
 
-</tbody>
-
-</table>
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>
-
-Propiedad
-
-</th>
-
-<th>
-
-Especificación
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
 <tr>
 
 <th colSpan="2">
@@ -899,34 +715,6 @@ Desde cada 30 min hasta cada 6 horas
 
 </tr>
 
-</tbody>
-
-</table>
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>
-
-Propiedad
-
-</th>
-
-<th>
-
-Especificación
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
 <tr>
 
 <th colSpan="2">
@@ -1074,34 +862,6 @@ Humedad de almacenamiento
 </td>
 
 </tr>
-
-</tbody>
-
-</table>
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>
-
-Propiedad
-
-</th>
-
-<th>
-
-Especificación
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
 
 <tr>
 

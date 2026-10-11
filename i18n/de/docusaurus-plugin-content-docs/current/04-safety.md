@@ -52,7 +52,7 @@ Der Betrieb des Geräts ohne die folgenden in der Bedienungsanleitung genannten 
 
 :::
 
-:::warning[Kondensation vermeiden]
+:::caution[Kondensation vermeiden]
 
 **Feuchtigkeit oder Kondenswasser auf elektrischen Komponenten**
 
@@ -63,7 +63,7 @@ Tritt in den BactoSense Feuchtigkeit ein, kann das Gerät Schaden nehmen.
 
 :::
 
-:::warning[Aggressive Chemikalien vermeiden]
+:::caution[Aggressive Chemikalien vermeiden]
 
 **Verwendung aggressiver Chemikalien**
 
@@ -77,7 +77,7 @@ Die Verwendung aggressiver Chemikalien kann den Gerätekomponenten Schaden zufü
 
 ## 4.2 Sicherer Umgang mit Chemikalien {#section-4-2}
 
-:::warning[Sicher mit Chemikalien umgehen]
+:::caution[Sicher mit Chemikalien umgehen]
 
 **Unsachgemäßer Umgang mit Chemikalien**
 
@@ -92,7 +92,7 @@ Bitte befolgen Sie die folgenden Anweisungen zum sicheren Umgang mit Chemikalien
 
 ## 4.3 Restrisiko {#section-4-3}
 
-:::warning[Messgenauigkeit]
+:::caution[Messgenauigkeit]
 
 **Restrisiko**
 
@@ -105,7 +105,7 @@ Gemäß der Risikobewertung der angewandten Sicherheitsrichtlinie DIN EN 61010-1
 
 ## 4.4 Warnungs- und Gefahrensymbole am Gerät {#section-4-4}
 
-:::warning[Sicherheitshinweise beachten]
+:::caution[Sicherheitshinweise beachten]
 
 **Keine Warnungs- oder Gefahrensymbole am Gerät**
 
@@ -120,7 +120,7 @@ Die Benutzer müssen sicherstellen, dass sie die in dieser Bedienungsanleitung a
 
 ![Abbildung aus dem Originalhandbuch, gedruckte Seite 16](/img/manual/asset-96ca4e251d8b.png "width=627")
 
-:::warning[Netzwerkzugriff schützen]
+:::caution[Netzwerkzugriff schützen]
 
 **BactoSense verfügt über eine integrierte Web-Benutzeroberfläche. Wird das Gerät ohne geeigneten Schutz direkt mit dem Internet verbunden, können unbefugte Internetnutzer auf Ihr Gerät zugreifen.** Bitte beachten Sie folgende Empfehlungen:
 

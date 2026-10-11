@@ -487,11 +487,7 @@ UInt16<br />(bits individuels)
 
 <td>
 
-:::info[Informations supplémentaires]
-
-État des<br />alarmes, c’est-à-dire alarmes<br />déclenchées pendant<br />la<br />dernière<br />mesure.
-
-:::
+État des alarmes, c’est-à-dire alarmes déclenchées pendant la dernière mesure.
 
 </td>
 
@@ -524,11 +520,7 @@ UInt32<br />MSB (bits individuels)
 
 <td rowSpan="2">
 
-:::info[Informations supplémentaires]
-
-État<br />des avertissements,<br />c’est-à-dire avertissements<br />déclenchés pendant<br />la<br />dernière<br />mesure.
-
-:::
+État des avertissements, c’est-à-dire avertissements déclenchés pendant la dernière mesure.
 
 </td>
 

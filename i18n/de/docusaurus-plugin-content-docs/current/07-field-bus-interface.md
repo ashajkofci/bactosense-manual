@@ -487,11 +487,7 @@ UInt16 (einzelne Bits)
 
 <td>
 
-:::info[Zusätzliche Informationen]
-
 Alarmstatus, d. h. während der letzten Messung ausgelöste Alarme.
-
-:::
 
 </td>
 
@@ -524,11 +520,7 @@ UInt32 MSB (einzelne Bits)
 
 <td rowSpan="2">
 
-:::info[Zusätzliche Informationen]
-
 Warnungsstatus, d. h. während der letzten Messung aufgetretene Warnungen.
-
-:::
 
 </td>
 

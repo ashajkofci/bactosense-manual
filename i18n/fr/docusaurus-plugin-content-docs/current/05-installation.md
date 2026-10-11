@@ -88,7 +88,7 @@ Installez deux vis M8 à la même hauteur, espacées horizontalement de 265 mm (
 
 <td>
 
-:::warning[Fixation murale sûre]
+:::caution[Fixation murale sûre]
 
 La fixation doit supporter au moins 60 kg (132 lbs).
 
@@ -158,7 +158,7 @@ Le BactoSense doit être utilisé avec le bloc d’alimentation d’origine four
 
 :::
 
-:::warning[Alimentation stable]
+:::caution[Alimentation stable]
 
 Une alimentation électrique ininterrompue et stable, conforme aux caractéristiques techniques de la section [Données techniques](03-instrument-overview.md#section-3-2), doit être garantie.
 
@@ -309,7 +309,7 @@ Serrez la bague de verrouillage (X) de la fiche du connecteur d’alimentation. 
 
 </table>
 
-:::warning[Débranchez en toute sécurité]
+:::caution[Débranchez en toute sécurité]
 
 Pour débrancher le BactoSense de l’alimentation, éteignez d’abord l’instrument. Débranchez ensuite le bloc d’alimentation de la source d’alimentation secteur avant de débrancher la fiche d’alimentation du BactoSense.
 
@@ -552,15 +552,17 @@ Raccordez le bloc d’alimentation au secteur et à l’instrument comme décrit
 
 Le dispositif d’échantillonnage manuel est destiné à la mesure d’échantillons ponctuels, prélevés dans des tubes à bouchon fileté de 5 mL. La procédure suivante décrit comment installer le dispositif d’échantillonnage manuel.
 
-![Illustration du manuel original, page imprimée 23](/img/manual/asset-d4b1ce33478f.png "width=53")
+![Illustration du manuel original, page imprimée 23](/img/manual/asset-d4b1ce33478f.png "width=282 class=manual-sampling-illustration")
 
 *Figure 5-1 Dispositif d’échantillonnage manuel*                                                                                                                  *1 : Goupilles de positionnement, 2 : Fiche, 3 : Bague de fixation, 4 : Tube à bouchon fileté de 5 mL.*
 
-![Portez des gants de protection](/img/manual/icon-gloves.png "width=32")
+:::gloves[Porter des gants de protection]
 
 Évitez la contamination de l’équipement. Portez des gants en nitrile lors de la manipulation des échantillons, des dispositifs d’échantillonnage et de tout composant qui entre en contact avec eux.
 
-<table>
+:::
+
+<table className="manual-sampling-installation">
 
 <thead>
 
@@ -606,7 +608,7 @@ Inspectez le dispositif d’échantillonnage manuel. • Assurez-vous qu’il es
 
 <td>
 
-![Illustration de la procédure, page imprimée 23](/img/manual/asset-990519e959c3.png "width=58")
+![Illustration de la procédure, page imprimée 23](/img/manual/asset-990519e959c3.png "width=282 class=manual-sampling-illustration")
 
 </td>
 
@@ -628,7 +630,7 @@ Fixez un tube à bouchon fileté vide de 5 mL ou la Washstation au dispositif d�
 
 <td>
 
-![Illustration de la procédure, page imprimée 23](/img/manual/asset-cdd539f42468.png "width=46")
+![Illustration de la procédure, page imprimée 23](/img/manual/asset-cdd539f42468.png "width=282 class=manual-sampling-illustration")
 
 </td>
 
@@ -650,7 +652,7 @@ Insérez soigneusement le connecteur du dispositif d’échantillonnage dans le 
 
 <td>
 
-![Illustration de la procédure, page imprimée 23](/img/manual/asset-7f15e58174d9.png "width=63")
+![Illustration de la procédure, page imprimée 23](/img/manual/asset-7f15e58174d9.png "width=282 class=manual-sampling-illustration")
 
 </td>
 
@@ -666,7 +668,7 @@ Insérez soigneusement le connecteur du dispositif d’échantillonnage dans le 
 
 <td>
 
-:::warning[Serrez à la main uniquement]
+:::caution[Serrez à la main uniquement]
 
 Serrez ensuite la bague de fixation moletée jusqu’à ce que le dispositif d’échantillonnage soit bien fixé. Serrez uniquement à la main. N’utilisez aucun outil.
 
@@ -676,7 +678,7 @@ Serrez ensuite la bague de fixation moletée jusqu’à ce que le dispositif d�
 
 <td>
 
-![Illustration de la procédure, page imprimée 24](/img/manual/asset-0c86ff9377ac.png "width=94")
+![Illustration de la procédure, page imprimée 24](/img/manual/asset-0c86ff9377ac.png "width=282 class=manual-sampling-illustration")
 
 </td>
 
@@ -734,11 +736,13 @@ Le dispositif d’échantillonnage en ligne est destiné à mesurer des échanti
 
 *Figure 5-2 Dispositif d’échantillonnage en ligne*                                                                                                                         *1 : Tuyau de sortie raccordé à une évacuation, 2 : Tuyau d’entrée raccordé à une source d’eau, 3 : Écrou*  *de raccordement, 4 : Bague de fixation, 5 : Goupilles de positionnement, 6 : Fiche.*
 
-![Portez des gants de protection](/img/manual/icon-gloves.png "width=32")
+:::gloves[Porter des gants de protection]
 
 Évitez la contamination de l’équipement. Portez des gants en nitrile lors de la manipulation des échantillons, des dispositifs d’échantillonnage et de tout composant qui entre en contact avec eux.
 
-:::warning[Raccordements de tuyaux sûrs]
+:::
+
+:::caution[Raccordements de tuyaux sûrs]
 
 **Fixez fermement les tubulures et le dispositif d’échantillonnage.**
 
@@ -775,391 +779,62 @@ Cette section décrit l’installation du dispositif d’échantillonnage en lig
 
 *Figure 5-3 Installation typique pour le mode d’analyse en ligne à l’aide du dispositif d’échantillonnage en ligne*
 
-<table>
+#### Réglage du débit et de la pression
 
-<tbody>
+1. Robinet d’ouverture/fermeture
+2. Vanne de pression avec manomètre
+3. Vanne de débit
+4. Raccords de réduction
 
-<tr>
+#### Tubulures d’entrée et de sortie
 
-<td colSpan="2">
+5. Boucle de contre-pression
+6. Fixation des tubulures
+7. Tubulure d’entrée horizontale
+8. Tubulure de sortie connectée à la vidange
 
-Réglage du débit et de la pression
+#### Dispositif d’échantillonnage en ligne
 
-</td>
+9. Tubulure de sortie
+10. Tubulure d’entrée
+11. Conditions d’entrée:
+    - Débit continu
+    - 200 – 400 mL/min (0,05 – 0,10 gal/min)
+    - Max. 0,5 bar (7,3 psi)
 
-</tr>
+#### Étapes d’installation
 
-<tr>
+1. Assurez-vous que les tubulures d’entrée et de sortie sont fermement fixés au dispositif d’échantillonnage en ligne.
 
-<td>
+2. Insérez soigneusement le connecteur du dispositif d’échantillonnage dans le port du dispositif d’échantillonnage sur le côté gauche du BactoSense en insérant les goupilles de positionnement métalliques situées à l’intérieur du connecteur du dispositif d’échantillonnage dans les ouvertures du port du dispositif d’échantillonnage BactoSense.
 
-1
+    ![Illustration de la procédure, page imprimée 28](/img/manual/asset-255f328ed935.png "width=77")
 
-</td>
+3. :::caution[Serrez à la main uniquement]
 
-<td>
+    Serrez ensuite la bague de fixation moletée (rouge) jusqu’à ce que le dispositif d’échantillonnage soit bien fixé. Serrez uniquement à la main. N’utilisez aucun outil.
 
-Robinet d’ouverture/fermeture
+    :::
 
-</td>
+    ![Illustration de la procédure, page imprimée 28](/img/manual/asset-ae907dad8418.png "width=98")
 
-</tr>
+4. :::caution[Raccordez les tuyaux d’échantillonnage en toute sécurité]
 
-<tr>
+    Raccordez soigneusement les extrémités libres des tuyaux à la source d’eau et à l’évacuation. • Placez le tuyau d’entrée au niveau de la source d’eau pour éviter de piéger des bulles d’air • Raccourcissez les tuyaux autant que possible • Installez le tuyau de sortie avec une boucle en position haute • Réduisez le nombre de raccords pour limiter les sources potentielles de contamination • Pour éviter d’endommager le dispositif d’échantillonnage et le BactoSense, assurez-vous que les tuyaux n’exercent aucune force. Si possible, fixez les tuyaux à une structure solide à proximité du dispositif d’échantillonnage (30 – 50 cm). Dans les installations d’eau potable, raccordez le tuyau de sortie à une évacuation afin que l’eau prélevée du réseau ne soit pas réintroduite après avoir traversé les raccords, les tuyaux et le dispositif d’échantillonnage BactoSense.
 
-<td>
+    :::
 
-2
+    Voir figure 5-3.
 
-</td>
+5. Ouvrez soigneusement l’arrivée d’eau et vérifiez l’absence de fuites sur l’appareil.
 
-<td>
+6. :::caution[Vérifiez le débit et la pression]
 
-Vanne de pression avec manomètre
+    Réglez le débit provenant de l’alimentation en eau. Plage de débit : 200 à 400 mL/min (0.05 – 0.10 gal/min). Si le débit ne respecte pas ces limites, les résultats peuvent être inexacts ou le BactoSense peut être endommagé. Assurez-vous que la pression dans le dispositif d’échantillonnage ne dépasse pas 0.5 bar (7.3 psi). Installez un réducteur de pression si nécessaire.
 
-</td>
+    :::
 
-</tr>
-
-<tr>
-
-<td>
-
-3
-
-</td>
-
-<td>
-
-Vanne de débit
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4
-
-</td>
-
-<td>
-
-Raccords de réduction
-
-</td>
-
-</tr>
-
-<tr>
-
-<td colSpan="2">
-
-Tubulures d’entrée et de sortie
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5
-
-</td>
-
-<td>
-
-Boucle de contre-pression
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6
-
-</td>
-
-<td>
-
-Fixation des tubulures
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7
-
-</td>
-
-<td>
-
-Tubulure d’entrée horizontale
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-8
-
-</td>
-
-<td>
-
-Tubulure de sortie connectée à la vidange
-
-</td>
-
-</tr>
-
-<tr>
-
-<td colSpan="2">
-
-Dispositif d’échantillonnage en ligne
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-9
-
-</td>
-
-<td>
-
-Tubulure de sortie
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-10
-
-</td>
-
-<td>
-
-Tubulure d’entrée
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-11
-
-</td>
-
-<td>
-
-Conditions d’entrée •<br />Débit continu • 200<br />– 400 mL/min (0,05 – 0,10 gal/min) •<br />Max. 0,5 bar (7,3 psi)
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-OPÉRATION
-
-</th>
-
-<th>
-
-INFORMATIONS SUPPLÉMENTAIRES/IMAGE
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Assurez-vous que les tubulures d’entrée et de sortie sont fermement fixés au dispositif d’échantillonnage en ligne.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Insérez soigneusement le connecteur du dispositif d’échantillonnage dans le port du dispositif d’échantillonnage sur le côté gauche du BactoSense en insérant les goupilles de positionnement métalliques situées à l’intérieur du connecteur du dispositif d’échantillonnage dans les ouvertures du port du dispositif d’échantillonnage BactoSense.
-
-</td>
-
-<td>
-
-![Illustration de la procédure, page imprimée 28](/img/manual/asset-255f328ed935.png "width=77")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-:::warning[Serrez à la main uniquement]
-
-Serrez ensuite la bague de fixation moletée (rouge) jusqu’à ce que le dispositif d’échantillonnage soit bien fixé. Serrez uniquement à la main. N’utilisez aucun outil.
-
-:::
-
-</td>
-
-<td>
-
-![Illustration de la procédure, page imprimée 28](/img/manual/asset-ae907dad8418.png "width=98")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-:::warning[Raccordez les tuyaux d’échantillonnage en toute sécurité]
-
-Raccordez soigneusement les extrémités libres des tuyaux à la source d’eau et à l’évacuation. • Placez le tuyau d’entrée au niveau de la source d’eau pour éviter de piéger des bulles d’air • Raccourcissez les tuyaux autant que possible • Installez le tuyau de sortie avec une boucle en position haute • Réduisez le nombre de raccords pour limiter les sources potentielles de contamination • Pour éviter d’endommager le dispositif d’échantillonnage et le BactoSense, assurez-vous que les tuyaux n’exercent aucune force. Si possible, fixez les tuyaux à une structure solide à proximité du dispositif d’échantillonnage (30 – 50 cm). Dans les installations d’eau potable, raccordez le tuyau de sortie à une évacuation afin que l’eau prélevée du réseau ne soit pas réintroduite après avoir traversé les raccords, les tuyaux et le dispositif d’échantillonnage BactoSense.
-
-:::
-
-</td>
-
-<td>
-
-Voir figure 5-3.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Ouvrez soigneusement l’arrivée d’eau et vérifiez l’absence de fuites sur l’appareil.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-:::warning[Vérifiez le débit et la pression]
-
-Réglez le débit provenant de l’alimentation en eau. Plage de débit : 200 à 400 mL/min (0.05 – 0.10 gal/min). Si le débit ne respecte pas ces limites, les résultats peuvent être inexacts ou le BactoSense peut être endommagé. Assurez-vous que la pression dans le dispositif d’échantillonnage ne dépasse pas 0.5 bar (7.3 psi). Installez un réducteur de pression si nécessaire.
-
-:::
-
-</td>
-
-<td>
-
-Voir figure 5-3.
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+    Voir figure 5-3.
 
 ## 5.6 Options de connectivité {#section-5-6}
 

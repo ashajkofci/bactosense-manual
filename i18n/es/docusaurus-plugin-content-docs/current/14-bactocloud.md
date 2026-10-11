@@ -30,18 +30,17 @@ Visite [www.bactocloud.com/register](https://www.bactocloud.com/register), intro
 
 Si ha recibido una invitación, siga su enlace e inicie sesión o regístrese con la dirección de correo electrónico exacta a la que se envió. Tras aceptarla, seleccione la organización en la cabecera.
 
-Para crear una organización para su propia flota, elija **New Organisation**, introduzca su nombre, elija su zona horaria y aplicaciones y seleccione **Create Organisation**. Seleccione la organización correcta antes de generar un código de vinculación.
+Para crear una organización para su propia flota, abra el selector de organizaciones de la cabecera y elija **New Organisation**. Introduzca su nombre, elija su zona horaria y aplicaciones y seleccione **Create Organisation**. Seleccione la organización correcta antes de generar un código de vinculación.
 
 ## 14.3 Vinculación de instrumentos {#section-14-3}
-
-La vinculación conecta un instrumento a una organización de BactoCloud. Debe pertenecer a esa organización y tener acceso a la interfaz local del instrumento, ya sea en el propio instrumento o mediante una [vista remota](13-web-user-interface.md#section-13-2) aprobada. Un instrumento solo puede pertenecer a una organización a la vez.
+La vinculación conecta un instrumento a una organización de BactoCloud. Necesita permiso para vincular instrumentos a esa organización y una cuenta **admin** en el instrumento. Utilice la pantalla táctil del instrumento o una [vista remota VNC](12-data-access-and-export.md#section-12-4) aprobada de esa pantalla. Un instrumento solo puede pertenecer a una organización a la vez.
 
 Antes de vincularlo, compruebe el software de BactoSense instalado: los instrumentos Rev3 requieren **3.1.0 o posterior** y los Rev2 **2.4.0 o posterior**. Algunas funciones de la nube pueden requerir software más reciente u opciones del instrumento. Si no puede instalar una actualización localmente, póngase en contacto con su servicio técnico antes de continuar.
 
 ### 14.3.1 Generación de un código de vinculación {#section-14-3-1}
 
 1. Inicie sesión en BactoCloud y utilice el selector de organizaciones para elegir la organización a la que debe pertenecer el instrumento.
-2. Abra **Organization → Instruments** y elija **Enrol instrument**. También puede empezar desde la página de flota vacía si no hay instrumentos vinculados.
+2. Abra el selector de organizaciones de la cabecera, elija **Organisation Settings** y después **Instruments** en la barra lateral. Seleccione **Enrol instrument**. Esta acción también está disponible en la página de flota vacía si no hay instrumentos vinculados.
 3. Revise la explicación de vinculación y el requisito de software y seleccione **Generate new code**.
 4. Anote o copie el código generado.
 
@@ -51,28 +50,29 @@ La sección **Enrolment codes** muestra los códigos existentes y sus fechas de 
 
 ### 14.3.2 Introducción del código en el instrumento {#section-14-3-2}
 
-1. En la pantalla Home de BactoSense, seleccione **Settings** en la barra de herramientas inferior.
+1. En la pantalla de inicio de BactoSense, seleccione **Ajustes** en la barra de herramientas inferior.
 
-   ![Barra de herramientas Home de BactoSense: seleccione Settings.](/img/manual/bactocloud/enrolment-device-home.png)
+   ![BactoSense — Barra Home: Ajustes](/img/gui/es/bactocloud-enrolment-home.png)
 
-2. Seleccione **System settings** en el menú Settings.
+2. Seleccione **Ajustes del sistema** en el menú **Ajustes**.
 
-   ![Menú Settings de BactoSense: seleccione System settings.](/img/manual/bactocloud/enrolment-device-settings.png)
+   ![BactoSense — Menú Ajustes: Ajustes del sistema](/img/gui/es/settings-menu-system-settings.png)
 
-3. Seleccione **BactoCloud** para abrir **Cloud Settings**.
+3. Seleccione **BactoCloud** para abrir **Configuración de la nube**.
 
-   ![Menú System settings de BactoSense: seleccione BactoCloud.](/img/manual/bactocloud/enrolment-device-system.png)
+   ![BactoSense — Ajustes del sistema: BactoCloud](/img/gui/es/bactocloud-enrolment-menu.png)
 
-4. Seleccione **Enrol**, introduzca el código generado en BactoCloud y siga las instrucciones en pantalla para completar la vinculación. El manual impreso suministrado denomina esta acción **Enroll device**.
+4. Seleccione **Inscríbase en**, introduzca el código generado en BactoCloud y confirme la entrada. Siga los mensajes en pantalla y compruebe que **Registrado** muestre **Sí** y que **Organización** indique la organización deseada.
 
-   ![Cloud Settings de BactoSense antes de la vinculación: seleccione Enrol para introducir el código de la organización.](/img/manual/bactocloud/enrolment-device-cloud.png)
+   ![BactoSense — Ajustes de inscripción en BactoCloud](/img/gui/es/bactocloud-enrolment-settings.png)
+
+Si **BactoCloud** no está disponible, compruebe su rol de usuario local y si está activo el modo demostración o el modo PLC.
 
 ### 14.3.3 Confirmación de la vinculación {#section-14-3-3}
-
-En BactoCloud, abra la lista **Instruments** de la organización y compruebe el nombre, el número de serie y el estado de conexión comunicado por el instrumento. Confirme que llegan su estado y mediciones más recientes. **Last seen** indica la hora del último estado recibido por BactoCloud; no comprueba la conexión de red actual.
+En BactoCloud, abra **Organisation Settings → Instruments** desde el selector de organizaciones de la cabecera y compruebe el nombre, el número de serie y el estado de conexión comunicado por el instrumento. Confirme que llegan su estado y mediciones más recientes. **Last seen at** indica la hora del último estado recibido por BactoCloud; no comprueba la conexión de red actual.
 
 Si el instrumento no aparece, compruebe que generó el código en la organización correcta y que completó el procedimiento en el instrumento. Si se rechaza un código o el instrumento ya pertenece a otra organización, solicite ayuda a un administrador de la organización o al soporte.
 
 Si dejan de llegar estados o mediciones, anote el número de serie del instrumento, la versión del software, la marca de tiempo y la última carga correcta. Pida al administrador de red que verifique DNS y la conectividad saliente desde la red del instrumento utilizando los [requisitos informáticos](#section-14-1).
 
-El inventario de instrumentos de la organización también muestra **Enrolled since**. Si necesita retirar un instrumento y está disponible **Unenrol**, compruebe que se trata del instrumento correcto e introduzca su número de serie en la confirmación antes de continuar.
+El inventario de instrumentos de la organización también muestra **Enrolled since**. Los usuarios con permiso para eliminar instrumentos pueden seleccionar la acción de fila **Unlink Instrument from organisation**. Antes de desvincular, exporte las mediciones que necesite conservar. La confirmación advierte de que la desvinculación detiene las cargas y elimina las mediciones existentes en la nube. Compruebe el instrumento correcto, introduzca su número de serie en la confirmación y seleccione **Unlink instrument**.

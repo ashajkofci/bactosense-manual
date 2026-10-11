@@ -14,7 +14,7 @@ The power button of the BactoSense is located on the right hand-side of the inst
 
 *Figure 8-1 Power button of the BactoSense*
 
-:::warning[Check the power supply]
+:::caution[Check the power supply]
 
 Before switching the BactoSense on, make sure that the instrument is connected to a  stable power supply meeting the requirements described in [Connecting the BactoSense to power](05-installation.md#section-5-3).
 
@@ -24,7 +24,7 @@ Before switching the BactoSense on, make sure that the instrument is connected t
 
 **Switching off** If you are logged in and want to switch the BactoSense off, tap on the logout button on the  top right corner of the user interface and select *Power off*. If you want to switch off from  the login page itself, press the power button for 10 seconds.
 
-:::warning[Disconnect power safely]
+:::caution[Disconnect power safely]
 
 To disconnect the BactoSense from power, first switch the instrument off. Then unplug  the power supply unit from the mains power source, before unplugging the power  supply plug from the BactoSense.
 
@@ -52,7 +52,7 @@ Login and logout can be performed using the login button displayed in the top ri
 | --- | --- |
 | 1. | Make sure all processes (e.g. measurements or cleanings) have completed. The idle state of the instrument is indicated on the left hand-side of the top bar of the BactoSense user interface. |
 | 2. | Press the logout button in the top right corner of the user interface. |
-| 3. | Select Log out Lock screen. |
+| 3. | Select Log out / Lock screen. |
 | 4. | To log in again, follow the procedure described in [Login](08-general-operations-and-configurations.md#section-8-2-1). |
 
 ### 8.2.3 Auto-logout {#section-8-2-3}
@@ -61,7 +61,7 @@ It is possible to configure an automated logout after predefined period of inact
 
 |  | WORK STEP | ADDITIONAL INFO / IMAGE |
 | --- | --- | --- |
-| 1. | On the Home screen, press Settings to open the settings menu. |  |
+| 1. | As an Admin user, press Settings on the Home screen to open the settings menu. |  |
 | 2. | Press the System settings button. |  |
 | 3. | Press the Users button. |  |
 | 4. | Press the Settings button. |  |
@@ -76,10 +76,10 @@ Advanced user management mode is available for BactoSense SMART and PURE, and  B
 
 |  | WORK STEP | ADDITIONAL INFO / IMAGE |
 | --- | --- | --- |
-| 1. | On the Home screen, press Settings to open the settings menu. |  |
+| 1. | As an Admin user, press Settings on the Home screen to open the settings menu. |  |
 | 2. | Press the System settings button. |  |
 | 3. | Press the System configuration button. |  |
-| 4. | Check the Advanced user management mode check box. |  |
+| 4. | Check the Advanced user management mode checkbox. |  |
 | 5. | Press Save. |  |
 
 ### 8.2.5 Setting and changing passwords {#section-8-2-5}
@@ -92,9 +92,9 @@ Each user role is password protected.
 
 |  | WORK STEP | ADDITIONAL INFO / IMAGES |
 | --- | --- | --- |
-| 1. | On the Home screen, press Settings, then System settings. |  |
-| 2. | Press on Users and then select the user profile you want to edit. Press Edit after selecting one check box. | Admin users are allowed to change passwords from other user profiles. |
-| 3. | Press on Change PIN, enter the new pin twice and press Save. |  |
+| 1. | On the Home screen, press Settings. Basic users press Change password; Advanced and Admin users press System settings, then Users. |  |
+| 2. | Select the user profile you want to edit, then press Edit. | Basic and Advanced users can change their own PIN. Admin users can also change the PIN of Basic and Advanced users. |
+| 3. | Press Change PIN. Enter the new PIN in PIN and Confirm PIN, then press Save. |  |
 
 ### 8.2.6 Changing password settings {#section-8-2-6}
 
@@ -102,7 +102,7 @@ Several password features such as expiration, length etc can be configured.
 
 |  | WORK STEP | ADDITIONAL INFO / IMAGE |
 | --- | --- | --- |
-| 1. | On the Home screen, press Settings to open the settings menu. |  |
+| 1. | As an Admin user, press Settings on the Home screen to open the settings menu. |  |
 | 2. | Press the System settings button. |  |
 | 3. | Press the Users button. |  |
 | 4. | Press the Settings button. |  |
@@ -113,54 +113,74 @@ Several password features such as expiration, length etc can be configured.
 
 *Table 8-1 User roles and permissions*
 
-| RIGHT | BASIC | ADVANCED | ADMIN |
-| --- | --- | --- | --- |
-| View last result | ✓ | ✓ | ✓ |
-| View all results and export | ✓ | ✓ | ✓ |
-| Start, stop, and schedule measurement | ✓ | ✓ | ✓ |
-| Switch between Online and Manual mode | ✓ | ✓ | ✓ |
-| View error and warning log | ✓ | ✓ | ✓ |
-| Rename results | ✓ | ✓ | ✓ |
-| Validate device | ✓ | ✓ | ✓ |
-| Change their own password | ✓ | ✓ | ✓ |
-| View system info | ✓ | ✓ | ✓ |
-| See network settings | ✓ | ✓ | ✓ |
-| View last self-check | ✓ | ✓ | ✓ |
-| Change cartridge | ✓ | ✓ | ✓ |
-| Clear errors | ✓ | ✓ | ✓ |
-| See intervention log | ✓ | ✓ | ✓ |
-| See validation results | ✓ | ✓ | ✓ |
-| Delete results |  | ✓ | ✓ |
-| Re-gate results |  | ✓ | ✓ |
-| Adjust alarms |  | ✓ | ✓ |
-| Adjust gates |  | ✓ | ✓ |
-| Reboot |  | ✓ | ✓ |
-| Run a self check |  | ✓ | ✓ |
-| Delete old measurements |  | ✓ | ✓ |
-| Export all |  | ✓ | ✓ |
-| See intervention info |  | ✓ | ✓ |
-| Export diagnostics |  | ✓ | ✓ |
-| Change analogue and digital outputs |  |  | ✓ |
-| Test analogue and digital outputs |  |  | ✓ |
-| Change the passwords of other users |  |  | ✓ |
-| Create other users |  |  | ✓ |
-| Change authentication settings |  |  | ✓ |
+<div className="manual-user-roles-scroll">
 
-| RIGHT | BASIC | ADVANCED | ADMIN |
-| --- | --- | --- | --- |
-| Set device name |  |  | ✓ |
-| Set date and time |  |  | ✓ |
-| Change network settings |  |  | ✓ |
-| Change services settings |  |  | ✓ |
-| Activate Modbus with key or deactivate |  |  | ✓ |
-| Change language |  |  | ✓ |
-| Switch to demo mode |  |  | ✓ |
-| Reset settings |  |  | ✓ |
-| Full factory reset (except intervention log) |  |  | ✓ |
-| Import settings |  |  | ✓ |
-| Change automatic power-on settings |  |  | ✓ |
-| Activate upgrade packages with code |  |  | ✓ |
+<table className="manual-user-roles-permissions">
 
+<colgroup>
+<col className="user-role-permission-column" />
+<col className="user-role-basic-column" />
+<col className="user-role-advanced-column" />
+<col className="user-role-admin-column" />
+</colgroup>
+
+<thead>
+<tr>
+<th scope="col">RIGHT</th>
+<th scope="col">BASIC</th>
+<th scope="col">ADVANCED</th>
+<th scope="col">ADMIN</th>
+</tr>
+</thead>
+
+<tbody>
+<tr><td>View last result</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>View all results and export</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Start, stop, and schedule measurement</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Switch between Online and Manual mode</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>View error and warning log</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Rename results</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Validate device</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Change their own password</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>View system info</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>See network settings</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>View last self-check</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Change cartridge</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Clear errors</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>See intervention log</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>See validation results</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Delete results</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Re-gate results</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Adjust alarms</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Adjust gates</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Reboot</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Run a self check</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Delete old measurements</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Export all</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>See intervention info</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Export diagnostics</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Change analogue and digital outputs</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Test analogue and digital outputs</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Change the passwords of other users</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Create other users</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Change authentication settings</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Set device name</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Set date and time</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Change network settings</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Change services settings</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Activate Modbus with key or deactivate</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Change language</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Switch to demo mode</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Reset settings</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Full factory reset (except intervention log)</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Import settings</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Change automatic power-on settings</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Activate upgrade packages with code</td><td></td><td></td><td>✓</td></tr>
+</tbody>
+
+</table>
+
+</div>
 ## 8.3 Basic configurations {#section-8-3}
 
 ### 8.3.1 Language of the user interface {#section-8-3-1}
@@ -169,10 +189,10 @@ The language can only be changed by admin users.
 
 |  | WORK STEP |
 | --- | --- |
-| 1. | On the Home screen, press Settings to open the settings menu. |
-| 2. | Press on System settings, then press Language. |
+| 1. | As an Admin user, press Settings on the Home screen to open the settings menu. |
+| 2. | Press the System settings button. Press the Language button. |
 | 3. | Choose the language and press the OK button. |
-| 4. | A message appears requesting a reload of the user interface. Confirm the message. |
+| 4. | When prompted to reload the user interface, press Reload interface. |
 
 ### 8.3.2 Date and time {#section-8-3-2}
 
@@ -180,17 +200,17 @@ Date and time can only be changed by admin users.
 
 :::info[Automatic time synchronization]
 
-If time synchronization is enabled, either with NTP servers or through Modbus TCP, your  manual date and time settings will be overridden during the next synchronization.  Settings can be found under **System settings** &gt; **Date &amp; Time** &gt; **Time synchronization settings**. For setting up NTP server, please refer to [Set NTP Servers](08-general-operations-and-configurations.md#section-8-7).
+If time synchronization is enabled, either with NTP servers or through Modbus TCP, your  manual date and time settings will be overridden during the next synchronization.  Settings can be found under Home > Settings > System settings > Date & time > Time synchronization settings. For setting up NTP server, please refer to [Set NTP Servers](08-general-operations-and-configurations.md#section-8-7).
 
 :::
 
 |  | WORK STEP |
 | --- | --- |
-| 1. | On the Home screen, press Settings to open the settings menu. |
+| 1. | As an Admin user, press Settings on the Home screen to open the settings menu. |
 | 2. | Press the System settings button. |
-| 3. | Press the Date &amp; Time button. |
+| 3. | Press the Date &amp; time button. |
 | 4. | Enter the date and time. |
-| 5. | Select the Time zone. |
+| 5. | Select the time zone. |
 | 6. | Press the Set button. |
 
 ### 8.3.3 Device name {#section-8-3-3}
@@ -199,11 +219,11 @@ The device name can only be changed by admin users.
 
 |  | WORK STEP |
 | --- | --- |
-| 1. | On the Home screen, press Settings to open the settings menu. |
+| 1. | As an Admin user, press Settings on the Home screen to open the settings menu. |
 | 2. | Press the System settings button. |
 | 3. | Press the System configuration button. |
-| 4. | Press the Device name button. |
-| 5. | Enter your individual device name in the input field. |
+| 4. | Tap the Device name field. |
+| 5. | Enter the device name using the keyboard and press OK. |
 | 6. | Press the Save button. |
 
 ### 8.3.4 Automatic power-on {#section-8-3-4}
@@ -227,7 +247,7 @@ You can turn on audible notifications to indicate the end of a manual measuremen
 | 1. | As an Admin user, press Settings on the Home screen to open the settings menu. |
 | 2. | Press the System settings button. |
 | 3. | Press the System configuration button. |
-| 4. | Activate the Sound notifications option. |
+| 4. | Activate Sound notifications. |
 | 5. | Press the Save button. |
 
 ## 8.4 Import / export settings {#section-8-4}
@@ -236,13 +256,13 @@ Settings are exported to a USB drive as per [Export settings, diagnostics, or al
 
 |  | WORK STEP | ADDITIONAL INFO / IMAGE |
 | --- | --- | --- |
-| 1. | On the Home screen, press Settings to open the settings menu. | ![BactoSense — Home button](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
+| 1. | As an Admin user, press Settings on the Home screen to open the settings menu. | ![BactoSense — Settings button](/img/gui/en/home-settings-button.png "width=57 class=manual-icon-settings-button-half") |
 | 2. | Press the Maintenance button. | ![BactoSense — Maintenance menu](/img/gui/icons/maintenance-button.png "width=48 class=manual-icon") |
 | 3. | Press the Special export import button. | ![BactoSense — Special export and import options](/img/gui/icons/special-import-export-button.png "width=48 class=manual-icon") |
 | 4. | Connect a USB drive. If needed, press the Refresh USB list button until the drive is detected. | Make sure the *.bnv file is at the root of the USB drive. The USB drive should be formatted in FAT32, which is the common standard. |
-| 5. | Press Import settings | ![BactoSense — USB import and export](/img/gui/en/usb-import-and-export.png "width=263") |
+| 5. | Press the Import settings button. | ![BactoSense — USB import and export](/img/gui/en/usb-import-and-export.png "width=263") |
 | 6. | Select the settings you want to import. Measurement settings include gate sets, IO settings, alarms, and date and time settings. Network settings include IP, DNS, and NTP addresses | ![BactoSense — Import settings options](/img/gui/en/import-settings-options.png "width=269") |
-| 7. | Press Import settings and wait until the device reboots |  |
+| 7. | Press Import settings, then Reboot now in the confirmation message, and wait until the device reboots. |  |
 
 ## 8.5 Alarm configuration {#section-8-5}
 
@@ -277,7 +297,7 @@ The following procedure describes how to configure the alarm:
 | --- | --- | --- |
 | 1. | On the Home screen, press Settings to open the settings menu. |  |
 | 2. | Press the Online mode settings button. |  |
-| 3. | Press Alarms. |  |
+| 3. | Press the Alarm button. |  |
 | 4. | Activate, select and configure the alarms (according to figure 8-2 and figure 8-3). | By default, no alarms are active. |
 | 5. | Press Save to save the alarm configuration. |  |
 
@@ -323,13 +343,13 @@ ADDITIONAL INFO / IMAGE
 
 <td>
 
-On the Home screen, press Settings to open the settings menu.
+As an Admin user, press Settings on the Home screen to open the settings menu.
 
 </td>
 
 <td>
 
-![BactoSense — Home button](/img/gui/icons/home-button.png "width=48 class=manual-icon")
+![BactoSense — Settings button](/img/gui/en/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
 
 </td>
 
@@ -381,7 +401,7 @@ Press the Network button.
 
 <tr>
 
-<td rowSpan="2">
+<td>
 
 4\.
 
@@ -391,21 +411,13 @@ Press the Network button.
 
 A: For Dynamic IP check the DHCP check box (1). Note: This is the preferred configuration for most cases when the BactoSense is connected to a router or switch.
 
-</td>
-
-<td rowSpan="2">
-
-![BactoSense — Network configuration](/img/gui/en/network-configuration.png "width=260")
+B: For Static IP uncheck the DHCP check box (1) and enter the desired network configuration (2). Note: This is the preferred configuration when the BactoSense is directly connected to a laptop via Ethernet. Make sure to also adjust the network configuration on the laptop accordingly.
 
 </td>
-
-</tr>
-
-<tr>
 
 <td>
 
-B: For Static IP uncheck the DHCP check box (1) and enter the desired network configuration (2). Note: This is the preferred configuration when the BactoSense is directly connected to a laptop via Ethernet. Make sure to also adjust the network configuration on the laptop accordingly.
+![BactoSense — Network configuration](/img/gui/en/network-configuration.png "width=260")
 
 </td>
 
@@ -457,7 +469,7 @@ Press the Reboot now button.
 
 ## 8.7 Set NTP Servers {#section-8-7}
 
-Network Time Protocol (NTP) is a computer network protocol which is used to synchronise  time on computers across a network. By default, these are set to synchronise to the  Network Time Foundation servers (ntp.org). You have the possibility to set custom NTP  servers in the *Date and Time* menu.
+Network Time Protocol (NTP) is a computer network protocol which is used to synchronise  time on computers across a network. By default, these are set to synchronise to the  Network Time Foundation servers (ntp.org). You have the possibility to set custom NTP  servers in the *Date &amp; time* menu.
 
 <table>
 
@@ -493,13 +505,13 @@ ADDITIONAL INFO / IMAGE
 
 <td>
 
-On the Home screen, press Settings to open the settings menu.
+As an Admin user, press Settings on the Home screen to open the settings menu.
 
 </td>
 
 <td>
 
-![BactoSense — Home button](/img/gui/icons/home-button.png "width=48 class=manual-icon")
+![BactoSense — Settings button](/img/gui/en/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
 
 </td>
 
@@ -537,7 +549,7 @@ Press the System settings button.
 
 <td>
 
-Press the Date &amp; Time button.
+Press the Date &amp; time button.
 
 </td>
 
@@ -559,7 +571,7 @@ Press the Date &amp; Time button.
 
 <td>
 
-Press Time synchronization settings button.
+Press the Time synchronization settings button.
 
 </td>
 
@@ -637,7 +649,7 @@ Press the OK button.
 
 :::info[Additional information]
 
-By editing and changing a server address and pressing OK, it will automatically ping the server and update the date and time.
+Press Test NTP to check whether the configured servers are reachable. Press OK to save the synchronization settings.
 
 :::
 
@@ -651,7 +663,7 @@ By editing and changing a server address and pressing OK, it will automatically 
 
 ## 8.8 The BactoSense user interface {#section-8-8}
 
-### 8.8.1 General structure and home menu {#section-8-8-1}
+### 8.8.1 General structure, Home screen and Settings menu {#section-8-8-1}
 
 ![BactoSense — Home screen overview](/img/gui/en/home-overview.png "width=587")
 
@@ -669,7 +681,16 @@ The BactoSense user interface is divided into 3 main sections:
 
 The main elements of the user interface are:
 
-<table>
+<div className="manual-ui-elements-scroll">
+
+<table className="manual-ui-elements">
+
+<colgroup>
+<col className="ui-element-number" />
+<col className="ui-element-description" />
+<col className="ui-element-number" />
+<col className="ui-element-description" />
+</colgroup>
 
 <tbody>
 
@@ -809,6 +830,8 @@ Measure: open the measurement wizard and choose an analysis protocol (Manual mod
 
 </table>
 
+</div>
+
 Depending on the user role, some options may not be visible or disabled.
 
 ### 8.8.2 Top bar status icons {#section-8-8-2}
@@ -839,7 +862,7 @@ When handling the cartridge, the following instructions must be followed:
 |  |  |  |  |
 | --- | --- | --- | --- |
 | ![Follow the procedures described in this manual.](/img/manual/cell-28af480709ce.png "width=31 class=cartridge-handling-icon-31") | Follow the procedures<br/>described in this manual. | ![Procedure illustration, printed page 73](/img/manual/asset-32c675a70f3d.png "width=24 class=cartridge-handling-icon-24") | Store and ship between<br/>15 °C – 25 °C (59 °F –<br/>77 °F). The optimal<br/>temperature is 15 °C (59 °F). |
-| ![Wear nitrile gloves when handling the cartridge.](/img/manual/cell-27e561e22ac1.png "width=31 class=cartridge-handling-icon-31") | Wear nitrile gloves when<br/>handling the cartridge. | ![Procedure illustration, printed page 73](/img/manual/asset-65d703b8ec50.png "width=24 class=cartridge-handling-icon-24") | Store and ship between<br/>20 % and 60 % relative<br/>humidity. |
+| ![Wear nitrile gloves when handling the cartridge.](/img/safety/gloves.svg "width=31 class=cartridge-handling-icon-31") | Wear nitrile gloves when<br/>handling the cartridge. | ![Procedure illustration, printed page 73](/img/manual/asset-65d703b8ec50.png "width=24 class=cartridge-handling-icon-24") | Store and ship between<br/>20 % and 60 % relative<br/>humidity. |
 | ![Wear safety glasses when handling the cartridge.](/img/manual/cell-d6353e538e2e.png "width=31 class=cartridge-handling-icon-31") | Wear safety glasses when<br/>handling the cartridge. | ![The cartridge is intended for refill.](/img/manual/cell-a80baea9abca.png "width=29 class=cartridge-handling-icon-29") | The cartridge is intended for<br/>refill. |
 | ![Ship, install and store in the indicated orientation](/img/manual/cell-7ac996bd1fed.png "width=31 class=cartridge-handling-icon-31") | Ship, install and store in<br/>the indicated orientation | ![Do not throw the cartridge into the trash.](/img/manual/cell-bc083b74fc3c.png "width=29 class=cartridge-handling-icon-29") | Do not throw the cartridge<br/>into the trash. |
 
@@ -862,7 +885,7 @@ The BactoSense cartridge is installed in a dedicated cartridge compartment of th
 | --- | --- | --- | --- |
 | 1 | 7 mm hex nuts to secure cartridge<br/>compartment door | 2 | Cartridge compartment door |
 
-:::warning[Use the correct door tool]
+:::caution[Use the correct door tool]
 
 Open and close the cartridge compartment door only with the dedicated 7 mm hex nut  driver.
 
@@ -1042,7 +1065,7 @@ Cartridge compartment door
 
 </table>
 
-:::warning[Protect the unused connector]
+:::caution[Protect the unused connector]
 
 The BactoSense has five fluidic connectors. Depending on the cartridge type, only four or all  five fluidic connectors are needed. In case of TCC or ICC cartridges, make sure the unused  fifth connector is always mounted to the connector rack to prevent contamination.
 
@@ -1052,7 +1075,7 @@ The BactoSense has five fluidic connectors. Depending on the cartridge type, onl
 
 The following procedure describes the exchange of cartridges. Use this procedure if you  want to remove and directly install another cartridge. If you only want to remove a cartridge  and not install another one, follow the instruction in [Removing a cartridge](08-general-operations-and-configurations.md#section-8-9-5).  The duration of the cartridge exchange is approximately 35 min.
 
-:::warning[Follow the cartridge wizard]
+:::caution[Follow the cartridge wizard]
 
 Strictly follow the procedure in the on-screen wizard.  **Do not remove or install cartridges without this procedure.**
 
@@ -1174,7 +1197,7 @@ Press the Cartridge change button.
 
 <td>
 
-Select the Change cartridge option.
+Select Change cartridge.
 
 </td>
 
@@ -1242,7 +1265,7 @@ Handling the removed cartridge • If you wish to store the removed cartridge, r
 
 This procedure is intended for the removal of a cartridge, without immediate installation of  another cartridge. If you want to exchange cartridges, follow the procedure described in  [Change cartridges](08-general-operations-and-configurations.md#section-8-9-4).  The duration of the cartridge removal is approximately 5 min.
 
-:::warning[Follow the cartridge wizard]
+:::caution[Follow the cartridge wizard]
 
 Strictly follow the procedure in the on-screen wizard.  **Do not remove or install cartridges without this procedure.**
 
@@ -1344,13 +1367,11 @@ Press the Cartridge change button.
 
 <td>
 
-Select the Remove cartridge option.
+Select Remove cartridge.
 
 </td>
 
 <td>
-
-t
 
 </td>
 
@@ -1402,7 +1423,7 @@ Handling of the removed cartridge • If you wish to store the removed cartridge
 
 <td>
 
-The top bar of the user interface indicates that no cartridge is connected. The Maintenance button in the Home menu is now dis- played in orange.<br />![BactoSense — Cartridge not ready](/img/gui/icons/cartridge-not-ready-status.png "width=30 class=manual-icon")
+The top bar of the user interface indicates that no cartridge is connected. In the Settings menu, Maintenance is highlighted; Basic users see the highlighted Cartridge change button directly.<br />![BactoSense — Cartridge not ready](/img/gui/icons/cartridge-not-ready-status.png "width=30 class=manual-icon")
 
 </td>
 
@@ -1416,7 +1437,7 @@ The top bar of the user interface indicates that no cartridge is connected. The 
 
 This procedure is intended for the installation of a cartridge, when no other cartridge is installed in the BactoSense. If there is already a cartridge and you want to exchange cartridges, follow the procedure described in [Change cartridges](08-general-operations-and-configurations.md#section-8-9-4).  The duration of the cartridge installation is approximately 30 min.
 
-:::warning[Follow the cartridge wizard]
+:::caution[Follow the cartridge wizard]
 
 Strictly follow the procedure of the on-screen wizard.  **Do not remove or install cartridges without this procedure.**
 
@@ -1538,7 +1559,7 @@ Press the Cartridge change button.
 
 <td>
 
-Select the Install cartridge option.
+Select Install cartridge.
 
 </td>
 
@@ -1617,9 +1638,11 @@ The BactoSense can be operated with either the manual or the online sampling dev
 
 When switching to the manual sampling device, the online sampling device has to be  removed. Follow the procedure below to safely remove the device and prepare it for  storage.
 
-![Wear protective gloves](/img/manual/icon-gloves.png "width=32")
+:::gloves[Wear protective gloves]
 
 Avoid contamination of the equipment. Wear nitrile gloves when handling samples,  sampling devices and any components which come in contact with them.
+
+:::
 
 |  | WORK STEP |
 | --- | --- |
@@ -1636,9 +1659,11 @@ Avoid contamination of the equipment. Wear nitrile gloves when handling samples,
 
 When switching to the online sampling device, the manual sampling device has to be  removed. Follow the procedure below to safely remove the device and prepare it for  storage.
 
-![Wear protective gloves](/img/manual/icon-gloves.png "width=32")
+:::gloves[Wear protective gloves]
 
 Avoid contamination of the equipment. Wear nitrile gloves when handling samples,  sampling devices and any components which come in contact with them.
+
+:::
 
 |  | WORK STEP |
 | --- | --- |
@@ -1672,14 +1697,14 @@ For other environments, an instrument qualification using the *Validation kit* i
 | 1. | Make sure the manual sampling device is tightly installed as described in [Installation of the manual sampling device](05-installation.md#section-5-4). |
 | 2. | Perform a cleaning of the sampling device with two replications: If a Washstation is available, follow the procedure in [Clean manual sampling device with Washstation](15-maintenance.md#section-15-2-2), otherwise the procedure in [Clean manual sampling device with basic cleaning](15-maintenance.md#section-15-2-3). |
 | 3. | Prepare the blank sample in a 5 mL screw-cap tube. There are two options: A) Use cell-free water, e.g. a sterile solution aliquot from the Validation Kit. If you use the sterile solution aliquot from the Validation Kit, remove the cap of the aliquot and place the aliquot in an empty 5 mL screw-cap tube, as described in the user manual of the Validation Kit. B) Take a still mineral water and filter twice using a membrane filter with a pore size of 0.22 µm or smaller. |
-| 4. | In the BactoSense user interface, navigate to the Home menu. |
+| 4. | Navigate to the Home screen of the BactoSense user interface. |
 | 5. | On the Home screen, press Mode and select Manual mode. Press Back, then Measure to open the measurement wizard. |
-| 6. | Choose the Prime protocol from the list of available protocols. |
+| 6. | Select Prime from the list of available protocols. |
 | 7. | Press the Next button. |
 | 8. | Remove the tube or Washstation from the manual sampling device and attach the blank sample. |
 | 9. | Press the Start button to run the Prime protocol. |
 | 10. | After completion of the Prime, press the New button to navigate back to the list of protocols. |
-| 11. | Select the Water Analysis protocol from the list of available protocols. |
+| 11. | Select Water Analysis from the list of available protocols. |
 | 12. | Configure two replications. |
 | 13. | Enter a sample name by tapping into the Sample name text field, entering the name and pressing OK. |
 | 14. | Verify that the ICC or TCC default gate is configured and change it otherwise by pressing into the Gates field. |
@@ -1728,13 +1753,13 @@ ADDITIONAL INFO / IMAGE
 
 <td>
 
-On the Home screen, press Settings to open the settings menu.
+As an Admin user, press Settings on the Home screen to open the settings menu.
 
 </td>
 
 <td colSpan="2">
 
-![BactoSense — Home button](/img/gui/icons/home-button.png "width=48 class=manual-icon")
+![BactoSense — Settings button](/img/gui/en/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
 
 </td>
 
@@ -1750,7 +1775,7 @@ On the Home screen, press Settings to open the settings menu.
 
 <td>
 
-Enter the System settings button, and then the Demo mode button.
+Press the System settings button. Press the Demo mode button.
 
 </td>
 
@@ -1778,7 +1803,7 @@ Enter the System settings button, and then the Demo mode button.
 
 <td>
 
-Select the Activate demo mode box.
+Select the Activate demo mode checkbox.
 
 </td>
 
@@ -1832,7 +1857,7 @@ The device reboots automatically.
 
 </table>
 
-To return into normal mode, follow the same procedure, but uncheck the **Activate demo**  **mode** box.
+To return into normal mode, follow the same procedure, but uncheck the **Activate demo mode** box.
 
 ## 8.13 Factory reset {#section-8-13}
 
@@ -1874,13 +1899,13 @@ ADDITIONAL INFO / IMAGE
 
 <td>
 
-On the Home screen, press Settings to open the settings menu.
+As an Admin user, press Settings on the Home screen to open the settings menu.
 
 </td>
 
 <td colSpan="2">
 
-![BactoSense — Home button](/img/gui/icons/home-button.png "width=48 class=manual-icon")
+![BactoSense — Settings button](/img/gui/en/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
 
 </td>
 
@@ -1950,7 +1975,7 @@ Service logs, validation results and the software update his- tory are not delet
 
 <td>
 
-Then press the Reset the device and reboot button.
+Press Reset the device and reboot, then confirm with Yes.
 
 </td>
 

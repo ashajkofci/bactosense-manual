@@ -54,99 +54,59 @@ Dieses Gerät entspricht FCC, UL/CAN/CSA-C22.2/IEC 61010-1 und JIS C 1010-1. Wei
 
 Die folgenden Standards wurden angewandt, um die Einhaltung der regulatorischen Anforderungen sicherzustellen:
 
-*Tabelle 2-2 Angewandte Standards*
+**ANGEWANDTE NORMEN**
 
-<table>
+### Sicherheit (allgemein) (Heizelement) (Laser)
 
-<tbody>
+- IEC 61010-1:2010
+- IEC 61010-1:2010/A1:2016
+- CAN/CSA-C22.2 No. 61010-1 + A1
+- UL 61010-1, 3rd Edition A1
+- JIS C 1010-1:2019
+- IEC 61010-2-010:2019
+- CSA C22.2 No. 61010-2-010:19
+- EN 60825-1:2014 + A11:2021
+- CAN/CSA-E60825-1:15
 
-<tr>
+### EMC
 
-<th colSpan="2">
+- EN IEC 61326-1:2021
+- EN 61326-1:2013, Class B, Group 1
+- CISPR 11:2015/A1:2016/A2:2019
+- EN 61000-3-2:2018
+- EN 61000-3-3:2013/A1:2017
+- EN 61000-3-11:2017
+- EN 61000-3-12:2011
+- EN 61000-4-2:2008
+- EN 61000-4-3:2006/A1:2007/A2:2017
+- EN 61000-4-4:2012
+- EN 61000-4-5:2014/A1:2017
+- EN 61000-4-6:2016
+- EN 61000-4-8:2009
+- EN 61000-4-11:2020
+- EN 55011:2016/A1:2017/A2:2021/A11:2020
 
-ANGEWANDTE NORMEN
+### Schutz gegen Eindringen
 
-</th>
+- IEC 60529:1989
+- IEC 60529:1989/A1:1999
+- IEC 60529:1989/A2:2013
+- IEC 60529:1989/A2:2013/C1:2019
+- EN 60529:1991/A1:2000/A2:2013
 
-</tr>
+### RoHS
 
-<tr>
+- EN IEC 63000:2018
 
-<td>
-
-Sicherheit (allgemein) (Heizelement) (Laser)
-
-</td>
-
-<td>
-
-IEC 61010-1:2010 IEC 61010-1:2010/A1:2016 CAN/CSA-C22.2 No. 61010-1 + A1 UL 61010-1, 3rd Edition A1 JIS C 1010-1:2019 IEC 61010-2-010:2019 CSA C22.2 No. 61010-2-010:19 EN 60825-1:2014 + A11:2021 CAN/CSA-E60825-1:15
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-EMC
-
-</td>
-
-<td>
-
-EN IEC 61326-1:2021 EN 61326-1:2013, Class B, Group 1 CISPR 11:2015/A1:2016/A2:2019 EN 61000-3-2:2018 EN 61000-3-3:2013/A1:2017 EN 61000-3-11:2017 EN 61000-3-12:2011 EN 61000-4-2:2008 EN 61000-4-3:2006/A1:2007/A2:2017 EN 61000-4-4:2012 EN 61000-4-5:2014/A1:2017 EN 61000-4-6:2016 EN 61000-4-8:2009 EN 61000-4-11:2020 EN 55011:2016/A1:2017/A2:2021/A11:2020
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-Schutz gegen Eindringen
-
-</td>
-
-<td>
-
-IEC 60529:1989 IEC 60529:1989/A1:1999 IEC 60529:1989/A2:2013 IEC 60529:1989/A2:2013/C1:2019 EN 60529:1991/A1:2000/A2:2013
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-RoHS
-
-</td>
-
-<td>
-
-EN IEC 63000:2018
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-![Abbildung aus dem Originalhandbuch, gedruckte Seite 4](/img/manual/asset-454a03d782e7.png "width=73")
+![Abbildung aus dem Originalhandbuch, gedruckte Seite 4](/img/manual/asset-454a03d782e7.png "width=24 class=manual-laser-label")
 
 Der BactoSense ist als Klasse-1-Laser-Produkt klassifiziert im Sinne des Standards IEC 60825-1:2014/A11:2021.
 
 ## 2.3 Sicherheitssymbole {#section-2-3}
 
-Die in diesem Dokument verwendeten Sicherheitssymbole sind unten erläutert:
+Die folgenden Symbole kennzeichnen Gefahren und vorgeschriebene Schutzausrüstung. Warnung und Vorsicht verwenden dasselbe Ausrufezeichen; lesen Sie den Titel und die Anweisungen in jedem Hinweisfeld.
 
-:::danger[Elektrischer Schlag]
+:::danger[Gefahr: elektrischer Schlag]
 
 **Elektrischer Schlag, der ernste Verletzungen oder den Tod zur Folge haben kann**
 
@@ -154,7 +114,7 @@ Das Ignorieren dieses Hinweises kann zu Elektroschlägen und sogar zum Tod führ
 
 :::
 
-:::danger[Explosionsgefahr]
+:::explosion[Gefahr: Explosion]
 
 **Explosion, die ernste Verletzungen oder den Tod zur Folge haben kann**
 
@@ -162,7 +122,7 @@ Das Ignorieren dieses Hinweises kann Explosionen verursachen und zu Sachschäden
 
 :::
 
-:::warning[Verletzungsgefahr]
+:::warning[Warnung: Verletzungsgefahr]
 
 **Verletzung oder Gesundheitsgefährdung mit Langzeitfolgen**
 
@@ -170,9 +130,17 @@ Das Ignorieren dieses Hinweises kann zu Verletzungen mit möglichen Langzeitfolg
 
 :::
 
-:::warning[Sachschaden]
+:::caution[Vorsicht: Sachschaden]
 
 Das Ignorieren dieses Hinweises kann zu Schäden am Gerät und seinen Peripheriegeräten führen.
+
+:::
+
+:::gloves[Schutzhandschuhe tragen]
+
+**Vorgeschriebene Schutzausrüstung**
+
+Tragen Sie die vorgeschriebenen Schutzhandschuhe beim Umgang mit Proben, Probenahmegeräten, Kartuschen oder Komponenten, die mit Proben in Kontakt kommen.
 
 :::
 
@@ -200,7 +168,7 @@ Das Gerät darf nur von geschultem Personal, das mit der Bedienungsanleitung ver
 
 ## 2.6 Nutzungsbeschränkungen {#section-2-6}
 
-:::danger[Explosionsgefährdete Umgebungen]
+:::explosion[Explosionsgefährdete Umgebungen]
 
 Der Betrieb an Orten mit Explosionsgefahr kann zu Explosionen führen, welche bei Personen in der Nähe Verletzungen oder den Tod verursachen können.
 

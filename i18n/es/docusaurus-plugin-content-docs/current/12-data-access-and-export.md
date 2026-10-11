@@ -15,11 +15,11 @@ La función “Special import/export” permite exportar todos los datos de medi
 
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN |
 | --- | --- | --- |
-| 1. | En la pantalla Home, pulse Ajustes para abrir el menú de ajustes. |  |
-| 2. | Pulse el botón Maintenance y, a continuación, Special export import. |  |
-| 3. | Conecte un dispositivo de almacenamiento masivo USB. La memoria USB debe estar formateada en FAT32. Si es necesario, pulse Refresh USB list hasta que aparezca el dispositivo. |  |
+| 1. | Como usuario Advanced o Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes. |  |
+| 2. | Pulse el botón Mantenimiento. Pulse el botón Exportación importación especial. |  |
+| 3. | Conecte un dispositivo de almacenamiento masivo USB. La memoria USB debe estar formateada en FAT32. Si es necesario, pulse Actualizar lista USB hasta que aparezca el dispositivo. |  |
 | 4. | El nombre de la carpeta que se creará en el dispositivo USB se muestra en el campo Folder name. Introduzca otro nombre si lo desea. | ![BactoSense — Importación y exportación USB](/img/gui/es/usb-import-and-export.png "width=261 class=manual-figure") |
-| 5. | • Para exportar todos los datos, pulse Export all.<br/>• Para exportar datos de diagnóstico, pulse Export diagnostics.<br/>• Para exportar los ajustes, pulse Export diagnostics. No retire el dispositivo de almacenamiento masivo USB durante la transferencia de datos. | La exportación de todos los datos puede tardar varias horas. Si la capacidad disponible del dispositivo USB es insuficiente, aparecerá una notificación. |
+| 5. | • Para exportar todos los datos, pulse Exportar todo.<br/>• Para exportar datos de diagnóstico, pulse Exportar diagnósticos.<br/>• Para exportar los ajustes, pulse Exportar diagnósticos. No retire el dispositivo de almacenamiento masivo USB durante la transferencia de datos. | La exportación de todos los datos puede tardar varias horas. Si la capacidad disponible del dispositivo USB es insuficiente, aparecerá una notificación. |
 | 6. | Cuando termine la exportación, pulse OK y retire el dispositivo USB. |  |
 
 ## 12.2 Obtención de datos mediante FTP {#section-12-2}
@@ -37,12 +37,12 @@ Puede accederse a distancia a los datos de BactoSense mediante el protocolo FTP 
 | --- | --- | --- |
 | 1. | • Instale un cliente FTP en el dispositivo con el que desee obtener los datos, p. ej., su portátil.<br/>• Como alternativa, puede utilizar el Explorador de archivos de Windows. |  |
 | 2. | Conecte BactoSense mediante Ethernet a una red segura (p. ej., LAN). Conecte su dispositivo a la misma red. | Para obtener información sobre la configuración de red (ajustes de IP estática y dinámica), consulte la sección [Configuración de red](08-general-operations-and-configurations.md#section-8-6). |
-| 3. | En la pantalla Home, pulse Ajustes para abrir el menú de ajustes. |  |
+| 3. | Como usuario Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes. |  |
 | 4. | Pulse el botón Ajustes del sistema. |  |
 | 5. | Pulse el botón Servicios del sistema. |  |
 | 6. | Asegúrese de que esté marcada la casilla Enable FTP data access. |  |
 | 7. | Elija un puerto para el servidor FTP. | El puerto predeterminado es el 21. |
-| 8. | Pulse el botón Apply para reiniciar BactoSense. | Solo es necesario si ha cambiado la configuración. |
+| 8. | Pulse Aplicar para guardar los cambios. Si se solicita un reinicio, pulse Reiniciar ahora. | Solo es necesario si ha cambiado la configuración. |
 | 9. | En la pantalla Home, pulse Ajustes y, a continuación, Información del sistema para obtener la dirección IP de BactoSense. | Para obtener información sobre la configuración de red (ajustes de IP estática y dinámica), consulte la sección [Configuración de red](08-general-operations-and-configurations.md#section-8-6). |
 | 10. | Para un cliente FTP: abra el cliente e introduzca los datos de acceso. Para el Explorador de archivos de Windows: introduzca la siguiente dirección en la barra de direcciones: ftp://user:password@ip:port | • User/username: nombre de usuario para iniciar sesión en BactoSense.<br/>• Password: contraseña para iniciar sesión en BactoSense.<br/>• Host/ip: dirección IP de BactoSense.<br/>• Port: puerto configurado en la vista System services (véase la figura 12-1). |
 
@@ -50,7 +50,12 @@ Puede accederse a distancia a los datos de BactoSense mediante el protocolo FTP 
 
 Los servidores HTTP y HTTPS están activados por defecto y pueden utilizarse mediante un navegador web o cualquier biblioteca de peticiones HTTP. Utilice el procedimiento siguiente para obtener archivos concretos mediante HTTP o HTTPS. Como alternativa, puede utilizar la interfaz web (capítulo [Interfaz web de usuario](13-web-user-interface.md)) o FTP (sección [Obtención de datos mediante FTP](12-data-access-and-export.md#section-12-2)).
 
-<table className="manual-table">
+<table className="manual-table manual-http-retrieval">
+<colgroup>
+<col className="http-step-column" />
+<col className="http-instruction-column" />
+<col className="http-detail-column" />
+</colgroup>
 
 <thead>
 
@@ -112,7 +117,7 @@ Para obtener información sobre la configuración de red (ajustes de IP estátic
 
 <td>
 
-En la pantalla Home, pulse Ajustes para abrir el menú de ajustes.
+Como usuario Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes.
 
 </td>
 
@@ -222,7 +227,7 @@ El puerto predeterminado de HTTP es el 80. El de HTTPS es el 443.
 
 <td>
 
-Pulse el botón Apply para reiniciar BactoSense.
+Pulse Aplicar para guardar los cambios. Si se solicita un reinicio, pulse Reiniciar ahora.
 
 </td>
 
@@ -266,7 +271,11 @@ En la pantalla Home, pulse Ajustes y, a continuación, Información del sistema 
 
 Abra un navegador web en su dispositivo e introduzca la dirección del archivo de destino en el campo de dirección. La dirección tiene el formato siguiente. Para HTTP: `http://ipaddress:port/export/filename.extension?hash=myhash` Ejemplo: http://192.168.1.2/export/history_auto.xlsx?hash=QWRtaW46MTExMQ Para HTTPS: `https://ipaddress:port/export/filename.extension?hash=myhash` Ejemplo: https://192.168.1.2/export/history_auto.xlsx?hash=QWRtaW46MTExMQ
 
-<table>
+<table className="manual-http-parameters">
+<colgroup>
+<col className="http-parameter-column" />
+<col className="http-description-column" />
+</colgroup>
 
 <thead>
 
@@ -386,7 +395,7 @@ Clave de seguridad que contiene la identificación del usuario. La clave es úni
 
 Virtual Network Computing (VNC) es un sistema de uso compartido del escritorio gráfico que permite controlar otro ordenador a distancia. Transmite por la red las entradas del teclado y el ratón de un ordenador a otro, junto con las actualizaciones de la pantalla gráfica. El servidor VNC integrado en BactoSense permite compartir la interfaz de usuario únicamente a través de la red de área local (LAN), salvo el acceso remoto mediante una VPN.
 
-:::warning[Restrinja el acceso VNC]
+:::caution[Restrinja el acceso VNC]
 
 VNC es un protocolo inseguro y no se recomienda utilizarlo fuera de una red local ni con una conexión VPN.
 
@@ -402,12 +411,12 @@ Una conexión VNC puede ralentizar la interfaz, ya que exige muchos recursos de 
 | --- | --- | --- |
 | 1. | Instale un cliente VNC en su ordenador. |  |
 | 2. | Conecte BactoSense mediante Ethernet a una red segura (LAN). Conecte su ordenador a la misma red. | Para obtener información sobre la configuración de red (ajustes de IP estática y dinámica), consulte la sección [Configuración de red](08-general-operations-and-configurations.md#section-8-6). |
-| 3. | En la pantalla Home, pulse Ajustes para abrir el menú de ajustes. |  |
+| 3. | Como usuario Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes. |  |
 | 4. | Pulse el botón Ajustes del sistema. |  |
 | 5. | Pulse el botón Servicios del sistema. |  |
 | 6. | Asegúrese de que esté marcada la casilla Enable VNC remote control. |  |
 | 7. | Elija un puerto para el servidor VNC. | El puerto predeterminado es el 5900. |
-| 8. | Pulse el botón Apply para reiniciar BactoSense. | Solo es necesario si ha cambiado la configuración. |
+| 8. | Pulse Aplicar para guardar los cambios. Si se solicita un reinicio, pulse Reiniciar ahora. | Solo es necesario si ha cambiado la configuración. |
 | 9. | En la pantalla Home, pulse Ajustes y, a continuación, Información del sistema para obtener la dirección IP de BactoSense. |  |
 | 10. | Abra el cliente VNC en su ordenador y conéctese a BactoSense con la dirección IP y el puerto identificados anteriormente. | Su cliente VNC puede permitir cambiar los ajustes para optimizar la velocidad de la conexión si es necesario. |
-| 11. | Al finalizar, desactive la conexión VNC en la página System services de BactoSense. | La conexión VNC puede ralentizar la interfaz de usuario de BactoSense. |
+| 11. | Al finalizar, vuelva a Servicios del sistema, desmarque la casilla VNC y pulse Aplicar. Si se solicita un reinicio, pulse Reiniciar ahora. | La conexión VNC puede ralentizar la interfaz de usuario de BactoSense. |

@@ -1,0 +1,1505 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-11T21:02:56.724091+00:00",
+  "scope": "Manual navigation chapters13/14 all5 locales plus editorial14; no product/source/live cloud mutations.",
+  "repositories": {
+    "gui": {
+      "path": "../gui",
+      "head": "afa2595ffe3b9d8dda369d22805fef5b266b5547"
+    },
+    "bactoweb": {
+      "path": "../bactoweb",
+      "head": "515cb39e9d12493103c3a63319b8964022650365"
+    },
+    "bactoserver": {
+      "path": "../bactoserver",
+      "head": "26b9cbaad199dc1387d1a8ace72fef02b3fa1c64"
+    },
+    "bactocloud-frontend": {
+      "path": "../bactocloud-frontend",
+      "head": "05e780f05050fcce3680ae0a383f8cd1a1eb7691"
+    },
+    "bactocloud-server": {
+      "path": "../bactocloud-server",
+      "head": "fd6cfa56dbc3b01c14b4df5a71f40bf84f00204d"
+    }
+  },
+  "files": {
+    "en": {
+      "13": "docs/13-web-user-interface.md",
+      "14": "docs/14-bactocloud.md"
+    },
+    "de": {
+      "13": "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "14": "i18n/de/docusaurus-plugin-content-docs/current/14-bactocloud.md"
+    },
+    "fr": {
+      "13": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "14": "i18n/fr/docusaurus-plugin-content-docs/current/14-bactocloud.md"
+    },
+    "it": {
+      "13": "i18n/it/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "14": "i18n/it/docusaurus-plugin-content-docs/current/14-bactocloud.md"
+    },
+    "es": {
+      "13": "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "14": "i18n/es/docusaurus-plugin-content-docs/current/14-bactocloud.md"
+    }
+  },
+  "sources": {
+    "native-home": {
+      "path": "../gui/controllers/globalScreens/HomeScreen.qml",
+      "line": 15,
+      "sha256": "1848f3887bc60fda7fb293153ffc65424bce6c760bbd803520b214b2f85381df",
+      "excerpt": "    tb_state: \"home\"\n    tb_btn_level_max: [-45, 3]\n\n    ib_state: \"single\"\n    ib_text: Settings.getVariantName\n\n    ab_state: \"gone\"\n    isChartVisible: false\n\n    property url settingsMenuUrl: 'qrc:/controllers/settingsScreens/SettingsMenuHomeScreen.qml'"
+    },
+    "native-system-menu": {
+      "path": "../gui/controllers/settingsScreens/SettingsMenuHomeScreen.qml",
+      "line": 216,
+      "sha256": "c05fe9fc2d03504b103997b4c6dcfcce9e8c5519d19d6af92e34149513f7ff5d",
+      "excerpt": "            } else {\n                // Advanced+ user menu items (original HomeScreen)\n                menuButtonModel.append({\n                                           'icon':      'instrument',\n                                           'text':      Dico.text.SystemSettings,\n                                           'screen':    prefix + 'SettingsMenuSystemSettingsScreen.qml'\n                                       })\n                idx++\n\n                menuButtonModel.append({"
+    },
+    "native-info": {
+      "path": "../gui/controllers/settingsScreens/SettingsMenuHomeScreen.qml",
+      "line": 191,
+      "sha256": "c05fe9fc2d03504b103997b4c6dcfcce9e8c5519d19d6af92e34149513f7ff5d",
+      "excerpt": "\n                menuButtonModel.append({\n                                           'icon':      'info',\n                                           'text':      Dico.text.SystemInfo,\n                                           'screen':    prefix + 'SettingsSystemInfoScreen.qml'\n                                       })\n                idx++\n\n                menuButtonModel.append({\n                                           'icon':      'cartridge',"
+    },
+    "native-services": {
+      "path": "../gui/controllers/settingsScreens/SettingsMenuSystemSettingsScreen.qml",
+      "line": 125,
+      "sha256": "0dda41e710df40e88190831f5704e09bfeca4d79a0f84c795773eb8e3ff2ae0b",
+      "excerpt": "                                   })\n            }\n            menuButtonModel.append({\n                                       'icon':      'info',\n                                       'text':      qsTr(\"Services\"),\n                                       'screen':    prefix + 'SettingsSystemServiceScreen.qml',\n                                       'level_max': factoryBtnLevelMax\n                                   })\n            if(HTTPRequestController.getUserlevel() < 0 && !Status.isAquasenseOrPure)\n            {"
+    },
+    "native-services-reboot": {
+      "path": "../gui/controllers/settingsScreens/SettingsSystemServiceScreen.qml",
+      "line": 631,
+      "sha256": "73a53a9a2f65ee78a42ee2f8f269b8cdc7a3021bf00d3c67e79364e7ed063e9f",
+      "excerpt": "        onSuccess: {\n            selectedInputField = ''\n            if (has_changed_web_port) {\n                wants_reboot = true\n                showMessage(qsTr(\"The changes will be effective at next reboot.\"),qsTr(\"Reboot now\"), qsTr(\"Reboot later\"))\n            }\n            else\n            {\n                wants_reboot = false\n                invalidModbus = false"
+    },
+    "native-cloud-role": {
+      "path": "../gui/controllers/settingsScreens/SettingsMenuSystemSettingsScreen.qml",
+      "line": 50,
+      "sha256": "0dda41e710df40e88190831f5704e09bfeca4d79a0f84c795773eb8e3ff2ae0b",
+      "excerpt": "                                                          -29 :\n                                                          0 )\n                                                 )\n\n        property int cloudBtnLevelMax:     model.isPlcMode ?\n                                                -30:\n                                                ( model.simulationMode ?\n                                                     -29 :\n                                                     0 )\n"
+    },
+    "native-cloud-keyboard": {
+      "path": "../gui/controllers/settingsScreens/SettingsCloudScreen.qml",
+      "line": 209,
+      "sha256": "018f647061ea80b070e7ad424ecbe392e5d021534f2e09ec950d7bfe1f33a88d",
+      "excerpt": "        {\n            modal_key = \"activate\"\n            if (!isRegistered)\n            {\n                showKeyboardCustomHeader(\"\", qsTr(\"Please enter the enrollment key\"),'full_not_empty')\n            } else {\n                showMessage(qsTr(\"Are you sure you want to un-enroll your device from your cloud account?\"), Dico.text.OK, Dico.text.Cancel)\n            }\n        }\n        else if(button === StyleUI.ab_button_enum.BTN_4_4)"
+    },
+    "native-cloud-success": {
+      "path": "../gui/controllers/settingsScreens/SettingsCloudScreen.qml",
+      "line": 247,
+      "sha256": "018f647061ea80b070e7ad424ecbe392e5d021534f2e09ec950d7bfe1f33a88d",
+      "excerpt": "            root.organization = Settings.vars.organizationName || \"\"\n            if (root.isRegistered)\n            {\n                modal_key == \"enroll\"\n                showMessage(qsTr(\"Your instrument has been successfully enrolled in organization\" + \" \" + organization+ \".\"), Dico.text.OK, Dico.text.OK)\n            }\n            else\n            {\n                showMessage(qsTr(\"Your instrument has been successfully unenrolled.\"), Dico.text.OK, Dico.text.OK)\n            }"
+    },
+    "native-cloud-status": {
+      "path": "../gui/controllers/settingsScreens/SettingsCloudScreen.qml",
+      "line": 52,
+      "sha256": "018f647061ea80b070e7ad424ecbe392e5d021534f2e09ec950d7bfe1f33a88d",
+      "excerpt": "        x: column1x\n    }\n    CustomText {\n        id:line2\n        text: qsTr('Enrolled')\n        state: 'screen_std'\n        y: 120 + 2 * StyleUI.screen_txt_lineSpacing_small\n        x: column1x\n    }\n"
+    },
+    "web-menu": {
+      "path": "../bactoweb/app/scripts/forza/Navigation.js",
+      "line": 70,
+      "sha256": "bcc18ee59bbb3a387ef594782580d8a5262bb59f3ed28819398930e69591edbc",
+      "excerpt": "          level: 1,\n          variant: 'all'\n        },\n        {\n            label: 'SYSTEM INFO',\n            iconClasses: 'fa fa-stethoscope',\n            url: '#/diagnostics',\n            level: 2,\n            variant: 'all'\n        },{"
+    },
+    "web-login": {
+      "path": "../bactoweb/app/views/login.html",
+      "line": 7,
+      "sha256": "d67564ee26acfede6c971bf8c69807f192fba4917c4063edaca7e4327f4e0e2e",
+      "excerpt": "\t<div class=\"panel panel-primary\">\n\t\t<div class=\"panel-body\">\n\t\t\t<form action=\"\" class=\"form-horizontal\">\n\t\t\t\t<div class=\"form-group\">\n\t\t\t\t<alert type=\"danger\" ng-show=\"error\">{{ 'LOGIN FAILED' | translate }}</alert>\n\t\t\t\t<alert type=\"danger\" ng-show=\"auth_fail\">{{ 'LOGIN FAILED' | translate }}</alert>\n\t\t\t\t<!--<label for=\"user\" class=\"control-label col-sm-4\" style=\"text-align: left;\">{{ 'USERNAME' | translate }}</label>\n\t\t\t\t<div class=\"col-sm-8\">\n\t\t\t\t\t<select id=\"user\" name=\"user\" ng-model=\"username\">\n\t\t\t\t\t\t<option value=\"guest\" selected>Guest</option>"
+    },
+    "web-account": {
+      "path": "../bactoweb/app/index.html",
+      "line": 111,
+      "sha256": "8469a8f18fd16085f5fb33a18a4ab6ddf66c2bd21596644b3aaa12689eb77db5",
+      "excerpt": "              <li class=\"userlinks\">\n                <ul class=\"dropdown-menu\">\n                  <!-- <li><a href=\"\">{{ 'CHANGE LEVEL' | translate }}<i class=\"pull-right fa fa-fw fa-user\"></i></a></li> -->\n                  <li class=\"visible-xs\"><a href=\"\" disabled>[{{ user.username }}]</a></li>\n                  <li><a href=\"\" ng-click=\"openRebootModal()\" ng-if=\"user.level < 1\"><span translate>REBOOT</span><i class=\"pull-right fa fa-fw fa-refresh\"></i></a></li>\n                  <!-- <li><a href=\"\" ng-click=\"openPoweroffModal()\" ng-if=\"user.level < 1\"><span translate>POWER OFF</span><i class=\"pull-right fa fa-fw fa-power-off\"></i></a></li> -->\n                  <li><a href=\"#/login\" ng-click=\"logOut()\"><span translate>SIGN OUT</span><i class=\"pull-right fa fa-fw fa-sign-out\"></i></a></li>\n                </ul>\n              </li>\n            </ul>"
+    },
+    "web-reboot-modal": {
+      "path": "../bactoweb/app/index.html",
+      "line": 279,
+      "sha256": "8469a8f18fd16085f5fb33a18a4ab6ddf66c2bd21596644b3aaa12689eb77db5",
+      "excerpt": "      <!-- endbuild -->\n\n</body>\n\n<script type=\"text/ng-template\" id=\"rebootModal.html\">\n  <div class=\"modal-header\">\n    <h3 class=\"modal-title\" translate>REBOOT?</h3>\n  </div>\n  <div class=\"modal-body\" ng-show=\"errorMessage\">\n    <p>Error: {{ errorMessage }}</p>"
+    },
+    "web-reboot-action": {
+      "path": "../bactoweb/app/scripts/app.js",
+      "line": 306,
+      "sha256": "f7f02b19cd5e9c3bd1bea2a86ec7648ee8f58dd7364b3563ec5d20b2f2a7bf5a",
+      "excerpt": "      /******************************\n       * Power off and reboot.\n       ********************************/\n\n      $scope.openRebootModal = function () {\n        var modalInstance = $modal.open({\n          templateUrl: \"rebootModal.html\", // Actually defined in errors.html\n          size: \"md\",\n          controller: function ($scope, $modalInstance) {\n            $scope.close = function () {"
+    },
+    "web-fcs": {
+      "path": "../bactoweb/app/scripts/controllers/history.js",
+      "line": 345,
+      "sha256": "6325a4ee95d845279a95920035d39b3eecd7c4e5c017b9c055bd91df7ebcdf6d",
+      "excerpt": "          enableHiding: true,\n          enableSorting: false,\n          cellTemplate: '<div class=\"ui-grid-cell-contents\">' +\n            '<span><a href=\"' + baseUrl + '{{row.entity.summaryUrl}}\" ng-click=\"$event.preventDefault(); grid.appScope.openResultsModal(row.entity, grid.appScope)\">img</a> | </span>' +\n            '<a href=\"#\" ng-click=\"$event.preventDefault(); grid.appScope.downloadFCS(row.entity.fcsUrl)\" >fcs</a>' +\n            '<span ng-if=\"grid.appScope.user.level < 0\"> | <a ng-if=\"' + (Login.user.level < 0) + '\" target=\"_blank\" href=\"' + baseUrl + '{{ row.entity.summaryUrl.substring(0, row.entity.summaryUrl.lastIndexOf(\\'/\\'))}}/debug/\"><i class=\"fa fa-dashboard\"></i></a></span>' +\n            '<span ng-if=\"row.entity.warnings\"> | <a href=\"#\" ng-click=\"$event.preventDefault(); grid.appScope.openWarningModal(row.entity, grid.appScope)\"><i class=\"fa fa-warning\"></i></a> </span>' +\n            '<span ng-if=\"row.entity.alarms\"> | <a href=\"#\" ng-click=\"$event.preventDefault(); grid.appScope.openAlarmModal(row.entity, grid.appScope)\"><i class=\"fa fa-bell\"></i></a> </span>' +\n            '</div>'\n        }];"
+    },
+    "web-downloads": {
+      "path": "../bactoweb/app/views/results.html",
+      "line": 57,
+      "sha256": "54a04e5a3636fb38ce935f7abbaba0dce59b9431e3f07fc1e5dd1949f7c71b80",
+      "excerpt": "  </div>\n\n  <div class=\"row\">\n    <div class=\"col-md-12\">\n      <panel panel-class=\"panel-inverse\" heading=\"{{ 'DOWNLOAD RESULTS' | translate }}\">\n        <div class=\"table-responsive\">\n          <table class=\"table table-condensed\" style=\"max-width: 768px;\">\n            <thead>\n              <tr>\n                <th></th>"
+    },
+    "web-zip": {
+      "path": "../bactoweb/app/views/results.html",
+      "line": 140,
+      "sha256": "54a04e5a3636fb38ce935f7abbaba0dce59b9431e3f07fc1e5dd1949f7c71b80",
+      "excerpt": "                <span style=\"margin-left: 5px\">{{vars.drp_start}} - {{vars.drp_end}}</span>\n                <b class=\"caret\"></b>\n              </button>\n              <button type=\"button\" ng-click=\"downloadZip('auto')\" ng-disabled=\"vars.downloadingZip\"\n                class=\"btn-primary btn\" translate>DOWNLOAD ZIP</button>\n            </div>\n          </div>\n        </form>\n        \n        <alert type=\"info\" ng-hide=\"isLoaded\">"
+    },
+    "web-slider": {
+      "path": "../bactoweb/app/scripts/controllers/dotplots.js",
+      "line": 120,
+      "sha256": "58f1296db8c2f1050a76753a255e504c66296a9736b6a27c601810a40912d5d8",
+      "excerpt": "      $scope.vars.i = $scope.vars.i_0;\n    };\n\n    // shifts the slider boundary and the cursor forward in time\n    $scope.shiftForward = function () {\n      $scope.vars.i = Math.min($scope.vars.i + 1, $scope.vars.i_f);\n    };\n\n    // shifts the slider boundary and the cursor back in time\n    $scope.shiftBackwards = function () {"
+    },
+    "web-play-speed": {
+      "path": "../bactoweb/app/scripts/controllers/dotplots.js",
+      "line": 90,
+      "sha256": "58f1296db8c2f1050a76753a255e504c66296a9736b6a27c601810a40912d5d8",
+      "excerpt": "        if ($scope.vars.i < $scope.vars.i_f) {\n          $scope.$apply(function () {\n            $scope.vars.i += 1;\n          });\n          setTimeout(increment, 1000 / $scope.vars.speed);\n        } else {\n          $scope.$apply(function () {\n            $scope.vars.animate = false;\n          });\n        }"
+    },
+    "web-gif": {
+      "path": "../bactoweb/app/scripts/controllers/dotplots.js",
+      "line": 147,
+      "sha256": "58f1296db8c2f1050a76753a255e504c66296a9736b6a27c601810a40912d5d8",
+      "excerpt": "\n    $scope.downloadGif = function () {\n      console.log(\"Download gif !\");\n      $scope.downloadInProgress = true;\n      var num_images = 60;\n      if ($scope.dotplotUrls.length > num_images) {\n        var images = $scope.dotplotUrls.slice(-num_images);\n      } else {\n        var images = $scope.dotplotUrls;\n      }"
+    },
+    "web-interval": {
+      "path": "../bactoweb/app/views/settings.html",
+      "line": 61,
+      "sha256": "9463ca7d38e73c09c57a12aed99fc55d29214f073d883e6d08c3d26e7aad0072",
+      "excerpt": "                     required\n                     ng-model=\"auto.autoInterval\"\n                     ng-disabled=\"isForbidden('autoInterval')\"\n                     class=\"form-control\"\n                     min=\"30\"\n                     max=\"360\"\n                     translate>\n            </div>\n          </div>\n"
+    },
+    "web-save": {
+      "path": "../bactoweb/app/views/settings.html",
+      "line": 75,
+      "sha256": "9463ca7d38e73c09c57a12aed99fc55d29214f073d883e6d08c3d26e7aad0072",
+      "excerpt": "                  <input type=\"submit\"\n                         class=\"btn-primary btn\"\n                         value=\"{{ 'SAVE' | translate }}\"\n                         ng-disabled=\"isForbidden('autoMode', 'autoInterval') || autoForm.$pristine || autoForm.$invalid\"\n                         ng-click=\"update(autoForm, auto)\">\n                </div>\n              </div>\n            </div>\n          </div>\n        </form>"
+    },
+    "web-interval-role": {
+      "path": "../bactoserver/settings-schema.json",
+      "line": 17,
+      "sha256": "dc2852bd18e80b6f2454346c2baffae3d8705269fae7ea7ac87e8224c4385188",
+      "excerpt": "    \"autoModeRestart\": { \"type\": \"boolean\", \"level\": \"0\" },\n    \"autoRestartCleanup\": { \"type\": \"boolean\", \"level\": \"0\" },\n    \"autoModeUseSOSDStream\": { \"type\": \"boolean\", \"level\": \"2\" },\n    \"guiMode\": { \"type\": \"string\", \"level\": \"1\" },\n    \"autoInterval\": { \"type\": \"integer\", \"level\": \"2\", \"public\": true },\n    \"weeklyAutoSchedule\": {\n      \"type\": \"object\",\n      \"level\": \"2\",\n      \"$ref\": \"#/definitions/weeklyAutoSchedule\"\n    },"
+    },
+    "web-screenshot": {
+      "path": "../bactoweb/app/views/diagnostics.html",
+      "line": 325,
+      "sha256": "81d962af0c5c4a1871854378550101189d708f88feeb5e99eb68e9f1c65ecffd",
+      "excerpt": "                <div class=\"panel-body\">\n                    <p>\n                        <button ng-click=\"getScreenshot()\" class=\"btn btn-primary\" ng-disabled=\"screenshotLoading\">\n                            <span ng-show=\"screenshotLoading\"> <i class=\"fa fa-cog fa-spin\"></i> </span>\n                            <span ng-hide=\"screenshotLoading\" translate>GET SCREENSHOT</span>\n                        </button>\n                    </p>\n                    <img ng-src=\"{{ screenshotURL }}\"/>\n                </div>\n            </div>"
+    },
+    "web-screenshot-request": {
+      "path": "../bactoweb/app/scripts/controllers/info.js",
+      "line": 187,
+      "sha256": "7f21b65b9e56e42f4b5104f9c0f28527322704e53171351cf0ba54b5909376e5",
+      "excerpt": "    };\n\n    tick()\n\n    $scope.getScreenshot = function () {\n      var screenshotURL = $global.get(\"screenshotURL\");\n      $scope.screenshotLoading = true;\n      $http.get(screenshotURL, { responseType: 'blob' }).then(function (response) {\n        var blob = new Blob([response.data], { type: 'image/png' })\n        var url = window.URL || window.webkitURL;"
+    },
+    "cloud-register": {
+      "path": "../bactocloud-frontend/src/app/pages/register/RegisterPage.tsx",
+      "line": 86,
+      "sha256": "087aac7e1e7d13ab1072132616439901eeebfe4dfe50dc5bfdd776d515e78dd7",
+      "excerpt": "          <Anchor href={loginPageUrl.href}>{t('app.registerPage.alreadyHaveAnAccountLinkText', 'Log in now')}</Anchor>\n        </Text>\n      </>\n    ) : (\n      <RegistrationSuccess email={registeredAccount.email} onResendLink={resendLink} resendLinkPending={sendingLinkAgain} />\n    );\n\n    return (\n      <AppShell>\n        <FullScreenPageWithSideBackground withLogo>{content}</FullScreenPageWithSideBackground>"
+    },
+    "cloud-invitation": {
+      "path": "../bactocloud-frontend/src/app/pages/invitation/InvitationConfirmation.tsx",
+      "line": 39,
+      "sha256": "5955437971ae1bb0c21e41365f80afd7b5ab65c10d7914f83c7f49cb1132db9d",
+      "excerpt": "    onSuccess: onInvitationSuccess,\n  });\n\n  const onAccept = () => {\n    acceptInvitation({ code });\n  };\n\n  const error = isError ? (\n    <BactoAlert\n      type=\"error\""
+    },
+    "cloud-header": {
+      "path": "../bactocloud-frontend/src/app/layout/app-header/AppHeader.tsx",
+      "line": 109,
+      "sha256": "e192092ca2ad2fe277eb5c0699d3dc108033f6f2e8f12deb50bacb9fc3063a34",
+      "excerpt": "   * and log out of the admin setup and get a new JWT.\n   */\n  const organizationSwitcherComponent = !hasUnderlyingAdminSession ? (\n    <OrganizationSwitcher\n      withSettingsLink={ROUTES.userPortalOrganizationDetails}\n      withNewOrganizationLink={ROUTES.userPortalOrganizationCreate}\n      triggerSize={isSmallScreenOrLarger ? undefined : 'compact-sm'}\n      withinPortal={isSmallScreenOrLarger}\n    />\n  ) : ("
+    },
+    "cloud-settings": {
+      "path": "../bactocloud-frontend/src/app/features/organization/OrganizationSwitcher.tsx",
+      "line": 162,
+      "sha256": "818f2a62b28789d95a53ecc8ad8a0eaf93e55ebf0a0eb1a3685c6233231d5eb1",
+      "excerpt": "                    combobox.closeDropdown();\n                    void analyticsService.trackEvent(AnalyticsEvent.OrgSwitcherSettingsTrigger);\n                  }}\n                >\n                  {t('organizationSwitcher.organizationSettings')}\n                </Button>\n              ) : null}\n              {withNewOrganizationLink ? (\n                <Button\n                  variant=\"light\""
+    },
+    "cloud-new-org": {
+      "path": "../bactocloud-frontend/src/app/features/organization/OrganizationSwitcher.tsx",
+      "line": 182,
+      "sha256": "818f2a62b28789d95a53ecc8ad8a0eaf93e55ebf0a0eb1a3685c6233231d5eb1",
+      "excerpt": "                    combobox.closeDropdown();\n                    void analyticsService.trackEvent(AnalyticsEvent.OrgSwitcherNewOrgTrigger);\n                  }}\n                >\n                  {t('organizationSwitcher.newOrganization')}\n                </Button>\n              ) : null}\n\n              {organizations.length > 1 ? (\n                <Divider"
+    },
+    "cloud-create-org": {
+      "path": "../bactocloud-frontend/src/app/pages/user-portal/organization/create-organization-page/CreateOrganization.tsx",
+      "line": 92,
+      "sha256": "7f9a529ecb47aa25ac065226da433dfe7dc1a398fdb36ad69e6db75debc2604d",
+      "excerpt": "    },\n  });\n\n  const onSubmit = (values: FormValues) => {\n    createOrganization({ name: values.name, timezone: values.timezone ?? undefined, applications: values.applications });\n  };\n\n  const applicationsOptions: ComboboxData = useMemo(() => {\n    return Organization.KNOWN_ORGANIZATION_APPLICATIONS.map((value) => ({\n      value,"
+    },
+    "cloud-instruments": {
+      "path": "../bactocloud-frontend/src/app/pages/user-portal/UserPortalPage.tsx",
+      "line": 112,
+      "sha256": "b5c54e84bf5706b9263fc80a874e17c82e056711b658b0cf6f60320e18f7408a",
+      "excerpt": "            label={t('app.userPortal.navbar.organizationMembersLink')}\n          />\n          <BactoNavLink\n            onClick={close}\n            to={ROUTES.userPortalOrganizationInstruments}\n            label={t('app.userPortal.navbar.organizationInstrumentsLink')}\n          />\n          <HasPermission permission={ServerPermissionCode.PermOrgViewLicenses}>\n            <BactoNavLink\n              onClick={close}"
+    },
+    "cloud-enrol-role": {
+      "path": "../bactocloud-frontend/src/app/pages/user-portal/organization/instruments/OrganizationInstrumentsPage.tsx",
+      "line": 86,
+      "sha256": "84d7bbebb72ab79c4a0685615ee7a46485f25cb5d35603698a6c15d37af59984",
+      "excerpt": "  const onCloseErrorModal = () => {\n    reset();\n  };\n\n  const canEnrolNewInstruments = can(ServerPermissionCode.PermOrgEnrollDevice);\n\n  const isLoading = isInstrumentsPending || isOrgPending;\n\n  const labels = useMemo(() => {\n    if (canEnrolNewInstruments) {"
+    },
+    "cloud-enrol-guard": {
+      "path": "../bactocloud-frontend/src/app/pages/user-portal/UserPortal.routes.tsx",
+      "line": 167,
+      "sha256": "fc6452154ec8e32af91be416efcf026567ebaabc8d0ee5d429592c8504e3f8dc",
+      "excerpt": "                  path: 'new',\n                  lazy: () =>\n                    import('./organization/OrganizationPageModule').then((mod) => ({\n                      element: (\n                        <HasPermission permission={ServerPermissionCode.PermOrgEnrollDevice}>\n                          <mod.EnrolInstrumentPage />\n                        </HasPermission>\n                      ),\n                    })),\n                },"
+    },
+    "cloud-code": {
+      "path": "../bactocloud-frontend/src/app/features/enrol-instrument/EnrolInstrumentWizard.tsx",
+      "line": 109,
+      "sha256": "21e6a7b4392718c3b80a849524b5031886e7502ac411bf19d5ae86aae9225e51",
+      "excerpt": "                  {t('common.cancelButton', { ns: 'common' })}\n                </Button>\n                {!organization?.demoOrganization ? (\n                  <Button onClick={onGenerateCode} loading={isCodeGenerationPending} leftSection={<IconPlus />}>\n                    {t('instruments.enrolmentWizard.enrolmentProcess.newCodeButton')}\n                  </Button>\n                ) : (\n                  <DemoGetStartedModal\n                    onClose={onGenerateCode}\n                    onGetStarted={() => {"
+    },
+    "cloud-code-expiry": {
+      "path": "../bactocloud-frontend/src/app/features/enrol-instrument/EnrolCodesList.tsx",
+      "line": 74,
+      "sha256": "5a8070e512529337da78e1ed8c55335eddc1d39f884b34c5203e000083220123",
+      "excerpt": "              <Group className={styles.expirationInformation}>\n                <IconCalendar />\n                <Tooltip\n                  label={t('instruments.enrolCodesList.codeExpirationDateDetailed', {\n                    expirationDate: code.expiresAt,\n                  })}\n                >\n                  <Text size=\"sm\">{formatDate(code.expiresAt)}</Text>\n                </Tooltip>\n              </Group>"
+    },
+    "cloud-last-status": {
+      "path": "../bactocloud-frontend/src/app/features/instruments-list/InstrumentsSummaryList.tsx",
+      "line": 66,
+      "sha256": "ed2a9a792d0fa0aaa1288666866be5b9776ae7662dbb3a3b5557125263635203",
+      "excerpt": "\n  const tableData: InstrumentTableData[] = useMemo(() => {\n    return instruments.map((instrument): InstrumentTableData => ({\n      ...instrument,\n      lastSeen: instrument.lastStatus?.timestamp,\n      countryName:\n        instrument.country && language\n          ? getLocalizedCountryName(instrument.country as CountryCode, language as LanguageCode)\n          : undefined,\n    }));"
+    },
+    "cloud-unlink-role": {
+      "path": "../bactocloud-frontend/src/app/features/instruments-list/InstrumentsSummaryList.tsx",
+      "line": 58,
+      "sha256": "ed2a9a792d0fa0aaa1288666866be5b9776ae7662dbb3a3b5557125263635203",
+      "excerpt": "  const { can } = useBactoCloudPermissions();\n\n  const [instrumentToEdit, setInstrumentToEdit] = useState<InstrumentTableData | null>(null);\n\n  const canDeleteInstrument = can(ServerPermissionCode.PermDeviceDelete);\n  const canViewInstruments = can(ServerPermissionCode.PermDeviceView);\n\n  const hasActionsColumn = (!!getInstrumentsDetailsPageTo && canViewInstruments) || (!!onDeleteProp && canDeleteInstrument);\n\n  const tableData: InstrumentTableData[] = useMemo(() => {"
+    },
+    "cloud-unlink-label": {
+      "path": "../bactocloud-frontend/src/app/features/instruments-list/InstrumentsSummaryList.tsx",
+      "line": 180,
+      "sha256": "ed2a9a792d0fa0aaa1288666866be5b9776ae7662dbb3a3b5557125263635203",
+      "excerpt": "                        </ActionIcon>\n                      </Tooltip>\n                    ) : null}\n                    <HasPermission permission={ServerPermissionCode.PermDeviceDelete}>\n                      <Tooltip label={t('instrument.unenroll.unenrolButton')}>\n                        <ActionIcon\n                          aria-label={t('instrument.unenroll.unenrolButton')}\n                          onClick={() => {\n                            onDeleteClick(instrument);\n                          }}"
+    },
+    "cloud-unlink-confirm": {
+      "path": "../bactocloud-frontend/src/app/pages/user-portal/organization/instruments/OrganizationInstrumentsPage.tsx",
+      "line": 132,
+      "sha256": "84d7bbebb72ab79c4a0685615ee7a46485f25cb5d35603698a6c15d37af59984",
+      "excerpt": "          title={t('app.userPortal.instrumentsPage.unenrol.confirmation.title', {\n            serialNumber: unlinkInstrumentToConfirm?.serialNumber,\n          })}\n          body={t('app.userPortal.instrumentsPage.unenrol.confirmation.body')}\n          withExplicitConfirmation\n          explicitConfirmationPattern={unlinkInstrumentToConfirm?.serialNumber}\n          explicitConfirmationText={t('app.userPortal.instrumentsPage.unenrol.confirmation.explicitConfirmationText')}\n          explicitConfirmationPlaceholder={t('app.userPortal.instrumentsPage.unenrol.confirmation.explicitConfirmationPlaceholder')}\n          actions={[\n            {"
+    },
+    "cloud-unlink-client": {
+      "path": "../bactocloud-frontend/src/libs/data-state/instruments/useUnenrolInstrument.ts",
+      "line": 33,
+      "sha256": "a792a140932f0606d1adead759f1a07e59272cea53b2c70e9d8eb65482a393de",
+      "excerpt": "\n  const unenrolInstrument = useMutation({\n    mutationFn: (instrument: UseUnenrolInstrumentInput) =>\n      deviceApi\n        .deviceIdDelete({ id: instrument.id })\n        .then(() => null)\n        .catch(handleAndThrowBactocloudApiClientError(ERROR_CODES)),\n    ...options,\n    onSuccess: async (...args) => {\n      if (organization?.id) {"
+    },
+    "cloud-unlink-doc": {
+      "path": "../bactocloud-server/server/handlers/device_admin_handlers.go",
+      "line": 225,
+      "sha256": "9b723791d2cd37cffa35347a9306d7819a3b53d1a440a21f51bce021f0fb84cc",
+      "excerpt": "// @Summary Unenroll Device\n// @Description Removes a device from your organization. The device will no longer be able to send data, but historical data is preserved.\n// @Description\n// @Description **Important Note:**\n// @Description This permanently removes the device from your organization. Historical measurement data remains available, but the device will need to be re-enrolled to send new data.\n// @Description\n// @Description **Required Permissions:**\n// @Description You need `PermDeviceDelete` permission, which is typically given to editor and admin roles only.\n// @Tags device\n// @Accept json"
+    },
+    "cloud-unlink-handler": {
+      "path": "../bactocloud-server/server/handlers/device_admin_handlers.go",
+      "line": 279,
+      "sha256": "9b723791d2cd37cffa35347a9306d7819a3b53d1a440a21f51bce021f0fb84cc",
+      "excerpt": "\t\treturn\n\t}\n\n\t// Delete the device\n\terr = device.UnenrollDevice()\n\tif err != nil {\n\t\tc.JSON(http.StatusInternalServerError, server.NewErrorResponseWithCustomMessage(server.DatabaseDeviceError, \"Error deleting device from database\"))\n\t\treturn\n\t}\n"
+    },
+    "cloud-unlink-database": {
+      "path": "../bactocloud-server/server/device.go",
+      "line": 277,
+      "sha256": "c11b0457d0b15fee8a7e39111380284805027f22f8261bb9c4b2e82e40fa34a1",
+      "excerpt": "\treturn GetOrganizationFromID(device.OrganizationID)\n}\n\n// UnenrollDevice removes the device registration\nfunc (device *Device) UnenrollDevice() error {\n\n\tctx, cancel := context.WithTimeout(context.Background(), Config.MongoDB.ShortDatabaseTimeout)\n\tdefer cancel()\n\n\t// Update directly in the database"
+    },
+    "cloud-default-roles": {
+      "path": "../bactocloud-server/server/user_permission.go",
+      "line": 168,
+      "sha256": "d3632bab59f16e60008cb9e85bd390c7d4ac52d446d055d11bace67193730235",
+      "excerpt": "}\n\nvar DefaultRoles = []Role{\n\t{\n\t\tName: \"viewer\",\n\t\tPermissions: []PermissionCode{\n\t\t\tPermOrgEnrollDevice,\n\t\t\tPermOrgView,\n\t\t\tPermDeviceView,\n\t\t\tPermDataView,"
+    },
+    "cloud-role-inheritance": {
+      "path": "../bactocloud-server/server/user_permission.go",
+      "line": 308,
+      "sha256": "d3632bab59f16e60008cb9e85bd390c7d4ac52d446d055d11bace67193730235",
+      "excerpt": "\t\t\trole.SubRoles = []ObjectID{GetRoleID(\"viewer\"), GetRoleID(\"editor\"), GetRoleID(\"admin\"), GetRoleID(\"service\")}\n\t\tcase \"service\":\n\t\t\trole.CanInviteRole = []ObjectID{GetRoleID(\"service\")}\n\t\t\trole.SubRoles = []ObjectID{}\n\t\tcase \"service_data\":\n\t\t\trole.CanInviteRole = []ObjectID{GetRoleID(\"service\"), GetRoleID(\"service_data\")}\n\t\t\trole.SubRoles = []ObjectID{GetRoleID(\"viewer\"), GetRoleID(\"editor\"), GetRoleID(\"admin\"), GetRoleID(\"service\")}\n\t\t}\n\t\terr = role.SaveToDB()\n\t\tif err != nil {"
+    }
+  },
+  "missingSourceSelectors": [],
+  "entries": [
+    {
+      "section": "13.1",
+      "files": {
+        "en": "docs/13-web-user-interface.md",
+        "de": "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "fr": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "it": "i18n/it/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "es": "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md"
+      },
+      "status": "verified",
+      "verifiedPath": "Instrument/browser on same controlled network",
+      "exactEnglishLabels": [],
+      "roles": [
+        "Authenticated instrument users"
+      ],
+      "sourceEvidence": [
+        "web-menu"
+      ],
+      "correction": "Existing general network and safety guidance preserved.",
+      "verification": "Read-only source review and existing genuine local API-backed capture evidence; no action submitted."
+    },
+    {
+      "section": "13.2",
+      "files": {
+        "en": "docs/13-web-user-interface.md",
+        "de": "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "fr": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "it": "i18n/it/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "es": "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md"
+      },
+      "status": "corrected",
+      "verifiedPath": "Home → Settings → System settings → System services → enable HTTP/HTTPS → apply → reboot when prompted",
+      "exactEnglishLabels": [
+        "Settings",
+        "System settings",
+        "System services"
+      ],
+      "roles": [
+        "admin/service; disabled in Demo/PLC/running state"
+      ],
+      "sourceEvidence": [
+        "native-services",
+        "native-services-reboot"
+      ],
+      "correction": "Added service prerequisite/reference12.3; address uses enabled http:// or https:// and nondefault :port.",
+      "verification": "Read-only source review and existing genuine local API-backed capture evidence; no action submitted."
+    },
+    {
+      "section": "13.2",
+      "files": {
+        "en": "docs/13-web-user-interface.md",
+        "de": "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "fr": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "it": "i18n/it/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "es": "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md"
+      },
+      "status": "verified",
+      "verifiedPath": "Home → Settings → System info → IP address; browser login",
+      "exactEnglishLabels": [
+        "Settings",
+        "System info",
+        "Login"
+      ],
+      "roles": [
+        "All local roles; browser uses instrument account credentials"
+      ],
+      "sourceEvidence": [
+        "native-info",
+        "web-login"
+      ],
+      "correction": "Direct System info entry remains current. Corrected localized native information and browser Login labels.",
+      "verification": "Read-only source review and existing genuine local API-backed capture evidence; no action submitted."
+    },
+    {
+      "section": "13.3",
+      "files": {
+        "en": "docs/13-web-user-interface.md",
+        "de": "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "fr": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "it": "i18n/it/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "es": "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md"
+      },
+      "status": "corrected",
+      "verifiedPath": "Dashboard #/ → language dropdown or username dropdown",
+      "exactEnglishLabels": [
+        "Dashboard",
+        "Reboot"
+      ],
+      "roles": [
+        "All authenticated; Reboot only user.level<1, admin/service"
+      ],
+      "sourceEvidence": [
+        "web-menu",
+        "web-account"
+      ],
+      "correction": "Legend now makes reboot permission explicit.",
+      "verification": "Read-only source review and existing genuine local API-backed capture evidence; no action submitted."
+    },
+    {
+      "section": "13.4",
+      "files": {
+        "en": "docs/13-web-user-interface.md",
+        "de": "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "fr": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "it": "i18n/it/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "es": "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md"
+      },
+      "status": "corrected",
+      "verifiedPath": "Results #/results → table below chart → rightmost row links → fcs",
+      "exactEnglishLabels": [
+        "Results",
+        "fcs"
+      ],
+      "roles": [
+        "All authenticated result viewers"
+      ],
+      "sourceEvidence": [
+        "web-fcs"
+      ],
+      "correction": "Added table location and horizontal scrolling to row links.",
+      "verification": "Read-only source review and existing genuine local API-backed capture evidence; no action submitted."
+    },
+    {
+      "section": "13.5",
+      "files": {
+        "en": "docs/13-web-user-interface.md",
+        "de": "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "fr": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "it": "i18n/it/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "es": "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md"
+      },
+      "status": "corrected",
+      "verifiedPath": "Results #/results → Online/Manual table → its date range → Download ZIP",
+      "exactEnglishLabels": [
+        "Results",
+        "Online mode results",
+        "Manual mode results",
+        "Download ZIP"
+      ],
+      "roles": [
+        "All authenticated result viewers"
+      ],
+      "sourceEvidence": [
+        "web-zip"
+      ],
+      "correction": "Exact localized mode/table/button names and per-table date selection.",
+      "verification": "Read-only source review and existing genuine local API-backed capture evidence; no action submitted."
+    },
+    {
+      "section": "13.6",
+      "files": {
+        "en": "docs/13-web-user-interface.md",
+        "de": "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "fr": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "it": "i18n/it/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "es": "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md"
+      },
+      "status": "corrected",
+      "verifiedPath": "Results #/results → DOWNLOAD RESULTS → desired mode/validation row → format",
+      "exactEnglishLabels": [
+        "Results",
+        "DOWNLOAD RESULTS",
+        "Download XLSX",
+        "Download CSV",
+        "Download PDF"
+      ],
+      "roles": [
+        "All authenticated result viewers"
+      ],
+      "sourceEvidence": [
+        "web-downloads"
+      ],
+      "correction": "Added instrument validation row and actual localized format buttons.",
+      "verification": "Read-only source review and existing genuine local API-backed capture evidence; no action submitted."
+    },
+    {
+      "section": "13.7",
+      "files": {
+        "en": "docs/13-web-user-interface.md",
+        "de": "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "fr": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "it": "i18n/it/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "es": "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md"
+      },
+      "status": "corrected",
+      "verifiedPath": "Plots #/dotplots → previous/next or timestamp slider → Play/Pause → speed → Download GIF",
+      "exactEnglishLabels": [
+        "Plots",
+        "Animation speed",
+        "Download GIF"
+      ],
+      "roles": [
+        "Authenticated viewers with Online plot data"
+      ],
+      "sourceEvidence": [
+        "web-slider",
+        "web-play-speed",
+        "web-gif"
+      ],
+      "correction": "Single-index slider selects a measurement timestamp; speed is plots/second; GIF exports up to60 latest Online plots independent of slider. Updated alt meaning.",
+      "verification": "Read-only source review and existing genuine local API-backed capture evidence; no action submitted."
+    },
+    {
+      "section": "13.8",
+      "files": {
+        "en": "docs/13-web-user-interface.md",
+        "de": "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "fr": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "it": "i18n/it/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "es": "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md"
+      },
+      "status": "corrected",
+      "verifiedPath": "Settings #/settings → Measurement interval [minutes] → SAVE",
+      "exactEnglishLabels": [
+        "Settings",
+        "Measurement interval [minutes]",
+        "SAVE"
+      ],
+      "roles": [
+        "Setting level2 allows basic/advanced/admin unless dynamically forbidden"
+      ],
+      "sourceEvidence": [
+        "web-interval",
+        "web-save",
+        "web-interval-role"
+      ],
+      "correction": "Removed false requirement for active Online mode; browser validation is30–360min; literal SAVE in all5 locale catalogs. No interval submitted.",
+      "verification": "Read-only source review and existing genuine local API-backed capture evidence; no action submitted."
+    },
+    {
+      "section": "13.9",
+      "files": {
+        "en": "docs/13-web-user-interface.md",
+        "de": "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "fr": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "it": "i18n/it/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "es": "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md"
+      },
+      "status": "corrected",
+      "verifiedPath": "System info #/diagnostics → bottom Get screenshot → displayed below",
+      "exactEnglishLabels": [
+        "System info",
+        "Get screenshot"
+      ],
+      "roles": [
+        "All authenticated users"
+      ],
+      "sourceEvidence": [
+        "web-screenshot",
+        "web-screenshot-request"
+      ],
+      "correction": "Exact localized screenshot button names replace stale labels. Screenshot uses GET; no Save/reboot.",
+      "verification": "Read-only source review and existing genuine local API-backed capture evidence; no action submitted."
+    },
+    {
+      "section": "13.10",
+      "files": {
+        "en": "docs/13-web-user-interface.md",
+        "de": "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "fr": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "it": "i18n/it/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+        "es": "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md"
+      },
+      "status": "corrected",
+      "verifiedPath": "Username → Reboot → modal Reboot → wait/reload → sign in if prompted",
+      "exactEnglishLabels": [
+        "Reboot"
+      ],
+      "roles": [
+        "admin/service user.level<1; basic/advanced excluded"
+      ],
+      "sourceEvidence": [
+        "web-account",
+        "web-reboot-modal",
+        "web-reboot-action"
+      ],
+      "correction": "Actual confirmation action and permission; handler has no explicit logout, so sign in only if prompted. Remote power-on notice retained. No reboot submitted.",
+      "verification": "Read-only source review and existing genuine local API-backed capture evidence; no action submitted."
+    },
+    {
+      "section": "14.1",
+      "files": {
+        "en": "docs/14-bactocloud.md",
+        "de": "i18n/de/docusaurus-plugin-content-docs/current/14-bactocloud.md",
+        "fr": "i18n/fr/docusaurus-plugin-content-docs/current/14-bactocloud.md",
+        "it": "i18n/it/docusaurus-plugin-content-docs/current/14-bactocloud.md",
+        "es": "i18n/es/docusaurus-plugin-content-docs/current/14-bactocloud.md"
+      },
+      "status": "verified",
+      "verifiedPath": "Network8.6 and NTP8.7 references",
+      "exactEnglishLabels": [],
+      "roles": [
+        "Local configuration permissions"
+      ],
+      "sourceEvidence": [
+        "native-system-menu"
+      ],
+      "correction": "Network/safety guidance preserved. Navigation audit did not change technical requirements.",
+      "verification": "Read-only source review and existing genuine local API-backed capture evidence; no action submitted."
+    },
+    {
+      "section": "14.2",
+      "files": {
+        "en": "docs/14-bactocloud.md",
+        "de": "i18n/de/docusaurus-plugin-content-docs/current/14-bactocloud.md",
+        "fr": "i18n/fr/docusaurus-plugin-content-docs/current/14-bactocloud.md",
+        "it": "i18n/it/docusaurus-plugin-content-docs/current/14-bactocloud.md",
+        "es": "i18n/es/docusaurus-plugin-content-docs/current/14-bactocloud.md"
+      },
+      "status": "verified",
+      "verifiedPath": "/register → account details → email verification; invitation link → matching account → accept",
+      "exactEnglishLabels": [
+        "Accept invitation"
+      ],
+      "roles": [
+        "Public registration then authenticated personal account"
+      ],
+      "sourceEvidence": [
+        "cloud-register",
+        "cloud-invitation"
+      ],
+      "correction": "Current registration/invitation routes verified; no registration/invitation submitted.",
+      "verification": "Read-only sibling source; no live cloud login or session reuse."
+    },
+    {
+      "section": "14.2",
+      "files": {
+        "en": "docs/14-bactocloud.md",
+        "de": "i18n/de/docusaurus-plugin-content-docs/current/14-bactocloud.md",
+        "fr": "i18n/fr/docusaurus-plugin-content-docs/current/14-bactocloud.md",
+        "it": "i18n/it/docusaurus-plugin-content-docs/current/14-bactocloud.md",
+        "es": "i18n/es/docusaurus-plugin-content-docs/current/14-bactocloud.md"
+      },
+      "status": "corrected",
+      "verifiedPath": "Header organization selector → New Organisation → name/time zone/applications → Create Organisation",
+      "exactEnglishLabels": [
+        "New Organisation",
+        "Create Organisation"
+      ],
+      "roles": [
+        "Authenticated cloud user"
+      ],
+      "sourceEvidence": [
+        "cloud-header",
+        "cloud-new-org",
+        "cloud-create-org"
+      ],
+      "correction": "Specified actual header entry point; retained exact English cloud labels matching existing English cloud figure.",
+      "verification": "Read-only source review and existing genuine local API-backed capture evidence; no action submitted."
+    },
+    {
+      "section": "14.3",
+      "files": {
+        "en": "docs/14-bactocloud.md",
+        "de": "i18n/de/docusaurus-plugin-content-docs/current/14-bactocloud.md",
+        "fr": "i18n/fr/docusaurus-plugin-content-docs/current/14-bactocloud.md",
+        "it": "i18n/it/docusaurus-plugin-content-docs/current/14-bactocloud.md",
+        "es": "i18n/es/docusaurus-plugin-content-docs/current/14-bactocloud.md"
+      },
+      "status": "corrected",
+      "verifiedPath": "Cloud enrol permission + local admin → touchscreen or VNC touchscreen view",
+      "exactEnglishLabels": [],
+      "roles": [
+        "PermOrgEnrollDevice (default viewer/editor/admin/service_data); service alone lacks this permission. Local admin/service level<=0."
+      ],
+      "sourceEvidence": [
+        "cloud-enrol-role",
+        "cloud-default-roles",
+        "cloud-role-inheritance",
+        "native-cloud-role"
+      ],
+      "correction": "Membership alone is insufficient; local admin requirement; correct VNC12.4 reference replaces wrong local-browser13.2 link.",
+      "verification": "Read-only source review and existing genuine local API-backed capture evidence; no action submitted."
+    },
+    {
+      "section": "14.3.1",
+      "files": {
+        "en": "docs/14-bactocloud.md",
+        "de": "i18n/de/docusaurus-plugin-content-docs/current/14-bactocloud.md",
+        "fr": "i18n/fr/docusaurus-plugin-content-docs/current/14-bactocloud.md",
+        "it": "i18n/it/docusaurus-plugin-content-docs/current/14-bactocloud.md",
+        "es": "i18n/es/docusaurus-plugin-content-docs/current/14-bactocloud.md"
+      },
+      "status": "corrected",
+      "verifiedPath": "Header organization selector → Organisation Settings → Instruments → Enrol instrument → Generate new code → copy/write code",
+      "exactEnglishLabels": [
+        "Organisation Settings",
+        "Instruments",
+        "Enrol instrument",
+        "Generate new code",
+        "Enrolment codes"
+      ],
+      "roles": [
+        "PermOrgView + PermDeviceView + PermOrgEnrollDevice; own regular organization (Demo wizard can route to new organization)"
+      ],
+      "sourceEvidence": [
+        "cloud-header",
+        "cloud-settings",
+        "cloud-instruments",
+        "cloud-enrol-role",
+        "cloud-enrol-guard",
+        "cloud-code",
+        "cloud-code-expiry"
+      ],
+      "correction": "Corrected header/settings/sidebar path; existing code-expiry and organization ownership instructions remain accurate.",
+      "verification": "Current source/public retained figure review only; no code generation/deletion or live cloud access."
+    },
+    {
+      "section": "14.3.2",
+      "files": {
+        "en": "docs/14-bactocloud.md",
+        "de": "i18n/de/docusaurus-plugin-content-docs/current/14-bactocloud.md",
+        "fr": "i18n/fr/docusaurus-plugin-content-docs/current/14-bactocloud.md",
+        "it": "i18n/it/docusaurus-plugin-content-docs/current/14-bactocloud.md",
+        "es": "i18n/es/docusaurus-plugin-content-docs/current/14-bactocloud.md"
+      },
+      "status": "corrected",
+      "verifiedPath": "Home → Settings → System settings → BactoCloud → Cloud Settings → Enroll → code/confirm → status",
+      "exactEnglishLabels": [
+        "Settings",
+        "System settings",
+        "BactoCloud",
+        "Cloud Settings",
+        "Enroll",
+        "Enrolled",
+        "Yes",
+        "Organisation"
+      ],
+      "roles": [
+        "Local admin/service; unavailable in Demo/PLC; setting/API level0"
+      ],
+      "sourceEvidence": [
+        "native-home",
+        "native-system-menu",
+        "native-cloud-role",
+        "native-cloud-keyboard",
+        "native-cloud-success",
+        "native-cloud-status"
+      ],
+      "correction": "Actual compiled all5 labels verified in production-object captures. Removed stale Enrol/Enroll device wording; check Enrolled=Yes and intended organization; no Save/reboot required.",
+      "verification": "Genuine private demo API navigation/captures all5; no cloud credentials/key entry, enrolment, Save or external cloud request."
+    },
+    {
+      "section": "14.3.3",
+      "files": {
+        "en": "docs/14-bactocloud.md",
+        "de": "i18n/de/docusaurus-plugin-content-docs/current/14-bactocloud.md",
+        "fr": "i18n/fr/docusaurus-plugin-content-docs/current/14-bactocloud.md",
+        "it": "i18n/it/docusaurus-plugin-content-docs/current/14-bactocloud.md",
+        "es": "i18n/es/docusaurus-plugin-content-docs/current/14-bactocloud.md"
+      },
+      "status": "corrected",
+      "verifiedPath": "Header organization selector → Organisation Settings → Instruments → name/serial/status/timestamps",
+      "exactEnglishLabels": [
+        "Organisation Settings",
+        "Instruments",
+        "Last seen at",
+        "Enrolled since"
+      ],
+      "roles": [
+        "PermOrgView/PermDeviceView"
+      ],
+      "sourceEvidence": [
+        "cloud-instruments",
+        "cloud-last-status"
+      ],
+      "correction": "Corrected route/Last seen at label. Latest-status timestamp is not a connectivity test; troubleshooting preserved.",
+      "verification": "Read-only source review and existing genuine local API-backed capture evidence; no action submitted."
+    },
+    {
+      "section": "14.3.3",
+      "files": {
+        "en": "docs/14-bactocloud.md",
+        "de": "i18n/de/docusaurus-plugin-content-docs/current/14-bactocloud.md",
+        "fr": "i18n/fr/docusaurus-plugin-content-docs/current/14-bactocloud.md",
+        "it": "i18n/it/docusaurus-plugin-content-docs/current/14-bactocloud.md",
+        "es": "i18n/es/docusaurus-plugin-content-docs/current/14-bactocloud.md"
+      },
+      "status": "corrected",
+      "verifiedPath": "Row Unlink Instrument from organisation → verify instrument → serial confirmation → Unlink instrument",
+      "exactEnglishLabels": [
+        "Unlink Instrument from organisation",
+        "Unlink instrument"
+      ],
+      "roles": [
+        "PermDeviceDelete; default admin/service_data; editor alone lacks delete permission"
+      ],
+      "sourceEvidence": [
+        "cloud-unlink-role",
+        "cloud-unlink-label",
+        "cloud-unlink-confirm",
+        "cloud-unlink-client",
+        "cloud-unlink-doc",
+        "cloud-unlink-handler",
+        "cloud-unlink-database"
+      ],
+      "correction": "Replaced obsolete Unenrol label with actual row/confirmation labels. Export-before-unlink advice attributes deletion warning to confirmation because current UI/backend disagree.",
+      "verification": "Source and cached translation review only; no unlink or deletion submitted."
+    }
+  ],
+  "webLabels": {
+    "en": {
+      "path": "../bactoweb/app/assets/locales/locale-en.json",
+      "sha256": "315b460d3c1b14b884962286c9e8d1d4f40c466aea3e4cd59b6c6815dee86221",
+      "labels": {
+        "LOGIN": "Login",
+        "DOTPLOTS": "Plots",
+        "RESULTS": "Results",
+        "SETTINGS": "Settings",
+        "SYSTEM INFO": "System info",
+        "GET SCREENSHOT": "Get screenshot",
+        "MEASUREMENT INTERVAL": "Measurement interval [minutes]",
+        "SAVE": "SAVE",
+        "REBOOT": "Reboot",
+        "DOWNLOAD GIF": "Download GIF",
+        "ANIMATION SPEED": "Animation speed",
+        "DOWNLOAD ZIP": "Download ZIP",
+        "DOWNLOAD RESULTS": "Download results",
+        "DOWNLOAD XLSX": "Download XLSX",
+        "DOWNLOAD CSV": "Download CSV",
+        "DOWNLOAD PDF": "Download PDF",
+        "AUTO MODE RESULTS": "Online mode results",
+        "MANUAL MODE RESULTS": "Manual mode results",
+        "INSTRUMENT VALIDATION": "Instrument validation"
+      }
+    },
+    "de": {
+      "path": "../bactoweb/app/assets/locales/locale-de.json",
+      "sha256": "b39302fe57729126ae192d4b4c8655edb15f3e3fdfdcd9ab14a82eada3bbea43",
+      "labels": {
+        "LOGIN": "Login",
+        "DOTPLOTS": "Plots",
+        "RESULTS": "Ergebnisse",
+        "SETTINGS": "Einstellungen",
+        "SYSTEM INFO": "Diagnose",
+        "GET SCREENSHOT": "Mach ein Bildschirmfoto",
+        "MEASUREMENT INTERVAL": "Messspanne [Minuten]",
+        "SAVE": "SAVE",
+        "REBOOT": "Neustart",
+        "DOWNLOAD GIF": "GIF herunterladen",
+        "ANIMATION SPEED": "Animationsgeschwindigkeit",
+        "DOWNLOAD ZIP": "ZIP herunterladen",
+        "DOWNLOAD RESULTS": "Ergebnisse herunterladen",
+        "DOWNLOAD XLSX": "XLSX herunterladen",
+        "DOWNLOAD CSV": "CSV herunterladen",
+        "DOWNLOAD PDF": "PDF herunterladen",
+        "AUTO MODE RESULTS": "Ergebnisse des Online-Modus",
+        "MANUAL MODE RESULTS": "Ergebnisse des manuellen Modus",
+        "INSTRUMENT VALIDATION": "Instrumentenvalidierung"
+      }
+    },
+    "fr": {
+      "path": "../bactoweb/app/assets/locales/locale-fr.json",
+      "sha256": "a3377d431f8c71233001aface9353a6ba8b50ab92dc2e0ec29159ff82f98c68f",
+      "labels": {
+        "LOGIN": "Connexion",
+        "DOTPLOTS": "Graphiques",
+        "RESULTS": "Résultats",
+        "SETTINGS": "Réglages",
+        "SYSTEM INFO": "Informations Système",
+        "GET SCREENSHOT": "Prendre une capture d'écran",
+        "MEASUREMENT INTERVAL": "Intervalle de mesure [minutes]",
+        "SAVE": "SAVE",
+        "REBOOT": "Redémarrer",
+        "DOWNLOAD GIF": "Télécharger GIF",
+        "ANIMATION SPEED": "Vitesse d'animation",
+        "DOWNLOAD ZIP": "Télécharger ZIP",
+        "DOWNLOAD RESULTS": "Téléchargement",
+        "DOWNLOAD XLSX": "Télécharger XLSX",
+        "DOWNLOAD CSV": "Télécharger CSV",
+        "DOWNLOAD PDF": "Télécharger PDF",
+        "AUTO MODE RESULTS": "Résultats du mode en ligne",
+        "MANUAL MODE RESULTS": "Résultats du mode manuel",
+        "INSTRUMENT VALIDATION": "Validation Instrument"
+      }
+    },
+    "it": {
+      "path": "../bactoweb/app/assets/locales/locale-it.json",
+      "sha256": "99c824aec059df2be763ab0ecc3817ccc9f2aae59882c8f2ed67244dc9a96c53",
+      "labels": {
+        "LOGIN": "Accedi",
+        "DOTPLOTS": "Grafici",
+        "RESULTS": "Risultati",
+        "SETTINGS": "Impostazioni",
+        "SYSTEM INFO": "Informazioni di sistema",
+        "GET SCREENSHOT": "Fai uno screenshot",
+        "MEASUREMENT INTERVAL": "Intervallo di misurazione [minuti]",
+        "SAVE": "SAVE",
+        "REBOOT": "Riavvia",
+        "DOWNLOAD GIF": "Scaricare in formato GIF",
+        "ANIMATION SPEED": "Velocità di animazione",
+        "DOWNLOAD ZIP": "Scaricare in formato ZIP",
+        "DOWNLOAD RESULTS": "Scarica i risultati",
+        "DOWNLOAD XLSX": "Scaricare in formato XLSX",
+        "DOWNLOAD CSV": "Scaricare in formato CSV",
+        "DOWNLOAD PDF": "Scaricare in formato PDF",
+        "AUTO MODE RESULTS": "Risultati della Modalità online",
+        "MANUAL MODE RESULTS": "Risultati della Modalità Manuale",
+        "INSTRUMENT VALIDATION": "Convalida dello strumento"
+      }
+    },
+    "es": {
+      "path": "../bactoweb/app/assets/locales/locale-es.json",
+      "sha256": "e239934ab9d525add423499fc0135d1ce3b72f9eed4353b44fa7a0b8385c8e9a",
+      "labels": {
+        "LOGIN": "Iniciar sesión",
+        "DOTPLOTS": "Gráficos",
+        "RESULTS": "Resultados",
+        "SETTINGS": "Ajustes",
+        "SYSTEM INFO": "Información del sistema",
+        "GET SCREENSHOT": "Obtener captura de pantalla",
+        "MEASUREMENT INTERVAL": "Intervalo de medición [minutos]",
+        "SAVE": "SAVE",
+        "REBOOT": "Reiniciar",
+        "DOWNLOAD GIF": "Descargar GIF",
+        "ANIMATION SPEED": "Velocidad de animación",
+        "DOWNLOAD ZIP": "Descargar ZIP",
+        "DOWNLOAD RESULTS": "Descargar resultados",
+        "DOWNLOAD XLSX": "Descargar XLSX",
+        "DOWNLOAD CSV": "Descargar CSV",
+        "DOWNLOAD PDF": "Descargar PDF",
+        "AUTO MODE RESULTS": "Resultados del modo en línea",
+        "MANUAL MODE RESULTS": "Resultados del modo manual",
+        "INSTRUMENT VALIDATION": "Validación de instrumentos"
+      }
+    }
+  },
+  "nativeCompiledLabels": {
+    "en": {
+      "activation-home": {
+        "path": "output/gui-capture/activation/native/en/activation-home.json",
+        "sha256": "57bb650d1abc20781cbe275752b1e6276d2f702b635a77474fb71a4c3e45a51a",
+        "renderedStrings": [
+          "Sample name",
+          "Water reuse influent",
+          "Measurement date",
+          "15 Apr 2026 12:31",
+          "TCC [1/mL]",
+          "45 840",
+          "Results",
+          "Settings",
+          "Mode",
+          "Measure",
+          "Manual mode",
+          "State: Idle",
+          "Admin",
+          "22:53:31",
+          "BactoSense CORE"
+        ]
+      },
+      "settings-menu": {
+        "path": "output/gui-capture/activation/native/en/settings-menu.json",
+        "sha256": "cd6e826853879720c40a201f6fe5305e13114c626190092af4cbec4302dadae8",
+        "renderedStrings": [
+          "System settings",
+          "Maintenance",
+          "Logs",
+          "System info",
+          "Gate settings",
+          "Online mode settings",
+          "Support & Service",
+          "Manual mode",
+          "State: Idle",
+          "Admin",
+          "22:53:32",
+          "Settings",
+          "Back"
+        ]
+      },
+      "system-settings-menu": {
+        "path": "output/gui-capture/activation/native/en/system-settings-menu.json",
+        "sha256": "16b4fec1246e7dd5babe5d83419b0c1a8673decdf0b0a74b9d4ae93ed2370b24",
+        "renderedStrings": [
+          "Users",
+          "Language",
+          "Network",
+          "Date & time",
+          "System configuration",
+          "Demo mode",
+          "System services",
+          "Upgrades",
+          "BactoCloud",
+          "Manual mode",
+          "State: Idle",
+          "Admin",
+          "22:53:33",
+          "System settings"
+        ]
+      },
+      "bactocloud-settings": {
+        "path": "output/gui-capture/activation/native/en/bactocloud-settings.json",
+        "sha256": "f1d0d44acfe2050bbdcfb077c60ee10f272ccfb1adcb61e30b09d933fa3e16f8",
+        "renderedStrings": [
+          "Current status",
+          "Enrolled",
+          "Not enrolled",
+          "Organisation",
+          "None",
+          "Connection status",
+          "Offline",
+          "Enrollment codes can be generated from your bactocloud.com account.",
+          "Manual mode",
+          "State: Idle",
+          "Admin",
+          "22:53:37",
+          "Cloud Settings",
+          "Back",
+          "Synchronize data",
+          "Enroll",
+          "Save"
+        ]
+      }
+    },
+    "de": {
+      "activation-home": {
+        "path": "output/gui-capture/activation/native/de/activation-home.json",
+        "sha256": "a2d77e5f1829c59bedd987dcabf5a78568b6d09dc9b0f8d3582e96f0d8d24c3d",
+        "renderedStrings": [
+          "Probenname",
+          "Water reuse influent",
+          "Datum der Messung",
+          "15. Apr. 2026 12:31",
+          "TCC [1/mL]",
+          "45 840",
+          "Resultate",
+          "Einstellungen",
+          "Modus",
+          "Messen",
+          "Manueller Modus",
+          "Status: Bereit",
+          "Admin",
+          "22:54:42",
+          "BactoSense CORE"
+        ]
+      },
+      "settings-menu": {
+        "path": "output/gui-capture/activation/native/de/settings-menu.json",
+        "sha256": "d815b3e8d4fbd1834d3c860503dabeae379e74b237cbf49c0049fb10775c5721",
+        "renderedStrings": [
+          "Einstellungen",
+          "Wartung",
+          "Logs",
+          "Informationen",
+          "Gate Einstellungen",
+          "Online-Modus Einstellungen",
+          "Unterstützung & Service",
+          "Manueller Modus",
+          "Status: Bereit",
+          "Admin",
+          "22:54:43",
+          "Zurück"
+        ]
+      },
+      "system-settings-menu": {
+        "path": "output/gui-capture/activation/native/de/system-settings-menu.json",
+        "sha256": "5dfcf4a4f2dc9767dd31642b40f7834bca5052b6355cbb88369a3bc090925168",
+        "renderedStrings": [
+          "Benutzer",
+          "Sprache",
+          "Netzwerk",
+          "Datum und Zeit",
+          "Systemparameter",
+          "Demo-Modus",
+          "Systemdienste",
+          "Upgrades",
+          "BactoCloud",
+          "Manueller Modus",
+          "Status: Bereit",
+          "Admin",
+          "22:54:44",
+          "Einstellungen"
+        ]
+      },
+      "bactocloud-settings": {
+        "path": "output/gui-capture/activation/native/de/bactocloud-settings.json",
+        "sha256": "841f74860b19b2bb54acb2d5a7d064903b510fd74a74f8de62d956d7b18107e5",
+        "renderedStrings": [
+          "Aktueller Stand",
+          "Eingeschrieben",
+          "Nicht eingeschrieben",
+          "Organisation",
+          "Keine",
+          "Status der Verbindung",
+          "offline",
+          "Anmeldecodes können über Ihr bactocloud.com-Konto generiert werden.",
+          "Manueller Modus",
+          "Status: Bereit",
+          "Admin",
+          "22:54:48",
+          "Cloud-Einstellungen",
+          "Zurück",
+          "Daten synchronisieren",
+          "Anmelden unter",
+          "Speichern"
+        ]
+      }
+    },
+    "fr": {
+      "activation-home": {
+        "path": "output/gui-capture/activation/native/fr/activation-home.json",
+        "sha256": "d5dadbd21f9a9e293ebc37357931468bbd83b446a37d5427cb655e20d38b66e2",
+        "renderedStrings": [
+          "Nom de l'échantillon",
+          "Water reuse influent",
+          "Date de la mesure",
+          "15 avr. 2026 12:31",
+          "TCC [1/mL]",
+          "45 840",
+          "Résultats",
+          "Paramètres",
+          "Mode",
+          "Mesurer",
+          "Mode manuel",
+          "État: Prêt",
+          "Admin",
+          "22:54:50",
+          "BactoSense CORE"
+        ]
+      },
+      "settings-menu": {
+        "path": "output/gui-capture/activation/native/fr/settings-menu.json",
+        "sha256": "3019d7f413cde75059d8a68aaac2e14df690207ae28659b983be47d1d1554248",
+        "renderedStrings": [
+          "Paramètres système",
+          "Maintenance",
+          "Journaux",
+          "Infos système",
+          "Fenêtres",
+          "Paramètres mode en ligne",
+          "Support & Service",
+          "Mode manuel",
+          "État: Prêt",
+          "Admin",
+          "22:54:51",
+          "Paramètres",
+          "Retour"
+        ]
+      },
+      "system-settings-menu": {
+        "path": "output/gui-capture/activation/native/fr/system-settings-menu.json",
+        "sha256": "205a1f740e1d22c1ad34a09aa2e66bebb73394aa8887390b0477a1cc6c96f483",
+        "renderedStrings": [
+          "Utilisateurs",
+          "Langue",
+          "Réseau",
+          "Date & heure",
+          "Paramètres système",
+          "Mode démo",
+          "Services système",
+          "Mises à niveau",
+          "BactoCloud",
+          "Mode manuel",
+          "État: Prêt",
+          "Admin",
+          "22:54:51"
+        ]
+      },
+      "bactocloud-settings": {
+        "path": "output/gui-capture/activation/native/fr/bactocloud-settings.json",
+        "sha256": "a176b35768fac934d13782c8c10d5227436951b4b15ec457fdbd54a0ed821bb2",
+        "renderedStrings": [
+          "Statut actuel",
+          "Inscrit",
+          "Non inscrit",
+          "Organisation",
+          "Aucun",
+          "État de la connexion",
+          "Hors ligne",
+          "Les codes d'inscription peuvent être générés à partir de votre compte bactocloud.com.",
+          "Mode manuel",
+          "État: Prêt",
+          "Admin",
+          "22:54:56",
+          "Paramètres cloud",
+          "Retour",
+          "Synchroniser les données",
+          "S'inscrire",
+          "Enregistrer"
+        ]
+      }
+    },
+    "it": {
+      "activation-home": {
+        "path": "output/gui-capture/activation/native/it/activation-home.json",
+        "sha256": "122a8d013b2d5405c4a98b54b57718aac96c57383a8cef69e046af6e7e380baf",
+        "renderedStrings": [
+          "Nome del campione",
+          "Water reuse influent",
+          "Data di misurazione",
+          "15 apr 2026 12:31",
+          "TCC [1/mL]",
+          "45 840",
+          "Risultati",
+          "Impostazioni",
+          "Modalità",
+          "Misura",
+          "Modalità manuale",
+          "Stato: Inattivo",
+          "Amministratore",
+          "22:54:58",
+          "BactoSense CORE"
+        ]
+      },
+      "settings-menu": {
+        "path": "output/gui-capture/activation/native/it/settings-menu.json",
+        "sha256": "ef4727a89d4df6bb135ad6c6737b5c6218a1ffcbd7936aff16912a9ce5765007",
+        "renderedStrings": [
+          "Impostazioni di sistema",
+          "Manutenzione",
+          "Registri",
+          "Informazioni sul sistema",
+          "Impostazioni del gate",
+          "Impostazioni della Modalità Online",
+          "Supporto & Assistenza",
+          "Modalità manuale",
+          "Stato: Inattivo",
+          "Amministratore",
+          "22:54:59",
+          "Impostazioni",
+          "Indietro"
+        ]
+      },
+      "system-settings-menu": {
+        "path": "output/gui-capture/activation/native/it/system-settings-menu.json",
+        "sha256": "c6af38f7a88f3552bdea70637fa96f3491bcb03645a8c9ed0e32b32f47d8b4e7",
+        "renderedStrings": [
+          "Utenti",
+          "Lingua",
+          "Rete",
+          "Data e ora",
+          "Configurazione del sistema",
+          "Modalità Demo",
+          "Servizi di sistema",
+          "Aggiornamenti",
+          "BactoCloud",
+          "Modalità manuale",
+          "Stato: Inattivo",
+          "Amministratore",
+          "22:55:00",
+          "Impostazioni di sistema"
+        ]
+      },
+      "bactocloud-settings": {
+        "path": "output/gui-capture/activation/native/it/bactocloud-settings.json",
+        "sha256": "6152dc3595e2740f276bd43511b7057561ad115886287cd8501fc4bc98da9790",
+        "renderedStrings": [
+          "Stato attuale",
+          "Registrati",
+          "Non registrato",
+          "Organizzazione",
+          "Nessuno",
+          "Stato della connessione",
+          "Offline",
+          "I codici di iscrizione possono essere generati dal proprio account bactocloud.com.",
+          "Modalità manuale",
+          "Stato: Inattivo",
+          "Amministratore",
+          "22:55:04",
+          "Impostazioni del cloud",
+          "Indietro",
+          "Sincronizzare i dati",
+          "Iscriversi",
+          "Salva"
+        ]
+      }
+    },
+    "es": {
+      "activation-home": {
+        "path": "output/gui-capture/activation/native/es/activation-home.json",
+        "sha256": "b6a9d874377baaf39ae352ef4ce8bab6df92971953e615c48329904eb467812b",
+        "renderedStrings": [
+          "Nombre de la muestra",
+          "Water reuse influent",
+          "Fecha de medición",
+          "15 abr 2026 12:31",
+          "TCC [1/mL]",
+          "45 840",
+          "Resultados",
+          "Ajustes",
+          "Modo",
+          "Iniciar",
+          "Modo manual",
+          "Estado: Inactivo",
+          "Administrador",
+          "22:55:06",
+          "BactoSense CORE"
+        ]
+      },
+      "settings-menu": {
+        "path": "output/gui-capture/activation/native/es/settings-menu.json",
+        "sha256": "ad1f6d95ca5f5497cb30b2668c917d4d9e5e6197378a078c07f54bf82c5fc225",
+        "renderedStrings": [
+          "Ajustes del sistema",
+          "Mantenimiento",
+          "Registros",
+          "Información del sistema",
+          "Ajustes de la compuerta",
+          "Ajustes del modo en línea",
+          "Asistencia y servicios",
+          "Modo manual",
+          "Estado: Inactivo",
+          "Administrador",
+          "22:55:07",
+          "Ajustes",
+          "Volver"
+        ]
+      },
+      "system-settings-menu": {
+        "path": "output/gui-capture/activation/native/es/system-settings-menu.json",
+        "sha256": "d9f14309aac15a9d4cba1ceaff151c2e573040cad48b36db3bb2cd7213d11e77",
+        "renderedStrings": [
+          "Usuarios",
+          "Idioma",
+          "Red",
+          "Fecha y hora",
+          "Configuración del sistema",
+          "Modo demostración",
+          "Servicios del sistema",
+          "Actualizaciones",
+          "BactoCloud",
+          "Modo manual",
+          "Estado: Inactivo",
+          "Administrador",
+          "22:55:08",
+          "Ajustes del sistema"
+        ]
+      },
+      "bactocloud-settings": {
+        "path": "output/gui-capture/activation/native/es/bactocloud-settings.json",
+        "sha256": "5305e00d84b6afdc6012d509cde62904aecce145317dd53d00534a73e97d28d3",
+        "renderedStrings": [
+          "Situación actual",
+          "Registrado",
+          "No registrado",
+          "Organización",
+          "Ninguno",
+          "Estado de la conexión",
+          "Sin conexión",
+          "Los códigos de inscripción pueden generarse desde su cuenta bactocloud.com.",
+          "Modo manual",
+          "Estado: Inactivo",
+          "Administrador",
+          "22:55:12",
+          "Configuración de la nube",
+          "Volver",
+          "Sincronizar datos",
+          "Inscríbase en",
+          "Guardar"
+        ]
+      }
+    }
+  },
+  "cloudLabels": {
+    "path": "../bactocloud-server/server/translations_cache.json",
+    "sha256": "cc4f968687400d549f4e003d9283d551f161f9f640d9ec6df02af017a3310e1f",
+    "catalogs": {
+      "en": {
+        "organizationSwitcher.organizationSettings": "Organisation Settings",
+        "organizationSwitcher.newOrganization": "New Organisation",
+        "app.userPortal.createOrganizationPage.createButton": "Create Organisation",
+        "app.userPortal.instrumentsPage.noInstruments.enrolButtonLabel": "Enrol instrument",
+        "instruments.enrolmentWizard.enrolmentProcess.newCodeButton": "Generate new code",
+        "app.userPortal.instrumentsPage.enrolCodes.title": "Enrolment codes",
+        "instrument.unenroll.unenrolButton": "Unlink Instrument from organisation",
+        "app.userPortal.instrumentsPage.unenrol.confirmation.confirmButton": "Unlink instrument",
+        "app.userPortal.instrumentsPage.unenrol.confirmation.body": "If you unlink this instrument from the organisation, it will stop sending its measurements and data to the cloud. The existing measurements will be deleted.",
+        "instruments.propertyName.lastStatusTimestamp": "Last seen at",
+        "instruments.propertyName.enrolmentDate": "Enrolled since"
+      },
+      "de": {
+        "organizationSwitcher.organizationSettings": "Organisationseinstellungen",
+        "organizationSwitcher.newOrganization": "Neue Organisation",
+        "app.userPortal.createOrganizationPage.createButton": "Organisation erstellen",
+        "app.userPortal.instrumentsPage.noInstruments.enrolButtonLabel": "Instrument registrieren",
+        "instruments.enrolmentWizard.enrolmentProcess.newCodeButton": "Neuen Code generieren",
+        "app.userPortal.instrumentsPage.enrolCodes.title": "Registrierungscodes",
+        "instrument.unenroll.unenrolButton": "Instrument von der Organisation trennen",
+        "app.userPortal.instrumentsPage.unenrol.confirmation.confirmButton": "Instrument trennen",
+        "app.userPortal.instrumentsPage.unenrol.confirmation.body": "Wenn Sie dieses Instrument von der Organisation trennen, sendet es seine Messungen und Daten nicht mehr in die Cloud. Die vorhandenen Messungen werden gelöscht.",
+        "instruments.propertyName.lastStatusTimestamp": "Zuletzt gesehen um",
+        "instruments.propertyName.enrolmentDate": "Registriert seit"
+      },
+      "fr": {
+        "organizationSwitcher.organizationSettings": "Paramètres de l'organisation",
+        "organizationSwitcher.newOrganization": "Nouvelle organisation",
+        "app.userPortal.createOrganizationPage.createButton": "Créer une organisation",
+        "app.userPortal.instrumentsPage.noInstruments.enrolButtonLabel": "Associer un instrument",
+        "instruments.enrolmentWizard.enrolmentProcess.newCodeButton": "Générer un nouveau code",
+        "app.userPortal.instrumentsPage.enrolCodes.title": "Codes d'inscription",
+        "instrument.unenroll.unenrolButton": "Délier l'instrument de l'organisation",
+        "app.userPortal.instrumentsPage.unenrol.confirmation.confirmButton": "Dissocier l'instrument",
+        "app.userPortal.instrumentsPage.unenrol.confirmation.body": "Si vous dissociez cet instrument de l'organisation, il cessera d'envoyer ses mesures et ses données vers le cloud. Les mesures existantes seront supprimées.",
+        "instruments.propertyName.lastStatusTimestamp": "Dernière vue à",
+        "instruments.propertyName.enrolmentDate": "Inscrit depuis"
+      },
+      "it": {
+        "organizationSwitcher.organizationSettings": "Impostazioni dell'organizzazione",
+        "organizationSwitcher.newOrganization": "Nuova organizzazione",
+        "app.userPortal.createOrganizationPage.createButton": "Creare un'organizzazione",
+        "app.userPortal.instrumentsPage.noInstruments.enrolButtonLabel": "Registra un strumento",
+        "instruments.enrolmentWizard.enrolmentProcess.newCodeButton": "Genera un nuovo codice",
+        "app.userPortal.instrumentsPage.enrolCodes.title": "Codici di registrazione",
+        "instrument.unenroll.unenrolButton": "Disconnetti lo strumento dall'organizzazione",
+        "app.userPortal.instrumentsPage.unenrol.confirmation.confirmButton": "Scollega lo strumento",
+        "app.userPortal.instrumentsPage.unenrol.confirmation.body": "Se scolleghi questo strumento dall'organizzazione, smetterà di inviare le sue misurazioni e i dati al cloud. Le misurazioni esistenti verranno eliminate.",
+        "instruments.propertyName.lastStatusTimestamp": "Ultima visualizzazione",
+        "instruments.propertyName.enrolmentDate": "Iscritto dal"
+      },
+      "es": {
+        "organizationSwitcher.organizationSettings": "Configuración de la organización",
+        "organizationSwitcher.newOrganization": "Nueva organización",
+        "app.userPortal.createOrganizationPage.createButton": "Crear organización",
+        "app.userPortal.instrumentsPage.noInstruments.enrolButtonLabel": "Registrar instrumento",
+        "instruments.enrolmentWizard.enrolmentProcess.newCodeButton": "Generar nuevo código",
+        "app.userPortal.instrumentsPage.enrolCodes.title": "Códigos de registro",
+        "instrument.unenroll.unenrolButton": "Desvincular el instrumento de la organización",
+        "app.userPortal.instrumentsPage.unenrol.confirmation.confirmButton": "Desvincular instrumento",
+        "app.userPortal.instrumentsPage.unenrol.confirmation.body": "Si desvincula este instrumento de la organización, dejará de enviar sus mediciones y datos a la nube. Se eliminarán las mediciones existentes.",
+        "instruments.propertyName.lastStatusTimestamp": "Visto por última vez en",
+        "instruments.propertyName.enrolmentDate": "Inscrito desde"
+      }
+    },
+    "manualPolicy": "Retain English cloud labels matching retained English cloud wizard figure; native/local-web instructions follow genuine localized captures."
+  },
+  "verificationBoundaries": {
+    "web": "Previous current-source API-backed local captures in output/gui-capture/web/capture-evidence.json; no action writes in this navigation audit.",
+    "native": "Production-object native navigation records output/gui-capture/activation/navigation-{locale}.json and compiled trees; disposable loopback18889 API, all5.",
+    "cloud": "Current sibling source/cached translations/public retained figure only. No live authentication, private-session reuse, cloud data reads, enrolment code generation, account/org/invitation changes or unlink.",
+    "checks": [
+      "manual:check passed105 documents",
+      "translations:check passed84 translated documents",
+      "No full build run by this agent"
+    ],
+    "supplementalVisualReview": {
+      "path": "output/gui-navigation-review/annotated-it-es-review.json",
+      "sha256": "742c7042d4f15eeeef83f42bb8ca84da52551456e1a5fc7f8951c90506b096b5",
+      "count": 14,
+      "locales": [
+        "it",
+        "es"
+      ],
+      "method": "Individual original-resolution review of final images; no findings; all SHA match manifest."
+    }
+  },
+  "knownDiscrepancies": [
+    {
+      "id": "cloud-unlink-ui-backend-retention",
+      "ui": "Confirmation warns uploads stop and existing cloud measurements are deleted.",
+      "backend": "Client DELETE /device/{id} currently calls UnenrollDevice, clearing API key/organization assignment without deleting historical measurement collections. Handler documentation says historical data preserved.",
+      "evidence": [
+        "cloud-unlink-client",
+        "cloud-unlink-doc",
+        "cloud-unlink-handler",
+        "cloud-unlink-database"
+      ],
+      "resolution": "Manual reports confirmation warning and recommends export first; no retention guarantee or product mutation."
+    }
+  ],
+  "screenshotConsistency": [
+    {
+      "section": "14.3.2",
+      "issue": "Old English native cloud figure says Enrol; current compiled app says Enroll and all5 labels differ.",
+      "resolution": "Parent replaces four old figure positions with current supplemental all5 assets; agent left refs parent-owned."
+    },
+    {
+      "section": "14.3.1",
+      "asset": "/img/manual/bactocloud/enrolment.png",
+      "status": "Retained English wizard action/software requirements agree with current source/cached translation."
+    },
+    {
+      "section": "13.7",
+      "asset": "web-plots-measurement-time.png",
+      "issue": "Only single timestamp slider exists; no From/To range. Parent notified to rename asset/titles to measurement-time while preserving reviewed pixels.",
+      "resolution": "Parent renamed all5 byte-identical reviewed PNGs and matching refs/IDs/titles to measurement-time. Timestamp-selection meaning and pixels now match."
+    }
+  ]
+}

@@ -73,6 +73,7 @@ export async function compileManualPdf(root, manifest) {
   const css = await readFile(path.join(ROOT, 'scripts/pdf.css'), 'utf8');
   const guiFigures = JSON.parse(await readFile(path.join(root, 'maintenance/gui-screenshots.json'), 'utf8'));
   const guiScreenshotAlts = guiFigures.figures.filter(figure => figure.locale === manifest.locale && figure.kind === 'screenshot').map(figure => figure.alt);
+  const digitalOutputBaseAlt = guiFigures.figures.find(figure => figure.id === `${manifest.locale}-digital-output-base-state`)?.alt;
   const chapters = await Promise.all(manifest.chapters.map((chapter) => readChapter(outDir, manifest.baseUrl, chapter)));
   const shell = `<!doctype html><html lang="${escapeHtml(manifest.htmlLang)}" data-theme="light"><head><meta charset="utf-8"><title>${escapeHtml(copy.title)}</title></head><body><main id="manual-pdf"></main></body></html>`;
   const { server, origin } = await startServer(outDir, manifest.baseUrl, shell);
@@ -97,7 +98,7 @@ export async function compileManualPdf(root, manifest) {
     page.on('requestfailed', (request) => resourceErrors.push(`Failed resource: ${request.url()}`));
     await page.emulateMedia({ media: 'print', colorScheme: 'light' });
     await page.goto(`${origin}${manifest.baseUrl}__manual_pdf__.html`, { waitUntil: 'load' });
-    const assembled = await page.evaluate(({ chapters: pages, manifest: meta, copy: labels, date: compiledDate }) => {
+    const assembled = await page.evaluate(({ chapters: pages, manifest: meta, copy: labels, date: compiledDate, digitalOutputBaseAlt }) => {
       const parser = new DOMParser();
       const main = document.getElementById('manual-pdf');
       const normalizePath = (pathname) => pathname.replace(/\/+$/, '') || '/';
@@ -167,6 +168,17 @@ export async function compileManualPdf(root, manifest) {
           if (rows.length && rows.every((row) => row.cells[0].colSpan === 1 && /^\d{1,3}[.]?$/.test(row.cells[0].textContent.trim()))) {
             table.rows[0].cells[0].style.width = '8%';
           }
+          // Chromium can orphan a header despite break-after on the table row.
+          // Keep this procedure's header and first step in one print row group.
+          if (digitalOutputBaseAlt && [...table.querySelectorAll('img')].some(image => image.alt === digitalOutputBaseAlt)) {
+            const [header, firstStep] = table.rows;
+            if (header && firstStep && [...header.cells].every(cell => cell.tagName === 'TH') && /^1[.]?$/.test(firstStep.cells[0]?.textContent.trim())) {
+              const opening = document.createElement('tbody');
+              opening.className = 'pdf-digital-output-opening';
+              header.parentElement.before(opening);
+              opening.append(header, firstStep);
+            }
+          }
         }
         for (const node of section.querySelectorAll('[id]')) node.id = `${id}--${node.id}`;
         const heading = section.querySelector('h1');
@@ -198,7 +210,7 @@ export async function compileManualPdf(root, manifest) {
         if (!document.getElementById(anchor.getAttribute('href').slice(1))) throw new Error(`Unresolved PDF link: ${anchor.getAttribute('href')}.`);
       }
       return { titles, imageCount: main.querySelectorAll('.pdf-chapter img').length, tableCount: main.querySelectorAll('.pdf-chapter table').length, noticeCount: main.querySelectorAll('.pdf-chapter .theme-admonition').length };
-    }, { chapters, manifest, copy, date });
+    }, { chapters, manifest, copy, date, digitalOutputBaseAlt });
     await page.waitForFunction(() => [...document.querySelectorAll('link[rel="stylesheet"]')].every((link) => link.sheet));
     await page.addStyleTag({ content: css });
     const { expandedScreenshotRows, pairedScreenshotCaptions } = await page.evaluate(async (guiScreenshotAlts) => {
@@ -213,11 +225,11 @@ export async function compileManualPdf(root, manifest) {
         if (![...document.fonts].some((font) => font.family.includes(family) && font.status === 'loaded')) throw new Error(`PDF font did not load: ${family}.`);
       }
       await Promise.all([...document.images].map((image) => image.decode()));
-      // Keep a GUI screenshot and its following localized figure caption together.
+      // Keep an illustration and its following localized figure caption together.
       // Markdown emits separate paragraphs, which can otherwise split at a page break.
       let paired = 0;
       for (const image of document.querySelectorAll('.pdf-chapter img')) {
-        if (!guiScreenshotAlts.includes(image.alt)) continue;
+        if (image.classList.contains('manual-icon')) continue;
         const paragraph = image.closest('p');
         const caption = paragraph?.nextElementSibling;
         if (!paragraph || paragraph.closest('td') || paragraph.querySelectorAll('img').length !== 1 ||
@@ -229,21 +241,39 @@ export async function compileManualPdf(root, manifest) {
         paired++;
       }
       // A full GUI screen becomes unreadable in a narrow procedure column.
-      // Keep it beside the same instruction, in a full-width following print row.
+      // Keep its instruction and full-width image inside one unbreakable print row.
       const wideImages = [...document.querySelectorAll('.pdf-chapter td img')].filter(image =>
         guiScreenshotAlts.includes(image.alt) && image.naturalWidth >= 1600);
       let expanded = 0;
       for (const image of wideImages) {
         const cell = image.closest('td'), row = cell.closest('tr'), table = row.closest('table');
         const columns = Math.max(...[...table.rows].map(row => [...row.cells].reduce((sum, cell) => sum + cell.colSpan, 0)));
-        const illustrationRow = document.createElement('tr');
-        illustrationRow.className = 'pdf-screenshot-row';
+        const instructionWidths = [...row.cells].map(cell => cell.getBoundingClientRect().width);
+        const instructionWidth = instructionWidths.reduce((sum, width) => sum + width, 0);
+        const screenshot = image.closest('a.manual-screenshot') || image;
+        screenshot.remove();
+        const instructions = document.createElement('table');
+        instructions.className = 'pdf-procedure-step-instructions';
+        const instructionBody = document.createElement('tbody');
+        const instructionRow = document.createElement('tr');
+        instructionRow.append(...row.cells);
+        [...instructionRow.cells].forEach((cell, index) => {
+          cell.style.width = `${instructionWidths[index] / instructionWidth * 100}%`;
+        });
+        instructionBody.appendChild(instructionRow);
+        instructions.appendChild(instructionBody);
         const illustrationCell = document.createElement('td');
         illustrationCell.colSpan = columns;
-        illustrationCell.appendChild(image.closest('a.manual-screenshot') || image);
-        illustrationRow.appendChild(illustrationCell);
-        row.after(illustrationRow);
+        illustrationCell.append(instructions, screenshot);
+        row.classList.add('pdf-screenshot-row');
+        row.appendChild(illustrationCell);
         expanded++;
+      }
+      // Enrolment uses an ordered list rather than procedure-table rows.
+      for (const item of document.querySelectorAll('.pdf-chapter li')) {
+        if ([...item.querySelectorAll('img')].some(image => guiScreenshotAlts.includes(image.alt))) {
+          item.classList.add('pdf-illustrated-step');
+        }
       }
       return { expandedScreenshotRows: expanded, pairedScreenshotCaptions: paired };
     }, guiScreenshotAlts);

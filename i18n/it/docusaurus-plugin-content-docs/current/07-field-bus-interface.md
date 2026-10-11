@@ -487,11 +487,7 @@ UInt16 (singoli bit)
 
 <td>
 
-:::info[Informazioni aggiuntive]
-
 Stato degli allarmi, ossia allarmi generati durante l’ultima misurazione.
-
-:::
 
 </td>
 
@@ -524,11 +520,7 @@ UInt32 MSB (singoli bit)
 
 <td rowSpan="2">
 
-:::info[Informazioni aggiuntive]
-
 Stato degli avvertimenti, ossia avvertimenti generati durante l’ultima misurazione.
-
-:::
 
 </td>
 

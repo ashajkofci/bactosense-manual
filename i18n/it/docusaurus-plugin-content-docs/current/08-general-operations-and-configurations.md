@@ -14,7 +14,7 @@ Il pulsante di accensione di BactoSense si trova sul lato destro dello strumento
 
 *Figura 8-1 Pulsante di accensione di BactoSense*
 
-:::warning[Controllare l’alimentazione]
+:::caution[Controllare l’alimentazione]
 
 Prima di accendere BactoSense, assicurarsi che lo strumento sia collegato a un’alimentazione stabile conforme ai requisiti descritti nella sezione [Collegamento di BactoSense all’alimentazione](05-installation.md#section-5-3).
 
@@ -22,9 +22,9 @@ Prima di accendere BactoSense, assicurarsi che lo strumento sia collegato a un�
 
 **Accensione** Per accendere BactoSense, premere brevemente il pulsante di accensione. Il LED del pulsante rimane acceso e, dopo pochi secondi, sull’interfaccia utente viene visualizzata la schermata di benvenuto.
 
-**Spegnimento** Se è stato effettuato l’accesso e si desidera spegnere BactoSense, toccare il pulsante di disconnessione nell’angolo superiore destro dell’interfaccia e selezionare *Power off*. Per spegnere lo strumento direttamente dalla pagina di accesso, tenere premuto il pulsante di accensione per 10 secondi.
+**Spegnimento** Se è stato effettuato l’accesso e si desidera spegnere BactoSense, toccare il pulsante di disconnessione nell’angolo superiore destro dell’interfaccia e selezionare *Spegni*. Per spegnere lo strumento direttamente dalla pagina di accesso, tenere premuto il pulsante di accensione per 10 secondi.
 
-:::warning[Scollegare l’alimentazione in sicurezza]
+:::caution[Scollegare l’alimentazione in sicurezza]
 
 Per scollegare BactoSense dall’alimentazione, spegnere prima lo strumento. Quindi scollegare l’alimentatore dalla rete elettrica, prima di scollegare il connettore di alimentazione da BactoSense.
 
@@ -52,7 +52,7 @@ L’accesso e la disconnessione possono essere effettuati tramite il pulsante ne
 | --- | --- |
 | 1. | Assicurarsi che tutti i processi (ad esempio misurazioni o pulizie) siano terminati. Lo stato inattivo dello strumento è indicato sul lato sinistro della barra superiore dell’interfaccia utente di BactoSense. |
 | 2. | Premere il pulsante di disconnessione nell’angolo superiore destro dell’interfaccia utente. |
-| 3. | Selezionare Log out Lock screen. |
+| 3. | Selezionare Esci / Schermata di blocco. |
 | 4. | Per accedere nuovamente, seguire la procedura descritta nella sezione [Accesso](08-general-operations-and-configurations.md#section-8-2-1). |
 
 ### 8.2.3 Disconnessione automatica {#section-8-2-3}
@@ -61,12 +61,12 @@ L’accesso e la disconnessione possono essere effettuati tramite il pulsante ne
 
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINE |
 | --- | --- | --- |
-| 1. | Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni. |  |
-| 2. | Premere il pulsante System settings. |  |
-| 3. | Premere il pulsante Users. |  |
-| 4. | Premere il pulsante Settings. |  |
+| 1. | Come utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni. |  |
+| 2. | Premere il pulsante Impostazioni di sistema. |  |
+| 3. | Premere il pulsante Utenti. |  |
+| 4. | Premere il pulsante Impostazioni. |  |
 | 5. | Configurare il periodo desiderato per la disconnessione automatica. |  |
-| 6. | Premere Save. |  |
+| 6. | Premere Salva. |  |
 
 ### 8.2.4 Attivazione della gestione avanzata degli utenti {#section-8-2-4}
 
@@ -76,11 +76,11 @@ La gestione avanzata degli utenti è disponibile per BactoSense SMART e PURE e p
 
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINE |
 | --- | --- | --- |
-| 1. | Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni. |  |
-| 2. | Premere il pulsante System settings. |  |
-| 3. | Premere il pulsante System configuration. |  |
-| 4. | Selezionare la casella Advanced user management mode. |  |
-| 5. | Premere Save. |  |
+| 1. | Come utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni. |  |
+| 2. | Premere il pulsante Impostazioni di sistema. |  |
+| 3. | Premere il pulsante Configurazione del sistema. |  |
+| 4. | Selezionare la casella Modalità di gestione avanzata degli utenti. |  |
+| 5. | Premere Salva. |  |
 
 ### 8.2.5 Impostazione e modifica delle password {#section-8-2-5}
 
@@ -92,9 +92,9 @@ Ogni ruolo utente è protetto da password.
 
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINI |
 | --- | --- | --- |
-| 1. | Nella schermata Home, premere Impostazioni, quindi Impostazioni di sistema. |  |
-| 2. | Premere Users e selezionare il profilo utente da modificare. Dopo aver selezionato una casella, premere Edit. | Gli utenti Admin possono modificare le password degli altri profili utente. |
-| 3. | Premere Change PIN, inserire due volte il nuovo PIN e premere Save. |  |
+| 1. | Nella schermata Home, premere Impostazioni. Gli utenti Basic premono Modifica la password; gli utenti Advanced e Admin premono Impostazioni di sistema, quindi Utenti. |  |
+| 2. | Selezionare il profilo utente da modificare, quindi premere Modifica. | Gli utenti Basic e Advanced possono modificare il proprio PIN. Gli utenti Admin possono modificare anche il PIN degli utenti Basic e Advanced. |
+| 3. | Premere Modifica il PIN. Inserire il nuovo PIN in PIN e Conferma il PIN, quindi premere Salva. |  |
 
 ### 8.2.6 Modifica delle impostazioni delle password {#section-8-2-6}
 
@@ -102,65 +102,85 @@ Ogni ruolo utente è protetto da password.
 
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINE |
 | --- | --- | --- |
-| 1. | Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni. |  |
-| 2. | Premere il pulsante System settings. |  |
-| 3. | Premere il pulsante Users. |  |
-| 4. | Premere il pulsante Settings. |  |
+| 1. | Come utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni. |  |
+| 2. | Premere il pulsante Impostazioni di sistema. |  |
+| 3. | Premere il pulsante Utenti. |  |
+| 4. | Premere il pulsante Impostazioni. |  |
 | 5. | Configurare i requisiti delle password in base alle proprie preferenze. |  |
-| 6. | Premere Save. |  |
+| 6. | Premere Salva. |  |
 
 ### 8.2.7 Ruoli utente e autorizzazioni {#section-8-2-7}
 
 *Tabella 8-1 Ruoli utente e autorizzazioni*
 
-| AUTORIZZAZIONE | BASIC | ADVANCED | ADMIN |
-| --- | --- | --- | --- |
-| Visualizzare l’ultimo risultato | ✓ | ✓ | ✓ |
-| Visualizzare tutti i risultati ed esportarli | ✓ | ✓ | ✓ |
-| Avviare, arrestare e pianificare le misurazioni | ✓ | ✓ | ✓ |
-| Passare dalla modalità online alla modalità Manual e viceversa | ✓ | ✓ | ✓ |
-| Visualizzare il registro degli errori e degli avvertimenti | ✓ | ✓ | ✓ |
-| Rinominare i risultati | ✓ | ✓ | ✓ |
-| Validare il dispositivo | ✓ | ✓ | ✓ |
-| Modificare la propria password | ✓ | ✓ | ✓ |
-| Visualizzare le informazioni di sistema | ✓ | ✓ | ✓ |
-| Visualizzare le impostazioni di rete | ✓ | ✓ | ✓ |
-| Visualizzare l’ultima autoverifica | ✓ | ✓ | ✓ |
-| Cambiare la cartuccia | ✓ | ✓ | ✓ |
-| Cancellare gli errori | ✓ | ✓ | ✓ |
-| Visualizzare il registro degli interventi | ✓ | ✓ | ✓ |
-| Visualizzare i risultati della validazione | ✓ | ✓ | ✓ |
-| Eliminare i risultati |  | ✓ | ✓ |
-| Rianalizzare i risultati con altri gate |  | ✓ | ✓ |
-| Regolare gli allarmi |  | ✓ | ✓ |
-| Regolare i gate |  | ✓ | ✓ |
-| Riavviare |  | ✓ | ✓ |
-| Eseguire un’autoverifica |  | ✓ | ✓ |
-| Eliminare le misurazioni vecchie |  | ✓ | ✓ |
-| Esportare tutto |  | ✓ | ✓ |
-| Visualizzare le informazioni sugli interventi |  | ✓ | ✓ |
-| Esportare la diagnostica |  | ✓ | ✓ |
-| Modificare le uscite analogiche e digitali |  |  | ✓ |
-| Provare le uscite analogiche e digitali |  |  | ✓ |
-| Modificare le password degli altri utenti |  |  | ✓ |
-| Creare altri utenti |  |  | ✓ |
-| Modificare le impostazioni di autenticazione |  |  | ✓ |
+<div className="manual-user-roles-scroll">
 
-| AUTORIZZAZIONE | BASIC | ADVANCED | ADMIN |
-| --- | --- | --- | --- |
-| Impostare il nome del dispositivo |  |  | ✓ |
-| Impostare data e ora |  |  | ✓ |
-| Modificare le impostazioni di rete |  |  | ✓ |
-| Modificare le impostazioni dei servizi |  |  | ✓ |
-| Attivare Modbus con una chiave o disattivarlo |  |  | ✓ |
-| Cambiare la lingua |  |  | ✓ |
-| Passare alla modalità demo |  |  | ✓ |
-| Ripristinare le impostazioni |  |  | ✓ |
-| Ripristino completo delle impostazioni di fabbrica (tranne il registro degli interventi) |  |  | ✓ |
-| Importare le impostazioni |  |  | ✓ |
-| Modificare le impostazioni di accensione automatica |  |  | ✓ |
-| Attivare pacchetti di aggiornamento con un codice |  |  | ✓ |
+<table className="manual-user-roles-permissions">
 
+<colgroup>
+<col className="user-role-permission-column" />
+<col className="user-role-basic-column" />
+<col className="user-role-advanced-column" />
+<col className="user-role-admin-column" />
+</colgroup>
+
+<thead>
+<tr>
+<th scope="col">AUTORIZZAZIONE</th>
+<th scope="col">BASIC</th>
+<th scope="col">ADVANCED</th>
+<th scope="col">ADMIN</th>
+</tr>
+</thead>
+
+<tbody>
+<tr><td>Visualizzare l’ultimo risultato</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Visualizzare tutti i risultati ed esportarli</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Avviare, arrestare e pianificare le misurazioni</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Passare dalla modalità online alla modalità Manual e viceversa</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Visualizzare il registro degli errori e degli avvertimenti</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Rinominare i risultati</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Validare il dispositivo</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Modificare la propria password</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Visualizzare le informazioni di sistema</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Visualizzare le impostazioni di rete</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Visualizzare l’ultima autoverifica</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Cambiare la cartuccia</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Cancellare gli errori</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Visualizzare il registro degli interventi</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Visualizzare i risultati della validazione</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>Eliminare i risultati</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Rianalizzare i risultati con altri gate</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Regolare gli allarmi</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Regolare i gate</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Riavviare</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Eseguire un’autoverifica</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Eliminare le misurazioni vecchie</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Esportare tutto</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Visualizzare le informazioni sugli interventi</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Esportare la diagnostica</td><td></td><td>✓</td><td>✓</td></tr>
+<tr><td>Modificare le uscite analogiche e digitali</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Provare le uscite analogiche e digitali</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Modificare le password degli altri utenti</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Creare altri utenti</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Modificare le impostazioni di autenticazione</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Impostare il nome del dispositivo</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Impostare data e ora</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Modificare le impostazioni di rete</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Modificare le impostazioni dei servizi</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Attivare Modbus con una chiave o disattivarlo</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Cambiare la lingua</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Passare alla modalità demo</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Ripristinare le impostazioni</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Ripristino completo delle impostazioni di fabbrica (tranne il registro degli interventi)</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Importare le impostazioni</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Modificare le impostazioni di accensione automatica</td><td></td><td></td><td>✓</td></tr>
+<tr><td>Attivare pacchetti di aggiornamento con un codice</td><td></td><td></td><td>✓</td></tr>
+</tbody>
+
+</table>
+
+</div>
 ## 8.3 Configurazioni di base {#section-8-3}
 
 ### 8.3.1 Lingua dell’interfaccia utente {#section-8-3-1}
@@ -169,10 +189,10 @@ La lingua può essere modificata solo dagli utenti Admin.
 
 |  | OPERAZIONE |
 | --- | --- |
-| 1. | Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni. |
-| 2. | Premere System settings, quindi Language. |
+| 1. | Come utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni. |
+| 2. | Premere il pulsante Impostazioni di sistema. Premere il pulsante Lingua. |
 | 3. | Scegliere la lingua e premere OK. |
-| 4. | Viene visualizzato un messaggio che richiede di ricaricare l’interfaccia utente. Confermare il messaggio. |
+| 4. | Quando viene richiesto di ricaricare l’interfaccia, premere Ricarica l'interfaccia. |
 
 ### 8.3.2 Data e ora {#section-8-3-2}
 
@@ -180,18 +200,18 @@ La data e l’ora possono essere modificate solo dagli utenti Admin.
 
 :::info[Sincronizzazione automatica dell’ora]
 
-Se è abilitata la sincronizzazione dell’ora, tramite server NTP o Modbus TCP, le impostazioni manuali di data e ora vengono sovrascritte alla sincronizzazione successiva. Le impostazioni si trovano in **System settings** &gt; **Date &amp; Time** &gt; **Time synchronization settings**. Per configurare il server NTP, consultare la sezione [Impostazione dei server NTP](08-general-operations-and-configurations.md#section-8-7).
+Se è abilitata la sincronizzazione dell’ora, tramite server NTP o Modbus TCP, le impostazioni manuali di data e ora vengono sovrascritte alla sincronizzazione successiva. Le impostazioni si trovano in Home > Impostazioni > Impostazioni di sistema > Data e ora > Impostazioni per la sincronizzazione dell'ora. Per configurare il server NTP, consultare la sezione [Impostazione dei server NTP](08-general-operations-and-configurations.md#section-8-7).
 
 :::
 
 |  | OPERAZIONE |
 | --- | --- |
-| 1. | Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni. |
-| 2. | Premere il pulsante System settings. |
-| 3. | Premere il pulsante Date &amp; Time. |
+| 1. | Come utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni. |
+| 2. | Premere il pulsante Impostazioni di sistema. |
+| 3. | Premere il pulsante Data e ora. |
 | 4. | Inserire la data e l’ora. |
-| 5. | Selezionare Time zone. |
-| 6. | Premere il pulsante Set. |
+| 5. | Selezionare il fuso orario. |
+| 6. | Premere il pulsante Imposta. |
 
 ### 8.3.3 Nome del dispositivo {#section-8-3-3}
 
@@ -199,12 +219,12 @@ Il nome del dispositivo può essere modificato solo dagli utenti Admin.
 
 |  | OPERAZIONE |
 | --- | --- |
-| 1. | Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni. |
-| 2. | Premere il pulsante System settings. |
-| 3. | Premere il pulsante System configuration. |
-| 4. | Premere il pulsante Device name. |
-| 5. | Inserire il nome desiderato per il dispositivo nel campo di immissione. |
-| 6. | Premere il pulsante Save. |
+| 1. | Come utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni. |
+| 2. | Premere il pulsante Impostazioni di sistema. |
+| 3. | Premere il pulsante Configurazione del sistema. |
+| 4. | Toccare il campo Nome del dispositivo. |
+| 5. | Inserire il nome del dispositivo con la tastiera e premere OK. |
+| 6. | Premere il pulsante Salva. |
 
 ### 8.3.4 Accensione automatica {#section-8-3-4}
 
@@ -213,10 +233,10 @@ BactoSense dispone di una funzione integrata di riavvio automatico per ripristin
 |  | OPERAZIONE |
 | --- | --- |
 | 1. | Come utente Admin, premere Impostazioni nella schermata Home per aprire il menu delle impostazioni. |
-| 2. | Premere il pulsante System settings. |
-| 3. | Premere il pulsante System configuration. |
+| 2. | Premere il pulsante Impostazioni di sistema. |
+| 3. | Premere il pulsante Configurazione del sistema. |
 | 4. | Selezionare le preferenze di accensione automatica. Nota: l’autopulizia viene eseguita solo se l’alimentazione è stata interrotta durante una misurazione. |
-| 5. | Premere il pulsante Save. |
+| 5. | Premere il pulsante Salva. |
 
 ### 8.3.5 Notifiche sonore {#section-8-3-5}
 
@@ -225,10 +245,10 @@ BactoSense dispone di una funzione integrata di riavvio automatico per ripristin
 |  | OPERAZIONE |
 | --- | --- |
 | 1. | Come utente Admin, premere Impostazioni nella schermata Home per aprire il menu delle impostazioni. |
-| 2. | Premere il pulsante System settings. |
-| 3. | Premere il pulsante System configuration. |
-| 4. | Attivare l’opzione Sound notifications. |
-| 5. | Premere il pulsante Save. |
+| 2. | Premere il pulsante Impostazioni di sistema. |
+| 3. | Premere il pulsante Configurazione del sistema. |
+| 4. | Attivare Notifiche sonore. |
+| 5. | Premere il pulsante Salva. |
 
 ## 8.4 Importazione / esportazione delle impostazioni {#section-8-4}
 
@@ -236,13 +256,13 @@ Le impostazioni vengono esportate su un’unità USB come descritto nella sezion
 
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINE |
 | --- | --- | --- |
-| 1. | Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni. | ![BactoSense — Pulsante della schermata iniziale](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
-| 2. | Premere il pulsante Maintenance. | ![BactoSense — Menu di manutenzione](/img/gui/icons/maintenance-button.png "width=48 class=manual-icon") |
-| 3. | Premere il pulsante Special export import. | ![BactoSense — Opzioni speciali di esportazione e importazione](/img/gui/icons/special-import-export-button.png "width=48 class=manual-icon") |
-| 4. | Collegare un’unità USB. Se necessario, premere Refresh USB list finché l’unità non viene rilevata. | Assicurarsi che il file *.bnv si trovi nella cartella principale dell’unità USB. L’unità deve essere formattata in FAT32, lo standard comunemente utilizzato. |
-| 5. | Premere Import settings. | ![BactoSense — Importazione ed esportazione USB](/img/gui/it/usb-import-and-export.png "width=263") |
+| 1. | Come utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni. | ![BactoSense — Pulsante Impostazioni](/img/gui/it/home-settings-button.png "width=57 class=manual-icon-settings-button-half") |
+| 2. | Premere il pulsante Manutenzione. | ![BactoSense — Menu di manutenzione](/img/gui/icons/maintenance-button.png "width=48 class=manual-icon") |
+| 3. | Premere il pulsante Importazione/Esportazione speciale. | ![BactoSense — Opzioni speciali di esportazione e importazione](/img/gui/icons/special-import-export-button.png "width=48 class=manual-icon") |
+| 4. | Collegare un’unità USB. Se necessario, premere Aggiorna l'elenco USB finché l’unità non viene rilevata. | Assicurarsi che il file *.bnv si trovi nella cartella principale dell’unità USB. L’unità deve essere formattata in FAT32, lo standard comunemente utilizzato. |
+| 5. | Premere il pulsante Importa le impostazioni. | ![BactoSense — Importazione ed esportazione USB](/img/gui/it/usb-import-and-export.png "width=263") |
 | 6. | Selezionare le impostazioni da importare. Le impostazioni di misurazione includono gruppi di gate, impostazioni I/O, allarmi e impostazioni di data e ora. Le impostazioni di rete includono gli indirizzi IP, DNS e NTP. | ![BactoSense — Opzioni di importazione delle impostazioni](/img/gui/it/import-settings-options.png "width=269") |
-| 7. | Premere Import settings e attendere il riavvio del dispositivo. |  |
+| 7. | Premere Importa le impostazioni, quindi Riavvia ora nel messaggio di conferma e attendere il riavvio. |  |
 
 ## 8.5 Configurazione degli allarmi {#section-8-5}
 
@@ -276,10 +296,10 @@ La procedura seguente descrive come configurare l’allarme:
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINI |
 | --- | --- | --- |
 | 1. | Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni. |  |
-| 2. | Premere il pulsante Online mode settings. |  |
-| 3. | Premere Alarms. |  |
+| 2. | Premere il pulsante Impostazioni della Modalità Online. |  |
+| 3. | Premere il pulsante Allarme. |  |
 | 4. | Attivare, selezionare e configurare gli allarmi (secondo le figure 8-2 e 8-3). | Per impostazione predefinita, nessun allarme è attivo. |
-| 5. | Premere Save per salvare la configurazione degli allarmi. |  |
+| 5. | Premere Salva per salvare la configurazione degli allarmi. |  |
 
 ## 8.6 Configurazione della rete {#section-8-6}
 
@@ -323,13 +343,13 @@ INFORMAZIONI AGGIUNTIVE / IMMAGINE
 
 <td>
 
-Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni.
+Come utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni.
 
 </td>
 
 <td>
 
-![BactoSense — Pulsante della schermata iniziale](/img/gui/icons/home-button.png "width=48 class=manual-icon")
+![BactoSense — Pulsante Impostazioni](/img/gui/it/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
 
 </td>
 
@@ -367,7 +387,7 @@ Premere il pulsante Impostazioni di sistema.
 
 <td>
 
-Premere il pulsante Network.
+Premere il pulsante Rete.
 
 </td>
 
@@ -381,7 +401,7 @@ Premere il pulsante Network.
 
 <tr>
 
-<td rowSpan="2">
+<td>
 
 4\.
 
@@ -391,21 +411,13 @@ Premere il pulsante Network.
 
 A: per un IP dinamico, selezionare la casella DHCP (1). Nota: questa è la configurazione preferibile nella maggior parte dei casi in cui BactoSense è collegato a un router o switch.
 
-</td>
-
-<td rowSpan="2">
-
-![BactoSense — Configurazione della rete](/img/gui/it/network-configuration.png "width=260")
+B: per un IP statico, deselezionare la casella DHCP (1) e inserire la configurazione di rete desiderata (2). Nota: questa è la configurazione preferibile quando BactoSense è collegato direttamente a un portatile tramite Ethernet. Assicurarsi di adattare anche la configurazione di rete del portatile.
 
 </td>
-
-</tr>
-
-<tr>
 
 <td>
 
-B: per un IP statico, deselezionare la casella DHCP (1) e inserire la configurazione di rete desiderata (2). Nota: questa è la configurazione preferibile quando BactoSense è collegato direttamente a un portatile tramite Ethernet. Assicurarsi di adattare anche la configurazione di rete del portatile.
+![BactoSense — Configurazione della rete](/img/gui/it/network-configuration.png "width=260")
 
 </td>
 
@@ -421,7 +433,7 @@ B: per un IP statico, deselezionare la casella DHCP (1) e inserire la configuraz
 
 <td>
 
-Premere il pulsante Save.
+Premere il pulsante Salva.
 
 </td>
 
@@ -441,7 +453,7 @@ Premere il pulsante Save.
 
 <td>
 
-Premere il pulsante Reboot now.
+Premere il pulsante Riavvia ora.
 
 </td>
 
@@ -457,7 +469,7 @@ Premere il pulsante Reboot now.
 
 ## 8.7 Impostazione dei server NTP {#section-8-7}
 
-Network Time Protocol (NTP) è un protocollo di rete utilizzato per sincronizzare l’ora dei computer su una rete. Per impostazione predefinita, è configurata la sincronizzazione con i server della Network Time Foundation (ntp.org). È possibile impostare server NTP personalizzati nel menu *Date and Time* .
+Network Time Protocol (NTP) è un protocollo di rete utilizzato per sincronizzare l’ora dei computer su una rete. Per impostazione predefinita, è configurata la sincronizzazione con i server della Network Time Foundation (ntp.org). È possibile impostare server NTP personalizzati nel menu *Data e ora* .
 
 <table>
 
@@ -493,13 +505,13 @@ INFORMAZIONI AGGIUNTIVE / IMMAGINE
 
 <td>
 
-Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni.
+Come utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni.
 
 </td>
 
 <td>
 
-![BactoSense — Pulsante della schermata iniziale](/img/gui/icons/home-button.png "width=48 class=manual-icon")
+![BactoSense — Pulsante Impostazioni](/img/gui/it/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
 
 </td>
 
@@ -537,7 +549,7 @@ Premere il pulsante Impostazioni di sistema.
 
 <td>
 
-Premere il pulsante Date &amp; Time.
+Premere il pulsante Data e ora.
 
 </td>
 
@@ -559,7 +571,7 @@ Premere il pulsante Date &amp; Time.
 
 <td>
 
-Premere il pulsante Time synchronization settings.
+Premere il pulsante Impostazioni per la sincronizzazione dell'ora.
 
 </td>
 
@@ -581,7 +593,7 @@ Premere il pulsante Time synchronization settings.
 
 <td>
 
-Selezionare la sorgente di sincronizzazione desiderata in Sync Source.
+Selezionare la sorgente desiderata in Sorgente di sincronizzazione.
 
 </td>
 
@@ -637,7 +649,7 @@ Premere il pulsante OK.
 
 :::info[Informazioni aggiuntive]
 
-Modificando l’indirizzo di un server e premendo OK, viene eseguito automaticamente un ping del server e vengono aggiornate la data e l’ora.
+Premere Test NTP per verificare che i server configurati siano raggiungibili. Premere OK per salvare le impostazioni di sincronizzazione.
 
 :::
 
@@ -651,7 +663,7 @@ Modificando l’indirizzo di un server e premendo OK, viene eseguito automaticam
 
 ## 8.8 Interfaccia utente di BactoSense {#section-8-8}
 
-### 8.8.1 Struttura generale e menu Home {#section-8-8-1}
+### 8.8.1 Struttura generale, schermata Home e menu delle impostazioni {#section-8-8-1}
 
 ![BactoSense — Panoramica della schermata iniziale](/img/gui/it/home-overview.png "width=587")
 
@@ -669,7 +681,16 @@ L’interfaccia utente di BactoSense è suddivisa in 3 sezioni principali:
 
 Gli elementi principali dell’interfaccia utente sono:
 
-<table>
+<div className="manual-ui-elements-scroll">
+
+<table className="manual-ui-elements">
+
+<colgroup>
+<col className="ui-element-number" />
+<col className="ui-element-description" />
+<col className="ui-element-number" />
+<col className="ui-element-description" />
+</colgroup>
 
 <tbody>
 
@@ -809,6 +830,8 @@ Misura: aprire l’assistente di misurazione e scegliere un protocollo di analis
 
 </table>
 
+</div>
+
 In base al ruolo utente, alcune opzioni possono non essere visibili o essere disabilitate.
 
 ### 8.8.2 Icone di stato della barra superiore {#section-8-8-2}
@@ -839,7 +862,7 @@ Durante la manipolazione della cartuccia devono essere rispettate le seguenti is
 |  |  |  |  |
 | --- | --- | --- | --- |
 | ![Seguire le procedure descritte in questo manuale.](/img/manual/cell-28af480709ce.png "width=31 class=cartridge-handling-icon-31") | Seguire le procedure descritte in questo manuale. | ![Illustrazione della procedura, pagina stampata 73](/img/manual/asset-32c675a70f3d.png "width=24 class=cartridge-handling-icon-24") | Conservare e spedire tra 15 °C – 25 °C (59 °F – 77 °F). La temperatura ottimale è 15 °C (59 °F). |
-| ![Indossare guanti in nitrile quando si manipola la cartuccia.](/img/manual/cell-27e561e22ac1.png "width=31 class=cartridge-handling-icon-31") | Indossare guanti in nitrile quando si manipola la cartuccia. | ![Illustrazione della procedura, pagina stampata 73](/img/manual/asset-65d703b8ec50.png "width=24 class=cartridge-handling-icon-24") | Conservare e spedire a un’umidità relativa compresa tra 20 % e 60 %. |
+| ![Indossare guanti in nitrile quando si manipola la cartuccia.](/img/safety/gloves.svg "width=31 class=cartridge-handling-icon-31") | Indossare guanti in nitrile quando si manipola la cartuccia. | ![Illustrazione della procedura, pagina stampata 73](/img/manual/asset-65d703b8ec50.png "width=24 class=cartridge-handling-icon-24") | Conservare e spedire a un’umidità relativa compresa tra 20 % e 60 %. |
 | ![Indossare occhiali di sicurezza quando si manipola la cartuccia.](/img/manual/cell-d6353e538e2e.png "width=31 class=cartridge-handling-icon-31") | Indossare occhiali di sicurezza quando si manipola la cartuccia. | ![La cartuccia è destinata a essere riempita nuovamente.](/img/manual/cell-a80baea9abca.png "width=29 class=cartridge-handling-icon-29") | La cartuccia è destinata a essere riempita nuovamente. |
 | ![Spedire, installare e conservare nell’orientamento indicato.](/img/manual/cell-7ac996bd1fed.png "width=31 class=cartridge-handling-icon-31") | Spedire, installare e conservare nell’orientamento indicato. | ![Non gettare la cartuccia nei rifiuti.](/img/manual/cell-bc083b74fc3c.png "width=29 class=cartridge-handling-icon-29") | Non gettare la cartuccia nei rifiuti. |
 
@@ -862,7 +885,7 @@ La cartuccia BactoSense è installata in un vano dedicato dello strumento, chius
 | --- | --- | --- | --- |
 | 1 | Dadi esagonali da 7 mm per fissare lo sportello del vano cartuccia | 2 | Sportello del vano cartuccia |
 
-:::warning[Utilizzare l’utensile corretto per lo sportello]
+:::caution[Utilizzare l’utensile corretto per lo sportello]
 
 Aprire e chiudere lo sportello del vano cartuccia solo con l’apposita chiave a bussola da 7 mm.
 
@@ -1042,7 +1065,7 @@ Sportello del vano cartuccia
 
 </table>
 
-:::warning[Proteggere il connettore inutilizzato]
+:::caution[Proteggere il connettore inutilizzato]
 
 BactoSense dispone di cinque connettori fluidici. A seconda del tipo di cartuccia, ne servono quattro o tutti e cinque. Per le cartucce TCC o ICC, assicurarsi che il quinto connettore inutilizzato sia sempre montato sul supporto per evitare contaminazioni.
 
@@ -1052,7 +1075,7 @@ BactoSense dispone di cinque connettori fluidici. A seconda del tipo di cartucci
 
 La procedura seguente descrive la sostituzione delle cartucce. Utilizzarla per rimuovere una cartuccia e installarne subito un’altra. Per rimuovere soltanto una cartuccia senza installarne un’altra, seguire le istruzioni della sezione [Rimozione di una cartuccia](08-general-operations-and-configurations.md#section-8-9-5). La sostituzione della cartuccia dura circa 35 min.
 
-:::warning[Seguire la procedura guidata della cartuccia]
+:::caution[Seguire la procedura guidata della cartuccia]
 
 Seguire rigorosamente la procedura guidata sullo schermo. **Non rimuovere né installare cartucce senza seguire questa procedura.**
 
@@ -1132,7 +1155,7 @@ Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni
 
 <td>
 
-Premere il pulsante Maintenance.
+Premere il pulsante Manutenzione.
 
 </td>
 
@@ -1154,7 +1177,7 @@ Gli utenti Basic saltano questo passaggio.
 
 <td>
 
-Premere il pulsante Cartridge change.
+Premere il pulsante Sostituzione della cartuccia.
 
 </td>
 
@@ -1174,7 +1197,7 @@ Premere il pulsante Cartridge change.
 
 <td>
 
-Selezionare l’opzione Change cartridge.
+Selezionare Sostituisci della cartuccia.
 
 </td>
 
@@ -1242,7 +1265,7 @@ Gestione della cartuccia rimossa • Per conservare la cartuccia rimossa, consul
 
 Questa procedura serve a rimuovere una cartuccia senza installarne immediatamente un’altra. Per sostituire una cartuccia, seguire la procedura della sezione [Sostituzione delle cartucce](08-general-operations-and-configurations.md#section-8-9-4). La rimozione della cartuccia dura circa 5 min.
 
-:::warning[Seguire la procedura guidata della cartuccia]
+:::caution[Seguire la procedura guidata della cartuccia]
 
 Seguire rigorosamente la procedura guidata sullo schermo. **Non rimuovere né installare cartucce senza seguire questa procedura.**
 
@@ -1302,7 +1325,7 @@ Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni
 
 <td>
 
-Premere il pulsante Maintenance.
+Premere il pulsante Manutenzione.
 
 </td>
 
@@ -1324,7 +1347,7 @@ Gli utenti Basic saltano questo passaggio.
 
 <td>
 
-Premere il pulsante Cartridge change.
+Premere il pulsante Sostituzione della cartuccia.
 
 </td>
 
@@ -1344,13 +1367,11 @@ Premere il pulsante Cartridge change.
 
 <td>
 
-Selezionare l’opzione Remove cartridge.
+Selezionare Rimuovi la cartuccia.
 
 </td>
 
 <td>
-
-t
 
 </td>
 
@@ -1402,7 +1423,7 @@ Gestione della cartuccia rimossa • Per conservare la cartuccia rimossa, consul
 
 <td>
 
-La barra superiore dell’interfaccia indica che non è collegata alcuna cartuccia. Il pulsante Maintenance nel menu Home viene ora visualizzato in arancione. ![BactoSense — Cartuccia non pronta](/img/gui/icons/cartridge-not-ready-status.png "width=30 class=manual-icon")
+La barra superiore dell’interfaccia indica che non è collegata alcuna cartuccia. Nel menu Impostazioni, Manutenzione è evidenziato; gli utenti Basic vedono direttamente il pulsante Sostituzione della cartuccia evidenziato. ![BactoSense — Cartuccia non pronta](/img/gui/icons/cartridge-not-ready-status.png "width=30 class=manual-icon")
 
 </td>
 
@@ -1416,7 +1437,7 @@ La barra superiore dell’interfaccia indica che non è collegata alcuna cartucc
 
 Questa procedura serve a installare una cartuccia quando non ne è presente un’altra in BactoSense. Se una cartuccia è già installata e si desidera sostituirla, seguire la procedura della sezione [Sostituzione delle cartucce](08-general-operations-and-configurations.md#section-8-9-4). L’installazione della cartuccia dura circa 30 min.
 
-:::warning[Seguire la procedura guidata della cartuccia]
+:::caution[Seguire la procedura guidata della cartuccia]
 
 Seguire rigorosamente la procedura guidata sullo schermo. **Non rimuovere né installare cartucce senza seguire questa procedura.**
 
@@ -1496,7 +1517,7 @@ Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni
 
 <td>
 
-Premere il pulsante Maintenance.
+Premere il pulsante Manutenzione.
 
 </td>
 
@@ -1518,7 +1539,7 @@ Il pulsante Maintenance è evidenziato in arancione quando non è installata alc
 
 <td>
 
-Premere il pulsante Cartridge change.
+Premere il pulsante Sostituzione della cartuccia.
 
 </td>
 
@@ -1538,7 +1559,7 @@ Premere il pulsante Cartridge change.
 
 <td>
 
-Selezionare l’opzione Install cartridge.
+Selezionare Installa la cartuccia.
 
 </td>
 
@@ -1617,9 +1638,11 @@ BactoSense può essere utilizzato con il dispositivo di campionamento manuale o 
 
 Per passare al dispositivo di campionamento manuale, è necessario rimuovere quello in linea. Seguire la procedura seguente per rimuoverlo in sicurezza e prepararlo alla conservazione.
 
-![Indossare guanti protettivi](/img/manual/icon-gloves.png "width=32")
+:::gloves[Indossare guanti protettivi]
 
 Evitare la contaminazione dell’attrezzatura. Indossare guanti in nitrile quando si manipolano campioni, dispositivi di campionamento e qualsiasi componente che entri in contatto con essi.
+
+:::
 
 |  | OPERAZIONE |
 | --- | --- |
@@ -1636,9 +1659,11 @@ Evitare la contaminazione dell’attrezzatura. Indossare guanti in nitrile quand
 
 Per passare al dispositivo di campionamento in linea, è necessario rimuovere quello manuale. Seguire la procedura seguente per rimuoverlo in sicurezza e prepararlo alla conservazione.
 
-![Indossare guanti protettivi](/img/manual/icon-gloves.png "width=32")
+:::gloves[Indossare guanti protettivi]
 
 Evitare la contaminazione dell’attrezzatura. Indossare guanti in nitrile quando si manipolano campioni, dispositivi di campionamento e qualsiasi componente che entri in contatto con essi.
+
+:::
 
 |  | OPERAZIONE |
 | --- | --- |
@@ -1672,20 +1697,20 @@ Per gli altri ambienti, si consiglia di qualificare lo strumento utilizzando il 
 | 1. | Assicurarsi che il dispositivo di campionamento manuale sia saldamente installato come descritto nella sezione [Installazione del dispositivo di campionamento manuale](05-installation.md#section-5-4). |
 | 2. | Pulire il dispositivo di campionamento con due ripetizioni: se è disponibile una Washstation, seguire la procedura della sezione [Pulire il dispositivo di campionamento manuale con Washstation](15-maintenance.md#section-15-2-2); altrimenti quella della sezione [Pulire il dispositivo di campionamento manuale con pulizia di base](15-maintenance.md#section-15-2-3). |
 | 3. | Preparare il campione bianco in una provetta da 5 mL con tappo a vite. Sono disponibili due opzioni: A) utilizzare acqua priva di cellule, ad esempio un’aliquota di soluzione sterile del kit di validazione. Se si utilizza questa aliquota, rimuoverne il tappo e inserirla in una provetta vuota da 5 mL con tappo a vite, come descritto nel manuale del kit. B) utilizzare acqua minerale naturale non gassata e filtrarla due volte con un filtro a membrana avente pori di 0.22 µm o inferiori. |
-| 4. | Nell’interfaccia utente di BactoSense, accedere al menu Home. |
+| 4. | Accedere alla schermata Home dell’interfaccia utente di BactoSense. |
 | 5. | Nella schermata Home, premere Modalità e selezionare Modalità manuale. Premere Indietro, quindi Misura per aprire l’assistente di misurazione. |
-| 6. | Scegliere il protocollo Prime dall’elenco dei protocolli disponibili. |
-| 7. | Premere il pulsante Next. |
+| 6. | Selezionare Prepara dall’elenco dei protocolli disponibili. |
+| 7. | Premere il pulsante Avanti. |
 | 8. | Rimuovere la provetta o la Washstation dal dispositivo di campionamento manuale e collegare il campione bianco. |
-| 9. | Premere Start per eseguire il protocollo Prime. |
-| 10. | Al termine del Prime, premere New per tornare all’elenco dei protocolli. |
-| 11. | Selezionare il protocollo Water Analysis dall’elenco dei protocolli disponibili. |
+| 9. | Premere Avvio per eseguire il protocollo Prime. |
+| 10. | Al termine del Prime, premere Nuovo per tornare all’elenco dei protocolli. |
+| 11. | Selezionare Analisi dell'acqua dall’elenco dei protocolli disponibili. |
 | 12. | Configurare due ripetizioni. |
-| 13. | Inserire un nome per il campione toccando il campo Sample name, digitando il nome e premendo OK. |
-| 14. | Verificare che sia configurato il gate predefinito ICC o TCC; in caso contrario, modificarlo premendo il campo Gates. |
-| 15. | Premere il pulsante Next. |
-| 16. | Premere Start e attendere il completamento delle due misurazioni. |
-| 17. | Al termine, premere Next per esaminare i risultati. |
+| 13. | Inserire un nome per il campione toccando il campo Nome del campione, digitando il nome e premendo OK. |
+| 14. | Verificare che sia configurato il gate predefinito ICC o TCC; in caso contrario, modificarlo premendo il campo Gate. |
+| 15. | Premere il pulsante Avanti. |
+| 16. | Premere Avvio e attendere il completamento delle due misurazioni. |
+| 17. | Al termine, premere Avanti per esaminare i risultati. |
 | 18. | Esaminare i risultati e confrontarli con i valori di riferimento seguenti. BactoSense è pulito se sono soddisfatti i seguenti criteri: • Per cartucce TCC: TCC [/mL] &lt; 300 • Per cartucce ICC: ICC [/mL] &lt; 100 |
 | 19. | Se le concentrazioni cellulari sono superiori ai limiti specificati, applicare la seguente procedura: • Ripetere la procedura con un campione bianco appena preparato. • Ripetere la procedura dopo una decontaminazione con il kit di pulizia (vedere sezione [Materiali di consumo](18-supply-scope-accessories-and-consumables.md#section-18-3)). • Se il test continua a fallire, contattare l’assistenza bNovate o il rappresentante locale. |
 | 20. | Al termine, collegare al dispositivo di campionamento manuale una provetta pulita e vuota da 5 mL con tappo a vite o la Washstation. |
@@ -1728,13 +1753,13 @@ INFORMAZIONI AGGIUNTIVE / IMMAGINE
 
 <td>
 
-Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni.
+Come utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni.
 
 </td>
 
 <td colSpan="2">
 
-![BactoSense — Pulsante della schermata iniziale](/img/gui/icons/home-button.png "width=48 class=manual-icon")
+![BactoSense — Pulsante Impostazioni](/img/gui/it/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
 
 </td>
 
@@ -1750,7 +1775,7 @@ Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni
 
 <td>
 
-Accedere a System settings, quindi premere il pulsante Demo mode.
+Premere il pulsante Impostazioni di sistema. Premere il pulsante Modalità Demo.
 
 </td>
 
@@ -1778,7 +1803,7 @@ Accedere a System settings, quindi premere il pulsante Demo mode.
 
 <td>
 
-Selezionare la casella Activate demo mode.
+Selezionare la casella Attiva la modalità demo.
 
 </td>
 
@@ -1798,7 +1823,7 @@ Selezionare la casella Activate demo mode.
 
 <td>
 
-Premere il pulsante Save and restart.
+Premere il pulsante Salva e riavvia.
 
 </td>
 
@@ -1832,7 +1857,7 @@ Il dispositivo si riavvia automaticamente.
 
 </table>
 
-Per tornare alla modalità normale, seguire la stessa procedura, ma deselezionare la casella **Activate demo**  **mode** .
+Per tornare alla modalità normale, seguire la stessa procedura, ma deselezionare la casella **Attiva la modalità demo** .
 
 ## 8.13 Ripristino delle impostazioni di fabbrica {#section-8-13}
 
@@ -1874,13 +1899,13 @@ INFORMAZIONI AGGIUNTIVE / IMMAGINE
 
 <td>
 
-Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni.
+Come utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni.
 
 </td>
 
 <td colSpan="2">
 
-![BactoSense — Pulsante della schermata iniziale](/img/gui/icons/home-button.png "width=48 class=manual-icon")
+![BactoSense — Pulsante Impostazioni](/img/gui/it/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
 
 </td>
 
@@ -1950,7 +1975,7 @@ I registri di manutenzione, i risultati della validazione e la cronologia degli 
 
 <td>
 
-Quindi premere il pulsante Reset the device and reboot.
+Premere Esegui il ripristino del dispositivo e riavvia, quindi confermare con Sì.
 
 </td>
 

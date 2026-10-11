@@ -15,8 +15,8 @@ La fonction « Exportation/importation spéciale » permet aux utilisateurs d’
 
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
-| 1. | Sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. |  |
-| 2. | Appuyez sur le bouton Maintenance, puis sur le bouton Exportation importation spéciales. |  |
+| 1. | En tant qu’utilisateur Advanced ou Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. |  |
+| 2. | Appuyez sur le bouton Maintenance. Appuyez sur le bouton Exportation importation spéciales. |  |
 | 3. | Connectez un périphérique de stockage USB de masse. La clé USB doit être formatée en FAT32. Si nécessaire, appuyez sur le bouton Rafraîchir liste USB jusqu’à ce que le périphérique s’affiche. |  |
 | 4. | Le nom du dossier qui sera créé sur la clé USB s’affiche dans le champ Nom du dossier. Saisissez un nouveau nom de dossier si vous le souhaitez. | ![BactoSense — Importation et exportation USB](/img/gui/fr/usb-import-and-export.png "width=261 class=manual-figure") |
 | 5. | • Pour exporter toutes les données, appuyez sur le bouton Exporter<br/>tout. • Pour exporter uniquement les données de diagnostic, appuyez sur le bouton Exporter<br/>diagnostiques. • Pour exporter les paramètres, appuyez sur le bouton Exporter diagnostiques. Ne retirez pas le périphérique de stockage USB de masse pendant le transfert des données. | L’exportation de toutes les données peut prendre plusieurs heures. Si la capacité de stockage disponible sur le périphérique USB de masse est insuffisante, une notification s’affiche. |
@@ -37,12 +37,12 @@ Les données BactoSense peuvent être consultées à distance à l’aide du pro
 | --- | --- | --- |
 | 1. | • Installez un client FTP sur l’appareil que vous souhaitez utiliser pour récupérer des données, par exemple votre<br/>ordinateur portable. • Vous pouvez également utiliser l’explorateur de fichiers Windows. |  |
 | 2. | Connectez le BactoSense via Ethernet à un réseau sécurisé (par exemple, un réseau local). Connectez votre appareil au même réseau. | Pour plus d’informations sur les configurations réseau (adresses IP statiques et dynamiques), reportez-vous à la section [Configuration du réseau](08-general-operations-and-configurations.md#section-8-6). |
-| 3. | Sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. |  |
+| 3. | En tant qu’utilisateur Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. |  |
 | 4. | Appuyez sur le bouton Paramètres système. |  |
 | 5. | Appuyez sur le bouton Services système. |  |
 | 6. | Assurez-vous que la case Activer partage FTP est cochée. |  |
 | 7. | Choisissez un port pour le serveur FTP. | Le port par défaut est le port 21. |
-| 8. | Appuyez sur le bouton Valider les modifications pour redémarrer le BactoSense. | Nécessaire uniquement si vous avez modifié la configuration. |
+| 8. | Appuyez sur Valider les modifications pour enregistrer les modifications. Si un redémarrage est demandé, appuyez sur Redémarrer maintenant. | Nécessaire uniquement si vous avez modifié la configuration. |
 | 9. | Sur l’écran d’accueil, appuyez sur Paramètres, puis sur Infos système pour obtenir l’adresse IP du BactoSense. | Pour plus d’informations sur les configurations réseau (adresses IP statiques et dynamiques), reportez-vous à la section [Configuration du réseau](08-general-operations-and-configurations.md#section-8-6). |
 | 10. | Pour le client FTP : Ouvrez le client et saisissez les informations de connexion. Pour l’explorateur de fichiers Windows : Saisissez l’adresse suivante dans la barre d’adresse : ftp://user:password@ip:port | • Utilisateur/nom d’utilisateur : Nom d’utilisateur pour se connecter au BactoSense<br/>• Mot de passe : Mot de passe pour se connecter<br/>au BactoSense • Hôte/IP : Adresse IP du<br/>BactoSense • Port : Port configuré dans la vue Services système (voir figure 12-1) |
 
@@ -50,7 +50,12 @@ Les données BactoSense peuvent être consultées à distance à l’aide du pro
 
 Les serveurs HTTP et HTTPS sont activés par défaut et accessibles via un navigateur web ou toute bibliothèque de requêtes HTTP. Utilisez la procédure suivante pour récupérer des fichiers spécifiques via HTTP ou HTTPS. Vous pouvez également utiliser l’interface web (chapitre [Interface utilisateur web](13-web-user-interface.md)) ou le FTP (section [Récupération des données via FTP](12-data-access-and-export.md#section-12-2)).
 
-<table className="manual-table">
+<table className="manual-table manual-http-retrieval">
+<colgroup>
+<col className="http-step-column" />
+<col className="http-instruction-column" />
+<col className="http-detail-column" />
+</colgroup>
 
 <thead>
 
@@ -112,7 +117,7 @@ Pour plus d’informations sur les configurations réseau (adresses IP statiques
 
 <td>
 
-Sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres.
+En tant qu’utilisateur Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres.
 
 </td>
 
@@ -222,7 +227,7 @@ Le port par défaut pour HTTP est 80. Le port par défaut pour HTTPS est 443.
 
 <td>
 
-Appuyez sur le bouton Valider les modifications pour redémarrer le BactoSense.
+Appuyez sur Valider les modifications pour enregistrer les modifications. Si un redémarrage est demandé, appuyez sur Redémarrer maintenant.
 
 </td>
 
@@ -266,7 +271,11 @@ Sur l’écran d’accueil, appuyez sur Paramètres, puis sur Infos système pou
 
 Ouvrez un navigateur web et saisissez l’adresse du fichier souhaité dans la barre d’adresse. L’adresse du fichier a la forme suivante. Pour HTTP : `http://ipaddress:port/export/filename.extension?hash=myhash` Exemple : http://192.168.1.2/export/history_auto.xlsx?hash=QWRtaW46MTExMQ Pour HTTPS : `https://ipaddress:port/export/filename.extension?hash=myhash` Exemple : https://192.168.1.2/export/history_auto.xlsx?hash=QWRtaW46MTExMQ
 
-<table>
+<table className="manual-http-parameters">
+<colgroup>
+<col className="http-parameter-column" />
+<col className="http-description-column" />
+</colgroup>
 
 <thead>
 
@@ -386,7 +395,7 @@ Clé de sécurité contenant l’identification de l’utilisateur. Elle est pro
 
 Virtual Network Computing (VNC) est un système de partage de bureau graphique permettant de contrôler à distance un autre ordinateur. Il transmet les entrées du clavier et de la souris d’un ordinateur à un autre, relayant les mises à jour de l’écran graphique sur un réseau. Le serveur VNC intégré au BactoSense est capable de partager l’interface utilisateur sur le réseau local (LAN) uniquement (exception : accès distant via VPN).
 
-:::warning[Limitez l’accès VNC]
+:::caution[Limitez l’accès VNC]
 
 VNC est un protocole non sécurisé et son utilisation est déconseillée en dehors d’un réseau local ou avec une connexion VPN.
 
@@ -402,12 +411,12 @@ Une connexion VNC peut ralentir l’interface utilisateur, car elle est gourmand
 | --- | --- | --- |
 | 1. | Installez un client VNC sur votre ordinateur. |  |
 | 2. | Connectez le BactoSense via Ethernet à un réseau sécurisé (LAN). Connectez votre ordinateur au même réseau. | Pour plus d’informations sur les configurations réseau (adresses IP statiques et dynamiques), reportez-vous à la section [Configuration du réseau](08-general-operations-and-configurations.md#section-8-6). |
-| 3. | Sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. |  |
+| 3. | En tant qu’utilisateur Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. |  |
 | 4. | Appuyez sur le bouton Paramètres système. |  |
 | 5. | Appuyez sur le bouton Services système. |  |
 | 6. | Assurez-vous que la case Activer contrôle VNC est cochée. |  |
 | 7. | Choisissez un port pour le serveur VNC. | Le port par défaut est le port 5900. |
-| 8. | Appuyez sur le bouton Valider les modifications pour redémarrer le BactoSense. | Nécessaire uniquement si vous avez modifié la configuration. |
+| 8. | Appuyez sur Valider les modifications pour enregistrer les modifications. Si un redémarrage est demandé, appuyez sur Redémarrer maintenant. | Nécessaire uniquement si vous avez modifié la configuration. |
 | 9. | Sur l’écran d’accueil, appuyez sur Paramètres, puis sur Infos système pour obtenir l’adresse IP du BactoSense. |  |
 | 10. | Ouvrez le client VNC sur votre ordinateur et connectez-vous au BactoSense en utilisant l’adresse IP et le port identifiés précédemment. | Votre client VNC peut vous permettre de modifier les paramètres de connexion pour optimiser la vitesse de la connexion si nécessaire. |
-| 11. | Une fois terminé, désactivez la connexion VNC sur la page des services système BactoSense. | La connexion VNC peut ralentir l’interface utilisateur sur le BactoSense. |
+| 11. | Après utilisation, revenez à Services système, décochez la case VNC et appuyez sur Valider les modifications. Si un redémarrage est demandé, appuyez sur Redémarrer maintenant. | La connexion VNC peut ralentir l’interface utilisateur sur le BactoSense. |

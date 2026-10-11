@@ -262,9 +262,9 @@
       "id": "en-services-label-019",
       "locale": "en",
       "file": "docs/12-data-access-and-export.md",
-      "old": "| Press the System services button. |",
-      "new": "| Press the Services button. |",
-      "reason": "Match the current Services menu label (the screen itself still says Manage services).",
+      "old": "| Press the Services button. |",
+      "new": "| Press the System services button. |",
+      "reason": "Match the current compiled English menu label System services; the screen heading is Manage system services.",
       "sections": [
         "12-2",
         "12-3"
@@ -3085,5 +3085,3015 @@
     "active_operation_note": "The current GUI separately prompts to stop an active scheduler or wait/stop a running operation. Those existing active-operation confirmations are not changed by the idle navigation wording."
   },
   "supplemental_review_utc": "2026-10-11T19:34:13+00:00",
-  "reviewedUtc": "2026-10-11T20:02:26.279Z"
+  "reviewedUtc": "2026-10-11T20:02:26.279Z",
+  "navigation_import_entries": [
+    {
+      "id": "en-navigation-root-001",
+      "locale": "en",
+      "file": "docs/06-io-box.md",
+      "old": "Navigate to the Home menu of the BactoSense user interface.",
+      "new": "On the Home screen, press Settings.",
+      "reason": "The current Home dashboard opens these menus through Settings.",
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-root-review.json",
+          "entry_id": "en-navigation-root-001"
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-root-002",
+      "locale": "en",
+      "file": "docs/09-upgrade-packages.md",
+      "old": "Navigate to the Home menu of the BactoSense user interface.",
+      "new": "On the Home screen, press Settings.",
+      "reason": "The current Home dashboard opens these menus through Settings.",
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-root-review.json",
+          "entry_id": "en-navigation-root-002"
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-root-003",
+      "locale": "en",
+      "file": "docs/06-io-box.md",
+      "old": "in the Inputs list",
+      "new": "in the Input list",
+      "reason": "Match visible current input/output controls and production locale.",
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-root-review.json",
+          "entry_id": "en-navigation-root-003"
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-root-004",
+      "locale": "en",
+      "file": "docs/06-io-box.md",
+      "old": "“Scheduler activated”",
+      "new": "“Use scheduler”",
+      "reason": "Match visible current input/output controls and production locale.",
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-root-review.json",
+          "entry_id": "en-navigation-root-004"
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-root-005",
+      "locale": "en",
+      "file": "docs/07-field-bus-interface.md",
+      "old": "The BactoSense must have the Modbus TCP service activated in the System settings /  System services menu.",
+      "new": "The BactoSense must have the Modbus TCP service activated under Home → Settings → System settings → System services.",
+      "reason": "Complete current Modbus service menu route, using production translations.",
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-root-review.json",
+          "entry_id": "en-navigation-root-005"
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-root-006",
+      "locale": "en",
+      "file": "docs/09-upgrade-packages.md",
+      "old": "On the user interface. In the *Home Menu*, press on *Logs* and then *Audit trail*.",
+      "new": "On the instrument user interface, open Home → Settings → Logs → Audit trail.",
+      "reason": "Audit trail is reached through Home > Settings > Logs.",
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-root-review.json",
+          "entry_id": "en-navigation-root-006"
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-root-007",
+      "locale": "en",
+      "file": "docs/09-upgrade-packages.md",
+      "old": "Press Save.",
+      "new": "Press Save, then acknowledge the confirmation with OK.",
+      "reason": "The current configuration save reports Settings changed and requires OK to dismiss.",
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-root-review.json",
+          "entry_id": "en-navigation-root-007"
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-root-008",
+      "locale": "en",
+      "file": "docs/17-storage-transport-and-disposal.md",
+      "old": "or can be found on the System info page on the user interface, accessible from the Home menu.",
+      "new": "or can be found on the instrument user interface under Home → Settings → System info.",
+      "reason": "System info is an instrument screen accessed through Home > Settings, not the old Home menu or web interface.",
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-root-review.json",
+          "entry_id": "en-navigation-root-008"
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-root-009",
+      "locale": "en",
+      "file": "docs/17-storage-transport-and-disposal.md",
+      "old": "Remove the cartridge using the Remove cartridge procedure in the Cartridge change menu.",
+      "new": "Remove the cartridge using the Remove cartridge procedure under Home → Settings → Maintenance → Cartridge change. Basic users open Cartridge change directly from Settings.",
+      "reason": "Complete the role-dependent Cartridge change route without changing the removal procedure.",
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-root-review.json",
+          "entry_id": "en-navigation-root-009"
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-root-supplement-090",
+      "locale": "en",
+      "file": "docs/06-io-box.md",
+      "old": "## 6.8 Digital and analogue output testing {#section-6-8}",
+      "new": "## 6.8 Digital and analogue output testing {#section-6-8}\n\nLog in as Admin and use Test outputs while the instrument is idle, with PLC mode disabled.",
+      "reason": "Match actual compiled control labels and the effective Admin/Service, idle, non-PLC access guard.",
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-root-review.json",
+          "entry_id": "en-navigation-root-supplement-090"
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-root-supplement-103",
+      "locale": "en",
+      "file": "docs/09-upgrade-packages.md",
+      "old": "Activate the package while the instrument is idle, with PLC and Simulation mode disabled.",
+      "new": "Activate the package while the instrument is idle, with PLC mode and Demo mode disabled.",
+      "reason": "Use the actual compiled Demo/PLC labels and cover the current success-message reboot branch before checking licence status.",
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-root-review.json",
+          "entry_id": "en-navigation-root-supplement-103"
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-root-supplement-104",
+      "locale": "en",
+      "file": "docs/09-upgrade-packages.md",
+      "old": "After successful activation, press OK in the confirmation message and check that Scientific package shows Activated.",
+      "new": "After successful activation, press OK in the confirmation message. If the instrument restarts, wait for it to finish, then open Upgrades again. Check that Scientific package shows Activated.",
+      "reason": "Use the actual compiled Demo/PLC labels and cover the current success-message reboot branch before checking licence status.",
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-root-review.json",
+          "entry_id": "en-navigation-root-supplement-104"
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-index-home",
+      "locale": "en",
+      "file": "docs/20-index.md",
+      "old": "Home menu",
+      "new": "Home screen and Settings menu",
+      "reason": "Name the current Home dashboard and separate Settings menu in index navigation references.",
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-root-review.json",
+          "entry_id": "en-navigation-index-home"
+        }
+      ]
+    },
+    {
+      "id": "en-settings-control-illustration-118-cell-1-3",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")",
+      "new": "![BactoSense — Settings button](/img/gui/en/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon.",
+      "kind": "image-context",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-root-review.json",
+          "entry_id": "en-settings-control-illustration-118"
+        },
+        {
+          "file": "maintenance/gui-navigation-root-review.json",
+          "entry_id": "en-settings-control-illustration-119"
+        }
+      ],
+      "sections": [
+        "8-6",
+        "8-7"
+      ],
+      "table_step": "1.",
+      "table_column": 3
+    },
+    {
+      "id": "en-settings-control-illustration-120-cell-1-3",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")",
+      "new": "![BactoSense — Settings button](/img/gui/en/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon.",
+      "kind": "image-context",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-root-review.json",
+          "entry_id": "en-settings-control-illustration-120"
+        },
+        {
+          "file": "maintenance/gui-navigation-root-review.json",
+          "entry_id": "en-settings-control-illustration-121"
+        }
+      ],
+      "sections": [
+        "8-12",
+        "8-13"
+      ],
+      "table_step": "1.",
+      "table_column": 3
+    },
+    {
+      "id": "en-settings-control-illustration-122-cell-1-3",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")",
+      "new": "![BactoSense — Settings button](/img/gui/en/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon.",
+      "kind": "image-context",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-root-review.json",
+          "entry_id": "en-settings-control-illustration-122"
+        }
+      ],
+      "sections": [
+        "8-4"
+      ],
+      "table_step": "1.",
+      "table_column": 3
+    },
+    {
+      "id": "en-settings-control-illustration-123-cell-1-3",
+      "locale": "en",
+      "file": "docs/11-results-and-data-analysis.md",
+      "old": "![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")",
+      "new": "![BactoSense — Settings button](/img/gui/en/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon.",
+      "kind": "image-context",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-root-review.json",
+          "entry_id": "en-settings-control-illustration-123"
+        }
+      ],
+      "sections": [
+        "11-4-3"
+      ],
+      "table_step": "1.",
+      "table_column": 3
+    },
+    {
+      "id": "en-settings-control-illustration-124-cell-1-3",
+      "locale": "en",
+      "file": "docs/15-maintenance.md",
+      "old": "![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")",
+      "new": "![BactoSense — Settings button](/img/gui/en/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon.",
+      "kind": "image-context",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-root-review.json",
+          "entry_id": "en-settings-control-illustration-124"
+        }
+      ],
+      "sections": [
+        "15-1-2"
+      ],
+      "table_step": "1.",
+      "table_column": 3
+    },
+    {
+      "id": "en-remove-cartridge-empty-info-cell",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "<td>\n\nt\n\n</td>",
+      "new": "<td>\n\n</td>",
+      "reason": "Remove a stray source-extraction character from the otherwise empty removal-step information cell.",
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-root-review.json",
+          "entry_id": "en-remove-cartridge-empty-info-cell"
+        }
+      ]
+    },
+    {
+      "id": "en-web-system-info-settings-control",
+      "locale": "en",
+      "file": "docs/13-web-user-interface.md",
+      "old": "![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")",
+      "new": "![BactoSense — Settings button](/img/gui/en/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")",
+      "reason": "The System info procedure presses Settings on Home; show the reviewed Settings control.",
+      "kind": "image-context",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-root-review.json",
+          "entry_id": "en-web-system-info-settings-control"
+        }
+      ],
+      "sections": [
+        "13-2"
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-001-cell-1-2",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "Select Log out Lock screen.",
+      "new": "Select Log out / Lock screen.",
+      "reason": "Match the current Log out / Lock screen modal control.",
+      "sections": [
+        "8-2-2"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 0
+        }
+      ],
+      "table_step": "3.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-002-cell-1-2",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "On the Home screen, press Settings to open the settings menu.",
+      "new": "As an Admin user, press Settings on the Home screen to open the settings menu.",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.",
+      "sections": [
+        "8-2-3"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 1
+        }
+      ],
+      "table_step": "1.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-003-cell-1-2",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "On the Home screen, press Settings to open the settings menu.",
+      "new": "As an Admin user, press Settings on the Home screen to open the settings menu.",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Match the actual Advanced user management mode checkbox.",
+      "sections": [
+        "8-2-4"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 2
+        }
+      ],
+      "table_step": "1.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-004-cell-1-2",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "Check the Advanced user management mode check box.",
+      "new": "Check the Advanced user management mode checkbox.",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Match the actual Advanced user management mode checkbox.",
+      "sections": [
+        "8-2-4"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 3
+        }
+      ],
+      "table_step": "4.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-005-cell-1-2",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "On the Home screen, press Settings, then System settings.",
+      "new": "On the Home screen, press Settings. Basic users press Change password; Advanced and Admin users press System settings, then Users.",
+      "reason": "Basic users have Change password directly in Settings; higher roles use System settings > Users.; Users is opened in the previous step; Edit follows selecting the permitted user profile.; Change PIN permits the current user or a user with a lower role; another Admin PIN is not permitted.; Name the current inline PIN and Confirm PIN controls, followed by Save.",
+      "sections": [
+        "8-2-5"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 4
+        }
+      ],
+      "table_step": "1.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-005-cell-2-2",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "Press on Users and then select the user profile you want to edit. Press Edit after selecting one check box.",
+      "new": "Select the user profile you want to edit, then press Edit.",
+      "reason": "Basic users have Change password directly in Settings; higher roles use System settings > Users.; Users is opened in the previous step; Edit follows selecting the permitted user profile.; Change PIN permits the current user or a user with a lower role; another Admin PIN is not permitted.; Name the current inline PIN and Confirm PIN controls, followed by Save.",
+      "sections": [
+        "8-2-5"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 4
+        }
+      ],
+      "table_step": "2.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-005-cell-2-3",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "Admin users are allowed to change passwords from other user profiles.",
+      "new": "Basic and Advanced users can change their own PIN. Admin users can also change the PIN of Basic and Advanced users.",
+      "reason": "Basic users have Change password directly in Settings; higher roles use System settings > Users.; Users is opened in the previous step; Edit follows selecting the permitted user profile.; Change PIN permits the current user or a user with a lower role; another Admin PIN is not permitted.; Name the current inline PIN and Confirm PIN controls, followed by Save.",
+      "sections": [
+        "8-2-5"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 4
+        }
+      ],
+      "table_step": "2.",
+      "table_column": 3
+    },
+    {
+      "id": "en-navigation-import-native-005-cell-3-2",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "Press on Change PIN, enter the new pin twice and press Save.",
+      "new": "Press Change PIN. Enter the new PIN in PIN and Confirm PIN, then press Save.",
+      "reason": "Basic users have Change password directly in Settings; higher roles use System settings > Users.; Users is opened in the previous step; Edit follows selecting the permitted user profile.; Change PIN permits the current user or a user with a lower role; another Admin PIN is not permitted.; Name the current inline PIN and Confirm PIN controls, followed by Save.",
+      "sections": [
+        "8-2-5"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 4
+        }
+      ],
+      "table_step": "3.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-006-cell-1-2",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "On the Home screen, press Settings to open the settings menu.",
+      "new": "As an Admin user, press Settings on the Home screen to open the settings menu.",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.",
+      "sections": [
+        "8-2-6"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 5
+        }
+      ],
+      "table_step": "1.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-007-cell-1-2",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "On the Home screen, press Settings to open the settings menu.",
+      "new": "As an Admin user, press Settings on the Home screen to open the settings menu.",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Follow the actual System settings > Language route.; Language selection requires the Reload interface action, whose label is localized in the target language.",
+      "sections": [
+        "8-3-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 6
+        }
+      ],
+      "table_step": "1.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-007-cell-2-2",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "Press on System settings, then press Language.",
+      "new": "Press the System settings button. Press the Language button.",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Follow the actual System settings > Language route.; Language selection requires the Reload interface action, whose label is localized in the target language.",
+      "sections": [
+        "8-3-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 6
+        }
+      ],
+      "table_step": "2.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-008-cell-1-2",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "A message appears requesting a reload of the user interface. Confirm the message.",
+      "new": "When prompted to reload the user interface, press Reload interface.",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Follow the actual System settings > Language route.; Language selection requires the Reload interface action, whose label is localized in the target language.",
+      "sections": [
+        "8-3-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 7
+        }
+      ],
+      "table_step": "4.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-009",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "If time synchronization is enabled, either with NTP servers or through Modbus TCP, your  manual date and time settings will be overridden during the next synchronization.  Settings can be found under **System settings** &gt; **Date &amp; Time** &gt; **Time synchronization settings**. For setting up NTP server, please refer to [Set NTP Servers](08-general-operations-and-configurations.md#section-8-7).",
+      "new": "If time synchronization is enabled, either with NTP servers or through Modbus TCP, your  manual date and time settings will be overridden during the next synchronization.  Settings can be found under Home > Settings > System settings > Date & time > Time synchronization settings. For setting up NTP server, please refer to [Set NTP Servers](08-general-operations-and-configurations.md#section-8-7).",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Use the current Date & time menu label.; The time-sync shortcut must include Home > Settings and the actual localized submenu names.; Select the time zone using the native localized control, rather than an English label in translated instructions.",
+      "sections": [
+        "8-3-2"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 8
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-010-cell-1-2",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "On the Home screen, press Settings to open the settings menu.",
+      "new": "As an Admin user, press Settings on the Home screen to open the settings menu.",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Use the current Date & time menu label.; The time-sync shortcut must include Home > Settings and the actual localized submenu names.; Select the time zone using the native localized control, rather than an English label in translated instructions.",
+      "sections": [
+        "8-3-2"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 9
+        }
+      ],
+      "table_step": "1.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-011-cell-1-2",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "Press the Date &amp; Time button.",
+      "new": "Press the Date &amp; time button.",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Use the current Date & time menu label.; The time-sync shortcut must include Home > Settings and the actual localized submenu names.; Select the time zone using the native localized control, rather than an English label in translated instructions.",
+      "sections": [
+        "8-3-2"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 10
+        }
+      ],
+      "table_step": "3.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-012-cell-1-2",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "Select the Time zone.",
+      "new": "Select the time zone.",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Use the current Date & time menu label.; The time-sync shortcut must include Home > Settings and the actual localized submenu names.; Select the time zone using the native localized control, rather than an English label in translated instructions.",
+      "sections": [
+        "8-3-2"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 11
+        }
+      ],
+      "table_step": "5.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-013-cell-1-2",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "On the Home screen, press Settings to open the settings menu.",
+      "new": "As an Admin user, press Settings on the Home screen to open the settings menu.",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Device name is an editable text field on System configuration.; The name keyboard must close with OK before saving System configuration.",
+      "sections": [
+        "8-3-3"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 12
+        }
+      ],
+      "table_step": "1.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-014-cell-1-2",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "Press the Device name button.",
+      "new": "Tap the Device name field.",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Device name is an editable text field on System configuration.; The name keyboard must close with OK before saving System configuration.",
+      "sections": [
+        "8-3-3"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 13
+        }
+      ],
+      "table_step": "4.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-014-cell-2-2",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "Enter your individual device name in the input field.",
+      "new": "Enter the device name using the keyboard and press OK.",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Device name is an editable text field on System configuration.; The name keyboard must close with OK before saving System configuration.",
+      "sections": [
+        "8-3-3"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 13
+        }
+      ],
+      "table_step": "5.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-015-cell-1-2",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "Activate the Sound notifications option.",
+      "new": "Activate Sound notifications.",
+      "reason": "Use the compiled Sound notifications checkbox label.",
+      "sections": [
+        "8-3-5"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 14
+        }
+      ],
+      "table_step": "4.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-016-cell-1-2",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "On the Home screen, press Settings to open the settings menu.",
+      "new": "As an Admin user, press Settings on the Home screen to open the settings menu.",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Import settings opens a Reboot now / Cancel confirmation before executing.; Match the current Import settings control label.",
+      "sections": [
+        "8-4"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 15
+        }
+      ],
+      "table_step": "1.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-017-cell-1-2",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "Press Import settings",
+      "new": "Press the Import settings button.",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Import settings opens a Reboot now / Cancel confirmation before executing.; Match the current Import settings control label.",
+      "sections": [
+        "8-4"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 16
+        }
+      ],
+      "table_step": "5.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-018-cell-1-2",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "Press Import settings and wait until the device reboots",
+      "new": "Press Import settings, then Reboot now in the confirmation message, and wait until the device reboots.",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Import settings opens a Reboot now / Cancel confirmation before executing.; Match the current Import settings control label.",
+      "sections": [
+        "8-4"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 17
+        }
+      ],
+      "table_step": "7.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-019-cell-1-2",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "Press Alarms.",
+      "new": "Press the Alarm button.",
+      "reason": "The Alarms menu uses Dico.stringAlarm(2).; Dico.stringAlarm(2) resolves the singular compiled label in the current production catalogs; use the actual menu label.",
+      "sections": [
+        "8-5"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 18
+        }
+      ],
+      "table_step": "3.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-020",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "On the Home screen, press Settings to open the settings menu.",
+      "new": "As an Admin user, press Settings on the Home screen to open the settings menu.",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.",
+      "sections": [
+        "8-6"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 19
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-021",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "Network Time Protocol (NTP) is a computer network protocol which is used to synchronise  time on computers across a network. By default, these are set to synchronise to the  Network Time Foundation servers (ntp.org). You have the possibility to set custom NTP  servers in the *Date and Time* menu.",
+      "new": "Network Time Protocol (NTP) is a computer network protocol which is used to synchronise  time on computers across a network. By default, these are set to synchronise to the  Network Time Foundation servers (ntp.org). You have the possibility to set custom NTP  servers in the *Date &amp; time* menu.",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Use the current Date & time menu label.; Use the Date & time screen’s Time synchronization settings button, not the differently translated next-page heading.; Test NTP triggers the reachability check; OK saves services settings.; Match the Date & time menu name in the introductory navigation sentence.",
+      "sections": [
+        "8-7"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 20
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-022",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "On the Home screen, press Settings to open the settings menu.",
+      "new": "As an Admin user, press Settings on the Home screen to open the settings menu.",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Use the current Date & time menu label.; Use the Date & time screen’s Time synchronization settings button, not the differently translated next-page heading.; Test NTP triggers the reachability check; OK saves services settings.; Match the Date & time menu name in the introductory navigation sentence.",
+      "sections": [
+        "8-7"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 21
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-023",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "Press the Date &amp; Time button.",
+      "new": "Press the Date &amp; time button.",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Use the current Date & time menu label.; Use the Date & time screen’s Time synchronization settings button, not the differently translated next-page heading.; Test NTP triggers the reachability check; OK saves services settings.; Match the Date & time menu name in the introductory navigation sentence.",
+      "sections": [
+        "8-7"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 22
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-024",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "Press Time synchronization settings button.",
+      "new": "Press the Time synchronization settings button.",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Use the current Date & time menu label.; Use the Date & time screen’s Time synchronization settings button, not the differently translated next-page heading.; Test NTP triggers the reachability check; OK saves services settings.; Match the Date & time menu name in the introductory navigation sentence.",
+      "sections": [
+        "8-7"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 23
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-025",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "By editing and changing a server address and pressing OK, it will automatically ping the server and update the date and time.",
+      "new": "Press Test NTP to check whether the configured servers are reachable. Press OK to save the synchronization settings.",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Use the current Date & time menu label.; Use the Date & time screen’s Time synchronization settings button, not the differently translated next-page heading.; Test NTP triggers the reachability check; OK saves services settings.; Match the Date & time menu name in the introductory navigation sentence.",
+      "sections": [
+        "8-7"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 24
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-026",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "### 8.8.1 General structure and home menu {#section-8-8-1}",
+      "new": "### 8.8.1 General structure, Home screen and Settings menu {#section-8-8-1}",
+      "reason": "Rename the section to describe the current Home screen and Settings menu, as requested in root review; preserve the section anchor.",
+      "sections": [
+        "8-8-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 25
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-027",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "Select the Change cartridge option.",
+      "new": "Select Change cartridge.",
+      "reason": "Match the current cartridge wizard action label.; Keep step4 as the Cartridge change parent menu tile; step5 selects the separate Change cartridge or Install cartridge workflow.",
+      "sections": [
+        "8-9-4"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 26
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-028",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "Select the Remove cartridge option.",
+      "new": "Select Remove cartridge.",
+      "reason": "Maintenance moved from Home into Settings; Basic users use Cartridge change directly.; Match the current cartridge wizard action label.",
+      "sections": [
+        "8-9-5"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 27
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-029",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "The top bar of the user interface indicates that no cartridge is connected. The Maintenance button in the Home menu is now dis- played in orange.<br />![BactoSense — Cartridge not ready](/img/gui/icons/cartridge-not-ready-status.png \"width=30 class=manual-icon\")",
+      "new": "The top bar of the user interface indicates that no cartridge is connected. In the Settings menu, Maintenance is highlighted; Basic users see the highlighted Cartridge change button directly.<br />![BactoSense — Cartridge not ready](/img/gui/icons/cartridge-not-ready-status.png \"width=30 class=manual-icon\")",
+      "reason": "Maintenance moved from Home into Settings; Basic users use Cartridge change directly.; Match the current cartridge wizard action label.",
+      "sections": [
+        "8-9-5"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 28
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-030",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "Select the Install cartridge option.",
+      "new": "Select Install cartridge.",
+      "reason": "Match the current cartridge wizard action label.; Keep step4 as the Cartridge change parent menu tile; step5 selects the separate Change cartridge or Install cartridge workflow.",
+      "sections": [
+        "8-9-6"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 29
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-031-cell-1-2",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "In the BactoSense user interface, navigate to the Home menu.",
+      "new": "Navigate to the Home screen of the BactoSense user interface.",
+      "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label.",
+      "sections": [
+        "8-11-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 30
+        }
+      ],
+      "table_step": "4.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-032-cell-1-2",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "Choose the Prime protocol from the list of available protocols.",
+      "new": "Select Prime from the list of available protocols.",
+      "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label.",
+      "sections": [
+        "8-11-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 31
+        }
+      ],
+      "table_step": "6.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-033-cell-1-2",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "Select the Water Analysis protocol from the list of available protocols.",
+      "new": "Select Water Analysis from the list of available protocols.",
+      "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label.",
+      "sections": [
+        "8-11-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 32
+        }
+      ],
+      "table_step": "11.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-034",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "On the Home screen, press Settings to open the settings menu.",
+      "new": "As an Admin user, press Settings on the Home screen to open the settings menu.",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Match the exact current System settings > Demo mode route.; Use the production Activate demo mode checkbox label.; Use the same native checkbox label when returning from Demo mode.",
+      "sections": [
+        "8-12"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 33
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-035",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "Enter the System settings button, and then the Demo mode button.",
+      "new": "Press the System settings button. Press the Demo mode button.",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Match the exact current System settings > Demo mode route.; Use the production Activate demo mode checkbox label.; Use the same native checkbox label when returning from Demo mode.",
+      "sections": [
+        "8-12"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 34
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-036",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "Select the Activate demo mode box.",
+      "new": "Select the Activate demo mode checkbox.",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Match the exact current System settings > Demo mode route.; Use the production Activate demo mode checkbox label.; Use the same native checkbox label when returning from Demo mode.",
+      "sections": [
+        "8-12"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 35
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-037",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "To return into normal mode, follow the same procedure, but uncheck the **Activate demo**  **mode** box.",
+      "new": "To return into normal mode, follow the same procedure, but uncheck the **Activate demo mode** box.",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Match the exact current System settings > Demo mode route.; Use the production Activate demo mode checkbox label.; Use the same native checkbox label when returning from Demo mode.",
+      "sections": [
+        "8-12"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 36
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-038",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "On the Home screen, press Settings to open the settings menu.",
+      "new": "As an Admin user, press Settings on the Home screen to open the settings menu.",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Factory reset opens a Yes/No confirmation before making any change.",
+      "sections": [
+        "8-13"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 37
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-039",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "Then press the Reset the device and reboot button.",
+      "new": "Press Reset the device and reboot, then confirm with Yes.",
+      "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Factory reset opens a Yes/No confirmation before making any change.",
+      "sections": [
+        "8-13"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 38
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-040-cell-1-2",
+      "locale": "en",
+      "file": "docs/10-measurements.md",
+      "old": "In the BactoSense user interface, navigate to the Home menu.",
+      "new": "Navigate to the Home screen of the BactoSense user interface.",
+      "reason": "Home is a result screen; mode selection is a separate control.; Replace the former footer mode selector with Mode > Online mode > Back; the following Home Start opens the online wizard.; Start on the Online Home screen opens AutoInstructionWizardScreen directly; the later wizard Start executes the schedule.; Match the protocol checkbox label without changing the selected analysis protocol.; The simple schedule checkbox is translated in SchedulerView, not ScheduleIntervalScreen.; Existing advanced schedules can open the weekly editor; Back restores the simple interval flow described here.",
+      "sections": [
+        "10-2-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 39
+        }
+      ],
+      "table_step": "2.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-040-cell-2-2",
+      "locale": "en",
+      "file": "docs/10-measurements.md",
+      "old": "On the action bar at the bottom, select Online mode and press Start.",
+      "new": "On the Home screen, press Mode and select Online mode. Press Back to return to the Home screen.",
+      "reason": "Home is a result screen; mode selection is a separate control.; Replace the former footer mode selector with Mode > Online mode > Back; the following Home Start opens the online wizard.; Start on the Online Home screen opens AutoInstructionWizardScreen directly; the later wizard Start executes the schedule.; Match the protocol checkbox label without changing the selected analysis protocol.; The simple schedule checkbox is translated in SchedulerView, not ScheduleIntervalScreen.; Existing advanced schedules can open the weekly editor; Back restores the simple interval flow described here.",
+      "sections": [
+        "10-2-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 39
+        }
+      ],
+      "table_step": "3.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-040-cell-3-2",
+      "locale": "en",
+      "file": "docs/10-measurements.md",
+      "old": "Press the Start button.",
+      "new": "Press Start on the Home screen to open the online measurement wizard.",
+      "reason": "Home is a result screen; mode selection is a separate control.; Replace the former footer mode selector with Mode > Online mode > Back; the following Home Start opens the online wizard.; Start on the Online Home screen opens AutoInstructionWizardScreen directly; the later wizard Start executes the schedule.; Match the protocol checkbox label without changing the selected analysis protocol.; The simple schedule checkbox is translated in SchedulerView, not ScheduleIntervalScreen.; Existing advanced schedules can open the weekly editor; Back restores the simple interval flow described here.",
+      "sections": [
+        "10-2-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 39
+        }
+      ],
+      "table_step": "4.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-040-cell-4-2",
+      "locale": "en",
+      "file": "docs/10-measurements.md",
+      "old": "Under Protocol, make sure the check box for “Online Sampling Device (with Backflush)” is checked.",
+      "new": "Under Protocol, make sure the checkbox for “Online Sampling Device (with Backflush)” is checked.",
+      "reason": "Home is a result screen; mode selection is a separate control.; Replace the former footer mode selector with Mode > Online mode > Back; the following Home Start opens the online wizard.; Start on the Online Home screen opens AutoInstructionWizardScreen directly; the later wizard Start executes the schedule.; Match the protocol checkbox label without changing the selected analysis protocol.; The simple schedule checkbox is translated in SchedulerView, not ScheduleIntervalScreen.; Existing advanced schedules can open the weekly editor; Back restores the simple interval flow described here.",
+      "sections": [
+        "10-2-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 39
+        }
+      ],
+      "table_step": "5.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-041-cell-1-2",
+      "locale": "en",
+      "file": "docs/10-measurements.md",
+      "old": "Select the measurement interval using the wheel on the right hand side.",
+      "new": "If the weekly schedule editor is displayed, press Back to return to the simple interval schedule. Select the measurement interval using the wheel on the right hand side.",
+      "reason": "Home is a result screen; mode selection is a separate control.; Replace the former footer mode selector with Mode > Online mode > Back; the following Home Start opens the online wizard.; Start on the Online Home screen opens AutoInstructionWizardScreen directly; the later wizard Start executes the schedule.; Match the protocol checkbox label without changing the selected analysis protocol.; The simple schedule checkbox is translated in SchedulerView, not ScheduleIntervalScreen.; Existing advanced schedules can open the weekly editor; Back restores the simple interval flow described here.",
+      "sections": [
+        "10-2-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 40
+        }
+      ],
+      "table_step": "9.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-041-cell-2-2",
+      "locale": "en",
+      "file": "docs/10-measurements.md",
+      "old": "If needed, you can delay the starting time by unchecking the Start immediately box and choose a specific time to start.",
+      "new": "If needed, delay the starting time by unchecking Start immediately and choosing a specific start time.",
+      "reason": "Home is a result screen; mode selection is a separate control.; Replace the former footer mode selector with Mode > Online mode > Back; the following Home Start opens the online wizard.; Start on the Online Home screen opens AutoInstructionWizardScreen directly; the later wizard Start executes the schedule.; Match the protocol checkbox label without changing the selected analysis protocol.; The simple schedule checkbox is translated in SchedulerView, not ScheduleIntervalScreen.; Existing advanced schedules can open the weekly editor; Back restores the simple interval flow described here.",
+      "sections": [
+        "10-2-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 40
+        }
+      ],
+      "table_step": "10.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-042-cell-1-2",
+      "locale": "en",
+      "file": "docs/10-measurements.md",
+      "old": "Press the Stop button on the user interface.",
+      "new": "In Online mode, tap the plot on the Home screen to open the online chart. Press Stop.",
+      "reason": "Stop is on AutoMainScreen; Home has no Stop button.",
+      "sections": [
+        "10-2-2"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 41
+        }
+      ],
+      "table_step": "1.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-043-cell-1-2",
+      "locale": "en",
+      "file": "docs/10-measurements.md",
+      "old": "In the BactoSense user interface, navigate to the Home menu.",
+      "new": "Navigate to the Home screen of the BactoSense user interface.",
+      "reason": "Completed analysis uses Next to open the detailed result view.; The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label.",
+      "sections": [
+        "10-3-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 42
+        }
+      ],
+      "table_step": "4.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-044-cell-1-2",
+      "locale": "en",
+      "file": "docs/10-measurements.md",
+      "old": "Choose the Water Analysis protocol from the list of available protocols.",
+      "new": "Select Water Analysis from the list of available protocols.",
+      "reason": "Completed analysis uses Next to open the detailed result view.; The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label.",
+      "sections": [
+        "10-3-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 43
+        }
+      ],
+      "table_step": "6.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-045-cell-1-2",
+      "locale": "en",
+      "file": "docs/10-measurements.md",
+      "old": "After finishing the measurement, view the results. Results are explained in [Measurement results](11-results-and-data-analysis.md#section-11-1).",
+      "new": "After finishing the measurement, press Next to view the results. Results are explained in [Measurement results](11-results-and-data-analysis.md#section-11-1).",
+      "reason": "Completed analysis uses Next to open the detailed result view.; The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label.",
+      "sections": [
+        "10-3-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 44
+        }
+      ],
+      "table_step": "12.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-046-cell-1-2",
+      "locale": "en",
+      "file": "docs/10-measurements.md",
+      "old": "Navigate to the Home menu and press Results (Manual) or Results (Online).",
+      "new": "On the Home screen, press Settings, then Logs, and select Results (manual mode) or Results (online mode).",
+      "reason": "Both historical buckets are reached through Settings > Logs; Home Results opens only the active mode.",
+      "sections": [
+        "10-4"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 45
+        }
+      ],
+      "table_step": "1.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-047-cell-1-2",
+      "locale": "en",
+      "file": "docs/10-measurements.md",
+      "old": "Navigate to the Home menu and press Results (Manual) or Results (Online).",
+      "new": "On the Home screen, press Settings, then Logs, and select Results (manual mode) or Results (online mode).",
+      "reason": "Both historical buckets are reached through Settings > Logs; Home Results opens only the active mode.",
+      "sections": [
+        "10-7"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 46
+        }
+      ],
+      "table_step": "1.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-048-cell-1-2",
+      "locale": "en",
+      "file": "docs/10-measurements.md",
+      "old": "Navigate to the Home menu and press Results (Manual) or Results (Online).",
+      "new": "On the Home screen, press Settings, then Logs, and select Results (manual mode) or Results (online mode).",
+      "reason": "Both historical buckets are reached through Settings > Logs; Home Results opens only the active mode.; Export series opens ExportConfigScreen; selected replicate groups export through multi-selection Export.",
+      "sections": [
+        "10-8-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 47
+        }
+      ],
+      "table_step": "1.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-048-cell-2-2",
+      "locale": "en",
+      "file": "docs/10-measurements.md",
+      "old": "In the results list,<br/>• press the Export series button to export a set of measurements or all measurements.<br/>• select a group of replicates and press the Export series button to export this group of replicates.<br/>• select a single measurement and then press Export to export only a single measurement.",
+      "new": "In the results list:<br/>• Press Export series, choose the date range and optional name filter, then press OK to export a series.<br/>• Long-press a replicate group, then press Export to export that group.<br/>• Open a single measurement, then press Export to export only that measurement.",
+      "reason": "Both historical buckets are reached through Settings > Logs; Home Results opens only the active mode.; Export series opens ExportConfigScreen; selected replicate groups export through multi-selection Export.",
+      "sections": [
+        "10-8-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 47
+        }
+      ],
+      "table_step": "2.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-049-cell-1-2",
+      "locale": "en",
+      "file": "docs/10-measurements.md",
+      "old": "In the BactoSense user interface, navigate to the Home menu.",
+      "new": "Navigate to the Home screen of the BactoSense user interface.",
+      "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label.",
+      "sections": [
+        "10-9-3"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 48
+        }
+      ],
+      "table_step": "2.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-050-cell-1-2",
+      "locale": "en",
+      "file": "docs/10-measurements.md",
+      "old": "Choose the Prime protocol from the list of available protocols.",
+      "new": "Select Prime from the list of available protocols.",
+      "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label.",
+      "sections": [
+        "10-9-3"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 49
+        }
+      ],
+      "table_step": "4.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-051-cell-1-2",
+      "locale": "en",
+      "file": "docs/11-results-and-data-analysis.md",
+      "old": "The Re-Gate result button allows to apply a different gating to the measurement data. For details refer to [Regate measurements](../results-and-data-analysis/#section-11-4-1).",
+      "new": "The Re-gate result button allows to apply a different gating to the measurement data. For details refer to [Regate measurements](../results-and-data-analysis/#section-11-4-1).",
+      "reason": "The result-action label comes from CommonText, whose compiled localization differs from old prose translations.",
+      "sections": [
+        "11-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 50
+        }
+      ],
+      "table_step": "8",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-052",
+      "locale": "en",
+      "file": "docs/11-results-and-data-analysis.md",
+      "old": "The default gates on the BactoSense can be found when pressing on Gate settings in the Home menu of the BactoSense user interface.",
+      "new": "On the Home screen, press Settings, then Gate settings to view the available gating sets.",
+      "reason": "Gate settings moved into the Settings menu; gates themselves and regating prerequisites are unchanged.; Make the complete Home > Settings > Gate settings path explicit without changing gating prerequisites.",
+      "sections": [
+        "11-2-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 51
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-053",
+      "locale": "en",
+      "file": "docs/11-results-and-data-analysis.md",
+      "old": "A list of all available gating sets on the BactoSense can be found when pressing Gate settings in the Home menu of the BactoSense user interface.",
+      "new": "On the Home screen, press Settings, then Gate settings to view the available gating sets.",
+      "reason": "Gate settings moved into the Settings menu; gates themselves and regating prerequisites are unchanged.; Make the complete Home > Settings > Gate settings path explicit without changing gating prerequisites.",
+      "sections": [
+        "11-2-2"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 52
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-054",
+      "locale": "en",
+      "file": "docs/11-results-and-data-analysis.md",
+      "old": "A prerequisite for regating is the presence of such additional gating set. Find all available gating sets for your cartridge type when pressing Gate settings on the Home menu of the BactoSense user interface.",
+      "new": "A prerequisite for regating is the presence of such additional gating set. On the Home screen, press Settings, then Gate settings to view the available gating sets.",
+      "reason": "Gate settings moved into the Settings menu; gates themselves and regating prerequisites are unchanged.; Open Settings from Home before choosing a historical results bucket.; Logs provides both historical results buckets without changing the active mode.; Single result and multi-selection have distinct re-gate button labels.; Make the complete Home > Settings > Gate settings path explicit without changing gating prerequisites.",
+      "sections": [
+        "11-4-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 53
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-055",
+      "locale": "en",
+      "file": "docs/11-results-and-data-analysis.md",
+      "old": "Navigate to the Home menu of the BactoSense user interface.",
+      "new": "On the Home screen, press Settings to open the settings menu.",
+      "reason": "Gate settings moved into the Settings menu; gates themselves and regating prerequisites are unchanged.; Open Settings from Home before choosing a historical results bucket.; Logs provides both historical results buckets without changing the active mode.; Single result and multi-selection have distinct re-gate button labels.; Make the complete Home > Settings > Gate settings path explicit without changing gating prerequisites.",
+      "sections": [
+        "11-4-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 54
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-056",
+      "locale": "en",
+      "file": "docs/11-results-and-data-analysis.md",
+      "old": "Depending on how the measurement was performed, press Results (manual) or Results (Online) to see the list of results.",
+      "new": "Press Logs, then Results (manual mode) or Results (online mode), depending on how the measurement was performed.",
+      "reason": "Gate settings moved into the Settings menu; gates themselves and regating prerequisites are unchanged.; Open Settings from Home before choosing a historical results bucket.; Logs provides both historical results buckets without changing the active mode.; Single result and multi-selection have distinct re-gate button labels.; Make the complete Home > Settings > Gate settings path explicit without changing gating prerequisites.",
+      "sections": [
+        "11-4-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 55
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-057",
+      "locale": "en",
+      "file": "docs/11-results-and-data-analysis.md",
+      "old": "Then press the Re-gate button.",
+      "new": "Press Re-gate result in the single-result view, or Re-gate when several measurements are selected.",
+      "reason": "Gate settings moved into the Settings menu; gates themselves and regating prerequisites are unchanged.; Open Settings from Home before choosing a historical results bucket.; Logs provides both historical results buckets without changing the active mode.; Single result and multi-selection have distinct re-gate button labels.; Make the complete Home > Settings > Gate settings path explicit without changing gating prerequisites.",
+      "sections": [
+        "11-4-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 56
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-058-cell-1-2",
+      "locale": "en",
+      "file": "docs/11-results-and-data-analysis.md",
+      "old": "Navigate to the Home menu of the BactoSense user interface.",
+      "new": "As an Advanced or Admin user, press Settings on the Home screen to open the settings menu.",
+      "reason": "Gate settings is inside Settings and is limited to Advanced/Admin.; New opens a template list with the available cartridge types; choose a template appropriate for the installed cartridge; type is determined by the chosen template.",
+      "sections": [
+        "11-4-2"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 57
+        },
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 58
+        }
+      ],
+      "table_step": "1.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-060-cell-1-2",
+      "locale": "en",
+      "file": "docs/11-results-and-data-analysis.md",
+      "old": "In the name field, type a name for the set of gates. In the type field, select for which cartridge type the set of gates will be used.",
+      "new": "Enter a name for the set of gates and select one of the available templates for the installed cartridge.",
+      "reason": "Gate settings is inside Settings and is limited to Advanced/Admin.; New opens a template list with the available cartridge types; choose a template appropriate for the installed cartridge; type is determined by the chosen template.",
+      "sections": [
+        "11-4-2"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 59
+        }
+      ],
+      "table_step": "4.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-061-cell-1-2",
+      "locale": "en",
+      "file": "docs/11-results-and-data-analysis.md",
+      "old": "Navigate to the Home menu of the BactoSense user interface.",
+      "new": "As an Advanced or Admin user, press Settings on the Home screen to open the settings menu.",
+      "reason": "Gate settings is inside Settings and is limited to Advanced/Admin.; Edited custom gates offer Save versus Save as new set; the two choices have different outcomes.",
+      "sections": [
+        "11-4-3"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 60
+        }
+      ],
+      "table_step": "1.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-062-cell-1-2",
+      "locale": "en",
+      "file": "docs/11-results-and-data-analysis.md",
+      "old": "Press the Save button and confirm.",
+      "new": "Press Save. In the save dialog, choose Save to update the existing set, or Save as new set to keep the original and create a new set.",
+      "reason": "Gate settings is inside Settings and is limited to Advanced/Admin.; Edited custom gates offer Save versus Save as new set; the two choices have different outcomes.",
+      "sections": [
+        "11-4-3"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 61
+        }
+      ],
+      "table_step": "8.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-063",
+      "locale": "en",
+      "file": "docs/11-results-and-data-analysis.md",
+      "old": "Navigate to the Home menu of the BactoSense user interface and press the Gate settings button.",
+      "new": "On the Home screen, press Settings to open the settings menu. Press the Gate settings button.",
+      "reason": "The gate-adjustment strategy must open Settings before Gate settings.; New templates have Yes/No confirmation; existing gate sets have Save/Save as new set choices.; The HNA adjustment updates the existing custom gate through the explicit Save choice.",
+      "sections": [
+        "11-4-4"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 62
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-064",
+      "locale": "en",
+      "file": "docs/11-results-and-data-analysis.md",
+      "old": "Press Next and Save. Confirm that you wish to Save the new set of gates.",
+      "new": "Press Next and Save. For a new template, confirm with Yes. For an edited set, choose Save or Save as new set in the save dialog.",
+      "reason": "The gate-adjustment strategy must open Settings before Gate settings.; New templates have Yes/No confirmation; existing gate sets have Save/Save as new set choices.; The HNA adjustment updates the existing custom gate through the explicit Save choice.",
+      "sections": [
+        "11-4-4"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 63
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-065",
+      "locale": "en",
+      "file": "docs/11-results-and-data-analysis.md",
+      "old": "Navigate to the HNA lower limit configuration step. Enter the previously identified HNA lower limit to the FL1 field, press Save and confirm.",
+      "new": "Navigate to the HNA lower limit configuration step. Enter the previously identified HNA lower limit to the FL1 field, press Save and select Save in the save dialog.",
+      "reason": "The gate-adjustment strategy must open Settings before Gate settings.; New templates have Yes/No confirmation; existing gate sets have Save/Save as new set choices.; The HNA adjustment updates the existing custom gate through the explicit Save choice.",
+      "sections": [
+        "11-4-4"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 64
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-066",
+      "locale": "en",
+      "file": "docs/11-results-and-data-analysis.md",
+      "old": "Choose the Prime protocol from the list.",
+      "new": "Select Prime from the protocol list.",
+      "reason": "New returns from the completed Prime to the protocol selector before Beads Analysis.; Use the production Prime protocol label before the beads comparison.",
+      "sections": [
+        "11-6"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 65
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-067",
+      "locale": "en",
+      "file": "docs/11-results-and-data-analysis.md",
+      "old": "Choose the Beads Analysis protocol from the list and run it.",
+      "new": "Press New, choose Beads Analysis from the list, then press Next and Start.",
+      "reason": "New returns from the completed Prime to the protocol selector before Beads Analysis.; Use the production Prime protocol label before the beads comparison.",
+      "sections": [
+        "11-6"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 66
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-068-cell-1-2",
+      "locale": "en",
+      "file": "docs/12-data-access-and-export.md",
+      "old": "On the Home screen, press Settings to open the settings menu.",
+      "new": "As an Advanced or Admin user, press Settings on the Home screen to open the settings menu.",
+      "reason": "Maintenance > Special export import uses the current compiled menu labels.; The current Basic menu hides Maintenance; Special export import is available to Advanced/Admin.",
+      "sections": [
+        "12-1-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 67
+        }
+      ],
+      "table_step": "1.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-068-cell-2-2",
+      "locale": "en",
+      "file": "docs/12-data-access-and-export.md",
+      "old": "Press the Maintenance button and then the Special export import button.",
+      "new": "Press the Maintenance button. Press the Special export import button.",
+      "reason": "Maintenance > Special export import uses the current compiled menu labels.; The current Basic menu hides Maintenance; Special export import is available to Advanced/Admin.",
+      "sections": [
+        "12-1-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 67
+        }
+      ],
+      "table_step": "2.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-069-cell-1-2",
+      "locale": "en",
+      "file": "docs/12-data-access-and-export.md",
+      "old": "On the Home screen, press Settings to open the settings menu.",
+      "new": "As an Admin user, press Settings on the Home screen to open the settings menu.",
+      "reason": "Services is rendered as System services in the current compiled locale.; Apply saves the service changes; Reboot now appears only when the saved changes require it.; The System services menu is restricted to Admin.",
+      "sections": [
+        "12-2"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 68
+        }
+      ],
+      "table_step": "3.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-070-cell-1-2",
+      "locale": "en",
+      "file": "docs/12-data-access-and-export.md",
+      "old": "Press the Services button.",
+      "new": "Press the System services button.",
+      "reason": "Services is rendered as System services in the current compiled locale.; Apply saves the service changes; Reboot now appears only when the saved changes require it.; The System services menu is restricted to Admin.",
+      "sections": [
+        "12-2"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 69
+        }
+      ],
+      "table_step": "5.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-071-cell-1-2",
+      "locale": "en",
+      "file": "docs/12-data-access-and-export.md",
+      "old": "Press the Apply button to reboot the BactoSense.",
+      "new": "Press Apply to save the changes. If a reboot is requested, press Reboot now.",
+      "reason": "Services is rendered as System services in the current compiled locale.; Apply saves the service changes; Reboot now appears only when the saved changes require it.; The System services menu is restricted to Admin.",
+      "sections": [
+        "12-2"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 70
+        }
+      ],
+      "table_step": "8.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-072",
+      "locale": "en",
+      "file": "docs/12-data-access-and-export.md",
+      "old": "On the Home screen, press Settings to open the settings menu.",
+      "new": "As an Admin user, press Settings on the Home screen to open the settings menu.",
+      "reason": "Services is rendered as System services in the current compiled locale.; Apply saves the service changes; Reboot now appears only when the saved changes require it.; The System services menu is restricted to Admin.",
+      "sections": [
+        "12-3"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 71
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-073",
+      "locale": "en",
+      "file": "docs/12-data-access-and-export.md",
+      "old": "Press the Services button.",
+      "new": "Press the System services button.",
+      "reason": "Services is rendered as System services in the current compiled locale.; Apply saves the service changes; Reboot now appears only when the saved changes require it.; The System services menu is restricted to Admin.",
+      "sections": [
+        "12-3"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 72
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-074",
+      "locale": "en",
+      "file": "docs/12-data-access-and-export.md",
+      "old": "Press the Apply button to reboot the BactoSense.",
+      "new": "Press Apply to save the changes. If a reboot is requested, press Reboot now.",
+      "reason": "Services is rendered as System services in the current compiled locale.; Apply saves the service changes; Reboot now appears only when the saved changes require it.; The System services menu is restricted to Admin.",
+      "sections": [
+        "12-3"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 73
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-075-cell-1-2",
+      "locale": "en",
+      "file": "docs/12-data-access-and-export.md",
+      "old": "On the Home screen, press Settings to open the settings menu.",
+      "new": "As an Admin user, press Settings on the Home screen to open the settings menu.",
+      "reason": "Services is rendered as System services in the current compiled locale.; Apply saves the service changes; Reboot now appears only when the saved changes require it.; The System services menu is restricted to Admin.; Disabling a service requires Apply; merely unchecking the VNC option does not persist it.",
+      "sections": [
+        "12-4"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 74
+        }
+      ],
+      "table_step": "3.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-076-cell-1-2",
+      "locale": "en",
+      "file": "docs/12-data-access-and-export.md",
+      "old": "Press the Services button.",
+      "new": "Press the System services button.",
+      "reason": "Services is rendered as System services in the current compiled locale.; Apply saves the service changes; Reboot now appears only when the saved changes require it.; The System services menu is restricted to Admin.; Disabling a service requires Apply; merely unchecking the VNC option does not persist it.",
+      "sections": [
+        "12-4"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 75
+        }
+      ],
+      "table_step": "5.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-077-cell-1-2",
+      "locale": "en",
+      "file": "docs/12-data-access-and-export.md",
+      "old": "Press the Apply button to reboot the BactoSense.",
+      "new": "Press Apply to save the changes. If a reboot is requested, press Reboot now.",
+      "reason": "Services is rendered as System services in the current compiled locale.; Apply saves the service changes; Reboot now appears only when the saved changes require it.; The System services menu is restricted to Admin.; Disabling a service requires Apply; merely unchecking the VNC option does not persist it.",
+      "sections": [
+        "12-4"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 76
+        }
+      ],
+      "table_step": "8.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-078-cell-1-2",
+      "locale": "en",
+      "file": "docs/12-data-access-and-export.md",
+      "old": "Disable the VNC connection in the BactoSense System services page after finishing.",
+      "new": "After finishing, return to System services, disable the VNC checkbox and press Apply. If a reboot is requested, press Reboot now.",
+      "reason": "Services is rendered as System services in the current compiled locale.; Apply saves the service changes; Reboot now appears only when the saved changes require it.; The System services menu is restricted to Admin.; Disabling a service requires Apply; merely unchecking the VNC option does not persist it.",
+      "sections": [
+        "12-4"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 77
+        }
+      ],
+      "table_step": "11.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-079-cell-1-2",
+      "locale": "en",
+      "file": "docs/15-maintenance.md",
+      "old": "Navigate to the Home screen of the BactoSense user interface.",
+      "new": "Log in as an Advanced or Admin user, then navigate to the Home screen.",
+      "reason": "The Basic Settings menu does not expose Support & Service.",
+      "sections": [
+        "15-1-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 78
+        }
+      ],
+      "table_step": "1.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-080-cell-1-2",
+      "locale": "en",
+      "file": "docs/15-maintenance.md",
+      "old": "Navigate to the Home menu of the BactoSense user interface.",
+      "new": "As an Advanced or Admin user, press Settings on the Home screen to open the settings menu.",
+      "reason": "Maintenance is inside Settings, not directly on Home.; The current Basic Settings menu does not expose Maintenance.",
+      "sections": [
+        "15-1-2"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 79
+        }
+      ],
+      "table_step": "1.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-081-cell-1-2",
+      "locale": "en",
+      "file": "docs/15-maintenance.md",
+      "old": "Navigate to the Home menu of the BactoSense user interface.",
+      "new": "Navigate to the Home screen of the BactoSense user interface.",
+      "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label.",
+      "sections": [
+        "15-2-2"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 80
+        }
+      ],
+      "table_step": "2.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-082-cell-1-2",
+      "locale": "en",
+      "file": "docs/15-maintenance.md",
+      "old": "In the list of available protocols, select Clean Sampling Device with Washstation.",
+      "new": "Select Clean Sampling Device with Washstation from the list of available protocols.",
+      "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label.",
+      "sections": [
+        "15-2-2"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 81
+        }
+      ],
+      "table_step": "4.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-083-cell-1-2",
+      "locale": "en",
+      "file": "docs/15-maintenance.md",
+      "old": "Navigate to the Home menu of the BactoSense user interface.",
+      "new": "Navigate to the Home screen of the BactoSense user interface.",
+      "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label.; New returns to the protocol list; select the actual Clean Sampling Device label.; The Home icon returns to the current Home screen; Settings opens the menu.",
+      "sections": [
+        "15-2-3"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 82
+        }
+      ],
+      "table_step": "3.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-084-cell-1-2",
+      "locale": "en",
+      "file": "docs/15-maintenance.md",
+      "old": "In the list of available protocols, select Clean Optics.",
+      "new": "Select Clean Optics from the list of available protocols.",
+      "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label.; New returns to the protocol list; select the actual Clean Sampling Device label.; The Home icon returns to the current Home screen; Settings opens the menu.",
+      "sections": [
+        "15-2-3"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 83
+        }
+      ],
+      "table_step": "5.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-085-cell-1-2",
+      "locale": "en",
+      "file": "docs/15-maintenance.md",
+      "old": "Then press the New button to navigate back to the protocol list. In the list of available protocols, select Clean Sampling Device.",
+      "new": "Press New to return to the protocol list, then select Clean Sampling Device.",
+      "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label.; New returns to the protocol list; select the actual Clean Sampling Device label.; The Home icon returns to the current Home screen; Settings opens the menu.",
+      "sections": [
+        "15-2-3"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 84
+        }
+      ],
+      "table_step": "9.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-086-cell-1-2",
+      "locale": "en",
+      "file": "docs/15-maintenance.md",
+      "old": "Press the Home button on the top left of the user interface to return to the Home menu.",
+      "new": "Press the Home icon at the top left of the user interface to return to the Home screen.",
+      "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label.; New returns to the protocol list; select the actual Clean Sampling Device label.; The Home icon returns to the current Home screen; Settings opens the menu.",
+      "sections": [
+        "15-2-3"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 85
+        }
+      ],
+      "table_step": "14.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-087-cell-1-2",
+      "locale": "en",
+      "file": "docs/15-maintenance.md",
+      "old": "Enter the Manual Mode and press Start to see the list of available protocols.",
+      "new": "On the Home screen, press Mode and select Manual mode. Press Back, then Measure to open the measurement wizard.",
+      "reason": "Mode > Manual mode > Back > Measure opens the protocol selector; Start executes the selected protocol.; New returns from completed maintenance to protocol selection.",
+      "sections": [
+        "15-2-4"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 86
+        }
+      ],
+      "table_step": "2.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-088-cell-1-2",
+      "locale": "en",
+      "file": "docs/15-maintenance.md",
+      "old": "After finishing, return to the list of protocols.",
+      "new": "After finishing, press New to return to the protocol list.",
+      "reason": "Mode > Manual mode > Back > Measure opens the protocol selector; Start executes the selected protocol.; New returns from completed maintenance to protocol selection.",
+      "sections": [
+        "15-2-4"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 87
+        }
+      ],
+      "table_step": "5.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-089-cell-1-2",
+      "locale": "en",
+      "file": "docs/15-maintenance.md",
+      "old": "Navigate to the Home menu in the BactoSense user interface.",
+      "new": "As an Advanced or Admin user, press Settings on the Home screen to open the settings menu.",
+      "reason": "Maintenance is inside Settings, not directly on Home.; Current BactoSense Delete old measurements uses level_max 1 (Advanced), not Admin only.; Delete measurements opens Yes, delete / No, cancel confirmation before performing deletion.; The current Basic menu hides Maintenance; deleting old measurements is available to Advanced/Admin.",
+      "sections": [
+        "15-2-8"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 88
+        }
+      ],
+      "table_step": "1.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-090-cell-1-2",
+      "locale": "en",
+      "file": "docs/15-maintenance.md",
+      "old": "Press the Delete old measurements button. This function is only available for the Admin role.",
+      "new": "Press Delete old measurements. This function is available to Advanced and Admin users.",
+      "reason": "Maintenance is inside Settings, not directly on Home.; Current BactoSense Delete old measurements uses level_max 1 (Advanced), not Admin only.; Delete measurements opens Yes, delete / No, cancel confirmation before performing deletion.; The current Basic menu hides Maintenance; deleting old measurements is available to Advanced/Admin.",
+      "sections": [
+        "15-2-8"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 89
+        }
+      ],
+      "table_step": "3.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-091-cell-1-2",
+      "locale": "en",
+      "file": "docs/15-maintenance.md",
+      "old": "Press Delete measurements to permanently delete the data.",
+      "new": "Press Delete measurements, then confirm with Yes, delete to permanently delete the data.",
+      "reason": "Maintenance is inside Settings, not directly on Home.; Current BactoSense Delete old measurements uses level_max 1 (Advanced), not Admin only.; Delete measurements opens Yes, delete / No, cancel confirmation before performing deletion.; The current Basic menu hides Maintenance; deleting old measurements is available to Advanced/Admin.",
+      "sections": [
+        "15-2-8"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 90
+        }
+      ],
+      "table_step": "6.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-092-cell-1-2",
+      "locale": "en",
+      "file": "docs/15-maintenance.md",
+      "old": "Press the Maintenance button.",
+      "new": "On the Home screen, press Settings to open the settings menu. Press the Maintenance button.",
+      "reason": "The software-update procedure must enter Home > Settings > Maintenance.; Correct the current System update button spelling.; The current update page lists USB/repository sources and uses Refresh list from SettingsSystemUpdate.; Select the actual update-source row; there is no update checkbox.; Update opens a Yes/No confirmation; retain the existing reboot note.",
+      "sections": [
+        "15-3"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 91
+        }
+      ],
+      "table_step": "3.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-092-cell-2-2",
+      "locale": "en",
+      "file": "docs/15-maintenance.md",
+      "old": "Press the System udpate button. Available updates will be shown in a check box list on top. If no update is shown, press the Refresh list button. If still no update is shown, no update is available for your instrument or there is an issue with the internet connection.",
+      "new": "Press System update. Available USB drives and the online repository appear in the list at the top. If no update is shown, press Refresh list. If still no update is shown, no update is available for your instrument or there is an issue with the internet connection.",
+      "reason": "The software-update procedure must enter Home > Settings > Maintenance.; Correct the current System update button spelling.; The current update page lists USB/repository sources and uses Refresh list from SettingsSystemUpdate.; Select the actual update-source row; there is no update checkbox.; Update opens a Yes/No confirmation; retain the existing reboot note.",
+      "sections": [
+        "15-3"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 91
+        }
+      ],
+      "table_step": "4.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-092-cell-3-2",
+      "locale": "en",
+      "file": "docs/15-maintenance.md",
+      "old": "Check the check box of the desired update.",
+      "new": "Select the USB drive or online repository containing the desired update.",
+      "reason": "The software-update procedure must enter Home > Settings > Maintenance.; Correct the current System update button spelling.; The current update page lists USB/repository sources and uses Refresh list from SettingsSystemUpdate.; Select the actual update-source row; there is no update checkbox.; Update opens a Yes/No confirmation; retain the existing reboot note.",
+      "sections": [
+        "15-3"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 91
+        }
+      ],
+      "table_step": "5.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-093-cell-1-2",
+      "locale": "en",
+      "file": "docs/15-maintenance.md",
+      "old": "If you wish to update, press the Update button and follow the instructions. Note: No manual reboot is necessary after the update.",
+      "new": "To update, press Update, confirm with Yes, and follow the instructions. Note: No manual reboot is necessary after the update.",
+      "reason": "The software-update procedure must enter Home > Settings > Maintenance.; Correct the current System update button spelling.; The current update page lists USB/repository sources and uses Refresh list from SettingsSystemUpdate.; Select the actual update-source row; there is no update checkbox.; Update opens a Yes/No confirmation; retain the existing reboot note.",
+      "sections": [
+        "15-3"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 92
+        }
+      ],
+      "table_step": "7.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-094",
+      "locale": "en",
+      "file": "docs/16-warnings-errors-and-troubleshooting.md",
+      "old": "The error and warning log views can be accessed separately through the user interface Home menu when pressing the Logs button.",
+      "new": "On the Home screen, press Settings, then Logs. Select Error log or Warning log to open the corresponding log.",
+      "reason": "Logs is in Settings; current Error log / Warning log labels are localized.; BactoSense Error log clear control uses level_max 2 (Basic) and is disabled during a running protocol.",
+      "sections": [
+        "16-4"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 93
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-095",
+      "locale": "en",
+      "file": "docs/16-warnings-errors-and-troubleshooting.md",
+      "old": "Button to manually clear errors (only available for Admin and Service users)",
+      "new": "Button to manually clear errors (available to Basic, Advanced and Admin users when the instrument is idle)",
+      "reason": "Logs is in Settings; current Error log / Warning log labels are localized.; BactoSense Error log clear control uses level_max 2 (Basic) and is disabled during a running protocol.",
+      "sections": [
+        "16-4"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 94
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-096-cell-1-2",
+      "locale": "en",
+      "file": "docs/16-warnings-errors-and-troubleshooting.md",
+      "old": "Navigate to the Home menu of the BactoSense user interface.",
+      "new": "On the Home screen, press Settings to open the settings menu.",
+      "reason": "The Error log is reached through Home > Settings > Logs.; Use actual current localized log labels.; Use the current Clear errors control label.",
+      "sections": [
+        "16-5"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 95
+        }
+      ],
+      "table_step": "1.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-096-cell-2-2",
+      "locale": "en",
+      "file": "docs/16-warnings-errors-and-troubleshooting.md",
+      "old": "Press the Logs button, and then the Error log button",
+      "new": "Press Logs, then Error log.",
+      "reason": "The Error log is reached through Home > Settings > Logs.; Use actual current localized log labels.; Use the current Clear errors control label.",
+      "sections": [
+        "16-5"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 95
+        }
+      ],
+      "table_step": "2.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-096-cell-3-2",
+      "locale": "en",
+      "file": "docs/16-warnings-errors-and-troubleshooting.md",
+      "old": "Make sure you have resolved the problem leading to the displayed error(s). Then press the Clear Errors button.",
+      "new": "Make sure you have resolved the problem leading to the displayed error(s). Then press the Clear errors button.",
+      "reason": "The Error log is reached through Home > Settings > Logs.; Use actual current localized log labels.; Use the current Clear errors control label.",
+      "sections": [
+        "16-5"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 95
+        }
+      ],
+      "table_step": "3.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-097",
+      "locale": "en",
+      "file": "docs/16-warnings-errors-and-troubleshooting.md",
+      "old": "Navigate to the Home menu of the BactoSense user interface.",
+      "new": "As an Advanced or Admin user, press Settings on the Home screen to open the settings menu.",
+      "reason": "Maintenance is under Settings and requires an Advanced or Admin user to be exposed.; Current Self-check has a single Rerun execution button.; The self-check execution control is Rerun in CommonText, not an older Run/Rerun controller translation.",
+      "sections": [
+        "16-6"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 96
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-098",
+      "locale": "en",
+      "file": "docs/16-warnings-errors-and-troubleshooting.md",
+      "old": "Press the Run or Rerun button to start the self- check. Once execution has terminated, the instrument shows a list of all tests, with a green PASS or red FAIL indicator. Some tests may be skipped: if the system cannot communicate with the cartridge, all the tests that require cartridge communication are skipped.",
+      "new": "Press the Rerun button. Once execution has terminated, the instrument shows a list of all tests, with a green PASS or red FAIL indicator. Some tests may be skipped: if the system cannot communicate with the cartridge, all the tests that require cartridge communication are skipped.",
+      "reason": "Maintenance is under Settings and requires an Advanced or Admin user to be exposed.; Current Self-check has a single Rerun execution button.; The self-check execution control is Rerun in CommonText, not an older Run/Rerun controller translation.",
+      "sections": [
+        "16-6"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 97
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-552-cell-1-2",
+      "locale": "en",
+      "file": "scripts/editorial/11-results-and-data-analysis.md",
+      "old": "The Re-Gate result button allows to apply a different gating to the measurement data. For details refer to [Regate measurements](../results-and-data-analysis/#section-11-4-1).",
+      "new": "The Re-gate result button allows to apply a different gating to the measurement data. For details refer to [Regate measurements](../results-and-data-analysis/#section-11-4-1).",
+      "reason": "The result-action label comes from CommonText, whose compiled localization differs from old prose translations.",
+      "sections": [
+        "11-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 551
+        }
+      ],
+      "table_step": "8",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-553",
+      "locale": "en",
+      "file": "scripts/editorial/11-results-and-data-analysis.md",
+      "old": "The default gates on the BactoSense can be found when pressing on Gate settings in the Home menu of the BactoSense user interface.",
+      "new": "On the Home screen, press Settings, then Gate settings to view the available gating sets.",
+      "reason": "Gate settings moved into the Settings menu; gates themselves and regating prerequisites are unchanged.; Make the complete Home > Settings > Gate settings path explicit without changing gating prerequisites.",
+      "sections": [
+        "11-2-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 552
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-554",
+      "locale": "en",
+      "file": "scripts/editorial/11-results-and-data-analysis.md",
+      "old": "A list of all available gating sets on the BactoSense can be found when pressing Gate settings in the Home menu of the BactoSense user interface.",
+      "new": "On the Home screen, press Settings, then Gate settings to view the available gating sets.",
+      "reason": "Gate settings moved into the Settings menu; gates themselves and regating prerequisites are unchanged.; Make the complete Home > Settings > Gate settings path explicit without changing gating prerequisites.",
+      "sections": [
+        "11-2-2"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 553
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-555",
+      "locale": "en",
+      "file": "scripts/editorial/11-results-and-data-analysis.md",
+      "old": "A prerequisite for regating is the presence of such additional gating set. Find all available gating sets for your cartridge type when pressing Gate settings on the Home menu of the BactoSense user interface.",
+      "new": "A prerequisite for regating is the presence of such additional gating set. On the Home screen, press Settings, then Gate settings to view the available gating sets.",
+      "reason": "Gate settings moved into the Settings menu; gates themselves and regating prerequisites are unchanged.; Open Settings from Home before choosing a historical results bucket.; Logs provides both historical results buckets without changing the active mode.; Single result and multi-selection have distinct re-gate button labels.; Make the complete Home > Settings > Gate settings path explicit without changing gating prerequisites.",
+      "sections": [
+        "11-4-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 554
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-556",
+      "locale": "en",
+      "file": "scripts/editorial/11-results-and-data-analysis.md",
+      "old": "Navigate to the Home menu of the BactoSense user interface.",
+      "new": "On the Home screen, press Settings to open the settings menu.",
+      "reason": "Gate settings moved into the Settings menu; gates themselves and regating prerequisites are unchanged.; Open Settings from Home before choosing a historical results bucket.; Logs provides both historical results buckets without changing the active mode.; Single result and multi-selection have distinct re-gate button labels.; Make the complete Home > Settings > Gate settings path explicit without changing gating prerequisites.",
+      "sections": [
+        "11-4-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 555
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-557",
+      "locale": "en",
+      "file": "scripts/editorial/11-results-and-data-analysis.md",
+      "old": "Depending on how the measurement was performed, press Results (manual) or Results (Online) to see the list of results.",
+      "new": "Press Logs, then Results (manual mode) or Results (online mode), depending on how the measurement was performed.",
+      "reason": "Gate settings moved into the Settings menu; gates themselves and regating prerequisites are unchanged.; Open Settings from Home before choosing a historical results bucket.; Logs provides both historical results buckets without changing the active mode.; Single result and multi-selection have distinct re-gate button labels.; Make the complete Home > Settings > Gate settings path explicit without changing gating prerequisites.",
+      "sections": [
+        "11-4-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 556
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-558",
+      "locale": "en",
+      "file": "scripts/editorial/11-results-and-data-analysis.md",
+      "old": "Then press the Re-gate button.",
+      "new": "Press Re-gate result in the single-result view, or Re-gate when several measurements are selected.",
+      "reason": "Gate settings moved into the Settings menu; gates themselves and regating prerequisites are unchanged.; Open Settings from Home before choosing a historical results bucket.; Logs provides both historical results buckets without changing the active mode.; Single result and multi-selection have distinct re-gate button labels.; Make the complete Home > Settings > Gate settings path explicit without changing gating prerequisites.",
+      "sections": [
+        "11-4-1"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 557
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-559-cell-1-2",
+      "locale": "en",
+      "file": "scripts/editorial/11-results-and-data-analysis.md",
+      "old": "Navigate to the Home menu of the BactoSense user interface.",
+      "new": "As an Advanced or Admin user, press Settings on the Home screen to open the settings menu.",
+      "reason": "Gate settings is inside Settings and is limited to Advanced/Admin.; New opens a template list with the available cartridge types; choose a template appropriate for the installed cartridge; type is determined by the chosen template.",
+      "sections": [
+        "11-4-2"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 558
+        },
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 559
+        }
+      ],
+      "table_step": "1.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-561-cell-1-2",
+      "locale": "en",
+      "file": "scripts/editorial/11-results-and-data-analysis.md",
+      "old": "In the name field, type a name for the set of gates. In the type field, select for which cartridge type the set of gates will be used.",
+      "new": "Enter a name for the set of gates and select one of the available templates for the installed cartridge.",
+      "reason": "Gate settings is inside Settings and is limited to Advanced/Admin.; New opens a template list with the available cartridge types; choose a template appropriate for the installed cartridge; type is determined by the chosen template.",
+      "sections": [
+        "11-4-2"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 560
+        }
+      ],
+      "table_step": "4.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-562-cell-1-2",
+      "locale": "en",
+      "file": "scripts/editorial/11-results-and-data-analysis.md",
+      "old": "Navigate to the Home menu of the BactoSense user interface.",
+      "new": "As an Advanced or Admin user, press Settings on the Home screen to open the settings menu.",
+      "reason": "Gate settings is inside Settings and is limited to Advanced/Admin.; Edited custom gates offer Save versus Save as new set; the two choices have different outcomes.",
+      "sections": [
+        "11-4-3"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 561
+        }
+      ],
+      "table_step": "1.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-563-cell-1-2",
+      "locale": "en",
+      "file": "scripts/editorial/11-results-and-data-analysis.md",
+      "old": "Press the Save button and confirm.",
+      "new": "Press Save. In the save dialog, choose Save to update the existing set, or Save as new set to keep the original and create a new set.",
+      "reason": "Gate settings is inside Settings and is limited to Advanced/Admin.; Edited custom gates offer Save versus Save as new set; the two choices have different outcomes.",
+      "sections": [
+        "11-4-3"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 562
+        }
+      ],
+      "table_step": "8.",
+      "table_column": 2
+    },
+    {
+      "id": "en-navigation-import-native-564",
+      "locale": "en",
+      "file": "scripts/editorial/11-results-and-data-analysis.md",
+      "old": "Navigate to the Home menu of the BactoSense user interface and press the Gate settings button.",
+      "new": "On the Home screen, press Settings to open the settings menu. Press the Gate settings button.",
+      "reason": "The gate-adjustment strategy must open Settings before Gate settings.; New templates have Yes/No confirmation; existing gate sets have Save/Save as new set choices.; The HNA adjustment updates the existing custom gate through the explicit Save choice.",
+      "sections": [
+        "11-4-4"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 563
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-565",
+      "locale": "en",
+      "file": "scripts/editorial/11-results-and-data-analysis.md",
+      "old": "Press Next and Save. Confirm that you wish to Save the new set of gates.",
+      "new": "Press Next and Save. For a new template, confirm with Yes. For an edited set, choose Save or Save as new set in the save dialog.",
+      "reason": "The gate-adjustment strategy must open Settings before Gate settings.; New templates have Yes/No confirmation; existing gate sets have Save/Save as new set choices.; The HNA adjustment updates the existing custom gate through the explicit Save choice.",
+      "sections": [
+        "11-4-4"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 564
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-566",
+      "locale": "en",
+      "file": "scripts/editorial/11-results-and-data-analysis.md",
+      "old": "Navigate to the HNA lower limit configuration step. Enter the previously identified HNA lower limit to the FL1 field, press Save and confirm.",
+      "new": "Navigate to the HNA lower limit configuration step. Enter the previously identified HNA lower limit to the FL1 field, press Save and select Save in the save dialog.",
+      "reason": "The gate-adjustment strategy must open Settings before Gate settings.; New templates have Yes/No confirmation; existing gate sets have Save/Save as new set choices.; The HNA adjustment updates the existing custom gate through the explicit Save choice.",
+      "sections": [
+        "11-4-4"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 565
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-567",
+      "locale": "en",
+      "file": "scripts/editorial/11-results-and-data-analysis.md",
+      "old": "Choose the Prime protocol from the list.",
+      "new": "Select Prime from the protocol list.",
+      "reason": "New returns from the completed Prime to the protocol selector before Beads Analysis.; Use the production Prime protocol label before the beads comparison.",
+      "sections": [
+        "11-6"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 566
+        }
+      ]
+    },
+    {
+      "id": "en-navigation-import-native-568",
+      "locale": "en",
+      "file": "scripts/editorial/11-results-and-data-analysis.md",
+      "old": "Choose the Beads Analysis protocol from the list and run it.",
+      "new": "Press New, choose Beads Analysis from the list, then press Next and Start.",
+      "reason": "New returns from the completed Prime to the protocol selector before Beads Analysis.; Use the production Prime protocol label before the beads comparison.",
+      "sections": [
+        "11-6"
+      ],
+      "kind": "text",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-navigation-native-review.json",
+          "change_index": 567
+        }
+      ]
+    },
+    {
+      "id": "en-digital-output-step-4-column-2",
+      "locale": "en",
+      "file": "docs/06-io-box.md",
+      "old": "Choose the base state, .e. the output state when everything is fine: Output 1 2 3 4 Base state 1 1 1 1",
+      "new": "Set **Base state** for outputs 1–4 when no errors or alarms are active.",
+      "sections": [
+        "6-6"
+      ],
+      "table_step": "4.",
+      "table_column": 2,
+      "kind": "table_cell",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-digital-output-review.json",
+          "step": 4,
+          "column": 2
+        }
+      ]
+    },
+    {
+      "id": "en-digital-output-step-4-column-3",
+      "locale": "en",
+      "file": "docs/06-io-box.md",
+      "old": "1: The switch is closed. 0: The switch is open.",
+      "new": "1: The switch is closed. 0: The switch is open.\n\n![BactoSense — Digital outputs: base-state controls](/img/gui/en/digital-output-base-state.png \"width=280\")",
+      "sections": [
+        "6-6"
+      ],
+      "table_step": "4.",
+      "table_column": 3,
+      "kind": "table_cell",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-digital-output-review.json",
+          "step": 4,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "id": "en-digital-output-step-5-column-2",
+      "locale": "en",
+      "file": "docs/06-io-box.md",
+      "old": "Choose which output the critical error state should be signaled on: Output 1 2 3 4 Critical error 0 / / /",
+      "new": "Set the response of each output in the **Critical error** row.",
+      "sections": [
+        "6-6"
+      ],
+      "table_step": "5.",
+      "table_column": 2,
+      "kind": "table_cell",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-digital-output-review.json",
+          "step": 5,
+          "column": 2
+        }
+      ]
+    },
+    {
+      "id": "en-digital-output-step-5-column-3",
+      "locale": "en",
+      "file": "docs/06-io-box.md",
+      "old": "By default, a critical error opens output 1. 1: The switch is closed. 0: The switch is open. /: The switch is not affected by this error.",
+      "new": "By default, a critical error opens output 1. 1: The switch is closed. 0: The switch is open. /: The switch is not affected by this error.\n\n![BactoSense — Digital outputs: critical-error controls](/img/gui/en/digital-output-critical-error.png \"width=280\")",
+      "sections": [
+        "6-6"
+      ],
+      "table_step": "5.",
+      "table_column": 3,
+      "kind": "table_cell",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-digital-output-review.json",
+          "step": 5,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "id": "en-digital-output-step-6-column-2",
+      "locale": "en",
+      "file": "docs/06-io-box.md",
+      "old": "Choose which output the non-critical error state should be signaled on: Output 1 2 3 4 Non-critical error / 0 / /",
+      "new": "Set the response of each output in the **Non-critical error** row.",
+      "sections": [
+        "6-6"
+      ],
+      "table_step": "6.",
+      "table_column": 2,
+      "kind": "table_cell",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-digital-output-review.json",
+          "step": 6,
+          "column": 2
+        }
+      ]
+    },
+    {
+      "id": "en-digital-output-step-6-column-3",
+      "locale": "en",
+      "file": "docs/06-io-box.md",
+      "old": "By default, a non-critical error opens output 2.",
+      "new": "By default, a non-critical error opens output 2.\n\n![BactoSense — Digital outputs: non-critical-error controls](/img/gui/en/digital-output-noncritical-error.png \"width=280\")",
+      "sections": [
+        "6-6"
+      ],
+      "table_step": "6.",
+      "table_column": 3,
+      "kind": "table_cell",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-digital-output-review.json",
+          "step": 6,
+          "column": 3
+        }
+      ]
+    },
+    {
+      "id": "en-digital-output-step-7-column-2",
+      "locale": "en",
+      "file": "docs/06-io-box.md",
+      "old": "Assign alarms to the remaining outputs: Output 1 2 3 4 Alarm 1 / / 0 0 Alarm 2 ... ... ... ... ...",
+      "new": "Assign each enabled alarm to the required outputs in its alarm row.",
+      "sections": [
+        "6-6"
+      ],
+      "table_step": "7.",
+      "table_column": 2,
+      "kind": "table_cell",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-digital-output-review.json",
+          "step": 7,
+          "column": 2
+        }
+      ]
+    },
+    {
+      "id": "en-digital-output-step-7-column-3",
+      "locale": "en",
+      "file": "docs/06-io-box.md",
+      "old": "You can only assign alarms that are enabled. You can assign several alarms to the same output.",
+      "new": "You can only assign alarms that are enabled. You can assign several alarms to the same output.\n\nExample alarm rows: High TCC (top), High HNAP (bottom).\n\n![BactoSense — Digital outputs: enabled-alarm assignments](/img/gui/en/digital-output-alarm-assignment.png \"width=280\")",
+      "sections": [
+        "6-6"
+      ],
+      "table_step": "7.",
+      "table_column": 3,
+      "kind": "table_cell",
+      "audit_refs": [
+        {
+          "file": "maintenance/gui-digital-output-review.json",
+          "step": 7,
+          "column": 3
+        }
+      ]
+    }
+  ],
+  "navigation_import_metadata": {
+    "scope": "English optional source imports only; reviewed follow-up fragments remain separate from the historical entries consumed by apply-content.mjs.",
+    "audit_sources": [
+      {
+        "file": "maintenance/gui-navigation-root-review.json",
+        "sha256": "5041d679d1f017f590c66470937ca386372f38980f888d974f65bdbfe9866cbb",
+        "purpose": "Import fragments and context references"
+      },
+      {
+        "file": "maintenance/gui-navigation-native-review.json",
+        "sha256": "64adc9ef806b9a926e61ba5a914741324f14f8891fafe65a0945b4343492c270",
+        "purpose": "Import fragments and context references"
+      },
+      {
+        "file": "maintenance/gui-navigation-web-review.json",
+        "sha256": "459d900ef8051c4c5ee9a7e59750ce52a86f63fc186f3694cc642e3883eda475",
+        "purpose": "Web and BactoCloud navigation review reference; no separate fragment list"
+      },
+      {
+        "file": "maintenance/gui-digital-output-review.json",
+        "sha256": "1dc37de161d201b55a5dc7d4e42f209cb730cb94f34a9f506355dce7df58a945",
+        "purpose": "Chapter 6.6 control screenshot and step/cell import mappings"
+      }
+    ],
+    "apply_order": "Apply file-scoped historical entries first, then navigation_import_entries. Require source_file; editorial body files also use the corresponding docs file mappings.",
+    "section_boundaries": "Named {#section-N-N} Markdown headings end at the next anchored section heading. Native changes and context-specific image substitutions are always section-scoped.",
+    "table_fragments": "Markdown table rows and HTML context rows are reduced to their changed cell contents, retaining their reviewed file/section boundaries. Identical audit changes in the same scope share audit_refs. Table mappings also retain the audited first-cell step label and one-based column number to distinguish repeated phrases within one section.",
+    "counts": {
+      "root_english_audit_entries": 22,
+      "native_english_audit_changes": 115,
+      "navigation_import_entries": 156,
+      "section_scoped_import_entries": 142,
+      "table_cell_import_entries": 94,
+      "digital_output_import_entries": 8
+    }
+  }
 }

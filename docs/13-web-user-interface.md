@@ -14,7 +14,18 @@ slug: /web-user-interface
 
 ## 13.2 Connect to the web user interface {#section-13-2}
 
-<table className="manual-table">
+An **admin** must first enable HTTP or HTTPS web access under **Settings → System settings → System services**, apply the changes and reboot when prompted. See [Retrieve files via HTTP or HTTPS](12-data-access-and-export.md#section-12-3) for the service settings and ports.
+
+<div className="manual-narrow-details-scroll">
+
+<table className="manual-table manual-narrow-details manual-narrow-details-split">
+
+<colgroup>
+<col className="procedure-step-column" />
+<col className="procedure-instruction-column" />
+<col className="procedure-detail-column" />
+<col className="procedure-detail-column" />
+</colgroup>
 
 <tbody>
 
@@ -68,13 +79,13 @@ Connect the BactoSense via Ethernet to a safe network (e.g. LAN). Connect your d
 
 <td>
 
-On the Home screen of the BactoSense user interface, press Settings, then System info.
+On the Home screen of the BactoSense user interface, press **Settings**, then **System info**.
 
 </td>
 
 <td>
 
-![BactoSense — Home button](/img/gui/icons/home-button.png "width=48 class=manual-icon")
+![BactoSense — Settings button](/img/gui/en/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
 
 </td>
 
@@ -96,7 +107,7 @@ On the Home screen of the BactoSense user interface, press Settings, then System
 
 <td>
 
-Retrieve the IP address of the BactoSense shown on the System info page.
+Retrieve the IP address of the BactoSense shown on the **System info** page.
 
 </td>
 
@@ -136,7 +147,7 @@ On your device, open a web browser.
 
 <td>
 
-Enter the IP address of the BactoSense in the address bar and press Enter.
+Enter `http://<IP address>` or `https://<IP address>` in the address bar, using the enabled service. Append `:<port>` if its port differs from the default, then press Enter.
 
 </td>
 
@@ -156,7 +167,7 @@ Enter the IP address of the BactoSense in the address bar and press Enter.
 
 <td>
 
-On the login page, use the same username and password as for the BactoSense and press Login.
+On the login page, use the same username and password as for the BactoSense and press **Login**.
 
 </td>
 
@@ -170,6 +181,8 @@ On the login page, use the same username and password as for the BactoSense and 
 
 </table>
 
+</div>
+
 ## 13.3 Start page in manual mode {#section-13-3}
 
 ![BactoSense — Web dashboard](/img/gui/en/web-dashboard.png "width=654 class=manual-figure")
@@ -180,15 +193,15 @@ On the login page, use the same username and password as for the BactoSense and 
 | --- | --- | --- | --- |
 | 1 | Menu | 2 | State of the instrument |
 | 3 | Dashboard with latest results | 4 | Language: Drop-down menu for changing the language. |
-| 5 | Logout from Web interface and reboot BactoSense options | 6 | Progress of the current measurement |
+| 5 | User menu: sign out; admin and service accounts can also reboot the BactoSense | 6 | Progress of the current measurement |
 
 ## 13.4 Download an FCS-file {#section-13-4}
 
 |  | WORK STEP | ADDITIONAL INFO / IMAGES |
 | --- | --- | --- |
 | 1. | On the web interface, select the Results page on the navigation panel on the left. |  |
-| 2. | Navigate to the result you wish to export. |  |
-| 3. | Click on the fcs link (Position X). | ![BactoSense — FCS download link](/img/gui/en/web-fcs-download.png "width=271 class=manual-figure") |
+| 2. | Find the measurement in the appropriate result table below the chart. Scroll horizontally to the links at the right of its row if needed. |  |
+| 3. | Click the **fcs** link (Position X). | ![BactoSense — FCS download link](/img/gui/en/web-fcs-download.png "width=271 class=manual-figure") |
 | 4. | Wait for the download to complete. |  |
 
 ## 13.5 Download a zip file with multiple results {#section-13-5}
@@ -198,19 +211,19 @@ The results from multiple measurements can be downloaded as a zip file. This zip
 |  | WORK STEP | ADDITIONAL INFO / IMAGES |
 | --- | --- | --- |
 | 1. | On the web interface, select the Results page on the navigation panel on the left. |  |
-| 2. | Find the results for the mode you are interested in: Online mode or Manual mode results. |  |
-| 3. | Select the date range you want and click Download ZIP. A progress bar will appear at the top of the browser until the zip starts downloading. | ![BactoSense — ZIP download](/img/gui/en/web-zip-download.png "width=282 class=manual-figure") |
+| 2. | Find the **Online mode results** or **Manual mode results** table for the measurements you want. |  |
+| 3. | Select the date range for that table and click **Download ZIP**. A progress bar will appear at the top of the browser until the zip starts downloading. | ![BactoSense — ZIP download](/img/gui/en/web-zip-download.png "width=282 class=manual-figure") |
 | 4. | Wait for the download to complete. |  |
 
 ## 13.6 Download all results as CSV, XLSX or PDF {#section-13-6}
 
-The list of all results can be downloaded from the web interface in either Excel XLSX, CSV or PDF format. The Online mode results are separated from Manual mode results.
+The list of all results can be downloaded from the web interface in Excel XLSX, CSV or PDF format. Online mode, Manual mode and instrument validation results have separate downloads.
 
 |  | WORK STEP | ADDITIONAL INFO / IMAGES |
 | --- | --- | --- |
 | 1. | On the web interface, select the Results page on the navigation panel on the left. |  |
-| 2. | Find the DOWNLOAD RESULTS section below the results chart. |  |
-| 3. | Click on the desired file (xlsx, csv or PDF) to start the download. | ![BactoSense — Result download formats](/img/gui/en/web-results-download-formats.png "width=282 class=manual-figure") |
+| 2. | Find the **DOWNLOAD RESULTS** section below the results chart and choose the row for the required measurement mode or instrument validation. |  |
+| 3. | Click **Download XLSX**, **Download CSV** or **Download PDF** in that row to start the download. | ![BactoSense — Result download formats](/img/gui/en/web-results-download-formats.png "width=282 class=manual-figure") |
 | 4. | Wait for the download to complete. |  |
 
 ## 13.7 Animate the evolution of dot plots {#section-13-7}
@@ -220,20 +233,20 @@ The web interface can animate dot plots from Online mode, to help visualize the 
 |  | WORK STEP | ADDITIONAL INFO / IMAGES |
 | --- | --- | --- |
 | 1. | On the web interface, select the Plots page on the navigation panel on the left. | ![BactoSense — Plots navigation](/img/gui/en/web-plots-navigation.png "width=283 class=manual-figure") |
-| 2. | Use the previous and next arrows or the slider to centre the slider on the desired date range. | ![BactoSense — Plot date range](/img/gui/en/web-plots-date-range.png "width=283 class=manual-figure") |
-| 3. | Press the Play button to start the animation. | ![BactoSense — Plot playback controls](/img/gui/en/web-plots-play.png "width=283 class=manual-figure") |
-| 4. | Adjust the animation speed if needed using the animation speed field. |  |
-| 5. | The animation can be downloaded as GIF file when pressing the Download GIF button. |  |
+| 2. | Use the previous and next arrows or the slider to select a measurement by its timestamp. | ![BactoSense — Plot timestamp selection](/img/gui/en/web-plots-measurement-time.png "width=283 class=manual-figure") |
+| 3. | Press the triangle Play button to start the animation. Press it again to pause. | ![BactoSense — Plot playback controls](/img/gui/en/web-plots-play.png "width=283 class=manual-figure") |
+| 4. | Set **Animation speed** to the desired positive number of plots per second. |  |
+| 5. | Press **Download GIF** to export up to 60 of the most recent Online mode plots at the selected speed. The export uses the latest plots, regardless of the slider position. |  |
 
 ## 13.8 Change the measurement interval {#section-13-8}
 
-If the instrument is in Online mode, the measurement interval can be changed from the web interface.
+The interval used for Online mode measurements can be changed from the web interface.
 
 |  | WORK STEP | ADDITIONAL INFO / IMAGES |
 | --- | --- | --- |
 | 1. | On the web interface, select the Settings page on the navigation panel on the left. | ![BactoSense — Measurement interval](/img/gui/en/web-measurement-interval.png "width=283 class=manual-figure") |
-| 2. | Change the duration of the measurement interval. |  |
-| 3. | Click SAVE to confirm. |  |
+| 2. | Enter an interval from 30 to 360 minutes in **Measurement interval [minutes]**. |  |
+| 3. | Click **SAVE** to apply the interval. |  |
 
 ## 13.9 Take screenshots of the GUI {#section-13-9}
 
@@ -247,7 +260,7 @@ Take screenshots of the BactoSense GUI from the web interface:
 
 ## 13.10 Reboot from web user interface {#section-13-10}
 
-The BactoSense can be rebooted from the web interface according to the following procedure.
+An **admin** or service account can reboot the BactoSense from the web interface according to the following procedure.
 
 :::info[Remote power-on is unavailable]
 
@@ -258,5 +271,5 @@ The instrument cannot switch on remotely.
 |  | WORK STEP | ADDITIONAL INFO / IMAGES |
 | --- | --- | --- |
 | 1. | In the top right corner of the web interface, click the username to open the user menu. | ![BactoSense — User reboot menu](/img/gui/en/web-user-reboot-menu.png "width=284 class=manual-figure") |
-| 2. | Select Reboot and confirm the request. |  |
-| 3. | The instrument reboots and a new login is required. |  |
+| 2. | Select **Reboot**, then click **Reboot** in the confirmation dialog. |  |
+| 3. | Wait for the instrument to restart, reload the web interface and sign in again if prompted. |  |

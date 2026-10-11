@@ -166,7 +166,7 @@ Wählen Sie eine Abschnittsnummer, um das entsprechende Thema in dieser Anleitun
 
 - HNAC [1](/glossary), [11.3.2](/results-and-data-analysis#section-11-3-2), [11.3.3](/results-and-data-analysis#section-11-3-3)
 - HNAP [1](/glossary), [11.3.2](/results-and-data-analysis#section-11-3-2), [11.3.3](/results-and-data-analysis#section-11-3-3)
-- Home-Menü [8.2.7](/general-operations-and-configurations#section-8-2-7), [8.3.2](/general-operations-and-configurations#section-8-3-2), [8.8](/general-operations-and-configurations#section-8-8)
+- Home-Bildschirm und Einstellungen-Menü [8.2.7](/general-operations-and-configurations#section-8-2-7), [8.3.2](/general-operations-and-configurations#section-8-3-2), [8.8](/general-operations-and-configurations#section-8-8)
 - HTTP [5.6](/installation#section-5-6), [12.2](/data-access-and-export#section-12-2)
 - HTTPS [5.6](/installation#section-5-6), [12.2](/data-access-and-export#section-12-2)
 - Feuchtigkeit [3.2](/instrument-overview#section-3-2), [3.2](/instrument-overview#section-3-2)
@@ -245,6 +245,7 @@ Wählen Sie eine Abschnittsnummer, um das entsprechende Thema in dieser Anleitun
 - Online-Modus
   - Konfiguration [10.1](/measurements#section-10-1)
   - Messung [10.1](/measurements#section-10-1)
+  - Erweiterte Zeitplanung [10.2.4](/measurements#section-10-2-4)
   - Ergebnisse [10.1](/measurements#section-10-1), [10.2.3](/measurements#section-10-2-3)
   - Beenden [10.2.2](/measurements#section-10-2-2)
   - Protokolle [10.9.1](/measurements#section-10-9-1)
@@ -388,7 +389,7 @@ Wählen Sie eine Abschnittsnummer, um das entsprechende Thema in dieser Anleitun
   - Anforderungen [2.5](/general-user-information#section-2-5)
   - Rollen [8.2.7](/general-operations-and-configurations#section-8-2-7)
 - Benutzeroberfläche [8.8](/general-operations-and-configurations#section-8-8)
-  - Home-Menü [8.8](/general-operations-and-configurations#section-8-8)
+  - Home-Bildschirm und Einstellungen-Menü [8.8](/general-operations-and-configurations#section-8-8)
 - Fernzugriff auf die Benutzeroberfläche [5.6](/installation#section-5-6)
 
 ## V

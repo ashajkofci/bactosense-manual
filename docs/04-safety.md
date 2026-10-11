@@ -54,7 +54,7 @@ www.bnovate.com/contact.
 
 :::
 
-:::warning[Prevent condensation]
+:::caution[Prevent condensation]
 
 **Moisture or condensation on the electrical components**
 
@@ -65,7 +65,7 @@ If moisture enters the instrument, the BactoSense can be damaged.
 
 :::
 
-:::warning[Avoid aggressive chemicals]
+:::caution[Avoid aggressive chemicals]
 
 **Use of aggressive chemicals**
 
@@ -79,7 +79,7 @@ Use of aggressive chemicals can cause damage to instrument components.
 
 ## 4.2 Safe handling of chemicals {#section-4-2}
 
-:::warning[Handle chemicals safely]
+:::caution[Handle chemicals safely]
 
 **Improper handling of chemicals**
 
@@ -94,7 +94,7 @@ Please observe the following instructions for safe handling of chemicals:
 
 ## 4.3 Residual risk {#section-4-3}
 
-:::warning[Measurement accuracy]
+:::caution[Measurement accuracy]
 
 **Residual risk**
 
@@ -107,7 +107,7 @@ According to the risk assessment of the applied safety directive DIN EN 61010-1,
 
 ## 4.4 Warning and danger symbols on the instrument {#section-4-4}
 
-:::warning[Follow the safety instructions]
+:::caution[Follow the safety instructions]
 
 **No warning or danger symbols on the instrument**
 
@@ -122,7 +122,7 @@ Users must ensure that they observe the safety measures as specified in the user
 
 ![Original manual illustration, printed page 16](/img/manual/asset-96ca4e251d8b.png "width=627")
 
-:::warning[Protect network access]
+:::caution[Protect network access]
 
 **BactoSense is equipped with an integrated web user interface. If directly connected to the internet without appropriate protection, unauthorized internet users can access your instrument.** Please follow these recommendations:
 

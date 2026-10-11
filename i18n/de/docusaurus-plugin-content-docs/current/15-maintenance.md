@@ -7,7 +7,7 @@ slug: /maintenance
 
 BactoSense-Wartung bedeutet Aktivitäten und Abläufe zur Sicherstellung der ordnungsgemäßen, präzisen und zuverlässigen Funktion des Geräts über seinen Lebenszyklus.
 
-:::warning[Wartungsplan einhalten]
+:::caution[Wartungsplan einhalten]
 
 BactoSense-Wartungsdienst
 
@@ -51,7 +51,7 @@ Bitte wenden Sie sich an den bNovate-Support oder Ihren lokalen Servicepartner, 
 
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG |
 | --- | --- | --- |
-| 1. | Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense. | ![BactoSense — Schaltfläche Startseite](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
+| 1. | Melden Sie sich als Advanced- oder Admin-Benutzer an und navigieren Sie zur Startseite. | ![BactoSense — Schaltfläche Startseite](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
 | 2. | Drücken Sie die Taste Einstellungen. | ![BactoSense — Schaltfläche Einstellungen](/img/gui/de/home-settings-button.png "width=80 class=manual-icon-settings-button-half") |
 | 3. | Drücken Sie die Taste Unterstützung & Service. | ![BactoSense — Informationen zu Support und Wartung](/img/gui/icons/intervention-info-button.png "width=48 class=manual-icon") |
 | 4. | Ist ein Service fällig, erhalten die Messergebnisse einen entsprechenden Hinweis. Bitte planen Sie vor Fälligkeit des Service eine Vorsorgewartung ein. |  |
@@ -62,9 +62,9 @@ Die folgenden Schritte beschreiben, wie Sie Details zu den letzten Interventione
 
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG |
 | --- | --- | --- |
-| 1. | Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense. | ![BactoSense — Schaltfläche Startseite](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
-| 2. | Auf der Startseite der BactoSense Benutzeroberfläche, drücken Sie auf Wartung. | ![BactoSense — Wartungsmenü](/img/gui/icons/maintenance-button.png "width=48 class=manual-icon") |
-| 3. | Drücken Sie die Taste Interventionsprotokoll. | ![BactoSense — Wartungsprotokoll](/img/gui/icons/intervention-log-button.png "width=48 class=manual-icon") |
+| 1. | Drücken Sie als Advanced- oder Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. | ![BactoSense — Schaltfläche Einstellungen](/img/gui/de/home-settings-button.png "width=57 class=manual-icon-settings-button-half") |
+| 2. | Drücken Sie die Taste Wartung. | ![BactoSense — Wartungsmenü](/img/gui/icons/maintenance-button.png "width=48 class=manual-icon") |
+| 3. | Drücken Sie die Taste Liste aller Wartungen. | ![BactoSense — Wartungsprotokoll](/img/gui/icons/intervention-log-button.png "width=48 class=manual-icon") |
 | 4. | In dieser Ansicht werden zurückliegende Dienstinterventionen aufgelistet. |  |
 
 ## 15.2 Wartung durch den Benutzer {#section-15-2}
@@ -104,8 +104,8 @@ Dieses Protokoll beschreibt, wie das manuelle Probenahmegerät mittels der Washs
 | 1. | Bitte stellen Sie sicher, dass das manuelle Probenahmegerät korrekt gemäß [Installation des manuellen Probenahmegeräts](05-installation.md#section-5-4) installiert ist. |  |
 | 2. | Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense. |  |
 | 3. | Drücken Sie auf der Startseite Modus und wählen Sie „Manueller Modus“. Drücken Sie Zurück und anschließend Messen, um den Messassistenten zu öffnen. |  |
-| 4. | In der Liste der verfügbaren Protokolle wählen Sie Probenahmegerät mittels Washstation reinigen. |  |
-| 5. | Stellen Sie sicher, dass in der Spalte Replications 1 Wiederholung eingestellt ist. | Für eine intensivere Reinigung können mehrere Wiederholungen durchgeführt werden. |
+| 4. | Wählen Sie Probenahme mit Washstation reinigen aus der Liste der verfügbaren Protokolle. |  |
+| 5. | Stellen Sie sicher, dass in der Spalte Wiederholungen 1 Wiederholung eingestellt ist. | Für eine intensivere Reinigung können mehrere Wiederholungen durchgeführt werden. |
 | 6. | Drücken Sie die Taste Weiter. |  |
 | 7. | Montieren Sie die Washstation, indem Sie sie an das manuelle Probenahmegerät anschrauben, ähnlich wie ein Probenröhrchen. Achten Sie darauf, dass Sie sie bis zum Ende des Gewindes einbauen. |  |
 | 8. | Drücken Sie die Taste Start und warten Sie 15 Minuten, bis das Protokoll abgeschlossen ist. |  |
@@ -122,16 +122,16 @@ Dieses Protokoll beschreibt, wie das manuelle Probenahmegerät ohne Washstation 
 | 2. | Bringen Sie ein frisches 5mL-Probenröhrchen mit 2 – 5mL-Wasserproben am manuellen Probenahmegerät an. |  |
 | 3. | Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense. |  |
 | 4. | Drücken Sie auf der Startseite Modus und wählen Sie „Manueller Modus“. Drücken Sie Zurück und anschließend Messen, um den Messassistenten zu öffnen. |  |
-| 5. | In der Liste der verfügbaren Protokolle wählen Sie Optik reinigen. |  |
-| 6. | Stellen Sie sicher, dass in der Spalte Replications 1 Wiederholung eingestellt ist. | Stellen Sie für eine intensivere Reinigung mehr Wiederholungen ein. |
+| 5. | Wählen Sie Optik reinigen aus der Liste der verfügbaren Protokolle. |  |
+| 6. | Stellen Sie sicher, dass in der Spalte Wiederholungen 1 Wiederholung eingestellt ist. | Stellen Sie für eine intensivere Reinigung mehr Wiederholungen ein. |
 | 7. | Drücken Sie die Taste Weiter. |  |
 | 8. | Drücken Sie die Taste Start und warten Sie 5 Minuten, bis das Protokoll abgeschlossen ist. |  |
-| 9. | Drücken Sie dann die Taste Neu, um zurück zur Protokollliste zu navigieren. In der Liste der verfügbaren Protokolle wählen Sie Probenahmegerät reinigen. |  |
-| 10. | Stellen Sie sicher, dass in der Spalte Replications 1 Wiederholung eingestellt ist. | Stellen Sie für eine intensivere Reinigung mehr Wiederholungen ein. |
+| 9. | Drücken Sie Neu, um zur Protokollliste zurückzukehren, und wählen Sie Probenahme reinigen. |  |
+| 10. | Stellen Sie sicher, dass in der Spalte Wiederholungen 1 Wiederholung eingestellt ist. | Stellen Sie für eine intensivere Reinigung mehr Wiederholungen ein. |
 | 11. | Drücken Sie die Taste Weiter. |  |
 | 12. | Drücken Sie die Taste Start und warten Sie 5 Minuten, bis das Protokoll abgeschlossen ist. |  |
 | 13. | Sobald das Protokoll abgeschlossen ist, entfernen Sie das 5mL-Röhrchen mit Schraubverschluss und entsorgen Sie es. |  |
-| 14. | Drücken Sie die Taste Startseite oben links in der Benutzeroberfläche, um auf die Startseite zurückzugelangen. |  |
+| 14. | Drücken Sie das Startseiten-Symbol oben links in der Benutzeroberfläche, um zur Startseite zurückzukehren. |  |
 | 15. | Möchten Sie mit weiteren Messungen fortfahren, führen Sie zuvor einen Ansaugvorgang durch. Die Anweisungen finden Sie unter [Durchführen eines Ansaugens](10-measurements.md#section-10-9-3). Soll das Gerät inaktiv bleiben oder abgeschaltet werden, so bringen Sie ein frisches Probenröhrchen an das manuelle Probenahmegerät an. |  |
 | 16. | Stellen Sie weiterhin eine Verunreinigung fest, wiederholen Sie den Vorgang mit mehr Replikationen. Besteht sie danach immer noch, verwenden Sie das Reinigungskit, um das Gerät zu reinigen (Verbrauchsmaterialien siehe [Verbrauchsmaterial](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
 
@@ -142,10 +142,10 @@ Das folgende Verfahren hilft bei der Beseitigung von biologischen Verunreinigung
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNGEN |
 | --- | --- | --- |
 | 1. | Vergewissern Sie sich, dass das Online- Probenahmegerät korrekt installiert ist, und die Wasserdurchflussbedingungen erfüllt sind (siehe [Einbau des Online-Probenahmegeräts in den BactoSense](05-installation.md#section-5-5-2)). | Wichtig: Stellen Sie sicher, dass der Auslassschlauch mit einem Abfluss verbunden ist, da Reinigungsflüssigkeit in das Online- Probenahmegerät gelangt. |
-| 2. | Auf der BactoSense Benutzeroberfläche wählen Sie den Manuellen Modus an, und drücken Sie Start, um die Liste aller verfügbarer Protokolle anzuzeigen. |  |
-| 3. | Wählen Sie Probenahme mit Washstation reinigen und konfigurieren Sie 5 Wiederholungen. |  |
+| 2. | Drücken Sie auf der Startseite Modus und wählen Sie „Manueller Modus“. Drücken Sie Zurück und anschließend Messen, um den Messassistenten zu öffnen. |  |
+| 3. | Wählen Sie Probenahme reinigen und konfigurieren Sie 5 Wiederholungen. |  |
 | 4. | Drücken Sie Weiter und Start, um das Protokoll zu starten. |  |
-| 5. | Nach Abschluss, kehren Sie in die Liste der Protokolle zurück. |  |
+| 5. | Drücken Sie nach Abschluss Neu, um zur Protokollliste zurückzukehren. |  |
 | 6. | Wählen Sie Ansaugen und konfigurieren Sie 2 Wiederholungen. |  |
 | 7. | Drücken Sie Weiter und Start, um das Protokoll zu starten. |  |
 | 8. | Nach Abschluss sollten leichte biologische Verunreinigungen aus dem Online-Probenahmegerät entfernt sein und der normale Betrieb kann fortgesetzt werden. Bleiben Verunreinigungen bestehen oder werden nicht biologische Verunreinigungen vermutet, wenden Sie sich an support@bnovate.com. |  |
@@ -154,13 +154,13 @@ Das folgende Verfahren hilft bei der Beseitigung von biologischen Verunreinigung
 
 Zeigen die Ein- und Auslassschläuche des Online-Probenahmegeräts Zeichen von Schäden oder Verunreinigungen, müssen diese ausgetauscht werden. Hierzu benötigen Sie Ein- und Auslassschläuche sowie zwei Klemmringe. Spezifikationen finden Sie unter [Technische Daten](03-instrument-overview.md#section-3-2), Teilenummern unter [Verbrauchsmaterial](18-supply-scope-accessories-and-consumables.md#section-18-3).
 
-:::warning[Keinen Schraubenschlüssel verwenden]
+:::caution[Keinen Schraubenschlüssel verwenden]
 
 Verwenden Sie am Probenahmegerät keine Schraubenschlüssel, solange dieses am BactoSense angeschlossen ist.
 
 :::
 
-:::warning[Schutzhandschuhe tragen]
+:::gloves[Schutzhandschuhe tragen]
 
 Tragen Sie beim Hantieren mit dem Probenahmegerät und Komponenten, die mit Proben in Kontakt kommen, Nitrilhandschuhe.
 
@@ -185,7 +185,7 @@ Die folgenden Schritte beschreiben, wie Sie den Trockenmittelbeutel auswechseln 
 
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG |
 | --- | --- | --- |
-| 1. | Öffnen Sie den Trockenmittelbeutelbehälter, indem Sie den großen Deckel auf der linken Seite des Geräts abschrauben. | ![Abbildung zur Tabelle auf Handbuchseite 135](/img/manual/cell-7272265c5bc4.png "width=260 class=manual-figure") |
+| 1. | Öffnen Sie den Trockenmittelbeutelbehälter, indem Sie den großen Deckel auf der linken Seite des Geräts abschrauben. | ![Abbildung zur Tabelle auf Handbuchseite 135](/img/manual/cell-7272265c5bc4.png "width=130 class=manual-figure") |
 | 2. | Ersetzen Sie den gebrauchten Trockenmittelbeutel durch einen neuen. |  |
 | 3. | Schließen Sie den Trockenmittelbeutelbehälter, indem Sie den großen Deckel festschrauben. |  |
 
@@ -193,7 +193,7 @@ Die folgenden Schritte beschreiben, wie Sie den Trockenmittelbeutel auswechseln 
 
 Das Probenahmegerät des BactoSense enthält einen 25 μm-Filter, der durch den Anwender ausgetauscht werden kann. Der Filter ist ein unter [Verbrauchsmaterial](18-supply-scope-accessories-and-consumables.md#section-18-3) aufgeführtes Verbrauchsmaterial.
 
-:::warning[Frische Schutzhandschuhe verwenden]
+:::gloves[Frische Schutzhandschuhe verwenden]
 
 Tragen Sie beim Hantieren mit Proben, Probenahmegeräten und Komponenten, die damit in Kontakt kommen, frische, ungepuderte Nitrilhandschuhe.
 
@@ -202,15 +202,15 @@ Tragen Sie beim Hantieren mit Proben, Probenahmegeräten und Komponenten, die da
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG |
 | --- | --- | --- |
 | 1. | Schrauben Sie das Probenahmegerät vom BactoSense ab, wie unter [Entfernen des Online-Probenahmegeräts](08-general-operations-and-configurations.md#section-8-10-1) bzw. [Entfernen des manuellen Probenahmegeräts](08-general-operations-and-configurations.md#section-8-10-2) beschrieben. |  |
-| 2. | Setzen Sie eine flache Pinzette unter den weißen Verschluss. | ![Abbildung zur Tabelle auf Handbuchseite 136](/img/manual/cell-efadbaaeb60b.png "width=251 class=manual-figure") |
-| 3. | Entfernen Sie den weißen Verschluss und beachten Sie die transparente Filterscheibe. Der Filter verbleibt manchmal im Hohlraum und manchmal am weißen Verschluss. | ![Abbildung zur Tabelle auf Handbuchseite 136](/img/manual/cell-4636f1f749e9.png "width=251 class=manual-figure") |
-| 4. | Entfernen Sie den Filter und platzieren Sie einen neuen. Wenden Sie keine Gewalt an, sondern lassen Sie den Filter durch die Schwerkraft einsinken. Drücken Sie den Filter nicht mit einer Pinzette hinein. | ![Abbildung zur Tabelle auf Handbuchseite 136](/img/manual/cell-6d2af8024fd1.png "width=251 class=manual-figure") |
+| 2. | Setzen Sie eine flache Pinzette unter den weißen Verschluss. | ![Abbildung zur Tabelle auf Handbuchseite 136](/img/manual/cell-efadbaaeb60b.png "width=126 class=manual-figure") |
+| 3. | Entfernen Sie den weißen Verschluss und beachten Sie die transparente Filterscheibe. Der Filter verbleibt manchmal im Hohlraum und manchmal am weißen Verschluss. | ![Abbildung zur Tabelle auf Handbuchseite 136](/img/manual/cell-4636f1f749e9.png "width=126 class=manual-figure") |
+| 4. | Entfernen Sie den Filter und platzieren Sie einen neuen. Wenden Sie keine Gewalt an, sondern lassen Sie den Filter durch die Schwerkraft einsinken. Drücken Sie den Filter nicht mit einer Pinzette hinein. | ![Abbildung zur Tabelle auf Handbuchseite 136](/img/manual/cell-6d2af8024fd1.png "width=126 class=manual-figure") |
 | 5. | Führen Sie den weißen Verschluss wieder ein. Drücken Sie ihn, bis er die Unterseite erreicht. Die Kraft des weißen Verschlusses drückt den Filter in die richtige Position. |  |
 | 6. | Bringen Sie das Probenahmegerät wieder an, wie unter [Installation des manuellen Probenahmegeräts](05-installation.md#section-5-4) bzw. [Installation des Online-Probenahmegeräts](05-installation.md#section-5-5) beschrieben. |  |
 
 ### 15.2.8 Freigeben von Speicherplatz {#section-15-2-8}
 
-:::warning[Daten vor dem Löschen sichern]
+:::caution[Daten vor dem Löschen sichern]
 
 Wenn der Plattenplatz knapp wird, können alte Daten gelöscht werden.
 
@@ -220,12 +220,12 @@ Stellen Sie sicher, dass alle von Ihnen und anderen Benutzern erzeugten Daten ge
 
 |  | ARBEITSSCHRITT |
 | --- | --- |
-| 1. | Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense. |
-| 2. | Auf der Startseite der BactoSense Benutzeroberfläche, drücken Sie auf Wartung. |
-| 3. | Drücken Sie die Taste Alte Messungen löschen. Diese Funktion ist nur der Admin- Rolle zugänglich. |
+| 1. | Drücken Sie als Advanced- oder Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. |
+| 2. | Drücken Sie die Taste Wartung. |
+| 3. | Drücken Sie Messungen löschen. Diese Funktion steht Advanced- und Admin-Benutzern zur Verfügung. |
 | 4. | Falls verfügbar, wählen Sie einen der folgenden Messmodi aus: Online / Manuell |
 | 5. | Wählen Sie das Zeitintervall aus, dessen Messungen Sie behalten möchten. Ältere Messungen werden gelöscht. |
-| 6. | Drücken Sie Messungen löschen, um die Daten dauerhaft zu löschen. |
+| 6. | Drücken Sie Messungen löschen und bestätigen Sie mit Löschen bestätigen, um die Daten dauerhaft zu löschen. |
 
 ## 15.3 Softwareaktualisierungen {#section-15-3}
 
@@ -235,9 +235,9 @@ Softwareaktualisierungen können entweder von einem USB-Stick oder von einem Onl
 | --- | --- |
 | 1. | Stellen Sie sicher, dass Ihr Gerät über eine schnelle und stabile Internetverbindung verfügt, und Sie mit Administratorrechten angemeldet sind. |
 | 2. | Empfohlen: Sichern Sie Ihre Daten, z. B. durch Export auf USB, wie unter [Export von Daten auf ein USB-Gerät](12-data-access-and-export.md#section-12-1) beschrieben. |
-| 3. | Auf der Startseite der BactoSense Benutzeroberfläche, drücken Sie auf Wartung. |
-| 4. | Drücken Sie auf System Update. Verfügbare Aktualisierungen werden oben in einer Liste mit Kontrollkästchen angezeigt. Wenn kein Update angezeigt wird, klicken Sie auf die Schaltfläche neu laden. Wenn immer noch kein Update angezeigt wird, ist kein Update für Ihr Gerät verfügbar, oder es gibt ein Problem mit der Internetverbindung. |
-| 5. | Aktivieren Sie das Kontrollkästchen für die gewünschte Aktualisierung. |
+| 3. | Drücken Sie auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. Drücken Sie die Taste Wartung. |
+| 4. | Drücken Sie System Update. Verfügbare USB-Speichermedien und das Online-Repository werden oben in der Liste angezeigt. Wenn kein Update angezeigt wird, drücken Sie Liste der USB Speichermedien neu laden. Wenn weiterhin kein Update angezeigt wird, ist kein Update für Ihr Gerät verfügbar oder es gibt ein Problem mit der Internetverbindung. |
+| 5. | Wählen Sie das USB-Speichermedium oder Online-Repository mit dem gewünschten Update. |
 | 6. | Lesen Sie die Versionshinweise im Abschnitt "Änderungsprotokoll" der Benutzeroberfläche sorgfältig durch, um sich über die Änderungen seit Ihrer aktuellen Softwareversion zu informieren. |
-| 7. | Wenn Sie nun die Aktualisierung vornehmen möchten, drücken Sie auf die Schaltfläche Aktualisieren, und folgen Sie den Anweisungen. Hinweis: Nach der Aktualisierung ist kein manueller Neustart erforderlich. |
+| 7. | Um zu aktualisieren, drücken Sie Aktualisieren, bestätigen Sie mit Ja und folgen Sie den Anweisungen. Hinweis: Nach der Aktualisierung ist kein manueller Neustart erforderlich. |
 | 8. | Überprüfen Sie nach der Aktualisierung, dass alle Gerätekonfigurationen noch korrekt sind. |

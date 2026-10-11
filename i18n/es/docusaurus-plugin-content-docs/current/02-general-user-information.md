@@ -54,99 +54,59 @@ Este dispositivo cumple FCC, UL/CAN/CSA-C22.2/IEC 61010-1 y JIS C 1010-1. Para o
 
 Se han aplicado las siguientes normas para garantizar el cumplimiento de los requisitos reglamentarios:
 
-*Tabla 2-2 Normas aplicadas*
+**NORMAS APLICADAS**
 
-<table>
+### Seguridad (General) (Elemento calefactor) (Láser)
 
-<tbody>
+- IEC 61010-1:2010
+- IEC 61010-1:2010/A1:2016
+- CAN/CSA-C22.2 No. 61010-1 + A1
+- UL 61010-1, 3.ª edición A1
+- JIS C 1010-1:2019
+- IEC 61010-2-010:2019
+- CSA C22.2 No. 61010-2-010:19
+- EN 60825-1:2014 + A11:2021
+- CAN/CSA-E60825-1:15
 
-<tr>
+### EMC
 
-<th colSpan="2">
+- EN IEC 61326-1:2021
+- EN 61326-1:2013, clase B, grupo 1
+- CISPR 11:2015/A1:2016/A2:2019
+- EN 61000-3-2:2018
+- EN 61000-3-3:2013/A1:2017
+- EN 61000-3-11:2017
+- EN 61000-3-12:2011
+- EN 61000-4-2:2008
+- EN 61000-4-3:2006/A1:2007/A2:2017
+- EN 61000-4-4:2012
+- EN 61000-4-5:2014/A1:2017
+- EN 61000-4-6:2016
+- EN 61000-4-8:2009
+- EN 61000-4-11:2020
+- EN 55011:2016/A1:2017/A2:2021/A11:2020
 
-NORMAS APLICADAS
+### Protección contra la entrada de cuerpos extraños y agua
 
-</th>
+- IEC 60529:1989
+- IEC 60529:1989/A1:1999
+- IEC 60529:1989/A2:2013
+- IEC 60529:1989/A2:2013/C1:2019
+- EN 60529:1991/A1:2000/A2:2013
 
-</tr>
+### RoHS
 
-<tr>
+- EN IEC 63000:2018
 
-<td>
-
-Seguridad<br />(General)<br />(Elemento calefactor)<br />(Láser)
-
-</td>
-
-<td>
-
-IEC 61010-1:2010<br />IEC 61010-1:2010/A1:2016<br />CAN/CSA-C22.2 No. 61010-1 + A1<br />UL 61010-1, 3.ª edición A1<br />JIS C 1010-1:2019<br />IEC 61010-2-010:2019<br />CSA C22.2 No. 61010-2-010:19<br />EN 60825-1:2014 + A11:2021<br />CAN/CSA-E60825-1:15
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-EMC
-
-</td>
-
-<td>
-
-EN IEC 61326-1:2021<br />EN 61326-1:2013, clase B, grupo 1<br />CISPR 11:2015/A1:2016/A2:2019<br />EN 61000-3-2:2018<br />EN 61000-3-3:2013/A1:2017<br />EN 61000-3-11:2017<br />EN 61000-3-12:2011<br />EN 61000-4-2:2008<br />EN 61000-4-3:2006/A1:2007/A2:2017<br />EN 61000-4-4:2012<br />EN 61000-4-5:2014/A1:2017<br />EN 61000-4-6:2016<br />EN 61000-4-8:2009<br />EN 61000-4-11:2020<br />EN 55011:2016/A1:2017/A2:2021/A11:2020
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-Protección contra la entrada de cuerpos extraños y agua
-
-</td>
-
-<td>
-
-IEC 60529:1989<br />IEC 60529:1989/A1:1999<br />IEC 60529:1989/A2:2013<br />IEC 60529:1989/A2:2013/C1:2019<br />EN 60529:1991/A1:2000/A2:2013
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-RoHS
-
-</td>
-
-<td>
-
-EN IEC 63000:2018
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-![Ilustración del manual original, página impresa 4](/img/manual/asset-454a03d782e7.png "width=73")
+![Ilustración del manual original, página impresa 4](/img/manual/asset-454a03d782e7.png "width=24 class=manual-laser-label")
 
 BactoSense está clasificado como producto láser de clase 1 según la norma IEC 60825-1:2014/A11:2021.
 
 ## 2.3 Símbolos de seguridad {#section-2-3}
 
-A continuación se explican los símbolos de seguridad utilizados en este documento:
+Los símbolos siguientes indican los peligros y los equipos de protección obligatorios. Advertencia y Precaución utilizan el mismo signo de exclamación; lea el título y las instrucciones de cada recuadro.
 
-:::danger[Descarga eléctrica]
+:::danger[Peligro: descarga eléctrica]
 
 **Descarga eléctrica que puede provocar lesiones graves o la muerte**
 
@@ -154,7 +114,7 @@ Ignorar este aviso puede provocar descargas eléctricas y la muerte.
 
 :::
 
-:::danger[Riesgo de explosión]
+:::explosion[Peligro: riesgo de explosión]
 
 **Explosión que puede provocar lesiones graves o la muerte**
 
@@ -162,7 +122,7 @@ Ignorar este aviso puede provocar explosiones que causen daños materiales grave
 
 :::
 
-:::warning[Riesgo de lesiones]
+:::warning[Advertencia: riesgo de lesiones]
 
 **Lesiones o riesgos para la salud con efectos a largo plazo**
 
@@ -170,9 +130,17 @@ Ignorar esta advertencia puede provocar lesiones con posibles efectos a largo pl
 
 :::
 
-:::warning[Daños materiales]
+:::caution[Precaución: daños materiales]
 
 Ignorar este aviso puede provocar daños materiales en el instrumento y sus periféricos.
+
+:::
+
+:::gloves[Usar guantes de protección]
+
+**Equipo de protección obligatorio**
+
+Use los guantes de protección prescritos al manipular muestras, dispositivos de muestreo, cartuchos o componentes que entren en contacto con las muestras.
 
 :::
 
@@ -200,7 +168,7 @@ El instrumento debe ser utilizado por personal técnico cualificado que haya le�
 
 ## 2.6 Restricciones de uso {#section-2-6}
 
-:::danger[Atmósferas explosivas]
+:::explosion[Atmósferas explosivas]
 
 El funcionamiento en zonas con atmósfera explosiva puede causar explosiones que provoquen lesiones o la muerte de las personas que se encuentren en las proximidades.
 

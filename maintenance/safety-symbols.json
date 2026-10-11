@@ -1,0 +1,18 @@
+{
+  "source": "UM_0006-EN_BactoSense_User_Manual.pdf",
+  "symbols": {
+    "electrical": { "asset": "/img/safety/electrical.svg", "pdfPage": 11, "cluster": 0 },
+    "explosion": { "asset": "/img/safety/explosion.svg", "pdfPage": 11, "cluster": 1 },
+    "warning": { "asset": "/img/safety/warning.svg", "pdfPage": 11, "cluster": 2 },
+    "gloves": { "asset": "/img/safety/gloves.svg", "pdfPage": 29, "bounds": [95.699, 322.430, 136.616, 363.348] },
+    "information": { "asset": "/img/safety/information.svg", "pdfPage": 11, "cluster": 4, "glyph": "i" }
+  },
+  "admonitions": {
+    "danger": { "baseType": "danger", "symbol": "electrical" },
+    "explosion": { "baseType": "danger", "symbol": "explosion" },
+    "warning": { "baseType": "warning", "symbol": "warning" },
+    "caution": { "baseType": "caution", "symbol": "warning" },
+    "gloves": { "baseType": "info", "symbol": "gloves" },
+    "info": { "baseType": "info", "symbol": "information" }
+  }
+}

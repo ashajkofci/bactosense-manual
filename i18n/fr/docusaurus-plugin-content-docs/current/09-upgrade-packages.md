@@ -32,15 +32,19 @@ Les données des détecteurs de diffusion sont disponibles des manières suivant
 
 **Activation du** **Scientific Package**
 
+Activez le package lorsque l’instrument est au repos et que les options Mode PLC et Mode démo sont désactivées.
+
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
 | 1. | Contactez votre représentant commercial bNovate pour acheter une clé d’activation. |  |
 | 2. | Après réception de la clé, connectez-vous au BactoSense avec le rôle Admin. |  |
 | 3. | Sur l’écran d’accueil, appuyez sur Paramètres. |  |
-| 4. | Appuyez sur le bouton Paramètres système. |  |
-| 5. | Appuyez sur le bouton Mises à niveau. |  |
-| 6. | Appuyez sur le bouton Mise à niveau. |  |
-| 7. | Saisissez la clé d’activation et appuyez sur OK. |  |
+| 4. | Appuyez sur le bouton Paramètres système. | ![BactoSense — Menu Paramètres : Paramètres système](/img/gui/fr/settings-menu-system-settings.png "width=360") |
+| 5. | Appuyez sur le bouton Mises à niveau. | ![BactoSense — Paramètres système : Mises à niveau](/img/gui/fr/scientific-package-upgrades-menu.png "width=360") |
+| 6. | Appuyez sur le bouton Mise à niveau. | ![BactoSense — Licence du Scientific Package et bouton Mise à niveau](/img/gui/fr/scientific-package-upgrades.png "width=360") |
+| 7. | Saisissez la clé d’activation et appuyez sur OK. | OK devient disponible lorsque vous saisissez une clé.<br />![BactoSense — Saisie de la clé d’activation du Scientific Package](/img/gui/fr/scientific-package-activation-key.png "width=360") |
+
+Après une activation réussie, appuyez sur OK dans le message de confirmation. Si l’instrument redémarre, attendez la fin du redémarrage, puis ouvrez de nouveau Mises à niveau. Vérifiez que Paquet scientifique affiche Activé.
 
 ## 9.2 Management Package {#section-9-2}
 
@@ -58,6 +62,8 @@ Le *Management Package* s’adresse à l’utilisation de l’instrument dans de
 - À partir de l'interface utilisateur web. L'accès à l'interface utilisateur Web est décrit au chapitre [Interface utilisateur web](13-web-user-interface.md).
 
 **Activation du** **Management Package**
+
+Activez le package lorsque l’instrument est au repos et que les options Mode PLC et Mode démo sont désactivées.
 
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |

@@ -1,11 +1,12 @@
 {
-  "reviewedUtc": "2026-10-11T20:48:11.818022+00:00",
+  "reviewedUtc": "2026-10-11T21:25:12.820653+00:00",
   "status": "source-reviewed",
   "chapters": [
     "06",
     "07",
     "09",
-    "17"
+    "17",
+    "20"
   ],
   "sourceFiles": [
     "../gui/controllers/settingsScreens/SettingsMenuHomeScreen.qml",
@@ -907,13 +908,753 @@
       "reason": "Complete the role-dependent Cartridge change route without changing the removal procedure.",
       "expected_count": 3,
       "kind": "text"
+    },
+    {
+      "id": "en-navigation-root-supplement-090",
+      "locale": "en",
+      "file": "docs/06-io-box.md",
+      "old": "## 6.8 Digital and analogue output testing {#section-6-8}",
+      "new": "## 6.8 Digital and analogue output testing {#section-6-8}\n\nLog in as Admin and use Test outputs while the instrument is idle, with PLC mode disabled.",
+      "expected_count": 1,
+      "kind": "text",
+      "reason": "Match actual compiled control labels and the effective Admin/Service, idle, non-PLC access guard."
+    },
+    {
+      "id": "de-navigation-root-supplement-091",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "„Reset“",
+      "new": "„Zurücksetzen“",
+      "expected_count": 1,
+      "kind": "text",
+      "reason": "Match actual compiled control labels and the effective Admin/Service, idle, non-PLC access guard."
+    },
+    {
+      "id": "de-navigation-root-supplement-092",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "Die Reset-Taste setzt sie",
+      "new": "Die Taste Zurücksetzen setzt sie",
+      "expected_count": 1,
+      "kind": "text",
+      "reason": "Match actual compiled control labels and the effective Admin/Service, idle, non-PLC access guard."
+    },
+    {
+      "id": "de-navigation-root-supplement-093",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "## 6.8 Testen der digitalen und analogen Ausgänge {#section-6-8}",
+      "new": "## 6.8 Testen der digitalen und analogen Ausgänge {#section-6-8}\n\nMelden Sie sich als Admin an und verwenden Sie Ausgänge testen, wenn das Instrument im Leerlauf ist und der PLC-Modus deaktiviert ist.",
+      "expected_count": 1,
+      "kind": "text",
+      "reason": "Match actual compiled control labels and the effective Admin/Service, idle, non-PLC access guard."
+    },
+    {
+      "id": "fr-navigation-root-supplement-094",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "clique sur Réinitialiser sur l’écran de test de sortie",
+      "new": "clique sur Remise à zéro sur l’écran de test de sortie",
+      "expected_count": 1,
+      "kind": "text",
+      "reason": "Match actual compiled control labels and the effective Admin/Service, idle, non-PLC access guard."
+    },
+    {
+      "id": "fr-navigation-root-supplement-095",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "L’interface Test outputs",
+      "new": "L’interface Test des sorties",
+      "expected_count": 1,
+      "kind": "text",
+      "reason": "Match actual compiled control labels and the effective Admin/Service, idle, non-PLC access guard."
+    },
+    {
+      "id": "fr-navigation-root-supplement-096",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "## 6.8 Test des sorties numériques et analogiques {#section-6-8}",
+      "new": "## 6.8 Test des sorties numériques et analogiques {#section-6-8}\n\nConnectez-vous en tant qu’Admin et utilisez Test des sorties lorsque l’instrument est au repos, avec le mode PLC désactivé.",
+      "expected_count": 1,
+      "kind": "text",
+      "reason": "Match actual compiled control labels and the effective Admin/Service, idle, non-PLC access guard."
+    },
+    {
+      "id": "it-navigation-root-supplement-097",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "clic su Reset nella schermata di prova delle uscite o si preme Save",
+      "new": "clic su Ripristina nella schermata di prova delle uscite o si preme Salva",
+      "expected_count": 1,
+      "kind": "text",
+      "reason": "Match actual compiled control labels and the effective Admin/Service, idle, non-PLC access guard."
+    },
+    {
+      "id": "it-navigation-root-supplement-098",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "L’interfaccia Test outputs",
+      "new": "L’interfaccia Test uscite",
+      "expected_count": 1,
+      "kind": "text",
+      "reason": "Match actual compiled control labels and the effective Admin/Service, idle, non-PLC access guard."
+    },
+    {
+      "id": "it-navigation-root-supplement-099",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "## 6.8 Prova delle uscite digitali e analogiche {#section-6-8}",
+      "new": "## 6.8 Prova delle uscite digitali e analogiche {#section-6-8}\n\nAccedere come Amministratore (Admin) e usare Test uscite quando lo strumento è inattivo, con la modalità PLC disattivata.",
+      "expected_count": 1,
+      "kind": "text",
+      "reason": "Match actual compiled control labels and the effective Admin/Service, idle, non-PLC access guard."
+    },
+    {
+      "id": "es-navigation-root-supplement-100",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "pulsar Reset en la pantalla de prueba de salidas o Save",
+      "new": "pulsar Restablecer en la pantalla de prueba de salidas o Guardar",
+      "expected_count": 1,
+      "kind": "text",
+      "reason": "Match actual compiled control labels and the effective Admin/Service, idle, non-PLC access guard."
+    },
+    {
+      "id": "es-navigation-root-supplement-101",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "La interfaz Test outputs",
+      "new": "La interfaz Probar salidas",
+      "expected_count": 1,
+      "kind": "text",
+      "reason": "Match actual compiled control labels and the effective Admin/Service, idle, non-PLC access guard."
+    },
+    {
+      "id": "es-navigation-root-supplement-102",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md",
+      "old": "## 6.8 Prueba de las salidas digitales y analógicas {#section-6-8}",
+      "new": "## 6.8 Prueba de las salidas digitales y analógicas {#section-6-8}\n\nInicie sesión como Administrador (Admin) y use Probar salidas cuando el instrumento esté inactivo, con el modo PLC desactivado.",
+      "expected_count": 1,
+      "kind": "text",
+      "reason": "Match actual compiled control labels and the effective Admin/Service, idle, non-PLC access guard."
+    },
+    {
+      "id": "en-navigation-root-supplement-103",
+      "locale": "en",
+      "file": "docs/09-upgrade-packages.md",
+      "old": "Activate the package while the instrument is idle, with PLC and Simulation mode disabled.",
+      "new": "Activate the package while the instrument is idle, with PLC mode and Demo mode disabled.",
+      "expected_count": 2,
+      "kind": "text",
+      "reason": "Use the actual compiled Demo/PLC labels and cover the current success-message reboot branch before checking licence status."
+    },
+    {
+      "id": "en-navigation-root-supplement-104",
+      "locale": "en",
+      "file": "docs/09-upgrade-packages.md",
+      "old": "After successful activation, press OK in the confirmation message and check that Scientific package shows Activated.",
+      "new": "After successful activation, press OK in the confirmation message. If the instrument restarts, wait for it to finish, then open Upgrades again. Check that Scientific package shows Activated.",
+      "expected_count": 1,
+      "kind": "text",
+      "reason": "Use the actual compiled Demo/PLC labels and cover the current success-message reboot branch before checking licence status."
+    },
+    {
+      "id": "de-navigation-root-supplement-105",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Aktivieren Sie das Paket, wenn das Gerät bereit ist und der SPS- und Simulationsmodus deaktiviert sind.",
+      "new": "Aktivieren Sie das Paket, wenn das Gerät im Leerlauf ist und SPS-Modus sowie Demo-Modus deaktiviert sind.",
+      "expected_count": 2,
+      "kind": "text",
+      "reason": "Use the actual compiled Demo/PLC labels and cover the current success-message reboot branch before checking licence status."
+    },
+    {
+      "id": "de-navigation-root-supplement-106",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Drücken Sie nach erfolgreicher Aktivierung in der Bestätigungsmeldung OK und prüfen Sie, ob Wissenschaftliches Package den Status Aktiviert anzeigt.",
+      "new": "Drücken Sie nach erfolgreicher Aktivierung in der Bestätigungsmeldung OK. Falls das Gerät neu startet, warten Sie, bis es bereit ist, und öffnen Sie erneut Upgrades. Prüfen Sie, ob Wissenschaftliches Package den Status Aktiviert anzeigt.",
+      "expected_count": 1,
+      "kind": "text",
+      "reason": "Use the actual compiled Demo/PLC labels and cover the current success-message reboot branch before checking licence status."
+    },
+    {
+      "id": "fr-navigation-root-supplement-107",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Activez le package lorsque l’instrument est à l’arrêt, avec les modes PLC et simulation désactivés.",
+      "new": "Activez le package lorsque l’instrument est au repos et que les options Mode PLC et Mode démo sont désactivées.",
+      "expected_count": 2,
+      "kind": "text",
+      "reason": "Use the actual compiled Demo/PLC labels and cover the current success-message reboot branch before checking licence status."
+    },
+    {
+      "id": "fr-navigation-root-supplement-108",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Après une activation réussie, appuyez sur OK dans le message de confirmation et vérifiez que Paquet scientifique affiche Activé.",
+      "new": "Après une activation réussie, appuyez sur OK dans le message de confirmation. Si l’instrument redémarre, attendez la fin du redémarrage, puis ouvrez de nouveau Mises à niveau. Vérifiez que Paquet scientifique affiche Activé.",
+      "expected_count": 1,
+      "kind": "text",
+      "reason": "Use the actual compiled Demo/PLC labels and cover the current success-message reboot branch before checking licence status."
+    },
+    {
+      "id": "it-navigation-root-supplement-109",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Attivare il pacchetto quando lo strumento è inattivo, con le modalità PLC e simulazione disabilitate.",
+      "new": "Attivare il pacchetto quando lo strumento è inattivo, con Modalità PLC e Modalità Demo disattivate.",
+      "expected_count": 2,
+      "kind": "text",
+      "reason": "Use the actual compiled Demo/PLC labels and cover the current success-message reboot branch before checking licence status."
+    },
+    {
+      "id": "it-navigation-root-supplement-110",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Dopo l’attivazione riuscita, premere OK nel messaggio di conferma e verificare che Pacchetto scientifico indichi Attivato.",
+      "new": "Dopo l’attivazione riuscita, premere OK nel messaggio di conferma. Se lo strumento si riavvia, attendere il completamento del riavvio, quindi aprire nuovamente Aggiornamenti. Verificare che Pacchetto scientifico indichi Attivato.",
+      "expected_count": 1,
+      "kind": "text",
+      "reason": "Use the actual compiled Demo/PLC labels and cover the current success-message reboot branch before checking licence status."
+    },
+    {
+      "id": "es-navigation-root-supplement-111",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Active el paquete cuando el instrumento esté inactivo, con los modos PLC y simulación desactivados.",
+      "new": "Active el paquete cuando el instrumento esté inactivo, con Modo PLC y Modo demostración desactivados.",
+      "expected_count": 2,
+      "kind": "text",
+      "reason": "Use the actual compiled Demo/PLC labels and cover the current success-message reboot branch before checking licence status."
+    },
+    {
+      "id": "es-navigation-root-supplement-112",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/09-upgrade-packages.md",
+      "old": "Tras la activación correcta, pulse OK en el mensaje de confirmación y compruebe que Paquete científico muestre Activado.",
+      "new": "Tras la activación correcta, pulse OK en el mensaje de confirmación. Si el instrumento se reinicia, espere a que termine y vuelva a abrir Actualizaciones. Compruebe que Paquete científico muestre Activado.",
+      "expected_count": 1,
+      "kind": "text",
+      "reason": "Use the actual compiled Demo/PLC labels and cover the current success-message reboot branch before checking licence status."
+    },
+    {
+      "id": "en-navigation-index-home",
+      "locale": "en",
+      "file": "docs/20-index.md",
+      "old": "Home menu",
+      "new": "Home screen and Settings menu",
+      "expected_count": 2,
+      "kind": "text",
+      "reason": "Name the current Home dashboard and separate Settings menu in index navigation references."
+    },
+    {
+      "id": "de-navigation-index-home",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/20-index.md",
+      "old": "Home-Menü",
+      "new": "Home-Bildschirm und Einstellungen-Menü",
+      "expected_count": 2,
+      "kind": "text",
+      "reason": "Name the current Home dashboard and separate Settings menu in index navigation references."
+    },
+    {
+      "id": "fr-navigation-index-home",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/20-index.md",
+      "old": "Menu Home",
+      "new": "Écran Home et menu Paramètres",
+      "expected_count": 2,
+      "kind": "text",
+      "reason": "Name the current Home dashboard and separate Settings menu in index navigation references."
+    },
+    {
+      "id": "it-navigation-index-home",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/20-index.md",
+      "old": "Menu Home",
+      "new": "Schermata Home e menu Impostazioni",
+      "expected_count": 2,
+      "kind": "text",
+      "reason": "Name the current Home dashboard and separate Settings menu in index navigation references."
+    },
+    {
+      "id": "es-navigation-index-home",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/20-index.md",
+      "old": "Menú Home",
+      "new": "Pantalla Home y menú Ajustes",
+      "expected_count": 2,
+      "kind": "text",
+      "reason": "Name the current Home dashboard and separate Settings menu in index navigation references."
+    },
+    {
+      "id": "en-settings-control-illustration-118",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nAs an Admin user, press Settings on the Home screen to open the settings menu.\n\n</td>\n\n<td>\n\n![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
+      "new": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nAs an Admin user, press Settings on the Home screen to open the settings menu.\n\n</td>\n\n<td>\n\n![BactoSense — Settings button](/img/gui/en/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")\n\n</td>\n\n</tr>",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "en-settings-control-illustration-119",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nAs an Admin user, press Settings on the Home screen to open the settings menu.\n\n</td>\n\n<td>\n\n![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
+      "new": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nAs an Admin user, press Settings on the Home screen to open the settings menu.\n\n</td>\n\n<td>\n\n![BactoSense — Settings button](/img/gui/en/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")\n\n</td>\n\n</tr>",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "en-settings-control-illustration-120",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nAs an Admin user, press Settings on the Home screen to open the settings menu.\n\n</td>\n\n<td colSpan=\"2\">\n\n![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
+      "new": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nAs an Admin user, press Settings on the Home screen to open the settings menu.\n\n</td>\n\n<td colSpan=\"2\">\n\n![BactoSense — Settings button](/img/gui/en/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")\n\n</td>\n\n</tr>",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "en-settings-control-illustration-121",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nAs an Admin user, press Settings on the Home screen to open the settings menu.\n\n</td>\n\n<td colSpan=\"2\">\n\n![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
+      "new": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nAs an Admin user, press Settings on the Home screen to open the settings menu.\n\n</td>\n\n<td colSpan=\"2\">\n\n![BactoSense — Settings button](/img/gui/en/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")\n\n</td>\n\n</tr>",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "en-settings-control-illustration-122",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "| 1. | As an Admin user, press Settings on the Home screen to open the settings menu. | ![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\") |\n",
+      "new": "| 1. | As an Admin user, press Settings on the Home screen to open the settings menu. | ![BactoSense — Settings button](/img/gui/en/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\") |\n",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "en-settings-control-illustration-123",
+      "locale": "en",
+      "file": "docs/11-results-and-data-analysis.md",
+      "old": "| 1. | As an Advanced or Admin user, press Settings on the Home screen to open the settings menu. | ![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\") |\n",
+      "new": "| 1. | As an Advanced or Admin user, press Settings on the Home screen to open the settings menu. | ![BactoSense — Settings button](/img/gui/en/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\") |\n",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "en-settings-control-illustration-124",
+      "locale": "en",
+      "file": "docs/15-maintenance.md",
+      "old": "| 1. | As an Advanced or Admin user, press Settings on the Home screen to open the settings menu. | ![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\") |\n",
+      "new": "| 1. | As an Advanced or Admin user, press Settings on the Home screen to open the settings menu. | ![BactoSense — Settings button](/img/gui/en/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\") |\n",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "en-remove-cartridge-empty-info-cell",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "<td>\n\nt\n\n</td>",
+      "new": "<td>\n\n</td>",
+      "expected_count": 1,
+      "kind": "text",
+      "reason": "Remove a stray source-extraction character from the otherwise empty removal-step information cell."
+    },
+    {
+      "id": "de-settings-control-illustration-126",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nDrücken Sie als Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen.\n\n</td>\n\n<td>\n\n![BactoSense — Schaltfläche Startseite](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
+      "new": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nDrücken Sie als Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen.\n\n</td>\n\n<td>\n\n![BactoSense — Schaltfläche Einstellungen](/img/gui/de/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")\n\n</td>\n\n</tr>",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "de-settings-control-illustration-127",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nDrücken Sie als Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen.\n\n</td>\n\n<td>\n\n![BactoSense — Schaltfläche Startseite](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
+      "new": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nDrücken Sie als Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen.\n\n</td>\n\n<td>\n\n![BactoSense — Schaltfläche Einstellungen](/img/gui/de/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")\n\n</td>\n\n</tr>",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "de-settings-control-illustration-128",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nDrücken Sie als Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen.\n\n</td>\n\n<td colSpan=\"2\">\n\n![BactoSense — Schaltfläche Startseite](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
+      "new": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nDrücken Sie als Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen.\n\n</td>\n\n<td colSpan=\"2\">\n\n![BactoSense — Schaltfläche Einstellungen](/img/gui/de/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")\n\n</td>\n\n</tr>",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "de-settings-control-illustration-129",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nDrücken Sie als Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen.\n\n</td>\n\n<td colSpan=\"2\">\n\n![BactoSense — Schaltfläche Startseite](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
+      "new": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nDrücken Sie als Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen.\n\n</td>\n\n<td colSpan=\"2\">\n\n![BactoSense — Schaltfläche Einstellungen](/img/gui/de/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")\n\n</td>\n\n</tr>",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "de-settings-control-illustration-130",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "| 1. | Drücken Sie als Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. | ![BactoSense — Schaltfläche Startseite](/img/gui/icons/home-button.png \"width=48 class=manual-icon\") |\n",
+      "new": "| 1. | Drücken Sie als Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. | ![BactoSense — Schaltfläche Einstellungen](/img/gui/de/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\") |\n",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "de-settings-control-illustration-131",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "old": "| 1. | Drücken Sie als Advanced- oder Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. | ![BactoSense — Schaltfläche Startseite](/img/gui/icons/home-button.png \"width=48 class=manual-icon\") |\n",
+      "new": "| 1. | Drücken Sie als Advanced- oder Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. | ![BactoSense — Schaltfläche Einstellungen](/img/gui/de/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\") |\n",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "de-settings-control-illustration-132",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "<tr>\n\n<td>\n\n2\\.\n\n</td>\n\n<td>\n\nDrücken Sie auf der Startseite der BactoSense-Benutzeroberfläche **Einstellungen** und anschließend **Informationen**.\n\n</td>\n\n<td>\n\n![BactoSense — Schaltfläche Startseite](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n<td>\n\n![BactoSense — Systeminformationen](/img/gui/icons/system-info-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
+      "new": "<tr>\n\n<td>\n\n2\\.\n\n</td>\n\n<td>\n\nDrücken Sie auf der Startseite der BactoSense-Benutzeroberfläche **Einstellungen** und anschließend **Informationen**.\n\n</td>\n\n<td>\n\n![BactoSense — Schaltfläche Einstellungen](/img/gui/de/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")\n\n</td>\n\n<td>\n\n![BactoSense — Systeminformationen](/img/gui/icons/system-info-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "de-settings-control-illustration-133",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/15-maintenance.md",
+      "old": "| 1. | Drücken Sie als Advanced- oder Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. | ![BactoSense — Schaltfläche Startseite](/img/gui/icons/home-button.png \"width=48 class=manual-icon\") |\n",
+      "new": "| 1. | Drücken Sie als Advanced- oder Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. | ![BactoSense — Schaltfläche Einstellungen](/img/gui/de/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\") |\n",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "de-remove-cartridge-empty-info-cell",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>\n\nt\n\n</td>",
+      "new": "<td>\n\n</td>",
+      "expected_count": 1,
+      "kind": "text",
+      "reason": "Remove a stray source-extraction character from the otherwise empty removal-step information cell."
+    },
+    {
+      "id": "fr-settings-control-illustration-135",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nEn tant qu’utilisateur Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres.\n\n</td>\n\n<td>\n\n![BactoSense — Bouton d’accueil](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
+      "new": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nEn tant qu’utilisateur Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres.\n\n</td>\n\n<td>\n\n![BactoSense — Bouton Paramètres](/img/gui/fr/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")\n\n</td>\n\n</tr>",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "fr-settings-control-illustration-136",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nEn tant qu’utilisateur Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres.\n\n</td>\n\n<td>\n\n![BactoSense — Bouton d’accueil](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
+      "new": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nEn tant qu’utilisateur Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres.\n\n</td>\n\n<td>\n\n![BactoSense — Bouton Paramètres](/img/gui/fr/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")\n\n</td>\n\n</tr>",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "fr-settings-control-illustration-137",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nEn tant qu’utilisateur Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres.\n\n</td>\n\n<td colSpan=\"2\">\n\n![BactoSense — Bouton d’accueil](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
+      "new": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nEn tant qu’utilisateur Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres.\n\n</td>\n\n<td colSpan=\"2\">\n\n![BactoSense — Bouton Paramètres](/img/gui/fr/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")\n\n</td>\n\n</tr>",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "fr-settings-control-illustration-138",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nEn tant qu’utilisateur Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres.\n\n</td>\n\n<td colSpan=\"2\">\n\n![BactoSense — Bouton d’accueil](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
+      "new": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nEn tant qu’utilisateur Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres.\n\n</td>\n\n<td colSpan=\"2\">\n\n![BactoSense — Bouton Paramètres](/img/gui/fr/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")\n\n</td>\n\n</tr>",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "fr-settings-control-illustration-139",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "| 1. | En tant qu’utilisateur Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. | ![BactoSense — Bouton d’accueil](/img/gui/icons/home-button.png \"width=48 class=manual-icon\") |\n",
+      "new": "| 1. | En tant qu’utilisateur Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. | ![BactoSense — Bouton Paramètres](/img/gui/fr/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\") |\n",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "fr-settings-control-illustration-140",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "old": "| 1. | En tant qu’utilisateur Advanced ou Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. | ![BactoSense — Bouton d’accueil](/img/gui/icons/home-button.png \"width=48 class=manual-icon\") |\n",
+      "new": "| 1. | En tant qu’utilisateur Advanced ou Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. | ![BactoSense — Bouton Paramètres](/img/gui/fr/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\") |\n",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "fr-settings-control-illustration-141",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "<tr>\n\n<td>\n\n2\\.\n\n</td>\n\n<td>\n\nSur l’écran d’accueil de l’interface utilisateur du BactoSense, appuyez sur **Paramètres**, puis sur **Infos système**.\n\n</td>\n\n<td>\n\n![BactoSense — Bouton d’accueil](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n<td>\n\n![BactoSense — Informations système](/img/gui/icons/system-info-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
+      "new": "<tr>\n\n<td>\n\n2\\.\n\n</td>\n\n<td>\n\nSur l’écran d’accueil de l’interface utilisateur du BactoSense, appuyez sur **Paramètres**, puis sur **Infos système**.\n\n</td>\n\n<td>\n\n![BactoSense — Bouton Paramètres](/img/gui/fr/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")\n\n</td>\n\n<td>\n\n![BactoSense — Informations système](/img/gui/icons/system-info-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "fr-settings-control-illustration-142",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/15-maintenance.md",
+      "old": "| 1. | En tant qu’utilisateur Advanced ou Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. | ![BactoSense — Bouton d’accueil](/img/gui/icons/home-button.png \"width=48 class=manual-icon\") |\n",
+      "new": "| 1. | En tant qu’utilisateur Advanced ou Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. | ![BactoSense — Bouton Paramètres](/img/gui/fr/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\") |\n",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "fr-remove-cartridge-empty-info-cell",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>\n\nt\n\n</td>",
+      "new": "<td>\n\n</td>",
+      "expected_count": 1,
+      "kind": "text",
+      "reason": "Remove a stray source-extraction character from the otherwise empty removal-step information cell."
+    },
+    {
+      "id": "it-settings-control-illustration-144",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nCome utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni.\n\n</td>\n\n<td>\n\n![BactoSense — Pulsante della schermata iniziale](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
+      "new": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nCome utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni.\n\n</td>\n\n<td>\n\n![BactoSense — Pulsante Impostazioni](/img/gui/it/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")\n\n</td>\n\n</tr>",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "it-settings-control-illustration-145",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nCome utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni.\n\n</td>\n\n<td>\n\n![BactoSense — Pulsante della schermata iniziale](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
+      "new": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nCome utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni.\n\n</td>\n\n<td>\n\n![BactoSense — Pulsante Impostazioni](/img/gui/it/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")\n\n</td>\n\n</tr>",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "it-settings-control-illustration-146",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nCome utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni.\n\n</td>\n\n<td colSpan=\"2\">\n\n![BactoSense — Pulsante della schermata iniziale](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
+      "new": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nCome utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni.\n\n</td>\n\n<td colSpan=\"2\">\n\n![BactoSense — Pulsante Impostazioni](/img/gui/it/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")\n\n</td>\n\n</tr>",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "it-settings-control-illustration-147",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nCome utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni.\n\n</td>\n\n<td colSpan=\"2\">\n\n![BactoSense — Pulsante della schermata iniziale](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
+      "new": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nCome utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni.\n\n</td>\n\n<td colSpan=\"2\">\n\n![BactoSense — Pulsante Impostazioni](/img/gui/it/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")\n\n</td>\n\n</tr>",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "it-settings-control-illustration-148",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "| 1. | Come utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni. | ![BactoSense — Pulsante della schermata iniziale](/img/gui/icons/home-button.png \"width=48 class=manual-icon\") |\n",
+      "new": "| 1. | Come utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni. | ![BactoSense — Pulsante Impostazioni](/img/gui/it/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\") |\n",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "it-settings-control-illustration-149",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "old": "| 1. | Come utente Advanced o Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni. | ![BactoSense — Pulsante della schermata iniziale](/img/gui/icons/home-button.png \"width=48 class=manual-icon\") |\n",
+      "new": "| 1. | Come utente Advanced o Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni. | ![BactoSense — Pulsante Impostazioni](/img/gui/it/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\") |\n",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "it-settings-control-illustration-150",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "<tr>\n\n<td>\n\n2\\.\n\n</td>\n\n<td>\n\nNella schermata iniziale dell’interfaccia utente di BactoSense, premere **Impostazioni**, quindi **Informazioni sul sistema**.\n\n</td>\n\n<td>\n\n![BactoSense — Pulsante della schermata iniziale](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n<td>\n\n![BactoSense — Informazioni di sistema](/img/gui/icons/system-info-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
+      "new": "<tr>\n\n<td>\n\n2\\.\n\n</td>\n\n<td>\n\nNella schermata iniziale dell’interfaccia utente di BactoSense, premere **Impostazioni**, quindi **Informazioni sul sistema**.\n\n</td>\n\n<td>\n\n![BactoSense — Pulsante Impostazioni](/img/gui/it/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")\n\n</td>\n\n<td>\n\n![BactoSense — Informazioni di sistema](/img/gui/icons/system-info-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "it-settings-control-illustration-151",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/15-maintenance.md",
+      "old": "| 1. | Come utente Advanced o Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni. | ![BactoSense — Pulsante della schermata iniziale](/img/gui/icons/home-button.png \"width=48 class=manual-icon\") |\n",
+      "new": "| 1. | Come utente Advanced o Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni. | ![BactoSense — Pulsante Impostazioni](/img/gui/it/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\") |\n",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "it-remove-cartridge-empty-info-cell",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>\n\nt\n\n</td>",
+      "new": "<td>\n\n</td>",
+      "expected_count": 1,
+      "kind": "text",
+      "reason": "Remove a stray source-extraction character from the otherwise empty removal-step information cell."
+    },
+    {
+      "id": "es-settings-control-illustration-153",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nComo usuario Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes.\n\n</td>\n\n<td>\n\n![BactoSense — Botón Inicio](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
+      "new": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nComo usuario Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes.\n\n</td>\n\n<td>\n\n![BactoSense — Botón Ajustes](/img/gui/es/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")\n\n</td>\n\n</tr>",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "es-settings-control-illustration-154",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nComo usuario Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes.\n\n</td>\n\n<td>\n\n![BactoSense — Botón Inicio](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
+      "new": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nComo usuario Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes.\n\n</td>\n\n<td>\n\n![BactoSense — Botón Ajustes](/img/gui/es/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")\n\n</td>\n\n</tr>",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "es-settings-control-illustration-155",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nComo usuario Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes.\n\n</td>\n\n<td colSpan=\"2\">\n\n![BactoSense — Botón Inicio](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
+      "new": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nComo usuario Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes.\n\n</td>\n\n<td colSpan=\"2\">\n\n![BactoSense — Botón Ajustes](/img/gui/es/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")\n\n</td>\n\n</tr>",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "es-settings-control-illustration-156",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nComo usuario Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes.\n\n</td>\n\n<td colSpan=\"2\">\n\n![BactoSense — Botón Inicio](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
+      "new": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nComo usuario Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes.\n\n</td>\n\n<td colSpan=\"2\">\n\n![BactoSense — Botón Ajustes](/img/gui/es/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")\n\n</td>\n\n</tr>",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "es-settings-control-illustration-157",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "| 1. | Como usuario Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes. | ![BactoSense — Botón Inicio](/img/gui/icons/home-button.png \"width=48 class=manual-icon\") |\n",
+      "new": "| 1. | Como usuario Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes. | ![BactoSense — Botón Ajustes](/img/gui/es/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\") |\n",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "es-settings-control-illustration-158",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "old": "| 1. | Como usuario Advanced o Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes. | ![BactoSense — Botón Inicio](/img/gui/icons/home-button.png \"width=48 class=manual-icon\") |\n",
+      "new": "| 1. | Como usuario Advanced o Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes. | ![BactoSense — Botón Ajustes](/img/gui/es/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\") |\n",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "es-settings-control-illustration-159",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "<tr>\n\n<td>\n\n2\\.\n\n</td>\n\n<td>\n\nEn la pantalla de inicio de la interfaz de usuario de BactoSense, pulse **Ajustes** y, a continuación, **Información del sistema**.\n\n</td>\n\n<td>\n\n![BactoSense — Botón Inicio](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n<td>\n\n![BactoSense — Información del sistema](/img/gui/icons/system-info-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
+      "new": "<tr>\n\n<td>\n\n2\\.\n\n</td>\n\n<td>\n\nEn la pantalla de inicio de la interfaz de usuario de BactoSense, pulse **Ajustes** y, a continuación, **Información del sistema**.\n\n</td>\n\n<td>\n\n![BactoSense — Botón Ajustes](/img/gui/es/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")\n\n</td>\n\n<td>\n\n![BactoSense — Información del sistema](/img/gui/icons/system-info-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "es-settings-control-illustration-160",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/15-maintenance.md",
+      "old": "| 1. | Como usuario Advanced o Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes. | ![BactoSense — Botón Inicio](/img/gui/icons/home-button.png \"width=48 class=manual-icon\") |\n",
+      "new": "| 1. | Como usuario Advanced o Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes. | ![BactoSense — Botón Ajustes](/img/gui/es/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\") |\n",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The instruction presses Settings, so show the reviewed localized Settings control rather than the Home icon."
+    },
+    {
+      "id": "fr-regate-confirm-final-action",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "old": "<td>\n\n6\\.\n\n</td>\n\n<td>\n\nAppuyez sur Re-fenêtrer dans la vue d’une mesure, ou sur Re-Fenêtrer lorsque plusieurs mesures sont sélectionnées.",
+      "new": "<td>\n\n6\\.\n\n</td>\n\n<td>\n\nAppuyez sur Confirmer pour lancer le re-fenêtrage.",
+      "expected_count": 1,
+      "kind": "text",
+      "reason": "The gate-selection modal uses Confirmer; Re-fenêtrer opens the modal in the earlier step."
+    },
+    {
+      "id": "es-web-language-legend",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "Language: menú desplegable para cambiar el idioma.",
+      "new": "Idioma: menú desplegable para cambiar el idioma.",
+      "expected_count": 1,
+      "kind": "text",
+      "reason": "Use the current Spanish language-control label in the web legend."
+    },
+    {
+      "id": "en-web-system-info-settings-control",
+      "locale": "en",
+      "file": "docs/13-web-user-interface.md",
+      "old": "![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")",
+      "new": "![BactoSense — Settings button](/img/gui/en/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")",
+      "expected_count": 1,
+      "kind": "image-context",
+      "reason": "The System info procedure presses Settings on Home; show the reviewed Settings control."
     }
   ],
   "validPaths": [
     {
       "section": "6.5–6.8",
       "path": "Home → Settings → Online mode settings → Digital inputs / Digital outputs / Analog outputs / Test outputs",
-      "note": "Test outputs is also available under Maintenance; the existing Online mode settings route is valid and retained."
+      "note": "Test outputs is also available under Maintenance; the existing Online mode settings route is valid and retained. Test outputs requires Admin/Service, an idle instrument and PLC mode disabled."
     },
     {
       "section": "7.1",
@@ -941,5 +1682,15 @@
       "path": "Home → Settings → Maintenance → Cartridge change → Remove cartridge",
       "note": "Basic users access Cartridge change directly under Settings."
     }
-  ]
+  ],
+  "translationEvidence": {
+    "method": "lconvert of the actual production QM resources, checked against existing native capture text where available",
+    "files": {
+      "../gui/gui_fr-FR.qm": "f9f5032e635da9a8cfe39faf600d099a1b3f5fa3385205e445124bc7b6c9ee63",
+      "../gui/gui_en-US.qm": "02428b01a8b5fd6264ad762afdbe43df7bb21d9f1717d02d7dd835259677408d",
+      "../gui/gui_es-ES.qm": "addbce5bc8b859b006fd2bae6f155b148ab0b7af7f8a412eea83a83149381fb8",
+      "../gui/gui_de-DE.qm": "bfd79ac5fa8bf52cc4ae4d2dac3f4ba547d129333af06abc1ae10fe57fec59a7",
+      "../gui/gui_it-IT.qm": "9afa27fda5cb8ff08a65d9b4d13b588230d12bb79a2acae03a4ffd9e507d860f"
+    }
+  }
 }

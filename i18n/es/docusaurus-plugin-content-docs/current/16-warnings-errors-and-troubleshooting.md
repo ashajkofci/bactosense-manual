@@ -24,9 +24,6 @@ Pueden aparecer los mensajes de advertencia siguientes:
 | W01 | Cartucho caducado | Los reactivos del cartucho han caducado. La exactitud de la medición podría verse afectada. | • Sustituya el cartucho lo antes posible. |
 | W02-04 | Señal de línea de base elevada en FL1 / FL2 / SSC | Las señales de línea de base son demasiado altas. Suele deberse a burbujas o partículas en suspensión en la muestra. La exactitud de la medición podría verse afectada. | • Compruebe si hay depósitos en el tubo de entrada.<br/>• Compruebe las conexiones de agua y asegúrese de que estén bien apretadas (sin entrada de aire).<br/>• Si la advertencia persiste, limpie el instrumento con el kit de limpieza. |
 | W05 | Temperatura del incubador fuera del objetivo | La temperatura durante la incubación se ha desviado más de 2 °C del objetivo. Los recuentos celulares pueden verse afectados. El incubador puede estar averiado. | • Si el problema persiste, póngase en contacto con el servicio de atención al cliente. |
-
-| CÓDIGO DE ERROR | NOMBRE | DESCRIPCIÓN | CAUSAS / QUÉ HACER |
-| --- | --- | --- | --- |
 | W06 | No se han detectado eventos | No se han detectado eventos durante la medición. | • Si el problema persiste, póngase en contacto con el servicio de atención al cliente. |
 | W07 | TCC fuera de rango | TCC supera el límite especificado de BactoSense de 2’000’000 células/ml. | • Diluya la muestra para garantizar la exactitud de la medición. |
 | W08 | Burbujas de aire detectadas | La muestra parece contener burbujas de aire. | • Compruebe que el dispositivo de muestreo esté correctamente instalado.<br/>• Compruebe si hay burbujas en la muestra.<br/>• Si utiliza el dispositivo de muestreo en línea, compruebe que el agua se suministre a la presión correcta. |
@@ -53,9 +50,6 @@ Pueden aparecer los siguientes mensajes de error no crítico:
 | E08 | Carcasa demasiado húmeda | La humedad de la carcasa es demasiado elevada para un funcionamiento seguro. | • Sustituya la bolsa desecante desenroscando la tapa grande del lateral izquierdo del instrumento (véase la sección [Sustitución de la bolsa desecante](15-maintenance.md#section-15-2-6)).<br/>• Si el problema persiste, póngase en contacto con el servicio de atención al cliente. |
 | E09 | Sistema sobrecalentado | La temperatura interior es demasiado elevada para un funcionamiento seguro. | • Reduzca la temperatura ambiente o aumente el intervalo de medición para permitir que el instrumento se enfríe. |
 | E14 | Láser demasiado caliente | La temperatura del láser es demasiado elevada para un funcionamiento seguro. | • Reduzca la temperatura ambiente o aumente el intervalo de medición para permitir que el instrumento se enfríe. |
-
-| CÓDIGO DE ERROR | NOMBRE | DESCRIPCIÓN | CAUSAS / QUÉ HACER |
-| --- | --- | --- | --- |
 | E15 | Error de inflado del mezclador | Se ha detectado depresión durante la mezcla o la dispensación. | • Falta de muestra.<br/>• Aire en la entrada.<br/>• Fuga en el sistema.<br/>• Ejecute el protocolo Clean Optics (véase la sección [Descripción de los protocolos del modo manual](10-measurements.md#section-10-9-1)). |
 | E18 | Error de depresión de la bomba | Se ha detectado depresión durante la dispensación. | • Falta de muestra.<br/>• Aire en la entrada.<br/>• Fuga en el sistema.<br/>• Ejecute el protocolo Clean Optics (véase la sección [Descripción de los protocolos del modo manual](10-measurements.md#section-10-9-1)). |
 | E19 | Sistema sobrecalentado | La temperatura interior es demasiado elevada para el funcionamiento. | • Reduzca la temperatura ambiente o aumente el intervalo de medición para permitir que el instrumento se enfríe. |
@@ -64,9 +58,6 @@ Pueden aparecer los siguientes mensajes de error no crítico:
 | E44 | Error de arranque del módulo de bomba | El módulo de bomba no se ha encendido correctamente. | • Repita la medición. |
 | E45 | Error por proporción de volumen válido baja | La proporción de volumen válido es demasiado baja. Puede deberse a un contenido bacteriano excesivo en el agua o a turbidez/residuos. | • La exactitud de la medición probablemente sea muy baja. Repita la medición diluyendo la muestra con agua clara. |
 | E46 | El cartucho sigue ocupado | El cartucho aún se estaba inicializando al comenzar la medición. | • Error no crítico. Repita la medición. Si el problema persiste, póngase en contacto con un técnico de servicio. |
-
-| CÓDIGO DE ERROR | NOMBRE | DESCRIPCIÓN | CAUSAS / QUÉ HACER |
-| --- | --- | --- | --- |
 | E48 | Subsistema de microfluídica ocupado | El controlador de microfluídica estaba realizando otra tarea mientras se efectuaba la medición. | • Error no crítico. Repita la medición. Si el problema persiste, póngase en contacto con un técnico de servicio. |
 | E49 | Error de tiempo de espera de GPIO | La placa de procesamiento está esperando la respuesta de otro módulo. | • Error no crítico. Repita la medición. Si el problema persiste, póngase en contacto con un técnico de servicio. |
 | E50 | Movimiento de la bomba bloqueado | El movimiento de la bomba está bloqueado. | • Error no crítico. Repita la medición. Si el problema persiste, póngase en contacto con un técnico de servicio. |
@@ -74,9 +65,6 @@ Pueden aparecer los siguientes mensajes de error no crítico:
 | E52 | Movimiento de la válvula del cartucho bloqueado | El movimiento de la válvula del cartucho está bloqueado. | • Error no crítico. Repita la medición. Si el problema persiste, póngase en contacto con el servicio de atención al cliente. |
 | E55 | M7 no conectado | El procesador de adquisición no puede inicializarse. | • Reinicie el instrumento.<br/>• Si el problema persiste, póngase en contacto con el servicio de atención al cliente. |
 | E56 | Adquisición vacía | No se han detectado eventos durante la adquisición. | • Limpie el dispositivo de muestreo con la Washstation y, a continuación, mida agua limpia.<br/>• Si el problema persiste, póngase en contacto con el servicio de atención al cliente. |
-
-| CÓDIGO DE ERROR | NOMBRE | DESCRIPCIÓN | CAUSAS / QUÉ HACER |
-| --- | --- | --- | --- |
 | E57 | Cartucho ocupado (comando especial ocupado) | Ha fallado la comunicación con el cartucho. | • Error no crítico. Repita la medición.<br/>• Si el problema persiste, póngase en contacto con el servicio de atención al cliente. |
 | E58 | Cartucho ocupado (tiempo de espera agotado) | Ha fallado la comunicación con el cartucho. | • Compruebe el conector electrónico entre el cartucho y el instrumento.<br/>• Repita la medición.<br/>• Si el problema persiste, póngase en contacto con el servicio de atención al cliente. |
 | E59 | Error del sensor de la válvula | No se puede leer la posición de la válvula. | • Póngase en contacto con el servicio de atención al cliente. |
@@ -100,9 +88,6 @@ Pueden aparecer los siguientes mensajes de error crítico:
 | E04 | Cartucho ausente | Falta el cartucho. | • Inserte un cartucho (véase la sección [Instalación de un cartucho](08-general-operations-and-configurations.md#section-8-9-6)). |
 | E05 | Bolsa de residuos llena | La bolsa de residuos del cartucho está llena. | • Sustituya el cartucho (véase la sección [Cambio de cartuchos](08-general-operations-and-configurations.md#section-8-9-4)). |
 | E06 | No es posible comunicarse con el cartucho | El cartucho está desconectado, la puerta está abierta o la electrónica del cartucho está dañada. | • Asegúrese de que el cable electrónico del cartucho esté correctamente conectado y de que la puerta esté bien cerrada.<br/>• Si esto no resuelve el problema, sustituya el cartucho e informe al servicio de atención al cliente. |
-
-| CÓDIGO DE ERROR | NOMBRE | DESCRIPCIÓN | CAUSAS / QUÉ HACER |
-| --- | --- | --- | --- |
 | E07 | Disco de almacenamiento lleno | No hay suficiente espacio de almacenamiento para continuar el funcionamiento. | • Elimine mediciones antiguas y vuelva a intentarlo (véase la sección [Liberación de espacio en disco](15-maintenance.md#section-15-2-8)).<br/>• Esto elimina las mediciones de forma permanente del dispositivo.<br/>• Exporte las mediciones como copia de seguridad. |
 | E12 | Error de inicialización de FPGA | No se ha podido inicializar el chip de procesamiento de señales. | • Reinicie el instrumento. |
 | E16 | Error de procesamiento | Se ha detectado un error al procesar las señales. | • No se garantiza la exactitud del último resultado. Repita el análisis. |
@@ -111,9 +96,6 @@ Pueden aparecer los siguientes mensajes de error crítico:
 | E23 | Error de comunicación del sensor de temperatura | Ha fallado la comunicación con el sensor de temperatura de la placa de E/S. | • Póngase en contacto con el servicio de atención al cliente. |
 | E24 | Error de comunicación del láser | Ha fallado la comunicación con la unidad óptica. | • Póngase en contacto con el servicio de atención al cliente. |
 | E25 | Error de comunicación de la bomba | No es posible comunicarse con el módulo de bomba. | • Póngase en contacto con el servicio de atención al cliente. |
-
-| CÓDIGO DE ERROR | NOMBRE | DESCRIPCIÓN | CAUSAS / QUÉ HACER |
-| --- | --- | --- | --- |
 | E26 | Error de comunicación de la fuente de alimentación | No es posible comunicarse con el módulo de alimentación. | • Póngase en contacto con el servicio de atención al cliente. |
 | E27 | Tiempo de espera de comunicación con la bomba agotado | Se ha agotado el tiempo de espera de comunicación con el módulo de bomba. | • La puerta del cartucho está abierta.<br/>• Hay un cable desconectado.<br/>• Hay una placa de circuito dañada en la bomba o en el cartucho. |
 | E28 | Suministro de colorante vacío | El tubo de colorante conectado al cartucho está vacío. | • El tubo está desconectado.<br/>• El cartucho está defectuoso.<br/>• Repita el procedimiento de cambio de cartucho, asegurándose de que todos los tubos estén correctamente conectados. |
@@ -122,9 +104,6 @@ Pueden aparecer los siguientes mensajes de error crítico:
 | E31 | Fallo de la electrónica del cartucho | Ya no puede determinarse con exactitud el nivel del cartucho. | • Sustituya el cartucho y póngase en contacto con el servicio de atención al cliente. |
 | E32 | Cartucho incompatible | El tipo de cartucho es incompatible con este instrumento o software. | • Asegúrese de tener el tipo de cartucho correcto para este instrumento. |
 | E33 | Desbordamiento de memoria de procesamiento | Se ha desbordado la memoria de los circuitos de procesamiento de señales. | • Ejecute el protocolo Clean Optics (véase la sección [Descripción de los protocolos del modo manual](10-measurements.md#section-10-9-1)).<br/>• Repita la medición. |
-
-| CÓDIGO DE ERROR | NOMBRE | DESCRIPCIÓN | CAUSAS / QUÉ HACER |
-| --- | --- | --- | --- |
 | E38 | Error: cartucho no preparado | El cartucho nuevo no se ha inicializado correctamente. | • Ejecute el procedimiento “Cartridge Change” (véase la sección [Cambio de cartuchos](08-general-operations-and-configurations.md#section-8-9-4)). |
 | E39 | Se ha alcanzado el límite de corriente del láser | El láser ha alcanzado su límite superior de corriente, lo que indica el final de su vida útil. | • El láser debe sustituirse. Póngase en contacto con un técnico de servicio. |
 | E40 | Conjunto de regiones no encontrado | No se encuentra en los ajustes del instrumento la referencia al conjunto de regiones seleccionado para la medición. | • El conjunto de regiones se ha eliminado.<br/>• Cambie el conjunto y repita la medición. |
@@ -136,7 +115,7 @@ Pueden aparecer los siguientes mensajes de error crítico:
 
 ## 16.4 Registros de errores y advertencias {#section-16-4}
 
-Las vistas de los registros de errores y advertencias pueden abrirse por separado desde el menú Home de la interfaz pulsando Logs.
+En la pantalla Home, pulse Ajustes y después Registros. Seleccione Registro de errores o Registro de advertencias para abrir el registro correspondiente.
 
 ![BactoSense — Registro de errores](/img/gui/es/error-log.png "width=558 class=manual-figure")
 
@@ -244,7 +223,7 @@ Descripción breve del error o evento
 
 <td colSpan="2">
 
-Botón para borrar errores manualmente (solo disponible para usuarios Admin y Service)
+Botón para eliminar errores manualmente (disponible para usuarios Basic, Advanced y Admin cuando el instrumento está inactivo)
 
 </td>
 
@@ -290,9 +269,9 @@ Los errores críticos deben borrarse manualmente. Asegúrese de resolver primero
 
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN |
 | --- | --- | --- |
-| 1. | Vaya al menú Home de la interfaz de usuario de BactoSense. |  |
-| 2. | Pulse el botón Logs y, a continuación, Error log. |  |
-| 3. | Asegúrese de haber resuelto el problema que provoca los errores mostrados. Pulse Clear Errors. | ![BactoSense — Borrar errores](/img/gui/es/error-log-clear-errors.png "width=245 class=manual-figure") |
+| 1. | En la pantalla Home, pulse Ajustes para abrir el menú de ajustes. |  |
+| 2. | Pulse Registros y después Registro de errores. |  |
+| 3. | Asegúrese de haber resuelto el problema que provoca los errores mostrados. Pulse Eliminar errores. | ![BactoSense — Borrar errores](/img/gui/es/error-log-clear-errors.png "width=245 class=manual-figure") |
 | 4. | Los errores borrados aparecen con símbolos grises y se añade al registro un evento “Errors cleared”. El instrumento está listo para volver a analizar. |  |
 
 ## 16.6 Autocomprobación automática {#section-16-6}
@@ -333,7 +312,7 @@ INFORMACIÓN ADICIONAL / IMAGEN
 
 <td>
 
-Vaya al menú Home de la interfaz de usuario de BactoSense.
+Como usuario Advanced o Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes.
 
 </td>
 
@@ -353,7 +332,7 @@ Vaya al menú Home de la interfaz de usuario de BactoSense.
 
 <td>
 
-Pulse el botón Maintenance.
+Pulse el botón Mantenimiento.
 
 </td>
 
@@ -373,7 +352,7 @@ Pulse el botón Maintenance.
 
 <td>
 
-Pulse el botón Self-check.
+Pulse el botón Autocomprobación.
 
 </td>
 
@@ -395,7 +374,7 @@ Pulse el botón Self-check.
 
 :::info[Información adicional]
 
-Pulse Run o Rerun para iniciar la autocomprobación. Una vez finalizada, el instrumento muestra una lista de todas las pruebas con un indicador PASS verde o FAIL rojo. Algunas pruebas pueden omitirse: si el sistema no puede comunicarse con el cartucho, se omiten todas las pruebas que requieren dicha comunicación.
+Pulse el botón Volver a ejecutar. Una vez finalizada, el instrumento muestra una lista de todas las pruebas con un indicador PASS verde o FAIL rojo. Algunas pruebas pueden omitirse: si el sistema no puede comunicarse con el cartucho, se omiten todas las pruebas que requieren dicha comunicación.
 
 :::
 

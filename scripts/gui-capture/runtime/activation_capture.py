@@ -41,6 +41,10 @@ def verify_preserved():
     baseline = json.loads((OUTPUT / "preserved-image-sha256.json").read_text())
     for relative, expected in baseline.items():
         path = ROOT / relative
+        # Explicit parent-authorized descriptive rename; retain exact reviewed
+        # PNG bytes and reject every other missing/changed baseline asset.
+        if not path.exists() and relative.startswith("static/img/gui/") and relative.endswith("/web-plots-date-range.png"):
+            path = path.with_name("web-plots-measurement-time.png")
         if not path.exists() or sha(path) != expected:
             raise RuntimeError("Previously reviewed image changed: " + relative)
     return len(baseline)
@@ -118,12 +122,34 @@ def capture(locales, tests):
         raise RuntimeError("Build the native Cocoa Qt capture harness first.")
     environment = dict(os.environ)
     environment.pop("QT_QUICK_BACKEND", None)
+    # The product installs this style separately from qml.qrc. Reproduce that
+    # deployment in a private QML import tree instead of changing Qt or GUI.
+    qt_keyboard = Path("/opt/homebrew/opt/qt@5/qml/QtQuick/VirtualKeyboard")
+    private_qml = OUTPUT / "runtime/qml"
+    keyboard = private_qml / "QtQuick/VirtualKeyboard"
+    keyboard.mkdir(parents=True, exist_ok=True)
+    for source in qt_keyboard.iterdir():
+        if source.name != "Styles":
+            target = keyboard / source.name
+            if not target.exists():
+                target.symlink_to(source)
+    styles = keyboard / "Styles"
+    styles.mkdir(exist_ok=True)
+    for source in (qt_keyboard / "Styles").iterdir():
+        target = styles / source.name
+        if not target.exists():
+            target.symlink_to(source)
+    shutil.copytree(ROOT.parent / "gui/CustomVirtualKeyboardStyle", styles / "BactosenseStyle", dirs_exist_ok=True)
+    environment["QML2_IMPORT_PATH"] = str(private_qml) + (":" + environment["QML2_IMPORT_PATH"] if environment.get("QML2_IMPORT_PATH") else "")
     environment.update(BACTOSERVER_URL="http://127.0.0.1:18889", QT_QPA_PLATFORM="cocoa",
-                       QSG_INFO="1", QSG_RENDER_LOOP="basic")
+                       QSG_INFO="1", QSG_RENDER_LOOP="basic", QT_IM_MODULE="qtvirtualkeyboard",
+                       QT_VIRTUALKEYBOARD_STYLE="BactosenseStyle",
+                       QT_VIRTUALKEYBOARD_LAYOUT_PATH=str(ROOT.parent / "gui/CustomVirtualKeyboardLayout"))
     for locale in locales:
         directory = OUTPUT / "native" / locale
         directory.mkdir(parents=True, exist_ok=True)
-        log = OUTPUT / ("capture-" + locale + ".log")
+        test_name = "-".join(tests)
+        log = OUTPUT / ("capture-" + test_name + "-" + locale + ".log")
         selected = ["ActivationNavigationCapture::test_" + test + ":" + locale for test in tests]
         with log.open("w") as stream:
             result = subprocess.run([str(EXECUTABLE), "-input", str(HERE / "tst_activation.qml"), *selected],
@@ -138,7 +164,7 @@ def capture(locales, tests):
                     "objects": json.loads(serialized)}, indent=2) + "\n")
         route_records = [json.loads(line.split("NAVIGATION_EVIDENCE ", 1)[1])
                          for line in contents.splitlines() if "NAVIGATION_EVIDENCE " in line]
-        (OUTPUT / ("navigation-" + locale + ".json")).write_text(json.dumps(route_records, ensure_ascii=False, indent=2) + "\n")
+        (OUTPUT / ("navigation-" + test_name + "-" + locale + ".json")).write_text(json.dumps(route_records, ensure_ascii=False, indent=2) + "\n")
         if "GL_RENDERER:" not in contents or "Loading backend software" in contents:
             raise RuntimeError("Actual GPU rendering is required; inspect " + str(log))
         if result.returncode:
@@ -151,7 +177,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("action", choices=["prepare", "start", "seed", "capture", "check-preserved", "cleanup"])
     parser.add_argument("--locales", nargs="+", choices=["en", "de", "fr", "it", "es"], default=["en", "de", "fr", "it", "es"])
-    parser.add_argument("--tests", nargs="+", choices=["activation", "navigation", "roles"], default=["activation", "navigation", "roles"])
+    parser.add_argument("--tests", nargs="+", choices=["activation", "navigation", "roles", "additional"], default=["activation", "navigation", "roles"])
     args = parser.parse_args()
     if args.action == "prepare":
         prepare()

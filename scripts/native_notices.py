@@ -60,7 +60,17 @@ TITLES = [
  ('Adjust the flow rate', 'Check flow rate and pressure'),
 ]
 ICON = r'<img\b[^>]*src="/img/manual/icon-(?:warning|danger|explosion|information|gloves)\.png"[^>]*/?>'
-HAZARD = r'<img\b[^>]*src="/img/manual/icon-(?:warning|danger|explosion)\.png"[^>]*/?>'
+HAZARD = r'<img\b[^>]*src="/img/manual/icon-(?:warning|danger|explosion|gloves)\.png"[^>]*/?>'
+
+def notice_kind(kind, label, body):
+    """Preserve the original symbol and signal word before removing import artwork."""
+    if 'icon-explosion.png' in body or 'EXPLOSION' in label.upper():
+        return 'explosion'
+    if 'icon-gloves.png' in body or label.lower() == 'protective gloves':
+        return 'gloves'
+    if label.upper().rstrip('!') == 'CAUTION' or re.search(r'\bCAUTION!', plain(body)):
+        return 'caution'
+    return kind
 
 def plain(text):
     text = re.sub(r'<img\b[^>]*>', '', text)
@@ -90,6 +100,7 @@ def normalize_notices(content):
         # Already-authored native blocks stay directly editable in Markdown.
         if old_title.lower().rstrip('!') not in ('danger','warning','caution','note','explosion hazard','protective gloves') and not re.search(ICON,body):
             return match[0]
+        kind = notice_kind(kind, old_title, body)
         title = title_for(body)
         body = markdown(body)
         if body.startswith('**'+title+'**\n\n'):
@@ -100,7 +111,7 @@ def normalize_notices(content):
         opening, body = match.groups()
         if not re.search(HAZARD, body):
             return match[0]
-        kind = 'danger' if 'icon-danger.png' in body or 'icon-explosion.png' in body else 'warning'
+        kind = notice_kind('danger' if 'icon-danger.png' in body else 'warning', '', body)
         body = re.sub(HAZARD, '', body)
         body = re.sub(r'(?:<strong>)?(?:CAUTION!|WARNING!|DANGER!)(?:</strong>)?', '', body).strip()
         body = re.sub(r'^(?:<br\s*/>\s*)+', '', body)

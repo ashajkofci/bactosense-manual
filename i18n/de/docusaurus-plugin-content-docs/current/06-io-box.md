@@ -157,7 +157,7 @@ Lesen Sie die technischen Spezifikationen unter [Digitale Eingänge](06-io-box.m
 
 Der BactoSense stellt die Ausgänge über einen 12-adrigen, weiblichen M16-Anschluss bereit. Es wird jedoch empfohlen, eine IO-Box zu verwenden. Die Pinbelegung des Steckers ist unten angegeben.
 
-![Abbildung aus dem Originalhandbuch, gedruckte Seite 36](/img/manual/asset-223bcd55d2e3.png "width=80")
+![Abbildung aus dem Originalhandbuch, gedruckte Seite 36](/img/manual/asset-223bcd55d2e3.png "width=160")
 
 *Abbildung 6-3 Übersicht über die Pinbelegung des Steckers*
 
@@ -178,89 +178,11 @@ Der BactoSense stellt die Eingänge über einen 5-adrigen, weiblichen M16-Anschl
 
 *Abbildung 6-4 Übersicht über die Pinbelegung des Steckers*
 
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-1
-
-</td>
-
-<td>
-
-Digitaler Eingang 1
-
-</td>
-
-<td>
-
-2
-
-</td>
-
-<td>
-
-Digitaler Eingang 2
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3
-
-</td>
-
-<td>
-
-Digitaler Eingang 3
-
-</td>
-
-<td>
-
-4
-
-</td>
-
-<td>
-
-Digitaler Eingang 4
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5
-
-</td>
-
-<td>
-
-Common
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+1. Digitaler Eingang 1
+2. Digitaler Eingang 2
+3. Digitaler Eingang 3
+4. Digitaler Eingang 4
+5. Common
 
 ## 6.5 Konfiguration digitaler Eingänge und PLC-Modus {#section-6-5}
 
@@ -752,17 +674,17 @@ Die Werte der digitalen Ausgänge ändern sich in den folgenden Fällen:
 - Wenn das Gerät abgeschaltet wird, werden die Werte aller Ausgänge auf 0 gesetzt.
 - Wird das Gerät eingeschaltet, so zeigen die Ausgänge den aktuellen Fehlerstatus: nicht vorhanden/kritisch/unkritisch.
 - Am Ende einer Messung im Online-Modus ändern die Ausgänge sich entsprechend den benutzerdefinierten Einstellungen so, dass sie Fehler und Alarme anzeigen.
-- Wird aus dem Ausgangtestbildschirm „Reset“ geklickt oder in den Einstellungen der digitalen Ausgänge „Speichern“ gedrückt, werden die Ausgänge so aktualisiert, dass sie nur den Fehlerstatus zeigen (Alarme werden ignoriert).
+- Wird aus dem Ausgangtestbildschirm „Zurücksetzen“ geklickt oder in den Einstellungen der digitalen Ausgänge „Speichern“ gedrückt, werden die Ausgänge so aktualisiert, dass sie nur den Fehlerstatus zeigen (Alarme werden ignoriert).
 - Nachdem die Fehler manuell gelöscht wurden, werden die Ausgänge automatisch zurückgesetzt (und zeigen so den neuen Fehlerstatus und keine Alarme).
 - Zu bestimmten Zeitpunkten während einer Messung können zusätzliche Signale weitergegeben werden. Standardmäßig wird keiner an die Ausgänge weitergegeben. Es handelt sich um die folgenden:
 
-**-** Prozess läuft. Aktiv, während ein Protokoll ausgeführt wird.
+  - Prozess läuft. Aktiv, während ein Protokoll ausgeführt wird.
 
-**-** Probenahmegerät in Verwendung. Aktiv, während das Probenahmegerät verwendet wird. Nach dem Probenvorbereitungsschritt eines Messprotokolls wird der Ausgang wieder inaktiv.
+  - Probenahmegerät in Verwendung. Aktiv, während das Probenahmegerät verwendet wird. Nach dem Probenvorbereitungsschritt eines Messprotokolls wird der Ausgang wieder inaktiv.
 
-**-** Kartusche fast leer. Aktiv, wenn der Kartuschenfüllstand unter 15 % liegt oder die Kartusche bei der aktuellen Messhäufigkeit voraussichtlich innerhalb eines Monats leer wird.
+  - Kartusche fast leer. Aktiv, wenn der Kartuschenfüllstand unter 15 % liegt oder die Kartusche bei der aktuellen Messhäufigkeit voraussichtlich innerhalb eines Monats leer wird.
 
-**-** Kartusche abgelaufen. Aktiv, wenn die Kartusche abgelaufen ist.
+  - Kartusche abgelaufen. Aktiv, wenn die Kartusche abgelaufen ist.
 
 Der Status des digitalen Ausgangs am Ende einer Messung richtet sich nach diesen Standardwerten, die in den Einstellungen geändert werden:
 
@@ -772,13 +694,13 @@ Der Status des digitalen Ausgangs am Ende einer Messung richtet sich nach diesen
 - Alarme setzen den dritten und den vierten Ausgang auf 0.
 - Im Fall von Konflikten in den Ausgabeeinstellungen, wird folgendermaßen priorisiert:
 
-**-** 1. Kritische Fehler
+  1. Kritische Fehler
 
-**-** 2. Unkritische Fehler
+  2. Unkritische Fehler
 
-**-** 3. Kartuschenzustände
+  3. Kartuschenzustände
 
-**-** 4. Alarm
+  4. Alarm
 
 :::info[Admin-Zugriff erforderlich]
 
@@ -882,13 +804,15 @@ Drücken Sie die Taste Digitale Ausgänge.
 
 <td>
 
-Wählen Sie den Grundzustand, also den Ausgangszustand bei störungsfreiem Betrieb: Ausgang 1 2 3 4; Grundzustand 1 1 1 1
+Stellen Sie den **Normalzustand** für die Ausgänge 1–4 ein, wenn keine Fehler oder Alarme aktiv sind.
 
 </td>
 
 <td>
 
 1: Der Schalter ist geschlossen. 0: Der Schalter ist offen.
+
+![BactoSense — Digitale Ausgänge: Bedienelemente für den Normalzustand](/img/gui/de/digital-output-base-state.png "width=280")
 
 </td>
 
@@ -904,13 +828,15 @@ Wählen Sie den Grundzustand, also den Ausgangszustand bei störungsfreiem Betri
 
 <td>
 
-Wählen Sie den Ausgang, über den kritische Fehler signalisiert werden: Ausgang 1 2 3 4; Kritischer Fehler 0 / / /
+Stellen Sie die Reaktion jedes Ausgangs in der Zeile **Kritischer Fehler** ein.
 
 </td>
 
 <td>
 
 Standardmäßig öffnet ein kritischer Fehler Ausgang 1. 1: Der Schalter ist geschlossen. 0: Der Schalter ist offen. /: Der Fehler beeinflusst den Schalter nicht.
+
+![BactoSense — Digitale Ausgänge: Bedienelemente für kritische Fehler](/img/gui/de/digital-output-critical-error.png "width=280")
 
 </td>
 
@@ -926,13 +852,15 @@ Standardmäßig öffnet ein kritischer Fehler Ausgang 1. 1: Der Schalter ist ges
 
 <td>
 
-Wählen Sie den Ausgang, über den unkritische Fehler signalisiert werden: Ausgang 1 2 3 4; Unkritischer Fehler / 0 / /
+Stellen Sie die Reaktion jedes Ausgangs in der Zeile **Unkritischer Fehler** ein.
 
 </td>
 
 <td>
 
 Standardmäßig öffnet ein unkritischer Fehler Ausgang 2.
+
+![BactoSense — Digitale Ausgänge: Bedienelemente für unkritische Fehler](/img/gui/de/digital-output-noncritical-error.png "width=280")
 
 </td>
 
@@ -948,13 +876,17 @@ Standardmäßig öffnet ein unkritischer Fehler Ausgang 2.
 
 <td>
 
-Weisen Sie den übrigen Ausgängen Alarme zu: Ausgang 1 2 3 4; Alarm 1 / / 0 0; Alarm 2 ... ... ... ... ...
+Ordnen Sie jeden aktivierten Alarm in seiner Alarmzeile den vorgesehenen Ausgängen zu.
 
 </td>
 
 <td>
 
 Sie können nur aktivierte Alarme zuweisen. Einem Ausgang können mehrere Alarme zugewiesen werden.
+
+Beispiel für Alarmzeilen: High TCC (oben), High HNAP (unten).
+
+![BactoSense — Digitale Ausgänge: Zuordnung aktivierter Alarme](/img/gui/de/digital-output-alarm-assignment.png "width=280")
 
 </td>
 
@@ -991,7 +923,7 @@ Der Strom am Analogausgang ändert sich in den folgenden Fällen:
 - Wenn das Gerät abgeschaltet wird, liefern beide Ausgänge 0mA.
 - Wenn das Gerät eingeschaltet wird, liefern beide Ausgänge 2mA.
 - Endet eine Messung im Online-Modus nach der Zellzählung, wird der Wert entsprechend Bereichs- und Quellendefinition des analogen Ausgangs zwischen 4 und 20mA betragen. Schlägt die Messung aufgrund eines Fehlers fehl, bevor die Zellzählung beginnt, verbleibt der Ausgang auf seinem bisherigen Wert.
-- Testet ein Benutzer den Ausgang manuell, wird die Stromstärke auf den vom Benutzer gewählten Wert gesetzt. Die Reset-Taste setzt sie auf 4mA.
+- Testet ein Benutzer den Ausgang manuell, wird die Stromstärke auf den vom Benutzer gewählten Wert gesetzt. Die Taste Zurücksetzen setzt sie auf 4mA.
 
 :::info[Präzise Ausgangswerte]
 
@@ -1091,6 +1023,8 @@ Wird dies ausgewählt, wird der Wertebereich der Zellzählung folgendermaßen lo
 
 Die folgenden Schritte beschreiben, wie Sie die Analogausgänge konfigurieren können.
 
+<div className="manual-output-steps-scroll">
+
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNGEN |
 | --- | --- | --- |
 | 1. | Drücken Sie auf dem Startbildschirm Einstellungen. |  |
@@ -1102,9 +1036,13 @@ Die folgenden Schritte beschreiben, wie Sie die Analogausgänge konfigurieren k�
 | 7. | Definieren Sie die obere Bereichsgrenze (Abbildung 6-6, Position 4). | Entspricht die Quelle diesem Wert, werden am ausgewählten Ausgang 20 mA ausgegeben. |
 | 8. | Drücken Sie die Taste Speichern. |  |
 
+</div>
+
 ## 6.8 Testen der digitalen und analogen Ausgänge {#section-6-8}
 
-:::warning[Unbeabsichtigte Alarme vermeiden]
+Melden Sie sich als Admin an und verwenden Sie Ausgänge testen, wenn das Instrument im Leerlauf ist und der PLC-Modus deaktiviert ist.
+
+:::caution[Unbeabsichtigte Alarme vermeiden]
 
 Die Ausgangstestschnittstelle ermöglicht es, zu Testzwecken ein physisches Ausgangssignal zu erzeugen. Stellen Sie sicher, dass diese Tests an Ihrem Steuerungssystem keinen Alarm verursachen. CAUTION!
 
@@ -1228,6 +1166,8 @@ Stromstärke an Port 1 setzen.
 
 Die folgenden Schritte beschreiben, wie Sie die analogen und digitalen Ausgänge testen.
 
+<div className="manual-output-steps-scroll">
+
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNGEN |
 | --- | --- | --- |
 | 1. | Drücken Sie auf dem Startbildschirm Einstellungen. |  |
@@ -1236,3 +1176,5 @@ Die folgenden Schritte beschreiben, wie Sie die analogen und digitalen Ausgänge
 | 4. | Geben Sie die Testwerte ein, die Sie an die PLC senden möchten. | Für digitale Ausgänge: 1: Der Schalter ist geschlossen. 0: Der Schalter ist offen. |
 | 5. | Tests lassen sich einzeln oder gemeinsam auslösen (siehe Abbildung 6-7): • Nur die digitalen Ausgänge an den Klemmen 1 – 4 testen. • Nur die analogen Ausgänge an Port 1, Port 2 oder beiden Ports testen. • Alle Ausgänge testen. | Die Ausgangssignale können an den Klemmen gemessen werden. |
 | 6. | Drücken Sie die Taste Zurücksetzen. |  |
+
+</div>

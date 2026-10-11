@@ -32,15 +32,19 @@ FSC-Daten sind auf folgende Arten verfügbar:
 
 **Aktivierung des** **Scientific Package**
 
+Aktivieren Sie das Paket, wenn das Gerät im Leerlauf ist und SPS-Modus sowie Demo-Modus deaktiviert sind.
+
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG |
 | --- | --- | --- |
 | 1. | Kontaktieren Sie Ihren bNovate- Vertriebspartner, um einen Aktivierungsschlüssel zu erwerben. |  |
 | 2. | Nachdem Sie den Aktivierungsschlüssel erhalten haben, loggen Sie sich als Admin in den BactoSense ein. |  |
 | 3. | Drücken Sie auf dem Startbildschirm Einstellungen. |  |
-| 4. | Drücken Sie im Einstellungsmenü erneut die Taste Einstellungen, um die Systemeinstellungen zu öffnen. |  |
-| 5. | Drücken Sie die Taste Upgrades. |  |
-| 6. | Drücken Sie die Taste Upgrade. |  |
-| 7. | Geben Sie den Aktivierungsschlüssel ein und drücken Sie OK. |  |
+| 4. | Drücken Sie im Einstellungsmenü erneut die Taste Einstellungen, um die Systemeinstellungen zu öffnen. | ![BactoSense — Einstellungsmenü: Systemeinstellungen](/img/gui/de/settings-menu-system-settings.png "width=360") |
+| 5. | Drücken Sie die Taste Upgrades. | ![BactoSense — Systemeinstellungen: Upgrades](/img/gui/de/scientific-package-upgrades-menu.png "width=360") |
+| 6. | Drücken Sie die Taste Upgrade. | ![BactoSense — Scientific-Package-Lizenz und Upgrade-Taste](/img/gui/de/scientific-package-upgrades.png "width=360") |
+| 7. | Geben Sie den Aktivierungsschlüssel ein und drücken Sie OK. | OK wird verfügbar, sobald Sie einen Schlüssel eingeben.<br />![BactoSense — Eingabe des Scientific-Package-Aktivierungsschlüssels](/img/gui/de/scientific-package-activation-key.png "width=360") |
+
+Drücken Sie nach erfolgreicher Aktivierung in der Bestätigungsmeldung OK. Falls das Gerät neu startet, warten Sie, bis es bereit ist, und öffnen Sie erneut Upgrades. Prüfen Sie, ob Wissenschaftliches Package den Status Aktiviert anzeigt.
 
 ## 9.2 Management Package {#section-9-2}
 
@@ -58,6 +62,8 @@ Das *Management Package* ist für den Gerätebetrieb in Umgebungen mit höheren 
 - Über die Web-Benutzeroberfläche. Der Zugang zur Web-Benutzeroberfläche ist unter [Web-Benutzeroberfläche](13-web-user-interface.md) beschrieben.
 
 **Aktivierung des** **Management Package**
+
+Aktivieren Sie das Paket, wenn das Gerät im Leerlauf ist und SPS-Modus sowie Demo-Modus deaktiviert sind.
 
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG |
 | --- | --- | --- |

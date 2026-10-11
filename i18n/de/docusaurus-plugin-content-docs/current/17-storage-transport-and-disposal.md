@@ -49,7 +49,7 @@ Vorbereitungen
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNGEN |
 | --- | --- | --- |
 | 1. | Entfernen Sie das aktuell installierte Probenahmegerät entsprechend den Anweisungen unter [Entfernen des manuellen Probenahmegeräts](08-general-operations-and-configurations.md#section-8-10-2) bzw. [Entfernen des Online-Probenahmegeräts](08-general-operations-and-configurations.md#section-8-10-1). | Tragen Sie während des Verfahrens Handschuhe, um das Probenahmegerät nicht zu verunreinigen. Zeigen die Schläuche des Online-Probenahmegeräts Anzeichen von Verunreinigungen oder Schäden, verwenden Sie sie nicht erneut, sondern entsorgen Sie sie. |
-| 2. | Decken Sie das gereinigte entnommene Probenahmegerät mit dem Schraubdeckel ab, wenn vorhanden. | ![Abbildung zur Tabelle auf Handbuchseite 153](/img/manual/cell-8fdb2d0e492f.png "width=132 class=manual-figure") |
+| 2. | Decken Sie das gereinigte entnommene Probenahmegerät mit dem Schraubdeckel ab, wenn vorhanden. | ![Abbildung zur Tabelle auf Handbuchseite 153](/img/manual/cell-8fdb2d0e492f.png "width=66 class=manual-figure") |
 | 3. | Packen Sie das abgedeckte Probenahmegerät in einen sauberen, trockenen Plastikbeutel. |  |
 
 **Lagerung**
@@ -177,7 +177,7 @@ Geräte, die in Kontakt mit gefährlichen Substanzen dürfen nicht undekontamini
 
 :::
 
-:::warning[Versandanweisungen befolgen]
+:::caution[Versandanweisungen befolgen]
 
 Halten Sie sich an die Anweisungen zum Versand
 
@@ -366,7 +366,7 @@ Kartusche
 
 <td>
 
-:::warning[Gebrauchte Kartuschen zurücksenden]
+:::caution[Gebrauchte Kartuschen zurücksenden]
 
 Kartusche bitte nicht auseinandernehmen oder im Hausmüll entsorgen.
 

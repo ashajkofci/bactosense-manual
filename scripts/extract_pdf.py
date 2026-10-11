@@ -9,6 +9,7 @@ from pathlib import Path
 import argparse, hashlib, io, json, re
 import pymupdf
 from PIL import Image
+from safety_symbols import export_safety_symbols
 
 ROOT=Path(__file__).resolve().parents[1]
 
@@ -17,6 +18,7 @@ def rectlist(rect): return [round(float(x),3) for x in rect]
 def jsonwrite(path,data): path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
 def enrich(doc,manifest,assetsdir,pagesdir):
     """Recover vector-only pictograms and image-only table cells as canonical assets."""
+    export_safety_symbols(doc)
     from PIL import ImageChops, ImageStat, ImageOps
     def raster(page,box,scale=4):
         pix=page.get_pixmap(matrix=pymupdf.Matrix(scale,scale),clip=box,alpha=False)

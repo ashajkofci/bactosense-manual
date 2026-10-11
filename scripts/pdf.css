@@ -72,6 +72,8 @@ body {
 }
 .pdf-chapter thead { display: table-header-group; }
 .pdf-chapter tr { break-inside: avoid; }
+/* Keep the digital-output procedure header with its first work step. */
+.pdf-chapter .pdf-digital-output-opening { break-inside: avoid; }
 .pdf-chapter th, .pdf-chapter td {
   padding: 2mm;
   border: 0.25mm solid #d5dfe7;
@@ -88,7 +90,7 @@ body {
   display: block;
   max-width: 100%;
   max-height: 160mm;
-  width: auto;
+  /* Preserve the HTML width used on the site; auto expands images to their source size. */
   height: auto;
   object-fit: contain;
   border: 0.25mm solid #d5dfe7;
@@ -127,6 +129,14 @@ body {
 
 /* Printed pages must expand the website's scrolling tables. */
 .pdf-chapter .theme-doc-markdown table { display: table; width: 100%; max-width: 100%; table-layout: fixed; overflow: visible; font-size: 8.5pt; }
+.pdf-chapter .theme-doc-markdown .manual-narrow-details-scroll { overflow: visible; }
+.pdf-chapter .theme-doc-markdown table.manual-narrow-details { min-width: 0; }
+.pdf-chapter .theme-doc-markdown .manual-cartridge-table-scroll { overflow: visible; }
+.pdf-chapter .theme-doc-markdown .manual-cartridge-table-scroll table { min-width: 0; }
+.pdf-chapter .theme-doc-markdown .manual-ui-elements-scroll { overflow: visible; }
+.pdf-chapter .theme-doc-markdown table.manual-ui-elements { min-width: 0; }
+.pdf-chapter .theme-doc-markdown .manual-output-steps-scroll { overflow: visible; }
+.pdf-chapter .theme-doc-markdown .manual-output-steps-scroll table { min-width: 0; }
 .pdf-chapter .theme-doc-markdown table.manual-digital-input-config {
   display: table;
   width: 100%;
@@ -151,25 +161,52 @@ body {
   table-layout: fixed;
   overflow: visible;
 }
-.pdf-chapter .theme-doc-markdown table.manual-modbus-address-list col.modbus-register-column { width: 9%; }
-.pdf-chapter .theme-doc-markdown table.manual-modbus-address-list col.modbus-address-column { width: 11%; }
-.pdf-chapter .theme-doc-markdown table.manual-modbus-address-list col.modbus-type-column { width: 15%; }
-.pdf-chapter .theme-doc-markdown table.manual-modbus-address-list col.modbus-function-column { width: 15%; }
-.pdf-chapter .theme-doc-markdown table.manual-modbus-address-list col.modbus-values-column { width: 50%; }
+.pdf-chapter .theme-doc-markdown table.manual-modbus-address-list col.modbus-register-column { width: 12%; }
+.pdf-chapter .theme-doc-markdown table.manual-modbus-address-list col.modbus-address-column { width: 12%; }
+.pdf-chapter .theme-doc-markdown table.manual-modbus-address-list col.modbus-type-column { width: 14%; }
+.pdf-chapter .theme-doc-markdown table.manual-modbus-address-list col.modbus-function-column { width: 14%; }
+.pdf-chapter .theme-doc-markdown table.manual-modbus-address-list col.modbus-values-column { width: 48%; }
+.pdf-chapter .theme-doc-markdown .manual-user-roles-scroll { max-width: 100%; overflow: visible; }
+.pdf-chapter .theme-doc-markdown table.manual-user-roles-permissions {
+  display: table;
+  width: 100%;
+  max-width: 100%;
+  table-layout: fixed;
+  overflow: visible;
+}
+.pdf-chapter .theme-doc-markdown table.manual-user-roles-permissions col.user-role-permission-column { width: 49%; }
+.pdf-chapter .theme-doc-markdown table.manual-user-roles-permissions col.user-role-basic-column { width: 17%; }
+.pdf-chapter .theme-doc-markdown table.manual-user-roles-permissions col.user-role-advanced-column { width: 17%; }
+.pdf-chapter .theme-doc-markdown table.manual-user-roles-permissions col.user-role-admin-column { width: 17%; }
+.pdf-chapter .theme-doc-markdown table.manual-user-roles-permissions th:nth-child(n+2),
+.pdf-chapter .theme-doc-markdown table.manual-user-roles-permissions td:nth-child(n+2) {
+  text-align: center;
+  white-space: nowrap;
+}
 .pdf-chapter .theme-doc-markdown th,
 .pdf-chapter .theme-doc-markdown td { min-width: 0; overflow-wrap: anywhere; padding: 1.8mm; }
 .pdf-chapter .theme-doc-markdown td img { max-width: 100%; max-height: 90mm; }
 .pdf-chapter .theme-doc-markdown td img.manual-article-image { max-width: min(100%, 143px); }
-.pdf-chapter .pdf-screenshot-row td { padding: 3mm; }
-.pdf-chapter .pdf-screenshot-row img { margin: 0 auto; }
+.pdf-chapter .theme-doc-markdown table.manual-sampling-installation th:nth-child(3) { width: 50%; }
+.pdf-chapter .theme-doc-markdown td:has(img.manual-sampling-illustration) { min-width: 0; }
+.pdf-chapter .theme-doc-markdown td img.manual-sampling-illustration { max-height: none; }
+.pdf-chapter .pdf-screenshot-row > td { padding: 3mm; }
+.pdf-chapter .theme-doc-markdown table.pdf-procedure-step-instructions { margin: -3mm -3mm 3mm; width: calc(100% + 6mm); }
+.pdf-chapter .pdf-procedure-step-instructions td { border-top: 0; border-left: 0; }
+.pdf-chapter .pdf-procedure-step-instructions td:last-child { border-right: 0; }
+.pdf-chapter .pdf-illustrated-step { break-inside: avoid; }
+/* A full GUI screen stays below its instruction inside the same print row. */
+.pdf-chapter .pdf-screenshot-row img { width: auto; margin: 0 auto; }
 .pdf-chapter .theme-doc-markdown img.manual-icon { display: inline-block; width: auto; max-width: 8mm; max-height: 8mm; border: 0; border-radius: 0; vertical-align: middle; }
 .pdf-chapter .theme-doc-markdown img.manual-icon.compliance-mark { max-width: 6mm; max-height: 6mm; }
 .pdf-chapter .theme-doc-markdown img.manual-icon.cartridge-handling-icon-31 { width: 31px; max-width: 31px; max-height: 31px; }
 .pdf-chapter .theme-doc-markdown img.manual-icon.cartridge-handling-icon-24 { width: 24px; max-width: 24px; max-height: 24px; }
 .pdf-chapter .theme-doc-markdown img.manual-icon.cartridge-handling-icon-29 { width: 29px; max-width: 29px; max-height: 29px; }
+.pdf-chapter .theme-doc-markdown img.manual-laser-label { width: 72px; max-width: 72px; max-height: none; }
 .pdf-chapter .theme-doc-markdown img.manual-icon-settings-button-half { display: inline-block; max-width: 100%; max-height: 90mm; border: 0; border-radius: 0; vertical-align: middle; }
 .pdf-chapter .theme-doc-markdown .manual-screenshot { display: inline-block; max-width: 100%; cursor: auto; }
 .pdf-chapter .theme-admonition { font-size: 9pt; }
+.pdf-chapter .theme-admonition .manual-safety-symbol { width: 6mm; height: 6mm; }
 .pdf-chapter .theme-admonition p:last-child { margin-bottom: 0; }
 
 .pdf-chapter td .theme-admonition { padding: 1.5mm; font-size: 8.5pt; }

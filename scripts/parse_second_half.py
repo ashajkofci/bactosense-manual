@@ -179,12 +179,12 @@ def render_page(num):
   # Include bold safety notice titles immediately above the main paragraph.
   rect=[145,top,550,bottom];iconrect=[b['bbox'][0]-5,max(60,y-(32 if label!='i' else 2)),b['bbox'][2]+5,b['bbox'][3]+3]
   icon={'bbox':[0,0,24,28],'path':'/img/manual/icon-'+('information' if label=='i' else ('danger' if label=='DANGER!' else 'warning'))+'.png'}
-  notices.append({'bbox':rect,'blocks':near,'kind':'note' if label=='i' else ('danger' if label=='DANGER!' else 'warning'),'icon':icon,'label':'Note' if label=='i' else label.rstrip('!').title()})
+  notices.append({'bbox':rect,'blocks':near,'kind':'note' if label=='i' else 'danger' if label=='DANGER!' else 'caution' if label=='CAUTION!' else 'warning','icon':icon,'label':'Note' if label=='i' else label.rstrip('!').title()})
  # Gloves are vector-only; the distinctive mandatory protective-glove notices are retained as admonitions.
  for b in textblocks:
   if textblock(b).startswith(('Wear nitrile gloves','Wear fresh, non-powdered nitrile gloves')) and not any(b in n['blocks'] for n in notices):
    r=b['bbox'];ir=[91 if num%2==0 else 100,r[1]-5,124 if num%2==0 else 133,r[3]+10]
-   notices.append({'bbox':r,'blocks':[b],'kind':'warning','icon':{'bbox':[0,0,28,28],'path':'/img/manual/icon-gloves.png'},'label':'Protective gloves'})
+   notices.append({'bbox':r,'blocks':[b],'kind':'gloves','icon':{'bbox':[0,0,28,28],'path':'/img/manual/icon-gloves.png'},'label':'Protective gloves'})
  events=[];usedtexts=[]
  for ti,t in enumerate(tables):
   if any(other is not t and other.bbox[0]<=t.bbox[0] and other.bbox[2]>=t.bbox[2] and other.bbox[1]<t.bbox[1] and other.bbox[3]>t.bbox[3] for other in tables):continue
@@ -256,7 +256,8 @@ for number,start,end,slug,title in chapters:
  header=f'---\ntitle: "{number}. {title}"\nsidebar_label: "{number}. {title}"\nsidebar_position: {number}\nslug: /{slug}\n---\n\n'
  content=content.replace('www.bnovate.com/ distribution-partners','[www.bnovate.com/distribution-partners](https://www.bnovate.com/distribution-partners)')
  content=content.replace('http://ipaddress:port/export/filename.extension?hash=myhash','<code>http&#58;//ipaddress&#58;port/export/filename.extension?hash=myhash</code>').replace('https://ipaddress:port/export/filename.extension?hash=myhash','<code>https&#58;//ipaddress&#58;port/export/filename.extension?hash=myhash</code>')
- (OUT/f'{number:02}-{slug}.md').write_text(normalize_artwork(normalize_notices(header+content+'\n')))
+ filename=f'docs/{number:02}-{slug}.md'
+ (ROOT/filename).write_text(normalize_artwork(normalize_notices(header+content+'\n'),filename))
  print(number,title,flush=True)
 (ROOT/'extraction/chapters-10-20-audit.json').write_text(json.dumps(audit,indent=2)+'\n')
 

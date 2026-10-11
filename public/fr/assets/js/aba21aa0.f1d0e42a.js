@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkbactosense_manual=self.webpackChunkbactosense_manual||[]).push([[742],{1075(e){e.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"default"}')}}]);

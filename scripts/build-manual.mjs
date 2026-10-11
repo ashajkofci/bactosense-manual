@@ -7,10 +7,16 @@ import { publishApacheSite } from './publish-apache.mjs';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const arguments_ = process.argv.slice(2);
 const localeOnly = arguments_.some((argument) => argument === '--locale' || argument.startsWith('--locale='));
+// Docusaurus' SSR evaluator reads Node globals. Browser storage is unnecessary
+// during builds, and newer Node releases warn when it has no backing file.
+const runtimeFlags = process.allowedNodeEnvironmentFlags.has('--no-experimental-webstorage')
+  ? ['--no-experimental-webstorage']
+  : [];
 
 try {
   const code = await new Promise((resolve, reject) => {
     const child = spawn(process.execPath, [
+      ...runtimeFlags,
       path.join(root, 'node_modules/@docusaurus/core/bin/docusaurus.mjs'),
       'build', ...arguments_,
     ], { cwd: root, stdio: 'inherit' });

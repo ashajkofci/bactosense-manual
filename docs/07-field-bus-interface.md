@@ -487,11 +487,7 @@ UInt16<br />(individual bits)
 
 <td>
 
-:::info[Additional information]
-
-Alarm status,<br />i.e., alarms<br />raised during<br />last<br />measuremen<br />t.
-
-:::
+Alarm status, i.e., alarms raised during the last measurement.
 
 </td>
 
@@ -524,11 +520,7 @@ UInt32 MSB<br />(individual bits)
 
 <td rowSpan="2">
 
-:::info[Additional information]
-
-Warning<br />status, i.e.<br />warnings<br />raised during<br />last<br />measuremen<br />t.
-
-:::
+Warning status, i.e., warnings raised during the last measurement.
 
 </td>
 

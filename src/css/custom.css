@@ -37,6 +37,7 @@
 .manual-pdf-download svg { flex-shrink: 0; }
 .footer--dark { --ifm-footer-background-color: #245e83; }
 .theme-doc-markdown { max-width: 48rem; }
+.theme-admonition .manual-safety-symbol { width: 1.75rem; height: 1.75rem; vertical-align: middle; }
 .theme-doc-markdown h1 { letter-spacing: -0.025em; line-height: 1.2; }
 .theme-doc-markdown img { border: 1px solid var(--ifm-color-emphasis-200); border-radius: 0.6rem; }
 .manual-screenshot { display: inline-block; max-width: 100%; line-height: 0; border-radius: 0.6rem; cursor: zoom-in; }
@@ -86,9 +87,69 @@
 .theme-doc-markdown img.manual-icon.cartridge-handling-icon-31 { width: 31px; max-width: 31px; max-height: 31px; }
 .theme-doc-markdown img.manual-icon.cartridge-handling-icon-24 { width: 24px; max-width: 24px; max-height: 24px; }
 .theme-doc-markdown img.manual-icon.cartridge-handling-icon-29 { width: 29px; max-width: 29px; max-height: 29px; }
+.theme-doc-markdown img.manual-laser-label { width: 72px; max-width: 72px; max-height: none; }
 .theme-doc-markdown img.manual-icon-settings-button-half { display: inline-block; max-width: min(100%, 26rem); border: 0; border-radius: 0; vertical-align: middle; }
 .theme-doc-markdown table { display: block; width: max-content; max-width: 100%; overflow-x: auto; }
 .theme-doc-markdown td { vertical-align: top; }
+.theme-doc-markdown .manual-narrow-details-scroll { max-width: 100%; overflow-x: auto; }
+.theme-doc-markdown table.manual-narrow-details {
+  display: table;
+  width: 100%;
+  min-width: 36rem;
+  table-layout: fixed;
+  overflow: visible;
+}
+.theme-doc-markdown table.manual-narrow-details > colgroup > col.procedure-step-column { width: 6%; }
+.theme-doc-markdown table.manual-narrow-details > colgroup > col.procedure-instruction-column { width: 70%; }
+.theme-doc-markdown table.manual-narrow-details > colgroup > col.procedure-detail-column { width: 24%; }
+.theme-doc-markdown table.manual-narrow-details-split > colgroup > col.procedure-detail-column { width: 12%; }
+.theme-doc-markdown table.manual-narrow-details > thead > tr > th,
+.theme-doc-markdown table.manual-narrow-details > tbody > tr > th,
+.theme-doc-markdown table.manual-narrow-details > tbody > tr > td { min-width: 0; overflow-wrap: break-word; }
+.theme-doc-markdown table.manual-narrow-details > thead > tr > th:first-child,
+.theme-doc-markdown table.manual-narrow-details > tbody > tr > td:first-child { text-align: center; padding-inline: 0.4rem; }
+.theme-doc-markdown .manual-cartridge-table-scroll { max-width: 100%; overflow-x: auto; }
+.theme-doc-markdown .manual-cartridge-table-scroll table {
+  display: table;
+  width: 100%;
+  min-width: 36rem;
+  table-layout: fixed;
+  overflow: visible;
+}
+.theme-doc-markdown .manual-cartridge-table-scroll th,
+.theme-doc-markdown .manual-cartridge-table-scroll td { min-width: 0; overflow-wrap: break-word; }
+.theme-doc-markdown .manual-cartridge-gates th:nth-child(1) { width: 18%; }
+.theme-doc-markdown .manual-cartridge-gates th:nth-child(2) { width: 16%; }
+.theme-doc-markdown .manual-cartridge-parameters th:nth-child(1) { width: 14%; }
+.theme-doc-markdown .manual-cartridge-parameters th:nth-child(2) { width: 10%; }
+.theme-doc-markdown .manual-cartridge-parameters th:nth-child(3) { width: 28%; }
+.theme-doc-markdown .manual-ui-elements-scroll { max-width: 100%; overflow-x: auto; }
+.theme-doc-markdown table.manual-ui-elements {
+  display: table;
+  width: 100%;
+  min-width: 36rem;
+  table-layout: fixed;
+  overflow: visible;
+}
+.theme-doc-markdown table.manual-ui-elements col.ui-element-number { width: 6%; }
+.theme-doc-markdown table.manual-ui-elements col.ui-element-description { width: 44%; }
+.theme-doc-markdown table.manual-ui-elements td { min-width: 0; overflow-wrap: break-word; }
+.theme-doc-markdown table.manual-ui-elements td:nth-child(1),
+.theme-doc-markdown table.manual-ui-elements td:nth-child(3) { text-align: center; padding-inline: 0.4rem; }
+.theme-doc-markdown .manual-output-steps-scroll { max-width: 100%; overflow-x: auto; }
+.theme-doc-markdown .manual-output-steps-scroll table {
+  display: table;
+  width: 100%;
+  min-width: 36rem;
+  table-layout: fixed;
+  overflow: visible;
+}
+.theme-doc-markdown .manual-output-steps-scroll th:first-child { width: 6%; }
+.theme-doc-markdown .manual-output-steps-scroll th:nth-child(3) { width: 24%; }
+.theme-doc-markdown .manual-output-steps-scroll th,
+.theme-doc-markdown .manual-output-steps-scroll td { min-width: 0; overflow-wrap: break-word; }
+.theme-doc-markdown .manual-output-steps-scroll th:first-child,
+.theme-doc-markdown .manual-output-steps-scroll td:first-child { text-align: center; padding-inline: 0.4rem; }
 .theme-doc-markdown table.manual-digital-input-config {
   display: table;
   width: 100%;
@@ -118,23 +179,84 @@
   table-layout: fixed;
   overflow: visible;
 }
-.theme-doc-markdown table.manual-modbus-address-list col.modbus-register-column { width: 9%; }
-.theme-doc-markdown table.manual-modbus-address-list col.modbus-address-column { width: 11%; }
-.theme-doc-markdown table.manual-modbus-address-list col.modbus-type-column { width: 15%; }
-.theme-doc-markdown table.manual-modbus-address-list col.modbus-function-column { width: 15%; }
-.theme-doc-markdown table.manual-modbus-address-list col.modbus-values-column { width: 50%; }
+.theme-doc-markdown table.manual-modbus-address-list col.modbus-register-column { width: 12%; }
+.theme-doc-markdown table.manual-modbus-address-list col.modbus-address-column { width: 12%; }
+.theme-doc-markdown table.manual-modbus-address-list col.modbus-type-column { width: 14%; }
+.theme-doc-markdown table.manual-modbus-address-list col.modbus-function-column { width: 14%; }
+.theme-doc-markdown table.manual-modbus-address-list col.modbus-values-column { width: 48%; }
 .theme-doc-markdown table.manual-modbus-address-list th,
 .theme-doc-markdown table.manual-modbus-address-list td {
   min-width: 0;
   overflow-wrap: break-word;
 }
+.theme-doc-markdown table.manual-modbus-address-list th:nth-child(1),
+.theme-doc-markdown table.manual-modbus-address-list td:nth-child(1),
+.theme-doc-markdown table.manual-modbus-address-list th:nth-child(2),
+.theme-doc-markdown table.manual-modbus-address-list td:nth-child(2) { padding-inline: 0.4rem; }
+.theme-doc-markdown table.manual-modbus-address-list th:nth-child(1) { white-space: nowrap; font-size: 0.85rem; }
+.theme-doc-markdown .manual-user-roles-scroll { max-width: 100%; overflow-x: auto; }
+.theme-doc-markdown table.manual-user-roles-permissions {
+  display: table;
+  width: 100%;
+  max-width: 100%;
+  table-layout: fixed;
+  overflow: visible;
+}
+.theme-doc-markdown table.manual-user-roles-permissions col.user-role-permission-column { width: 49%; }
+.theme-doc-markdown table.manual-user-roles-permissions col.user-role-basic-column { width: 17%; }
+.theme-doc-markdown table.manual-user-roles-permissions col.user-role-advanced-column { width: 17%; }
+.theme-doc-markdown table.manual-user-roles-permissions col.user-role-admin-column { width: 17%; }
+.theme-doc-markdown table.manual-user-roles-permissions th,
+.theme-doc-markdown table.manual-user-roles-permissions td { min-width: 0; overflow-wrap: break-word; }
+.theme-doc-markdown table.manual-user-roles-permissions th:nth-child(n+2),
+.theme-doc-markdown table.manual-user-roles-permissions td:nth-child(n+2) {
+  text-align: center;
+  white-space: nowrap;
+}
+/* HTTP retrieval URLs and the nested parameter table fit the reading column. */
+.theme-doc-markdown table.manual-http-retrieval,
+.theme-doc-markdown table.manual-http-parameters {
+  display: table;
+  width: 100%;
+  max-width: 100%;
+  table-layout: fixed;
+  overflow: visible;
+}
+.theme-doc-markdown .manual-http-retrieval col.http-step-column { width: 6%; }
+.theme-doc-markdown .manual-http-retrieval col.http-instruction-column { width: 56%; }
+.theme-doc-markdown .manual-http-retrieval col.http-detail-column { width: 38%; }
+.theme-doc-markdown .manual-http-parameters col.http-parameter-column { width: 22%; }
+.theme-doc-markdown .manual-http-parameters col.http-description-column { width: 78%; }
+.theme-doc-markdown .manual-http-retrieval th,
+.theme-doc-markdown .manual-http-retrieval td {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.theme-doc-markdown .manual-http-retrieval code { white-space: normal; overflow-wrap: anywhere; }
+.theme-doc-markdown .manual-http-retrieval p { margin-bottom: 0; }
+.theme-doc-markdown .manual-http-retrieval > tbody > tr > td:first-child {
+  text-align: center;
+  padding-inline: 0.2rem;
+}
+.theme-doc-markdown .manual-http-parameters { margin-top: 0.75rem; margin-bottom: 0; }
 .theme-doc-markdown td img { max-width: min(100%, 26rem); }
+.theme-doc-markdown td:has(img.manual-article-image) {
+  min-width: calc(143px + 2 * var(--ifm-table-cell-padding) + 2 * var(--ifm-table-border-width));
+}
+.theme-doc-markdown td:has(img.manual-sampling-illustration) {
+  min-width: calc(282px + 2 * var(--ifm-table-cell-padding) + 2 * var(--ifm-table-border-width));
+}
 .theme-doc-markdown .source-reference { color: var(--ifm-color-emphasis-700); font-size: 0.85rem; }
 .theme-doc-markdown figure { margin: 1.5rem 0; }
 .theme-doc-markdown figcaption { color: var(--ifm-color-emphasis-700); font-size: 0.875rem; margin-top: 0.5rem; }
 @media (max-width: 576px) {
   .theme-doc-markdown table { font-size: 0.85rem; }
   .theme-doc-markdown table.manual-modbus-address-list { min-width: 48rem; }
+  .theme-doc-markdown table.manual-user-roles-permissions { min-width: 40rem; }
+  .theme-doc-markdown table.manual-user-roles-permissions col.user-role-permission-column { width: 43%; }
+  .theme-doc-markdown table.manual-user-roles-permissions col.user-role-basic-column,
+  .theme-doc-markdown table.manual-user-roles-permissions col.user-role-advanced-column,
+  .theme-doc-markdown table.manual-user-roles-permissions col.user-role-admin-column { width: 19%; }
   .theme-doc-markdown th, .theme-doc-markdown td { padding: 0.5rem; min-width: 10rem; }
   .theme-doc-markdown th:first-child, .theme-doc-markdown td:first-child { min-width: 4rem; }
   .theme-doc-markdown th:last-child, .theme-doc-markdown td:last-child { min-width: 15rem; }

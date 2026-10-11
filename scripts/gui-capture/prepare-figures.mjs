@@ -77,5 +77,10 @@ const manifest={version:1,capturedDate:'2026-10-11',locales:['en','de','fr','it'
     captureReports:['output/gui-capture/runtime/capture-fixture-provenance.json','output/gui-capture/web/source-provenance.json','output/gui-capture/web/capture-evidence.json'],
     originalScreenshotAssets:36,originalControlAssets:38,preservedScientificAssets:8,preservedNonGuiAssets:29},
   figures};
+// Additive procedure catalogs have their own capture and preparation workflows;
+// refreshing legacy replacements must not drop those document images.
+manifest.figures.push(...previous.figures.filter(figure=>figure.catalog && locales.includes(figure.locale)));
+if (previous.source?.supplementalCaptureReports) manifest.source.supplementalCaptureReports=previous.source.supplementalCaptureReports;
+if (previous.source?.digitalOutputCaptureReports) manifest.source.digitalOutputCaptureReports=previous.source.digitalOutputCaptureReports;
 await writeFile(filename,JSON.stringify(manifest,null,2)+'\n');
-console.log(`Prepared ${figures.length} figures. Render and visually review before applying them.`);
+console.log(`Prepared ${manifest.figures.length} figures. Render and visually review before applying them.`);

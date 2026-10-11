@@ -6,7 +6,13 @@
     "message": "PDF herunterladen"
   },
   "manual.image.open": {
-    "message": "Bild in voller Größe öffnen"
+    "message": "Bild vergrößern"
+  },
+  "manual.image.close": {
+    "message": "Bildvorschau schließen"
+  },
+  "manual.image.preview": {
+    "message": "Bildvorschau"
   },
   "theme.ErrorPageContent.title": {
     "message": "Die Seite ist abgestürzt.",
@@ -369,5 +375,13 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "theme.admonition.explosion": {
+    "message": "Explosionsgefahr",
+    "description": "The default label used for an explosion hazard notice."
+  },
+  "theme.admonition.gloves": {
+    "message": "Schutzhandschuhe",
+    "description": "The default label used for a mandatory protective gloves notice."
   }
 }

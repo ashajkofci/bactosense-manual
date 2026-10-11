@@ -25,9 +25,12 @@ module.exports = {
     docsDir: ['docs', ...['de', 'fr', 'it', 'es'].map(locale => `i18n/${locale}/docusaurus-plugin-content-docs/current`)],
     explicitSearchResultPath: true, searchResultContextMaxLength: 160,
   }]],
-  plugins: [require.resolve('./plugins/manual-pdf.cjs')],
+  plugins: [
+    ...(process.env.MANUAL_DEVICE_ONLY === '1' ? [] : [require.resolve('./plugins/manual-pdf.cjs')]),
+    require.resolve('./plugins/manual-device.cjs'),
+  ],
   presets: [['classic', {
-    docs: { routeBasePath: '/', sidebarPath: './sidebars.js', remarkPlugins: [require('./plugins/manual-images.cjs')], rehypePlugins: [require('./plugins/manual-tables.cjs')] },
+    docs: { routeBasePath: '/', sidebarPath: './sidebars.js', admonitions: { keywords: ['explosion', 'gloves'], extendDefaults: true }, remarkPlugins: [require('./plugins/manual-images.cjs')], rehypePlugins: [require('./plugins/manual-tables.cjs')] },
     blog: false,
     theme: { customCss: './src/css/custom.css' },
   }]],

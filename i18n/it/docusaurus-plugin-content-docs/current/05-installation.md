@@ -88,7 +88,7 @@ Installare due viti M8 alla stessa altezza su una parete, con una distanza orizz
 
 <td>
 
-:::warning[Montaggio sicuro a parete]
+:::caution[Montaggio sicuro a parete]
 
 Il fissaggio deve sostenere almeno 60 kg (132 lbs).
 
@@ -158,7 +158,7 @@ BactoSense deve essere utilizzato con l’alimentatore originale fornito per gar
 
 :::
 
-:::warning[Alimentazione stabile]
+:::caution[Alimentazione stabile]
 
 Deve essere garantita un’alimentazione continua e stabile, come specificato nei dati tecnici della sezione [Dati tecnici](03-instrument-overview.md#section-3-2).
 
@@ -309,7 +309,7 @@ Serrare la ghiera di bloccaggio del connettore di alimentazione (X). Se il conne
 
 </table>
 
-:::warning[Scollegare l’alimentazione in sicurezza]
+:::caution[Scollegare l’alimentazione in sicurezza]
 
 Per scollegare BactoSense dall’alimentazione, spegnere prima lo strumento. Quindi scollegare l’alimentatore dalla rete elettrica, prima di scollegare il connettore di alimentazione da BactoSense.
 
@@ -552,15 +552,17 @@ Collegare l’alimentatore alla rete e allo strumento come descritto nella sezio
 
 Il dispositivo di campionamento manuale è destinato alla misurazione di singoli campioni prelevati e raccolti in provette da 5 mL con tappo a vite. La procedura seguente descrive come installarlo.
 
-![Illustrazione del manuale originale, pagina stampata 23](/img/manual/asset-d4b1ce33478f.png "width=53")
+![Illustrazione del manuale originale, pagina stampata 23](/img/manual/asset-d4b1ce33478f.png "width=282 class=manual-sampling-illustration")
 
 *Figura 5-1 Dispositivo di campionamento manuale*                                                                                                                  *1: perni di posizionamento, 2: tappo, 3: ghiera di fissaggio, 4: provetta da 5 mL con tappo a vite.*
 
-![Indossare guanti protettivi](/img/manual/icon-gloves.png "width=32")
+:::gloves[Indossare guanti protettivi]
 
 Evitare la contaminazione dell’attrezzatura. Indossare guanti in nitrile quando si manipolano campioni, dispositivi di campionamento e qualsiasi componente che entri in contatto con essi.
 
-<table>
+:::
+
+<table className="manual-sampling-installation">
 
 <thead>
 
@@ -606,7 +608,7 @@ Ispezionare il dispositivo di campionamento • Assicurarsi che sia privo di pol
 
 <td>
 
-![Illustrazione della procedura, pagina stampata 23](/img/manual/asset-990519e959c3.png "width=58")
+![Illustrazione della procedura, pagina stampata 23](/img/manual/asset-990519e959c3.png "width=282 class=manual-sampling-illustration")
 
 </td>
 
@@ -628,7 +630,7 @@ Collegare una provetta vuota da 5 mL con tappo a vite o la Washstation al dispos
 
 <td>
 
-![Illustrazione della procedura, pagina stampata 23](/img/manual/asset-cdd539f42468.png "width=46")
+![Illustrazione della procedura, pagina stampata 23](/img/manual/asset-cdd539f42468.png "width=282 class=manual-sampling-illustration")
 
 </td>
 
@@ -650,7 +652,7 @@ Inserire con cautela il connettore del dispositivo di campionamento nella porta 
 
 <td>
 
-![Illustrazione della procedura, pagina stampata 23](/img/manual/asset-7f15e58174d9.png "width=63")
+![Illustrazione della procedura, pagina stampata 23](/img/manual/asset-7f15e58174d9.png "width=282 class=manual-sampling-illustration")
 
 </td>
 
@@ -666,7 +668,7 @@ Inserire con cautela il connettore del dispositivo di campionamento nella porta 
 
 <td>
 
-:::warning[Serrare esclusivamente a mano]
+:::caution[Serrare esclusivamente a mano]
 
 Quindi serrare la ghiera zigrinata di fissaggio fino a installare saldamente il dispositivo di campionamento. Serrare solo a mano. Non utilizzare utensili.
 
@@ -676,7 +678,7 @@ Quindi serrare la ghiera zigrinata di fissaggio fino a installare saldamente il 
 
 <td>
 
-![Illustrazione della procedura, pagina stampata 24](/img/manual/asset-0c86ff9377ac.png "width=94")
+![Illustrazione della procedura, pagina stampata 24](/img/manual/asset-0c86ff9377ac.png "width=282 class=manual-sampling-illustration")
 
 </td>
 
@@ -734,11 +736,13 @@ Il dispositivo di campionamento in linea è destinato alla misurazione continua 
 
 *Figura 5-2 Dispositivo di campionamento in linea*                                                                                                                         *1: tubo di uscita collegato a uno scarico, 2: tubo di ingresso collegato a una sorgente d’acqua, 3: dado del*  *connettore, 4: ghiera di fissaggio, 5: perni di posizionamento, 6: tappo.*
 
-![Indossare guanti protettivi](/img/manual/icon-gloves.png "width=32")
+:::gloves[Indossare guanti protettivi]
 
 Evitare la contaminazione dell’attrezzatura. Indossare guanti in nitrile quando si manipolano campioni, dispositivi di campionamento e qualsiasi componente che entri in contatto con essi.
 
-:::warning[Fissare saldamente i collegamenti dei tubi]
+:::
+
+:::caution[Fissare saldamente i collegamenti dei tubi]
 
 **Fissare saldamente i tubi e il dispositivo di campionamento**
 
@@ -775,391 +779,62 @@ Questa sezione descrive l’installazione del dispositivo di campionamento in li
 
 *Figura 5-3 Installazione tipica per la modalità di analisi in linea con il dispositivo di campionamento in linea.*
 
-<table>
+#### Regolazione della portata e della pressione
 
-<tbody>
+1. Valvola di apertura/chiusura
+2. Valvola di pressione con manometro
+3. Valvola di regolazione della portata
+4. Raccordi di riduzione
 
-<tr>
+#### Tubi di ingresso e uscita
 
-<td colSpan="2">
+5. Ansa di contropressione
+6. Fissaggio dei tubi
+7. Tubo di ingresso orizzontale
+8. Tubo di uscita collegato allo scarico
 
-Regolazione della portata e della pressione
+#### Dispositivo di campionamento in linea
 
-</td>
+9. Tubo di uscita
+10. Tubo di ingresso
+11. Condizioni di ingresso:
+    - Flusso continuo
+    - 200 – 400 mL/min (0.05 – 0.10 gal/min)
+    - Max. 0.5 bar (7.3 psi)
 
-</tr>
+#### Passaggi di installazione
 
-<tr>
+1. Assicurarsi che i tubi di ingresso e uscita siano saldamente collegati al dispositivo di campionamento in linea.
 
-<td>
+2. Inserire con cautela il connettore del dispositivo di campionamento nella porta sul lato sinistro di BactoSense, inserendo i perni metallici di posizionamento situati all’interno del connettore nelle aperture della porta di campionamento di BactoSense.
 
-1
+    ![Illustrazione della procedura, pagina stampata 28](/img/manual/asset-255f328ed935.png "width=77")
 
-</td>
+3. :::caution[Serrare esclusivamente a mano]
 
-<td>
+    Quindi serrare la ghiera zigrinata di fissaggio (rossa) fino a installare saldamente il dispositivo di campionamento. Serrare solo a mano. Non utilizzare utensili.
 
-Valvola di apertura/chiusura
+    :::
 
-</td>
+    ![Illustrazione della procedura, pagina stampata 28](/img/manual/asset-ae907dad8418.png "width=98")
 
-</tr>
+4. :::caution[Collegare il tubo di campionamento in sicurezza]
 
-<tr>
+    Collegare con cautela le estremità libere dei tubi alla sorgente d’acqua in ingresso e allo scarico in uscita. • Posizionare il tubo di ingresso allo stesso livello della sorgente d’acqua per evitare di intrappolare bolle d’aria • Ridurre il più possibile la lunghezza dei tubi • Installare il tubo di uscita con un’ansa in posizione elevata • Ridurre al minimo il numero di raccordi per limitare le potenziali fonti di contaminazione • Per evitare danni al dispositivo di campionamento e a BactoSense, assicurarsi che i tubi non esercitino forze sul dispositivo. Se possibile, fissare i tubi a una struttura solida vicino al dispositivo di campionamento (30 – 50 cm). Negli impianti di acqua potabile, collegare il tubo di uscita a uno scarico per assicurarsi che l’acqua deviata dalla rete idrica non vi ritorni dopo aver attraversato i raccordi aggiuntivi, i tubi e il dispositivo di campionamento di BactoSense.
 
-<td>
+    :::
 
-2
+    Vedere figura 5-3.
 
-</td>
+5. Aprire con cautela l’alimentazione idrica e controllare che non vi siano perdite.
 
-<td>
+6. :::caution[Controllare portata e pressione]
 
-Valvola di pressione con manometro
+    Regolare la portata proveniente dall’alimentazione idrica. Intervallo di portata: da 200 a 400 mL/min (0.05 – 0.10 gal/min). Se la portata non rientra nei limiti specificati, i risultati possono essere imprecisi o BactoSense può subire danni. Assicurarsi che la pressione nel dispositivo di campionamento non superi 0.5 bar (7.3 psi). Installare un riduttore di pressione se necessario.
 
-</td>
+    :::
 
-</tr>
-
-<tr>
-
-<td>
-
-3
-
-</td>
-
-<td>
-
-Valvola di regolazione della portata
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4
-
-</td>
-
-<td>
-
-Raccordi di riduzione
-
-</td>
-
-</tr>
-
-<tr>
-
-<td colSpan="2">
-
-Tubi di ingresso e uscita
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5
-
-</td>
-
-<td>
-
-Ansa di contropressione
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6
-
-</td>
-
-<td>
-
-Fissaggio dei tubi
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7
-
-</td>
-
-<td>
-
-Tubo di ingresso orizzontale
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-8
-
-</td>
-
-<td>
-
-Tubo di uscita collegato allo scarico
-
-</td>
-
-</tr>
-
-<tr>
-
-<td colSpan="2">
-
-Dispositivo di campionamento in linea
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-9
-
-</td>
-
-<td>
-
-Tubo di uscita
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-10
-
-</td>
-
-<td>
-
-Tubo di ingresso
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-11
-
-</td>
-
-<td>
-
-Condizioni di ingresso • Flusso continuo • 200 – 400 mL/min (0.05 – 0.10 gal/min) • Max. 0.5 bar (7.3 psi)
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-OPERAZIONE
-
-</th>
-
-<th>
-
-INFORMAZIONI AGGIUNTIVE / IMMAGINI
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Assicurarsi che i tubi di ingresso e uscita siano saldamente collegati al dispositivo di campionamento in linea.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Inserire con cautela il connettore del dispositivo di campionamento nella porta sul lato sinistro di BactoSense, inserendo i perni metallici di posizionamento situati all’interno del connettore nelle aperture della porta di campionamento di BactoSense.
-
-</td>
-
-<td>
-
-![Illustrazione della procedura, pagina stampata 28](/img/manual/asset-255f328ed935.png "width=77")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-:::warning[Serrare esclusivamente a mano]
-
-Quindi serrare la ghiera zigrinata di fissaggio (rossa) fino a installare saldamente il dispositivo di campionamento. Serrare solo a mano. Non utilizzare utensili.
-
-:::
-
-</td>
-
-<td>
-
-![Illustrazione della procedura, pagina stampata 28](/img/manual/asset-ae907dad8418.png "width=98")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-:::warning[Collegare il tubo di campionamento in sicurezza]
-
-Collegare con cautela le estremità libere dei tubi alla sorgente d’acqua in ingresso e allo scarico in uscita. • Posizionare il tubo di ingresso allo stesso livello della sorgente d’acqua per evitare di intrappolare bolle d’aria • Ridurre il più possibile la lunghezza dei tubi • Installare il tubo di uscita con un’ansa in posizione elevata • Ridurre al minimo il numero di raccordi per limitare le potenziali fonti di contaminazione • Per evitare danni al dispositivo di campionamento e a BactoSense, assicurarsi che i tubi non esercitino forze sul dispositivo. Se possibile, fissare i tubi a una struttura solida vicino al dispositivo di campionamento (30 – 50 cm). Negli impianti di acqua potabile, collegare il tubo di uscita a uno scarico per assicurarsi che l’acqua deviata dalla rete idrica non vi ritorni dopo aver attraversato i raccordi aggiuntivi, i tubi e il dispositivo di campionamento di BactoSense.
-
-:::
-
-</td>
-
-<td>
-
-Vedere figura 5-3.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Aprire con cautela l’alimentazione idrica e controllare che non vi siano perdite.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-:::warning[Controllare portata e pressione]
-
-Regolare la portata proveniente dall’alimentazione idrica. Intervallo di portata: da 200 a 400 mL/min (0.05 – 0.10 gal/min). Se la portata non rientra nei limiti specificati, i risultati possono essere imprecisi o BactoSense può subire danni. Assicurarsi che la pressione nel dispositivo di campionamento non superi 0.5 bar (7.3 psi). Installare un riduttore di pressione se necessario.
-
-:::
-
-</td>
-
-<td>
-
-Vedere figura 5-3.
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+    Vedere figura 5-3.
 
 ## 5.6 Opzioni di connettività {#section-5-6}
 

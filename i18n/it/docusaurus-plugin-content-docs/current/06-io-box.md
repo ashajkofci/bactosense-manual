@@ -157,7 +157,7 @@ Esaminare le specifiche tecniche delle sezioni [Ingressi digitali](06-io-box.md#
 
 BactoSense rende disponibili le uscite su un connettore femmina M16 a 12 pin. È comunque consigliato l’utilizzo di un I/O-Box. L’assegnazione dei pin del connettore è riportata di seguito.
 
-![Illustrazione del manuale originale, pagina stampata 36](/img/manual/asset-223bcd55d2e3.png "width=80")
+![Illustrazione del manuale originale, pagina stampata 36](/img/manual/asset-223bcd55d2e3.png "width=160")
 
 *Figura 6-3 Panoramica dell’assegnazione dei pin del connettore di uscita*
 
@@ -178,89 +178,11 @@ BactoSense rende disponibili gli ingressi su un connettore femmina M16 a 5 pin. 
 
 *Figura 6-4 Panoramica dell’assegnazione dei pin del connettore di ingresso*
 
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-1
-
-</td>
-
-<td>
-
-Ingresso digitale 1
-
-</td>
-
-<td>
-
-2
-
-</td>
-
-<td>
-
-Ingresso digitale 2
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3
-
-</td>
-
-<td>
-
-Ingresso digitale 3
-
-</td>
-
-<td>
-
-4
-
-</td>
-
-<td>
-
-Ingresso digitale 4
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5
-
-</td>
-
-<td>
-
-Comune
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+1. Ingresso digitale 1
+2. Ingresso digitale 2
+3. Ingresso digitale 3
+4. Ingresso digitale 4
+5. Comune
 
 ## 6.5 Configurazione degli ingressi digitali e modalità PLC {#section-6-5}
 
@@ -752,17 +674,17 @@ I valori delle uscite digitali vengono modificati nelle seguenti situazioni:
 - Quando lo strumento è spento, tutte le uscite sono impostate su 0.
 - Quando lo strumento è acceso, le uscite mostrano lo stato di errore corrente: nessuno / critico / non critico.
 - Al termine di una misurazione in modalità online, le uscite vengono modificate per indicare errori e allarmi secondo le impostazioni definite dall’utilizzatore.
-- Quando si fa clic su Reset nella schermata di prova delle uscite o si preme Save nelle impostazioni delle uscite digitali, le uscite vengono aggiornate per mostrare solo lo stato di errore (gli allarmi vengono ignorati).
+- Quando si fa clic su Ripristina nella schermata di prova delle uscite o si preme Salva nelle impostazioni delle uscite digitali, le uscite vengono aggiornate per mostrare solo lo stato di errore (gli allarmi vengono ignorati).
 - Dopo la cancellazione manuale degli errori, le uscite vengono ripristinate automaticamente (e mostrano quindi il nuovo stato di errore senza allarmi).
 - In momenti specifici durante la misurazione possono essere trasmessi segnali aggiuntivi. Per impostazione predefinita, nessuno di questi viene trasmesso alle uscite. Si tratta di:
 
-**-** Processo in corso. Attivo quando un protocollo è in esecuzione.
+  - Processo in corso. Attivo quando un protocollo è in esecuzione.
 
-**-** Dispositivo di campionamento in uso. Attivo quando il dispositivo di campionamento viene utilizzato. Torna inattivo dopo la fase di preparazione del campione dei protocolli di misurazione.
+  - Dispositivo di campionamento in uso. Attivo quando il dispositivo di campionamento viene utilizzato. Torna inattivo dopo la fase di preparazione del campione dei protocolli di misurazione.
 
-**-** Cartuccia quasi vuota. Attivo quando il livello della cartuccia è inferiore al 15 % o se si stima che la cartuccia si esaurirà entro un mese in base alla frequenza di misurazione corrente.
+  - Cartuccia quasi vuota. Attivo quando il livello della cartuccia è inferiore al 15 % o se si stima che la cartuccia si esaurirà entro un mese in base alla frequenza di misurazione corrente.
 
-**-** Cartuccia scaduta. Attivo quando la cartuccia è scaduta.
+  - Cartuccia scaduta. Attivo quando la cartuccia è scaduta.
 
 Lo stato delle uscite digitali al termine di una misurazione viene definito secondo i seguenti valori predefiniti, modificabili nelle impostazioni:
 
@@ -772,13 +694,13 @@ Lo stato delle uscite digitali al termine di una misurazione viene definito seco
 - Gli allarmi impostano la terza e la quarta uscita su 0.
 - In caso di conflitto nelle impostazioni delle uscite, viene data priorità a:
 
-**-** 1. Errori critici
+  1. Errori critici
 
-**-** 2. Errori non critici
+  2. Errori non critici
 
-**-** 3. Stati della cartuccia
+  3. Stati della cartuccia
 
-**-** 4. Allarme
+  4. Allarme
 
 :::info[È richiesto l’accesso Admin]
 
@@ -882,13 +804,15 @@ Premere il pulsante Output digitali.
 
 <td>
 
-Scegliere lo stato di base, ossia lo stato delle uscite quando tutto funziona correttamente: Uscita 1 2 3 4 Stato di base 1 1 1 1
+Impostare lo **Stato di riferimento** per le uscite 1–4 quando non sono attivi errori o allarmi.
 
 </td>
 
 <td>
 
 1: l’interruttore è chiuso. 0: l’interruttore è aperto.
+
+![BactoSense — Uscite digitali: controlli per lo stato di riferimento](/img/gui/it/digital-output-base-state.png "width=280")
 
 </td>
 
@@ -904,13 +828,15 @@ Scegliere lo stato di base, ossia lo stato delle uscite quando tutto funziona co
 
 <td>
 
-Scegliere su quale uscita segnalare lo stato di errore critico: Uscita 1 2 3 4 Errore critico 0 / / /
+Impostare la risposta di ciascuna uscita nella riga **Errore critico**.
 
 </td>
 
 <td>
 
 Per impostazione predefinita, un errore critico apre l’uscita 1. 1: l’interruttore è chiuso. 0: l’interruttore è aperto. /: l’interruttore non è influenzato da questo errore.
+
+![BactoSense — Uscite digitali: controlli per gli errori critici](/img/gui/it/digital-output-critical-error.png "width=280")
 
 </td>
 
@@ -926,13 +852,15 @@ Per impostazione predefinita, un errore critico apre l’uscita 1. 1: l’interr
 
 <td>
 
-Scegliere su quale uscita segnalare lo stato di errore non critico: Uscita 1 2 3 4 Errore non critico / 0 / /
+Impostare la risposta di ciascuna uscita nella riga **Errore non critico**.
 
 </td>
 
 <td>
 
 Per impostazione predefinita, un errore non critico apre l’uscita 2.
+
+![BactoSense — Uscite digitali: controlli per gli errori non critici](/img/gui/it/digital-output-noncritical-error.png "width=280")
 
 </td>
 
@@ -948,13 +876,17 @@ Per impostazione predefinita, un errore non critico apre l’uscita 2.
 
 <td>
 
-Assegnare gli allarmi alle uscite rimanenti: Uscita 1 2 3 4 Allarme 1 / / 0 0 Allarme 2 ... ... ... ... ...
+Assegnare ciascun allarme abilitato alle uscite richieste nella relativa riga di allarme.
 
 </td>
 
 <td>
 
 È possibile assegnare solo allarmi abilitati. È possibile assegnare più allarmi alla stessa uscita.
+
+Esempio di righe di allarme: High TCC (in alto), High HNAP (in basso).
+
+![BactoSense — Uscite digitali: assegnazione degli allarmi abilitati](/img/gui/it/digital-output-alarm-assignment.png "width=280")
 
 </td>
 
@@ -1091,6 +1023,8 @@ Se selezionato, interpola l’intervallo del conteggio cellulare scelto con una 
 
 La procedura seguente descrive come regolare le uscite analogiche.
 
+<div className="manual-output-steps-scroll">
+
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINI |
 | --- | --- | --- |
 | 1. | Nella schermata Home, premere Impostazioni. |  |
@@ -1102,11 +1036,15 @@ La procedura seguente descrive come regolare le uscite analogiche.
 | 7. | Definire il limite superiore dell’intervallo (figura 6-6, posizione 4). | Quando la sorgente è uguale a questo valore, sulla porta selezionata vengono erogati 20 mA. |
 | 8. | Premere il pulsante Salva. |  |
 
+</div>
+
 ## 6.8 Prova delle uscite digitali e analogiche {#section-6-8}
 
-:::warning[Prevenire allarmi involontari]
+Accedere come Amministratore (Admin) e usare Test uscite quando lo strumento è inattivo, con la modalità PLC disattivata.
 
-L’interfaccia Test outputs consente di generare un segnale fisico di uscita a scopo di prova. Assicurarsi che tali prove non generino allarmi sul sistema di controllo.
+:::caution[Prevenire allarmi involontari]
+
+L’interfaccia Test uscite consente di generare un segnale fisico di uscita a scopo di prova. Assicurarsi che tali prove non generino allarmi sul sistema di controllo.
 
 :::
 
@@ -1228,6 +1166,8 @@ Impostare la corrente sulla porta 1.
 
 La procedura seguente descrive come provare le uscite analogiche e digitali.
 
+<div className="manual-output-steps-scroll">
+
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINI |
 | --- | --- | --- |
 | 1. | Nella schermata Home, premere Impostazioni. |  |
@@ -1236,3 +1176,5 @@ La procedura seguente descrive come provare le uscite analogiche e digitali.
 | 4. | Inserire i valori di prova da inviare al PLC. | Per le uscite digitali: 1: l’interruttore è chiuso. 0: l’interruttore è aperto. |
 | 5. | Le prove possono essere avviate singolarmente o insieme (vedere figura 6-7): • Prova delle sole uscite digitali sui morsetti 1 – 4. • Prova delle sole uscite analogiche sulle porte 1, 2 o entrambe. • Prova di tutte le uscite. | I segnali di uscita possono essere misurati sui morsetti. |
 | 6. | Premere il pulsante Ripristina. |  |
+
+</div>

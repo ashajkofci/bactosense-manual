@@ -24,9 +24,6 @@ Les messages d’avertissement suivants peuvent être affichés :
 | W01 | Cartouche expirée | Les réactifs de la cartouche sont expirés. La précision des mesures risque d’être affectée. | • Veuillez remplacer la cartouche dès que possible. |
 | W02-04 | Signal trop intense en FL1/FL2/SSC | Les signaux de base sont trop élevés. Ceci est généralement dû à des bulles ou des particules en suspension dans l’échantillon. La précision des mesures risque d’être affectée. | • Vérifiez la présence de dépôts dans la tubulure<br/>d’entrée. • Vérifiez les raccordements d’eau et assurez-vous qu’ils sont tous étanches (pas<br/>d’entrée d’air). • Si l’avertissement persiste, veuillez nettoyer l’instrument à l’aide du kit de nettoyage. |
 | W05 | Température d’incubation hors consigne | Température durant l’incubation déviée de plus de 2 °C de la cible. Le nombre de cellules risque d’être affecté. L’incubateur est peut-être défectueux. | • Si le problème persiste, veuillez contacter le service client. |
-
-| CODE D’ERREUR | NOM | DESCRIPTION | CAUSES/SOLUTIONS |
-| --- | --- | --- | --- |
 | W06 | Aucun événement détecté | Aucun événement détecté pendant la mesure. | • Si le problème persiste, veuillez contacter le service client. |
 | W07 | TCC hors plage | TCC est au-dessus de la limite spécifiée de 2 000 000 cellules/ml pour le BactoSense. | • Veuillez diluer l’échantillon pour garantir la précision de la mesure. |
 | W08 | Bulles d’air détectées | L’échantillon semble contenir des bulles d’air. | • Vérifiez que le dispositif d’échantillonnage est correctement installé. •<br/>Vérifier l’absence de bulles dans l’échantillon. •<br/>Si vous utilisez un dispositif d’échantillonnage en ligne, vérifiez que l’eau est fournie à la pression correcte. |
@@ -53,9 +50,6 @@ Les messages d’erreurs non critiques suivants peuvent s’afficher :
 | E08 | Boîtier trop humide | L’humidité du boîtier est trop élevée pour un fonctionnement sûr. | • Remplacez le sachet déshydratant en dévissant le grand bouchon sur le côté gauche de l’instrument (voir section<br/>[Remplacement du sachet déshydratant](15-maintenance.md#section-15-2-6)). • Si le problème persiste, contactez le service client. |
 | E09 | Surchauffe du système | La température interne est trop élevée pour un fonctionnement sûr. | • Réduisez la température ambiante ou augmentez l’intervalle de mesure pour laisser l’instrument refroidir. |
 | E14 | Laser trop chaud | La température du laser est trop élevée pour un fonctionnement sûr. | • Réduisez la température ambiante ou augmentez l’intervalle de mesure pour laisser l’instrument refroidir. |
-
-| CODE D’ERREUR | NOM | DESCRIPTION | CAUSES/SOLUTIONS |
-| --- | --- | --- | --- |
 | E15 | Erreur de remplissage du mélangeur | Une dépression a été détectée pendant le mélange ou la distribution. | • Échantillon manquant.<br/>• Air dans<br/>l’entrée. • Fuite dans<br/>le système. • Exécutez le protocole Clean Optics (voir section [Vue d’ensemble des protocoles en mode manuel](10-measurements.md#section-10-9-1)). |
 | E18 | Erreur de dépression de la pompe | Une dépression a été détectée pendant la distribution. | • Échantillon manquant.<br/>• Air dans<br/>l’entrée. • Fuite dans<br/>le système. • Exécutez le protocole Clean Optics (voir section [Vue d’ensemble des protocoles en mode manuel](10-measurements.md#section-10-9-1)). |
 | E19 | Surchauffe du système | La température interne est trop élevée pour le fonctionnement. | • Réduisez la température ambiante ou augmentez l’intervalle de mesure pour laisser l’instrument refroidir. |
@@ -64,9 +58,6 @@ Les messages d’erreurs non critiques suivants peuvent s’afficher :
 | E44 | Erreur de démarrage du module de pompe | Le module de pompe ne s’est pas mis sous tension correctement. | • Répétez simplement la mesure. |
 | E45 | Erreur de rapport de volume valide insuffisant | Le rapport de volume valide est trop faible. Cela peut être dû à une teneur bactérienne trop élevée dans l’eau, à la turbidité ou à des débris. | • L’exactitude de la mesure est probablement très faible. Répétez la mesure en diluant l’échantillon avec de l’eau claire. |
 | E46 | Cartouche encore occupée | La cartouche était encore en cours d’initialisation au démarrage de la mesure. | • Erreur non critique. Répétez la mesure. Si le problème persiste, contactez un technicien de maintenance. |
-
-| CODE D’ERREUR | NOM | DESCRIPTION | CAUSES/SOLUTIONS |
-| --- | --- | --- | --- |
 | E48 | Sous-système microfluidique occupé | Le contrôleur microfluidique effectuait une autre tâche pendant la mesure. | • Erreur non critique. Répétez la mesure. Si le problème persiste, contactez un technicien de maintenance. |
 | E49 | Erreur de délai d’attente GPIO | La carte de traitement attend la réponse d’un autre module. | • Erreur non critique. Répétez la mesure. Si le problème persiste, contactez un technicien de maintenance. |
 | E50 | Mouvement de la pompe bloqué | Le mouvement de la pompe est bloqué. | • Erreur non critique. Répétez la mesure. Si le problème persiste, contactez un technicien de maintenance. |
@@ -74,9 +65,6 @@ Les messages d’erreurs non critiques suivants peuvent s’afficher :
 | E52 | Mouvement de la vanne de cartouche bloqué | Le mouvement de la vanne de cartouche est bloqué. | • Erreur non critique. Répétez la mesure. Si le problème persiste, contactez le service client. |
 | E55 | M7 non connecté | Le processeur d’acquisition ne peut pas être initialisé. | • Redémarrez l’instrument. •<br/>Si le problème persiste, contactez le service client. |
 | E56 | Acquisition vide | Aucun événement détecté pendant l’acquisition | • Nettoyez le dispositif d’échantillonnage avec la Washstation, puis effectuez une mesure d’eau propre. •<br/>Si le problème persiste, contactez le service client. |
-
-| CODE D’ERREUR | NOM | DESCRIPTION | CAUSES/SOLUTIONS |
-| --- | --- | --- | --- |
 | E57 | Cartouche occupée (commande spéciale en cours) | La communication avec la cartouche a échoué. | • Erreur non critique. Répétez la mesure.<br/>• Si le problème persiste, contactez le service client. |
 | E58 | Cartouche occupée (délai d’attente dépassé) | La communication avec la cartouche a échoué. | • Vérifiez le connecteur électronique entre la cartouche et l’instrument. •<br/>Répétez la mesure. •<br/>Si le problème persiste, contactez le service client. |
 | E59 | Erreur de capteur de vanne | Impossible de lire la position de la vanne. | • Contactez le service client. |
@@ -100,9 +88,6 @@ Les messages d’erreurs critiques suivants peuvent s’afficher :
 | E04 | Cartouche absente | La cartouche est absente. | • Insérez une cartouche (voir section [Installation d’une cartouche](08-general-operations-and-configurations.md#section-8-9-6)) |
 | E05 | Poche de déchets pleine | La poche de déchets de la cartouche est pleine. | • Remplacez la cartouche (voir section [Remplacement des cartouches](08-general-operations-and-configurations.md#section-8-9-4)) |
 | E06 | Communication avec la cartouche impossible | La cartouche est déconnectée, la porte est ouverte ou l’électronique de la cartouche est endommagée. | • Assurez-vous que le câble électronique de la cartouche est correctement raccordé et que la porte est bien fermée. • Si<br/>cela ne résout pas le problème, remplacez la cartouche et informez le service client. |
-
-| CODE D’ERREUR | NOM | DESCRIPTION | CAUSES/SOLUTIONS |
-| --- | --- | --- | --- |
 | E07 | Disque de stockage plein | L’espace de stockage est insuffisant pour poursuivre le fonctionnement. | • Supprimez d’anciennes mesures et réessayez (voir section [Libération d’espace disque](15-maintenance.md#section-15-2-8)).<br/>• Cette opération supprime définitivement les mesures de l’appareil. •<br/>Exportez les mesures pour les sauvegarder. |
 | E12 | Erreur d’initialisation du FPGA | Impossible d’initialiser la puce de traitement du signal. | • Redémarrez l’instrument. |
 | E16 | Erreur de traitement | Une erreur a été détectée pendant le traitement des signaux. | • L’exactitude du dernier résultat n’est pas garantie. Répétez l’analyse. |
@@ -111,9 +96,6 @@ Les messages d’erreurs critiques suivants peuvent s’afficher :
 | E23 | Erreur de communication du capteur de température | La communication avec le capteur de température de la carte d’E/S a échoué. | • Contactez le service client. |
 | E24 | Erreur de communication du laser | La communication avec l’unité optique a échoué. | • Contactez le service client. |
 | E25 | Erreur de communication de la pompe | La communication avec le module de pompe est impossible. | • Contactez le service client. |
-
-| CODE D’ERREUR | NOM | DESCRIPTION | CAUSES/SOLUTIONS |
-| --- | --- | --- | --- |
 | E26 | Erreur de communication de l’alimentation | La communication avec le module d’alimentation est impossible. | • Contactez le service client. |
 | E27 | Délai de communication de la pompe dépassé | Le délai de communication avec le module de pompe a été dépassé. | • La porte de la cartouche<br/>est ouverte. • Un câble est<br/>déconnecté. • Une carte électronique est endommagée, dans la pompe ou dans la cartouche. |
 | E28 | Réserve de colorant vide | Le tuyau de colorant raccordé à la cartouche est vide. | • Le tuyau est déconnecté.<br/>• La cartouche est défectueuse.<br/>• Répétez la procédure de remplacement de la cartouche en vérifiant le raccordement de tous les tuyaux. |
@@ -122,9 +104,6 @@ Les messages d’erreurs critiques suivants peuvent s’afficher :
 | E31 | Défaillance électronique de la cartouche | Le niveau de la cartouche ne peut plus être déterminé avec précision. | • Remplacez la cartouche et contactez le service client. |
 | E32 | Cartouche incompatible | Le type de cartouche est incompatible avec cet instrument ou ce logiciel. | • Assurez-vous d’avoir le type de cartouche adapté à cet instrument. |
 | E33 | Dépassement de capacité de la mémoire de traitement | La capacité mémoire des circuits de traitement du signal a été dépassée. | • Exécutez le protocole Clean Optics (voir section [Vue d’ensemble des protocoles en mode manuel](10-measurements.md#section-10-9-1)).<br/>• Répétez la mesure. |
-
-| CODE D’ERREUR | NOM | DESCRIPTION | CAUSES/SOLUTIONS |
-| --- | --- | --- | --- |
 | E38 | Erreur : cartouche non prête | La nouvelle cartouche n’a pas été initialisée correctement | • Exécutez la procédure « Cartridge Change » (voir section [Remplacement des cartouches](08-general-operations-and-configurations.md#section-8-9-4)). |
 | E39 | Limite de courant du laser atteinte | Le laser a atteint sa limite supérieure de courant, ce qui indique sa fin de vie. | • Le laser doit être remplacé. Contactez un technicien de maintenance. |
 | E40 | Jeu de fenêtres introuvable | La référence du jeu de fenêtres sélectionné pour la mesure est introuvable dans les paramètres de l’instrument. | • Le jeu de fenêtres a été<br/>supprimé. • Changez de jeu de fenêtres et répétez la mesure. |
@@ -136,7 +115,7 @@ Les messages d’erreurs critiques suivants peuvent s’afficher :
 
 ## 16.4 Journaux d’erreurs et d’avertissements {#section-16-4}
 
-Les vues des journaux d’erreurs et d’avertissements peuvent être consultées séparément dans le Menu principal de l’interface utilisateur en appuyant sur le bouton Journaux .
+Sur l’écran d’accueil, appuyez sur Paramètres, puis sur Journaux. Sélectionnez Journal d'erreurs ou Journal d'alertes pour ouvrir le journal correspondant.
 
 ![BactoSense — Journal des erreurs](/img/gui/fr/error-log.png "width=558 class=manual-figure")
 
@@ -244,7 +223,7 @@ Brève description de l’erreur ou de l’événement
 
 <td colSpan="2">
 
-Bouton permettant d’acquitter manuellement les erreurs (disponible uniquement pour les utilisateurs Admin et Entretien)
+Bouton pour quittancer les erreurs manuellement (accessible aux utilisateurs Basic, Advanced et Admin lorsque l’instrument est au repos)
 
 </td>
 
@@ -290,8 +269,8 @@ Les erreurs critiques doivent être acquittées manuellement. Avant de procéder
 
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
-| 1. | Accédez au Menu principal de l’interface utilisateur de BactoSense. |  |
-| 2. | Appuyez sur le bouton Journaux, puis sur le bouton Journal d’erreurs. |  |
+| 1. | Sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. |  |
+| 2. | Appuyez sur Journaux, puis sur Journal d'erreurs. |  |
 | 3. | Assurez-vous d’avoir résolu le problème à l’origine de l’erreur affichée. Appuyez ensuite sur le bouton Quittancer les erreurs. | ![BactoSense — Effacer les erreurs](/img/gui/fr/error-log-clear-errors.png "width=245 class=manual-figure") |
 | 4. | Les erreurs effacées apparaissent avec des symboles d’erreur grisés et un événement «Erreurs quittancées» est ajouté au journal. L’instrument est prêt pour une nouvelle analyse. |  |
 
@@ -333,7 +312,7 @@ INFORMATIONS SUPPLÉMENTAIRES/IMAGE
 
 <td>
 
-Accédez au Menu principal de l’interface utilisateur de BactoSense.
+En tant qu’utilisateur Advanced ou Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres.
 
 </td>
 
@@ -373,7 +352,7 @@ Appuyez sur le bouton Maintenance.
 
 <td>
 
-Appuyez sur le bouton Auto-contrôle.
+Appuyez sur le bouton Autocontrôle.
 
 </td>
 
@@ -395,7 +374,7 @@ Appuyez sur le bouton Auto-contrôle.
 
 :::info[Informations supplémentaires]
 
-Appuyez sur Run ou Rerun pour lancer l’autovérification. À la fin, l’instrument affiche la liste des tests avec un indicateur PASS vert ou FAIL rouge. Certains tests peuvent être ignorés : si le système ne peut pas communiquer avec la cartouche, tous les tests qui nécessitent cette communication sont ignorés.
+Appuyez sur le bouton Relancer. À la fin, l’instrument affiche la liste des tests avec un indicateur PASS vert ou FAIL rouge. Certains tests peuvent être ignorés : si le système ne peut pas communiquer avec la cartouche, tous les tests qui nécessitent cette communication sont ignorés.
 
 :::
 

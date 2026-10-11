@@ -54,99 +54,59 @@ This device complies with FCC, UL/CAN/CSA-C22.2/IEC 61010-1 and JIS C 1010-1.  F
 
 The following standards have been applied to guarantee compliance with regulatory requirements:
 
-*Table 2-2 Applied standards*
+**APPLIED STANDARDS**
 
-<table>
+### Safety (General) (Heating Element) (Laser)
 
-<tbody>
+- IEC 61010-1:2010
+- IEC 61010-1:2010/A1:2016
+- CAN/CSA-C22.2 No. 61010-1 + A1
+- UL 61010-1, 3rd Edition A1
+- JIS C 1010-1:2019
+- IEC 61010-2-010:2019
+- CSA C22.2 No. 61010-2-010:19
+- EN 60825-1:2014 + A11:2021
+- CAN/CSA-E60825-1:15
 
-<tr>
+### EMC
 
-<th colSpan="2">
+- EN IEC 61326-1:2021
+- EN 61326-1:2013, Class B, Group 1
+- CISPR 11:2015/A1:2016/A2:2019
+- EN 61000-3-2:2018
+- EN 61000-3-3:2013/A1:2017
+- EN 61000-3-11:2017
+- EN 61000-3-12:2011
+- EN 61000-4-2:2008
+- EN 61000-4-3:2006/A1:2007/A2:2017
+- EN 61000-4-4:2012
+- EN 61000-4-5:2014/A1:2017
+- EN 61000-4-6:2016
+- EN 61000-4-8:2009
+- EN 61000-4-11:2020
+- EN 55011:2016/A1:2017/A2:2021/A11:2020
 
-APPLIED STANDARDS
+### Ingress Protection
 
-</th>
+- IEC 60529:1989
+- IEC 60529:1989/A1:1999
+- IEC 60529:1989/A2:2013
+- IEC 60529:1989/A2:2013/C1:2019
+- EN 60529:1991/A1:2000/A2:2013
 
-</tr>
+### RoHS
 
-<tr>
+- EN IEC 63000:2018
 
-<td>
-
-Safety<br />(General)<br />(Heating Element)<br />(Laser)
-
-</td>
-
-<td>
-
-IEC 61010-1:2010<br />IEC 61010-1:2010/A1:2016<br />CAN/CSA-C22.2 No. 61010-1 + A1<br />UL 61010-1, 3rd Edition A1<br />JIS C 1010-1:2019<br />IEC 61010-2-010:2019<br />CSA C22.2 No. 61010-2-010:19<br />EN 60825-1:2014 + A11:2021<br />CAN/CSA-E60825-1:15
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-EMC
-
-</td>
-
-<td>
-
-EN IEC 61326-1:2021<br />EN 61326-1:2013, Class B, Group 1<br />CISPR 11:2015/A1:2016/A2:2019<br />EN 61000-3-2:2018<br />EN 61000-3-3:2013/A1:2017<br />EN 61000-3-11:2017<br />EN 61000-3-12:2011<br />EN 61000-4-2:2008<br />EN 61000-4-3:2006/A1:2007/A2:2017<br />EN 61000-4-4:2012<br />EN 61000-4-5:2014/A1:2017<br />EN 61000-4-6:2016<br />EN 61000-4-8:2009<br />EN 61000-4-11:2020<br />EN 55011:2016/A1:2017/A2:2021/A11:2020
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-Ingress Protection
-
-</td>
-
-<td>
-
-IEC 60529:1989<br />IEC 60529:1989/A1:1999<br />IEC 60529:1989/A2:2013<br />IEC 60529:1989/A2:2013/C1:2019<br />EN 60529:1991/A1:2000/A2:2013
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-RoHS
-
-</td>
-
-<td>
-
-EN IEC 63000:2018
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-![Original manual illustration, printed page 4](/img/manual/asset-454a03d782e7.png "width=73")
+![Original manual illustration, printed page 4](/img/manual/asset-454a03d782e7.png "width=24 class=manual-laser-label")
 
 The BactoSense is classified as a Class 1 Laser product according to the standard  IEC 60825-1:2014/A11:2021.
 
 ## 2.3 Safety symbols {#section-2-3}
 
-The safety symbols used in this document are explained below:
+The symbols below identify hazards and required protective equipment. Warning and Caution use the same exclamation symbol; read the title and instructions in every box.
 
-:::danger[Electric shock]
+:::danger[Danger: electric shock]
 
 **Electric shock that may result in serious injury or death**
 
@@ -154,7 +114,7 @@ Ignoring this notice may lead to electrical shocks and death.
 
 :::
 
-:::danger[Explosion hazard]
+:::explosion[Danger: explosion hazard]
 
 **Explosion that may result in serious injury or death**
 
@@ -162,7 +122,7 @@ Ignoring this notice may cause explosions resulting in serious property damage a
 
 :::
 
-:::warning[Risk of injury]
+:::warning[Warning: risk of injury]
 
 **Injury or hazards to health with long-term effects**
 
@@ -170,9 +130,17 @@ Ignoring this warning may lead to injuries with possible long-term effects.
 
 :::
 
-:::warning[Material damage]
+:::caution[Caution: material damage]
 
 Ignoring this notice may cause material damage to the instrument and its peripherals.
+
+:::
+
+:::gloves[Wear protective gloves]
+
+**Mandatory protective equipment**
+
+Wear the specified protective gloves when handling samples, sampling devices, cartridges or components that come into contact with samples.
 
 :::
 
@@ -200,7 +168,7 @@ The instrument must be operated by trained technical personnel who have read and
 
 ## 2.6 Usage restrictions {#section-2-6}
 
-:::danger[Explosive environments]
+:::explosion[Explosive environments]
 
 Operation in explosive areas can cause explosions, which can lead to the injury or death  of persons in the vicinity.
 

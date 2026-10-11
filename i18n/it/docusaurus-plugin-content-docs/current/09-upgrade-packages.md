@@ -32,15 +32,19 @@ I dati di diffusione sono disponibili nei seguenti modi:
 
 **Attivazione del** **pacchetto Scientific**
 
+Attivare il pacchetto quando lo strumento è inattivo, con Modalità PLC e Modalità Demo disattivate.
+
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINE |
 | --- | --- | --- |
 | 1. | Contattare il rappresentante commerciale bNovate per acquistare una chiave di attivazione. |  |
-| 2. | Dopo aver ricevuto la chiave di attivazione, accedere a BactoSense come utente Admin. |  |
+| 2. | Dopo aver ricevuto la chiave di attivazione, accedere a BactoSense come utente Amministratore (Admin). |  |
 | 3. | Nella schermata Home, premere Impostazioni. |  |
-| 4. | Premere il pulsante Impostazioni di sistema. |  |
-| 5. | Premere il pulsante Aggiornamenti. |  |
-| 6. | Premere il pulsante Aggiornamento. |  |
-| 7. | Inserire la chiave di attivazione e premere OK. |  |
+| 4. | Premere il pulsante Impostazioni di sistema. | ![BactoSense — Menu Impostazioni: Impostazioni di sistema](/img/gui/it/settings-menu-system-settings.png "width=360") |
+| 5. | Premere il pulsante Aggiornamenti. | ![BactoSense — Impostazioni di sistema: Aggiornamenti](/img/gui/it/scientific-package-upgrades-menu.png "width=360") |
+| 6. | Premere il pulsante Aggiornamento. | ![BactoSense — Licenza del pacchetto Scientific e pulsante Aggiornamento](/img/gui/it/scientific-package-upgrades.png "width=360") |
+| 7. | Inserire la chiave di attivazione e premere OK. | OK diventa disponibile dopo aver inserito una chiave.<br />![BactoSense — Inserimento della chiave di attivazione del pacchetto Scientific](/img/gui/it/scientific-package-activation-key.png "width=360") |
+
+Dopo l’attivazione riuscita, premere OK nel messaggio di conferma. Se lo strumento si riavvia, attendere il completamento del riavvio, quindi aprire nuovamente Aggiornamenti. Verificare che Pacchetto scientifico indichi Attivato.
 
 ## 9.2 Pacchetto Management {#section-9-2}
 
@@ -59,10 +63,12 @@ Il *pacchetto Management* è destinato all’utilizzo dello strumento in ambient
 
 **Attivazione del** **pacchetto Management**
 
+Attivare il pacchetto quando lo strumento è inattivo, con Modalità PLC e Modalità Demo disattivate.
+
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINE |
 | --- | --- | --- |
 | 1. | Contattare il rappresentante commerciale bNovate per acquistare una chiave di attivazione. |  |
-| 2. | Dopo aver ricevuto la chiave di attivazione, accedere a BactoSense come utente Admin. |  |
+| 2. | Dopo aver ricevuto la chiave di attivazione, accedere a BactoSense come utente Amministratore (Admin). |  |
 | 3. | Nella schermata Home, premere Impostazioni. |  |
 | 4. | Premere il pulsante Impostazioni di sistema. |  |
 | 5. | Premere il pulsante Aggiornamenti. |  |

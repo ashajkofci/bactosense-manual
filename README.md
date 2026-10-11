@@ -50,12 +50,12 @@ npm run serve
 - `maintenance/translation-glossary.md`: preferred terms for all five languages. Consult it before translating or revising terminology.
 - `maintenance/source-sections.json`: editorial mapping from printed source pages to current chapter/section URLs; it adds no markup to the manual.
 - `maintenance/gui-*.json`: GUI figure inventories and provenance.
-- `scripts/editorial/11-results-and-data-analysis.md` and `scripts/editorial/14-bactocloud.md`: maintained English chapter bodies, applied during optional source re-extraction. Chapter 11 includes the CBC, EBC and NBC supplement; its sources are recorded in `maintenance/cartridge-results-sources.md`.
+- `scripts/editorial/`: maintained English content applied during optional source re-extraction: the section 2.3 safety-symbol legend, section 10.2.4 Advanced scheduling and chapter 9, 11 and 14 bodies. Chapter 9 retains the illustrated package-activation procedure. Chapter 11 includes the CBC, EBC and NBC supplement; its sources are recorded in `maintenance/cartridge-results-sources.md`.
 - Root-level `UM_0006-*.pdf`: local reference inputs, ignored by Git and excluded from deployment. The website contains only generated PDFs.
 - `output/pdf/<locale>/`: generated PDF copies and reports (ignored).
 - `static/pdf/`: ignored copies of the latest generated PDFs for the development server.
 
-Use Markdown for paragraphs, emphasis, lists and simple tables. HTML remains only where needed for merged cells, nested table content, line breaks inside table cells, and scientific superscripts/subscripts. Headerless Markdown tables use a blank header row, which the site removes during rendering. Sized images use standard Markdown image syntax with a layout title, for example `![Instrument](/img/manual/example.png "width=600 class=manual-figure")`; the image component applies the size and removes the metadata from the tooltip. `npm run manual:format` simplifies equivalent markup across all five editions; review its changes before accepting them. Native admonitions provide warning and information boxes with short custom titles. Images open at full size. Index links use stable section headings, independent of the original PDF pagination.
+Use Markdown for paragraphs, emphasis, lists and simple tables. HTML remains only where needed for merged cells, nested table content, line breaks inside table cells, and scientific superscripts/subscripts. Headerless Markdown tables use a blank header row, which the site removes during rendering. Sized images use standard Markdown image syntax with a layout title, for example `![Instrument](/img/manual/example.png "width=600 class=manual-figure")`; the image component applies the size and removes the metadata from the tooltip. `npm run manual:format` simplifies equivalent markup across all five editions; review its changes before accepting them. Native admonitions provide warning and information boxes with short custom titles. On the web, images enlarge in a lightbox; close it with Escape, the close button, or a click outside the image. Index links use stable section headings, independent of the original PDF pagination.
 
 Write a notice directly in Markdown:
 
@@ -67,7 +67,20 @@ The covers and lids must always be attached during operation.
 :::
 ```
 
-Use `danger`, `warning`, or `info` for the appropriate notice type. For a blue information box, write `:::info[Network settings]` followed by the body and closing `:::`. Native notice fences also work inside HTML table cells when separated by blank lines. Use four colons for an outer notice containing a three-colon notice. The optional extraction parsers apply `scripts/native_notices.py` and `scripts/manual_artwork.py` so regeneration keeps native notices and their custom titles. Work-step hand icons are omitted, and information icons become blue info boxes.
+Choose the notice type to match the original PDF symbol and signal word:
+
+| Type | Symbol | Purpose |
+| --- | --- | --- |
+| `danger` | Lightning in a yellow triangle | The source manual's DANGER notices, including electrical hazards. |
+| `explosion` | Explosion in a yellow triangle | Explosion hazards; retains the native danger color. |
+| `warning` | Exclamation mark in a yellow triangle | The source manual's WARNING notices. |
+| `caution` | The same exclamation triangle | The source manual's CAUTION notices; preserve the distinct signal word. |
+| `gloves` | White protective gloves in a blue circle | Mandatory gloves for handling samples, sampling devices and cartridges. |
+| `info` | Information letter i in a rounded rectangle | Additional information, including Intended use in section 2.5. |
+
+For example, use `:::explosion[Explosive environments]`, `:::caution[Prevent condensation]`, or `:::gloves[Wear protective gloves]` with the body and closing `:::`. Native Docusaurus boxes provide the layout, severity colors and localized titles; the icons use the original vector artwork from the PDFs. Section 2.3 explains the five safety notice types in every language. `maintenance/safety-symbols.json` records their source pages and rendering mappings; `.venv/bin/python scripts/safety_symbols.py` re-exports the five shared SVGs, including the information letter as a font outline, without importing page text.
+
+For a blue information box, write `:::info[Network settings]` followed by the body and closing `:::`. Native notice fences also work inside HTML table cells when separated by blank lines. Use four colons for an outer notice containing a three-colon notice. The optional extraction parsers apply `scripts/native_notices.py` and `scripts/manual_artwork.py` so regeneration keeps native notices, their symbols and their custom titles. Work-step hand icons are omitted, and information icons become blue info boxes.
 
 The source PDF is in English. Configured translations have their own language directories in the generated deployment. The BactoCloud supplement records cloud enrolment prerequisites and interface labels from the sibling manual; it does not update the instrument-version scope of the other chapters.
 
@@ -86,7 +99,7 @@ npm run manual:check
 npm run build
 ```
 
-The extraction and parser scripts overwrite their generated artifacts and chapters. The second-half parser applies reviewed chapter bodies from `scripts/editorial/` after extraction; keep the chapter 11 and 14 bodies there in sync with their counterparts in `docs/`. `scripts/manual_artwork.py` reapplies the current GUI figure mapping and reviewed English navigation/legend changes from `maintenance/gui-*.json`. Keep other editorial changes in the parser or review the diff before accepting a regeneration. The second parser runs the Markdown simplifier after both chapter passes. Re-extraction can recreate unused artwork; remove unreferenced output again before publishing. Review all translations after changing the English source.
+The extraction and parser scripts overwrite their generated artifacts and chapters. The parsers apply reviewed content from `scripts/editorial/` after extraction; keep the section 2.3 legend and chapter 9, 11 and 14 bodies there in sync with their counterparts in `docs/`. `scripts/manual_artwork.py` reapplies the current GUI figure mapping and reviewed chapter-specific English navigation/legend changes from `maintenance/gui-*.json`. Keep other editorial changes in the parser or review the diff before accepting a regeneration. The second parser runs the Markdown simplifier after both chapter passes. Re-extraction can recreate unused artwork; remove unreferenced output again before publishing. Review all translations after changing the English source.
 
 Exact decoded-pixel duplicates share assets. Similar icons are consolidated only after visual comparison; screenshots with different settings, readings or states remain distinct.
 
@@ -94,13 +107,13 @@ Exact decoded-pixel duplicates share assets. Similar icons are consolidated only
 
 All 21 documents are translated into German (`de`), French (`fr`), Italian (`it`) and Spanish (`es`) under `i18n/<locale>/docusaurus-plugin-content-docs/current/`. English remains at `/`; translated editions are served at `/de/`, `/fr/`, `/it/` and `/es/`. Filenames, slugs and explicit anchors are shared, so switching language keeps the corresponding chapter. Search and the site interface are localized, and each edition has its own generated PDF.
 
-The current English Markdown is the source of truth. The older German and French PDFs were extracted locally and used for terminology; newer instructions, technical details and the BactoCloud chapter were translated from the current content. The terminology decisions and reference document hashes are recorded in the translation glossary; temporary reference extracts are disposable. Instrument and web GUI screenshots use the matching interface language in each edition, under `static/img/gui/<locale>/`. Language-independent icons, hardware illustrations, scientific examples and the BactoCloud supplement images are shared. Device labels and protocol names retain their displayed form so users can identify controls.
+The current English Markdown is the source of truth. The older German and French PDFs were extracted locally and used for terminology; newer instructions, technical details and the BactoCloud chapter were translated from the current content. The terminology decisions and reference document hashes are recorded in the translation glossary; temporary reference extracts are disposable. Instrument and web GUI screenshots, including native instrument enrolment, use the matching interface language in each edition, under `static/img/gui/<locale>/`. Language-independent icons, hardware illustrations, scientific examples and the retained BactoCloud browser supplement image are shared. Device labels and protocol names retain their displayed form so users can identify controls.
 
 Update the four translated counterparts when editing English. Keep corresponding image names, section IDs, table structure, safety-notice types, technical identifiers, values and units intact. Only the GUI screenshot directory's locale segment differs between editions. `npm run translations:check` compares the complete document inventory and structure, validates matching screenshot languages, and runs automatically before builds to prevent silent English chapter fallbacks. This check verifies structural coverage, not linguistic correctness. Its local report is `output/translations/coverage.json`.
 
 ## Refresh GUI screenshots
 
-The current figures were captured from the sibling `gui`, `bactoserver` and `bactoweb` repositories against a disposable local demo server. They retain the original chapter positions and annotation numbers, with captions and navigation revised where the current GUI changed. Filenames describe the screen or control, for example `home-overview.png`, `digital-input-configuration.png` and `web-plots-date-range.png`.
+The current figures were captured from the sibling `gui`, `bactoserver` and `bactoweb` repositories against a disposable local demo server. They retain the original chapter positions and annotation numbers, with captions and navigation revised where the current GUI changed. Filenames describe the screen or control, for example `home-overview.png`, `digital-input-configuration.png`, `scientific-package-activation-key.png` and `web-plots-measurement-time.png`.
 
 Follow [the native capture instructions](scripts/gui-capture/runtime/README.md) and [the web capture instructions](scripts/gui-capture/web/README.md). Raw images, bounds, temporary databases and detailed runtime logs stay in ignored `output/gui-capture/`. Capture uses production UI resources; only the isolated demo data contains teaching fixtures. The native renderer requires Cocoa OpenGL because software rendering omits some masked icons.
 
@@ -114,6 +127,10 @@ npm run build
 ```
 
 `maintenance/gui-screenshots.json` records source revisions, capture geometry, descriptive filenames, original annotations and final visual reviews. Preparing or rerendering a changed figure requires a fresh review before application. `screenshots:check` verifies the reviewed hashes, annotation coverage, replacement coverage in all five editions and unchanged scientific/hardware artwork; it also checks raw capture dimensions when local captures are present. This check runs before each build. See [the screenshot review](maintenance/gui-screenshot-review.md) for capture scope and reviewed differences.
+
+For the package-activation and native enrolment figures, run `node scripts/gui-capture/prepare-supplemental.mjs`, then pass its printed figure IDs to `node scripts/gui-capture/render-figures.mjs`. This prepares only the supplemental catalog and preserves unchanged image reviews. Inspect each final image before recording its reviewed hash and applying it. [The navigation review](maintenance/gui-navigation-review.md) records the current routes, localized control labels, role restrictions and source/runtime evidence behind the updated instructions.
+
+For chapter 6.6's small output-control captures, run `node scripts/gui-capture/prepare-digital-output-figures.mjs` and render only its 20 printed IDs. [The digital-output review](maintenance/gui-digital-output-review.md) records the actual row values, capture composition, localized instructions and print checks.
 
 For development in a specific language, run `npm start -- --locale de` (or `fr`, `it`, `es`). The development server serves one language at a time; use `npm run build` followed by `npm run serve` to test switching across all five editions. `npm run manual:pdf -- de` regenerates just the German PDF from an existing build; omitting the locale regenerates all five. Rebuild the website first after changing Markdown.
 

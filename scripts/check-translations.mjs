@@ -22,7 +22,7 @@ const structure = text => ({
   tableTags: matches(text, /<(\/?(?:table|thead|tbody|tr|td|th))(?=[\s>])/g),
   markdownTables: markdownTables(text),
   spans: matches(text, /\b((?:rowSpan|colSpan)="\d+")/g),
-  notices: [...text.matchAll(/(?:::((?:danger|warning|info|tip|note|caution))\[|<Admonition\s+type="([^"]+)")/g)].map(match => match[1] || match[2]),
+  notices: [...text.matchAll(/(?:^:{3,}([a-z][\w-]*)\[|<Admonition\s+type="([^"]+)")/gm)].map(match => match[1] || match[2]),
   markdownLinks: matches(text, /\]\(([^)]+)\)/g).filter(link => !link.startsWith('/img/')).sort(),
   htmlLinks: matches(text, /\bhref="([^"]+)"/g).sort(),
 });
