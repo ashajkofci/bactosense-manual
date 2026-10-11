@@ -1,0 +1,96 @@
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/outfit';
+
+:root {
+  --bactocloud-blue: #528eb9;
+  --ifm-color-primary: #366d93;
+  --ifm-color-primary-dark: #306283;
+  --ifm-color-primary-darker: #2d5d7d;
+  --ifm-color-primary-darkest: #245e83;
+  --ifm-color-primary-light: #427aa4;
+  --ifm-color-primary-lighter: #528eb9;
+  --ifm-color-primary-lightest: #73a2c4;
+  --ifm-font-family-base: 'Inter Variable', sans-serif;
+  --ifm-heading-font-family: 'Outfit Variable', sans-serif;
+  --ifm-heading-font-weight: 600;
+  --ifm-line-height-base: 1.65;
+  --ifm-navbar-height: 4rem;
+  --ifm-background-color: #fff;
+  --ifm-code-font-size: 92%;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #93b7d2;
+  --ifm-color-primary-dark: #73a2c4;
+  --ifm-color-primary-darker: #5e94bc;
+  --ifm-color-primary-darkest: #528eb9;
+  --ifm-color-primary-light: #b9d1e2;
+  --ifm-color-primary-lighter: #dce9f2;
+  --ifm-color-primary-lightest: #ebf7ff;
+  --ifm-background-color: #181818;
+  --ifm-background-surface-color: #242424;
+}
+
+.navbar__brand { font-family: var(--ifm-heading-font-family); font-weight: 600; }
+.navbar { border-bottom: 1px solid var(--ifm-color-emphasis-200); box-shadow: none; }
+.manual-pdf-download { display: flex; align-items: center; gap: 0.4rem; }
+.manual-pdf-download svg { flex-shrink: 0; }
+.footer--dark { --ifm-footer-background-color: #245e83; }
+.theme-doc-markdown { max-width: 48rem; }
+.theme-doc-markdown h1 { letter-spacing: -0.025em; line-height: 1.2; }
+.theme-doc-markdown img { border: 1px solid var(--ifm-color-emphasis-200); border-radius: 0.6rem; }
+.manual-screenshot { display: inline-block; max-width: 100%; line-height: 0; border-radius: 0.6rem; cursor: zoom-in; }
+.manual-screenshot:focus-visible { outline: 3px solid var(--ifm-color-primary); outline-offset: 4px; }
+.manual-image { display: block; }
+.manual-caption { display: block; margin-top: 0.45rem; color: var(--ifm-color-emphasis-700); font-size: 0.85rem; line-height: 1.45; }
+.theme-doc-sidebar-container { background: var(--ifm-background-surface-color); }
+.menu__link { border-radius: 0.4rem; }
+.theme-doc-markdown table { font-size: 0.925rem; }
+.theme-doc-markdown th { text-align: left; }
+.manual-decision-tree { margin: 1.2rem 0 1.5rem; }
+.manual-decision-root {
+  display: inline-block;
+  margin: 0;
+  padding: 0.65rem 0.9rem;
+  border: 1px solid var(--ifm-color-primary-lighter);
+  border-radius: 0.5rem;
+  background: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-primary-darkest);
+}
+[data-theme='dark'] .manual-decision-root { color: var(--ifm-color-primary-lightest); }
+.manual-decision-tree ul {
+  margin: 0 0 0 1rem;
+  padding: 0.25rem 0 0 1.25rem;
+  border-left: 2px solid var(--ifm-color-primary-lighter);
+  list-style: none;
+}
+.manual-decision-tree li { position: relative; margin: 0; padding: 0.7rem 0 0.3rem; }
+.manual-decision-tree li::before {
+  content: '';
+  position: absolute;
+  top: 1.45rem;
+  left: -1.25rem;
+  width: 0.9rem;
+  border-top: 2px solid var(--ifm-color-primary-lighter);
+}
+.manual-decision-tree li > ul { margin: 0.4rem 0 0 0.35rem; }
+@media (max-width: 576px) {
+  .theme-doc-markdown h1 { font-size: 2rem; }
+}
+
+/* Keep the manual's diagrams legible on small screens and in dark mode. */
+.theme-doc-markdown .manual-screenshot { vertical-align: middle; }
+.theme-doc-markdown img { height: auto; background-color: #fff; }
+.theme-doc-markdown img.manual-icon { display: inline-block; width: auto; max-width: 3rem; max-height: 3rem; border: 0; border-radius: 0; vertical-align: middle; }
+.theme-doc-markdown table { display: block; width: max-content; max-width: 100%; overflow-x: auto; }
+.theme-doc-markdown td { vertical-align: top; }
+.theme-doc-markdown td img { max-width: min(100%, 26rem); }
+.theme-doc-markdown .source-reference { color: var(--ifm-color-emphasis-700); font-size: 0.85rem; }
+.theme-doc-markdown figure { margin: 1.5rem 0; }
+.theme-doc-markdown figcaption { color: var(--ifm-color-emphasis-700); font-size: 0.875rem; margin-top: 0.5rem; }
+@media (max-width: 576px) {
+  .theme-doc-markdown table { font-size: 0.85rem; }
+  .theme-doc-markdown th, .theme-doc-markdown td { padding: 0.5rem; min-width: 10rem; }
+  .theme-doc-markdown th:first-child, .theme-doc-markdown td:first-child { min-width: 4rem; }
+  .theme-doc-markdown th:last-child, .theme-doc-markdown td:last-child { min-width: 15rem; }
+}

@@ -1,0 +1,24 @@
+# Serve only the generated website when Apache's DocumentRoot is this checkout.
+# Apache must allow .htaccess overrides and load mod_rewrite.
+Options -Indexes -MultiViews
+DirectoryIndex index.html
+ErrorDocument 404 /public/404.html
+
+RewriteEngine On
+
+# Allow HTTP certificate validation without exposing other hidden files.
+RewriteRule ^\.well-known/acme-challenge/[A-Za-z0-9_-]+$ - [END]
+RewriteRule (^|/)\. - [R=404,END]
+
+# Internal rewrites already inside the generated website can finish normally.
+RewriteRule ^public(?:/|$) - [END]
+RewriteRule ^$ public/index.html [END]
+
+# Keep chapter redirects at their public URL, without a /public/ prefix.
+RewriteCond %{DOCUMENT_ROOT}/public/$1/index.html -f
+RewriteRule ^(.+[^/])$ /$1/ [R=301,END]
+RewriteCond %{DOCUMENT_ROOT}/public/$1/index.html -f
+RewriteRule ^(.*?)/?$ public/$1/index.html [END]
+
+# Source files and private directories have no corresponding public file.
+RewriteRule ^(.*)$ public/$1 [END]

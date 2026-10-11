@@ -1,0 +1,3863 @@
+{
+  "schema_version": 1,
+  "prepared_utc": "2026-10-11T19:17:15+00:00",
+  "count_old_assets": 38,
+  "count_distinct_current_icons": 29,
+  "duplicates_consolidated": 9,
+  "capture_method": "Unmodified production Qt MenuButtonView, ToolBarButton, ImageIconBtn, ToolBarCenter and ListItemError components from compiled sibling gui qrc. Only control glyph crops are published; visible atlas labels are excluded.",
+  "renderer": "Qt Cocoa / OpenGL on Apple GPU; QSG_INFO evidence in output/gui-capture/icons/capture.log",
+  "capture_command": "env -u QT_QUICK_BACKEND BACTOSERVER_URL=http://127.0.0.1:18889 QT_QPA_PLATFORM=cocoa QSG_INFO=1 QSG_RENDER_LOOP=basic output/gui-capture/runtime/qt-build/gui-capture -input scripts/gui-capture/icons/tst_icons.qml",
+  "logical_crop_convention": "[x,y,width,height], converted to source pixels by raw_width/logical_width. Crop itself retains the real current component background.",
+  "source_snapshot": {
+    "icons_ui_sha256": "0d2e38c26715b14d94a32061af57739d0d624b5e5d13e923079522527f17a67b",
+    "atlas_script_sha256": "62f871067db81004bf17f4fc38d60c888b81ddd692d814fb2fcadead2ef7e4b1"
+  },
+  "icons": [
+    {
+      "name": "back-button",
+      "output": "/img/gui/icons/back-button.png",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "raw_size_px": [
+        1600,
+        1280
+      ],
+      "crop": [
+        260,
+        50,
+        80,
+        60
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2e547e43bee5d9c1f76ff710c42716a143de003853335a7288484a0fa4b5d93d",
+      "production_component": "../gui/views/singleComponents/ToolBarButton.qml",
+      "production_icon_resources": [],
+      "old_source_assets": [
+        "/img/manual/cell-05da61fc8424.png"
+      ],
+      "source_ids": [
+        "gui-source-068"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    },
+    {
+      "name": "date-time-button",
+      "output": "/img/gui/icons/date-time-button.png",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "raw_size_px": [
+        1600,
+        1280
+      ],
+      "crop": [
+        660,
+        176,
+        80,
+        80
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2e547e43bee5d9c1f76ff710c42716a143de003853335a7288484a0fa4b5d93d",
+      "production_component": "../gui/views/singleComponents/MenuButtonView.qml",
+      "production_icon_resources": [
+        {
+          "qrc": "qrc:/images/icons/clock_menubtn_re.png",
+          "source": "../gui/images/icons/clock_menubtn_re.png",
+          "sha256": "dc1f71e97cf3c1b3a8449deb54b763116313ec276fadac0d18a178599a6c5cef"
+        }
+      ],
+      "old_source_assets": [
+        "/img/manual/asset-a42806c7c455.png"
+      ],
+      "source_ids": [
+        "gui-source-024"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    },
+    {
+      "name": "demo-mode-button",
+      "output": "/img/gui/icons/demo-mode-button.png",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "raw_size_px": [
+        1600,
+        1280
+      ],
+      "crop": [
+        60,
+        336,
+        80,
+        80
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2e547e43bee5d9c1f76ff710c42716a143de003853335a7288484a0fa4b5d93d",
+      "production_component": "../gui/views/singleComponents/MenuButtonView.qml",
+      "production_icon_resources": [
+        {
+          "qrc": "qrc:/images/icons/demo_menubtn_re.png",
+          "source": "../gui/images/icons/demo_menubtn_re.png",
+          "sha256": "f90ed661681838ba1a0a67854bceb30fbb20d2b58936163dcec5dbc4f678fe78"
+        }
+      ],
+      "old_source_assets": [
+        "/img/manual/asset-65a7aba669db.png"
+      ],
+      "source_ids": [
+        "gui-source-050"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    },
+    {
+      "name": "edit-gate-button",
+      "output": "/img/gui/icons/edit-gate-button.png",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "raw_size_px": [
+        1600,
+        1280
+      ],
+      "crop": [
+        476,
+        56,
+        48,
+        48
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2e547e43bee5d9c1f76ff710c42716a143de003853335a7288484a0fa4b5d93d",
+      "production_component": "../gui/views/singleComponents/ImageIconBtn.qml",
+      "production_icon_resources": [
+        {
+          "qrc": "qrc:/images/icons/edit_re.png",
+          "source": "../gui/images/icons/edit_re.png",
+          "sha256": "004d3e03dbff4e1115999291b59c5be9385d93c2c387468a88c3ef01a5a16933"
+        }
+      ],
+      "old_source_assets": [
+        "/img/manual/cell-95fee81e2625.png",
+        "/img/manual/cell-fd72b5bdcc2a.png"
+      ],
+      "source_ids": [
+        "gui-source-056",
+        "gui-source-062"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    },
+    {
+      "name": "factory-reset-button",
+      "output": "/img/gui/icons/factory-reset-button.png",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "raw_size_px": [
+        1600,
+        1280
+      ],
+      "crop": [
+        260,
+        336,
+        80,
+        80
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2e547e43bee5d9c1f76ff710c42716a143de003853335a7288484a0fa4b5d93d",
+      "production_component": "../gui/views/singleComponents/MenuButtonView.qml",
+      "production_icon_resources": [
+        {
+          "qrc": "qrc:/images/icons/factory_menubtn_re.png",
+          "source": "../gui/images/icons/factory_menubtn_re.png",
+          "sha256": "96c16e5d1b1fce519e623426125c53c7bb0e1c61345e34aa6c5838b42ed3b18c"
+        }
+      ],
+      "old_source_assets": [
+        "/img/manual/asset-e6d546463675.png"
+      ],
+      "source_ids": [
+        "gui-source-051"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    },
+    {
+      "name": "gate-settings-button",
+      "output": "/img/gui/icons/gate-settings-button.png",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "raw_size_px": [
+        1600,
+        1280
+      ],
+      "crop": [
+        460,
+        336,
+        80,
+        80
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2e547e43bee5d9c1f76ff710c42716a143de003853335a7288484a0fa4b5d93d",
+      "production_component": "../gui/views/singleComponents/MenuButtonView.qml",
+      "production_icon_resources": [
+        {
+          "qrc": "qrc:/images/icons/gate_settings_menubtn_re.png",
+          "source": "../gui/images/icons/gate_settings_menubtn_re.png",
+          "sha256": "22f2c0d4450046cc627725c21a4aa7d78386269d421e193624dcf9114622b06f"
+        }
+      ],
+      "old_source_assets": [
+        "/img/manual/cell-882cf24141b5.png"
+      ],
+      "source_ids": [
+        "gui-source-059"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    },
+    {
+      "name": "home-button",
+      "output": "/img/gui/icons/home-button.png",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "raw_size_px": [
+        1600,
+        1280
+      ],
+      "crop": [
+        60,
+        50,
+        80,
+        60
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2e547e43bee5d9c1f76ff710c42716a143de003853335a7288484a0fa4b5d93d",
+      "production_component": "../gui/views/singleComponents/ToolBarButton.qml",
+      "production_icon_resources": [],
+      "old_source_assets": [
+        "/img/manual/asset-c4707aba8b28.png",
+        "/img/manual/cell-d07318a281b1.png",
+        "/img/manual/cell-6a3f9ce5d051.png",
+        "/img/manual/cell-a1bf5eaa91cd.png"
+      ],
+      "source_ids": [
+        "gui-source-015",
+        "gui-source-060",
+        "gui-source-074",
+        "gui-source-089"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    },
+    {
+      "name": "intervention-info-button",
+      "output": "/img/gui/icons/intervention-info-button.png",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "raw_size_px": [
+        1600,
+        1280
+      ],
+      "crop": [
+        60,
+        496,
+        80,
+        80
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2e547e43bee5d9c1f76ff710c42716a143de003853335a7288484a0fa4b5d93d",
+      "production_component": "../gui/views/singleComponents/MenuButtonView.qml",
+      "production_icon_resources": [
+        {
+          "qrc": "qrc:/images/icons/intervention_info_menubtn_re.png",
+          "source": "../gui/images/icons/intervention_info_menubtn_re.png",
+          "sha256": "6f055a14fa73d45fc9b18c3a6fe0817d9e9bc317c017cfd722b9950068270107"
+        }
+      ],
+      "old_source_assets": [
+        "/img/manual/cell-c75e8c1aa658.png"
+      ],
+      "source_ids": [
+        "gui-source-088"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    },
+    {
+      "name": "intervention-log-button",
+      "output": "/img/gui/icons/intervention-log-button.png",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "raw_size_px": [
+        1600,
+        1280
+      ],
+      "crop": [
+        260,
+        496,
+        80,
+        80
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2e547e43bee5d9c1f76ff710c42716a143de003853335a7288484a0fa4b5d93d",
+      "production_component": "../gui/views/singleComponents/MenuButtonView.qml",
+      "production_icon_resources": [
+        {
+          "qrc": "qrc:/images/icons/intervention_log_menubtn_re.png",
+          "source": "../gui/images/icons/intervention_log_menubtn_re.png",
+          "sha256": "2ad10e82987effb338d5021d27d335af997e05e23c068e405a71e314f14ec88b"
+        }
+      ],
+      "old_source_assets": [
+        "/img/manual/cell-c425fdd03b9b.png"
+      ],
+      "source_ids": [
+        "gui-source-090"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    },
+    {
+      "name": "maintenance-button",
+      "output": "/img/gui/icons/maintenance-button.png",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "raw_size_px": [
+        1600,
+        1280
+      ],
+      "crop": [
+        60,
+        176,
+        80,
+        80
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2e547e43bee5d9c1f76ff710c42716a143de003853335a7288484a0fa4b5d93d",
+      "production_component": "../gui/views/singleComponents/MenuButtonView.qml",
+      "production_icon_resources": [
+        {
+          "qrc": "qrc:/images/icons/maintenance_menubtn_re.png",
+          "source": "../gui/images/icons/maintenance_menubtn_re.png",
+          "sha256": "a99a33093b819a87cd16b583331983df1ec685c50abbc82d3312f1386bcceca8"
+        }
+      ],
+      "old_source_assets": [
+        "/img/manual/asset-41c98df7efd4.png",
+        "/img/manual/cell-2633a4bc793a.png",
+        "/img/manual/cell-fbee6be10e98.png"
+      ],
+      "source_ids": [
+        "gui-source-014",
+        "gui-source-087",
+        "gui-source-091"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    },
+    {
+      "name": "network-button",
+      "output": "/img/gui/icons/network-button.png",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "raw_size_px": [
+        1600,
+        1280
+      ],
+      "crop": [
+        460,
+        176,
+        80,
+        80
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2e547e43bee5d9c1f76ff710c42716a143de003853335a7288484a0fa4b5d93d",
+      "production_component": "../gui/views/singleComponents/MenuButtonView.qml",
+      "production_icon_resources": [
+        {
+          "qrc": "qrc:/images/icons/network_menubtn_re.png",
+          "source": "../gui/images/icons/network_menubtn_re.png",
+          "sha256": "55abb14eb871b46610322397d10530c31f3b71e1298044fdc17292c0d07dec61"
+        }
+      ],
+      "old_source_assets": [
+        "/img/manual/asset-74d2c341d686.png"
+      ],
+      "source_ids": [
+        "gui-source-020"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    },
+    {
+      "name": "special-import-export-button",
+      "output": "/img/gui/icons/special-import-export-button.png",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "raw_size_px": [
+        1600,
+        1280
+      ],
+      "crop": [
+        260,
+        176,
+        80,
+        80
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2e547e43bee5d9c1f76ff710c42716a143de003853335a7288484a0fa4b5d93d",
+      "production_component": "../gui/views/singleComponents/MenuButtonView.qml",
+      "production_icon_resources": [
+        {
+          "qrc": "qrc:/images/icons/export_menubtn_re.png",
+          "source": "../gui/images/icons/export_menubtn_re.png",
+          "sha256": "2cfc42c4924383dc9c38bea5120a0fa697725c12942d568799f5fc80639bc424"
+        }
+      ],
+      "old_source_assets": [
+        "/img/manual/asset-e8682259cb34.png"
+      ],
+      "source_ids": [
+        "gui-source-016"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    },
+    {
+      "name": "system-info-button",
+      "output": "/img/gui/icons/system-info-button.png",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "raw_size_px": [
+        1600,
+        1280
+      ],
+      "crop": [
+        660,
+        336,
+        80,
+        80
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2e547e43bee5d9c1f76ff710c42716a143de003853335a7288484a0fa4b5d93d",
+      "production_component": "../gui/views/singleComponents/MenuButtonView.qml + GenericIcon.qml",
+      "production_icon_resources": [],
+      "old_source_assets": [
+        "/img/manual/cell-fc64c36946da.png",
+        "/img/manual/cell-71bc4e13a72d.png",
+        "/img/manual/cell-f60b02982fd9.png"
+      ],
+      "source_ids": [
+        "gui-source-075",
+        "gui-source-084",
+        "gui-source-085"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    },
+    {
+      "name": "system-settings-button",
+      "output": "/img/gui/icons/system-settings-button.png",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "raw_size_px": [
+        1600,
+        1280
+      ],
+      "crop": [
+        660,
+        16,
+        80,
+        80
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2e547e43bee5d9c1f76ff710c42716a143de003853335a7288484a0fa4b5d93d",
+      "production_component": "../gui/views/singleComponents/MenuButtonView.qml",
+      "production_icon_resources": [
+        {
+          "qrc": "qrc:/images/icons/system_menubtn_re.png",
+          "source": "../gui/images/icons/system_menubtn_re.png",
+          "sha256": "1502f108ec29fc40e712b3ed7dae79222b310c64c5ef7ab49a99cf0806031c82"
+        }
+      ],
+      "old_source_assets": [
+        "/img/manual/asset-a7a911718f1c.png"
+      ],
+      "source_ids": [
+        "gui-source-021"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    },
+    {
+      "name": "alarm-status",
+      "output": "/img/gui/icons/alarm-status.png",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "raw_size_px": [
+        1600,
+        1800
+      ],
+      "crop": [
+        440,
+        180,
+        32,
+        32
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2ddeafcc9c4bea7ddcbaed0e96ed02d057cb0b3d69f2c6663685491e292a5555",
+      "production_component": "../gui/views/singleComponents/ToolBarCenter.qml",
+      "production_icon_resources": [
+        {
+          "qrc": "qrc:/images/icons/alarm_tb.png",
+          "source": "../gui/images/icons/alarm_tb.png",
+          "sha256": "047e626bbd89b7cca094e2a3e169e9ebf4efcba72b6c4602b5e367453c2f0417"
+        }
+      ],
+      "old_source_assets": [
+        "/img/manual/asset-601829975ed7.png"
+      ],
+      "source_ids": [
+        "gui-source-030"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    },
+    {
+      "name": "cartridge-almost-empty-status",
+      "output": "/img/gui/icons/cartridge-almost-empty-status.png",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "raw_size_px": [
+        1600,
+        1800
+      ],
+      "crop": [
+        468,
+        360,
+        32,
+        32
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2ddeafcc9c4bea7ddcbaed0e96ed02d057cb0b3d69f2c6663685491e292a5555",
+      "production_component": "../gui/views/singleComponents/ToolBarCenter.qml",
+      "production_icon_resources": [
+        {
+          "qrc": "qrc:/images/icons/cartridge_warning.png",
+          "source": "../gui/images/icons/cartridge_warning.png",
+          "sha256": "25f3984630d714c37de08b02370cc766d205cc73f99ae994a7d984a4c3a1c92b"
+        }
+      ],
+      "old_source_assets": [
+        "/img/manual/asset-f8c9ed6e595a.png"
+      ],
+      "source_ids": [
+        "gui-source-033"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    },
+    {
+      "name": "cartridge-almost-expired-status",
+      "output": "/img/gui/icons/cartridge-almost-expired-status.png",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "raw_size_px": [
+        1600,
+        1800
+      ],
+      "crop": [
+        496,
+        240,
+        32,
+        32
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2ddeafcc9c4bea7ddcbaed0e96ed02d057cb0b3d69f2c6663685491e292a5555",
+      "production_component": "../gui/views/singleComponents/ToolBarCenter.qml",
+      "production_icon_resources": [
+        {
+          "qrc": "qrc:/images/icons/cartridge_almost_expired.png",
+          "source": "../gui/images/icons/cartridge_almost_expired.png",
+          "sha256": "39b2dd67b52adaf7c6348180f255f25651ed0117ea2a31d18dfcf36102282110"
+        }
+      ],
+      "old_source_assets": [
+        "/img/manual/asset-c3efc86358a9.png"
+      ],
+      "source_ids": [
+        "gui-source-031"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    },
+    {
+      "name": "cartridge-empty-status",
+      "output": "/img/gui/icons/cartridge-empty-status.png",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "raw_size_px": [
+        1600,
+        1800
+      ],
+      "crop": [
+        468,
+        660,
+        32,
+        32
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2ddeafcc9c4bea7ddcbaed0e96ed02d057cb0b3d69f2c6663685491e292a5555",
+      "production_component": "../gui/views/singleComponents/ToolBarCenter.qml",
+      "production_icon_resources": [
+        {
+          "qrc": "qrc:/images/icons/cartridge_empty.png",
+          "source": "../gui/images/icons/cartridge_empty.png",
+          "sha256": "0beeb34a4831559ffea06ebe8f42ff1a801e8e1e7cda65e665be4af774841cf4"
+        }
+      ],
+      "old_source_assets": [
+        "/img/manual/cell-ec16f9129509.png"
+      ],
+      "source_ids": [
+        "gui-source-038"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    },
+    {
+      "name": "cartridge-expired-status",
+      "output": "/img/gui/icons/cartridge-expired-status.png",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "raw_size_px": [
+        1600,
+        1800
+      ],
+      "crop": [
+        496,
+        540,
+        32,
+        32
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2ddeafcc9c4bea7ddcbaed0e96ed02d057cb0b3d69f2c6663685491e292a5555",
+      "production_component": "../gui/views/singleComponents/ToolBarCenter.qml",
+      "production_icon_resources": [
+        {
+          "qrc": "qrc:/images/icons/cartridge_expired.png",
+          "source": "../gui/images/icons/cartridge_expired.png",
+          "sha256": "72d723a996006b14326c064d6b5eb4b20e0aad82f61f701639232eed572ae088"
+        }
+      ],
+      "old_source_assets": [
+        "/img/manual/cell-9447c1d395cc.png"
+      ],
+      "source_ids": [
+        "gui-source-036"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    },
+    {
+      "name": "cartridge-level-status",
+      "output": "/img/gui/icons/cartridge-level-status.png",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "raw_size_px": [
+        1600,
+        1800
+      ],
+      "crop": [
+        468,
+        420,
+        32,
+        32
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2ddeafcc9c4bea7ddcbaed0e96ed02d057cb0b3d69f2c6663685491e292a5555",
+      "production_component": "../gui/views/singleComponents/ToolBarCenter.qml",
+      "production_icon_resources": [
+        {
+          "qrc": "qrc:/images/icons/cartridge_full.png",
+          "source": "../gui/images/icons/cartridge_full.png",
+          "sha256": "f1ad76e60de50adff53bf3aaaf38c4cde96f1f95122c7485eb231e341eb513b0"
+        }
+      ],
+      "old_source_assets": [
+        "/img/manual/cell-7b30939634a3.png"
+      ],
+      "source_ids": [
+        "gui-source-034"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    },
+    {
+      "name": "cartridge-not-ready-status",
+      "output": "/img/gui/icons/cartridge-not-ready-status.png",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "raw_size_px": [
+        1600,
+        1800
+      ],
+      "crop": [
+        468,
+        480,
+        32,
+        32
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2ddeafcc9c4bea7ddcbaed0e96ed02d057cb0b3d69f2c6663685491e292a5555",
+      "production_component": "../gui/views/singleComponents/ToolBarCenter.qml",
+      "production_icon_resources": [
+        {
+          "qrc": "qrc:/images/icons/cartridge_not_ready.png",
+          "source": "../gui/images/icons/cartridge_not_ready.png",
+          "sha256": "7d32aadbe59eab61445c3dd5cb2d44f19ac601559a200439ddc879ca6ef0cf15"
+        }
+      ],
+      "old_source_assets": [
+        "/img/manual/cell-7bf18abd5784.png",
+        "/img/manual/asset-b2065e0aa4d5.png"
+      ],
+      "source_ids": [
+        "gui-source-035",
+        "gui-source-049"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    },
+    {
+      "name": "critical-error-event",
+      "output": "/img/gui/icons/critical-error-event.png",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "raw_size_px": [
+        1600,
+        1800
+      ],
+      "crop": [
+        144,
+        794,
+        32,
+        32
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2ddeafcc9c4bea7ddcbaed0e96ed02d057cb0b3d69f2c6663685491e292a5555",
+      "production_component": "../gui/views/singleComponents/ListItemError.qml",
+      "production_icon_resources": [
+        {
+          "qrc": "qrc:/images/icons/error_generic.png",
+          "source": "../gui/images/icons/error_generic.png",
+          "sha256": "39b9abfd7c2cee1ad5f328d1c5d72286a65d353f34a4b9cab99b0c08b204a881"
+        }
+      ],
+      "old_source_assets": [
+        "/img/manual/cell-67d152256921.png"
+      ],
+      "source_ids": [
+        "gui-source-107"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    },
+    {
+      "name": "critical-error-status",
+      "output": "/img/gui/icons/critical-error-status.png",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "raw_size_px": [
+        1600,
+        1800
+      ],
+      "crop": [
+        356,
+        60,
+        32,
+        32
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2ddeafcc9c4bea7ddcbaed0e96ed02d057cb0b3d69f2c6663685491e292a5555",
+      "production_component": "../gui/views/singleComponents/ToolBarCenter.qml",
+      "production_icon_resources": [
+        {
+          "qrc": "qrc:/images/icons/critical_error_small.png",
+          "source": "../gui/images/icons/critical_error_small.png",
+          "sha256": "50712d8a7d2eddfe7d64db309f12695dbea08c65b282efb2785253b91d52c45a"
+        }
+      ],
+      "old_source_assets": [
+        "/img/manual/asset-1bbc128332f2.png"
+      ],
+      "source_ids": [
+        "gui-source-028"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    },
+    {
+      "name": "demo-mode-status",
+      "output": "/img/gui/icons/demo-mode-status.png",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "raw_size_px": [
+        1600,
+        1800
+      ],
+      "crop": [
+        356,
+        0,
+        32,
+        32
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2ddeafcc9c4bea7ddcbaed0e96ed02d057cb0b3d69f2c6663685491e292a5555",
+      "production_component": "../gui/views/singleComponents/ToolBarCenter.qml",
+      "production_icon_resources": [
+        {
+          "qrc": "qrc:/images/icons/demo_status.png",
+          "source": "../gui/images/icons/demo_status.png",
+          "sha256": "92e0cbce43d8c15e4676ac54be957702040ae668246d39456a643011f1397776"
+        }
+      ],
+      "old_source_assets": [
+        "/img/manual/asset-0a659e5a284a.png"
+      ],
+      "source_ids": [
+        "gui-source-027"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    },
+    {
+      "name": "errors-cleared-event",
+      "output": "/img/gui/icons/errors-cleared-event.png",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "raw_size_px": [
+        1600,
+        1800
+      ],
+      "crop": [
+        144,
+        854,
+        32,
+        32
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2ddeafcc9c4bea7ddcbaed0e96ed02d057cb0b3d69f2c6663685491e292a5555",
+      "production_component": "../gui/views/singleComponents/ListItemError.qml",
+      "production_icon_resources": [
+        {
+          "qrc": "qrc:/images/icons/cleared_generic3.png",
+          "source": "../gui/images/icons/cleared_generic3.png",
+          "sha256": "98253d39d6a11f424ee8aaf821ff385cc60a21330c95dc421e8d11539b432f7a"
+        }
+      ],
+      "old_source_assets": [
+        "/img/manual/cell-b4d48ec33659.png"
+      ],
+      "source_ids": [
+        "gui-source-108"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    },
+    {
+      "name": "noncritical-error-event",
+      "output": "/img/gui/icons/noncritical-error-event.png",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "raw_size_px": [
+        1600,
+        1800
+      ],
+      "crop": [
+        144,
+        734,
+        32,
+        32
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2ddeafcc9c4bea7ddcbaed0e96ed02d057cb0b3d69f2c6663685491e292a5555",
+      "production_component": "../gui/views/singleComponents/ListItemError.qml",
+      "production_icon_resources": [
+        {
+          "qrc": "qrc:/images/icons/non_critical_error_medium.png",
+          "source": "../gui/images/icons/non_critical_error_medium.png",
+          "sha256": "6b13f7fcec1debb46b8ef79f5d03f57c5c0a75ae498ffeb30a8b48ca0a3308e3"
+        }
+      ],
+      "old_source_assets": [
+        "/img/manual/cell-168772cd9e6b.png"
+      ],
+      "source_ids": [
+        "gui-source-106"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    },
+    {
+      "name": "noncritical-error-status",
+      "output": "/img/gui/icons/noncritical-error-status.png",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "raw_size_px": [
+        1600,
+        1800
+      ],
+      "crop": [
+        356,
+        120,
+        32,
+        32
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2ddeafcc9c4bea7ddcbaed0e96ed02d057cb0b3d69f2c6663685491e292a5555",
+      "production_component": "../gui/views/singleComponents/ToolBarCenter.qml",
+      "production_icon_resources": [
+        {
+          "qrc": "qrc:/images/icons/non_critical_error_small.png",
+          "source": "../gui/images/icons/non_critical_error_small.png",
+          "sha256": "b7a520db538350c23c2950c81a193b844f6fa46b85eca1641f8eafd89f615098"
+        }
+      ],
+      "old_source_assets": [
+        "/img/manual/asset-4b23f6b46f1e.png"
+      ],
+      "source_ids": [
+        "gui-source-029"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    },
+    {
+      "name": "process-running-status",
+      "output": "/img/gui/icons/process-running-status.png",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "raw_size_px": [
+        1600,
+        1800
+      ],
+      "crop": [
+        384,
+        300,
+        32,
+        32
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2ddeafcc9c4bea7ddcbaed0e96ed02d057cb0b3d69f2c6663685491e292a5555",
+      "production_component": "../gui/views/singleComponents/ToolBarCenter.qml + Spinner.qml",
+      "production_icon_resources": [],
+      "old_source_assets": [
+        "/img/manual/asset-dc77eba566ee.png"
+      ],
+      "source_ids": [
+        "gui-source-032"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    },
+    {
+      "name": "service-required-status",
+      "output": "/img/gui/icons/service-required-status.png",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "raw_size_px": [
+        1600,
+        1800
+      ],
+      "crop": [
+        356,
+        600,
+        32,
+        32
+      ],
+      "crop_units": "logical_pixels",
+      "scale": 2,
+      "raw_sha256": "2ddeafcc9c4bea7ddcbaed0e96ed02d057cb0b3d69f2c6663685491e292a5555",
+      "production_component": "../gui/views/singleComponents/ToolBarCenter.qml",
+      "production_icon_resources": [
+        {
+          "qrc": "qrc:/images/icons/service_required.png",
+          "source": "../gui/images/icons/service_required.png",
+          "sha256": "831ef82534d493c49599372deff35f2f05880940ecb8ca915407c9cd2b17f1b4"
+        }
+      ],
+      "old_source_assets": [
+        "/img/manual/cell-c721cca85bf4.png"
+      ],
+      "source_ids": [
+        "gui-source-037"
+      ],
+      "locale_independent": true,
+      "contains_text": false,
+      "review": {
+        "status": "reviewed",
+        "method": "Rendered production Qt component using Cocoa OpenGL; all cropped previews visually inspected at usable size."
+      }
+    }
+  ],
+  "replacements": [
+    {
+      "id": "gui-source-014",
+      "old": "/img/manual/asset-41c98df7efd4.png",
+      "output": "/img/gui/icons/maintenance-button.png",
+      "icon_name": "maintenance-button",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "crop": [
+        60,
+        176,
+        80,
+        80
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/08-general-operations-and-configurations.md",
+          "line": 154,
+          "printed_page": 66,
+          "chapter": 8,
+          "section": "8.4 Import / export settings {#section-8-4}",
+          "alt": "Procedure illustration, printed page 66",
+          "context": "2. Press the Maintenance button.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 154,
+          "printed_page": 66,
+          "chapter": 8,
+          "section": "8.4 Import/Export von Einstellungen {#section-8-4}",
+          "alt": "Abbildung zum Arbeitsschritt, gedruckte Seite 66",
+          "context": "2. Auf der Startseite der BactoSense Benutzeroberfläche, drücken Sie auf Wartung.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "es",
+          "doc": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 154,
+          "printed_page": 66,
+          "chapter": 8,
+          "section": "8.4 Importación y exportación de ajustes {#section-8-4}",
+          "alt": "Ilustración del procedimiento, página impresa 66",
+          "context": "2. Pulse el botón Maintenance.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 154,
+          "printed_page": 66,
+          "chapter": 8,
+          "section": "8.4 Importation / exportation des paramètres {#section-8-4}",
+          "alt": "Illustration de la procédure, page imprimée 66",
+          "context": "2. Appuyez sur le bouton Maintenance.",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-015",
+      "old": "/img/manual/asset-c4707aba8b28.png",
+      "output": "/img/gui/icons/home-button.png",
+      "icon_name": "home-button",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "crop": [
+        60,
+        50,
+        80,
+        60
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/08-general-operations-and-configurations.md",
+          "line": 154,
+          "printed_page": 66,
+          "chapter": 8,
+          "section": "8.4 Import / export settings {#section-8-4}",
+          "alt": "Procedure illustration, printed page 66",
+          "context": "1. Navigate to the Home menu of the Bacto- Sense user interface.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "en",
+          "doc": "docs/08-general-operations-and-configurations.md",
+          "line": 199,
+          "printed_page": 69,
+          "chapter": 8,
+          "section": "8.6 Network configuration {#section-8-6}",
+          "alt": "Procedure illustration, printed page 69",
+          "context": "1. Navigate to the Home menu of the BactoSense user interface.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "en",
+          "doc": "docs/08-general-operations-and-configurations.md",
+          "line": 208,
+          "printed_page": 70,
+          "chapter": 8,
+          "section": "8.7 Set NTP Servers {#section-8-7}",
+          "alt": "Procedure illustration, printed page 70",
+          "context": "1. Navigate to the Home menu of the BactoSense user interface.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "en",
+          "doc": "docs/08-general-operations-and-configurations.md",
+          "line": 409,
+          "printed_page": 83,
+          "chapter": 8,
+          "section": "8.12 Demo mode {#section-8-12}",
+          "alt": "Procedure illustration, printed page 83",
+          "context": "1. Navigate to the Home menu of the BactoSense user interface.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "en",
+          "doc": "docs/08-general-operations-and-configurations.md",
+          "line": 422,
+          "printed_page": 84,
+          "chapter": 8,
+          "section": "8.13 Factory reset {#section-8-13}",
+          "alt": "Procedure illustration, printed page 84",
+          "context": "1. Navigate to the Home menu of the BactoSense user interface.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 154,
+          "printed_page": 66,
+          "chapter": 8,
+          "section": "8.4 Import/Export von Einstellungen {#section-8-4}",
+          "alt": "Abbildung zum Arbeitsschritt, gedruckte Seite 66",
+          "context": "1. Navigieren Sie zur Startseite der Benut- zeroberfläche des BactoSense.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 199,
+          "printed_page": 69,
+          "chapter": 8,
+          "section": "8.6 Netzwerkkonfiguration {#section-8-6}",
+          "alt": "Abbildung zum Arbeitsschritt, gedruckte Seite 69",
+          "context": "1. Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 208,
+          "printed_page": 70,
+          "chapter": 8,
+          "section": "8.7 NTP-Server einstellen {#section-8-7}",
+          "alt": "Abbildung zum Arbeitsschritt, gedruckte Seite 70",
+          "context": "1. Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 409,
+          "printed_page": 83,
+          "chapter": 8,
+          "section": "8.12 Demo-Modus {#section-8-12}",
+          "alt": "Abbildung zum Arbeitsschritt, gedruckte Seite 83",
+          "context": "1. Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 422,
+          "printed_page": 84,
+          "chapter": 8,
+          "section": "8.13 Werkseinstellungen {#section-8-13}",
+          "alt": "Abbildung zum Arbeitsschritt, gedruckte Seite 84",
+          "context": "1. Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "es",
+          "doc": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 154,
+          "printed_page": 66,
+          "chapter": 8,
+          "section": "8.4 Importación y exportación de ajustes {#section-8-4}",
+          "alt": "Ilustración del procedimiento, página impresa 66",
+          "context": "1. Vaya al menú Home de la interfaz de usuario de BactoSense.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "es",
+          "doc": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 199,
+          "printed_page": 69,
+          "chapter": 8,
+          "section": "8.6 Configuración de red {#section-8-6}",
+          "alt": "Ilustración del procedimiento, página impresa 69",
+          "context": "1. Vaya al menú Home de la interfaz de usuario de BactoSense.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "es",
+          "doc": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 208,
+          "printed_page": 70,
+          "chapter": 8,
+          "section": "8.7 Configuración de servidores NTP {#section-8-7}",
+          "alt": "Ilustración del procedimiento, página impresa 70",
+          "context": "1. Vaya al menú Home de la interfaz de usuario de BactoSense.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "es",
+          "doc": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 409,
+          "printed_page": 83,
+          "chapter": 8,
+          "section": "8.12 Modo de demostración {#section-8-12}",
+          "alt": "Ilustración del procedimiento, página impresa 83",
+          "context": "1. Vaya al menú Home de la interfaz de usuario de BactoSense.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "es",
+          "doc": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 422,
+          "printed_page": 84,
+          "chapter": 8,
+          "section": "8.13 Restablecimiento de fábrica {#section-8-13}",
+          "alt": "Ilustración del procedimiento, página impresa 84",
+          "context": "1. Vaya al menú Home de la interfaz de usuario de BactoSense.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 154,
+          "printed_page": 66,
+          "chapter": 8,
+          "section": "8.4 Importation / exportation des paramètres {#section-8-4}",
+          "alt": "Illustration de la procédure, page imprimée 66",
+          "context": "1. Accédez au Menu principal de l’interface utilisateur de BactoSense.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 199,
+          "printed_page": 69,
+          "chapter": 8,
+          "section": "8.6 Configuration du réseau {#section-8-6}",
+          "alt": "Illustration de la procédure, page imprimée 69",
+          "context": "1. Accédez au Menu principal de l’interface utilisateur de BactoSense.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 208,
+          "printed_page": 70,
+          "chapter": 8,
+          "section": "8.7 Configuration des serveurs NTP {#section-8-7}",
+          "alt": "Illustration de la procédure, page imprimée 70",
+          "context": "1. Accédez au Menu principal de l’interface utilisateur de BactoSense.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 409,
+          "printed_page": 83,
+          "chapter": 8,
+          "section": "8.12 Mode démo {#section-8-12}",
+          "alt": "Illustration de la procédure, page imprimée 83",
+          "context": "1. Accédez au Menu principal de l’interface utilisateur de BactoSense.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 422,
+          "printed_page": 84,
+          "chapter": 8,
+          "section": "8.13 Réinitialisation aux paramètres d’usine {#section-8-13}",
+          "alt": "Illustration de la procédure, page imprimée 84",
+          "context": "1. Accédez au Menu principal de l’interface utilisateur de BactoSense.",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-016",
+      "old": "/img/manual/asset-e8682259cb34.png",
+      "output": "/img/gui/icons/special-import-export-button.png",
+      "icon_name": "special-import-export-button",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "crop": [
+        260,
+        176,
+        80,
+        80
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/08-general-operations-and-configurations.md",
+          "line": 154,
+          "printed_page": 66,
+          "chapter": 8,
+          "section": "8.4 Import / export settings {#section-8-4}",
+          "alt": "Procedure illustration, printed page 66",
+          "context": "3. Press the Special export import button.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 154,
+          "printed_page": 66,
+          "chapter": 8,
+          "section": "8.4 Import/Export von Einstellungen {#section-8-4}",
+          "alt": "Abbildung zum Arbeitsschritt, gedruckte Seite 66",
+          "context": "3. Drücken Sie die Taste Spezial-Export/- Import.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "es",
+          "doc": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 154,
+          "printed_page": 66,
+          "chapter": 8,
+          "section": "8.4 Importación y exportación de ajustes {#section-8-4}",
+          "alt": "Ilustración del procedimiento, página impresa 66",
+          "context": "3. Pulse el botón Special export import.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 154,
+          "printed_page": 66,
+          "chapter": 8,
+          "section": "8.4 Importation / exportation des paramètres {#section-8-4}",
+          "alt": "Illustration de la procédure, page imprimée 66",
+          "context": "3. Appuyez sur Special import/export.",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-020",
+      "old": "/img/manual/asset-74d2c341d686.png",
+      "output": "/img/gui/icons/network-button.png",
+      "icon_name": "network-button",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "crop": [
+        460,
+        176,
+        80,
+        80
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/08-general-operations-and-configurations.md",
+          "line": 199,
+          "printed_page": 69,
+          "chapter": 8,
+          "section": "8.6 Network configuration {#section-8-6}",
+          "alt": "Procedure illustration, printed page 69",
+          "context": "3. Press the Network button.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 199,
+          "printed_page": 69,
+          "chapter": 8,
+          "section": "8.6 Netzwerkkonfiguration {#section-8-6}",
+          "alt": "Abbildung zum Arbeitsschritt, gedruckte Seite 69",
+          "context": "3. Drücken Sie die Taste Netzwerk.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "es",
+          "doc": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 199,
+          "printed_page": 69,
+          "chapter": 8,
+          "section": "8.6 Configuración de red {#section-8-6}",
+          "alt": "Ilustración del procedimiento, página impresa 69",
+          "context": "3. Pulse el botón Network.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 199,
+          "printed_page": 69,
+          "chapter": 8,
+          "section": "8.6 Configuration du réseau {#section-8-6}",
+          "alt": "Illustration de la procédure, page imprimée 69",
+          "context": "3. Appuyez sur le bouton Réseau.",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-021",
+      "old": "/img/manual/asset-a7a911718f1c.png",
+      "output": "/img/gui/icons/system-settings-button.png",
+      "icon_name": "system-settings-button",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "crop": [
+        660,
+        16,
+        80,
+        80
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/08-general-operations-and-configurations.md",
+          "line": 199,
+          "printed_page": 69,
+          "chapter": 8,
+          "section": "8.6 Network configuration {#section-8-6}",
+          "alt": "Procedure illustration, printed page 69",
+          "context": "2. Press the System settings button.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "en",
+          "doc": "docs/08-general-operations-and-configurations.md",
+          "line": 208,
+          "printed_page": 70,
+          "chapter": 8,
+          "section": "8.7 Set NTP Servers {#section-8-7}",
+          "alt": "Procedure illustration, printed page 70",
+          "context": "2. Press the System settings button.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "en",
+          "doc": "docs/08-general-operations-and-configurations.md",
+          "line": 409,
+          "printed_page": 83,
+          "chapter": 8,
+          "section": "8.12 Demo mode {#section-8-12}",
+          "alt": "Procedure illustration, printed page 83",
+          "context": "2. Enter the System settings button, and then the Demo mode button.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "en",
+          "doc": "docs/08-general-operations-and-configurations.md",
+          "line": 422,
+          "printed_page": 84,
+          "chapter": 8,
+          "section": "8.13 Factory reset {#section-8-13}",
+          "alt": "Procedure illustration, printed page 84",
+          "context": "2. Press the Maintenance button, then the Factory reset button.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 199,
+          "printed_page": 69,
+          "chapter": 8,
+          "section": "8.6 Netzwerkkonfiguration {#section-8-6}",
+          "alt": "Abbildung zum Arbeitsschritt, gedruckte Seite 69",
+          "context": "2. Drücken Sie die Taste Systemeinstellungen.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 208,
+          "printed_page": 70,
+          "chapter": 8,
+          "section": "8.7 NTP-Server einstellen {#section-8-7}",
+          "alt": "Abbildung zum Arbeitsschritt, gedruckte Seite 70",
+          "context": "2. Drücken Sie die Taste Systemeinstellungen.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 409,
+          "printed_page": 83,
+          "chapter": 8,
+          "section": "8.12 Demo-Modus {#section-8-12}",
+          "alt": "Abbildung zum Arbeitsschritt, gedruckte Seite 83",
+          "context": "2. Gehen Sie in die Systemeinstellungen und betätigen Sie die Taste Demomodus.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 422,
+          "printed_page": 84,
+          "chapter": 8,
+          "section": "8.13 Werkseinstellungen {#section-8-13}",
+          "alt": "Abbildung zum Arbeitsschritt, gedruckte Seite 84",
+          "context": "2. Drücken Sie auf Wartung und dann Werkseinstellungen.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "es",
+          "doc": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 199,
+          "printed_page": 69,
+          "chapter": 8,
+          "section": "8.6 Configuración de red {#section-8-6}",
+          "alt": "Ilustración del procedimiento, página impresa 69",
+          "context": "2. Pulse el botón System settings.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "es",
+          "doc": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 208,
+          "printed_page": 70,
+          "chapter": 8,
+          "section": "8.7 Configuración de servidores NTP {#section-8-7}",
+          "alt": "Ilustración del procedimiento, página impresa 70",
+          "context": "2. Pulse el botón System settings.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "es",
+          "doc": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 409,
+          "printed_page": 83,
+          "chapter": 8,
+          "section": "8.12 Modo de demostración {#section-8-12}",
+          "alt": "Ilustración del procedimiento, página impresa 83",
+          "context": "2. Pulse el botón System settings y, a continuación, Demo mode.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "es",
+          "doc": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 422,
+          "printed_page": 84,
+          "chapter": 8,
+          "section": "8.13 Restablecimiento de fábrica {#section-8-13}",
+          "alt": "Ilustración del procedimiento, página impresa 84",
+          "context": "2. Pulse el botón Maintenance y, a continuación, Factory reset.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 199,
+          "printed_page": 69,
+          "chapter": 8,
+          "section": "8.6 Configuration du réseau {#section-8-6}",
+          "alt": "Illustration de la procédure, page imprimée 69",
+          "context": "2. Appuyez sur le bouton Paramètres système.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 208,
+          "printed_page": 70,
+          "chapter": 8,
+          "section": "8.7 Configuration des serveurs NTP {#section-8-7}",
+          "alt": "Illustration de la procédure, page imprimée 70",
+          "context": "2. Appuyez sur le bouton Paramètres système.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 409,
+          "printed_page": 83,
+          "chapter": 8,
+          "section": "8.12 Mode démo {#section-8-12}",
+          "alt": "Illustration de la procédure, page imprimée 83",
+          "context": "2. Accédez aux Paramètres système, puis au Mode démo.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 422,
+          "printed_page": 84,
+          "chapter": 8,
+          "section": "8.13 Réinitialisation aux paramètres d’usine {#section-8-13}",
+          "alt": "Illustration de la procédure, page imprimée 84",
+          "context": "2. Appuyez sur le bouton Maintenance, puis sur le bouton Réinitialisation d’usine.",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-024",
+      "old": "/img/manual/asset-a42806c7c455.png",
+      "output": "/img/gui/icons/date-time-button.png",
+      "icon_name": "date-time-button",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "crop": [
+        660,
+        176,
+        80,
+        80
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/08-general-operations-and-configurations.md",
+          "line": 208,
+          "printed_page": 70,
+          "chapter": 8,
+          "section": "8.7 Set NTP Servers {#section-8-7}",
+          "alt": "Procedure illustration, printed page 70",
+          "context": "3. Press the Date & Time button.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 208,
+          "printed_page": 70,
+          "chapter": 8,
+          "section": "8.7 NTP-Server einstellen {#section-8-7}",
+          "alt": "Abbildung zum Arbeitsschritt, gedruckte Seite 70",
+          "context": "3. Drücken Sie die Taste Datum & Uhrzeit.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "es",
+          "doc": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 208,
+          "printed_page": 70,
+          "chapter": 8,
+          "section": "8.7 Configuración de servidores NTP {#section-8-7}",
+          "alt": "Ilustración del procedimiento, página impresa 70",
+          "context": "3. Pulse el botón Date & Time.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 208,
+          "printed_page": 70,
+          "chapter": 8,
+          "section": "8.7 Configuration des serveurs NTP {#section-8-7}",
+          "alt": "Illustration de la procédure, page imprimée 70",
+          "context": "3. Appuyez sur le bouton Date & heure.",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-027",
+      "old": "/img/manual/asset-0a659e5a284a.png",
+      "output": "/img/gui/icons/demo-mode-status.png",
+      "icon_name": "demo-mode-status",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "crop": [
+        356,
+        0,
+        32,
+        32
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Top bar status icons {#section-8-8-2}",
+          "alt": "Procedure illustration, printed page 72",
+          "context": "Process running Demo mode activated",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Die Symbole auf der oberen Leiste {#section-8-8-2}",
+          "alt": "Abbildung zum Arbeitsschritt, gedruckte Seite 72",
+          "context": "Prozess läuft Demo-Modus aktiviert",
+          "nearby_captions": []
+        },
+        {
+          "locale": "es",
+          "doc": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Iconos de estado de la barra superior {#section-8-8-2}",
+          "alt": "Ilustración del procedimiento, página impresa 72",
+          "context": "Proceso en curso Modo de demostración activado",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Icônes d’état de la barre supérieure {#section-8-8-2}",
+          "alt": "Illustration de la procédure, page imprimée 72",
+          "context": "Processus en cours Mode démo activé",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-028",
+      "old": "/img/manual/asset-1bbc128332f2.png",
+      "output": "/img/gui/icons/critical-error-status.png",
+      "icon_name": "critical-error-status",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "crop": [
+        356,
+        60,
+        32,
+        32
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Top bar status icons {#section-8-8-2}",
+          "alt": "Procedure illustration, printed page 72",
+          "context": "Critical error (section 16.3) Cartridge expired",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Die Symbole auf der oberen Leiste {#section-8-8-2}",
+          "alt": "Abbildung zum Arbeitsschritt, gedruckte Seite 72",
+          "context": "Kritischer Fehler (Abschnitt 16.3) Kartusche abgelaufen",
+          "nearby_captions": []
+        },
+        {
+          "locale": "es",
+          "doc": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Iconos de estado de la barra superior {#section-8-8-2}",
+          "alt": "Ilustración del procedimiento, página impresa 72",
+          "context": "Error crítico (sección 16.3) Cartucho caducado",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Icônes d’état de la barre supérieure {#section-8-8-2}",
+          "alt": "Illustration de la procédure, page imprimée 72",
+          "context": "Erreur critique (section 16.3) Cartouche expirée",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-029",
+      "old": "/img/manual/asset-4b23f6b46f1e.png",
+      "output": "/img/gui/icons/noncritical-error-status.png",
+      "icon_name": "noncritical-error-status",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "crop": [
+        356,
+        120,
+        32,
+        32
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Top bar status icons {#section-8-8-2}",
+          "alt": "Procedure illustration, printed page 72",
+          "context": "Alarm on last measurement (Auto mode only, see section ) Non-critical error (section 16.2)",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Die Symbole auf der oberen Leiste {#section-8-8-2}",
+          "alt": "Abbildung zum Arbeitsschritt, gedruckte Seite 72",
+          "context": "Alarm bei der letzten Messung (nur im Auto-Modus, siehe Abschnitt 8.5) Unkritischer Fehler (Abschnitt 16.2)",
+          "nearby_captions": []
+        },
+        {
+          "locale": "es",
+          "doc": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Iconos de estado de la barra superior {#section-8-8-2}",
+          "alt": "Ilustración del procedimiento, página impresa 72",
+          "context": "Alarma en la última medición (solo modo Auto, véase la sección correspondiente) Error no crítico (sección 16.2)",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Icônes d’état de la barre supérieure {#section-8-8-2}",
+          "alt": "Illustration de la procédure, page imprimée 72",
+          "context": "Alarme sur la dernière mesure (mode Auto uniquement, voir section ) Erreur non critique (section 16.2)",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-030",
+      "old": "/img/manual/asset-601829975ed7.png",
+      "output": "/img/gui/icons/alarm-status.png",
+      "icon_name": "alarm-status",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "crop": [
+        440,
+        180,
+        32,
+        32
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Top bar status icons {#section-8-8-2}",
+          "alt": "Procedure illustration, printed page 72",
+          "context": "Alarm on last measurement (Auto mode only, see section ) Non-critical error (section 16.2)",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Die Symbole auf der oberen Leiste {#section-8-8-2}",
+          "alt": "Abbildung zum Arbeitsschritt, gedruckte Seite 72",
+          "context": "Alarm bei der letzten Messung (nur im Auto-Modus, siehe Abschnitt 8.5) Unkritischer Fehler (Abschnitt 16.2)",
+          "nearby_captions": []
+        },
+        {
+          "locale": "es",
+          "doc": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Iconos de estado de la barra superior {#section-8-8-2}",
+          "alt": "Ilustración del procedimiento, página impresa 72",
+          "context": "Alarma en la última medición (solo modo Auto, véase la sección correspondiente) Error no crítico (sección 16.2)",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Icônes d’état de la barre supérieure {#section-8-8-2}",
+          "alt": "Illustration de la procédure, page imprimée 72",
+          "context": "Alarme sur la dernière mesure (mode Auto uniquement, voir section ) Erreur non critique (section 16.2)",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-031",
+      "old": "/img/manual/asset-c3efc86358a9.png",
+      "output": "/img/gui/icons/cartridge-almost-expired-status.png",
+      "icon_name": "cartridge-almost-expired-status",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "crop": [
+        496,
+        240,
+        32,
+        32
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Top bar status icons {#section-8-8-2}",
+          "alt": "Procedure illustration, printed page 72",
+          "context": "Cartridge almost expired Cartridge level indication",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Die Symbole auf der oberen Leiste {#section-8-8-2}",
+          "alt": "Abbildung zum Arbeitsschritt, gedruckte Seite 72",
+          "context": "Kartusche läuft bald ab Kartuschenfüllstandsanzeige",
+          "nearby_captions": []
+        },
+        {
+          "locale": "es",
+          "doc": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Iconos de estado de la barra superior {#section-8-8-2}",
+          "alt": "Ilustración del procedimiento, página impresa 72",
+          "context": "Cartucho próximo a caducar Indicación del nivel del cartucho",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Icônes d’état de la barre supérieure {#section-8-8-2}",
+          "alt": "Illustration de la procédure, page imprimée 72",
+          "context": "Cartouche presque expirée Indication du niveau de la cartouche",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-032",
+      "old": "/img/manual/asset-dc77eba566ee.png",
+      "output": "/img/gui/icons/process-running-status.png",
+      "icon_name": "process-running-status",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "crop": [
+        384,
+        300,
+        32,
+        32
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Top bar status icons {#section-8-8-2}",
+          "alt": "Procedure illustration, printed page 72",
+          "context": "Process running Demo mode activated",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Die Symbole auf der oberen Leiste {#section-8-8-2}",
+          "alt": "Abbildung zum Arbeitsschritt, gedruckte Seite 72",
+          "context": "Prozess läuft Demo-Modus aktiviert",
+          "nearby_captions": []
+        },
+        {
+          "locale": "es",
+          "doc": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Iconos de estado de la barra superior {#section-8-8-2}",
+          "alt": "Ilustración del procedimiento, página impresa 72",
+          "context": "Proceso en curso Modo de demostración activado",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Icônes d’état de la barre supérieure {#section-8-8-2}",
+          "alt": "Illustration de la procédure, page imprimée 72",
+          "context": "Processus en cours Mode démo activé",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-033",
+      "old": "/img/manual/asset-f8c9ed6e595a.png",
+      "output": "/img/gui/icons/cartridge-almost-empty-status.png",
+      "icon_name": "cartridge-almost-empty-status",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "crop": [
+        468,
+        360,
+        32,
+        32
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Top bar status icons {#section-8-8-2}",
+          "alt": "Procedure illustration, printed page 72",
+          "context": "Cartridge almost empty Service required (see chapter 15)",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Die Symbole auf der oberen Leiste {#section-8-8-2}",
+          "alt": "Abbildung zum Arbeitsschritt, gedruckte Seite 72",
+          "context": "Kartusche fast leer Wartung erforderlich (siehe Kapitel 15)",
+          "nearby_captions": []
+        },
+        {
+          "locale": "es",
+          "doc": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Iconos de estado de la barra superior {#section-8-8-2}",
+          "alt": "Ilustración del procedimiento, página impresa 72",
+          "context": "Cartucho casi vacío Mantenimiento necesario (véase el capítulo 15)",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Icônes d’état de la barre supérieure {#section-8-8-2}",
+          "alt": "Illustration de la procédure, page imprimée 72",
+          "context": "Cartouche presque vide Entretien nécessaire (voir chapitre 15)",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-034",
+      "old": "/img/manual/cell-7b30939634a3.png",
+      "output": "/img/gui/icons/cartridge-level-status.png",
+      "icon_name": "cartridge-level-status",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "crop": [
+        468,
+        420,
+        32,
+        32
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Top bar status icons {#section-8-8-2}",
+          "alt": "Cartridge level indication",
+          "context": "Cartridge almost expired Cartridge level indication",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Die Symbole auf der oberen Leiste {#section-8-8-2}",
+          "alt": "Kartuschenfüllstandsanzeige",
+          "context": "Kartusche läuft bald ab Kartuschenfüllstandsanzeige",
+          "nearby_captions": []
+        },
+        {
+          "locale": "es",
+          "doc": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Iconos de estado de la barra superior {#section-8-8-2}",
+          "alt": "Indicación del nivel del cartucho",
+          "context": "Cartucho próximo a caducar Indicación del nivel del cartucho",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Icônes d’état de la barre supérieure {#section-8-8-2}",
+          "alt": "Indication du niveau de la cartouche",
+          "context": "Cartouche presque expirée Indication du niveau de la cartouche",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-035",
+      "old": "/img/manual/cell-7bf18abd5784.png",
+      "output": "/img/gui/icons/cartridge-not-ready-status.png",
+      "icon_name": "cartridge-not-ready-status",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "crop": [
+        468,
+        480,
+        32,
+        32
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Top bar status icons {#section-8-8-2}",
+          "alt": "Cartridge not correctly initialized or no cartridge",
+          "context": "Cartridge not correctly initialized or no cartridge Cartridge empty",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Die Symbole auf der oberen Leiste {#section-8-8-2}",
+          "alt": "Kartusche nicht korrekt initialisiert oder keine Kartusche vorhanden",
+          "context": "Kartusche nicht korrekt initialisiert oder keine Kartusche vorhanden Kartusche leer",
+          "nearby_captions": []
+        },
+        {
+          "locale": "es",
+          "doc": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Iconos de estado de la barra superior {#section-8-8-2}",
+          "alt": "Cartucho no inicializado correctamente o ausente",
+          "context": "Cartucho no inicializado correctamente o ausente Cartucho vacío",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Icônes d’état de la barre supérieure {#section-8-8-2}",
+          "alt": "Cartouche non initialisée correctement ou absente",
+          "context": "Cartouche non initialisée correctement ou absente Cartouche vide",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-036",
+      "old": "/img/manual/cell-9447c1d395cc.png",
+      "output": "/img/gui/icons/cartridge-expired-status.png",
+      "icon_name": "cartridge-expired-status",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "crop": [
+        496,
+        540,
+        32,
+        32
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Top bar status icons {#section-8-8-2}",
+          "alt": "Cartridge expired",
+          "context": "Critical error (section 16.3) Cartridge expired",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Die Symbole auf der oberen Leiste {#section-8-8-2}",
+          "alt": "Kartusche abgelaufen",
+          "context": "Kritischer Fehler (Abschnitt 16.3) Kartusche abgelaufen",
+          "nearby_captions": []
+        },
+        {
+          "locale": "es",
+          "doc": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Iconos de estado de la barra superior {#section-8-8-2}",
+          "alt": "Cartucho caducado",
+          "context": "Error crítico (sección 16.3) Cartucho caducado",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Icônes d’état de la barre supérieure {#section-8-8-2}",
+          "alt": "Cartouche expirée",
+          "context": "Erreur critique (section 16.3) Cartouche expirée",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-037",
+      "old": "/img/manual/cell-c721cca85bf4.png",
+      "output": "/img/gui/icons/service-required-status.png",
+      "icon_name": "service-required-status",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "crop": [
+        356,
+        600,
+        32,
+        32
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Top bar status icons {#section-8-8-2}",
+          "alt": "Service required (see chapter 15)",
+          "context": "Cartridge almost empty Service required (see chapter 15)",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Die Symbole auf der oberen Leiste {#section-8-8-2}",
+          "alt": "Wartung erforderlich (siehe Kapitel 15)",
+          "context": "Kartusche fast leer Wartung erforderlich (siehe Kapitel 15)",
+          "nearby_captions": []
+        },
+        {
+          "locale": "es",
+          "doc": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Iconos de estado de la barra superior {#section-8-8-2}",
+          "alt": "Mantenimiento necesario (véase el capítulo 15)",
+          "context": "Cartucho casi vacío Mantenimiento necesario (véase el capítulo 15)",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Icônes d’état de la barre supérieure {#section-8-8-2}",
+          "alt": "Entretien nécessaire (voir chapitre 15)",
+          "context": "Cartouche presque vide Entretien nécessaire (voir chapitre 15)",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-038",
+      "old": "/img/manual/cell-ec16f9129509.png",
+      "output": "/img/gui/icons/cartridge-empty-status.png",
+      "icon_name": "cartridge-empty-status",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "crop": [
+        468,
+        660,
+        32,
+        32
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Top bar status icons {#section-8-8-2}",
+          "alt": "Cartridge empty",
+          "context": "Cartridge not correctly initialized or no cartridge Cartridge empty",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Die Symbole auf der oberen Leiste {#section-8-8-2}",
+          "alt": "Kartusche leer",
+          "context": "Kartusche nicht korrekt initialisiert oder keine Kartusche vorhanden Kartusche leer",
+          "nearby_captions": []
+        },
+        {
+          "locale": "es",
+          "doc": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Iconos de estado de la barra superior {#section-8-8-2}",
+          "alt": "Cartucho vacío",
+          "context": "Cartucho no inicializado correctamente o ausente Cartucho vacío",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 240,
+          "printed_page": 72,
+          "chapter": 8,
+          "section": "8.8.2 Icônes d’état de la barre supérieure {#section-8-8-2}",
+          "alt": "Cartouche vide",
+          "context": "Cartouche non initialisée correctement ou absente Cartouche vide",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-049",
+      "old": "/img/manual/asset-b2065e0aa4d5.png",
+      "output": "/img/gui/icons/cartridge-not-ready-status.png",
+      "icon_name": "cartridge-not-ready-status",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "crop": [
+        468,
+        480,
+        32,
+        32
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/08-general-operations-and-configurations.md",
+          "line": 327,
+          "printed_page": 77,
+          "chapter": 8,
+          "section": "8.9.5 Removing a cartridge {#section-8-9-5}",
+          "alt": "Illustration for The top bar of the user interface indicates that no cartridge is connected. The Maintenance button in the Home menu is now dis- played in or",
+          "context": "6. Handling of the removed cartridge • If you wish to store the removed cartridge, refer to the storage instructions in section 17.1.3. • If you wish to refill the removed cartridge, refer to the refill instructions in section 17.3.2. The top bar of the user interface indicates that no cartridge is connected. The Maintenance button in the Home menu is now dis- played in orange.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 327,
+          "printed_page": 77,
+          "chapter": 8,
+          "section": "8.9.5 Entfernen einer Kartusche {#section-8-9-5}",
+          "alt": "Abbildung: Die obere Leiste der Benutzeroberfläche zeigt an, dass keine Kartusche angeschlossen ist. Die Wartungstaste im Home-Menü wird orange angezeigt.",
+          "context": "6. Handhabung der entnommenen Kartusche: • Beachten Sie zur Lagerung die Hinweise in Abschnitt 17.1.3. • Beachten Sie zur Wiederbefüllung die Hinweise in Abschnitt 17.3.2. Die obere Leiste der Benut- zeroberfläche zeigt an, dass keine Kartusche angeschlossen ist. Die Taste Wartung auf der Startseite wird nun in orange gezeigt.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "es",
+          "doc": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 327,
+          "printed_page": 77,
+          "chapter": 8,
+          "section": "8.9.5 Retirada de un cartucho {#section-8-9-5}",
+          "alt": "Indicación de ausencia de cartucho y botón Maintenance del menú Home resaltado en naranja.",
+          "context": "6. Manipulación del cartucho retirado. • Si desea almacenar el cartucho retirado, consulte las instrucciones de almacenamiento de la sección 17.1.3. • Si desea recargar el cartucho retirado, consulte las instrucciones de recarga de la sección 17.3.2. La barra superior de la interfaz indica que no hay ningún cartucho conectado. El botón Maintenance del menú Home aparece ahora en naranja.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 327,
+          "printed_page": 77,
+          "chapter": 8,
+          "section": "8.9.5 Retrait d’une cartouche {#section-8-9-5}",
+          "alt": "Illustration de la barre supérieure indiquant l’absence de cartouche et du bouton Maintenance orange dans le menu Home.",
+          "context": "6. Manipulation de la cartouche retirée • Si vous souhaitez stocker la cartouche retirée, reportez-vous aux instructions de stockage de la section 17.1.3. • Si vous souhaitez recharger la cartouche retirée, reportez-vous aux instructions de recharge de la section 17.3.2. La barre supérieure de l’interface utilisateur indique qu’aucune cartouche n’est connectée. Le bouton Maintenance du menu Home s’affiche désormais en orange.",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-050",
+      "old": "/img/manual/asset-65a7aba669db.png",
+      "output": "/img/gui/icons/demo-mode-button.png",
+      "icon_name": "demo-mode-button",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "crop": [
+        60,
+        336,
+        80,
+        80
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/08-general-operations-and-configurations.md",
+          "line": 409,
+          "printed_page": 83,
+          "chapter": 8,
+          "section": "8.12 Demo mode {#section-8-12}",
+          "alt": "Procedure illustration, printed page 83",
+          "context": "2. Enter the System settings button, and then the Demo mode button.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 409,
+          "printed_page": 83,
+          "chapter": 8,
+          "section": "8.12 Demo-Modus {#section-8-12}",
+          "alt": "Abbildung zum Arbeitsschritt, gedruckte Seite 83",
+          "context": "2. Gehen Sie in die Systemeinstellungen und betätigen Sie die Taste Demomodus.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "es",
+          "doc": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 409,
+          "printed_page": 83,
+          "chapter": 8,
+          "section": "8.12 Modo de demostración {#section-8-12}",
+          "alt": "Ilustración del procedimiento, página impresa 83",
+          "context": "2. Pulse el botón System settings y, a continuación, Demo mode.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 409,
+          "printed_page": 83,
+          "chapter": 8,
+          "section": "8.12 Mode démo {#section-8-12}",
+          "alt": "Illustration de la procédure, page imprimée 83",
+          "context": "2. Accédez aux Paramètres système, puis au Mode démo.",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-051",
+      "old": "/img/manual/asset-e6d546463675.png",
+      "output": "/img/gui/icons/factory-reset-button.png",
+      "icon_name": "factory-reset-button",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "crop": [
+        260,
+        336,
+        80,
+        80
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/08-general-operations-and-configurations.md",
+          "line": 422,
+          "printed_page": 84,
+          "chapter": 8,
+          "section": "8.13 Factory reset {#section-8-13}",
+          "alt": "Procedure illustration, printed page 84",
+          "context": "2. Press the Maintenance button, then the Factory reset button.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 422,
+          "printed_page": 84,
+          "chapter": 8,
+          "section": "8.13 Werkseinstellungen {#section-8-13}",
+          "alt": "Abbildung zum Arbeitsschritt, gedruckte Seite 84",
+          "context": "2. Drücken Sie auf Wartung und dann Werkseinstellungen.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "es",
+          "doc": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 422,
+          "printed_page": 84,
+          "chapter": 8,
+          "section": "8.13 Restablecimiento de fábrica {#section-8-13}",
+          "alt": "Ilustración del procedimiento, página impresa 84",
+          "context": "2. Pulse el botón Maintenance y, a continuación, Factory reset.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+          "line": 422,
+          "printed_page": 84,
+          "chapter": 8,
+          "section": "8.13 Réinitialisation aux paramètres d’usine {#section-8-13}",
+          "alt": "Illustration de la procédure, page imprimée 84",
+          "context": "2. Appuyez sur le bouton Maintenance, puis sur le bouton Réinitialisation d’usine.",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-056",
+      "old": "/img/manual/cell-95fee81e2625.png",
+      "output": "/img/gui/icons/edit-gate-button.png",
+      "icon_name": "edit-gate-button",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "crop": [
+        476,
+        56,
+        48,
+        48
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/11-results-and-data-analysis.md",
+          "line": 155,
+          "printed_page": 105,
+          "chapter": 11,
+          "section": "11.4.2 Create a new gating set {#section-11-4-2}",
+          "alt": "Illustration for table on manual page 105",
+          "context": "5. In the newly generated copy, press the Edit icon and follow the editing instructions in section 11.4.3.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+          "line": 155,
+          "printed_page": 105,
+          "chapter": 11,
+          "section": "11.4.2 Erstellen eines neuen Gating Sets {#section-11-4-2}",
+          "alt": "Abbildung zur Tabelle auf Handbuchseite 105",
+          "context": "5. In der neu erstellten Kopie drücken Sie das Bearbeiten-Symbol und folgen den Bearbeitungsanweisungen in Abschnitt 11.4.3.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+          "line": 155,
+          "printed_page": 105,
+          "chapter": 11,
+          "section": "11.4.2 Création d’un nouveau fenêtrage {#section-11-4-2}",
+          "alt": "Illustration du tableau, page du manuel 105",
+          "context": "5. Dans la copie nouvellement générée, appuyez sur l’icône Modifier et suivez les instructions de modification de la section 11.4.3.",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-059",
+      "old": "/img/manual/cell-882cf24141b5.png",
+      "output": "/img/gui/icons/gate-settings-button.png",
+      "icon_name": "gate-settings-button",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "crop": [
+        460,
+        336,
+        80,
+        80
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/11-results-and-data-analysis.md",
+          "line": 185,
+          "printed_page": 107,
+          "chapter": 11,
+          "section": "11.4.3 Edit existing gating sets {#section-11-4-3}",
+          "alt": "Illustration for table on manual page 107",
+          "context": "2. Press the Gate settings button.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+          "line": 185,
+          "printed_page": 107,
+          "chapter": 11,
+          "section": "11.4.3 Bearbeiten bestehender Gating Sets {#section-11-4-3}",
+          "alt": "Abbildung zur Tabelle auf Handbuchseite 107",
+          "context": "2. Drücken Sie die Taste Gateeinstellungen.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+          "line": 185,
+          "printed_page": 107,
+          "chapter": 11,
+          "section": "11.4.3 Modification des fenêtrages existants {#section-11-4-3}",
+          "alt": "Illustration du tableau, page du manuel 107",
+          "context": "2. Appuyez sur le bouton Fenêtres.",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-060",
+      "old": "/img/manual/cell-d07318a281b1.png",
+      "output": "/img/gui/icons/home-button.png",
+      "icon_name": "home-button",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "crop": [
+        60,
+        50,
+        80,
+        60
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/11-results-and-data-analysis.md",
+          "line": 185,
+          "printed_page": 107,
+          "chapter": 11,
+          "section": "11.4.3 Edit existing gating sets {#section-11-4-3}",
+          "alt": "Illustration for table on manual page 107",
+          "context": "1. Navigate to the Home menu of the BactoSense user interface.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "en",
+          "doc": "docs/11-results-and-data-analysis.md",
+          "line": 239,
+          "printed_page": 112,
+          "chapter": 11,
+          "section": "11.6 Comparison with other flow cytometers {#section-11-6}",
+          "alt": "Illustration for table on manual page 112",
+          "context": "4. Press the Home button. Press the Back button as many times as needed for the Home button to appear.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "en",
+          "doc": "docs/15-maintenance.md",
+          "line": 62,
+          "printed_page": 126,
+          "chapter": 15,
+          "section": "15.1.1 Retrieve service information {#section-15-1-1}",
+          "alt": "Illustration for table on manual page 126",
+          "context": "1. Navigate to the Home menu of the BactoSense user interface.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+          "line": 185,
+          "printed_page": 107,
+          "chapter": 11,
+          "section": "11.4.3 Bearbeiten bestehender Gating Sets {#section-11-4-3}",
+          "alt": "Abbildung zur Tabelle auf Handbuchseite 107",
+          "context": "1. Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+          "line": 239,
+          "printed_page": 112,
+          "chapter": 11,
+          "section": "11.6 Vergleich mit anderen Durchflusszytometern {#section-11-6}",
+          "alt": "Abbildung zur Tabelle auf Handbuchseite 112",
+          "context": "4. Drücken Sie die Taste Home. Drücken Sie die Taste Zurück so oft wie nötig, bis die Taste Home erscheint.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/15-maintenance.md",
+          "line": 62,
+          "printed_page": 126,
+          "chapter": 15,
+          "section": "15.1.1 Dienstinformationen abrufen {#section-15-1-1}",
+          "alt": "Abbildung zur Tabelle auf Handbuchseite 126",
+          "context": "1. Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+          "line": 185,
+          "printed_page": 107,
+          "chapter": 11,
+          "section": "11.4.3 Modification des fenêtrages existants {#section-11-4-3}",
+          "alt": "Illustration du tableau, page du manuel 107",
+          "context": "1. Accédez au Menu principal de l’interface utilisateur de BactoSense.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+          "line": 239,
+          "printed_page": 112,
+          "chapter": 11,
+          "section": "11.6 Comparaison avec d’autres cytomètres en flux {#section-11-6}",
+          "alt": "Illustration du tableau, page du manuel 112",
+          "context": "4. Appuyez sur Home. Appuyez sur Back autant de fois que nécessaire pour faire apparaître le bouton Home.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/15-maintenance.md",
+          "line": 62,
+          "printed_page": 126,
+          "chapter": 15,
+          "section": "15.1.1 Obtenir des informations d’entretien {#section-15-1-1}",
+          "alt": "Illustration du tableau, page du manuel 126",
+          "context": "1. Accédez au Menu principal de l’interface utilisateur de BactoSense.",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-062",
+      "old": "/img/manual/cell-fd72b5bdcc2a.png",
+      "output": "/img/gui/icons/edit-gate-button.png",
+      "icon_name": "edit-gate-button",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "crop": [
+        476,
+        56,
+        48,
+        48
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/11-results-and-data-analysis.md",
+          "line": 185,
+          "printed_page": 107,
+          "chapter": 11,
+          "section": "11.4.3 Edit existing gating sets {#section-11-4-3}",
+          "alt": "Illustration for table on manual page 107",
+          "context": "3. Press the Edit button of the gate you wish to edit.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+          "line": 185,
+          "printed_page": 107,
+          "chapter": 11,
+          "section": "11.4.3 Bearbeiten bestehender Gating Sets {#section-11-4-3}",
+          "alt": "Abbildung zur Tabelle auf Handbuchseite 107",
+          "context": "3. Drücken Sie die Taste Bearbeiten des zu bearbeitenden Gates.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+          "line": 185,
+          "printed_page": 107,
+          "chapter": 11,
+          "section": "11.4.3 Modification des fenêtrages existants {#section-11-4-3}",
+          "alt": "Illustration du tableau, page du manuel 107",
+          "context": "3. Appuyez sur le bouton Modifier de la fenêtre que vous souhaitez modifier.",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-068",
+      "old": "/img/manual/cell-05da61fc8424.png",
+      "output": "/img/gui/icons/back-button.png",
+      "icon_name": "back-button",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "crop": [
+        260,
+        50,
+        80,
+        60
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/11-results-and-data-analysis.md",
+          "line": 239,
+          "printed_page": 112,
+          "chapter": 11,
+          "section": "11.6 Comparison with other flow cytometers {#section-11-6}",
+          "alt": "Illustration for table on manual page 112",
+          "context": "4. Press the Home button. Press the Back button as many times as needed for the Home button to appear.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+          "line": 239,
+          "printed_page": 112,
+          "chapter": 11,
+          "section": "11.6 Vergleich mit anderen Durchflusszytometern {#section-11-6}",
+          "alt": "Abbildung zur Tabelle auf Handbuchseite 112",
+          "context": "4. Drücken Sie die Taste Home. Drücken Sie die Taste Zurück so oft wie nötig, bis die Taste Home erscheint.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+          "line": 239,
+          "printed_page": 112,
+          "chapter": 11,
+          "section": "11.6 Comparaison avec d’autres cytomètres en flux {#section-11-6}",
+          "alt": "Illustration du tableau, page du manuel 112",
+          "context": "4. Appuyez sur Home. Appuyez sur Back autant de fois que nécessaire pour faire apparaître le bouton Home.",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-074",
+      "old": "/img/manual/cell-6a3f9ce5d051.png",
+      "output": "/img/gui/icons/home-button.png",
+      "icon_name": "home-button",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "crop": [
+        60,
+        50,
+        80,
+        60
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/13-web-user-interface.md",
+          "line": 21,
+          "printed_page": 119,
+          "chapter": 13,
+          "section": "13.2 Connect to the web user interface {#section-13-2}",
+          "alt": "Illustration for table on manual page 119",
+          "context": "2. Navigate to the Home menu of the BactoSense user interface. Press the System info button.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+          "line": 21,
+          "printed_page": 119,
+          "chapter": 13,
+          "section": "13.2 Verbinden mit der Web-Oberfläche {#section-13-2}",
+          "alt": "Abbildung zur Tabelle auf Handbuchseite 119",
+          "context": "2. Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense. Drücken Sie die Taste Systemkonfiguration.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+          "line": 21,
+          "printed_page": 119,
+          "chapter": 13,
+          "section": "13.2 Connexion à l’interface utilisateur web {#section-13-2}",
+          "alt": "Illustration du tableau, page du manuel 119",
+          "context": "2. Accédez au Menu principal de l’interface utilisateur de BactoSense. Appuyez sur le bouton Infos système.",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-075",
+      "old": "/img/manual/cell-fc64c36946da.png",
+      "output": "/img/gui/icons/system-info-button.png",
+      "icon_name": "system-info-button",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "crop": [
+        660,
+        336,
+        80,
+        80
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/13-web-user-interface.md",
+          "line": 21,
+          "printed_page": 119,
+          "chapter": 13,
+          "section": "13.2 Connect to the web user interface {#section-13-2}",
+          "alt": "Illustration for table on manual page 119",
+          "context": "2. Navigate to the Home menu of the BactoSense user interface. Press the System info button.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+          "line": 21,
+          "printed_page": 119,
+          "chapter": 13,
+          "section": "13.2 Verbinden mit der Web-Oberfläche {#section-13-2}",
+          "alt": "Abbildung zur Tabelle auf Handbuchseite 119",
+          "context": "2. Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense. Drücken Sie die Taste Systemkonfiguration.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+          "line": 21,
+          "printed_page": 119,
+          "chapter": 13,
+          "section": "13.2 Connexion à l’interface utilisateur web {#section-13-2}",
+          "alt": "Illustration du tableau, page du manuel 119",
+          "context": "2. Accédez au Menu principal de l’interface utilisateur de BactoSense. Appuyez sur le bouton Infos système.",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-084",
+      "old": "/img/manual/cell-71bc4e13a72d.png",
+      "output": "/img/gui/icons/system-info-button.png",
+      "icon_name": "system-info-button",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "crop": [
+        660,
+        336,
+        80,
+        80
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/13-web-user-interface.md",
+          "line": 81,
+          "printed_page": 123,
+          "chapter": 13,
+          "section": "13.9 Take screenshots of the GUI {#section-13-9}",
+          "alt": "Illustration for table on manual page 123",
+          "context": "1. On the web interface, select the System info page on the navigation panel on the left.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+          "line": 81,
+          "printed_page": 123,
+          "chapter": 13,
+          "section": "13.9 Screenshotnahme vom GUI {#section-13-9}",
+          "alt": "Abbildung zur Tabelle auf Handbuchseite 123",
+          "context": "1. Wählen Sie in der Web-Oberfläche im Navigationsfeld links die Seite Systeminfo.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+          "line": 81,
+          "printed_page": 123,
+          "chapter": 13,
+          "section": "13.9 Prise de captures d’écran de la GUI {#section-13-9}",
+          "alt": "Illustration du tableau, page du manuel 123",
+          "context": "1. Sur l’interface web, sélectionnez la page Infos système dans le panneau de navigation à gauche.",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-085",
+      "old": "/img/manual/cell-f60b02982fd9.png",
+      "output": "/img/gui/icons/system-info-button.png",
+      "icon_name": "system-info-button",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "crop": [
+        660,
+        336,
+        80,
+        80
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/13-web-user-interface.md",
+          "line": 93,
+          "printed_page": 123,
+          "chapter": 13,
+          "section": "13.10 Reboot from web user interface {#section-13-10}",
+          "alt": "Illustration for table on manual page 123",
+          "context": "1. In the top right corner of the web interface, click on the username to show the drop-down list of options.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+          "line": 93,
+          "printed_page": 123,
+          "chapter": 13,
+          "section": "13.10 Neustart aus der Web-Oberfläche {#section-13-10}",
+          "alt": "Abbildung zur Tabelle auf Handbuchseite 123",
+          "context": "1. Klicken Sie in der oberen rechten Ecke in der Web-Oberfläche auf den Benutzernamen, um die Dropdown-Liste mit Optionen zu zeigen.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+          "line": 93,
+          "printed_page": 123,
+          "chapter": 13,
+          "section": "13.10 Redémarrage à partir de l’interface utilisateur web {#section-13-10}",
+          "alt": "Illustration du tableau, page du manuel 123",
+          "context": "1. Dans le coin supérieur droit de l’interface web, cliquez sur le nom d’utilisateur pour afficher la liste déroulante des options.",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-087",
+      "old": "/img/manual/cell-2633a4bc793a.png",
+      "output": "/img/gui/icons/maintenance-button.png",
+      "icon_name": "maintenance-button",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "crop": [
+        60,
+        176,
+        80,
+        80
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/15-maintenance.md",
+          "line": 62,
+          "printed_page": 126,
+          "chapter": 15,
+          "section": "15.1.1 Retrieve service information {#section-15-1-1}",
+          "alt": "Illustration for table on manual page 126",
+          "context": "2. Press the Maintenance button.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/15-maintenance.md",
+          "line": 62,
+          "printed_page": 126,
+          "chapter": 15,
+          "section": "15.1.1 Dienstinformationen abrufen {#section-15-1-1}",
+          "alt": "Abbildung zur Tabelle auf Handbuchseite 126",
+          "context": "2. Auf der Startseite der BactoSense Benutzeroberfläche, drücken Sie auf Wartung.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/15-maintenance.md",
+          "line": 62,
+          "printed_page": 126,
+          "chapter": 15,
+          "section": "15.1.1 Obtenir des informations d’entretien {#section-15-1-1}",
+          "alt": "Illustration du tableau, page du manuel 126",
+          "context": "2. Appuyez sur le bouton Maintenance.",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-088",
+      "old": "/img/manual/cell-c75e8c1aa658.png",
+      "output": "/img/gui/icons/intervention-info-button.png",
+      "icon_name": "intervention-info-button",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "crop": [
+        60,
+        496,
+        80,
+        80
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/15-maintenance.md",
+          "line": 62,
+          "printed_page": 126,
+          "chapter": 15,
+          "section": "15.1.1 Retrieve service information {#section-15-1-1}",
+          "alt": "Illustration for table on manual page 126",
+          "context": "3. Press the Intervention info button.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/15-maintenance.md",
+          "line": 62,
+          "printed_page": 126,
+          "chapter": 15,
+          "section": "15.1.1 Dienstinformationen abrufen {#section-15-1-1}",
+          "alt": "Abbildung zur Tabelle auf Handbuchseite 126",
+          "context": "3. Drücken Sie die Taste Interventionsinfo.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/15-maintenance.md",
+          "line": 62,
+          "printed_page": 126,
+          "chapter": 15,
+          "section": "15.1.1 Obtenir des informations d’entretien {#section-15-1-1}",
+          "alt": "Illustration du tableau, page du manuel 126",
+          "context": "3. Appuyez sur Intervention info.",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-089",
+      "old": "/img/manual/cell-a1bf5eaa91cd.png",
+      "output": "/img/gui/icons/home-button.png",
+      "icon_name": "home-button",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "crop": [
+        60,
+        50,
+        80,
+        60
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/15-maintenance.md",
+          "line": 72,
+          "printed_page": 127,
+          "chapter": 15,
+          "section": "15.1.2 Review the service intervention log {#section-15-1-2}",
+          "alt": "Illustration for table on manual page 127",
+          "context": "1. Navigate to the Home menu of the BactoSense user interface.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/15-maintenance.md",
+          "line": 72,
+          "printed_page": 127,
+          "chapter": 15,
+          "section": "15.1.2 Einsehen des Dienstinterventionsprotokolls {#section-15-1-2}",
+          "alt": "Abbildung zur Tabelle auf Handbuchseite 127",
+          "context": "1. Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/15-maintenance.md",
+          "line": 72,
+          "printed_page": 127,
+          "chapter": 15,
+          "section": "15.1.2 Consultation du journal des interventions d’entretien {#section-15-1-2}",
+          "alt": "Illustration du tableau, page du manuel 127",
+          "context": "1. Accédez au Menu principal de l’interface utilisateur de BactoSense.",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-090",
+      "old": "/img/manual/cell-c425fdd03b9b.png",
+      "output": "/img/gui/icons/intervention-log-button.png",
+      "icon_name": "intervention-log-button",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "crop": [
+        260,
+        496,
+        80,
+        80
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/15-maintenance.md",
+          "line": 72,
+          "printed_page": 127,
+          "chapter": 15,
+          "section": "15.1.2 Review the service intervention log {#section-15-1-2}",
+          "alt": "Illustration for table on manual page 127",
+          "context": "3. Press the Intervention log button.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/15-maintenance.md",
+          "line": 72,
+          "printed_page": 127,
+          "chapter": 15,
+          "section": "15.1.2 Einsehen des Dienstinterventionsprotokolls {#section-15-1-2}",
+          "alt": "Abbildung zur Tabelle auf Handbuchseite 127",
+          "context": "3. Drücken Sie die Taste Interventionsprotokoll.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/15-maintenance.md",
+          "line": 72,
+          "printed_page": 127,
+          "chapter": 15,
+          "section": "15.1.2 Consultation du journal des interventions d’entretien {#section-15-1-2}",
+          "alt": "Illustration du tableau, page du manuel 127",
+          "context": "3. Appuyez sur le bouton Journal d’interventions.",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-091",
+      "old": "/img/manual/cell-fbee6be10e98.png",
+      "output": "/img/gui/icons/maintenance-button.png",
+      "icon_name": "maintenance-button",
+      "raw_path": "output/gui-capture/icons/controls-atlas.png",
+      "logical_size": [
+        800,
+        640
+      ],
+      "crop": [
+        60,
+        176,
+        80,
+        80
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/15-maintenance.md",
+          "line": 72,
+          "printed_page": 127,
+          "chapter": 15,
+          "section": "15.1.2 Review the service intervention log {#section-15-1-2}",
+          "alt": "Illustration for table on manual page 127",
+          "context": "2. Press the Maintenance button.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/15-maintenance.md",
+          "line": 72,
+          "printed_page": 127,
+          "chapter": 15,
+          "section": "15.1.2 Einsehen des Dienstinterventionsprotokolls {#section-15-1-2}",
+          "alt": "Abbildung zur Tabelle auf Handbuchseite 127",
+          "context": "2. Auf der Startseite der BactoSense Benutzeroberfläche, drücken Sie auf Wartung.",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/15-maintenance.md",
+          "line": 72,
+          "printed_page": 127,
+          "chapter": 15,
+          "section": "15.1.2 Consultation du journal des interventions d’entretien {#section-15-1-2}",
+          "alt": "Illustration du tableau, page du manuel 127",
+          "context": "2. Appuyez sur le bouton Maintenance.",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-106",
+      "old": "/img/manual/cell-168772cd9e6b.png",
+      "output": "/img/gui/icons/noncritical-error-event.png",
+      "icon_name": "noncritical-error-event",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "crop": [
+        144,
+        734,
+        32,
+        32
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/16-warnings-errors-and-troubleshooting.md",
+          "line": 114,
+          "printed_page": 149,
+          "chapter": 16,
+          "section": "16.4 Error and warning logs {#section-16-4}",
+          "alt": "Illustration for table on manual page 149",
+          "context": "Non-critical error",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md",
+          "line": 114,
+          "printed_page": 149,
+          "chapter": 16,
+          "section": "16.4 Fehler- und Warnungsprotokolle {#section-16-4}",
+          "alt": "Abbildung zur Tabelle auf Handbuchseite 149",
+          "context": "Unkritischer Fehler",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md",
+          "line": 114,
+          "printed_page": 149,
+          "chapter": 16,
+          "section": "16.4 Journaux d’erreurs et d’avertissements {#section-16-4}",
+          "alt": "Illustration du tableau, page du manuel 149",
+          "context": "Erreur non critique",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-107",
+      "old": "/img/manual/cell-67d152256921.png",
+      "output": "/img/gui/icons/critical-error-event.png",
+      "icon_name": "critical-error-event",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "crop": [
+        144,
+        794,
+        32,
+        32
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/16-warnings-errors-and-troubleshooting.md",
+          "line": 114,
+          "printed_page": 149,
+          "chapter": 16,
+          "section": "16.4 Error and warning logs {#section-16-4}",
+          "alt": "Illustration for table on manual page 149",
+          "context": "Critical error",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md",
+          "line": 114,
+          "printed_page": 149,
+          "chapter": 16,
+          "section": "16.4 Fehler- und Warnungsprotokolle {#section-16-4}",
+          "alt": "Abbildung zur Tabelle auf Handbuchseite 149",
+          "context": "Kritischer Fehler",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md",
+          "line": 114,
+          "printed_page": 149,
+          "chapter": 16,
+          "section": "16.4 Journaux d’erreurs et d’avertissements {#section-16-4}",
+          "alt": "Illustration du tableau, page du manuel 149",
+          "context": "Erreur critique",
+          "nearby_captions": []
+        }
+      ]
+    },
+    {
+      "id": "gui-source-108",
+      "old": "/img/manual/cell-b4d48ec33659.png",
+      "output": "/img/gui/icons/errors-cleared-event.png",
+      "icon_name": "errors-cleared-event",
+      "raw_path": "output/gui-capture/icons/status-atlas.png",
+      "logical_size": [
+        800,
+        900
+      ],
+      "crop": [
+        144,
+        854,
+        32,
+        32
+      ],
+      "locale_independent": true,
+      "occurrences": [
+        {
+          "locale": "en",
+          "doc": "docs/16-warnings-errors-and-troubleshooting.md",
+          "line": 114,
+          "printed_page": 149,
+          "chapter": 16,
+          "section": "16.4 Error and warning logs {#section-16-4}",
+          "alt": "Illustration for table on manual page 149",
+          "context": "Errors cleared",
+          "nearby_captions": []
+        },
+        {
+          "locale": "de",
+          "doc": "i18n/de/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md",
+          "line": 114,
+          "printed_page": 149,
+          "chapter": 16,
+          "section": "16.4 Fehler- und Warnungsprotokolle {#section-16-4}",
+          "alt": "Abbildung zur Tabelle auf Handbuchseite 149",
+          "context": "Fehler gelöscht",
+          "nearby_captions": []
+        },
+        {
+          "locale": "fr",
+          "doc": "i18n/fr/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md",
+          "line": 114,
+          "printed_page": 149,
+          "chapter": 16,
+          "section": "16.4 Journaux d’erreurs et d’avertissements {#section-16-4}",
+          "alt": "Illustration du tableau, page du manuel 149",
+          "context": "Erreurs acquittées",
+          "nearby_captions": []
+        }
+      ]
+    }
+  ],
+  "context_warnings": [
+    {
+      "old": "/img/manual/asset-a7a911718f1c.png",
+      "printed_page": 84,
+      "reason": "Source system-settings pictogram is reused beside Maintenance / Factory reset; that occurrence should use maintenance-button once navigation copy is reviewed.",
+      "suggested_output": "/img/gui/icons/maintenance-button.png"
+    },
+    {
+      "old": "/img/manual/cell-f60b02982fd9.png",
+      "printed_page": 123,
+      "reason": "Source generic info pictogram appears beside a web username/logout/reboot action; replace that occurrence with a current instrument-web user-menu crop rather than system-info-button."
+    }
+  ]
+}

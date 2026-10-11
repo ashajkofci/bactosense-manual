@@ -1,0 +1,2893 @@
+{
+  "schema_version": 1,
+  "prepared_utc": "2026-10-11T19:29:57+00:00",
+  "status": "prepared_for_root_review_not_applied",
+  "locales": [
+    "en",
+    "de",
+    "fr",
+    "it",
+    "es"
+  ],
+  "scope": "Only navigation, current GUI labels, figure callout descriptions and the contradicted GIF-export sentence. No technical parameters, numerical scientific descriptions or safety text are changed.",
+  "apply_instructions": "Apply/review these text fragments before screenshot-reference replacements: three Support & Service rows retain original image paths solely to identify their exact unique rows. Require expected_count literal matches, then replace all those matches. Image overrides are section-scoped and must be applied separately from generic source-image replacement. Source hashes describe the preparation snapshot; image-path edits may subsequently change those whole-file hashes.",
+  "entries": [
+    {
+      "id": "en-home-menu-001",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "The BactoSense user interface is divided into 3 main sections:",
+      "new": "The Home screen shows the latest measurement result. Press Settings to open the settings menu.\n\nThe BactoSense user interface is divided into 3 main sections:",
+      "reason": "The current Home dashboard opens the former menu through Settings.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-home-caption-002",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "Figure 8-4 The Home menu of the BactoSense user interface.",
+      "new": "Figure 8-4 The Home screen of the BactoSense user interface.",
+      "reason": "The new image shows the Home dashboard, rather than the former menu grid.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-home-legend-003",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "<td>Auto mode (continuous<br />measurements using the online<br />sampling device)</td>",
+      "new": "<td>Results: display the measurement results for the selected mode.</td>",
+      "reason": "Current Home action bar: Results, Mode selection and the Manual measurement wizard; preserve the meanings of the two sampling modes.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-home-legend-004",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "<td>Manual mode (measuring grab<br />samples using the manual sampling<br />device)</td>",
+      "new": "<td>Mode: choose Online (Auto) mode for continuous measurements using the online sampling device, or Manual mode for measuring grab samples using the manual sampling device.</td>",
+      "reason": "Current Home action bar: Results, Mode selection and the Manual measurement wizard; preserve the meanings of the two sampling modes.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-home-legend-005",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "<td>Go to the list of analysis<br />protocols.</td>",
+      "new": "<td>Measure: open the measurement wizard and choose an analysis protocol (Manual mode).</td>",
+      "reason": "Current Home action bar: Results, Mode selection and the Manual measurement wizard; preserve the meanings of the two sampling modes.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-home-mode-006",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "<td>Operation mode (manual or auto)<br />Instrument status (currently active<br />process)</td>",
+      "new": "<td>Operation mode (Manual or Online/Auto)<br />Instrument status (currently active<br />process)</td>",
+      "reason": "The current toolbar names the automatic operating mode Online.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-trend-navigation-007",
+      "locale": "en",
+      "file": "docs/10-measurements.md",
+      "old": "The home screen in Auto mode shows a line plot of the measurement results over time.",
+      "new": "In Online (Auto) mode, tap the plot on the Home screen to open the line plot of the measurement results over time.",
+      "reason": "The full trend chart is opened from the Online-mode Home dashboard; it is no longer the Home screen itself.",
+      "sections": [
+        "10-2-3"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-result-info-008",
+      "locale": "en",
+      "file": "docs/11-results-and-data-analysis.md",
+      "old": "<td>Main result parameters, depending on cartridge type used. Find more information in section 11.3. If you tap on the results, you can display all results (2).</td>",
+      "new": "<td>Main result parameters, depending on cartridge type used. Find more information in section 11.3. Tap the information icon beside the main result to display all result parameters (2).</td>",
+      "reason": "The information icon opens the metrics dialog; tapping the numerical result is no longer the described action.",
+      "sections": [
+        "11-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-result-metrics-009",
+      "locale": "en",
+      "file": "docs/11-results-and-data-analysis.md",
+      "old": "<td>Pop-up with display of all available results.</td>",
+      "new": "<td>Result information window with all available result parameters and the main dotplot.</td>",
+      "reason": "The dialog includes result metrics and the main dotplot preview.",
+      "sections": [
+        "11-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-result-dotplot-010",
+      "locale": "en",
+      "file": "docs/11-results-and-data-analysis.md",
+      "old": "<td>Main dotplot. The FL1 vs FL2 dotplot shows all detected events according to the amplitude of their fluorescence signals FL1 (535 nm, X-axis) and FL2 (715 nm, Y-axis). The red polygon and vertical line show the configured gate. For details refer to section 11.3. If you tap on the dotplot, you open a pop-up with access to all dotplots (4).</td>",
+      "new": "<td>Main dotplot in the result information window. The FL1 vs FL2 dotplot shows all detected events according to the amplitude of their fluorescence signals FL1 (535 nm, X-axis) and FL2 (715 nm, Y-axis). The red polygon and vertical line show the configured gate. For details refer to section 11.3. Tap this dotplot preview to open a pop-up with access to all dotplots (4).</td>",
+      "reason": "The Manual result dotplot preview now lives in the metrics dialog; preserve all gate, fluorescence and wavelength descriptions.",
+      "sections": [
+        "11-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-native-menu-route-011",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "| Navigate to the Home menu of the BactoSense user interface. |",
+      "new": "| On the Home screen, press Settings to open the settings menu. |",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-2-3",
+        "8-2-4",
+        "8-2-6",
+        "8-5"
+      ],
+      "expected_count": 4,
+      "kind": "text"
+    },
+    {
+      "id": "en-native-menu-route-012",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "| Navigate to the BactoSense Home menu and press on System settings. |",
+      "new": "| On the Home screen, press Settings, then System settings. |",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-2-5"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-native-menu-route-013",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "| Navigate to the Home menu of the user interface. |",
+      "new": "| On the Home screen, press Settings to open the settings menu. |",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-3-1",
+        "8-3-2",
+        "8-3-3"
+      ],
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "en-native-menu-route-014",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "| As an Admin user, navigate to the Home menu of the user interface. |",
+      "new": "| As an Admin user, press Settings on the Home screen to open the settings menu. |",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-3-4",
+        "8-3-5"
+      ],
+      "expected_count": 2,
+      "kind": "text"
+    },
+    {
+      "id": "en-native-menu-route-015",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "| Navigate to the Home menu of the Bacto- Sense user interface. |",
+      "new": "| On the Home screen, press Settings to open the settings menu. |",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-4"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-native-menu-route-016",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "<td>Navigate to the Home menu of the BactoSense user interface.</td>",
+      "new": "<td>On the Home screen, press Settings to open the settings menu.</td>",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-6",
+        "8-7",
+        "8-12",
+        "8-13"
+      ],
+      "expected_count": 4,
+      "kind": "text"
+    },
+    {
+      "id": "en-native-menu-route-017",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "<td>Navigate to the Home menu of the user interface.</td>",
+      "new": "<td>On the Home screen, press Settings to open the settings menu.</td>",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-9-4",
+        "8-9-5",
+        "8-9-6"
+      ],
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "en-services-navigation-018",
+      "locale": "en",
+      "file": "docs/12-data-access-and-export.md",
+      "old": "| Navigate to the Home menu of the BactoSense user interface. |",
+      "new": "| On the Home screen, press Settings to open the settings menu. |",
+      "reason": "Open the Settings menu before selecting System settings.",
+      "sections": [
+        "12-2",
+        "12-3"
+      ],
+      "expected_count": 4,
+      "kind": "text"
+    },
+    {
+      "id": "en-services-label-019",
+      "locale": "en",
+      "file": "docs/12-data-access-and-export.md",
+      "old": "| Press the System services button. |",
+      "new": "| Press the Services button. |",
+      "reason": "Match the current Services menu label (the screen itself still says Manage services).",
+      "sections": [
+        "12-2",
+        "12-3"
+      ],
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "en-system-info-route-020",
+      "locale": "en",
+      "file": "docs/12-data-access-and-export.md",
+      "old": "| Retrieve the IP address of the BactoSense by navigating to the Home menu of the BactoSense user interface, and pressing the System info button. |",
+      "new": "| On the Home screen, press Settings, then System info to retrieve the IP address of the BactoSense. |",
+      "reason": "System information is in the Settings menu, rather than directly on Home.",
+      "sections": [
+        "12-2"
+      ],
+      "expected_count": 2,
+      "kind": "text"
+    },
+    {
+      "id": "en-system-info-route-021",
+      "locale": "en",
+      "file": "docs/12-data-access-and-export.md",
+      "old": "<td>Retrieve the IP address of the BactoSense by navigating to the Home menu of the BactoSense user interface, and pressing the System info button.</td>",
+      "new": "<td>On the Home screen, press Settings, then System info to retrieve the IP address of the BactoSense.</td>",
+      "reason": "System information is in the Settings menu, rather than directly on Home.",
+      "sections": [
+        "12-3"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-services-http-022",
+      "locale": "en",
+      "file": "docs/12-data-access-and-export.md",
+      "old": "| For HTTP: Make sure the Enable HTTP data access check box is checked. For HTTPS: Make sure the Enable HTTPS data access check box is checked. |",
+      "new": "| For HTTP: Make sure the Enable HTTP web access check box is checked. For HTTPS: Make sure the Enable HTTPS web access check box is checked. |",
+      "reason": "Match the currently displayed HTTP/HTTPS web-access checkboxes; retain protocols and port defaults.",
+      "sections": [
+        "12-3"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-web-connect-023",
+      "locale": "en",
+      "file": "docs/13-web-user-interface.md",
+      "old": "<td>Navigate to the Home menu of the BactoSense user interface. Press the System info button.</td>",
+      "new": "<td>On the Home screen of the BactoSense user interface, press Settings, then System info.</td>",
+      "reason": "Open Settings before System info to obtain the web interface address.",
+      "sections": [
+        "13-2"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-web-result-mode-024",
+      "locale": "en",
+      "file": "docs/13-web-user-interface.md",
+      "old": "| Find the results for the mode you are interested in: Auto or Manual mode results. |",
+      "new": "| Find the results for the mode you are interested in: Online mode or Manual mode results. |",
+      "reason": "The current download panels use the Online mode label for automatic results.",
+      "sections": [
+        "13-5"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-web-summary-mode-025",
+      "locale": "en",
+      "file": "docs/13-web-user-interface.md",
+      "old": "The Auto mode results are separated from Manual mode results.",
+      "new": "The Online mode (Auto) results are separated from Manual mode results.",
+      "reason": "The current download summary uses Online mode for automatic results.",
+      "sections": [
+        "13-6"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-web-gif-026",
+      "locale": "en",
+      "file": "docs/13-web-user-interface.md",
+      "old": "The web interface can animate dot plots from the Auto mode, to help visualize the progression of the measurements. This feature shows static images in rapid succession; therefore the animation can only be exported using screen recording software.",
+      "new": "The web interface can animate dot plots from Online (Auto) mode, to help visualize the progression of the measurements. This feature shows static images in rapid succession; the animation can be exported with the Download GIF button.",
+      "reason": "Current Download GIF exports the animation, matching existing step 5; retain the rapid succession of static plots.",
+      "sections": [
+        "13-7"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-web-plots-027",
+      "locale": "en",
+      "file": "docs/13-web-user-interface.md",
+      "old": "| On the web interface, select the Dotplots page on the navigation panel on the left. |",
+      "new": "| On the web interface, select the Plots page on the navigation panel on the left. |",
+      "reason": "Use the current localized Plots sidebar label.",
+      "sections": [
+        "13-7"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-web-user-menu-028",
+      "locale": "en",
+      "file": "docs/13-web-user-interface.md",
+      "old": "| In the top right corner of the web interface, click on the username to show the drop-down list of options. |",
+      "new": "| In the top right corner of the web interface, click the username to open the user menu. |",
+      "reason": "The current account control opens the user menu, which contains Reboot.",
+      "sections": [
+        "13-10"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-web-reboot-029",
+      "locale": "en",
+      "file": "docs/13-web-user-interface.md",
+      "old": "| Select Reboot and confirm the confirmation request. |",
+      "new": "| Select Reboot and confirm the request. |",
+      "reason": "Match the current localized Reboot menu item and retain confirmation.",
+      "sections": [
+        "13-10"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-support-service-caption-030",
+      "locale": "en",
+      "file": "docs/15-maintenance.md",
+      "old": "*Figure 15-1  Intervention info screen*",
+      "new": "*Figure 15-1 Support & Service screen.*",
+      "reason": "The current screen title is the localized Support & Service label; preserve Figure 15-1 placement.",
+      "sections": [
+        "15-1-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-support-service-route-031",
+      "locale": "en",
+      "file": "docs/15-maintenance.md",
+      "old": "| 1. | Navigate to the Home menu of the BactoSense user interface. | <img src=\"/img/manual/cell-d07318a281b1.png\" alt=\"Illustration for table on manual page 126\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "new": "| 1. | Navigate to the Home screen of the BactoSense user interface. | <img src=\"/img/manual/cell-d07318a281b1.png\" alt=\"Illustration for table on manual page 126\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "reason": "Current route is Home → Settings → Support & Service. The Support & Service entry is directly in SettingsMenuHomeScreen, not under Maintenance; keep the existing three steps and the safety/service schedule text.",
+      "sections": [
+        "15-1-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-support-service-route-032",
+      "locale": "en",
+      "file": "docs/15-maintenance.md",
+      "old": "| 2. | Press the Maintenance button. | <img src=\"/img/manual/cell-2633a4bc793a.png\" alt=\"Illustration for table on manual page 126\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "new": "| 2. | Press the Settings button. | <img src=\"/img/manual/cell-2633a4bc793a.png\" alt=\"Illustration for table on manual page 126\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "reason": "Current route is Home → Settings → Support & Service. The Support & Service entry is directly in SettingsMenuHomeScreen, not under Maintenance; keep the existing three steps and the safety/service schedule text.",
+      "sections": [
+        "15-1-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-support-service-route-033",
+      "locale": "en",
+      "file": "docs/15-maintenance.md",
+      "old": "| 3. | Press the Intervention info button. | <img src=\"/img/manual/cell-c75e8c1aa658.png\" alt=\"Illustration for table on manual page 126\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "new": "| 3. | Press the Support & Service button. | <img src=\"/img/manual/cell-c75e8c1aa658.png\" alt=\"Illustration for table on manual page 126\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "reason": "Current route is Home → Settings → Support & Service. The Support & Service entry is directly in SettingsMenuHomeScreen, not under Maintenance; keep the existing three steps and the safety/service schedule text.",
+      "sections": [
+        "15-1-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-home-menu-034",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "Die Benutzeroberfläche des BactoSense ist in drei Hauptabschnitte unterteilt:",
+      "new": "Die Startseite zeigt das letzte Messergebnis. Drücken Sie Einstellungen, um das Einstellungsmenü zu öffnen.\n\nDie Benutzeroberfläche des BactoSense ist in drei Hauptabschnitte unterteilt:",
+      "reason": "The current Home dashboard opens the former menu through Settings.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-home-legend-035",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>Auto-Modus (fortlaufende Messungen beim Online- Probenahmegerät)</td>",
+      "new": "<td>Resultate: Messergebnisse des gewählten Modus anzeigen.</td>",
+      "reason": "Current Home action bar: Results, Mode selection and the Manual measurement wizard; preserve the meanings of the two sampling modes.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-home-legend-036",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>Manueller Modus (Messung von Einzelproben mit dem manuellen Probenahmegerät)</td>",
+      "new": "<td>Modus: Wählen Sie den Online-Modus (Auto) für fortlaufende Messungen mit dem Online-Probenahmegerät oder den manuellen Modus für Einzelproben mit dem manuellen Probenahmegerät.</td>",
+      "reason": "Current Home action bar: Results, Mode selection and the Manual measurement wizard; preserve the meanings of the two sampling modes.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-home-legend-037",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>Zur Liste der Analyseprotokolle.</td>",
+      "new": "<td>Messen: Messassistenten öffnen und ein Analyseprotokoll wählen (manueller Modus).</td>",
+      "reason": "Current Home action bar: Results, Mode selection and the Manual measurement wizard; preserve the meanings of the two sampling modes.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-home-mode-038",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>Betriebsart (manuell oder automatisch) Gerätestatus (aktuell aktiver Prozess)</td>",
+      "new": "<td>Betriebsart (Manuell oder Online/Auto) Gerätestatus (aktuell aktiver Prozess)</td>",
+      "reason": "The current toolbar names the automatic operating mode Online.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-trend-navigation-039",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/10-measurements.md",
+      "old": "Die Startseite zeigt im Auto-Modus ein Liniendiagramm der Messung über die Zeit.",
+      "new": "Tippen Sie im Online-Modus (Auto) auf das Diagramm auf der Startseite, um das Liniendiagramm der Messergebnisse über die Zeit zu öffnen.",
+      "reason": "The full trend chart is opened from the Online-mode Home dashboard; it is no longer the Home screen itself.",
+      "sections": [
+        "10-2-3"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-result-info-040",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "old": "<td>Hauptresultatparameter, abhängig von der Kartusche. Mehr Information zu den Parametern finden Sie in Abschnitt 11.3. Wenn Sie auf die Hauptparameter drücken, wird ein Fenster mit allen verfügbaren Parametern geöffnet (2).</td>",
+      "new": "<td>Hauptresultatparameter, abhängig von der Kartusche. Mehr Information zu den Parametern finden Sie in Abschnitt 11.3. Drücken Sie auf das Informationssymbol neben dem Hauptresultat, um ein Fenster mit allen verfügbaren Parametern zu öffnen (2).</td>",
+      "reason": "The information icon opens the metrics dialog; tapping the numerical result is no longer the described action.",
+      "sections": [
+        "11-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-result-metrics-041",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "old": "<td>Neues Fenster mit allen verfügbaren Resultatparametern.</td>",
+      "new": "<td>Resultatinformationen mit allen verfügbaren Resultatparametern und dem primären Dotplot.</td>",
+      "reason": "The dialog includes result metrics and the main dotplot preview.",
+      "sections": [
+        "11-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-result-dotplot-042",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "old": "<td>Primärer Dotplot. Dieser FL1/FL2 Dotplot zeigt alle registrierten Events anhand deren gemessenen Fluoreszenzsignal an. X-Achse = FL1 bei 535 nm. Y-Achse = FL2 bei 715 nm. Das rote Polygon und die rote vertikale Linie zeigen das konfigurierte Gate. Details dazu in Abschnitt 11.3. Drücken Sie auf den primären Dotplot, um ein neues Fenster mit allen Dotplots zu öffnen (4).</td>",
+      "new": "<td>Primärer Dotplot im Fenster mit den Resultatinformationen. Dieser FL1/FL2 Dotplot zeigt alle registrierten Events anhand deren gemessenen Fluoreszenzsignal an. X-Achse = FL1 bei 535 nm. Y-Achse = FL2 bei 715 nm. Das rote Polygon und die rote vertikale Linie zeigen das konfigurierte Gate. Details dazu in Abschnitt 11.3. Drücken Sie auf diese Dotplot-Vorschau, um ein neues Fenster mit allen Dotplots zu öffnen (4).</td>",
+      "reason": "The Manual result dotplot preview now lives in the metrics dialog; preserve all gate, fluorescence and wavelength descriptions.",
+      "sections": [
+        "11-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-native-menu-route-043",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "| Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense. |",
+      "new": "| Drücken Sie auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. |",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-2-3",
+        "8-2-4",
+        "8-2-6",
+        "8-4",
+        "8-5"
+      ],
+      "expected_count": 5,
+      "kind": "text"
+    },
+    {
+      "id": "de-native-menu-route-044",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "| Navigieren Sie zur Startseite des BactoSense und drücken Sie Systemeinstellungen. |",
+      "new": "| Drücken Sie auf der Startseite Einstellungen und anschließend im Menü Einstellungen (Systemeinstellungen). |",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-2-5"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-native-menu-route-045",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "| Navigieren Sie zur Startseite der Benutzeroberfläche. |",
+      "new": "| Drücken Sie auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. |",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-3-1",
+        "8-3-2",
+        "8-3-3"
+      ],
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "de-native-menu-route-046",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "| Navigieren Sie als Admin-Benutzer zur Startseite der Benutzeroberfläche. |",
+      "new": "| Drücken Sie als Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. |",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-3-4",
+        "8-3-5"
+      ],
+      "expected_count": 2,
+      "kind": "text"
+    },
+    {
+      "id": "de-native-menu-route-047",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense.</td>",
+      "new": "<td>Drücken Sie auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen.</td>",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-6",
+        "8-7",
+        "8-12",
+        "8-13"
+      ],
+      "expected_count": 4,
+      "kind": "text"
+    },
+    {
+      "id": "de-native-menu-route-048",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>Navigieren Sie zur Startseite der Benutzeroberfläche.</td>",
+      "new": "<td>Drücken Sie auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen.</td>",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-9-4",
+        "8-9-5",
+        "8-9-6"
+      ],
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "de-services-navigation-049",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/12-data-access-and-export.md",
+      "old": "| Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense. |",
+      "new": "| Drücken Sie auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. |",
+      "reason": "Open the Settings menu before selecting System settings.",
+      "sections": [
+        "12-2",
+        "12-3"
+      ],
+      "expected_count": 4,
+      "kind": "text"
+    },
+    {
+      "id": "de-system-info-route-050",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/12-data-access-and-export.md",
+      "old": "| Die IP-Adresse des BactoSense erfahren Sie, wenn Sie auf der Startseite der Benutzeroberfläche des BactoSense die Taste Systeminfo drücken. |",
+      "new": "| Drücken Sie auf der Startseite Einstellungen und anschließend Informationen, um die IP-Adresse des BactoSense abzurufen. |",
+      "reason": "System information is in the Settings menu, rather than directly on Home.",
+      "sections": [
+        "12-2"
+      ],
+      "expected_count": 2,
+      "kind": "text"
+    },
+    {
+      "id": "de-system-info-route-051",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/12-data-access-and-export.md",
+      "old": "<td>Die IP-Adresse des BactoSense erfahren Sie, wenn Sie auf der Startseite der Benutzeroberfläche des BactoSense die Taste Systeminfo drücken.</td>",
+      "new": "<td>Drücken Sie auf der Startseite Einstellungen und anschließend Informationen, um die IP-Adresse des BactoSense abzurufen.</td>",
+      "reason": "System information is in the Settings menu, rather than directly on Home.",
+      "sections": [
+        "12-3"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-services-http-052",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/12-data-access-and-export.md",
+      "old": "| Für HTTP: Stellen Sie sicher, dass das Kästchen HTTP-Datenzugriff angehakt ist. Für HTTPS: Stellen Sie sicher, dass das Kästchen HTTPS-Datenzugriff angehakt ist. |",
+      "new": "| Für HTTP: Stellen Sie sicher, dass das Kästchen HTTP-Webzugriff angehakt ist. Für HTTPS: Stellen Sie sicher, dass das Kästchen HTTPS-Webzugriff angehakt ist. |",
+      "reason": "Match the currently displayed HTTP/HTTPS web-access checkboxes; retain protocols and port defaults.",
+      "sections": [
+        "12-3"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-web-connect-053",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "<td>Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense. Drücken Sie die Taste Systemkonfiguration.</td>",
+      "new": "<td>Drücken Sie auf der Startseite der BactoSense-Benutzeroberfläche Einstellungen und anschließend Informationen.</td>",
+      "reason": "Open Settings before System info to obtain the web interface address.",
+      "sections": [
+        "13-2"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-web-result-mode-054",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "| Suchen Sie sich die Ergebnisse für den gewünschten Modus: Ergebnisse des Auto- oder manuellen Modus. |",
+      "new": "| Suchen Sie die Ergebnisse für den gewünschten Modus: Ergebnisse des Online-Modus oder des manuellen Modus. |",
+      "reason": "The current download panels use the Online mode label for automatic results.",
+      "sections": [
+        "13-5"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-web-summary-mode-055",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "Die Ergebnisse des Auto-Modus sind von denen des manuellen Modus abgetrennt.",
+      "new": "Die Ergebnisse des Online-Modus (Auto) sind von denen des manuellen Modus abgetrennt.",
+      "reason": "The current download summary uses Online mode for automatic results.",
+      "sections": [
+        "13-6"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-web-gif-056",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "Die Web-Oberfläche kann Punktdiagramme aus dem Auto-Modus animieren, um den Verlauf der Messung darzustellen. Diese Funktion zeigt Standbilder in schneller Abfolge. Daher kann die Animation nur unter Verwendung von Screen-Recording-Software exportiert werden.",
+      "new": "Die Web-Oberfläche kann Punktdiagramme aus dem Online-Modus (Auto) animieren, um den Verlauf der Messung darzustellen. Diese Funktion zeigt Standbilder in schneller Abfolge. Die Animation kann mit der Taste GIF herunterladen exportiert werden.",
+      "reason": "Current Download GIF exports the animation, matching existing step 5; retain the rapid succession of static plots.",
+      "sections": [
+        "13-7"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-web-plots-057",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "| Wählen Sie in der Web-Oberfläche im Navigationsfeld links die Seite Punktdiagramme. |",
+      "new": "| Wählen Sie in der Web-Oberfläche im Navigationsfeld links die Seite Plots. |",
+      "reason": "Use the current localized Plots sidebar label.",
+      "sections": [
+        "13-7"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-web-user-menu-058",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "| Klicken Sie in der oberen rechten Ecke in der Web-Oberfläche auf den Benutzernamen, um die Dropdown-Liste mit Optionen zu zeigen. |",
+      "new": "| Klicken Sie in der oberen rechten Ecke der Web-Oberfläche auf den Benutzernamen, um das Benutzermenü zu öffnen. |",
+      "reason": "The current account control opens the user menu, which contains Reboot.",
+      "sections": [
+        "13-10"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-web-reboot-059",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "| Wählen Sie Neustarten und bestätigen Sie die folgende Abfrage. |",
+      "new": "| Wählen Sie Neustart und bestätigen Sie die folgende Abfrage. |",
+      "reason": "Match the current localized Reboot menu item and retain confirmation.",
+      "sections": [
+        "13-10"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-maintenance-menu-060",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "| Auf der Startseite der BactoSense Benutzeroberfläche, drücken Sie auf Wartung. |",
+      "new": "| Drücken Sie im Einstellungsmenü auf Wartung. |",
+      "reason": "Maintenance now belongs to the Settings menu, rather than the Home dashboard.",
+      "sections": [
+        "8-4"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-support-service-caption-061",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/15-maintenance.md",
+      "old": "*Abbildung 15-1 Interventionsinfoanzeige*",
+      "new": "*Abbildung 15-1 Unterstützung & Service.*",
+      "reason": "The current screen title is the localized Support & Service label; preserve Figure 15-1 placement.",
+      "sections": [
+        "15-1-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-support-service-route-062",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/15-maintenance.md",
+      "old": "| 2. | Auf der Startseite der BactoSense Benutzeroberfläche, drücken Sie auf Wartung. | <img src=\"/img/manual/cell-2633a4bc793a.png\" alt=\"Abbildung zur Tabelle auf Handbuchseite 126\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "new": "| 2. | Drücken Sie die Taste Einstellungen. | <img src=\"/img/manual/cell-2633a4bc793a.png\" alt=\"Abbildung zur Tabelle auf Handbuchseite 126\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "reason": "Current route is Home → Settings → Support & Service. The Support & Service entry is directly in SettingsMenuHomeScreen, not under Maintenance; keep the existing three steps and the safety/service schedule text.",
+      "sections": [
+        "15-1-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-support-service-route-063",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/15-maintenance.md",
+      "old": "| 3. | Drücken Sie die Taste Interventionsinfo. | <img src=\"/img/manual/cell-c75e8c1aa658.png\" alt=\"Abbildung zur Tabelle auf Handbuchseite 126\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "new": "| 3. | Drücken Sie die Taste Unterstützung & Service. | <img src=\"/img/manual/cell-c75e8c1aa658.png\" alt=\"Abbildung zur Tabelle auf Handbuchseite 126\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "reason": "Current route is Home → Settings → Support & Service. The Support & Service entry is directly in SettingsMenuHomeScreen, not under Maintenance; keep the existing three steps and the safety/service schedule text.",
+      "sections": [
+        "15-1-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-home-menu-064",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "L’interface utilisateur de BactoSense est divisée en 3 sections principales :",
+      "new": "L’écran d’accueil affiche le dernier résultat de mesure. Appuyez sur Paramètres pour ouvrir le menu des paramètres.\n\nL’interface utilisateur de BactoSense est divisée en 3 sections principales :",
+      "reason": "The current Home dashboard opens the former menu through Settings.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-home-caption-065",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "Figure 8-4 Menu principal de l’interface utilisateur de BactoSense",
+      "new": "Figure 8-4 Écran d’accueil de l’interface utilisateur de BactoSense",
+      "reason": "The new image shows the Home dashboard, rather than the former menu grid.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-home-legend-066",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>mode auto (mesures continues<br />à l’aide du dispositif<br />d’échantillonnage en ligne)</td>",
+      "new": "<td>Résultats : afficher les résultats de mesure du mode sélectionné.</td>",
+      "reason": "Current Home action bar: Results, Mode selection and the Manual measurement wizard; preserve the meanings of the two sampling modes.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-home-legend-067",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>Mode manuel (mesure d’échantillons<br />ponctuels à l’aide du dispositif d’échantillonnage<br />manuel)</td>",
+      "new": "<td>Mode : choisir le mode en ligne (Auto) pour les mesures continues avec le dispositif d’échantillonnage en ligne, ou le mode manuel pour les échantillons ponctuels avec le dispositif d’échantillonnage manuel.</td>",
+      "reason": "Current Home action bar: Results, Mode selection and the Manual measurement wizard; preserve the meanings of the two sampling modes.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-home-legend-068",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>Accédez à la liste des<br />protocoles d’analyse.</td>",
+      "new": "<td>Mesurer : ouvrir l’assistant de mesure et choisir un protocole d’analyse (mode manuel).</td>",
+      "reason": "Current Home action bar: Results, Mode selection and the Manual measurement wizard; preserve the meanings of the two sampling modes.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-home-mode-069",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>Mode de fonctionnement (manuel ou<br />auto) État de l’instrument (processus en<br />cours)</td>",
+      "new": "<td>Mode de fonctionnement (Manuel ou<br />En ligne/Auto) État de l’instrument (processus en<br />cours)</td>",
+      "reason": "The current toolbar names the automatic operating mode Online.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-trend-navigation-070",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/10-measurements.md",
+      "old": "L’écran d’accueil en mode auto affiche un graphique linéaire des résultats des mesures au fil du temps.",
+      "new": "En mode en ligne (Auto), appuyez sur le graphique de l’écran d’accueil pour ouvrir le graphique linéaire des résultats des mesures au fil du temps.",
+      "reason": "The full trend chart is opened from the Online-mode Home dashboard; it is no longer the Home screen itself.",
+      "sections": [
+        "10-2-3"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-result-info-071",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "old": "<td>Principaux paramètres du résultat, en fonction du type de cartouche utilisé. Pour plus d'informations, voir la section 11.3. Si vous tapez sur les résultats, vous pouvez afficher tous les résultats (2).</td>",
+      "new": "<td>Principaux paramètres du résultat, en fonction du type de cartouche utilisé. Pour plus d'informations, voir la section 11.3. Appuyez sur l’icône d’information à côté du résultat principal pour afficher tous les paramètres du résultat (2).</td>",
+      "reason": "The information icon opens the metrics dialog; tapping the numerical result is no longer the described action.",
+      "sections": [
+        "11-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-result-metrics-072",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "old": "<td>Fenêtre contextuelle affichant tous les résultats disponibles.</td>",
+      "new": "<td>Fenêtre d’information sur le résultat affichant tous les paramètres disponibles et le diagramme de points principal.</td>",
+      "reason": "The dialog includes result metrics and the main dotplot preview.",
+      "sections": [
+        "11-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-result-dotplot-073",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "old": "<td>Nuage de points principal. Le graphique FL1 vs FL2 montre tous les événements détectés en fonction de l'amplitude de leurs signaux de fluorescence FL1 (535 nm, axe X) et FL2 (715 nm, axe Y). Le polygone rouge et la ligne verticale indiquent la fenêtre configurée. Pour plus de détails, voir la section 11.3. Si vous tapez sur le diagramme, vous ouvrez une fenêtre contextuelle donnant accès à tous les diagrammes de points (4).</td>",
+      "new": "<td>Nuage de points principal dans la fenêtre d’information sur le résultat. Le graphique FL1 vs FL2 montre tous les événements détectés en fonction de l'amplitude de leurs signaux de fluorescence FL1 (535 nm, axe X) et FL2 (715 nm, axe Y). Le polygone rouge et la ligne verticale indiquent la fenêtre configurée. Pour plus de détails, voir la section 11.3. Appuyez sur cet aperçu pour ouvrir une fenêtre contextuelle donnant accès à tous les diagrammes de points (4).</td>",
+      "reason": "The Manual result dotplot preview now lives in the metrics dialog; preserve all gate, fluorescence and wavelength descriptions.",
+      "sections": [
+        "11-1"
+      ],
+      "expected_count": 1,
+      "kind": "text",
+      "review_note": "Refreshed against concurrent French terminology fixes; retain Nuage de points / fenêtre."
+    },
+    {
+      "id": "fr-native-menu-route-074",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "| Accédez au Menu principal de l’interface utilisateur de BactoSense. |",
+      "new": "| Sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. |",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-2-3",
+        "8-2-4",
+        "8-2-6",
+        "8-4",
+        "8-5"
+      ],
+      "expected_count": 5,
+      "kind": "text"
+    },
+    {
+      "id": "fr-native-menu-route-075",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "| Accédez au Menu principal du BactoSense et appuyez sur Paramètres système. |",
+      "new": "| Sur l’écran d’accueil, appuyez sur Paramètres, puis sur Paramètres système. |",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-2-5"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-native-menu-route-076",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "| Accédez au Menu principal de l’interface utilisateur. |",
+      "new": "| Sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. |",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-3-1",
+        "8-3-2",
+        "8-3-3"
+      ],
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "fr-native-menu-route-077",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "| En tant qu’utilisateur Admin, accédez au Menu principal de l’interface utilisateur. |",
+      "new": "| En tant qu’utilisateur Admin, appuyez sur Paramètres sur l’écran d’accueil pour ouvrir le menu des paramètres. |",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-3-4",
+        "8-3-5"
+      ],
+      "expected_count": 2,
+      "kind": "text"
+    },
+    {
+      "id": "fr-native-menu-route-078",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>Accédez au Menu principal de l’interface utilisateur de BactoSense.</td>",
+      "new": "<td>Sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres.</td>",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-6",
+        "8-7",
+        "8-12",
+        "8-13"
+      ],
+      "expected_count": 4,
+      "kind": "text"
+    },
+    {
+      "id": "fr-native-menu-route-079",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>Accédez au Menu principal de l’interface utilisateur.</td>",
+      "new": "<td>Sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres.</td>",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-9-4",
+        "8-9-5",
+        "8-9-6"
+      ],
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "fr-services-navigation-080",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/12-data-access-and-export.md",
+      "old": "| Accédez au Menu principal de l’interface utilisateur de BactoSense. |",
+      "new": "| Sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. |",
+      "reason": "Open the Settings menu before selecting System settings.",
+      "sections": [
+        "12-2",
+        "12-3"
+      ],
+      "expected_count": 4,
+      "kind": "text"
+    },
+    {
+      "id": "fr-system-info-route-081",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/12-data-access-and-export.md",
+      "old": "| Récupérez l’adresse IP du BactoSense en accédant au Menu principal de l’interface utilisateur BactoSense et en appuyant sur le bouton Infos système. |",
+      "new": "| Sur l’écran d’accueil, appuyez sur Paramètres, puis sur Infos système pour obtenir l’adresse IP du BactoSense. |",
+      "reason": "System information is in the Settings menu, rather than directly on Home.",
+      "sections": [
+        "12-2"
+      ],
+      "expected_count": 2,
+      "kind": "text"
+    },
+    {
+      "id": "fr-system-info-route-082",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/12-data-access-and-export.md",
+      "old": "<td>Récupérez l’adresse IP du BactoSense en accédant au Menu principal de l’interface utilisateur BactoSense et en appuyant sur le bouton Infos système.</td>",
+      "new": "<td>Sur l’écran d’accueil, appuyez sur Paramètres, puis sur Infos système pour obtenir l’adresse IP du BactoSense.</td>",
+      "reason": "System information is in the Settings menu, rather than directly on Home.",
+      "sections": [
+        "12-3"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-services-http-083",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/12-data-access-and-export.md",
+      "old": "| Pour HTTP : Assurez-vous que la case Activer l’accès web HTTP est cochée. Pour HTTPS : Assurez-vous que la case Activer l’accès web HTTPS est cochée. |",
+      "new": "| Pour HTTP : Assurez-vous que la case Activer accès web HTTP est cochée. Pour HTTPS : Assurez-vous que la case Activer l'accès web HTTPS est cochée. |",
+      "reason": "Match the currently displayed HTTP/HTTPS web-access checkboxes; retain protocols and port defaults.",
+      "sections": [
+        "12-3"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-web-connect-084",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "<td>Accédez au Menu principal de l’interface utilisateur de BactoSense. Appuyez sur le bouton Infos système.</td>",
+      "new": "<td>Sur l’écran d’accueil de l’interface utilisateur de BactoSense, appuyez sur Paramètres, puis sur Infos système.</td>",
+      "reason": "Open Settings before System info to obtain the web interface address.",
+      "sections": [
+        "13-2"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-web-result-mode-085",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "| Retrouvez les résultats pour le mode qui vous intéresse : résultats en mode Auto ou Manuel. |",
+      "new": "| Retrouvez les résultats pour le mode qui vous intéresse : résultats du mode en ligne ou du mode manuel. |",
+      "reason": "The current download panels use the Online mode label for automatic results.",
+      "sections": [
+        "13-5"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-web-summary-mode-086",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "Les résultats du mode Auto sont séparés de ceux du mode Manuel .",
+      "new": "Les résultats du mode en ligne (Auto) sont séparés de ceux du mode manuel.",
+      "reason": "The current download summary uses Online mode for automatic results.",
+      "sections": [
+        "13-6"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-web-gif-087",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "L’interface web peut animer les nuages de points du mode Auto afin de visualiser l’évolution des mesures. Cette fonction affiche des images fixes en succession rapide ; l’animation ne peut donc être exportée qu’avec un logiciel d’enregistrement d’écran.",
+      "new": "L’interface web peut animer les nuages de points du mode en ligne (Auto) afin de visualiser l’évolution des mesures. Cette fonction affiche des images fixes en succession rapide ; l’animation peut être exportée avec le bouton Télécharger GIF.",
+      "reason": "Current Download GIF exports the animation, matching existing step 5; retain the rapid succession of static plots.",
+      "sections": [
+        "13-7"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-web-plots-088",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "| Sur l’interface web, sélectionnez la page Dotplots dans le panneau de navigation à gauche. |",
+      "new": "| Sur l’interface web, sélectionnez la page Graphiques dans le panneau de navigation à gauche. |",
+      "reason": "Use the current localized Plots sidebar label.",
+      "sections": [
+        "13-7"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-web-user-menu-089",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "| Dans le coin supérieur droit de l’interface web, cliquez sur le nom d’utilisateur pour afficher la liste déroulante des options. |",
+      "new": "| Dans le coin supérieur droit de l’interface web, cliquez sur le nom d’utilisateur pour ouvrir le menu utilisateur. |",
+      "reason": "The current account control opens the user menu, which contains Reboot.",
+      "sections": [
+        "13-10"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-web-reboot-090",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "| Sélectionner Redémarrer et confirmez la demande de confirmation. |",
+      "new": "| Sélectionnez Redémarrer et confirmez la demande. |",
+      "reason": "Match the current localized Reboot menu item and retain confirmation.",
+      "sections": [
+        "13-10"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-support-service-caption-091",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/15-maintenance.md",
+      "old": "*Figure 15-1 Écran d’informations sur l’intervention*",
+      "new": "*Figure 15-1 Écran Support & Service.*",
+      "reason": "The current screen title is the localized Support & Service label; preserve Figure 15-1 placement.",
+      "sections": [
+        "15-1-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-support-service-route-092",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/15-maintenance.md",
+      "old": "| 1. | Accédez au Menu principal de l’interface utilisateur de BactoSense. | <img src=\"/img/manual/cell-d07318a281b1.png\" alt=\"Illustration du tableau, page du manuel 126\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "new": "| 1. | Accédez à l’écran d’accueil de l’interface utilisateur de BactoSense. | <img src=\"/img/manual/cell-d07318a281b1.png\" alt=\"Illustration du tableau, page du manuel 126\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "reason": "Current route is Home → Settings → Support & Service. The Support & Service entry is directly in SettingsMenuHomeScreen, not under Maintenance; keep the existing three steps and the safety/service schedule text.",
+      "sections": [
+        "15-1-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-support-service-route-093",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/15-maintenance.md",
+      "old": "| 2. | Appuyez sur le bouton Maintenance. | <img src=\"/img/manual/cell-2633a4bc793a.png\" alt=\"Illustration du tableau, page du manuel 126\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "new": "| 2. | Appuyez sur le bouton Paramètres. | <img src=\"/img/manual/cell-2633a4bc793a.png\" alt=\"Illustration du tableau, page du manuel 126\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "reason": "Current route is Home → Settings → Support & Service. The Support & Service entry is directly in SettingsMenuHomeScreen, not under Maintenance; keep the existing three steps and the safety/service schedule text.",
+      "sections": [
+        "15-1-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-support-service-route-094",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/15-maintenance.md",
+      "old": "| 3. | Appuyez sur Intervention info. | <img src=\"/img/manual/cell-c75e8c1aa658.png\" alt=\"Illustration du tableau, page du manuel 126\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "new": "| 3. | Appuyez sur le bouton Support & Service. | <img src=\"/img/manual/cell-c75e8c1aa658.png\" alt=\"Illustration du tableau, page du manuel 126\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "reason": "Current route is Home → Settings → Support & Service. The Support & Service entry is directly in SettingsMenuHomeScreen, not under Maintenance; keep the existing three steps and the safety/service schedule text.",
+      "sections": [
+        "15-1-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-home-menu-095",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "L’interfaccia utente di BactoSense è suddivisa in 3 sezioni principali:",
+      "new": "La schermata Home mostra il risultato della misurazione più recente. Premere Impostazioni per aprire il menu delle impostazioni.\n\nL’interfaccia utente di BactoSense è suddivisa in 3 sezioni principali:",
+      "reason": "The current Home dashboard opens the former menu through Settings.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-home-caption-096",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "Figura 8-4 Menu Home dell’interfaccia utente di BactoSense.",
+      "new": "Figura 8-4 Schermata Home dell’interfaccia utente di BactoSense.",
+      "reason": "The new image shows the Home dashboard, rather than the former menu grid.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-home-legend-097",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>Modalità Auto (misurazioni continue con il dispositivo di campionamento in linea)</td>",
+      "new": "<td>Risultati: visualizzare i risultati delle misurazioni della modalità selezionata.</td>",
+      "reason": "Current Home action bar: Results, Mode selection and the Manual measurement wizard; preserve the meanings of the two sampling modes.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-home-legend-098",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>Modalità Manual (misurazione di campioni prelevati con il dispositivo di campionamento manuale)</td>",
+      "new": "<td>Modalità: scegliere la Modalità Online (Auto) per misurazioni continue con il dispositivo di campionamento in linea, oppure la modalità manuale per campioni prelevati con il dispositivo di campionamento manuale.</td>",
+      "reason": "Current Home action bar: Results, Mode selection and the Manual measurement wizard; preserve the meanings of the two sampling modes.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-home-legend-099",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>Accedere all’elenco dei protocolli di analisi.</td>",
+      "new": "<td>Misura: aprire l’assistente di misurazione e scegliere un protocollo di analisi (modalità manuale).</td>",
+      "reason": "Current Home action bar: Results, Mode selection and the Manual measurement wizard; preserve the meanings of the two sampling modes.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-home-mode-100",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>Modalità di funzionamento (manuale o automatica) Stato dello strumento (processo attualmente attivo)</td>",
+      "new": "<td>Modalità di funzionamento (manuale o Online/Auto) Stato dello strumento (processo attualmente attivo)</td>",
+      "reason": "The current toolbar names the automatic operating mode Online.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-trend-navigation-101",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/10-measurements.md",
+      "old": "La schermata iniziale in modalità Auto mostra un grafico a linee dei risultati delle misurazioni nel tempo.",
+      "new": "In Modalità Online (Auto), toccare il grafico nella schermata Home per aprire il grafico a linee dei risultati delle misurazioni nel tempo.",
+      "reason": "The full trend chart is opened from the Online-mode Home dashboard; it is no longer the Home screen itself.",
+      "sections": [
+        "10-2-3"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-result-info-102",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "old": "<td>Parametri principali del risultato, in funzione del tipo di cartuccia utilizzato. Ulteriori informazioni sono riportate nella sezione 11.3. Toccando i risultati, è possibile visualizzarli tutti (2).</td>",
+      "new": "<td>Parametri principali del risultato, in funzione del tipo di cartuccia utilizzato. Ulteriori informazioni sono riportate nella sezione 11.3. Toccare l’icona delle informazioni accanto al risultato principale per visualizzare tutti i parametri del risultato (2).</td>",
+      "reason": "The information icon opens the metrics dialog; tapping the numerical result is no longer the described action.",
+      "sections": [
+        "11-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-result-metrics-103",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "old": "<td>Finestra popup con tutti i risultati disponibili.</td>",
+      "new": "<td>Finestra delle informazioni sul risultato con tutti i parametri disponibili e il diagramma a punti principale.</td>",
+      "reason": "The dialog includes result metrics and the main dotplot preview.",
+      "sections": [
+        "11-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-result-dotplot-104",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "old": "<td>Diagramma a punti principale. Il diagramma FL1 rispetto a FL2 mostra tutti gli eventi rilevati in base all’ampiezza dei segnali di fluorescenza FL1 (535 nm, asse X) e FL2 (715 nm, asse Y). Il poligono rosso e la linea verticale mostrano il gate configurato. Per i dettagli, consultare la sezione 11.3. Toccando il diagramma si apre una finestra popup con accesso a tutti i diagrammi a punti (4).</td>",
+      "new": "<td>Diagramma a punti principale nella finestra delle informazioni sul risultato. Il diagramma FL1 rispetto a FL2 mostra tutti gli eventi rilevati in base all’ampiezza dei segnali di fluorescenza FL1 (535 nm, asse X) e FL2 (715 nm, asse Y). Il poligono rosso e la linea verticale mostrano il gate configurato. Per i dettagli, consultare la sezione 11.3. Toccando questa anteprima si apre una finestra popup con accesso a tutti i diagrammi a punti (4).</td>",
+      "reason": "The Manual result dotplot preview now lives in the metrics dialog; preserve all gate, fluorescence and wavelength descriptions.",
+      "sections": [
+        "11-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-native-menu-route-105",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "| Accedere al menu Home dell’interfaccia utente di BactoSense. |",
+      "new": "| Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni. |",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-2-3",
+        "8-2-4",
+        "8-2-6",
+        "8-4",
+        "8-5"
+      ],
+      "expected_count": 5,
+      "kind": "text"
+    },
+    {
+      "id": "it-native-menu-route-106",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "| Accedere al menu Home di BactoSense e premere System settings. |",
+      "new": "| Nella schermata Home, premere Impostazioni, quindi Impostazioni di sistema. |",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-2-5"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-native-menu-route-107",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "| Accedere al menu Home dell’interfaccia utente. |",
+      "new": "| Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni. |",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-3-1",
+        "8-3-2",
+        "8-3-3"
+      ],
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "it-native-menu-route-108",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "| Come utente Admin, accedere al menu Home dell’interfaccia utente. |",
+      "new": "| Come utente Admin, premere Impostazioni nella schermata Home per aprire il menu delle impostazioni. |",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-3-4",
+        "8-3-5"
+      ],
+      "expected_count": 2,
+      "kind": "text"
+    },
+    {
+      "id": "it-native-menu-route-109",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>Accedere al menu Home dell’interfaccia utente di BactoSense.</td>",
+      "new": "<td>Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni.</td>",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-6",
+        "8-7",
+        "8-12",
+        "8-13"
+      ],
+      "expected_count": 4,
+      "kind": "text"
+    },
+    {
+      "id": "it-native-menu-route-110",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>Accedere al menu Home dell’interfaccia utente.</td>",
+      "new": "<td>Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni.</td>",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-9-4",
+        "8-9-5",
+        "8-9-6"
+      ],
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "it-services-navigation-111",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/12-data-access-and-export.md",
+      "old": "| Accedere al menu Home dell’interfaccia utente di BactoSense. |",
+      "new": "| Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni. |",
+      "reason": "Open the Settings menu before selecting System settings.",
+      "sections": [
+        "12-2",
+        "12-3"
+      ],
+      "expected_count": 4,
+      "kind": "text"
+    },
+    {
+      "id": "it-services-label-112",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/12-data-access-and-export.md",
+      "old": "| Premere il pulsante System services. |",
+      "new": "| Premere il pulsante Servizi di sistema. |",
+      "reason": "Match the current Services menu label (the screen itself still says Manage services).",
+      "sections": [
+        "12-2",
+        "12-3"
+      ],
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "it-system-info-route-113",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/12-data-access-and-export.md",
+      "old": "| Recuperare l’indirizzo IP di BactoSense accedendo al menu Home dell’interfaccia utente e premendo System info. |",
+      "new": "| Nella schermata Home, premere Impostazioni, quindi Informazioni sul sistema per recuperare l’indirizzo IP di BactoSense. |",
+      "reason": "System information is in the Settings menu, rather than directly on Home.",
+      "sections": [
+        "12-2"
+      ],
+      "expected_count": 2,
+      "kind": "text"
+    },
+    {
+      "id": "it-system-info-route-114",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/12-data-access-and-export.md",
+      "old": "<td>Recuperare l’indirizzo IP di BactoSense accedendo al menu Home dell’interfaccia utente e premendo System info.</td>",
+      "new": "<td>Nella schermata Home, premere Impostazioni, quindi Informazioni sul sistema per recuperare l’indirizzo IP di BactoSense.</td>",
+      "reason": "System information is in the Settings menu, rather than directly on Home.",
+      "sections": [
+        "12-3"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-services-http-115",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/12-data-access-and-export.md",
+      "old": "| Per HTTP: assicurarsi che sia selezionata la casella Enable HTTP data access. Per HTTPS: assicurarsi che sia selezionata la casella Enable HTTPS data access. |",
+      "new": "| Per HTTP: assicurarsi che sia selezionata la casella Abilita l'accesso web HTTP. Per HTTPS: assicurarsi che sia selezionata la casella Abilita l'accesso web HTTPS. |",
+      "reason": "Match the currently displayed HTTP/HTTPS web-access checkboxes; retain protocols and port defaults.",
+      "sections": [
+        "12-3"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-web-connect-116",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "<td>Accedere al menu Home dell’interfaccia di BactoSense. Premere System info.</td>",
+      "new": "<td>Nella schermata Home dell’interfaccia utente di BactoSense, premere Impostazioni, quindi Informazioni sul sistema.</td>",
+      "reason": "Open Settings before System info to obtain the web interface address.",
+      "sections": [
+        "13-2"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-web-result-mode-117",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "| Individuare i risultati della modalità desiderata: risultati Auto o Manual. |",
+      "new": "| Individuare i risultati della modalità desiderata: Modalità online o Modalità Manuale. |",
+      "reason": "The current download panels use the Online mode label for automatic results.",
+      "sections": [
+        "13-5"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-web-summary-mode-118",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "I risultati della modalità Auto sono separati da quelli della modalità Manual.",
+      "new": "I risultati della Modalità online (Auto) sono separati da quelli della Modalità Manuale.",
+      "reason": "The current download summary uses Online mode for automatic results.",
+      "sections": [
+        "13-6"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-web-gif-119",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "L’interfaccia web può animare i diagrammi a punti della modalità Auto per aiutare a visualizzare l’evoluzione delle misurazioni. Questa funzione mostra immagini statiche in rapida successione; l’animazione può quindi essere esportata solo con un software di registrazione dello schermo.",
+      "new": "L’interfaccia web può animare i diagrammi a punti della Modalità online (Auto) per aiutare a visualizzare l’evoluzione delle misurazioni. Questa funzione mostra immagini statiche in rapida successione; l’animazione può essere esportata con il pulsante Scaricare in formato GIF.",
+      "reason": "Current Download GIF exports the animation, matching existing step 5; retain the rapid succession of static plots.",
+      "sections": [
+        "13-7"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-web-plots-120",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "| Nell’interfaccia web, selezionare la pagina Dotplots nel pannello di navigazione a sinistra. |",
+      "new": "| Nell’interfaccia web, selezionare la pagina Grafici nel pannello di navigazione a sinistra. |",
+      "reason": "Use the current localized Plots sidebar label.",
+      "sections": [
+        "13-7"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-web-gif-button-121",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "| L’animazione può essere scaricata come file GIF premendo Download GIF. |",
+      "new": "| L’animazione può essere scaricata come file GIF premendo Scaricare in formato GIF. |",
+      "reason": "Use the current localized Download GIF button label.",
+      "sections": [
+        "13-7"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-web-user-menu-122",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "| Nell’angolo superiore destro dell’interfaccia web, fare clic sul nome utente per visualizzare l’elenco delle opzioni. |",
+      "new": "| Nell’angolo superiore destro dell’interfaccia web, fare clic sul nome utente per aprire il menu utente. |",
+      "reason": "The current account control opens the user menu, which contains Reboot.",
+      "sections": [
+        "13-10"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-web-reboot-123",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "| Selezionare Reboot e confermare la richiesta di conferma. |",
+      "new": "| Selezionare Riavvia e confermare la richiesta. |",
+      "reason": "Match the current localized Reboot menu item and retain confirmation.",
+      "sections": [
+        "13-10"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-factory-menu-124",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>Premere Maintenance, quindi Factory reset.</td>",
+      "new": "<td>Premere Manutenzione, quindi Ripristino alle impostazioni fabbrica.</td>",
+      "reason": "Factory reset is under Maintenance in the current production GUI; the adjacent source icon was incorrect.",
+      "sections": [
+        "8-13"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-localized-system-settings-125",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>Premere il pulsante System settings.</td>",
+      "new": "<td>Premere il pulsante Impostazioni di sistema.</td>",
+      "reason": "Match the localized production System settings label used by current captures.",
+      "sections": [
+        "8-6"
+      ],
+      "expected_count": 2,
+      "kind": "text"
+    },
+    {
+      "id": "it-localized-system-settings-126",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/12-data-access-and-export.md",
+      "old": "| Premere il pulsante System settings. |",
+      "new": "| Premere il pulsante Impostazioni di sistema. |",
+      "reason": "Match the localized production System settings label used by current captures.",
+      "sections": [
+        "12-2"
+      ],
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "it-localized-web-navigation-127",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "| Nell’interfaccia web, selezionare la pagina Results nel pannello di navigazione a sinistra. |",
+      "new": "| Nell’interfaccia web, selezionare la pagina Risultati nel pannello di navigazione a sinistra. |",
+      "reason": "Use the current localized web navigation label visible in the replacement captures.",
+      "sections": [
+        "13-4",
+        "13-5",
+        "13-6"
+      ],
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "it-localized-web-navigation-128",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "| Nell’interfaccia web, selezionare la pagina Settings nel pannello di navigazione a sinistra. |",
+      "new": "| Nell’interfaccia web, selezionare la pagina Impostazioni nel pannello di navigazione a sinistra. |",
+      "reason": "Use the current localized web navigation label visible in the replacement captures.",
+      "sections": [
+        "13-8"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-support-service-caption-129",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/15-maintenance.md",
+      "old": "*Figura 15-1 Schermata Intervention info*",
+      "new": "*Figura 15-1 Schermata Supporto & Assistenza.*",
+      "reason": "The current screen title is the localized Support & Service label; preserve Figure 15-1 placement.",
+      "sections": [
+        "15-1-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-support-service-route-130",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/15-maintenance.md",
+      "old": "| 1. | Accedere al menu Home dell’interfaccia utente BactoSense. | <img src=\"/img/manual/cell-d07318a281b1.png\" alt=\"Illustrazione della tabella a pagina 126\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "new": "| 1. | Accedere alla schermata Home dell’interfaccia utente BactoSense. | <img src=\"/img/manual/cell-d07318a281b1.png\" alt=\"Illustrazione della tabella a pagina 126\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "reason": "Current route is Home → Settings → Support & Service. The Support & Service entry is directly in SettingsMenuHomeScreen, not under Maintenance; keep the existing three steps and the safety/service schedule text.",
+      "sections": [
+        "15-1-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-support-service-route-131",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/15-maintenance.md",
+      "old": "| 2. | Premere il pulsante Maintenance. | <img src=\"/img/manual/cell-2633a4bc793a.png\" alt=\"Illustrazione della tabella a pagina 126\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "new": "| 2. | Premere il pulsante Impostazioni. | <img src=\"/img/manual/cell-2633a4bc793a.png\" alt=\"Illustrazione della tabella a pagina 126\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "reason": "Current route is Home → Settings → Support & Service. The Support & Service entry is directly in SettingsMenuHomeScreen, not under Maintenance; keep the existing three steps and the safety/service schedule text.",
+      "sections": [
+        "15-1-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-support-service-route-132",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/15-maintenance.md",
+      "old": "| 3. | Premere il pulsante Intervention info. | <img src=\"/img/manual/cell-c75e8c1aa658.png\" alt=\"Illustrazione della tabella a pagina 126\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "new": "| 3. | Premere il pulsante Supporto & Assistenza. | <img src=\"/img/manual/cell-c75e8c1aa658.png\" alt=\"Illustrazione della tabella a pagina 126\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "reason": "Current route is Home → Settings → Support & Service. The Support & Service entry is directly in SettingsMenuHomeScreen, not under Maintenance; keep the existing three steps and the safety/service schedule text.",
+      "sections": [
+        "15-1-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-home-menu-133",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "La interfaz de usuario de BactoSense se divide en 3 secciones principales:",
+      "new": "La pantalla Home muestra el resultado de la medición más reciente. Pulse Ajustes para abrir el menú de ajustes.\n\nLa interfaz de usuario de BactoSense se divide en 3 secciones principales:",
+      "reason": "The current Home dashboard opens the former menu through Settings.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-home-caption-134",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "Figura 8-4 Menú Home de la interfaz de usuario de BactoSense.",
+      "new": "Figura 8-4 Pantalla Home de la interfaz de usuario de BactoSense.",
+      "reason": "The new image shows the Home dashboard, rather than the former menu grid.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-home-legend-135",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>Modo Auto (mediciones<br />continuas con el dispositivo de<br />muestreo en línea)</td>",
+      "new": "<td>Resultados: mostrar los resultados de medición del modo seleccionado.</td>",
+      "reason": "Current Home action bar: Results, Mode selection and the Manual measurement wizard; preserve the meanings of the two sampling modes.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-home-legend-136",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>Modo Manual (medición de muestras<br />puntuales con el dispositivo de muestreo<br />manual)</td>",
+      "new": "<td>Modo: elegir el modo en línea (Auto) para mediciones continuas con el dispositivo de muestreo en línea, o el modo manual para muestras puntuales con el dispositivo de muestreo manual.</td>",
+      "reason": "Current Home action bar: Results, Mode selection and the Manual measurement wizard; preserve the meanings of the two sampling modes.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-home-legend-137",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>Ir a la lista de protocolos<br />de análisis.</td>",
+      "new": "<td>Iniciar: abrir el asistente de medición y elegir un protocolo de análisis (modo manual).</td>",
+      "reason": "Current Home action bar: Results, Mode selection and the Manual measurement wizard; preserve the meanings of the two sampling modes.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-home-mode-138",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>Modo de funcionamiento (Manual o Auto)<br />Estado del instrumento (proceso<br />activo actualmente)</td>",
+      "new": "<td>Modo de funcionamiento (Manual o En línea/Auto)<br />Estado del instrumento (proceso<br />activo actualmente)</td>",
+      "reason": "The current toolbar names the automatic operating mode Online.",
+      "sections": [
+        "8-8-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-trend-navigation-139",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/10-measurements.md",
+      "old": "La pantalla de inicio del modo Auto muestra un gráfico de líneas con los resultados de medición a lo largo del tiempo.",
+      "new": "En el modo en línea (Auto), pulse el gráfico de la pantalla Home para abrir el gráfico de líneas con los resultados de medición a lo largo del tiempo.",
+      "reason": "The full trend chart is opened from the Online-mode Home dashboard; it is no longer the Home screen itself.",
+      "sections": [
+        "10-2-3"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-result-info-140",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "old": "<td>Parámetros principales del resultado, según el tipo de cartucho utilizado. Encontrará más información en la sección 11.3. Al pulsar los resultados, puede mostrar todos los resultados (2).</td>",
+      "new": "<td>Parámetros principales del resultado, según el tipo de cartucho utilizado. Encontrará más información en la sección 11.3. Pulse el icono de información junto al resultado principal para mostrar todos los parámetros del resultado (2).</td>",
+      "reason": "The information icon opens the metrics dialog; tapping the numerical result is no longer the described action.",
+      "sections": [
+        "11-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-result-metrics-141",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "old": "<td>Ventana emergente que muestra todos los resultados disponibles.</td>",
+      "new": "<td>Ventana de información del resultado con todos los parámetros disponibles y el diagrama de puntos principal.</td>",
+      "reason": "The dialog includes result metrics and the main dotplot preview.",
+      "sections": [
+        "11-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-result-dotplot-142",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "old": "<td>Diagrama de puntos principal. El diagrama FL1 frente a FL2 muestra todos los eventos detectados según la amplitud de sus señales de fluorescencia FL1 (535 nm, eje X) y FL2 (715 nm, eje Y). El polígono rojo y la línea vertical muestran la región configurada. Para obtener más detalles, consulte la sección 11.3. Al pulsar el diagrama, se abre una ventana emergente con acceso a todos los diagramas de puntos (4).</td>",
+      "new": "<td>Diagrama de puntos principal en la ventana de información del resultado. El diagrama FL1 frente a FL2 muestra todos los eventos detectados según la amplitud de sus señales de fluorescencia FL1 (535 nm, eje X) y FL2 (715 nm, eje Y). El polígono rojo y la línea vertical muestran la región configurada. Para obtener más detalles, consulte la sección 11.3. Al pulsar esta vista previa, se abre una ventana emergente con acceso a todos los diagramas de puntos (4).</td>",
+      "reason": "The Manual result dotplot preview now lives in the metrics dialog; preserve all gate, fluorescence and wavelength descriptions.",
+      "sections": [
+        "11-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-native-menu-route-143",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "| Vaya al menú Home de la interfaz de usuario de BactoSense. |",
+      "new": "| En la pantalla Home, pulse Ajustes para abrir el menú de ajustes. |",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-2-3",
+        "8-2-4",
+        "8-2-6",
+        "8-4",
+        "8-5"
+      ],
+      "expected_count": 5,
+      "kind": "text"
+    },
+    {
+      "id": "es-native-menu-route-144",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "| Vaya al menú Home de BactoSense y pulse System settings. |",
+      "new": "| En la pantalla Home, pulse Ajustes y, a continuación, Ajustes del sistema. |",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-2-5"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-native-menu-route-145",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "| Vaya al menú Home de la interfaz de usuario. |",
+      "new": "| En la pantalla Home, pulse Ajustes para abrir el menú de ajustes. |",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-3-1",
+        "8-3-2",
+        "8-3-3"
+      ],
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "es-native-menu-route-146",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "| Como usuario Admin, vaya al menú Home de la interfaz de usuario. |",
+      "new": "| Como usuario Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes. |",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-3-4",
+        "8-3-5"
+      ],
+      "expected_count": 2,
+      "kind": "text"
+    },
+    {
+      "id": "es-native-menu-route-147",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>Vaya al menú Home de la interfaz de usuario de BactoSense.</td>",
+      "new": "<td>En la pantalla Home, pulse Ajustes para abrir el menú de ajustes.</td>",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-6",
+        "8-7",
+        "8-12",
+        "8-13"
+      ],
+      "expected_count": 4,
+      "kind": "text"
+    },
+    {
+      "id": "es-native-menu-route-148",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>Vaya al menú Home de la interfaz de usuario.</td>",
+      "new": "<td>En la pantalla Home, pulse Ajustes para abrir el menú de ajustes.</td>",
+      "reason": "The old grid is now reached through Settings from Home; preserve role requirements and later steps.",
+      "sections": [
+        "8-9-4",
+        "8-9-5",
+        "8-9-6"
+      ],
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "es-services-navigation-149",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/12-data-access-and-export.md",
+      "old": "| Vaya al menú Home de la interfaz de usuario de BactoSense. |",
+      "new": "| En la pantalla Home, pulse Ajustes para abrir el menú de ajustes. |",
+      "reason": "Open the Settings menu before selecting System settings.",
+      "sections": [
+        "12-2",
+        "12-3"
+      ],
+      "expected_count": 4,
+      "kind": "text"
+    },
+    {
+      "id": "es-services-label-150",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/12-data-access-and-export.md",
+      "old": "| Pulse el botón System services. |",
+      "new": "| Pulse el botón Servicios del sistema. |",
+      "reason": "Match the current Services menu label (the screen itself still says Manage services).",
+      "sections": [
+        "12-2",
+        "12-3"
+      ],
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "es-system-info-route-151",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/12-data-access-and-export.md",
+      "old": "| Obtenga la dirección IP de BactoSense accediendo al menú Home de su interfaz de usuario y pulsando System info. |",
+      "new": "| En la pantalla Home, pulse Ajustes y, a continuación, Información del sistema para obtener la dirección IP de BactoSense. |",
+      "reason": "System information is in the Settings menu, rather than directly on Home.",
+      "sections": [
+        "12-2"
+      ],
+      "expected_count": 2,
+      "kind": "text"
+    },
+    {
+      "id": "es-system-info-route-152",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/12-data-access-and-export.md",
+      "old": "<td>Obtenga la dirección IP de BactoSense accediendo al menú Home de su interfaz de usuario y pulsando System info.</td>",
+      "new": "<td>En la pantalla Home, pulse Ajustes y, a continuación, Información del sistema para obtener la dirección IP de BactoSense.</td>",
+      "reason": "System information is in the Settings menu, rather than directly on Home.",
+      "sections": [
+        "12-3"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-services-http-153",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/12-data-access-and-export.md",
+      "old": "| Para HTTP: asegúrese de que esté marcada la casilla Enable HTTP data access. Para HTTPS: asegúrese de que esté marcada la casilla Enable HTTPS data access. |",
+      "new": "| Para HTTP: asegúrese de que esté marcada la casilla Habilitar el acceso web HTTP. Para HTTPS: asegúrese de que esté marcada la casilla Habilitar el acceso web HTTPS. |",
+      "reason": "Match the currently displayed HTTP/HTTPS web-access checkboxes; retain protocols and port defaults.",
+      "sections": [
+        "12-3"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-web-connect-154",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "<td>Vaya al menú Home de la interfaz de BactoSense. Pulse el botón System info.</td>",
+      "new": "<td>En la pantalla Home de la interfaz de usuario de BactoSense, pulse Ajustes y, a continuación, Información del sistema.</td>",
+      "reason": "Open Settings before System info to obtain the web interface address.",
+      "sections": [
+        "13-2"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-web-result-mode-155",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "| Busque los resultados del modo que le interese: Auto o Manual. |",
+      "new": "| Busque los resultados del modo que le interese: Modo en línea o Modo manual. |",
+      "reason": "The current download panels use the Online mode label for automatic results.",
+      "sections": [
+        "13-5"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-web-summary-mode-156",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "Los resultados del modo Auto se separan de los del modo Manual.",
+      "new": "Los resultados del modo en línea (Auto) se separan de los del modo manual.",
+      "reason": "The current download summary uses Online mode for automatic results.",
+      "sections": [
+        "13-6"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-web-gif-157",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "La interfaz web permite animar los diagramas de puntos del modo Auto para visualizar la evolución de las mediciones. Esta función muestra imágenes estáticas en rápida sucesión; por tanto, la animación solo puede exportarse mediante software de grabación de pantalla.",
+      "new": "La interfaz web permite animar los diagramas de puntos del modo en línea (Auto) para visualizar la evolución de las mediciones. Esta función muestra imágenes estáticas en rápida sucesión; la animación puede exportarse con el botón Descargar GIF.",
+      "reason": "Current Download GIF exports the animation, matching existing step 5; retain the rapid succession of static plots.",
+      "sections": [
+        "13-7"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-web-plots-158",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "| En la interfaz web, seleccione la página Dotplots en el panel de navegación de la izquierda. |",
+      "new": "| En la interfaz web, seleccione la página Gráficos en el panel de navegación de la izquierda. |",
+      "reason": "Use the current localized Plots sidebar label.",
+      "sections": [
+        "13-7"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-web-gif-button-159",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "| La animación puede descargarse como archivo GIF pulsando Download GIF. |",
+      "new": "| La animación puede descargarse como archivo GIF pulsando Descargar GIF. |",
+      "reason": "Use the current localized Download GIF button label.",
+      "sections": [
+        "13-7"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-web-user-menu-160",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "| En la esquina superior derecha de la interfaz web, haga clic en el nombre de usuario para mostrar la lista desplegable de opciones. |",
+      "new": "| En la esquina superior derecha de la interfaz web, haga clic en el nombre de usuario para abrir el menú de usuario. |",
+      "reason": "The current account control opens the user menu, which contains Reboot.",
+      "sections": [
+        "13-10"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-web-reboot-161",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "| Seleccione Reboot y confirme la solicitud de confirmación. |",
+      "new": "| Seleccione Reiniciar y confirme la solicitud. |",
+      "reason": "Match the current localized Reboot menu item and retain confirmation.",
+      "sections": [
+        "13-10"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-factory-menu-162",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>Pulse el botón Maintenance y, a continuación, Factory reset.</td>",
+      "new": "<td>Pulse Mantenimiento y, a continuación, Restablecimiento de fábrica.</td>",
+      "reason": "Factory reset is under Maintenance in the current production GUI; the adjacent source icon was incorrect.",
+      "sections": [
+        "8-13"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-localized-system-settings-163",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "<td>Pulse el botón System settings.</td>",
+      "new": "<td>Pulse el botón Ajustes del sistema.</td>",
+      "reason": "Match the localized production System settings label used by current captures.",
+      "sections": [
+        "8-6"
+      ],
+      "expected_count": 2,
+      "kind": "text"
+    },
+    {
+      "id": "es-localized-system-settings-164",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/12-data-access-and-export.md",
+      "old": "| Pulse el botón System settings. |",
+      "new": "| Pulse el botón Ajustes del sistema. |",
+      "reason": "Match the localized production System settings label used by current captures.",
+      "sections": [
+        "12-2"
+      ],
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "es-localized-web-navigation-165",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "| En la interfaz web, seleccione la página Results en el panel de navegación de la izquierda. |",
+      "new": "| En la interfaz web, seleccione la página Resultados en el panel de navegación de la izquierda. |",
+      "reason": "Use the current localized web navigation label visible in the replacement captures.",
+      "sections": [
+        "13-4",
+        "13-5",
+        "13-6"
+      ],
+      "expected_count": 3,
+      "kind": "text"
+    },
+    {
+      "id": "es-localized-web-navigation-166",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "old": "| En la interfaz web, seleccione la página Settings en el panel de navegación de la izquierda. |",
+      "new": "| En la interfaz web, seleccione la página Ajustes en el panel de navegación de la izquierda. |",
+      "reason": "Use the current localized web navigation label visible in the replacement captures.",
+      "sections": [
+        "13-8"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-support-service-caption-167",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/15-maintenance.md",
+      "old": "*Figura 15-1 Pantalla Intervention info*",
+      "new": "*Figura 15-1 Pantalla Asistencia y servicios.*",
+      "reason": "The current screen title is the localized Support & Service label; preserve Figure 15-1 placement.",
+      "sections": [
+        "15-1-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-support-service-route-168",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/15-maintenance.md",
+      "old": "| 1. | Vaya al menú Home de la interfaz de usuario de BactoSense. | <img src=\"/img/manual/cell-d07318a281b1.png\" alt=\"Ilustración de la tabla de la página 126 del manual\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "new": "| 1. | Vaya a la pantalla Home de la interfaz de usuario de BactoSense. | <img src=\"/img/manual/cell-d07318a281b1.png\" alt=\"Ilustración de la tabla de la página 126 del manual\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "reason": "Current route is Home → Settings → Support & Service. The Support & Service entry is directly in SettingsMenuHomeScreen, not under Maintenance; keep the existing three steps and the safety/service schedule text.",
+      "sections": [
+        "15-1-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-support-service-route-169",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/15-maintenance.md",
+      "old": "| 2. | Pulse el botón Maintenance. | <img src=\"/img/manual/cell-2633a4bc793a.png\" alt=\"Ilustración de la tabla de la página 126 del manual\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "new": "| 2. | Pulse el botón Ajustes. | <img src=\"/img/manual/cell-2633a4bc793a.png\" alt=\"Ilustración de la tabla de la página 126 del manual\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "reason": "Current route is Home → Settings → Support & Service. The Support & Service entry is directly in SettingsMenuHomeScreen, not under Maintenance; keep the existing three steps and the safety/service schedule text.",
+      "sections": [
+        "15-1-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-support-service-route-170",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/15-maintenance.md",
+      "old": "| 3. | Pulse el botón Intervention info. | <img src=\"/img/manual/cell-c75e8c1aa658.png\" alt=\"Ilustración de la tabla de la página 126 del manual\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "new": "| 3. | Pulse el botón Asistencia y servicios. | <img src=\"/img/manual/cell-c75e8c1aa658.png\" alt=\"Ilustración de la tabla de la página 126 del manual\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "reason": "Current route is Home → Settings → Support & Service. The Support & Service entry is directly in SettingsMenuHomeScreen, not under Maintenance; keep the existing three steps and the safety/service schedule text.",
+      "sections": [
+        "15-1-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-capacity-navigation-171",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "If you need more information, navigate to the *Home menu*, and then press *System info*.",
+      "new": "If you need more information, press *Settings* on the *Home screen*, then press *System info*.",
+      "reason": "System info now belongs to the Settings menu; only the navigation sentence changes, retaining all capacity/expiry explanations.",
+      "sections": [
+        "8-9-2"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-manual-wizard-navigation-172",
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "old": "| On the action bar at the bottom, select Manual mode and press Start. |",
+      "new": "| On the Home screen, press Mode and select Manual mode. Press Back, then Measure to open the measurement wizard. |",
+      "reason": "Only the Home-footer transition into the Manual wizard changes. Current idle Mode selection applies immediately and its return action is Back; later wizard Start execution steps remain unchanged.",
+      "sections": [
+        "8-11-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-manual-wizard-navigation-173",
+      "locale": "en",
+      "file": "docs/10-measurements.md",
+      "old": "| On the action bar at the bottom, select Manual mode and press Start. |",
+      "new": "| On the Home screen, press Mode and select Manual mode. Press Back, then Measure to open the measurement wizard. |",
+      "reason": "Only the Home-footer transition into the Manual wizard changes. Current idle Mode selection applies immediately and its return action is Back; later wizard Start execution steps remain unchanged.",
+      "sections": [
+        "10-3-1",
+        "10-9-3"
+      ],
+      "expected_count": 2,
+      "kind": "text"
+    },
+    {
+      "id": "en-manual-wizard-navigation-174",
+      "locale": "en",
+      "file": "docs/11-results-and-data-analysis.md",
+      "old": "<td>Select Manual mode and confirm with Start.</td>",
+      "new": "<td>On the Home screen, press Mode and select Manual mode. Press Back, then Measure to open the measurement wizard.</td>",
+      "reason": "Only the Home-footer transition into the Manual wizard changes. Current idle Mode selection applies immediately and its return action is Back; later wizard Start execution steps remain unchanged.",
+      "sections": [
+        "11-6"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "en-manual-wizard-navigation-175",
+      "locale": "en",
+      "file": "docs/15-maintenance.md",
+      "old": "| On the action bar at the bottom, select Manual mode and press Start. |",
+      "new": "| On the Home screen, press Mode and select Manual mode. Press Back, then Measure to open the measurement wizard. |",
+      "reason": "Only the Home-footer transition into the Manual wizard changes. Current idle Mode selection applies immediately and its return action is Back; later wizard Start execution steps remain unchanged.",
+      "sections": [
+        "15-2-2",
+        "15-2-3"
+      ],
+      "expected_count": 2,
+      "kind": "text"
+    },
+    {
+      "id": "de-capacity-navigation-176",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "Für weitere Informationen öffnen Sie das *Home-Menü*und drücken Sie anschließend *System info (Systeminformationen)*.",
+      "new": "Für weitere Informationen drücken Sie auf der *Startseite* zuerst *Einstellungen* und anschließend *Informationen*.",
+      "reason": "System info now belongs to the Settings menu; only the navigation sentence changes, retaining all capacity/expiry explanations.",
+      "sections": [
+        "8-9-2"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-manual-wizard-navigation-177",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "| Wählen Sie unten auf der Aktionsleiste Manueller Modus und drücken Sie Start. |",
+      "new": "| Drücken Sie auf der Startseite Modus und wählen Sie „Manueller Modus“. Drücken Sie Zurück und anschließend Messen, um den Messassistenten zu öffnen. |",
+      "reason": "Only the Home-footer transition into the Manual wizard changes. Current idle Mode selection applies immediately and its return action is Back; later wizard Start execution steps remain unchanged.",
+      "sections": [
+        "8-11-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-manual-wizard-navigation-178",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/10-measurements.md",
+      "old": "| Wählen Sie unten auf der Aktionsleiste Manueller Modus und drücken Sie Start. |",
+      "new": "| Drücken Sie auf der Startseite Modus und wählen Sie „Manueller Modus“. Drücken Sie Zurück und anschließend Messen, um den Messassistenten zu öffnen. |",
+      "reason": "Only the Home-footer transition into the Manual wizard changes. Current idle Mode selection applies immediately and its return action is Back; later wizard Start execution steps remain unchanged.",
+      "sections": [
+        "10-3-1",
+        "10-9-3"
+      ],
+      "expected_count": 2,
+      "kind": "text"
+    },
+    {
+      "id": "de-manual-wizard-navigation-179",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "old": "<td>Wählen Sie Manueller Modus und bestätigen Sie mit Start.</td>",
+      "new": "<td>Drücken Sie auf der Startseite Modus und wählen Sie „Manueller Modus“. Drücken Sie Zurück und anschließend Messen, um den Messassistenten zu öffnen.</td>",
+      "reason": "Only the Home-footer transition into the Manual wizard changes. Current idle Mode selection applies immediately and its return action is Back; later wizard Start execution steps remain unchanged.",
+      "sections": [
+        "11-6"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "de-manual-wizard-navigation-180",
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/15-maintenance.md",
+      "old": "| Wählen Sie unten auf der Aktionsleiste Manueller Modus und drücken Sie Start. |",
+      "new": "| Drücken Sie auf der Startseite Modus und wählen Sie „Manueller Modus“. Drücken Sie Zurück und anschließend Messen, um den Messassistenten zu öffnen. |",
+      "reason": "Only the Home-footer transition into the Manual wizard changes. Current idle Mode selection applies immediately and its return action is Back; later wizard Start execution steps remain unchanged.",
+      "sections": [
+        "15-2-2",
+        "15-2-3"
+      ],
+      "expected_count": 2,
+      "kind": "text"
+    },
+    {
+      "id": "fr-capacity-navigation-181",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "Pour plus d’informations, ouvrez le *menu Home*, puis appuyez sur *System info*.",
+      "new": "Pour plus d’informations, appuyez sur *Paramètres* sur l’*écran d’accueil*, puis sur *Infos système*.",
+      "reason": "System info now belongs to the Settings menu; only the navigation sentence changes, retaining all capacity/expiry explanations.",
+      "sections": [
+        "8-9-2"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-manual-wizard-navigation-182",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "| Dans la barre d’action en bas, sélectionnez le Mode manuel et appuyez sur Mesurer. |",
+      "new": "| Sur l’écran d’accueil, appuyez sur Mode et sélectionnez Mode manuel. Appuyez sur Retour, puis sur Mesurer pour ouvrir l’assistant de mesure. |",
+      "reason": "Only the Home-footer transition into the Manual wizard changes. Current idle Mode selection applies immediately and its return action is Back; later wizard Start execution steps remain unchanged.",
+      "sections": [
+        "8-11-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-manual-wizard-navigation-183",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/10-measurements.md",
+      "old": "| Dans la barre d’action en bas, sélectionnez le Mode manuel et appuyez sur Mesurer. |",
+      "new": "| Sur l’écran d’accueil, appuyez sur Mode et sélectionnez Mode manuel. Appuyez sur Retour, puis sur Mesurer pour ouvrir l’assistant de mesure. |",
+      "reason": "Only the Home-footer transition into the Manual wizard changes. Current idle Mode selection applies immediately and its return action is Back; later wizard Start execution steps remain unchanged.",
+      "sections": [
+        "10-3-1",
+        "10-9-3"
+      ],
+      "expected_count": 2,
+      "kind": "text"
+    },
+    {
+      "id": "fr-manual-wizard-navigation-184",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "old": "<td>Sélectionnez le Mode manuel et confirmez par Mesurer.</td>",
+      "new": "<td>Sur l’écran d’accueil, appuyez sur Mode et sélectionnez Mode manuel. Appuyez sur Retour, puis sur Mesurer pour ouvrir l’assistant de mesure.</td>",
+      "reason": "Only the Home-footer transition into the Manual wizard changes. Current idle Mode selection applies immediately and its return action is Back; later wizard Start execution steps remain unchanged.",
+      "sections": [
+        "11-6"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "fr-manual-wizard-navigation-185",
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/15-maintenance.md",
+      "old": "| Dans la barre d’action en bas, sélectionnez le Mode manuel et appuyez sur Mesurer. |",
+      "new": "| Sur l’écran d’accueil, appuyez sur Mode et sélectionnez Mode manuel. Appuyez sur Retour, puis sur Mesurer pour ouvrir l’assistant de mesure. |",
+      "reason": "Only the Home-footer transition into the Manual wizard changes. Current idle Mode selection applies immediately and its return action is Back; later wizard Start execution steps remain unchanged.",
+      "sections": [
+        "15-2-2",
+        "15-2-3"
+      ],
+      "expected_count": 2,
+      "kind": "text"
+    },
+    {
+      "id": "it-capacity-navigation-186",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "Per ulteriori informazioni, accedere al *menu Home*, quindi premere *System info*.",
+      "new": "Per ulteriori informazioni, premere *Impostazioni* nella *schermata Home*, quindi *Informazioni sul sistema*.",
+      "reason": "System info now belongs to the Settings menu; only the navigation sentence changes, retaining all capacity/expiry explanations.",
+      "sections": [
+        "8-9-2"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-manual-wizard-navigation-187",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "| Nella barra delle azioni in basso, selezionare Manual mode e premere Start. |",
+      "new": "| Nella schermata Home, premere Modalità e selezionare Modalità manuale. Premere Indietro, quindi Misura per aprire l’assistente di misurazione. |",
+      "reason": "Only the Home-footer transition into the Manual wizard changes. Current idle Mode selection applies immediately and its return action is Back; later wizard Start execution steps remain unchanged.",
+      "sections": [
+        "8-11-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-manual-wizard-navigation-188",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/10-measurements.md",
+      "old": "| Nella barra delle azioni in basso, selezionare Manual mode e premere Start. |",
+      "new": "| Nella schermata Home, premere Modalità e selezionare Modalità manuale. Premere Indietro, quindi Misura per aprire l’assistente di misurazione. |",
+      "reason": "Only the Home-footer transition into the Manual wizard changes. Current idle Mode selection applies immediately and its return action is Back; later wizard Start execution steps remain unchanged.",
+      "sections": [
+        "10-3-1",
+        "10-9-3"
+      ],
+      "expected_count": 2,
+      "kind": "text"
+    },
+    {
+      "id": "it-manual-wizard-navigation-189",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "old": "<td>Selezionare Manual mode e confermare con Start.</td>",
+      "new": "<td>Nella schermata Home, premere Modalità e selezionare Modalità manuale. Premere Indietro, quindi Misura per aprire l’assistente di misurazione.</td>",
+      "reason": "Only the Home-footer transition into the Manual wizard changes. Current idle Mode selection applies immediately and its return action is Back; later wizard Start execution steps remain unchanged.",
+      "sections": [
+        "11-6"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "it-manual-wizard-navigation-190",
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/15-maintenance.md",
+      "old": "| Nella barra delle azioni in basso, selezionare la modalità Manual e premere Start. |",
+      "new": "| Nella schermata Home, premere Modalità e selezionare Modalità manuale. Premere Indietro, quindi Misura per aprire l’assistente di misurazione. |",
+      "reason": "Only the Home-footer transition into the Manual wizard changes. Current idle Mode selection applies immediately and its return action is Back; later wizard Start execution steps remain unchanged.",
+      "sections": [
+        "15-2-2",
+        "15-2-3"
+      ],
+      "expected_count": 2,
+      "kind": "text"
+    },
+    {
+      "id": "es-capacity-navigation-191",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "Si necesita más información, vaya al menú *Home* y pulse *System info*.",
+      "new": "Si necesita más información, pulse *Ajustes* en la *pantalla Home* y, a continuación, *Información del sistema*.",
+      "reason": "System info now belongs to the Settings menu; only the navigation sentence changes, retaining all capacity/expiry explanations.",
+      "sections": [
+        "8-9-2"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-manual-wizard-navigation-192",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "old": "| En la barra de acciones de la parte inferior, seleccione el modo Manual y pulse Start. |",
+      "new": "| En la pantalla Home, pulse Modo y seleccione Modo manual. Pulse Volver y, a continuación, Iniciar para abrir el asistente de medición. |",
+      "reason": "Only the Home-footer transition into the Manual wizard changes. Current idle Mode selection applies immediately and its return action is Back; later wizard Start execution steps remain unchanged.",
+      "sections": [
+        "8-11-1"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-manual-wizard-navigation-193",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/10-measurements.md",
+      "old": "| En la barra de acciones de la parte inferior, seleccione el modo Manual y pulse Start. |",
+      "new": "| En la pantalla Home, pulse Modo y seleccione Modo manual. Pulse Volver y, a continuación, Iniciar para abrir el asistente de medición. |",
+      "reason": "Only the Home-footer transition into the Manual wizard changes. Current idle Mode selection applies immediately and its return action is Back; later wizard Start execution steps remain unchanged.",
+      "sections": [
+        "10-3-1",
+        "10-9-3"
+      ],
+      "expected_count": 2,
+      "kind": "text"
+    },
+    {
+      "id": "es-manual-wizard-navigation-194",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "old": "<td>Seleccione el modo Manual y confirme con Start.</td>",
+      "new": "<td>En la pantalla Home, pulse Modo y seleccione Modo manual. Pulse Volver y, a continuación, Iniciar para abrir el asistente de medición.</td>",
+      "reason": "Only the Home-footer transition into the Manual wizard changes. Current idle Mode selection applies immediately and its return action is Back; later wizard Start execution steps remain unchanged.",
+      "sections": [
+        "11-6"
+      ],
+      "expected_count": 1,
+      "kind": "text"
+    },
+    {
+      "id": "es-manual-wizard-navigation-195",
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/15-maintenance.md",
+      "old": "| En la barra de acciones de la parte inferior, seleccione el modo Manual y pulse Start. |",
+      "new": "| En la pantalla Home, pulse Modo y seleccione Modo manual. Pulse Volver y, a continuación, Iniciar para abrir el asistente de medición. |",
+      "reason": "Only the Home-footer transition into the Manual wizard changes. Current idle Mode selection applies immediately and its return action is Back; later wizard Start execution steps remain unchanged.",
+      "sections": [
+        "15-2-2",
+        "15-2-3"
+      ],
+      "expected_count": 2,
+      "kind": "text"
+    }
+  ],
+  "counts_by_locale": {
+    "en": 38,
+    "de": 35,
+    "fr": 36,
+    "it": 43,
+    "es": 43
+  },
+  "image_overrides": [
+    {
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "section": "8-13",
+      "old": "/img/manual/asset-a7a911718f1c.png",
+      "new": "/img/gui/icons/maintenance-button.png",
+      "reason": "Only this occurrence of the old System settings image accompanies Maintenance / Factory reset. Other uses of this source asset remain System settings."
+    },
+    {
+      "locale": "en",
+      "file": "docs/15-maintenance.md",
+      "section": "15-1-1",
+      "old": "/img/manual/cell-2633a4bc793a.png",
+      "new": "/img/gui/en/home-settings-button.png",
+      "capture": "output/gui-capture/native/en/home.png",
+      "target_control": "HomeBottomBar.settingsButton",
+      "reason": "This procedure now uses Home → Settings → Support & Service. The old Maintenance pictogram in step 2 must show the current Home Settings control; crop its genuine production pixels."
+    },
+    {
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "section": "8-13",
+      "old": "/img/manual/asset-a7a911718f1c.png",
+      "new": "/img/gui/icons/maintenance-button.png",
+      "reason": "Only this occurrence of the old System settings image accompanies Maintenance / Factory reset. Other uses of this source asset remain System settings."
+    },
+    {
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/15-maintenance.md",
+      "section": "15-1-1",
+      "old": "/img/manual/cell-2633a4bc793a.png",
+      "new": "/img/gui/de/home-settings-button.png",
+      "capture": "output/gui-capture/native/de/home.png",
+      "target_control": "HomeBottomBar.settingsButton",
+      "reason": "This procedure now uses Home → Settings → Support & Service. The old Maintenance pictogram in step 2 must show the current Home Settings control; crop its genuine production pixels."
+    },
+    {
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "section": "8-13",
+      "old": "/img/manual/asset-a7a911718f1c.png",
+      "new": "/img/gui/icons/maintenance-button.png",
+      "reason": "Only this occurrence of the old System settings image accompanies Maintenance / Factory reset. Other uses of this source asset remain System settings."
+    },
+    {
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/15-maintenance.md",
+      "section": "15-1-1",
+      "old": "/img/manual/cell-2633a4bc793a.png",
+      "new": "/img/gui/fr/home-settings-button.png",
+      "capture": "output/gui-capture/native/fr/home.png",
+      "target_control": "HomeBottomBar.settingsButton",
+      "reason": "This procedure now uses Home → Settings → Support & Service. The old Maintenance pictogram in step 2 must show the current Home Settings control; crop its genuine production pixels."
+    },
+    {
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "section": "8-13",
+      "old": "/img/manual/asset-a7a911718f1c.png",
+      "new": "/img/gui/icons/maintenance-button.png",
+      "reason": "Only this occurrence of the old System settings image accompanies Maintenance / Factory reset. Other uses of this source asset remain System settings."
+    },
+    {
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/15-maintenance.md",
+      "section": "15-1-1",
+      "old": "/img/manual/cell-2633a4bc793a.png",
+      "new": "/img/gui/it/home-settings-button.png",
+      "capture": "output/gui-capture/native/it/home.png",
+      "target_control": "HomeBottomBar.settingsButton",
+      "reason": "This procedure now uses Home → Settings → Support & Service. The old Maintenance pictogram in step 2 must show the current Home Settings control; crop its genuine production pixels."
+    },
+    {
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "section": "8-13",
+      "old": "/img/manual/asset-a7a911718f1c.png",
+      "new": "/img/gui/icons/maintenance-button.png",
+      "reason": "Only this occurrence of the old System settings image accompanies Maintenance / Factory reset. Other uses of this source asset remain System settings."
+    },
+    {
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/15-maintenance.md",
+      "section": "15-1-1",
+      "old": "/img/manual/cell-2633a4bc793a.png",
+      "new": "/img/gui/es/home-settings-button.png",
+      "capture": "output/gui-capture/native/es/home.png",
+      "target_control": "HomeBottomBar.settingsButton",
+      "reason": "This procedure now uses Home → Settings → Support & Service. The old Maintenance pictogram in step 2 must show the current Home Settings control; crop its genuine production pixels."
+    }
+  ],
+  "unchanged_verified": [
+    {
+      "locale": "en",
+      "file": "docs/13-web-user-interface.md",
+      "section": "13-7",
+      "text": "| The animation can be downloaded as GIF file when pressing the Download GIF button. |",
+      "reason": "Use the current localized Download GIF button label."
+    },
+    {
+      "locale": "en",
+      "file": "docs/08-general-operations-and-configurations.md",
+      "section": "8-13",
+      "text": "<td>Press the Maintenance button, then the Factory reset button.</td>",
+      "reason": "Factory reset is under Maintenance in the current production GUI; the adjacent source icon was incorrect."
+    },
+    {
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "section": "8-8-1",
+      "text": "Abbildung 8-4 Die Startseite der Benutzeroberfläche des BactoSense.",
+      "reason": "The new image shows the Home dashboard, rather than the former menu grid."
+    },
+    {
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/12-data-access-and-export.md",
+      "section": "12-2",
+      "text": "| Drücken Sie die Taste Systemdienste. |",
+      "reason": "Match the current Services menu label (the screen itself still says Manage services)."
+    },
+    {
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/12-data-access-and-export.md",
+      "section": "12-3",
+      "text": "| Drücken Sie die Taste Systemdienste. |",
+      "reason": "Match the current Services menu label (the screen itself still says Manage services)."
+    },
+    {
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "section": "13-7",
+      "text": "| Die Animation kann als GIF-Datei heruntergeladen werden, wenn Sie die Taste GIF herunterladen drücken. |",
+      "reason": "Use the current localized Download GIF button label."
+    },
+    {
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "section": "8-13",
+      "text": "<td>Drücken Sie auf Wartung und dann Werkseinstellungen.</td>",
+      "reason": "Factory reset is under Maintenance in the current production GUI; the adjacent source icon was incorrect."
+    },
+    {
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/15-maintenance.md",
+      "section": "15-1-1",
+      "text": "| 1. | Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense. | <img src=\"/img/manual/cell-d07318a281b1.png\" alt=\"Abbildung zur Tabelle auf Handbuchseite 126\" width=\"252\" className=\"manual-figure\" loading=\"lazy\"/> |",
+      "reason": "Current route is Home → Settings → Support & Service. The Support & Service entry is directly in SettingsMenuHomeScreen, not under Maintenance; keep the existing three steps and the safety/service schedule text."
+    },
+    {
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/12-data-access-and-export.md",
+      "section": "12-2",
+      "text": "| Appuyez sur le bouton Services système. |",
+      "reason": "Match the current Services menu label (the screen itself still says Manage services)."
+    },
+    {
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/12-data-access-and-export.md",
+      "section": "12-3",
+      "text": "| Appuyez sur le bouton Services système. |",
+      "reason": "Match the current Services menu label (the screen itself still says Manage services)."
+    },
+    {
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md",
+      "section": "13-7",
+      "text": "| L’animation peut être téléchargée au format GIF en cliquant sur le bouton Télécharger GIF. |",
+      "reason": "Use the current localized Download GIF button label."
+    },
+    {
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md",
+      "section": "8-13",
+      "text": "<td>Appuyez sur le bouton Maintenance, puis sur le bouton Réinitialisation d’usine.</td>",
+      "reason": "Factory reset is under Maintenance in the current production GUI; the adjacent source icon was incorrect."
+    }
+  ],
+  "skipped": [],
+  "source_sha256": {
+    "docs/08-general-operations-and-configurations.md": "df1c806e8c5c26374ba2f01176b550545e124ea56bdc6874eb954809c5d81cdd",
+    "docs/10-measurements.md": "611368f3ab8c904ddc3da8189cf8db331b21b7ae0ac25246e1ba1b344bfdd58f",
+    "docs/11-results-and-data-analysis.md": "dd785ff9b136deacaaefdcec5c6cd6d563d3830df1b15f5e9ea891788f0520b3",
+    "docs/12-data-access-and-export.md": "fd06710493500da66cffe122e70de285b5119bf6be447fe5333070f161c8e1b3",
+    "docs/13-web-user-interface.md": "323971f9a3a090b8da97ef3ebcbd71f17a9bde216a9f66c04aa1f365ff01b195",
+    "docs/15-maintenance.md": "494261a8b64c71503d37e73820e6ae3798e158d6ea74f2dfa5181ec03eaffe17",
+    "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md": "9f8799b62134b33e46a321188ce5f816e1d8e856e2545b2b3692a79d77f1793a",
+    "i18n/de/docusaurus-plugin-content-docs/current/10-measurements.md": "c3b1dc1c7271b09d3312181279f1af92102ef18d9f998c743531eca31cd4cffd",
+    "i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md": "d84d97df41db4a696ace1718e86a72fddfc7e0cbdf7697fc68dbb05f82486877",
+    "i18n/de/docusaurus-plugin-content-docs/current/12-data-access-and-export.md": "375f2073396fa105e0c0f3adb8675a17e98f495507690473ddb3db3f66d7dd10",
+    "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md": "a740f2f1e7bbbe9136517f00568e9510983a99e95fbb81f464a775e8b29b707c",
+    "i18n/de/docusaurus-plugin-content-docs/current/15-maintenance.md": "017c71b544b87332714bcf8c75b707cb484f7ddbf01615af039de55567169a66",
+    "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md": "d45e918b1504c36a3980f53836ab12083a058785e7bc0921deea7fde31c451f7",
+    "i18n/fr/docusaurus-plugin-content-docs/current/10-measurements.md": "2279c7df29b8c181ba0003fcdc297f479e4d85dac5a2ea900b7c5ded8a2e68da",
+    "i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md": "5d6e549a45ee90ae1f7fce26134d0a800711778d0f049502980d91a1bc356bab",
+    "i18n/fr/docusaurus-plugin-content-docs/current/12-data-access-and-export.md": "85a884ecaf05abc08fc43f5af042c3243f59e5a142a69161f6d99a50418a1a0a",
+    "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md": "02e765c27c82b27f83336a98534e7e59551e9c9ba2417cab7f9874b026533863",
+    "i18n/fr/docusaurus-plugin-content-docs/current/15-maintenance.md": "58b7dca3d0debed6a1d8ee09d2e8eb0c5ecba36714525b713673fa28a1c2116e",
+    "i18n/it/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md": "51b5a9c41771f5104b5912c87b841f8ddad09da8ba9c254df2209f9a63c85a3a",
+    "i18n/it/docusaurus-plugin-content-docs/current/10-measurements.md": "6377d050d49d280784b56d4d0237f90720328f93dd5bd17d4465ede9e2a6cfc2",
+    "i18n/it/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md": "a52524c17ebe63f015a0239fbca7222820ec1b0e5d4ab83bd755017453c95053",
+    "i18n/it/docusaurus-plugin-content-docs/current/12-data-access-and-export.md": "47c33d0c7ff3d421e9d55806b63b5be55eb5844325aa0cb5eb7558ed8a561206",
+    "i18n/it/docusaurus-plugin-content-docs/current/13-web-user-interface.md": "9d1d8f0ec313cf13d7763b7944b91f80e49a81e48f86e0ca32a058d8742c3fa8",
+    "i18n/it/docusaurus-plugin-content-docs/current/15-maintenance.md": "df94f59e25704607ccc2ad9aa477eca5e475b8d8f84b9710b55e2da46148aa60",
+    "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md": "32310947e1b8befe8970dd4e75f67ecc889106ab65f95b264be028f15857c0db",
+    "i18n/es/docusaurus-plugin-content-docs/current/10-measurements.md": "b21d0aab11235c5270df990a8d4a6e8dfaa0e62d16588ee146c209b1869f287b",
+    "i18n/es/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md": "e65150f3b7494a46e1cbf71ef7de75e5d22e2927db769a3e1a4900dc2d4272ac",
+    "i18n/es/docusaurus-plugin-content-docs/current/12-data-access-and-export.md": "03682b7aa26843752eb56951f5d2ba4ac500c896baa0b5b8ac635e6cb2a71cb8",
+    "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md": "c1c3eb0209acccbed98b3916d2602c6e950b7dd02d5d56e275ddc978ce0b0077",
+    "i18n/es/docusaurus-plugin-content-docs/current/15-maintenance.md": "50f8639b9801464927d0c7917de682b6d35bbc7bd8beaf7d778fae03fc1579b5"
+  },
+  "production_label_sources": [
+    "../gui/gui_en-US.ts",
+    "../gui/gui_de-DE.ts",
+    "../gui/gui_fr-FR.ts",
+    "../gui/gui_it-IT.ts",
+    "../gui/gui_es-ES.ts",
+    "../gui/controllers/globalScreens/HomeScreen.qml",
+    "../gui/controllers/settingsScreens/ModeSelectionScreen.qml",
+    "../gui/controllers/settingsScreens/SettingsMenuMaintenanceScreen.qml",
+    "../gui/controllers/settingsScreens/SettingsMenuSystemSettingsScreen.qml",
+    "../bactoweb/app/assets/locales/locale-{locale}.json"
+  ],
+  "supplemental_source_sha256": {
+    "docs/08-general-operations-and-configurations.md": "df1c806e8c5c26374ba2f01176b550545e124ea56bdc6874eb954809c5d81cdd",
+    "docs/10-measurements.md": "611368f3ab8c904ddc3da8189cf8db331b21b7ae0ac25246e1ba1b344bfdd58f",
+    "docs/11-results-and-data-analysis.md": "dd785ff9b136deacaaefdcec5c6cd6d563d3830df1b15f5e9ea891788f0520b3",
+    "docs/15-maintenance.md": "494261a8b64c71503d37e73820e6ae3798e158d6ea74f2dfa5181ec03eaffe17",
+    "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md": "c414a02371e694fa10b2405358b659ed6afd1f3c9691b131190e88a472d610c9",
+    "i18n/de/docusaurus-plugin-content-docs/current/10-measurements.md": "c3b1dc1c7271b09d3312181279f1af92102ef18d9f998c743531eca31cd4cffd",
+    "i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md": "d84d97df41db4a696ace1718e86a72fddfc7e0cbdf7697fc68dbb05f82486877",
+    "i18n/de/docusaurus-plugin-content-docs/current/15-maintenance.md": "017c71b544b87332714bcf8c75b707cb484f7ddbf01615af039de55567169a66",
+    "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md": "d45e918b1504c36a3980f53836ab12083a058785e7bc0921deea7fde31c451f7",
+    "i18n/fr/docusaurus-plugin-content-docs/current/10-measurements.md": "2279c7df29b8c181ba0003fcdc297f479e4d85dac5a2ea900b7c5ded8a2e68da",
+    "i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md": "76f1551160c33be6854facb7a0db7b9585b4a548523c51aaee3330ca5ce782fc",
+    "i18n/fr/docusaurus-plugin-content-docs/current/15-maintenance.md": "9d0fcd7c545c864c17d8836f56de9a9fc2839ab78f2711070de7741c74143513",
+    "i18n/it/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md": "51b5a9c41771f5104b5912c87b841f8ddad09da8ba9c254df2209f9a63c85a3a",
+    "i18n/it/docusaurus-plugin-content-docs/current/10-measurements.md": "6377d050d49d280784b56d4d0237f90720328f93dd5bd17d4465ede9e2a6cfc2",
+    "i18n/it/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md": "a52524c17ebe63f015a0239fbca7222820ec1b0e5d4ab83bd755017453c95053",
+    "i18n/it/docusaurus-plugin-content-docs/current/15-maintenance.md": "6ce88382c8f1dcd5c61b1ee8a9ad43f120ef8f976350f9c8aee2f8acffb5bb1c",
+    "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md": "32310947e1b8befe8970dd4e75f67ecc889106ab65f95b264be028f15857c0db",
+    "i18n/es/docusaurus-plugin-content-docs/current/10-measurements.md": "b21d0aab11235c5270df990a8d4a6e8dfaa0e62d16588ee146c209b1869f287b",
+    "i18n/es/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md": "e65150f3b7494a46e1cbf71ef7de75e5d22e2927db769a3e1a4900dc2d4272ac",
+    "i18n/es/docusaurus-plugin-content-docs/current/15-maintenance.md": "50f8639b9801464927d0c7917de682b6d35bbc7bd8beaf7d778fae03fc1579b5"
+  },
+  "supplemental_prepared_utc": "2026-10-11T19:33:34+00:00",
+  "mode_selection_review": {
+    "capture": "output/gui-capture/native/en/mode-chooser.png",
+    "source": "../gui/controllers/settingsScreens/ModeSelectionScreen.qml",
+    "finding": "Idle mode cards immediately call saveMode; there is no Confirm button. Back returns to the prior Home screen, where Measure opens the Manual wizard.",
+    "active_operation_note": "The current GUI separately prompts to stop an active scheduler or wait/stop a running operation. Those existing active-operation confirmations are not changed by the idle navigation wording."
+  },
+  "supplemental_review_utc": "2026-10-11T19:34:13+00:00"
+}

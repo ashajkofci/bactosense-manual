@@ -1,0 +1,48 @@
+image: docker:29.6.2-dind
+
+definitions:
+  services:
+    docker:
+      memory: 3000
+  steps:
+    - step: &build-manual
+        name: Check and Build Manual Docker Image
+        runs-on:
+          - self.hosted
+        services:
+          - docker
+        script:
+          - sh scripts/ci-image.sh build
+    - step: &publish-manual
+        name: Build and Publish Manual Docker Image
+        runs-on:
+          - self.hosted
+        services:
+          - docker
+        script:
+          - sh scripts/ci-image.sh publish
+
+pipelines:
+  default:
+    - step: *build-manual
+  branches:
+    main:
+      - step:
+          <<: *publish-manual
+          name: Publish Latest Manual
+          script:
+            - VERSION=latest sh scripts/ci-image.sh publish
+  tags:
+    'v*':
+      - step:
+          <<: *publish-manual
+          name: Publish Versioned Manual
+          script:
+            - export VERSION="${BITBUCKET_TAG#v}"
+            - sh scripts/ci-image.sh publish
+  custom:
+    publish-user-manual:
+      - variables:
+          - name: VERSION
+            default: latest
+      - step: *publish-manual

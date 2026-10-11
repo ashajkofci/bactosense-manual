@@ -1,0 +1,135 @@
+@page { size: A4; }
+
+html { font-size: 10pt; }
+body {
+  margin: 0;
+  background: white;
+  color: #263746;
+  font-family: 'Inter Variable', sans-serif;
+  line-height: 1.5;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.pdf-cover {
+  min-height: 235mm;
+  padding-top: 24mm;
+  break-after: page;
+}
+.pdf-cover img { width: 65mm; height: auto; }
+.pdf-cover h1 {
+  margin: 27mm 0 8mm;
+  font-family: 'Outfit Variable', sans-serif;
+  font-size: 38pt;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #245e83;
+}
+.pdf-cover .pdf-language { font-size: 18pt; color: #366d93; }
+.pdf-cover .pdf-date { margin-top: 28mm; color: #526474; }
+.pdf-cover a { color: #366d93; }
+
+.pdf-contents { break-after: page; }
+.pdf-contents h1 {
+  margin: 0 0 8mm;
+  font-family: 'Outfit Variable', sans-serif;
+  font-size: 25pt;
+  color: #245e83;
+}
+.pdf-contents ol { columns: 2; column-gap: 12mm; padding: 0; list-style: none; }
+.pdf-contents li { display: flex; gap: 2mm; padding-bottom: 3mm; break-inside: avoid; }
+.pdf-contents .pdf-toc-number { flex: 0 0 6mm; text-align: right; }
+.pdf-contents a { text-decoration: none; color: #366d93; }
+
+.pdf-chapter { break-before: page; }
+.pdf-chapter .theme-doc-markdown { max-width: none; }
+.pdf-chapter h1, .pdf-chapter h2, .pdf-chapter h3, .pdf-chapter h4 {
+  font-family: 'Outfit Variable', sans-serif;
+  color: #245e83;
+  break-after: avoid;
+  break-inside: avoid;
+  scroll-margin: 0;
+}
+.pdf-chapter h1 { margin: 0 0 6mm; font-size: 25pt; }
+.pdf-chapter h2 { margin: 6mm 0 3mm; font-size: 17pt; }
+.pdf-chapter h3 { margin: 4mm 0 2mm; font-size: 13pt; }
+.pdf-chapter p, .pdf-chapter li { orphans: 3; widows: 3; }
+.pdf-chapter p { margin-bottom: 3mm; }
+.pdf-chapter a { color: #366d93; text-decoration: underline; overflow-wrap: anywhere; }
+.pdf-chapter ul, .pdf-chapter ol { padding-left: 6mm; }
+.pdf-chapter li + li { margin-top: 1mm; }
+.pdf-chapter table {
+  display: table;
+  width: 100%;
+  margin: 4mm 0;
+  border-collapse: collapse;
+  font-size: 9pt;
+  overflow: visible;
+}
+.pdf-chapter thead { display: table-header-group; }
+.pdf-chapter tr { break-inside: avoid; }
+.pdf-chapter th, .pdf-chapter td {
+  padding: 2mm;
+  border: 0.25mm solid #d5dfe7;
+  vertical-align: top;
+  text-align: left;
+  overflow-wrap: break-word;
+}
+.pdf-chapter th { background: #edf4f8; color: #245e83; }
+.pdf-chapter .manual-image { display: block; break-inside: avoid; margin: 4mm 0; }
+.pdf-chapter .pdf-figure { margin: 4mm 0; break-inside: avoid; }
+.pdf-chapter .pdf-figure .manual-image { margin: 0; }
+.pdf-chapter .manual-screenshot { display: block; line-height: 0; }
+.pdf-chapter img {
+  display: block;
+  max-width: 100%;
+  max-height: 160mm;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border: 0.25mm solid #d5dfe7;
+  border-radius: 2mm;
+}
+.pdf-chapter .manual-caption {
+  display: block;
+  margin-top: 2mm;
+  font-size: 8pt;
+  line-height: 1.4;
+  color: #526474;
+}
+.pdf-chapter pre { white-space: pre-wrap; overflow-wrap: anywhere; break-inside: avoid; }
+.pdf-chapter code { white-space: pre-wrap; overflow-wrap: anywhere; }
+.pdf-chapter .theme-admonition { break-inside: avoid; }
+.pdf-chapter .hash-link, .pdf-chapter button { display: none; }
+.pdf-chapter .manual-decision-tree { margin: 4mm 0; break-inside: avoid; }
+.pdf-chapter .manual-decision-root {
+  padding: 2mm 3mm;
+  border: 0.3mm solid #528eb9;
+  border-radius: 2mm;
+  background: #edf4f8;
+  color: #245e83;
+  break-after: avoid;
+}
+.pdf-chapter .manual-decision-tree ul {
+  margin: 0 0 0 3mm;
+  padding: 1mm 0 0 4mm;
+  border-left: 0.4mm solid #528eb9;
+  list-style: none;
+  break-inside: auto;
+}
+.pdf-chapter .manual-decision-tree li { margin: 0; padding: 2mm 0 1mm; break-inside: auto; }
+.pdf-chapter .manual-decision-tree li::before { top: 4.2mm; left: -4mm; width: 3mm; border-top: 0.4mm solid #528eb9; }
+.pdf-chapter .manual-decision-tree li > ul { margin: 1mm 0 0 1mm; }
+
+/* Printed pages must expand the website's scrolling tables. */
+.pdf-chapter .theme-doc-markdown table { display: table; width: 100%; max-width: 100%; table-layout: fixed; overflow: visible; font-size: 8.5pt; }
+.pdf-chapter .theme-doc-markdown th,
+.pdf-chapter .theme-doc-markdown td { min-width: 0; overflow-wrap: anywhere; padding: 1.8mm; }
+.pdf-chapter .theme-doc-markdown td img { max-width: 100%; max-height: 90mm; }
+.pdf-chapter .theme-doc-markdown img.manual-icon { display: inline-block; width: auto; max-width: 8mm; max-height: 8mm; border: 0; border-radius: 0; vertical-align: middle; }
+.pdf-chapter .theme-doc-markdown .manual-screenshot { display: inline-block; max-width: 100%; cursor: auto; }
+.pdf-chapter .theme-admonition { font-size: 9pt; }
+.pdf-chapter .theme-admonition p:last-child { margin-bottom: 0; }
+
+.pdf-chapter td .theme-admonition { padding: 1.5mm; font-size: 8.5pt; }
+.pdf-chapter td .theme-admonition [class*="admonitionHeading"] { font-size: 8pt; }

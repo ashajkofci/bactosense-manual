@@ -1,0 +1,27 @@
+node_modules/
+build/
+# public/ is intentionally versioned for deployment by git pull on Apache.
+.public-build-*/
+.docusaurus/
+.cache/
+.venv/
+__pycache__/
+*.py[cod]
+tmp/
+temp/
+*.tmp
+*.temp
+output/
+.playwright-cli/
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+
+# Generated download; regenerated from current content at build time.
+static/pdf/
+
+# Local source PDFs and extraction reports used for regeneration and audits.
+/UM_0006-*.pdf
+/extraction/

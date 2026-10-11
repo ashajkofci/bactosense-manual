@@ -1,0 +1,1 @@
+(self.webpackChunkbactosense_manual=self.webpackChunkbactosense_manual||[]).push([[741],{5741(){}}]);

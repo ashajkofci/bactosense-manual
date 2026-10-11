@@ -1,0 +1,188 @@
+---
+title: "16. Warnings, Errors and Troubleshooting"
+sidebar_label: "16. Warnings, Errors and Troubleshooting"
+sidebar_position: 16
+slug: /warnings-errors-and-troubleshooting
+---
+
+If the instrument encounters a problem, it enters a different state, depending on the severity of the issue. There are warnings, noncritical errors and critical errors, each having different implications and requiring different actions.
+
+## 16.1 Warnings {#section-16-1}
+
+Warnings appear when unusual behaviour is detected during an otherwise successful measurement. They can indicate reduced accuracy of the measurement results or indicate impending errors. Unlike errors, warnings do not prevent the instrument from functioning, but users should pay attention to them as they can indicate sources of inaccuracies.
+
+| WARNING | IMAGE |
+| --- | --- |
+| When unusual behavior is detected, a warning is shown next to the measurement results. More information on the warning can be found by clicking on the corresponding warning entry next to the measurement results or directly in the warning log. | <img src="/img/manual/cell-16a091792775.png" alt="Illustration for table on manual page 139" width="252" className="manual-figure" loading="lazy"/> |
+
+The following warning messages can be displayed:
+
+**Table 16-1 Warnings**
+
+| ERROR CODE | NAME | DESCRIPTION | CAUSES / WHAT TO DO |
+| --- | --- | --- | --- |
+| W01 | Cartridge expired | Cartridge reagents have expired. Measurement accuracy could be affected. | • Please replace the cartridge as soon as possible. |
+| W02-04 | High baseline signal in FL1 / FL2 / SSC | Baseline signals are too high. This is usually due to bubbles or particles in suspension in the sample. Measurement accuracy could be affected. | • Check the inlet tubing for any signs of deposits.<br/>• Check the water connections, be sure that they are all tight (no air entry).<br/>• If the warning persists, please perform cleaning of instrument with the cleaning kit. |
+| W05 | Incubator temperature off target | Temperature during incubation was more than 2 °C off target. Cell counts may be affected. The incubator may be defective. | • If the problem persists, please contact customer service. |
+
+| ERROR CODE | NAME | DESCRIPTION | CAUSES / WHAT TO DO |
+| --- | --- | --- | --- |
+| W06 | No events detected | No events detected during the measurement. | • If the problem persists, please contact customer service. |
+| W07 | TCC out of range | TCC is above the specification limit of BactoSense of 2’000’000 cells/ml. | • Please dilute the sample to ensure accuracy of the measurement. |
+| W08 | Air bubbles detected | The sample appears to contain air bubbles. | • Check sampling device is installed properly.<br/>• Check the sample for bubbles.<br/>• If using online sampling device, check water is supplied at correct pressure. |
+| W10 | Enclosure too cold | Enclosure is too cold, rapid heating has been activated before continuing protocol. | • Instrument cannot safely operate if internal temperature is too cold.<br/>• Rapid heating attempts to heat the enclosure to ensure safe operations.<br/>• Measurements will start once internal temperature is sufficient. |
+| W11 | Service required | Service of the instrument is required. Measurement precision can no longer be guaranteed. Continued operation can lead to leaks, which can damage the instrument. | • Next service date is overdue.<br/>• Valve and plunger have reached end of life.<br/>• Please contact your service representative. |
+| W13 | Laser end of life | Laser has reached end of life. | • Please contact your service representative. |
+| W14 | Non-critical power cut | The instrument was powered off unexpectedly. | • Ensure the cleanliness of the instrument.<br/>• If the issue occurs frequently, install an uninterruptible power supply |
+
+## 16.2 Non-critical errors {#section-16-2}
+
+Non-critical errors prevent a measurement from terminating successfully, but do not prevent the instrument from running another measurement afterwards. These errors do not require human intervention. Some non-critical errors are promoted to critical errors if they repeat three times.
+
+| NON-CRITICAL ERRORS |  |
+| --- | --- |
+| The protocol stops. The cause of the error is usually fixed by repeating the analysis or waiting.<br/>• Another measurement can immediately be started. If it completes successfully, the error state is cleared.<br/>• More information on the error can be found in the error log, by clicking on the corresponding error entry. | <img src="/img/manual/cell-7a9639648396.png" alt="Illustration for table on manual page 141" width="255" className="manual-figure" loading="lazy"/> |
+
+The following non-critical error messages can be displayed:
+
+**Table 16-2 List of non-critical errors.**
+
+| ERROR CODE | NAME | DESCRIPTION | CAUSES / WHAT TO DO |
+| --- | --- | --- | --- |
+| E01 | Cartridge door open | Cartridge door is open and prevents measurements from running. | • Close door and retry the measurement. |
+| E08 | Enclosure too damp | Enclosure humidity is too high for safe operation. | • Replace desiccant bag, by unscrewing the large cap on the left-hand-side of the instrument (see section 15.2.6).<br/>• If the problem persists, please contact customer service. |
+| E09 | System overheated | Inside temperature is too high for safe operation. | • Reduce ambient temperature or increase measurement interval to allow instrument to cool down. |
+| E14 | Laser too hot | Laser temperature is too high for safe operation. | • Reduce ambient temperature or increase measurement interval to allow instrument to cool down. |
+
+| ERROR CODE | NAME | DESCRIPTION | CAUSES / WHAT TO DO |
+| --- | --- | --- | --- |
+| E15 | Mixer inflation error | Underpressure detected during mix or dispense. | • Missing sample.<br/>• Air in the input.<br/>• Leak in the system.<br/>• Please execute the Clean Optics protocol (see section 10.9.1). |
+| E18 | Pump underpressure error | Underpressure detected during dispense. | • Missing sample.<br/>• Air in the input.<br/>• Leak in the system.<br/>• Please execute the Clean Optics protocol (see section 10.9.1). |
+| E19 | System overheated | The inner temperature is too high for operation. | • Reduce ambient temperature, or increase measurement interval to allow instrument to cool down. |
+| E33 | Processing memory overflow | Signal processing circuits memory has overflown. | • Please execute the Clean Optics protocol (see section 10.9.1).<br/>• Retry the measurement. |
+| E42 | Enclosure too cold despite heating | Enclosure temperature remains too cold after heating procedure. | • Ambient temperature is less than 5 °C (41 °F).<br/>• Increase ambient temperature. |
+| E44 | Pump module startup error | The pump module failed to power on correctly. | • Simply retry the measurement. |
+| E45 | Low valid volume ratio error | The valid volume ratio is too low. This can be caused by a too elevated bacterial content in the water or turbidity/debris. | • The accuracy of the measurement is probably very low. Repeat the measurement while diluting the sample with clear water. |
+| E46 | Cartridge is still busy | The cartridge was still initializing when the measurement started. | • Non-critical error. Repeat the measurement. If the problem persists, contact a service technician. |
+
+| ERROR CODE | NAME | DESCRIPTION | CAUSES / WHAT TO DO |
+| --- | --- | --- | --- |
+| E48 | Microfluidic subsystem busy | The microfluidic controller is performing another task while the measurement was taken. | • Non-critical error. Repeat the measurement. If the problem persists, contact a service technician. |
+| E49 | GPIO Timeout error | The processing board is waiting for another module to respond. | • Non-critical error. Repeat the measurement. If the problem persists, contact a service technician. |
+| E50 | Pump motion blocked | The motion of the pump is blocked. | • Non-critical error. Repeat the measurement. If the problem persists, contact a service technician. |
+| E51 | Unable to get temperature reading | Unable to get temperature reading. The control loop is thus disabled. | • Non-critical error. Repeat the measurement. If the problem persists, contact a service technician. |
+| E52 | Cartridge valve motion blocked | The motion of the cartridge valve is blocked. | • Non-critical error. Repeat the measurement. If the problem persists, contact customer service. |
+| E55 | M7 not connected | The acquisition processor cannot be initialized. | • Reboot the instrument.<br/>• If the problem persists, contact customer service. |
+| E56 | Empty acquisition | No events detected during acquisition | • Clean the sampling device using the Washstation, then perform a measurement of clean water.<br/>• If the problem persists, contact customer service. |
+
+| ERROR CODE | NAME | DESCRIPTION | CAUSES / WHAT TO DO |
+| --- | --- | --- | --- |
+| E57 | Cartridge busy (special command busy) | Communication with the cartridge failed. | • Non-critical error. Repeat the measurement.<br/>• If the problem persists, contact customer service. |
+| E58 | Cartridge busy (timeout) | Communication with the cartridge failed. | • Check the electronic connector between the cartridge and the instrument.<br/>• Repeat the measurement.<br/>• If the problem persists, contact customer service. |
+| E59 | Valve sensor error | Unable to read valve position. | • Please contact customer service. |
+
+## 16.3 Critical errors {#section-16-3}
+
+Critical errors interrupt the workflows of the instrument and require human intervention. The error source needs to be eliminated and the instrument set to running conditions again. Critical errors need to be cleared.
+
+| CRITICAL ERRORS | IMAGE |
+| --- | --- |
+| If a critical error occurs during operation, it has the following effects:<br/>• The protocol immediately stops.<br/>• The instrument goes into a critical error state, and manual intervention is needed before any new protocol can be launched.<br/>• The cause of the error must be solved by an operator. The errors can then be manually cleared from the Error log, as described in sections 16.4 and 16.5. | <img src="/img/manual/cell-2ba5234a6f92.png" alt="Illustration for table on manual page 145" width="253" className="manual-figure" loading="lazy"/> |
+
+The following critical error messages can be displayed:
+
+**Table 16-3  List of critical errors.**
+
+| ERROR CODE | NAME | DESCRIPTION | CAUSES / WHAT TO DO |
+| --- | --- | --- | --- |
+| E00 | General error | Unhandled error. | • Please contact customer service |
+| E02 | Cartridge empty | Cartridge is empty. | • Replace cartridge (see section 8.9.4) |
+| E04 | Cartridge missing | Cartridge is missing. | • Insert a cartridge (see section 8.9.6) |
+| E05 | Full waste bag | Cartridge waste bag is full. | • Replace cartridge (see section 8.9.4) |
+| E06 | Cartridge communication impossible | Cartridge is disconnected, door is open, or cartridge electronics are damaged. | • Make sure the cartridge’s electronic cable is connected properly, and that the door is properly closed.<br/>• If that doesn’t help, replace the cartridge and inform customer service. |
+
+| ERROR CODE | NAME | DESCRIPTION | CAUSES / WHAT TO DO |
+| --- | --- | --- | --- |
+| E07 | Storage disk full | Insufficient storage space to continue operation. | • Delete old measurements and try again (see section 15.2.8)<br/>• This will delete the measurements permanently from the device.<br/>• Export measurements as backup solution. |
+| E12 | FPGA initialization error | Failed to initialize the signal processing chip. | • Reboot the instrument. |
+| E16 | Processing error | An error was discovered while processing the signals. | • The accuracy of the latest result is not guaranteed. Please repeat the analysis. |
+| E17 | Overpressure detected | Overpressure detected during dispense. | • Likely cause: The output filter is probably clogged.<br/>• Optical flow cell blocked.<br/>• Please call customer service. |
+| E20 | Abnormal shutdown | Protocol interrupted for unknown reasons, usually due to a power cut. | • Usually indicates a power cut, or other external interruption to the measurement.<br/>• Perform a Clean Optics and Clean Sampling Device protocol before starting a new measurement (see section 10.9.1). |
+| E23 | Temperature Sensor Communication Error | Communication with temperature sensor on IO board failed. | • Please contact customer service. |
+| E24 | Laser Communication Error | Communication with optical unit failed. | • Please contact customer service. |
+| E25 | Pump Communication Error | Communication with pump module impossible. | • Please contact customer service. |
+
+| ERROR CODE | NAME | DESCRIPTION | CAUSES / WHAT TO DO |
+| --- | --- | --- | --- |
+| E26 | Power Supply Communication Error | Communication with power supply module impossible. | • Please contact customer service. |
+| E27 | Pump Communication timeout | Communication with pump module timed out. | • The cartridge door is open.<br/>• A cable is disconnected.<br/>• A circuit board is damaged, either in the pump or cartridge. |
+| E28 | Empty dye supply | Dye tube connected to cartridge is empty. | • The tube is disconnected.<br/>• Cartridge is defective.<br/>• Repeat the cartridge change procedure, making sure that all tubes are properly connected. |
+| E29 | Empty rinse fluid supply | Rinse fluid tube connected to cartridge is empty. | • The tube is disconnected.<br/>• Cartridge is defective.<br/>• Repeat the cartridge change procedure, making sure that all tubes are properly connected. |
+| E30 | Empty bleach supply | Bleach tube connected to cartridge is empty | • The tube is disconnected.<br/>• Cartridge is defective.<br/>• Repeat the cartridge change procedure, making sure that all tubes are properly connected. |
+| E31 | Cartridge electronics failure | Cartridge level can no longer be determined accurately. | • Replace cartridge and contact customer service. |
+| E32 | Incompatible cartridge | Cartridge type is incompatible with this instrument or software. | • Make sure that you have the correct cartridge type for this instrument. |
+| E33 | Processing memory overflow | Signal processing circuits memory has overflowed. | • Please execute the Clean Optics protocol (see section 10.9.1).<br/>• Retry the measurement. |
+
+| ERROR CODE | NAME | DESCRIPTION | CAUSES / WHAT TO DO |
+| --- | --- | --- | --- |
+| E38 | Cartridge not ready error | The new cartridge has not been initialized correctly | • Execute the “Cartridge Change” procedure (see section 8.9.4). |
+| E39 | Laser current limit reached | The laser has reached its upper current limit; indicating end of life. | • The laser needs to be replaced. Contact a service technician. |
+| E40 | Set of gates not found | Reference to the set of gates selected for the measurement cannot be found in the instrument settings. | • The set of gates has been deleted.<br/>• Change the set of gates and retry the measurement. |
+| E41 | Set of gates incompatible | The set of gates selected for the measurement cannot be used with this cartridge. | • Correct cartridge change procedure was not followed.<br/>• Incorrect digital input configuration.<br/>• Change the set of gates and retry the measurement. |
+| E43 | External temperature too low | Ambient temperature is outside of the instrument specifications. | • Increase ambient temperature.<br/>• Trying to operate or store the instrument below 5 °C (41 °F) can cause damage to the device. |
+| E47 | Unable to find main reference magnet during homing | During initialization, the valve did not home properly. | • Please contact customer service. |
+| E53 | Unable to communicate with motor | The communication to the motor controller of the mixer is defective. | • Please contact customer service. |
+| E54 | Laser temperature sensor error | Unable to get the laser temperature. | • Please contact customer service. |
+
+## 16.4 Error and warning logs {#section-16-4}
+
+The error and warning log views can be accessed separately through the user interface Home menu when pressing the Logs button.
+
+<img src="/img/figures-second/figure-3bdcc49f453689.webp" alt="Figure 16-1 : Error logs" width="558" className="manual-figure" loading="lazy" />
+
+<img src="/img/manual/icon-screenshot.png" alt="Illustration from the BactoSense user manual" width="57" className="manual-icon" loading="lazy" />
+
+*Figure 16-1 : Error logs*
+
+<table className="manual-table"><tbody><tr><td rowSpan="4">①</td><td rowSpan="4">Date and time of the event</td><td rowSpan="4">②</td><td colSpan="2">Type of the event</td></tr><tr><td><img src="/img/manual/cell-67d152256921.png" alt="Illustration for table on manual page 149" width="56" className="manual-icon" loading="lazy" /></td><td>Critical error</td></tr><tr><td><img src="/img/manual/cell-168772cd9e6b.png" alt="Illustration for table on manual page 149" width="56" className="manual-icon" loading="lazy" /></td><td>Non-critical error</td></tr><tr><td><img src="/img/manual/cell-b4d48ec33659.png" alt="Illustration for table on manual page 149" width="56" className="manual-icon" loading="lazy" /></td><td>Errors cleared</td></tr><tr><td>③</td><td>Short description of the error or event</td><td>④</td><td colSpan="2">Button to manually clear errors (only available for Admin and Service users)</td></tr><tr><td>⑤</td><td>Date range of displayed events. Click to change the range.</td><td></td><td colSpan="2"></td></tr></tbody></table>
+
+:::info[View event details]
+
+Selecting any event on the list leads to a page with more information on the cause of the error and recommended resolution steps.
+
+:::
+
+## 16.5 Clearing errors {#section-16-5}
+
+Critical errors must be cleared manually. Make sure to first solve the origin of the problem, then manually clear the error with the steps below. Please note that the procedure below does not automatically solve the root cause of the error.
+
+|  | WORK STEP | ADDITIONAL INFO / IMAGE |
+| --- | --- | --- |
+| 1. | Navigate to the Home menu of the BactoSense user interface. |  |
+| 2. | Press the Logs button, and then the Error log button |  |
+| 3. | Make sure you have resolved the problem leading to the displayed error(s). Then press the Clear Errors button. | <img src="/img/manual/cell-df45180c59d7.png" alt="Illustration for table on manual page 150" width="245" className="manual-figure" loading="lazy"/> |
+| 4. | Cleared errors appear with grey error symbols and an “Errors cleared” event is added to the log. The instrument is ready to analyze again. |  |
+
+## 16.6 Automatic self-check {#section-16-6}
+
+The automatic self-check tool checks that each component of the BactoSense is functioning correctly and identifies those that are not. It can be used to identify problems with the instrument.
+
+<table className="manual-table"><tbody><tr><th scope="col"></th><th scope="col">WORK STEP</th><th scope="col">ADDITIONAL INFO / IMAGE</th></tr><tr><td>1.</td><td>Navigate to the Home menu of the BactoSense user interface.</td><td></td></tr><tr><td>2.</td><td>Press the Maintenance button.</td><td></td></tr><tr><td>3.</td><td>Press the Self-check button.</td><td></td></tr><tr><td>4.</td><td><Admonition type="info" title="Additional information">Press the Run or Rerun button to start the self- check. Once execution has terminated, the instrument shows a list of all tests, with a green PASS or red FAIL indicator. Some tests may be skipped: if the system cannot communicate with the cartridge, all the tests that require cartridge communication are skipped.</Admonition></td><td><img src="/img/manual/cell-725c4037614b.png" alt="Illustration for table on manual page 150" width="245" className="manual-figure" loading="lazy" /></td></tr></tbody></table>
+
+## 16.7 Operation at low temperature {#section-16-7}
+
+The instrument must be operated within a specific temperature range to prevent damage and ensure reliable and reproducible measurement results (see section 3.2). At very low and very high ambient temperatures (below 5 °C (41 °F) or above 30 °C (86 °F)), protocols are not executed. At low ambient temperatures, the instrument automatically warms up prior to a measurement to reach the required temperature. During this heating process, the instrument status shows “Heating...”. If the target temperature cannot be reached after several hours, the protocol exits with an error (table 16-2, E42).
+
+:::info[Allow time for heating]
+
+Measurements can be delayed if extensive heating is necessary. To avoid this, keep the instrument temperature above 10 °C (50 °F).
+
+:::
+
+## 16.8 Troubleshooting {#section-16-8}
+
+The following table provides an overview of issues and resolutions. If the issue cannot be resolved, please contact your local service representative or bNovate customer service. Contact information for bNovate customer service can be found in section 19.1.
+
+**Table 16-4 Troubleshooting instructions**
+
+<table className="manual-table"><tbody><tr><td>OBSERVATION</td><td>INSTRUCTION</td></tr><tr><td>Nothing on display</td><td>• Check whether the BactoSense is connected to power and switched on.</td></tr><tr><td>Unresponsive or flickering user interface</td><td>• Potential electromagnetic interference from nearby machine (e.g. pump). Relocate BactoSense.</td></tr><tr><td>Error message on the display</td><td>• Respond to the error message as described in this chapter.</td></tr><tr><td>The measurements appear to be wrong</td><td>• Ensure that the sample and operating conditions described in section 3.2 are met.<br />• Check whether the instrument is correctly installed according to chapter 5.<br />• Ensure that the servicing duties have been performed according to the servicing schedules described in sections 15.1 and 15.2.<br />• Perform an instrument cleaning using the Cleaning Kit.<br />• Perform an instrument validation using the Validation Kit.</td></tr></tbody></table>

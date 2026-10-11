@@ -1,0 +1,13 @@
+Options -Indexes -MultiViews
+DirectoryIndex index.html
+ErrorDocument 404 __MANUAL_BASE_PATH__404.html
+
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(html|pdf)$">
+        Header set Cache-Control "no-cache"
+    </FilesMatch>
+</IfModule>
