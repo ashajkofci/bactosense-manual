@@ -199,6 +199,7 @@ Sélectionnez un numéro de section pour ouvrir la rubrique correspondante de ce
 
 ## M
 
+- Manuel intégré [15.4](/maintenance#section-15-4)
 - Maintenance [15.1](/maintenance#section-15-1)
   - Libération d’espace disque [15.2.8](/maintenance#section-15-2-8)
   - Sachet déshydratant [15.2.5](/maintenance#section-15-2-5)

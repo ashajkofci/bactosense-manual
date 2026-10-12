@@ -1,8 +1,13 @@
 import { createHash } from 'node:crypto';
-import { mkdir, readFile, rename, rm, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, readdir, rename, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { load } from 'cheerio';
 import { imageSize } from 'image-size';
+import sharp from 'sharp';
+
+const MAX_ASSET_WIDTH = 800;
+const imageExtension = /\.(?:png|jpe?g|svg|webp|gif)$/i;
+const digestOf = bytes => createHash('sha256').update(bytes).digest('hex');
 
 const normalizePath = value => value.replace(/\/+$/, '') || '/';
 const escape = value => String(value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
@@ -16,9 +21,11 @@ const plainText = node => {
 // Consume Docusaurus' rendered HTML, so its MDX, admonitions, custom image
 // component, merged table cells and heading IDs have already been resolved.
 // Emit only Qt 5.12 rich text and data: no website scripts run on the device.
-export async function exportDeviceManual({ root, outDir, baseUrl, siteUrl, chapters, manualVersion }) {
+export async function exportDeviceManual({ root, outDir, baseUrl, siteUrl, chapters, manualVersion,
+  locale = 'en', languageLabel = locale, bundleDir = path.join(outDir, 'device-manual') }) {
   if (!chapters?.length) throw new Error('Missing device manual chapter inventory.');
-  const destination = path.join(outDir, 'device-manual/en');
+  if (!/^[a-z]{2}(?:-[a-z0-9]+)*$/i.test(locale)) throw new Error(`Invalid device locale: ${locale}`);
+  const destination = path.join(bundleDir, locale);
   const staging = `${destination}.tmp`;
   await rm(staging, { recursive: true, force: true });
   await mkdir(path.join(staging, 'chapters'), { recursive: true });
@@ -26,25 +33,88 @@ export async function exportDeviceManual({ root, outDir, baseUrl, siteUrl, chapt
   const origin = new URL(siteUrl).origin;
   const byRoute = new Map(chapters.map(chapter => [normalizePath(new URL(chapter.permalink, origin).pathname), chapter.id]));
   const assets = new Map();
+  const assetTasks = new Map();
+  const sourceByDigest = new Map();
   const links = [];
   const pages = [];
   const symbols = new Map();
+
+  // Webpack hashes image URLs and inlines small images. Recover their original
+  // tracked paths by matching bytes, so changing or resizing an image updates
+  // the same file in the embedded bundle instead of adding a new hash filename.
+  async function collectSources(directory, relative = '') {
+    for (const entry of (await readdir(directory, { withFileTypes: true })).sort((a, b) => a.name.localeCompare(b.name))) {
+      const name = path.posix.join(relative, entry.name);
+      const source = path.join(directory, entry.name);
+      if (entry.isDirectory()) await collectSources(source, name);
+      else if (entry.isFile() && imageExtension.test(name)) {
+        const digest = digestOf(await readFile(source));
+        const candidates = sourceByDigest.get(digest) || [];
+        candidates.push({ file: `assets/${name}`, source: `static/${name}` });
+        sourceByDigest.set(digest, candidates);
+      }
+    }
+  }
+  await collectSources(path.join(root, 'static'));
+  for (const candidates of sourceByDigest.values()) {
+    // Duplicate artwork can exist in each website locale. Prefer this language,
+    // retaining an explicitly named source when one is available below.
+    candidates.sort((a, b) => Number(!a.file.includes(`/${locale}/`)) - Number(!b.file.includes(`/${locale}/`)) || a.file.localeCompare(b.file));
+  }
   const registry = JSON.parse(await readFile(path.join(root, 'maintenance/safety-symbols.json'), 'utf8'));
   for (const [symbol, entry] of Object.entries(registry.symbols)) {
     const bytes = await readFile(path.join(root, 'static', entry.asset));
     const $ = load(bytes.toString(), { xmlMode: true });
-    symbols.set($('svg').attr('viewBox'), { symbol, bytes });
+    symbols.set($('svg').attr('viewBox'), { symbol, bytes, source: entry.asset.slice(1) });
   }
 
-  async function asset(bytes, extension) {
-    const digest = createHash('sha256').update(bytes).digest('hex');
-    const file = `assets/${digest.slice(0, 24)}${extension.toLowerCase()}`;
-    if (!assets.has(file)) {
-      const dimensions = imageSize(bytes);
-      await writeFile(path.join(staging, file), bytes);
-      assets.set(file, { file, sha256: digest, bytes: bytes.length, width: dimensions.width, height: dimensions.height });
+  async function asset(bytes, extension, preferredSource = '') {
+    if (!imageExtension.test(extension)) throw new Error(`Unsupported device image format: ${extension}`);
+    const sourceSha256 = digestOf(bytes);
+    const candidates = sourceByDigest.get(sourceSha256) || [];
+    const originalName = path.posix.basename(preferredSource).replace(/-[a-f0-9]{32}(?=\.[^.]+$)/i, '');
+    const tracked = candidates.find(item => item.file === `assets/${preferredSource}`)
+      || candidates.find(item => path.posix.basename(item.file) === originalName) || candidates[0];
+    const file = tracked?.file || (preferredSource
+      ? `assets/generated/${originalName}` : `assets/inline/${sourceSha256.slice(0, 24)}${extension.toLowerCase()}`);
+    if (!/^assets\/(?:[a-z0-9_-][a-z0-9_.-]*\/)*[a-z0-9_-][a-z0-9_.-]*\.(?:png|jpe?g|svg|webp|gif)$/i.test(file))
+      throw new Error(`Invalid device image path: ${file}`);
+    const existing = assetTasks.get(file);
+    if (existing) {
+      if (existing.sourceSha256 !== sourceSha256) throw new Error(`Device image name collision: ${file}`);
+      return existing.promise;
     }
-    return assets.get(file);
+    const promise = (async () => {
+      const original = imageSize(bytes);
+      if (!(original.width > 0 && original.height > 0)) throw new Error(`Missing device image dimensions: ${file}`);
+      const resized = original.width > MAX_ASSET_WIDTH;
+      let exported = bytes;
+      if (resized && extension.toLowerCase() === '.svg') {
+        const $ = load(bytes.toString(), { xmlMode: true });
+        const svg = $('svg').first();
+        if (!svg.attr('viewBox')) svg.attr('viewBox', `0 0 ${original.width} ${original.height}`);
+        svg.attr('width', String(MAX_ASSET_WIDTH));
+        svg.attr('height', String(MAX_ASSET_WIDTH * original.height / original.width));
+        exported = Buffer.from($.xml());
+      } else if (resized) {
+        // Keep the source format, transparency and (for GIF/WebP) animation.
+        // Sharp automatically preserves the aspect ratio with width alone.
+        exported = await sharp(bytes, { animated: true })
+          .resize({ width: MAX_ASSET_WIDTH, withoutEnlargement: true }).toBuffer();
+      }
+      const dimensions = imageSize(exported);
+      if (dimensions.width > MAX_ASSET_WIDTH) throw new Error(`Oversized device image after resize: ${file}`);
+      const image = { file, source: tracked?.source || (preferredSource ? `rendered/${preferredSource}` : 'inline'),
+        sourceSha256, sha256: digestOf(exported), bytes: exported.length,
+        originalWidth: original.width, originalHeight: original.height,
+        width: dimensions.width, height: dimensions.height, resized };
+      await mkdir(path.dirname(path.join(staging, file)), { recursive: true });
+      await writeFile(path.join(staging, file), exported);
+      assets.set(file, image);
+      return image;
+    })();
+    assetTasks.set(file, { sourceSha256, promise });
+    return promise;
   }
   async function localImage(src, chapter) {
     const inline = /^data:image\/(png|jpeg|gif|webp|svg\+xml);base64,([a-z0-9+/=\s]+)$/i.exec(src);
@@ -54,7 +124,7 @@ export async function exportDeviceManual({ root, outDir, baseUrl, siteUrl, chapt
     const relative = decodeURIComponent(url.pathname.slice(baseUrl.length));
     const source = path.resolve(outDir, relative);
     if (!source.startsWith(`${path.resolve(outDir)}${path.sep}`)) throw new Error(`Invalid device asset: ${src}`);
-    return asset(await readFile(source), path.extname(source));
+    return asset(await readFile(source), path.extname(source), relative);
   }
   function link(href, chapter) {
     const url = new URL(href, new URL(chapter.permalink, origin));
@@ -88,26 +158,37 @@ export async function exportDeviceManual({ root, outDir, baseUrl, siteUrl, chapt
       if (name === 'svg') {
         const entry = symbols.get(element.attr('viewBox'));
         if (!entry) throw new Error(`Unrecognized inline SVG in ${chapter.id}`);
-        const image = await asset(entry.bytes, '.svg');
+        const image = await asset(entry.bytes, '.svg', entry.source);
         return `<img src="${image.file}" width="28" height="28" alt="${escape(entry.symbol)}">`;
       }
       if (name === 'img') {
         const image = await localImage(element.attr('src'), chapter);
-        const width = Number(element.attr('width')) || image.width;
+        const width = Math.min(Number(element.attr('width')) || image.width, image.width);
         const height = width * image.height / image.width;
         const tag = `<img src="${image.file}" data-manual-width="${width}" data-manual-height="${height}" alt="${escape(element.attr('alt') || '')}">`;
         return node.parent?.name === 'a' ? tag : `<a href="manual-image:${image.file}">${tag}</a>`;
       }
       if (element.hasClass('theme-admonition')) {
         const type = (element.attr('class').match(/theme-admonition-(\w+)/) || [])[1] || 'info';
-        const colors = { danger: '#fde8e8', warning: '#fff3d6', caution: '#fff3d6', info: '#e8f3ff', tip: '#e8f7ed', note: '#eef2f6' };
+        const colors = {
+          danger: { background: '#ffebec', foreground: '#4b1113', accent: '#fa383e' },
+          warning: { background: '#fff8e6', foreground: '#4d3800', accent: '#e6a700' },
+          caution: { background: '#fff8e6', foreground: '#4d3800', accent: '#e6a700' },
+          info: { background: '#eef9fd', foreground: '#193c47', accent: '#54c7ec' },
+          tip: { background: '#e6f6e6', foreground: '#003100', accent: '#00a400' },
+          note: { background: '#fdfdfe', foreground: '#474748', accent: '#ebedf0' },
+        };
         const title = element.children().first();
         const svg = title.find('svg').first();
-        const symbol = symbols.get(svg.attr('viewBox'))?.symbol;
-        const signal = symbol === 'explosion' ? 'DANGER' : symbol === 'gloves' ? 'PROTECTIVE GLOVES' : type.toUpperCase();
-        const titleHtml = (await Promise.all(title.contents().toArray().map(render))).join('');
+        const palette = colors[type] || colors.info;
+        const iconHtml = svg.length ? await render(svg[0]) : '';
+        const titleText = plainText(title[0]).replace(/\s+/g, ' ').trim().toUpperCase();
+        // Match the published PDF: original symbol, uppercase bold custom
+        // title and alert foreground. Keep the header aligned independently
+        // of the icon's baseline; do not add a second signal-word prefix.
+        const titleHtml = `<table width="100%" cellpadding="0" cellspacing="0"><tr>${iconHtml ? `<td width="36" valign="middle">${iconHtml}</td>` : ''}<td valign="middle"><span style="font-size:small; font-weight:700; color:${palette.foreground}">${escape(titleText)}</span></td></tr></table>`;
         const contentHtml = (await Promise.all(element.children().slice(1).contents().toArray().map(render))).join('');
-        return `<table width="100%" cellpadding="10" cellspacing="0" bgcolor="${colors[type] || colors.info}"><tr><td><p><strong>${signal}: ${titleHtml}</strong></p>${contentHtml}</td></tr></table>`;
+        return `<table width="100%" cellpadding="10" cellspacing="0" bgcolor="${palette.background}"><tr><td style="color:${palette.foreground}; border-left:4px solid ${palette.accent}">${titleHtml}${contentHtml}</td></tr></table>`;
       }
       const children = (await Promise.all((node.children || []).map(render))).join('');
       if (name === 'a') {
@@ -145,7 +226,7 @@ export async function exportDeviceManual({ root, outDir, baseUrl, siteUrl, chapt
         const imageNode = node.find('img').first();
         const image = await localImage(imageNode.attr('src'), chapter);
         blocks.push({ kind: 'image', text: imageNode.attr('alt') || '', source: image.file,
-          width: Number(imageNode.attr('width')) || image.width, height: image.height, intrinsicWidth: image.width });
+          width: Math.min(Number(imageNode.attr('width')) || image.width, image.width), height: image.height, intrinsicWidth: image.width });
       } else {
         let tableColumns = 0;
         node.find('tr').addBack('tr').each((_, row) => {
@@ -178,22 +259,46 @@ export async function exportDeviceManual({ root, outDir, baseUrl, siteUrl, chapt
     files.push({ file: chapter.file, sha256: createHash('sha256').update(`${data}\n`).digest('hex') });
   }
   const index = {
-    schemaVersion: 1, locale: 'en', title: 'BactoSense user manual', documentId: 'UM-0006',
+    schemaVersion: 1, locale, languageLabel, title: chapters[0].title, documentId: 'UM-0006',
     softwareVersion: '3.2.0', manualVersion,
     chapters: pages.map(({ blocks, ...chapter }) => ({ ...chapter, blockCount: blocks.length })),
   };
   await writeFile(path.join(staging, 'index.json'), `${JSON.stringify(index)}\n`);
   await writeFile(path.join(staging, 'search.json'), `${JSON.stringify(search)}\n`);
-  const report = { schemaVersion: 1, locale: 'en', chapterCount: pages.length, blockCount: search.length,
+  const assetList = [...assets.values()].sort((a, b) => a.file.localeCompare(b.file));
+  const report = { schemaVersion: 1, locale, chapterCount: pages.length, blockCount: search.length,
     internalLinkCount: links.length, assetCount: assets.size,
-    assetBytes: [...assets.values()].reduce((total, image) => total + image.bytes, 0), files, assets: [...assets.values()] };
+    maxAssetWidth: MAX_ASSET_WIDTH, resizedAssetCount: assetList.filter(image => image.resized).length,
+    assetBytes: assetList.reduce((total, image) => total + image.bytes, 0), files, assets: assetList };
   await writeFile(path.join(staging, 'report.json'), `${JSON.stringify(report, null, 2)}\n`);
-  const resourceFiles = ['index.json', 'search.json', 'report.json', ...files.map(item => item.file), ...assets.keys()].sort();
-  const qrc = `<RCC>\n  <qresource prefix="/manual">\n${resourceFiles.map(file => `    <file alias="en/${escape(file)}">en/${escape(file)}</file>`).join('\n')}\n  </qresource>\n</RCC>\n`;
   await mkdir(path.dirname(destination), { recursive: true });
   await rm(destination, { recursive: true, force: true });
   await rename(staging, destination);
-  await writeFile(path.join(path.dirname(destination), 'manual.qrc'), qrc);
-  console.log(`Device manual: ${pages.length} English chapters, ${assets.size} local images, ${(report.assetBytes / 1024 / 1024).toFixed(1)} MiB of artwork.`);
+  await writeDeviceManualResources(bundleDir);
+  console.log(`Device manual [${locale}]: ${pages.length} chapters, ${assets.size} local images, ${(report.assetBytes / 1024 / 1024).toFixed(1)} MiB of artwork.`);
   return { destination, report };
+}
+
+// A shared manifest lets the reader select the GUI language offline. Generate
+// one resource list after each locale export, including every completed locale.
+export async function writeDeviceManualResources(bundleDir, preferredLocales = []) {
+  const directories = (await readdir(bundleDir, { withFileTypes: true }))
+    .filter(entry => entry.isDirectory() && /^[a-z]{2}(?:-[a-z0-9]+)*$/i.test(entry.name))
+    .map(entry => entry.name).sort();
+  const locales = [...preferredLocales.filter(locale => directories.includes(locale)),
+    ...directories.filter(locale => !preferredLocales.includes(locale))];
+  if (!locales.length) throw new Error('No completed manual languages to embed.');
+  const resourceFiles = ['locales.json'];
+  for (const locale of locales) {
+    const report = JSON.parse(await readFile(path.join(bundleDir, locale, 'report.json'), 'utf8'));
+    if (report.schemaVersion !== 1 || report.locale !== locale || !report.chapterCount)
+      throw new Error(`Incomplete device language: ${locale}`);
+    resourceFiles.push(...['index.json', 'search.json', 'report.json',
+      ...report.files.map(item => item.file), ...report.assets.map(item => item.file)].map(file => `${locale}/${file}`));
+  }
+  const metadata = { schemaVersion: 1, defaultLocale: locales.includes('en') ? 'en' : locales[0], availableLocales: locales };
+  await writeFile(path.join(bundleDir, 'locales.json'), `${JSON.stringify(metadata)}\n`);
+  const qrc = `<RCC>\n  <qresource prefix="/manual">\n${resourceFiles.sort().map(file => `    <file alias="${escape(file)}">${escape(file)}</file>`).join('\n')}\n  </qresource>\n</RCC>\n`;
+  await writeFile(path.join(bundleDir, 'manual.qrc'), qrc);
+  return metadata;
 }

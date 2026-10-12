@@ -7,11 +7,11 @@ slug: /results-and-data-analysis
 
 ## 11.1 Resultados de medición {#section-11-1}
 
-La figura siguiente muestra el resultado de una medición seleccionada. Desde aquí, el usuario puede eliminar la medición o cambiarle el nombre, consultar resultados anteriores (y exportarlos) o exportar el resultado. Los usuarios expertos pueden repetir el recuento celular con nuevas regiones de análisis. Algunos elementos o acciones de la interfaz solo están disponibles para determinadas funciones de usuario (Basic, Advanced o Admin).
+La figura siguiente muestra el resultado de una medición TCC seleccionada en modo en línea. Desde aquí, el usuario puede eliminar la medición o cambiarle el nombre, consultar resultados anteriores (y exportarlos) o exportar el resultado. Los usuarios expertos pueden repetir el recuento celular con nuevas regiones de análisis. Algunos elementos o acciones de la interfaz solo están disponibles para determinadas funciones de usuario (Basic, Advanced o Admin).
 
-![BactoSense — Detalles y gráficos del resultado ICC](/img/gui/es/icc-result-details.png "width=674 class=manual-figure")
+![BactoSense — Detalles y gráficos del resultado en línea](/img/gui/es/online-result-details.png "width=674 class=manual-figure")
 
-*Figura 11-1 Visualización del resultado de una medición ICC.*
+*Figura 11-1 Visualización del resultado de una medición TCC en modo en línea.*
 
 |  |  |
 | --- | --- |
@@ -19,12 +19,13 @@ La figura siguiente muestra el resultado de una medición seleccionada. Desde aq
 | 2 | Ventana de información del resultado con todos los parámetros disponibles y el diagrama de puntos principal. |
 | 3 | Diagrama de puntos principal en la ventana de información del resultado. El diagrama FL1 frente a FL2 muestra todos los eventos detectados según la amplitud de sus señales de fluorescencia FL1 (535 nm, eje X) y FL2 (715 nm, eje Y). El polígono rojo y la línea vertical muestran la región configurada. Para obtener más detalles, consulte la sección [Cartuchos, regiones de análisis y parámetros de resultados](../results-and-data-analysis/#section-11-3). Al pulsar esta vista previa, se abre una ventana emergente con acceso a todos los diagramas de puntos (4). |
 | 4 | Ventana emergente con acceso a todos los diagramas de puntos. El diagrama FL1 frente a SSC muestra solo las células dentro de la región poligonal FL1 - FL2, según su señal de fluorescencia FL1 (535 nm) y su señal de luz dispersada SSC (488 nm). El histograma FL1 muestra todas las células dentro de la región poligonal FL1 - FL2, agrupadas en intervalos según su fluorescencia FL1. Los diagramas disponibles dependen del modelo y la configuración del instrumento. |
-| 5 | El campo opcional de advertencias indica si se ha generado alguna advertencia durante la medición. Pulse el campo para obtener más información. |
+| 5 | El campo de estado de la medición indica alarmas o advertencias. Pulse una indicación de alarma o advertencia para ver sus detalles. |
 | 6 | El botón Borrar elimina la medición de forma permanente (requiere confirmación). |
 | 7 | El botón Cambie el nombre de permite cambiar el nombre de la medición. |
 | 8 | El botón Resultado de re-gate permite aplicar otras regiones de análisis a los datos de medición. Para obtener más detalles, consulte la sección [Reanálisis de mediciones con otras regiones](../results-and-data-analysis/#section-11-4-1). |
 | 9 | El botón Exportar permite guardar este resultado en una memoria USB. Encontrará más información en la sección [Exportación a una memoria USB](../measurements/#section-10-8-1). |
 | 10 | Los botones de navegación a la izquierda y derecha de la vista de resultados permiten ir a las mediciones anterior y siguiente, respectivamente. |
+| 11 | Pulse el gráfico de tendencias para abrir el gráfico del modo automático (el gráfico completo de resultados en línea). Véase [Revisión de las mediciones automáticas en línea](../measurements/#section-10-2-3). |
 
 :::info[Seleccione varias mediciones]
 

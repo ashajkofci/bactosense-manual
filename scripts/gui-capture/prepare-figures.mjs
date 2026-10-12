@@ -29,7 +29,9 @@ for (const locale of locales) {
     delete geometry.name;delete geometry.sourceIds;delete geometry.surface;
     const sourceRows = sourceIds.map(id=>entries.get(id));
     const annotations = sourceRows.flatMap(row=>row.annotations || []);
-    const raw = name => `output/gui-capture/${surface}/${locale}/${name}.png`;
+    const captureDirectory = name==='online-result-details' && layout.captureDirectory
+      ? layout.captureDirectory : `output/gui-capture/${surface}`;
+    const raw = name => `${captureDirectory}/${locale}/${name}.png`;
     if (name==='home-settings-button' || name==='home-overview') {
       const home=await readJson(`output/gui-capture/native/${locale}/home.json`);
       const buttons=home.objects.filter(row=>row.name==='homeBarButtonBackground').sort((a,b)=>a.x-b.x);
@@ -82,5 +84,6 @@ const manifest={version:1,capturedDate:'2026-10-11',locales:['en','de','fr','it'
 manifest.figures.push(...previous.figures.filter(figure=>figure.catalog && locales.includes(figure.locale)));
 if (previous.source?.supplementalCaptureReports) manifest.source.supplementalCaptureReports=previous.source.supplementalCaptureReports;
 if (previous.source?.digitalOutputCaptureReports) manifest.source.digitalOutputCaptureReports=previous.source.digitalOutputCaptureReports;
+if (previous.source?.onlineResultCaptureReports) manifest.source.onlineResultCaptureReports=previous.source.onlineResultCaptureReports;
 await writeFile(filename,JSON.stringify(manifest,null,2)+'\n');
 console.log(`Prepared ${manifest.figures.length} figures. Render and visually review before applying them.`);

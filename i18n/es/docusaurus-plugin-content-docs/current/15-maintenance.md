@@ -241,3 +241,45 @@ Las actualizaciones de software pueden instalarse desde una memoria USB o desde 
 | 6. | Lea atentamente las notas de la versión de la sección Registro de cambios de la interfaz para comprender los cambios introducidos desde su versión actual del software. |
 | 7. | Para actualizar, pulse Actualizar, confirme con Sí y siga las instrucciones. Nota: no es necesario reiniciar manualmente después de la actualización. |
 | 8. | Tras la actualización, compruebe que todas las configuraciones del instrumento sigan siendo correctas. |
+
+## 15.4 Manual integrado {#section-15-4}
+
+El manual integrado permite consultar este manual de usuario directamente en la pantalla táctil de BactoSense. Los capítulos, las tablas, los avisos de seguridad y las ilustraciones se almacenan en el instrumento, por lo que no se necesita conexión a Internet para leerlos.
+
+El manual sigue el idioma de la interfaz del instrumento. Se admiten inglés, alemán, francés, italiano y español. Si el idioma seleccionado no está disponible en el manual instalado, se muestra la edición en inglés.
+
+### 15.4.1 Abrir el manual {#section-15-4-1}
+
+El manual es accesible para los usuarios Basic, Advanced y Admin.
+
+|  | PASO DE TRABAJO |
+| --- | --- |
+| 1. | Inicie sesión y vaya a la pantalla Home. |
+| 2. | Pulse **Ajustes**. |
+| 3. | Pulse **Asistencia y servicios**. |
+| 4. | En **Manuales**, pulse **User manual** para abrir la lista de capítulos. |
+
+### 15.4.2 Leer y buscar {#section-15-4-2}
+
+Seleccione un capítulo en el índice de contenidos y desplácese para leerlo. Pulse una referencia cruzada en el texto para abrir la sección correspondiente. Utilice la barra de herramientas del lector para navegar y ajustar el tamaño del texto:
+
+| CONTROL | FUNCIÓN |
+| --- | --- |
+| **Contents** | Volver a la lista de capítulos. |
+| **Sections** | Mostrar los títulos del capítulo actual. Seleccione un título para ir a esa sección o pulse **Read** para volver al texto. |
+| **Search** | Introduzca una palabra o expresión con el teclado en pantalla y confirme la entrada. Seleccione un resultado para abrir la ubicación correspondiente en el manual. |
+| **Back** | Volver a la posición de lectura anterior dentro del manual, por ejemplo, después de seguir una referencia cruzada. |
+| **‹ / ›** | Abrir el capítulo anterior o siguiente. |
+| **A− / A+** | Reducir o aumentar el tamaño del texto. |
+
+Pulse una ilustración para ampliarla. Utilice **+** y **−** para ajustar el zoom, arrastre la imagen para examinar los detalles y pulse **Close** para volver al texto. Las tablas anchas permiten el desplazamiento horizontal.
+
+Para salir del manual y volver a la pantalla del instrumento, pulse el control de retroceso del instrumento situado en la parte superior izquierda. Los enlaces a sitios web externos muestran una dirección para abrir en un teléfono u ordenador.
+
+### 15.4.3 Ayuda contextual {#section-15-4-3}
+
+En las pantallas con ayuda contextual aparece un signo de interrogación dentro de un círculo junto al título. Púlselo para abrir el manual en las instrucciones correspondientes. Esta ayuda resulta útil, por ejemplo, para configurar un programa de mediciones, interpretar resultados o cambiar un cartucho.
+
+Pulse el control de retroceso del instrumento situado en la parte superior izquierda para cerrar la ayuda y volver a la misma pantalla. Se conservan sus selecciones actuales y las entradas sin guardar.
+
+La edición integrada se suministra con el software del instrumento. Para consultar la edición en línea, pulse **Online documentation** en **Manuales**, en la pantalla **Asistencia y servicios**, y escanee el código QR con un teléfono. Para leer la edición en línea se necesita una conexión a Internet en ese teléfono.

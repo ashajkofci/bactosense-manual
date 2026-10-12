@@ -241,3 +241,45 @@ Gli aggiornamenti software possono essere installati da una chiavetta USB oppure
 | 6. | Leggere attentamente le note di versione nella sezione Registro delle modifiche dell’interfaccia per comprendere le modifiche introdotte rispetto alla versione attuale. |
 | 7. | Per aggiornare, premere Aggiorna, confermare con Sì e seguire le istruzioni. Nota: dopo l’aggiornamento non è necessario un riavvio manuale. |
 | 8. | Dopo l’aggiornamento, verificare che tutte le configurazioni dello strumento siano ancora corrette. |
+
+## 15.4 Manuale integrato {#section-15-4}
+
+Il manuale integrato permette di consultare questo manuale d’uso direttamente sul touchscreen del BactoSense. I capitoli, le tabelle, le avvertenze di sicurezza e le illustrazioni sono memorizzati sullo strumento, quindi non è necessaria una connessione Internet per leggerli.
+
+Il manuale segue la lingua dell’interfaccia dello strumento. Sono supportati inglese, tedesco, francese, italiano e spagnolo. Se la lingua selezionata non è disponibile nel manuale installato, viene visualizzata l’edizione inglese.
+
+### 15.4.1 Aprire il manuale {#section-15-4-1}
+
+Il manuale è accessibile agli utenti Basic, Advanced e Admin.
+
+|  | FASE OPERATIVA |
+| --- | --- |
+| 1. | Effettuare l’accesso e andare alla schermata Home. |
+| 2. | Premere **Impostazioni**. |
+| 3. | Premere **Supporto & Assistenza**. |
+| 4. | In **Manuali**, premere **User manual** per aprire l’elenco dei capitoli. |
+
+### 15.4.2 Leggere e cercare {#section-15-4-2}
+
+Selezionare un capitolo nel sommario e scorrere per leggerlo. Premere un rimando nel testo per aprire la sezione corrispondente. Utilizzare la barra degli strumenti del lettore per navigare e regolare la dimensione del testo:
+
+| COMANDO | FUNZIONE |
+| --- | --- |
+| **Contents** | Tornare all’elenco dei capitoli. |
+| **Sections** | Visualizzare i titoli del capitolo corrente. Selezionare un titolo per passare alla sezione corrispondente oppure premere **Read** per tornare al testo. |
+| **Search** | Inserire una parola o un’espressione con la tastiera sullo schermo e confermare l’immissione. Selezionare un risultato per aprire il punto corrispondente nel manuale. |
+| **Back** | Tornare alla posizione di lettura precedente nel manuale, ad esempio dopo aver seguito un rimando. |
+| **‹ / ›** | Aprire il capitolo precedente o successivo. |
+| **A− / A+** | Ridurre o aumentare la dimensione del testo. |
+
+Premere un’illustrazione per ingrandirla. Utilizzare **+** e **−** per lo zoom, trascinare l’immagine per esaminare i dettagli e premere **Close** per tornare al testo. Le tabelle larghe possono essere scorse orizzontalmente.
+
+Per uscire dal manuale e tornare alla schermata dello strumento, premere il comando Indietro dello strumento in alto a sinistra. I collegamenti a siti esterni mostrano un indirizzo da aprire su un telefono o un computer.
+
+### 15.4.3 Aiuto contestuale {#section-15-4-3}
+
+Nelle schermate con aiuto contestuale, accanto al titolo compare un punto interrogativo cerchiato. Premerlo per aprire il manuale alle istruzioni pertinenti. Questo aiuto è utile, ad esempio, per configurare un programma di misure, interpretare i risultati o sostituire una cartuccia.
+
+Premere il comando Indietro dello strumento in alto a sinistra per chiudere l’aiuto e tornare alla stessa schermata. Le selezioni correnti e le immissioni non salvate vengono mantenute.
+
+L’edizione integrata viene fornita con il software dello strumento. Per consultare l’edizione online, premere **Online documentation** in **Manuali** nella schermata **Supporto & Assistenza**, quindi scansionare il codice QR con un telefono. Per leggere l’edizione online è necessaria una connessione Internet su quel telefono.

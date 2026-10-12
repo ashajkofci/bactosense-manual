@@ -50,7 +50,7 @@ npm run serve
 - `maintenance/translation-glossary.md`: preferred terms for all five languages. Consult it before translating or revising terminology.
 - `maintenance/source-sections.json`: editorial mapping from printed source pages to current chapter/section URLs; it adds no markup to the manual.
 - `maintenance/gui-*.json`: GUI figure inventories and provenance.
-- `scripts/editorial/`: maintained English content applied during optional source re-extraction: the section 2.3 safety-symbol legend, section 10.2.4 Advanced scheduling and chapter 9, 11 and 14 bodies. Chapter 9 retains the illustrated package-activation procedure. Chapter 11 includes the CBC, EBC and NBC supplement; its sources are recorded in `maintenance/cartridge-results-sources.md`.
+- `scripts/editorial/`: maintained English content applied during optional source re-extraction: the section 2.3 safety-symbol legend, section 10.2.4 Advanced scheduling, section 15.4 Embedded manual and chapter 9, 11 and 14 bodies. Chapter 9 retains the illustrated package-activation procedure. Chapter 11 includes the CBC, EBC and NBC supplement; its sources are recorded in `maintenance/cartridge-results-sources.md`.
 - Root-level `UM_0006-*.pdf`: local reference inputs, ignored by Git and excluded from deployment. The website contains only generated PDFs.
 - `output/pdf/<locale>/`: generated PDF copies and reports (ignored).
 - `static/pdf/`: ignored copies of the latest generated PDFs for the development server.
@@ -99,7 +99,7 @@ npm run manual:check
 npm run build
 ```
 
-The extraction and parser scripts overwrite their generated artifacts and chapters. The parsers apply reviewed content from `scripts/editorial/` after extraction; keep the section 2.3 legend and chapter 9, 11 and 14 bodies there in sync with their counterparts in `docs/`. `scripts/manual_artwork.py` reapplies the current GUI figure mapping and reviewed chapter-specific English navigation/legend changes from `maintenance/gui-*.json`. Keep other editorial changes in the parser or review the diff before accepting a regeneration. The second parser runs the Markdown simplifier after both chapter passes. Re-extraction can recreate unused artwork; remove unreferenced output again before publishing. Review all translations after changing the English source.
+The extraction and parser scripts overwrite their generated artifacts and chapters. The parsers apply reviewed content from `scripts/editorial/` after extraction; keep the section 2.3 legend, section 15.4 Embedded manual and chapter 9, 11 and 14 bodies there in sync with their counterparts in `docs/`. `scripts/manual_artwork.py` reapplies the current GUI figure mapping and reviewed chapter-specific English navigation/legend changes from `maintenance/gui-*.json`. Keep other editorial changes in the parser or review the diff before accepting a regeneration. The second parser runs the Markdown simplifier after both chapter passes. Re-extraction can recreate unused artwork; remove unreferenced output again before publishing. Review all translations after changing the English source.
 
 Exact decoded-pixel duplicates share assets. Similar icons are consolidated only after visual comparison; screenshots with different settings, readings or states remain distinct.
 
@@ -133,6 +133,23 @@ For the package-activation and native enrolment figures, run `node scripts/gui-c
 For chapter 6.6's small output-control captures, run `node scripts/gui-capture/prepare-digital-output-figures.mjs` and render only its 20 printed IDs. [The digital-output review](maintenance/gui-digital-output-review.md) records the actual row values, capture composition, localized instructions and print checks.
 
 For development in a specific language, run `npm start -- --locale de` (or `fr`, `it`, `es`). The development server serves one language at a time; use `npm run build` followed by `npm run serve` to test switching across all five editions. `npm run manual:pdf -- de` regenerates just the German PDF from an existing build; omitting the locale regenerates all five. Rebuild the website first after changing Markdown.
+
+## On-device manual prototype
+
+All five manual languages can also be exported for the native instrument GUI. Run
+`npm run manual:device -- --gui ../gui`, rebuild the GUI, and open
+**Support & Service → Manuals → User manual**. One QML reader uses
+the device's existing buttons and lists to display all chapters, tables,
+notices, images and internal links from local JSON resources. Its title strip
+is hidden to give the article more room. The GUI selects its own language's
+manual, with English fallback for unsupported languages.
+Documented GUI features can also open a specific section from a small help
+icon in the title bar. Exported images are capped at 800 px wide and keep their
+source filenames and directories.
+
+`npm run manual:preview` opens the same reader in a desktop Qt 5 window without
+Bactoserver. See [the export investigation and prototype guide](maintenance/on-device-manual.md)
+for the Docusaurus integration, resource layout, build commands and validation.
 
 ## Generated PDF
 

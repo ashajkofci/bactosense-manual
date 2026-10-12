@@ -199,6 +199,7 @@ Selezionare un numero di sezione per aprire l’argomento corrispondente in ques
 
 ## M
 
+- Manuale integrato [15.4](/maintenance#section-15-4)
 - Manutenzione [15.1](/maintenance#section-15-1)
   - Liberazione dello spazio sul disco [15.2.8](/maintenance#section-15-2-8)
   - Sacchetto essiccante [15.2.5](/maintenance#section-15-2-5)

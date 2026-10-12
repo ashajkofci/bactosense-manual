@@ -185,6 +185,13 @@ def normalize_artwork(content, source_file=None):
   scheduler = ROOT/'scripts/editorial/10-advanced-scheduler.md'
   if scheduler.is_file():
    content = re.sub(r'(?=^## 10\.3\b)', lambda _: scheduler.read_text().rstrip()+'\n\n', content, count=1, flags=re.M)
+ # Keep the embedded-manual instructions when importing the older source PDF.
+ if source_file == 'docs/15-maintenance.md' and '{#section-15-4}' not in content:
+  embedded_manual = ROOT/'scripts/editorial/15-embedded-manual.md'
+  if embedded_manual.is_file():
+   content = content.rstrip()+'\n\n'+embedded_manual.read_text().rstrip()+'\n'
+ if source_file == 'docs/20-index.md' and '/maintenance#section-15-4' not in content:
+  content = content.replace('## E\n\n', '## E\n\n- Embedded manual [15.4](/maintenance#section-15-4)\n', 1)
  return normalize_gui_artwork(re.sub(r'\n{3,}', '\n\n', content), source_file)
 
 if __name__ == '__main__':

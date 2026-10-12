@@ -7,11 +7,11 @@ slug: /results-and-data-analysis
 
 ## 11.1 Messergebnisse {#section-11-1}
 
-Untenstehende Abbildung zeigt das Ergebnis einer ausgewählten Messung. Von hier aus kann der Benutzer Messresultate anschauen, löschen, umbenennen, neu gaten oder exportieren. Einige Aktionen sind an bestimmte Benutzerrollen gebunden (Basic, Advanced oder Admin).
+Die folgende Abbildung zeigt das Ergebnis einer ausgewählten TCC-Messung im Online-Modus. Von hier aus kann der Benutzer Messresultate anschauen, löschen, umbenennen, neu gaten oder exportieren. Einige Aktionen sind an bestimmte Benutzerrollen gebunden (Basic, Advanced oder Admin).
 
-![BactoSense — ICC-Ergebnisdetails und Diagramme](/img/gui/de/icc-result-details.png "width=674 class=manual-figure")
+![BactoSense — Online-Ergebnisdetails und Diagramme](/img/gui/de/online-result-details.png "width=674 class=manual-figure")
 
-*Abbildung 11-1 : Anzeige eines einzelnen ICC Messergebnisses.*
+*Abbildung 11-1 Anzeige des Ergebnisses einer TCC-Messung im Online-Modus.*
 
 |  |  |
 | --- | --- |
@@ -19,12 +19,13 @@ Untenstehende Abbildung zeigt das Ergebnis einer ausgewählten Messung. Von hier
 | 2 | Resultatinformationen mit allen verfügbaren Resultatparametern und dem primären Dotplot. |
 | 3 | Primärer Dotplot im Fenster mit den Resultatinformationen. Dieser FL1/FL2 Dotplot zeigt alle registrierten Events anhand deren gemessenen Fluoreszenzsignal an. X-Achse = FL1 bei 535 nm. Y-Achse = FL2 bei 715 nm. Das rote Polygon und die rote vertikale Linie zeigen das konfigurierte Gate. Details dazu unter [Kartuschen, Gates und Ergebnisparameter](../results-and-data-analysis/#section-11-3). Drücken Sie auf diese Dotplot-Vorschau, um ein neues Fenster mit allen Dotplots zu öffnen (4). |
 | 4 | Popup-Fenster mit Zugriff auf alle Dotplots. Der FL1/SSC-Dotplot zeigt nur Zellen innerhalb des FL1-FL2-Polygon-Gates anhand ihres Fluoreszenzsignals FL1 (535 nm) und ihres Streulichtsignals SSC (488 nm). Das FL1-Histogramm zeigt alle Zellen innerhalb des FL1-FL2-Polygon-Gates, gruppiert nach ihrer FL1-Fluoreszenz. Die verfügbaren Dotplots hängen vom Gerätemodell und der Konfiguration ab. |
-| 5 | Das Warnungsfeld zeigt an, falls Warnungen generiert wurden während der Messung. Drücken Sie auf die Warnung, um mehr zu erfahren. |
+| 5 | Das Statusfeld der Messung zeigt Alarme oder Warnungen an. Tippen Sie auf eine Alarm- oder Warnungsanzeige, um deren Details anzuzeigen. |
 | 6 | Die Taste Löschen löscht die Messung dauerhaft; eine Bestätigung ist erforderlich. |
 | 7 | Mit dem Umbenennen-Knopf können Messungen umbenannt werden. |
 | 8 | Mit dem Resultat neu gaten-Knopf können Messungen neu gegatet werden. Mehr Details dazu unter [Messungen regaten](../results-and-data-analysis/#section-11-4-1). |
 | 9 | Mit dem Exportieren-Knopf können Messungen auf einen USB Stick exportiert werden. Mehr Details dazu unter [Export auf einen USB-Datenträger](../measurements/#section-10-8-1). |
 | 10 | Mit den Navigationspfeilen links und rechts können Sie zur vorherigen und nächsten Messung springen. |
+| 11 | Tippen Sie auf das Trenddiagramm, um das Diagramm für den Auto-Modus (das vollständige Diagramm der Online-Ergebnisse) zu öffnen. Siehe [Ansehen automatischer Onlinemessungen](../measurements/#section-10-2-3). |
 
 :::info[Mehrere Messungen auswählen]
 

@@ -7,11 +7,11 @@ slug: /results-and-data-analysis
 
 ## 11.1 Risultati delle misurazioni {#section-11-1}
 
-La figura seguente mostra il risultato di una misurazione selezionata. Da questa vista, l’utilizzatore può eliminare o rinominare la misurazione, consultare risultati precedenti (ed esportarli) oppure esportare il risultato corrente. Gli utenti esperti possono ripetere il conteggio cellulare con nuovi gate. Alcuni elementi dell’interfaccia o azioni sono disponibili solo per determinati ruoli utente (Basic, Advanced o Admin).
+La figura seguente mostra il risultato di una misurazione TCC selezionata in modalità online. Da questa vista, l’utilizzatore può eliminare o rinominare la misurazione, consultare risultati precedenti (ed esportarli) oppure esportare il risultato corrente. Gli utenti esperti possono ripetere il conteggio cellulare con nuovi gate. Alcuni elementi dell’interfaccia o azioni sono disponibili solo per determinati ruoli utente (Basic, Advanced o Admin).
 
-![BactoSense — Dettagli e grafici del risultato ICC](/img/gui/it/icc-result-details.png "width=674 class=manual-figure")
+![BactoSense — Dettagli e grafici del risultato online](/img/gui/it/online-result-details.png "width=674 class=manual-figure")
 
-*Figura 11-1 Visualizzazione del risultato di una misurazione ICC.*
+*Figura 11-1 Visualizzazione del risultato di una misurazione TCC in modalità online.*
 
 |  |  |
 | --- | --- |
@@ -19,12 +19,13 @@ La figura seguente mostra il risultato di una misurazione selezionata. Da questa
 | 2 | Finestra delle informazioni sul risultato con tutti i parametri disponibili e il diagramma a punti principale. |
 | 3 | Diagramma a punti principale nella finestra delle informazioni sul risultato. Il diagramma FL1 rispetto a FL2 mostra tutti gli eventi rilevati in base all’ampiezza dei segnali di fluorescenza FL1 (535 nm, asse X) e FL2 (715 nm, asse Y). Il poligono rosso e la linea verticale mostrano il gate configurato. Per i dettagli, consultare la sezione [Cartucce, gate e parametri dei risultati](../results-and-data-analysis/#section-11-3). Toccando questa anteprima si apre una finestra popup con accesso a tutti i diagrammi a punti (4). |
 | 4 | Finestra popup con accesso a tutti i diagrammi a punti. Il diagramma FL1 rispetto a SSC mostra solo le cellule all’interno del gate poligonale FL1 - FL2, in base al segnale di fluorescenza FL1 (535 nm) e al segnale di luce diffusa SSC (488 nm). L’istogramma FL1 mostra tutte le cellule all’interno del gate poligonale FL1 - FL2, raggruppate per intervalli di fluorescenza FL1. I diagrammi disponibili dipendono dal modello e dalla configurazione dello strumento. |
-| 5 | Il campo facoltativo degli avvertimenti indica se durante la misurazione sono stati generati avvertimenti. Toccare il campo per ulteriori informazioni. |
+| 5 | Il campo di stato della misurazione indica gli allarmi o gli avvertimenti. Toccare un’indicazione di allarme o di avvertimento per visualizzarne i dettagli. |
 | 6 | Il pulsante Cancella elimina definitivamente la misurazione (è richiesta una conferma). |
 | 7 | Il pulsante Rinomina consente di modificare il nome della misurazione. |
 | 8 | Il pulsante Risultato del re-gate consente di applicare gate diversi ai dati di misurazione. Per i dettagli, consultare la sezione [Rianalisi delle misurazioni con altri gate](../results-and-data-analysis/#section-11-4-1). |
 | 9 | Il pulsante Esporta consente di salvare questo risultato su una chiavetta USB. Ulteriori informazioni sono riportate nella sezione [Esportazione su un’unità USB](../measurements/#section-10-8-1). |
 | 10 | I pulsanti di navigazione a sinistra e a destra della vista del risultato consentono di passare rispettivamente alla misurazione precedente e successiva. |
+| 11 | Toccare il grafico dell’andamento per aprire il grafico della modalità automatica (il grafico completo dei risultati online). Vedere [Consultazione delle misurazioni automatiche in linea](../measurements/#section-10-2-3). |
 
 :::info[Selezionare più misurazioni]
 

@@ -37,6 +37,11 @@
     "schedulerCaptureReports": [
       "output/gui-capture/scheduler/provenance.json",
       "output/gui-capture/scheduler/capture-review.json"
+    ],
+    "onlineResultCaptureReports": [
+      "output/gui-online-results-review/provenance.json",
+      "output/gui-online-results-review/capture-review.json",
+      "output/gui-online-results-review/figure-review.json"
     ]
   },
   "figures": [
@@ -1358,14 +1363,15 @@
       }
     },
     {
-      "id": "en-icc-result-details",
+      "id": "en-online-result-details",
       "locale": "en",
       "kind": "screenshot",
       "surface": "native",
-      "output": "/img/gui/en/icc-result-details.png",
-      "alt": "BactoSense — ICC result details and plots",
+      "output": "/img/gui/en/online-result-details.png",
+      "alt": "BactoSense — Online result details and plots",
       "replaces": [
-        "/img/figures-second/figure-1dc7da95b4adc8.webp"
+        "/img/figures-second/figure-1dc7da95b4adc8.webp",
+        "/img/gui/en/icc-result-details.png"
       ],
       "sourceIds": [
         "gui-source-054"
@@ -1425,9 +1431,21 @@
           "required": true
         }
       ],
+      "sections": [
+        "11.1"
+      ],
+      "previousFigureId": "en-icc-result-details",
+      "captureProvenance": "output/gui-online-results-review/provenance.json",
+      "interactionEvidence": "output/gui-capture/online-results/native/en/evidence.json",
+      "sourceCaptureSha256": {
+        "output/gui-capture/online-results/native/en/online-result-detail.png": "d8080773cfc7fc89c6e85da266cad88a6a11990779b9f623b999e7ef92a627c7",
+        "output/gui-capture/online-results/native/en/online-result-metrics.png": "7d360697f739672904a182484f7b51344da962388cb0319eb21f87ab6decb604",
+        "output/gui-capture/online-results/native/en/online-result-dotplot.png": "bc3db22cb22d7eec11bb176e4954efa76f650e2a498aa681b3d66ad1e8764eba"
+      },
+      "captureDirectory": "output/gui-capture/online-results/native",
       "panels": [
         {
-          "capture": "output/gui-capture/native/en/result-detail.png",
+          "capture": "output/gui-capture/online-results/native/en/online-result-detail.png",
           "at": [
             0,
             0
@@ -1438,7 +1456,7 @@
           ]
         },
         {
-          "capture": "output/gui-capture/native/en/result-metrics.png",
+          "capture": "output/gui-capture/online-results/native/en/online-result-metrics.png",
           "crop": [
             150,
             40,
@@ -1459,7 +1477,7 @@
           ]
         },
         {
-          "capture": "output/gui-capture/native/en/result-dotplot.png",
+          "capture": "output/gui-capture/online-results/native/en/online-result-dotplot.png",
           "crop": [
             40,
             20,
@@ -1488,14 +1506,14 @@
         {
           "label": "1",
           "at": [
-            257,
-            112
+            268.921875,
+            109
           ],
           "target": [
-            257,
-            137
+            268.921875,
+            134
           ],
-          "meaning": "Tap the information icon to open all result metrics."
+          "meaning": "Main TCC result metrics. Tap the information icon to open all result metrics."
         },
         {
           "label": "2",
@@ -1540,10 +1558,10 @@
             173
           ],
           "target": [
-            720,
+            735,
             173
           ],
-          "meaning": "Measurement-warning field"
+          "meaning": "Result alarm and warning status. Tap an active indicator to view its details."
         },
         {
           "label": "6",
@@ -1604,25 +1622,39 @@
             258
           ],
           "meaning": "Previous/next result navigation"
+        },
+        {
+          "label": "11",
+          "at": [
+            565,
+            245
+          ],
+          "target": [
+            565,
+            340
+          ],
+          "meaning": "Plot of neighboring Online measurements. Tap it to open the Online results chart."
         }
       ],
       "annotationChanges": {
-        "1": "Tap the information icon to open all result metrics.",
-        "3": "Main dotplot in the result information window."
+        "1": "Main TCC result metrics. Tap the information icon to open all result metrics.",
+        "3": "Main dotplot in the result information window.",
+        "5": "Result alarm and warning status. Tap an active indicator to view its details.",
+        "11": "Plot of neighboring Online measurements. Tap it to open the Online results chart."
       },
-      "inputSha256": "5784b3dec4767497dbf4e1a9475f77275d05610efdecfe9e1cc34c3c486ef477",
-      "sha256": "51ce3ef417fc3faef1095f1d69716b057125a51b428a502ab08c09a786b1dd2f",
+      "inputSha256": "7f869559964d20af188f952424e2c7a40eaf2399e38822867ac52a289b6403a1",
+      "sha256": "48fa9c8101682514a38b4db7bbb6c056a8d05ac3ce31266e44b7dcf1adf57471",
       "pixelSize": [
         1816,
         1896
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "51ce3ef417fc3faef1095f1d69716b057125a51b428a502ab08c09a786b1dd2f",
-        "reviewedAt": "2026-10-11T19:39:56.115254+00:00",
-        "reviewer": "screenshot_inventory",
-        "method": "individual final full-size visual inspection",
-        "notes": "Three panels show the same ICC104050 record with66970LNAC+37080HNAC and35.64HNAP; labels1–10 align with info/dialog/plots/metrics/gate fields."
+        "sha256": "48fa9c8101682514a38b4db7bbb6c056a8d05ac3ce31266e44b7dcf1adf57471",
+        "reviewedAt": "2026-10-11T23:46:08.536738+00:00",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Individual full-size final PNG inspection plus paired production geometry, frozen QML source and recorded genuine tap verification.",
+        "notes": "Same Online TCC result in all three panels. Labels 1–11 are complete and clear: 1 targets the real TCC info icon; 5 identifies the active status card; 11 ends inside the clickable neighboring-measurement plot without covering the curve, alarm line, values or labels. Complete metrics/dotplot crops, translated controls and frames remain unclipped."
       }
     },
     {
@@ -4607,14 +4639,15 @@
       }
     },
     {
-      "id": "de-icc-result-details",
+      "id": "de-online-result-details",
       "locale": "de",
       "kind": "screenshot",
       "surface": "native",
-      "output": "/img/gui/de/icc-result-details.png",
-      "alt": "BactoSense — ICC-Ergebnisdetails und Diagramme",
+      "output": "/img/gui/de/online-result-details.png",
+      "alt": "BactoSense — Online-Ergebnisdetails und Diagramme",
       "replaces": [
-        "/img/figures-second/figure-1dc7da95b4adc8.webp"
+        "/img/figures-second/figure-1dc7da95b4adc8.webp",
+        "/img/gui/de/icc-result-details.png"
       ],
       "sourceIds": [
         "gui-source-054"
@@ -4674,9 +4707,21 @@
           "required": true
         }
       ],
+      "sections": [
+        "11.1"
+      ],
+      "previousFigureId": "de-icc-result-details",
+      "captureProvenance": "output/gui-online-results-review/provenance.json",
+      "interactionEvidence": "output/gui-capture/online-results/native/de/evidence.json",
+      "sourceCaptureSha256": {
+        "output/gui-capture/online-results/native/de/online-result-detail.png": "f4daa4c67e146aec532d2a8c94d2cf304001fc6fece2034a55a53fbe2a3e9483",
+        "output/gui-capture/online-results/native/de/online-result-metrics.png": "43c57cbd9bc00c35d39d2875bf0052429e628318f88f1bd6ab997378e2d15ecc",
+        "output/gui-capture/online-results/native/de/online-result-dotplot.png": "2b1055d959799da39c0455dc8b5cb80322a9e090885936d28adef517dbb5d063"
+      },
+      "captureDirectory": "output/gui-capture/online-results/native",
       "panels": [
         {
-          "capture": "output/gui-capture/native/de/result-detail.png",
+          "capture": "output/gui-capture/online-results/native/de/online-result-detail.png",
           "at": [
             0,
             0
@@ -4687,7 +4732,7 @@
           ]
         },
         {
-          "capture": "output/gui-capture/native/de/result-metrics.png",
+          "capture": "output/gui-capture/online-results/native/de/online-result-metrics.png",
           "crop": [
             150,
             40,
@@ -4708,7 +4753,7 @@
           ]
         },
         {
-          "capture": "output/gui-capture/native/de/result-dotplot.png",
+          "capture": "output/gui-capture/online-results/native/de/online-result-dotplot.png",
           "crop": [
             40,
             20,
@@ -4737,14 +4782,14 @@
         {
           "label": "1",
           "at": [
-            257,
-            112
+            268.921875,
+            109
           ],
           "target": [
-            257,
-            137
+            268.921875,
+            134
           ],
-          "meaning": "Tap the information icon to open all result metrics."
+          "meaning": "Main TCC result metrics. Tap the information icon to open all result metrics."
         },
         {
           "label": "2",
@@ -4789,10 +4834,10 @@
             173
           ],
           "target": [
-            720,
+            735,
             173
           ],
-          "meaning": "Measurement-warning field"
+          "meaning": "Result alarm and warning status. Tap an active indicator to view its details."
         },
         {
           "label": "6",
@@ -4853,25 +4898,39 @@
             258
           ],
           "meaning": "Previous/next result navigation"
+        },
+        {
+          "label": "11",
+          "at": [
+            565,
+            245
+          ],
+          "target": [
+            565,
+            340
+          ],
+          "meaning": "Plot of neighboring Online measurements. Tap it to open the Online results chart."
         }
       ],
       "annotationChanges": {
-        "1": "Tap the information icon to open all result metrics.",
-        "3": "Main dotplot in the result information window."
+        "1": "Main TCC result metrics. Tap the information icon to open all result metrics.",
+        "3": "Main dotplot in the result information window.",
+        "5": "Result alarm and warning status. Tap an active indicator to view its details.",
+        "11": "Plot of neighboring Online measurements. Tap it to open the Online results chart."
       },
-      "inputSha256": "3c959a1b7390ee43261235456cae3ee126eff5ca53194d2369a99297ede1f2a2",
-      "sha256": "68576b3e909e6f26e9cbc2cf40364ff49234d5c667b36e937fd5a87089cb7f2e",
+      "inputSha256": "6d180d4e117d5b7afb977f98123c773d21c736bc5ca79b506a7591e3fa632eb5",
+      "sha256": "0a528e37191fc669dee2ab2de07f1b6772d9e4763c8242330ada171b937806f4",
       "pixelSize": [
         1816,
         1896
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "68576b3e909e6f26e9cbc2cf40364ff49234d5c667b36e937fd5a87089cb7f2e",
-        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
-        "reviewer": "screenshot_inventory",
-        "method": "Individual final full-size visual review plus complete locale contact sheets",
-        "notes": "Three panels show the same ICC104050 record with66970LNAC+37080HNAC and35.64HNAP; labels1–10 align with info/dialog/plots/metrics/gate fields."
+        "sha256": "0a528e37191fc669dee2ab2de07f1b6772d9e4763c8242330ada171b937806f4",
+        "reviewedAt": "2026-10-11T23:46:08.536738+00:00",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Individual full-size final PNG inspection plus paired production geometry, frozen QML source and recorded genuine tap verification.",
+        "notes": "Same Online TCC result in all three panels. Labels 1–11 are complete and clear: 1 targets the real TCC info icon; 5 identifies the active status card; 11 ends inside the clickable neighboring-measurement plot without covering the curve, alarm line, values or labels. Complete metrics/dotplot crops, translated controls and frames remain unclipped."
       }
     },
     {
@@ -7856,14 +7915,15 @@
       }
     },
     {
-      "id": "fr-icc-result-details",
+      "id": "fr-online-result-details",
       "locale": "fr",
       "kind": "screenshot",
       "surface": "native",
-      "output": "/img/gui/fr/icc-result-details.png",
-      "alt": "BactoSense — Détails et graphiques du résultat ICC",
+      "output": "/img/gui/fr/online-result-details.png",
+      "alt": "BactoSense — Détails et graphiques du résultat en ligne",
       "replaces": [
-        "/img/figures-second/figure-1dc7da95b4adc8.webp"
+        "/img/figures-second/figure-1dc7da95b4adc8.webp",
+        "/img/gui/fr/icc-result-details.png"
       ],
       "sourceIds": [
         "gui-source-054"
@@ -7923,9 +7983,21 @@
           "required": true
         }
       ],
+      "sections": [
+        "11.1"
+      ],
+      "previousFigureId": "fr-icc-result-details",
+      "captureProvenance": "output/gui-online-results-review/provenance.json",
+      "interactionEvidence": "output/gui-capture/online-results/native/fr/evidence.json",
+      "sourceCaptureSha256": {
+        "output/gui-capture/online-results/native/fr/online-result-detail.png": "35c76c5f2b7ac02d395465f7d69065bb141b45d27ba29bed5139a4f04a257654",
+        "output/gui-capture/online-results/native/fr/online-result-metrics.png": "7b6ac5b2e2da044ddc21e48ec79fbf08cc7c17d258b2fed7102024e615c80d2b",
+        "output/gui-capture/online-results/native/fr/online-result-dotplot.png": "8ad96fc8176ba0bd25754a3890a127211ebeb25df0e34d6edb4715dc16b336b4"
+      },
+      "captureDirectory": "output/gui-capture/online-results/native",
       "panels": [
         {
-          "capture": "output/gui-capture/native/fr/result-detail.png",
+          "capture": "output/gui-capture/online-results/native/fr/online-result-detail.png",
           "at": [
             0,
             0
@@ -7936,7 +8008,7 @@
           ]
         },
         {
-          "capture": "output/gui-capture/native/fr/result-metrics.png",
+          "capture": "output/gui-capture/online-results/native/fr/online-result-metrics.png",
           "crop": [
             150,
             40,
@@ -7957,7 +8029,7 @@
           ]
         },
         {
-          "capture": "output/gui-capture/native/fr/result-dotplot.png",
+          "capture": "output/gui-capture/online-results/native/fr/online-result-dotplot.png",
           "crop": [
             40,
             20,
@@ -7986,14 +8058,14 @@
         {
           "label": "1",
           "at": [
-            257,
-            112
+            268.921875,
+            109
           ],
           "target": [
-            257,
-            137
+            268.921875,
+            134
           ],
-          "meaning": "Tap the information icon to open all result metrics."
+          "meaning": "Main TCC result metrics. Tap the information icon to open all result metrics."
         },
         {
           "label": "2",
@@ -8038,10 +8110,10 @@
             173
           ],
           "target": [
-            720,
+            735,
             173
           ],
-          "meaning": "Measurement-warning field"
+          "meaning": "Result alarm and warning status. Tap an active indicator to view its details."
         },
         {
           "label": "6",
@@ -8102,25 +8174,39 @@
             258
           ],
           "meaning": "Previous/next result navigation"
+        },
+        {
+          "label": "11",
+          "at": [
+            565,
+            245
+          ],
+          "target": [
+            565,
+            340
+          ],
+          "meaning": "Plot of neighboring Online measurements. Tap it to open the Online results chart."
         }
       ],
       "annotationChanges": {
-        "1": "Tap the information icon to open all result metrics.",
-        "3": "Main dotplot in the result information window."
+        "1": "Main TCC result metrics. Tap the information icon to open all result metrics.",
+        "3": "Main dotplot in the result information window.",
+        "5": "Result alarm and warning status. Tap an active indicator to view its details.",
+        "11": "Plot of neighboring Online measurements. Tap it to open the Online results chart."
       },
-      "inputSha256": "506f6a50e40330dedd7c31591fbef59af98e80059f53c8e2148b191cbc2532a7",
-      "sha256": "363b80a6c46aaad3a75230bd09a3431f92b40ec26421e45333836701327f13c2",
+      "inputSha256": "7fc63eac691de0caa44b6a8ee7518ec8f31c4eb1a4d227bf0cfb21b90bbbac8a",
+      "sha256": "a236a693c324620110637ef8d9936818cfbc8ad67841eaab08b216e8f6b323fd",
       "pixelSize": [
         1816,
         1896
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "363b80a6c46aaad3a75230bd09a3431f92b40ec26421e45333836701327f13c2",
-        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
-        "reviewer": "screenshot_inventory",
-        "method": "Individual final full-size visual review plus complete locale contact sheets",
-        "notes": "Three panels show the same ICC104050 record with66970LNAC+37080HNAC and35.64HNAP; labels1–10 align with info/dialog/plots/metrics/gate fields."
+        "sha256": "a236a693c324620110637ef8d9936818cfbc8ad67841eaab08b216e8f6b323fd",
+        "reviewedAt": "2026-10-11T23:46:08.536738+00:00",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Individual full-size final PNG inspection plus paired production geometry, frozen QML source and recorded genuine tap verification.",
+        "notes": "Same Online TCC result in all three panels. Labels 1–11 are complete and clear: 1 targets the real TCC info icon; 5 identifies the active status card; 11 ends inside the clickable neighboring-measurement plot without covering the curve, alarm line, values or labels. Complete metrics/dotplot crops, translated controls and frames remain unclipped."
       }
     },
     {
@@ -11105,14 +11191,15 @@
       }
     },
     {
-      "id": "it-icc-result-details",
+      "id": "it-online-result-details",
       "locale": "it",
       "kind": "screenshot",
       "surface": "native",
-      "output": "/img/gui/it/icc-result-details.png",
-      "alt": "BactoSense — Dettagli e grafici del risultato ICC",
+      "output": "/img/gui/it/online-result-details.png",
+      "alt": "BactoSense — Dettagli e grafici del risultato online",
       "replaces": [
-        "/img/figures-second/figure-1dc7da95b4adc8.webp"
+        "/img/figures-second/figure-1dc7da95b4adc8.webp",
+        "/img/gui/it/icc-result-details.png"
       ],
       "sourceIds": [
         "gui-source-054"
@@ -11172,9 +11259,21 @@
           "required": true
         }
       ],
+      "sections": [
+        "11.1"
+      ],
+      "previousFigureId": "it-icc-result-details",
+      "captureProvenance": "output/gui-online-results-review/provenance.json",
+      "interactionEvidence": "output/gui-capture/online-results/native/it/evidence.json",
+      "sourceCaptureSha256": {
+        "output/gui-capture/online-results/native/it/online-result-detail.png": "92dbd5f90fe047f60712dc461d92ece3dd9df4fd7f67abbd670d337b1c8b32de",
+        "output/gui-capture/online-results/native/it/online-result-metrics.png": "540c74a619ddb54582dfcae4de88c52f11835e022c009b248588d4e77d2248bf",
+        "output/gui-capture/online-results/native/it/online-result-dotplot.png": "59f941b81c61c1548adfb66ae25b68ef84ac80ceb45a7b75f59422bfe989151e"
+      },
+      "captureDirectory": "output/gui-capture/online-results/native",
       "panels": [
         {
-          "capture": "output/gui-capture/native/it/result-detail.png",
+          "capture": "output/gui-capture/online-results/native/it/online-result-detail.png",
           "at": [
             0,
             0
@@ -11185,7 +11284,7 @@
           ]
         },
         {
-          "capture": "output/gui-capture/native/it/result-metrics.png",
+          "capture": "output/gui-capture/online-results/native/it/online-result-metrics.png",
           "crop": [
             150,
             40,
@@ -11206,7 +11305,7 @@
           ]
         },
         {
-          "capture": "output/gui-capture/native/it/result-dotplot.png",
+          "capture": "output/gui-capture/online-results/native/it/online-result-dotplot.png",
           "crop": [
             40,
             20,
@@ -11235,14 +11334,14 @@
         {
           "label": "1",
           "at": [
-            257,
-            112
+            268.921875,
+            109
           ],
           "target": [
-            257,
-            137
+            268.921875,
+            134
           ],
-          "meaning": "Tap the information icon to open all result metrics."
+          "meaning": "Main TCC result metrics. Tap the information icon to open all result metrics."
         },
         {
           "label": "2",
@@ -11287,10 +11386,10 @@
             173
           ],
           "target": [
-            720,
+            735,
             173
           ],
-          "meaning": "Measurement-warning field"
+          "meaning": "Result alarm and warning status. Tap an active indicator to view its details."
         },
         {
           "label": "6",
@@ -11351,25 +11450,39 @@
             258
           ],
           "meaning": "Previous/next result navigation"
+        },
+        {
+          "label": "11",
+          "at": [
+            565,
+            245
+          ],
+          "target": [
+            565,
+            340
+          ],
+          "meaning": "Plot of neighboring Online measurements. Tap it to open the Online results chart."
         }
       ],
       "annotationChanges": {
-        "1": "Tap the information icon to open all result metrics.",
-        "3": "Main dotplot in the result information window."
+        "1": "Main TCC result metrics. Tap the information icon to open all result metrics.",
+        "3": "Main dotplot in the result information window.",
+        "5": "Result alarm and warning status. Tap an active indicator to view its details.",
+        "11": "Plot of neighboring Online measurements. Tap it to open the Online results chart."
       },
-      "inputSha256": "dd8270635b15e9acf20b63fe2336ee6219e5d00e2783ececb541fa510f4474fb",
-      "sha256": "11de1ec231a512ff8cd097db1afec528931ad22980e0e3b99bb44b7e3b83e369",
+      "inputSha256": "c59c06ef3fe3232f8dc54f2fe3c99209ff9666cedf1bf3543cb00cb921836643",
+      "sha256": "66595b6b4e174a7c2c69fbb2f5c30418e5bd69e6a9ceafbf6502ed5bc547c29d",
       "pixelSize": [
         1816,
         1896
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "11de1ec231a512ff8cd097db1afec528931ad22980e0e3b99bb44b7e3b83e369",
-        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
-        "reviewer": "screenshot_inventory",
-        "method": "Individual final full-size visual review plus complete locale contact sheets",
-        "notes": "Three panels show the same ICC104050 record with66970LNAC+37080HNAC and35.64HNAP; labels1–10 align with info/dialog/plots/metrics/gate fields."
+        "sha256": "66595b6b4e174a7c2c69fbb2f5c30418e5bd69e6a9ceafbf6502ed5bc547c29d",
+        "reviewedAt": "2026-10-11T23:46:08.536738+00:00",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Individual full-size final PNG inspection plus paired production geometry, frozen QML source and recorded genuine tap verification.",
+        "notes": "Same Online TCC result in all three panels. Labels 1–11 are complete and clear: 1 targets the real TCC info icon; 5 identifies the active status card; 11 ends inside the clickable neighboring-measurement plot without covering the curve, alarm line, values or labels. Complete metrics/dotplot crops, translated controls and frames remain unclipped."
       }
     },
     {
@@ -14370,14 +14483,15 @@
       }
     },
     {
-      "id": "es-icc-result-details",
+      "id": "es-online-result-details",
       "locale": "es",
       "kind": "screenshot",
       "surface": "native",
-      "output": "/img/gui/es/icc-result-details.png",
-      "alt": "BactoSense — Detalles y gráficos del resultado ICC",
+      "output": "/img/gui/es/online-result-details.png",
+      "alt": "BactoSense — Detalles y gráficos del resultado en línea",
       "replaces": [
-        "/img/figures-second/figure-1dc7da95b4adc8.webp"
+        "/img/figures-second/figure-1dc7da95b4adc8.webp",
+        "/img/gui/es/icc-result-details.png"
       ],
       "sourceIds": [
         "gui-source-054"
@@ -14437,9 +14551,21 @@
           "required": true
         }
       ],
+      "sections": [
+        "11.1"
+      ],
+      "previousFigureId": "es-icc-result-details",
+      "captureProvenance": "output/gui-online-results-review/provenance.json",
+      "interactionEvidence": "output/gui-capture/online-results/native/es/evidence.json",
+      "sourceCaptureSha256": {
+        "output/gui-capture/online-results/native/es/online-result-detail.png": "7b4a3c32cc350033d41d194790bf9523493bcb084ca59b8625fbdd81c6a22cc9",
+        "output/gui-capture/online-results/native/es/online-result-metrics.png": "81b5e2050aa23dd1e174e617a38ba64652b267119383e25297b1845df5867a44",
+        "output/gui-capture/online-results/native/es/online-result-dotplot.png": "907619874750328f497faa464ded90a61d5a61d9ccc65c8cb5f095af9c165986"
+      },
+      "captureDirectory": "output/gui-capture/online-results/native",
       "panels": [
         {
-          "capture": "output/gui-capture/native/es/result-detail.png",
+          "capture": "output/gui-capture/online-results/native/es/online-result-detail.png",
           "at": [
             0,
             0
@@ -14450,7 +14576,7 @@
           ]
         },
         {
-          "capture": "output/gui-capture/native/es/result-metrics.png",
+          "capture": "output/gui-capture/online-results/native/es/online-result-metrics.png",
           "crop": [
             150,
             40,
@@ -14471,7 +14597,7 @@
           ]
         },
         {
-          "capture": "output/gui-capture/native/es/result-dotplot.png",
+          "capture": "output/gui-capture/online-results/native/es/online-result-dotplot.png",
           "crop": [
             40,
             20,
@@ -14500,14 +14626,14 @@
         {
           "label": "1",
           "at": [
-            257,
-            112
+            268.921875,
+            109
           ],
           "target": [
-            257,
-            137
+            268.921875,
+            134
           ],
-          "meaning": "Tap the information icon to open all result metrics."
+          "meaning": "Main TCC result metrics. Tap the information icon to open all result metrics."
         },
         {
           "label": "2",
@@ -14552,10 +14678,10 @@
             173
           ],
           "target": [
-            720,
+            735,
             173
           ],
-          "meaning": "Measurement-warning field"
+          "meaning": "Result alarm and warning status. Tap an active indicator to view its details."
         },
         {
           "label": "6",
@@ -14616,25 +14742,39 @@
             258
           ],
           "meaning": "Previous/next result navigation"
+        },
+        {
+          "label": "11",
+          "at": [
+            565,
+            245
+          ],
+          "target": [
+            565,
+            340
+          ],
+          "meaning": "Plot of neighboring Online measurements. Tap it to open the Online results chart."
         }
       ],
       "annotationChanges": {
-        "1": "Tap the information icon to open all result metrics.",
-        "3": "Main dotplot in the result information window."
+        "1": "Main TCC result metrics. Tap the information icon to open all result metrics.",
+        "3": "Main dotplot in the result information window.",
+        "5": "Result alarm and warning status. Tap an active indicator to view its details.",
+        "11": "Plot of neighboring Online measurements. Tap it to open the Online results chart."
       },
-      "inputSha256": "c1bada4567cbf1e26a330fd79c3939a1f6fbe2559ff632dad129846626a36fbb",
-      "sha256": "2064f896c8530f4c6d5c0825eaffc9adc85b2bb6e56c0c6db8dc27b42ead48a2",
+      "inputSha256": "91d7f95028066e3dadda3784676e0d6c7deb2fd67f04d45a5e09ea6ba339b05e",
+      "sha256": "43c03a809f3de4cc352ec08033a8821ea4cfad1e4e7f2ea460742f2fda08af37",
       "pixelSize": [
         1816,
         1896
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "2064f896c8530f4c6d5c0825eaffc9adc85b2bb6e56c0c6db8dc27b42ead48a2",
-        "reviewedAt": "2026-10-11T19:49:05.261893+00:00",
-        "reviewer": "screenshot_inventory",
-        "method": "Individual final full-size visual review plus complete locale contact sheets",
-        "notes": "Three panels show the same ICC104050 record with66970LNAC+37080HNAC and35.64HNAP; labels1–10 align with info/dialog/plots/metrics/gate fields."
+        "sha256": "43c03a809f3de4cc352ec08033a8821ea4cfad1e4e7f2ea460742f2fda08af37",
+        "reviewedAt": "2026-10-11T23:46:08.536738+00:00",
+        "reviewer": "/root/gui_screen_mapping",
+        "method": "Individual full-size final PNG inspection plus paired production geometry, frozen QML source and recorded genuine tap verification.",
+        "notes": "Same Online TCC result in all three panels. Labels 1–11 are complete and clear: 1 targets the real TCC info icon; 5 identifies the active status card; 11 ends inside the clickable neighboring-measurement plot without covering the curve, alarm line, values or labels. Complete metrics/dotplot crops, translated controls and frames remain unclipped."
       }
     },
     {
@@ -23889,9 +24029,9 @@
     }
   ],
   "reviewSummary": {
-    "completedAt": "2026-10-11T22:05:45.214543+00:00",
-    "figures": 269,
-    "native": 190,
+    "completedAt": "2026-10-11T23:46:08.536738+00:00",
+    "figures": 329,
+    "native": 210,
     "web": 50,
     "icons": 29,
     "allLocalesReviewed": true,
@@ -23904,7 +24044,9 @@
       "output/gui-navigation-review/annotated-de-fr-review.json",
       "output/gui-navigation-review/annotated-it-es-review.json",
       "output/gui-capture/activation/capture-review.json",
-      "output/gui-digital-output-review/capture-and-crop-review.json"
+      "output/gui-digital-output-review/capture-and-crop-review.json",
+      "output/gui-online-results-review/capture-review.json",
+      "output/gui-online-results-review/figure-review.json"
     ]
   }
 }

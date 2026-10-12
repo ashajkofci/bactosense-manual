@@ -1,0 +1,226 @@
+# Manual on the instrument
+
+The prototype adds **Support & Service → Manuals → User manual**
+to the sibling `../gui` checkout. All 21 documents are bundled in English,
+German, French, Italian and Spanish: 105 chapters in total.
+The reader offers chapter contents, section shortcuts, searchable
+text, internal cross-references, reading history, 16–28 px text, and figure zoom
+with panning. The manual text uses the system font. Notice headings use the
+published PDF's original symbol, uppercase bold title and severity colours.
+It retains the device status bar and Back control, hides the title
+strip on this screen, and uses the existing `SmallButton` and `ListItemSurface`
+components. Contents and sections use continuous `ListItemSurface` lists.
+Their labels use `TextUI.list_item_dark` normally and `TextUI.list_item_pr`
+while pressed, matching `ListItemManualResult`.
+Interface copy and accessibility labels use `qsTr()`; translation catalogs
+have not been regenerated. The manual follows the GUI language, with English
+as the fallback for unsupported languages, including Chinese.
+Support & Service is available to Basic operators; its diagnostic,
+service and contact-editing actions retain their own permission checks.
+
+## Contextual help
+
+`TemplateScreen.manualReference` optionally adds help beside the screen title:
+
+```qml
+manualReference: "manual:measurements#advanced-scheduler-create"
+```
+
+`InfoBarView` displays a small circled question mark on the right of the title
+bar. It uses `GenericIcon.Help`: the same vector circle as the existing Info
+icon, with a bold question mark in the GUI's existing font. The button surface
+and border are transparent; pressing or focusing it changes the icon colour.
+Its touch area is 44 × 40 px. Title and wizard text reserve that space.
+The logout control, clock and user name keep their original top-bar positions.
+No help control is inserted when the title bar is hidden or the reference is empty.
+
+Contextual help uses a separate loader for `SettingsUserManualScreen`, initially
+opening the specified chapter and anchor. The originating screen remains alive
+with its local drafts and selections; its screen history is unchanged. The
+device Back control closes help and restores that same instance. This avoids
+repeating `Component.onCompleted` operations, such as re-gating, and preserves
+unsaved schedule and gate edits. Search still uses the existing modal keyboard.
+
+Three subagents reviewed all controller screens against the actual English
+instructions, with repeated stricter passes. A reference is retained only when
+it adds practical instructions, field meanings or decision guidance beyond the
+screen's existing labels and explanations. Useful links include measurement
+setup, scheduling rules and preview, result interpretation and multiselection,
+USB export requirements, gate geometry, cartridge replacement, IO configuration,
+networking, errors and supported settings. References are conditional on the
+documented workflow and visible controls.
+
+The following deliberately have no contextual help:
+
+- Autosampler and batch workflows, BactoSwitch setup/control, private service
+  diagnostics and protocol logs: no matching instructions in this manual.
+- Validation/SST and undocumented protocol variants: relevant text redirects
+  to separate kit manuals rather than explaining the visible workflow.
+- Alarm history, audit trail, intervention history, system info, log filter
+  dialogs and password-policy settings: available text mainly repeats labels
+  or navigation and omits the screen's controls or field meanings.
+- Broad settings menus and deletion progress: the chapter overview or setup
+  procedure does not provide useful help at that point.
+- Login, all logged-out screens, initial PIN and date setup, automatic-logout
+  settings and Language: linked instructions are
+  obvious, assume a different authentication context, or add less than the UI.
+- Export and re-gating progress: available procedures concern preparation and
+  starting the operation rather than explaining the current progress/error state.
+- Games, UI previews and the manual reader itself.
+
+References change with the active scheduler or cartridge step. Cloud login,
+private contact editing and validation gates suppress unrelated help. Cartridge
+links follow the selected exchange/removal/installation workflow and disappear
+after the documented operator steps. Measurement wizards expose help only
+when logged in and outside validation mode.
+Home, Demo and User management retain their links at the user's explicit
+request: the Home overview (§8.8.1), Demo mode (§8.12), and Login, user roles
+and permissions (§8.2). All retained anchors match across the five manuals.
+
+## Export approach
+
+Docusaurus [builds a static site](https://docusaurus.io/docs/deployment).
+Its [plugin lifecycle](https://docusaurus.io/docs/api/plugin-methods/lifecycle-apis#postbuildprops)
+includes `allContentLoaded` for the published chapter inventory and `postBuild`
+for processing the finished HTML. These are useful extension points for a
+device export. The prototype adds a project plugin rather than introducing
+another document authoring format.
+
+| Approach | Consequence for this GUI |
+| --- | --- |
+| Embed the complete Docusaurus site in a web view | Preserves browser rendering, but adds a browser engine and its deployment requirements. The GUI currently has no WebEngine dependency. |
+| Parse source Markdown in QML JavaScript | Needs a Markdown implementation plus support for Docusaurus notices, MDX images, explicit heading IDs and existing HTML tables. Qt's native Markdown support was introduced in 5.14, after the GUI's 5.12 target. |
+| Export rendered content to JSON and use native rich text | Uses Docusaurus to resolve the source syntax once. One QML reader loads all chapters and their local artwork. This is the implemented prototype. |
+| Use the generated PDF | Provides the existing printable edition, but requires a PDF viewer and a layout suited to a small touchscreen. |
+
+Qt documents a [supported HTML subset](https://doc.qt.io/qt-5/richtext-html-subset.html),
+including tables, merged cells, lists, links, images, scientific subscripts and
+superscripts. Its [Text documentation](https://doc.qt.io/qt-5/qml-qtquick-text.html)
+describes rich text and the later Markdown format. The exporter converts the
+website content to that subset; the device does not execute the site's React
+or JavaScript code.
+
+## Build and preview
+
+From this manual checkout:
+
+```sh
+npm run manual:device -- --gui ../gui
+npm run manual:preview
+# Preview a specific installed language:
+npm run manual:preview -- --locale fr
+```
+
+The first command builds every configured language from the current sources into
+`output/device-site/`, runs the export plugin, and assembles the complete bundle
+in `output/device-manual/`. It installs all five language folders, `locales.json`
+and `manual.qrc` in `../gui/manual/`. It skips PDF compilation.
+It does not run the Apache publication step. Omitting `--gui` creates the bundle
+without installing it. `--gui` accepts another GUI checkout containing `gui.pro`.
+
+The preview opens the same reusable reader in an 800 × 480 desktop window.
+It requires the sibling `../gui` prototype, CMake and Qt 5 development libraries,
+and uses the same `ModalKeyboard` and keyboard style as the GUI. Set `QT5_CMAKE_PREFIX`
+to the Qt installation when it differs from the default. The small native
+preview host supplies the device controls' context and resources, and keeps its GUI
+preferences in a private temporary directory.
+Qt Virtual Keyboard must also be installed. Set `QT5_QML_PATH` if its modules
+are outside the detected Qt installation. The launcher copies the existing
+GUI keyboard style into a private import tree.
+
+Rebuild the GUI after installing a new bundle. `gui.pro` includes the new QML
+screen and `manual/manual.qrc`; normal firmware packaging therefore embeds the
+manual. A fresh GUI checkout has a versioned bundle and does not need Node.js,
+Docusaurus or the manual checkout to compile or consult it. Subsequent manual
+edits need another export and GUI build.
+
+Normal `npm run build` also exports each locale with the same plugin: English
+under `build/device-manual/en/` and translations under
+`build/<locale>/device-manual/<locale>/`. `manual:device` assembles those exports
+into one firmware resource bundle without publishing the website.
+
+## Files and runtime
+
+| File | Purpose |
+| --- | --- |
+| `plugins/manual-device.cjs` | Docusaurus lifecycle integration for all configured languages. |
+| `plugins/manual-chapters.cjs` | Shared sidebar inventory for the PDF and device exports. |
+| `scripts/export-device-manual.mjs` | Converts rendered HTML, copies artwork and validates cross-references. |
+| `../gui/manual/locales.json` | Available languages and English fallback. |
+| `../gui/manual/<locale>/index.json` | Localized chapter order, metadata, headings and anchor-to-block mappings. |
+| `../gui/manual/<locale>/chapters/*.json` | Heading, rich-text and figure blocks for each chapter. |
+| `../gui/manual/<locale>/search.json` | Localized search text and chapter/block destinations. |
+| `../gui/manual/<locale>/assets/` | Referenced images and safety SVGs, retaining source filenames and directories. |
+| `../gui/manual/<locale>/report.json` | Inventory, original/exported dimensions, resize decisions, source paths, sizes and SHA-256 values. |
+| `../gui/views/manual/ManualReader.qml` | Shared chapter loading, consultation controls, search, history and figure zoom. |
+| `../gui/views/manual/ManualBlock.qml` | Reusable heading, rich-text/table and figure rendering. |
+| `../gui/utils/manualDocument.js` | Qt 5.12-compatible JSON validation, links, search and image sizing. |
+
+Each of the five languages contains 21 documents, 178 images and 655 validated
+internal references. Artwork occupies about 10.9–11.3 MiB per language.
+53 images per language were resized. Every exported asset is at most 800 px wide.
+
+The exporter resolves Docusaurus' hashed URLs and small inline images back to
+their tracked source paths by matching the original bytes. For example,
+`static/img/gui/en/home-overview.png` becomes
+`en/assets/img/gui/en/home-overview.png`, with the same filename even when resized
+or updated. Duplicate locale artwork prefers the current language. Genuinely anonymous
+inline images use a digest of the original bytes as a fallback name.
+
+Images wider than 800 px are resized before copying, preserving their aspect
+ratio, format and transparency with [Sharp](https://sharp.pixelplumbing.com/api-resize/).
+Smaller assets are copied byte for byte. Oversized SVGs keep their vector viewBox
+and receive capped width/height dimensions. The website's original assets are
+unchanged. Source and exported hashes in `report.json` make the conversion
+traceable. QML figure decoding also respects the exported width.
+
+The GUI reads `qrc:/manual/locales.json`, selects the base language of
+`System.locale.name`, then asynchronously reads that language's index and selected
+chapter. Search data is loaded when first needed. Article blocks use a
+virtualized `ListView`. Wide tables can scroll horizontally, and their
+illustrations can open in the image viewer. External references display the
+address for use on another device. Loading failures offer a retry; request
+generation numbers prevent an older read from changing a newer navigation.
+
+Every language bundle retains all published chapter text, lists, tables, notices,
+illustrations and anchors. Website styling and browser interactions are
+adapted to native controls. No QML file is generated per manual page. The
+exporter rejects missing images, unknown safety symbols and broken internal
+references. Embedded data-URI images are converted to ordinary local assets.
+
+## Validation and limits
+
+Before the contextual-help and resize changes, the reader was checked with native Qt 5.15.19 on macOS, using the actual GUI
+QML and image resources, a private Bactoserver demo runtime, Cocoa OpenGL and
+the separately installed production virtual keyboard style. Both Basic and
+Admin consultation flows passed. These flows cover the menu link, a mouse
+click on a rendered index cross-reference, search entry and cancellation,
+section shortcuts, figure zoom, text sizing and the device Back control.
+
+At that stage, the JavaScript suite passed 310 checks; the QML suite passed 198.
+The new bundle checks resolve all exported references and images. Reader
+checks load every chapter, protect heading geometry, test missing resources
+and cancelled loads, and require visible, nonzero image dimensions.
+`npm run manual:check` also passed for all five website editions.
+
+The subsequent contextual-help and image-export update successfully rebuilt
+all five Docusaurus/device bundles and the native Qt preview and GUI. QML
+syntax checks passed for the changed components, and literal help destinations
+were compared with the embedded index. Dynamic destinations were reviewed
+against their screen state and source chapter. Tests were not rerun for this update.
+
+The GUI's focused integration story is `SUP.OnDeviceManual`, in
+`test/integration/tst_SUP_UserManual.qml`. It uses the existing integration
+harness and its disposable server. The native capture wrapper is
+`scripts/device-prototype/tst_capture.qml`; local screenshots are under
+`output/device-prototype/screenshots/` at 1600 × 960 from the logical
+800 × 480 interface. Reviewed states include Support & Service, contents,
+safety notices, Advanced scheduling, section navigation, search, enlarged
+artwork and a procedure table.
+
+Docker was unavailable, so the Docker integration run was not completed.
+The Qt 5.12 target and physical instrument have not been exercised here.
+Hardware validation should assess startup/read latency, image decoding memory
+and touch scrolling with long tables. Consultation currently resets when the
+operator leaves the manual screen. All five available manual languages are installed;
+the GUI's Chinese locale uses the English manual.

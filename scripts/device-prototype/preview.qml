@@ -1,48 +1,43 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.5
-import QtQuick.Layouts 1.12
-import "../../../gui/views/manual" as Manual
+import "qrc:/views/manual" as Manual
 
 // A desktop host for the same reader installed in SettingsUserManualScreen.
 // The integrated Support & Service flow is exercised by tst_capture.qml.
 ApplicationWindow {
     id: window
-    title: "BactoSense English manual preview"
+    title: qsTr("BactoSense manual preview")
     width: 800
     height: 480
     minimumWidth: 680
     minimumHeight: 400
     visible: true
     color: "#dceaf4"
-    header: ToolBar {
-        height: 54
-        background: Rectangle { color: "#343d45" }
-        Label { anchors.centerIn: parent; text: "BactoSense · User manual (English)"; color: "#ffffff"; font.pixelSize: 22 }
-    }
     Manual.ManualReader {
         id: reader
+        bundleUrl: "qrc:/manual/" + ((typeof ManualPreviewLocale === "string" && ManualPreviewLocale) || selectedLocale) + "/"
         anchors.fill: parent
         anchors.margins: 16
         onSearchRequested: {
-            searchField.text = query
-            searchDialog.open()
-            searchField.forceActiveFocus()
+            keyboard.setSource("qrc:/views/singleComponents/ModalKeyboard.qml", {
+                text: query, state: "full_empty"
+            })
         }
     }
-    Dialog {
-        id: searchDialog
-        title: "Search the English manual"
-        anchors.centerIn: parent
-        width: Math.min(560, window.width - 40)
-        modal: true
-        standardButtons: Dialog.Ok | Dialog.Cancel
-        onAccepted: reader.search(searchField.text)
-        TextField {
-            id: searchField
-            width: parent.width
-            placeholderText: "For example: cartridge, cleaning or scheduling"
-            font.pixelSize: 18
-            onAccepted: searchDialog.accept()
+    Loader {
+        id: keyboard
+        objectName: "previewKeyboard"
+        anchors.fill: parent
+        z: 20
+        onLoaded: item.headerText = qsTr("Search the manual")
+    }
+    Connections {
+        target: keyboard.item
+        onClosed: keyboard.source = ""
+        onFinish: {
+            var query = text
+            keyboard.source = ""
+            reader.search(query)
         }
     }
 }

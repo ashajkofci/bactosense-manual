@@ -199,6 +199,7 @@ Seleccione un número de sección para abrir el tema correspondiente de este man
 
 ## M
 
+- Manual integrado [15.4](/maintenance#section-15-4)
 - Mantenimiento [15.1](/maintenance#section-15-1)
   - Liberación de espacio en disco [15.2.8](/maintenance#section-15-2-8)
   - Bolsa desecante [15.2.5](/maintenance#section-15-2-5)

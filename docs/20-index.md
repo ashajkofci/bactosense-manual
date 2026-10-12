@@ -104,6 +104,7 @@ Select a section number to open the corresponding topic in this manual.
 
 ## E
 
+- Embedded manual [15.4](/maintenance#section-15-4)
 - EBC (E. coli Cell Count) [11.3.5](/results-and-data-analysis#section-11-3-5)
 - Electrical installation
   - power [5.1](/installation#section-5-1)

@@ -7,11 +7,11 @@ slug: /results-and-data-analysis
 
 ## 11.1 Measurement results {#section-11-1}
 
-The figure below shows the result of a selected measurement. From here, the user can delete or rename the measurement, look up older results (and export them), or export the result. Expert users can repeat the cell counting with new gates. Some user interface elements or actions are only available to specific user roles (Basic, Advanced or Admin).
+The figure below shows the result of a selected TCC measurement in Online mode. From here, the user can delete or rename the measurement, look up older results (and export them), or export the result. Expert users can repeat the cell counting with new gates. Some user interface elements or actions are only available to specific user roles (Basic, Advanced or Admin).
 
-![BactoSense — ICC result details and plots](/img/gui/en/icc-result-details.png "width=674 class=manual-figure")
+![BactoSense — Online result details and plots](/img/gui/en/online-result-details.png "width=674 class=manual-figure")
 
-*Figure 11-1 Display of an ICC measurement result.*
+*Figure 11-1 Display of a TCC measurement result in Online mode.*
 
 |  |  |
 | --- | --- |
@@ -19,12 +19,13 @@ The figure below shows the result of a selected measurement. From here, the user
 | 2 | Result information window with all available result parameters and the main dotplot. |
 | 3 | Main dotplot in the result information window. The FL1 vs FL2 dotplot shows all detected events according to the amplitude of their fluorescence signals FL1 (535 nm, X-axis) and FL2 (715 nm, Y-axis). The red polygon and vertical line show the configured gate. For details refer to [Cartridges, gates and result parameters](../results-and-data-analysis/#section-11-3). Tap this dotplot preview to open a pop-up with access to all dotplots (4). |
 | 4 | Pop-up window with access to all dotplots. The FL1 vs SSC dotplot shows only cells inside the FL1 - FL2 polygon gate, according to their fluorescence signal FL1 (535 nm) and scattered light signal SSC (488 nm). The FL1 histogram shows all cells inside the FL1 - FL2 polygon gate, binned according to their fluorescence in FL1. The available dotplots depend on your instrument model and configuration. |
-| 5 | The optional warnings field indicates whether any warnings were generated during the measurement. Tap on the field to learn more. |
+| 5 | The measurement status field indicates alarms or warnings. Tap an alarm or warning indication to view its details. |
 | 6 | The Delete button removes the measurement permanently (requires confirmation). |
 | 7 | The Rename button can be used to change the measurement name. |
 | 8 | The Re-gate result button allows to apply a different gating to the measurement data. For details refer to [Regate measurements](../results-and-data-analysis/#section-11-4-1). |
 | 9 | The Export button allows to save this result to a USB stick. More information can be found in [Export to a USB drive](../measurements/#section-10-8-1). |
 | 10 | The navigation buttons on the left and right of the result view allow you to navigate to the previous and next measurements, respectively. |
+| 11 | Touch the trend plot to open the Auto mode plot (the full Online results chart). See [Reviewing automatic online measurements](../measurements/#section-10-2-3). |
 
 :::info[Select multiple measurements]
 

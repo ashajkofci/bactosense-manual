@@ -1,0 +1,290 @@
+{
+  "reviewedUtc": "2026-10-11T23:42:48.774Z",
+  "scope": "Section11.1 Online-mode result screenshot and plot-touch legend in all five languages.",
+  "guiCommit": "6360d9fb5ee980c04dc967eaf3a11f6b3958c2f8",
+  "guiResourceFingerprint": "e4f9b2232b99d3cd7781a58b3bd551d126a432ec3e30a88833b50de9179d839b",
+  "sourceFiles": [
+    {
+      "file": "../gui/controllers/globalScreens/SingleResultScreen.qml",
+      "sha256": "89afccbb37f4a73f38db7281b57b4bf93ec588b3381f1febfeea70e88814febc"
+    },
+    {
+      "file": "../gui/views/singleComponents/DataResultView.qml",
+      "sha256": "3e7f6462d0bd3c4f33c89be3b2be033c6396fc647090077b4ba8cb943cb45d0e"
+    },
+    {
+      "file": "../gui/views/singleComponents/ResultPrimaryPlotView.qml",
+      "sha256": "e8c036267d752f689554ec8b640248c811a20b62a010c71509a37ff4f526b633"
+    },
+    {
+      "file": "../gui/models/DataResultModel.qml",
+      "sha256": "0b160c4dd33815d783b98ccc299e13e5ffb199ab20d6d800f63b2c190c8b25c8"
+    }
+  ],
+  "bactoserverCommit": "26b9cbaad199dc1387d1a8ace72fef02b3fa1c64",
+  "scientificExample": {
+    "name": "DWTP TCC after SSF",
+    "timestamp": 1773268287,
+    "displayDate": "2026-03-11 23:31:27",
+    "bucket": "auto",
+    "gateSet": "tcc_default",
+    "TCC": 162860,
+    "LNAC": 110497,
+    "HNAC": 52363,
+    "HNAPPercentDisplay": "32.15",
+    "genuineNeighborPoints": 13,
+    "archivePath": "/archive/auto/20260311-223127UTC DWTP TCC after SSF"
+  },
+  "touch": {
+    "callout": "11",
+    "badge": [
+      565,
+      245
+    ],
+    "target": [
+      565,
+      340
+    ],
+    "mouseArea": [
+      380,
+      270,
+      370,
+      140
+    ],
+    "destination": "qrc:/controllers/autoScreens/AutoMainScreen.qml",
+    "verifiedLocales": [
+      "en",
+      "de",
+      "fr",
+      "it",
+      "es"
+    ]
+  },
+  "status": {
+    "hasAlarm": true,
+    "hasWarning": false,
+    "title": "Critical Deviation",
+    "opened": "qrc:/views/singleComponents/ModalAlarms.qml"
+  },
+  "settingsSaved": false,
+  "hardwareActionsRun": false,
+  "allServerSettingsUnchanged": true,
+  "unchangedOtherFigures": 324,
+  "privateCaptureProvenance": "output/gui-online-results-review/provenance.json",
+  "privateCaptureReview": "output/gui-online-results-review/capture-review.json",
+  "privateFigureReview": "output/gui-online-results-review/figure-review.json",
+  "changes": [
+    {
+      "locale": "en",
+      "file": "docs/11-results-and-data-analysis.md",
+      "section": "11.1",
+      "kind": "introduction",
+      "old": "The figure below shows the result of a selected measurement. From here, the user can delete or rename the measurement, look up older results (and export them), or export the result. Expert users can repeat the cell counting with new gates. Some user interface elements or actions are only available to specific user roles (Basic, Advanced or Admin).",
+      "new": "The figure below shows the result of a selected TCC measurement in Online mode. From here, the user can delete or rename the measurement, look up older results (and export them), or export the result. Expert users can repeat the cell counting with new gates. Some user interface elements or actions are only available to specific user roles (Basic, Advanced or Admin)."
+    },
+    {
+      "locale": "en",
+      "file": "docs/11-results-and-data-analysis.md",
+      "section": "11.1",
+      "kind": "image",
+      "old": "![BactoSense — ICC result details and plots](/img/gui/en/icc-result-details.png \"width=674 class=manual-figure\")",
+      "new": "![BactoSense — Online result details and plots](/img/gui/en/online-result-details.png \"width=674 class=manual-figure\")"
+    },
+    {
+      "locale": "en",
+      "file": "docs/11-results-and-data-analysis.md",
+      "section": "11.1",
+      "kind": "caption",
+      "old": "*Figure 11-1 Display of an ICC measurement result.*",
+      "new": "*Figure 11-1 Display of a TCC measurement result in Online mode.*"
+    },
+    {
+      "locale": "en",
+      "file": "docs/11-results-and-data-analysis.md",
+      "section": "11.1",
+      "kind": "status-legend",
+      "old": "| 5 | The optional warnings field indicates whether any warnings were generated during the measurement. Tap on the field to learn more. |",
+      "new": "| 5 | The measurement status field indicates alarms or warnings. Tap an alarm or warning indication to view its details. |"
+    },
+    {
+      "locale": "en",
+      "file": "docs/11-results-and-data-analysis.md",
+      "section": "11.1",
+      "kind": "plot-touch-legend",
+      "old": "",
+      "new": "| 11 | Touch the trend plot to open the Auto mode plot (the full Online results chart). See [Reviewing automatic online measurements](../measurements/#section-10-2-3). |"
+    },
+    {
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "section": "11.1",
+      "kind": "introduction",
+      "old": "Untenstehende Abbildung zeigt das Ergebnis einer ausgewählten Messung. Von hier aus kann der Benutzer Messresultate anschauen, löschen, umbenennen, neu gaten oder exportieren. Einige Aktionen sind an bestimmte Benutzerrollen gebunden (Basic, Advanced oder Admin).",
+      "new": "Die folgende Abbildung zeigt das Ergebnis einer ausgewählten TCC-Messung im Online-Modus. Von hier aus kann der Benutzer Messresultate anschauen, löschen, umbenennen, neu gaten oder exportieren. Einige Aktionen sind an bestimmte Benutzerrollen gebunden (Basic, Advanced oder Admin)."
+    },
+    {
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "section": "11.1",
+      "kind": "image",
+      "old": "![BactoSense — ICC-Ergebnisdetails und Diagramme](/img/gui/de/icc-result-details.png \"width=674 class=manual-figure\")",
+      "new": "![BactoSense — Online-Ergebnisdetails und Diagramme](/img/gui/de/online-result-details.png \"width=674 class=manual-figure\")"
+    },
+    {
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "section": "11.1",
+      "kind": "caption",
+      "old": "*Abbildung 11-1 : Anzeige eines einzelnen ICC Messergebnisses.*",
+      "new": "*Abbildung 11-1 Anzeige des Ergebnisses einer TCC-Messung im Online-Modus.*"
+    },
+    {
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "section": "11.1",
+      "kind": "status-legend",
+      "old": "| 5 | Das Warnungsfeld zeigt an, falls Warnungen generiert wurden während der Messung. Drücken Sie auf die Warnung, um mehr zu erfahren. |",
+      "new": "| 5 | Das Statusfeld der Messung zeigt Alarme oder Warnungen an. Tippen Sie auf eine Alarm- oder Warnungsanzeige, um deren Details anzuzeigen. |"
+    },
+    {
+      "locale": "de",
+      "file": "i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "section": "11.1",
+      "kind": "plot-touch-legend",
+      "old": "",
+      "new": "| 11 | Tippen Sie auf das Trenddiagramm, um das Diagramm für den Auto-Modus (das vollständige Diagramm der Online-Ergebnisse) zu öffnen. Siehe [Ansehen automatischer Onlinemessungen](../measurements/#section-10-2-3). |"
+    },
+    {
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "section": "11.1",
+      "kind": "introduction",
+      "old": "La figure ci-dessous montre le résultat d'une mesure sélectionnée. À partir de là, l'utilisateur peut supprimer ou renommer la mesure, rechercher des résultats plus anciens, ou exporter le résultat. Les utilisateurs experts peuvent répéter le comptage des cellules avec de nouvelles fenêtres. Certains éléments ou actions de l'interface utilisateur ne sont disponibles que pour des rôles d'utilisateur spécifiques (Basique, Avancé ou Admin).",
+      "new": "La figure ci-dessous montre le résultat d’une mesure TCC sélectionnée en mode en ligne. À partir de là, l'utilisateur peut supprimer ou renommer la mesure, rechercher des résultats plus anciens, ou exporter le résultat. Les utilisateurs experts peuvent répéter le comptage des cellules avec de nouvelles fenêtres. Certains éléments ou actions de l'interface utilisateur ne sont disponibles que pour des rôles d'utilisateur spécifiques (Basique, Avancé ou Admin)."
+    },
+    {
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "section": "11.1",
+      "kind": "image",
+      "old": "![BactoSense — Détails et graphiques du résultat ICC](/img/gui/fr/icc-result-details.png \"width=674 class=manual-figure\")",
+      "new": "![BactoSense — Détails et graphiques du résultat en ligne](/img/gui/fr/online-result-details.png \"width=674 class=manual-figure\")"
+    },
+    {
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "section": "11.1",
+      "kind": "caption",
+      "old": "*Figure 11-1 Affichage du résultat d'une mesure ICC.*",
+      "new": "*Figure 11-1 Affichage du résultat d’une mesure TCC en mode en ligne.*"
+    },
+    {
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "section": "11.1",
+      "kind": "status-legend",
+      "old": "| 5 | Le champ des avertissements facultatifs indique si des avertissements ont été générés pendant la mesure. Tapez sur le champ pour en savoir plus. |",
+      "new": "| 5 | Le champ d’état de la mesure indique les alarmes ou les avertissements. Appuyez sur une indication d’alarme ou d’avertissement pour consulter ses détails. |"
+    },
+    {
+      "locale": "fr",
+      "file": "i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "section": "11.1",
+      "kind": "plot-touch-legend",
+      "old": "",
+      "new": "| 11 | Appuyez sur le graphique de tendance pour ouvrir le graphique du mode automatique (le graphique complet des résultats en ligne). Voir [Consultation des mesures automatiques en ligne](../measurements/#section-10-2-3). |"
+    },
+    {
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "section": "11.1",
+      "kind": "introduction",
+      "old": "La figura seguente mostra il risultato di una misurazione selezionata. Da questa vista, l’utilizzatore può eliminare o rinominare la misurazione, consultare risultati precedenti (ed esportarli) oppure esportare il risultato corrente. Gli utenti esperti possono ripetere il conteggio cellulare con nuovi gate. Alcuni elementi dell’interfaccia o azioni sono disponibili solo per determinati ruoli utente (Basic, Advanced o Admin).",
+      "new": "La figura seguente mostra il risultato di una misurazione TCC selezionata in modalità online. Da questa vista, l’utilizzatore può eliminare o rinominare la misurazione, consultare risultati precedenti (ed esportarli) oppure esportare il risultato corrente. Gli utenti esperti possono ripetere il conteggio cellulare con nuovi gate. Alcuni elementi dell’interfaccia o azioni sono disponibili solo per determinati ruoli utente (Basic, Advanced o Admin)."
+    },
+    {
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "section": "11.1",
+      "kind": "image",
+      "old": "![BactoSense — Dettagli e grafici del risultato ICC](/img/gui/it/icc-result-details.png \"width=674 class=manual-figure\")",
+      "new": "![BactoSense — Dettagli e grafici del risultato online](/img/gui/it/online-result-details.png \"width=674 class=manual-figure\")"
+    },
+    {
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "section": "11.1",
+      "kind": "caption",
+      "old": "*Figura 11-1 Visualizzazione del risultato di una misurazione ICC.*",
+      "new": "*Figura 11-1 Visualizzazione del risultato di una misurazione TCC in modalità online.*"
+    },
+    {
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "section": "11.1",
+      "kind": "status-legend",
+      "old": "| 5 | Il campo facoltativo degli avvertimenti indica se durante la misurazione sono stati generati avvertimenti. Toccare il campo per ulteriori informazioni. |",
+      "new": "| 5 | Il campo di stato della misurazione indica gli allarmi o gli avvertimenti. Toccare un’indicazione di allarme o di avvertimento per visualizzarne i dettagli. |"
+    },
+    {
+      "locale": "it",
+      "file": "i18n/it/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "section": "11.1",
+      "kind": "plot-touch-legend",
+      "old": "",
+      "new": "| 11 | Toccare il grafico dell’andamento per aprire il grafico della modalità automatica (il grafico completo dei risultati online). Vedere [Consultazione delle misurazioni automatiche in linea](../measurements/#section-10-2-3). |"
+    },
+    {
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "section": "11.1",
+      "kind": "introduction",
+      "old": "La figura siguiente muestra el resultado de una medición seleccionada. Desde aquí, el usuario puede eliminar la medición o cambiarle el nombre, consultar resultados anteriores (y exportarlos) o exportar el resultado. Los usuarios expertos pueden repetir el recuento celular con nuevas regiones de análisis. Algunos elementos o acciones de la interfaz solo están disponibles para determinadas funciones de usuario (Basic, Advanced o Admin).",
+      "new": "La figura siguiente muestra el resultado de una medición TCC seleccionada en modo en línea. Desde aquí, el usuario puede eliminar la medición o cambiarle el nombre, consultar resultados anteriores (y exportarlos) o exportar el resultado. Los usuarios expertos pueden repetir el recuento celular con nuevas regiones de análisis. Algunos elementos o acciones de la interfaz solo están disponibles para determinadas funciones de usuario (Basic, Advanced o Admin)."
+    },
+    {
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "section": "11.1",
+      "kind": "image",
+      "old": "![BactoSense — Detalles y gráficos del resultado ICC](/img/gui/es/icc-result-details.png \"width=674 class=manual-figure\")",
+      "new": "![BactoSense — Detalles y gráficos del resultado en línea](/img/gui/es/online-result-details.png \"width=674 class=manual-figure\")"
+    },
+    {
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "section": "11.1",
+      "kind": "caption",
+      "old": "*Figura 11-1 Visualización del resultado de una medición ICC.*",
+      "new": "*Figura 11-1 Visualización del resultado de una medición TCC en modo en línea.*"
+    },
+    {
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "section": "11.1",
+      "kind": "status-legend",
+      "old": "| 5 | El campo opcional de advertencias indica si se ha generado alguna advertencia durante la medición. Pulse el campo para obtener más información. |",
+      "new": "| 5 | El campo de estado de la medición indica alarmas o advertencias. Pulse una indicación de alarma o advertencia para ver sus detalles. |"
+    },
+    {
+      "locale": "es",
+      "file": "i18n/es/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md",
+      "section": "11.1",
+      "kind": "plot-touch-legend",
+      "old": "",
+      "new": "| 11 | Pulse el gráfico de tendencias para abrir el gráfico del modo automático (el gráfico completo de resultados en línea). Véase [Revisión de las mediciones automáticas en línea](../measurements/#section-10-2-3). |"
+    }
+  ],
+  "validation": {
+    "manualCheck": "pass",
+    "translationsCheck": "pass",
+    "screenshotsCheck": "pass",
+    "fiveLanguageBuild": "pass",
+    "browserViews": 15,
+    "imageZooms": 5,
+    "visuallyReviewedPdfPages": 10,
+    "exactRgbPdfMontages": 5,
+    "generatedPublicRefreshed": true,
+    "privateEvidence": "output/gui-online-results-review/final-validation.json"
+  }
+}

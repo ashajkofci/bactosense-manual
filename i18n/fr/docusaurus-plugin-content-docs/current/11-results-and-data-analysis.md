@@ -7,11 +7,11 @@ slug: /results-and-data-analysis
 
 ## 11.1 Résultats de mesure {#section-11-1}
 
-La figure ci-dessous montre le résultat d'une mesure sélectionnée. À partir de là, l'utilisateur peut supprimer ou renommer la mesure, rechercher des résultats plus anciens, ou exporter le résultat. Les utilisateurs experts peuvent répéter le comptage des cellules avec de nouvelles fenêtres. Certains éléments ou actions de l'interface utilisateur ne sont disponibles que pour des rôles d'utilisateur spécifiques (Basique, Avancé ou Admin).
+La figure ci-dessous montre le résultat d’une mesure TCC sélectionnée en mode en ligne. À partir de là, l'utilisateur peut supprimer ou renommer la mesure, rechercher des résultats plus anciens, ou exporter le résultat. Les utilisateurs experts peuvent répéter le comptage des cellules avec de nouvelles fenêtres. Certains éléments ou actions de l'interface utilisateur ne sont disponibles que pour des rôles d'utilisateur spécifiques (Basique, Avancé ou Admin).
 
-![BactoSense — Détails et graphiques du résultat ICC](/img/gui/fr/icc-result-details.png "width=674 class=manual-figure")
+![BactoSense — Détails et graphiques du résultat en ligne](/img/gui/fr/online-result-details.png "width=674 class=manual-figure")
 
-*Figure 11-1 Affichage du résultat d'une mesure ICC.*
+*Figure 11-1 Affichage du résultat d’une mesure TCC en mode en ligne.*
 
 |  |  |
 | --- | --- |
@@ -19,12 +19,13 @@ La figure ci-dessous montre le résultat d'une mesure sélectionnée. À partir 
 | 2 | Fenêtre d’information sur le résultat affichant tous les paramètres disponibles et le diagramme de points principal. |
 | 3 | Nuage de points principal dans la fenêtre d’information sur le résultat. Le graphique FL1 vs FL2 montre tous les événements détectés en fonction de l'amplitude de leurs signaux de fluorescence FL1 (535 nm, axe X) et FL2 (715 nm, axe Y). Le polygone rouge et la ligne verticale indiquent la fenêtre configurée. Pour plus de détails, voir la section [Cartouches, paramètres des fenêtres et résultats](../results-and-data-analysis/#section-11-3). Appuyez sur cet aperçu pour ouvrir une fenêtre contextuelle donnant accès à tous les diagrammes de points (4). |
 | 4 | Fenêtre contextuelle permettant d'accéder à tous les diagrammes de points. Le graphique FL1 vs SSC montre uniquement les cellules à l'intérieur de la fenêtre polygonale FL1 - FL2, en fonction de leur signal de fluorescence FL1 (535 nm) et du signal de lumière diffusée SSC (488 nm). L'histogramme FL1 montre toutes les cellules à l'intérieur de la fenêtre polygonale FL1 - FL2, classées en fonction de leur fluorescence en FL1. Les diagrammes disponibles dépendent du modèle et de la configuration de votre instrument. |
-| 5 | Le champ des avertissements facultatifs indique si des avertissements ont été générés pendant la mesure. Tapez sur le champ pour en savoir plus. |
+| 5 | Le champ d’état de la mesure indique les alarmes ou les avertissements. Appuyez sur une indication d’alarme ou d’avertissement pour consulter ses détails. |
 | 6 | Le bouton Supprimer supprime définitivement la mesure (confirmation nécessaire). |
 | 7 | Le bouton Renommer permet de modifier le nom de la mesure. |
 | 8 | Le bouton Re-fenêtrer permet d’appliquer un autre jeu de fenêtres aux données de mesure. Pour plus de détails, voir la section [Re-fenêtrage des mesures](../results-and-data-analysis/#section-11-4-1). |
 | 9 | Le bouton Exporter permet d'enregistrer ce résultat sur une clé USB. Pour plus d'informations, voir la section [Exportation vers une clé USB](../measurements/#section-10-8-1). |
 | 10 | Les boutons de navigation situés à gauche et à droite de l'affichage des résultats vous permettent de passer respectivement aux mesures précédentes et suivantes. |
+| 11 | Appuyez sur le graphique de tendance pour ouvrir le graphique du mode automatique (le graphique complet des résultats en ligne). Voir [Consultation des mesures automatiques en ligne](../measurements/#section-10-2-3). |
 
 :::info[Sélectionnez plusieurs mesures]
 

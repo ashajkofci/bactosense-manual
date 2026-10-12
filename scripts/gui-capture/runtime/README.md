@@ -191,3 +191,28 @@ come from the corresponding localized raw. Raw acceptance and provenance
 are in `digital-output/capture-review.json` and `digital-output/provenance.json`.
 Independent final crop acceptance is recorded in
 `output/gui-digital-output-review/capture-and-crop-review.json`.
+
+## Online result details and plot touch
+
+```sh
+python3 scripts/gui-capture/runtime/online_results_capture.py
+```
+
+This focused run snapshots the current sibling GUI resources, records their
+commit and file hashes, and builds a separate native executable so concurrent
+GUI work cannot change the five-language capture halfway through. The sibling
+source files are read only. A fresh private Bactoserver serves its unchanged
+demo archive. The selected TCC record has 13 genuine neighboring measurements;
+its details, metrics and FL1/FL2 popup all retain the same measurement and
+original plot files. The harness clicks the actual primary-plot MouseArea and
+verifies that it opens `AutoMainScreen.qml`. It also verifies the illustrated
+alarm card opens the alarm details. No server setting or hardware action runs.
+
+Four PNGs and paired element trees per language are written under
+`output/gui-capture/online-results/native/{locale}`: `online-result-detail`,
+`online-result-metrics`, `online-result-dotplot` and `online-chart-after-touch`.
+The last state is private navigation evidence. The capture automatically stops
+its API/Redis processes and checks that every existing image hash is preserved.
+Use `--reuse-snapshot --locales en` for a focused rerun of the same built GUI.
+Provenance, scientific checks, raw acceptance and compact control geometry
+are in ignored `output/gui-online-results-review/`.
