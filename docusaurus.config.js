@@ -30,7 +30,7 @@ module.exports = {
     require.resolve('./plugins/manual-device.cjs'),
   ],
   presets: [['classic', {
-    docs: { routeBasePath: '/', sidebarPath: './sidebars.js', admonitions: { keywords: ['explosion', 'gloves'], extendDefaults: true }, remarkPlugins: [require('./plugins/manual-images.cjs')], rehypePlugins: [require('./plugins/manual-tables.cjs')] },
+    docs: { routeBasePath: '/', sidebarPath: './sidebars.js', admonitions: { keywords: ['explosion', 'gloves'], extendDefaults: true }, remarkPlugins: [require('./plugins/manual-images.cjs'), require('./plugins/manual-table-notices.cjs')], rehypePlugins: [require('./plugins/manual-tables.cjs')] },
     blog: false,
     theme: { customCss: './src/css/custom.css' },
   }]],

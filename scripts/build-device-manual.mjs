@@ -57,7 +57,7 @@ if (gui) {
   }
   await cp(path.join(bundle, 'manual.qrc'), path.join(gui, 'manual/manual.qrc'));
   await cp(path.join(bundle, 'locales.json'), path.join(gui, 'manual/locales.json'));
-  console.log(`Installed ${reports.reduce((count, report) => count + report.chapterCount, 0)} chapters in ${locales.length} languages (${locales.join(', ')}) in ${path.join(gui, 'manual')}. Rebuild the GUI to embed them.`);
+  console.log(`Installed ${reports.reduce((count, report) => count + report.chapterCount, 0)} chapters in ${locales.length} languages (${locales.join(', ')}) in ${path.join(gui, 'manual')}. The GUI build copies every manual beside the executable; none is embedded.`);
 } else {
   console.log(`Device bundle (${locales.join(', ')}): ${bundle}`);
 }

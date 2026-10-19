@@ -142,7 +142,10 @@ All five manual languages can also be exported for the native instrument GUI. Ru
 the device's existing buttons and lists to display all chapters, tables,
 notices, images and internal links from local JSON resources. Its title strip
 is hidden to give the article more room. The GUI selects its own language's
-manual, with English fallback for unsupported languages.
+manual, with English fallback for unsupported languages. All five manuals,
+including English, stay outside the executable in `manual/<locale>/` beside it.
+Chapter text and images are read from disk on demand; search data is loaded
+when first needed. The GUI build and installation copy these folders automatically.
 Documented GUI features can also open a specific section from a small help
 icon in the title bar. Exported images are capped at 800 px wide and keep their
 source filenames and directories.

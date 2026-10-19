@@ -6058,6 +6058,110 @@
           "column": 3
         }
       ]
+    },
+    {
+      "id": "en-mode-selection-10-2-1-step-3-column-2",
+      "locale": "en",
+      "file": "docs/10-measurements.md",
+      "old": "On the Home screen, press Mode and select Online mode. Press Back to return to the Home screen.",
+      "new": "On the Home screen, press **Mode**. On the **Mode selection** screen, tap **Online mode**, then press **Back** to return to the Home screen.",
+      "reason": "Follow-up to the audited Mode > Online mode > Back wording. The Mode selection screen names the target card, applies it on tap and keeps its active-operation confirmations; Home can then offer to restart Online mode with the saved settings, which would skip the wizard described in the next steps. The empty additional-information cell receives these notes.",
+      "sections": [
+        "10-2-1"
+      ],
+      "table_step": "3.",
+      "table_column": 2,
+      "kind": "table_cell",
+      "audit_refs": [
+        {
+          "repository": "gui",
+          "file": "controllers/settingsScreens/ModeSelectionScreen.qml",
+          "function": "switchMode"
+        },
+        {
+          "repository": "gui",
+          "file": "controllers/globalScreens/HomeScreen.qml",
+          "function": "tryShowOnlineModePrompt"
+        },
+        {
+          "repository": "bactoserver",
+          "file": "settings.go",
+          "function": "setAutoMode"
+        }
+      ]
+    },
+    {
+      "id": "en-mode-selection-10-2-1-step-3-column-3",
+      "locale": "en",
+      "file": "docs/10-measurements.md",
+      "old": "  ",
+      "new": " The current mode is highlighted. Tapping a mode switches to it immediately. If a measurement is running, press **Stop it** to abort it, or press **Wait** and select the mode again after it has finished. If **Instrument validation can't be used with Online mode. Do you want to disable Instrument validation?** appears, press **Yes**. If the Home screen then asks **Do you want to start Online mode?**, press **No** and continue with the next step; **Yes** restarts the series with the previously saved Online mode settings. ",
+      "reason": "Follow-up to the audited Mode > Online mode > Back wording. The Mode selection screen names the target card, applies it on tap and keeps its active-operation confirmations; Home can then offer to restart Online mode with the saved settings, which would skip the wizard described in the next steps. The empty additional-information cell receives these notes.",
+      "sections": [
+        "10-2-1"
+      ],
+      "table_step": "3.",
+      "table_column": 3,
+      "kind": "table_cell",
+      "audit_refs": [
+        {
+          "repository": "gui",
+          "file": "controllers/settingsScreens/ModeSelectionScreen.qml",
+          "function": "switchMode"
+        },
+        {
+          "repository": "gui",
+          "file": "controllers/globalScreens/HomeScreen.qml",
+          "function": "tryShowOnlineModePrompt"
+        },
+        {
+          "repository": "bactoserver",
+          "file": "settings.go",
+          "function": "setAutoMode"
+        }
+      ]
+    },
+    {
+      "id": "en-mode-selection-10-3-1-step-5-column-2",
+      "locale": "en",
+      "file": "docs/10-measurements.md",
+      "old": "On the Home screen, press Mode and select Manual mode. Press Back, then Measure to open the measurement wizard.",
+      "new": "On the Home screen, press **Mode**. On the **Mode selection** screen, tap **Manual mode**. Press **Back**, then **Measure** to open the measurement wizard.",
+      "reason": "Follow-up to the audited Mode > Manual mode > Back > Measure wording, scoped to 10.3.1 only (10.9.3 keeps the earlier fragment). The Mode selection screen applies the card on tap, asks to stop an active Online mode series, offers Stop it/Wait for a running measurement and disables Manual mode while PLC mode is active. The empty additional-information cell receives these notes.",
+      "sections": [
+        "10-3-1"
+      ],
+      "table_step": "5.",
+      "table_column": 2,
+      "kind": "table_cell",
+      "audit_refs": [
+        {
+          "repository": "gui",
+          "file": "controllers/settingsScreens/ModeSelectionScreen.qml",
+          "function": "switchMode"
+        }
+      ]
+    },
+    {
+      "id": "en-mode-selection-10-3-1-step-5-column-3",
+      "locale": "en",
+      "file": "docs/10-measurements.md",
+      "old": "  ",
+      "new": " The current mode is highlighted. Tapping a mode switches to it immediately. If an Online mode series is active, confirm **Do you really want to stop Online mode?** with **Yes**. If a measurement is running, press **Stop it** to abort it, or press **Wait** and select the mode again after it has finished. **Manual mode** cannot be selected while PLC mode is active (see [Digital inputs configuration and PLC mode](06-io-box.md#section-6-5)). ",
+      "reason": "Follow-up to the audited Mode > Manual mode > Back > Measure wording, scoped to 10.3.1 only (10.9.3 keeps the earlier fragment). The Mode selection screen applies the card on tap, asks to stop an active Online mode series, offers Stop it/Wait for a running measurement and disables Manual mode while PLC mode is active. The empty additional-information cell receives these notes.",
+      "sections": [
+        "10-3-1"
+      ],
+      "table_step": "5.",
+      "table_column": 3,
+      "kind": "table_cell",
+      "audit_refs": [
+        {
+          "repository": "gui",
+          "file": "controllers/settingsScreens/ModeSelectionScreen.qml",
+          "function": "switchMode"
+        }
+      ]
     }
   ],
   "navigation_import_metadata": {
@@ -6090,10 +6194,11 @@
     "counts": {
       "root_english_audit_entries": 22,
       "native_english_audit_changes": 115,
-      "navigation_import_entries": 156,
-      "section_scoped_import_entries": 142,
-      "table_cell_import_entries": 94,
-      "digital_output_import_entries": 8
+      "navigation_import_entries": 160,
+      "section_scoped_import_entries": 146,
+      "table_cell_import_entries": 98,
+      "digital_output_import_entries": 8,
+      "mode_selection_import_entries": 4
     }
   }
 }

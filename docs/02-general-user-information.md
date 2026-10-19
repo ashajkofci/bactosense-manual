@@ -154,8 +154,6 @@ Additional information about the current topic.
 
 :::
 
-The screenshot is an example of the graphical user interface and may be different on your  instrument.
-
 ## 2.5 Intended use of the BactoSense {#section-2-5}
 
 :::info[Intended use]

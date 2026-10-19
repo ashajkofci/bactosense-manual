@@ -154,8 +154,6 @@ Informazioni aggiuntive sull’argomento trattato.
 
 :::
 
-La schermata è un esempio dell’interfaccia grafica e può differire da quella dello strumento in uso.
-
 ## 2.5 Uso previsto di BactoSense {#section-2-5}
 
 :::info[Uso previsto]

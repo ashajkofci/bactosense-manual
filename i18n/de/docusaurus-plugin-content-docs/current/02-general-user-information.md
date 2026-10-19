@@ -154,8 +154,6 @@ Zusätzliche Informationen zum aktuellen Thema.
 
 :::
 
-Der Screenshot ist ein Beispiel für die grafische Benutzeroberfläche und kann an Ihrem Gerät anders aussehen.
-
 ## 2.5 Bestimmungsgemäße Verwendung des BactoSense {#section-2-5}
 
 :::info[Bestimmungsgemäße Verwendung]

@@ -154,8 +154,6 @@ Informations supplémentaires sur le sujet en cours.
 
 :::
 
-La capture d’écran est un exemple de l’interface utilisateur graphique et peut être différente sur votre instrument.
-
 ## 2.5 Utilisation conforme du BactoSense {#section-2-5}
 
 :::info[Utilisation conforme]

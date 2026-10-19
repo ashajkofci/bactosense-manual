@@ -1,4 +1,5 @@
 #include <QApplication>
+#include <QDir>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <QTemporaryDir>
@@ -9,6 +10,7 @@
 // they expect from the GUI. Preferences stay in a private temporary directory.
 int main(int argc, char **argv)
 {
+    qputenv("QML_XHR_ALLOW_FILE_READ", QByteArray("1"));
     QApplication application(argc, argv);
     application.setApplicationName(QStringLiteral("BactoSense manual preview"));
     application.setOrganizationName(QStringLiteral("bnovate-manual-preview"));
@@ -25,6 +27,8 @@ int main(int argc, char **argv)
     context->setContextProperty(QStringLiteral("IpAddress"), QStringLiteral("127.0.0.1"));
     context->setContextProperty(QStringLiteral("GuiSettingsFileName"), settings.filePath(QStringLiteral("GUI.conf")));
     context->setContextProperty(QStringLiteral("Translator"), &translator);
+    context->setContextProperty(QStringLiteral("ManualDirectoryUrl"),
+        QUrl::fromLocalFile(QDir(application.applicationDirPath()).filePath(QStringLiteral("manual")) + QLatin1Char('/')).toString());
     context->setContextProperty(QStringLiteral("ManualPreviewLocale"), argc == 3 ? QString::fromLocal8Bit(argv[2]) : QString());
     engine.load(QUrl::fromLocalFile(QString::fromLocal8Bit(argv[1])));
     if (engine.rootObjects().isEmpty())

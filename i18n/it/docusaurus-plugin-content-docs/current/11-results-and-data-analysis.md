@@ -33,6 +33,25 @@ Selezione multipla e operazioni in gruppo: nell’elenco delle misurazioni, tene
 
 :::
 
+### 11.1.1 Filtraggio delle misurazioni {#section-11-1-1}
+
+I filtri limitano l’elenco dei risultati alle misurazioni necessarie. È possibile filtrare per intervallo di date, per nome della misurazione e, se BactoSwitch è attivato, per linea di campioni BactoSwitch. Combinando più filtri, vengono elencate solo le misurazioni che li soddisfano tutti. I filtri considerano tutte le misurazioni memorizzate sullo strumento.
+
+|  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINI |
+| --- | --- | --- |
+| 1. | Nella schermata Home, premere **Risultati**. | L’elenco mostra i risultati della modalità operativa attuale: **Risultati della Modalità Online** o **Risultati della Modalità Manuale**. Per aprire l’elenco dell’altra modalità, premere **Impostazioni**, quindi **Registri**, e selezionare **Results (online mode)** o **Results (manual mode)**. |
+| 2. | Premere **Filtro**. | Si apre la schermata **Filtra i risultati**. I campi a sinistra mostrano i filtri attuali. |
+| 3. | Per filtrare per data, toccare il campo sotto **Data di inizio** e selezionare il primo giorno nel calendario. Toccare il campo dell’ora sottostante e impostare ore e minuti con le rotelle. Impostare **Data di fine** e la relativa ora allo stesso modo. | Entrambi i limiti sono inclusi: vengono elencate le misurazioni fino alla fine del minuto finale selezionato. La fine non può precedere l’inizio. Senza filtro per data, l’intervallo va dalla misurazione più vecchia alla più recente. |
+| 4. | Per filtrare per nome, toccare il campo sotto **Filtra per nome**, inserire una parte del nome della misurazione e premere **OK**. | L’elenco mantiene tutte le misurazioni il cui nome contiene questo testo, senza distinzione tra maiuscole e minuscole. Ad esempio, *tap* trova “Tap Water Zürich”. **Nessuno** indica che non è impostato alcun filtro per nome. Per rimuovere il filtro per nome, cancellare il testo e premere **OK**. |
+| 5. | Per filtrare per linea BactoSwitch, premere **Filtrare per linea**, selezionare la linea e premere **Conferma**. | Questo pulsante viene visualizzato solo se BactoSwitch è attivato. Ogni linea è elencata con il proprio nome e numero; il pulsante mostra poi **Filtrato dalla riga #n**. Solo le misurazioni in modalità online campionate tramite BactoSwitch appartengono a una linea; tutte le altre misurazioni restano nascoste finché questo filtro è attivo. Per rimuovere il filtro per linea, selezionare di nuovo la linea evidenziata e premere **Conferma**. |
+| 6. | Premere **OK** per applicare i filtri e tornare all’elenco dei risultati. | La barra delle azioni mostra l’intervallo di date e gli eventuali filtri per linea e per nome attivi. Se nessuna misurazione corrisponde, viene visualizzato **No measurements to display**; premere **Change filters** per modificare i filtri. |
+
+:::info[Ripristinare i filtri]
+
+Premere **Ripristina** nella schermata **Filtra i risultati** per rimuovere i filtri per nome e per linea e ripristinare l’intero intervallo di date. I filtri dei risultati della modalità manuale vengono cancellati quando si torna alla schermata Home. In modalità online, i filtri per nome e per linea restano attivi, anche sul grafico online (vedere [Consultazione delle misurazioni automatiche in linea](../measurements/#section-10-2-3)), finché non vengono ripristinati.
+
+:::
+
 ## 11.2 Introduzione ai gate {#section-11-2}
 
 Seguendo gli standard della citometria a flusso, BactoSense utilizza gate per contare le cellule nei campioni.

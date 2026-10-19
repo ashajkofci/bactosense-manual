@@ -41,7 +41,7 @@ export async function exportDeviceManual({ root, outDir, baseUrl, siteUrl, chapt
 
   // Webpack hashes image URLs and inlines small images. Recover their original
   // tracked paths by matching bytes, so changing or resizing an image updates
-  // the same file in the embedded bundle instead of adding a new hash filename.
+  // the same file in the device bundle instead of adding a new hash filename.
   async function collectSources(directory, relative = '') {
     for (const entry of (await readdir(directory, { withFileTypes: true })).sort((a, b) => a.name.localeCompare(b.name))) {
       const name = path.posix.join(relative, entry.name);
@@ -279,24 +279,24 @@ export async function exportDeviceManual({ root, outDir, baseUrl, siteUrl, chapt
   return { destination, report };
 }
 
-// A shared manifest lets the reader select the GUI language offline. Generate
-// one resource list after each locale export, including every completed locale.
+// Embed only a small language inventory. Every manual, including English,
+// is installed beside the executable and read on demand.
 export async function writeDeviceManualResources(bundleDir, preferredLocales = []) {
   const directories = (await readdir(bundleDir, { withFileTypes: true }))
     .filter(entry => entry.isDirectory() && /^[a-z]{2}(?:-[a-z0-9]+)*$/i.test(entry.name))
     .map(entry => entry.name).sort();
   const locales = [...preferredLocales.filter(locale => directories.includes(locale)),
     ...directories.filter(locale => !preferredLocales.includes(locale))];
-  if (!locales.length) throw new Error('No completed manual languages to embed.');
+  if (!locales.length) throw new Error('No completed manual languages to package.');
+  const embeddedLocales = [];
   const resourceFiles = ['locales.json'];
   for (const locale of locales) {
     const report = JSON.parse(await readFile(path.join(bundleDir, locale, 'report.json'), 'utf8'));
     if (report.schemaVersion !== 1 || report.locale !== locale || !report.chapterCount)
       throw new Error(`Incomplete device language: ${locale}`);
-    resourceFiles.push(...['index.json', 'search.json', 'report.json',
-      ...report.files.map(item => item.file), ...report.assets.map(item => item.file)].map(file => `${locale}/${file}`));
   }
-  const metadata = { schemaVersion: 1, defaultLocale: locales.includes('en') ? 'en' : locales[0], availableLocales: locales };
+  const metadata = { schemaVersion: 1, defaultLocale: locales.includes('en') ? 'en' : locales[0],
+    availableLocales: locales, embeddedLocales };
   await writeFile(path.join(bundleDir, 'locales.json'), `${JSON.stringify(metadata)}\n`);
   const qrc = `<RCC>\n  <qresource prefix="/manual">\n${resourceFiles.sort().map(file => `    <file alias="${escape(file)}">${escape(file)}</file>`).join('\n')}\n  </qresource>\n</RCC>\n`;
   await writeFile(path.join(bundleDir, 'manual.qrc'), qrc);

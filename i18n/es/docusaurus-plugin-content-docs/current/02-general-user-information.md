@@ -154,8 +154,6 @@ Información adicional sobre el tema actual.
 
 :::
 
-La captura de pantalla es un ejemplo de la interfaz gráfica de usuario y puede diferir de la de su instrumento.
-
 ## 2.5 Uso previsto de BactoSense {#section-2-5}
 
 :::info[Uso previsto]
