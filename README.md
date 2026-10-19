@@ -55,7 +55,7 @@ npm run serve
 - `output/pdf/<locale>/`: generated PDF copies and reports (ignored).
 - `static/pdf/`: ignored copies of the latest generated PDFs for the development server.
 
-Use Markdown for paragraphs, emphasis, lists and simple tables. HTML remains only where needed for merged cells, nested table content, line breaks inside table cells, and scientific superscripts/subscripts. Headerless Markdown tables use a blank header row, which the site removes during rendering. Sized images use standard Markdown image syntax with a layout title, for example `![Instrument](/img/manual/example.png "width=600 class=manual-figure")`; the image component applies the size and removes the metadata from the tooltip. `npm run manual:format` simplifies equivalent markup across all five editions; review its changes before accepting them. Native admonitions provide warning and information boxes with short custom titles. On the web, images enlarge in a lightbox; close it with Escape, the close button, or a click outside the image. Index links use stable section headings, independent of the original PDF pagination.
+Use Markdown for paragraphs, emphasis, lists and tables. HTML remains only for nested tables, `<br />` line breaks inside table cells, and scientific superscripts/subscripts. Headerless Markdown tables use a blank header row, which the site removes during rendering. Sized images use standard Markdown image syntax with a layout title, for example `![Instrument](/img/manual/example.png "width=600 class=manual-figure")`; the image component applies the size and removes the metadata from the tooltip. `npm run manual:format` simplifies equivalent markup across all five editions; review its changes before accepting them. Native admonitions provide warning and information boxes with short custom titles. On the web, images enlarge in a lightbox; close it with Escape, the close button, or a click outside the image. Index links use stable section headings, independent of the original PDF pagination.
 
 Write a notice directly in Markdown:
 
@@ -80,7 +80,9 @@ Choose the notice type to match the original PDF symbol and signal word:
 
 For example, use `:::explosion[Explosive environments]`, `:::caution[Prevent condensation]`, or `:::gloves[Wear protective gloves]` with the body and closing `:::`. Native Docusaurus boxes provide the layout, severity colors and localized titles; the icons use the original vector artwork from the PDFs. Section 2.3 explains the five safety notice types in every language. `maintenance/safety-symbols.json` records their source pages and rendering mappings; `.venv/bin/python scripts/safety_symbols.py` re-exports the five shared SVGs, including the information letter as a font outline, without importing page text.
 
-For a blue information box, write `:::info[Network settings]` followed by the body and closing `:::`. Native notice fences also work inside HTML table cells when separated by blank lines. Use four colons for an outer notice containing a three-colon notice. The optional extraction parsers apply `scripts/native_notices.py` and `scripts/manual_artwork.py` so regeneration keeps native notices, their symbols and their custom titles. Work-step hand icons are omitted, and information icons become blue info boxes.
+For a blue information box, write `:::info[Network settings]` followed by the body and closing `:::`. Inside a Markdown table cell, write the notice on one line: `:::caution[Wall mounting] The fixation must carry 60 kg. :::`. Separate further paragraphs of the notice with `<br /><br />`. Use four colons for an outer notice containing a three-colon notice. The optional extraction parsers apply `scripts/native_notices.py` and `scripts/manual_artwork.py` so regeneration keeps native notices, their symbols and their custom titles. Work-step hand icons are omitted, and information icons become blue info boxes.
+
+Tables are plain Markdown pipe tables. Merged cells use two markers, handled by `plugins/manual-tables.cjs`: a cell containing only `\<` merges with the cell on its left (colSpan) and a cell containing only `^` merges with the cell above (rowSpan); the top-left cell of the merged block holds the content. A merged bold-only cell that spans every column, such as `| **GENERAL** | \< |`, renders as a section header. A row that ends early extends its last cell to the table edge. Formatting classes go on a wrapper `<div className="…">` with the table separated by blank lines; the stylesheets in `src/css/custom.css` and `scripts/pdf.css` target `.class table` and set column widths on the first row (for example `.manual-ui-elements`, `.manual-user-roles-permissions`, `.manual-modbus-address-list`, `.manual-narrow-details`). Wrappers ending in `-scroll` add horizontal scrolling on narrow screens. `npm run manual:format` converts remaining HTML tables with the same rules, keeping the tables identical across all five editions, and lists any table it leaves as HTML (currently the two procedure tables that contain nested tables).
 
 The source PDF is in English. Configured translations have their own language directories in the generated deployment. The BactoCloud supplement records cloud enrolment prerequisites and interface labels from the sibling manual; it does not update the instrument-version scope of the other chapters.
 
@@ -137,7 +139,7 @@ For development in a specific language, run `npm start -- --locale de` (or `fr`,
 ## On-device manual prototype
 
 All five manual languages can also be exported for the native instrument GUI. Run
-`npm run manual:device -- --gui ../gui`, rebuild the GUI, and open
+`npm run manual:device` to generate and install them in `../gui/manual/`, rebuild the GUI, and open
 **Support & Service → Manuals → User manual**. One QML reader uses
 the device's existing buttons and lists to display all chapters, tables,
 notices, images and internal links from local JSON resources. Its title strip
@@ -149,6 +151,10 @@ when first needed. The GUI build and installation copy these folders automatical
 Documented GUI features can also open a specific section from a small help
 icon in the title bar. Exported images are capped at 800 px wide and keep their
 source filenames and directories.
+
+Use `npm run manual:device -- --gui /path/to/gui` to install into another GUI
+checkout, or `npm run manual:device -- --bundle-only` to export only to
+`output/device-manual/`.
 
 `npm run manual:preview` opens the same reader in a desktop Qt 5 window without
 Bactoserver. See [the export investigation and prototype guide](maintenance/on-device-manual.md)

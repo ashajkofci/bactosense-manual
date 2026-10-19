@@ -7,12 +7,20 @@ import { writeDeviceManualResources } from './export-device-manual.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2);
-if (args.length && (args[0] !== '--gui' || args.length !== 2)) {
-  console.error('Usage: npm run manual:device -- [--gui ../gui]');
+const bundleOnly = args.length === 1 && args[0] === '--bundle-only';
+if (args.length && !bundleOnly && (args[0] !== '--gui' || args.length !== 2)) {
+  console.error('Usage: npm run manual:device -- [--gui <path> | --bundle-only]');
   process.exit(1);
 }
-const gui = args[0] === '--gui' ? path.resolve(args[1]) : null;
-if (gui) await access(path.join(gui, 'gui.pro'));
+const gui = bundleOnly ? null : args[0] === '--gui' ? path.resolve(args[1]) : path.resolve(root, '../gui');
+if (gui) {
+  try {
+    await access(path.join(gui, 'gui.pro'));
+  } catch {
+    console.error(`Cannot access GUI checkout at ${gui}. Use --gui <path> to select another checkout, or --bundle-only to export without installing.`);
+    process.exit(1);
+  }
+}
 const configuration = createRequire(import.meta.url)(path.join(root, 'docusaurus.config.js'));
 const locales = configuration.i18n.locales;
 if (!locales.includes('en') || locales.some(locale => !/^[a-z]{2}(?:-[a-z0-9]+)*$/i.test(locale)))

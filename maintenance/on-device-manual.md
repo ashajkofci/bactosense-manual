@@ -114,7 +114,7 @@ or JavaScript code.
 From this manual checkout:
 
 ```sh
-npm run manual:device -- --gui ../gui
+npm run manual:device
 npm run manual:preview
 # Preview a specific installed language:
 npm run manual:preview -- --locale fr
@@ -122,10 +122,14 @@ npm run manual:preview -- --locale fr
 
 The first command builds every configured language from the current sources into
 `output/device-site/`, runs the export plugin, and assembles the complete bundle
-in `output/device-manual/`. It installs all five language folders, `locales.json`
-and `manual.qrc` in `../gui/manual/`. It skips PDF compilation.
-It does not run the Apache publication step. Omitting `--gui` creates the bundle
-without installing it. `--gui` accepts another GUI checkout containing `gui.pro`.
+in `output/device-manual/`. By default it installs all five language folders,
+`locales.json` and `manual.qrc` in the sibling `../gui/manual/`, resolved relative
+to this manual checkout. It skips PDF compilation and Apache publication.
+Use `npm run manual:device -- --bundle-only` to create the bundle without
+installing it, or `npm run manual:device -- --gui /path/to/gui` to select another
+GUI checkout containing `gui.pro`. An inaccessible GUI checkout fails before
+generation; maintained GUI files such as `manual.pri` and `install.cmake` are
+preserved during installation.
 
 The preview opens the same reusable reader in an 800 × 480 desktop window.
 It requires the sibling `../gui` prototype, CMake and Qt 5 development libraries,
