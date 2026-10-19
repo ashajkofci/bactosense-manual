@@ -63,8 +63,6 @@ Les serveurs HTTP et HTTPS sont activés par défaut et accessibles via un navig
 
 <th scope="col">
 
-
-
 </th>
 
 <th scope="col">
@@ -123,8 +121,6 @@ En tant qu’utilisateur Admin, sur l’écran d’accueil, appuyez sur Paramèt
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -144,8 +140,6 @@ Appuyez sur le bouton Paramètres système.
 </td>
 
 <td>
-
-
 
 </td>
 
@@ -167,8 +161,6 @@ Appuyez sur le bouton Services système.
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -188,8 +180,6 @@ Pour HTTP : Assurez-vous que la case Activer accès web HTTP est cochée. Pour H
 </td>
 
 <td>
-
-
 
 </td>
 

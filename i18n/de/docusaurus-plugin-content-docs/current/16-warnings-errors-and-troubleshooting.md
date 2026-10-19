@@ -121,141 +121,14 @@ Drücken Sie auf der Startseite Einstellungen und dann Logs. Wählen Sie Fehlerl
 
 *Abbildung 16-1 : Fehlerprotokolle*
 
-<table className="manual-table">
-
-<tbody>
-
-<tr>
-
-<td rowSpan="4">
-
-①
-
-</td>
-
-<td rowSpan="4">
-
-Datum und Uhrzeit des Ereignisses
-
-</td>
-
-<td rowSpan="4">
-
-②
-
-</td>
-
-<td colSpan="2">
-
-Ereignistyp
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-![BactoSense — Protokolleintrag: kritischer Fehler](/img/gui/icons/critical-error-event.png "width=32 class=manual-icon")
-
-</td>
-
-<td>
-
-Kritischer Fehler
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-![BactoSense — Protokolleintrag: unkritischer Fehler](/img/gui/icons/noncritical-error-event.png "width=32 class=manual-icon")
-
-</td>
-
-<td>
-
-Unkritischer Fehler
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-![BactoSense — Protokolleintrag: Fehler gelöscht](/img/gui/icons/errors-cleared-event.png "width=32 class=manual-icon")
-
-</td>
-
-<td>
-
-Fehler gelöscht
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-③
-
-</td>
-
-<td>
-
-Kurzbeschreibung des Fehlers oder Ereignisses
-
-</td>
-
-<td>
-
-④
-
-</td>
-
-<td colSpan="2">
-
-Taste zum manuellen Quittieren von Fehlern (für Basic-, Advanced- und Admin-Benutzer verfügbar, wenn das Gerät nicht läuft)
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-⑤
-
-</td>
-
-<td>
-
-Datumsbereich der angezeigten Ereignisse. Klicken, um den Bereich zu bearbeiten.
-
-</td>
-
-<td>
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  |  |  |  |  |
+| --- | --- | --- | --- | --- |
+| ① | Datum und Uhrzeit des Ereignisses | ② | Ereignistyp | \< |
+| ^ | ^ | ^ | ![BactoSense — Protokolleintrag: kritischer Fehler](/img/gui/icons/critical-error-event.png "width=32 class=manual-icon") | Kritischer Fehler |
+| ^ | ^ | ^ | ![BactoSense — Protokolleintrag: unkritischer Fehler](/img/gui/icons/noncritical-error-event.png "width=32 class=manual-icon") | Unkritischer Fehler |
+| ^ | ^ | ^ | ![BactoSense — Protokolleintrag: Fehler gelöscht](/img/gui/icons/errors-cleared-event.png "width=32 class=manual-icon") | Fehler gelöscht |
+| ③ | Kurzbeschreibung des Fehlers oder Ereignisses | ④ | Taste zum manuellen Quittieren von Fehlern (für Basic-, Advanced- und Admin-Benutzer verfügbar, wenn das Gerät nicht läuft) | \< |
+| ⑤ | Datumsbereich der angezeigten Ereignisse. Klicken, um den Bereich zu bearbeiten. |  |  | \< |
 
 :::info[Ereignisdetails anzeigen]
 
@@ -278,119 +151,12 @@ Kritische Fehler müssen manuell gelöscht werden. Stellen Sie sicher, dass Sie 
 
 Das Tool Automatischer Selbsttest überprüft, ob jede Komponente des BactoSense korrekt funktioniert und identifiziert jene, die nicht korrekt funktionieren. Es kann verwendet werden, um geräteinterne Probleme zu erkennen.
 
-<table className="manual-table">
-
-<tbody>
-
-<tr>
-
-<th scope="col">
-
-</th>
-
-<th scope="col">
-
-ARBEITSSCHRITT
-
-</th>
-
-<th scope="col">
-
-ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Drücken Sie als Advanced- oder Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Drücken Sie die Taste Wartung.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Drücken Sie die Taste Selbstkontrolle.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-:::info[Zusätzliche Informationen]
-
-Drücken Sie die Taste Wiederholen. Sobald die Ausführung abgeschlossen wurde, zeigt das Gerät eine Liste aller Tests mit grünen PASS- oder roten FAIL-Anzeigen. Möglicherweise wurden einige Tests übersprungen: Kann das System mit der Kartusche nicht kommunizieren, werden alle Tests, die Kartuschenkommunikation erfordern, ausgelassen.
-
-:::
-
-</td>
-
-<td>
-
-![BactoSense — Selbstprüfergebnisse](/img/gui/de/self-check-results.png "width=245 class=manual-figure")
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG |
+| --- | --- | --- |
+| 1\. | Drücken Sie als Advanced- oder Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. |  |
+| 2\. | Drücken Sie die Taste Wartung. |  |
+| 3\. | Drücken Sie die Taste Selbstkontrolle. |  |
+| 4\. | :::info[Zusätzliche Informationen] Drücken Sie die Taste Wiederholen. Sobald die Ausführung abgeschlossen wurde, zeigt das Gerät eine Liste aller Tests mit grünen PASS- oder roten FAIL-Anzeigen. Möglicherweise wurden einige Tests übersprungen: Kann das System mit der Kartusche nicht kommunizieren, werden alle Tests, die Kartuschenkommunikation erfordern, ausgelassen. ::: | ![BactoSense — Selbstprüfergebnisse](/img/gui/de/self-check-results.png "width=245 class=manual-figure") |
 
 ## 16.7 Betrieb bei niedriger Temperatur {#section-16-7}
 

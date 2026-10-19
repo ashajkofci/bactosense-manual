@@ -113,72 +113,52 @@ Ogni ruolo utente è protetto da password.
 
 *Tabella 8-1 Ruoli utente e autorizzazioni*
 
-<div className="manual-user-roles-scroll">
+<div className="manual-user-roles-scroll manual-user-roles-permissions">
 
-<table className="manual-user-roles-permissions">
-
-<colgroup>
-<col className="user-role-permission-column" />
-<col className="user-role-basic-column" />
-<col className="user-role-advanced-column" />
-<col className="user-role-admin-column" />
-</colgroup>
-
-<thead>
-<tr>
-<th scope="col">AUTORIZZAZIONE</th>
-<th scope="col">BASIC</th>
-<th scope="col">ADVANCED</th>
-<th scope="col">ADMIN</th>
-</tr>
-</thead>
-
-<tbody>
-<tr><td>Visualizzare l’ultimo risultato</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Visualizzare tutti i risultati ed esportarli</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Avviare, arrestare e pianificare le misurazioni</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Passare dalla modalità online alla modalità Manual e viceversa</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Visualizzare il registro degli errori e degli avvertimenti</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Rinominare i risultati</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Validare il dispositivo</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Modificare la propria password</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Visualizzare le informazioni di sistema</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Visualizzare le impostazioni di rete</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Visualizzare l’ultima autoverifica</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Cambiare la cartuccia</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Cancellare gli errori</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Visualizzare il registro degli interventi</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Visualizzare i risultati della validazione</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Eliminare i risultati</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Rianalizzare i risultati con altri gate</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Regolare gli allarmi</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Regolare i gate</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Riavviare</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Eseguire un’autoverifica</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Eliminare le misurazioni vecchie</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Esportare tutto</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Visualizzare le informazioni sugli interventi</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Esportare la diagnostica</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Modificare le uscite analogiche e digitali</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Provare le uscite analogiche e digitali</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Modificare le password degli altri utenti</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Creare altri utenti</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Modificare le impostazioni di autenticazione</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Impostare il nome del dispositivo</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Impostare data e ora</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Modificare le impostazioni di rete</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Modificare le impostazioni dei servizi</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Attivare Modbus con una chiave o disattivarlo</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Cambiare la lingua</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Passare alla modalità demo</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Ripristinare le impostazioni</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Ripristino completo delle impostazioni di fabbrica (tranne il registro degli interventi)</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Importare le impostazioni</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Modificare le impostazioni di accensione automatica</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Attivare pacchetti di aggiornamento con un codice</td><td></td><td></td><td>✓</td></tr>
-</tbody>
-
-</table>
+| AUTORIZZAZIONE | BASIC | ADVANCED | ADMIN |
+| --- | --- | --- | --- |
+| Visualizzare l’ultimo risultato | ✓ | ✓ | ✓ |
+| Visualizzare tutti i risultati ed esportarli | ✓ | ✓ | ✓ |
+| Avviare, arrestare e pianificare le misurazioni | ✓ | ✓ | ✓ |
+| Passare dalla modalità online alla modalità Manual e viceversa | ✓ | ✓ | ✓ |
+| Visualizzare il registro degli errori e degli avvertimenti | ✓ | ✓ | ✓ |
+| Rinominare i risultati | ✓ | ✓ | ✓ |
+| Validare il dispositivo | ✓ | ✓ | ✓ |
+| Modificare la propria password | ✓ | ✓ | ✓ |
+| Visualizzare le informazioni di sistema | ✓ | ✓ | ✓ |
+| Visualizzare le impostazioni di rete | ✓ | ✓ | ✓ |
+| Visualizzare l’ultima autoverifica | ✓ | ✓ | ✓ |
+| Cambiare la cartuccia | ✓ | ✓ | ✓ |
+| Cancellare gli errori | ✓ | ✓ | ✓ |
+| Visualizzare il registro degli interventi | ✓ | ✓ | ✓ |
+| Visualizzare i risultati della validazione | ✓ | ✓ | ✓ |
+| Eliminare i risultati |  | ✓ | ✓ |
+| Rianalizzare i risultati con altri gate |  | ✓ | ✓ |
+| Regolare gli allarmi |  | ✓ | ✓ |
+| Regolare i gate |  | ✓ | ✓ |
+| Riavviare |  | ✓ | ✓ |
+| Eseguire un’autoverifica |  | ✓ | ✓ |
+| Eliminare le misurazioni vecchie |  | ✓ | ✓ |
+| Esportare tutto |  | ✓ | ✓ |
+| Visualizzare le informazioni sugli interventi |  | ✓ | ✓ |
+| Esportare la diagnostica |  | ✓ | ✓ |
+| Modificare le uscite analogiche e digitali |  |  | ✓ |
+| Provare le uscite analogiche e digitali |  |  | ✓ |
+| Modificare le password degli altri utenti |  |  | ✓ |
+| Creare altri utenti |  |  | ✓ |
+| Modificare le impostazioni di autenticazione |  |  | ✓ |
+| Impostare il nome del dispositivo |  |  | ✓ |
+| Impostare data e ora |  |  | ✓ |
+| Modificare le impostazioni di rete |  |  | ✓ |
+| Modificare le impostazioni dei servizi |  |  | ✓ |
+| Attivare Modbus con una chiave o disattivarlo |  |  | ✓ |
+| Cambiare la lingua |  |  | ✓ |
+| Passare alla modalità demo |  |  | ✓ |
+| Ripristinare le impostazioni |  |  | ✓ |
+| Ripristino completo delle impostazioni di fabbrica (tranne il registro degli interventi) |  |  | ✓ |
+| Importare le impostazioni |  |  | ✓ |
+| Modificare le impostazioni di accensione automatica |  |  | ✓ |
+| Attivare pacchetti di aggiornamento con un codice |  |  | ✓ |
 
 </div>
 ## 8.3 Configurazioni di base {#section-8-3}
@@ -309,357 +289,28 @@ Chiedere all’amministratore di rete le impostazioni corrette.
 
 :::
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-OPERAZIONE
-
-</th>
-
-<th>
-
-INFORMAZIONI AGGIUNTIVE / IMMAGINE
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Come utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni.
-
-</td>
-
-<td>
-
-![BactoSense — Pulsante Impostazioni](/img/gui/it/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Premere il pulsante Impostazioni di sistema.
-
-</td>
-
-<td>
-
-![BactoSense — Impostazioni di sistema](/img/gui/icons/system-settings-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Premere il pulsante Rete.
-
-</td>
-
-<td>
-
-![BactoSense — Impostazioni di rete](/img/gui/icons/network-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-A: per un IP dinamico, selezionare la casella DHCP (1). Nota: questa è la configurazione preferibile nella maggior parte dei casi in cui BactoSense è collegato a un router o switch.
-
-B: per un IP statico, deselezionare la casella DHCP (1) e inserire la configurazione di rete desiderata (2). Nota: questa è la configurazione preferibile quando BactoSense è collegato direttamente a un portatile tramite Ethernet. Assicurarsi di adattare anche la configurazione di rete del portatile.
-
-</td>
-
-<td>
-
-![BactoSense — Configurazione della rete](/img/gui/it/network-configuration.png "width=260")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Premere il pulsante Salva.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-Premere il pulsante Riavvia ora.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINE |
+| --- | --- | --- |
+| 1\. | Come utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni. | ![BactoSense — Pulsante Impostazioni](/img/gui/it/home-settings-button.png "width=57 class=manual-icon-settings-button-half") |
+| 2\. | Premere il pulsante Impostazioni di sistema. | ![BactoSense — Impostazioni di sistema](/img/gui/icons/system-settings-button.png "width=48 class=manual-icon") |
+| 3\. | Premere il pulsante Rete. | ![BactoSense — Impostazioni di rete](/img/gui/icons/network-button.png "width=48 class=manual-icon") |
+| 4\. | A: per un IP dinamico, selezionare la casella DHCP (1). Nota: questa è la configurazione preferibile nella maggior parte dei casi in cui BactoSense è collegato a un router o switch.<br /><br />B: per un IP statico, deselezionare la casella DHCP (1) e inserire la configurazione di rete desiderata (2). Nota: questa è la configurazione preferibile quando BactoSense è collegato direttamente a un portatile tramite Ethernet. Assicurarsi di adattare anche la configurazione di rete del portatile. | ![BactoSense — Configurazione della rete](/img/gui/it/network-configuration.png "width=260") |
+| 5\. | Premere il pulsante Salva. |  |
+| 6\. | Premere il pulsante Riavvia ora. |  |
 
 ## 8.7 Impostazione dei server NTP {#section-8-7}
 
 Network Time Protocol (NTP) è un protocollo di rete utilizzato per sincronizzare l’ora dei computer su una rete. Per impostazione predefinita, è configurata la sincronizzazione con i server della Network Time Foundation (ntp.org). È possibile impostare server NTP personalizzati nel menu *Data e ora* .
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-OPERAZIONE
-
-</th>
-
-<th>
-
-INFORMAZIONI AGGIUNTIVE / IMMAGINE
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Come utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni.
-
-</td>
-
-<td>
-
-![BactoSense — Pulsante Impostazioni](/img/gui/it/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Premere il pulsante Impostazioni di sistema.
-
-</td>
-
-<td>
-
-![BactoSense — Impostazioni di sistema](/img/gui/icons/system-settings-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Premere il pulsante Data e ora.
-
-</td>
-
-<td>
-
-![BactoSense — Impostazioni di data e ora](/img/gui/icons/date-time-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Premere il pulsante Impostazioni per la sincronizzazione dell'ora.
-
-</td>
-
-<td>
-
-![BactoSense — Data e ora](/img/gui/it/date-and-time-settings.png "width=261")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Selezionare la sorgente desiderata in Sorgente di sincronizzazione.
-
-</td>
-
-<td>
-
-:::info[Informazioni aggiuntive]
-
-La sincronizzazione dell’ora può essere effettuata tramite server NTP o Modbus TCP. Ulteriori informazioni su Modbus TCP sono riportate nella sezione [Modbus TCP](../field-bus-interface/#section-7-1).
-
-:::
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-Aggiornare i server NTP.
-
-</td>
-
-<td>
-
-![BactoSense — Sincronizzazione dell’ora](/img/gui/it/time-synchronization-settings.png "width=261")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7
-
-</td>
-
-<td>
-
-Premere il pulsante OK.
-
-</td>
-
-<td>
-
-:::info[Informazioni aggiuntive]
-
-Premere Test NTP per verificare che i server configurati siano raggiungibili. Premere OK per salvare le impostazioni di sincronizzazione.
-
-:::
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINE |
+| --- | --- | --- |
+| 1\. | Come utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni. | ![BactoSense — Pulsante Impostazioni](/img/gui/it/home-settings-button.png "width=57 class=manual-icon-settings-button-half") |
+| 2\. | Premere il pulsante Impostazioni di sistema. | ![BactoSense — Impostazioni di sistema](/img/gui/icons/system-settings-button.png "width=48 class=manual-icon") |
+| 3\. | Premere il pulsante Data e ora. | ![BactoSense — Impostazioni di data e ora](/img/gui/icons/date-time-button.png "width=48 class=manual-icon") |
+| 4\. | Premere il pulsante Impostazioni per la sincronizzazione dell'ora. | ![BactoSense — Data e ora](/img/gui/it/date-and-time-settings.png "width=261") |
+| 5\. | Selezionare la sorgente desiderata in Sorgente di sincronizzazione. | :::info[Informazioni aggiuntive] La sincronizzazione dell’ora può essere effettuata tramite server NTP o Modbus TCP. Ulteriori informazioni su Modbus TCP sono riportate nella sezione [Modbus TCP](../field-bus-interface/#section-7-1). ::: |
+| 6\. | Aggiornare i server NTP. | ![BactoSense — Sincronizzazione dell’ora](/img/gui/it/time-synchronization-settings.png "width=261") |
+| 7 | Premere il pulsante OK. | :::info[Informazioni aggiuntive] Premere Test NTP per verificare che i server configurati siano raggiungibili. Premere OK per salvare le impostazioni di sincronizzazione. ::: |
 
 ## 8.8 Interfaccia utente di BactoSense {#section-8-8}
 
@@ -681,154 +332,15 @@ L’interfaccia utente di BactoSense è suddivisa in 3 sezioni principali:
 
 Gli elementi principali dell’interfaccia utente sono:
 
-<div className="manual-ui-elements-scroll">
-
-<table className="manual-ui-elements">
-
-<colgroup>
-<col className="ui-element-number" />
-<col className="ui-element-description" />
-<col className="ui-element-number" />
-<col className="ui-element-description" />
-</colgroup>
-
-<tbody>
-
-<tr>
-
-<td>
-
-1
-
-</td>
-
-<td>
-
-Pulsante Home o Indietro. Consente di navigare nei menu.
-
-</td>
-
-<td>
-
-2
-
-</td>
-
-<td>
-
-Modalità di funzionamento (manuale o online) Stato dello strumento (processo attualmente attivo)
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3
-
-</td>
-
-<td>
-
-Vista corrente
-
-</td>
-
-<td>
-
-4
-
-</td>
-
-<td>
-
-Icone di stato della barra superiore, vedere [Icone di stato della barra superiore](../general-operations-and-configurations/#section-8-8-2).
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5
-
-</td>
-
-<td>
-
-Ruolo utente Ora corrente
-
-</td>
-
-<td>
-
-6
-
-</td>
-
-<td>
-
-Disconnessione o spegnimento
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7
-
-</td>
-
-<td>
-
-Risultati: visualizzare i risultati delle misurazioni della modalità selezionata.
-
-</td>
-
-<td>
-
-8
-
-</td>
-
-<td>
-
-Modalità: scegliere la modalità online per misurazioni continue con il dispositivo di campionamento in linea, oppure la modalità manuale per campioni prelevati con il dispositivo di campionamento manuale.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-9
-
-</td>
-
-<td>
-
-Misura: aprire l’assistente di misurazione e scegliere un protocollo di analisi (modalità manuale).
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<div className="manual-ui-elements-scroll manual-ui-elements">
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| 1 | Pulsante Home o Indietro. Consente di navigare nei menu. | 2 | Modalità di funzionamento (manuale o online) Stato dello strumento (processo attualmente attivo) |
+| 3 | Vista corrente | 4 | Icone di stato della barra superiore, vedere [Icone di stato della barra superiore](../general-operations-and-configurations/#section-8-8-2). |
+| 5 | Ruolo utente Ora corrente | 6 | Disconnessione o spegnimento |
+| 7 | Risultati: visualizzare i risultati delle misurazioni della modalità selezionata. | 8 | Modalità: scegliere la modalità online per misurazioni continue con il dispositivo di campionamento in linea, oppure la modalità manuale per campioni prelevati con il dispositivo di campionamento manuale. |
+| 9 | Misura: aprire l’assistente di misurazione e scegliere un protocollo di analisi (modalità manuale). |  | \< |
 
 </div>
 
@@ -897,173 +409,14 @@ Dopo aver aperto lo sportello del vano cartuccia, l’utilizzatore può accedere
 
 *Figura 8-6 Panoramica di una cartuccia installata. La cartuccia è bloccata da una*  *leva di fissaggio superiore (4) ed è collegata allo strumento tramite più connettori fluidici (5*  *- 8) e un connettore elettronico (9). Quando non è inserita alcuna cartuccia, i connettori fluidici ed elettronici*  *possono essere fissati al supporto rimovibile per connettori (10).*
 
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-1
-
-</td>
-
-<td>
-
-Strumento BactoSense
-
-</td>
-
-<td>
-
-2
-
-</td>
-
-<td>
-
-Cartuccia
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3
-
-</td>
-
-<td>
-
-Maniglia della cartuccia
-
-</td>
-
-<td>
-
-4
-
-</td>
-
-<td>
-
-Leva di fissaggio della cartuccia
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5
-
-</td>
-
-<td>
-
-Connettore del colorante (verde)
-
-</td>
-
-<td>
-
-6
-
-</td>
-
-<td>
-
-Connettore della candeggina (rosso)
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7
-
-</td>
-
-<td>
-
-Connettore dei rifiuti liquidi (nero o beige)
-
-</td>
-
-<td>
-
-8
-
-</td>
-
-<td>
-
-Connettore del liquido di risciacquo (blu)
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-9
-
-</td>
-
-<td>
-
-Connettore elettronico
-
-</td>
-
-<td>
-
-10
-
-</td>
-
-<td>
-
-Supporto rimovibile per connettori
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-11
-
-</td>
-
-<td>
-
-Sportello del vano cartuccia
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  |  |  |  |
+| --- | --- | --- | --- |
+| 1 | Strumento BactoSense | 2 | Cartuccia |
+| 3 | Maniglia della cartuccia | 4 | Leva di fissaggio della cartuccia |
+| 5 | Connettore del colorante (verde) | 6 | Connettore della candeggina (rosso) |
+| 7 | Connettore dei rifiuti liquidi (nero o beige) | 8 | Connettore del liquido di risciacquo (blu) |
+| 9 | Connettore elettronico | 10 | Supporto rimovibile per connettori |
+| 11 | Sportello del vano cartuccia |  | \< |
 
 :::caution[Proteggere il connettore inutilizzato]
 
@@ -1081,185 +434,15 @@ Seguire rigorosamente la procedura guidata sullo schermo. **Non rimuovere né in
 
 :::
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-OPERAZIONE
-
-</th>
-
-<th>
-
-INFORMAZIONI AGGIUNTIVE / IMMAGINE
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Preparare la cartuccia di ricambio e portarla a temperatura ambiente.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Premere il pulsante Manutenzione.
-
-</td>
-
-<td>
-
-Gli utenti Basic saltano questo passaggio.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Premere il pulsante Sostituzione della cartuccia.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Selezionare Sostituisci della cartuccia.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-:::warning[Seguire la procedura guidata della cartuccia]
-
-Confermare che si seguiranno le istruzioni della procedura guidata sullo schermo. Aprire lo sportello del vano cartuccia solo quando richiesto. Rispettare le istruzioni generali di manipolazione della cartuccia nella sezione [Istruzioni generali per la manipolazione delle cartucce](../general-operations-and-configurations/#section-8-9-1). Indossare guanti in nitrile e occhiali di sicurezza. Sigillare saldamente i connettori fluidici della vecchia cartuccia con i tappi collegati prima di rimuoverla. Al termine, assicurarsi che lo sportello sia ben chiuso e fissato.
-
-:::
-
-</td>
-
-<td>
-
-:::warning[Salto della procedura guidata della cartuccia]
-
-Solo gli utenti molto esperti che padroneggiano le operazioni sicure sulle cartucce possono saltare le istruzioni sullo schermo. Per le cartucce TCC o ICC, assicurarsi che il quinto connettore inutilizzato sia sempre montato sul supporto per evitare contaminazioni.
-
-:::
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7\.
-
-</td>
-
-<td>
-
-Gestione della cartuccia rimossa • Per conservare la cartuccia rimossa, consultare le istruzioni della sezione [Conservazione della cartuccia](../storage-transport-and-disposal/#section-17-1-3). • Per far riempire nuovamente la cartuccia rimossa, consultare le istruzioni della sezione [Restituzione di una cartuccia per la ricarica](../storage-transport-and-disposal/#section-17-3-2).
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINE |
+| --- | --- | --- |
+| 1\. | Preparare la cartuccia di ricambio e portarla a temperatura ambiente. |  |
+| 2\. | Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni. |  |
+| 3\. | Premere il pulsante Manutenzione. | Gli utenti Basic saltano questo passaggio. |
+| 4\. | Premere il pulsante Sostituzione della cartuccia. |  |
+| 5\. | Selezionare Sostituisci della cartuccia. |  |
+| 6\. | :::warning[Seguire la procedura guidata della cartuccia] Confermare che si seguiranno le istruzioni della procedura guidata sullo schermo. Aprire lo sportello del vano cartuccia solo quando richiesto. Rispettare le istruzioni generali di manipolazione della cartuccia nella sezione [Istruzioni generali per la manipolazione delle cartucce](../general-operations-and-configurations/#section-8-9-1). Indossare guanti in nitrile e occhiali di sicurezza. Sigillare saldamente i connettori fluidici della vecchia cartuccia con i tappi collegati prima di rimuoverla. Al termine, assicurarsi che lo sportello sia ben chiuso e fissato. ::: | :::warning[Salto della procedura guidata della cartuccia] Solo gli utenti molto esperti che padroneggiano le operazioni sicure sulle cartucce possono saltare le istruzioni sullo schermo. Per le cartucce TCC o ICC, assicurarsi che il quinto connettore inutilizzato sia sempre montato sul supporto per evitare contaminazioni. ::: |
+| 7\. | Gestione della cartuccia rimossa • Per conservare la cartuccia rimossa, consultare le istruzioni della sezione [Conservazione della cartuccia](../storage-transport-and-disposal/#section-17-1-3). • Per far riempire nuovamente la cartuccia rimossa, consultare le istruzioni della sezione [Restituzione di una cartuccia per la ricarica](../storage-transport-and-disposal/#section-17-3-2). |  |
 
 ### 8.9.5 Rimozione di una cartuccia {#section-8-9-5}
 
@@ -1271,167 +454,14 @@ Seguire rigorosamente la procedura guidata sullo schermo. **Non rimuovere né in
 
 :::
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-OPERAZIONE
-
-</th>
-
-<th>
-
-INFORMAZIONI AGGIUNTIVE / IMMAGINE
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Premere il pulsante Manutenzione.
-
-</td>
-
-<td>
-
-Gli utenti Basic saltano questo passaggio.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Premere il pulsante Sostituzione della cartuccia.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Selezionare Rimuovi la cartuccia.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-:::warning[Seguire la procedura guidata della cartuccia]
-
-Confermare che si seguiranno le istruzioni della procedura guidata sullo schermo. Aprire lo sportello del vano cartuccia solo quando richiesto. Rispettare le istruzioni generali di manipolazione della cartuccia nella sezione [Istruzioni generali per la manipolazione delle cartucce](../general-operations-and-configurations/#section-8-9-1). Indossare guanti in nitrile e occhiali di sicurezza. Sigillare saldamente i connettori fluidici della vecchia cartuccia con i tappi collegati prima di rimuoverla. Al termine, assicurarsi che lo sportello sia ben chiuso e fissato.
-
-:::
-
-</td>
-
-<td>
-
-:::warning[Salto della procedura guidata della cartuccia]
-
-Solo gli utenti molto esperti che padroneggiano le operazioni sicure sulle cartucce possono saltare le istruzioni sullo schermo.
-
-:::
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-Gestione della cartuccia rimossa • Per conservare la cartuccia rimossa, consultare le istruzioni della sezione [Conservazione della cartuccia](../storage-transport-and-disposal/#section-17-1-3). • Per far riempire nuovamente la cartuccia rimossa, consultare le istruzioni della sezione [Restituzione di una cartuccia per la ricarica](../storage-transport-and-disposal/#section-17-3-2).
-
-</td>
-
-<td>
-
-La barra superiore dell’interfaccia indica che non è collegata alcuna cartuccia. Nel menu Impostazioni, Manutenzione è evidenziato; gli utenti Basic vedono direttamente il pulsante Sostituzione della cartuccia evidenziato. ![BactoSense — Cartuccia non pronta](/img/gui/icons/cartridge-not-ready-status.png "width=30 class=manual-icon")
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINE |
+| --- | --- | --- |
+| 1\. | Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni. |  |
+| 2\. | Premere il pulsante Manutenzione. | Gli utenti Basic saltano questo passaggio. |
+| 3\. | Premere il pulsante Sostituzione della cartuccia. |  |
+| 4\. | Selezionare Rimuovi la cartuccia. |  |
+| 5\. | :::warning[Seguire la procedura guidata della cartuccia] Confermare che si seguiranno le istruzioni della procedura guidata sullo schermo. Aprire lo sportello del vano cartuccia solo quando richiesto. Rispettare le istruzioni generali di manipolazione della cartuccia nella sezione [Istruzioni generali per la manipolazione delle cartucce](../general-operations-and-configurations/#section-8-9-1). Indossare guanti in nitrile e occhiali di sicurezza. Sigillare saldamente i connettori fluidici della vecchia cartuccia con i tappi collegati prima di rimuoverla. Al termine, assicurarsi che lo sportello sia ben chiuso e fissato. ::: | :::warning[Salto della procedura guidata della cartuccia] Solo gli utenti molto esperti che padroneggiano le operazioni sicure sulle cartucce possono saltare le istruzioni sullo schermo. ::: |
+| 6\. | Gestione della cartuccia rimossa • Per conservare la cartuccia rimossa, consultare le istruzioni della sezione [Conservazione della cartuccia](../storage-transport-and-disposal/#section-17-1-3). • Per far riempire nuovamente la cartuccia rimossa, consultare le istruzioni della sezione [Restituzione di una cartuccia per la ricarica](../storage-transport-and-disposal/#section-17-3-2). | La barra superiore dell’interfaccia indica che non è collegata alcuna cartuccia. Nel menu Impostazioni, Manutenzione è evidenziato; gli utenti Basic vedono direttamente il pulsante Sostituzione della cartuccia evidenziato. ![BactoSense — Cartuccia non pronta](/img/gui/icons/cartridge-not-ready-status.png "width=30 class=manual-icon") |
 
 ### 8.9.6 Installazione di una cartuccia {#section-8-9-6}
 
@@ -1443,187 +473,15 @@ Seguire rigorosamente la procedura guidata sullo schermo. **Non rimuovere né in
 
 :::
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-OPERAZIONE
-
-</th>
-
-<th>
-
-INFORMAZIONI AGGIUNTIVE / IMMAGINE
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Preparare la nuova cartuccia e portarla a temperatura ambiente.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Premere il pulsante Manutenzione.
-
-</td>
-
-<td>
-
-Il pulsante Maintenance è evidenziato in arancione quando non è installata alcuna cartuccia. Gli utenti Basic saltano questo passaggio.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Premere il pulsante Sostituzione della cartuccia.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Selezionare Installa la cartuccia.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-:::warning[Seguire la procedura guidata della cartuccia]
-
-Confermare che si seguiranno le istruzioni della procedura guidata sullo schermo. Aprire lo sportello del vano cartuccia solo quando richiesto. Rispettare le istruzioni generali di manipolazione nella sezione [Istruzioni generali per la manipolazione delle cartucce](../general-operations-and-configurations/#section-8-9-1). Indossare guanti in nitrile e occhiali di sicurezza. Al termine, assicurarsi che lo sportello del vano cartuccia sia ben chiuso e fissato.
-
-:::
-
-</td>
-
-<td>
-
-:::warning[Salto della procedura guidata della cartuccia]
-
-Solo gli utenti molto esperti che padroneggiano le operazioni sicure sulle cartucce possono saltare le istruzioni sullo schermo. Per le cartucce TCC o ICC, assicurarsi che il quinto connettore inutilizzato sia sempre montato sul supporto per evitare contaminazioni.
-
-:::
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7\.
-
-</td>
-
-<td>
-
-Dopo aver completato tutti i passaggi della procedura guidata sullo schermo, la nuova cartuccia è inizializzata correttamente.
-
-</td>
-
-<td>
-
-Lo stato della cartuccia è indicato dal relativo simbolo nella barra superiore dell’interfaccia, vedere [Icone di stato della barra superiore](../general-operations-and-configurations/#section-8-8-2).
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINE |
+| --- | --- | --- |
+| 1\. | Preparare la nuova cartuccia e portarla a temperatura ambiente. |  |
+| 2\. | Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni. |  |
+| 3\. | Premere il pulsante Manutenzione. | Il pulsante Maintenance è evidenziato in arancione quando non è installata alcuna cartuccia. Gli utenti Basic saltano questo passaggio. |
+| 4\. | Premere il pulsante Sostituzione della cartuccia. |  |
+| 5\. | Selezionare Installa la cartuccia. |  |
+| 6\. | :::warning[Seguire la procedura guidata della cartuccia] Confermare che si seguiranno le istruzioni della procedura guidata sullo schermo. Aprire lo sportello del vano cartuccia solo quando richiesto. Rispettare le istruzioni generali di manipolazione nella sezione [Istruzioni generali per la manipolazione delle cartucce](../general-operations-and-configurations/#section-8-9-1). Indossare guanti in nitrile e occhiali di sicurezza. Al termine, assicurarsi che lo sportello del vano cartuccia sia ben chiuso e fissato. ::: | :::warning[Salto della procedura guidata della cartuccia] Solo gli utenti molto esperti che padroneggiano le operazioni sicure sulle cartucce possono saltare le istruzioni sullo schermo. Per le cartucce TCC o ICC, assicurarsi che il quinto connettore inutilizzato sia sempre montato sul supporto per evitare contaminazioni. ::: |
+| 7\. | Dopo aver completato tutti i passaggi della procedura guidata sullo schermo, la nuova cartuccia è inizializzata correttamente. | Lo stato della cartuccia è indicato dal relativo simbolo nella barra superiore dell’interfaccia, vedere [Icone di stato della barra superiore](../general-operations-and-configurations/#section-8-8-2). |
 
 ## 8.10 Sostituzione dei dispositivi di campionamento {#section-8-10}
 
@@ -1719,143 +577,13 @@ Per gli altri ambienti, si consiglia di qualificare lo strumento utilizzando il 
 
 La modalità demo può essere utilizzata per dimostrare il dispositivo o imparare a navigare nei menu e utilizzare le funzioni. Quando viene attivata, lo strumento si riavvia in una modalità speciale che mostra dati dimostrativi (i risultati delle misurazioni del proprietario sono nascosti). Tutte le funzioni dello strumento vengono sostituite da simulazioni che non muovono mai l’hardware né modificano il database dei risultati. È quindi possibile avviare protocolli senza caricare un campione e simulare l’eliminazione o la rianalisi dei risultati con altri gate senza modificare i dati. Quando la modalità demo è attiva, al centro della parte superiore dello schermo viene visualizzato ***Demo***. Quando lo strumento ritorna alla modalità normale, i dati del proprietario sono nuovamente visibili e tutte le funzioni sono di nuovo attive.
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-OPERAZIONE
-
-</th>
-
-<th colSpan="2">
-
-INFORMAZIONI AGGIUNTIVE / IMMAGINE
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Come utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni.
-
-</td>
-
-<td colSpan="2">
-
-![BactoSense — Pulsante Impostazioni](/img/gui/it/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Premere il pulsante Impostazioni di sistema. Premere il pulsante Modalità Demo.
-
-</td>
-
-<td>
-
-![BactoSense — Impostazioni di sistema](/img/gui/icons/system-settings-button.png "width=48 class=manual-icon")
-
-</td>
-
-<td>
-
-![BactoSense — Impostazioni della modalità demo](/img/gui/icons/demo-mode-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Selezionare la casella Attiva la modalità demo.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Premere il pulsante Salva e riavvia.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Il dispositivo si riavvia automaticamente.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINE | \< |
+| --- | --- | --- | --- |
+| 1\. | Come utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni. | ![BactoSense — Pulsante Impostazioni](/img/gui/it/home-settings-button.png "width=57 class=manual-icon-settings-button-half") | \< |
+| 2\. | Premere il pulsante Impostazioni di sistema. Premere il pulsante Modalità Demo. | ![BactoSense — Impostazioni di sistema](/img/gui/icons/system-settings-button.png "width=48 class=manual-icon") | ![BactoSense — Impostazioni della modalità demo](/img/gui/icons/demo-mode-button.png "width=48 class=manual-icon") |
+| 3\. | Selezionare la casella Attiva la modalità demo. |  | \< |
+| 4\. | Premere il pulsante Salva e riavvia. |  | \< |
+| 5\. | Il dispositivo si riavvia automaticamente. |  | \< |
 
 Per tornare alla modalità normale, seguire la stessa procedura, ma deselezionare la casella **Attiva la modalità demo** .
 
@@ -1865,126 +593,9 @@ Il ripristino delle impostazioni di fabbrica riporta ai valori originali la magg
 
 La procedura seguente descrive come eseguire il ripristino delle impostazioni di fabbrica:
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-OPERAZIONE
-
-</th>
-
-<th colSpan="2">
-
-INFORMAZIONI AGGIUNTIVE / IMMAGINE
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Come utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni.
-
-</td>
-
-<td colSpan="2">
-
-![BactoSense — Pulsante Impostazioni](/img/gui/it/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Premere Manutenzione, quindi Ripristino alle impostazioni fabbrica.
-
-</td>
-
-<td>
-
-![BactoSense — Menu di manutenzione](/img/gui/icons/maintenance-button.png "width=48 class=manual-icon")
-
-</td>
-
-<td>
-
-![BactoSense — Ripristinare le impostazioni di fabbrica](/img/gui/icons/factory-reset-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Utilizzare le caselle per selezionare i parametri da ripristinare: • impostazioni dello strumento • misurazioni, inclusi errori e registri • entrambi
-
-</td>
-
-<td colSpan="2">
-
-:::info[Informazioni aggiuntive]
-
-I registri di manutenzione, i risultati della validazione e la cronologia degli aggiornamenti software non vengono eliminati.
-
-:::
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Premere Esegui il ripristino del dispositivo e riavvia, quindi confermare con Sì.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINE | \< |
+| --- | --- | --- | --- |
+| 1\. | Come utente Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni. | ![BactoSense — Pulsante Impostazioni](/img/gui/it/home-settings-button.png "width=57 class=manual-icon-settings-button-half") | \< |
+| 2\. | Premere Manutenzione, quindi Ripristino alle impostazioni fabbrica. | ![BactoSense — Menu di manutenzione](/img/gui/icons/maintenance-button.png "width=48 class=manual-icon") | ![BactoSense — Ripristinare le impostazioni di fabbrica](/img/gui/icons/factory-reset-button.png "width=48 class=manual-icon") |
+| 3\. | Utilizzare le caselle per selezionare i parametri da ripristinare: • impostazioni dello strumento • misurazioni, inclusi errori e registri • entrambi | :::info[Informazioni aggiuntive] I registri di manutenzione, i risultati della validazione e la cronologia degli aggiornamenti software non vengono eliminati. ::: | \< |
+| 4\. | Premere Esegui il ripristino del dispositivo e riavvia, quindi confermare con Sì. |  | \< |

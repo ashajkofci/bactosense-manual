@@ -113,72 +113,52 @@ Kennworteigenschaften wie Gültigkeitsdauer, Länge usw. können eingestellt wer
 
 *Tabelle 8-1 Benutzerrollen und Berechtigungen*
 
-<div className="manual-user-roles-scroll">
+<div className="manual-user-roles-scroll manual-user-roles-permissions">
 
-<table className="manual-user-roles-permissions">
-
-<colgroup>
-<col className="user-role-permission-column" />
-<col className="user-role-basic-column" />
-<col className="user-role-advanced-column" />
-<col className="user-role-admin-column" />
-</colgroup>
-
-<thead>
-<tr>
-<th scope="col">BERECHTIGUNG</th>
-<th scope="col">BASIC</th>
-<th scope="col">ADVANCED</th>
-<th scope="col">ADMIN</th>
-</tr>
-</thead>
-
-<tbody>
-<tr><td>Letztes Ergebnis anzeigen</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Alle Ergebnisse anzeigen und exportieren</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Messungen starten, stoppen und planen</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Zwischen Online- und manuellem Modus umschalten</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Fehler- und Warnungsprotokolle anzeigen</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Ergebnisse umbenennen</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Gerät validieren</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Eigenes Kennwort ändern</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Systeminfo anzeigen</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Netzwerkeinstellungen anzeigen</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Letzten Selbsttest anzeigen</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Kartusche wechseln</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Fehler löschen</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Interventionsprotokoll ansehen</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Validierungsergebnisse ansehen</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Ergebnisse löschen</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Ergebnisse regaten</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Alarme einstellen</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Gates einstellen</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Neustarten</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Selbsttest ausführen</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Messungen löschen</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Alle exportieren</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Interventionsinfo ansehen</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Diagnose exportieren</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Analog- und Digitalausgänge ändern</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Analog- und Digitalausgänge testen</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Kennwörter anderer Benutzer ändern</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Benutzer erstellen</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Authentifizierungseinstellungen ändern</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Gerätenamen festlegen</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Datum und Uhrzeit einstellen</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Netzwerkeinstellungen ändern</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Diensteeinstellungen ändern</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Modbus aktivieren (mit Schlüssel) oder deaktivieren</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Sprache ändern</td><td></td><td></td><td>✓</td></tr>
-<tr><td>In Demo-Modus wechseln</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Einstellungen zurücksetzen</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Full-Factory-Reset (außer Interventionsprotokoll)</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Einstellungen importieren</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Automatisches Einschalten konfigurieren</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Erweiterungspakete mit Code aktivieren</td><td></td><td></td><td>✓</td></tr>
-</tbody>
-
-</table>
+| BERECHTIGUNG | BASIC | ADVANCED | ADMIN |
+| --- | --- | --- | --- |
+| Letztes Ergebnis anzeigen | ✓ | ✓ | ✓ |
+| Alle Ergebnisse anzeigen und exportieren | ✓ | ✓ | ✓ |
+| Messungen starten, stoppen und planen | ✓ | ✓ | ✓ |
+| Zwischen Online- und manuellem Modus umschalten | ✓ | ✓ | ✓ |
+| Fehler- und Warnungsprotokolle anzeigen | ✓ | ✓ | ✓ |
+| Ergebnisse umbenennen | ✓ | ✓ | ✓ |
+| Gerät validieren | ✓ | ✓ | ✓ |
+| Eigenes Kennwort ändern | ✓ | ✓ | ✓ |
+| Systeminfo anzeigen | ✓ | ✓ | ✓ |
+| Netzwerkeinstellungen anzeigen | ✓ | ✓ | ✓ |
+| Letzten Selbsttest anzeigen | ✓ | ✓ | ✓ |
+| Kartusche wechseln | ✓ | ✓ | ✓ |
+| Fehler löschen | ✓ | ✓ | ✓ |
+| Interventionsprotokoll ansehen | ✓ | ✓ | ✓ |
+| Validierungsergebnisse ansehen | ✓ | ✓ | ✓ |
+| Ergebnisse löschen |  | ✓ | ✓ |
+| Ergebnisse regaten |  | ✓ | ✓ |
+| Alarme einstellen |  | ✓ | ✓ |
+| Gates einstellen |  | ✓ | ✓ |
+| Neustarten |  | ✓ | ✓ |
+| Selbsttest ausführen |  | ✓ | ✓ |
+| Messungen löschen |  | ✓ | ✓ |
+| Alle exportieren |  | ✓ | ✓ |
+| Interventionsinfo ansehen |  | ✓ | ✓ |
+| Diagnose exportieren |  | ✓ | ✓ |
+| Analog- und Digitalausgänge ändern |  |  | ✓ |
+| Analog- und Digitalausgänge testen |  |  | ✓ |
+| Kennwörter anderer Benutzer ändern |  |  | ✓ |
+| Benutzer erstellen |  |  | ✓ |
+| Authentifizierungseinstellungen ändern |  |  | ✓ |
+| Gerätenamen festlegen |  |  | ✓ |
+| Datum und Uhrzeit einstellen |  |  | ✓ |
+| Netzwerkeinstellungen ändern |  |  | ✓ |
+| Diensteeinstellungen ändern |  |  | ✓ |
+| Modbus aktivieren (mit Schlüssel) oder deaktivieren |  |  | ✓ |
+| Sprache ändern |  |  | ✓ |
+| In Demo-Modus wechseln |  |  | ✓ |
+| Einstellungen zurücksetzen |  |  | ✓ |
+| Full-Factory-Reset (außer Interventionsprotokoll) |  |  | ✓ |
+| Einstellungen importieren |  |  | ✓ |
+| Automatisches Einschalten konfigurieren |  |  | ✓ |
+| Erweiterungspakete mit Code aktivieren |  |  | ✓ |
 
 </div>
 ## 8.3 Basiskonfiguration {#section-8-3}
@@ -309,357 +289,28 @@ Bitte fragen Sie Ihren Netzwerkadministrator nach den korrekten Einstellungen.
 
 :::
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-ARBEITSSCHRITT
-
-</th>
-
-<th>
-
-ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Drücken Sie als Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen.
-
-</td>
-
-<td>
-
-![BactoSense — Schaltfläche Einstellungen](/img/gui/de/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Drücken Sie die Taste Einstellungen.
-
-</td>
-
-<td>
-
-![BactoSense — Systemeinstellungen](/img/gui/icons/system-settings-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Drücken Sie die Taste Netzwerk.
-
-</td>
-
-<td>
-
-![BactoSense — Netzwerkeinstellungen](/img/gui/icons/network-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-A: Für eine Dynamische IP-Adresse wählen Sie die Option DHCP (1). Hinweis: In den meisten Fällen ist diese Konfiguration die richtige, wenn der BactoSense an einen Router oder einen Switch angeschlossen ist.
-
-B: Für eine Statische IP-Adresse wählen Sie die Option DHCP (1) ab und geben Sie Ihre gewünschte Netzwerkkonfiguration von Hand ein (2). Hinweis: In den meisten Fällen ist diese Konfiguration die richtige, wenn der BactoSense mittels Ethernet direkt an einen Computer angeschlossen ist. Stellen Sie sicher, dass auch der Computer über die korrekte Netzwerkkonfiguration verfügt.
-
-</td>
-
-<td>
-
-![BactoSense — Netzwerkkonfiguration](/img/gui/de/network-configuration.png "width=260")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Drücken Sie die Taste Speichern.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-Drücken Sie die Taste Jetzt neu starten.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG |
+| --- | --- | --- |
+| 1\. | Drücken Sie als Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. | ![BactoSense — Schaltfläche Einstellungen](/img/gui/de/home-settings-button.png "width=57 class=manual-icon-settings-button-half") |
+| 2\. | Drücken Sie die Taste Einstellungen. | ![BactoSense — Systemeinstellungen](/img/gui/icons/system-settings-button.png "width=48 class=manual-icon") |
+| 3\. | Drücken Sie die Taste Netzwerk. | ![BactoSense — Netzwerkeinstellungen](/img/gui/icons/network-button.png "width=48 class=manual-icon") |
+| 4\. | A: Für eine Dynamische IP-Adresse wählen Sie die Option DHCP (1). Hinweis: In den meisten Fällen ist diese Konfiguration die richtige, wenn der BactoSense an einen Router oder einen Switch angeschlossen ist.<br /><br />B: Für eine Statische IP-Adresse wählen Sie die Option DHCP (1) ab und geben Sie Ihre gewünschte Netzwerkkonfiguration von Hand ein (2). Hinweis: In den meisten Fällen ist diese Konfiguration die richtige, wenn der BactoSense mittels Ethernet direkt an einen Computer angeschlossen ist. Stellen Sie sicher, dass auch der Computer über die korrekte Netzwerkkonfiguration verfügt. | ![BactoSense — Netzwerkkonfiguration](/img/gui/de/network-configuration.png "width=260") |
+| 5\. | Drücken Sie die Taste Speichern. |  |
+| 6\. | Drücken Sie die Taste Jetzt neu starten. |  |
 
 ## 8.7 NTP-Server einstellen {#section-8-7}
 
 Das Network Time Protocol (NTP) synchronisiert die Uhrzeit von Computern über ein Netzwerk. Standardmäßig erfolgt die Synchronisierung mit den Servern der Network Time Foundation (ntp.org). Eigene NTP-Server können Sie festlegen im Menü *Datum und Zeit*.
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-ARBEITSSCHRITT
-
-</th>
-
-<th>
-
-ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Drücken Sie als Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen.
-
-</td>
-
-<td>
-
-![BactoSense — Schaltfläche Einstellungen](/img/gui/de/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Drücken Sie die Taste Einstellungen.
-
-</td>
-
-<td>
-
-![BactoSense — Systemeinstellungen](/img/gui/icons/system-settings-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Drücken Sie die Taste Datum und Zeit.
-
-</td>
-
-<td>
-
-![BactoSense — Datum und Uhrzeit](/img/gui/icons/date-time-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Drücken Sie die Taste Einstellungen zur Zeitsynchronisation.
-
-</td>
-
-<td>
-
-![BactoSense — Datum und Uhrzeit](/img/gui/de/date-and-time-settings.png "width=261")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Wählen Sie die gewünschte Synchronisationsquelle.
-
-</td>
-
-<td>
-
-:::info[Zusätzliche Informationen]
-
-Die Uhrzeit kann über einen NTP-Server oder Modbus TCP synchronisiert werden. Weitere Informationen zu Modbus TCP finden Sie unter [Modbus-TCP](../field-bus-interface/#section-7-1).
-
-:::
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-NTP-Server aktualisieren.
-
-</td>
-
-<td>
-
-![BactoSense — Zeitsynchronisation](/img/gui/de/time-synchronization-settings.png "width=261")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7
-
-</td>
-
-<td>
-
-Drücken Sie die Taste OK.
-
-</td>
-
-<td>
-
-:::info[Zusätzliche Informationen]
-
-Drücken Sie NTP testen, um die Erreichbarkeit der konfigurierten Server zu prüfen. Drücken Sie OK, um die Synchronisationseinstellungen zu speichern.
-
-:::
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG |
+| --- | --- | --- |
+| 1\. | Drücken Sie als Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. | ![BactoSense — Schaltfläche Einstellungen](/img/gui/de/home-settings-button.png "width=57 class=manual-icon-settings-button-half") |
+| 2\. | Drücken Sie die Taste Einstellungen. | ![BactoSense — Systemeinstellungen](/img/gui/icons/system-settings-button.png "width=48 class=manual-icon") |
+| 3\. | Drücken Sie die Taste Datum und Zeit. | ![BactoSense — Datum und Uhrzeit](/img/gui/icons/date-time-button.png "width=48 class=manual-icon") |
+| 4\. | Drücken Sie die Taste Einstellungen zur Zeitsynchronisation. | ![BactoSense — Datum und Uhrzeit](/img/gui/de/date-and-time-settings.png "width=261") |
+| 5\. | Wählen Sie die gewünschte Synchronisationsquelle. | :::info[Zusätzliche Informationen] Die Uhrzeit kann über einen NTP-Server oder Modbus TCP synchronisiert werden. Weitere Informationen zu Modbus TCP finden Sie unter [Modbus-TCP](../field-bus-interface/#section-7-1). ::: |
+| 6\. | NTP-Server aktualisieren. | ![BactoSense — Zeitsynchronisation](/img/gui/de/time-synchronization-settings.png "width=261") |
+| 7 | Drücken Sie die Taste OK. | :::info[Zusätzliche Informationen] Drücken Sie NTP testen, um die Erreichbarkeit der konfigurierten Server zu prüfen. Drücken Sie OK, um die Synchronisationseinstellungen zu speichern. ::: |
 
 ## 8.8 Die Benutzeroberfläche des BactoSense {#section-8-8}
 
@@ -681,154 +332,15 @@ Die Benutzeroberfläche des BactoSense ist in drei Hauptabschnitte unterteilt:
 
 Die Hauptelemente der Benutzeroberfläche sind:
 
-<div className="manual-ui-elements-scroll">
-
-<table className="manual-ui-elements">
-
-<colgroup>
-<col className="ui-element-number" />
-<col className="ui-element-description" />
-<col className="ui-element-number" />
-<col className="ui-element-description" />
-</colgroup>
-
-<tbody>
-
-<tr>
-
-<td>
-
-1
-
-</td>
-
-<td>
-
-Home- oder Return-Taste. Zur Navigation durch das Menü.
-
-</td>
-
-<td>
-
-2
-
-</td>
-
-<td>
-
-Betriebsart (Manuell oder Online) Gerätestatus (aktuell aktiver Prozess)
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3
-
-</td>
-
-<td>
-
-Aktuelle Ansicht
-
-</td>
-
-<td>
-
-4
-
-</td>
-
-<td>
-
-Die Symbole auf der oberen Leiste werden unter [Die Symbole auf der oberen Leiste](../general-operations-and-configurations/#section-8-8-2) vorgestellt.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5
-
-</td>
-
-<td>
-
-Benutzerrolle Aktuelle Uhrzeit
-
-</td>
-
-<td>
-
-6
-
-</td>
-
-<td>
-
-Ausloggen oder Abschalten
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7
-
-</td>
-
-<td>
-
-Resultate: Messergebnisse des gewählten Modus anzeigen.
-
-</td>
-
-<td>
-
-8
-
-</td>
-
-<td>
-
-Modus: Wählen Sie den Online-Modus für fortlaufende Messungen mit dem Online-Probenahmegerät oder den manuellen Modus für Einzelproben mit dem manuellen Probenahmegerät.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-9
-
-</td>
-
-<td>
-
-Messen: Messassistenten öffnen und ein Analyseprotokoll wählen (manueller Modus).
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<div className="manual-ui-elements-scroll manual-ui-elements">
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| 1 | Home- oder Return-Taste. Zur Navigation durch das Menü. | 2 | Betriebsart (Manuell oder Online) Gerätestatus (aktuell aktiver Prozess) |
+| 3 | Aktuelle Ansicht | 4 | Die Symbole auf der oberen Leiste werden unter [Die Symbole auf der oberen Leiste](../general-operations-and-configurations/#section-8-8-2) vorgestellt. |
+| 5 | Benutzerrolle Aktuelle Uhrzeit | 6 | Ausloggen oder Abschalten |
+| 7 | Resultate: Messergebnisse des gewählten Modus anzeigen. | 8 | Modus: Wählen Sie den Online-Modus für fortlaufende Messungen mit dem Online-Probenahmegerät oder den manuellen Modus für Einzelproben mit dem manuellen Probenahmegerät. |
+| 9 | Messen: Messassistenten öffnen und ein Analyseprotokoll wählen (manueller Modus). |  | \< |
 
 </div>
 
@@ -897,173 +409,14 @@ Nach dem Öffnen der Kartuschenfachtür hat der Benutzer Zugriff auf die Kartusc
 
 *Abbildung 8-6 Übersicht einer eingesetzten Kartusche. Die Kartusche wird oben durch einen* *Fixierriegel (4) gesichert und über mehrere Flüssigkeitsanschlüsse (5 –* *- 8) sowie einen elektronischen Anschluss (9) mit dem Gerät verbunden. Ist keine Kartusche eingesetzt, können die Flüssigkeits- und elektronischen*  *Anschlüsse im entnehmbaren Steckerhalter (10) gesichert werden.*
 
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-1
-
-</td>
-
-<td>
-
-BactoSense-Gerät
-
-</td>
-
-<td>
-
-2
-
-</td>
-
-<td>
-
-Kartusche
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3
-
-</td>
-
-<td>
-
-Kartuschengriff
-
-</td>
-
-<td>
-
-4
-
-</td>
-
-<td>
-
-Kartuschenfixierriegel
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5
-
-</td>
-
-<td>
-
-Farbstoffanschluss (grün)
-
-</td>
-
-<td>
-
-6
-
-</td>
-
-<td>
-
-Bleichmittelanschluss (rot)
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7
-
-</td>
-
-<td>
-
-Abwasseranschluss (schwarz oder beige)
-
-</td>
-
-<td>
-
-8
-
-</td>
-
-<td>
-
-Spülungsanschluss (blau)
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-9
-
-</td>
-
-<td>
-
-Elektronischer Anschluss
-
-</td>
-
-<td>
-
-10
-
-</td>
-
-<td>
-
-Entnehmbarer Steckerhalter
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-11
-
-</td>
-
-<td>
-
-Kartuschenfachtür
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  |  |  |  |
+| --- | --- | --- | --- |
+| 1 | BactoSense-Gerät | 2 | Kartusche |
+| 3 | Kartuschengriff | 4 | Kartuschenfixierriegel |
+| 5 | Farbstoffanschluss (grün) | 6 | Bleichmittelanschluss (rot) |
+| 7 | Abwasseranschluss (schwarz oder beige) | 8 | Spülungsanschluss (blau) |
+| 9 | Elektronischer Anschluss | 10 | Entnehmbarer Steckerhalter |
+| 11 | Kartuschenfachtür |  | \< |
 
 :::caution[Unbenutzten Anschluss schützen]
 
@@ -1081,185 +434,15 @@ Befolgen Sie das Verfahren des Bildschirmassistenten genau. **Entfernen oder ins
 
 :::
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-ARBEITSSCHRITT
-
-</th>
-
-<th>
-
-ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Halten Sie die akklimatisierte Ersatzkartusche bereit.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Drücken Sie auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Drücken Sie die Taste Wartung.
-
-</td>
-
-<td>
-
-Basic-Benutzer überspringen diesen Schritt.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Drücken Sie die Taste Kartusche wechseln.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Wählen Sie Kartusche wechseln.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-:::warning[Kartuschenassistenten befolgen]
-
-Bestätigen Sie, dass Sie den Anweisungen des Bildschirmassistenten folgen. Öffnen Sie die Kartuschenfachtür erst nach entsprechender Aufforderung. Beachten Sie die allgemeinen Hinweise zur Kartuschenhandhabung unter [Allgemeine Hinweise zur Handhabung von Kartuschen](../general-operations-and-configurations/#section-8-9-1). Tragen Sie Nitrilhandschuhe und eine Schutzbrille. Verschließen Sie die Flüssigkeitsanschlüsse der alten Kartusche vor dem Entfernen fest mit den angebrachten Verschlüssen. Stellen Sie abschließend sicher, dass die Kartuschenfachtür fest geschlossen und gesichert ist.
-
-:::
-
-</td>
-
-<td>
-
-:::warning[Kartuschenassistenten überspringen]
-
-Nur sehr erfahrene Benutzer, die die sichere Kartuschenhandhabung beherrschen, dürfen die Bildschirmanweisungen überspringen. Bei TCC- und ICC-Kartuschen muss der unbenutzte fünfte Anschluss immer im Steckerhalter befestigt sein, um Verunreinigungen zu vermeiden.
-
-:::
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7\.
-
-</td>
-
-<td>
-
-Handhabung der entnommenen Kartusche: • Beachten Sie zur Lagerung die Hinweise unter [Lagerung der Kartusche](../storage-transport-and-disposal/#section-17-1-3). • Beachten Sie zur Wiederbefüllung die Hinweise unter [Rückgabe einer Kartusche zur Wiederbefüllung](../storage-transport-and-disposal/#section-17-3-2).
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG |
+| --- | --- | --- |
+| 1\. | Halten Sie die akklimatisierte Ersatzkartusche bereit. |  |
+| 2\. | Drücken Sie auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. |  |
+| 3\. | Drücken Sie die Taste Wartung. | Basic-Benutzer überspringen diesen Schritt. |
+| 4\. | Drücken Sie die Taste Kartusche wechseln. |  |
+| 5\. | Wählen Sie Kartusche wechseln. |  |
+| 6\. | :::warning[Kartuschenassistenten befolgen] Bestätigen Sie, dass Sie den Anweisungen des Bildschirmassistenten folgen. Öffnen Sie die Kartuschenfachtür erst nach entsprechender Aufforderung. Beachten Sie die allgemeinen Hinweise zur Kartuschenhandhabung unter [Allgemeine Hinweise zur Handhabung von Kartuschen](../general-operations-and-configurations/#section-8-9-1). Tragen Sie Nitrilhandschuhe und eine Schutzbrille. Verschließen Sie die Flüssigkeitsanschlüsse der alten Kartusche vor dem Entfernen fest mit den angebrachten Verschlüssen. Stellen Sie abschließend sicher, dass die Kartuschenfachtür fest geschlossen und gesichert ist. ::: | :::warning[Kartuschenassistenten überspringen] Nur sehr erfahrene Benutzer, die die sichere Kartuschenhandhabung beherrschen, dürfen die Bildschirmanweisungen überspringen. Bei TCC- und ICC-Kartuschen muss der unbenutzte fünfte Anschluss immer im Steckerhalter befestigt sein, um Verunreinigungen zu vermeiden. ::: |
+| 7\. | Handhabung der entnommenen Kartusche: • Beachten Sie zur Lagerung die Hinweise unter [Lagerung der Kartusche](../storage-transport-and-disposal/#section-17-1-3). • Beachten Sie zur Wiederbefüllung die Hinweise unter [Rückgabe einer Kartusche zur Wiederbefüllung](../storage-transport-and-disposal/#section-17-3-2). |  |
 
 ### 8.9.5 Entfernen einer Kartusche {#section-8-9-5}
 
@@ -1271,167 +454,14 @@ Befolgen Sie das Verfahren des Bildschirmassistenten genau. **Entfernen oder ins
 
 :::
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-ARBEITSSCHRITT
-
-</th>
-
-<th>
-
-ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Drücken Sie auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Drücken Sie die Taste Wartung.
-
-</td>
-
-<td>
-
-Basic-Benutzer überspringen diesen Schritt.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Drücken Sie die Taste Kartusche wechseln.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Wählen Sie Kartusche entfernen.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-:::warning[Kartuschenassistenten befolgen]
-
-Bestätigen Sie, dass Sie den Anweisungen des Bildschirmassistenten folgen. Öffnen Sie die Kartuschenfachtür erst nach entsprechender Aufforderung. Beachten Sie die allgemeinen Hinweise zur Kartuschenhandhabung unter [Allgemeine Hinweise zur Handhabung von Kartuschen](../general-operations-and-configurations/#section-8-9-1). Tragen Sie Nitrilhandschuhe und eine Schutzbrille. Verschließen Sie die Flüssigkeitsanschlüsse der alten Kartusche vor dem Entfernen fest mit den angebrachten Verschlüssen. Stellen Sie abschließend sicher, dass die Kartuschenfachtür fest geschlossen und gesichert ist.
-
-:::
-
-</td>
-
-<td>
-
-:::warning[Kartuschenassistenten überspringen]
-
-Nur sehr erfahrene Benutzer, die den sicheren Betrieb von Kartuschen beherrschen, dürfen die Anweisungen auf dem Bildschirm überspringen.
-
-:::
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-Handhabung der entnommenen Kartusche: • Beachten Sie zur Lagerung die Hinweise unter [Lagerung der Kartusche](../storage-transport-and-disposal/#section-17-1-3). • Beachten Sie zur Wiederbefüllung die Hinweise unter [Rückgabe einer Kartusche zur Wiederbefüllung](../storage-transport-and-disposal/#section-17-3-2).
-
-</td>
-
-<td>
-
-Die obere Leiste der Benutzeroberfläche zeigt an, dass keine Kartusche angeschlossen ist. Im Einstellungsmenü ist Wartung hervorgehoben; Basic-Benutzer sehen dort direkt die hervorgehobene Taste Kartusche wechseln.<br />![BactoSense — Kartusche nicht bereit](/img/gui/icons/cartridge-not-ready-status.png "width=30 class=manual-icon")
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG |
+| --- | --- | --- |
+| 1\. | Drücken Sie auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. |  |
+| 2\. | Drücken Sie die Taste Wartung. | Basic-Benutzer überspringen diesen Schritt. |
+| 3\. | Drücken Sie die Taste Kartusche wechseln. |  |
+| 4\. | Wählen Sie Kartusche entfernen. |  |
+| 5\. | :::warning[Kartuschenassistenten befolgen] Bestätigen Sie, dass Sie den Anweisungen des Bildschirmassistenten folgen. Öffnen Sie die Kartuschenfachtür erst nach entsprechender Aufforderung. Beachten Sie die allgemeinen Hinweise zur Kartuschenhandhabung unter [Allgemeine Hinweise zur Handhabung von Kartuschen](../general-operations-and-configurations/#section-8-9-1). Tragen Sie Nitrilhandschuhe und eine Schutzbrille. Verschließen Sie die Flüssigkeitsanschlüsse der alten Kartusche vor dem Entfernen fest mit den angebrachten Verschlüssen. Stellen Sie abschließend sicher, dass die Kartuschenfachtür fest geschlossen und gesichert ist. ::: | :::warning[Kartuschenassistenten überspringen] Nur sehr erfahrene Benutzer, die den sicheren Betrieb von Kartuschen beherrschen, dürfen die Anweisungen auf dem Bildschirm überspringen. ::: |
+| 6\. | Handhabung der entnommenen Kartusche: • Beachten Sie zur Lagerung die Hinweise unter [Lagerung der Kartusche](../storage-transport-and-disposal/#section-17-1-3). • Beachten Sie zur Wiederbefüllung die Hinweise unter [Rückgabe einer Kartusche zur Wiederbefüllung](../storage-transport-and-disposal/#section-17-3-2). | Die obere Leiste der Benutzeroberfläche zeigt an, dass keine Kartusche angeschlossen ist. Im Einstellungsmenü ist Wartung hervorgehoben; Basic-Benutzer sehen dort direkt die hervorgehobene Taste Kartusche wechseln.<br />![BactoSense — Kartusche nicht bereit](/img/gui/icons/cartridge-not-ready-status.png "width=30 class=manual-icon") |
 
 ### 8.9.6 Einsetzen einer Kartusche {#section-8-9-6}
 
@@ -1443,187 +473,15 @@ Befolgen Sie das Verfahren des Bildschirmassistenten genau. **Entfernen oder ins
 
 :::
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-ARBEITSSCHRITT
-
-</th>
-
-<th>
-
-ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Halten Sie die akklimatisierte Ersatzkartusche bereit.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Drücken Sie auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Drücken Sie die Taste Wartung.
-
-</td>
-
-<td>
-
-Wenn keine Kartusche eingesetzt ist, wird die Wartungstaste orange hervorgehoben. Basic-Benutzer überspringen diesen Schritt.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Drücken Sie die Taste Kartusche wechseln.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Wählen Sie Kartusche installieren.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-:::warning[Kartuschenassistenten befolgen]
-
-Bestätigen Sie, dass Sie den Anweisungen des Bildschirmassistenten folgen. Öffnen Sie die Kartuschenfachtür erst nach entsprechender Aufforderung. Beachten Sie die allgemeinen Hinweise zur Kartuschenhandhabung unter [Allgemeine Hinweise zur Handhabung von Kartuschen](../general-operations-and-configurations/#section-8-9-1). Tragen Sie Nitrilhandschuhe und eine Schutzbrille. Stellen Sie abschließend sicher, dass die Kartuschenfachtür fest geschlossen und gesichert ist.
-
-:::
-
-</td>
-
-<td>
-
-:::warning[Kartuschenassistenten überspringen]
-
-Nur sehr erfahrene Benutzer, die die sichere Kartuschenhandhabung beherrschen, dürfen die Bildschirmanweisungen überspringen. Bei TCC- und ICC-Kartuschen muss der unbenutzte fünfte Anschluss immer im Steckerhalter befestigt sein, um Verunreinigungen zu vermeiden.
-
-:::
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7\.
-
-</td>
-
-<td>
-
-Nachdem Sie sämtliche auf dem Bildschirm gezeigten Schritte durchlaufen haben, haben Sie die neue Kartusche korrekt initialisiert.
-
-</td>
-
-<td>
-
-Der Kartuschenstatus wird durch das Kartuschensymbol im oberen Teil der BactoSense-Benutzeroberfläche dargestellt, siehe [Die Symbole auf der oberen Leiste](../general-operations-and-configurations/#section-8-8-2).
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG |
+| --- | --- | --- |
+| 1\. | Halten Sie die akklimatisierte Ersatzkartusche bereit. |  |
+| 2\. | Drücken Sie auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. |  |
+| 3\. | Drücken Sie die Taste Wartung. | Wenn keine Kartusche eingesetzt ist, wird die Wartungstaste orange hervorgehoben. Basic-Benutzer überspringen diesen Schritt. |
+| 4\. | Drücken Sie die Taste Kartusche wechseln. |  |
+| 5\. | Wählen Sie Kartusche installieren. |  |
+| 6\. | :::warning[Kartuschenassistenten befolgen] Bestätigen Sie, dass Sie den Anweisungen des Bildschirmassistenten folgen. Öffnen Sie die Kartuschenfachtür erst nach entsprechender Aufforderung. Beachten Sie die allgemeinen Hinweise zur Kartuschenhandhabung unter [Allgemeine Hinweise zur Handhabung von Kartuschen](../general-operations-and-configurations/#section-8-9-1). Tragen Sie Nitrilhandschuhe und eine Schutzbrille. Stellen Sie abschließend sicher, dass die Kartuschenfachtür fest geschlossen und gesichert ist. ::: | :::warning[Kartuschenassistenten überspringen] Nur sehr erfahrene Benutzer, die die sichere Kartuschenhandhabung beherrschen, dürfen die Bildschirmanweisungen überspringen. Bei TCC- und ICC-Kartuschen muss der unbenutzte fünfte Anschluss immer im Steckerhalter befestigt sein, um Verunreinigungen zu vermeiden. ::: |
+| 7\. | Nachdem Sie sämtliche auf dem Bildschirm gezeigten Schritte durchlaufen haben, haben Sie die neue Kartusche korrekt initialisiert. | Der Kartuschenstatus wird durch das Kartuschensymbol im oberen Teil der BactoSense-Benutzeroberfläche dargestellt, siehe [Die Symbole auf der oberen Leiste](../general-operations-and-configurations/#section-8-8-2). |
 
 ## 8.10 Wechseln zwischen Probenahmegeräten {#section-8-10}
 
@@ -1719,143 +577,13 @@ Für andere Betriebsumgebungen wird eine Gerätequalifizierung mit dem *Validier
 
 Der Demomodus kann verwendet werden, um die Funktionen des Geräts zu demonstrieren oder um zu lernen, wie die Navigation durch die Menüs und die Verwendung der Funktionen vonstatten gehen. Wird er aktiviert, startet das Gerät neu in einem besonderen Modus, in dem es Demodaten anzeigt (die Messdaten des Geräts bleiben verborgen). Alle Funktionen des Geräts werden durch Simulationen ersetzt, die nie die Hardware bewegen oder die Ergebnisdatenbank verändern können. Somit können Protokolle gestartet werden, ohne dass eine Probe geladen werden muss. Benutzer können die Löschung oder das Regaten von Ergebnissen simulieren, ohne die gespeicherten Daten zu beeinflussen. Solange der Demomodus aktiv ist, wird oben in der Mitte auf dem Bildschirm ***Demo*** angezeigt. Wird das Gerät in den Normalmodus zurückversetzt, werden die vorhandenen Daten wieder angezeigt und alle Funktionen sind wieder aktiv.
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-ARBEITSSCHRITT
-
-</th>
-
-<th colSpan="2">
-
-ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Drücken Sie als Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen.
-
-</td>
-
-<td colSpan="2">
-
-![BactoSense — Schaltfläche Einstellungen](/img/gui/de/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Drücken Sie die Taste Einstellungen. Drücken Sie die Taste Demo-Modus.
-
-</td>
-
-<td>
-
-![BactoSense — Systemeinstellungen](/img/gui/icons/system-settings-button.png "width=48 class=manual-icon")
-
-</td>
-
-<td>
-
-![BactoSense — Einstellungen für den Demomodus](/img/gui/icons/demo-mode-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Aktivieren Sie das Kontrollkästchen Demo-Modus aktivieren.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Drücken Sie die Taste Speichern und neu starten.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Das Gerät startet automatisch neu.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG | \< |
+| --- | --- | --- | --- |
+| 1\. | Drücken Sie als Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. | ![BactoSense — Schaltfläche Einstellungen](/img/gui/de/home-settings-button.png "width=57 class=manual-icon-settings-button-half") | \< |
+| 2\. | Drücken Sie die Taste Einstellungen. Drücken Sie die Taste Demo-Modus. | ![BactoSense — Systemeinstellungen](/img/gui/icons/system-settings-button.png "width=48 class=manual-icon") | ![BactoSense — Einstellungen für den Demomodus](/img/gui/icons/demo-mode-button.png "width=48 class=manual-icon") |
+| 3\. | Aktivieren Sie das Kontrollkästchen Demo-Modus aktivieren. |  | \< |
+| 4\. | Drücken Sie die Taste Speichern und neu starten. |  | \< |
+| 5\. | Das Gerät startet automatisch neu. |  | \< |
 
 Um zum Normalbetrieb zurückzukehren, folgen Sie demselben Verfahren und deaktivieren Sie die Option **Demo-Modus aktivieren** .
 
@@ -1865,126 +593,9 @@ Der Factory-Reset setzt die meisten Geräteeinstellungen auf Werkseinstellungen 
 
 Die folgenden Schritte beschreiben, wie Sie einen Factory-Reset durchführen können.
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-ARBEITSSCHRITT
-
-</th>
-
-<th colSpan="2">
-
-ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Drücken Sie als Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen.
-
-</td>
-
-<td colSpan="2">
-
-![BactoSense — Schaltfläche Einstellungen](/img/gui/de/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Drücken Sie auf Wartung und dann Werkseinstellungen.
-
-</td>
-
-<td>
-
-![BactoSense — Wartungsmenü](/img/gui/icons/maintenance-button.png "width=48 class=manual-icon")
-
-</td>
-
-<td>
-
-![BactoSense — Werkseinstellungen wiederherstellen](/img/gui/icons/factory-reset-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Wählen Sie mithilfe der Kontrollkästchen die zurückzusetzenden Parameter: • Geräteeinstellungen • Messungen einschließlich Fehler und Protokolle • beides
-
-</td>
-
-<td colSpan="2">
-
-:::info[Zusätzliche Informationen]
-
-Wartungsprotokolle, Validierungsergebnisse und der Softwareaktualisierungsverlauf werden nicht gelöscht.
-
-:::
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Drücken Sie Gerät zurücksetzen und neu starten und bestätigen Sie mit Ja.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG | \< |
+| --- | --- | --- | --- |
+| 1\. | Drücken Sie als Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. | ![BactoSense — Schaltfläche Einstellungen](/img/gui/de/home-settings-button.png "width=57 class=manual-icon-settings-button-half") | \< |
+| 2\. | Drücken Sie auf Wartung und dann Werkseinstellungen. | ![BactoSense — Wartungsmenü](/img/gui/icons/maintenance-button.png "width=48 class=manual-icon") | ![BactoSense — Werkseinstellungen wiederherstellen](/img/gui/icons/factory-reset-button.png "width=48 class=manual-icon") |
+| 3\. | Wählen Sie mithilfe der Kontrollkästchen die zurückzusetzenden Parameter: • Geräteeinstellungen • Messungen einschließlich Fehler und Protokolle • beides | :::info[Zusätzliche Informationen] Wartungsprotokolle, Validierungsergebnisse und der Softwareaktualisierungsverlauf werden nicht gelöscht. ::: | \< |
+| 4\. | Drücken Sie Gerät zurücksetzen und neu starten und bestätigen Sie mit Ja. |  | \< |

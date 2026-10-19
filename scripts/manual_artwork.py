@@ -185,6 +185,11 @@ def normalize_artwork(content, source_file=None):
   scheduler = ROOT/'scripts/editorial/10-advanced-scheduler.md'
   if scheduler.is_file():
    content = re.sub(r'(?=^## 10\.3\b)', lambda _: scheduler.read_text().rstrip()+'\n\n', content, count=1, flags=re.M)
+ # Replace the older filter steps with the reviewed date, name and BactoSwitch line filters.
+ if source_file == 'docs/10-measurements.md':
+  filtering = ROOT/'scripts/editorial/10-filtering-measurements.md'
+  if filtering.is_file():
+   content = re.sub(r'^## 10\.7\b[^\n]*\n.*?(?=^## 10\.8\b)', lambda _: filtering.read_text().rstrip()+'\n\n', content, count=1, flags=re.M|re.S)
  # Keep the embedded-manual instructions when importing the older source PDF.
  if source_file == 'docs/15-maintenance.md' and '{#section-15-4}' not in content:
   embedded_manual = ROOT/'scripts/editorial/15-embedded-manual.md'

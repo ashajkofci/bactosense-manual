@@ -33,24 +33,7 @@ Selección múltiple y operaciones por lotes: en la lista de mediciones, manteng
 
 :::
 
-### 11.1.1 Filtrado de mediciones {#section-11-1-1}
-
-Los filtros limitan la lista de resultados a las mediciones que necesita. Puede filtrar por intervalo de fechas, por nombre de medición y, si BactoSwitch está activado, por línea de muestra BactoSwitch. Si combina filtros, solo se muestran las mediciones que cumplen todos ellos. Los filtros abarcan todas las mediciones almacenadas en el instrumento.
-
-|  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMÁGENES |
-| --- | --- | --- |
-| 1. | En la pantalla Home, pulse **Resultados**. | La lista muestra los resultados del modo de funcionamiento actual: **Resultados del modo en línea** o **Resultados del modo manual**. Para abrir la lista del otro modo, pulse **Ajustes**, después **Registros**, y seleccione **Results (online mode)** o **Results (manual mode)**. |
-| 2. | Pulse **Filtro**. | Se abre la pantalla **Filtrar resultados**. Los campos de la izquierda muestran los filtros actuales. |
-| 3. | Para filtrar por fecha, toque el campo bajo **Fecha de inicio** y seleccione el primer día en el calendario. Toque el campo de hora situado debajo y ajuste la hora y los minutos con las ruedas. Ajuste **Fecha final** y su hora del mismo modo. | Ambos límites están incluidos: se muestran las mediciones hasta el final del minuto final seleccionado. El final no puede ser anterior al inicio. Sin filtro de fecha, el intervalo va de la medición más antigua a la más reciente. |
-| 4. | Para filtrar por nombre, toque el campo bajo **Filtrar por nombre**, introduzca parte del nombre de la medición y pulse **OK**. | La lista conserva todas las mediciones cuyo nombre contiene este texto, sin distinguir mayúsculas y minúsculas. Por ejemplo, *tap* encuentra “Tap Water Zürich”. **Ninguno** significa que no hay ningún filtro por nombre. Para eliminar el filtro por nombre, borre el texto y pulse **OK**. |
-| 5. | Para filtrar por línea BactoSwitch, pulse **Filtrar por línea**, seleccione la línea y pulse **Confirmar**. | Este botón solo se muestra si BactoSwitch está activado. Cada línea aparece con su nombre y su número; el botón muestra entonces **Filtrado por línea #n**. Solo las mediciones del modo en línea muestreadas a través de BactoSwitch pertenecen a una línea; todas las demás mediciones se ocultan mientras este filtro está activo. Para eliminar el filtro por línea, seleccione de nuevo la línea resaltada y pulse **Confirmar**. |
-| 6. | Pulse **OK** para aplicar los filtros y volver a la lista de resultados. | La barra de acciones muestra el intervalo de fechas y los filtros por línea y por nombre activos. Si ninguna medición coincide, aparece **No measurements to display**; pulse **Change filters** para ajustar los filtros. |
-
-:::info[Restablecer los filtros]
-
-Pulse **Restablecer** en la pantalla **Filtrar resultados** para eliminar los filtros por nombre y por línea y restaurar el intervalo de fechas completo. Los filtros de los resultados del modo manual se borran al volver a la pantalla Home. En el modo en línea, los filtros por nombre y por línea permanecen activos, también en el gráfico en línea (véase [Revisión de las mediciones automáticas en línea](../measurements/#section-10-2-3)), hasta que los restablezca.
-
-:::
+Para mostrar solo algunas mediciones en la lista de resultados, fíltrelas por fecha, nombre o línea BactoSwitch; véase [Filtrado de mediciones](../measurements/#section-10-7).
 
 ## 11.2 Introducción a las regiones de análisis {#section-11-2}
 
@@ -277,179 +260,15 @@ El reanálisis (regating) consiste en aplicar un conjunto de regiones diferente 
 - Para reanalizar, es necesario disponer de ese conjunto adicional. En la pantalla Home, pulse Ajustes y después Ajustes de la compuerta para ver los conjuntos de regiones disponibles.
 - La modificación de un conjunto de regiones existente se describe en la sección [Edición de conjuntos de regiones existentes](11-results-and-data-analysis.md#section-11-4-3).
 
-<table className="manual-table">
-
-<tbody>
-
-<tr>
-
-<th scope="col">
-
-</th>
-
-<th scope="col">
-
-PASO DE TRABAJO
-
-</th>
-
-<th scope="col">
-
-INFORMACIÓN ADICIONAL / IMÁGENES
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-En la pantalla Home, pulse Ajustes para abrir el menú de ajustes.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Pulse Registros y, según cómo se realizó la medición, Results (manual mode) o Results (online mode).
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Para reanalizar una sola medición, selecciónela para acceder a la página de detalles del resultado. Para reanalizar varias mediciones (por lotes), mantenga pulsada una medición hasta que quede resaltada y aparezca una casilla a la izquierda. A continuación, pulse otras mediciones para seleccionarlas también.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Pulse Resultado de re-gate en la vista de una medición o Re-gate cuando hay varias mediciones seleccionadas.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Seleccione el conjunto de regiones deseado marcando su casilla.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-Pulse el botón Confirmar para iniciar el reanálisis.
-
-</td>
-
-<td>
-
-:::info[Información adicional]
-
-Según el número de mediciones, el reanálisis puede tardar varios minutos.
-
-:::
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7\.
-
-</td>
-
-<td>
-
-Al finalizar, pulse OK.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMÁGENES |
+| --- | --- | --- |
+| 1\. | En la pantalla Home, pulse Ajustes para abrir el menú de ajustes. |  |
+| 2\. | Pulse Registros y, según cómo se realizó la medición, Results (manual mode) o Results (online mode). |  |
+| 3\. | Para reanalizar una sola medición, selecciónela para acceder a la página de detalles del resultado. Para reanalizar varias mediciones (por lotes), mantenga pulsada una medición hasta que quede resaltada y aparezca una casilla a la izquierda. A continuación, pulse otras mediciones para seleccionarlas también. |  |
+| 4\. | Pulse Resultado de re-gate en la vista de una medición o Re-gate cuando hay varias mediciones seleccionadas. |  |
+| 5\. | Seleccione el conjunto de regiones deseado marcando su casilla. |  |
+| 6\. | Pulse el botón Confirmar para iniciar el reanálisis. | :::info[Información adicional] Según el número de mediciones, el reanálisis puede tardar varios minutos. ::: |
+| 7\. | Al finalizar, pulse OK. |  |
 
 ### 11.4.2 Creación de un conjunto de regiones nuevo {#section-11-4-2}
 
@@ -794,8 +613,6 @@ En la vista de resultados, pulse el botón Resultado de re-gate.
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -815,8 +632,6 @@ Seleccione la región recién creada y vuelva a procesar los datos con ella puls
 </td>
 
 <td>
-
-
 
 </td>
 
@@ -882,8 +697,6 @@ Guarde la región ajustada.
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -903,8 +716,6 @@ Vaya de nuevo a la vista de resultados de la muestra de agua medida anteriorment
 </td>
 
 <td>
-
-
 
 </td>
 
@@ -926,8 +737,6 @@ En la vista de resultados, pulse el botón Resultado de re-gate.
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -947,8 +756,6 @@ Seleccione la región recién creada y vuelva a procesar los datos con ella puls
 </td>
 
 <td>
-
-
 
 </td>
 
@@ -992,8 +799,6 @@ Vuelva a Gate settings y edite de nuevo la región.
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -1014,8 +819,6 @@ Vaya al paso de configuración del límite inferior HNA. Introduzca el límite i
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -1035,8 +838,6 @@ Reanalice de nuevo la medición del agua y compruebe que la región sea adecuada
 </td>
 
 <td>
-
-
 
 </td>
 
@@ -1069,311 +870,21 @@ Si necesita ayuda para configurar una cadena de herramientas de análisis avanza
 
 Para comparar los resultados de BactoSense con los de otro citómetro de flujo, puede analizarse una solución de referencia con microesferas autofluorescentes. Este método permite comparar las escalas de medición de distintos dispositivos.
 
-<div className="manual-narrow-details-scroll">
-
-<table className="manual-table manual-narrow-details manual-narrow-details-split">
-
-<colgroup>
-<col className="procedure-step-column" />
-<col className="procedure-instruction-column" />
-<col className="procedure-detail-column" />
-<col className="procedure-detail-column" />
-</colgroup>
-
-<thead>
-
-<tr>
-
-<th scope="col">
-
-</th>
-
-<th scope="col">
-
-PASO DE TRABAJO
-
-</th>
-
-<th scope="col" colSpan="2">
-
-INFORMACIÓN ADICIONAL / IMAGEN
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Se recomienda utilizar el Validation Kit, que contiene una solución de microesferas lista para usar.
-
-</td>
-
-<td colSpan="2">
-
-Lea las instrucciones del Validation Kit para obtener más información.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Instale el dispositivo de muestreo manual según el manual de usuario.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Tome una de las soluciones de microesferas del Validation Kit y colóquela en el dispositivo de muestreo.
-
-</td>
-
-<td colSpan="2">
-
-Lea las instrucciones del Validation Kit para obtener más información.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-:::info[Información adicional]
-
-Pulse el botón Home. Pulse Back tantas veces como sea necesario para que aparezca Home.
-
-:::
-
-</td>
-
-<td>
-
-![BactoSense — Botón Inicio](/img/gui/icons/home-button.png "width=48 class=manual-icon")
-
-</td>
-
-<td>
-
-![BactoSense — Botón Volver](/img/gui/icons/back-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-En la pantalla Home, pulse Modo y seleccione Modo manual. Pulse Volver y, a continuación, Iniciar para abrir el asistente de medición.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-Seleccione Preparar en la lista de protocolos.
-
-</td>
-
-<td colSpan="2">
-
-Véase la sección [Realización de un cebado (Prime)](../measurements/#section-10-9-3).
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7\.
-
-</td>
-
-<td>
-
-Pulse los botones Siguiente y Inicio. Espere a que termine el protocolo de cebado.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-8\.
-
-</td>
-
-<td>
-
-Pulse Nuevo, elija Análisis de perlas en la lista y pulse Siguiente e Inicio.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-9\.
-
-</td>
-
-<td>
-
-Espere a los resultados y, si es necesario, ajuste con precisión la región del diagrama FL1 frente a FL2 para contar solo las 4 poblaciones de microesferas. Asegúrese de que el ruido, el fondo y los residuos no se cuenten dentro de la región.
-
-</td>
-
-<td colSpan="2">
-
-Consulte la sección [Edición de conjuntos de regiones existentes](../results-and-data-analysis/#section-11-4-3) para ajustar la región.<br />![Ilustración de la tabla de la página 112 del manual](/img/manual/render-fa85ea9255cb.webp "width=246 class=manual-figure")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-10\.
-
-</td>
-
-<td>
-
-En el histograma FL1 frente a recuentos, estime el valor logarítmico del centro de cada pico en el eje FL1. En este ejemplo, se obtiene aproximadamente (en log): 1.<sup>er</sup> pico = 4.05; 2.<sup>º</sup> pico = 4.3; 3.<sup>er</sup> pico = 5.35; 4.<sup>º</sup> pico = 6.2.
-
-</td>
-
-<td>
-
-![Ilustración de la tabla de la página 113 del manual](/img/manual/cell-c2ba9a559620.png "width=246 class=manual-figure")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-11\.
-
-</td>
-
-<td>
-
-Mida las mismas microesferas con el otro citómetro de flujo que desea comparar y repita los pasos 10 y 11. En este ejemplo, se obtiene aproximadamente (en log): 1.<sup>er</sup> pico = log(10<sup>3</sup>) = 3; 2.<sup>º</sup> pico = log(2*10<sup>3</sup>) = 3.3; 3.<sup>er</sup> pico = log(2.4*10<sup>4</sup>) = 4.4; 4.<sup>º</sup> pico = log(1.6*10<sup>5</sup>) = 5.2.
-
-</td>
-
-<td>
-
-![Ilustración de la tabla de la página 113 del manual](/img/manual/cell-4c2343e0bbfe.png "width=246 class=manual-figure")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-12\.
-
-</td>
-
-<td>
-
-Con los distintos valores obtenidos para ambos dispositivos, ya es posible comparar sus escalas y sus ventanas de medición.
-
-</td>
-
-<td>
-
-
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<div className="manual-narrow-details-scroll manual-narrow-details manual-narrow-details-split">
+
+|  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN | \< |
+| --- | --- | --- | --- |
+| 1\. | Se recomienda utilizar el Validation Kit, que contiene una solución de microesferas lista para usar. | Lea las instrucciones del Validation Kit para obtener más información. | \< |
+| 2\. | Instale el dispositivo de muestreo manual según el manual de usuario. |  | \< |
+| 3\. | Tome una de las soluciones de microesferas del Validation Kit y colóquela en el dispositivo de muestreo. | Lea las instrucciones del Validation Kit para obtener más información. | \< |
+| 4\. | :::info[Información adicional] Pulse el botón Home. Pulse Back tantas veces como sea necesario para que aparezca Home. ::: | ![BactoSense — Botón Inicio](/img/gui/icons/home-button.png "width=48 class=manual-icon") | ![BactoSense — Botón Volver](/img/gui/icons/back-button.png "width=48 class=manual-icon") |
+| 5\. | En la pantalla Home, pulse Modo y seleccione Modo manual. Pulse Volver y, a continuación, Iniciar para abrir el asistente de medición. |  | \< |
+| 6\. | Seleccione Preparar en la lista de protocolos. | Véase la sección [Realización de un cebado (Prime)](../measurements/#section-10-9-3). | \< |
+| 7\. | Pulse los botones Siguiente y Inicio. Espere a que termine el protocolo de cebado. |  | \< |
+| 8\. | Pulse Nuevo, elija Análisis de perlas en la lista y pulse Siguiente e Inicio. |  | \< |
+| 9\. | Espere a los resultados y, si es necesario, ajuste con precisión la región del diagrama FL1 frente a FL2 para contar solo las 4 poblaciones de microesferas. Asegúrese de que el ruido, el fondo y los residuos no se cuenten dentro de la región. | Consulte la sección [Edición de conjuntos de regiones existentes](../results-and-data-analysis/#section-11-4-3) para ajustar la región.<br />![Ilustración de la tabla de la página 112 del manual](/img/manual/render-fa85ea9255cb.webp "width=246 class=manual-figure") | \< |
+| 10\. | En el histograma FL1 frente a recuentos, estime el valor logarítmico del centro de cada pico en el eje FL1. En este ejemplo, se obtiene aproximadamente (en log): 1.<sup>er</sup> pico = 4.05; 2.<sup>º</sup> pico = 4.3; 3.<sup>er</sup> pico = 5.35; 4.<sup>º</sup> pico = 6.2. | ![Ilustración de la tabla de la página 113 del manual](/img/manual/cell-c2ba9a559620.png "width=246 class=manual-figure") | \< |
+| 11\. | Mida las mismas microesferas con el otro citómetro de flujo que desea comparar y repita los pasos 10 y 11. En este ejemplo, se obtiene aproximadamente (en log): 1.<sup>er</sup> pico = log(10<sup>3</sup>) = 3; 2.<sup>º</sup> pico = log(2*10<sup>3</sup>) = 3.3; 3.<sup>er</sup> pico = log(2.4*10<sup>4</sup>) = 4.4; 4.<sup>º</sup> pico = log(1.6*10<sup>5</sup>) = 5.2. | ![Ilustración de la tabla de la página 113 del manual](/img/manual/cell-4c2343e0bbfe.png "width=246 class=manual-figure") | \< |
+| 12\. | Con los distintos valores obtenidos para ambos dispositivos, ya es posible comparar sus escalas y sus ventanas de medición. |  | \< |
 
 </div>

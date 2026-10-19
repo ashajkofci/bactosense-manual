@@ -121,141 +121,14 @@ On the Home screen, press Settings, then Logs. Select Error log or Warning log t
 
 *Figure 16-1 : Error logs*
 
-<table className="manual-table">
-
-<tbody>
-
-<tr>
-
-<td rowSpan="4">
-
-①
-
-</td>
-
-<td rowSpan="4">
-
-Date and time of the event
-
-</td>
-
-<td rowSpan="4">
-
-②
-
-</td>
-
-<td colSpan="2">
-
-Type of the event
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-![BactoSense — Critical error log entry](/img/gui/icons/critical-error-event.png "width=32 class=manual-icon")
-
-</td>
-
-<td>
-
-Critical error
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-![BactoSense — Non-critical error log entry](/img/gui/icons/noncritical-error-event.png "width=32 class=manual-icon")
-
-</td>
-
-<td>
-
-Non-critical error
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-![BactoSense — Log entry: errors cleared](/img/gui/icons/errors-cleared-event.png "width=32 class=manual-icon")
-
-</td>
-
-<td>
-
-Errors cleared
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-③
-
-</td>
-
-<td>
-
-Short description of the error or event
-
-</td>
-
-<td>
-
-④
-
-</td>
-
-<td colSpan="2">
-
-Button to manually clear errors (available to Basic, Advanced and Admin users when the instrument is idle)
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-⑤
-
-</td>
-
-<td>
-
-Date range of displayed events. Click to change the range.
-
-</td>
-
-<td>
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  |  |  |  |  |
+| --- | --- | --- | --- | --- |
+| ① | Date and time of the event | ② | Type of the event | \< |
+| ^ | ^ | ^ | ![BactoSense — Critical error log entry](/img/gui/icons/critical-error-event.png "width=32 class=manual-icon") | Critical error |
+| ^ | ^ | ^ | ![BactoSense — Non-critical error log entry](/img/gui/icons/noncritical-error-event.png "width=32 class=manual-icon") | Non-critical error |
+| ^ | ^ | ^ | ![BactoSense — Log entry: errors cleared](/img/gui/icons/errors-cleared-event.png "width=32 class=manual-icon") | Errors cleared |
+| ③ | Short description of the error or event | ④ | Button to manually clear errors (available to Basic, Advanced and Admin users when the instrument is idle) | \< |
+| ⑤ | Date range of displayed events. Click to change the range. |  |  | \< |
 
 :::info[View event details]
 
@@ -278,119 +151,12 @@ Critical errors must be cleared manually. Make sure to first solve the origin of
 
 The automatic self-check tool checks that each component of the BactoSense is functioning correctly and identifies those that are not. It can be used to identify problems with the instrument.
 
-<table className="manual-table">
-
-<tbody>
-
-<tr>
-
-<th scope="col">
-
-</th>
-
-<th scope="col">
-
-WORK STEP
-
-</th>
-
-<th scope="col">
-
-ADDITIONAL INFO / IMAGE
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-As an Advanced or Admin user, press Settings on the Home screen to open the settings menu.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Press the Maintenance button.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Press the Self-check button.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-:::info[Additional information]
-
-Press the Rerun button. Once execution has terminated, the instrument shows a list of all tests, with a green PASS or red FAIL indicator. Some tests may be skipped: if the system cannot communicate with the cartridge, all the tests that require cartridge communication are skipped.
-
-:::
-
-</td>
-
-<td>
-
-![BactoSense — Self-check results](/img/gui/en/self-check-results.png "width=245 class=manual-figure")
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | WORK STEP | ADDITIONAL INFO / IMAGE |
+| --- | --- | --- |
+| 1\. | As an Advanced or Admin user, press Settings on the Home screen to open the settings menu. |  |
+| 2\. | Press the Maintenance button. |  |
+| 3\. | Press the Self-check button. |  |
+| 4\. | :::info[Additional information] Press the Rerun button. Once execution has terminated, the instrument shows a list of all tests, with a green PASS or red FAIL indicator. Some tests may be skipped: if the system cannot communicate with the cartridge, all the tests that require cartridge communication are skipped. ::: | ![BactoSense — Self-check results](/img/gui/en/self-check-results.png "width=245 class=manual-figure") |
 
 ## 16.7 Operation at low temperature {#section-16-7}
 

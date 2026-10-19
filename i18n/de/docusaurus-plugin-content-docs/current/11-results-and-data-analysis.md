@@ -33,24 +33,7 @@ Mehrfachauswahl und gemeinsame Aktionen: Halten Sie in der Messungsliste eine Me
 
 :::
 
-### 11.1.1 Messungen filtern {#section-11-1-1}
-
-Mit Filtern beschränken Sie die Ergebnisliste auf die benötigten Messungen. Sie können nach Datumsbereich, nach Messungsname und, wenn BactoSwitch aktiviert ist, nach BactoSwitch-Probenlinie filtern. Wenn Sie Filter kombinieren, werden nur Messungen angezeigt, die alle Filter erfüllen. Die Filter durchsuchen alle auf dem Gerät gespeicherten Messungen.
-
-|  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNGEN |
-| --- | --- | --- |
-| 1. | Drücken Sie auf der Startseite **Resultate**. | Die Liste zeigt die Ergebnisse des aktuellen Betriebsmodus: **Online-Modus-Ergebnisse** oder **Resultatdetails Manueller Modus**. Um die Liste des anderen Modus zu öffnen, drücken Sie **Einstellungen**, dann **Logs**, und wählen Sie **Results (online mode)** oder **Results (manual mode)**. |
-| 2. | Drücken Sie **Filter**. | Der Bildschirm **Resultate filtern** wird geöffnet. Die Felder links zeigen die aktuellen Filter. |
-| 3. | Um nach Datum zu filtern, tippen Sie auf das Feld unter **Startdatum** und wählen Sie im Kalender den ersten Tag. Tippen Sie auf das Zeitfeld darunter und stellen Sie Stunde und Minute mit den Rädern ein. Stellen Sie **Enddatum** und die zugehörige Zeit auf die gleiche Weise ein. | Beide Grenzen sind eingeschlossen: Messungen bis zum Ende der gewählten Endminute werden angezeigt. Das Ende kann nicht vor dem Start liegen. Ohne Datumsfilter reicht der Bereich von der ältesten bis zur neuesten Messung. |
-| 4. | Um nach Namen zu filtern, tippen Sie auf das Feld unter **Nach Namen filtern**, geben Sie einen Teil des Messungsnamens ein und drücken Sie **OK**. | Die Liste behält jede Messung, deren Name diesen Text enthält; Groß- und Kleinschreibung werden nicht unterschieden. So findet *tap* zum Beispiel „Tap Water Zürich“. **Keine** bedeutet, dass kein Namensfilter gesetzt ist. Um den Namensfilter zu entfernen, löschen Sie den Text und drücken Sie **OK**. |
-| 5. | Um nach BactoSwitch-Probenlinie zu filtern, drücken Sie **Nach Zeilen filtern**, wählen Sie die Probenlinie und drücken Sie **Bestätigen**. | Diese Schaltfläche wird nur angezeigt, wenn BactoSwitch aktiviert ist. Jede Probenlinie wird mit ihrem Namen und ihrer Nummer aufgeführt; die Schaltfläche zeigt danach **Gefiltert nach Zeile #n**. Nur Messungen im Online-Modus, die über BactoSwitch beprobt wurden, gehören zu einer Probenlinie. Alle anderen Messungen werden ausgeblendet, solange dieser Filter aktiv ist. Um den Probenlinienfilter zu entfernen, wählen Sie die markierte Probenlinie erneut und drücken Sie **Bestätigen**. |
-| 6. | Drücken Sie **OK**, um die Filter anzuwenden und zur Ergebnisliste zurückzukehren. | Die Aktionsleiste zeigt den Datumsbereich sowie aktive Probenlinien- und Namensfilter. Wenn keine Messung passt, erscheint **No measurements to display**; drücken Sie **Change filters**, um die Filter anzupassen. |
-
-:::info[Filter zurücksetzen]
-
-Drücken Sie **Zurücksetzen** auf dem Bildschirm **Resultate filtern**, um Namens- und Probenlinienfilter zu entfernen und den vollständigen Datumsbereich wiederherzustellen. Filter in den Ergebnissen des manuellen Modus werden gelöscht, wenn Sie zur Startseite zurückkehren. Im Online-Modus bleiben Namens- und Probenlinienfilter aktiv, auch im Online-Diagramm (siehe [Ansehen automatischer Onlinemessungen](../measurements/#section-10-2-3)), bis Sie sie zurücksetzen.
-
-:::
+Um nur bestimmte Messungen in der Ergebnisliste anzuzeigen, filtern Sie nach Datum, Name oder BactoSwitch-Probenlinie; siehe [Filtern von Messungen](../measurements/#section-10-7).
 
 ## 11.2 Einführung in Gates {#section-11-2}
 
@@ -277,179 +260,15 @@ Regating ist der Prozess des Anwendens eines anderen Gating Sets auf bestehende 
 - Eine Voraussetzung für Regating ist das Vorhandensein eines solchen zusätzlichen Gating Sets. Drücken Sie auf der Startseite Einstellungen und dann Gate Einstellungen, um die verfügbaren Gating-Sets anzuzeigen.
 - Der Prozess des Bearbeiten eines bestehenden Gating Sets wird unter [Bearbeiten bestehender Gating Sets](11-results-and-data-analysis.md#section-11-4-3) beschrieben.
 
-<table className="manual-table">
-
-<tbody>
-
-<tr>
-
-<th scope="col">
-
-</th>
-
-<th scope="col">
-
-ARBEITSSCHRITT
-
-</th>
-
-<th scope="col">
-
-ZUSÄTZLICHE INFORMATIONEN / ABBILDUNGEN
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Drücken Sie auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Drücken Sie Logs und je nach Messart Results (manual mode) oder Results (online mode).
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Um eine Einzelmessung zu regaten, wählen Sie die Messung aus, um die Ergebnisdetailseite zu sehen. Um mehrere Messungen (Batch) zu regaten, drücken Sie lange auf die Messung, bis sie markiert ist und links ein Ankreuzkästchen erscheint. Tippen Sie dann weitere Messungen an, um auch diese zum Regaten auszuwählen.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Drücken Sie in der Einzelresultatansicht Resultat neu gaten oder bei mehreren ausgewählten Messungen Neu-gaten.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Wählen Sie den das gewünschte Gating Set, indem Sie das entsprechende Kästchen ankreuzen.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-Drücken Sie Bestätigen, um die erneute Gate-Auswertung zu starten.
-
-</td>
-
-<td>
-
-:::info[Zusätzliche Informationen]
-
-Je nach Anzahl der Messungen kann die erneute Gate-Auswertung mehrere Minuten dauern.
-
-:::
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7\.
-
-</td>
-
-<td>
-
-Drücken Sie nach Ende des Vorgangs OK.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNGEN |
+| --- | --- | --- |
+| 1\. | Drücken Sie auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. |  |
+| 2\. | Drücken Sie Logs und je nach Messart Results (manual mode) oder Results (online mode). |  |
+| 3\. | Um eine Einzelmessung zu regaten, wählen Sie die Messung aus, um die Ergebnisdetailseite zu sehen. Um mehrere Messungen (Batch) zu regaten, drücken Sie lange auf die Messung, bis sie markiert ist und links ein Ankreuzkästchen erscheint. Tippen Sie dann weitere Messungen an, um auch diese zum Regaten auszuwählen. |  |
+| 4\. | Drücken Sie in der Einzelresultatansicht Resultat neu gaten oder bei mehreren ausgewählten Messungen Neu-gaten. |  |
+| 5\. | Wählen Sie den das gewünschte Gating Set, indem Sie das entsprechende Kästchen ankreuzen. |  |
+| 6\. | Drücken Sie Bestätigen, um die erneute Gate-Auswertung zu starten. | :::info[Zusätzliche Informationen] Je nach Anzahl der Messungen kann die erneute Gate-Auswertung mehrere Minuten dauern. ::: |
+| 7\. | Drücken Sie nach Ende des Vorgangs OK. |  |
 
 ### 11.4.2 Erstellen eines neuen Gating Sets {#section-11-4-2}
 
@@ -794,8 +613,6 @@ Drücken Sie in der Ergebnisansicht die Taste Ergebnis regaten.
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -815,8 +632,6 @@ Wählen Sie das gerade erstellte Gate aus und reprozessieren Sie die Daten mit d
 </td>
 
 <td>
-
-
 
 </td>
 
@@ -882,8 +697,6 @@ Speichern Sie das angepasste Gate.
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -903,8 +716,6 @@ Navigieren Sie zurück zur Ergebnisansicht der zuvor gemessenen Wasserprobe.
 </td>
 
 <td>
-
-
 
 </td>
 
@@ -926,8 +737,6 @@ Drücken Sie in der Ergebnisansicht die Taste Ergebnis regaten.
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -947,8 +756,6 @@ Wählen Sie das gerade erstellte Gate aus und reprozessieren Sie die Daten mit d
 </td>
 
 <td>
-
-
 
 </td>
 
@@ -992,8 +799,6 @@ Kehren Sie zu den Gateeinstellungen zurück und bearbeiten Sie Ihr Gate erneut.
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -1014,8 +819,6 @@ Navigieren Sie zum Konfigurationsschritt der HNA-Untergrenze. Geben Sie die zuvo
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -1035,8 +838,6 @@ Regaten Sie nochmals die Wasseranalyse und stellen Sie sicher, dass das Gate gee
 </td>
 
 <td>
-
-
 
 </td>
 
@@ -1069,311 +870,21 @@ Für Hilfestellung bei der Einführung einer erweiterten Datenanalysetoolkette w
 
 Um die Ergebnisse des BactoSense mit einem anderen Durchflusszytometer vergleichen zu können, kann eine Referenzlösung mit autofluoreszierenden Perlen analysiert werden. Diese Methode erlaubt es dem Benutzer, die Messskalen verschiedener Geräte zu vergleichen.
 
-<div className="manual-narrow-details-scroll">
-
-<table className="manual-table manual-narrow-details manual-narrow-details-split">
-
-<colgroup>
-<col className="procedure-step-column" />
-<col className="procedure-instruction-column" />
-<col className="procedure-detail-column" />
-<col className="procedure-detail-column" />
-</colgroup>
-
-<thead>
-
-<tr>
-
-<th scope="col">
-
-</th>
-
-<th scope="col">
-
-ARBEITSSCHRITT
-
-</th>
-
-<th scope="col" colSpan="2">
-
-ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Es wird empfohlen, das Validierungskit mit einer gebrauchsfertigen Perlenlösung zu verwenden.
-
-</td>
-
-<td colSpan="2">
-
-Bitte lesen Sie die Anleitung des Validierungskits für weitere Informationen.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Installieren Sie das manuelle Probenahmegerät entsprechend den Anweisungen in der Bedienungsanleitung.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Nehmen Sie eine der Perlenlösungen des Validierungskits und laden Sie sie in das Probenahmegerät.
-
-</td>
-
-<td colSpan="2">
-
-Bitte lesen Sie die Anleitung des Validierungskits für weitere Informationen.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-:::info[Zusätzliche Informationen]
-
-Drücken Sie die Taste Home. Drücken Sie die Taste Zurück so oft wie nötig, bis die Taste Home erscheint.
-
-:::
-
-</td>
-
-<td>
-
-![BactoSense — Schaltfläche Startseite](/img/gui/icons/home-button.png "width=48 class=manual-icon")
-
-</td>
-
-<td>
-
-![BactoSense — Schaltfläche Zurück](/img/gui/icons/back-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Drücken Sie auf der Startseite Modus und wählen Sie „Manueller Modus“. Drücken Sie Zurück und anschließend Messen, um den Messassistenten zu öffnen.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-Wählen Sie Ansaugen aus der Protokollliste.
-
-</td>
-
-<td colSpan="2">
-
-Siehe [Durchführen eines Ansaugens](../measurements/#section-10-9-3).
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7\.
-
-</td>
-
-<td>
-
-Drücken Sie die Tasten Weiter und Starten. Lassen Sie das Ansaugprotokoll zu Ende laufen.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-8\.
-
-</td>
-
-<td>
-
-Drücken Sie Neu, wählen Sie Beads Analyse aus der Liste und drücken Sie Weiter und Start.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-9\.
-
-</td>
-
-<td>
-
-Warten Sie die Ergebnisse ab und, falls notwendig, passen Sie das Gate des FL1-vs-FL2-Graphen behutsam so an, dass nur die vier Perlenpopulationen gezählt werden. Stellen Sie sicher, dass Rauschen, Hintergrund und Zelltrümmer im Gate nicht mitgezählt werden.
-
-</td>
-
-<td colSpan="2">
-
-Zur Anpassung des Gates siehe [Bearbeiten bestehender Gating Sets](../results-and-data-analysis/#section-11-4-3).<br />![Abbildung zur Tabelle auf Handbuchseite 112](/img/manual/render-fa85ea9255cb.webp "width=246 class=manual-figure")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-10\.
-
-</td>
-
-<td>
-
-Schätzen Sie im FL1/Zellzahl-Histogramm den logarithmischen Wert der Mitte jedes Peaks auf der FL1-Achse. In diesem Beispiel erhalten wir ungefähr (logarithmisch): 1. Peak = 4.05; 2. Peak = 4.3; 3. Peak = 5.35; 4. Peak = 6.2
-
-</td>
-
-<td>
-
-![Abbildung zur Tabelle auf Handbuchseite 113](/img/manual/cell-c2ba9a559620.png "width=246 class=manual-figure")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-11\.
-
-</td>
-
-<td>
-
-Messen Sie dieselben Perlen mit dem anderen zu vergleichenden Durchflusszytometer und wiederholen Sie die Schritte 10 und 11. In diesem Beispiel erhalten wir ungefähr (logarithmisch): 1. Peak = log(10<sup>3</sup>) = 3 2. Peak = log(2*10<sup>3</sup>) = 3.3 3. Peak = log(2.4*10<sup>4</sup>) = 4.4 4. Peak = log(1.6*10<sup>5</sup>) = 5.2
-
-</td>
-
-<td>
-
-![Abbildung zur Tabelle auf Handbuchseite 113](/img/manual/cell-4c2343e0bbfe.png "width=246 class=manual-figure")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-12\.
-
-</td>
-
-<td>
-
-Mit den unterschiedlichen Werten für die beiden Geräte ist es nun möglich, ihre Skalen und ihre Messfenster zu vergleichen.
-
-</td>
-
-<td>
-
-
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<div className="manual-narrow-details-scroll manual-narrow-details manual-narrow-details-split">
+
+|  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG | \< |
+| --- | --- | --- | --- |
+| 1\. | Es wird empfohlen, das Validierungskit mit einer gebrauchsfertigen Perlenlösung zu verwenden. | Bitte lesen Sie die Anleitung des Validierungskits für weitere Informationen. | \< |
+| 2\. | Installieren Sie das manuelle Probenahmegerät entsprechend den Anweisungen in der Bedienungsanleitung. |  | \< |
+| 3\. | Nehmen Sie eine der Perlenlösungen des Validierungskits und laden Sie sie in das Probenahmegerät. | Bitte lesen Sie die Anleitung des Validierungskits für weitere Informationen. | \< |
+| 4\. | :::info[Zusätzliche Informationen] Drücken Sie die Taste Home. Drücken Sie die Taste Zurück so oft wie nötig, bis die Taste Home erscheint. ::: | ![BactoSense — Schaltfläche Startseite](/img/gui/icons/home-button.png "width=48 class=manual-icon") | ![BactoSense — Schaltfläche Zurück](/img/gui/icons/back-button.png "width=48 class=manual-icon") |
+| 5\. | Drücken Sie auf der Startseite Modus und wählen Sie „Manueller Modus“. Drücken Sie Zurück und anschließend Messen, um den Messassistenten zu öffnen. |  | \< |
+| 6\. | Wählen Sie Ansaugen aus der Protokollliste. | Siehe [Durchführen eines Ansaugens](../measurements/#section-10-9-3). | \< |
+| 7\. | Drücken Sie die Tasten Weiter und Starten. Lassen Sie das Ansaugprotokoll zu Ende laufen. |  | \< |
+| 8\. | Drücken Sie Neu, wählen Sie Beads Analyse aus der Liste und drücken Sie Weiter und Start. |  | \< |
+| 9\. | Warten Sie die Ergebnisse ab und, falls notwendig, passen Sie das Gate des FL1-vs-FL2-Graphen behutsam so an, dass nur die vier Perlenpopulationen gezählt werden. Stellen Sie sicher, dass Rauschen, Hintergrund und Zelltrümmer im Gate nicht mitgezählt werden. | Zur Anpassung des Gates siehe [Bearbeiten bestehender Gating Sets](../results-and-data-analysis/#section-11-4-3).<br />![Abbildung zur Tabelle auf Handbuchseite 112](/img/manual/render-fa85ea9255cb.webp "width=246 class=manual-figure") | \< |
+| 10\. | Schätzen Sie im FL1/Zellzahl-Histogramm den logarithmischen Wert der Mitte jedes Peaks auf der FL1-Achse. In diesem Beispiel erhalten wir ungefähr (logarithmisch): 1. Peak = 4.05; 2. Peak = 4.3; 3. Peak = 5.35; 4. Peak = 6.2 | ![Abbildung zur Tabelle auf Handbuchseite 113](/img/manual/cell-c2ba9a559620.png "width=246 class=manual-figure") | \< |
+| 11\. | Messen Sie dieselben Perlen mit dem anderen zu vergleichenden Durchflusszytometer und wiederholen Sie die Schritte 10 und 11. In diesem Beispiel erhalten wir ungefähr (logarithmisch): 1. Peak = log(10<sup>3</sup>) = 3 2. Peak = log(2*10<sup>3</sup>) = 3.3 3. Peak = log(2.4*10<sup>4</sup>) = 4.4 4. Peak = log(1.6*10<sup>5</sup>) = 5.2 | ![Abbildung zur Tabelle auf Handbuchseite 113](/img/manual/cell-4c2343e0bbfe.png "width=246 class=manual-figure") | \< |
+| 12\. | Mit den unterschiedlichen Werten für die beiden Geräte ist es nun möglich, ihre Skalen und ihre Messfenster zu vergleichen. |  | \< |
 
 </div>

@@ -130,56 +130,54 @@ body {
 /* Printed pages must expand the website's scrolling tables. */
 .pdf-chapter .theme-doc-markdown table { display: table; width: 100%; max-width: 100%; table-layout: fixed; overflow: visible; font-size: 8.5pt; }
 .pdf-chapter .theme-doc-markdown .manual-narrow-details-scroll { overflow: visible; }
-.pdf-chapter .theme-doc-markdown table.manual-narrow-details { min-width: 0; }
+.pdf-chapter .theme-doc-markdown :is(table.manual-narrow-details, .manual-narrow-details table) { min-width: 0; }
 .pdf-chapter .theme-doc-markdown .manual-cartridge-table-scroll { overflow: visible; }
 .pdf-chapter .theme-doc-markdown .manual-cartridge-table-scroll table { min-width: 0; }
 .pdf-chapter .theme-doc-markdown .manual-ui-elements-scroll { overflow: visible; }
-.pdf-chapter .theme-doc-markdown table.manual-ui-elements { min-width: 0; }
+.pdf-chapter .theme-doc-markdown .manual-ui-elements table { min-width: 0; }
 .pdf-chapter .theme-doc-markdown .manual-output-steps-scroll { overflow: visible; }
 .pdf-chapter .theme-doc-markdown .manual-output-steps-scroll table { min-width: 0; }
-.pdf-chapter .theme-doc-markdown table.manual-digital-input-config {
+.pdf-chapter .theme-doc-markdown .manual-digital-input-config table {
   display: table;
   width: 100%;
   max-width: 100%;
   table-layout: fixed;
   overflow: visible;
 }
-.pdf-chapter .theme-doc-markdown table.manual-digital-input-config col.di-config-step-column { width: 6%; }
-.pdf-chapter .theme-doc-markdown table.manual-digital-input-config col.di-config-description-column { width: 44%; }
-.pdf-chapter .theme-doc-markdown table.manual-digital-input-config col.di-config-marker-column { width: 5%; }
-.pdf-chapter .theme-doc-markdown table.manual-digital-input-config col.di-config-detail-column { width: 45%; }
-.pdf-chapter .theme-doc-markdown table.manual-digital-input-config td:nth-child(1),
-.pdf-chapter .theme-doc-markdown table.manual-digital-input-config td:nth-child(3) {
+.pdf-chapter .theme-doc-markdown .manual-digital-input-config table tr:first-child > :nth-child(1) { width: 6%; }
+.pdf-chapter .theme-doc-markdown .manual-digital-input-config table tr:first-child > :nth-child(2) { width: 44%; }
+.pdf-chapter .theme-doc-markdown .manual-digital-input-config table tr:first-child > :nth-child(3) { width: 5%; }
+.pdf-chapter .theme-doc-markdown .manual-digital-input-config table tr:first-child > :nth-child(4) { width: 45%; }
+.pdf-chapter .theme-doc-markdown .manual-digital-input-config table td:nth-child(1),
+.pdf-chapter .theme-doc-markdown .manual-digital-input-config table td:nth-child(3) {
   text-align: center;
   white-space: nowrap;
 }
 .pdf-chapter .theme-doc-markdown .manual-modbus-address-scroll { max-width: 100%; overflow: visible; }
-.pdf-chapter .theme-doc-markdown table.manual-modbus-address-list {
+.pdf-chapter .theme-doc-markdown .manual-modbus-address-list table {
   display: table;
   width: 100%;
   max-width: 100%;
   table-layout: fixed;
   overflow: visible;
 }
-.pdf-chapter .theme-doc-markdown table.manual-modbus-address-list col.modbus-register-column { width: 12%; }
-.pdf-chapter .theme-doc-markdown table.manual-modbus-address-list col.modbus-address-column { width: 12%; }
-.pdf-chapter .theme-doc-markdown table.manual-modbus-address-list col.modbus-type-column { width: 14%; }
-.pdf-chapter .theme-doc-markdown table.manual-modbus-address-list col.modbus-function-column { width: 14%; }
-.pdf-chapter .theme-doc-markdown table.manual-modbus-address-list col.modbus-values-column { width: 48%; }
+.pdf-chapter .theme-doc-markdown .manual-modbus-address-list table tr:first-child > :nth-child(1) { width: 12%; }
+.pdf-chapter .theme-doc-markdown .manual-modbus-address-list table tr:first-child > :nth-child(2) { width: 12%; }
+.pdf-chapter .theme-doc-markdown .manual-modbus-address-list table tr:first-child > :nth-child(3) { width: 14%; }
+.pdf-chapter .theme-doc-markdown .manual-modbus-address-list table tr:first-child > :nth-child(4) { width: 14%; }
+.pdf-chapter .theme-doc-markdown .manual-modbus-address-list table tr:first-child > :nth-child(5) { width: 48%; }
 .pdf-chapter .theme-doc-markdown .manual-user-roles-scroll { max-width: 100%; overflow: visible; }
-.pdf-chapter .theme-doc-markdown table.manual-user-roles-permissions {
+.pdf-chapter .theme-doc-markdown .manual-user-roles-permissions table {
   display: table;
   width: 100%;
   max-width: 100%;
   table-layout: fixed;
   overflow: visible;
 }
-.pdf-chapter .theme-doc-markdown table.manual-user-roles-permissions col.user-role-permission-column { width: 49%; }
-.pdf-chapter .theme-doc-markdown table.manual-user-roles-permissions col.user-role-basic-column { width: 17%; }
-.pdf-chapter .theme-doc-markdown table.manual-user-roles-permissions col.user-role-advanced-column { width: 17%; }
-.pdf-chapter .theme-doc-markdown table.manual-user-roles-permissions col.user-role-admin-column { width: 17%; }
-.pdf-chapter .theme-doc-markdown table.manual-user-roles-permissions th:nth-child(n+2),
-.pdf-chapter .theme-doc-markdown table.manual-user-roles-permissions td:nth-child(n+2) {
+.pdf-chapter .theme-doc-markdown .manual-user-roles-permissions table tr:first-child > :nth-child(1) { width: 49%; }
+.pdf-chapter .theme-doc-markdown .manual-user-roles-permissions table tr:first-child > :nth-child(n+2) { width: 17%; }
+.pdf-chapter .theme-doc-markdown .manual-user-roles-permissions table th:nth-child(n+2),
+.pdf-chapter .theme-doc-markdown .manual-user-roles-permissions table td:nth-child(n+2) {
   text-align: center;
   white-space: nowrap;
 }
@@ -187,7 +185,7 @@ body {
 .pdf-chapter .theme-doc-markdown td { min-width: 0; overflow-wrap: anywhere; padding: 1.8mm; }
 .pdf-chapter .theme-doc-markdown td img { max-width: 100%; max-height: 90mm; }
 .pdf-chapter .theme-doc-markdown td img.manual-article-image { max-width: min(100%, 143px); }
-.pdf-chapter .theme-doc-markdown table.manual-sampling-installation th:nth-child(3) { width: 50%; }
+.pdf-chapter .theme-doc-markdown .manual-sampling-installation table th:nth-child(3) { width: 50%; }
 .pdf-chapter .theme-doc-markdown td:has(img.manual-sampling-illustration) { min-width: 0; }
 .pdf-chapter .theme-doc-markdown td img.manual-sampling-illustration { max-height: none; }
 .pdf-chapter .pdf-screenshot-row > td { padding: 3mm; }

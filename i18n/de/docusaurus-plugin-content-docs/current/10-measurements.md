@@ -195,14 +195,22 @@ Das Anpassen von Gates einzelner Messungen oder eines Satzes von Messungen wird 
 
 ## 10.7 Filtern von Messungen {#section-10-7}
 
-Um eine Untergruppe der Messergebnisse anzusehen, können Filter angewandt werden. Sie können nach Text und Datum filtern.
+Mit Filtern beschränken Sie die Ergebnisliste auf die benötigten Messungen. Sie können nach Datumsbereich, nach Messungsname und, wenn BactoSwitch aktiviert ist, nach BactoSwitch-Probenlinie filtern. Wenn Sie Filter kombinieren, werden nur Messungen angezeigt, die alle Filter erfüllen. Die Filter durchsuchen alle auf dem Gerät gespeicherten Messungen.
 
-|  | ARBEITSSCHRITT |
-| --- | --- |
-| 1. | Drücken Sie auf der Startseite Einstellungen, dann Logs, und wählen Sie Results (manual mode) oder Results (online mode). |
-| 2. | Drücken Sie in der Ergebnisliste die Taste Filter. |
-| 3. | Legen Sie den Filter mit einer oder beiden folgenden Optionen fest: • Datumsbereich durch Angabe von Start- und Enddatum definieren. • Textzeichenfolge zum Filtern nach Messungsnamen definieren. |
-| 4. | Drücken Sie OK. Die Ergebnisliste wird neu geladen und zeigt nur Ihre Filterergebnisse. |
+|  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNGEN |
+| --- | --- | --- |
+| 1. | Drücken Sie auf der Startseite **Resultate**. | Die Liste zeigt die Ergebnisse des aktuellen Betriebsmodus: **Online-Modus-Ergebnisse** oder **Resultatdetails Manueller Modus**. Um die Liste des anderen Modus zu öffnen, drücken Sie **Einstellungen**, dann **Logs**, und wählen Sie **Results (online mode)** oder **Results (manual mode)**. |
+| 2. | Drücken Sie **Filter**. | Der Bildschirm **Resultate filtern** wird geöffnet. Die Felder links zeigen die aktuellen Filter. |
+| 3. | Um nach Datum zu filtern, tippen Sie auf das Feld unter **Startdatum** und wählen Sie im Kalender den ersten Tag. Tippen Sie auf das Zeitfeld darunter und stellen Sie Stunde und Minute mit den Rädern ein. Stellen Sie **Enddatum** und die zugehörige Zeit auf die gleiche Weise ein. | Beide Grenzen sind eingeschlossen: Messungen bis zum Ende der gewählten Endminute werden angezeigt. Das Ende kann nicht vor dem Start liegen. Ohne Datumsfilter reicht der Bereich von der ältesten bis zur neuesten Messung. |
+| 4. | Um nach Namen zu filtern, tippen Sie auf das Feld unter **Nach Namen filtern**, geben Sie einen Teil des Messungsnamens ein und drücken Sie **OK**. | Die Liste behält jede Messung, deren Name diesen Text enthält; Groß- und Kleinschreibung werden nicht unterschieden. So findet *tap* zum Beispiel „Tap Water Zürich“. **Keine** bedeutet, dass kein Namensfilter gesetzt ist. Um den Namensfilter zu entfernen, löschen Sie den Text und drücken Sie **OK**. |
+| 5. | Um nach BactoSwitch-Probenlinie zu filtern, drücken Sie **Nach Zeilen filtern**, wählen Sie die Probenlinie und drücken Sie **Bestätigen**. | Diese Schaltfläche wird nur angezeigt, wenn BactoSwitch aktiviert ist. Jede Probenlinie wird mit ihrem Namen und ihrer Nummer aufgeführt; die Schaltfläche zeigt danach **Gefiltert nach Zeile #n**. Nur Messungen im Online-Modus, die über BactoSwitch beprobt wurden, gehören zu einer Probenlinie. Alle anderen Messungen werden ausgeblendet, solange dieser Filter aktiv ist. Um den Probenlinienfilter zu entfernen, wählen Sie die markierte Probenlinie erneut und drücken Sie **Bestätigen**. |
+| 6. | Drücken Sie **OK**, um die Filter anzuwenden und zur Ergebnisliste zurückzukehren. | Die Aktionsleiste zeigt den Datumsbereich sowie aktive Probenlinien- und Namensfilter. Wenn keine Messung passt, erscheint **No measurements to display**; drücken Sie **Change filters**, um die Filter anzupassen. |
+
+:::info[Filter zurücksetzen]
+
+Drücken Sie **Zurücksetzen** auf dem Bildschirm **Resultate filtern**, um Namens- und Probenlinienfilter zu entfernen und den vollständigen Datumsbereich wiederherzustellen. Filter in den Ergebnissen des manuellen Modus werden gelöscht, wenn Sie zur Startseite zurückkehren. Im Online-Modus bleiben Namens- und Probenlinienfilter aktiv, auch im Online-Diagramm (siehe [Ansehen automatischer Onlinemessungen](10-measurements.md#section-10-2-3)), bis Sie sie zurücksetzen.
+
+:::
 
 ## 10.8 Export von Messungen {#section-10-8}
 

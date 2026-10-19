@@ -27,19 +27,108 @@ function tableRanges(text) {
   }
   return ranges;
 }
-function markdownTable(source) {
-  if ((source.match(/<table\b/g) || []).length !== 1 || /\b(?:rowSpan|colSpan)=|<(?:Admonition|ul|ol|p)\b|^\s*:::/m.test(source)) return null;
-  const $ = load(source, {xmlMode: true, decodeEntities: false}, false);
-  const rows = $('tr').toArray().map(row => $(row).children('td, th').toArray());
-  if (!rows.length || !rows[0].length) return null;
+// Merged cells use the markers handled by plugins/manual-tables.cjs: `\<` joins the cell on the left, `^` the cell above.
+const NOTICE = /^(:{3,})(info|warning|danger|caution|explosion|gloves|tip|note)\[([^\]\n]*)\]\s*$/;
+let rejection = null;
+const reject = reason => { rejection = reason; return null; };
+function joinLines(lines) {
+  return lines.map((line, index) => index === lines.length - 1 ? line.trim() : / {2,}$/.test(line) ? line.trimEnd() + '<br />' : line.trim() + ' ').join('');
+}
+function paragraphs(lines) {
+  const result = []; let current = [];
+  for (const line of [...lines, '']) {
+    if (line.trim()) current.push(line);
+    else if (current.length) { result.push(joinLines(current)); current = []; }
+  }
+  return result;
+}
+// A pipe-table cell holds one line: paragraphs are separated by <br /><br /> and a notice becomes `:::type[Title] text :::`.
+function cellMarkdown(html) {
+  const lines = html.trim().split('\n'), parts = [];
+  if (/<(?:ul|ol|p|table|pre|Admonition)\b/.test(html)) return reject('block HTML in a cell');
+  let plain = [];
+  const flush = () => { parts.push(...paragraphs(plain).map(text => ({text}))); plain = []; };
+  for (let index = 0; index < lines.length; index++) {
+    const open = lines[index].match(NOTICE);
+    if (open) {
+      flush();
+      const body = []; let end = index + 1;
+      while (end < lines.length && lines[end].trim() !== open[1]) body.push(lines[end++]);
+      if (end >= lines.length || body.some(line => /^:{3,}\S/.test(line))) return reject('nested or unclosed notice in a cell');
+      const text = paragraphs(body).join('<br /><br />');
+      parts.push({text: `:::${open[2]}[${open[3]}] ${text} :::`, notice: true});
+      index = end;
+    } else if (/^:{3,}/.test(lines[index].trim())) return reject('unmatched notice fence in a cell');
+    else plain.push(lines[index]);
+  }
+  flush();
+  const text = parts.reduce((joined, part, index) => index === 0 ? part.text
+    : joined + (part.notice || parts[index - 1].notice ? ' ' : '<br /><br />') + part.text, '');
+  if (/^\s*(?:[-*+]|\d+[.)])\s|^\s*(?:#{1,6}\s|>|```)/m.test(text.replace(/<br \/>/g, '\n'))) return reject('list, heading or code block in a cell');
+  if (/^(?:\\?<|\^)$/.test(text)) return reject('cell text collides with a merge marker');
+  return inline(text, true);
+}
+// Cells hold Markdown, so only the table tags are parsed; any other angle brackets stay untouched text.
+function parseTable(source) {
+  const rows = []; let row, cell, className = '';
+  for (const tag of source.matchAll(/<(\/?)(table|tr|th|td)\b([^>]*)>/g)) {
+    const [text, closing, name, attributes] = tag;
+    if (name === 'table' && !closing) className = attributes.match(/className="([^"]*)"/)?.[1] ?? '';
+    else if (name === 'tr') { if (closing) rows.push(row); else row = []; }
+    else if (name === 'th' || name === 'td') {
+      if (closing) { cell.html = source.slice(cell.start, tag.index); row.push(cell); }
+      else cell = {name, start: tag.index + text.length, colSpan: Number(attributes.match(/colSpan="(\d+)"/)?.[1]) || 1, rowSpan: Number(attributes.match(/rowSpan="(\d+)"/)?.[1]) || 1};
+    }
+  }
+  return {rows, className};
+}
+function convertTable(source) {
+  if ((source.match(/<table\b/g) || []).length !== 1) return reject('nested table');
+  const {rows, className} = parseTable(source);
+  if (!rows.length || !rows[0].length) return reject('empty table');
+  const grid = [], sections = new Set();
   const hasHeader = rows[0].every(cell => cell.name === 'th');
-  if (rows.slice(hasHeader ? 1 : 0).some(row => row.some(cell => cell.name !== 'td') || row.length !== rows[0].length)) return null;
-  if ($('table').attr('className') && $('table').attr('className') !== 'manual-table') return null;
-  const lines = rows.map(row => '| ' + row.map(cell => inline($(cell).html().trim(), true)).join(' | ') + ' |');
-  // The rehype plugin removes this empty header, preserving headerless table layout.
-  if (!hasHeader) lines.unshift('| ' + rows[0].map(() => '').join(' | ') + ' |');
-  lines.splice(1, 0, '| ' + rows[0].map(() => '---').join(' | ') + ' |');
-  return lines.join('\n');
+  for (const [r, cells] of rows.entries()) {
+    grid[r] ??= []; let c = 0;
+    for (const cell of cells) {
+      while (grid[r][c] !== undefined) c++;
+      let markdown = cellMarkdown(cell.html);
+      if (markdown === null) return null;
+      if (cell.name === 'th' && (r > 0 || !hasHeader)) {
+        // A full-width header cell between rows is a section row; the plugin renders it as a header cell.
+        if (cells.length !== 1 || !markdown) return reject('header cell outside the first row');
+        if (!/^\*\*[\s\S]*\*\*$/.test(markdown)) markdown = `**${markdown}**`;
+        sections.add(r);
+      }
+      for (let i = 0; i < cell.rowSpan; i++) for (let j = 0; j < cell.colSpan; j++) {
+        grid[r + i] ??= [];
+        grid[r + i][c + j] = i === 0 && j === 0 ? markdown : i > 0 ? '^' : '\\<';
+      }
+      c += cell.colSpan;
+    }
+  }
+  const columns = Math.max(...grid.map(row => row.length));
+  // A row that ends early extends its last cell to the table edge.
+  for (const row of grid) for (let c = 1; c < columns; c++) if (row[c] === undefined && row[c - 1] !== undefined) row[c] = '\\<';
+  if (sections.size && [...sections].some(r => grid[r].length !== columns)) return reject('section row narrower than the table');
+  const line = cells => '| ' + Array.from({length: columns}, (_, c) => cells?.[c] ?? '').join(' | ') + ' |';
+  // The rehype plugin removes an empty header row, preserving headerless table layout.
+  const lines = [line(hasHeader ? grid[0] : []), line(Array(columns).fill('---')), ...grid.slice(hasHeader ? 1 : 0).map(line)];
+  const classes = className.split(/\s+/).filter(name => name && name !== 'manual-table');
+  return {markdown: lines.join('\n'), classes};
+}
+function markdownTable(source) {
+  const table = convertTable(source);
+  if (!table) return null;
+  return table.classes.length ? `@@WRAP[${table.classes.join(' ')}]@@\n\n${table.markdown}\n\n@@/WRAP@@` : table.markdown;
+}
+// Formatting classes live on a wrapper div; reuse an existing wrapper when the table is already inside one.
+function wrapTables(text) {
+  const merge = (...lists) => [...new Set(lists.join(' ').split(/\s+/).filter(Boolean))].join(' ');
+  return text
+    .replace(/<div className="([^"]*)">\s*@@WRAP\[([^\]]*)\]@@\s*([\s\S]*?)\s*@@\/WRAP@@\s*<\/div>/g,
+      (_, existing, added, table) => `<div className="${merge(existing, added)}">\n\n${table}\n\n</div>`)
+    .replace(/@@WRAP\[([^\]]*)\]@@\s*([\s\S]*?)\s*@@\/WRAP@@/g, (_, classes, table) => `<div className="${classes}">\n\n${table}\n\n</div>`);
 }
 function prose(text) {
   const tables = [];
@@ -92,25 +181,36 @@ export function simplifyMarkdown(text, tablePlan) {
     if (updated === result) break;
     result = updated;
   }
-  return result.replace(/\n{3,}/g, '\n\n').trimEnd() + '\n';
+  return wrapTables(result).replace(/\n{3,}/g, '\n\n').trimEnd() + '\n';
 }
 
 const directories = ['docs', ...['de', 'fr', 'it', 'es'].map(locale => `i18n/${locale}/docusaurus-plugin-content-docs/current`)];
-const reports = [];
+const reports = [], kept = [];
 for (const file of (await readdir(path.join(root, 'docs'))).filter(file => /\.mdx?$/.test(file))) {
   const contents = await Promise.all(directories.map(dir => readFile(path.join(root, dir, file), 'utf8')));
   const tableSets = contents.map(text => tableRanges(text).map(([a,b]) => text.slice(a,b)));
-  const plan = tableSets[0].map((_, index) => tableSets.every(tables => tables[index] && markdownTable(tables[index]) !== null));
+  const plan = tableSets[0].map((_, index) => tableSets.every((tables, locale) => {
+    rejection = null;
+    const converted = tables[index] && markdownTable(tables[index]) !== null;
+    if (!converted) kept.push(`${directories[locale]}/${file}: table ${index + 1} stays HTML (${rejection ?? 'differs between editions'})`);
+    return converted;
+  }));
   for (let i=0; i<directories.length; i++) {
     const updated = simplifyMarkdown(contents[i], plan);
     if (updated !== contents[i]) await writeFile(path.join(root, directories[i], file), updated);
     reports.push({file: `${directories[i]}/${file}`, tablesConverted:plan.filter(Boolean).length, htmlTagsBefore:(contents[i].match(/<\/?[A-Za-z][^>]*>/g)||[]).length,htmlTagsAfter:(updated.match(/<\/?[A-Za-z][^>]*>/g)||[]).length});
   }
 }
-const editorial = path.join(root, 'scripts/editorial/14-bactocloud.md');
-const editorialText = await readFile(editorial, 'utf8');
-const simplifiedEditorial = simplifyMarkdown(editorialText);
-if (simplifiedEditorial !== editorialText) await writeFile(editorial, simplifiedEditorial);
+// Reviewed chapter bodies in scripts/editorial/ must stay equal to their docs/ counterparts.
+const editorialDirectory = path.join(root, 'scripts/editorial');
+for (const file of (await readdir(editorialDirectory)).filter(file => /\.mdx?$/.test(file))) {
+  const editorial = path.join(editorialDirectory, file);
+  const editorialText = await readFile(editorial, 'utf8');
+  if (file !== '14-bactocloud.md' && !/<table\b/.test(editorialText)) continue;
+  const simplifiedEditorial = simplifyMarkdown(editorialText);
+  if (simplifiedEditorial !== editorialText) await writeFile(editorial, simplifiedEditorial);
+}
 await mkdir(path.join(root, 'output/cleanup'), {recursive:true});
 await writeFile(path.join(root, 'output/cleanup/markdown.json'), JSON.stringify(reports,null,2)+'\n');
+if (kept.length) console.log(kept.join('\n'));
 console.log(`Simplified ${reports.length} documents; converted ${reports.reduce((n,r)=>n+r.tablesConverted,0)} tables to Markdown.`);

@@ -33,24 +33,7 @@ Sélection multiple et opérations par lot : dans la liste des mesures, maintene
 
 :::
 
-### 11.1.1 Filtrage des mesures {#section-11-1-1}
-
-Les filtres limitent la liste des résultats aux mesures dont vous avez besoin. Vous pouvez filtrer par plage de dates, par nom de mesure et, lorsque BactoSwitch est activé, par ligne d’échantillons BactoSwitch. Si vous combinez plusieurs filtres, seules les mesures qui les satisfont tous sont affichées. Les filtres portent sur toutes les mesures enregistrées dans l’instrument.
-
-|  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
-| --- | --- | --- |
-| 1. | Sur l’écran d’accueil, appuyez sur **Résultats**. | La liste affiche les résultats du mode de fonctionnement actuel : **Résultats du mode en ligne** ou **Résultats du mode manuel**. Pour ouvrir la liste de l’autre mode, appuyez sur **Paramètres**, puis sur **Journaux**, et sélectionnez **Results (online mode)** ou **Results (manual mode)**. |
-| 2. | Appuyez sur **Filtre**. | L’écran **Filtrer les résultats** s’ouvre. Les champs de gauche affichent les filtres actuels. |
-| 3. | Pour filtrer par date, appuyez sur le champ sous **Date de début** et sélectionnez le premier jour dans le calendrier. Appuyez sur le champ d’heure situé en dessous et réglez l’heure et les minutes à l’aide des molettes. Réglez **Date de fin** et son heure de la même manière. | Les deux limites sont incluses : les mesures jusqu’à la fin de la minute de fin sélectionnée sont affichées. La fin ne peut pas précéder le début. Sans filtre de date, la plage s’étend de la mesure la plus ancienne à la plus récente. |
-| 4. | Pour filtrer par nom, appuyez sur le champ sous **Filtrer par nom**, saisissez une partie du nom de la mesure et appuyez sur **OK**. | La liste conserve toutes les mesures dont le nom contient ce texte, sans distinction entre majuscules et minuscules. Par exemple, *tap* trouve « Tap Water Zürich ». **Aucun** signifie qu’aucun filtre par nom n’est défini. Pour supprimer le filtre par nom, effacez le texte et appuyez sur **OK**. |
-| 5. | Pour filtrer par ligne BactoSwitch, appuyez sur **Filtrer par ligne**, sélectionnez la ligne et appuyez sur **Confirmer**. | Ce bouton n’apparaît que si BactoSwitch est activé. Chaque ligne est affichée avec son nom et son numéro ; le bouton indique ensuite **Filtré par la ligne #n**. Seules les mesures du mode en ligne prélevées via BactoSwitch appartiennent à une ligne ; toutes les autres mesures sont masquées tant que ce filtre est actif. Pour supprimer le filtre par ligne, sélectionnez à nouveau la ligne en surbrillance et appuyez sur **Confirmer**. |
-| 6. | Appuyez sur **OK** pour appliquer les filtres et revenir à la liste des résultats. | La barre d’action affiche la plage de dates ainsi que les filtres par ligne et par nom actifs. Si aucune mesure ne correspond, **No measurements to display** s’affiche ; appuyez sur **Change filters** pour modifier les filtres. |
-
-:::info[Réinitialiser les filtres]
-
-Appuyez sur **Remise à zéro** dans l’écran **Filtrer les résultats** pour supprimer les filtres par nom et par ligne et rétablir la plage de dates complète. Les filtres des résultats du mode manuel sont effacés lorsque vous revenez à l’écran d’accueil. En mode en ligne, les filtres par nom et par ligne restent actifs, y compris sur le graphique en ligne (voir [Consultation des mesures automatiques en ligne](../measurements/#section-10-2-3)), jusqu’à leur réinitialisation.
-
-:::
+Pour n’afficher que certaines mesures dans la liste des résultats, filtrez-les par date, par nom ou par ligne BactoSwitch ; voir [Filtrage des mesures](../measurements/#section-10-7).
 
 ## 11.2 Introduction aux fenêtres {#section-11-2}
 
@@ -277,179 +260,15 @@ Le re-fenêtrage est le processus consistant à appliquer un fenêtrage différe
 - Une condition préalable au re-fenêtrage est la présence d’un tel fenêtrage supplémentaire. Sur l’écran d’accueil, appuyez sur Paramètres, puis sur Fenêtres pour afficher les jeux de fenêtres disponibles.
 - Le processus de modification d’un fenêtrage existant est décrit dans la section [Modification des fenêtrages existants](11-results-and-data-analysis.md#section-11-4-3).
 
-<table className="manual-table">
-
-<tbody>
-
-<tr>
-
-<th scope="col">
-
-</th>
-
-<th scope="col">
-
-OPÉRATION
-
-</th>
-
-<th scope="col">
-
-INFORMATIONS SUPPLÉMENTAIRES/IMAGE
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Appuyez sur Journaux, puis sur Results (manual mode) ou Results (online mode) selon le mode de mesure utilisé.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Pour re-fenêtrer une seule mesure, sélectionnez-la pour afficher la page des détails du résultat. Pour re-fenêtrer plusieurs mesures (lot), appuyez longuement sur la mesure jusqu’à ce qu’elle soit mise en surbrillance et qu’une case à cocher apparaisse à gauche. Appuyez ensuite les mesures souhaitées pour les sélectionner.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Appuyez sur Re-fenêtrer dans la vue d’une mesure, ou sur Re-Fenêtrer lorsque plusieurs mesures sont sélectionnées.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Sélectionnez le fenêtrage souhaité en cochant sa case.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-Appuyez sur Confirmer pour lancer le re-fenêtrage.
-
-</td>
-
-<td>
-
-:::info[Informations supplémentaires]
-
-Selon le nombre de mesures, le recalcul avec de nouvelles fenêtres peut prendre plusieurs minutes.
-
-:::
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7\.
-
-</td>
-
-<td>
-
-Après avoir terminé, appuyez sur OK.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
+| --- | --- | --- |
+| 1\. | Sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. |  |
+| 2\. | Appuyez sur Journaux, puis sur Results (manual mode) ou Results (online mode) selon le mode de mesure utilisé. |  |
+| 3\. | Pour re-fenêtrer une seule mesure, sélectionnez-la pour afficher la page des détails du résultat. Pour re-fenêtrer plusieurs mesures (lot), appuyez longuement sur la mesure jusqu’à ce qu’elle soit mise en surbrillance et qu’une case à cocher apparaisse à gauche. Appuyez ensuite les mesures souhaitées pour les sélectionner. |  |
+| 4\. | Appuyez sur Re-fenêtrer dans la vue d’une mesure, ou sur Re-Fenêtrer lorsque plusieurs mesures sont sélectionnées. |  |
+| 5\. | Sélectionnez le fenêtrage souhaité en cochant sa case. |  |
+| 6\. | Appuyez sur Confirmer pour lancer le re-fenêtrage. | :::info[Informations supplémentaires] Selon le nombre de mesures, le recalcul avec de nouvelles fenêtres peut prendre plusieurs minutes. ::: |
+| 7\. | Après avoir terminé, appuyez sur OK. |  |
 
 ### 11.4.2 Création d’un nouveau fenêtrage {#section-11-4-2}
 
@@ -794,8 +613,6 @@ Dans l’affichage du résultat, appuyez sur Re-fenêtrer.
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -815,8 +632,6 @@ Sélectionnez la fenêtre que vous venez de créer et retraitez les données ave
 </td>
 
 <td>
-
-
 
 </td>
 
@@ -882,8 +697,6 @@ Enregistrez la fenêtre ajustée.
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -903,8 +716,6 @@ Affichez à nouveau le résultat de l’échantillon d’eau mesuré précédemm
 </td>
 
 <td>
-
-
 
 </td>
 
@@ -926,8 +737,6 @@ Dans l’affichage du résultat, appuyez sur Re-fenêtrer.
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -947,8 +756,6 @@ Sélectionnez la fenêtre que vous venez de créer et retraitez les données ave
 </td>
 
 <td>
-
-
 
 </td>
 
@@ -992,8 +799,6 @@ Retournez au menu Fenêtres et modifiez à nouveau votre fenêtre.
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -1014,8 +819,6 @@ Accédez à l’étape de configuration de la limite inférieure HNA. Saisissez 
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -1035,8 +838,6 @@ Re-fenêtrez à nouveau la mesure d’analyse de l’eau et vérifiez que la fen
 </td>
 
 <td>
-
-
 
 </td>
 
@@ -1069,311 +870,21 @@ Pour obtenir de l’aide sur la configuration d’une chaîne d’outils d’ana
 
 Pour comparer les résultats du BactoSense à ceux d’un autre cytomètre en flux, une solution de référence contenant des billes autofluorescentes peut être analysée. Cette méthode permet à l’utilisateur de comparer les échelles de mesure de différents instruments.
 
-<div className="manual-narrow-details-scroll">
-
-<table className="manual-table manual-narrow-details manual-narrow-details-split">
-
-<colgroup>
-<col className="procedure-step-column" />
-<col className="procedure-instruction-column" />
-<col className="procedure-detail-column" />
-<col className="procedure-detail-column" />
-</colgroup>
-
-<thead>
-
-<tr>
-
-<th scope="col">
-
-</th>
-
-<th scope="col">
-
-OPÉRATION
-
-</th>
-
-<th scope="col" colSpan="2">
-
-INFORMATIONS SUPPLÉMENTAIRES/IMAGE
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Il est recommandé d’utiliser le kit de validation qui contient une solution de billes prête à l’emploi.
-
-</td>
-
-<td colSpan="2">
-
-Lisez les instructions du Kit de validation pour plus d’informations.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Installez le dispositif d’échantillonnage manuel conformément au manuel d’utilisation.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Prélevez une des solutions de billes du kit de validation et chargez-la dans le dispositif d’échantillonnage.
-
-</td>
-
-<td colSpan="2">
-
-Lisez les instructions du Kit de validation pour plus d’informations.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-:::info[Informations supplémentaires]
-
-Appuyez sur Home. Appuyez sur Back autant de fois que nécessaire pour faire apparaître le bouton Home.
-
-:::
-
-</td>
-
-<td>
-
-![BactoSense — Bouton d’accueil](/img/gui/icons/home-button.png "width=48 class=manual-icon")
-
-</td>
-
-<td>
-
-![BactoSense — Bouton de retour](/img/gui/icons/back-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Sur l’écran d’accueil, appuyez sur Mode et sélectionnez Mode manuel. Appuyez sur Retour, puis sur Mesurer pour ouvrir l’assistant de mesure.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-Sélectionnez Amorçage dans la liste des protocoles.
-
-</td>
-
-<td colSpan="2">
-
-Voir le manuel d’utilisation, section [Réalisation d’un amorçage](../measurements/#section-10-9-3).
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7\.
-
-</td>
-
-<td>
-
-Appuyez sur les boutons Suivant et Démarrer. Laissez le protocole d’amorçage se terminer.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-8\.
-
-</td>
-
-<td>
-
-Appuyez sur Nouveau, choisissez Analyse Billes dans la liste, puis appuyez sur Suivant et Démarrer.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-9\.
-
-</td>
-
-<td>
-
-Attendez les résultats et, si nécessaire, ajustez précisément la fenêtre du dotplot FL1 vs FL2 pour ne compter que les 4 populations de billes. Il est important de s’assurer que le bruit, le fond et les débris ne sont pas pris en compte dans la fenêtre.
-
-</td>
-
-<td colSpan="2">
-
-Voir la section [Modification des fenêtrages existants](../results-and-data-analysis/#section-11-4-3) pour ajuster la<br />fenêtre. ![Illustration du tableau, page du manuel 112](/img/manual/render-fa85ea9255cb.webp "width=246 class=manual-figure")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-10\.
-
-</td>
-
-<td>
-
-Sur l’histogramme FL1 en fonction du nombre de cellules, estimez la valeur logarithmique du centre de chaque pic sur l’axe FL1. Dans cet exemple, nous obtenons environ (en log) : 1<sup>er</sup> pic = 4.05 2<sup>e</sup> pic = 4.3 3<sup>e</sup> pic = 5.35 4<sup>e</sup> pic = 6.2
-
-</td>
-
-<td>
-
-![Illustration du tableau, page du manuel 113](/img/manual/cell-c2ba9a559620.png "width=246 class=manual-figure")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-11\.
-
-</td>
-
-<td>
-
-Mesurez les mêmes billes avec l’autre cytomètre en flux à comparer et répétez les étapes 10 et 11. Dans cet exemple, nous obtenons environ (en log) : 1<sup>er</sup> pic = log(10<sup>3</sup>) = 3 2<sup>e</sup> pic = log(2*10<sup>3</sup>) = 3.3 3<sup>e</sup> pic = log(2.4*10<sup>4</sup>) = 4.4 4<sup>e</sup> pic = log(1.6*10<sup>5</sup>) = 5.2
-
-</td>
-
-<td>
-
-![Illustration du tableau, page du manuel 113](/img/manual/cell-4c2343e0bbfe.png "width=246 class=manual-figure")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-12\.
-
-</td>
-
-<td>
-
-Avec les différentes valeurs obtenues pour les deux instruments, il est maintenant possible de comparer leurs échelles et leurs fenêtres de mesure.
-
-</td>
-
-<td>
-
-
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<div className="manual-narrow-details-scroll manual-narrow-details manual-narrow-details-split">
+
+|  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE | \< |
+| --- | --- | --- | --- |
+| 1\. | Il est recommandé d’utiliser le kit de validation qui contient une solution de billes prête à l’emploi. | Lisez les instructions du Kit de validation pour plus d’informations. | \< |
+| 2\. | Installez le dispositif d’échantillonnage manuel conformément au manuel d’utilisation. |  | \< |
+| 3\. | Prélevez une des solutions de billes du kit de validation et chargez-la dans le dispositif d’échantillonnage. | Lisez les instructions du Kit de validation pour plus d’informations. | \< |
+| 4\. | :::info[Informations supplémentaires] Appuyez sur Home. Appuyez sur Back autant de fois que nécessaire pour faire apparaître le bouton Home. ::: | ![BactoSense — Bouton d’accueil](/img/gui/icons/home-button.png "width=48 class=manual-icon") | ![BactoSense — Bouton de retour](/img/gui/icons/back-button.png "width=48 class=manual-icon") |
+| 5\. | Sur l’écran d’accueil, appuyez sur Mode et sélectionnez Mode manuel. Appuyez sur Retour, puis sur Mesurer pour ouvrir l’assistant de mesure. |  | \< |
+| 6\. | Sélectionnez Amorçage dans la liste des protocoles. | Voir le manuel d’utilisation, section [Réalisation d’un amorçage](../measurements/#section-10-9-3). | \< |
+| 7\. | Appuyez sur les boutons Suivant et Démarrer. Laissez le protocole d’amorçage se terminer. |  | \< |
+| 8\. | Appuyez sur Nouveau, choisissez Analyse Billes dans la liste, puis appuyez sur Suivant et Démarrer. |  | \< |
+| 9\. | Attendez les résultats et, si nécessaire, ajustez précisément la fenêtre du dotplot FL1 vs FL2 pour ne compter que les 4 populations de billes. Il est important de s’assurer que le bruit, le fond et les débris ne sont pas pris en compte dans la fenêtre. | Voir la section [Modification des fenêtrages existants](../results-and-data-analysis/#section-11-4-3) pour ajuster la<br />fenêtre. ![Illustration du tableau, page du manuel 112](/img/manual/render-fa85ea9255cb.webp "width=246 class=manual-figure") | \< |
+| 10\. | Sur l’histogramme FL1 en fonction du nombre de cellules, estimez la valeur logarithmique du centre de chaque pic sur l’axe FL1. Dans cet exemple, nous obtenons environ (en log) : 1<sup>er</sup> pic = 4.05 2<sup>e</sup> pic = 4.3 3<sup>e</sup> pic = 5.35 4<sup>e</sup> pic = 6.2 | ![Illustration du tableau, page du manuel 113](/img/manual/cell-c2ba9a559620.png "width=246 class=manual-figure") | \< |
+| 11\. | Mesurez les mêmes billes avec l’autre cytomètre en flux à comparer et répétez les étapes 10 et 11. Dans cet exemple, nous obtenons environ (en log) : 1<sup>er</sup> pic = log(10<sup>3</sup>) = 3 2<sup>e</sup> pic = log(2*10<sup>3</sup>) = 3.3 3<sup>e</sup> pic = log(2.4*10<sup>4</sup>) = 4.4 4<sup>e</sup> pic = log(1.6*10<sup>5</sup>) = 5.2 | ![Illustration du tableau, page du manuel 113](/img/manual/cell-4c2343e0bbfe.png "width=246 class=manual-figure") | \< |
+| 12\. | Avec les différentes valeurs obtenues pour les deux instruments, il est maintenant possible de comparer leurs échelles et leurs fenêtres de mesure. |  | \< |
 
 </div>

@@ -63,8 +63,6 @@ Der HTTP-/HTTPS-Server ist standardmäßig aktiviert und kann über einen Webbro
 
 <th scope="col">
 
-
-
 </th>
 
 <th scope="col">
@@ -123,8 +121,6 @@ Drücken Sie als Admin-Benutzer auf der Startseite Einstellungen, um das Einstel
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -144,8 +140,6 @@ Drücken Sie die Taste Einstellungen.
 </td>
 
 <td>
-
-
 
 </td>
 
@@ -167,8 +161,6 @@ Drücken Sie die Taste Systemdienste.
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -188,8 +180,6 @@ Für HTTP: Stellen Sie sicher, dass das Kästchen HTTP-Webzugriff angehakt ist. 
 </td>
 
 <td>
-
-
 
 </td>
 

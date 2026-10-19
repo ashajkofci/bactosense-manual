@@ -32,7 +32,8 @@ module.exports = function manualTables() {
 
     const owner = [], box = new Map();
     rows.forEach(({cells}, r) => {
-      owner[r] = cells.map((cell, c) => {
+      owner[r] = [];
+      cells.forEach((cell, c) => {
         const kind = marker(cell);
         let target = cell;
         if (kind === '<') target = owner[r][c - 1];
@@ -41,7 +42,7 @@ module.exports = function manualTables() {
         const area = box.get(target) || {r0: r, c0: c, r1: r, c1: c};
         area.r1 = Math.max(area.r1, r); area.c1 = Math.max(area.c1, c);
         box.set(target, area);
-        return target;
+        owner[r][c] = target;
       });
     });
     const columns = Math.max(...owner.map(cells => cells.length));

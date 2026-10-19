@@ -33,24 +33,7 @@ Multiple selection &amp; batch operations: In the list of measurements, long-pre
 
 :::
 
-### 11.1.1 Filter measurements {#section-11-1-1}
-
-Filters limit the results list to the measurements you need. You can filter by date range, by measurement name and, when BactoSwitch is enabled, by BactoSwitch line. When you combine filters, only measurements that match all of them are listed. The filters search all measurements stored on the instrument.
-
-|  | WORK STEP | ADDITIONAL INFO / IMAGES |
-| --- | --- | --- |
-| 1. | On the Home screen, press **Results**. | The list shows the results of the current operating mode: **Online mode results** or **Manual mode results**. To open the list for the other mode, press **Settings**, then **Logs**, and select **Results (online mode)** or **Results (manual mode)**. |
-| 2. | Press **Filter**. | The **Filter results** screen opens. The fields on the left show the current filters. |
-| 3. | To filter by date, tap the field under **Start date** and select the first day in the calendar. Tap the time field below it and set the hour and minute with the wheels. Set **End date** and its time in the same way. | Both limits are included: measurements up to the end of the selected end minute are listed. The end cannot be earlier than the start. Without a date filter, the range runs from the oldest to the newest measurement. |
-| 4. | To filter by name, tap the field under **Filter by name**, enter part of the measurement name and press **OK**. | The list keeps every measurement whose name contains this text, regardless of upper or lower case. For example, *tap* finds “Tap Water Zürich”. **None** means that no name filter is set. To remove the name filter, delete the text and press **OK**. |
-| 5. | To filter by BactoSwitch line, press **Filter by stream**, select the line and press **Confirm**. | This button is only shown when BactoSwitch is enabled. Each line is listed with its name and stream number; the button then shows **Filtered by stream #n**. Only Online mode measurements sampled through BactoSwitch belong to a line, so all other measurements are hidden while this filter is active. To remove the line filter, select the highlighted line again and press **Confirm**. |
-| 6. | Press **OK** to apply the filters and return to the results list. | The action bar shows the date range and any active line and name filters. If no measurement matches, **No measurements to display** appears; press **Change filters** to adjust the filters. |
-
-:::info[Clear the filters]
-
-Press **Reset** on the **Filter results** screen to remove the name and line filters and restore the full date range. Filters in the Manual mode results are cleared when you return to the Home screen. In Online mode, the name and line filters remain active, including on the online chart (see [Reviewing automatic online measurements](../measurements/#section-10-2-3)), until you reset them.
-
-:::
+To show only some measurements in the results list, filter them by date, name or BactoSwitch line; see [Filtering measurements](../measurements/#section-10-7).
 
 ## 11.2 Introduction to gates {#section-11-2}
 
@@ -277,179 +260,15 @@ Regating is the process of applying a different gating set to existing measureme
 - A prerequisite for regating is the presence of such additional gating set. On the Home screen, press Settings, then Gate settings to view the available gating sets.
 - The process of modifying an existing gating set is described in [Edit existing gating sets](11-results-and-data-analysis.md#section-11-4-3).
 
-<table className="manual-table">
-
-<tbody>
-
-<tr>
-
-<th scope="col">
-
-</th>
-
-<th scope="col">
-
-WORK STEP
-
-</th>
-
-<th scope="col">
-
-ADDITIONAL INFO / IMAGES
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-On the Home screen, press Settings to open the settings menu.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Press Logs, then Results (manual mode) or Results (online mode), depending on how the measurement was performed.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-To regate a single measurement, select the measurement to see the result details page. To regate multiple measurements (batch), long-press on the measurement, until it is highlighted and a check box appears on the left. Then tap on more measurement to also select them for regating.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Press Re-gate result in the single-result view, or Re-gate when several measurements are selected.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Select the desired gating set by checking its box.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-Press the Confirm button to start the regating process.
-
-</td>
-
-<td>
-
-:::info[Additional information]
-
-Depending on the number of measurements, regating can take several minutes.
-
-:::
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7\.
-
-</td>
-
-<td>
-
-After finishing, press OK.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | WORK STEP | ADDITIONAL INFO / IMAGES |
+| --- | --- | --- |
+| 1\. | On the Home screen, press Settings to open the settings menu. |  |
+| 2\. | Press Logs, then Results (manual mode) or Results (online mode), depending on how the measurement was performed. |  |
+| 3\. | To regate a single measurement, select the measurement to see the result details page. To regate multiple measurements (batch), long-press on the measurement, until it is highlighted and a check box appears on the left. Then tap on more measurement to also select them for regating. |  |
+| 4\. | Press Re-gate result in the single-result view, or Re-gate when several measurements are selected. |  |
+| 5\. | Select the desired gating set by checking its box. |  |
+| 6\. | Press the Confirm button to start the regating process. | :::info[Additional information] Depending on the number of measurements, regating can take several minutes. ::: |
+| 7\. | After finishing, press OK. |  |
 
 ### 11.4.2 Create a new gating set {#section-11-4-2}
 
@@ -794,8 +613,6 @@ On the result view, press the Re-gate result button.
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -815,8 +632,6 @@ Select the gate you just created, and re- process the data with the new gate by 
 </td>
 
 <td>
-
-
 
 </td>
 
@@ -882,8 +697,6 @@ Save the adjusted gate.
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -903,8 +716,6 @@ Navigate again to the result view of the water sample you measured previously.
 </td>
 
 <td>
-
-
 
 </td>
 
@@ -926,8 +737,6 @@ On the result view, press the Re-gate result button.
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -947,8 +756,6 @@ Select the gate you just created, and re- process the data with the new gate by 
 </td>
 
 <td>
-
-
 
 </td>
 
@@ -992,8 +799,6 @@ Return to Gate settings and again edit your gate.
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -1014,8 +819,6 @@ Navigate to the HNA lower limit configuration step. Enter the previously identif
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -1035,8 +838,6 @@ Regate the water analysis measurement again and verify that the gate is suitable
 </td>
 
 <td>
-
-
 
 </td>
 
@@ -1069,311 +870,21 @@ For help with the setup of an advanced data analysis tool chain, please contact 
 
 To compare results of the BactoSense to another flow cytometer, a reference solution containing auto fluorescent beads can be analyzed. This method allows the user to compare the measurement scales of different devices.
 
-<div className="manual-narrow-details-scroll">
-
-<table className="manual-table manual-narrow-details manual-narrow-details-split">
-
-<colgroup>
-<col className="procedure-step-column" />
-<col className="procedure-instruction-column" />
-<col className="procedure-detail-column" />
-<col className="procedure-detail-column" />
-</colgroup>
-
-<thead>
-
-<tr>
-
-<th scope="col">
-
-</th>
-
-<th scope="col">
-
-WORK STEP
-
-</th>
-
-<th scope="col" colSpan="2">
-
-ADDITIONAL INFO / IMAGE
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-It is recommended to use the Validation Kit which contains a ready to use beads solution.
-
-</td>
-
-<td colSpan="2">
-
-Read the instructions of the Validation Kit for more information.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Install the manual sampling device according to the user manual.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Take of one of the Validation kit’s beads solutions and load it into the sampling device.
-
-</td>
-
-<td colSpan="2">
-
-Read the instructions of the Validation Kit for more information.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-:::info[Additional information]
-
-Press the Home button. Press the Back button as many times as needed for the Home button to appear.
-
-:::
-
-</td>
-
-<td>
-
-![BactoSense — Home button](/img/gui/icons/home-button.png "width=48 class=manual-icon")
-
-</td>
-
-<td>
-
-![BactoSense — Back button](/img/gui/icons/back-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-On the Home screen, press Mode and select Manual mode. Press Back, then Measure to open the measurement wizard.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-Select Prime from the protocol list.
-
-</td>
-
-<td colSpan="2">
-
-See [Performing a Prime](../measurements/#section-10-9-3).
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7\.
-
-</td>
-
-<td>
-
-Press the Next and Start button. Let the priming protocol finish.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-8\.
-
-</td>
-
-<td>
-
-Press New, choose Beads Analysis from the list, then press Next and Start.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-9\.
-
-</td>
-
-<td>
-
-Wait for the results and if necessary, precisely adjust the gate of the FL1 vs FL2 dot plot to count only the 4 populations of beads. It is important to ensure that noise, background, and debris are not counted into the gate.
-
-</td>
-
-<td colSpan="2">
-
-See [Edit existing gating sets](../results-and-data-analysis/#section-11-4-3) to adjust the gate.<br />![Illustration for table on manual page 112](/img/manual/render-fa85ea9255cb.webp "width=246 class=manual-figure")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-10\.
-
-</td>
-
-<td>
-
-On the FL1 vs counts histogram, estimate the log value of each peak’s center on the FL1 axis. In this example, we obtain approximately (in log): 1<sup>st</sup> peak = 4.05 2<sup>nd</sup> peak = 4.3 3<sup>rd</sup> peak = 5.35 4<sup>th</sup> peak = 6.2
-
-</td>
-
-<td>
-
-![Illustration for table on manual page 113](/img/manual/cell-c2ba9a559620.png "width=246 class=manual-figure")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-11\.
-
-</td>
-
-<td>
-
-Measure the same beads with the other flow cytometer you want to compare and repeat the steps 10 and 11. In this example, we obtain approximately (in log): 1<sup>st</sup> peak = log(10<sup>3</sup>) = 3 2<sup>nd</sup> peak = log(2*10<sup>3</sup>) = 3.3 3<sup>rd</sup> peak = log(2.4*10<sup>4</sup>) = 4.4 4<sup>th</sup> peak = log(1.6*10<sup>5</sup>) = 5.2
-
-</td>
-
-<td>
-
-![Illustration for table on manual page 113](/img/manual/cell-4c2343e0bbfe.png "width=246 class=manual-figure")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-12\.
-
-</td>
-
-<td>
-
-With the different values obtained for both devices, it is now possible to compare their scales and their measurement windows.
-
-</td>
-
-<td>
-
-
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<div className="manual-narrow-details-scroll manual-narrow-details manual-narrow-details-split">
+
+|  | WORK STEP | ADDITIONAL INFO / IMAGE | \< |
+| --- | --- | --- | --- |
+| 1\. | It is recommended to use the Validation Kit which contains a ready to use beads solution. | Read the instructions of the Validation Kit for more information. | \< |
+| 2\. | Install the manual sampling device according to the user manual. |  | \< |
+| 3\. | Take of one of the Validation kit’s beads solutions and load it into the sampling device. | Read the instructions of the Validation Kit for more information. | \< |
+| 4\. | :::info[Additional information] Press the Home button. Press the Back button as many times as needed for the Home button to appear. ::: | ![BactoSense — Home button](/img/gui/icons/home-button.png "width=48 class=manual-icon") | ![BactoSense — Back button](/img/gui/icons/back-button.png "width=48 class=manual-icon") |
+| 5\. | On the Home screen, press Mode and select Manual mode. Press Back, then Measure to open the measurement wizard. |  | \< |
+| 6\. | Select Prime from the protocol list. | See [Performing a Prime](../measurements/#section-10-9-3). | \< |
+| 7\. | Press the Next and Start button. Let the priming protocol finish. |  | \< |
+| 8\. | Press New, choose Beads Analysis from the list, then press Next and Start. |  | \< |
+| 9\. | Wait for the results and if necessary, precisely adjust the gate of the FL1 vs FL2 dot plot to count only the 4 populations of beads. It is important to ensure that noise, background, and debris are not counted into the gate. | See [Edit existing gating sets](../results-and-data-analysis/#section-11-4-3) to adjust the gate.<br />![Illustration for table on manual page 112](/img/manual/render-fa85ea9255cb.webp "width=246 class=manual-figure") | \< |
+| 10\. | On the FL1 vs counts histogram, estimate the log value of each peak’s center on the FL1 axis. In this example, we obtain approximately (in log): 1<sup>st</sup> peak = 4.05 2<sup>nd</sup> peak = 4.3 3<sup>rd</sup> peak = 5.35 4<sup>th</sup> peak = 6.2 | ![Illustration for table on manual page 113](/img/manual/cell-c2ba9a559620.png "width=246 class=manual-figure") | \< |
+| 11\. | Measure the same beads with the other flow cytometer you want to compare and repeat the steps 10 and 11. In this example, we obtain approximately (in log): 1<sup>st</sup> peak = log(10<sup>3</sup>) = 3 2<sup>nd</sup> peak = log(2*10<sup>3</sup>) = 3.3 3<sup>rd</sup> peak = log(2.4*10<sup>4</sup>) = 4.4 4<sup>th</sup> peak = log(1.6*10<sup>5</sup>) = 5.2 | ![Illustration for table on manual page 113](/img/manual/cell-4c2343e0bbfe.png "width=246 class=manual-figure") | \< |
+| 12\. | With the different values obtained for both devices, it is now possible to compare their scales and their measurement windows. |  | \< |
 
 </div>

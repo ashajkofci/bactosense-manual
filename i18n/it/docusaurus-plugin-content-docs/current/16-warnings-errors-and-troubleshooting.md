@@ -121,141 +121,14 @@ Nella schermata Home, premere Impostazioni, quindi Registri. Selezionare Registr
 
 *Figura 16-1: Registri degli errori*
 
-<table className="manual-table">
-
-<tbody>
-
-<tr>
-
-<td rowSpan="4">
-
-①
-
-</td>
-
-<td rowSpan="4">
-
-Data e ora dell’evento
-
-</td>
-
-<td rowSpan="4">
-
-②
-
-</td>
-
-<td colSpan="2">
-
-Tipo di evento
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-![BactoSense — Voce del registro: errore critico](/img/gui/icons/critical-error-event.png "width=32 class=manual-icon")
-
-</td>
-
-<td>
-
-Errore critico
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-![BactoSense — Voce del registro: errore non critico](/img/gui/icons/noncritical-error-event.png "width=32 class=manual-icon")
-
-</td>
-
-<td>
-
-Errore non critico
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-![BactoSense — Voce del registro: errori azzerati](/img/gui/icons/errors-cleared-event.png "width=32 class=manual-icon")
-
-</td>
-
-<td>
-
-Errori azzerati
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-③
-
-</td>
-
-<td>
-
-Breve descrizione dell’errore o dell’evento
-
-</td>
-
-<td>
-
-④
-
-</td>
-
-<td colSpan="2">
-
-Pulsante per cancellare manualmente gli errori (disponibile agli utenti Basic, Advanced e Admin quando lo strumento è inattivo)
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-⑤
-
-</td>
-
-<td>
-
-Intervallo temporale degli eventi visualizzati. Selezionarlo per modificarlo.
-
-</td>
-
-<td>
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  |  |  |  |  |
+| --- | --- | --- | --- | --- |
+| ① | Data e ora dell’evento | ② | Tipo di evento | \< |
+| ^ | ^ | ^ | ![BactoSense — Voce del registro: errore critico](/img/gui/icons/critical-error-event.png "width=32 class=manual-icon") | Errore critico |
+| ^ | ^ | ^ | ![BactoSense — Voce del registro: errore non critico](/img/gui/icons/noncritical-error-event.png "width=32 class=manual-icon") | Errore non critico |
+| ^ | ^ | ^ | ![BactoSense — Voce del registro: errori azzerati](/img/gui/icons/errors-cleared-event.png "width=32 class=manual-icon") | Errori azzerati |
+| ③ | Breve descrizione dell’errore o dell’evento | ④ | Pulsante per cancellare manualmente gli errori (disponibile agli utenti Basic, Advanced e Admin quando lo strumento è inattivo) | \< |
+| ⑤ | Intervallo temporale degli eventi visualizzati. Selezionarlo per modificarlo. |  |  | \< |
 
 :::info[Visualizzare i dettagli degli eventi]
 
@@ -278,119 +151,12 @@ Gli errori critici devono essere azzerati manualmente. Risolvere prima la causa 
 
 L’autodiagnosi automatica verifica il corretto funzionamento di ogni componente del BactoSense e identifica quelli non funzionanti. Può essere utilizzata per individuare problemi dello strumento.
 
-<table className="manual-table">
-
-<tbody>
-
-<tr>
-
-<th scope="col">
-
-</th>
-
-<th scope="col">
-
-FASE OPERATIVA
-
-</th>
-
-<th scope="col">
-
-INFORMAZIONI AGGIUNTIVE / IMMAGINE
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Come utente Advanced o Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Premere il pulsante Manutenzione.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Premere il pulsante Autocontrollo.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-:::info[Informazioni aggiuntive]
-
-Premere il pulsante Ripeti. Al termine, lo strumento mostra tutti i test con un indicatore PASS verde o FAIL rosso. Alcuni test possono essere saltati: se il sistema non riesce a comunicare con la cartuccia, vengono saltati tutti i test che richiedono tale comunicazione.
-
-:::
-
-</td>
-
-<td>
-
-![BactoSense — Risultati dell’autotest](/img/gui/it/self-check-results.png "width=245 class=manual-figure")
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | FASE OPERATIVA | INFORMAZIONI AGGIUNTIVE / IMMAGINE |
+| --- | --- | --- |
+| 1\. | Come utente Advanced o Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni. |  |
+| 2\. | Premere il pulsante Manutenzione. |  |
+| 3\. | Premere il pulsante Autocontrollo. |  |
+| 4\. | :::info[Informazioni aggiuntive] Premere il pulsante Ripeti. Al termine, lo strumento mostra tutti i test con un indicatore PASS verde o FAIL rosso. Alcuni test possono essere saltati: se il sistema non riesce a comunicare con la cartuccia, vengono saltati tutti i test che richiedono tale comunicazione. ::: | ![BactoSense — Risultati dell’autotest](/img/gui/it/self-check-results.png "width=245 class=manual-figure") |
 
 ## 16.7 Funzionamento a bassa temperatura {#section-16-7}
 

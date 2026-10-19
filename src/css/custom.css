@@ -92,7 +92,8 @@
 .theme-doc-markdown table { display: block; width: max-content; max-width: 100%; overflow-x: auto; }
 .theme-doc-markdown td { vertical-align: top; }
 .theme-doc-markdown .manual-narrow-details-scroll { max-width: 100%; overflow-x: auto; }
-.theme-doc-markdown table.manual-narrow-details {
+.theme-doc-markdown table.manual-narrow-details,
+.theme-doc-markdown .manual-narrow-details table {
   display: table;
   width: 100%;
   min-width: 36rem;
@@ -103,11 +104,20 @@
 .theme-doc-markdown table.manual-narrow-details > colgroup > col.procedure-instruction-column { width: 70%; }
 .theme-doc-markdown table.manual-narrow-details > colgroup > col.procedure-detail-column { width: 24%; }
 .theme-doc-markdown table.manual-narrow-details-split > colgroup > col.procedure-detail-column { width: 12%; }
+/* Markdown tables take their widths from the header row; a merged detail header shares its width between its columns. */
+.theme-doc-markdown .manual-narrow-details table tr:first-child > :nth-child(1) { width: 6%; }
+.theme-doc-markdown .manual-narrow-details table tr:first-child > :nth-child(2) { width: 70%; }
+.theme-doc-markdown .manual-narrow-details table tr:first-child > :nth-child(3) { width: 24%; }
 .theme-doc-markdown table.manual-narrow-details > thead > tr > th,
+.theme-doc-markdown .manual-narrow-details table > thead > tr > th,
 .theme-doc-markdown table.manual-narrow-details > tbody > tr > th,
-.theme-doc-markdown table.manual-narrow-details > tbody > tr > td { min-width: 0; overflow-wrap: break-word; }
+.theme-doc-markdown .manual-narrow-details table > tbody > tr > th,
+.theme-doc-markdown table.manual-narrow-details > tbody > tr > td,
+.theme-doc-markdown .manual-narrow-details table > tbody > tr > td { min-width: 0; overflow-wrap: break-word; }
 .theme-doc-markdown table.manual-narrow-details > thead > tr > th:first-child,
-.theme-doc-markdown table.manual-narrow-details > tbody > tr > td:first-child { text-align: center; padding-inline: 0.4rem; }
+.theme-doc-markdown .manual-narrow-details table > thead > tr > th:first-child,
+.theme-doc-markdown table.manual-narrow-details > tbody > tr > td:first-child,
+.theme-doc-markdown .manual-narrow-details table > tbody > tr > td:first-child { text-align: center; padding-inline: 0.4rem; }
 .theme-doc-markdown .manual-cartridge-table-scroll { max-width: 100%; overflow-x: auto; }
 .theme-doc-markdown .manual-cartridge-table-scroll table {
   display: table;
@@ -124,18 +134,18 @@
 .theme-doc-markdown .manual-cartridge-parameters th:nth-child(2) { width: 10%; }
 .theme-doc-markdown .manual-cartridge-parameters th:nth-child(3) { width: 28%; }
 .theme-doc-markdown .manual-ui-elements-scroll { max-width: 100%; overflow-x: auto; }
-.theme-doc-markdown table.manual-ui-elements {
+.theme-doc-markdown .manual-ui-elements table {
   display: table;
   width: 100%;
   min-width: 36rem;
   table-layout: fixed;
   overflow: visible;
 }
-.theme-doc-markdown table.manual-ui-elements col.ui-element-number { width: 6%; }
-.theme-doc-markdown table.manual-ui-elements col.ui-element-description { width: 44%; }
-.theme-doc-markdown table.manual-ui-elements td { min-width: 0; overflow-wrap: break-word; }
-.theme-doc-markdown table.manual-ui-elements td:nth-child(1),
-.theme-doc-markdown table.manual-ui-elements td:nth-child(3) { text-align: center; padding-inline: 0.4rem; }
+.theme-doc-markdown .manual-ui-elements table tr:first-child > :is(:nth-child(1), :nth-child(3)) { width: 6%; }
+.theme-doc-markdown .manual-ui-elements table tr:first-child > :is(:nth-child(2), :nth-child(4)) { width: 44%; }
+.theme-doc-markdown .manual-ui-elements table td { min-width: 0; overflow-wrap: break-word; }
+.theme-doc-markdown .manual-ui-elements table td:nth-child(1),
+.theme-doc-markdown .manual-ui-elements table td:nth-child(3) { text-align: center; padding-inline: 0.4rem; }
 .theme-doc-markdown .manual-output-steps-scroll { max-width: 100%; overflow-x: auto; }
 .theme-doc-markdown .manual-output-steps-scroll table {
   display: table;
@@ -150,66 +160,64 @@
 .theme-doc-markdown .manual-output-steps-scroll td { min-width: 0; overflow-wrap: break-word; }
 .theme-doc-markdown .manual-output-steps-scroll th:first-child,
 .theme-doc-markdown .manual-output-steps-scroll td:first-child { text-align: center; padding-inline: 0.4rem; }
-.theme-doc-markdown table.manual-digital-input-config {
+.theme-doc-markdown .manual-digital-input-config table {
   display: table;
   width: 100%;
   max-width: 100%;
   table-layout: fixed;
   overflow: visible;
 }
-.theme-doc-markdown table.manual-digital-input-config col.di-config-step-column { width: 6%; }
-.theme-doc-markdown table.manual-digital-input-config col.di-config-description-column { width: 44%; }
-.theme-doc-markdown table.manual-digital-input-config col.di-config-marker-column { width: 5%; }
-.theme-doc-markdown table.manual-digital-input-config col.di-config-detail-column { width: 45%; }
-.theme-doc-markdown table.manual-digital-input-config td {
+.theme-doc-markdown .manual-digital-input-config table tr:first-child > :nth-child(1) { width: 6%; }
+.theme-doc-markdown .manual-digital-input-config table tr:first-child > :nth-child(2) { width: 44%; }
+.theme-doc-markdown .manual-digital-input-config table tr:first-child > :nth-child(3) { width: 5%; }
+.theme-doc-markdown .manual-digital-input-config table tr:first-child > :nth-child(4) { width: 45%; }
+.theme-doc-markdown .manual-digital-input-config table td {
   min-width: 0;
   overflow-wrap: break-word;
 }
-.theme-doc-markdown table.manual-digital-input-config td:nth-child(1),
-.theme-doc-markdown table.manual-digital-input-config td:nth-child(3) {
+.theme-doc-markdown .manual-digital-input-config table td:nth-child(1),
+.theme-doc-markdown .manual-digital-input-config table td:nth-child(3) {
   text-align: center;
   white-space: nowrap;
   padding-inline: 0.2rem;
 }
 .theme-doc-markdown .manual-modbus-address-scroll { max-width: 100%; overflow-x: auto; }
-.theme-doc-markdown table.manual-modbus-address-list {
+.theme-doc-markdown .manual-modbus-address-list table {
   display: table;
   width: 100%;
   max-width: 100%;
   table-layout: fixed;
   overflow: visible;
 }
-.theme-doc-markdown table.manual-modbus-address-list col.modbus-register-column { width: 12%; }
-.theme-doc-markdown table.manual-modbus-address-list col.modbus-address-column { width: 12%; }
-.theme-doc-markdown table.manual-modbus-address-list col.modbus-type-column { width: 14%; }
-.theme-doc-markdown table.manual-modbus-address-list col.modbus-function-column { width: 14%; }
-.theme-doc-markdown table.manual-modbus-address-list col.modbus-values-column { width: 48%; }
-.theme-doc-markdown table.manual-modbus-address-list th,
-.theme-doc-markdown table.manual-modbus-address-list td {
+.theme-doc-markdown .manual-modbus-address-list table tr:first-child > :nth-child(1) { width: 12%; }
+.theme-doc-markdown .manual-modbus-address-list table tr:first-child > :nth-child(2) { width: 12%; }
+.theme-doc-markdown .manual-modbus-address-list table tr:first-child > :nth-child(3) { width: 14%; }
+.theme-doc-markdown .manual-modbus-address-list table tr:first-child > :nth-child(4) { width: 14%; }
+.theme-doc-markdown .manual-modbus-address-list table tr:first-child > :nth-child(5) { width: 48%; }
+.theme-doc-markdown .manual-modbus-address-list table th,
+.theme-doc-markdown .manual-modbus-address-list table td {
   min-width: 0;
   overflow-wrap: break-word;
 }
-.theme-doc-markdown table.manual-modbus-address-list th:nth-child(1),
-.theme-doc-markdown table.manual-modbus-address-list td:nth-child(1),
-.theme-doc-markdown table.manual-modbus-address-list th:nth-child(2),
-.theme-doc-markdown table.manual-modbus-address-list td:nth-child(2) { padding-inline: 0.4rem; }
-.theme-doc-markdown table.manual-modbus-address-list th:nth-child(1) { white-space: nowrap; font-size: 0.85rem; }
+.theme-doc-markdown .manual-modbus-address-list table th:nth-child(1),
+.theme-doc-markdown .manual-modbus-address-list table td:nth-child(1),
+.theme-doc-markdown .manual-modbus-address-list table th:nth-child(2),
+.theme-doc-markdown .manual-modbus-address-list table td:nth-child(2) { padding-inline: 0.4rem; }
+.theme-doc-markdown .manual-modbus-address-list table th:nth-child(1) { white-space: nowrap; font-size: 0.85rem; }
 .theme-doc-markdown .manual-user-roles-scroll { max-width: 100%; overflow-x: auto; }
-.theme-doc-markdown table.manual-user-roles-permissions {
+.theme-doc-markdown .manual-user-roles-permissions table {
   display: table;
   width: 100%;
   max-width: 100%;
   table-layout: fixed;
   overflow: visible;
 }
-.theme-doc-markdown table.manual-user-roles-permissions col.user-role-permission-column { width: 49%; }
-.theme-doc-markdown table.manual-user-roles-permissions col.user-role-basic-column { width: 17%; }
-.theme-doc-markdown table.manual-user-roles-permissions col.user-role-advanced-column { width: 17%; }
-.theme-doc-markdown table.manual-user-roles-permissions col.user-role-admin-column { width: 17%; }
-.theme-doc-markdown table.manual-user-roles-permissions th,
-.theme-doc-markdown table.manual-user-roles-permissions td { min-width: 0; overflow-wrap: break-word; }
-.theme-doc-markdown table.manual-user-roles-permissions th:nth-child(n+2),
-.theme-doc-markdown table.manual-user-roles-permissions td:nth-child(n+2) {
+.theme-doc-markdown .manual-user-roles-permissions table tr:first-child > :nth-child(1) { width: 49%; }
+.theme-doc-markdown .manual-user-roles-permissions table tr:first-child > :nth-child(n+2) { width: 17%; }
+.theme-doc-markdown .manual-user-roles-permissions table th,
+.theme-doc-markdown .manual-user-roles-permissions table td { min-width: 0; overflow-wrap: break-word; }
+.theme-doc-markdown .manual-user-roles-permissions table th:nth-child(n+2),
+.theme-doc-markdown .manual-user-roles-permissions table td:nth-child(n+2) {
   text-align: center;
   white-space: nowrap;
 }
@@ -251,12 +259,10 @@
 .theme-doc-markdown figcaption { color: var(--ifm-color-emphasis-700); font-size: 0.875rem; margin-top: 0.5rem; }
 @media (max-width: 576px) {
   .theme-doc-markdown table { font-size: 0.85rem; }
-  .theme-doc-markdown table.manual-modbus-address-list { min-width: 48rem; }
-  .theme-doc-markdown table.manual-user-roles-permissions { min-width: 40rem; }
-  .theme-doc-markdown table.manual-user-roles-permissions col.user-role-permission-column { width: 43%; }
-  .theme-doc-markdown table.manual-user-roles-permissions col.user-role-basic-column,
-  .theme-doc-markdown table.manual-user-roles-permissions col.user-role-advanced-column,
-  .theme-doc-markdown table.manual-user-roles-permissions col.user-role-admin-column { width: 19%; }
+  .theme-doc-markdown .manual-modbus-address-list table { min-width: 48rem; }
+  .theme-doc-markdown .manual-user-roles-permissions table { min-width: 40rem; }
+  .theme-doc-markdown .manual-user-roles-permissions table tr:first-child > :nth-child(1) { width: 43%; }
+  .theme-doc-markdown .manual-user-roles-permissions table tr:first-child > :nth-child(n+2) { width: 19%; }
   .theme-doc-markdown th, .theme-doc-markdown td { padding: 0.5rem; min-width: 10rem; }
   .theme-doc-markdown th:first-child, .theme-doc-markdown td:first-child { min-width: 4rem; }
   .theme-doc-markdown th:last-child, .theme-doc-markdown td:last-child { min-width: 15rem; }

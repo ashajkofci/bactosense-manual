@@ -63,8 +63,6 @@ The HTTP and HTTPS servers are enabled by default and available through a web br
 
 <th scope="col">
 
-
-
 </th>
 
 <th scope="col">
@@ -123,8 +121,6 @@ As an Admin user, press Settings on the Home screen to open the settings menu.
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -144,8 +140,6 @@ Press the System settings button.
 </td>
 
 <td>
-
-
 
 </td>
 
@@ -167,8 +161,6 @@ Press the System services button.
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -188,8 +180,6 @@ For HTTP: Make sure the Enable HTTP web access check box is checked. For HTTPS: 
 </td>
 
 <td>
-
-
 
 </td>
 

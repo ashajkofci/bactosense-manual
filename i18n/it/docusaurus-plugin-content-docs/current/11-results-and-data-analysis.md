@@ -33,24 +33,7 @@ Selezione multipla e operazioni in gruppo: nell’elenco delle misurazioni, tene
 
 :::
 
-### 11.1.1 Filtraggio delle misurazioni {#section-11-1-1}
-
-I filtri limitano l’elenco dei risultati alle misurazioni necessarie. È possibile filtrare per intervallo di date, per nome della misurazione e, se BactoSwitch è attivato, per linea di campioni BactoSwitch. Combinando più filtri, vengono elencate solo le misurazioni che li soddisfano tutti. I filtri considerano tutte le misurazioni memorizzate sullo strumento.
-
-|  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINI |
-| --- | --- | --- |
-| 1. | Nella schermata Home, premere **Risultati**. | L’elenco mostra i risultati della modalità operativa attuale: **Risultati della Modalità Online** o **Risultati della Modalità Manuale**. Per aprire l’elenco dell’altra modalità, premere **Impostazioni**, quindi **Registri**, e selezionare **Results (online mode)** o **Results (manual mode)**. |
-| 2. | Premere **Filtro**. | Si apre la schermata **Filtra i risultati**. I campi a sinistra mostrano i filtri attuali. |
-| 3. | Per filtrare per data, toccare il campo sotto **Data di inizio** e selezionare il primo giorno nel calendario. Toccare il campo dell’ora sottostante e impostare ore e minuti con le rotelle. Impostare **Data di fine** e la relativa ora allo stesso modo. | Entrambi i limiti sono inclusi: vengono elencate le misurazioni fino alla fine del minuto finale selezionato. La fine non può precedere l’inizio. Senza filtro per data, l’intervallo va dalla misurazione più vecchia alla più recente. |
-| 4. | Per filtrare per nome, toccare il campo sotto **Filtra per nome**, inserire una parte del nome della misurazione e premere **OK**. | L’elenco mantiene tutte le misurazioni il cui nome contiene questo testo, senza distinzione tra maiuscole e minuscole. Ad esempio, *tap* trova “Tap Water Zürich”. **Nessuno** indica che non è impostato alcun filtro per nome. Per rimuovere il filtro per nome, cancellare il testo e premere **OK**. |
-| 5. | Per filtrare per linea BactoSwitch, premere **Filtrare per linea**, selezionare la linea e premere **Conferma**. | Questo pulsante viene visualizzato solo se BactoSwitch è attivato. Ogni linea è elencata con il proprio nome e numero; il pulsante mostra poi **Filtrato dalla riga #n**. Solo le misurazioni in modalità online campionate tramite BactoSwitch appartengono a una linea; tutte le altre misurazioni restano nascoste finché questo filtro è attivo. Per rimuovere il filtro per linea, selezionare di nuovo la linea evidenziata e premere **Conferma**. |
-| 6. | Premere **OK** per applicare i filtri e tornare all’elenco dei risultati. | La barra delle azioni mostra l’intervallo di date e gli eventuali filtri per linea e per nome attivi. Se nessuna misurazione corrisponde, viene visualizzato **No measurements to display**; premere **Change filters** per modificare i filtri. |
-
-:::info[Ripristinare i filtri]
-
-Premere **Ripristina** nella schermata **Filtra i risultati** per rimuovere i filtri per nome e per linea e ripristinare l’intero intervallo di date. I filtri dei risultati della modalità manuale vengono cancellati quando si torna alla schermata Home. In modalità online, i filtri per nome e per linea restano attivi, anche sul grafico online (vedere [Consultazione delle misurazioni automatiche in linea](../measurements/#section-10-2-3)), finché non vengono ripristinati.
-
-:::
+Per visualizzare solo alcune misurazioni nell’elenco dei risultati, filtrarle per data, nome o linea BactoSwitch; vedere [Filtraggio delle misurazioni](../measurements/#section-10-7).
 
 ## 11.2 Introduzione ai gate {#section-11-2}
 
@@ -277,179 +260,15 @@ La rianalisi con altri gate consiste nell’applicare un gruppo di gate diverso 
 - Un prerequisito è la disponibilità di tale gruppo aggiuntivo. Nella schermata Home, premere Impostazioni, quindi Impostazioni del gate per visualizzare i gruppi di gate disponibili.
 - La modifica di un gruppo di gate esistente è descritta nella sezione [Modifica dei gruppi di gate esistenti](11-results-and-data-analysis.md#section-11-4-3).
 
-<table className="manual-table">
-
-<tbody>
-
-<tr>
-
-<th scope="col">
-
-</th>
-
-<th scope="col">
-
-OPERAZIONE
-
-</th>
-
-<th scope="col">
-
-INFORMAZIONI AGGIUNTIVE / IMMAGINI
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Premere Registri, quindi Results (manual mode) o Results (online mode) in base alla modalità di misurazione utilizzata.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Per rianalizzare una singola misurazione, selezionarla per visualizzare la pagina dei dettagli. Per rianalizzare più misurazioni in gruppo, tenere premuta una misurazione finché non viene evidenziata e compare una casella a sinistra. Toccare quindi altre misurazioni per selezionare anche queste.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Premere Risultato del re-gate nella vista di un singolo risultato oppure Re-gate quando sono selezionate più misurazioni.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Selezionare il gruppo di gate desiderato spuntando la relativa casella.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-Premere Confirm per avviare la rianalisi.
-
-</td>
-
-<td>
-
-:::info[Informazioni aggiuntive]
-
-A seconda del numero di misurazioni, la rianalisi può richiedere diversi minuti.
-
-:::
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7\.
-
-</td>
-
-<td>
-
-Al termine, premere OK.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINI |
+| --- | --- | --- |
+| 1\. | Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni. |  |
+| 2\. | Premere Registri, quindi Results (manual mode) o Results (online mode) in base alla modalità di misurazione utilizzata. |  |
+| 3\. | Per rianalizzare una singola misurazione, selezionarla per visualizzare la pagina dei dettagli. Per rianalizzare più misurazioni in gruppo, tenere premuta una misurazione finché non viene evidenziata e compare una casella a sinistra. Toccare quindi altre misurazioni per selezionare anche queste. |  |
+| 4\. | Premere Risultato del re-gate nella vista di un singolo risultato oppure Re-gate quando sono selezionate più misurazioni. |  |
+| 5\. | Selezionare il gruppo di gate desiderato spuntando la relativa casella. |  |
+| 6\. | Premere Confirm per avviare la rianalisi. | :::info[Informazioni aggiuntive] A seconda del numero di misurazioni, la rianalisi può richiedere diversi minuti. ::: |
+| 7\. | Al termine, premere OK. |  |
 
 ### 11.4.2 Creazione di un nuovo gruppo di gate {#section-11-4-2}
 
@@ -794,8 +613,6 @@ Nella vista del risultato, premere Risultato del re-gate.
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -815,8 +632,6 @@ Selezionare il gate appena creato e rielaborare i dati con il nuovo gate premend
 </td>
 
 <td>
-
-
 
 </td>
 
@@ -882,8 +697,6 @@ Salvare il gate regolato.
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -903,8 +716,6 @@ Accedere nuovamente alla vista del risultato del campione d’acqua misurato in 
 </td>
 
 <td>
-
-
 
 </td>
 
@@ -926,8 +737,6 @@ Nella vista del risultato, premere Risultato del re-gate.
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -947,8 +756,6 @@ Selezionare il gate appena creato e rielaborare i dati con il nuovo gate premend
 </td>
 
 <td>
-
-
 
 </td>
 
@@ -992,8 +799,6 @@ Tornare a Gate settings e modificare nuovamente il gate.
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -1014,8 +819,6 @@ Accedere al passaggio di configurazione del limite inferiore HNA. Inserire il li
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -1035,8 +838,6 @@ Rianalizzare nuovamente la misurazione dell’acqua e verificare che il gate sia
 </td>
 
 <td>
-
-
 
 </td>
 
@@ -1069,311 +870,21 @@ Per assistenza nella configurazione di una catena di strumenti per l’analisi a
 
 Per confrontare i risultati di BactoSense con quelli di un altro citometro a flusso, è possibile analizzare una soluzione di riferimento contenente microsfere autofluorescenti. Questo metodo consente di confrontare le scale di misurazione di dispositivi diversi.
 
-<div className="manual-narrow-details-scroll">
-
-<table className="manual-table manual-narrow-details manual-narrow-details-split">
-
-<colgroup>
-<col className="procedure-step-column" />
-<col className="procedure-instruction-column" />
-<col className="procedure-detail-column" />
-<col className="procedure-detail-column" />
-</colgroup>
-
-<thead>
-
-<tr>
-
-<th scope="col">
-
-</th>
-
-<th scope="col">
-
-OPERAZIONE
-
-</th>
-
-<th scope="col" colSpan="2">
-
-INFORMAZIONI AGGIUNTIVE / IMMAGINE
-
-</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Si consiglia di utilizzare il kit di validazione, che contiene una soluzione di microsfere pronta all’uso.
-
-</td>
-
-<td colSpan="2">
-
-Leggere le istruzioni del kit di validazione per ulteriori informazioni.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Installare il dispositivo di campionamento manuale secondo il manuale d’uso.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Prelevare una delle soluzioni di microsfere del kit di validazione e caricarla nel dispositivo di campionamento.
-
-</td>
-
-<td colSpan="2">
-
-Leggere le istruzioni del kit di validazione per ulteriori informazioni.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-:::info[Informazioni aggiuntive]
-
-Premere Home. Premere Back tante volte quanto necessario per far comparire il pulsante Home.
-
-:::
-
-</td>
-
-<td>
-
-![BactoSense — Pulsante della schermata iniziale](/img/gui/icons/home-button.png "width=48 class=manual-icon")
-
-</td>
-
-<td>
-
-![BactoSense — Pulsante Indietro](/img/gui/icons/back-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Nella schermata Home, premere Modalità e selezionare Modalità manuale. Premere Indietro, quindi Misura per aprire l’assistente di misurazione.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-Selezionare Prepara dall’elenco dei protocolli.
-
-</td>
-
-<td colSpan="2">
-
-Vedere sezione [Esecuzione di un adescamento (Prime)](../measurements/#section-10-9-3).
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7\.
-
-</td>
-
-<td>
-
-Premere Avanti e Avvio. Attendere il completamento del protocollo di adescamento.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-8\.
-
-</td>
-
-<td>
-
-Premere Nuovo, scegliere Analisi delle sferette dall’elenco, quindi premere Avanti e Avvio.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-9\.
-
-</td>
-
-<td>
-
-Attendere i risultati e, se necessario, regolare con precisione il gate del diagramma FL1 rispetto a FL2 per contare solo le 4 popolazioni di microsfere. È importante assicurarsi che rumore, fondo e detriti non vengano inclusi nel gate.
-
-</td>
-
-<td colSpan="2">
-
-Vedere sezione [Modifica dei gruppi di gate esistenti](../results-and-data-analysis/#section-11-4-3) per regolare il gate. ![Illustrazione della tabella a pagina 112 del manuale](/img/manual/render-fa85ea9255cb.webp "width=246 class=manual-figure")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-10\.
-
-</td>
-
-<td>
-
-Nell’istogramma FL1 rispetto ai conteggi, stimare il valore logaritmico del centro di ogni picco sull’asse FL1. In questo esempio si ottengono approssimativamente (in log): 1<sup>º</sup> picco = 4.05 2<sup>º</sup> picco = 4.3 3<sup>º</sup> picco = 5.35 4<sup>º</sup> picco = 6.2
-
-</td>
-
-<td>
-
-![Illustrazione della tabella a pagina 113 del manuale](/img/manual/cell-c2ba9a559620.png "width=246 class=manual-figure")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-11\.
-
-</td>
-
-<td>
-
-Misurare le stesse microsfere con l’altro citometro a flusso da confrontare e ripetere i passaggi 10 e 11. In questo esempio si ottengono approssimativamente (in log): 1<sup>º</sup> picco = log(10<sup>3</sup>) = 3 2<sup>º</sup> picco = log(2*10<sup>3</sup>) = 3.3 3<sup>º</sup> picco = log(2.4*10<sup>4</sup>) = 4.4 4<sup>º</sup> picco = log(1.6*10<sup>5</sup>) = 5.2
-
-</td>
-
-<td>
-
-![Illustrazione della tabella a pagina 113 del manuale](/img/manual/cell-4c2343e0bbfe.png "width=246 class=manual-figure")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-12\.
-
-</td>
-
-<td>
-
-Con i diversi valori ottenuti per entrambi i dispositivi, è ora possibile confrontarne le scale e le finestre di misurazione.
-
-</td>
-
-<td>
-
-
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<div className="manual-narrow-details-scroll manual-narrow-details manual-narrow-details-split">
+
+|  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINE | \< |
+| --- | --- | --- | --- |
+| 1\. | Si consiglia di utilizzare il kit di validazione, che contiene una soluzione di microsfere pronta all’uso. | Leggere le istruzioni del kit di validazione per ulteriori informazioni. | \< |
+| 2\. | Installare il dispositivo di campionamento manuale secondo il manuale d’uso. |  | \< |
+| 3\. | Prelevare una delle soluzioni di microsfere del kit di validazione e caricarla nel dispositivo di campionamento. | Leggere le istruzioni del kit di validazione per ulteriori informazioni. | \< |
+| 4\. | :::info[Informazioni aggiuntive] Premere Home. Premere Back tante volte quanto necessario per far comparire il pulsante Home. ::: | ![BactoSense — Pulsante della schermata iniziale](/img/gui/icons/home-button.png "width=48 class=manual-icon") | ![BactoSense — Pulsante Indietro](/img/gui/icons/back-button.png "width=48 class=manual-icon") |
+| 5\. | Nella schermata Home, premere Modalità e selezionare Modalità manuale. Premere Indietro, quindi Misura per aprire l’assistente di misurazione. |  | \< |
+| 6\. | Selezionare Prepara dall’elenco dei protocolli. | Vedere sezione [Esecuzione di un adescamento (Prime)](../measurements/#section-10-9-3). | \< |
+| 7\. | Premere Avanti e Avvio. Attendere il completamento del protocollo di adescamento. |  | \< |
+| 8\. | Premere Nuovo, scegliere Analisi delle sferette dall’elenco, quindi premere Avanti e Avvio. |  | \< |
+| 9\. | Attendere i risultati e, se necessario, regolare con precisione il gate del diagramma FL1 rispetto a FL2 per contare solo le 4 popolazioni di microsfere. È importante assicurarsi che rumore, fondo e detriti non vengano inclusi nel gate. | Vedere sezione [Modifica dei gruppi di gate esistenti](../results-and-data-analysis/#section-11-4-3) per regolare il gate. ![Illustrazione della tabella a pagina 112 del manuale](/img/manual/render-fa85ea9255cb.webp "width=246 class=manual-figure") | \< |
+| 10\. | Nell’istogramma FL1 rispetto ai conteggi, stimare il valore logaritmico del centro di ogni picco sull’asse FL1. In questo esempio si ottengono approssimativamente (in log): 1<sup>º</sup> picco = 4.05 2<sup>º</sup> picco = 4.3 3<sup>º</sup> picco = 5.35 4<sup>º</sup> picco = 6.2 | ![Illustrazione della tabella a pagina 113 del manuale](/img/manual/cell-c2ba9a559620.png "width=246 class=manual-figure") | \< |
+| 11\. | Misurare le stesse microsfere con l’altro citometro a flusso da confrontare e ripetere i passaggi 10 e 11. In questo esempio si ottengono approssimativamente (in log): 1<sup>º</sup> picco = log(10<sup>3</sup>) = 3 2<sup>º</sup> picco = log(2*10<sup>3</sup>) = 3.3 3<sup>º</sup> picco = log(2.4*10<sup>4</sup>) = 4.4 4<sup>º</sup> picco = log(1.6*10<sup>5</sup>) = 5.2 | ![Illustrazione della tabella a pagina 113 del manuale](/img/manual/cell-4c2343e0bbfe.png "width=246 class=manual-figure") | \< |
+| 12\. | Con i diversi valori ottenuti per entrambi i dispositivi, è ora possibile confrontarne le scale e le finestre di misurazione. |  | \< |
 
 </div>

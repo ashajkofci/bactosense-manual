@@ -195,14 +195,22 @@ El ajuste de las regiones de análisis de mediciones individuales o de un conjun
 
 ## 10.7 Filtrado de mediciones {#section-10-7}
 
-Pueden aplicarse filtros para mostrar un subconjunto de resultados de medición. Se puede filtrar por texto y por intervalo de fechas.
+Los filtros limitan la lista de resultados a las mediciones que necesita. Puede filtrar por intervalo de fechas, por nombre de medición y, si BactoSwitch está activado, por línea de muestra BactoSwitch. Si combina filtros, solo se muestran las mediciones que cumplen todos ellos. Los filtros abarcan todas las mediciones almacenadas en el instrumento.
 
-|  | PASO DE TRABAJO |
-| --- | --- |
-| 1. | En la pantalla Home, pulse Ajustes, después Registros, y seleccione Results (manual mode) o Results (online mode). |
-| 2. | En la lista de resultados, pulse el botón Filtro. |
-| 3. | Especifique el filtro aplicando una o ambas opciones siguientes:<br/>• Defina un intervalo de fechas indicando las fechas de inicio y fin.<br/>• Defina una cadena de texto para filtrar por nombre de medición. |
-| 4. | Pulse OK. La lista de resultados se actualizará para mostrar los resultados filtrados. |
+|  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMÁGENES |
+| --- | --- | --- |
+| 1. | En la pantalla Home, pulse **Resultados**. | La lista muestra los resultados del modo de funcionamiento actual: **Resultados del modo en línea** o **Resultados del modo manual**. Para abrir la lista del otro modo, pulse **Ajustes**, después **Registros**, y seleccione **Results (online mode)** o **Results (manual mode)**. |
+| 2. | Pulse **Filtro**. | Se abre la pantalla **Filtrar resultados**. Los campos de la izquierda muestran los filtros actuales. |
+| 3. | Para filtrar por fecha, toque el campo bajo **Fecha de inicio** y seleccione el primer día en el calendario. Toque el campo de hora situado debajo y ajuste la hora y los minutos con las ruedas. Ajuste **Fecha final** y su hora del mismo modo. | Ambos límites están incluidos: se muestran las mediciones hasta el final del minuto final seleccionado. El final no puede ser anterior al inicio. Sin filtro de fecha, el intervalo va de la medición más antigua a la más reciente. |
+| 4. | Para filtrar por nombre, toque el campo bajo **Filtrar por nombre**, introduzca parte del nombre de la medición y pulse **OK**. | La lista conserva todas las mediciones cuyo nombre contiene este texto, sin distinguir mayúsculas y minúsculas. Por ejemplo, *tap* encuentra “Tap Water Zürich”. **Ninguno** significa que no hay ningún filtro por nombre. Para eliminar el filtro por nombre, borre el texto y pulse **OK**. |
+| 5. | Para filtrar por línea BactoSwitch, pulse **Filtrar por línea**, seleccione la línea y pulse **Confirmar**. | Este botón solo se muestra si BactoSwitch está activado. Cada línea aparece con su nombre y su número; el botón muestra entonces **Filtrado por línea #n**. Solo las mediciones del modo en línea muestreadas a través de BactoSwitch pertenecen a una línea; todas las demás mediciones se ocultan mientras este filtro está activo. Para eliminar el filtro por línea, seleccione de nuevo la línea resaltada y pulse **Confirmar**. |
+| 6. | Pulse **OK** para aplicar los filtros y volver a la lista de resultados. | La barra de acciones muestra el intervalo de fechas y los filtros por línea y por nombre activos. Si ninguna medición coincide, aparece **No measurements to display**; pulse **Change filters** para ajustar los filtros. |
+
+:::info[Restablecer los filtros]
+
+Pulse **Restablecer** en la pantalla **Filtrar resultados** para eliminar los filtros por nombre y por línea y restaurar el intervalo de fechas completo. Los filtros de los resultados del modo manual se borran al volver a la pantalla Home. En el modo en línea, los filtros por nombre y por línea permanecen activos, también en el gráfico en línea (véase [Revisión de las mediciones automáticas en línea](10-measurements.md#section-10-2-3)), hasta que los restablezca.
+
+:::
 
 ## 10.8 Exportación de mediciones {#section-10-8}
 

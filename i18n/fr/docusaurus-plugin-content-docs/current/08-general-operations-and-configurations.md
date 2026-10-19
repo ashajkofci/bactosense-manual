@@ -113,72 +113,52 @@ Plusieurs caractéristiques des mots de passe, telles que l'expiration, la longu
 
 *Tableau 8-1 Rôles et autorisations des utilisateurs*
 
-<div className="manual-user-roles-scroll">
+<div className="manual-user-roles-scroll manual-user-roles-permissions">
 
-<table className="manual-user-roles-permissions">
-
-<colgroup>
-<col className="user-role-permission-column" />
-<col className="user-role-basic-column" />
-<col className="user-role-advanced-column" />
-<col className="user-role-admin-column" />
-</colgroup>
-
-<thead>
-<tr>
-<th scope="col">AUTORISATION</th>
-<th scope="col">BASIC</th>
-<th scope="col">ADVANCED</th>
-<th scope="col">ADMIN</th>
-</tr>
-</thead>
-
-<tbody>
-<tr><td>Afficher le dernier résultat</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Afficher tous les résultats et les exporter</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Démarrer, arrêter et programmer une mesure</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Basculer entre les modes en ligne et manuel</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Afficher le journal des erreurs et avertissements</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Renommer les résultats</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Valider l’appareil</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Modifier son propre mot de passe</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Afficher les informations système</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Consulter les paramètres réseau</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Afficher la dernière autovérification</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Changer la cartouche</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Acquitter les erreurs</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Consulter le journal des interventions</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Consulter les résultats de validation</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Supprimer les résultats</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Redéfinir les fenêtres des résultats</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Régler les alarmes</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Ajuster les fenêtres</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Redémarrer</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Exécuter une autovérification</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Supprimer les anciennes mesures</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Tout exporter</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Consulter les informations d’intervention</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Exporter les diagnostics</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Modifier les sorties analogiques et numériques</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Tester les sorties analogiques et numériques</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Modifier les mots de passe d’autres utilisateurs</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Créer d’autres utilisateurs</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Modifier les paramètres d’authentification</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Définir le nom de l’appareil</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Définir la date et l’heure</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Modifier les paramètres réseau</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Modifier les paramètres des services</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Activer Modbus avec une clé ou le désactiver</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Changer de langue</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Passer en mode démo</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Réinitialiser les paramètres</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Réinitialiser entièrement aux paramètres d’usine (sauf le journal des interventions)</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Importer les paramètres</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Modifier les paramètres de mise en marche automatique</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Activer des modules d’extension avec un code</td><td></td><td></td><td>✓</td></tr>
-</tbody>
-
-</table>
+| AUTORISATION | BASIC | ADVANCED | ADMIN |
+| --- | --- | --- | --- |
+| Afficher le dernier résultat | ✓ | ✓ | ✓ |
+| Afficher tous les résultats et les exporter | ✓ | ✓ | ✓ |
+| Démarrer, arrêter et programmer une mesure | ✓ | ✓ | ✓ |
+| Basculer entre les modes en ligne et manuel | ✓ | ✓ | ✓ |
+| Afficher le journal des erreurs et avertissements | ✓ | ✓ | ✓ |
+| Renommer les résultats | ✓ | ✓ | ✓ |
+| Valider l’appareil | ✓ | ✓ | ✓ |
+| Modifier son propre mot de passe | ✓ | ✓ | ✓ |
+| Afficher les informations système | ✓ | ✓ | ✓ |
+| Consulter les paramètres réseau | ✓ | ✓ | ✓ |
+| Afficher la dernière autovérification | ✓ | ✓ | ✓ |
+| Changer la cartouche | ✓ | ✓ | ✓ |
+| Acquitter les erreurs | ✓ | ✓ | ✓ |
+| Consulter le journal des interventions | ✓ | ✓ | ✓ |
+| Consulter les résultats de validation | ✓ | ✓ | ✓ |
+| Supprimer les résultats |  | ✓ | ✓ |
+| Redéfinir les fenêtres des résultats |  | ✓ | ✓ |
+| Régler les alarmes |  | ✓ | ✓ |
+| Ajuster les fenêtres |  | ✓ | ✓ |
+| Redémarrer |  | ✓ | ✓ |
+| Exécuter une autovérification |  | ✓ | ✓ |
+| Supprimer les anciennes mesures |  | ✓ | ✓ |
+| Tout exporter |  | ✓ | ✓ |
+| Consulter les informations d’intervention |  | ✓ | ✓ |
+| Exporter les diagnostics |  | ✓ | ✓ |
+| Modifier les sorties analogiques et numériques |  |  | ✓ |
+| Tester les sorties analogiques et numériques |  |  | ✓ |
+| Modifier les mots de passe d’autres utilisateurs |  |  | ✓ |
+| Créer d’autres utilisateurs |  |  | ✓ |
+| Modifier les paramètres d’authentification |  |  | ✓ |
+| Définir le nom de l’appareil |  |  | ✓ |
+| Définir la date et l’heure |  |  | ✓ |
+| Modifier les paramètres réseau |  |  | ✓ |
+| Modifier les paramètres des services |  |  | ✓ |
+| Activer Modbus avec une clé ou le désactiver |  |  | ✓ |
+| Changer de langue |  |  | ✓ |
+| Passer en mode démo |  |  | ✓ |
+| Réinitialiser les paramètres |  |  | ✓ |
+| Réinitialiser entièrement aux paramètres d’usine (sauf le journal des interventions) |  |  | ✓ |
+| Importer les paramètres |  |  | ✓ |
+| Modifier les paramètres de mise en marche automatique |  |  | ✓ |
+| Activer des modules d’extension avec un code |  |  | ✓ |
 
 </div>
 ## 8.3 Configurations de base {#section-8-3}
@@ -309,357 +289,28 @@ Demandez à votre administrateur réseau les paramètres corrects.
 
 :::
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-OPÉRATION
-
-</th>
-
-<th>
-
-INFORMATIONS SUPPLÉMENTAIRES/IMAGE
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-En tant qu’utilisateur Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres.
-
-</td>
-
-<td>
-
-![BactoSense — Bouton Paramètres](/img/gui/fr/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Appuyez sur le bouton Paramètres système.
-
-</td>
-
-<td>
-
-![BactoSense — Paramètres système](/img/gui/icons/system-settings-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Appuyez sur le bouton Réseau.
-
-</td>
-
-<td>
-
-![BactoSense — Paramètres réseau](/img/gui/icons/network-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-A : Pour IP dynamique, cochez la case DHCP (1). Remarque : Ceci est la configuration préférée dans la plupart des cas lorsque le BactoSense est connecté à un routeur ou à un commutateur.
-
-B : Pour IP statique, décochez la case DHCP (1) et saisissez la configuration réseau souhaitée (2). Remarque : Cette configuration est recommandée lorsque le BactoSense est directement connecté à un ordinateur portable via Ethernet. Assurez-vous également d’ajuster la configuration réseau sur l’ordinateur portable en conséquence.
-
-</td>
-
-<td>
-
-![BactoSense — Configuration réseau](/img/gui/fr/network-configuration.png "width=260")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Appuyez sur le bouton Enregistrer.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-Appuyez sur le bouton Redémarrer maintenant.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
+| --- | --- | --- |
+| 1\. | En tant qu’utilisateur Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. | ![BactoSense — Bouton Paramètres](/img/gui/fr/home-settings-button.png "width=57 class=manual-icon-settings-button-half") |
+| 2\. | Appuyez sur le bouton Paramètres système. | ![BactoSense — Paramètres système](/img/gui/icons/system-settings-button.png "width=48 class=manual-icon") |
+| 3\. | Appuyez sur le bouton Réseau. | ![BactoSense — Paramètres réseau](/img/gui/icons/network-button.png "width=48 class=manual-icon") |
+| 4\. | A : Pour IP dynamique, cochez la case DHCP (1). Remarque : Ceci est la configuration préférée dans la plupart des cas lorsque le BactoSense est connecté à un routeur ou à un commutateur.<br /><br />B : Pour IP statique, décochez la case DHCP (1) et saisissez la configuration réseau souhaitée (2). Remarque : Cette configuration est recommandée lorsque le BactoSense est directement connecté à un ordinateur portable via Ethernet. Assurez-vous également d’ajuster la configuration réseau sur l’ordinateur portable en conséquence. | ![BactoSense — Configuration réseau](/img/gui/fr/network-configuration.png "width=260") |
+| 5\. | Appuyez sur le bouton Enregistrer. |  |
+| 6\. | Appuyez sur le bouton Redémarrer maintenant. |  |
 
 ## 8.7 Configuration des serveurs NTP {#section-8-7}
 
 Le protocole NTP (Network Time Protocol) est un protocole réseau permettant de synchroniser l’heure des ordinateurs d’un réseau. Par défaut, la synchronisation s’effectue avec les serveurs de la Network Time Foundation (ntp.org). Vous pouvez définir des serveurs NTP personnalisés dans le menu *Date &amp; heure* .
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-OPÉRATION
-
-</th>
-
-<th>
-
-INFORMATIONS SUPPLÉMENTAIRES/IMAGE
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-En tant qu’utilisateur Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres.
-
-</td>
-
-<td>
-
-![BactoSense — Bouton Paramètres](/img/gui/fr/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Appuyez sur le bouton Paramètres système.
-
-</td>
-
-<td>
-
-![BactoSense — Paramètres système](/img/gui/icons/system-settings-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Appuyez sur le bouton Date &amp; heure.
-
-</td>
-
-<td>
-
-![BactoSense — Réglage de la date et de l’heure](/img/gui/icons/date-time-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Appuyez sur le bouton Paramètres de synchronisation du temps.
-
-</td>
-
-<td>
-
-![BactoSense — Date et heure](/img/gui/fr/date-and-time-settings.png "width=261")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Sélectionnez la Source synchro souhaitée.
-
-</td>
-
-<td>
-
-:::info[Informations supplémentaires]
-
-La synchronisation de l’heure peut s’effectuer via un serveur NTP ou Modbus TCP. Pour plus d’informations sur Modbus TCP, consultez la section [Modbus TCP](../field-bus-interface/#section-7-1).
-
-:::
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-Mettez à jour les serveurs NTP.
-
-</td>
-
-<td>
-
-![BactoSense — Synchronisation de l’heure](/img/gui/fr/time-synchronization-settings.png "width=261")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7
-
-</td>
-
-<td>
-
-Appuyez sur le bouton OK.
-
-</td>
-
-<td>
-
-:::info[Informations supplémentaires]
-
-Appuyez sur Test NTP pour vérifier que les serveurs configurés sont accessibles. Appuyez sur OK pour enregistrer les paramètres de synchronisation.
-
-:::
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
+| --- | --- | --- |
+| 1\. | En tant qu’utilisateur Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. | ![BactoSense — Bouton Paramètres](/img/gui/fr/home-settings-button.png "width=57 class=manual-icon-settings-button-half") |
+| 2\. | Appuyez sur le bouton Paramètres système. | ![BactoSense — Paramètres système](/img/gui/icons/system-settings-button.png "width=48 class=manual-icon") |
+| 3\. | Appuyez sur le bouton Date &amp; heure. | ![BactoSense — Réglage de la date et de l’heure](/img/gui/icons/date-time-button.png "width=48 class=manual-icon") |
+| 4\. | Appuyez sur le bouton Paramètres de synchronisation du temps. | ![BactoSense — Date et heure](/img/gui/fr/date-and-time-settings.png "width=261") |
+| 5\. | Sélectionnez la Source synchro souhaitée. | :::info[Informations supplémentaires] La synchronisation de l’heure peut s’effectuer via un serveur NTP ou Modbus TCP. Pour plus d’informations sur Modbus TCP, consultez la section [Modbus TCP](../field-bus-interface/#section-7-1). ::: |
+| 6\. | Mettez à jour les serveurs NTP. | ![BactoSense — Synchronisation de l’heure](/img/gui/fr/time-synchronization-settings.png "width=261") |
+| 7 | Appuyez sur le bouton OK. | :::info[Informations supplémentaires] Appuyez sur Test NTP pour vérifier que les serveurs configurés sont accessibles. Appuyez sur OK pour enregistrer les paramètres de synchronisation. ::: |
 
 ## 8.8 Interface utilisateur de BactoSense {#section-8-8}
 
@@ -681,154 +332,15 @@ L’interface utilisateur de BactoSense est divisée en 3 sections principales :
 
 Les principaux éléments de l’interface utilisateur sont :
 
-<div className="manual-ui-elements-scroll">
-
-<table className="manual-ui-elements">
-
-<colgroup>
-<col className="ui-element-number" />
-<col className="ui-element-description" />
-<col className="ui-element-number" />
-<col className="ui-element-description" />
-</colgroup>
-
-<tbody>
-
-<tr>
-
-<td>
-
-1
-
-</td>
-
-<td>
-
-Bouton Menu principal ou Retour.<br />Pour naviguer dans le menu.
-
-</td>
-
-<td>
-
-2
-
-</td>
-
-<td>
-
-Mode de fonctionnement (Manuel ou<br />En ligne) État de l’instrument (processus en<br />cours)
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3
-
-</td>
-
-<td>
-
-Vue actuelle
-
-</td>
-
-<td>
-
-4
-
-</td>
-
-<td>
-
-Icônes d’état de la barre supérieure, voir [Icônes d’état de la barre supérieure](../general-operations-and-configurations/#section-8-8-2).
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5
-
-</td>
-
-<td>
-
-Rôle d’utilisateur<br />Heure actuelle
-
-</td>
-
-<td>
-
-6
-
-</td>
-
-<td>
-
-Déconnexion ou mise hors tension
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7
-
-</td>
-
-<td>
-
-Résultats : afficher les résultats de mesure du mode sélectionné.
-
-</td>
-
-<td>
-
-8
-
-</td>
-
-<td>
-
-Mode : choisir le mode en ligne pour les mesures continues avec le dispositif d’échantillonnage en ligne, ou le mode manuel pour les échantillons ponctuels avec le dispositif d’échantillonnage manuel.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-9
-
-</td>
-
-<td>
-
-Mesurer : ouvrir l’assistant de mesure et choisir un protocole d’analyse (mode manuel).
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<div className="manual-ui-elements-scroll manual-ui-elements">
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| 1 | Bouton Menu principal ou Retour.<br />Pour naviguer dans le menu. | 2 | Mode de fonctionnement (Manuel ou<br />En ligne) État de l’instrument (processus en<br />cours) |
+| 3 | Vue actuelle | 4 | Icônes d’état de la barre supérieure, voir [Icônes d’état de la barre supérieure](../general-operations-and-configurations/#section-8-8-2). |
+| 5 | Rôle d’utilisateur<br />Heure actuelle | 6 | Déconnexion ou mise hors tension |
+| 7 | Résultats : afficher les résultats de mesure du mode sélectionné. | 8 | Mode : choisir le mode en ligne pour les mesures continues avec le dispositif d’échantillonnage en ligne, ou le mode manuel pour les échantillons ponctuels avec le dispositif d’échantillonnage manuel. |
+| 9 | Mesurer : ouvrir l’assistant de mesure et choisir un protocole d’analyse (mode manuel). |  | \< |
 
 </div>
 
@@ -897,173 +409,14 @@ Une fois la porte du compartiment de la cartouche ouverte, l’utilisateur a acc
 
 *Figure 8-6 Vue d’ensemble d’une cartouche installée. La cartouche est immobilisée par un*  *loquet de fixation situé sur le dessus (4) et raccordée à l’instrument par plusieurs connecteurs fluidiques (5*  *- 8) et un connecteur électronique (9). En l’absence de cartouche, les connecteurs fluidiques et électroniques*  *peuvent être fixés sur le support de connecteurs amovible (10).*
 
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-1
-
-</td>
-
-<td>
-
-Instrument BactoSense
-
-</td>
-
-<td>
-
-2
-
-</td>
-
-<td>
-
-Cartouche
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3
-
-</td>
-
-<td>
-
-Poignée de la cartouche
-
-</td>
-
-<td>
-
-4
-
-</td>
-
-<td>
-
-Loquet de fixation de la cartouche
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5
-
-</td>
-
-<td>
-
-Connecteur de colorant (vert)
-
-</td>
-
-<td>
-
-6
-
-</td>
-
-<td>
-
-Connecteur de solution chlorée (rouge)
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7
-
-</td>
-
-<td>
-
-Connecteur de déchets (noir ou beige)
-
-</td>
-
-<td>
-
-8
-
-</td>
-
-<td>
-
-Connecteur de rinçage (bleu)
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-9
-
-</td>
-
-<td>
-
-Connecteur électronique
-
-</td>
-
-<td>
-
-10
-
-</td>
-
-<td>
-
-Porte-connecteurs amovible
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-11
-
-</td>
-
-<td>
-
-Porte du compartiment de la cartouche
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  |  |  |  |
+| --- | --- | --- | --- |
+| 1 | Instrument BactoSense | 2 | Cartouche |
+| 3 | Poignée de la cartouche | 4 | Loquet de fixation de la cartouche |
+| 5 | Connecteur de colorant (vert) | 6 | Connecteur de solution chlorée (rouge) |
+| 7 | Connecteur de déchets (noir ou beige) | 8 | Connecteur de rinçage (bleu) |
+| 9 | Connecteur électronique | 10 | Porte-connecteurs amovible |
+| 11 | Porte du compartiment de la cartouche |  | \< |
 
 :::caution[Protégez le connecteur inutilisé]
 
@@ -1081,185 +434,15 @@ Suivez strictement la procédure de l’assistant à l’écran. **Ne retirez et
 
 :::
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-OPÉRATION
-
-</th>
-
-<th>
-
-INFORMATIONS SUPPLÉMENTAIRES/IMAGE
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Préparez la cartouche de remplacement et laissez-la atteindre la température ambiante.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Appuyez sur le bouton Maintenance.
-
-</td>
-
-<td>
-
-Les utilisateurs basiques ignorent cette étape.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Appuyez sur le bouton Changement cartouche.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Sélectionnez Changement cartouche.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-:::warning[Suivez l’assistant de cartouche]
-
-Confirmez que vous suivrez les instructions de l’assistant à l’écran. N’ouvrez la porte du compartiment de cartouche que lorsque vous y êtes invité. Respectez les consignes générales de manipulation de la section [Instructions générales pour la manipulation des cartouches](../general-operations-and-configurations/#section-8-9-1). Portez des gants en nitrile et des lunettes de sécurité. Fermez hermétiquement les connecteurs fluidiques de l’ancienne cartouche avec les bouchons attachés avant de la retirer. À la fin, assurez-vous que la porte du compartiment est bien fermée et verrouillée.
-
-:::
-
-</td>
-
-<td>
-
-:::warning[Ignorer l’assistant de cartouche]
-
-Seuls les utilisateurs très expérimentés maîtrisant la manipulation sûre des cartouches sont autorisés à ignorer les instructions à l’écran. Pour les cartouches TCC ou ICC, assurez-vous que le cinquième connecteur inutilisé reste toujours fixé au support de connecteurs afin d’éviter toute contamination.
-
-:::
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7\.
-
-</td>
-
-<td>
-
-Manipulation de la cartouche retirée • Pour stocker la cartouche retirée, consultez les instructions de stockage de la section [Stockage de la cartouche](../storage-transport-and-disposal/#section-17-1-3). • Pour faire remplir la cartouche retirée, consultez les instructions de remplissage de la section [Retour d’une cartouche pour recharge](../storage-transport-and-disposal/#section-17-3-2).
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
+| --- | --- | --- |
+| 1\. | Préparez la cartouche de remplacement et laissez-la atteindre la température ambiante. |  |
+| 2\. | Sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. |  |
+| 3\. | Appuyez sur le bouton Maintenance. | Les utilisateurs basiques ignorent cette étape. |
+| 4\. | Appuyez sur le bouton Changement cartouche. |  |
+| 5\. | Sélectionnez Changement cartouche. |  |
+| 6\. | :::warning[Suivez l’assistant de cartouche] Confirmez que vous suivrez les instructions de l’assistant à l’écran. N’ouvrez la porte du compartiment de cartouche que lorsque vous y êtes invité. Respectez les consignes générales de manipulation de la section [Instructions générales pour la manipulation des cartouches](../general-operations-and-configurations/#section-8-9-1). Portez des gants en nitrile et des lunettes de sécurité. Fermez hermétiquement les connecteurs fluidiques de l’ancienne cartouche avec les bouchons attachés avant de la retirer. À la fin, assurez-vous que la porte du compartiment est bien fermée et verrouillée. ::: | :::warning[Ignorer l’assistant de cartouche] Seuls les utilisateurs très expérimentés maîtrisant la manipulation sûre des cartouches sont autorisés à ignorer les instructions à l’écran. Pour les cartouches TCC ou ICC, assurez-vous que le cinquième connecteur inutilisé reste toujours fixé au support de connecteurs afin d’éviter toute contamination. ::: |
+| 7\. | Manipulation de la cartouche retirée • Pour stocker la cartouche retirée, consultez les instructions de stockage de la section [Stockage de la cartouche](../storage-transport-and-disposal/#section-17-1-3). • Pour faire remplir la cartouche retirée, consultez les instructions de remplissage de la section [Retour d’une cartouche pour recharge](../storage-transport-and-disposal/#section-17-3-2). |  |
 
 ### 8.9.5 Retrait d’une cartouche {#section-8-9-5}
 
@@ -1271,167 +454,14 @@ Suivez strictement la procédure de l’assistant à l’écran. **Ne retirez et
 
 :::
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-OPÉRATION
-
-</th>
-
-<th>
-
-INFORMATIONS SUPPLÉMENTAIRES/IMAGE
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Appuyez sur le bouton Maintenance.
-
-</td>
-
-<td>
-
-Les utilisateurs basiques ignorent cette étape.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Appuyez sur le bouton Changement cartouche.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Sélectionnez Retirer la cartouche.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-:::warning[Suivez l’assistant de cartouche]
-
-Confirmez que vous suivrez les instructions de l’assistant à l’écran. N’ouvrez la porte du compartiment de cartouche que lorsque vous y êtes invité. Respectez les consignes générales de manipulation de la section [Instructions générales pour la manipulation des cartouches](../general-operations-and-configurations/#section-8-9-1). Portez des gants en nitrile et des lunettes de sécurité. Fermez hermétiquement les connecteurs fluidiques de l’ancienne cartouche avec les bouchons attachés avant de la retirer. À la fin, assurez-vous que la porte du compartiment est bien fermée et verrouillée.
-
-:::
-
-</td>
-
-<td>
-
-:::warning[Ignorer l’assistant de cartouche]
-
-Seuls les utilisateurs très expérimentés maîtrisant la manipulation sûre des cartouches sont autorisés à ignorer les instructions à l’écran.
-
-:::
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-Manipulation de la cartouche retirée • Si vous souhaitez stocker la cartouche retirée, reportez-vous aux instructions de stockage de la section [Stockage de la cartouche](../storage-transport-and-disposal/#section-17-1-3). • Si vous souhaitez recharger la cartouche retirée, reportez-vous aux instructions de recharge de la section [Retour d’une cartouche pour recharge](../storage-transport-and-disposal/#section-17-3-2).
-
-</td>
-
-<td>
-
-La barre supérieure de l’interface utilisateur indique qu’aucune cartouche n’est connectée. Dans le menu Paramètres, Maintenance est mis en évidence ; les utilisateurs Basic voient directement le bouton Changement cartouche mis en évidence. ![BactoSense — Cartouche non prête](/img/gui/icons/cartridge-not-ready-status.png "width=30 class=manual-icon")
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
+| --- | --- | --- |
+| 1\. | Sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. |  |
+| 2\. | Appuyez sur le bouton Maintenance. | Les utilisateurs basiques ignorent cette étape. |
+| 3\. | Appuyez sur le bouton Changement cartouche. |  |
+| 4\. | Sélectionnez Retirer la cartouche. |  |
+| 5\. | :::warning[Suivez l’assistant de cartouche] Confirmez que vous suivrez les instructions de l’assistant à l’écran. N’ouvrez la porte du compartiment de cartouche que lorsque vous y êtes invité. Respectez les consignes générales de manipulation de la section [Instructions générales pour la manipulation des cartouches](../general-operations-and-configurations/#section-8-9-1). Portez des gants en nitrile et des lunettes de sécurité. Fermez hermétiquement les connecteurs fluidiques de l’ancienne cartouche avec les bouchons attachés avant de la retirer. À la fin, assurez-vous que la porte du compartiment est bien fermée et verrouillée. ::: | :::warning[Ignorer l’assistant de cartouche] Seuls les utilisateurs très expérimentés maîtrisant la manipulation sûre des cartouches sont autorisés à ignorer les instructions à l’écran. ::: |
+| 6\. | Manipulation de la cartouche retirée • Si vous souhaitez stocker la cartouche retirée, reportez-vous aux instructions de stockage de la section [Stockage de la cartouche](../storage-transport-and-disposal/#section-17-1-3). • Si vous souhaitez recharger la cartouche retirée, reportez-vous aux instructions de recharge de la section [Retour d’une cartouche pour recharge](../storage-transport-and-disposal/#section-17-3-2). | La barre supérieure de l’interface utilisateur indique qu’aucune cartouche n’est connectée. Dans le menu Paramètres, Maintenance est mis en évidence ; les utilisateurs Basic voient directement le bouton Changement cartouche mis en évidence. ![BactoSense — Cartouche non prête](/img/gui/icons/cartridge-not-ready-status.png "width=30 class=manual-icon") |
 
 ### 8.9.6 Installation d’une cartouche {#section-8-9-6}
 
@@ -1443,187 +473,15 @@ Suivez strictement la procédure de l’assistant à l’écran. **Ne retirez et
 
 :::
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-OPÉRATION
-
-</th>
-
-<th>
-
-INFORMATIONS SUPPLÉMENTAIRES/IMAGE
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Préparez la nouvelle cartouche et laissez-la à température ambiante.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Appuyez sur le bouton Maintenance.
-
-</td>
-
-<td>
-
-Le bouton Maintenance est surligné en orange si aucune cartouche n’est installée. Les utilisateurs basiques ignorent cette étape.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Appuyez sur le bouton Changement cartouche.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Sélectionnez Installer une cartouche.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-:::warning[Suivez l’assistant de cartouche]
-
-Confirmez que vous suivrez les instructions de l’assistant à l’écran. N’ouvrez la porte du compartiment de cartouche que lorsque vous y êtes invité. Respectez les consignes générales de manipulation de la section [Instructions générales pour la manipulation des cartouches](../general-operations-and-configurations/#section-8-9-1). Portez des gants en nitrile et des lunettes de sécurité. À la fin, assurez-vous que la porte du compartiment est bien fermée et verrouillée.
-
-:::
-
-</td>
-
-<td>
-
-:::warning[Ignorer l’assistant de cartouche]
-
-Seuls les utilisateurs très expérimentés maîtrisant la manipulation sûre des cartouches sont autorisés à ignorer les instructions à l’écran. Pour les cartouches TCC ou ICC, assurez-vous que le cinquième connecteur inutilisé reste toujours fixé au support de connecteurs afin d’éviter toute contamination.
-
-:::
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7\.
-
-</td>
-
-<td>
-
-Une fois toutes les étapes de l’assistant à l’écran terminées, la nouvelle cartouche est correctement initialisée.
-
-</td>
-
-<td>
-
-L’état de la cartouche est indiqué par un symbole de cartouche dans la barre supérieure de l’interface utilisateur, voir [Icônes d’état de la barre supérieure](../general-operations-and-configurations/#section-8-8-2).
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
+| --- | --- | --- |
+| 1\. | Préparez la nouvelle cartouche et laissez-la à température ambiante. |  |
+| 2\. | Sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. |  |
+| 3\. | Appuyez sur le bouton Maintenance. | Le bouton Maintenance est surligné en orange si aucune cartouche n’est installée. Les utilisateurs basiques ignorent cette étape. |
+| 4\. | Appuyez sur le bouton Changement cartouche. |  |
+| 5\. | Sélectionnez Installer une cartouche. |  |
+| 6\. | :::warning[Suivez l’assistant de cartouche] Confirmez que vous suivrez les instructions de l’assistant à l’écran. N’ouvrez la porte du compartiment de cartouche que lorsque vous y êtes invité. Respectez les consignes générales de manipulation de la section [Instructions générales pour la manipulation des cartouches](../general-operations-and-configurations/#section-8-9-1). Portez des gants en nitrile et des lunettes de sécurité. À la fin, assurez-vous que la porte du compartiment est bien fermée et verrouillée. ::: | :::warning[Ignorer l’assistant de cartouche] Seuls les utilisateurs très expérimentés maîtrisant la manipulation sûre des cartouches sont autorisés à ignorer les instructions à l’écran. Pour les cartouches TCC ou ICC, assurez-vous que le cinquième connecteur inutilisé reste toujours fixé au support de connecteurs afin d’éviter toute contamination. ::: |
+| 7\. | Une fois toutes les étapes de l’assistant à l’écran terminées, la nouvelle cartouche est correctement initialisée. | L’état de la cartouche est indiqué par un symbole de cartouche dans la barre supérieure de l’interface utilisateur, voir [Icônes d’état de la barre supérieure](../general-operations-and-configurations/#section-8-8-2). |
 
 ## 8.10 Basculement entre les dispositifs d’échantillonnage {#section-8-10}
 
@@ -1719,143 +577,13 @@ Dans les autres environnements, une qualification de l’instrument à l’aide 
 
 Le mode démo peut être utilisé lors de la présentation de l’instrument ou pour apprendre à naviguer dans les menus et à utiliser les fonctions. Lorsqu’il est activé, l’instrument redémarre dans un mode spécial qui affiche des données de démonstration (les résultats de mesure du propriétaire sont masqués). Toutes les fonctions de l’instrument sont remplacées par des simulations qui ne modifient jamais le matériel ni la base de données des résultats. Cela signifie que les protocoles peuvent être démarrés sans qu’il soit nécessaire de charger un échantillon, et les utilisateurs peuvent simuler la suppression ou le re-fenêtrage des résultats sans jamais modifier les données. Si le mode démo est activé, le message ***Démo*** s’affiche en haut au centre de l’écran. Lorsque l’instrument revient en mode normal, les données du propriétaire sont à nouveau affichées et toutes les fonctions sont à nouveau actives.
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-OPÉRATION
-
-</th>
-
-<th colSpan="2">
-
-INFORMATIONS SUPPLÉMENTAIRES/IMAGE
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-En tant qu’utilisateur Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres.
-
-</td>
-
-<td colSpan="2">
-
-![BactoSense — Bouton Paramètres](/img/gui/fr/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Appuyez sur le bouton Paramètres système. Appuyez sur le bouton Mode démo.
-
-</td>
-
-<td>
-
-![BactoSense — Paramètres système](/img/gui/icons/system-settings-button.png "width=48 class=manual-icon")
-
-</td>
-
-<td>
-
-![BactoSense — Paramètres du mode démo](/img/gui/icons/demo-mode-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Cochez la case Activer mode démo.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Appuyez sur le bouton Enregistrer et quitter.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-L’instrument redémarre automatiquement.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE | \< |
+| --- | --- | --- | --- |
+| 1\. | En tant qu’utilisateur Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. | ![BactoSense — Bouton Paramètres](/img/gui/fr/home-settings-button.png "width=57 class=manual-icon-settings-button-half") | \< |
+| 2\. | Appuyez sur le bouton Paramètres système. Appuyez sur le bouton Mode démo. | ![BactoSense — Paramètres système](/img/gui/icons/system-settings-button.png "width=48 class=manual-icon") | ![BactoSense — Paramètres du mode démo](/img/gui/icons/demo-mode-button.png "width=48 class=manual-icon") |
+| 3\. | Cochez la case Activer mode démo. |  | \< |
+| 4\. | Appuyez sur le bouton Enregistrer et quitter. |  | \< |
+| 5\. | L’instrument redémarre automatiquement. |  | \< |
 
 Pour revenir au mode normal, suivez la même procédure, mais décochez la case **Activer mode démo** .
 
@@ -1865,126 +593,9 @@ La réinitialisation aux paramètres d’usine restaure la plupart des paramètr
 
 La procédure suivante décrit comment effectuer une réinitialisation aux paramètres d’usine :
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-OPÉRATION
-
-</th>
-
-<th colSpan="2">
-
-INFORMATIONS SUPPLÉMENTAIRES/IMAGE
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-En tant qu’utilisateur Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres.
-
-</td>
-
-<td colSpan="2">
-
-![BactoSense — Bouton Paramètres](/img/gui/fr/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Appuyez sur le bouton Maintenance, puis sur le bouton Réinitialisation d’usine.
-
-</td>
-
-<td>
-
-![BactoSense — Menu de maintenance](/img/gui/icons/maintenance-button.png "width=48 class=manual-icon")
-
-</td>
-
-<td>
-
-![BactoSense — Rétablir les paramètres d’usine](/img/gui/icons/factory-reset-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Utilisez les cases à cocher pour sélectionner les paramètres que vous souhaitez réinitialiser : • Paramètres de l’instrument • Mesures (y compris les erreurs et les journaux) • Les deux
-
-</td>
-
-<td colSpan="2">
-
-:::info[Informations supplémentaires]
-
-Les journaux d’entretien, les résultats de validation et l’historique des mises à jour logicielles ne sont pas supprimés.
-
-:::
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Appuyez sur Réinitialiser et redémarrer, puis confirmez avec Oui.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE | \< |
+| --- | --- | --- | --- |
+| 1\. | En tant qu’utilisateur Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. | ![BactoSense — Bouton Paramètres](/img/gui/fr/home-settings-button.png "width=57 class=manual-icon-settings-button-half") | \< |
+| 2\. | Appuyez sur le bouton Maintenance, puis sur le bouton Réinitialisation d’usine. | ![BactoSense — Menu de maintenance](/img/gui/icons/maintenance-button.png "width=48 class=manual-icon") | ![BactoSense — Rétablir les paramètres d’usine](/img/gui/icons/factory-reset-button.png "width=48 class=manual-icon") |
+| 3\. | Utilisez les cases à cocher pour sélectionner les paramètres que vous souhaitez réinitialiser : • Paramètres de l’instrument • Mesures (y compris les erreurs et les journaux) • Les deux | :::info[Informations supplémentaires] Les journaux d’entretien, les résultats de validation et l’historique des mises à jour logicielles ne sont pas supprimés. ::: | \< |
+| 4\. | Appuyez sur Réinitialiser et redémarrer, puis confirmez avec Oui. |  | \< |

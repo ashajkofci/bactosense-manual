@@ -113,72 +113,52 @@ Several password features such as expiration, length etc can be configured.
 
 *Table 8-1 User roles and permissions*
 
-<div className="manual-user-roles-scroll">
+<div className="manual-user-roles-scroll manual-user-roles-permissions">
 
-<table className="manual-user-roles-permissions">
-
-<colgroup>
-<col className="user-role-permission-column" />
-<col className="user-role-basic-column" />
-<col className="user-role-advanced-column" />
-<col className="user-role-admin-column" />
-</colgroup>
-
-<thead>
-<tr>
-<th scope="col">RIGHT</th>
-<th scope="col">BASIC</th>
-<th scope="col">ADVANCED</th>
-<th scope="col">ADMIN</th>
-</tr>
-</thead>
-
-<tbody>
-<tr><td>View last result</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>View all results and export</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Start, stop, and schedule measurement</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Switch between Online and Manual mode</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>View error and warning log</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Rename results</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Validate device</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Change their own password</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>View system info</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>See network settings</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>View last self-check</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Change cartridge</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Clear errors</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>See intervention log</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>See validation results</td><td>✓</td><td>✓</td><td>✓</td></tr>
-<tr><td>Delete results</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Re-gate results</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Adjust alarms</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Adjust gates</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Reboot</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Run a self check</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Delete old measurements</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Export all</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>See intervention info</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Export diagnostics</td><td></td><td>✓</td><td>✓</td></tr>
-<tr><td>Change analogue and digital outputs</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Test analogue and digital outputs</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Change the passwords of other users</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Create other users</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Change authentication settings</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Set device name</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Set date and time</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Change network settings</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Change services settings</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Activate Modbus with key or deactivate</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Change language</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Switch to demo mode</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Reset settings</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Full factory reset (except intervention log)</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Import settings</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Change automatic power-on settings</td><td></td><td></td><td>✓</td></tr>
-<tr><td>Activate upgrade packages with code</td><td></td><td></td><td>✓</td></tr>
-</tbody>
-
-</table>
+| RIGHT | BASIC | ADVANCED | ADMIN |
+| --- | --- | --- | --- |
+| View last result | ✓ | ✓ | ✓ |
+| View all results and export | ✓ | ✓ | ✓ |
+| Start, stop, and schedule measurement | ✓ | ✓ | ✓ |
+| Switch between Online and Manual mode | ✓ | ✓ | ✓ |
+| View error and warning log | ✓ | ✓ | ✓ |
+| Rename results | ✓ | ✓ | ✓ |
+| Validate device | ✓ | ✓ | ✓ |
+| Change their own password | ✓ | ✓ | ✓ |
+| View system info | ✓ | ✓ | ✓ |
+| See network settings | ✓ | ✓ | ✓ |
+| View last self-check | ✓ | ✓ | ✓ |
+| Change cartridge | ✓ | ✓ | ✓ |
+| Clear errors | ✓ | ✓ | ✓ |
+| See intervention log | ✓ | ✓ | ✓ |
+| See validation results | ✓ | ✓ | ✓ |
+| Delete results |  | ✓ | ✓ |
+| Re-gate results |  | ✓ | ✓ |
+| Adjust alarms |  | ✓ | ✓ |
+| Adjust gates |  | ✓ | ✓ |
+| Reboot |  | ✓ | ✓ |
+| Run a self check |  | ✓ | ✓ |
+| Delete old measurements |  | ✓ | ✓ |
+| Export all |  | ✓ | ✓ |
+| See intervention info |  | ✓ | ✓ |
+| Export diagnostics |  | ✓ | ✓ |
+| Change analogue and digital outputs |  |  | ✓ |
+| Test analogue and digital outputs |  |  | ✓ |
+| Change the passwords of other users |  |  | ✓ |
+| Create other users |  |  | ✓ |
+| Change authentication settings |  |  | ✓ |
+| Set device name |  |  | ✓ |
+| Set date and time |  |  | ✓ |
+| Change network settings |  |  | ✓ |
+| Change services settings |  |  | ✓ |
+| Activate Modbus with key or deactivate |  |  | ✓ |
+| Change language |  |  | ✓ |
+| Switch to demo mode |  |  | ✓ |
+| Reset settings |  |  | ✓ |
+| Full factory reset (except intervention log) |  |  | ✓ |
+| Import settings |  |  | ✓ |
+| Change automatic power-on settings |  |  | ✓ |
+| Activate upgrade packages with code |  |  | ✓ |
 
 </div>
 ## 8.3 Basic configurations {#section-8-3}
@@ -309,357 +289,28 @@ Ask your network administrator for the correct settings.
 
 :::
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-WORK STEP
-
-</th>
-
-<th>
-
-ADDITIONAL INFO / IMAGE
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-As an Admin user, press Settings on the Home screen to open the settings menu.
-
-</td>
-
-<td>
-
-![BactoSense — Settings button](/img/gui/en/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Press the System settings button.
-
-</td>
-
-<td>
-
-![BactoSense — System settings](/img/gui/icons/system-settings-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Press the Network button.
-
-</td>
-
-<td>
-
-![BactoSense — Network settings](/img/gui/icons/network-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-A: For Dynamic IP check the DHCP check box (1). Note: This is the preferred configuration for most cases when the BactoSense is connected to a router or switch.
-
-B: For Static IP uncheck the DHCP check box (1) and enter the desired network configuration (2). Note: This is the preferred configuration when the BactoSense is directly connected to a laptop via Ethernet. Make sure to also adjust the network configuration on the laptop accordingly.
-
-</td>
-
-<td>
-
-![BactoSense — Network configuration](/img/gui/en/network-configuration.png "width=260")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Press the Save button.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-Press the Reboot now button.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | WORK STEP | ADDITIONAL INFO / IMAGE |
+| --- | --- | --- |
+| 1\. | As an Admin user, press Settings on the Home screen to open the settings menu. | ![BactoSense — Settings button](/img/gui/en/home-settings-button.png "width=57 class=manual-icon-settings-button-half") |
+| 2\. | Press the System settings button. | ![BactoSense — System settings](/img/gui/icons/system-settings-button.png "width=48 class=manual-icon") |
+| 3\. | Press the Network button. | ![BactoSense — Network settings](/img/gui/icons/network-button.png "width=48 class=manual-icon") |
+| 4\. | A: For Dynamic IP check the DHCP check box (1). Note: This is the preferred configuration for most cases when the BactoSense is connected to a router or switch.<br /><br />B: For Static IP uncheck the DHCP check box (1) and enter the desired network configuration (2). Note: This is the preferred configuration when the BactoSense is directly connected to a laptop via Ethernet. Make sure to also adjust the network configuration on the laptop accordingly. | ![BactoSense — Network configuration](/img/gui/en/network-configuration.png "width=260") |
+| 5\. | Press the Save button. |  |
+| 6\. | Press the Reboot now button. |  |
 
 ## 8.7 Set NTP Servers {#section-8-7}
 
 Network Time Protocol (NTP) is a computer network protocol which is used to synchronise  time on computers across a network. By default, these are set to synchronise to the  Network Time Foundation servers (ntp.org). You have the possibility to set custom NTP  servers in the *Date &amp; time* menu.
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-WORK STEP
-
-</th>
-
-<th>
-
-ADDITIONAL INFO / IMAGE
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-As an Admin user, press Settings on the Home screen to open the settings menu.
-
-</td>
-
-<td>
-
-![BactoSense — Settings button](/img/gui/en/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Press the System settings button.
-
-</td>
-
-<td>
-
-![BactoSense — System settings](/img/gui/icons/system-settings-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Press the Date &amp; time button.
-
-</td>
-
-<td>
-
-![BactoSense — Date and time settings](/img/gui/icons/date-time-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Press the Time synchronization settings button.
-
-</td>
-
-<td>
-
-![BactoSense — Date and time settings](/img/gui/en/date-and-time-settings.png "width=261")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Select the desired Sync Source.
-
-</td>
-
-<td>
-
-:::info[Additional information]
-
-Time synchronisation can be done via NTP server or Modbus TCP. More information about Modbus TCP can be found in [Modbus TCP](../field-bus-interface/#section-7-1)
-
-:::
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-Update NTP servers.
-
-</td>
-
-<td>
-
-![BactoSense — Time synchronization settings](/img/gui/en/time-synchronization-settings.png "width=261")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7
-
-</td>
-
-<td>
-
-Press the OK button.
-
-</td>
-
-<td>
-
-:::info[Additional information]
-
-Press Test NTP to check whether the configured servers are reachable. Press OK to save the synchronization settings.
-
-:::
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | WORK STEP | ADDITIONAL INFO / IMAGE |
+| --- | --- | --- |
+| 1\. | As an Admin user, press Settings on the Home screen to open the settings menu. | ![BactoSense — Settings button](/img/gui/en/home-settings-button.png "width=57 class=manual-icon-settings-button-half") |
+| 2\. | Press the System settings button. | ![BactoSense — System settings](/img/gui/icons/system-settings-button.png "width=48 class=manual-icon") |
+| 3\. | Press the Date &amp; time button. | ![BactoSense — Date and time settings](/img/gui/icons/date-time-button.png "width=48 class=manual-icon") |
+| 4\. | Press the Time synchronization settings button. | ![BactoSense — Date and time settings](/img/gui/en/date-and-time-settings.png "width=261") |
+| 5\. | Select the desired Sync Source. | :::info[Additional information] Time synchronisation can be done via NTP server or Modbus TCP. More information about Modbus TCP can be found in [Modbus TCP](../field-bus-interface/#section-7-1) ::: |
+| 6\. | Update NTP servers. | ![BactoSense — Time synchronization settings](/img/gui/en/time-synchronization-settings.png "width=261") |
+| 7 | Press the OK button. | :::info[Additional information] Press Test NTP to check whether the configured servers are reachable. Press OK to save the synchronization settings. ::: |
 
 ## 8.8 The BactoSense user interface {#section-8-8}
 
@@ -681,154 +332,15 @@ The BactoSense user interface is divided into 3 main sections:
 
 The main elements of the user interface are:
 
-<div className="manual-ui-elements-scroll">
-
-<table className="manual-ui-elements">
-
-<colgroup>
-<col className="ui-element-number" />
-<col className="ui-element-description" />
-<col className="ui-element-number" />
-<col className="ui-element-description" />
-</colgroup>
-
-<tbody>
-
-<tr>
-
-<td>
-
-1
-
-</td>
-
-<td>
-
-Home or return button. To<br />navigate through the menu.
-
-</td>
-
-<td>
-
-2
-
-</td>
-
-<td>
-
-Operation mode (Manual or Online)<br />Instrument status (currently active<br />process)
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3
-
-</td>
-
-<td>
-
-Current view
-
-</td>
-
-<td>
-
-4
-
-</td>
-
-<td>
-
-Top bar status icons, see [Top bar status icons](../general-operations-and-configurations/#section-8-8-2).
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5
-
-</td>
-
-<td>
-
-User Role<br />Current time
-
-</td>
-
-<td>
-
-6
-
-</td>
-
-<td>
-
-Logout or power off
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7
-
-</td>
-
-<td>
-
-Results: display the measurement results for the selected mode.
-
-</td>
-
-<td>
-
-8
-
-</td>
-
-<td>
-
-Mode: choose Online mode for continuous measurements using the online sampling device, or Manual mode for measuring grab samples using the manual sampling device.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-9
-
-</td>
-
-<td>
-
-Measure: open the measurement wizard and choose an analysis protocol (Manual mode).
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<div className="manual-ui-elements-scroll manual-ui-elements">
+
+|  |  |  |  |
+| --- | --- | --- | --- |
+| 1 | Home or return button. To<br />navigate through the menu. | 2 | Operation mode (Manual or Online)<br />Instrument status (currently active<br />process) |
+| 3 | Current view | 4 | Top bar status icons, see [Top bar status icons](../general-operations-and-configurations/#section-8-8-2). |
+| 5 | User Role<br />Current time | 6 | Logout or power off |
+| 7 | Results: display the measurement results for the selected mode. | 8 | Mode: choose Online mode for continuous measurements using the online sampling device, or Manual mode for measuring grab samples using the manual sampling device. |
+| 9 | Measure: open the measurement wizard and choose an analysis protocol (Manual mode). |  | \< |
 
 </div>
 
@@ -897,173 +409,14 @@ After opening the cartridge compartment door, the user has access to the cartrid
 
 *Figure 8-6 Overview of an installed cartridge. The mobility of the cartridge is secured with a*  *fixation latch on top (4), and the cartridge is connected to the instrument with multiple fluidic (5*  *- 8) and one electronic connector (9). When no cartridge is inserted, the fluidic and electronic*  *connectors can be secured using the removable connector rack (10).*
 
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-1
-
-</td>
-
-<td>
-
-BactoSense instrument
-
-</td>
-
-<td>
-
-2
-
-</td>
-
-<td>
-
-Cartridge
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3
-
-</td>
-
-<td>
-
-Cartridge handle
-
-</td>
-
-<td>
-
-4
-
-</td>
-
-<td>
-
-Cartridge fixation latch
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5
-
-</td>
-
-<td>
-
-Dye connector (green)
-
-</td>
-
-<td>
-
-6
-
-</td>
-
-<td>
-
-Bleach connector (red)
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7
-
-</td>
-
-<td>
-
-Waste connector (black or beige)
-
-</td>
-
-<td>
-
-8
-
-</td>
-
-<td>
-
-Rinse connector (blue)
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-9
-
-</td>
-
-<td>
-
-Electronic connector
-
-</td>
-
-<td>
-
-10
-
-</td>
-
-<td>
-
-Removable connector rack
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-11
-
-</td>
-
-<td>
-
-Cartridge compartment door
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  |  |  |  |
+| --- | --- | --- | --- |
+| 1 | BactoSense instrument | 2 | Cartridge |
+| 3 | Cartridge handle | 4 | Cartridge fixation latch |
+| 5 | Dye connector (green) | 6 | Bleach connector (red) |
+| 7 | Waste connector (black or beige) | 8 | Rinse connector (blue) |
+| 9 | Electronic connector | 10 | Removable connector rack |
+| 11 | Cartridge compartment door |  | \< |
 
 :::caution[Protect the unused connector]
 
@@ -1081,185 +434,15 @@ Strictly follow the procedure in the on-screen wizard.  **Do not remove or insta
 
 :::
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-WORK STEP
-
-</th>
-
-<th>
-
-ADDITIONAL INFO / IMAGE
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Have the replacement cartridge ready and adjusted to ambient temperature.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-On the Home screen, press Settings to open the settings menu.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Press the Maintenance button.
-
-</td>
-
-<td>
-
-Basic users skip this step.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Press the Cartridge change button.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Select Change cartridge.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-:::warning[Follow the cartridge wizard]
-
-Confirm to follow the instructions of the on- screen wizard. Only open the cartridge compartment door when instructed.  Adhere to the general cartridge handling instruction in [General instructions for cartridge handling](../general-operations-and-configurations/#section-8-9-1).  Wear nitrile gloves and safety glasses. Tightly seal the fluidic connectors of the old cartridge with the attached  plugs before removing it. Make sure the cartridge compartment door is tightly closed  and secured at the end.
-
-:::
-
-</td>
-
-<td>
-
-:::warning[Skipping the cartridge wizard]
-
-Only very experienced users mastering safe cartridge  operations are allowed to skip the on-screen instructions. In case of TCC or ICC cartridges, make sure the  unused fifth connector is always mounted to the connector rack to prevent contamination.
-
-:::
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7\.
-
-</td>
-
-<td>
-
-Handling the removed cartridge • If you wish to store the removed cartridge, refer to the storage instructions in [Storage of the cartridge](../storage-transport-and-disposal/#section-17-1-3). • If you wish to refill the removed cartridge, refer to the refill instructions in [Returning a cartridge for refill](../storage-transport-and-disposal/#section-17-3-2).
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | WORK STEP | ADDITIONAL INFO / IMAGE |
+| --- | --- | --- |
+| 1\. | Have the replacement cartridge ready and adjusted to ambient temperature. |  |
+| 2\. | On the Home screen, press Settings to open the settings menu. |  |
+| 3\. | Press the Maintenance button. | Basic users skip this step. |
+| 4\. | Press the Cartridge change button. |  |
+| 5\. | Select Change cartridge. |  |
+| 6\. | :::warning[Follow the cartridge wizard] Confirm to follow the instructions of the on- screen wizard. Only open the cartridge compartment door when instructed.  Adhere to the general cartridge handling instruction in [General instructions for cartridge handling](../general-operations-and-configurations/#section-8-9-1).  Wear nitrile gloves and safety glasses. Tightly seal the fluidic connectors of the old cartridge with the attached  plugs before removing it. Make sure the cartridge compartment door is tightly closed  and secured at the end. ::: | :::warning[Skipping the cartridge wizard] Only very experienced users mastering safe cartridge  operations are allowed to skip the on-screen instructions. In case of TCC or ICC cartridges, make sure the  unused fifth connector is always mounted to the connector rack to prevent contamination. ::: |
+| 7\. | Handling the removed cartridge • If you wish to store the removed cartridge, refer to the storage instructions in [Storage of the cartridge](../storage-transport-and-disposal/#section-17-1-3). • If you wish to refill the removed cartridge, refer to the refill instructions in [Returning a cartridge for refill](../storage-transport-and-disposal/#section-17-3-2). |  |
 
 ### 8.9.5 Removing a cartridge {#section-8-9-5}
 
@@ -1271,167 +454,14 @@ Strictly follow the procedure in the on-screen wizard.  **Do not remove or insta
 
 :::
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-WORK STEP
-
-</th>
-
-<th>
-
-ADDITIONAL INFO / IMAGE
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-On the Home screen, press Settings to open the settings menu.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Press the Maintenance button.
-
-</td>
-
-<td>
-
-Basic users skip this step.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Press the Cartridge change button.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Select Remove cartridge.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-:::warning[Follow the cartridge wizard]
-
-Confirm to follow the instructions of the on- screen wizard. Only open the cartridge compartment door when instructed.  Adhere to the general cartridge handling instruction in [General instructions for cartridge handling](../general-operations-and-configurations/#section-8-9-1).  Wear nitrile gloves and safety glasses. Tightly seal the fluidic connectors of the old cartridge with the attached  plugs before removing it. Make sure the cartridge compartment door is tightly closed  and secured at the end.
-
-:::
-
-</td>
-
-<td>
-
-:::warning[Skipping the cartridge wizard]
-
-Only very experienced users mastering safe cartridge  operations are allowed to skip the on-screen instructions.
-
-:::
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-Handling of the removed cartridge • If you wish to store the removed cartridge, refer to the storage instructions in [Storage of the cartridge](../storage-transport-and-disposal/#section-17-1-3). • If you wish to refill the removed cartridge, refer to the refill instructions in [Returning a cartridge for refill](../storage-transport-and-disposal/#section-17-3-2).
-
-</td>
-
-<td>
-
-The top bar of the user interface indicates that no cartridge is connected. In the Settings menu, Maintenance is highlighted; Basic users see the highlighted Cartridge change button directly.<br />![BactoSense — Cartridge not ready](/img/gui/icons/cartridge-not-ready-status.png "width=30 class=manual-icon")
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | WORK STEP | ADDITIONAL INFO / IMAGE |
+| --- | --- | --- |
+| 1\. | On the Home screen, press Settings to open the settings menu. |  |
+| 2\. | Press the Maintenance button. | Basic users skip this step. |
+| 3\. | Press the Cartridge change button. |  |
+| 4\. | Select Remove cartridge. |  |
+| 5\. | :::warning[Follow the cartridge wizard] Confirm to follow the instructions of the on- screen wizard. Only open the cartridge compartment door when instructed.  Adhere to the general cartridge handling instruction in [General instructions for cartridge handling](../general-operations-and-configurations/#section-8-9-1).  Wear nitrile gloves and safety glasses. Tightly seal the fluidic connectors of the old cartridge with the attached  plugs before removing it. Make sure the cartridge compartment door is tightly closed  and secured at the end. ::: | :::warning[Skipping the cartridge wizard] Only very experienced users mastering safe cartridge  operations are allowed to skip the on-screen instructions. ::: |
+| 6\. | Handling of the removed cartridge • If you wish to store the removed cartridge, refer to the storage instructions in [Storage of the cartridge](../storage-transport-and-disposal/#section-17-1-3). • If you wish to refill the removed cartridge, refer to the refill instructions in [Returning a cartridge for refill](../storage-transport-and-disposal/#section-17-3-2). | The top bar of the user interface indicates that no cartridge is connected. In the Settings menu, Maintenance is highlighted; Basic users see the highlighted Cartridge change button directly.<br />![BactoSense — Cartridge not ready](/img/gui/icons/cartridge-not-ready-status.png "width=30 class=manual-icon") |
 
 ### 8.9.6 Installing a cartridge {#section-8-9-6}
 
@@ -1443,187 +473,15 @@ Strictly follow the procedure of the on-screen wizard.  **Do not remove or insta
 
 :::
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-WORK STEP
-
-</th>
-
-<th>
-
-ADDITIONAL INFO / IMAGE
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Have the new cartridge ready and adjusted to ambient temperature.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-On the Home screen, press Settings to open the settings menu.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Press the Maintenance button.
-
-</td>
-
-<td>
-
-The Maintenance button is highlighted in orange in case no cartridge is installed. Basic users skip this step.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Press the Cartridge change button.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-Select Install cartridge.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-6\.
-
-</td>
-
-<td>
-
-:::warning[Follow the cartridge wizard]
-
-Confirm to follow the instructions of the on- screen wizard. Only open the cartridge compartment door when instructed.  Adhere to the general cartridge handling instruction in [General instructions for cartridge handling](../general-operations-and-configurations/#section-8-9-1).  Wear nitrile gloves and safety glasses. Make sure the cartridge compartment door is tightly closed  and secured at the end.
-
-:::
-
-</td>
-
-<td>
-
-:::warning[Skipping the cartridge wizard]
-
-Only very experienced users mastering safe cartridge  operations are allowed to skip the on-screen instructions. In case of TCC or ICC cartridges, make sure the  unused fifth connector is always mounted to the connector rack to prevent contamination.
-
-:::
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-7\.
-
-</td>
-
-<td>
-
-After following through all steps of the on- screen wizard, the new cartridge is properly initialized.
-
-</td>
-
-<td>
-
-The cartridge status is indicated with a cartridge symbol in the top bar of the user interface, see [Top bar status icons](../general-operations-and-configurations/#section-8-8-2).
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | WORK STEP | ADDITIONAL INFO / IMAGE |
+| --- | --- | --- |
+| 1\. | Have the new cartridge ready and adjusted to ambient temperature. |  |
+| 2\. | On the Home screen, press Settings to open the settings menu. |  |
+| 3\. | Press the Maintenance button. | The Maintenance button is highlighted in orange in case no cartridge is installed. Basic users skip this step. |
+| 4\. | Press the Cartridge change button. |  |
+| 5\. | Select Install cartridge. |  |
+| 6\. | :::warning[Follow the cartridge wizard] Confirm to follow the instructions of the on- screen wizard. Only open the cartridge compartment door when instructed.  Adhere to the general cartridge handling instruction in [General instructions for cartridge handling](../general-operations-and-configurations/#section-8-9-1).  Wear nitrile gloves and safety glasses. Make sure the cartridge compartment door is tightly closed  and secured at the end. ::: | :::warning[Skipping the cartridge wizard] Only very experienced users mastering safe cartridge  operations are allowed to skip the on-screen instructions. In case of TCC or ICC cartridges, make sure the  unused fifth connector is always mounted to the connector rack to prevent contamination. ::: |
+| 7\. | After following through all steps of the on- screen wizard, the new cartridge is properly initialized. | The cartridge status is indicated with a cartridge symbol in the top bar of the user interface, see [Top bar status icons](../general-operations-and-configurations/#section-8-8-2). |
 
 ## 8.10 Switching between sampling devices {#section-8-10}
 
@@ -1719,143 +577,13 @@ For other environments, an instrument qualification using the *Validation kit* i
 
 Demo mode can be used when demonstrating the device or when learning how to navigate  the menus and use the functions. When it is activated, the instrument reboots into a special  mode that displays demonstration data (the owner’s measurement results are hidden). All  the instrument’s functions are replaced by simulations that never move the hardware or  modify the results database. This means protocols can be started without needing to load a  sample, and users can pretend to delete or re-gate results without ever changing the data. If  the demo mode is activated, the message ***Demo*** is displayed in the upper middle of  the screen.  When the instrument is reverted to normal mode, the owner’s data is shown again, and all  functions are active again.
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-WORK STEP
-
-</th>
-
-<th colSpan="2">
-
-ADDITIONAL INFO / IMAGE
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-As an Admin user, press Settings on the Home screen to open the settings menu.
-
-</td>
-
-<td colSpan="2">
-
-![BactoSense — Settings button](/img/gui/en/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Press the System settings button. Press the Demo mode button.
-
-</td>
-
-<td>
-
-![BactoSense — System settings](/img/gui/icons/system-settings-button.png "width=48 class=manual-icon")
-
-</td>
-
-<td>
-
-![BactoSense — Demo mode settings](/img/gui/icons/demo-mode-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Select the Activate demo mode checkbox.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Press the Save and restart button.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-5\.
-
-</td>
-
-<td>
-
-The device reboots automatically.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | WORK STEP | ADDITIONAL INFO / IMAGE | \< |
+| --- | --- | --- | --- |
+| 1\. | As an Admin user, press Settings on the Home screen to open the settings menu. | ![BactoSense — Settings button](/img/gui/en/home-settings-button.png "width=57 class=manual-icon-settings-button-half") | \< |
+| 2\. | Press the System settings button. Press the Demo mode button. | ![BactoSense — System settings](/img/gui/icons/system-settings-button.png "width=48 class=manual-icon") | ![BactoSense — Demo mode settings](/img/gui/icons/demo-mode-button.png "width=48 class=manual-icon") |
+| 3\. | Select the Activate demo mode checkbox. |  | \< |
+| 4\. | Press the Save and restart button. |  | \< |
+| 5\. | The device reboots automatically. |  | \< |
 
 To return into normal mode, follow the same procedure, but uncheck the **Activate demo mode** box.
 
@@ -1865,126 +593,9 @@ Factory reset reverts most of the instrument settings to the factory values: Gat
 
 The following procedure describes how to perform a factory reset:
 
-<table>
-
-<tbody>
-
-<tr>
-
-<th>
-
-</th>
-
-<th>
-
-WORK STEP
-
-</th>
-
-<th colSpan="2">
-
-ADDITIONAL INFO / IMAGE
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-As an Admin user, press Settings on the Home screen to open the settings menu.
-
-</td>
-
-<td colSpan="2">
-
-![BactoSense — Settings button](/img/gui/en/home-settings-button.png "width=57 class=manual-icon-settings-button-half")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Press the Maintenance button, then the Factory reset button.
-
-</td>
-
-<td>
-
-![BactoSense — Maintenance menu](/img/gui/icons/maintenance-button.png "width=48 class=manual-icon")
-
-</td>
-
-<td>
-
-![BactoSense — Restore factory settings](/img/gui/icons/factory-reset-button.png "width=48 class=manual-icon")
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Use the check boxes to select which parameters you wish to reset: • Instrument settings • Measurements incl. errors and logs • both
-
-</td>
-
-<td colSpan="2">
-
-:::info[Additional information]
-
-Service logs, validation results and the software update his- tory are not deleted.
-
-:::
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-Press Reset the device and reboot, then confirm with Yes.
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | WORK STEP | ADDITIONAL INFO / IMAGE | \< |
+| --- | --- | --- | --- |
+| 1\. | As an Admin user, press Settings on the Home screen to open the settings menu. | ![BactoSense — Settings button](/img/gui/en/home-settings-button.png "width=57 class=manual-icon-settings-button-half") | \< |
+| 2\. | Press the Maintenance button, then the Factory reset button. | ![BactoSense — Maintenance menu](/img/gui/icons/maintenance-button.png "width=48 class=manual-icon") | ![BactoSense — Restore factory settings](/img/gui/icons/factory-reset-button.png "width=48 class=manual-icon") |
+| 3\. | Use the check boxes to select which parameters you wish to reset: • Instrument settings • Measurements incl. errors and logs • both | :::info[Additional information] Service logs, validation results and the software update his- tory are not deleted. ::: | \< |
+| 4\. | Press Reset the device and reboot, then confirm with Yes. |  | \< |

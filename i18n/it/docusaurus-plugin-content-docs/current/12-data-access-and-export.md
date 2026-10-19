@@ -63,8 +63,6 @@ I server HTTP e HTTPS sono abilitati per impostazione predefinita e accessibili 
 
 <th scope="col">
 
-
-
 </th>
 
 <th scope="col">
@@ -123,8 +121,6 @@ Come utente Admin, nella schermata Home premere Impostazioni per aprire il menu 
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -144,8 +140,6 @@ Premere il pulsante Impostazioni di sistema.
 </td>
 
 <td>
-
-
 
 </td>
 
@@ -167,8 +161,6 @@ Premere il pulsante Servizi di sistema.
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -188,8 +180,6 @@ Per HTTP: assicurarsi che sia selezionata la casella Abilita l'accesso web HTTP.
 </td>
 
 <td>
-
-
 
 </td>
 

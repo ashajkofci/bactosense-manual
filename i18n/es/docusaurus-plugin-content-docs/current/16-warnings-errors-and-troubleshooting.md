@@ -121,141 +121,14 @@ En la pantalla Home, pulse Ajustes y después Registros. Seleccione Registro de 
 
 *Figura 16-1: Registros de errores*
 
-<table className="manual-table">
-
-<tbody>
-
-<tr>
-
-<td rowSpan="4">
-
-①
-
-</td>
-
-<td rowSpan="4">
-
-Fecha y hora del evento
-
-</td>
-
-<td rowSpan="4">
-
-②
-
-</td>
-
-<td colSpan="2">
-
-Tipo de evento
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-![BactoSense — Entrada del registro: error crítico](/img/gui/icons/critical-error-event.png "width=32 class=manual-icon")
-
-</td>
-
-<td>
-
-Error crítico
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-![BactoSense — Entrada del registro: error no crítico](/img/gui/icons/noncritical-error-event.png "width=32 class=manual-icon")
-
-</td>
-
-<td>
-
-Error no crítico
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-![BactoSense — Entrada del registro: errores borrados](/img/gui/icons/errors-cleared-event.png "width=32 class=manual-icon")
-
-</td>
-
-<td>
-
-Errores borrados
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-③
-
-</td>
-
-<td>
-
-Descripción breve del error o evento
-
-</td>
-
-<td>
-
-④
-
-</td>
-
-<td colSpan="2">
-
-Botón para eliminar errores manualmente (disponible para usuarios Basic, Advanced y Admin cuando el instrumento está inactivo)
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-⑤
-
-</td>
-
-<td>
-
-Intervalo de fechas de los eventos mostrados. Pulse para cambiarlo.
-
-</td>
-
-<td>
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  |  |  |  |  |
+| --- | --- | --- | --- | --- |
+| ① | Fecha y hora del evento | ② | Tipo de evento | \< |
+| ^ | ^ | ^ | ![BactoSense — Entrada del registro: error crítico](/img/gui/icons/critical-error-event.png "width=32 class=manual-icon") | Error crítico |
+| ^ | ^ | ^ | ![BactoSense — Entrada del registro: error no crítico](/img/gui/icons/noncritical-error-event.png "width=32 class=manual-icon") | Error no crítico |
+| ^ | ^ | ^ | ![BactoSense — Entrada del registro: errores borrados](/img/gui/icons/errors-cleared-event.png "width=32 class=manual-icon") | Errores borrados |
+| ③ | Descripción breve del error o evento | ④ | Botón para eliminar errores manualmente (disponible para usuarios Basic, Advanced y Admin cuando el instrumento está inactivo) | \< |
+| ⑤ | Intervalo de fechas de los eventos mostrados. Pulse para cambiarlo. |  |  | \< |
 
 :::info[Consulte los detalles del evento]
 
@@ -278,119 +151,12 @@ Los errores críticos deben borrarse manualmente. Asegúrese de resolver primero
 
 La herramienta de autocomprobación automática verifica que cada componente de BactoSense funcione correctamente e identifica los que no funcionan. Puede utilizarse para detectar problemas del instrumento.
 
-<table className="manual-table">
-
-<tbody>
-
-<tr>
-
-<th scope="col">
-
-</th>
-
-<th scope="col">
-
-PASO DE TRABAJO
-
-</th>
-
-<th scope="col">
-
-INFORMACIÓN ADICIONAL / IMAGEN
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-Como usuario Advanced o Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Pulse el botón Mantenimiento.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Pulse el botón Autocomprobación.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-:::info[Información adicional]
-
-Pulse el botón Volver a ejecutar. Una vez finalizada, el instrumento muestra una lista de todas las pruebas con un indicador PASS verde o FAIL rojo. Algunas pruebas pueden omitirse: si el sistema no puede comunicarse con el cartucho, se omiten todas las pruebas que requieren dicha comunicación.
-
-:::
-
-</td>
-
-<td>
-
-![BactoSense — Resultados del autodiagnóstico](/img/gui/es/self-check-results.png "width=245 class=manual-figure")
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN |
+| --- | --- | --- |
+| 1\. | Como usuario Advanced o Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes. |  |
+| 2\. | Pulse el botón Mantenimiento. |  |
+| 3\. | Pulse el botón Autocomprobación. |  |
+| 4\. | :::info[Información adicional] Pulse el botón Volver a ejecutar. Una vez finalizada, el instrumento muestra una lista de todas las pruebas con un indicador PASS verde o FAIL rojo. Algunas pruebas pueden omitirse: si el sistema no puede comunicarse con el cartucho, se omiten todas las pruebas que requieren dicha comunicación. ::: | ![BactoSense — Resultados del autodiagnóstico](/img/gui/es/self-check-results.png "width=245 class=manual-figure") |
 
 ## 16.7 Funcionamiento a baja temperatura {#section-16-7}
 

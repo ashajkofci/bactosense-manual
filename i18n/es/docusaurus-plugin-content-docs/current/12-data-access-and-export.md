@@ -63,8 +63,6 @@ Los servidores HTTP y HTTPS están activados por defecto y pueden utilizarse med
 
 <th scope="col">
 
-
-
 </th>
 
 <th scope="col">
@@ -123,8 +121,6 @@ Como usuario Admin, pulse Ajustes en la pantalla Home para abrir el menú de aju
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -144,8 +140,6 @@ Pulse el botón Ajustes del sistema.
 </td>
 
 <td>
-
-
 
 </td>
 
@@ -167,8 +161,6 @@ Pulse el botón Servicios del sistema.
 
 <td>
 
-
-
 </td>
 
 </tr>
@@ -188,8 +180,6 @@ Para HTTP: asegúrese de que esté marcada la casilla Habilitar el acceso web HT
 </td>
 
 <td>
-
-
 
 </td>
 

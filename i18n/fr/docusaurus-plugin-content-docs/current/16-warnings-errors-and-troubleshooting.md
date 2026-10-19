@@ -121,141 +121,14 @@ Sur l’écran d’accueil, appuyez sur Paramètres, puis sur Journaux. Sélecti
 
 *Figure 16-1 : Journaux d’erreurs*
 
-<table className="manual-table">
-
-<tbody>
-
-<tr>
-
-<td rowSpan="4">
-
-①
-
-</td>
-
-<td rowSpan="4">
-
-Date et heure de l’événement
-
-</td>
-
-<td rowSpan="4">
-
-②
-
-</td>
-
-<td colSpan="2">
-
-Type d’événement
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-![BactoSense — Entrée du journal : erreur critique](/img/gui/icons/critical-error-event.png "width=32 class=manual-icon")
-
-</td>
-
-<td>
-
-Erreur critique
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-![BactoSense — Entrée du journal : erreur non critique](/img/gui/icons/noncritical-error-event.png "width=32 class=manual-icon")
-
-</td>
-
-<td>
-
-Erreur non critique
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-![BactoSense — Entrée du journal : erreurs acquittées](/img/gui/icons/errors-cleared-event.png "width=32 class=manual-icon")
-
-</td>
-
-<td>
-
-Erreurs acquittées
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-③
-
-</td>
-
-<td>
-
-Brève description de l’erreur ou de l’événement
-
-</td>
-
-<td>
-
-④
-
-</td>
-
-<td colSpan="2">
-
-Bouton pour quittancer les erreurs manuellement (accessible aux utilisateurs Basic, Advanced et Admin lorsque l’instrument est au repos)
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-⑤
-
-</td>
-
-<td>
-
-Plage de dates des événements affichés. Cliquez pour modifier la plage.
-
-</td>
-
-<td>
-
-</td>
-
-<td colSpan="2">
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  |  |  |  |  |
+| --- | --- | --- | --- | --- |
+| ① | Date et heure de l’événement | ② | Type d’événement | \< |
+| ^ | ^ | ^ | ![BactoSense — Entrée du journal : erreur critique](/img/gui/icons/critical-error-event.png "width=32 class=manual-icon") | Erreur critique |
+| ^ | ^ | ^ | ![BactoSense — Entrée du journal : erreur non critique](/img/gui/icons/noncritical-error-event.png "width=32 class=manual-icon") | Erreur non critique |
+| ^ | ^ | ^ | ![BactoSense — Entrée du journal : erreurs acquittées](/img/gui/icons/errors-cleared-event.png "width=32 class=manual-icon") | Erreurs acquittées |
+| ③ | Brève description de l’erreur ou de l’événement | ④ | Bouton pour quittancer les erreurs manuellement (accessible aux utilisateurs Basic, Advanced et Admin lorsque l’instrument est au repos) | \< |
+| ⑤ | Plage de dates des événements affichés. Cliquez pour modifier la plage. |  |  | \< |
 
 :::info[Consultez les détails des événements]
 
@@ -278,119 +151,12 @@ Les erreurs critiques doivent être acquittées manuellement. Avant de procéder
 
 L’outil d’autovérification automatique permet de vérifier le fonctionnement correct de chaque composant du BactoSense et d’identifier ceux qui ne fonctionnent pas. Il peut être utilisé pour identifier les problèmes de l’instrument.
 
-<table className="manual-table">
-
-<tbody>
-
-<tr>
-
-<th scope="col">
-
-</th>
-
-<th scope="col">
-
-OPÉRATION
-
-</th>
-
-<th scope="col">
-
-INFORMATIONS SUPPLÉMENTAIRES/IMAGE
-
-</th>
-
-</tr>
-
-<tr>
-
-<td>
-
-1\.
-
-</td>
-
-<td>
-
-En tant qu’utilisateur Advanced ou Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-2\.
-
-</td>
-
-<td>
-
-Appuyez sur le bouton Maintenance.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-3\.
-
-</td>
-
-<td>
-
-Appuyez sur le bouton Autocontrôle.
-
-</td>
-
-<td>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-4\.
-
-</td>
-
-<td>
-
-:::info[Informations supplémentaires]
-
-Appuyez sur le bouton Relancer. À la fin, l’instrument affiche la liste des tests avec un indicateur PASS vert ou FAIL rouge. Certains tests peuvent être ignorés : si le système ne peut pas communiquer avec la cartouche, tous les tests qui nécessitent cette communication sont ignorés.
-
-:::
-
-</td>
-
-<td>
-
-![BactoSense — Résultats de l’auto-test](/img/gui/fr/self-check-results.png "width=245 class=manual-figure")
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+|  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
+| --- | --- | --- |
+| 1\. | En tant qu’utilisateur Advanced ou Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. |  |
+| 2\. | Appuyez sur le bouton Maintenance. |  |
+| 3\. | Appuyez sur le bouton Autocontrôle. |  |
+| 4\. | :::info[Informations supplémentaires] Appuyez sur le bouton Relancer. À la fin, l’instrument affiche la liste des tests avec un indicateur PASS vert ou FAIL rouge. Certains tests peuvent être ignorés : si le système ne peut pas communiquer avec la cartouche, tous les tests qui nécessitent cette communication sont ignorés. ::: | ![BactoSense — Résultats de l’auto-test](/img/gui/fr/self-check-results.png "width=245 class=manual-figure") |
 
 ## 16.7 Fonctionnement à basse température {#section-16-7}
 
