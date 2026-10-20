@@ -75,7 +75,7 @@ Los errores críticos interrumpen los procesos del instrumento y requieren inter
 
 | ERRORES CRÍTICOS | IMAGEN |
 | --- | --- |
-| Si se produce un error crítico durante el funcionamiento, tiene los siguientes efectos:<br/>• El protocolo se detiene inmediatamente.<br/>• El instrumento entra en estado de error crítico y se necesita una intervención manual antes de iniciar cualquier protocolo nuevo.<br/>• Un operador debe resolver la causa del error. Después, los errores pueden borrarse manualmente desde Error log, como se describe en las secciones [Registros de errores y advertencias](16-warnings-errors-and-troubleshooting.md#section-16-4) y [Borrado de errores](16-warnings-errors-and-troubleshooting.md#section-16-5). | ![BactoSense — Error crítico: cartucho ausente](/img/gui/es/critical-error-missing-cartridge.png "width=253 class=manual-figure") |
+| Si se produce un error crítico durante el funcionamiento, tiene los siguientes efectos:<br/>• El protocolo se detiene inmediatamente.<br/>• El instrumento entra en estado de error crítico y se necesita una intervención manual antes de iniciar cualquier protocolo nuevo.<br/>• Un operador debe resolver la causa del error. Después, los errores pueden borrarse manualmente desde Error log, como se describe en las secciones [Registro de errores](16-warnings-errors-and-troubleshooting.md#section-16-4-1) y [Borrado de errores](16-warnings-errors-and-troubleshooting.md#section-16-5). | ![BactoSense — Error crítico: cartucho ausente](/img/gui/es/critical-error-missing-cartridge.png "width=253 class=manual-figure") |
 
 Pueden aparecer los siguientes mensajes de error crítico:
 
@@ -113,28 +113,90 @@ Pueden aparecer los siguientes mensajes de error crítico:
 | E53 | No es posible comunicarse con el motor | La comunicación con el controlador del motor del mezclador es defectuosa. | • Póngase en contacto con el servicio de atención al cliente. |
 | E54 | Error del sensor de temperatura del láser | No se puede obtener la temperatura del láser. | • Póngase en contacto con el servicio de atención al cliente. |
 
-## 16.4 Registros de errores y advertencias {#section-16-4}
+## 16.4 Registros {#section-16-4}
 
-En la pantalla Home, pulse Ajustes y después Registros. Seleccione Registro de errores o Registro de advertencias para abrir el registro correspondiente.
+El instrumento registra los errores, las advertencias, las alarmas y la actividad de los usuarios en registros. En la pantalla Home, pulse **Ajustes** y después **Registros**. El menú **Registros** contiene las entradas siguientes:
+
+| ENTRADA | CONTENIDO | DISPONIBLE PARA |
+| --- | --- | --- |
+| **Registro de errores** | Errores críticos y no críticos, y los eventos que los borraron. Véase [Registro de errores](16-warnings-errors-and-troubleshooting.md#section-16-4-1). | Usuarios Basic, Advanced y Admin |
+| **Registro de advertencias** | Advertencias emitidas durante las mediciones. Véase [Registro de advertencias](16-warnings-errors-and-troubleshooting.md#section-16-4-2). | Usuarios Basic, Advanced y Admin |
+| **Registro de alarmas** | Alarmas activadas por los resultados de medición, incluidas las alarmas de BactoCloud. Véase [Registro de alarmas](16-warnings-errors-and-troubleshooting.md#section-16-4-3). | Usuarios Basic, Advanced y Admin |
+| **Registro de acceso** | Intentos de inicio de sesión fallidos. Véase [Registro de acceso y auditoría](16-warnings-errors-and-troubleshooting.md#section-16-4-4). | Usuarios Admin, con el Paquete Management |
+| **Auditoria de registro** | Operaciones y cambios de configuración realizados por los usuarios y por el instrumento. Véase [Registro de acceso y auditoría](16-warnings-errors-and-troubleshooting.md#section-16-4-4). | Usuarios Admin, con el Paquete Management |
+| **Results (manual mode)**, **Results (online mode)**, **Resultados de la validación** | Resultados de medición de cada modo. Véase [Filtrado de mediciones](10-measurements.md#section-10-7) y [Resultados y análisis de datos](11-results-and-data-analysis.md). | Usuarios Basic, Advanced y Admin |
+
+Las entradas más recientes aparecen primero. El **Registro de errores**, el **Registro de advertencias**, el **Registro de alarmas** y la **Auditoria de registro** muestran el **Lapso de tiempo mostrado:** en la barra de acciones. De forma predeterminada abarca desde la entrada más antigua hasta la más reciente; la **Auditoria de registro** muestra los últimos siete días. Pulse el lapso de tiempo para mostrar otro periodo (véase [Cambiar el lapso de tiempo mostrado](16-warnings-errors-and-troubleshooting.md#section-16-4-5)).
+
+### 16.4.1 Registro de errores {#section-16-4-1}
 
 ![BactoSense — Registro de errores](/img/gui/es/error-log.png "width=558 class=manual-figure")
 
-*Figura 16-1: Registros de errores*
+*Figura 16-1: Registro de errores*
 
 |  |  |  |  |  |
 | --- | --- | --- | --- | --- |
-| ① | Fecha y hora del evento | ② | Tipo de evento | \< |
+| ① | Fecha y hora del evento | ② | Tipo de evento. Solo la entrada más reciente muestra su símbolo en color; las entradas anteriores lo muestran en gris. | \< |
 | ^ | ^ | ^ | ![BactoSense — Entrada del registro: error crítico](/img/gui/icons/critical-error-event.png "width=32 class=manual-icon") | Error crítico |
 | ^ | ^ | ^ | ![BactoSense — Entrada del registro: error no crítico](/img/gui/icons/noncritical-error-event.png "width=32 class=manual-icon") | Error no crítico |
 | ^ | ^ | ^ | ![BactoSense — Entrada del registro: errores borrados](/img/gui/icons/errors-cleared-event.png "width=32 class=manual-icon") | Errores borrados |
-| ③ | Descripción breve del error o evento | ④ | Botón para eliminar errores manualmente (disponible para usuarios Basic, Advanced y Admin cuando el instrumento está inactivo) | \< |
-| ⑤ | Intervalo de fechas de los eventos mostrados. Pulse para cambiarlo. |  |  | \< |
+| ③ | Código y descripción breve del error o evento. El número entre paréntesis indica cuántas veces se ha producido el error desde el último borrado de errores. | ④ | Botón **Eliminar errores** (disponible para usuarios Basic, Advanced y Admin cuando el instrumento está inactivo). Véase [Borrado de errores](16-warnings-errors-and-troubleshooting.md#section-16-5). | \< |
+| ⑤ | Lapso de tiempo mostrado. Púlselo para cambiar el periodo. |  |  | \< |
+
+El color de la fila indica el tipo de cada entrada: rojo para los errores críticos, amarillo para los errores no críticos y azul para los eventos de borrado de errores. Los códigos de error empiezan por E y se enumeran en [Errores no críticos](16-warnings-errors-and-troubleshooting.md#section-16-2) y [Errores críticos](16-warnings-errors-and-troubleshooting.md#section-16-3). Dos eventos registran el borrado de errores:
+
+- **C01 – Los errores se eliminan automáticamente**: tras un error no crítico, el instrumento completó correctamente un protocolo y considera resueltos los errores anteriores.
+- **C02 – Errores eliminados manualmente**: un usuario pulsó **Eliminar errores** (véase [Borrado de errores](16-warnings-errors-and-troubleshooting.md#section-16-5)).
+
+Si no se registró ningún error en el lapso de tiempo mostrado, aparece **No errors in this date range**.
 
 :::info[Consulte los detalles del evento]
 
-Al seleccionar cualquier evento de la lista, se abre una página con más información sobre la causa del error y los pasos recomendados para resolverlo.
+Seleccione una entrada para abrir una página con más información sobre la causa del error y los pasos recomendados para resolverlo. Pulse **Cerrar** para volver al registro.
 
 :::
+
+### 16.4.2 Registro de advertencias {#section-16-4-2}
+
+El **Registro de advertencias** enumera las advertencias emitidas durante las mediciones. Cada fila muestra:
+
+- **Fecha**: fecha y hora de la advertencia.
+- **Descripción**: código y nombre de la advertencia. Los códigos se enumeran en [Advertencias](16-warnings-errors-and-troubleshooting.md#section-16-1).
+- **Contexto**: dónde se produjo la advertencia: **Manual** (modo manual), **Auto** (modo en línea), **Mantenimiento** o **Validación**.
+
+Seleccione una advertencia para ver su descripción. Pulse **Cerrar** para volver al registro. Si no se registró ninguna advertencia en el lapso de tiempo mostrado, aparece **No warnings in this date range**.
+
+### 16.4.3 Registro de alarmas {#section-16-4-3}
+
+El **Registro de alarmas** enumera las alarmas activadas por los resultados de medición. Incluye las alarmas propias del instrumento (véase [Configuración de alarmas](08-general-operations-and-configurations.md#section-8-5)) y, cuando el instrumento está conectado a BactoCloud, las alarmas generadas por las reglas de alarma de BactoCloud (véase [BactoCloud](14-bactocloud.md)). Cada fila muestra:
+
+- **Fecha**: fecha y hora de la medición que activó la alarma.
+- **Nombre**: una campana y el nombre de la alarma. La campana es roja para las alarmas del instrumento. En las alarmas de BactoCloud, su color indica la gravedad: rojo para Crítico, naranja para Advertencia y azul para Información.
+- **Alarma**: la fuente, la condición y el umbral de la alarma, por ejemplo *Cartridge Remaining < 10 %*.
+
+Las alarmas de BactoCloud muestran además un símbolo de nube al final de la fila. Para reconocer una alarma de BactoCloud después de revisarla, pulse el botón de marca de verificación junto al símbolo de nube; las alarmas reconocidas muestran en su lugar una marca de verificación. **Acknowledge all** reconoce todas las alarmas de BactoCloud no reconocidas de la lista y solo está disponible mientras quede al menos una. El reconocimiento se registra en BactoCloud: documenta la revisión, pero no resuelve la causa de la alarma.
+
+Seleccione una alarma para abrir el resultado de medición que la activó.
+
+### 16.4.4 Registro de acceso y auditoría {#section-16-4-4}
+
+El **Registro de acceso** y la **Auditoria de registro** forman parte del Paquete Management (véase [Paquete Management](09-upgrade-packages.md#section-9-2)) y están disponibles para los usuarios Admin. Sin el paquete, al pulsar cualquiera de los dos botones se muestra información sobre el Paquete Management.
+
+**Registro de acceso** abre la lista **Intentos de inicio de sesión fallidos** de los últimos 30 días. Cada fila muestra la **Fecha**, el **ID de usuario**, el **Rol** del usuario y el número de intentos de inicio de sesión fallidos de ese usuario en ese día. Si no hay ninguno, aparece **Ningún intento fallido de inicio de sesión**.
+
+**Auditoria de registro** enumera las operaciones relevantes y los cambios de configuración realizados por los usuarios o por el instrumento. Cada entrada muestra la **Fecha**, el **Usuario** y el **Evento** y, cuando procede, el **Parámetro** modificado con su **Valor antiguo** y su **Nuevo valor**. La auditoría también se incluye al exportar todos los datos a una memoria USB y puede consultarse en la interfaz web de usuario.
+
+### 16.4.5 Cambiar el lapso de tiempo mostrado {#section-16-4-5}
+
+El procedimiento siguiente se aplica al **Registro de errores**, al **Registro de advertencias**, al **Registro de alarmas** y a la **Auditoria de registro**.
+
+|  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN |
+| --- | --- | --- |
+| 1. | Abra el registro y pulse el botón del lapso de tiempo junto a **Lapso de tiempo mostrado:**. | Se abre la pantalla **Definir el lapso de tiempo**. |
+| 2. | Toque el campo bajo **Fecha de inicio** y seleccione el primer día en el calendario. Toque el campo de hora situado debajo y ajuste la hora y los minutos. Ajuste **Fecha final** y su hora del mismo modo. | El final no puede ser anterior al inicio. |
+| 3. | Pulse **OK**. | El registro solo muestra las entradas del periodo seleccionado. |
+
+Para restablecer el lapso de tiempo predeterminado, pulse **Restablecer** en la pantalla **Definir el lapso de tiempo** y después **OK**.
 
 ## 16.5 Borrado de errores {#section-16-5}
 
@@ -142,10 +204,10 @@ Los errores críticos deben borrarse manualmente. Asegúrese de resolver primero
 
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN |
 | --- | --- | --- |
-| 1. | En la pantalla Home, pulse Ajustes para abrir el menú de ajustes. |  |
-| 2. | Pulse Registros y después Registro de errores. |  |
-| 3. | Asegúrese de haber resuelto el problema que provoca los errores mostrados. Pulse Eliminar errores. | ![BactoSense — Borrar errores](/img/gui/es/error-log-clear-errors.png "width=245 class=manual-figure") |
-| 4. | Los errores borrados aparecen con símbolos grises y se añade al registro un evento “Errors cleared”. El instrumento está listo para volver a analizar. |  |
+| 1. | En la pantalla Home, pulse **Ajustes** para abrir el menú de ajustes. |  |
+| 2. | Pulse **Registros** y después **Registro de errores**. |  |
+| 3. | Asegúrese de haber resuelto el problema que provoca los errores mostrados. Pulse **Eliminar errores**. | El botón está disponible para usuarios Basic, Advanced y Admin mientras no se esté ejecutando ningún protocolo.<br />![BactoSense — Borrar errores](/img/gui/es/error-log-clear-errors.png "width=245 class=manual-figure") |
+| 4. | En la parte superior del registro se añade un evento **C02 – Errores eliminados manualmente** y los símbolos de los errores anteriores se vuelven grises. El instrumento está listo para volver a analizar. |  |
 
 ## 16.6 Autocomprobación automática {#section-16-6}
 

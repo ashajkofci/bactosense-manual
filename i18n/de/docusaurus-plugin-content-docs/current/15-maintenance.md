@@ -64,8 +64,8 @@ Die folgenden Schritte beschreiben, wie Sie Details zu den letzten Interventione
 | --- | --- | --- |
 | 1. | Drücken Sie als Advanced- oder Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. | ![BactoSense — Schaltfläche Einstellungen](/img/gui/de/home-settings-button.png "width=57 class=manual-icon-settings-button-half") |
 | 2. | Drücken Sie die Taste Wartung. | ![BactoSense — Wartungsmenü](/img/gui/icons/maintenance-button.png "width=48 class=manual-icon") |
-| 3. | Drücken Sie die Taste Liste aller Wartungen. | ![BactoSense — Wartungsprotokoll](/img/gui/icons/intervention-log-button.png "width=48 class=manual-icon") |
-| 4. | In dieser Ansicht werden zurückliegende Dienstinterventionen aufgelistet. |  |
+| 3. | Drücken Sie die Taste **Liste aller Wartungen**. | ![BactoSense — Wartungsprotokoll](/img/gui/icons/intervention-log-button.png "width=48 class=manual-icon") |
+| 4. | In dieser Ansicht werden zurückliegende Dienstinterventionen aufgelistet. Jeder Eintrag zeigt:<br />• **Wartungsdatum** und **Operator**: wann und von wem die Wartung durchgeführt wurde.<br />• **Ersetzte Teile**: das ersetzte Ventil, die Spritze und der Mixer; ein Strich (-) kennzeichnet ein nicht ersetztes Teil.<br />• **Nächste Wartung**: das bei der Intervention festgelegte Fälligkeitsdatum der nächsten Wartung.<br />• **Lebensdauer Ventil** und **Lebensdauer Spritze**: die Anzahl Bewegungen, nach der Ventil und Spritze gewartet werden müssen, wie bei der Intervention festgelegt.<br />• **Kommentar**: Notizen der Servicefachkraft. | Drücken Sie **Zurück**, um zum Menü Wartung zurückzukehren. |
 
 ## 15.2 Wartung durch den Benutzer {#section-15-2}
 

@@ -21,7 +21,7 @@ El *Scientific Package* está destinado a los profesionales de investigación de
 - El parámetro de resultado es una concentración celular denominada “Gate+”.
 - La región puede ajustarse de forma similar a las regiones predeterminadas TCC o ICC. Consulte la sección [Cambio de las regiones de análisis](11-results-and-data-analysis.md#section-11-4).
 
-**Detectores de dispersión frontal y lateral** El detector de dispersión frontal (FSC) mide la luz dispersada por bacterias u otras partículas. El detector se coloca formando un ángulo pequeño respecto a la dirección del haz láser y mide así las señales de luz en dirección “frontal”. En cambio, el detector de dispersión lateral (SSC) se sitúa a 90 grados respecto a la dirección del haz y mide la luz dispersada lateralmente. La combinación de la información de fluorescencia y dispersión proporciona datos de alto contenido, lo que permite aplicaciones como la obtención de huellas microbiológicas, la caracterización de perfiles o la detección de anomalías.
+**Detectores de dispersión frontal y lateral** El detector de dispersión frontal (FSC) mide la luz dispersada por bacterias u otras partículas. El detector se coloca formando un ángulo pequeño respecto a la dirección del haz láser y mide así las señales de luz en dirección “frontal”. En cambio, el detector de dispersión lateral (SSC) se sitúa a 90 grados respecto a la dirección del haz y mide la luz dispersada lateralmente. La combinación de la información de fluorescencia y dispersión proporciona datos de alto contenido, lo que permite aplicaciones como la obtención de huellas microbiológicas, la caracterización de perfiles o la detección de anomalías. En particular, los detectores de dispersión permiten obtener una huella precisa (BactoScore) para seguir los cambios en la población bacteriana.
 
 Los datos de dispersión están disponibles de las siguientes formas:
 
@@ -57,7 +57,7 @@ El *Management Package* está destinado al uso del instrumento en entornos con m
 
 **Pista de auditoría** La *Audit Trail* es un registro de todas las operaciones o cambios relevantes realizados en el instrumento. Proporciona un historial detallado de las acciones del usuario o del propio instrumento. Se puede acceder a la *Audit Trail* de las siguientes formas:
 
-- En la interfaz de usuario del instrumento, abra Home → Ajustes → Registros → Auditoria de registro.
+- En la interfaz de usuario del instrumento, abra Home → Ajustes → Registros → Auditoria de registro (véase [Registro de acceso y auditoría](16-warnings-errors-and-troubleshooting.md#section-16-4-4)).
 - Al exportar todos los datos a una memoria USB; véase la sección [Exportación de datos a un dispositivo USB](12-data-access-and-export.md#section-12-1).
 - Desde la interfaz web de usuario. El acceso a esta interfaz se describe en el capítulo [Interfaz web de usuario](13-web-user-interface.md).
 

@@ -21,7 +21,7 @@ The *Scientific Package* is intended for water research professionals to perform
 - The result parameter is a cell concentration named “Gate+”.
 - The gate can be adjusted similar to the TCC or ICC default gates. Please refer to [Change gates](11-results-and-data-analysis.md#section-11-4).
 
-**Forward and side scatter detector** The Forward Scatter (FSC) detector measures light that is scattered by bacteria or other  particles. The detector is placed at a small angle to the laser beam’s direction, thus  measuring light signals in “forward” direction.  In contrast, the Side Scatter (SSC) detector is placed at 90 degrees from the beam’s  direction, measuring light scattered towards the side.  The combination of fluorescence and scattering information provides high content data,  enabling applications like microbiological fingerprinting, profiling or anomaly detection.
+**Forward and side scatter detector** The Forward Scatter (FSC) detector measures light that is scattered by bacteria or other  particles. The detector is placed at a small angle to the laser beam’s direction, thus  measuring light signals in “forward” direction.  In contrast, the Side Scatter (SSC) detector is placed at 90 degrees from the beam’s  direction, measuring light scattered towards the side.  The combination of fluorescence and scattering information provides high content data,  enabling applications like microbiological fingerprinting, profiling or anomaly detection. In particular, the scattering detectors permit accurate fingerprinting (BactoScore) to follow changes in the bacterial population.
 
 Scattering data is available in the following ways:
 
@@ -52,12 +52,13 @@ The *Management Package* is intended for instrument operation in environments wi
 
 - Advanced user management (role-based access control)
 - Audit trail
+- Advanced scheduler
 
 **Advanced User Management** With the *Advanced User Management* feature, the instrument owner can create different  users and assign different user roles (Basic, Advanced, Admin). This allows to give different  permissions to individual users, and log their activity for the audit trail.
 
 **Audit Trail** The *Audit Trail* is a record of all relevant operations or changes that have been made with  the instrument. It provides a detailed history of actions taken by the user or the instrument  itself.  The *Audit Trail* can be accessed in the following ways:
 
-- On the instrument user interface, open Home → Settings → Logs → Audit trail.
+- On the instrument user interface, open Home → Settings → Logs → Audit trail (see [Access log and audit trail](16-warnings-errors-and-troubleshooting.md#section-16-4-4)).
 - When exporting all data to a USB drive, see [Export data to USB device](12-data-access-and-export.md#section-12-1).
 - From the web user interface. The access to the web user interface is described in  [Web User Interface](13-web-user-interface.md).
 

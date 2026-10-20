@@ -64,8 +64,8 @@ La procédure suivante décrit comment consulter les détails des interventions 
 | --- | --- | --- |
 | 1. | En tant qu’utilisateur Advanced ou Admin, sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. | ![BactoSense — Bouton Paramètres](/img/gui/fr/home-settings-button.png "width=57 class=manual-icon-settings-button-half") |
 | 2. | Appuyez sur le bouton Maintenance. | ![BactoSense — Menu de maintenance](/img/gui/icons/maintenance-button.png "width=48 class=manual-icon") |
-| 3. | Appuyez sur le bouton Journal d'interventions. | ![BactoSense — Journal de maintenance](/img/gui/icons/intervention-log-button.png "width=48 class=manual-icon") |
-| 4. | Les interventions d’entretien passées sont répertoriées dans cet écran de journal. |  |
+| 3. | Appuyez sur le bouton **Journal d'interventions**. | ![BactoSense — Journal de maintenance](/img/gui/icons/intervention-log-button.png "width=48 class=manual-icon") |
+| 4. | Les interventions d’entretien passées sont répertoriées dans cet écran de journal. Chaque entrée affiche :<br />• **Date d'intervention** et **Opérateur** : quand et par qui l’entretien a été effectué.<br />• **Pièces modifiées** : la valve, le piston et le mixer remplacés ; un tiret (-) signale une pièce non remplacée.<br />• **Prochain service avant** : la date d’échéance du prochain entretien définie lors de l’intervention.<br />• **Durée de vie valve** et **Durée de vie piston** : le nombre de mouvements après lequel la valve et le piston nécessitent un entretien, tel que défini lors de l’intervention.<br />• **Commentaire** : notes du professionnel de maintenance. | Appuyez sur **Retour** pour revenir au menu Maintenance. |
 
 ## 15.2 Maintenance par l’utilisateur {#section-15-2}
 

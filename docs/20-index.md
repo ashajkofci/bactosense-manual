@@ -110,8 +110,8 @@ Select a section number to open the corresponding topic in this manual.
   - power [5.1](/installation#section-5-1)
 - Errors
   - Clearing [16.5](/warnings-errors-and-troubleshooting#section-16-5)
-  - critical [8.8.2](/general-operations-and-configurations#section-8-8-2), [16.3](/warnings-errors-and-troubleshooting#section-16-3), [16.4](/warnings-errors-and-troubleshooting#section-16-4)
-  - non-critical [8.8.2](/general-operations-and-configurations#section-8-8-2), [16.4](/warnings-errors-and-troubleshooting#section-16-4)
+  - critical [8.8.2](/general-operations-and-configurations#section-8-8-2), [16.3](/warnings-errors-and-troubleshooting#section-16-3), [16.4.1](/warnings-errors-and-troubleshooting#section-16-4-1)
+  - non-critical [8.8.2](/general-operations-and-configurations#section-8-8-2), [16.4.1](/warnings-errors-and-troubleshooting#section-16-4-1)
 - Evolution
   - Dot plots [13.7](/web-user-interface#section-13-7)
 - Export
@@ -195,8 +195,12 @@ Select a section number to open the corresponding topic in this manual.
 - Laser product [2.2](/general-user-information#section-2-2)
 - LNAC [1](/glossary), [11.3.2](/results-and-data-analysis#section-11-3-2), [11.3.3](/results-and-data-analysis#section-11-3-3)
 - Logs [16.4](/warnings-errors-and-troubleshooting#section-16-4)
-  - Errors [16.4](/warnings-errors-and-troubleshooting#section-16-4)
-  - Warnings [16.4](/warnings-errors-and-troubleshooting#section-16-4)
+  - Access log [16.4.4](/warnings-errors-and-troubleshooting#section-16-4-4)
+  - Alarms [16.4.3](/warnings-errors-and-troubleshooting#section-16-4-3)
+  - Audit trail [16.4.4](/warnings-errors-and-troubleshooting#section-16-4-4)
+  - Errors [16.4.1](/warnings-errors-and-troubleshooting#section-16-4-1)
+  - Time span [16.4.5](/warnings-errors-and-troubleshooting#section-16-4-5)
+  - Warnings [16.4.2](/warnings-errors-and-troubleshooting#section-16-4-2)
 
 ## M
 

@@ -64,8 +64,8 @@ El procedimiento siguiente describe cómo consultar los detalles de las interven
 | --- | --- | --- |
 | 1. | Como usuario Advanced o Admin, pulse Ajustes en la pantalla Home para abrir el menú de ajustes. | ![BactoSense — Botón Ajustes](/img/gui/es/home-settings-button.png "width=57 class=manual-icon-settings-button-half") |
 | 2. | Pulse el botón Mantenimiento. | ![BactoSense — Menú de mantenimiento](/img/gui/icons/maintenance-button.png "width=48 class=manual-icon") |
-| 3. | Pulse el botón Registro de intervenciones. | ![BactoSense — Registro de mantenimiento](/img/gui/icons/intervention-log-button.png "width=48 class=manual-icon") |
-| 4. | Las intervenciones de servicio anteriores se enumeran en esta pantalla de registro. |  |
+| 3. | Pulse el botón **Registro de intervenciones**. | ![BactoSense — Registro de mantenimiento](/img/gui/icons/intervention-log-button.png "width=48 class=manual-icon") |
+| 4. | Las intervenciones de servicio anteriores se enumeran en esta pantalla de registro. Cada entrada muestra:<br />• **Fecha de intervención** y **Operador**: cuándo y quién realizó el servicio.<br />• **Piezas cambiadas**: la válvula, el pistón y el mezclador sustituidos; un guion (-) indica una pieza no sustituida.<br />• **Próxima revisión**: la fecha de vencimiento del siguiente servicio establecida durante la intervención.<br />• **Vida útil de la válvula** y **Vida útil del pistón**: el número de movimientos tras el cual la válvula y el pistón requieren servicio, según lo establecido durante la intervención.<br />• **Comentario**: notas del profesional de servicio. | Pulse **Volver** para regresar al menú Mantenimiento. |
 
 ## 15.2 Mantenimiento por el usuario {#section-15-2}
 

@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "locale": "es",
   "chapterCount": 21,
-  "blockCount": 912,
-  "internalLinkCount": 659,
+  "blockCount": 935,
+  "internalLinkCount": 680,
   "assetCount": 178,
   "maxAssetWidth": 800,
   "resizedAssetCount": 53,
@@ -47,7 +47,7 @@
     },
     {
       "file": "chapters/upgrade-packages.json",
-      "sha256": "41d30f941ba0a75e92a5bb39ef53b9261ef17b9fbfae7c0aba2c4f7ca65ed11d"
+      "sha256": "bc13cb0d039ee0cc5c9817145f8d4c4617d10aaa638b04fb9bebf83e1534a239"
     },
     {
       "file": "chapters/measurements.json",
@@ -71,11 +71,11 @@
     },
     {
       "file": "chapters/maintenance.json",
-      "sha256": "b83a951eaf98d58542f48d59e9c95216571dcb026a1455f37953f2e73035afc4"
+      "sha256": "9d1590f57fef7563c62141d1d16a0f15fb6aaa6188302885863b66d9775550b5"
     },
     {
       "file": "chapters/warnings-errors-and-troubleshooting.json",
-      "sha256": "c3f5da370807d1d43fc7a32a67ef33fa23b0862450b95a0f3763c8311e0e8f23"
+      "sha256": "4620609a3a923d8250e5e21fca2fea3234e09504c756b257a2492527490efc22"
     },
     {
       "file": "chapters/storage-transport-and-disposal.json",
@@ -91,7 +91,7 @@
     },
     {
       "file": "chapters/index.json",
-      "sha256": "decdb1a6009f33239d52b3f3935da0f4ba8ee735b2e7a229a896a4f3eb296798"
+      "sha256": "ddeef038c6ac010ffd96c25be8a76125890695449b050dcf332f47b5ec446dd2"
     }
   ],
   "assets": [

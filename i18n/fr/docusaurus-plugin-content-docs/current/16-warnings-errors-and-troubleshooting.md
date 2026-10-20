@@ -75,7 +75,7 @@ Les erreurs critiques interrompent les flux de travail de l’instrument et néc
 
 | ERREURS CRITIQUES | IMAGE |
 | --- | --- |
-| Si une erreur critique survient pendant le fonctionnement, elle a les effets<br/>suivants : • Le protocole s’arrête<br/>immédiatement. • L’instrument passe en état d’erreur critique et une intervention manuelle est nécessaire avant de lancer un nouveau protocole.<br/>• Un opérateur doit résoudre la cause de l’erreur. Les erreurs peuvent ensuite être acquittées manuellement dans Error log, comme décrit aux sections [Journaux d’erreurs et d’avertissements](16-warnings-errors-and-troubleshooting.md#section-16-4) et [Acquitter les erreurs](16-warnings-errors-and-troubleshooting.md#section-16-5). | ![BactoSense — Erreur critique : cartouche absente](/img/gui/fr/critical-error-missing-cartridge.png "width=253 class=manual-figure") |
+| Si une erreur critique survient pendant le fonctionnement, elle a les effets<br/>suivants : • Le protocole s’arrête<br/>immédiatement. • L’instrument passe en état d’erreur critique et une intervention manuelle est nécessaire avant de lancer un nouveau protocole.<br/>• Un opérateur doit résoudre la cause de l’erreur. Les erreurs peuvent ensuite être acquittées manuellement dans Error log, comme décrit aux sections [Journal d’erreurs](16-warnings-errors-and-troubleshooting.md#section-16-4-1) et [Acquitter les erreurs](16-warnings-errors-and-troubleshooting.md#section-16-5). | ![BactoSense — Erreur critique : cartouche absente](/img/gui/fr/critical-error-missing-cartridge.png "width=253 class=manual-figure") |
 
 Les messages d’erreurs critiques suivants peuvent s’afficher :
 
@@ -113,28 +113,90 @@ Les messages d’erreurs critiques suivants peuvent s’afficher :
 | E53 | Communication avec le moteur impossible | La communication avec le contrôleur du moteur du mélangeur est défectueuse. | • Contactez le service client. |
 | E54 | Erreur du capteur de température du laser | Impossible de lire la température du laser. | • Contactez le service client. |
 
-## 16.4 Journaux d’erreurs et d’avertissements {#section-16-4}
+## 16.4 Journaux {#section-16-4}
 
-Sur l’écran d’accueil, appuyez sur Paramètres, puis sur Journaux. Sélectionnez Journal d'erreurs ou Journal d'alertes pour ouvrir le journal correspondant.
+L’instrument enregistre les erreurs, les avertissements, les alarmes et l’activité des utilisateurs dans des journaux. Sur l’écran d’accueil, appuyez sur **Paramètres**, puis sur **Journaux**. Le menu **Journaux** contient les entrées suivantes :
+
+| ENTRÉE | CONTENU | ACCESSIBLE À |
+| --- | --- | --- |
+| **Journal d'erreurs** | Erreurs critiques et non critiques, ainsi que les événements qui les ont acquittées. Voir [Journal d’erreurs](16-warnings-errors-and-troubleshooting.md#section-16-4-1). | Utilisateurs Basic, Advanced et Admin |
+| **Journal d'alertes** | Avertissements émis pendant les mesures. Voir [Journal d’alertes](16-warnings-errors-and-troubleshooting.md#section-16-4-2). | Utilisateurs Basic, Advanced et Admin |
+| **Journal des alarmes** | Alarmes déclenchées par les résultats de mesure, y compris les alarmes BactoCloud. Voir [Journal des alarmes](16-warnings-errors-and-troubleshooting.md#section-16-4-3). | Utilisateurs Basic, Advanced et Admin |
+| **Journal d'accès** | Tentatives de connexion échouées. Voir [Journal d’accès et journal d’audit](16-warnings-errors-and-troubleshooting.md#section-16-4-4). | Utilisateurs Admin, avec le Management Package |
+| **Journal d'audit** | Opérations et modifications de paramètres effectuées par les utilisateurs et par l’instrument. Voir [Journal d’accès et journal d’audit](16-warnings-errors-and-troubleshooting.md#section-16-4-4). | Utilisateurs Admin, avec le Management Package |
+| **Results (manual mode)**, **Results (online mode)**, **Résultats de validation** | Résultats de mesure de chaque mode. Voir [Filtrage des mesures](10-measurements.md#section-10-7) et [Résultats et analyse des données](11-results-and-data-analysis.md). | Utilisateurs Basic, Advanced et Admin |
+
+Les entrées les plus récentes figurent en haut de la liste. Le **Journal d'erreurs**, le **Journal d'alertes**, le **Journal des alarmes** et le **Journal d'audit** affichent la **Période affichée:** dans la barre d’actions. Par défaut, elle s’étend de l’entrée la plus ancienne à la plus récente ; le **Journal d'audit** affiche les sept derniers jours. Appuyez sur la période pour en afficher une autre (voir [Modifier la période affichée](16-warnings-errors-and-troubleshooting.md#section-16-4-5)).
+
+### 16.4.1 Journal d’erreurs {#section-16-4-1}
 
 ![BactoSense — Journal des erreurs](/img/gui/fr/error-log.png "width=558 class=manual-figure")
 
-*Figure 16-1 : Journaux d’erreurs*
+*Figure 16-1 : Journal d’erreurs*
 
 |  |  |  |  |  |
 | --- | --- | --- | --- | --- |
-| ① | Date et heure de l’événement | ② | Type d’événement | \< |
+| ① | Date et heure de l’événement | ② | Type d’événement. Seule l’entrée la plus récente affiche son symbole en couleur ; les entrées plus anciennes l’affichent en gris. | \< |
 | ^ | ^ | ^ | ![BactoSense — Entrée du journal : erreur critique](/img/gui/icons/critical-error-event.png "width=32 class=manual-icon") | Erreur critique |
 | ^ | ^ | ^ | ![BactoSense — Entrée du journal : erreur non critique](/img/gui/icons/noncritical-error-event.png "width=32 class=manual-icon") | Erreur non critique |
 | ^ | ^ | ^ | ![BactoSense — Entrée du journal : erreurs acquittées](/img/gui/icons/errors-cleared-event.png "width=32 class=manual-icon") | Erreurs acquittées |
-| ③ | Brève description de l’erreur ou de l’événement | ④ | Bouton pour quittancer les erreurs manuellement (accessible aux utilisateurs Basic, Advanced et Admin lorsque l’instrument est au repos) | \< |
-| ⑤ | Plage de dates des événements affichés. Cliquez pour modifier la plage. |  |  | \< |
+| ③ | Code et brève description de l’erreur ou de l’événement. Le nombre entre parenthèses indique combien de fois l’erreur s’est produite depuis le dernier acquittement des erreurs. | ④ | Bouton **Quittancer les erreurs** (accessible aux utilisateurs Basic, Advanced et Admin lorsque l’instrument est au repos). Voir [Acquitter les erreurs](16-warnings-errors-and-troubleshooting.md#section-16-5). | \< |
+| ⑤ | Période affichée. Appuyez dessus pour la modifier. |  |  | \< |
+
+La couleur de la ligne indique le type de chaque entrée : rouge pour les erreurs critiques, jaune pour les erreurs non critiques et bleu pour les événements d’acquittement. Les codes d’erreur commencent par E et sont répertoriés dans [Erreurs non critiques](16-warnings-errors-and-troubleshooting.md#section-16-2) et [Erreurs critiques](16-warnings-errors-and-troubleshooting.md#section-16-3). Deux événements enregistrent l’acquittement des erreurs :
+
+- **C01 – Erreurs quittancées automatiquement** : après une erreur non critique, l’instrument a terminé un protocole avec succès et considère les erreurs précédentes comme résolues.
+- **C02 – Erreurs quittancées manuellement** : un utilisateur a appuyé sur **Quittancer les erreurs** (voir [Acquitter les erreurs](16-warnings-errors-and-troubleshooting.md#section-16-5)).
+
+Si aucune erreur n’a été enregistrée pendant la période affichée, **No errors in this date range** s’affiche.
 
 :::info[Consultez les détails des événements]
 
-La sélection d’un événement dans la liste mène à une page contenant plus d’informations sur la cause de l’erreur et les étapes de résolution recommandées.
+Sélectionnez une entrée pour ouvrir une page contenant plus d’informations sur la cause de l’erreur et les étapes de résolution recommandées. Appuyez sur **Fermer** pour revenir au journal.
 
 :::
+
+### 16.4.2 Journal d’alertes {#section-16-4-2}
+
+Le **Journal d'alertes** répertorie les avertissements émis pendant les mesures. Chaque ligne affiche :
+
+- **Date** : date et heure de l’avertissement.
+- **Description** : code et nom de l’avertissement. Les codes sont répertoriés dans [Avertissements](16-warnings-errors-and-troubleshooting.md#section-16-1).
+- **Contexte** : contexte de l’avertissement : **Manuel** (mode manuel), **Auto** (mode en ligne), **Maintenance** ou **Validation**.
+
+Sélectionnez un avertissement pour afficher sa description. Appuyez sur **Fermer** pour revenir au journal. Si aucun avertissement n’a été enregistré pendant la période affichée, **No warnings in this date range** s’affiche.
+
+### 16.4.3 Journal des alarmes {#section-16-4-3}
+
+Le **Journal des alarmes** répertorie les alarmes déclenchées par les résultats de mesure. Il comprend les alarmes propres à l’instrument (voir [Configuration des alarmes](08-general-operations-and-configurations.md#section-8-5)) et, lorsque l’instrument est connecté à BactoCloud, les alarmes générées par les règles d’alarme BactoCloud (voir [BactoCloud](14-bactocloud.md)). Chaque ligne affiche :
+
+- **Date** : date et heure de la mesure ayant déclenché l’alarme.
+- **Nom** : une cloche et le nom de l’alarme. La cloche est rouge pour les alarmes de l’instrument. Pour les alarmes BactoCloud, sa couleur indique la gravité : rouge pour Critique, orange pour Alerte et bleu pour Info.
+- **Alarme** : la source, la condition et le seuil de l’alarme, par exemple *Cartridge Remaining < 10 %*.
+
+Les alarmes BactoCloud affichent également un symbole de nuage en fin de ligne. Pour acquitter une alarme BactoCloud après l’avoir examinée, appuyez sur le bouton de coche à côté du symbole de nuage ; les alarmes acquittées affichent alors une coche. **Acknowledge all** acquitte toutes les alarmes BactoCloud non acquittées de la liste et n’est disponible que s’il en reste au moins une. L’acquittement est enregistré dans BactoCloud. Il documente l’examen, mais ne résout pas la cause de l’alarme.
+
+Sélectionnez une alarme pour ouvrir le résultat de mesure qui l’a déclenchée.
+
+### 16.4.4 Journal d’accès et journal d’audit {#section-16-4-4}
+
+Le **Journal d'accès** et le **Journal d'audit** font partie du Management Package (voir [Management Package](09-upgrade-packages.md#section-9-2)) et sont accessibles aux utilisateurs Admin. Sans ce package, une pression sur l’un de ces boutons affiche des informations sur le Management Package.
+
+**Journal d'accès** ouvre la liste **Tentatives de connexion échouées** des 30 derniers jours. Chaque ligne affiche la **Date**, le **Nom d'utilisateur**, le **Rôle** de l’utilisateur et le nombre de tentatives de connexion échouées de cet utilisateur ce jour-là. S’il n’y en a aucune, **Aucune tentative de connexion échouée** s’affiche.
+
+**Journal d'audit** répertorie les opérations pertinentes et les modifications de paramètres effectuées par les utilisateurs ou par l’instrument. Chaque entrée affiche la **Date**, le **Nom d'utilisateur** et l’**Evénement**, ainsi que, le cas échéant, le **Paramètre** modifié avec son **Ancienne valeur** et sa **Nouvelle valeur**. Le journal d’audit est également inclus lors de l’exportation de toutes les données sur une clé USB et peut être consulté dans l’interface utilisateur web.
+
+### 16.4.5 Modifier la période affichée {#section-16-4-5}
+
+La procédure suivante s’applique au **Journal d'erreurs**, au **Journal d'alertes**, au **Journal des alarmes** et au **Journal d'audit**.
+
+|  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
+| --- | --- | --- |
+| 1. | Ouvrez le journal et appuyez sur le bouton de période à côté de **Période affichée:**. | L’écran **Période de temps** s’ouvre. |
+| 2. | Appuyez sur le champ sous **Date de début** et sélectionnez le premier jour dans le calendrier. Appuyez sur le champ d’heure situé en dessous et réglez l’heure et les minutes. Réglez **Date de fin** et son heure de la même manière. | La fin ne peut pas précéder le début. |
+| 3. | Appuyez sur **OK**. | Le journal n’affiche que les entrées de la période sélectionnée. |
+
+Pour rétablir la période par défaut, appuyez sur **Remise à zéro** dans l’écran **Période de temps**, puis sur **OK**.
 
 ## 16.5 Acquitter les erreurs {#section-16-5}
 
@@ -142,10 +204,10 @@ Les erreurs critiques doivent être acquittées manuellement. Avant de procéder
 
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
-| 1. | Sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. |  |
-| 2. | Appuyez sur Journaux, puis sur Journal d'erreurs. |  |
-| 3. | Assurez-vous d’avoir résolu le problème à l’origine de l’erreur affichée. Appuyez ensuite sur le bouton Quittancer les erreurs. | ![BactoSense — Effacer les erreurs](/img/gui/fr/error-log-clear-errors.png "width=245 class=manual-figure") |
-| 4. | Les erreurs effacées apparaissent avec des symboles d’erreur grisés et un événement «Erreurs quittancées» est ajouté au journal. L’instrument est prêt pour une nouvelle analyse. |  |
+| 1. | Sur l’écran d’accueil, appuyez sur **Paramètres** pour ouvrir le menu des paramètres. |  |
+| 2. | Appuyez sur **Journaux**, puis sur **Journal d'erreurs**. |  |
+| 3. | Assurez-vous d’avoir résolu le problème à l’origine de l’erreur affichée. Appuyez ensuite sur **Quittancer les erreurs**. | Le bouton est accessible aux utilisateurs Basic, Advanced et Admin tant qu’aucun protocole n’est en cours.<br />![BactoSense — Effacer les erreurs](/img/gui/fr/error-log-clear-errors.png "width=245 class=manual-figure") |
+| 4. | Un événement **C02 – Erreurs quittancées manuellement** est ajouté en haut du journal, et les symboles des erreurs précédentes deviennent gris. L’instrument est prêt pour une nouvelle analyse. |  |
 
 ## 16.6 Autovérification automatique {#section-16-6}
 

@@ -190,6 +190,16 @@ def normalize_artwork(content, source_file=None):
   filtering = ROOT/'scripts/editorial/10-filtering-measurements.md'
   if filtering.is_file():
    content = re.sub(r'^## 10\.7\b[^\n]*\n.*?(?=^## 10\.8\b)', lambda _: filtering.read_text().rstrip()+'\n\n', content, count=1, flags=re.M|re.S)
+ # Replace the older intervention-log step with the reviewed list of log fields.
+ if source_file == 'docs/15-maintenance.md':
+  intervention_log = ROOT/'scripts/editorial/15-intervention-log.md'
+  if intervention_log.is_file():
+   content = re.sub(r'^### 15\.1\.2\b[^\n]*\n.*?(?=^## 15\.2\b)', lambda _: intervention_log.read_text().rstrip()+'\n\n', content, count=1, flags=re.M|re.S)
+ # Replace the older error and warning log description with the reviewed Logs menu sections.
+ if source_file == 'docs/16-warnings-errors-and-troubleshooting.md':
+  logs = ROOT/'scripts/editorial/16-logs.md'
+  if logs.is_file():
+   content = re.sub(r'^## 16\.4\b[^\n]*\n.*?(?=^## 16\.6\b)', lambda _: logs.read_text().rstrip()+'\n\n', content, count=1, flags=re.M|re.S)
  # Keep the embedded-manual instructions when importing the older source PDF.
  if source_file == 'docs/15-maintenance.md' and '{#section-15-4}' not in content:
   embedded_manual = ROOT/'scripts/editorial/15-embedded-manual.md'

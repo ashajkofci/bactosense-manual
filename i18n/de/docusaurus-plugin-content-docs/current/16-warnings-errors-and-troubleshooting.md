@@ -75,7 +75,7 @@ Kritische Fehler unterbrechen die Geräteworkflows und erfordern Eingriffe vom B
 
 | KRITISCHE FEHLER | ABBILDUNG |
 | --- | --- |
-| Tritt während des Betriebs ein kritischer Fehler auf, hat dies folgende Auswirkungen: • Das Protokoll stoppt sofort. • Das Gerät wechselt in einen kritischen Fehlerzustand. Vor dem Start eines neuen Protokolls ist ein manueller Eingriff erforderlich. • Ein Bediener muss die Fehlerursache beheben. Anschließend können die Fehler wie unter [Fehler- und Warnungsprotokolle](16-warnings-errors-and-troubleshooting.md#section-16-4) und [Fehler löschen](16-warnings-errors-and-troubleshooting.md#section-16-5) beschrieben manuell im Fehlerprotokoll gelöscht werden. | ![BactoSense — Kritischer Fehler: fehlende Kartusche](/img/gui/de/critical-error-missing-cartridge.png "width=253 class=manual-figure") |
+| Tritt während des Betriebs ein kritischer Fehler auf, hat dies folgende Auswirkungen: • Das Protokoll stoppt sofort. • Das Gerät wechselt in einen kritischen Fehlerzustand. Vor dem Start eines neuen Protokolls ist ein manueller Eingriff erforderlich. • Ein Bediener muss die Fehlerursache beheben. Anschließend können die Fehler wie unter [Fehlerliste](16-warnings-errors-and-troubleshooting.md#section-16-4-1) und [Fehler löschen](16-warnings-errors-and-troubleshooting.md#section-16-5) beschrieben manuell im Fehlerprotokoll gelöscht werden. | ![BactoSense — Kritischer Fehler: fehlende Kartusche](/img/gui/de/critical-error-missing-cartridge.png "width=253 class=manual-figure") |
 
 Die folgenden kritischen Fehlermeldungen können angezeigt werden:
 
@@ -113,28 +113,90 @@ Die folgenden kritischen Fehlermeldungen können angezeigt werden:
 | E53 | Keine Kommunikation mit dem Motor möglich | Die Kommunikation zum Motorcontroller des Mischers ist defekt. | • Nehmen Sie Kontakt mit dem Kundendienst auf. |
 | E54 | Fehler des Lasertemperatursensors | Lasertemperatur kann nicht ermittelt werden. | • Nehmen Sie Kontakt mit dem Kundendienst auf. |
 
-## 16.4 Fehler- und Warnungsprotokolle {#section-16-4}
+## 16.4 Logs {#section-16-4}
 
-Drücken Sie auf der Startseite Einstellungen und dann Logs. Wählen Sie Fehlerliste oder Liste aller Warnungen, um die entsprechende Liste zu öffnen.
+Das Gerät zeichnet Fehler, Warnmeldungen, Alarme und Benutzeraktivitäten in Logs auf. Drücken Sie auf der Startseite **Einstellungen** und dann **Logs**. Das Menü **Logs** enthält die folgenden Einträge:
+
+| EINTRAG | INHALT | VERFÜGBAR FÜR |
+| --- | --- | --- |
+| **Fehlerliste** | Kritische und unkritische Fehler sowie die Ereignisse, mit denen sie quittiert wurden. Siehe [Fehlerliste](16-warnings-errors-and-troubleshooting.md#section-16-4-1). | Basic-, Advanced- und Admin-Benutzer |
+| **Liste aller Warnungen** | Während Messungen ausgegebene Warnmeldungen. Siehe [Liste aller Warnungen](16-warnings-errors-and-troubleshooting.md#section-16-4-2). | Basic-, Advanced- und Admin-Benutzer |
+| **Alarm-Protokoll** | Durch Messergebnisse ausgelöste Alarme, einschließlich BactoCloud-Alarmen. Siehe [Alarm-Protokoll](16-warnings-errors-and-troubleshooting.md#section-16-4-3). | Basic-, Advanced- und Admin-Benutzer |
+| **Zugriffsprotokoll** | Fehlgeschlagene Anmeldeversuche. Siehe [Zugriffsprotokoll und Prüfpfad](16-warnings-errors-and-troubleshooting.md#section-16-4-4). | Admin-Benutzer, mit dem Management Package |
+| **Prüfpfad** | Vorgänge und Einstellungsänderungen durch Benutzer und das Gerät. Siehe [Zugriffsprotokoll und Prüfpfad](16-warnings-errors-and-troubleshooting.md#section-16-4-4). | Admin-Benutzer, mit dem Management Package |
+| **Results (manual mode)**, **Results (online mode)**, **Validationsresultate** | Messergebnisse des jeweiligen Modus. Siehe [Filtern von Messungen](10-measurements.md#section-10-7) und [Ergebnisse und Datenanalyse](11-results-and-data-analysis.md). | Basic-, Advanced- und Admin-Benutzer |
+
+Die neuesten Einträge stehen oben. **Fehlerliste**, **Liste aller Warnungen**, **Alarm-Protokoll** und **Prüfpfad** zeigen in der Aktionsleiste die **Angezeigte Zeitspanne:**. Standardmäßig reicht sie vom ältesten bis zum neuesten Eintrag; der **Prüfpfad** zeigt die letzten sieben Tage. Drücken Sie auf die Zeitspanne, um einen anderen Zeitraum anzuzeigen (siehe [Angezeigte Zeitspanne ändern](16-warnings-errors-and-troubleshooting.md#section-16-4-5)).
+
+### 16.4.1 Fehlerliste {#section-16-4-1}
 
 ![BactoSense — Fehlerprotokoll](/img/gui/de/error-log.png "width=558 class=manual-figure")
 
-*Abbildung 16-1 : Fehlerprotokolle*
+*Abbildung 16-1 : Fehlerliste*
 
 |  |  |  |  |  |
 | --- | --- | --- | --- | --- |
-| ① | Datum und Uhrzeit des Ereignisses | ② | Ereignistyp | \< |
+| ① | Datum und Uhrzeit des Ereignisses | ② | Ereignistyp. Nur der neueste Eintrag zeigt sein Symbol in Farbe; ältere Einträge zeigen es grau. | \< |
 | ^ | ^ | ^ | ![BactoSense — Protokolleintrag: kritischer Fehler](/img/gui/icons/critical-error-event.png "width=32 class=manual-icon") | Kritischer Fehler |
 | ^ | ^ | ^ | ![BactoSense — Protokolleintrag: unkritischer Fehler](/img/gui/icons/noncritical-error-event.png "width=32 class=manual-icon") | Unkritischer Fehler |
 | ^ | ^ | ^ | ![BactoSense — Protokolleintrag: Fehler gelöscht](/img/gui/icons/errors-cleared-event.png "width=32 class=manual-icon") | Fehler gelöscht |
-| ③ | Kurzbeschreibung des Fehlers oder Ereignisses | ④ | Taste zum manuellen Quittieren von Fehlern (für Basic-, Advanced- und Admin-Benutzer verfügbar, wenn das Gerät nicht läuft) | \< |
-| ⑤ | Datumsbereich der angezeigten Ereignisse. Klicken, um den Bereich zu bearbeiten. |  |  | \< |
+| ③ | Code und Kurzbeschreibung des Fehlers oder Ereignisses. Die Zahl in Klammern gibt an, wie oft der Fehler seit dem letzten Löschen der Fehler aufgetreten ist. | ④ | Taste **Fehlermeldung quittieren** (für Basic-, Advanced- und Admin-Benutzer verfügbar, wenn das Gerät nicht läuft). Siehe [Fehler löschen](16-warnings-errors-and-troubleshooting.md#section-16-5). | \< |
+| ⑤ | Angezeigte Zeitspanne. Drücken Sie darauf, um den Zeitraum zu ändern. |  |  | \< |
+
+Die Zeilenfarbe zeigt den Typ jedes Eintrags: rot für kritische Fehler, gelb für unkritische Fehler und blau für Ereignisse, mit denen Fehler gelöscht wurden. Fehlercodes beginnen mit E und sind unter [Unkritische Fehler](16-warnings-errors-and-troubleshooting.md#section-16-2) und [Kritische Fehler](16-warnings-errors-and-troubleshooting.md#section-16-3) aufgeführt. Zwei Ereignisse dokumentieren das Löschen von Fehlern:
+
+- **C01 – Fehlermeldungen automatisch quittiert**: Nach einem unkritischen Fehler hat das Gerät ein Protokoll erfolgreich abgeschlossen und betrachtet die vorherigen Fehler als behoben.
+- **C02 – Fehlermeldungen manuell quittiert**: Ein Benutzer hat **Fehlermeldung quittieren** gedrückt (siehe [Fehler löschen](16-warnings-errors-and-troubleshooting.md#section-16-5)).
+
+Wurde in der angezeigten Zeitspanne kein Fehler aufgezeichnet, erscheint **No errors in this date range**.
 
 :::info[Ereignisdetails anzeigen]
 
-Wenn Sie ein Ereignis aus der Liste auswählen, öffnet sich eine Seite mit weiteren Informationen zur Fehlerursache und empfohlenen Schritten zur Behebung.
+Wählen Sie einen Eintrag aus, um eine Seite mit weiteren Informationen zur Fehlerursache und empfohlenen Schritten zur Behebung zu öffnen. Drücken Sie **Schliessen**, um zur Liste zurückzukehren.
 
 :::
+
+### 16.4.2 Liste aller Warnungen {#section-16-4-2}
+
+Die **Liste aller Warnungen** enthält die während Messungen ausgegebenen Warnmeldungen. Jede Zeile zeigt:
+
+- **Datum**: Datum und Uhrzeit der Warnmeldung.
+- **Beschreibung**: Code und Name der Warnmeldung. Die Codes sind unter [Warnmeldungen](16-warnings-errors-and-troubleshooting.md#section-16-1) aufgeführt.
+- **Kontext**: wo die Warnmeldung auftrat: **Manuell** (manueller Modus), **Auto** (Online-Modus), **Wartung** oder **Validation**.
+
+Wählen Sie eine Warnmeldung aus, um ihre Beschreibung anzuzeigen. Drücken Sie **Schliessen**, um zur Liste zurückzukehren. Wurde in der angezeigten Zeitspanne keine Warnmeldung aufgezeichnet, erscheint **No warnings in this date range**.
+
+### 16.4.3 Alarm-Protokoll {#section-16-4-3}
+
+Das **Alarm-Protokoll** listet die durch Messergebnisse ausgelösten Alarme auf. Es enthält die Alarme des Geräts (siehe [Alarmkonfiguration](08-general-operations-and-configurations.md#section-8-5)) und, wenn das Gerät mit BactoCloud verbunden ist, die durch BactoCloud-Alarmregeln ausgelösten Alarme (siehe [BactoCloud](14-bactocloud.md)). Jede Zeile zeigt:
+
+- **Datum**: Datum und Uhrzeit der Messung, die den Alarm ausgelöst hat.
+- **Name**: ein Glockensymbol und den Namen des Alarms. Bei Gerätealarmen ist die Glocke rot. Bei BactoCloud-Alarmen zeigt ihre Farbe den Schweregrad: rot für Kritisch, orange für Warnung und blau für Infos.
+- **Alarm**: Quelle, Bedingung und Schwellenwert des Alarms, zum Beispiel *Cartridge Remaining < 10 %*.
+
+BactoCloud-Alarme zeigen zusätzlich ein Cloud-Symbol am Zeilenende. Um einen BactoCloud-Alarm nach der Prüfung zu bestätigen, drücken Sie die Häkchen-Taste neben dem Cloud-Symbol; bestätigte Alarme zeigen stattdessen ein Häkchen. **Acknowledge all** bestätigt alle unbestätigten BactoCloud-Alarme der Liste und ist nur verfügbar, solange mindestens einer unbestätigt ist. Die Bestätigung wird in BactoCloud gespeichert. Sie dokumentiert die Prüfung, behebt aber nicht die Ursache des Alarms.
+
+Wählen Sie einen Alarm aus, um das Messergebnis zu öffnen, das ihn ausgelöst hat.
+
+### 16.4.4 Zugriffsprotokoll und Prüfpfad {#section-16-4-4}
+
+**Zugriffsprotokoll** und **Prüfpfad** sind Teil des Management Package (siehe [Management Package](09-upgrade-packages.md#section-9-2)) und für Admin-Benutzer verfügbar. Ohne das Paket zeigt ein Druck auf eine der beiden Tasten stattdessen Informationen zum Management Package.
+
+**Zugriffsprotokoll** öffnet die Liste **Fehlgeschlagene Anmeldeversuche** der letzten 30 Tage. Jede Zeile zeigt **Datum**, **Benutzer-ID** und **Rolle** des Benutzers sowie die Anzahl seiner fehlgeschlagenen Anmeldeversuche an diesem Tag. Gibt es keine, erscheint **Keine fehlgeschlagenen Anmeldeversuche**.
+
+**Prüfpfad** listet relevante Vorgänge und Einstellungsänderungen durch Benutzer oder das Gerät auf. Jeder Eintrag zeigt **Datum**, **Benutzername** und **Ereignis** sowie gegebenenfalls den geänderten **Parameter** mit **Alter Stand** und **Neuer Stand**. Der Prüfpfad ist auch im Export aller Daten auf einen USB Stick enthalten und kann in der Web-Benutzeroberfläche angezeigt werden.
+
+### 16.4.5 Angezeigte Zeitspanne ändern {#section-16-4-5}
+
+Das folgende Verfahren gilt für **Fehlerliste**, **Liste aller Warnungen**, **Alarm-Protokoll** und **Prüfpfad**.
+
+|  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG |
+| --- | --- | --- |
+| 1. | Öffnen Sie die Liste und drücken Sie die Zeitspannen-Taste neben **Angezeigte Zeitspanne:**. | Die Ansicht **Zeitspanne auswählen** öffnet sich. |
+| 2. | Tippen Sie auf das Feld unter **Startdatum** und wählen Sie im Kalender den ersten Tag. Tippen Sie auf das Zeitfeld darunter und stellen Sie Stunde und Minute ein. Stellen Sie **Enddatum** und die zugehörige Zeit auf die gleiche Weise ein. | Das Ende kann nicht vor dem Start liegen. |
+| 3. | Drücken Sie **OK**. | Die Liste zeigt nur die Einträge im gewählten Zeitraum. |
+
+Um die Standard-Zeitspanne wiederherzustellen, drücken Sie in der Ansicht **Zeitspanne auswählen** auf **Zurücksetzen** und dann auf **OK**.
 
 ## 16.5 Fehler löschen {#section-16-5}
 
@@ -142,10 +204,10 @@ Kritische Fehler müssen manuell gelöscht werden. Stellen Sie sicher, dass Sie 
 
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG |
 | --- | --- | --- |
-| 1. | Drücken Sie auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. |  |
-| 2. | Drücken Sie Logs und anschließend Fehlerliste. |  |
-| 3. | Stellen Sie sicher, dass Sie das Problem, das die Fehlermeldung(en) verursacht hat, gelöst haben. Drücken Sie dann die Taste Fehlermeldung quittieren. | ![BactoSense — Fehler löschen](/img/gui/de/error-log-clear-errors.png "width=245 class=manual-figure") |
-| 4. | Gelöschte Fehler erscheinen mit grauen Fehlersymbolen, und es wird ein Ereignis „Fehler gelöscht” zum Protokoll hinzugefügt. Das Gerät kann nun weitere Analysen durchführen. |  |
+| 1. | Drücken Sie auf der Startseite **Einstellungen**, um das Einstellungsmenü zu öffnen. |  |
+| 2. | Drücken Sie **Logs** und anschließend **Fehlerliste**. |  |
+| 3. | Stellen Sie sicher, dass Sie das Problem, das die Fehlermeldung(en) verursacht hat, gelöst haben. Drücken Sie dann **Fehlermeldung quittieren**. | Die Taste ist für Basic-, Advanced- und Admin-Benutzer verfügbar, solange kein Protokoll läuft.<br />![BactoSense — Fehler löschen](/img/gui/de/error-log-clear-errors.png "width=245 class=manual-figure") |
+| 4. | Oben in der Liste wird das Ereignis **C02 – Fehlermeldungen manuell quittiert** hinzugefügt, und die Symbole der vorherigen Fehler werden grau. Das Gerät kann nun weitere Analysen durchführen. |  |
 
 ## 16.6 Automatischer Selbsttest {#section-16-6}
 

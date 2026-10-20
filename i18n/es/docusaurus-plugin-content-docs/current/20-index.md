@@ -109,8 +109,8 @@ Seleccione un número de sección para abrir el tema correspondiente de este man
   - alimentación eléctrica [5.1](/installation#section-5-1)
 - Errores
   - Borrado [16.5](/warnings-errors-and-troubleshooting#section-16-5)
-  - críticos [8.8.2](/general-operations-and-configurations#section-8-8-2), [16.3](/warnings-errors-and-troubleshooting#section-16-3), [16.4](/warnings-errors-and-troubleshooting#section-16-4)
-  - no críticos [8.8.2](/general-operations-and-configurations#section-8-8-2), [16.4](/warnings-errors-and-troubleshooting#section-16-4)
+  - críticos [8.8.2](/general-operations-and-configurations#section-8-8-2), [16.3](/warnings-errors-and-troubleshooting#section-16-3), [16.4.1](/warnings-errors-and-troubleshooting#section-16-4-1)
+  - no críticos [8.8.2](/general-operations-and-configurations#section-8-8-2), [16.4.1](/warnings-errors-and-troubleshooting#section-16-4-1)
 - Evolución
   - Diagramas de puntos [13.7](/web-user-interface#section-13-7)
 - Exportación
@@ -194,8 +194,12 @@ Seleccione un número de sección para abrir el tema correspondiente de este man
 - Producto láser [2.2](/general-user-information#section-2-2)
 - LNAC [1](/glossary), [11.3.2](/results-and-data-analysis#section-11-3-2), [11.3.3](/results-and-data-analysis#section-11-3-3)
 - Registros [16.4](/warnings-errors-and-troubleshooting#section-16-4)
-  - Errores [16.4](/warnings-errors-and-troubleshooting#section-16-4)
-  - Advertencias [16.4](/warnings-errors-and-troubleshooting#section-16-4)
+  - Advertencias [16.4.2](/warnings-errors-and-troubleshooting#section-16-4-2)
+  - Alarmas [16.4.3](/warnings-errors-and-troubleshooting#section-16-4-3)
+  - Auditoría [16.4.4](/warnings-errors-and-troubleshooting#section-16-4-4)
+  - Errores [16.4.1](/warnings-errors-and-troubleshooting#section-16-4-1)
+  - Lapso de tiempo [16.4.5](/warnings-errors-and-troubleshooting#section-16-4-5)
+  - Registro de acceso [16.4.4](/warnings-errors-and-troubleshooting#section-16-4-4)
 
 ## M
 

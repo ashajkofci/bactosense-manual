@@ -64,8 +64,8 @@ La procedura seguente descrive come visualizzare i dettagli degli interventi di 
 | --- | --- | --- |
 | 1. | Come utente Advanced o Admin, nella schermata Home premere Impostazioni per aprire il menu delle impostazioni. | ![BactoSense — Pulsante Impostazioni](/img/gui/it/home-settings-button.png "width=57 class=manual-icon-settings-button-half") |
 | 2. | Premere il pulsante Manutenzione. | ![BactoSense — Menu di manutenzione](/img/gui/icons/maintenance-button.png "width=48 class=manual-icon") |
-| 3. | Premere il pulsante Registro degli interventi. | ![BactoSense — Registro di manutenzione](/img/gui/icons/intervention-log-button.png "width=48 class=manual-icon") |
-| 4. | Questa schermata del registro elenca gli interventi di manutenzione precedenti. |  |
+| 3. | Premere il pulsante **Registro degli interventi**. | ![BactoSense — Registro di manutenzione](/img/gui/icons/intervention-log-button.png "width=48 class=manual-icon") |
+| 4. | Questa schermata del registro elenca gli interventi di manutenzione precedenti. Ogni voce mostra:<br />• **Data dell'intervento** e **Operatore**: quando e da chi è stata eseguita la manutenzione.<br />• **Parti modificate**: valvola, pistone e mixer sostituiti; un trattino (-) indica una parte non sostituita.<br />• **Prossima manutenzione**: la data di scadenza della manutenzione successiva impostata durante l’intervento.<br />• **Durata della valvola** e **Durata del pistone**: il numero di movimenti dopo il quale valvola e pistone richiedono manutenzione, come impostato durante l’intervento.<br />• **Commento**: note del tecnico dell’assistenza. | Premere **Indietro** per tornare al menu Manutenzione. |
 
 ## 15.2 Manutenzione da parte dell’utente {#section-15-2}
 

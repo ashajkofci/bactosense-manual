@@ -109,8 +109,8 @@ Sélectionnez un numéro de section pour ouvrir la rubrique correspondante de ce
   - alimentation [5.1](/installation#section-5-1)
 - Erreurs
   - Acquittement [16.5](/warnings-errors-and-troubleshooting#section-16-5)
-  - critiques [8.8.2](/general-operations-and-configurations#section-8-8-2), [16.3](/warnings-errors-and-troubleshooting#section-16-3), [16.4](/warnings-errors-and-troubleshooting#section-16-4)
-  - non critiques [8.8.2](/general-operations-and-configurations#section-8-8-2), [16.4](/warnings-errors-and-troubleshooting#section-16-4)
+  - critiques [8.8.2](/general-operations-and-configurations#section-8-8-2), [16.3](/warnings-errors-and-troubleshooting#section-16-3), [16.4.1](/warnings-errors-and-troubleshooting#section-16-4-1)
+  - non critiques [8.8.2](/general-operations-and-configurations#section-8-8-2), [16.4.1](/warnings-errors-and-troubleshooting#section-16-4-1)
 - Évolution
   - Nuages de points [13.7](/web-user-interface#section-13-7)
 - Exportation
@@ -194,8 +194,12 @@ Sélectionnez un numéro de section pour ouvrir la rubrique correspondante de ce
 - Produit laser [2.2](/general-user-information#section-2-2)
 - LNAC [1](/glossary), [11.3.2](/results-and-data-analysis#section-11-3-2), [11.3.3](/results-and-data-analysis#section-11-3-3)
 - Journaux [16.4](/warnings-errors-and-troubleshooting#section-16-4)
-  - Erreurs [16.4](/warnings-errors-and-troubleshooting#section-16-4)
-  - Avertissements [16.4](/warnings-errors-and-troubleshooting#section-16-4)
+  - Alarmes [16.4.3](/warnings-errors-and-troubleshooting#section-16-4-3)
+  - Avertissements [16.4.2](/warnings-errors-and-troubleshooting#section-16-4-2)
+  - Erreurs [16.4.1](/warnings-errors-and-troubleshooting#section-16-4-1)
+  - Journal d’accès [16.4.4](/warnings-errors-and-troubleshooting#section-16-4-4)
+  - Journal d’audit [16.4.4](/warnings-errors-and-troubleshooting#section-16-4-4)
+  - Période affichée [16.4.5](/warnings-errors-and-troubleshooting#section-16-4-5)
 
 ## M
 

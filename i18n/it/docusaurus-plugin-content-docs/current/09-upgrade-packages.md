@@ -21,7 +21,7 @@ Il *pacchetto Scientific* è destinato ai professionisti della ricerca sulle acq
 - Il parametro risultante è una concentrazione cellulare denominata “Gate+”.
 - Il gate può essere regolato come i gate predefiniti TCC o ICC. Consultare la sezione [Modifica dei gate](11-results-and-data-analysis.md#section-11-4).
 
-**Rilevatori di diffusione in avanti e laterale** Il rilevatore Forward Scatter (FSC) misura la luce diffusa dai batteri o da altre particelle. È posizionato a un piccolo angolo rispetto alla direzione del fascio laser e misura quindi i segnali luminosi “in avanti”. Il rilevatore Side Scatter (SSC), invece, è posizionato a 90 gradi rispetto al fascio e misura la luce diffusa lateralmente. La combinazione delle informazioni di fluorescenza e diffusione fornisce dati ricchi di informazioni, consentendo applicazioni quali impronta microbiologica, profilazione e rilevamento di anomalie.
+**Rilevatori di diffusione in avanti e laterale** Il rilevatore Forward Scatter (FSC) misura la luce diffusa dai batteri o da altre particelle. È posizionato a un piccolo angolo rispetto alla direzione del fascio laser e misura quindi i segnali luminosi “in avanti”. Il rilevatore Side Scatter (SSC), invece, è posizionato a 90 gradi rispetto al fascio e misura la luce diffusa lateralmente. La combinazione delle informazioni di fluorescenza e diffusione fornisce dati ricchi di informazioni, consentendo applicazioni quali impronta microbiologica, profilazione e rilevamento di anomalie. In particolare, i rilevatori di diffusione consentono un’impronta precisa (BactoScore) per seguire i cambiamenti nella popolazione batterica.
 
 I dati di diffusione sono disponibili nei seguenti modi:
 
@@ -57,7 +57,7 @@ Il *pacchetto Management* è destinato all’utilizzo dello strumento in ambient
 
 **Audit Trail** L’*Audit Trail* è un registro di tutte le operazioni o modifiche rilevanti effettuate sullo strumento. Fornisce una cronologia dettagliata delle azioni compiute dall’utilizzatore o dallo strumento stesso. L’*Audit Trail* è accessibile nei seguenti modi:
 
-- Nell’interfaccia utente dello strumento, aprire Home → Impostazioni → Registri → Audit trail.
+- Nell’interfaccia utente dello strumento, aprire Home → Impostazioni → Registri → Audit trail (vedere [Registro di accesso e audit trail](16-warnings-errors-and-troubleshooting.md#section-16-4-4)).
 - Esportando tutti i dati su un’unità USB, vedere sezione [Esportazione dei dati su un dispositivo USB](12-data-access-and-export.md#section-12-1).
 - Dall’interfaccia utente web. L’accesso all’interfaccia web è descritto nel capitolo [Interfaccia utente web](13-web-user-interface.md).
 

@@ -21,7 +21,7 @@ Le *Scientific Package* s’adresse aux professionnels de la recherche sur l’e
 - Le paramètre de résultat est une concentration cellulaire appelée « Gate+ ».
 - La fenêtre peut être ajustée de la même manière que les fenêtres TCC ou ICC par défaut. Consultez la section [Modification des fenêtres](11-results-and-data-analysis.md#section-11-4).
 
-**Détecteurs de diffusion vers l’avant et latérale** Le détecteur de diffusion vers l’avant (FSC) mesure la lumière diffusée par les bactéries ou d’autres particules. Il est placé à un petit angle par rapport à la direction du faisceau laser et mesure donc la lumière diffusée « vers l’avant ». Le détecteur de diffusion latérale (SSC), quant à lui, est placé à 90 degrés du faisceau et mesure la lumière diffusée sur le côté. La combinaison des informations de fluorescence et de diffusion fournit des données riches, permettant des applications telles que l’empreinte microbiologique, le profilage ou la détection d’anomalies.
+**Détecteurs de diffusion vers l’avant et latérale** Le détecteur de diffusion vers l’avant (FSC) mesure la lumière diffusée par les bactéries ou d’autres particules. Il est placé à un petit angle par rapport à la direction du faisceau laser et mesure donc la lumière diffusée « vers l’avant ». Le détecteur de diffusion latérale (SSC), quant à lui, est placé à 90 degrés du faisceau et mesure la lumière diffusée sur le côté. La combinaison des informations de fluorescence et de diffusion fournit des données riches, permettant des applications telles que l’empreinte microbiologique, le profilage ou la détection d’anomalies. En particulier, les détecteurs de diffusion permettent une empreinte précise (BactoScore) pour suivre l’évolution de la population bactérienne.
 
 Les données des détecteurs de diffusion sont disponibles des manières suivantes :
 
@@ -57,7 +57,7 @@ Le *Management Package* s’adresse à l’utilisation de l’instrument dans de
 
 **Audit Trail** Le *Audit Trail* est un enregistrement de toutes les opérations ou modifications pertinentes effectuées sur l’instrument. Il fournit un historique détaillé des actions de l’utilisateur ou de l’instrument lui-même. La fonction *Audit Trail* est accessible de plusieurs façons :
 
-- Sur l’interface utilisateur de l’instrument, ouvrez Accueil → Paramètres → Journaux → Journal d’audit.
+- Sur l’interface utilisateur de l’instrument, ouvrez Accueil → Paramètres → Journaux → Journal d’audit (voir [Journal d’accès et journal d’audit](16-warnings-errors-and-troubleshooting.md#section-16-4-4)).
 - Lors de l’exportation de toutes les données sur une clé USB, voir section [Exportation des données vers un périphérique USB](12-data-access-and-export.md#section-12-1).
 - À partir de l'interface utilisateur web. L'accès à l'interface utilisateur Web est décrit au chapitre [Interface utilisateur web](13-web-user-interface.md).
 
