@@ -229,7 +229,7 @@ Assurez-vous de récupérer toutes les données des autres utilisateurs et vos p
 
 ## 15.3 Mise à jour du système {#section-15-3}
 
-Les mises à jour du logiciel peuvent être installées à partir d'une clé USB ou d'un référentiel en ligne, si une connexion internet est disponible (par exemple via BactoLink). Les mises à jour logicielles doivent être lancées manuellement à partir de l'interface utilisateur. Pour les mises à jour à l'aide d'une clé USB, contactez votre partenaire de service. Pour les mises à jour à partir du référentiel en ligne, suivez la procédure ci-dessous.
+Les mises à jour du logiciel peuvent être installées à partir d'une clé USB ou d'un référentiel en ligne, si une connexion internet est disponible (par exemple via BactoLink). Les mises à jour logicielles doivent être lancées manuellement à partir de l'interface utilisateur. Pour les mises à jour à partir du référentiel en ligne, suivez la procédure ci-dessous. Pour les mises à jour à l'aide d'une clé USB, voir [Préparer une clé USB de mise à jour](#section-15-3-1) et [Installer une mise à jour depuis une clé USB](#section-15-3-2).
 
 |  | OPÉRATION |
 | --- | --- |
@@ -241,6 +241,41 @@ Les mises à jour du logiciel peuvent être installées à partir d'une clé USB
 | 6. | Lisez attentivement les notes de version dans la section Journal des modifications de l'interface utilisateur pour comprendre les changements introduits depuis la version actuelle du logiciel. |
 | 7. | Pour effectuer la mise à jour, appuyez sur Mettre à jour, confirmez avec Oui, puis suivez les instructions. Remarque: Aucun redémarrage manuel n'est nécessaire après la mise à jour. |
 | 8. | Après la mise à jour, vérifiez que toutes les configurations de l'instrument sont toujours correctes. |
+
+### 15.3.1 Préparer une clé USB de mise à jour {#section-15-3-1}
+
+Les procédures suivantes s'appliquent au logiciel 3.x. L'image de mise à jour et bNovate Multi Disk Imager peuvent être téléchargés sur [downloads.bnovate.net](https://downloads.bnovate.net/). L'instrument affiche également cette adresse sous forme de code QR : lorsqu'aucune clé USB ni aucun référentiel en ligne n'est listé sur l'écran Mise à jour du système, appuyez sur Télécharger la mise à jour hors ligne.
+
+:::caution[L'écriture de l'image efface la clé USB]
+
+L'écriture de l'image de mise à jour efface toutes les données de la clé USB sélectionnée. Vérifiez le modèle et la capacité du périphérique avant l'écriture.
+
+:::
+
+|  | OPÉRATION |
+| --- | --- |
+| 1. | Utilisez une clé USB d'une capacité comprise entre 4 GB et 128 GB. |
+| 2. | Sur un ordinateur, téléchargez l'image de mise à jour BactoSense (fichier .img) et bNovate Multi Disk Imager pour Windows, macOS ou Linux depuis [downloads.bnovate.net](https://downloads.bnovate.net/). Installez bNovate Multi Disk Imager. |
+| 3. | Insérez la clé USB dans l'ordinateur et lancez bNovate Multi Disk Imager. |
+| 4. | Sous Raw image, sélectionnez ou déposez le fichier de mise à jour .img. |
+| 5. | Sous Devices, sélectionnez la clé USB. Vérifiez soigneusement son modèle et sa capacité. Si l'image est signalée comme plus grande que la clé USB, annulez et utilisez une clé plus grande. Ne tronquez pas l'image de mise à jour. |
+| 6. | Activez Verify data when finished, puis cliquez sur Write image. Confirmez le périphérique sélectionné et acceptez la demande d'autorisation administrateur. |
+| 7. | Attendez que l'écriture et la vérification soient terminées avec succès. Si le système d'exploitation propose de formater ou de réparer la clé USB, annulez cette demande. |
+| 8. | Éjectez la clé USB en toute sécurité avant de la retirer de l'ordinateur. |
+
+### 15.3.2 Installer une mise à jour depuis une clé USB {#section-15-3-2}
+
+|  | OPÉRATION |
+| --- | --- |
+| 1. | Assurez-vous que vous êtes connecté avec les droits d’admin. |
+| 2. | Recommandé: Sauvegardez vos données, par exemple en utilisant l'exportation vers une clé USB comme décrit dans la section [Exportation des données vers un périphérique USB](12-data-access-and-export.md#section-12-1). |
+| 3. | Insérez la clé USB de mise à jour préparée dans l'une des prises USB de l'instrument. |
+| 4. | Sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. Appuyez sur le bouton Maintenance, puis sur Mise à jour du système. |
+| 5. | Attendez environ 30 secondes que l'instrument reconnaisse et déchiffre la mise à jour, puis appuyez sur Rafraîchir liste USB. |
+| 6. | Sélectionnez la clé USB dans la liste. Si Aucun fichier de mise à jour valide sur cette clé USB. s'affiche, préparez à nouveau la clé comme décrit dans [Préparer une clé USB de mise à jour](#section-15-3-1). |
+| 7. | Lisez attentivement les notes de version dans la section Journal des modifications de l'interface utilisateur pour comprendre les changements introduits depuis la version actuelle du logiciel. |
+| 8. | Pour effectuer la mise à jour, appuyez sur Mettre à jour, confirmez avec Oui, puis suivez les instructions. Remarque: Aucun redémarrage manuel n'est nécessaire après la mise à jour. |
+| 9. | Après la mise à jour, vérifiez que toutes les configurations de l'instrument sont toujours correctes. |
 
 ## 15.4 Manuel intégré {#section-15-4}
 

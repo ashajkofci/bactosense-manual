@@ -229,7 +229,7 @@ Recuperare tutti i propri dati e quelli degli altri utenti prima di eliminarli d
 
 ## 15.3 Aggiornamento del software {#section-15-3}
 
-Gli aggiornamenti software possono essere installati da una chiavetta USB oppure da un repository online, se è disponibile una connessione Internet (ad esempio tramite BactoLink). Gli aggiornamenti devono essere avviati manualmente dall’interfaccia utente. Per gli aggiornamenti tramite USB, contattare il partner di assistenza. Per quelli dal repository online, seguire la procedura seguente.
+Gli aggiornamenti software possono essere installati da una chiavetta USB oppure da un repository online, se è disponibile una connessione Internet (ad esempio tramite BactoLink). Gli aggiornamenti devono essere avviati manualmente dall’interfaccia utente. Per gli aggiornamenti dal repository online, seguire la procedura seguente. Per gli aggiornamenti tramite USB, vedere [Preparare una chiavetta USB di aggiornamento](#section-15-3-1) e [Installare un aggiornamento da una chiavetta USB](#section-15-3-2).
 
 |  | FASE OPERATIVA |
 | --- | --- |
@@ -241,6 +241,41 @@ Gli aggiornamenti software possono essere installati da una chiavetta USB oppure
 | 6. | Leggere attentamente le note di versione nella sezione Registro delle modifiche dell’interfaccia per comprendere le modifiche introdotte rispetto alla versione attuale. |
 | 7. | Per aggiornare, premere Aggiorna, confermare con Sì e seguire le istruzioni. Nota: dopo l’aggiornamento non è necessario un riavvio manuale. |
 | 8. | Dopo l’aggiornamento, verificare che tutte le configurazioni dello strumento siano ancora corrette. |
+
+### 15.3.1 Preparare una chiavetta USB di aggiornamento {#section-15-3-1}
+
+Le procedure seguenti si applicano al software 3.x. L’immagine di aggiornamento e bNovate Multi Disk Imager possono essere scaricati da [downloads.bnovate.net](https://downloads.bnovate.net/). Lo strumento mostra questo indirizzo anche come codice QR: quando nella schermata Aggiornamento del sistema non è elencata alcuna chiavetta USB né il repository online, premere Scarica aggiornamento offline.
+
+:::caution[La scrittura dell’immagine cancella la chiavetta USB]
+
+La scrittura dell’immagine di aggiornamento cancella tutti i dati presenti sulla chiavetta USB selezionata. Verificare il modello e la capacità del dispositivo prima della scrittura.
+
+:::
+
+|  | FASE OPERATIVA |
+| --- | --- |
+| 1. | Utilizzare una chiavetta USB con una capacità compresa tra 4 GB e 128 GB. |
+| 2. | Su un computer, scaricare l’immagine di aggiornamento BactoSense (file .img) e bNovate Multi Disk Imager per Windows, macOS o Linux da [downloads.bnovate.net](https://downloads.bnovate.net/). Installare bNovate Multi Disk Imager. |
+| 3. | Inserire la chiavetta USB nel computer e avviare bNovate Multi Disk Imager. |
+| 4. | In Raw image, selezionare o trascinare il file di aggiornamento .img. |
+| 5. | In Devices, selezionare la chiavetta USB. Verificarne attentamente modello e capacità. Se l’immagine risulta più grande della chiavetta USB, annullare e utilizzare una chiavetta più capiente. Non ritagliare l’immagine di aggiornamento. |
+| 6. | Attivare Verify data when finished, quindi fare clic su Write image. Confermare il dispositivo selezionato e approvare la richiesta di autorizzazione dell’amministratore. |
+| 7. | Attendere che la scrittura e la verifica siano state completate correttamente. Se il sistema operativo chiede di formattare o riparare la chiavetta USB, annullare la richiesta. |
+| 8. | Rimuovere in sicurezza la chiavetta USB prima di scollegarla dal computer. |
+
+### 15.3.2 Installare un aggiornamento da una chiavetta USB {#section-15-3-2}
+
+|  | FASE OPERATIVA |
+| --- | --- |
+| 1. | Verificare di aver effettuato l’accesso con autorizzazioni Admin. |
+| 2. | Consigliato: salvare una copia dei dati, ad esempio esportandoli su USB come descritto nella sezione [Esportazione dei dati su un dispositivo USB](12-data-access-and-export.md#section-12-1). |
+| 3. | Inserire la chiavetta USB di aggiornamento preparata in una delle prese USB dello strumento. |
+| 4. | Nella schermata Home, premere Impostazioni per aprire il menu delle impostazioni. Premere il pulsante Manutenzione, quindi Aggiornamento del sistema. |
+| 5. | Attendere circa 30 secondi affinché lo strumento riconosca e decifri l’aggiornamento, quindi premere Aggiorna l'elenco. |
+| 6. | Selezionare la chiavetta USB nell’elenco. Se viene visualizzato In questa chiavetta USB non è presente alcun file di aggiornamento valido., preparare di nuovo la chiavetta come descritto in [Preparare una chiavetta USB di aggiornamento](#section-15-3-1). |
+| 7. | Leggere attentamente le note di versione nella sezione Registro delle modifiche dell’interfaccia per comprendere le modifiche introdotte rispetto alla versione attuale. |
+| 8. | Per aggiornare, premere Aggiorna, confermare con Sì e seguire le istruzioni. Nota: dopo l’aggiornamento non è necessario un riavvio manuale. |
+| 9. | Dopo l’aggiornamento, verificare che tutte le configurazioni dello strumento siano ancora corrette. |
 
 ## 15.4 Manuale integrato {#section-15-4}
 

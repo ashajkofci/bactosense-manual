@@ -229,7 +229,7 @@ Make sure you retrieve all data from other users and your data before deleting i
 
 ## 15.3 Software update {#section-15-3}
 
-Software updates can either be installed from a USB stick, or from an online repository, if an internet connection is available (e.g. through BactoLink). Software updates must be launched manually from the user interface. For updates using USB stick, contact your service partner. For updates from the online repository, follow the procedure below.
+Software updates can either be installed from a USB stick, or from an online repository, if an internet connection is available (e.g. through BactoLink). Software updates must be launched manually from the user interface. For updates from the online repository, follow the procedure below. For updates using a USB stick, see [Prepare a USB update stick](#section-15-3-1) and [Install an update from a USB stick](#section-15-3-2).
 
 |  | WORK STEP |
 | --- | --- |
@@ -241,6 +241,41 @@ Software updates can either be installed from a USB stick, or from an online rep
 | 6. | Carefully read through the release notes in the Changelog section of the user interface to understand the changes introduced since your current software version. |
 | 7. | To update, press Update, confirm with Yes, and follow the instructions. Note: No manual reboot is necessary after the update. |
 | 8. | After the update, verify that all instrument configurations are still correct. |
+
+### 15.3.1 Prepare a USB update stick {#section-15-3-1}
+
+The following procedures apply to software 3.x. The update image and bNovate Multi Disk Imager can be downloaded from [downloads.bnovate.net](https://downloads.bnovate.net/). The instrument also shows this address as a QR code: when no USB stick or online repository is listed on the System update screen, press Download offline update.
+
+:::caution[Writing the image erases the USB stick]
+
+Writing the update image erases all data on the selected USB stick. Verify the device model and capacity before writing.
+
+:::
+
+|  | WORK STEP |
+| --- | --- |
+| 1. | Use a USB stick with a capacity from 4 GB to 128 GB. |
+| 2. | On a computer, download the BactoSense update image (.img file) and bNovate Multi Disk Imager for Windows, macOS or Linux from [downloads.bnovate.net](https://downloads.bnovate.net/). Install bNovate Multi Disk Imager. |
+| 3. | Insert the USB stick into the computer and launch bNovate Multi Disk Imager. |
+| 4. | Under Raw image, select or drop the update .img file. |
+| 5. | Under Devices, select the USB stick. Confirm its model and capacity carefully. If the image is reported as larger than the USB stick, cancel and use a larger stick. Do not crop the update image. |
+| 6. | Enable Verify data when finished, then click Write image. Confirm the selected device and approve the administrator prompt. |
+| 7. | Wait until writing and verification have completed successfully. If the operating system asks to format or repair the USB stick, cancel the prompt. |
+| 8. | Safely eject the USB stick before removing it from the computer. |
+
+### 15.3.2 Install an update from a USB stick {#section-15-3-2}
+
+|  | WORK STEP |
+| --- | --- |
+| 1. | Make sure you are logged in with Admin permissions. |
+| 2. | Recommended: Back up your data, e.g. using export to USB as described in [Export data to USB device](12-data-access-and-export.md#section-12-1). |
+| 3. | Insert the prepared update stick into a USB socket of the instrument. |
+| 4. | On the Home screen, press Settings to open the settings menu. Press the Maintenance button, then press System update. |
+| 5. | Wait approximately 30 seconds while the instrument recognizes and decrypts the update, then press Refresh list. |
+| 6. | Select the USB stick in the list. If No valid update file in this USB stick. is shown, prepare the stick again as described in [Prepare a USB update stick](#section-15-3-1). |
+| 7. | Carefully read through the release notes in the Changelog section of the user interface to understand the changes introduced since your current software version. |
+| 8. | To update, press Update, confirm with Yes, and follow the instructions. Note: No manual reboot is necessary after the update. |
+| 9. | After the update, verify that all instrument configurations are still correct. |
 
 ## 15.4 Embedded manual {#section-15-4}
 

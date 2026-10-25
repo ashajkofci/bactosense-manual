@@ -229,7 +229,7 @@ Stellen Sie sicher, dass alle von Ihnen und anderen Benutzern erzeugten Daten ge
 
 ## 15.3 Softwareaktualisierungen {#section-15-3}
 
-Softwareaktualisierungen können entweder von einem USB-Stick oder von einem Online- Repository installiert werden, wenn eine Internetverbindung verfügbar ist (z. B. über BactoLink). Software-Updates müssen manuell über die Benutzeroberfläche gestartet werden. Für Updates über einen USB-Stick wenden Sie sich bitte an Ihren Servicepartner. Für Updates aus dem Online-Repository gehen Sie wie folgt vor.
+Softwareaktualisierungen können entweder von einem USB-Stick oder von einem Online- Repository installiert werden, wenn eine Internetverbindung verfügbar ist (z. B. über BactoLink). Software-Updates müssen manuell über die Benutzeroberfläche gestartet werden. Für Updates aus dem Online-Repository gehen Sie wie folgt vor. Für Updates über einen USB-Stick siehe [USB-Update-Stick vorbereiten](#section-15-3-1) und [Update von einem USB-Stick installieren](#section-15-3-2).
 
 |  | ARBEITSSCHRITT |
 | --- | --- |
@@ -241,6 +241,41 @@ Softwareaktualisierungen können entweder von einem USB-Stick oder von einem Onl
 | 6. | Lesen Sie die Versionshinweise im Abschnitt "Änderungsprotokoll" der Benutzeroberfläche sorgfältig durch, um sich über die Änderungen seit Ihrer aktuellen Softwareversion zu informieren. |
 | 7. | Um zu aktualisieren, drücken Sie Aktualisieren, bestätigen Sie mit Ja und folgen Sie den Anweisungen. Hinweis: Nach der Aktualisierung ist kein manueller Neustart erforderlich. |
 | 8. | Überprüfen Sie nach der Aktualisierung, dass alle Gerätekonfigurationen noch korrekt sind. |
+
+### 15.3.1 USB-Update-Stick vorbereiten {#section-15-3-1}
+
+Die folgenden Verfahren gelten für Software 3.x. Das Update-Image und bNovate Multi Disk Imager können von [downloads.bnovate.net](https://downloads.bnovate.net/) heruntergeladen werden. Das Gerät zeigt diese Adresse auch als QR-Code an: Wenn im Bildschirm System Update weder ein USB-Stick noch das Online-Repository aufgeführt ist, drücken Sie Offline-Update herunterladen.
+
+:::caution[Das Schreiben des Images löscht den USB-Stick]
+
+Beim Schreiben des Update-Images werden alle Daten auf dem ausgewählten USB-Stick gelöscht. Überprüfen Sie vor dem Schreiben Modell und Kapazität des Speichermediums.
+
+:::
+
+|  | ARBEITSSCHRITT |
+| --- | --- |
+| 1. | Verwenden Sie einen USB-Stick mit einer Kapazität von 4 GB bis 128 GB. |
+| 2. | Laden Sie auf einem Computer das BactoSense-Update-Image (.img-Datei) und bNovate Multi Disk Imager für Windows, macOS oder Linux von [downloads.bnovate.net](https://downloads.bnovate.net/) herunter. Installieren Sie bNovate Multi Disk Imager. |
+| 3. | Stecken Sie den USB-Stick in den Computer und starten Sie bNovate Multi Disk Imager. |
+| 4. | Wählen Sie unter Raw image die Update-Datei (.img) aus oder ziehen Sie sie in das Feld. |
+| 5. | Wählen Sie unter Devices den USB-Stick aus. Überprüfen Sie Modell und Kapazität sorgfältig. Wird das Image als größer als der USB-Stick gemeldet, brechen Sie den Vorgang ab und verwenden Sie einen größeren USB-Stick. Kürzen Sie das Update-Image nicht. |
+| 6. | Aktivieren Sie Verify data when finished und klicken Sie dann auf Write image. Bestätigen Sie das ausgewählte Speichermedium und genehmigen Sie die Administratorabfrage. |
+| 7. | Warten Sie, bis das Schreiben und die Überprüfung erfolgreich abgeschlossen sind. Wenn das Betriebssystem anbietet, den USB-Stick zu formatieren oder zu reparieren, brechen Sie diese Abfrage ab. |
+| 8. | Werfen Sie den USB-Stick sicher aus, bevor Sie ihn vom Computer abziehen. |
+
+### 15.3.2 Update von einem USB-Stick installieren {#section-15-3-2}
+
+|  | ARBEITSSCHRITT |
+| --- | --- |
+| 1. | Stellen Sie sicher, dass Sie mit Administratorrechten angemeldet sind. |
+| 2. | Empfohlen: Sichern Sie Ihre Daten, z. B. durch Export auf USB, wie unter [Export von Daten auf ein USB-Gerät](12-data-access-and-export.md#section-12-1) beschrieben. |
+| 3. | Stecken Sie den vorbereiteten Update-Stick in einen USB-Anschluss des Geräts. |
+| 4. | Drücken Sie auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. Drücken Sie die Taste Wartung und anschließend System Update. |
+| 5. | Warten Sie etwa 30 Sekunden, bis das Gerät das Update erkannt und entschlüsselt hat, und drücken Sie dann Liste der USB Speichermedien neu laden. |
+| 6. | Wählen Sie den USB-Stick in der Liste aus. Wird Keine gültige Update-Datei auf diesem USB-Stick. angezeigt, bereiten Sie den USB-Stick erneut vor, wie unter [USB-Update-Stick vorbereiten](#section-15-3-1) beschrieben. |
+| 7. | Lesen Sie die Versionshinweise im Abschnitt "Änderungsprotokoll" der Benutzeroberfläche sorgfältig durch, um sich über die Änderungen seit Ihrer aktuellen Softwareversion zu informieren. |
+| 8. | Um zu aktualisieren, drücken Sie Aktualisieren, bestätigen Sie mit Ja und folgen Sie den Anweisungen. Hinweis: Nach der Aktualisierung ist kein manueller Neustart erforderlich. |
+| 9. | Überprüfen Sie nach der Aktualisierung, dass alle Gerätekonfigurationen noch korrekt sind. |
 
 ## 15.4 Eingebettete Bedienungsanleitung {#section-15-4}
 

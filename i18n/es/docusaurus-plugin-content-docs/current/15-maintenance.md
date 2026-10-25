@@ -229,7 +229,7 @@ Asegúrese de obtener todos los datos de otros usuarios y los suyos antes de eli
 
 ## 15.3 Actualización del software {#section-15-3}
 
-Las actualizaciones de software pueden instalarse desde una memoria USB o desde un repositorio en línea si se dispone de conexión a Internet (p. ej., mediante BactoLink). Deben iniciarse manualmente desde la interfaz de usuario. Para las actualizaciones mediante USB, póngase en contacto con su colaborador de servicio. Para actualizar desde el repositorio en línea, siga el procedimiento siguiente.
+Las actualizaciones de software pueden instalarse desde una memoria USB o desde un repositorio en línea si se dispone de conexión a Internet (p. ej., mediante BactoLink). Deben iniciarse manualmente desde la interfaz de usuario. Para actualizar desde el repositorio en línea, siga el procedimiento siguiente. Para las actualizaciones mediante USB, consulte [Preparar una memoria USB de actualización](#section-15-3-1) e [Instalar una actualización desde una memoria USB](#section-15-3-2).
 
 |  | PASO DE TRABAJO |
 | --- | --- |
@@ -241,6 +241,41 @@ Las actualizaciones de software pueden instalarse desde una memoria USB o desde 
 | 6. | Lea atentamente las notas de la versión de la sección Registro de cambios de la interfaz para comprender los cambios introducidos desde su versión actual del software. |
 | 7. | Para actualizar, pulse Actualizar, confirme con Sí y siga las instrucciones. Nota: no es necesario reiniciar manualmente después de la actualización. |
 | 8. | Tras la actualización, compruebe que todas las configuraciones del instrumento sigan siendo correctas. |
+
+### 15.3.1 Preparar una memoria USB de actualización {#section-15-3-1}
+
+Los siguientes procedimientos se aplican al software 3.x. La imagen de actualización y bNovate Multi Disk Imager pueden descargarse en [downloads.bnovate.net](https://downloads.bnovate.net/). El instrumento también muestra esta dirección como código QR: cuando la pantalla Actualización del sistema no muestra ninguna memoria USB ni el repositorio en línea, pulse Descargar actualización sin conexión.
+
+:::caution[La escritura de la imagen borra la memoria USB]
+
+Al escribir la imagen de actualización se borran todos los datos de la memoria USB seleccionada. Compruebe el modelo y la capacidad del dispositivo antes de escribir.
+
+:::
+
+|  | PASO DE TRABAJO |
+| --- | --- |
+| 1. | Utilice una memoria USB con una capacidad de 4 GB a 128 GB. |
+| 2. | En un ordenador, descargue la imagen de actualización de BactoSense (archivo .img) y bNovate Multi Disk Imager para Windows, macOS o Linux desde [downloads.bnovate.net](https://downloads.bnovate.net/). Instale bNovate Multi Disk Imager. |
+| 3. | Inserte la memoria USB en el ordenador e inicie bNovate Multi Disk Imager. |
+| 4. | En Raw image, seleccione o arrastre el archivo de actualización .img. |
+| 5. | En Devices, seleccione la memoria USB. Compruebe cuidadosamente su modelo y su capacidad. Si se indica que la imagen es mayor que la memoria USB, cancele y utilice una memoria más grande. No recorte la imagen de actualización. |
+| 6. | Active Verify data when finished y haga clic en Write image. Confirme el dispositivo seleccionado y apruebe la solicitud de administrador. |
+| 7. | Espere a que la escritura y la verificación finalicen correctamente. Si el sistema operativo pide formatear o reparar la memoria USB, cancele la solicitud. |
+| 8. | Expulse la memoria USB de forma segura antes de retirarla del ordenador. |
+
+### 15.3.2 Instalar una actualización desde una memoria USB {#section-15-3-2}
+
+|  | PASO DE TRABAJO |
+| --- | --- |
+| 1. | Asegúrese de haber iniciado sesión con permisos Admin. |
+| 2. | Recomendado: haga una copia de seguridad de sus datos, p. ej., mediante la exportación a USB descrita en la sección [Exportación de datos a un dispositivo USB](12-data-access-and-export.md#section-12-1). |
+| 3. | Inserte la memoria USB de actualización preparada en uno de los puertos USB del instrumento. |
+| 4. | En la pantalla Home, pulse Ajustes para abrir el menú de ajustes. Pulse el botón Mantenimiento y, a continuación, Actualización del sistema. |
+| 5. | Espere unos 30 segundos a que el instrumento reconozca y descifre la actualización y, a continuación, pulse Actualizar lista. |
+| 6. | Seleccione la memoria USB en la lista. Si se muestra No hay ningún archivo de actualización válido en esta memoria USB., vuelva a preparar la memoria como se describe en [Preparar una memoria USB de actualización](#section-15-3-1). |
+| 7. | Lea atentamente las notas de la versión de la sección Registro de cambios de la interfaz para comprender los cambios introducidos desde su versión actual del software. |
+| 8. | Para actualizar, pulse Actualizar, confirme con Sí y siga las instrucciones. Nota: no es necesario reiniciar manualmente después de la actualización. |
+| 9. | Tras la actualización, compruebe que todas las configuraciones del instrumento sigan siendo correctas. |
 
 ## 15.4 Manual integrado {#section-15-4}
 
