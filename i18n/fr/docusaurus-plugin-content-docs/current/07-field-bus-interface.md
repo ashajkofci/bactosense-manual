@@ -70,7 +70,7 @@ Les valeurs suivantes peuvent être lues avec les fonctions Modbus 3 ou 4 et éc
 | 300023 400023 | 0x0016 | UInt32 LSB | ^ | ^ |
 | 300024 400024 | 0x0017 | UInt32 MSB | N° de série du remplissage |  |
 | 300025 400025 | 0x0018 | UInt32 LSB |  | ^ |
-| 300026 400026 | 0x0019 | Uint16 | Type de<br />cartouche | 1 =<br />TCC 1002 = ICC<br />1030 = ACC |
+| 300026 400026 | 0x0019 | Uint16 | Type de<br />cartouche | 1 =<br />TCC 1002 = ICC<br />1030 = ACC<br />1003 = ICC-BWT |
 | 300027 400027 | 0x001A | UInt16 : Année | Date de<br />péremption de la<br />cartouche | Date UTC |
 | 300028 400028 | 0x001B | UInt16 : Mois | ^ | ^ |
 | 300029 400029 | 0x001c | UInt16 : Jour | ^ | ^ |
@@ -110,7 +110,7 @@ Les valeurs suivantes peuvent être lues avec les fonctions Modbus 3 ou 4 et éc
 | 300118 400118 | 0x0075 | UInt32 LSB | ^ | ^ |
 | 300119 400119 | 0x0076 | Float 32 MSB | HACP | Toujours 0 s’il ne s’agit pas<br />d’une cartouche ACC. |
 | 300120 400120 | 0x0077 | Float 32 LSB | ^ | ^ |
-| 300121 400121 | 0x0078 | UInt32 MSB | TCC en direct | Identique à TCC, mais<br />la valeur est actualisée<br />en direct pendant une mesure.<br />Revient à zéro à la<br />fin de la mesure. |
+| 300121 400121 | 0x0078 | UInt32 MSB | TCC en direct | Identique à TCC, mais<br />la valeur est actualisée<br />en direct pendant une mesure.<br />Utile pour la détection<br />précoce d'une contamination<br />(par exemple : arrêt d'une<br />pompe ou déviation de l'eau<br />en ligne).<br />Revient à zéro à la<br />fin de la mesure. |
 | 300122 400122 | 0x0079 | UInt32 LSB | ^ | ^ |
 | 300123 400123 | 0x007A | UInt32 MSB | ICC en direct | voir ci-dessus. |
 | 300124 400124 | 0x007B | UInt32 LSB | ^ | ^ |
@@ -149,5 +149,17 @@ Les valeurs suivantes peuvent être lues avec les fonctions Modbus 3 ou 4 et éc
 | 300174 400174 | 0x00AD | UInt16 | État du<br/>BactoSwitch | 0 signifie aucune erreur. |
 | 300175 400175 | 0x00AE | UInt16 | Connexion du<br/>BactoSwitch | 0 = non<br/>connecté 1 =<br/>connexion réussie |
 | 300176 400176 | 0x00AF | UInt16 | État des<br/>vannes du BactoSwitch | Masque de bits 0x01 = vanne du<br/>flux 1, etc.<br/>int 15 = toutes ouvertes |
+| 300181 400181 | 0x00B4 | UInt32 MSB | CBC |  |
+| 300182 400182 | 0x00B5 | UInt32 LSB | ^ | ^ |
+| 300183 400183 | 0x00B6 | UInt32 MSB | EBC |  |
+| 300184 400184 | 0x00B7 | UInt32 LSB | ^ | ^ |
+| 300185 400185 | 0x00B8 | UInt32 MSB | NBC |  |
+| 300186 400186 | 0x00B9 | UInt32 LSB | ^ | ^ |
+| 300187 400187 | 0x00BA | UInt32 MSB | CBC en direct | voir ci-dessus. |
+| 300188 400188 | 0x00BB | UInt32 LSB | ^ | ^ |
+| 300189 400189 | 0x00BC | UInt32 MSB | EBC en direct | voir ci-dessus. |
+| 300190 400190 | 0x00BD | UInt32 LSB | ^ | ^ |
+| 300191 400191 | 0x00BE | UInt32 MSB | NBC en direct | voir ci-dessus. |
+| 300192 400192 | 0x00BF | UInt32 LSB | ^ | ^ |
 
 </div>

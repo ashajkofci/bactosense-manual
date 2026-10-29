@@ -70,7 +70,7 @@ The following values can be read with Modbus function 3 or 4 and written with Mo
 | 300023<br />400023 | 0x0016 | UInt32 LSB | ^ | ^ |
 | 300024<br />400024 | 0x0017 | UInt32 MSB | Fill serial no |  |
 | 300025<br />400025 | 0x0018 | UInt32 LSB |  | ^ |
-| 300026<br />400026 | 0x0019 | Uint16 | Cartridge<br />type | 1 = TCC<br />1002 = ICC<br />1030 = ACC |
+| 300026<br />400026 | 0x0019 | Uint16 | Cartridge<br />type | 1 = TCC<br />1002 = ICC<br />1030 = ACC<br />1003 = ICC-BWT |
 | 300027<br />400027 | 0x001A | UInt16: Year | Cartridge<br />expiration<br />date | UTC date |
 | 300028<br />400028 | 0x001B | UInt16: Month | ^ | ^ |
 | 300029<br />400029 | 0x001c | UInt16: Day | ^ | ^ |
@@ -110,7 +110,7 @@ The following values can be read with Modbus function 3 or 4 and written with Mo
 | 300118<br />400118 | 0x0075 | UInt32 LSB | ^ | ^ |
 | 300119<br />400119 | 0x0076 | Float 32 MSB | HACP | Always 0 if not ACC<br />cartridge. |
 | 300120<br />400120 | 0x0077 | Float 32 LSB | ^ | ^ |
-| 300121<br />400121 | 0x0078 | UInt32 MSB | Live TCC | Same as TCC, but the<br />value is updated live<br />during a measurement.<br />Returns to zero at the end<br />of the measurement. |
+| 300121<br />400121 | 0x0078 | UInt32 MSB | Live TCC | Same as TCC, but the<br />value is updated live<br />during a measurement.<br />Useful for early<br />contamination detection<br />(for example: halting a<br />pump or diverging online<br />water).<br />Returns to zero at the end<br />of the measurement. |
 | 300122<br />400122 | 0x0079 | UInt32 LSB | ^ | ^ |
 | 300123<br />400123 | 0x007A | UInt32 MSB | Live ICC | see above. |
 | 300124<br />400124 | 0x007B | UInt32 LSB | ^ | ^ |
@@ -149,5 +149,17 @@ The following values can be read with Modbus function 3 or 4 and written with Mo
 | 300174<br/>400174 | 0x00AD | UInt16 | BactoSwitch<br/>status | 0 means no error. |
 | 300175<br/>400175 | 0x00AE | UInt16 | BactoSwitch<br/>connection | 0 = not connected<br/>1 = connected<br/>successfully |
 | 300176<br/>400176 | 0x00AF | UInt16 | BactoSwitch<br/>valve state | Bitmask 0x01 = valve of<br/>stream 1, etc<br/>int 15 = all open |
+| 300181<br/>400181 | 0x00B4 | UInt32 MSB | CBC |  |
+| 300182<br/>400182 | 0x00B5 | UInt32 LSB | ^ | ^ |
+| 300183<br/>400183 | 0x00B6 | UInt32 MSB | EBC |  |
+| 300184<br/>400184 | 0x00B7 | UInt32 LSB | ^ | ^ |
+| 300185<br/>400185 | 0x00B8 | UInt32 MSB | NBC |  |
+| 300186<br/>400186 | 0x00B9 | UInt32 LSB | ^ | ^ |
+| 300187<br/>400187 | 0x00BA | UInt32 MSB | Live CBC | see above. |
+| 300188<br/>400188 | 0x00BB | UInt32 LSB | ^ | ^ |
+| 300189<br/>400189 | 0x00BC | UInt32 MSB | Live EBC | see above. |
+| 300190<br/>400190 | 0x00BD | UInt32 LSB | ^ | ^ |
+| 300191<br/>400191 | 0x00BE | UInt32 MSB | Live NBC | see above. |
+| 300192<br/>400192 | 0x00BF | UInt32 LSB | ^ | ^ |
 
 </div>

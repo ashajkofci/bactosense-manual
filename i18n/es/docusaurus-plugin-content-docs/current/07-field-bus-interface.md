@@ -70,7 +70,7 @@ Los siguientes valores pueden leerse con la función Modbus 3 o 4 y escribirse c
 | 300023<br />400023 | 0x0016 | UInt32 LSB | ^ | ^ |
 | 300024<br />400024 | 0x0017 | UInt32 MSB | Número de serie de la recarga |  |
 | 300025<br />400025 | 0x0018 | UInt32 LSB |  | ^ |
-| 300026<br />400026 | 0x0019 | Uint16 | Tipo de<br />cartucho | 1 = TCC<br />1002 = ICC<br />1030 = ACC |
+| 300026<br />400026 | 0x0019 | Uint16 | Tipo de<br />cartucho | 1 = TCC<br />1002 = ICC<br />1030 = ACC<br />1003 = ICC-BWT |
 | 300027<br />400027 | 0x001A | UInt16: año | Fecha de<br />caducidad del<br />cartucho | Fecha UTC |
 | 300028<br />400028 | 0x001B | UInt16: mes | ^ | ^ |
 | 300029<br />400029 | 0x001c | UInt16: día | ^ | ^ |
@@ -110,7 +110,7 @@ Los siguientes valores pueden leerse con la función Modbus 3 o 4 y escribirse c
 | 300118<br />400118 | 0x0075 | UInt32 LSB | ^ | ^ |
 | 300119<br />400119 | 0x0076 | Float 32 MSB | HACP | Siempre 0 si no es un cartucho<br />ACC. |
 | 300120<br />400120 | 0x0077 | Float 32 LSB | ^ | ^ |
-| 300121<br />400121 | 0x0078 | UInt32 MSB | TCC en tiempo real | Igual que TCC, pero el<br />valor se actualiza en tiempo real<br />durante una medición.<br />Vuelve a cero al finalizar<br />la medición. |
+| 300121<br />400121 | 0x0078 | UInt32 MSB | TCC en tiempo real | Igual que TCC, pero el<br />valor se actualiza en tiempo real<br />durante una medición.<br />Útil para la detección<br />temprana de contaminación<br />(por ejemplo: detener una<br />bomba o desviar el agua<br />en línea).<br />Vuelve a cero al finalizar<br />la medición. |
 | 300122<br />400122 | 0x0079 | UInt32 LSB | ^ | ^ |
 | 300123<br />400123 | 0x007A | UInt32 MSB | ICC en tiempo real | Véase arriba. |
 | 300124<br />400124 | 0x007B | UInt32 LSB | ^ | ^ |
@@ -149,5 +149,17 @@ Los siguientes valores pueden leerse con la función Modbus 3 o 4 y escribirse c
 | 300174<br/>400174 | 0x00AD | UInt16 | Estado de<br/>BactoSwitch | 0 significa que no hay errores. |
 | 300175<br/>400175 | 0x00AE | UInt16 | Conexión de<br/>BactoSwitch | 0 = no conectado<br/>1 = conectado<br/>correctamente |
 | 300176<br/>400176 | 0x00AF | UInt16 | Estado de las válvulas<br/>de BactoSwitch | Máscara de bits 0x01 = válvula de<br/>la línea 1, etc.<br/>int 15 = todas abiertas |
+| 300181<br/>400181 | 0x00B4 | UInt32 MSB | CBC |  |
+| 300182<br/>400182 | 0x00B5 | UInt32 LSB | ^ | ^ |
+| 300183<br/>400183 | 0x00B6 | UInt32 MSB | EBC |  |
+| 300184<br/>400184 | 0x00B7 | UInt32 LSB | ^ | ^ |
+| 300185<br/>400185 | 0x00B8 | UInt32 MSB | NBC |  |
+| 300186<br/>400186 | 0x00B9 | UInt32 LSB | ^ | ^ |
+| 300187<br/>400187 | 0x00BA | UInt32 MSB | CBC en tiempo real | Véase arriba. |
+| 300188<br/>400188 | 0x00BB | UInt32 LSB | ^ | ^ |
+| 300189<br/>400189 | 0x00BC | UInt32 MSB | EBC en tiempo real | Véase arriba. |
+| 300190<br/>400190 | 0x00BD | UInt32 LSB | ^ | ^ |
+| 300191<br/>400191 | 0x00BE | UInt32 MSB | NBC en tiempo real | Véase arriba. |
+| 300192<br/>400192 | 0x00BF | UInt32 LSB | ^ | ^ |
 
 </div>
