@@ -282,13 +282,13 @@ Die folgenden Schritte finden nur dann Anwendung, wenn der BactoSwitch mit einem
 
 Die folgenden Abschnitte zeigen Beispiele der Benutzeroberfläche des BactoSense. Sie setzen voraus, dass Sie mit dem BactoSense vertraut sind, und beschränken sich auf den Betrieb des BactoSwitch. Weitere Informationen finden Sie in der [Bedienungsanleitung des BactoSense](/bactosense/).
 
-Melden Sie sich am BactoSense im Admin-Modus an. Wählen Sie **Automatischer Modus Einstellungen**.
+Melden Sie sich am BactoSense im Admin-Modus an. Wählen Sie unter **Einstellungen** den Eintrag **Online-Modus Einstellungen**.
 
-![Startseite des BactoSense mit hervorgehobener Schaltfläche Automatischer Modus Einstellungen](/img/bactoswitch/gui-home-auto-mode-settings.png "width=634")
+![Menü Einstellungen mit hervorgehobenem Eintrag Online-Modus Einstellungen](/img/gui/de/bactoswitch-settings-menu-online-mode-settings.png "width=634")
 
 Wählen Sie anschließend **BactoSwitch-Probenlinien**:
 
-![Einstellungen des automatischen Modus mit hervorgehobenem Eintrag BactoSwitch-Probenlinien](/img/bactoswitch/gui-auto-mode-settings-sample-lines.png "width=635")
+![Online-Modus Einstellungen mit hervorgehobenem Eintrag BactoSwitch-Probenlinien](/img/gui/de/bactoswitch-online-mode-settings-sample-lines.png "width=635")
 
 Auf der Seite **BactoSwitch-Probenlinien** können Sie:
 
@@ -297,7 +297,7 @@ Auf der Seite **BactoSwitch-Probenlinien** können Sie:
 - Die Leitungen umbenennen.
 - Die Farbe ändern, mit der die Leitungen in den Diagrammen dargestellt werden.
 
-![Seite BactoSwitch-Probenlinien mit vier Leitungen](/img/bactoswitch/gui-sample-lines.png "width=637")
+![Seite BactoSwitch-Probenlinien mit vier Leitungen](/img/gui/de/bactoswitch-sample-lines.png "width=637")
 
 Drücken Sie **Speichern**, um die Änderungen zu speichern.
 
@@ -322,11 +322,11 @@ Um den Durchfluss mit den eingebauten Nadelventilen des BactoSwitch zu testen od
 
 Öffnen Sie anschließend auf der Benutzeroberfläche des BactoSense das Menü **BactoSwitch-Probenlinien** (siehe [Leitungskonfiguration](04-installation.md#section-4-6)) und drücken Sie die Schaltfläche **Test BactoSwitch**. Dadurch wird das **BactoSwitch-Bedienfeld** geöffnet. Mit den vier Ventilschaltflächen öffnen Sie nur das ausgewählte Ventil, während die anderen automatisch geschlossen werden. Um alle Ventile wieder zu öffnen, drücken Sie die Schaltfläche **Alle Ventile öffnen** unten auf dem Bildschirm.
 
-![BactoSwitch-Bedienfeld mit allen Ventilen offen](/img/bactoswitch/gui-control-panel-all-valves-open.png "width=637")
+![BactoSwitch-Bedienfeld mit allen Ventilen offen](/img/gui/de/bactoswitch-control-panel-all-valves-open.png "width=637")
 
 Wenn nur eines der Ventile offen ist, wird der angezeigte Durchflusswert grün oder rot dargestellt, je nachdem, ob der Durchfluss innerhalb der vorgegebenen Werte von 150 – 400 mL/min liegt oder nicht:
 
-![BactoSwitch-Bedienfeld, nur Ventil 4 offen](/img/bactoswitch/gui-control-panel-single-valve.png "width=635")
+![BactoSwitch-Bedienfeld, nur Ventil 4 offen](/img/gui/de/bactoswitch-control-panel-single-valve.png "width=635")
 
 Um den Durchfluss jeder Eingangsleitung einzustellen, verwenden Sie die Drehknöpfe zur Durchflusseinstellung des BactoSwitch (siehe Abbildung unten), bis der Durchfluss im Bereich von 150 – 400 mL/min liegt, idealerweise bei etwa 300 mL/min.
 

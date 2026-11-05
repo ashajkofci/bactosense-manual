@@ -37,9 +37,9 @@ La placa de características de BactoSense se encuentra en el lateral derecho de
 | 1 | Fabricante | 2 | Nombre del producto |
 | 3 | Número de serie | 4 | Código de barras |
 | 5 | Fecha de fabricación | 6 | País de origen |
-| 7 | Requisitos de tensión y potencia<br/>(véase la sección [Conexión de BactoSense a la alimentación eléctrica](../installation/#section-5-3)) | 8 | Marcado CE |
-| 9 | Marcado UKCA | 10 | Conformidad con las normas canadienses sobre<br/>compatibilidad electromagnética e interferencias |
-| 11 | Lea las instrucciones y utilice el instrumento<br/>con precaución | 12 | Información sobre la eliminación |
+| 7 | Requisitos de tensión y potencia (véase la sección [Conexión de BactoSense a la alimentación eléctrica](../installation/#section-5-3)) | 8 | Marcado CE |
+| 9 | Marcado UKCA | 10 | Conformidad con las normas canadienses sobre compatibilidad electromagnética e interferencias |
+| 11 | Lea las instrucciones y utilice el instrumento con precaución | 12 | Información sobre la eliminación |
 
 ### 3.1.2 Placa de características de la fuente de alimentación de BactoSense {#section-3-1-2}
 
@@ -92,8 +92,8 @@ La placa de características de la fuente de alimentación de BactoSense se encu
 | USB | 2 x USB 3.1, 5 V 1 A por puerto<br />1 x USB-C |
 | Ethernet | 1 x RJ45 Gigabit Ethernet |
 | Protocolos y opciones Ethernet | Interfaz web<br />Escritorio remoto (VNC)<br />Modbus TCP<br />HTTP / HTTPS<br />FTP |
-| Entradas digitales | 4 x entradas digitales, entrada con optoacoplador: tensión<br />directa 1.2 VDC con 3 kΩ en serie, cátodo<br />conectado a COMMON, máx. 30 mA,<br />máx. 50 mW |
-| Salidas analógicas y digitales | Salidas analógicas:<br />2 x 0/4 – 20 mA, carga recomendada de 250 Ω<br />Salidas digitales:<br />4 x salidas digitales, libremente configurables,<br />salida SSR: máx. 48 VDC, máx. 300 mW,<br />resistencia en conducción 2 Ω |
+| Entradas digitales | 4 x entradas digitales, entrada con optoacoplador: tensión directa 1.2 VDC con 3 kΩ en serie, cátodo conectado a COMMON, máx. 30 mA, máx. 50 mW |
+| Salidas analógicas y digitales | Salidas analógicas:<br />2 x 0/4 – 20 mA, carga recomendada de 250 Ω<br />Salidas digitales:<br />4 x salidas digitales, libremente configurables,<br />salida SSR: máx. 48 VDC, máx. 300 mW, resistencia en conducción 2 Ω |
 | Pantalla | Pantalla táctil capacitiva WVGA de 7.0 pulgadas |
 | Conectividad móvil | Módulo de conectividad BactoLink (opcional) |
 | Análisis avanzado de datos | Exportación de archivos FCS 3.1 |
@@ -106,7 +106,7 @@ La placa de características de la fuente de alimentación de BactoSense se encu
 | Fluorescencia | 530/50 nm FL1<br />715 LP nm FL2 |
 | Dispersión frontal (FSC) | 488 nm (opcional según el instrumento) |
 | Dispersión lateral (SSC) | 488 nm (opcional según el instrumento) |
-| Parámetros de resultados | TCC/mL, ICC/mL, LNAC/mL, HNAC/mL,<br />HNAP (%), ACC/mL, HACC/mL, Gate+,<br />según el sistema y el cartucho utilizados. |
+| Parámetros de resultados | TCC/mL, ICC/mL, LNAC/mL, HNAC/mL,<br />HNAP (%), ACC/mL, HACC/mL, Gate+, según el sistema y el cartucho utilizados. |
 | Intervalo de medición automática | Desde cada 30 min hasta cada 6 horas |
 | **MUESTREO** | \< |
 | Tipo de muestreo | En línea o manual |
@@ -116,7 +116,7 @@ La placa de características de la fuente de alimentación de BactoSense se encu
 | **CARTUCHO** | \< |
 | Capacidad | TCC &amp; ICC: hasta 1000 mediciones<br />ACC: hasta 700 mediciones |
 | Validez | TCC &amp; ICC: 9 meses<br />ACC: 6 meses |
-| Temperatura de almacenamiento | 15 °C – 25 °C (59 °F – 77 °F)<br />idealmente a 15 °C (59 °F) |
+| Temperatura de almacenamiento | 15 °C – 25 °C (59 °F – 77 °F) idealmente a 15 °C (59 °F) |
 | Humedad de almacenamiento | 20 % – 60 % RH |
 | **MANTENIMIENTO** | \< |
 | Mantenimiento preventivo | Después de 3 cartuchos, al menos una vez al año. |

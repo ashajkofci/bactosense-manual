@@ -64,8 +64,8 @@ The type plate of the BactoSwitch can be found on the right-hand side of the ins
 | 3 | Serial number | 4 | Barcode |
 | 5 | Manufacturing date | 6 | Country of origin |
 | 7 | Voltage and power requirements | 8 | CE mark |
-| 9 | UKCA mark | 10 | Compliance with Canadian EMC<br />and interference standards |
-| 11 | Read the instructions and operate<br />with caution | 12 | Disposal information |
+| 9 | UKCA mark | 10 | Compliance with Canadian EMC and interference standards |
+| 11 | Read the instructions and operate with caution | 12 | Disposal information |
 
 ## 2.5 Type plate of the BactoSwitch power supply {#section-2-5}
 
@@ -81,7 +81,7 @@ The type plate of the BactoSwitch power supply can be found on the power supply 
 | 3 | Part number (varies with plug type) | 4 | Manufacturing date |
 | 5 | Service input voltage and frequency | 6 | Power consumption |
 | 7 | CE mark | 8 | UKCA mark |
-| 9 | Compliance with Canadian EMC<br />and interference standards | 10 | Read the instructions and operate<br />with caution |
+| 9 | Compliance with Canadian EMC and interference standards | 10 | Read the instructions and operate with caution |
 | 11 | Disposal information |  |  |
 
 ## 2.6 Technical data {#section-2-6}

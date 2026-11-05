@@ -75,7 +75,7 @@ En appuyant sur le bouton à icône d’engrenage (flèche de la figure 10-1), l
 | 1 | Ajustez l’échelle de pourcentage. Touchez la moitié supérieure de la barre d’échelle pour déplacer la limite supérieure. Touchez la moitié inférieure pour déplacer la limite inférieure. |
 | 2 | Ajustez l’échelle des valeurs. Touchez la moitié supérieure de la barre d’échelle pour déplacer la limite supérieure. Touchez la moitié inférieure pour déplacer la limite inférieure. |
 | 3 | Choisissez l’intervalle d’affichage ou filtrez par nom (voir section [Filtrage des mesures](../measurements/#section-10-7)). |
-| 4 | Choisissez l’échelle verticale : •<br/>L’échelle automatique s’adapte aux données actuelles. • La<br/>pleine échelle affiche la plage complète de l’instrument. • L’échelle<br/>personnalisée est réglée à l’aide des curseurs 1 et 2. Les options Logarithmique et Linéaire contrôlent l’échelle des valeurs (échelle de droite). |
+| 4 | Choisissez l’échelle verticale : •<br/>L’échelle automatique s’adapte aux données actuelles. • La pleine échelle affiche la plage complète de l’instrument. • L’échelle personnalisée est réglée à l’aide des curseurs 1 et 2. Les options Logarithmique et Linéaire contrôlent l’échelle des valeurs (échelle de droite). |
 | 5 | Choisissez les paramètres à afficher sur le graphique. |
 
 ### 10.2.4 Planification avancée {#section-10-2-4}

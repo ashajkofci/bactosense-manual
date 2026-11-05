@@ -282,13 +282,13 @@ El procedimiento siguiente solo se aplica si BactoSwitch debe conectarse a una f
 
 Las secciones siguientes muestran ejemplos de la interfaz de usuario de BactoSense. Presuponen que está familiarizado con BactoSense y se centran únicamente en el funcionamiento de BactoSwitch. Para obtener más información, consulte el [manual de usuario de BactoSense](/bactosense/).
 
-Inicie sesión en BactoSense en modo Admin. Seleccione **Ajustes del modo automático**.
+Inicie sesión en BactoSense en modo Admin. En **Ajustes**, seleccione **Ajustes del modo en línea**.
 
-![Pantalla de inicio de BactoSense con Ajustes del modo automático resaltado](/img/bactoswitch/gui-home-auto-mode-settings.png "width=634")
+![Menú Ajustes con Ajustes del modo en línea resaltado](/img/gui/es/bactoswitch-settings-menu-online-mode-settings.png "width=634")
 
 A continuación, seleccione **Líneas de muestra BactoSwitch**:
 
-![Ajustes del modo automático con Líneas de muestra BactoSwitch resaltado](/img/bactoswitch/gui-auto-mode-settings-sample-lines.png "width=635")
+![Ajustes del modo en línea con Líneas de muestra BactoSwitch resaltado](/img/gui/es/bactoswitch-online-mode-settings-sample-lines.png "width=635")
 
 En la página **Líneas de muestras BactoSwitch** puede:
 
@@ -297,7 +297,7 @@ En la página **Líneas de muestras BactoSwitch** puede:
 - Cambiar el nombre de las líneas.
 - Cambiar el color utilizado para representar las líneas en los gráficos.
 
-![Página Líneas de muestras BactoSwitch con cuatro líneas](/img/bactoswitch/gui-sample-lines.png "width=637")
+![Página Líneas de muestras BactoSwitch con cuatro líneas](/img/gui/es/bactoswitch-sample-lines.png "width=637")
 
 Pulse **Guardar** para almacenar los cambios.
 
@@ -322,11 +322,11 @@ Para probar o ajustar el caudal con las válvulas de aguja integradas de BactoSw
 
 A continuación, en la interfaz de usuario de BactoSense, abra el menú **Líneas de muestra BactoSwitch** (véase la sección [Configuración de las líneas](04-installation.md#section-4-6)) y pulse el botón **Prueba BactoSwitch**. Se abre el **Panel de control BactoSwitch**. Los cuatro botones de válvula permiten abrir solo la válvula seleccionada, mientras que las demás se cierran automáticamente. Para volver a abrir todas las válvulas, pulse el botón **Abrir todas las válvulas** en la parte inferior de la pantalla.
 
-![Panel de control BactoSwitch con todas las válvulas abiertas](/img/bactoswitch/gui-control-panel-all-valves-open.png "width=637")
+![Panel de control BactoSwitch con todas las válvulas abiertas](/img/gui/es/bactoswitch-control-panel-all-valves-open.png "width=637")
 
 Cuando solo está abierta una de las válvulas, el valor de caudal indicado se muestra en verde o en rojo, según si el caudal se encuentra o no dentro de los valores especificados de 150 – 400 mL/min:
 
-![Panel de control BactoSwitch con solo la válvula 4 abierta](/img/bactoswitch/gui-control-panel-single-valve.png "width=635")
+![Panel de control BactoSwitch con solo la válvula 4 abierta](/img/gui/es/bactoswitch-control-panel-single-valve.png "width=635")
 
 Para ajustar el caudal de cada línea de entrada, utilice los mandos de ajuste de BactoSwitch (véase la figura siguiente) hasta que los caudales se encuentren dentro del rango de 150 – 400 mL/min, idealmente en torno a 300 mL/min.
 

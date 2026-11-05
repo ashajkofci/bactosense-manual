@@ -64,8 +64,8 @@ La plaque signalétique du BactoSwitch se trouve sur le côté droit de l’inst
 | 3 | Numéro de série | 4 | Code-barres |
 | 5 | Date de fabrication | 6 | Pays d’origine |
 | 7 | Exigences de tension et de puissance | 8 | Marquage CE |
-| 9 | Marquage UKCA | 10 | Conformité aux normes canadiennes en<br />matière de CEM et d’interférences |
-| 11 | Lire les instructions et utiliser<br />avec prudence | 12 | Informations sur l’élimination |
+| 9 | Marquage UKCA | 10 | Conformité aux normes canadiennes en matière de CEM et d’interférences |
+| 11 | Lire les instructions et utiliser avec prudence | 12 | Informations sur l’élimination |
 
 ## 2.5 Plaque signalétique du bloc d’alimentation du BactoSwitch {#section-2-5}
 
@@ -81,7 +81,7 @@ La plaque signalétique du bloc d’alimentation du BactoSwitch se trouve sur le
 | 3 | Référence (varie selon le type de fiche) | 4 | Date de fabrication |
 | 5 | Tension et fréquence d’entrée de service | 6 | Consommation électrique |
 | 7 | Marquage CE | 8 | Marquage UKCA |
-| 9 | Conformité aux normes canadiennes en<br />matière de CEM et d’interférences | 10 | Lire les instructions et utiliser<br />avec prudence |
+| 9 | Conformité aux normes canadiennes en matière de CEM et d’interférences | 10 | Lire les instructions et utiliser avec prudence |
 | 11 | Informations sur l’élimination |  |  |
 
 ## 2.6 Données techniques {#section-2-6}

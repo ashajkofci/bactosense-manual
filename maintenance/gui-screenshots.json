@@ -42,6 +42,10 @@
       "output/gui-online-results-review/provenance.json",
       "output/gui-online-results-review/capture-review.json",
       "output/gui-online-results-review/figure-review.json"
+    ],
+    "bactoswitchCaptureReports": [
+      "output/gui-capture/bactoswitch/provenance.json",
+      "output/gui-capture/bactoswitch/web/capture-evidence.json"
     ]
   },
   "figures": [
@@ -24025,6 +24029,4981 @@
         "reviewer": "primary agent",
         "method": "Individual workflow-crop inspection on per-language review sheets plus exact decoded-pixel comparison with native source rectangle",
         "notes": "Localized control, text, bounds and crop verified; exact source pixels preserved. Used beside the matching workflow step."
+      }
+    },
+    {
+      "id": "en-bactoswitch-settings-menu-online-mode-settings",
+      "locale": "en",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/en/bactoswitch-settings-menu-online-mode-settings.png",
+      "replaces": [
+        "/img/bactoswitch/gui-home-auto-mode-settings.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Settings menu with Online mode settings highlighted",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/en/settings-menu.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "4.6"
+      ],
+      "highlights": [
+        [
+          400,
+          240,
+          166,
+          124
+        ]
+      ],
+      "inputSha256": "b7798a678003ff41f7e8c16b4934aa936cc710a329041a5f4e6ca64286cfc187",
+      "sha256": "ce863b360ae44e142215b0016ada6b353ffd42619b3d8153e1d2b3854665edea",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "ce863b360ae44e142215b0016ada6b353ffd42619b3d8153e1d2b3854665edea",
+        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "reviewer": "Claude (main session)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
+        "notes": "Settings menu; frame tightly around the Online mode settings tile, label readable."
+      }
+    },
+    {
+      "id": "en-bactoswitch-online-mode-settings-sample-lines",
+      "locale": "en",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/en/bactoswitch-online-mode-settings-sample-lines.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-settings-sample-lines.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Online mode settings with BactoSwitch sample lines highlighted",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/en/online-mode-settings-menu.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "4.6"
+      ],
+      "highlights": [
+        [
+          400,
+          240,
+          166,
+          124
+        ]
+      ],
+      "inputSha256": "d8d588a74e3a61e942e3a1ff3348f736b83fb953558b044619ba2b1ef01114dd",
+      "sha256": "fe5a61999f0a78deb5018fc1195fc241c2c00fb6e51276a05200ca296a256cf2",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "fe5a61999f0a78deb5018fc1195fc241c2c00fb6e51276a05200ca296a256cf2",
+        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "reviewer": "Claude (main session)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
+        "notes": "Online mode settings menu; BactoSwitch sample lines tile framed."
+      }
+    },
+    {
+      "id": "en-bactoswitch-sample-lines",
+      "locale": "en",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/en/bactoswitch-sample-lines.png",
+      "replaces": [
+        "/img/bactoswitch/gui-sample-lines.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "BactoSwitch Sample Lines page with four lines",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/en/sample-lines.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "4.6"
+      ],
+      "inputSha256": "ce79c1edec99ad332f592a309c11712657d7f4248f4094dc514fc12f72e9db14",
+      "sha256": "73f0d610e718f88beb27567f0bfecb6b483affce6d53449323bc52ff3056480c",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "73f0d610e718f88beb27567f0bfecb6b483affce6d53449323bc52ff3056480c",
+        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "reviewer": "Claude (main session)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
+        "notes": "Sample Lines page with Enable BactoSwitch ticked and Unnamed line 1–4 with their colours."
+      }
+    },
+    {
+      "id": "en-bactoswitch-control-panel-all-valves-open",
+      "locale": "en",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/en/bactoswitch-control-panel-all-valves-open.png",
+      "replaces": [
+        "/img/bactoswitch/gui-control-panel-all-valves-open.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "BactoSwitch Control Panel with all valves open",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/en/control-panel-all-open.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "4.8"
+      ],
+      "inputSha256": "8aa254065b145673cedd7587dd92b7ae4f32acc6d0e146825bf5a66146d6d01e",
+      "sha256": "3b0d1f6256437e1547d3a0e7769917dc05e827195e6563a3ff8ee796f4c507ce",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "3b0d1f6256437e1547d3a0e7769917dc05e827195e6563a3ff8ee796f4c507ce",
+        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "reviewer": "Claude (main session)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
+        "notes": "Control Panel online, flow 802 in black, valves 1–4 OPEN."
+      }
+    },
+    {
+      "id": "en-bactoswitch-control-panel-single-valve",
+      "locale": "en",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/en/bactoswitch-control-panel-single-valve.png",
+      "replaces": [
+        "/img/bactoswitch/gui-control-panel-single-valve.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "BactoSwitch Control Panel with only valve 4 open",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/en/control-panel-single-valve.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "4.8"
+      ],
+      "inputSha256": "10c880d94147398bee37d3475043cbab4079d1db3dccfbe1eb7bac84bb7278c5",
+      "sha256": "4a05776e9ad27882fea8d3e052e3d36cc6b4c49ada1e5c776341d54f12be177e",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "4a05776e9ad27882fea8d3e052e3d36cc6b4c49ada1e5c776341d54f12be177e",
+        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "reviewer": "Claude (main session)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
+        "notes": "Valve 4 OPEN, valves 1–3 CLOSED, flow 326 in green."
+      }
+    },
+    {
+      "id": "en-bactoswitch-home-start",
+      "locale": "en",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/en/bactoswitch-home-start.png",
+      "replaces": [
+        "/img/bactoswitch/gui-home-auto-mode-start.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "BactoSense home screen in Online mode with Start highlighted",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/en/home-online.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.1"
+      ],
+      "highlights": [
+        [
+          549.21875,
+          417,
+          240.78125,
+          63
+        ]
+      ],
+      "inputSha256": "c041ab56dce4300810f74bcf7bc41d5050a651dec892605879fc81cb08563429",
+      "sha256": "35b54a43d53360d6a2ab9e1fd3ba0ccb857e56bf04a7152236114ba36416f534",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "35b54a43d53360d6a2ab9e1fd3ba0ccb857e56bf04a7152236114ba36416f534",
+        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "reviewer": "Claude (main session)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
+        "notes": "Home in Online mode; frame follows the real Start button bounds, which include the scheduler status."
+      }
+    },
+    {
+      "id": "en-bactoswitch-plot-start",
+      "locale": "en",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/en/bactoswitch-plot-start.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-plot-start.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Online mode plot window with Start highlighted",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/en/plot-start.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.1"
+      ],
+      "highlights": [
+        [
+          642,
+          417,
+          154,
+          63
+        ]
+      ],
+      "inputSha256": "1da661ff59824154c7ad3e404fecd1be38e237a077c2159b1eb40f89540dc615",
+      "sha256": "f8418985a5e87453244ff4d53e5d6bffaf2e58698c9bddb40fa703226501b0da",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "f8418985a5e87453244ff4d53e5d6bffaf2e58698c9bddb40fa703226501b0da",
+        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "reviewer": "Claude (main session)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
+        "notes": "Plain Online mode plot with four lines; Start framed bottom right (recaptured, popup closed)."
+      }
+    },
+    {
+      "id": "en-bactoswitch-protocol-selection",
+      "locale": "en",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/en/bactoswitch-protocol-selection.png",
+      "replaces": [
+        "/img/bactoswitch/gui-protocol-selection.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Protocol selection with Water Analysis with BactoSwitch selected",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/en/wizard-protocol-selected.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.1"
+      ],
+      "highlights": [
+        [
+          10,
+          228,
+          780,
+          52
+        ],
+        [
+          404,
+          417,
+          396,
+          63
+        ]
+      ],
+      "inputSha256": "69db218c9d1717c01719ee0a92922bd04d8c8147b472f81e0b2694413d467331",
+      "sha256": "aa1d0632062b3f34873f068d1d4fac2b45600a4f6cce81ec425573f9bdfc70bb",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "aa1d0632062b3f34873f068d1d4fac2b45600a4f6cce81ec425573f9bdfc70bb",
+        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "reviewer": "Claude (main session)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
+        "notes": "Water Analysis with BactoSwitch ticked; its row and Next framed."
+      }
+    },
+    {
+      "id": "en-bactoswitch-interval-settings",
+      "locale": "en",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/en/bactoswitch-interval-settings.png",
+      "replaces": [
+        "/img/bactoswitch/gui-interval-settings.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Interval settings with Start highlighted",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/en/wizard-interval.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.1"
+      ],
+      "highlights": [
+        [
+          642,
+          417,
+          154,
+          63
+        ]
+      ],
+      "inputSha256": "f893fc54184251a0e5aefb34ee89dfbd28250af79e734af8441f74ddb44dc9bb",
+      "sha256": "8a05c5bd40b1898fbfce4eea30fe596bd6a9027ef0d42178fcc86dcc2307007f",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "8a05c5bd40b1898fbfce4eea30fe596bd6a9027ef0d42178fcc86dcc2307007f",
+        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "reviewer": "Claude (main session)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
+        "notes": "Interval step with the default 120 minutes; Start framed."
+      }
+    },
+    {
+      "id": "en-bactoswitch-plot-lines",
+      "locale": "en",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/en/bactoswitch-plot-lines.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-plot-lines.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Online mode plot with one curve per line",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/en/plot-lines.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "highlights": [
+        [
+          335,
+          69,
+          130,
+          42
+        ]
+      ],
+      "inputSha256": "d3b101192d1489a86540444ad334b8f59498a29a402356818682ddeb0bd76ac7",
+      "sha256": "015f6e944639d7baa87679efc3bed71a0599585c36dcbfc3410dffd716340089",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "015f6e944639d7baa87679efc3bed71a0599585c36dcbfc3410dffd716340089",
+        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "reviewer": "Claude (main session)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
+        "notes": "Four TCC lines #1–#4 with the High TCC threshold; 1 Month span button framed."
+      }
+    },
+    {
+      "id": "en-bactoswitch-display-settings",
+      "locale": "en",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/en/bactoswitch-display-settings.png",
+      "replaces": [
+        "/img/bactoswitch/gui-display-settings.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Display settings of the Online mode plot",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/en/display-settings.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "highlights": [
+        [
+          4,
+          417,
+          154,
+          63
+        ]
+      ],
+      "inputSha256": "72e491ff1edc3580e2549b6d5d801e9cd0a08fa63325ec71e2f1aba02c0ad69a",
+      "sha256": "053abb3b9a7bb7a376e1f221b3d5b5a388461aabf4e4ba53b32b12c7ce3637e0",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "053abb3b9a7bb7a376e1f221b3d5b5a388461aabf4e4ba53b32b12c7ce3637e0",
+        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "reviewer": "Claude (main session)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
+        "notes": "Popup with 1 Month and TCC selected; View results framed bottom left."
+      }
+    },
+    {
+      "id": "en-bactoswitch-online-results",
+      "locale": "en",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/en/bactoswitch-online-results.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-results.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Online mode results list with one entry per line measurement",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/en/results-list.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "inputSha256": "e79acf4c43b5ccc1401d0680ad441c86ee4b025c4d13356270cfd92c46d53ed4",
+      "sha256": "241c55fa6118037c56ad256f321ceffd54cc96ed00f6c13c656a7c838a143ec1",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "241c55fa6118037c56ad256f321ceffd54cc96ed00f6c13c656a7c838a143ec1",
+        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "reviewer": "Claude (main session)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
+        "notes": "Online mode results list of Unnamed line 1–4 with TCC and HNAP values."
+      }
+    },
+    {
+      "id": "en-bactoswitch-result-details",
+      "locale": "en",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/en/bactoswitch-result-details.png",
+      "replaces": [
+        "/img/bactoswitch/gui-result-details.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Online mode result details of a BactoSwitch measurement",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/en/result-details.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "inputSha256": "f81b337d84120ab685cccff4aa3c187369328101501244466d2e9b0348cbfe09",
+      "sha256": "6d37963c99741e56625c2c9f533c3ecaaee0ec895bc8b00fc807bc4af0262aa7",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "6d37963c99741e56625c2c9f533c3ecaaee0ec895bc8b00fc807bc4af0262aa7",
+        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "reviewer": "Claude (main session)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
+        "notes": "Details of the Unnamed line 1 TCC measurement of 25 Mar 2026."
+      }
+    },
+    {
+      "id": "en-bactoswitch-filter-results",
+      "locale": "en",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/en/bactoswitch-filter-results.png",
+      "replaces": [
+        "/img/bactoswitch/gui-filter-results.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Filter results window",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/en/filter-results.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "inputSha256": "bf059da9eb531f4f05b3a07c830b2fcd970cb1b6ffc00e8f3678d3117dd5de5c",
+      "sha256": "7441130d7fe13c5d326ffb1aa77d7fff931548b3e8f821ea76183305e71d9f7c",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "7441130d7fe13c5d326ffb1aa77d7fff931548b3e8f821ea76183305e71d9f7c",
+        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "reviewer": "Claude (main session)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
+        "notes": "Filter results with the 27 Feb–25 Mar 2026 period; no frame."
+      }
+    },
+    {
+      "id": "en-bactoswitch-filter-by-line-button",
+      "locale": "en",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/en/bactoswitch-filter-by-line-button.png",
+      "replaces": [
+        "/img/bactoswitch/gui-filter-by-line-button.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Filter results window with Filter by line highlighted",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/en/filter-results.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "highlights": [
+        [
+          162,
+          417,
+          236,
+          63
+        ]
+      ],
+      "inputSha256": "bf059da9eb531f4f05b3a07c830b2fcd970cb1b6ffc00e8f3678d3117dd5de5c",
+      "sha256": "9fd664f9eb2b76d1f27cc04c7a84b11bf5e17c3f1bd92cdfed78a8e78e60ed80",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "9fd664f9eb2b76d1f27cc04c7a84b11bf5e17c3f1bd92cdfed78a8e78e60ed80",
+        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "reviewer": "Claude (main session)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
+        "notes": "Same window; Filter by line button framed."
+      }
+    },
+    {
+      "id": "en-bactoswitch-select-line",
+      "locale": "en",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/en/bactoswitch-select-line.png",
+      "replaces": [
+        "/img/bactoswitch/gui-select-sample-line.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Selection of a BactoSwitch sample line",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/en/select-line.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "highlights": [
+        [
+          140,
+          149,
+          520,
+          52
+        ],
+        [
+          403,
+          341,
+          273,
+          60
+        ]
+      ],
+      "inputSha256": "e36c609042b4bc30c7efd2228675c07e1771da890aaf1f7fd95406764f30acb8",
+      "sha256": "07bc97f7a0c4ca9cb3327476be2a343e79f5bfea91cf4b6bf634916f6fe39721",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "07bc97f7a0c4ca9cb3327476be2a343e79f5bfea91cf4b6bf634916f6fe39721",
+        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "reviewer": "Claude (main session)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
+        "notes": "Line picker with Unnamed line 1 ticked; its row and Confirm framed."
+      }
+    },
+    {
+      "id": "en-bactoswitch-plot-filtered",
+      "locale": "en",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/en/bactoswitch-plot-filtered.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-plot-filtered.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Online mode plot filtered by line 1",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/en/plot-filtered.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "inputSha256": "9969e3ed799c69bcb776dfc203c0c1f2b565abe81e37bf45c7032718af6121a1",
+      "sha256": "a7a1e7cc9335503338b2fad6b5fae89bd91d5c0ffbbf49ffda58276f7c67df77",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "a7a1e7cc9335503338b2fad6b5fae89bd91d5c0ffbbf49ffda58276f7c67df77",
+        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "reviewer": "Claude (main session)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
+        "notes": "Plot showing only TCC #1."
+      }
+    },
+    {
+      "id": "en-bactoswitch-results-filtered",
+      "locale": "en",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/en/bactoswitch-results-filtered.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-results-filtered.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Online mode results filtered by line 1",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/en/results-filtered.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "inputSha256": "fa6574d9b758d80696698a5c0eded3c88a7e6f089db3dbc44741a803d253cb1c",
+      "sha256": "8fb30250f5d4b4b19e72f3dcde2ca4569a68ccd55a2df1ce74cdca09eabc22cd",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "8fb30250f5d4b4b19e72f3dcde2ca4569a68ccd55a2df1ce74cdca09eabc22cd",
+        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "reviewer": "Claude (main session)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
+        "notes": "List with only Unnamed line 1; bottom bar shows Line #1."
+      }
+    },
+    {
+      "id": "en-bactoswitch-alarm-sample-line",
+      "locale": "en",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/en/bactoswitch-alarm-sample-line.png",
+      "replaces": [
+        "/img/bactoswitch/gui-alarm-configuration.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Alarm configuration with a sample line selected",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/en/alarm-line.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.3"
+      ],
+      "highlights": [
+        [
+          537,
+          343,
+          206,
+          49
+        ]
+      ],
+      "inputSha256": "7621af93f6701f9ec2989fae7c967f2520996e83b7ec3d474208a85eeecd116c",
+      "sha256": "6a1262659d600d603b44736fbd77fa8aab159890415a8ffe01f1125b6215e5f4",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "6a1262659d600d603b44736fbd77fa8aab159890415a8ffe01f1125b6215e5f4",
+        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "reviewer": "Claude (main session)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
+        "notes": "Alarm configuration draft; Sample line checkbox and Line # 2 framed together."
+      }
+    },
+    {
+      "id": "en-bactoswitch-assign-events-process-running",
+      "locale": "en",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/en/bactoswitch-assign-events-process-running.png",
+      "replaces": [
+        "/img/bactoswitch/gui-assign-events-to-outputs.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Assign events to outputs with the Process running row highlighted",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/en/digital-outputs.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.2.3"
+      ],
+      "highlights": [
+        [
+          9,
+          175,
+          782,
+          54
+        ]
+      ],
+      "inputSha256": "8ca2df3c849e6b5a73c72ff5d2f46516ed81f866ae3ba8475fdd9a385323cc5d",
+      "sha256": "2f896a482fb75717e4d289b631ef2e7a982110860ec628a23237fe183d18863b",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "2f896a482fb75717e4d289b631ef2e7a982110860ec628a23237fe183d18863b",
+        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "reviewer": "Claude (main session)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
+        "notes": "Default assignments; Process running row framed across all outputs."
+      }
+    },
+    {
+      "id": "en-bactoswitch-digital-input-source-button",
+      "locale": "en",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/en/bactoswitch-digital-input-source-button.png",
+      "replaces": [
+        "/img/bactoswitch/gui-digital-input-source-button.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Digital input configuration with Select digital input source highlighted",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/en/digital-inputs-line.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.2.4"
+      ],
+      "highlights": [
+        [
+          162,
+          417,
+          476,
+          63
+        ]
+      ],
+      "inputSha256": "9aedf4b394ac253fd2355899e36805153b2ece64a2f789324ec57e587782d725",
+      "sha256": "3a8fc29431c0f579fd4fcf8bee0410b763a50aece71025ab80de75113d691ca9",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "3a8fc29431c0f579fd4fcf8bee0410b763a50aece71025ab80de75113d691ca9",
+        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "reviewer": "Claude (main session)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
+        "notes": "PLC draft with Water Analysis with BactoSwitch and ICC Default Gate; source button framed (recaptured)."
+      }
+    },
+    {
+      "id": "en-bactoswitch-digital-input-source-modbus",
+      "locale": "en",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/en/bactoswitch-digital-input-source-modbus.png",
+      "replaces": [
+        "/img/bactoswitch/gui-digital-input-source-modbus.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Digital input source set to Modbus TCP",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/en/digital-input-source.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.2.4"
+      ],
+      "highlights": [
+        [
+          264,
+          140,
+          195,
+          39
+        ],
+        [
+          4,
+          417,
+          792,
+          63
+        ]
+      ],
+      "inputSha256": "95a31660fb7fd6829275eb2857929a3887130890234f538f983ca23eac71926e",
+      "sha256": "e059e91f0080c2d473eb5e2e8e3fcdcb2b18077481ea528a2dfb40a6c746cbed",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "e059e91f0080c2d473eb5e2e8e3fcdcb2b18077481ea528a2dfb40a6c746cbed",
+        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "reviewer": "Claude (main session)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
+        "notes": "Modbus TCP selected and framed; Back framed."
+      }
+    },
+    {
+      "id": "en-bactoswitch-web-online-results",
+      "locale": "en",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/en/bactoswitch-web-online-results.png",
+      "replaces": [
+        "/img/bactoswitch/web-auto-mode-results.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Online mode results in the web user interface filtered by name, with the Name and Line ID columns highlighted",
+      "surface": "web",
+      "capture": "output/gui-capture/bactoswitch/web/en/web-online-results.png",
+      "sections": [
+        "5.2.2"
+      ],
+      "captureSize": [
+        1010,
+        479
+      ],
+      "highlights": [
+        [
+          348,
+          105.1875,
+          151,
+          52.375
+        ],
+        [
+          503,
+          105.1875,
+          106,
+          52.375
+        ]
+      ],
+      "inputSha256": "c6814a5491740642544696d538058c01fe4dda5b8d2d07327b516cfff42a0822",
+      "sha256": "2533d32e57ab07057573c9c7c30340fa891cb163aabc1a13e01fb41e4e9b39f9",
+      "pixelSize": [
+        2020,
+        958
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "2533d32e57ab07057573c9c7c30340fa891cb163aabc1a13e01fb41e4e9b39f9",
+        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "reviewer": "Claude (main session)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
+        "notes": "Web Online mode results filtered by Unnamed; Name and Line ID headers framed, line IDs 1–4 visible."
+      }
+    },
+    {
+      "id": "de-bactoswitch-settings-menu-online-mode-settings",
+      "locale": "de",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/de/bactoswitch-settings-menu-online-mode-settings.png",
+      "replaces": [
+        "/img/bactoswitch/gui-home-auto-mode-settings.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Menü Einstellungen mit hervorgehobenem Eintrag Online-Modus Einstellungen",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/de/settings-menu.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "4.6"
+      ],
+      "highlights": [
+        [
+          400,
+          240,
+          166,
+          124
+        ]
+      ],
+      "inputSha256": "8cfb7f7d52f9b3f077ebe709dfd44718ebb220f7b9f79f012d115f4ec61cf97d",
+      "sha256": "8f4f592611a1662c2e32ea1c0967e6091e86465374ea35f15eb9d672cdadd0e8",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "8f4f592611a1662c2e32ea1c0967e6091e86465374ea35f15eb9d672cdadd0e8",
+        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "reviewer": "Claude review agent (de)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Einstellungen menu in German; red frame tightly encloses the Online-Modus Einstellungen tile without covering its label; alt text German and accurate."
+      }
+    },
+    {
+      "id": "de-bactoswitch-online-mode-settings-sample-lines",
+      "locale": "de",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/de/bactoswitch-online-mode-settings-sample-lines.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-settings-sample-lines.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Online-Modus Einstellungen mit hervorgehobenem Eintrag BactoSwitch-Probenlinien",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/de/online-mode-settings-menu.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "4.6"
+      ],
+      "highlights": [
+        [
+          400,
+          240,
+          166,
+          124
+        ]
+      ],
+      "inputSha256": "63b57c7258497fa7527b0fad991169216be83221057ac10f92b98defac2e6017",
+      "sha256": "97fdaabe0d640f4df4230132dc58eeb8984b5ab525fd9fb002777132e817e629",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "97fdaabe0d640f4df4230132dc58eeb8984b5ab525fd9fb002777132e817e629",
+        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "reviewer": "Claude review agent (de)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Online-Modus Einstellungen menu; frame tightly encloses the BactoSwitch-Probenlinien tile; Messintervall tile shown disabled (genuine GUI state)."
+      }
+    },
+    {
+      "id": "de-bactoswitch-sample-lines",
+      "locale": "de",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/de/bactoswitch-sample-lines.png",
+      "replaces": [
+        "/img/bactoswitch/gui-sample-lines.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Seite BactoSwitch-Probenlinien mit vier Leitungen",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/de/sample-lines.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "4.6"
+      ],
+      "inputSha256": "cd4a4acc489e4e15bc42a62cc55ca838988689e005c15cc26353bb311bfe0a35",
+      "sha256": "e208d49e6c12453d71debf8daf22a235ae8125ec0f06906a8216506dec0427a5",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "e208d49e6c12453d71debf8daf22a235ae8125ec0f06906a8216506dec0427a5",
+        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "reviewer": "Claude review agent (de)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "BactoSwitch-Probenlinien page with BactoSwitch einschalten ticked, Zeile 1-4 named Unnamed line 1-4 with colours, no frame; 'Alle Änderungen verwerfen' wraps in its narrow button (GUI quirk)."
+      }
+    },
+    {
+      "id": "de-bactoswitch-control-panel-all-valves-open",
+      "locale": "de",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/de/bactoswitch-control-panel-all-valves-open.png",
+      "replaces": [
+        "/img/bactoswitch/gui-control-panel-all-valves-open.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "BactoSwitch-Bedienfeld mit allen Ventilen offen",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/de/control-panel-all-open.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "4.8"
+      ],
+      "inputSha256": "68cac0ac403a362887a7cc7160fb359ce22d0460e7b3a3defb795d6fb5d4291c",
+      "sha256": "1cc9e9384eae4d60a600e51a4822e717cc15839de9f4d35ab175ba394750b049",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "1cc9e9384eae4d60a600e51a4822e717cc15839de9f4d35ab175ba394750b049",
+        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "reviewer": "Claude review agent (de)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "BactoSwitch-Bedienfeld with accessory online, flow 802 in black, all four valves OPEN; the GUI leaves 'OPEN' untranslated while 'GESCHLOSSEN' is German (genuine GUI quirk)."
+      }
+    },
+    {
+      "id": "de-bactoswitch-control-panel-single-valve",
+      "locale": "de",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/de/bactoswitch-control-panel-single-valve.png",
+      "replaces": [
+        "/img/bactoswitch/gui-control-panel-single-valve.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "BactoSwitch-Bedienfeld, nur Ventil 4 offen",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/de/control-panel-single-valve.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "4.8"
+      ],
+      "inputSha256": "5ea0f241032ea3fc27b8f2928f9798d1c61bf78d4624ab3b003e6079b1884ba6",
+      "sha256": "c2810ca311890f7900ecf0292d9cb278d8282b64ad49959fc738f9bd3c36cb2c",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "c2810ca311890f7900ecf0292d9cb278d8282b64ad49959fc738f9bd3c36cb2c",
+        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "reviewer": "Claude review agent (de)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Ventil 4 OPEN, Ventile 1-3 GESCHLOSSEN, flow 326 in green, no frame; alt text matches."
+      }
+    },
+    {
+      "id": "de-bactoswitch-home-start",
+      "locale": "de",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/de/bactoswitch-home-start.png",
+      "replaces": [
+        "/img/bactoswitch/gui-home-auto-mode-start.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Startseite des BactoSense im Online-Modus mit hervorgehobener Schaltfläche Start",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/de/home-online.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.1"
+      ],
+      "highlights": [
+        [
+          549.21875,
+          417,
+          240.78125,
+          63
+        ]
+      ],
+      "inputSha256": "d7d10bf352555933627eef9725ee199d5ca2c94b6bcf8562300b75129dc1fd91",
+      "sha256": "6e88f121b58511933df91f0064dc0ca6f10169413dd98a76a3d8bab663a739de",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "6e88f121b58511933df91f0064dc0ca6f10169413dd98a76a3d8bab663a739de",
+        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "reviewer": "Claude review agent (de)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Re-published 11:44 version: Online-Modus home (BactoSense CORE) with frame tightly around the Start / Intervalle angehalten button, bottom edge intact; mini-plot axis dates '3 Apr' are English-style (GUI quirk)."
+      }
+    },
+    {
+      "id": "de-bactoswitch-plot-start",
+      "locale": "de",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/de/bactoswitch-plot-start.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-plot-start.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Diagrammfenster des Online-Modus mit hervorgehobener Schaltfläche Start",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/de/plot-start.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.1"
+      ],
+      "highlights": [
+        [
+          642,
+          417,
+          154,
+          63
+        ]
+      ],
+      "inputSha256": "413b87042319270e603213ac616bd254e1f5db333bdcdafc558665ffaacd8b3d",
+      "sha256": "d65c4d9d22d68901ce72a53a3488ea25e873b04500b0c66f088d80abfd503719",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "d65c4d9d22d68901ce72a53a3488ea25e873b04500b0c66f088d80abfd503719",
+        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "reviewer": "Claude review agent (de)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Re-published 11:44 version shows the plain plot with Start framed at bottom right (all four edges visible); the earlier version on sheet de-2 wrongly had the display-settings popup open."
+      }
+    },
+    {
+      "id": "de-bactoswitch-protocol-selection",
+      "locale": "de",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/de/bactoswitch-protocol-selection.png",
+      "replaces": [
+        "/img/bactoswitch/gui-protocol-selection.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Protokollauswahl mit ausgewähltem Protokoll Water Analysis with BactoSwitch",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/de/wizard-protocol-selected.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.1"
+      ],
+      "highlights": [
+        [
+          10,
+          228,
+          780,
+          52
+        ],
+        [
+          404,
+          417,
+          396,
+          63
+        ]
+      ],
+      "inputSha256": "8d3e93640c28e5eab59d5b713e1738c660d487cedf509546c97dd0fa0cc8174b",
+      "sha256": "ae9cbac493990ce1cd4de5eeee66b2283810d98a1a5c9d42cf68b6517f815028",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "ae9cbac493990ce1cd4de5eeee66b2283810d98a1a5c9d42cf68b6517f815028",
+        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "reviewer": "Claude review agent (de)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Water Analysis with BactoSwitch ticked with its row framed, Weiter framed with right and bottom edges visible; protocol names are English data strings as expected."
+      }
+    },
+    {
+      "id": "de-bactoswitch-interval-settings",
+      "locale": "de",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/de/bactoswitch-interval-settings.png",
+      "replaces": [
+        "/img/bactoswitch/gui-interval-settings.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Intervalleinstellungen mit hervorgehobener Schaltfläche Start",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/de/wizard-interval.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.1"
+      ],
+      "highlights": [
+        [
+          642,
+          417,
+          154,
+          63
+        ]
+      ],
+      "inputSha256": "bb69b32c82e2d6ab0f330951dcfa2c5bebb59438857b57d5c544724f569499ac",
+      "sha256": "1f06c26b3e25d3a81584bae734f8cc2582abc3eb078bd2d6b04aad957dc80a82",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "1f06c26b3e25d3a81584bae734f8cc2582abc3eb078bd2d6b04aad957dc80a82",
+        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "reviewer": "Claude review agent (de)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Zeitintervall step (120 Minute, Sofort beginnen ticked) with Start framed; GUI quirks: singular 'Minute', picker neighbours labelled 'Stunde', and 'Advanced' untranslated."
+      }
+    },
+    {
+      "id": "de-bactoswitch-plot-lines",
+      "locale": "de",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/de/bactoswitch-plot-lines.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-plot-lines.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Diagramm des Online-Modus mit einer Kurve pro Leitung",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/de/plot-lines.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "highlights": [
+        [
+          335,
+          69,
+          130,
+          42
+        ]
+      ],
+      "inputSha256": "4bce5f423d787ace5a60699533e1ddc93142a0ac9c6a8663533c16c860cc1fdd",
+      "sha256": "43ebf535484ec9d87cce785e3f2603818be24adc9cad392b6d4bc144d5098acb",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "43ebf535484ec9d87cce785e3f2603818be24adc9cad392b6d4bc144d5098acb",
+        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "reviewer": "Claude review agent (de)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Four TCC curves #1-#4 with legend; frame tightly encloses the '1 Monat' time-span button at top centre."
+      }
+    },
+    {
+      "id": "de-bactoswitch-display-settings",
+      "locale": "de",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/de/bactoswitch-display-settings.png",
+      "replaces": [
+        "/img/bactoswitch/gui-display-settings.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Anzeigeeinstellungen des Diagramms im Online-Modus",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/de/display-settings.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "highlights": [
+        [
+          4,
+          417,
+          154,
+          63
+        ]
+      ],
+      "inputSha256": "d4a95d047c6d171c9e9eaea87a9970c6054438069a790c5b97de405108324010",
+      "sha256": "bf629fb1ab1befb4431b45704c62f02560719db4b7e32f2e7cb7ff7bbf8ce197",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "bf629fb1ab1befb4431b45704c62f02560719db4b7e32f2e7cb7ff7bbf8ce197",
+        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "reviewer": "Claude review agent (de)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Display-settings popup with 1 Monat selected and TCC ticked; Resultate anzeigen framed at bottom left; 'Benutzerdefiniert...' and 'Nach Namen filte...' truncated (GUI quirk)."
+      }
+    },
+    {
+      "id": "de-bactoswitch-online-results",
+      "locale": "de",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/de/bactoswitch-online-results.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-results.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Ergebnisliste des Online-Modus mit einem Eintrag pro Leitungsmessung",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/de/results-list.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "inputSha256": "82074f493441ed86093d578b41530e09222d08380a0f7a826c0d1e185d924533",
+      "sha256": "bf9f490747f969c6bd6af145dd726e97b6280306e25cbd98815b36ae6bc4e039",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "bf9f490747f969c6bd6af145dd726e97b6280306e25cbd98815b36ae6bc4e039",
+        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "reviewer": "Claude review agent (de)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Online-Modus-Ergebnisse list of Unnamed line 1-4 with HNAP and TCC values, no frame; alt text accurate."
+      }
+    },
+    {
+      "id": "de-bactoswitch-result-details",
+      "locale": "de",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/de/bactoswitch-result-details.png",
+      "replaces": [
+        "/img/bactoswitch/gui-result-details.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Ergebnisdetails einer BactoSwitch-Messung im Online-Modus",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/de/result-details.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "inputSha256": "0ed3254275fa78a038fd2d3b5105e80d43f863216cf89d7340c806b38a50a83d",
+      "sha256": "d75d3f7cc564dc6504571b5296fc7bf8c359291f7d3fa9c9965bfdf5f522481e",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "d75d3f7cc564dc6504571b5296fc7bf8c359291f7d3fa9c9965bfdf5f522481e",
+        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "reviewer": "Claude review agent (de)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Ergebnis-Details of Unnamed line 1, TCC 120 510, 25. März 2026 5:31, Konform, no frame."
+      }
+    },
+    {
+      "id": "de-bactoswitch-filter-results",
+      "locale": "de",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/de/bactoswitch-filter-results.png",
+      "replaces": [
+        "/img/bactoswitch/gui-filter-results.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Fenster Resultate filtern",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/de/filter-results.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "inputSha256": "cbc52a4676a2c64ab0f142adfc4dd26d07a7a65ec078fdda5cc03d35b4c2b8f4",
+      "sha256": "e4c128227db5d44c59f655f99274a2f566f7b0ba593cd31c561aab4a03039f00",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "e4c128227db5d44c59f655f99274a2f566f7b0ba593cd31c561aab4a03039f00",
+        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "reviewer": "Claude review agent (de)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Resultate filtern window with date pickers and Nach Zeilen filtern button, no frame."
+      }
+    },
+    {
+      "id": "de-bactoswitch-filter-by-line-button",
+      "locale": "de",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/de/bactoswitch-filter-by-line-button.png",
+      "replaces": [
+        "/img/bactoswitch/gui-filter-by-line-button.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Fenster Resultate filtern mit hervorgehobener Schaltfläche Nach Zeilen filtern",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/de/filter-results.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "highlights": [
+        [
+          162,
+          417,
+          236,
+          63
+        ]
+      ],
+      "inputSha256": "cbc52a4676a2c64ab0f142adfc4dd26d07a7a65ec078fdda5cc03d35b4c2b8f4",
+      "sha256": "54fdab1e8c519a14cdb0c811587072dd123ba950d00c1d709db22926f076a33d",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "54fdab1e8c519a14cdb0c811587072dd123ba950d00c1d709db22926f076a33d",
+        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "reviewer": "Claude review agent (de)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Same window with Nach Zeilen filtern framed tightly, all edges visible."
+      }
+    },
+    {
+      "id": "de-bactoswitch-select-line",
+      "locale": "de",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/de/bactoswitch-select-line.png",
+      "replaces": [
+        "/img/bactoswitch/gui-select-sample-line.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Auswahl einer BactoSwitch-Probenleitung",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/de/select-line.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "highlights": [
+        [
+          140,
+          149,
+          520,
+          52
+        ],
+        [
+          403,
+          341,
+          273,
+          60
+        ]
+      ],
+      "inputSha256": "bd79c7361ce7de1fa884013a10216d0c7aa0824a6a13709977b74aa87bfdb00d",
+      "sha256": "920ca1f908ff443cbd3ec1e0a09f0193374d3693ec96e2a1904392deada22924",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "920ca1f908ff443cbd3ec1e0a09f0193374d3693ec96e2a1904392deada22924",
+        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "reviewer": "Claude review agent (de)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Line-picker popup with Unnamed line 1 ticked and its row framed plus Bestätigen framed; GUI mixes Probenlinie/Leitung/Zeile terminology (quirk)."
+      }
+    },
+    {
+      "id": "de-bactoswitch-plot-filtered",
+      "locale": "de",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/de/bactoswitch-plot-filtered.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-plot-filtered.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Nach Leitung 1 gefiltertes Diagramm des Online-Modus",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/de/plot-filtered.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "inputSha256": "04a975425ebb878dbf7fb4600081a4e55c55f653a806821921e6557791005cf9",
+      "sha256": "31f34ea192d8b4cde29f0d7b87bd41c4167774c8b7508a198305af74ba06a4f5",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "31f34ea192d8b4cde29f0d7b87bd41c4167774c8b7508a198305af74ba06a4f5",
+        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "reviewer": "Claude review agent (de)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Plot shows only the TCC #1 curve and legend, no frame."
+      }
+    },
+    {
+      "id": "de-bactoswitch-results-filtered",
+      "locale": "de",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/de/bactoswitch-results-filtered.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-results-filtered.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Nach Leitung 1 gefilterte Ergebnisse des Online-Modus",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/de/results-filtered.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "inputSha256": "fbc52165a050e5124f5af37bd8dfc72c51ea63a3b47e5dbbf295144228e2fd56",
+      "sha256": "ffde5e2cf7d483234b8770049118b5954ccaa6c8f58c739e2abfdbe488840de3",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "ffde5e2cf7d483234b8770049118b5954ccaa6c8f58c739e2abfdbe488840de3",
+        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "reviewer": "Claude review agent (de)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "List contains only Unnamed line 1 and the bottom bar shows '... 25. März 2026 5:31 | Zeile #1'."
+      }
+    },
+    {
+      "id": "de-bactoswitch-alarm-sample-line",
+      "locale": "de",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/de/bactoswitch-alarm-sample-line.png",
+      "replaces": [
+        "/img/bactoswitch/gui-alarm-configuration.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Alarmkonfiguration mit ausgewählter Probenleitung",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/de/alarm-line.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.3"
+      ],
+      "highlights": [
+        [
+          537,
+          343,
+          206,
+          49
+        ]
+      ],
+      "inputSha256": "3ebcd3496e5640d74a0b733c20d32a8fe979782a90ebce80429edef455d5e337",
+      "sha256": "bf081aced53c2a24392e4202e6b97a4e02fdda1d42b728f7e25d4eb8019f5f00",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "bf081aced53c2a24392e4202e6b97a4e02fdda1d42b728f7e25d4eb8019f5f00",
+        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "reviewer": "Claude review agent (de)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Alarmkonfiguration with frame tightly around the Musterzeile checkbox and the 'Zeile # 2' field; 'Musterzeile' is an odd GUI translation of 'Sample line' (quirk)."
+      }
+    },
+    {
+      "id": "de-bactoswitch-assign-events-process-running",
+      "locale": "de",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/de/bactoswitch-assign-events-process-running.png",
+      "replaces": [
+        "/img/bactoswitch/gui-assign-events-to-outputs.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Zuweisung von Ereignissen zu Ausgängen mit hervorgehobener Zeile Prozess läuft",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/de/digital-outputs.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.2.3"
+      ],
+      "highlights": [
+        [
+          9,
+          175,
+          782,
+          54
+        ]
+      ],
+      "inputSha256": "0ff46addd96f618c862572bfb7cb8749edc2ce43641290bd61a47db35d1897f8",
+      "sha256": "20cf24e5943b0060c3308a8ce80f3a51ef7398c3bea76b8a9ff45a9e1abe1fee",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "20cf24e5943b0060c3308a8ce80f3a51ef7398c3bea76b8a9ff45a9e1abe1fee",
+        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "reviewer": "Claude review agent (de)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "'Weisen Sie die Zustände den Ausgängen zu' with the Prozess läuft row framed across description and output cells."
+      }
+    },
+    {
+      "id": "de-bactoswitch-digital-input-source-button",
+      "locale": "de",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/de/bactoswitch-digital-input-source-button.png",
+      "replaces": [
+        "/img/bactoswitch/gui-digital-input-source-button.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Konfiguration der digitalen Eingänge mit hervorgehobener Schaltfläche Digitale Eingangsquelle wählen",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/de/digital-inputs-line.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.2.4"
+      ],
+      "highlights": [
+        [
+          162,
+          417,
+          476,
+          63
+        ]
+      ],
+      "inputSha256": "638993ed8737bc31e415baf5964c3a8ee8c9bfd37f13a63f9b55cda99d509510",
+      "sha256": "1557bbf2288060c727e519f5bedd2f4497997b104a1b2fadd76d847308ec8261",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "1557bbf2288060c727e519f5bedd2f4497997b104a1b2fadd76d847308ec8261",
+        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "reviewer": "Claude review agent (de)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Re-published 11:44 version: Konfiguration der digitalen Eingänge (SPS) with the 'Digitale Eingangsquelle wählen (Physische Eingänge)' button framed; Gates now shows a normal ICC Default Gate field (the sheet version showed a red-bordered TCC Default Gate that could be mistaken for a highlight)."
+      }
+    },
+    {
+      "id": "de-bactoswitch-digital-input-source-modbus",
+      "locale": "de",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/de/bactoswitch-digital-input-source-modbus.png",
+      "replaces": [
+        "/img/bactoswitch/gui-digital-input-source-modbus.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Digitale Eingangsquelle auf Modbus TCP eingestellt",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/de/digital-input-source.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.2.4"
+      ],
+      "highlights": [
+        [
+          264,
+          140,
+          195,
+          39
+        ],
+        [
+          4,
+          417,
+          792,
+          63
+        ]
+      ],
+      "inputSha256": "033355b00245e01f79abe4b3b9e108266425588a3694c9ecf0443ddb46b1acaa",
+      "sha256": "8851480c40914b4c9ea79e2c382a36f175ed70f6c12300916befeed5ee315669",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "8851480c40914b4c9ea79e2c382a36f175ed70f6c12300916befeed5ee315669",
+        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "reviewer": "Claude review agent (de)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Digitale Eingangsquelle (SPS) with Modbus-TCP selected and framed, and Zurück framed across the full width with all edges visible."
+      }
+    },
+    {
+      "id": "de-bactoswitch-web-online-results",
+      "locale": "de",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/de/bactoswitch-web-online-results.png",
+      "replaces": [
+        "/img/bactoswitch/web-auto-mode-results.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Ergebnisse des Online-Modus in der Web-Benutzeroberfläche, nach Name gefiltert, mit hervorgehobenen Spalten Name und Zeilen-ID",
+      "surface": "web",
+      "capture": "output/gui-capture/bactoswitch/web/de/web-online-results.png",
+      "sections": [
+        "5.2.2"
+      ],
+      "captureSize": [
+        1010,
+        479
+      ],
+      "highlights": [
+        [
+          348,
+          105.1875,
+          151,
+          52.375
+        ],
+        [
+          503,
+          105.1875,
+          106,
+          52.375
+        ]
+      ],
+      "inputSha256": "0d7347503cd6a759c7ecf611bf7747e8ab57b45a4b2efd1d9af11b025e6cf821",
+      "sha256": "bba2ac72a0988ed775b02dc25d74c79180652498b287fde0d3e7be5e8fe68fa8",
+      "pixelSize": [
+        2020,
+        958
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "bba2ac72a0988ed775b02dc25d74c79180652498b287fde0d3e7be5e8fe68fa8",
+        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "reviewer": "Claude review agent (de)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "German web UI filtered by name 'Unnamed' with frames around the Name and Zeilen-ID headers including their filter fields; table is cut at the right edge (Gate+ column), a capture-width quirk."
+      }
+    },
+    {
+      "id": "fr-bactoswitch-settings-menu-online-mode-settings",
+      "locale": "fr",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/fr/bactoswitch-settings-menu-online-mode-settings.png",
+      "replaces": [
+        "/img/bactoswitch/gui-home-auto-mode-settings.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Menu Paramètres avec le bouton Paramètres mode en ligne mis en évidence",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/fr/settings-menu.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "4.6"
+      ],
+      "highlights": [
+        [
+          400,
+          240,
+          166,
+          124
+        ]
+      ],
+      "inputSha256": "b2738efbb542b9648a220ffd0e826173a4a29d55f1007c62033780f84e3ec0a2",
+      "sha256": "b757ee11f29ad8b3cab53ac86a6acd926ddaf9953c74fec82afd43bda7467bd9",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "b757ee11f29ad8b3cab53ac86a6acd926ddaf9953c74fec82afd43bda7467bd9",
+        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "reviewer": "Claude review agent (fr)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Paramètres menu with a tight, unclipped frame around the Paramètres mode en ligne tile; French GUI and alt text."
+      }
+    },
+    {
+      "id": "fr-bactoswitch-online-mode-settings-sample-lines",
+      "locale": "fr",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/fr/bactoswitch-online-mode-settings-sample-lines.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-settings-sample-lines.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Paramètres mode en ligne avec le bouton Lignes d'échantillons BactoSwitch mis en évidence",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/fr/online-mode-settings-menu.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "4.6"
+      ],
+      "highlights": [
+        [
+          400,
+          240,
+          166,
+          124
+        ]
+      ],
+      "inputSha256": "af7adf2d1352438ef4bb57cc127f8e7c031b73cd32811b4d85adcf2477e11cb2",
+      "sha256": "7f7f486bbbfb77426b769c2d0dfe17cf92ac4dfa1cc8fabe5b53f0516e6c78b5",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "7f7f486bbbfb77426b769c2d0dfe17cf92ac4dfa1cc8fabe5b53f0516e6c78b5",
+        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "reviewer": "Claude review agent (fr)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Paramètres mode en ligne menu with the Lignes d'échantillons BactoSwitch tile framed (GUI shrinks its label font to fit); Alarm tile in English as expected."
+      }
+    },
+    {
+      "id": "fr-bactoswitch-sample-lines",
+      "locale": "fr",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/fr/bactoswitch-sample-lines.png",
+      "replaces": [
+        "/img/bactoswitch/gui-sample-lines.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Page Lignes d'échantillons BactoSwitch avec quatre lignes",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/fr/sample-lines.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "4.6"
+      ],
+      "inputSha256": "3598e3d7d6da082caea3a80d4281ff6dd03bfd624be9c610e239654559c47a02",
+      "sha256": "cfd3e2a255336f4f26049f3a36da8bc22aaf1a86b9ccf1ece4a79c37ded1d172",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "cfd3e2a255336f4f26049f3a36da8bc22aaf1a86b9ccf1ece4a79c37ded1d172",
+        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "reviewer": "Claude review agent (fr)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Lignes d'échantillons BactoSwitch page, Activer BactoSwitch ticked, four ticked lines Unnamed line 1-4 with colours, no frame."
+      }
+    },
+    {
+      "id": "fr-bactoswitch-control-panel-all-valves-open",
+      "locale": "fr",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/fr/bactoswitch-control-panel-all-valves-open.png",
+      "replaces": [
+        "/img/bactoswitch/gui-control-panel-all-valves-open.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Panneau de contrôle BactoSwitch avec toutes les vannes ouvertes",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/fr/control-panel-all-open.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "4.8"
+      ],
+      "inputSha256": "05b4a973a972bfa2479499385ef4c48c8d591a716c5d029d8623d8f791d0c0d8",
+      "sha256": "cf3fc01d2d740974780a15b8299d24872a9ab99891ec6ca516f1904021d4cb4c",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "cf3fc01d2d740974780a15b8299d24872a9ab99891ec6ca516f1904021d4cb4c",
+        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "reviewer": "Claude review agent (fr)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Panneau de contrôle with accessory en ligne, Débit 802 in black and Valve 1-4 all OUVERTURE (GUI quirk: OUVERTURE vs FERMÉ wording), no frame."
+      }
+    },
+    {
+      "id": "fr-bactoswitch-control-panel-single-valve",
+      "locale": "fr",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/fr/bactoswitch-control-panel-single-valve.png",
+      "replaces": [
+        "/img/bactoswitch/gui-control-panel-single-valve.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Panneau de contrôle BactoSwitch avec seule la vanne 4 ouverte",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/fr/control-panel-single-valve.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "4.8"
+      ],
+      "inputSha256": "a77da53d21a8513724e1e25daf049ce35d77b15abb1f065159607212c08a8781",
+      "sha256": "da9ec94ed12ae2590dd352ab3fd0912be974798cf5af767cc1d48aadb5402744",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "da9ec94ed12ae2590dd352ab3fd0912be974798cf5af767cc1d48aadb5402744",
+        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "reviewer": "Claude review agent (fr)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Valve 4 OUVERTURE, valves 1-3 FERMÉ, Débit 326 in green, no frame; alt text matches."
+      }
+    },
+    {
+      "id": "fr-bactoswitch-home-start",
+      "locale": "fr",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/fr/bactoswitch-home-start.png",
+      "replaces": [
+        "/img/bactoswitch/gui-home-auto-mode-start.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Écran d’accueil du BactoSense en mode en ligne avec le bouton Démarrer mis en évidence",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/fr/home-online.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.1"
+      ],
+      "highlights": [
+        [
+          507.46875,
+          417,
+          282.53125,
+          63
+        ]
+      ],
+      "inputSha256": "cc8f7fb59021397082f86edcbfdab41f188a0567f6f6f789ecf6c9ea4d4d3b9e",
+      "sha256": "bf03bfb1a24e41d26ee3443d4030070e8618cc7e3698c391e91a21b9e55c0e00",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "bf03bfb1a24e41d26ee3443d4030070e8618cc7e3698c391e91a21b9e55c0e00",
+        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "reviewer": "Claude review agent (fr)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Home screen in Mode en ligne with all four frame sides intact around the composite Démarrer/Minuteur arrêté button; chart axis dates (3 Apr, 6 Apr) remain an English GUI quirk."
+      }
+    },
+    {
+      "id": "fr-bactoswitch-plot-start",
+      "locale": "fr",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/fr/bactoswitch-plot-start.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-plot-start.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Fenêtre du graphique du mode en ligne avec le bouton Démarrer mis en évidence",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/fr/plot-start.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.1"
+      ],
+      "highlights": [
+        [
+          642,
+          417,
+          154,
+          63
+        ]
+      ],
+      "inputSha256": "daa14a343413777fc9f04afab289ef2be8ab2edbd75b4afa38a0c9607794b5f1",
+      "sha256": "ed10317f985d4a9b95476dc26a1c0c6fab7c9f1a9a9ccbcebe7a4d39fe477a6b",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "ed10317f985d4a9b95476dc26a1c0c6fab7c9f1a9a9ccbcebe7a4d39fe477a6b",
+        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "reviewer": "Claude review agent (fr)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Popup now closed: plain online plot with four TCC curves and an unframed 1 Mois button, Démarrer framed bottom right; captured at 11:42:34, after display-settings (11:42:33)."
+      }
+    },
+    {
+      "id": "fr-bactoswitch-protocol-selection",
+      "locale": "fr",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/fr/bactoswitch-protocol-selection.png",
+      "replaces": [
+        "/img/bactoswitch/gui-protocol-selection.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Sélection du protocole avec Water Analysis with BactoSwitch sélectionné",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/fr/wizard-protocol-selected.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.1"
+      ],
+      "highlights": [
+        [
+          10,
+          228,
+          780,
+          52
+        ],
+        [
+          404,
+          417,
+          396,
+          63
+        ]
+      ],
+      "inputSha256": "ec9d1ab2606a9a57a94054b54697715f61058e945cca771ffc28e0cb24a95263",
+      "sha256": "3fe2cd0aadc1037dddd72eeaf83df99f42be1bf14483d04fdba0930d737fec8c",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "3fe2cd0aadc1037dddd72eeaf83df99f42be1bf14483d04fdba0930d737fec8c",
+        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "reviewer": "Claude review agent (fr)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Water Analysis with BactoSwitch ticked with its full row framed and Suivant framed; Fenêtres shows ICC Default Gate."
+      }
+    },
+    {
+      "id": "fr-bactoswitch-interval-settings",
+      "locale": "fr",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/fr/bactoswitch-interval-settings.png",
+      "replaces": [
+        "/img/bactoswitch/gui-interval-settings.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Paramètres de l’intervalle avec le bouton Démarrer mis en évidence",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/fr/wizard-interval.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.1"
+      ],
+      "highlights": [
+        [
+          642,
+          417,
+          154,
+          63
+        ]
+      ],
+      "inputSha256": "16443a3a982bf14c6aea2f3ce19b05ef197f87d3f1bf2940097578f371e445be",
+      "sha256": "c1344a397f609cc23bf06c695a8acf0d2a12246e7e574815f5163c88996c8856",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "c1344a397f609cc23bf06c695a8acf0d2a12246e7e574815f5163c88996c8856",
+        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "reviewer": "Claude review agent (fr)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Paramètres de l'intervalle step with Démarrer framed; '120 Minute' and the Heure/Minute picker remain GUI quirks."
+      }
+    },
+    {
+      "id": "fr-bactoswitch-plot-lines",
+      "locale": "fr",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/fr/bactoswitch-plot-lines.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-plot-lines.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Graphique du mode en ligne avec une courbe par ligne",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/fr/plot-lines.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "highlights": [
+        [
+          335,
+          69,
+          130,
+          42
+        ]
+      ],
+      "inputSha256": "714d752eb2ac934b1dbdf5aeac46f1ca2dc17429a46214f296cb818ba53ae43a",
+      "sha256": "0f09ad13d092011befef3c19ef8f077eec13fded4122e4949b3a3be3e11ec483",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "0f09ad13d092011befef3c19ef8f077eec13fded4122e4949b3a3be3e11ec483",
+        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "reviewer": "Claude review agent (fr)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Four curves with legend TCC #1-#4 and a tight frame around the 1 Mois button at top centre."
+      }
+    },
+    {
+      "id": "fr-bactoswitch-display-settings",
+      "locale": "fr",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/fr/bactoswitch-display-settings.png",
+      "replaces": [
+        "/img/bactoswitch/gui-display-settings.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Paramètres d’affichage du graphique du mode en ligne",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/fr/display-settings.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "highlights": [
+        [
+          4,
+          417,
+          154,
+          63
+        ]
+      ],
+      "inputSha256": "ca433f71ae8dd9db28dcc71c05b2efe7708f523853c43855c71ba7b845465f66",
+      "sha256": "70a82e3239a93cbaa5e6ee0cab60373cb1f5509814f53a14c18e46736488e7eb",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "70a82e3239a93cbaa5e6ee0cab60373cb1f5509814f53a14c18e46736488e7eb",
+        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "reviewer": "Claude review agent (fr)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Display-settings popup with 1 Mois selected and TCC ticked; Résultats framed bottom left."
+      }
+    },
+    {
+      "id": "fr-bactoswitch-online-results",
+      "locale": "fr",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/fr/bactoswitch-online-results.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-results.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Liste des résultats du mode en ligne avec une entrée par mesure de ligne",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/fr/results-list.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "inputSha256": "d2722e4532eb2402c05180992bb43c65b41329abcd267e9f81758c960578e236",
+      "sha256": "c1f3153af6ab14e35a00bf5cce7c6425e2e5122fced0b206d1169d0aa2d39e25",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "c1f3153af6ab14e35a00bf5cce7c6425e2e5122fced0b206d1169d0aa2d39e25",
+        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "reviewer": "Claude review agent (fr)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Résultats du mode en ligne list of Unnamed line 1-4 entries with TCC values, unfiltered date range in the bar, no frame."
+      }
+    },
+    {
+      "id": "fr-bactoswitch-result-details",
+      "locale": "fr",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/fr/bactoswitch-result-details.png",
+      "replaces": [
+        "/img/bactoswitch/gui-result-details.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Détails d’un résultat du mode en ligne pour une mesure BactoSwitch",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/fr/result-details.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "inputSha256": "7e960cb79decc10839d701eab34f82e2362070e4072e59e684ae1d28c2e321be",
+      "sha256": "f78c30353de409df8113be80beed925ba4e0d03b78d832644fdf726419641dc0",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "f78c30353de409df8113be80beed925ba4e0d03b78d832644fdf726419641dc0",
+        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "reviewer": "Claude review agent (fr)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Détails du résultat for Unnamed line 1, TCC [1/mL] 120 510, Conforme, no frame."
+      }
+    },
+    {
+      "id": "fr-bactoswitch-filter-results",
+      "locale": "fr",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/fr/bactoswitch-filter-results.png",
+      "replaces": [
+        "/img/bactoswitch/gui-filter-results.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Fenêtre Filtrer les résultats",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/fr/filter-results.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "inputSha256": "9890499c9f5a4419b4ca3afffcc18393cc7d72be89fd1ffdd31785e5c79d8727",
+      "sha256": "39c905e9815545b79e87d2d617ecd57c8eab9871aa6386846f3908c0d2250a5d",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "39c905e9815545b79e87d2d617ecd57c8eab9871aa6386846f3908c0d2250a5d",
+        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "reviewer": "Claude review agent (fr)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Filtrer les résultats window with dates, Filtrer par nom Aucun, no frame."
+      }
+    },
+    {
+      "id": "fr-bactoswitch-filter-by-line-button",
+      "locale": "fr",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/fr/bactoswitch-filter-by-line-button.png",
+      "replaces": [
+        "/img/bactoswitch/gui-filter-by-line-button.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Fenêtre Filtrer les résultats avec le bouton Filtrer par ligne mis en évidence",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/fr/filter-results.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "highlights": [
+        [
+          162,
+          417,
+          236,
+          63
+        ]
+      ],
+      "inputSha256": "9890499c9f5a4419b4ca3afffcc18393cc7d72be89fd1ffdd31785e5c79d8727",
+      "sha256": "d61c278144beed2ef552c77f578d10cad0ce4717ab5e1eb0c4d2a0960bd1493d",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "d61c278144beed2ef552c77f578d10cad0ce4717ab5e1eb0c4d2a0960bd1493d",
+        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "reviewer": "Claude review agent (fr)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Same window with a tight, complete frame around Filtrer par ligne."
+      }
+    },
+    {
+      "id": "fr-bactoswitch-select-line",
+      "locale": "fr",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/fr/bactoswitch-select-line.png",
+      "replaces": [
+        "/img/bactoswitch/gui-select-sample-line.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Sélection d’une ligne d’échantillons BactoSwitch",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/fr/select-line.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "highlights": [
+        [
+          140,
+          149,
+          520,
+          52
+        ],
+        [
+          403,
+          341,
+          273,
+          60
+        ]
+      ],
+      "inputSha256": "8a8d2d3045c627877c5ce1f0541c5af8b93e1fbceacbdfc1496831848676638f",
+      "sha256": "1f2479d6c787621b2189602b0ec07da4c750756a34fcad8adbbf4945a91525f1",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "1f2479d6c787621b2189602b0ec07da4c750756a34fcad8adbbf4945a91525f1",
+        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "reviewer": "Claude review agent (fr)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Line picker with Unnamed line 1 ticked and its row framed, Confirmer framed (GUI quirk: title truncated behind the close button)."
+      }
+    },
+    {
+      "id": "fr-bactoswitch-plot-filtered",
+      "locale": "fr",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/fr/bactoswitch-plot-filtered.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-plot-filtered.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Graphique du mode en ligne filtré sur la ligne 1",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/fr/plot-filtered.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "inputSha256": "2112fb8b9632f433b641415de62e807fa78ceff37325bd2f6801a033d33d812d",
+      "sha256": "f7a41ff793e927cdae1fce1f275835e725f37a96bb56018d8468e92aeef08220",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "f7a41ff793e927cdae1fce1f275835e725f37a96bb56018d8468e92aeef08220",
+        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "reviewer": "Claude review agent (fr)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Plot shows only the red TCC #1 curve with 1 Mois button, no frame."
+      }
+    },
+    {
+      "id": "fr-bactoswitch-results-filtered",
+      "locale": "fr",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/fr/bactoswitch-results-filtered.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-results-filtered.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Résultats du mode en ligne filtrés sur la ligne 1",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/fr/results-filtered.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "inputSha256": "8da092ff820f33ec2419bddbf776b67d194a7a6f3b64eae87699d823e9e3593a",
+      "sha256": "b9c30a55adb23f9f204cb9843d0d20e0bb2654630dc6ac3c2c8b50044932421d",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "b9c30a55adb23f9f204cb9843d0d20e0bb2654630dc6ac3c2c8b50044932421d",
+        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "reviewer": "Claude review agent (fr)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "List contains only Unnamed line 1 and the bottom bar ends with '| Ligne #1'."
+      }
+    },
+    {
+      "id": "fr-bactoswitch-alarm-sample-line",
+      "locale": "fr",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/fr/bactoswitch-alarm-sample-line.png",
+      "replaces": [
+        "/img/bactoswitch/gui-alarm-configuration.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Configuration des alarmes avec une ligne d’échantillons sélectionnée",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/fr/alarm-line.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.3"
+      ],
+      "highlights": [
+        [
+          537,
+          343,
+          206,
+          49
+        ]
+      ],
+      "inputSha256": "01ddb30736158c2b64821398ff9ebf33831b9f2ec1479be03e2dce42a9f88828",
+      "sha256": "38a0c135b59e4f9b75bfd316c86db4a4c4f73b1815f2b188c12ff9ef83f1b5b3",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "38a0c135b59e4f9b75bfd316c86db4a4c4f73b1815f2b188c12ff9ef83f1b5b3",
+        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "reviewer": "Claude review agent (fr)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Frame tightly encloses the Ligne d'échantillonnage checkbox and the 'Ligne # 2' field without covering the label."
+      }
+    },
+    {
+      "id": "fr-bactoswitch-assign-events-process-running",
+      "locale": "fr",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/fr/bactoswitch-assign-events-process-running.png",
+      "replaces": [
+        "/img/bactoswitch/gui-assign-events-to-outputs.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Écran Relation entre événements et sorties avec la ligne Opération en cours mise en évidence",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/fr/digital-outputs.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.2.3"
+      ],
+      "highlights": [
+        [
+          9,
+          175,
+          782,
+          54
+        ]
+      ],
+      "inputSha256": "561c93862ab32e771c0a57d4354cc55da3dd111ebd7d1b7af3dac39517d275ca",
+      "sha256": "b854d569749a24ad482056fd1b3db0f95fa19a4ac2e29d971dc76f88b3deb1b9",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "b854d569749a24ad482056fd1b3db0f95fa19a4ac2e29d971dc76f88b3deb1b9",
+        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "reviewer": "Claude review agent (fr)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Full Opération en cours row framed in Relation entre événements et sorties ('Etat initial' unaccented is a GUI quirk)."
+      }
+    },
+    {
+      "id": "fr-bactoswitch-digital-input-source-button",
+      "locale": "fr",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/fr/bactoswitch-digital-input-source-button.png",
+      "replaces": [
+        "/img/bactoswitch/gui-digital-input-source-button.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Configuration des entrées numériques avec le bouton Sélectionner la source d'entrée numérique (Entrées physiques) mis en évidence",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/fr/digital-inputs-line.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.2.4"
+      ],
+      "highlights": [
+        [
+          162,
+          417,
+          476,
+          63
+        ]
+      ],
+      "inputSha256": "47f2db410a38859187d76df1bfa9ccd350eabb45e5ad63610e84fed9162d001f",
+      "sha256": "77d5e5e7492354e00942827166e2a3feb94d6ff6c9b68d57e60286a8a3e27188",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "77d5e5e7492354e00942827166e2a3feb94d6ff6c9b68d57e60286a8a3e27188",
+        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "reviewer": "Claude review agent (fr)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Fenêtres now shows ICC Default Gate in normal styling, with no red field; only the Sélectionner la source d'entrée numérique (Entrées physiques) button is framed."
+      }
+    },
+    {
+      "id": "fr-bactoswitch-digital-input-source-modbus",
+      "locale": "fr",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/fr/bactoswitch-digital-input-source-modbus.png",
+      "replaces": [
+        "/img/bactoswitch/gui-digital-input-source-modbus.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Source des entrées numériques réglée sur Modbus TCP",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/fr/digital-input-source.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.2.4"
+      ],
+      "highlights": [
+        [
+          264,
+          140,
+          195,
+          39
+        ],
+        [
+          4,
+          417,
+          792,
+          63
+        ]
+      ],
+      "inputSha256": "a97d889b23c71fb9b6c387138e87c05034895d1c10b36e6bbf2a52f6cfbe6fd7",
+      "sha256": "a9245750b2b1599821ccfc690447c6eb4d10aabce2fe6dd1feba6f1ce9f7272a",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "a9245750b2b1599821ccfc690447c6eb4d10aabce2fe6dd1feba6f1ce9f7272a",
+        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "reviewer": "Claude review agent (fr)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Modbus TCP selected and framed, full-width Retour framed, both frames intact."
+      }
+    },
+    {
+      "id": "fr-bactoswitch-web-online-results",
+      "locale": "fr",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/fr/bactoswitch-web-online-results.png",
+      "replaces": [
+        "/img/bactoswitch/web-auto-mode-results.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Résultats du mode en ligne dans l’interface utilisateur web filtrés par nom, avec les colonnes Nom et ID de ligne mises en évidence",
+      "surface": "web",
+      "capture": "output/gui-capture/bactoswitch/web/fr/web-online-results.png",
+      "sections": [
+        "5.2.2"
+      ],
+      "captureSize": [
+        1010,
+        479
+      ],
+      "highlights": [
+        [
+          348,
+          105.1875,
+          151,
+          52.375
+        ],
+        [
+          503,
+          105.1875,
+          106,
+          52.375
+        ]
+      ],
+      "inputSha256": "ae3049d72f6ec5b80e9460e0599e4c3a2ffe0c1bd678056ade934d31d8532f4a",
+      "sha256": "5fe8f114f31f6f34230c3cd11117a3b42d309a36acb63d68541773ff73726111",
+      "pixelSize": [
+        2020,
+        958
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "5fe8f114f31f6f34230c3cd11117a3b42d309a36acb63d68541773ff73726111",
+        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "reviewer": "Claude review agent (fr)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Web results filtered by 'Unnamed' with tight frames around the Nom and ID de ligne headers including their filter fields (web date picker shows English month names)."
+      }
+    },
+    {
+      "id": "it-bactoswitch-settings-menu-online-mode-settings",
+      "locale": "it",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/it/bactoswitch-settings-menu-online-mode-settings.png",
+      "replaces": [
+        "/img/bactoswitch/gui-home-auto-mode-settings.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Menu Impostazioni con Impostazioni della Modalità Online evidenziato",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/it/settings-menu.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "4.6"
+      ],
+      "highlights": [
+        [
+          400,
+          240,
+          166,
+          124
+        ]
+      ],
+      "inputSha256": "0279d0a103b783eb34537a8d3ee96e4f411e411828a66b7e8b85742a87e7233b",
+      "sha256": "34615376dec33ee7dd7ef755cb6345ed8d9d26dbe8e61c0f16b7bf1fa3baab88",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "34615376dec33ee7dd7ef755cb6345ed8d9d26dbe8e61c0f16b7bf1fa3baab88",
+        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "reviewer": "Claude review agent (it)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Impostazioni menu with the 'Impostazioni della Modalità Online' tile tightly framed, text clear, Italian GUI and alt text."
+      }
+    },
+    {
+      "id": "it-bactoswitch-online-mode-settings-sample-lines",
+      "locale": "it",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/it/bactoswitch-online-mode-settings-sample-lines.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-settings-sample-lines.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Impostazioni della Modalità Online con Linee di campionamento BactoSwitch evidenziato",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/it/online-mode-settings-menu.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "4.6"
+      ],
+      "highlights": [
+        [
+          400,
+          240,
+          166,
+          124
+        ]
+      ],
+      "inputSha256": "a8e60924ead408a7373c4461427682494579446db40c1c66fdb54ec3e7dbe1a7",
+      "sha256": "f6ef543fb69fd448a6e898f2ed4d2f0d1139a932f8f87850d19fa5a9ec0ef020",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "f6ef543fb69fd448a6e898f2ed4d2f0d1139a932f8f87850d19fa5a9ec0ef020",
+        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "reviewer": "Claude review agent (it)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Impostazioni della Modalità Online with the 'Linee di campionamento BactoSwitch' tile framed tightly; 'Programma l'intervallo' greyed out and 'Alarm' tile in English are GUI quirks."
+      }
+    },
+    {
+      "id": "it-bactoswitch-sample-lines",
+      "locale": "it",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/it/bactoswitch-sample-lines.png",
+      "replaces": [
+        "/img/bactoswitch/gui-sample-lines.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Pagina Linee di campionamento BactoSwitch con quattro linee",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/it/sample-lines.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "4.6"
+      ],
+      "inputSha256": "9fc74d44b81566a1f7a8cb4ab5366c23c49bc035c723e6042e021b499e2de29e",
+      "sha256": "d6ac26f1196b08bd777271fb598816f458d4e6f3b6c198e6c7c07d337b4a1c67",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "d6ac26f1196b08bd777271fb598816f458d4e6f3b6c198e6c7c07d337b4a1c67",
+        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "reviewer": "Claude review agent (it)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Linee di campionamento BactoSwitch page, Abilitare BactoSwitch ticked, Unnamed line 1-4 with colours, no frame."
+      }
+    },
+    {
+      "id": "it-bactoswitch-control-panel-all-valves-open",
+      "locale": "it",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/it/bactoswitch-control-panel-all-valves-open.png",
+      "replaces": [
+        "/img/bactoswitch/gui-control-panel-all-valves-open.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Pannello di controllo BactoSwitch con tutte le valvole aperte",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/it/control-panel-all-open.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "4.8"
+      ],
+      "inputSha256": "611c0e03a44c2f1b37da411fee41d337356830ff369bf30f15455232d484c56a",
+      "sha256": "c4f8fde57a2efb80028426b8b75447f076fbbd27f4c73aa87046bf3526b84022",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "c4f8fde57a2efb80028426b8b75447f076fbbd27f4c73aa87046bf3526b84022",
+        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "reviewer": "Claude review agent (it)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Pannello di controllo, accessory 'online', flow 802 in black, Valvola 1-4 all APERTO, no frame (masculine APERTO with 'Valvola' is a GUI quirk)."
+      }
+    },
+    {
+      "id": "it-bactoswitch-control-panel-single-valve",
+      "locale": "it",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/it/bactoswitch-control-panel-single-valve.png",
+      "replaces": [
+        "/img/bactoswitch/gui-control-panel-single-valve.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Pannello di controllo BactoSwitch con solo la valvola 4 aperta",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/it/control-panel-single-valve.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "4.8"
+      ],
+      "inputSha256": "edcfc16c4bc1621f1a29bf0a36acb899a7a426f1481307898b9dcaef2eabc401",
+      "sha256": "bfd35b6bd7d8434e6fc315fd320ccb7d932f5d15ea27da629c70eab7a4eb0c3c",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "bfd35b6bd7d8434e6fc315fd320ccb7d932f5d15ea27da629c70eab7a4eb0c3c",
+        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "reviewer": "Claude review agent (it)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Valvola 4 APERTO, Valvole 1-3 CHIUSO, flow 326 in green, accessory online, no frame."
+      }
+    },
+    {
+      "id": "it-bactoswitch-home-start",
+      "locale": "it",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/it/bactoswitch-home-start.png",
+      "replaces": [
+        "/img/bactoswitch/gui-home-auto-mode-start.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Schermata Home di BactoSense in modalità online con Avvio evidenziato",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/it/home-online.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.1"
+      ],
+      "highlights": [
+        [
+          542.875,
+          417,
+          247.125,
+          63
+        ]
+      ],
+      "inputSha256": "d0a22bbfb4039227fb1284d12199cd0785c30c0069e038524285dbc54fdbb0cc",
+      "sha256": "8e39dd07ffa19ef3a5eb44f94fbdb12c1b8b676a7463e44a8f1008da873b8e86",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "8e39dd07ffa19ef3a5eb44f94fbdb12c1b8b676a7463e44a8f1008da873b8e86",
+        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "reviewer": "Claude review agent (it)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Home screen (BactoSense CORE, Modalità Online) with the Avvio / Programmazione interrotta button fully and tightly framed; alt text Italian and accurate."
+      }
+    },
+    {
+      "id": "it-bactoswitch-plot-start",
+      "locale": "it",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/it/bactoswitch-plot-start.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-plot-start.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Finestra del grafico della modalità online con Avvio evidenziato",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/it/plot-start.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.1"
+      ],
+      "highlights": [
+        [
+          642,
+          417,
+          154,
+          63
+        ]
+      ],
+      "inputSha256": "cb05d83512ea91f82e5332619ff8f579842ca89569c077aa71f51d603c51a179",
+      "sha256": "c551d51e856aaccbd3bd23d436e349080d1e810d706046f829fb442244b63478",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "c551d51e856aaccbd3bd23d436e349080d1e810d706046f829fb442244b63478",
+        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "reviewer": "Claude review agent (it)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Popup now closed: plain online plot with four TCC curves and Avvio framed at bottom right, frame intact; fixes the earlier popup-open failure."
+      }
+    },
+    {
+      "id": "it-bactoswitch-protocol-selection",
+      "locale": "it",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/it/bactoswitch-protocol-selection.png",
+      "replaces": [
+        "/img/bactoswitch/gui-protocol-selection.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Selezione del protocollo con Water Analysis with BactoSwitch selezionato",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/it/wizard-protocol-selected.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.1"
+      ],
+      "highlights": [
+        [
+          10,
+          228,
+          780,
+          52
+        ],
+        [
+          404,
+          417,
+          396,
+          63
+        ]
+      ],
+      "inputSha256": "0cbebdd82a3683eaf24de620d1d6a8a7882d1e0e8dc8abc6211a9a3e7f6f519c",
+      "sha256": "cc91823d4c13a4f7a4c170996002713e744a1c5c912749ee1c4287de3b049192",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "cc91823d4c13a4f7a4c170996002713e744a1c5c912749ee1c4287de3b049192",
+        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "reviewer": "Claude review agent (it)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "'Water Analysis with BactoSwitch' ticked with its row framed and Avanti framed without clipping; Gate ICC Default Gate."
+      }
+    },
+    {
+      "id": "it-bactoswitch-interval-settings",
+      "locale": "it",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/it/bactoswitch-interval-settings.png",
+      "replaces": [
+        "/img/bactoswitch/gui-interval-settings.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Impostazioni dell’intervallo con Avvio evidenziato",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/it/wizard-interval.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.1"
+      ],
+      "highlights": [
+        [
+          642,
+          417,
+          154,
+          63
+        ]
+      ],
+      "inputSha256": "1f493330f70e39167fd3fcf9514df285cced024beeccb777b217d43a15033d8a",
+      "sha256": "9467d3c31262f84dddd4358b4bf657c7efecc179813450973a9795a6f22f067a",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "9467d3c31262f84dddd4358b4bf657c7efecc179813450973a9795a6f22f067a",
+        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "reviewer": "Claude review agent (it)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Interval step (120 Minute, Avvia ora ticked, Semplice) with Avvio framed tightly; 'Ora' on the 119/121 picker rows is a GUI quirk."
+      }
+    },
+    {
+      "id": "it-bactoswitch-plot-lines",
+      "locale": "it",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/it/bactoswitch-plot-lines.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-plot-lines.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Grafico della modalità online con una curva per ogni linea",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/it/plot-lines.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "highlights": [
+        [
+          335,
+          69,
+          130,
+          42
+        ]
+      ],
+      "inputSha256": "fb9b905d5233509d8a2a2819b2daaf02effff10e7d38ad7d4e874bc1fc1f0190",
+      "sha256": "6b64816379426a79b7a502cc612b69141d4204164095ad5560f7272fa8a27417",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "6b64816379426a79b7a502cc612b69141d4204164095ad5560f7272fa8a27417",
+        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "reviewer": "Claude review agent (it)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Four TCC curves with legend TCC #1-#4 and the '1 Mese' button framed at top centre; overlapping 'Avanti'/'interrotta' labels are a GUI quirk."
+      }
+    },
+    {
+      "id": "it-bactoswitch-display-settings",
+      "locale": "it",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/it/bactoswitch-display-settings.png",
+      "replaces": [
+        "/img/bactoswitch/gui-display-settings.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Impostazioni di visualizzazione del grafico della modalità online",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/it/display-settings.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "highlights": [
+        [
+          4,
+          417,
+          154,
+          63
+        ]
+      ],
+      "inputSha256": "728c741edd5c8e25345d3e7cfeb4597ead97250db6637e61d1fca5639923abc9",
+      "sha256": "9ed3b954e3c3fce67f7bfed65c82e479c9ee29e4e1be865fee580017c657dfd2",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "9ed3b954e3c3fce67f7bfed65c82e479c9ee29e4e1be865fee580017c657dfd2",
+        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "reviewer": "Claude review agent (it)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Display-settings popup with 1 Mese selected and TCC ticked, Visualizza i risultati framed bottom left; 'Registro' for Log and English 'Ratio'/'Counts' are GUI quirks."
+      }
+    },
+    {
+      "id": "it-bactoswitch-online-results",
+      "locale": "it",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/it/bactoswitch-online-results.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-results.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Elenco dei risultati della modalità online con una voce per ogni misura di linea",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/it/results-list.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "inputSha256": "7b6efaae64fb6826e5e53c8ffacbe0f77cfbb5a856800c1be60d509b5bdec9b8",
+      "sha256": "3aa1cf4dae2d70e9d4ecf7bfa84260269e1284a15e1112493681ffc228ab2c41",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "3aa1cf4dae2d70e9d4ecf7bfa84260269e1284a15e1112493681ffc228ab2c41",
+        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "reviewer": "Claude review agent (it)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Risultati della Modalità Online list of Unnamed line 1-4 entries with TCC values, no frame."
+      }
+    },
+    {
+      "id": "it-bactoswitch-result-details",
+      "locale": "it",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/it/bactoswitch-result-details.png",
+      "replaces": [
+        "/img/bactoswitch/gui-result-details.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Dettagli del risultato in modalità online di una misura BactoSwitch",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/it/result-details.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "inputSha256": "370b944076726a54ed0909e08ca68048698767a59348ec3d1a975c7d5df281ba",
+      "sha256": "fa755caccb93929217054a3a7de6c6e63b25c2ca6a20c7a6f68ece2c6a06e2d8",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "fa755caccb93929217054a3a7de6c6e63b25c2ca6a20c7a6f68ece2c6a06e2d8",
+        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "reviewer": "Claude review agent (it)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Dettagli dei risultati for Unnamed line 1, TCC 120 510, 25 mar 2026 5:31, Conforme, no frame."
+      }
+    },
+    {
+      "id": "it-bactoswitch-filter-results",
+      "locale": "it",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/it/bactoswitch-filter-results.png",
+      "replaces": [
+        "/img/bactoswitch/gui-filter-results.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Finestra Filtra i risultati",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/it/filter-results.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "inputSha256": "d19bb15b5706101b20306395f45d77465f4b4378dce3f0cea07daa1fa6e3ba6a",
+      "sha256": "7f01d957a4b7e4a26518c0dbc8ce9dcad0acb42fbe6f211f4a273979f35a91e4",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "7f01d957a4b7e4a26518c0dbc8ce9dcad0acb42fbe6f211f4a273979f35a91e4",
+        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "reviewer": "Claude review agent (it)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Filtra i risultati window with date range and Filtrare per linea button, no frame."
+      }
+    },
+    {
+      "id": "it-bactoswitch-filter-by-line-button",
+      "locale": "it",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/it/bactoswitch-filter-by-line-button.png",
+      "replaces": [
+        "/img/bactoswitch/gui-filter-by-line-button.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Finestra Filtra i risultati con Filtrare per linea evidenziato",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/it/filter-results.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "highlights": [
+        [
+          162,
+          417,
+          236,
+          63
+        ]
+      ],
+      "inputSha256": "d19bb15b5706101b20306395f45d77465f4b4378dce3f0cea07daa1fa6e3ba6a",
+      "sha256": "8e8c3f469ea944fe027a54cd28e4f3ba8e4a78ba38354f3422c23b59ac802726",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "8e8c3f469ea944fe027a54cd28e4f3ba8e4a78ba38354f3422c23b59ac802726",
+        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "reviewer": "Claude review agent (it)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Same Filtra i risultati window with the Filtrare per linea button tightly framed."
+      }
+    },
+    {
+      "id": "it-bactoswitch-select-line",
+      "locale": "it",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/it/bactoswitch-select-line.png",
+      "replaces": [
+        "/img/bactoswitch/gui-select-sample-line.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Selezione di una linea di campionamento BactoSwitch",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/it/select-line.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "highlights": [
+        [
+          140,
+          149,
+          520,
+          52
+        ],
+        [
+          403,
+          341,
+          273,
+          60
+        ]
+      ],
+      "inputSha256": "279934e89530550f7c01f3619eb74b288eb5536acb30787d8686d9fdad5bba08",
+      "sha256": "11a237c7b7b5a77d5d1e926c7f2a9638673aa4d21278157fcaa7f218adb86878",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "11a237c7b7b5a77d5d1e926c7f2a9638673aa4d21278157fcaa7f218adb86878",
+        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "reviewer": "Claude review agent (it)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Line-picker popup with Unnamed line 1 ticked and its row framed, Conferma framed, other lines unticked."
+      }
+    },
+    {
+      "id": "it-bactoswitch-plot-filtered",
+      "locale": "it",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/it/bactoswitch-plot-filtered.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-plot-filtered.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Grafico della modalità online filtrato per la linea 1",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/it/plot-filtered.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "inputSha256": "a8585e3efdb520a4acecc3c832ad865bdc4a45773354e8732aca3bfc4a9e0120",
+      "sha256": "51d1cd3e1131c6cf449277344d79051fd992f6ad88311a0badfd6be0c5f55d8a",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "51d1cd3e1131c6cf449277344d79051fd992f6ad88311a0badfd6be0c5f55d8a",
+        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "reviewer": "Claude review agent (it)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Online plot showing a single red curve with legend TCC #1 only, no frame."
+      }
+    },
+    {
+      "id": "it-bactoswitch-results-filtered",
+      "locale": "it",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/it/bactoswitch-results-filtered.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-results-filtered.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Risultati della modalità online filtrati per la linea 1",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/it/results-filtered.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "inputSha256": "f3f66c80ef9993354009ce88280e6587f9786cbcb4e899343a18bc8b6e380c7f",
+      "sha256": "7c46dfe74ad5beeb36c73124f4bec3c39ea62af73be471f5685d8f2ec6e193b6",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "7c46dfe74ad5beeb36c73124f4bec3c39ea62af73be471f5685d8f2ec6e193b6",
+        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "reviewer": "Claude review agent (it)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Results list containing only Unnamed line 1 entries; bottom bar reads '27 feb 2026 5:31 - 25 mar 2026 5:31 | Linea #1'."
+      }
+    },
+    {
+      "id": "it-bactoswitch-alarm-sample-line",
+      "locale": "it",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/it/bactoswitch-alarm-sample-line.png",
+      "replaces": [
+        "/img/bactoswitch/gui-alarm-configuration.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Configurazione degli allarmi con una linea di campionamento selezionata",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/it/alarm-line.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.3"
+      ],
+      "highlights": [
+        [
+          537,
+          343,
+          206,
+          49
+        ]
+      ],
+      "inputSha256": "14ee13002d8c662d7456f84bccbca5391f1005fde4a5f85a384f138967d34c01",
+      "sha256": "5c10898df83880689fd84e257d56dbabc340d409c89dfb0407badfee36b0485e",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "5c10898df83880689fd84e257d56dbabc340d409c89dfb0407badfee36b0485e",
+        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "reviewer": "Claude review agent (it)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Configurazione dell'allarme with the Linea campione checkbox and 'Linea # 2' field enclosed in one tight frame."
+      }
+    },
+    {
+      "id": "it-bactoswitch-assign-events-process-running",
+      "locale": "it",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/it/bactoswitch-assign-events-process-running.png",
+      "replaces": [
+        "/img/bactoswitch/gui-assign-events-to-outputs.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Assegnazione degli eventi alle uscite con la riga Processo in corso evidenziata",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/it/digital-outputs.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.2.3"
+      ],
+      "highlights": [
+        [
+          9,
+          175,
+          782,
+          54
+        ]
+      ],
+      "inputSha256": "a3235057d3f54398f8bbc65f1cd6e1ec47b4647b06140c547409dc583f50eebe",
+      "sha256": "7460fc3698f4b6be9651dc2f007a116d368e5d6949e0597124bcbf5b3608e498",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "7460fc3698f4b6be9651dc2f007a116d368e5d6949e0597124bcbf5b3608e498",
+        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "reviewer": "Claude review agent (it)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Assegna eventi agli output with the full 'Processo in corso' row framed across all four outputs."
+      }
+    },
+    {
+      "id": "it-bactoswitch-digital-input-source-button",
+      "locale": "it",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/it/bactoswitch-digital-input-source-button.png",
+      "replaces": [
+        "/img/bactoswitch/gui-digital-input-source-button.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Configurazione degli input digitali (PLC) con Seleziona la sorgente di input digitali evidenziato",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/it/digital-inputs-line.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.2.4"
+      ],
+      "highlights": [
+        [
+          162,
+          417,
+          476,
+          63
+        ]
+      ],
+      "inputSha256": "e1fcdcd6f4b4000a607d6437beea6754e1ce8689b94ee14c44a5e75dd4e1d02d",
+      "sha256": "229c3c85ecd5f54dbce4c3e4963d383f0d9ddafcdb05982909e102d3899ebe60",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "229c3c85ecd5f54dbce4c3e4963d383f0d9ddafcdb05982909e102d3899ebe60",
+        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "reviewer": "Claude review agent (it)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Digital input configuration (PLC) with Gate now 'ICC Default Gate' in normal text and the 'Seleziona la sorgente di input digitali (Input fisici)' button framed."
+      }
+    },
+    {
+      "id": "it-bactoswitch-digital-input-source-modbus",
+      "locale": "it",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/it/bactoswitch-digital-input-source-modbus.png",
+      "replaces": [
+        "/img/bactoswitch/gui-digital-input-source-modbus.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Sorgente degli ingressi digitali impostata su Modbus TCP",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/it/digital-input-source.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.2.4"
+      ],
+      "highlights": [
+        [
+          264,
+          140,
+          195,
+          39
+        ],
+        [
+          4,
+          417,
+          792,
+          63
+        ]
+      ],
+      "inputSha256": "b6114096f3b0f3e5edd226df3a01910264653393c197faac91175121358bb42e",
+      "sha256": "37a260406733587ef768f7f86c4f28bbec2f714d249cb805855348d2c93e616e",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "37a260406733587ef768f7f86c4f28bbec2f714d249cb805855348d2c93e616e",
+        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "reviewer": "Claude review agent (it)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Sorgente di input digitali (PLC) with Modbus TCP selected and framed and Indietro framed; alt uses 'ingressi' where the GUI says 'input', minor."
+      }
+    },
+    {
+      "id": "it-bactoswitch-web-online-results",
+      "locale": "it",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/it/bactoswitch-web-online-results.png",
+      "replaces": [
+        "/img/bactoswitch/web-auto-mode-results.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Risultati della modalità online nell’interfaccia utente web filtrati per nome, con le colonne Nome e ID linea evidenziate",
+      "surface": "web",
+      "capture": "output/gui-capture/bactoswitch/web/it/web-online-results.png",
+      "sections": [
+        "5.2.2"
+      ],
+      "captureSize": [
+        1010,
+        479
+      ],
+      "highlights": [
+        [
+          348,
+          105.1875,
+          151,
+          52.375
+        ],
+        [
+          503,
+          105.1875,
+          106,
+          52.375
+        ]
+      ],
+      "inputSha256": "0801c97018c55419274ce6fbd0e57904b626fb7e579aeced5c13c98117b862b8",
+      "sha256": "34799f6a9c75463a653381bac63bac82d25c216ea04b4ab03b641236ba0f47e1",
+      "pixelSize": [
+        2020,
+        958
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "34799f6a9c75463a653381bac63bac82d25c216ea04b4ab03b641236ba0f47e1",
+        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "reviewer": "Claude review agent (it)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Web online results filtered by 'Unnamed' with Nome and ID linea headers (including filter fields) framed without covering text; English date-range labels and truncated 'Data di campionam...' are web UI quirks."
+      }
+    },
+    {
+      "id": "es-bactoswitch-settings-menu-online-mode-settings",
+      "locale": "es",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/es/bactoswitch-settings-menu-online-mode-settings.png",
+      "replaces": [
+        "/img/bactoswitch/gui-home-auto-mode-settings.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Menú Ajustes con Ajustes del modo en línea resaltado",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/es/settings-menu.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "4.6"
+      ],
+      "highlights": [
+        [
+          400,
+          240,
+          166,
+          124
+        ]
+      ],
+      "inputSha256": "7e6d9a6fbcdde612575438ed70125b037a06d48db9a13165211ec2866fde4df2",
+      "sha256": "a9ffde7651a0f0a1177e97dc0dab9a3d8e04365fc1952bc9caf8c3e57dcadc4d",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "a9ffde7651a0f0a1177e97dc0dab9a3d8e04365fc1952bc9caf8c3e57dcadc4d",
+        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "reviewer": "Claude review agent (es)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Ajustes menu with a tight, unclipped frame around the 'Ajustes del modo en línea' tile; Spanish GUI and alt."
+      }
+    },
+    {
+      "id": "es-bactoswitch-online-mode-settings-sample-lines",
+      "locale": "es",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/es/bactoswitch-online-mode-settings-sample-lines.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-settings-sample-lines.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Ajustes del modo en línea con Líneas de muestra BactoSwitch resaltado",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/es/online-mode-settings-menu.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "4.6"
+      ],
+      "highlights": [
+        [
+          400,
+          240,
+          166,
+          124
+        ]
+      ],
+      "inputSha256": "9bb158f07081d0223ece17d9d92f97c59184537c1afc629d4e0d7c3fec158c4e",
+      "sha256": "33bcee3a447be1bed1b2b980ff2f3d53d22d16aff65d25f8b7c7f53c426e759f",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "33bcee3a447be1bed1b2b980ff2f3d53d22d16aff65d25f8b7c7f53c426e759f",
+        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "reviewer": "Claude review agent (es)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Ajustes del modo en línea menu with the 'Líneas de muestra BactoSwitch' tile framed; 'Alarm' tile label is the GUI's own English string."
+      }
+    },
+    {
+      "id": "es-bactoswitch-sample-lines",
+      "locale": "es",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/es/bactoswitch-sample-lines.png",
+      "replaces": [
+        "/img/bactoswitch/gui-sample-lines.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Página Líneas de muestras BactoSwitch con cuatro líneas",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/es/sample-lines.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "4.6"
+      ],
+      "inputSha256": "154137f3599ae9a553f696d41678f3580b778370da1349f3c0327252d1b7bd57",
+      "sha256": "61a5e1f3cbca4f1dada7cb29d890de1258cd3341bbd033f9e540abd4306640d0",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "61a5e1f3cbca4f1dada7cb29d890de1258cd3341bbd033f9e540abd4306640d0",
+        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "reviewer": "Claude review agent (es)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Activar BactoSwitch ticked, four lines 'Unnamed line 1-4' with colours, no frame; page title says 'muestras' while the menu tile says 'muestra' (GUI wording inconsistency)."
+      }
+    },
+    {
+      "id": "es-bactoswitch-control-panel-all-valves-open",
+      "locale": "es",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/es/bactoswitch-control-panel-all-valves-open.png",
+      "replaces": [
+        "/img/bactoswitch/gui-control-panel-all-valves-open.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Panel de control BactoSwitch con todas las válvulas abiertas",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/es/control-panel-all-open.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "4.8"
+      ],
+      "inputSha256": "2b5149e125c5c0eafdc093177b5c323477a663c7bddcf192c114d6cbf8b4265b",
+      "sha256": "371894849a5984afeafc78fbb3a5a0f2364440740ecfe4c59a36edc2327d9d48",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "371894849a5984afeafc78fbb3a5a0f2364440740ecfe4c59a36edc2327d9d48",
+        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "reviewer": "Claude review agent (es)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Accessory 'en línea', flow 802 in black, all four valves ABIERTO, no frame."
+      }
+    },
+    {
+      "id": "es-bactoswitch-control-panel-single-valve",
+      "locale": "es",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/es/bactoswitch-control-panel-single-valve.png",
+      "replaces": [
+        "/img/bactoswitch/gui-control-panel-single-valve.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Panel de control BactoSwitch con solo la válvula 4 abierta",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/es/control-panel-single-valve.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "4.8"
+      ],
+      "inputSha256": "4c06c2dc022521e84166bdd8be71c4817d5a5831b82848ab7009fa52273ae00f",
+      "sha256": "e98ba25c0ddaeabc4fd72178494bc07355810b4a2f6431f80f53246f8ad58777",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "e98ba25c0ddaeabc4fd72178494bc07355810b4a2f6431f80f53246f8ad58777",
+        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "reviewer": "Claude review agent (es)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Válvula 4 ABIERTO, válvulas 1-3 CERRADO, flow 326 in green, no frame."
+      }
+    },
+    {
+      "id": "es-bactoswitch-home-start",
+      "locale": "es",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/es/bactoswitch-home-start.png",
+      "replaces": [
+        "/img/bactoswitch/gui-home-auto-mode-start.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Pantalla de inicio de BactoSense en modo en línea con Inicio resaltado",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/es/home-online.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.1"
+      ],
+      "highlights": [
+        [
+          544.265625,
+          417,
+          245.734375,
+          63
+        ]
+      ],
+      "inputSha256": "b66fe911e0289a7703063f6cca0cd0996625aaf0a5857039b342e0611d140bbf",
+      "sha256": "26e0aa549769b32f2485dc6c00426f600f5f01840988446ddc37086acf973e1c",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "26e0aa549769b32f2485dc6c00426f600f5f01840988446ddc37086acf973e1c",
+        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "reviewer": "Claude review agent (es)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Online-mode home screen with the compound Start button ('Inicio' plus 'Programador detenido') framed to its bounds; Spanish alt."
+      }
+    },
+    {
+      "id": "es-bactoswitch-plot-start",
+      "locale": "es",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/es/bactoswitch-plot-start.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-plot-start.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Ventana del gráfico del modo en línea con Inicio resaltado",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/es/plot-start.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.1"
+      ],
+      "highlights": [
+        [
+          642,
+          417,
+          154,
+          63
+        ]
+      ],
+      "inputSha256": "81f0472ffaa70f7e24a319df6fb71d90c9a20d95872ecbcd8fff3e29f655ddb8",
+      "sha256": "956424e9784b272b5d37bd6904f44a10796c51666916c86af08953cc079011d0",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "956424e9784b272b5d37bd6904f44a10796c51666916c86af08953cc079011d0",
+        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "reviewer": "Claude review agent (es)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Display-settings popup is now closed: plain plot with four TCC curves and Inicio framed at bottom right."
+      }
+    },
+    {
+      "id": "es-bactoswitch-protocol-selection",
+      "locale": "es",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/es/bactoswitch-protocol-selection.png",
+      "replaces": [
+        "/img/bactoswitch/gui-protocol-selection.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Selección de protocolo con Water Analysis with BactoSwitch seleccionado",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/es/wizard-protocol-selected.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.1"
+      ],
+      "highlights": [
+        [
+          10,
+          228,
+          780,
+          52
+        ],
+        [
+          404,
+          417,
+          396,
+          63
+        ]
+      ],
+      "inputSha256": "29668dd576ce9c9cf9cef8af00ae3e42757d177aae8f05992592c9333499993d",
+      "sha256": "58a2f3d5a181108e518493b4a503515a78d68efa220c64b0de1743ad189fc8aa",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "58a2f3d5a181108e518493b4a503515a78d68efa220c64b0de1743ad189fc8aa",
+        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "reviewer": "Claude review agent (es)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "'Water Analysis with BactoSwitch' ticked with its row framed and Siguiente framed with all edges visible."
+      }
+    },
+    {
+      "id": "es-bactoswitch-interval-settings",
+      "locale": "es",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/es/bactoswitch-interval-settings.png",
+      "replaces": [
+        "/img/bactoswitch/gui-interval-settings.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Ajustes de intervalo con Inicio resaltado",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/es/wizard-interval.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.1"
+      ],
+      "highlights": [
+        [
+          642,
+          417,
+          154,
+          63
+        ]
+      ],
+      "inputSha256": "efbf665e6410f1c9a5e4446522452152179487717af213c6ad7776fff7014520",
+      "sha256": "85b1c24cd0a31d0e2bebc81cfba6af6e94e9da5e7fd38091d867b97e0637b93b",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "85b1c24cd0a31d0e2bebc81cfba6af6e94e9da5e7fd38091d867b97e0637b93b",
+        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "reviewer": "Claude review agent (es)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Interval step with Inicio framed; untranslated 'Minute' unit remains a GUI quirk."
+      }
+    },
+    {
+      "id": "es-bactoswitch-plot-lines",
+      "locale": "es",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/es/bactoswitch-plot-lines.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-plot-lines.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Gráfico del modo en línea con una curva por línea",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/es/plot-lines.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "highlights": [
+        [
+          335,
+          69,
+          130,
+          42
+        ]
+      ],
+      "inputSha256": "8d666629dd7fcbcfaef7b62ec7672c8a7b8dd41e0d28d0281b8c0cf3d13a0da5",
+      "sha256": "34ee941f8958f94686ecfbed4bfb01ca0cf0074049c0f6d207b1ddd59bfbab0a",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "34ee941f8958f94686ecfbed4bfb01ca0cf0074049c0f6d207b1ddd59bfbab0a",
+        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "reviewer": "Claude review agent (es)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Four TCC curves #1-#4 with the '1 Mes' time-span button framed at top centre."
+      }
+    },
+    {
+      "id": "es-bactoswitch-display-settings",
+      "locale": "es",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/es/bactoswitch-display-settings.png",
+      "replaces": [
+        "/img/bactoswitch/gui-display-settings.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Ajustes de visualización del gráfico del modo en línea",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/es/display-settings.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "highlights": [
+        [
+          4,
+          417,
+          154,
+          63
+        ]
+      ],
+      "inputSha256": "fd49a2314db1ca7139a8cada1f1f7466d72442e32edf3a98c50bef55cfafb658",
+      "sha256": "40e2870b6e3e1a7f941bc1aab0dd9be4ea8852c5da5649f2917fe4ca161a8663",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "40e2870b6e3e1a7f941bc1aab0dd9be4ea8852c5da5649f2917fe4ca161a8663",
+        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "reviewer": "Claude review agent (es)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Popup with '1 Mes' selected and TCC ticked, 'Ver resultados' framed bottom left; 'Escala personali...' truncation is a GUI quirk."
+      }
+    },
+    {
+      "id": "es-bactoswitch-online-results",
+      "locale": "es",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/es/bactoswitch-online-results.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-results.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Lista de resultados del modo en línea con una entrada por medición de línea",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/es/results-list.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "inputSha256": "322c95ea0eace0e2deab2c0ba031cfe319fd4173617710fcee062062a5cdc483",
+      "sha256": "a4be0f4fbaf92cc49e4fb671be409e1b3cb1f9346a3cb82b3228ff45b164ae59",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "a4be0f4fbaf92cc49e4fb671be409e1b3cb1f9346a3cb82b3228ff45b164ae59",
+        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "reviewer": "Claude review agent (es)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Results list of 'Unnamed line N' entries with TCC values, no frame; header 'Radio [%]' is a GUI mistranslation of Ratio."
+      }
+    },
+    {
+      "id": "es-bactoswitch-result-details",
+      "locale": "es",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/es/bactoswitch-result-details.png",
+      "replaces": [
+        "/img/bactoswitch/gui-result-details.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Detalles del resultado de una medición de BactoSwitch en modo en línea",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/es/result-details.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "inputSha256": "ec01b1d85511ec9644eff7f07e1db44f9a01bddab7f5e7276a8b99f091500aef",
+      "sha256": "b87a90bd1d5d7a719dbea5bfdcb0dd51f688eab1da10821998ed19d4aed06080",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "b87a90bd1d5d7a719dbea5bfdcb0dd51f688eab1da10821998ed19d4aed06080",
+        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "reviewer": "Claude review agent (es)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Details of the 'Unnamed line 1' TCC 120 510 measurement (25 mar 2026 5:31), no frame; 'Cambie el nombre de' label is truncated by the GUI."
+      }
+    },
+    {
+      "id": "es-bactoswitch-filter-results",
+      "locale": "es",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/es/bactoswitch-filter-results.png",
+      "replaces": [
+        "/img/bactoswitch/gui-filter-results.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Ventana Filtrar resultados",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/es/filter-results.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "inputSha256": "1272e12c08a4dc5edbd3763805a86e1d612644aaa4f2976597651c4051c11a33",
+      "sha256": "524fa578104902896b8202f6a36405be27389a7a96f8eb96a6de3eb3c00b56cf",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "524fa578104902896b8202f6a36405be27389a7a96f8eb96a6de3eb3c00b56cf",
+        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "reviewer": "Claude review agent (es)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Filtrar resultados window with date fields, calendar and 'Filtrar por línea' button, no frame."
+      }
+    },
+    {
+      "id": "es-bactoswitch-filter-by-line-button",
+      "locale": "es",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/es/bactoswitch-filter-by-line-button.png",
+      "replaces": [
+        "/img/bactoswitch/gui-filter-by-line-button.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Ventana Filtrar resultados con Filtrar por línea resaltado",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/es/filter-results.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "highlights": [
+        [
+          162,
+          417,
+          236,
+          63
+        ]
+      ],
+      "inputSha256": "1272e12c08a4dc5edbd3763805a86e1d612644aaa4f2976597651c4051c11a33",
+      "sha256": "11a1c0f47c5868a18efa1e6cef659f70ff658924a34cc6830a22e637942f1dea",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "11a1c0f47c5868a18efa1e6cef659f70ff658924a34cc6830a22e637942f1dea",
+        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "reviewer": "Claude review agent (es)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Same window with a tight frame around 'Filtrar por línea'."
+      }
+    },
+    {
+      "id": "es-bactoswitch-select-line",
+      "locale": "es",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/es/bactoswitch-select-line.png",
+      "replaces": [
+        "/img/bactoswitch/gui-select-sample-line.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Selección de una línea de muestra BactoSwitch",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/es/select-line.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "highlights": [
+        [
+          140,
+          149,
+          520,
+          52
+        ],
+        [
+          403,
+          341,
+          273,
+          60
+        ]
+      ],
+      "inputSha256": "d01e1e5f8418b5f12ba191318e21df92bf41e3166c65b049a85e307af6d6d00a",
+      "sha256": "4246398c33a9f4c93048d43df2329c986a49b472fc040b99cee1ceae58a2f0fa",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "4246398c33a9f4c93048d43df2329c986a49b472fc040b99cee1ceae58a2f0fa",
+        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "reviewer": "Claude review agent (es)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Line-picker popup with 'Unnamed line 1' ticked and its row framed, Confirmar framed; line 4 row is cut by the list viewport (GUI layout)."
+      }
+    },
+    {
+      "id": "es-bactoswitch-plot-filtered",
+      "locale": "es",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/es/bactoswitch-plot-filtered.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-plot-filtered.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Gráfico del modo en línea filtrado por la línea 1",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/es/plot-filtered.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "inputSha256": "4038454a905ff1317ce7db145c393271e34c6742cb87f600e46301bb3c874ca3",
+      "sha256": "8a3bee1574d63a49af0718a3609143aa6148fe13f2b88db4d64b203227c793a2",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "8a3bee1574d63a49af0718a3609143aa6148fe13f2b88db4d64b203227c793a2",
+        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "reviewer": "Claude review agent (es)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Plot shows only the TCC #1 curve, no frame."
+      }
+    },
+    {
+      "id": "es-bactoswitch-results-filtered",
+      "locale": "es",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/es/bactoswitch-results-filtered.png",
+      "replaces": [
+        "/img/bactoswitch/gui-auto-mode-results-filtered.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Resultados del modo en línea filtrados por la línea 1",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/es/results-filtered.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.2"
+      ],
+      "inputSha256": "76441b2344061c463487a2bc2b8a5caf76b15697069d04f282e55ae86eae0d7c",
+      "sha256": "24de3d479c77e697d332441138e52ef2588070f4ccd49f2885217c57ac2d81e1",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "24de3d479c77e697d332441138e52ef2588070f4ccd49f2885217c57ac2d81e1",
+        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "reviewer": "Claude review agent (es)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "List contains only 'Unnamed line 1' and the bottom bar reads '... | Línea #1'."
+      }
+    },
+    {
+      "id": "es-bactoswitch-alarm-sample-line",
+      "locale": "es",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/es/bactoswitch-alarm-sample-line.png",
+      "replaces": [
+        "/img/bactoswitch/gui-alarm-configuration.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Configuración de la alarma con una línea de muestra seleccionada",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/es/alarm-line.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.1.3"
+      ],
+      "highlights": [
+        [
+          537,
+          343,
+          206,
+          49
+        ]
+      ],
+      "inputSha256": "5c5c4bc1608fbc47cd8083a519752021f7d7cd811729a84aac8d66f43629c351",
+      "sha256": "e1812ac9c10f29d35480e498d0e9b9c96e4781a060a17e5b9394a05fb15ed59a",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "e1812ac9c10f29d35480e498d0e9b9c96e4781a060a17e5b9394a05fb15ed59a",
+        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "reviewer": "Claude review agent (es)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Línea de muestra checkbox and 'Línea # 2' field framed together, unclipped."
+      }
+    },
+    {
+      "id": "es-bactoswitch-assign-events-process-running",
+      "locale": "es",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/es/bactoswitch-assign-events-process-running.png",
+      "replaces": [
+        "/img/bactoswitch/gui-assign-events-to-outputs.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Asignar eventos a salidas con la fila Proceso en marcha resaltada",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/es/digital-outputs.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.2.3"
+      ],
+      "highlights": [
+        [
+          9,
+          175,
+          782,
+          54
+        ]
+      ],
+      "inputSha256": "075a6a6b43c6bddc304e362c259615ba25b6f67574979ddd92e03bb03f197378",
+      "sha256": "f7d0a63b5738a8cb53f4905771c0fdb63e77e87b4243c2b9a3baf83e1e31c367",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "f7d0a63b5738a8cb53f4905771c0fdb63e77e87b4243c2b9a3baf83e1e31c367",
+        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "reviewer": "Claude review agent (es)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "'Proceso en marcha' row framed across all four output columns."
+      }
+    },
+    {
+      "id": "es-bactoswitch-digital-input-source-button",
+      "locale": "es",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/es/bactoswitch-digital-input-source-button.png",
+      "replaces": [
+        "/img/bactoswitch/gui-digital-input-source-button.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Configuración de entrada digital (PLC) con Seleccionar fuente de entrada digital (Entradas físicas) resaltado",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/es/digital-inputs-line.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.2.4"
+      ],
+      "highlights": [
+        [
+          162,
+          417,
+          476,
+          63
+        ]
+      ],
+      "inputSha256": "7a2b072ff6108b26487f86ecc468a08d7dbacc9001464272721d5bbfb5009578",
+      "sha256": "4ffe4421f12cca0e15c2fd888a7953ca6a221ae1db2c082cdd1ec9958b346588",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "4ffe4421f12cca0e15c2fd888a7953ca6a221ae1db2c082cdd1ec9958b346588",
+        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "reviewer": "Claude review agent (es)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Compuertas now shows 'ICC Default Gate' in normal styling (no red field); 'Seleccionar fuente de entrada digital (Entradas físicas)' framed, text inside the frame."
+      }
+    },
+    {
+      "id": "es-bactoswitch-digital-input-source-modbus",
+      "locale": "es",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/es/bactoswitch-digital-input-source-modbus.png",
+      "replaces": [
+        "/img/bactoswitch/gui-digital-input-source-modbus.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Fuente de entrada digital configurada en Modbus TCP",
+      "surface": "native",
+      "capture": "output/gui-capture/bactoswitch/native/es/digital-input-source.png",
+      "captureSize": [
+        800,
+        480
+      ],
+      "sections": [
+        "5.2.4"
+      ],
+      "highlights": [
+        [
+          264,
+          140,
+          195,
+          39
+        ],
+        [
+          4,
+          417,
+          792,
+          63
+        ]
+      ],
+      "inputSha256": "81bcef76c057a226752992383ac638e69cd1a87e1e3e0db2cc8eb676ed9a036a",
+      "sha256": "a3af6f8be00c2276ed5d9a3cd1a81f229998f4889c1d151f945cc4ff5577b0eb",
+      "pixelSize": [
+        1600,
+        960
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "a3af6f8be00c2276ed5d9a3cd1a81f229998f4889c1d151f945cc4ff5577b0eb",
+        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "reviewer": "Claude review agent (es)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Modbus TCP selected and framed, Volver framed with all edges visible."
+      }
+    },
+    {
+      "id": "es-bactoswitch-web-online-results",
+      "locale": "es",
+      "kind": "screenshot",
+      "catalog": "bactoswitch",
+      "output": "/img/gui/es/bactoswitch-web-online-results.png",
+      "replaces": [
+        "/img/bactoswitch/web-auto-mode-results.png"
+      ],
+      "sourceIds": [],
+      "printedPages": [],
+      "originalAnnotations": [],
+      "alt": "Resultados del modo en línea en la interfaz web de usuario filtrados por nombre, con las columnas Nombre e Identificación de línea resaltadas",
+      "surface": "web",
+      "capture": "output/gui-capture/bactoswitch/web/es/web-online-results.png",
+      "sections": [
+        "5.2.2"
+      ],
+      "captureSize": [
+        1010,
+        479
+      ],
+      "highlights": [
+        [
+          348,
+          105.1875,
+          151,
+          52.375
+        ],
+        [
+          503,
+          105.1875,
+          106,
+          52.375
+        ]
+      ],
+      "inputSha256": "600c4e626505efced1c6bf5b2f4b903e800335b41d61d2bda4bcd27c8be4fb17",
+      "sha256": "7ce64cdf10925b8ea42e59effe02aed47f38286b70a9028c20cb6531f9eb3de9",
+      "pixelSize": [
+        2020,
+        958
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "7ce64cdf10925b8ea42e59effe02aed47f38286b70a9028c20cb6531f9eb3de9",
+        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "reviewer": "Claude review agent (es)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "notes": "Web online results filtered by 'Unnamed' with frames around the Nombre and Identificación (truncated 'Identificaci...') headers including their filter cells; date-range picker shows English month names (web UI quirk)."
       }
     }
   ],

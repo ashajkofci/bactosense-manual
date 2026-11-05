@@ -263,9 +263,9 @@ BactoSense records alarms in the following ways:
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| 1 | Select, enable or disable alarms.<br/>Users can configure up to 9<br/>alarms. | 2 | Name of the currently selected alarm. |
-| 3 | Source of the alarm: Which<br/>measurement result should be<br/>evaluated. See figure 8-3. | 4 | Condition: Trigger the alarm when<br/>the measured parameter is larger<br/>than (&gt;) or smaller than (&lt;) the<br/>threshold. |
-| 5 | Threshold | 6 | Display: If checked, a line will be<br/>shown on the Online mode plot, in the<br/>selected color. |
+| 1 | Select, enable or disable alarms.<br/>Users can configure up to 9 alarms. | 2 | Name of the currently selected alarm. |
+| 3 | Source of the alarm: Which measurement result should be evaluated. See figure 8-3. | 4 | Condition: Trigger the alarm when the measured parameter is larger than (&gt;) or smaller than (&lt;) the threshold. |
+| 5 | Threshold | 6 | Display: If checked, a line will be shown on the Online mode plot, in the selected color. |
 
 ![BactoSense — Cartridge alarm source](/img/gui/en/cartridge-alarm-source.png "width=290")
 
@@ -336,7 +336,7 @@ The main elements of the user interface are:
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| 1 | Home or return button. To<br />navigate through the menu. | 2 | Operation mode (Manual or Online)<br />Instrument status (currently active<br />process) |
+| 1 | Home or return button. To navigate through the menu. | 2 | Operation mode (Manual or Online)<br />Instrument status (currently active process) |
 | 3 | Current view | 4 | Top bar status icons, see [Top bar status icons](../general-operations-and-configurations/#section-8-8-2). |
 | 5 | User Role<br />Current time | 6 | Logout or power off |
 | 7 | Results: display the measurement results for the selected mode. | 8 | Mode: choose Online mode for continuous measurements using the online sampling device, or Manual mode for measuring grab samples using the manual sampling device. |
@@ -357,9 +357,9 @@ Top bar icons are displayed in the bar in the top of the display. They indicate 
 | ![BactoSense — Process running](/img/gui/icons/process-running-status.png "width=32 class=manual-icon") | Process running | ![BactoSense — Demo mode active](/img/gui/icons/demo-mode-status.png "width=32 class=manual-icon") | Demo mode activated |
 | ![BactoSense — Cartridge almost empty](/img/gui/icons/cartridge-almost-empty-status.png "width=32 class=manual-icon") | Cartridge almost empty | ![BactoSense — Service required](/img/gui/icons/service-required-status.png "width=32 class=manual-icon") | Service required (see [Maintenance](15-maintenance.md)) |
 | ![BactoSense — Cartridge nearing expiration](/img/gui/icons/cartridge-almost-expired-status.png "width=32 class=manual-icon") | Cartridge almost expired | ![BactoSense — Cartridge filling level](/img/gui/icons/cartridge-level-status.png "width=32 class=manual-icon") | Cartridge level indication |
-| ![BactoSense — Cartridge not ready](/img/gui/icons/cartridge-not-ready-status.png "width=32 class=manual-icon") | Cartridge not correctly<br/>initialized or no cartridge | ![BactoSense — Cartridge empty](/img/gui/icons/cartridge-empty-status.png "width=32 class=manual-icon") | Cartridge empty |
+| ![BactoSense — Cartridge not ready](/img/gui/icons/cartridge-not-ready-status.png "width=32 class=manual-icon") | Cartridge not correctly initialized or no cartridge | ![BactoSense — Cartridge empty](/img/gui/icons/cartridge-empty-status.png "width=32 class=manual-icon") | Cartridge empty |
 | ![BactoSense — Critical error](/img/gui/icons/critical-error-status.png "width=32 class=manual-icon") | Critical error ([Critical errors](16-warnings-errors-and-troubleshooting.md#section-16-3)) | ![BactoSense — Cartridge expired](/img/gui/icons/cartridge-expired-status.png "width=32 class=manual-icon") | Cartridge expired |
-| ![BactoSense — Alarm active](/img/gui/icons/alarm-status.png "width=32 class=manual-icon") | Alarm on last measurement<br/>(Online mode only, see [Alarm configuration](08-general-operations-and-configurations.md#section-8-5)) | ![BactoSense — Non-critical error](/img/gui/icons/noncritical-error-status.png "width=32 class=manual-icon") | Non-critical error ([Non-critical errors](16-warnings-errors-and-troubleshooting.md#section-16-2)) |
+| ![BactoSense — Alarm active](/img/gui/icons/alarm-status.png "width=32 class=manual-icon") | Alarm on last measurement (Online mode only, see [Alarm configuration](08-general-operations-and-configurations.md#section-8-5)) | ![BactoSense — Non-critical error](/img/gui/icons/noncritical-error-status.png "width=32 class=manual-icon") | Non-critical error ([Non-critical errors](16-warnings-errors-and-troubleshooting.md#section-16-2)) |
 
 ## 8.9 Cartridge management {#section-8-9}
 
@@ -373,10 +373,10 @@ When handling the cartridge, the following instructions must be followed:
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| ![Follow the procedures described in this manual.](/img/manual/cell-28af480709ce.png "width=31 class=cartridge-handling-icon-31") | Follow the procedures<br/>described in this manual. | ![Procedure illustration, printed page 73](/img/manual/asset-32c675a70f3d.png "width=24 class=cartridge-handling-icon-24") | Store and ship between<br/>15 °C – 25 °C (59 °F –<br/>77 °F). The optimal<br/>temperature is 15 °C (59 °F). |
-| ![Wear nitrile gloves when handling the cartridge.](/img/safety/gloves.svg "width=31 class=cartridge-handling-icon-31") | Wear nitrile gloves when<br/>handling the cartridge. | ![Procedure illustration, printed page 73](/img/manual/asset-65d703b8ec50.png "width=24 class=cartridge-handling-icon-24") | Store and ship between<br/>20 % and 60 % relative<br/>humidity. |
-| ![Wear safety glasses when handling the cartridge.](/img/manual/cell-d6353e538e2e.png "width=31 class=cartridge-handling-icon-31") | Wear safety glasses when<br/>handling the cartridge. | ![The cartridge is intended for refill.](/img/manual/cell-a80baea9abca.png "width=29 class=cartridge-handling-icon-29") | The cartridge is intended for<br/>refill. |
-| ![Ship, install and store in the indicated orientation](/img/manual/cell-7ac996bd1fed.png "width=31 class=cartridge-handling-icon-31") | Ship, install and store in<br/>the indicated orientation | ![Do not throw the cartridge into the trash.](/img/manual/cell-bc083b74fc3c.png "width=29 class=cartridge-handling-icon-29") | Do not throw the cartridge<br/>into the trash. |
+| ![Follow the procedures described in this manual.](/img/manual/cell-28af480709ce.png "width=31 class=cartridge-handling-icon-31") | Follow the procedures described in this manual. | ![Procedure illustration, printed page 73](/img/manual/asset-32c675a70f3d.png "width=24 class=cartridge-handling-icon-24") | Store and ship between<br/>15 °C – 25 °C (59 °F –<br/>77 °F). The optimal temperature is 15 °C (59 °F). |
+| ![Wear nitrile gloves when handling the cartridge.](/img/safety/gloves.svg "width=31 class=cartridge-handling-icon-31") | Wear nitrile gloves when handling the cartridge. | ![Procedure illustration, printed page 73](/img/manual/asset-65d703b8ec50.png "width=24 class=cartridge-handling-icon-24") | Store and ship between<br/>20 % and 60 % relative humidity. |
+| ![Wear safety glasses when handling the cartridge.](/img/manual/cell-d6353e538e2e.png "width=31 class=cartridge-handling-icon-31") | Wear safety glasses when handling the cartridge. | ![The cartridge is intended for refill.](/img/manual/cell-a80baea9abca.png "width=29 class=cartridge-handling-icon-29") | The cartridge is intended for refill. |
+| ![Ship, install and store in the indicated orientation](/img/manual/cell-7ac996bd1fed.png "width=31 class=cartridge-handling-icon-31") | Ship, install and store in the indicated orientation | ![Do not throw the cartridge into the trash.](/img/manual/cell-bc083b74fc3c.png "width=29 class=cartridge-handling-icon-29") | Do not throw the cartridge into the trash. |
 
 ### 8.9.2 Checking the filling level and expiration date of a cartridge {#section-8-9-2}
 
@@ -395,7 +395,7 @@ The BactoSense cartridge is installed in a dedicated cartridge compartment of th
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| 1 | 7 mm hex nuts to secure cartridge<br/>compartment door | 2 | Cartridge compartment door |
+| 1 | 7 mm hex nuts to secure cartridge compartment door | 2 | Cartridge compartment door |
 
 :::caution[Use the correct door tool]
 

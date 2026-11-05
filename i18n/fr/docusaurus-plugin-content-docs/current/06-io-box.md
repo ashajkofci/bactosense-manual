@@ -57,8 +57,8 @@ Notes complémentaires
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| ① | Position des sorties numériques Bornes 1 – 8<br />Exigences en matière de<br />câble : • AWG<br />12 – 22 •<br />Section transversale : 0,25 – 2,5<br />mm2 | ② | Position des sorties analogiques Bornes 9 – 12<br />Exigences en matière de<br />câble : • AWG<br />12 – 22<br />• Section transversale : 0,25 – 2,5 mm2 |
-| ③ | Position des entrées numériques Bornes 14 –<br />18 Exigences en matière de<br />câble : • AWG<br />12 – 22 •<br />Section transversale : 0,25 – 2,5<br />mm2 |  | \< |
+| ① | Position des sorties numériques Bornes 1 – 8<br />Exigences en matière de<br />câble : • AWG<br />12 – 22 •<br />Section transversale : 0,25 – 2,5 mm2 | ② | Position des sorties analogiques Bornes 9 – 12<br />Exigences en matière de<br />câble : • AWG<br />12 – 22<br />• Section transversale : 0,25 – 2,5 mm2 |
+| ③ | Position des entrées numériques Bornes 14 –<br />18 Exigences en matière de<br />câble : • AWG<br />12 – 22 •<br />Section transversale : 0,25 – 2,5 mm2 |  | \< |
 
 ### 6.1.6 Tableau de référence de la boîte d’E/S {#section-6-1-6}
 
@@ -146,7 +146,7 @@ Lorsqu’aucun fil n’est connecté aux entrées numériques, leur état est 00
 | DESCRIPTION | ENTRÉES NUMÉRIQUES | \< | \< | \< |
 | --- | --- | --- | --- | --- |
 | ^ | 1 | 2 | 3 | 4 |
-| Forcer le mode PLC : L’instrument est inactif, mais esclave<br />du PLC. | 1 | 0 | 0 | 0 |
+| Forcer le mode PLC : L’instrument est inactif, mais esclave du PLC. | 1 | 0 | 0 | 0 |
 | Exécuter un protocole/intervalle de mesure configurable | 1 | 0 | 0 | 1 |
 | Exécuter un protocole/intervalle de mesure configurable | 1 | 0 | 1 | 0 |
 | Exécuter un protocole/intervalle de mesure configurable | 1 | 0 | 1 | 1 |
@@ -262,8 +262,8 @@ Seuls les utilisateurs **Admin** peuvent modifier les sorties analogiques 4 .. 2
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| 1 | Sélection du port de sortie | 2 | Source : Définit quel résultat de<br />mesure est transmis par ce port de<br />sortie. |
-| 3 | Limite inférieure 4 mA: Quelle valeur<br />du résultat de mesure doit<br />correspondre à 4 mA. | 4 | Limite supérieure 20 mA : Quelle<br />valeur du résultat de mesure doit<br />correspondre à 20 mA. |
+| 1 | Sélection du port de sortie | 2 | Source : Définit quel résultat de mesure est transmis par ce port de sortie. |
+| 3 | Limite inférieure 4 mA: Quelle valeur du résultat de mesure doit correspondre à 4 mA. | 4 | Limite supérieure 20 mA : Quelle valeur du résultat de mesure doit correspondre à 20 mA. |
 | 5 | Si cette option est sélectionnée, interpole la plage de comptage cellulaire choisie selon une échelle logarithmique, comme suit<br />: `ratio = 1 + 9 × (counts − low) / (high − low)`<br />`output = 4 mA + log<sub>10</sub>(ratio) × 16 mA`<br /><br />counts: Nombre de cellules mesuré<br />low: Limite inférieure du nombre de cellules<br />high: Limite supérieure du nombre de cellules<br />output: Intensité du courant en mA |  | \< |
 
 La procédure suivante décrit le réglage des sorties analogiques.
@@ -299,9 +299,9 @@ L’interface Test des sorties permet de générer un signal de sortie physique 
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| 1 | Définissez l’état des sorties numériques pour le<br />test. | 2 | Réglez les sorties numériques sur l’état<br />défini en (1). |
-| 3 | Réglez toutes les sorties numériques et<br />analogiques en même temps. | 4 | Réglez le courant sur les deux<br />sorties analogiques. |
-| 5 | Réinitialisez les sorties à leur état avant<br />les tests. | 6 | Réglez le courant sur le port 2. |
+| 1 | Définissez l’état des sorties numériques pour le test. | 2 | Réglez les sorties numériques sur l’état défini en (1). |
+| 3 | Réglez toutes les sorties numériques et analogiques en même temps. | 4 | Réglez le courant sur les deux sorties analogiques. |
+| 5 | Réinitialisez les sorties à leur état avant les tests. | 6 | Réglez le courant sur le port 2. |
 | 7 | Réglez le courant sur le port 1. |  | \< |
 
 La procédure suivante décrit le test des sorties analogiques et numériques.

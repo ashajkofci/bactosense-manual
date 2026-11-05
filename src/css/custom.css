@@ -221,20 +221,20 @@
   text-align: center;
   white-space: nowrap;
 }
-/* HTTP retrieval URLs and the nested parameter table fit the reading column. */
-.theme-doc-markdown table.manual-http-retrieval,
-.theme-doc-markdown table.manual-http-parameters {
+/* HTTP retrieval URLs and the parameter table fit the reading column. Widths come from the header row, like the other Markdown tables. */
+.theme-doc-markdown .manual-http-retrieval table,
+.theme-doc-markdown .manual-http-parameters table {
   display: table;
   width: 100%;
   max-width: 100%;
   table-layout: fixed;
   overflow: visible;
 }
-.theme-doc-markdown .manual-http-retrieval col.http-step-column { width: 6%; }
-.theme-doc-markdown .manual-http-retrieval col.http-instruction-column { width: 56%; }
-.theme-doc-markdown .manual-http-retrieval col.http-detail-column { width: 38%; }
-.theme-doc-markdown .manual-http-parameters col.http-parameter-column { width: 22%; }
-.theme-doc-markdown .manual-http-parameters col.http-description-column { width: 78%; }
+.theme-doc-markdown .manual-http-retrieval table tr:first-child > :nth-child(1) { width: 6%; }
+.theme-doc-markdown .manual-http-retrieval table tr:first-child > :nth-child(2) { width: 56%; }
+.theme-doc-markdown .manual-http-retrieval table tr:first-child > :nth-child(3) { width: 38%; }
+.theme-doc-markdown .manual-http-parameters table tr:first-child > :nth-child(1) { width: 22%; }
+.theme-doc-markdown .manual-http-parameters table tr:first-child > :nth-child(2) { width: 78%; }
 .theme-doc-markdown .manual-http-retrieval th,
 .theme-doc-markdown .manual-http-retrieval td {
   min-width: 0;
@@ -242,7 +242,7 @@
 }
 .theme-doc-markdown .manual-http-retrieval code { white-space: normal; overflow-wrap: anywhere; }
 .theme-doc-markdown .manual-http-retrieval p { margin-bottom: 0; }
-.theme-doc-markdown .manual-http-retrieval > tbody > tr > td:first-child {
+.theme-doc-markdown .manual-http-retrieval table > tbody > tr > td:first-child {
   text-align: center;
   padding-inline: 0.2rem;
 }

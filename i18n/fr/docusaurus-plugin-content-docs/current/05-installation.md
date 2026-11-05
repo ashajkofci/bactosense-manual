@@ -126,7 +126,7 @@ La procédure suivante s’applique uniquement si le BactoSense doit être conne
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
 | 1\. | :::danger[Débranchez l’alimentation] Assurez-vous que le bloc d’alimentation n’est pas raccordé au secteur. Retirez le couvercle du boîtier en dévissant les quatre vis (cercles). ::: | ![Illustration de la procédure, page imprimée 21](/img/manual/asset-a4e9bfa03293.png "width=241") |
-| 2\. | Retirez le connecteur C13 (A) et dévissez-le pour<br />l’ouvrir. ![Illustration du retrait et de l’ouverture du connecteur C13 (A).](/img/manual/asset-3c26b4a767ec.png "width=240") | ![Illustration de la procédure, page imprimée 21](/img/manual/asset-27e4522382d5.png "width=241") |
+| 2\. | Retirez le connecteur C13 (A) et dévissez-le pour l’ouvrir. ![Illustration du retrait et de l’ouverture du connecteur C13 (A).](/img/manual/asset-3c26b4a767ec.png "width=240") | ![Illustration de la procédure, page imprimée 21](/img/manual/asset-27e4522382d5.png "width=241") |
 | 3\. | Ouvrez le presse-étoupe (Y) et insérez le nouveau câble. Longueurs de câble et sections des conducteurs : • 0 – 9 m (0 – 30 ft), 1 mm2 • 9 – 21 m (30 – 69 ft), 1.5 mm2 (maximum) Le presse-étoupe est dimensionné pour un diamètre de câble de 3 – 10 mm (0.12” – 0.39”). | . ![Illustration de la procédure.](/img/manual/asset-00540f644f60.png "width=240") |
 | 4\. | :::danger[Raccordez la terre de protection] Serrez les 3 conducteurs (N, PE, L) dans la borne électrique et immobilisez la gaine du câble. Assurez-vous d’utiliser une fiche avec terre de protection (PE) et d’y raccorder correctement l’appareil. ::: | ^ |
 | 5\. | Refermez le connecteur C13 (A) avec la vis et branchez-le dans le bloc d’alimentation. Serrez le presse-étoupe. Tirez légèrement sur le câble pour vérifier que le presse-étoupe est suffisamment serré. | ![Illustration de la procédure, page imprimée 22](/img/manual/asset-27e4522382d5.png "width=241") |
@@ -280,7 +280,7 @@ Le BactoSense offre plusieurs options d’intégration et d’accès aux donnée
 | Modbus TCP | Section [Modbus TCP](07-field-bus-interface.md#section-7-1) |
 | FTP | Section [Récupération des données via FTP](12-data-access-and-export.md#section-12-2) |
 | HTTP et HTTPS | Section [Récupération des fichiers via HTTP ou HTTPS](12-data-access-and-export.md#section-12-3) |
-| Relais de l’interface utilisateur du réseau<br/>virtuel (VNC) (contrôle à distance) | Section [Utilisation du relais GUI via VNC](12-data-access-and-export.md#section-12-4) |
+| Relais de l’interface utilisateur du réseau virtuel (VNC) (contrôle à distance) | Section [Utilisation du relais GUI via VNC](12-data-access-and-export.md#section-12-4) |
 | Interface utilisateur web | Chapitre [Interface utilisateur web](13-web-user-interface.md) |
 
 ![BactoSense — Services système](/img/gui/fr/system-services.png "width=507")

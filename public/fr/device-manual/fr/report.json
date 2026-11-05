@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "locale": "fr",
   "chapterCount": 21,
-  "blockCount": 940,
+  "blockCount": 941,
   "internalLinkCount": 684,
   "assetCount": 178,
   "maxAssetWidth": 800,
@@ -15,15 +15,15 @@
     },
     {
       "file": "chapters/glossary.json",
-      "sha256": "70e7bf1f783ee6dd940456747c5904ed0801bb04a4d40a9c9c520702d98d192f"
+      "sha256": "274b4a434f95a2575095897ca89ed2b50467bbcc16cc67911d9c172b0a592825"
     },
     {
       "file": "chapters/general-user-information.json",
-      "sha256": "5a8e808237e0a1d7dd85ab0eea18e18d06a5576a3ba3fa4067e2563a1c86b3db"
+      "sha256": "62808dcb5818f83a3e5cec03a7c49ae1d53a021fa9b116c89dde54def78b9b02"
     },
     {
       "file": "chapters/instrument-overview.json",
-      "sha256": "c8e4d0010f3f3015a7f1f20f53f08b2244ff3e3d5dacc24f5ff2415872d94afa"
+      "sha256": "cd802b06eeee99435f141c5652dfd2db826407b984c9022b6669d93bbf946469"
     },
     {
       "file": "chapters/safety.json",
@@ -31,19 +31,19 @@
     },
     {
       "file": "chapters/installation.json",
-      "sha256": "e11825acfca0c1083b9c1092f5ea594796d0484a4290f929e65b6a89a36bca4d"
+      "sha256": "42c29409f99ac69651688d4a63c20a22a244cc54ac67ff58df46186dfdfa1864"
     },
     {
       "file": "chapters/io-box.json",
-      "sha256": "c88120249c3770546ae9a8a128a3680c3e7d91bb3674be9e219707c6d67ec75b"
+      "sha256": "5651b7660cd8cd9464ed08b96a152c01ceb2bc0d2c9a82c3e6e2922e9751df4c"
     },
     {
       "file": "chapters/field-bus-interface.json",
-      "sha256": "f3e9c1482a2d26b6ee2280e1f5df43f89d2c190f809d6024651e6ace8aa9dcd2"
+      "sha256": "9f5a2ea84ad5d6b4e0b756785ffd5e5656c6820074c3df9c651e33dde9e507a3"
     },
     {
       "file": "chapters/general-operations-and-configurations.json",
-      "sha256": "f02cfb7a666db0fa54d49938a74d22ed3e8b96d746de191693f77bd10a39b871"
+      "sha256": "3728e32bc1c92ac5f2205998ef694a223220c25ac79d832a918900a2da589322"
     },
     {
       "file": "chapters/upgrade-packages.json",
@@ -51,15 +51,15 @@
     },
     {
       "file": "chapters/measurements.json",
-      "sha256": "6cd5af50c4b4bce65914446f1c44cf7a685c756b330dfd60b9341450117a5acd"
+      "sha256": "c8dcef66578b4e7864cf7b7d374f6036af735ce6a74b293f28baae247548ad7d"
     },
     {
       "file": "chapters/results-and-data-analysis.json",
-      "sha256": "d4266b3fa5bd05643c8697a19df024028edee2dfc0c805fbc03128e604bbbf00"
+      "sha256": "96fd17a69d652a91a961c0e3d14724fa1e420e89f38eda495c2a543479d32636"
     },
     {
       "file": "chapters/data-access-and-export.json",
-      "sha256": "d3439d0bddbd7263c1e2f736aad741e93e050a2987aa186d4d11db07eac032e2"
+      "sha256": "287664ff9a5651312275b9943f3b3557fbe3bc68fdfdb3093a2c8f6bf9cec43b"
     },
     {
       "file": "chapters/web-user-interface.json",
@@ -75,7 +75,7 @@
     },
     {
       "file": "chapters/warnings-errors-and-troubleshooting.json",
-      "sha256": "4b49703ec57f402ce2e29a44c848a0f5530c4ff599ed26480cdcb61ef1e66554"
+      "sha256": "33ac8d78b400870d61a0dab5c0c2de7b2ea411d9061e4e8fd250ad2e0e87d06b"
     },
     {
       "file": "chapters/storage-transport-and-disposal.json",

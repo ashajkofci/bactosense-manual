@@ -216,3 +216,44 @@ its API/Redis processes and checks that every existing image hash is preserved.
 Use `--reuse-snapshot --locales en` for a focused rerun of the same built GUI.
 Provenance, scientific checks, raw acceptance and compact control geometry
 are in ignored `output/gui-online-results-review/`.
+
+## BactoSwitch manual screens
+
+```sh
+python3 scripts/gui-capture/runtime/bactoswitch_capture.py build
+python3 scripts/gui-capture/runtime/bactoswitch_capture.py start
+for test in screens measure results plc; do
+  python3 scripts/gui-capture/runtime/bactoswitch_capture.py capture --test "$test"
+done
+node scripts/gui-capture/web/stage.mjs   # after the Less install of the web recipe
+node scripts/gui-capture/web/capture-bactoswitch.mjs
+python3 scripts/gui-capture/runtime/bactoswitch_capture.py cleanup
+node scripts/gui-capture/prepare-bactoswitch-figures.mjs
+```
+
+`build` snapshots the sibling GUI resources (recording commit and dirty state) and
+builds a private executable plus the current Bactoserver binary. `start` runs the
+standard private runtime and seeds the BactoSwitch teaching fixture: the
+`DWTP TCC after SSF` demo series is assigned round-robin to the default lines
+1–4 through the data API, and the product's BactoSwitch status keys are set in
+the private Redis. macOS has no BactoSwitch serial driver and the current
+Bactoserver settings API rejects `sosdEnabled`, so `tst_bactoswitch.qml` enables
+BactoSwitch and presents a connected four-valve device in the GUI's in-memory
+models only. Valve and flow states (all open at 802 mL/min; valve 4 alone at
+326 mL/min) are set the same way instead of pressing valve buttons.
+
+The four tests capture 22 states per language through real clicks: settings
+menus, Sample Lines and Control Panel; Home, plot, display settings and the
+measurement wizard up to its final **Start** (not pressed); results, details, the
+real Filter flow with the line picker; and unsaved alarm, digital input/output
+and input-source drafts. The results and plot use the product's date filter and
+*1 Month* chart span for the line period. A request guard fails the run on any
+settings save or hardware/run request; each locale's requests are kept in
+`native/<locale>/requests-<test>.json`. The web capture filters the Online mode
+results by name in the real grid and records the column bounds.
+
+`prepare-bactoswitch-figures.mjs` derives the highlights from each language's
+control trees (`bactoswitch-layouts.mjs`), reuses each edition's alt text, and
+registers the figures. Render them, review every final image, record verdicts
+with `node scripts/gui-capture/record-reviews.mjs <verdicts.json>` (each verdict
+names the reviewed image's SHA-256), then apply and check as usual.

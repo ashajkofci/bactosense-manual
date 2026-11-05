@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "locale": "it",
   "chapterCount": 21,
-  "blockCount": 941,
+  "blockCount": 942,
   "internalLinkCount": 684,
   "assetCount": 178,
   "maxAssetWidth": 800,
@@ -55,11 +55,11 @@
     },
     {
       "file": "chapters/results-and-data-analysis.json",
-      "sha256": "453f1cbaf993fb1a971be1179229b920646c4c01bccbfe7eb9d9c34a8c7d0620"
+      "sha256": "6e920e650cd62ed7468d74ef686d6612962004b1917c1a88fc499f39ebb8aac2"
     },
     {
       "file": "chapters/data-access-and-export.json",
-      "sha256": "19be8fb2bd1540d22c13543f362afad2013e8f5638f59fc1c5af2e3d88af6f07"
+      "sha256": "91ca7f2226dccae6144a322cc2c4810985d2a411ceebdaa26748991925a3df75"
     },
     {
       "file": "chapters/web-user-interface.json",
@@ -75,7 +75,7 @@
     },
     {
       "file": "chapters/warnings-errors-and-troubleshooting.json",
-      "sha256": "ad4d2ca533b960a6f27b71a1a02075b24418cc5a59f7da4ff50abafa920c51d7"
+      "sha256": "d820d2907b90295527b6afc8739b921e38a5d82d712bf8327f036319daadf6f4"
     },
     {
       "file": "chapters/storage-transport-and-disposal.json",

@@ -64,8 +64,8 @@ La targhetta identificativa di BactoSwitch si trova sul lato destro dello strume
 | 3 | Numero di serie | 4 | Codice a barre |
 | 5 | Data di fabbricazione | 6 | Paese di origine |
 | 7 | Requisiti di tensione e potenza | 8 | Marchio CE |
-| 9 | Marchio UKCA | 10 | Conformità alle norme canadesi sulla compatibilità<br />elettromagnetica e sulle interferenze |
-| 11 | Leggere le istruzioni e utilizzare<br />con cautela | 12 | Informazioni sullo smaltimento |
+| 9 | Marchio UKCA | 10 | Conformità alle norme canadesi sulla compatibilità elettromagnetica e sulle interferenze |
+| 11 | Leggere le istruzioni e utilizzare con cautela | 12 | Informazioni sullo smaltimento |
 
 ## 2.5 Targhetta identificativa dell’alimentatore di BactoSwitch {#section-2-5}
 
@@ -81,7 +81,7 @@ La targhetta identificativa dell’alimentatore di BactoSwitch si trova sull’a
 | 3 | Codice articolo (varia in base al tipo di spina) | 4 | Data di fabbricazione |
 | 5 | Tensione e frequenza di esercizio | 6 | Consumo energetico |
 | 7 | Marchio CE | 8 | Marchio UKCA |
-| 9 | Conformità alle norme canadesi sulla compatibilità<br />elettromagnetica e sulle interferenze | 10 | Leggere le istruzioni e utilizzare<br />con cautela |
+| 9 | Conformità alle norme canadesi sulla compatibilità elettromagnetica e sulle interferenze | 10 | Leggere le istruzioni e utilizzare con cautela |
 | 11 | Informazioni sullo smaltimento |  |  |
 
 ## 2.6 Dati tecnici {#section-2-6}

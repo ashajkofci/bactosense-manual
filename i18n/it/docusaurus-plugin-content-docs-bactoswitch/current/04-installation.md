@@ -282,13 +282,13 @@ La procedura seguente si applica solo se BactoSwitch deve essere collegato a una
 
 Le sezioni seguenti mostrano esempi dell’interfaccia utente di BactoSense. Presuppongono che si conosca già BactoSense e si concentrano solo sul funzionamento di BactoSwitch. Per ulteriori informazioni, consultare il [manuale d’uso di BactoSense](/bactosense/).
 
-Accedere a BactoSense come utente Admin. Selezionare **Impostazioni della Modalità Automatica**.
+Accedere a BactoSense come utente Admin. In **Impostazioni**, selezionare **Impostazioni della Modalità Online**.
 
-![Schermata Home di BactoSense con Auto mode settings evidenziato](/img/bactoswitch/gui-home-auto-mode-settings.png "width=634")
+![Menu Impostazioni con Impostazioni della Modalità Online evidenziato](/img/gui/it/bactoswitch-settings-menu-online-mode-settings.png "width=634")
 
 Selezionare quindi **Linee di campionamento BactoSwitch**:
 
-![Schermata Auto mode settings con BactoSwitch sample lines evidenziato](/img/bactoswitch/gui-auto-mode-settings-sample-lines.png "width=635")
+![Impostazioni della Modalità Online con Linee di campionamento BactoSwitch evidenziato](/img/gui/it/bactoswitch-online-mode-settings-sample-lines.png "width=635")
 
 Nella pagina **Linee di campionamento BactoSwitch** è possibile:
 
@@ -297,7 +297,7 @@ Nella pagina **Linee di campionamento BactoSwitch** è possibile:
 - Rinominare le linee.
 - Modificare il colore utilizzato per rappresentare le linee nei grafici.
 
-![Pagina BactoSwitch Sample Lines con quattro linee](/img/bactoswitch/gui-sample-lines.png "width=637")
+![Pagina Linee di campionamento BactoSwitch con quattro linee](/img/gui/it/bactoswitch-sample-lines.png "width=637")
 
 Premere **Salva** per memorizzare le modifiche.
 
@@ -322,11 +322,11 @@ Per testare o regolare la portata mediante le valvole a spillo integrate di Bact
 
 Quindi, nell’interfaccia utente di BactoSense, aprire il menu **Linee di campionamento BactoSwitch** (vedere [Configurazione delle linee](04-installation.md#section-4-6)) e premere il pulsante **Test BactoSwitch**. Si apre il **Pannello di controllo BactoSwitch**. I quattro pulsanti delle valvole consentono di aprire solo la valvola selezionata, mentre le altre vengono chiuse automaticamente. Per riaprire tutte le valvole, premere il pulsante **Aprire tutte le valvole** nella parte inferiore dello schermo.
 
-![BactoSwitch Control Panel con tutte le valvole aperte](/img/bactoswitch/gui-control-panel-all-valves-open.png "width=637")
+![Pannello di controllo BactoSwitch con tutte le valvole aperte](/img/gui/it/bactoswitch-control-panel-all-valves-open.png "width=637")
 
 Quando è aperta una sola valvola, il valore di portata indicato diventa verde o rosso a seconda che la portata rientri o meno nei valori specificati di 150 – 400 mL/min:
 
-![BactoSwitch Control Panel con solo la valvola 4 aperta](/img/bactoswitch/gui-control-panel-single-valve.png "width=635")
+![Pannello di controllo BactoSwitch con solo la valvola 4 aperta](/img/gui/it/bactoswitch-control-panel-single-valve.png "width=635")
 
 Per regolare la portata di ciascuna linea di ingresso, agire sulle manopole di regolazione di BactoSwitch (vedere la figura seguente) finché le portate non rientrano nell’intervallo di 150 – 400 mL/min, idealmente circa 300 mL/min.
 

@@ -37,9 +37,9 @@ The type plate of the BactoSense can be found on the right hand-side of the inst
 | 1 | Manufacturer | 2 | Product name |
 | 3 | Serial number | 4 | Barcode |
 | 5 | Manufacturing date | 6 | Country of origin |
-| 7 | Voltage and power requirements<br/>(see [Connecting the BactoSense to power](../installation/#section-5-3)) | 8 | CE mark |
-| 9 | UKCA mark | 10 | Compliance with Canadian EMC<br/>and interference standards |
-| 11 | Read the instructions and operate<br/>with caution | 12 | Disposal information |
+| 7 | Voltage and power requirements (see [Connecting the BactoSense to power](../installation/#section-5-3)) | 8 | CE mark |
+| 9 | UKCA mark | 10 | Compliance with Canadian EMC and interference standards |
+| 11 | Read the instructions and operate with caution | 12 | Disposal information |
 
 ### 3.1.2 Type plate of the BactoSense power supply {#section-3-1-2}
 
@@ -92,7 +92,7 @@ The type plate of the BactoSense power supply can be found on the power supply a
 | USB | 2 x USB 3.1, 5 V 1 A per port<br />1 x USB-C |
 | Ethernet | 1 x RJ45 Gigabit Ethernet |
 | Ethernet protocols and options | Web interface<br />Remote desktop (VNC)<br />Modbus TCP<br />HTTP / HTTPS<br />FTP |
-| Digital inputs | 4 x digital inputs, optocoupler input: forward<br />voltage 1.2 VDC with 3 kΩ in serial, cathode<br />connected to COMMON, max. 30 mA,<br />max. 50 mW |
+| Digital inputs | 4 x digital inputs, optocoupler input: forward voltage 1.2 VDC with 3 kΩ in serial, cathode connected to COMMON, max. 30 mA, max. 50 mW |
 | Analogue and digital outputs | Analogue outputs:<br />2 x 0/4 – 20 mA, recommended 250 Ω load<br />Digital outputs:<br />4 x digital outputs, freely configurable,<br />SSR output: max. 48 VDC, max. 300 mW,<br />ON-resistance 2 Ω |
 | Display | WVGA, 7.0“capacitive touchscreen |
 | Mobile connectivity | BactoLink connectivity module (optional) |
@@ -106,7 +106,7 @@ The type plate of the BactoSense power supply can be found on the power supply a
 | Fluorescence | 530/50 nm FL1<br />715 LP nm FL2 |
 | Forward scatter (FSC) | 488 nm (optional depending on instrument) |
 | Side scatter (SSC) | 488 nm (optional depending on instrument) |
-| Result parameters | TCC/mL, ICC/mL, LNAC/mL, HNAC/mL,<br />HNAP (%), ACC/mL, HACC/mL, Gate+,<br />depending on system and cartridge used. |
+| Result parameters | TCC/mL, ICC/mL, LNAC/mL, HNAC/mL,<br />HNAP (%), ACC/mL, HACC/mL, Gate+, depending on system and cartridge used. |
 | Automatic measuring interval | From every 30 min to every 6 hours |
 | **SAMPLING** | \< |
 | Sampling type | Online or manual |
@@ -116,7 +116,7 @@ The type plate of the BactoSense power supply can be found on the power supply a
 | **CARTRIDGE** | \< |
 | Capacity | TCC &amp; ICC: Up to 1000 measurements<br />ACC: Up to 700 measurements |
 | Validity | TCC &amp; ICC: 9 months<br />ACC: 6 months |
-| Storage temperature | 15 °C – 25 °C (59 °F – 77 °F)<br />ideally at 15 °C (59 °F) |
+| Storage temperature | 15 °C – 25 °C (59 °F – 77 °F) ideally at 15 °C (59 °F) |
 | Storage humidity | 20 % – 60 % RH |
 | **MAINTENANCE** | \< |
 | Preventive maintenance | After 3 cartridges, at least yearly. |

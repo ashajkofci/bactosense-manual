@@ -10,7 +10,9 @@ The runtime is the BactoSense recipe (README.md): unchanged sibling GUI QML and
 Bactoserver code, shipped demo archive, loopback ports, Cocoa OpenGL. macOS has no
 BactoSwitch serial driver, so the fixture presents a connected BactoSwitch through
 the product's own status keys in the private Redis and assigns real demo online
-results to lines 1–4. Nothing is saved from the GUI and no hardware action runs.
+results to lines 1–4. The current Bactoserver schema has no top-level sosdEnabled
+field (its settings API rejects it), so BactoSwitch is enabled only in the GUI's
+in-memory settings model. Nothing is saved from the GUI and no hardware action runs.
 """
 import argparse
 import base64
@@ -39,8 +41,8 @@ snapshot.OUTPUT = OUTPUT
 
 # Real hourly online series of the shipped demo archive; a BactoSwitch cycles its lines.
 SOURCE_SERIES = "DWTP TCC after SSF"
-STATUS = {  # Product status keys read by the GUI (redis-init.py names), all valves open.
-    "sosd_connected": 1, "sosd_measure_flow_mlpermin": 802, "sosd_status_valve_output_state": 15,
+STATUS = {  # Product status keys read by the GUI (redis-init.py names); a set bit means that valve is closed.
+    "sosd_connected": 1, "sosd_measure_flow_mlpermin": 802, "sosd_status_valve_output_state": 0,
     "sosd_setup_mounted_valve_count": 4, "sosd_status_inputblock_connected": 1,
 }
 
@@ -105,11 +107,10 @@ def start():
                 raise
             time.sleep(1)
     pid = verify_private_server()
-    request("/api/settings", {"sosdEnabled": True})
     redis([["SET", key, value] for key, value in STATUS.items()] + [["SET", "sosd_lastUpdate", int(time.time())]])
     results = sorted((value for value in request("/api/data/auto") if value.get("name") == SOURCE_SERIES),
                      key=lambda value: value["timestamp"])
-    lines = request("/api/settings")["sosdConfigDefinition"]
+    lines = request("/api/settings")["sosdConfig"]
     assigned = []
     for index, result in enumerate(results):
         line = lines[index % 4]
@@ -118,7 +119,7 @@ def start():
         assigned.append({"timestamp": result["timestamp"], "streamId": line["streamId"]})
     provenance = json.loads((OUTPUT / "provenance.json").read_text())
     provenance["fixture"] = {
-        "serverPid": pid, "settings": {"sosdEnabled": True},
+        "serverPid": pid, "settings": "Unchanged on the server; sosdEnabled=true in the GUI's in-memory Settings model only",
         "status": STATUS, "statusSource": "../bactoserver/redis-init.py key names",
         "results": {"series": SOURCE_SERIES, "count": len(assigned),
                     "assignment": "Round-robin to the shipped default lines 1–4 (streamId 0–3); line name as sample name; all counts, dates and plot files unchanged",

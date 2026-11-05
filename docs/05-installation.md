@@ -280,7 +280,7 @@ The BactoSense offers several options for integration and online data access.
 | Modbus TCP | [Modbus TCP](07-field-bus-interface.md#section-7-1) |
 | FTP | [Retrieve data via FTP](12-data-access-and-export.md#section-12-2) |
 | HTTP and HTTPS | [Retrieve files via HTTP or HTTPS](12-data-access-and-export.md#section-12-3) |
-| Virtual network computing (VNC) user<br/>interface relay (remote control) | [GUI relay using VNC](12-data-access-and-export.md#section-12-4) |
+| Virtual network computing (VNC) user interface relay (remote control) | [GUI relay using VNC](12-data-access-and-export.md#section-12-4) |
 | Web user interface | [Web User Interface](13-web-user-interface.md) |
 
 ![BactoSense — System services](/img/gui/en/system-services.png "width=507")

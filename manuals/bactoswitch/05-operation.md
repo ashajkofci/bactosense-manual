@@ -8,65 +8,65 @@ description: "BactoSwitch user manual: Operation."
 
 ## 5.1 Operation via BactoSense GUI {#section-5-1}
 
-This section provides a basic introduction to the BactoSwitch operation and to viewing the results, which are very similar to BactoSense auto mode operation and data viewing. For more details, please refer to [Measuring automatically in Online mode](/bactosense/measurements#section-10-2) in the latest version of the BactoSense user manual.
+This section provides a basic introduction to the BactoSwitch operation and to viewing the results, which are very similar to BactoSense Online mode operation and data viewing. For more details, please refer to [Measuring automatically in Online mode](/bactosense/measurements#section-10-2) in the latest version of the BactoSense user manual.
 
-### 5.1.1 Starting auto mode measurements {#section-5-1-1}
+### 5.1.1 Starting Online mode measurements {#section-5-1-1}
 
 Make sure the BactoSwitch is correctly installed as described in [Installation](04-installation.md).
 
-Navigate to the home menu on the BactoSense user interface. Then select **Auto mode** and press **Start**:
+Navigate to the home screen of the BactoSense user interface. If the instrument is in Manual mode, switch it to Online mode with **Mode**. Then press **Start**:
 
-![BactoSense home screen with Auto mode and Start highlighted](/img/bactoswitch/gui-home-auto-mode-start.png "width=639")
+![BactoSense home screen in Online mode with Start highlighted](/img/gui/en/bactoswitch-home-start.png "width=639")
 
-In the Auto mode plot window, press **Start**:
+In the Online mode plot window, press **Start**:
 
-![Auto mode plot window with Start highlighted](/img/bactoswitch/gui-auto-mode-plot-start.png "width=637")
+![Online mode plot window with Start highlighted](/img/gui/en/bactoswitch-plot-start.png "width=637")
 
-Select the protocol **BactoSwitch (with Backflush)** and press **Next**.
+Select the protocol **Water Analysis with BactoSwitch** and press **Next**.
 
-![Protocol selection with BactoSwitch (with Backflush) selected](/img/bactoswitch/gui-protocol-selection.png "width=638")
+![Protocol selection with Water Analysis with BactoSwitch selected](/img/gui/en/bactoswitch-protocol-selection.png "width=638")
 
-Finally, select the measurement interval. Note that this is the interval between each measurement. The measurement interval for each source is N times larger, where N is the number of enabled sources. For example, if you enable 4 sources and select an interval of 30 min, each single source is measured with an interval of 2 h.
+Finally, select the measurement interval and press **Start**. Note that this is the interval between each measurement. The measurement interval for each source is N times larger, where N is the number of enabled sources. For example, if you enable 4 sources and select an interval of 30 min, each single source is measured with an interval of 2 h.
 
-![Interval settings with a 30 minute interval](/img/bactoswitch/gui-interval-settings.png "width=635")
+![Interval settings with Start highlighted](/img/gui/en/bactoswitch-interval-settings.png "width=635")
 
 ### 5.1.2 Viewing measurement results {#section-5-1-2}
 
-As soon as measurements are started, the auto mode plot window is shown again. When a BactoSwitch is connected, the auto mode window displays the individual line counts [1/mL], but no LNA/HNA [%] or other parameters.
+As soon as measurements are started, the Online mode plot window is shown again. When a BactoSwitch is connected, the Online mode window displays the individual line counts [1/mL], but no LNA/HNA [%] or other parameters.
 
-![Auto mode plot with one curve per line](/img/bactoswitch/gui-auto-mode-plot-lines.png "width=637")
+![Online mode plot with one curve per line](/img/gui/en/bactoswitch-plot-lines.png "width=637")
 
 The display settings can be modified via the button at the top center of the plot.
 
-![Display settings of the auto mode plot](/img/bactoswitch/gui-display-settings.png "width=633")
+![Display settings of the Online mode plot](/img/gui/en/bactoswitch-display-settings.png "width=633")
 
-Pressing the **View results** button opens the Auto mode results (list) view. Sample names match the line names set in [Line configuration](04-installation.md#section-4-6).
+Pressing the **View results** button opens the **Online mode results** list. Sample names match the line names set in [Line configuration](04-installation.md#section-4-6).
 
-![Auto mode results list with one entry per line measurement](/img/bactoswitch/gui-auto-mode-results.png "width=630")
+![Online mode results list with one entry per line measurement](/img/gui/en/bactoswitch-online-results.png "width=630")
 
 Pressing one of the measurements displays the details of that measurement (again, please refer to the BactoSense user manual for more details).
 
-![Auto mode result details of a BactoSwitch measurement](/img/bactoswitch/gui-result-details.png "width=637")
+![Online mode result details of a BactoSwitch measurement](/img/gui/en/bactoswitch-result-details.png "width=637")
 
-Pressing the **Filter** button in the Auto mode results (list) window opens the **Filter results** window. Here you can filter results based on a string via the **Filter by name** field.
+Pressing the **Filter** button in the **Online mode results** list opens the **Filter results** window. Here you can filter results based on a string via the **Filter by name** field.
 
-![Filter results window](/img/bactoswitch/gui-filter-results.png "width=635")
+![Filter results window](/img/gui/en/bactoswitch-filter-results.png "width=635")
 
 In addition to filtering by start and end dates and measurement name, pressing the **Filter by line** button allows filtering results by BactoSwitch line.
 
-![Filter results window with Filter by line highlighted](/img/bactoswitch/gui-filter-by-line-button.png "width=638")
+![Filter results window with Filter by line highlighted](/img/gui/en/bactoswitch-filter-by-line-button.png "width=638")
 
-![Selection of a BactoSwitch sample line](/img/bactoswitch/gui-select-sample-line.png "width=635")
+![Selection of a BactoSwitch sample line](/img/gui/en/bactoswitch-select-line.png "width=635")
 
-Filters not only apply to the auto mode results list view, but also to the auto mode plot, which allows you to selectively plot results based on line numbers or line names (as defined in [Line configuration](04-installation.md#section-4-6)). See also [Filtering measurements](/bactosense/measurements#section-10-7) in the BactoSense user manual.
+Filters not only apply to the Online mode results list, but also to the Online mode plot, which allows you to selectively plot results based on line numbers or line names (as defined in [Line configuration](04-installation.md#section-4-6)). See also [Filtering measurements](/bactosense/measurements#section-10-7) in the BactoSense user manual.
 
-![Auto mode plot filtered by line 1](/img/bactoswitch/gui-auto-mode-plot-filtered.png "width=293") ![Auto mode results filtered by line 1](/img/bactoswitch/gui-auto-mode-results-filtered.png "width=293")
+![Online mode plot filtered by line 1](/img/gui/en/bactoswitch-plot-filtered.png "width=293") ![Online mode results filtered by line 1](/img/gui/en/bactoswitch-results-filtered.png "width=293")
 
 ### 5.1.3 Setting alarms {#section-5-1-3}
 
-The **Alarm configuration** window (accessible via the main menu, **Auto mode settings** / **Alarms**) allows you to define alarms selectively on certain lines:
+The **Alarm configuration** window (accessible via **Settings** / **Online mode settings** / **Alarm**) allows you to define alarms selectively on certain lines:
 
-![Alarm configuration with a sample line selected](/img/bactoswitch/gui-alarm-configuration.png "width=625")
+![Alarm configuration with a sample line selected](/img/gui/en/bactoswitch-alarm-sample-line.png "width=625")
 
 ## 5.2 Remote control and data visualization {#section-5-2}
 
@@ -82,15 +82,15 @@ BactoCloud includes features that make it particularly easy to visualize multi-l
 
 The [web user interface](/bactosense/web-user-interface) of the BactoSense contains functionalities that allow filtering data from the different BactoSwitch lines.
 
-In the **Results** tab, in the **Auto-mode results** part, it is possible to filter the data either by the **Name** or the **Line ID**. Those fields correspond to the line numbers and names given in [Line configuration](04-installation.md#section-4-6). Filtering also applies to the auto mode graph.
+In the **Results** tab, in the **Online mode results** part, it is possible to filter the data either by the **Name** or the **Line ID**. Those fields correspond to the line numbers and names given in [Line configuration](04-installation.md#section-4-6). Filtering also applies to the Online mode graph.
 
-![Auto mode results in the web user interface with the Name and Stream ID columns highlighted](/img/bactoswitch/web-auto-mode-results.png "width=634")
+![Online mode results in the web user interface filtered by name, with the Name and Line ID columns highlighted](/img/gui/en/bactoswitch-web-online-results.png "width=634")
 
 ### 5.2.3 BactoSwitch control via BactoSense I/O-Box {#section-5-2-3}
 
 The BactoSwitch operation can be controlled with a Programmable Logic Controller (PLC) via the BactoSense and the optional I/O-Box. Please refer to [Digital inputs configuration and PLC mode](/bactosense/io-box#section-6-5) in the BactoSense user manual for more detailed information. Here we only explain the specificities of BactoSwitch operation.
 
-From the main menu, navigate to **Auto mode settings** / **Digital inputs**. The BactoSwitch line can be selected via the **Line** box.
+From **Settings**, navigate to **Online mode settings** / **Digital inputs**. The BactoSwitch line can be selected via the **Line** box.
 
 In the example below, with the **Use scheduler** option unchecked, when the PLC sets the digital inputs to 1100, a measurement is started immediately on line #1:
 
@@ -102,7 +102,7 @@ To start regular measurements, check the **Use scheduler** option and set the de
 
 Reading data from a specific line via the analogue outputs has to be done right after the measurement has finished on that line, e.g. by assigning the **Process running** signal to a specific digital output and triggering the analogue output read-out when the status of that output changes. Note that this is not the default setting. Please refer to [Digital output configuration](/bactosense/io-box#section-6-6) in the BactoSense user manual for more details.
 
-![Assign events to outputs with Process running on output 3](/img/bactoswitch/gui-assign-events-to-outputs.png "width=638")
+![Assign events to outputs with the Process running row highlighted](/img/gui/en/bactoswitch-assign-events-process-running.png "width=638")
 
 ### 5.2.4 Modbus TCP {#section-5-2-4}
 
@@ -110,11 +110,11 @@ The BactoSwitch and BactoSense can be controlled remotely via the Modbus Transmi
 
 Setting up the instrument for Modbus TCP control is identical to what is explained in the previous section about the I/O-Box. To select Modbus TCP as digital input source, in the **Digital input configuration (PLC)** window, press **Select digital input source** at the bottom.
 
-![Digital input configuration with Select digital input source highlighted](/img/bactoswitch/gui-digital-input-source-button.png "width=624")
+![Digital input configuration with Select digital input source highlighted](/img/gui/en/bactoswitch-digital-input-source-button.png "width=624")
 
 Then switch the source to **Modbus TCP** and press **Back**.
 
-![Digital input source set to Modbus TCP](/img/bactoswitch/gui-digital-input-source-modbus.png "width=624")
+![Digital input source set to Modbus TCP](/img/gui/en/bactoswitch-digital-input-source-modbus.png "width=624")
 
 In addition to the usual BactoSense Modbus registers, specific Modbus registers are available to read information from the BactoSwitch:
 

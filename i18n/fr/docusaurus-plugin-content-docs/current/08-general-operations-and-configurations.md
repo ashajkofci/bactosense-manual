@@ -263,9 +263,9 @@ BactoSense enregistre les alarmes des manières suivantes :
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| 1 | Sélectionner, activer ou désactiver les alarmes.<br/>Les utilisateurs peuvent configurer jusqu’à 9<br/>alarmes. | 2 | Nom de l’alarme actuellement sélectionnée. |
-| 3 | Source de l’alarme : Quel<br/>résultat de mesure doit<br/>être évalué. Voir figure 8-3. | 4 | Condition : Déclencher l’alarme lorsque<br/>le paramètre mesuré est<br/>supérieur (&gt;) ou inférieur (&lt;) au<br/>seuil. |
-| 5 | Seuil | 6 | Affichage : Si cette case est cochée, une ligne<br/>sera affichée sur le graphique du mode en ligne,<br/>dans la couleur sélectionnée. |
+| 1 | Sélectionner, activer ou désactiver les alarmes.<br/>Les utilisateurs peuvent configurer jusqu’à 9 alarmes. | 2 | Nom de l’alarme actuellement sélectionnée. |
+| 3 | Source de l’alarme : Quel résultat de mesure doit être évalué. Voir figure 8-3. | 4 | Condition : Déclencher l’alarme lorsque le paramètre mesuré est supérieur (&gt;) ou inférieur (&lt;) au seuil. |
+| 5 | Seuil | 6 | Affichage : Si cette case est cochée, une ligne sera affichée sur le graphique du mode en ligne, dans la couleur sélectionnée. |
 
 ![BactoSense — Source d’alarme de cartouche](/img/gui/fr/cartridge-alarm-source.png "width=290")
 
@@ -336,7 +336,7 @@ Les principaux éléments de l’interface utilisateur sont :
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| 1 | Bouton Menu principal ou Retour.<br />Pour naviguer dans le menu. | 2 | Mode de fonctionnement (Manuel ou<br />En ligne) État de l’instrument (processus en<br />cours) |
+| 1 | Bouton Menu principal ou Retour.<br />Pour naviguer dans le menu. | 2 | Mode de fonctionnement (Manuel ou En ligne) État de l’instrument (processus en cours) |
 | 3 | Vue actuelle | 4 | Icônes d’état de la barre supérieure, voir [Icônes d’état de la barre supérieure](../general-operations-and-configurations/#section-8-8-2). |
 | 5 | Rôle d’utilisateur<br />Heure actuelle | 6 | Déconnexion ou mise hors tension |
 | 7 | Résultats : afficher les résultats de mesure du mode sélectionné. | 8 | Mode : choisir le mode en ligne pour les mesures continues avec le dispositif d’échantillonnage en ligne, ou le mode manuel pour les échantillons ponctuels avec le dispositif d’échantillonnage manuel. |
@@ -357,9 +357,9 @@ Les icônes de la barre supérieure s’affichent en haut de l’écran. Elles i
 | ![BactoSense — Processus en cours](/img/gui/icons/process-running-status.png "width=32 class=manual-icon") | Processus en cours | ![BactoSense — Mode démo actif](/img/gui/icons/demo-mode-status.png "width=32 class=manual-icon") | Mode démo activé |
 | ![BactoSense — Cartouche presque vide](/img/gui/icons/cartridge-almost-empty-status.png "width=32 class=manual-icon") | Cartouche presque vide | ![BactoSense — Maintenance nécessaire](/img/gui/icons/service-required-status.png "width=32 class=manual-icon") | Entretien nécessaire (voir chapitre [Maintenance](15-maintenance.md)) |
 | ![BactoSense — Cartouche bientôt périmée](/img/gui/icons/cartridge-almost-expired-status.png "width=32 class=manual-icon") | Cartouche presque expirée | ![BactoSense — Niveau de remplissage de la cartouche](/img/gui/icons/cartridge-level-status.png "width=32 class=manual-icon") | Indication du niveau de la cartouche |
-| ![BactoSense — Cartouche non prête](/img/gui/icons/cartridge-not-ready-status.png "width=32 class=manual-icon") | Cartouche non initialisée<br/>correctement ou absente | ![BactoSense — Cartouche vide](/img/gui/icons/cartridge-empty-status.png "width=32 class=manual-icon") | Cartouche vide |
+| ![BactoSense — Cartouche non prête](/img/gui/icons/cartridge-not-ready-status.png "width=32 class=manual-icon") | Cartouche non initialisée correctement ou absente | ![BactoSense — Cartouche vide](/img/gui/icons/cartridge-empty-status.png "width=32 class=manual-icon") | Cartouche vide |
 | ![BactoSense — Erreur critique](/img/gui/icons/critical-error-status.png "width=32 class=manual-icon") | Erreur critique (section [Erreurs critiques](16-warnings-errors-and-troubleshooting.md#section-16-3)) | ![BactoSense — Cartouche périmée](/img/gui/icons/cartridge-expired-status.png "width=32 class=manual-icon") | Cartouche expirée |
-| ![BactoSense — Alarme active](/img/gui/icons/alarm-status.png "width=32 class=manual-icon") | Alarme sur la dernière mesure<br/>(mode en ligne uniquement, voir section [Configuration des alarmes](08-general-operations-and-configurations.md#section-8-5)) | ![BactoSense — Erreur non critique](/img/gui/icons/noncritical-error-status.png "width=32 class=manual-icon") | Erreur non critique (section [Erreurs non critiques](16-warnings-errors-and-troubleshooting.md#section-16-2)) |
+| ![BactoSense — Alarme active](/img/gui/icons/alarm-status.png "width=32 class=manual-icon") | Alarme sur la dernière mesure (mode en ligne uniquement, voir section [Configuration des alarmes](08-general-operations-and-configurations.md#section-8-5)) | ![BactoSense — Erreur non critique](/img/gui/icons/noncritical-error-status.png "width=32 class=manual-icon") | Erreur non critique (section [Erreurs non critiques](16-warnings-errors-and-troubleshooting.md#section-16-2)) |
 
 ## 8.9 Gestion des cartouches {#section-8-9}
 
@@ -373,10 +373,10 @@ Lors de la manipulation de la cartouche, les instructions suivantes doivent êtr
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| ![Suivez les procédures décrites dans ce manuel.](/img/manual/cell-28af480709ce.png "width=31 class=cartridge-handling-icon-31") | Suivez les procédures<br/>décrites dans ce manuel. | ![Illustration de la procédure, page imprimée 73](/img/manual/asset-32c675a70f3d.png "width=24 class=cartridge-handling-icon-24") | Stockez et transportez la cartouche entre<br/>15 °C et 25 °C (59<br/>°F – 77 °F). La<br/>température optimale est de 15 °C (59 °F). |
-| ![Portez des gants en nitrile lors de la manipulation de la cartouche.](/img/safety/gloves.svg "width=31 class=cartridge-handling-icon-31") | Portez des gants en nitrile lors<br/>de la manipulation de la cartouche. | ![Illustration de la procédure, page imprimée 73](/img/manual/asset-65d703b8ec50.png "width=24 class=cartridge-handling-icon-24") | Stockez et transportez entre 20<br/>% et 60 %<br/>d’humidité relative. |
-| ![Portez des lunettes de sécurité lors de la manipulation de la cartouche.](/img/manual/cell-d6353e538e2e.png "width=31 class=cartridge-handling-icon-31") | Portez des lunettes de sécurité lors<br/>de la manipulation de la cartouche. | ![La cartouche est destinée à être rechargée.](/img/manual/cell-a80baea9abca.png "width=29 class=cartridge-handling-icon-29") | La cartouche est destinée à être<br/>rechargée. |
-| ![Transportez, installez et stockez dans l’orientation indiquée.](/img/manual/cell-7ac996bd1fed.png "width=31 class=cartridge-handling-icon-31") | Transportez, installez et stockez<br/>dans l’orientation indiquée. | ![Ne jetez pas la cartouche à la poubelle.](/img/manual/cell-bc083b74fc3c.png "width=29 class=cartridge-handling-icon-29") | Ne jetez pas la cartouche<br/>à la poubelle. |
+| ![Suivez les procédures décrites dans ce manuel.](/img/manual/cell-28af480709ce.png "width=31 class=cartridge-handling-icon-31") | Suivez les procédures décrites dans ce manuel. | ![Illustration de la procédure, page imprimée 73](/img/manual/asset-32c675a70f3d.png "width=24 class=cartridge-handling-icon-24") | Stockez et transportez la cartouche entre<br/>15 °C et 25 °C (59<br/>°F – 77 °F). La température optimale est de 15 °C (59 °F). |
+| ![Portez des gants en nitrile lors de la manipulation de la cartouche.](/img/safety/gloves.svg "width=31 class=cartridge-handling-icon-31") | Portez des gants en nitrile lors de la manipulation de la cartouche. | ![Illustration de la procédure, page imprimée 73](/img/manual/asset-65d703b8ec50.png "width=24 class=cartridge-handling-icon-24") | Stockez et transportez entre 20<br/>% et 60 % d’humidité relative. |
+| ![Portez des lunettes de sécurité lors de la manipulation de la cartouche.](/img/manual/cell-d6353e538e2e.png "width=31 class=cartridge-handling-icon-31") | Portez des lunettes de sécurité lors de la manipulation de la cartouche. | ![La cartouche est destinée à être rechargée.](/img/manual/cell-a80baea9abca.png "width=29 class=cartridge-handling-icon-29") | La cartouche est destinée à être rechargée. |
+| ![Transportez, installez et stockez dans l’orientation indiquée.](/img/manual/cell-7ac996bd1fed.png "width=31 class=cartridge-handling-icon-31") | Transportez, installez et stockez dans l’orientation indiquée. | ![Ne jetez pas la cartouche à la poubelle.](/img/manual/cell-bc083b74fc3c.png "width=29 class=cartridge-handling-icon-29") | Ne jetez pas la cartouche à la poubelle. |
 
 ### 8.9.2 Vérification du niveau de remplissage et de la date d’expiration d’une cartouche {#section-8-9-2}
 
@@ -395,7 +395,7 @@ La cartouche BactoSense est installée dans un compartiment dédié de l’instr
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| 1 | Écrous hexagonaux de 7 mm pour fixer la porte<br/>du compartiment de la cartouche | 2 | Porte du compartiment de la cartouche |
+| 1 | Écrous hexagonaux de 7 mm pour fixer la porte du compartiment de la cartouche | 2 | Porte du compartiment de la cartouche |
 
 :::caution[Utilisez l’outil adapté à la porte]
 

@@ -64,8 +64,8 @@ Das Typenschild des BactoSwitch befindet sich auf der rechten Seite des Geräts.
 | 3 | Seriennummer | 4 | Barcode |
 | 5 | Herstellungsdatum | 6 | Ursprungsland |
 | 7 | Spannungs- und Leistungsaufnahme | 8 | CE-Logo |
-| 9 | UKCA-Logo | 10 | Entspricht kanadischen EMV-<br />und Interferenzstandards |
-| 11 | Bedienungsanleitung lesen und umsichtig<br />bedienen | 12 | Informationen zur Entsorgung |
+| 9 | UKCA-Logo | 10 | Entspricht kanadischen EMV- und Interferenzstandards |
+| 11 | Bedienungsanleitung lesen und umsichtig bedienen | 12 | Informationen zur Entsorgung |
 
 ## 2.5 Typenschild des Netzteils des BactoSwitch {#section-2-5}
 
@@ -81,7 +81,7 @@ Das Typenschild des Netzteils des BactoSwitch befindet sich auf dem Netzteil und
 | 3 | Teilenummer (abhängig vom Steckertyp) | 4 | Herstellungsdatum |
 | 5 | Eingangsspannung und -frequenz | 6 | Leistungsaufnahme |
 | 7 | CE-Logo | 8 | UKCA-Logo |
-| 9 | Entspricht kanadischen EMV-<br />und Interferenzstandards | 10 | Bedienungsanleitung lesen und umsichtig<br />bedienen |
+| 9 | Entspricht kanadischen EMV- und Interferenzstandards | 10 | Bedienungsanleitung lesen und umsichtig bedienen |
 | 11 | Informationen zur Entsorgung |  |  |
 
 ## 2.6 Technische Daten {#section-2-6}

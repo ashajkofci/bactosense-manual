@@ -2,12 +2,13 @@ import { createHash } from 'node:crypto';
 import { readFile, readdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
+import manualRegistry from '../../plugins/manuals.cjs';
 
 const root = path.resolve(import.meta.dirname, '../..');
 const manifest = JSON.parse(await readFile(path.join(root, 'maintenance/gui-screenshots.json'), 'utf8'));
 const inventory = JSON.parse(await readFile(path.join(root, 'maintenance/gui-screenshot-inventory.json'), 'utf8'));
 const documents = [];
-for (const { locale, directory } of [{ locale: 'en', directory: 'docs' }, ...['de', 'fr', 'it', 'es'].map(locale => ({ locale, directory: `i18n/${locale}/docusaurus-plugin-content-docs/current` }))]) {
+for (const { locale, directory } of manualRegistry.manuals.flatMap(manual => manual.locales.map(locale => ({ locale, directory: manualRegistry.contentDirectory(manual, locale) })))) {
   for (const file of await readdir(path.join(root, directory))) {
     if (/\.mdx?$/.test(file)) documents.push({ locale, file: `${directory}/${file}`, text: await readFile(path.join(root, directory, file), 'utf8') });
   }

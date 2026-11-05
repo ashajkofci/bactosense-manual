@@ -57,8 +57,8 @@ Additional notes
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| ① | Position of the digital outputs<br />Terminals 1 – 8<br />Cable requirements:<br />• AWG 12 – 22<br />• Cross section: 0.25 – 2.5<br />mm2 | ② | Position of the analogue outputs<br />Terminals 9 – 12<br />Cable requirements:<br />• AWG 12 – 22<br />• Cross section: 0.25 – 2.5 mm2 |
-| ③ | Position of the digital inputs<br />Terminals 14 – 18<br />Cable requirements:<br />• AWG 12 – 22<br />• Cross section: 0.25 – 2.5<br />mm2 |  | \< |
+| ① | Position of the digital outputs<br />Terminals 1 – 8<br />Cable requirements:<br />• AWG 12 – 22<br />• Cross section: 0.25 – 2.5 mm2 | ② | Position of the analogue outputs<br />Terminals 9 – 12<br />Cable requirements:<br />• AWG 12 – 22<br />• Cross section: 0.25 – 2.5 mm2 |
+| ③ | Position of the digital inputs<br />Terminals 14 – 18<br />Cable requirements:<br />• AWG 12 – 22<br />• Cross section: 0.25 – 2.5 mm2 |  | \< |
 
 ### 6.1.6 IO-box reference table {#section-6-1-6}
 
@@ -146,7 +146,7 @@ When no wires are connected to the digital inputs, their state is 0000.
 | DESCRIPTION | DIGITAL INPUTS | \< | \< | \< |
 | --- | --- | --- | --- | --- |
 | ^ | 1 | 2 | 3 | 4 |
-| Force PLC mode: The instrument is idle but a slave to<br />the PLC. | 1 | 0 | 0 | 0 |
+| Force PLC mode: The instrument is idle but a slave to the PLC. | 1 | 0 | 0 | 0 |
 | Run configurable protocol / measurement interval | 1 | 0 | 0 | 1 |
 | Run configurable protocol / measurement interval | 1 | 0 | 1 | 0 |
 | Run configurable protocol / measurement interval | 1 | 0 | 1 | 1 |
@@ -262,8 +262,8 @@ Only **Admin** users can edit the analogue 4 .. 20 mA outputs.
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| 1 | Output port selection | 2 | Source: Defines which measurement<br />result is transmitted by this output<br />port. |
-| 3 | Lower limit 4 mA: Which value of<br />the measurement result should<br />correspond to 4 mA. | 4 | Upper limit 20 mA: Which value of<br />the measurement result should<br />correspond to 20 mA. |
+| 1 | Output port selection | 2 | Source: Defines which measurement result is transmitted by this output port. |
+| 3 | Lower limit 4 mA: Which value of the measurement result should correspond to 4 mA. | 4 | Upper limit 20 mA: Which value of the measurement result should correspond to 20 mA. |
 | 5 | If selected, interpolates the chosen cell count value range with a logarithmic scale as follows:<br />`ratio = 1 + 9 × (counts − low) / (high − low)`<br />`output = 4 mA + log<sub>10</sub>(ratio) × 16 mA`<br /><br />counts: Measured cell count<br />low: Lower cell count limit<br />high: Higher cell count limit<br />output: Current amplitude in mA |  | \< |
 
 The following procedure describes how to adjust the analogue outputs.
@@ -299,9 +299,9 @@ The Test outputs interface allows to generate a physical output signal for testi
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| 1 | Define state of digital outputs for<br />test. | 2 | Set digital outputs to the state<br />defined in (1). |
-| 3 | Set all digital and analogue<br />outputs at once. | 4 | Set current on both analogue<br />outputs. |
-| 5 | Reset outputs to their state before<br />the tests. | 6 | Set current on port 2. |
+| 1 | Define state of digital outputs for test. | 2 | Set digital outputs to the state defined in (1). |
+| 3 | Set all digital and analogue outputs at once. | 4 | Set current on both analogue outputs. |
+| 5 | Reset outputs to their state before the tests. | 6 | Set current on port 2. |
 | 7 | Set current on port 1. |  | \< |
 
 The following procedure describes how to test the analogue and digital outputs.

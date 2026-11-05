@@ -282,13 +282,13 @@ The following procedure only applies if the BactoSwitch shall be connected to a 
 
 The following sections show examples of the BactoSense user interface. They assume that you are familiar with the BactoSense and only focus on BactoSwitch operation. Please refer to the [BactoSense user manual](/bactosense/) for more information.
 
-Log in to the BactoSense in Admin mode. Select **Auto mode settings**.
+Log in to the BactoSense in Admin mode. In **Settings**, select **Online mode settings**.
 
-![BactoSense home screen with Auto mode settings highlighted](/img/bactoswitch/gui-home-auto-mode-settings.png "width=634")
+![Settings menu with Online mode settings highlighted](/img/gui/en/bactoswitch-settings-menu-online-mode-settings.png "width=634")
 
 Next, select **BactoSwitch sample lines**:
 
-![Auto mode settings with BactoSwitch sample lines highlighted](/img/bactoswitch/gui-auto-mode-settings-sample-lines.png "width=635")
+![Online mode settings with BactoSwitch sample lines highlighted](/img/gui/en/bactoswitch-online-mode-settings-sample-lines.png "width=635")
 
 On the **BactoSwitch Sample Lines** page you can:
 
@@ -297,7 +297,7 @@ On the **BactoSwitch Sample Lines** page you can:
 - Rename the lines.
 - Change the color that is used to plot the lines in the graphs.
 
-![BactoSwitch Sample Lines page with four lines](/img/bactoswitch/gui-sample-lines.png "width=637")
+![BactoSwitch Sample Lines page with four lines](/img/gui/en/bactoswitch-sample-lines.png "width=637")
 
 Press **Save** to store the changes.
 
@@ -322,11 +322,11 @@ To test or set the flow rate using the built-in needle valves of the BactoSwitch
 
 Then, on the BactoSense user interface, enter the **BactoSwitch sample lines** menu (see [Line configuration](04-installation.md#section-4-6)), and press the **Test BactoSwitch** button. This opens the **BactoSwitch Control Panel**. The four valve buttons allow you to open only the selected valve, while the others are closed automatically. To re-open all valves, press the **Open all valves** button at the bottom of the screen.
 
-![BactoSwitch Control Panel with all valves open](/img/bactoswitch/gui-control-panel-all-valves-open.png "width=637")
+![BactoSwitch Control Panel with all valves open](/img/gui/en/bactoswitch-control-panel-all-valves-open.png "width=637")
 
 When only one of the valves is open, the indicated flow rate value turns green or red, depending on whether the flow rate is within the specified values of 150 – 400 mL/min or not:
 
-![BactoSwitch Control Panel with only valve 4 open](/img/bactoswitch/gui-control-panel-single-valve.png "width=635")
+![BactoSwitch Control Panel with only valve 4 open](/img/gui/en/bactoswitch-control-panel-single-valve.png "width=635")
 
 To adjust the flow rate of each input line, use the adjustment knobs of the BactoSwitch (see figure below) until the flow rates are within the 150 – 400 mL/min range, ideally about 300 mL/min.
 

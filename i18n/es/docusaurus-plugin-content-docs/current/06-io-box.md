@@ -57,8 +57,8 @@ Notas adicionales
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| ① | Posición de las salidas digitales<br />Bornes 1 – 8<br />Requisitos del cable:<br />• AWG 12 – 22<br />• Sección: 0.25 – 2.5<br />mm2 | ② | Posición de las salidas analógicas<br />Bornes 9 – 12<br />Requisitos del cable:<br />• AWG 12 – 22<br />• Sección: 0.25 – 2.5 mm2 |
-| ③ | Posición de las entradas digitales<br />Bornes 14 – 18<br />Requisitos del cable:<br />• AWG 12 – 22<br />• Sección: 0.25 – 2.5<br />mm2 |  | \< |
+| ① | Posición de las salidas digitales<br />Bornes 1 – 8<br />Requisitos del cable:<br />• AWG 12 – 22<br />• Sección: 0.25 – 2.5 mm2 | ② | Posición de las salidas analógicas<br />Bornes 9 – 12<br />Requisitos del cable:<br />• AWG 12 – 22<br />• Sección: 0.25 – 2.5 mm2 |
+| ③ | Posición de las entradas digitales<br />Bornes 14 – 18<br />Requisitos del cable:<br />• AWG 12 – 22<br />• Sección: 0.25 – 2.5 mm2 |  | \< |
 
 ### 6.1.6 Tabla de referencia de la caja de E/S {#section-6-1-6}
 
@@ -146,7 +146,7 @@ Cuando no hay cables conectados a las entradas digitales, su estado es 0000.
 | DESCRIPCIÓN | ENTRADAS DIGITALES | \< | \< | \< |
 | --- | --- | --- | --- | --- |
 | ^ | 1 | 2 | 3 | 4 |
-| Forzar el modo PLC: el instrumento está inactivo, pero actúa como esclavo<br />del PLC. | 1 | 0 | 0 | 0 |
+| Forzar el modo PLC: el instrumento está inactivo, pero actúa como esclavo del PLC. | 1 | 0 | 0 | 0 |
 | Ejecutar el protocolo / intervalo de medición configurable | 1 | 0 | 0 | 1 |
 | Ejecutar el protocolo / intervalo de medición configurable | 1 | 0 | 1 | 0 |
 | Ejecutar el protocolo / intervalo de medición configurable | 1 | 0 | 1 | 1 |
@@ -262,8 +262,8 @@ Solo los usuarios **Admin** pueden editar las salidas analógicas de 4 .. 20 mA.
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| 1 | Selección del puerto de salida | 2 | Source: define qué resultado de<br />medición se transmite por este puerto<br />de salida. |
-| 3 | Límite inferior de 4 mA: valor del<br />resultado de medición que debe<br />corresponder a 4 mA. | 4 | Límite superior de 20 mA: valor del<br />resultado de medición que debe<br />corresponder a 20 mA. |
+| 1 | Selección del puerto de salida | 2 | Source: define qué resultado de medición se transmite por este puerto de salida. |
+| 3 | Límite inferior de 4 mA: valor del resultado de medición que debe corresponder a 4 mA. | 4 | Límite superior de 20 mA: valor del resultado de medición que debe corresponder a 20 mA. |
 | 5 | Si se selecciona, interpola el rango de recuento celular elegido con una escala logarítmica de la siguiente manera:<br />`ratio = 1 + 9 × (counts − low) / (high − low)`<br />`output = 4 mA + log<sub>10</sub>(ratio) × 16 mA`<br /><br />counts: recuento celular medido<br />low: límite inferior del recuento celular<br />high: límite superior del recuento celular<br />output: intensidad de corriente en mA |  | \< |
 
 El procedimiento siguiente describe cómo ajustar las salidas analógicas.
@@ -299,9 +299,9 @@ La interfaz Probar salidas permite generar una señal física de salida con fine
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| 1 | Definir el estado de las salidas digitales para<br />la prueba. | 2 | Establecer las salidas digitales en el estado<br />definido en (1). |
-| 3 | Establecer todas las salidas digitales y analógicas<br />a la vez. | 4 | Establecer la corriente de ambas salidas<br />analógicas. |
-| 5 | Restablecer las salidas al estado anterior<br />a las pruebas. | 6 | Establecer la corriente del puerto 2. |
+| 1 | Definir el estado de las salidas digitales para la prueba. | 2 | Establecer las salidas digitales en el estado definido en (1). |
+| 3 | Establecer todas las salidas digitales y analógicas a la vez. | 4 | Establecer la corriente de ambas salidas analógicas. |
+| 5 | Restablecer las salidas al estado anterior a las pruebas. | 6 | Establecer la corriente del puerto 2. |
 | 7 | Establecer la corriente del puerto 1. |  | \< |
 
 El procedimiento siguiente describe cómo probar las salidas analógicas y digitales.

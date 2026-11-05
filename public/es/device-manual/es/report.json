@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "locale": "es",
   "chapterCount": 21,
-  "blockCount": 941,
+  "blockCount": 942,
   "internalLinkCount": 684,
   "assetCount": 178,
   "maxAssetWidth": 800,
@@ -15,15 +15,15 @@
     },
     {
       "file": "chapters/glossary.json",
-      "sha256": "2a4e59cc4e658529e5c45f6262b413e9bebdbdf829caa1dab6ea07fda0310e58"
+      "sha256": "cc11c18a4837316e434d3a0ab4a1fec8aec6f893bfeab529aa86a6f90ae9746d"
     },
     {
       "file": "chapters/general-user-information.json",
-      "sha256": "dbb0a191e2d7ba1622639b7eb08f1c582bb9d5d0892cb9bc3685b2971f40d0b6"
+      "sha256": "44a18876c6d6dcc71260f587d62e09580dec6ff06075928f2b3c52b4918403a2"
     },
     {
       "file": "chapters/instrument-overview.json",
-      "sha256": "91c5a62f58bcfaf8c76d1b5a266a8a884b83309a14db4917bad7543a9d372cd5"
+      "sha256": "6c36aab3b2727e6f6cad89b91bf8328daaba35676b84a2c6dfebc8158ef2e9dd"
     },
     {
       "file": "chapters/safety.json",
@@ -35,15 +35,15 @@
     },
     {
       "file": "chapters/io-box.json",
-      "sha256": "07292ab65ef75bc99e8a28d6a6fda57f5f6cb52e45561f6ee7249b95a2a9d98f"
+      "sha256": "57f3a0c2acdfe93f818aa7863a8211ba9526264f0c7a14532677386a399cbeea"
     },
     {
       "file": "chapters/field-bus-interface.json",
-      "sha256": "2d01775571be99904bfda1066a2b617a0a39d85bfe630cecd46224a6b2afeaa9"
+      "sha256": "8dc8391745f6937d0655097d9f422572b294269dec12b0c80ccaf04f6c33c986"
     },
     {
       "file": "chapters/general-operations-and-configurations.json",
-      "sha256": "80dcd38c7fbc938cc4fa87f73ecbf09d109232153d5f7120e38252bdfc7f7e92"
+      "sha256": "510b3264800bc1951dfb5d40433163eafeb2bc841cf38f2a3659830a0254c505"
     },
     {
       "file": "chapters/upgrade-packages.json",
@@ -55,11 +55,11 @@
     },
     {
       "file": "chapters/results-and-data-analysis.json",
-      "sha256": "59595438bb6c15b3142d9c25dbfbf69cba56c3f5932f5a21b1e8dace6ddda571"
+      "sha256": "74842127b232b37ca239b0433e51ac3c39fce8860c104057ae47a4bc0a30f282"
     },
     {
       "file": "chapters/data-access-and-export.json",
-      "sha256": "3ac567709a89012bd5a944bce1285b87898ae498d766c37b3886e6787e71f022"
+      "sha256": "16116bc16dfd72746e486c8277b3ba0e660d821eff7f99ae4a501159838fdfb9"
     },
     {
       "file": "chapters/web-user-interface.json",

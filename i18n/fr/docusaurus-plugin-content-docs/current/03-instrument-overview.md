@@ -37,9 +37,9 @@ La plaque signalétique du BactoSense se trouve sur le côté droit de l’instr
 | 1 | Fabricant | 2 | Nom du produit |
 | 3 | Numéro de série | 4 | Code-barres |
 | 5 | Date de fabrication | 6 | Pays d’origine |
-| 7 | Exigences de tension et de<br/>puissance (section [Raccordement du BactoSense à l’alimentation électrique](../installation/#section-5-3)) | 8 | Marquage CE |
-| 9 | Marquage UKCA | 10 | Conformité aux normes canadiennes en<br/>matière de CEM et d’interférences |
-| 11 | Lire les instructions et utiliser<br/>avec prudence | 12 | Informations sur l’élimination |
+| 7 | Exigences de tension et de puissance (section [Raccordement du BactoSense à l’alimentation électrique](../installation/#section-5-3)) | 8 | Marquage CE |
+| 9 | Marquage UKCA | 10 | Conformité aux normes canadiennes en matière de CEM et d’interférences |
+| 11 | Lire les instructions et utiliser avec prudence | 12 | Informations sur l’élimination |
 
 ### 3.1.2 Plaque signalétique du bloc d’alimentation électrique du BactoSense {#section-3-1-2}
 
@@ -91,9 +91,9 @@ La plaque signalétique du bloc d’alimentation électrique du BactoSense se tr
 | **INTERFACES, CONNECTIVITÉ ET ACCÈS À DISTANCE** | \< |
 | USB | 2 x USB 3.1, 5 V 1 A par port<br />1 x USB-C |
 | Ethernet | 1 x RJ45 Gigabit Ethernet |
-| Protocoles et options Ethernet | Interface web Bureau<br />à distance (VNC) Modbus<br />TCP HTTP<br />/ HTTPS<br />FTP |
-| Entrées numériques | 4 x entrées numériques, entrée optocoupleur : tension directe<br />1.2 VDC avec 3 kΩ en série, cathode raccordée<br />à COMMON, max. 30 mA, max.<br />50 mW |
-| Sorties analogiques et numériques | Sorties analogiques : 2<br />x 0/4 – 20 mA, charge recommandée 250<br />Ω Sorties numériques :<br />4 x sorties numériques, librement configurables, sortie SSR :<br />max. 48 VDC, max. 300 mW, résistance à<br />l’état passant 2 Ω |
+| Protocoles et options Ethernet | Interface web Bureau à distance (VNC) Modbus<br />TCP HTTP<br />/ HTTPS<br />FTP |
+| Entrées numériques | 4 x entrées numériques, entrée optocoupleur : tension directe<br />1.2 VDC avec 3 kΩ en série, cathode raccordée à COMMON, max. 30 mA, max.<br />50 mW |
+| Sorties analogiques et numériques | Sorties analogiques : 2 x 0/4 – 20 mA, charge recommandée 250<br />Ω Sorties numériques :<br />4 x sorties numériques, librement configurables, sortie SSR :<br />max. 48 VDC, max. 300 mW, résistance à l’état passant 2 Ω |
 | Écran | WVGA, écran tactile capacitif 7.0“ |
 | Connectivité mobile | Module de connectivité BactoLink (en option) |
 | Analyse avancée des données | Exportation de fichiers FCS 3.1 |
@@ -106,12 +106,12 @@ La plaque signalétique du bloc d’alimentation électrique du BactoSense se tr
 | Fluorescence | 530/50 nm FL1 715<br />LP nm FL2 |
 | Diffusion vers l’avant (FSC) | 488 nm (en option selon l’instrument) |
 | Diffusion latérale (SSC) | 488 nm (en option selon l’instrument) |
-| Paramètres des résultats | TCC/mL, ICC/mL, LNAC/mL, HNAC/mL, HNAP<br />(%), ACC/mL, HACC/mL, Gate+, selon<br />le système et la cartouche utilisés. |
+| Paramètres des résultats | TCC/mL, ICC/mL, LNAC/mL, HNAC/mL, HNAP (%), ACC/mL, HACC/mL, Gate+, selon le système et la cartouche utilisés. |
 | Intervalle de mesure automatique | De toutes les 30 min à toutes les 6 heures |
 | **ÉCHANTILLONNAGE** | \< |
 | Type d’échantillonnage | En ligne ou manuel |
-| Dispositif d’échantillonnage en ligne | Débit traversant le dispositif :<br />200 – 400 mL/min (0.05 – 0.10 gal/min)<br />Pression dans le dispositif : Max. 0.5 bar (7.3 psi)<br />Volume aspiré : 260 μL Volume<br />mesuré : 90 μL Tuyau<br />d’entrée •<br />Matériau : PFA (transparent) • Diamètre extérieur<br />: 6.35 mm (1/4”) • Diamètre intérieur :<br />4.35 mm • Longueur max.<br />: 2 m (6.5 ft) Tuyau de<br />sortie • Matériau<br />: FEP (bleu) • Diamètre<br />extérieur : 6.35 mm (1/4”) • Diamètre<br />intérieur : 4.83 mm • Longueur<br />max. : 2 m (6.5 ft) |
-| Dispositif d’échantillonnage manuel | Récipient de l’échantillon : tube à bouchon fileté de 5<br />mL Volume de l’échantillon : 2<br />– 5 mL Volume aspiré : 260<br />μL Volume mesuré : 90 μL |
+| Dispositif d’échantillonnage en ligne | Débit traversant le dispositif :<br />200 – 400 mL/min (0.05 – 0.10 gal/min)<br />Pression dans le dispositif : Max. 0.5 bar (7.3 psi)<br />Volume aspiré : 260 μL Volume<br />mesuré : 90 μL Tuyau d’entrée •<br />Matériau : PFA (transparent) • Diamètre extérieur<br />: 6.35 mm (1/4”) • Diamètre intérieur :<br />4.35 mm • Longueur max.<br />: 2 m (6.5 ft) Tuyau de sortie • Matériau<br />: FEP (bleu) • Diamètre<br />extérieur : 6.35 mm (1/4”) • Diamètre<br />intérieur : 4.83 mm • Longueur<br />max. : 2 m (6.5 ft) |
+| Dispositif d’échantillonnage manuel | Récipient de l’échantillon : tube à bouchon fileté de 5 mL Volume de l’échantillon : 2<br />– 5 mL Volume aspiré : 260<br />μL Volume mesuré : 90 μL |
 | Conditions de l’échantillon | Température : 5 °C – 40 °C (41 °F – 104<br />°F) Turbidité : 0 – 10 NTU,<br />FNU Conductivité : 0 – 100'000 µS/cm à 20 °C Valeur<br />du pH : 5<br />– 12 Chlore : max. 3<br />mg/L Fer : max. 200<br />μg/L Manganèse : max. 50 μg/L |
 | **CARTOUCHE** | \< |
 | Capacité | TCC &amp; ICC : jusqu’à 1000 mesures<br />ACC : jusqu’à 700 mesures |

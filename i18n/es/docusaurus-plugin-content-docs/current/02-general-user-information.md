@@ -23,12 +23,12 @@ En la tabla siguiente se indica la documentación adicional asociada al producto
 |  |  |  |
 | --- | --- | --- |
 | 40101 | Guía rápida | Información básica necesaria para utilizar<br/>BactoSense. |
-| 40108 | Manual de usuario del<br/>kit de limpieza | Uso del kit de reactivos para descontaminar<br/>BactoSense. |
-| UM_0003 | Manual de usuario del<br/>kit de validación | Uso del kit de reactivos para validar el correcto<br/>funcionamiento de BactoSense. |
-| UM_0004 | Manual de usuario del kit SST<br/>BactoSense PURE | Uso del kit de reactivos para realizar la prueba de<br/>aptitud del sistema. |
-| 50115 | Declaración CE de<br/>conformidad | Conformidad con las directivas y<br/>normas aplicables. |
-| 50116 | Declaración UKCA de<br/>conformidad | Conformidad con las directivas y<br/>normas aplicables. |
-| 50117 | Informe de ensayo CB | Informe de conformidad UL/CSA/FCC, también disponible con la referencia<br/>CH-12116 en<br/>https://certificates.iecee.org |
+| 40108 | Manual de usuario del kit de limpieza | Uso del kit de reactivos para descontaminar<br/>BactoSense. |
+| UM_0003 | Manual de usuario del kit de validación | Uso del kit de reactivos para validar el correcto funcionamiento de BactoSense. |
+| UM_0004 | Manual de usuario del kit SST<br/>BactoSense PURE | Uso del kit de reactivos para realizar la prueba de aptitud del sistema. |
+| 50115 | Declaración CE de conformidad | Conformidad con las directivas y normas aplicables. |
+| 50116 | Declaración UKCA de conformidad | Conformidad con las directivas y normas aplicables. |
+| 50117 | Informe de ensayo CB | Informe de conformidad UL/CSA/FCC, también disponible con la referencia<br/>CH-12116 en https://certificates.iecee.org |
 
 :::
 

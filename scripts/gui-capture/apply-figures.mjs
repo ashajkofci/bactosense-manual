@@ -1,5 +1,6 @@
 import { readFile, readdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
+import manualRegistry from '../../plugins/manuals.cjs';
 
 const root = path.resolve(import.meta.dirname, '../..');
 const manifest = JSON.parse(await readFile(path.join(root, 'maintenance/gui-screenshots.json'), 'utf8'));
@@ -16,7 +17,8 @@ for (const figure of manifest.figures) {
     localeReplacements.set(source, figure);
   }
 }
-const directories = [{ locale: 'en', directory: 'docs' }, ...['de', 'fr', 'it', 'es'].map(locale => ({ locale, directory: `i18n/${locale}/docusaurus-plugin-content-docs/current` }))];
+// Every manual and language on the platform.
+const directories = manualRegistry.manuals.flatMap(manual => manual.locales.map(locale => ({ locale, directory: manualRegistry.contentDirectory(manual, locale) })));
 let count = 0;
 for (const { locale, directory } of directories) {
   const localeReplacements = new Map([...(replacements.get('all') || []), ...(replacements.get(locale) || [])]);
@@ -61,4 +63,4 @@ for (const { locale, directory } of directories) {
     if (updated !== original) await writeFile(filename, updated);
   }
 }
-console.log(`Updated ${count} screenshot references in their existing chapter positions across ${directories.length} languages.`);
+console.log(`Updated ${count} screenshot references in their existing chapter positions across ${directories.length} manual editions.`);

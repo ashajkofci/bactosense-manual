@@ -282,13 +282,13 @@ La procédure suivante s’applique uniquement si le BactoSwitch doit être conn
 
 Les sections suivantes présentent des exemples de l’interface utilisateur du BactoSense. Elles supposent que vous connaissez le BactoSense et se concentrent uniquement sur l’utilisation du BactoSwitch. Pour plus d’informations, veuillez consulter le [manuel d’utilisation du BactoSense](/bactosense/).
 
-Connectez-vous au BactoSense en mode Admin. Sélectionnez **Paramètres mode auto**.
+Connectez-vous au BactoSense en mode Admin. Dans **Paramètres**, sélectionnez **Paramètres mode en ligne**.
 
-![Écran d’accueil du BactoSense avec le bouton Paramètres mode auto mis en évidence](/img/bactoswitch/gui-home-auto-mode-settings.png "width=634")
+![Menu Paramètres avec le bouton Paramètres mode en ligne mis en évidence](/img/gui/fr/bactoswitch-settings-menu-online-mode-settings.png "width=634")
 
 Sélectionnez ensuite **Lignes d'échantillons BactoSwitch** :
 
-![Paramètres mode auto avec le bouton Lignes d'échantillons BactoSwitch mis en évidence](/img/bactoswitch/gui-auto-mode-settings-sample-lines.png "width=635")
+![Paramètres mode en ligne avec le bouton Lignes d'échantillons BactoSwitch mis en évidence](/img/gui/fr/bactoswitch-online-mode-settings-sample-lines.png "width=635")
 
 La page **Lignes d'échantillons BactoSwitch** permet de :
 
@@ -297,7 +297,7 @@ La page **Lignes d'échantillons BactoSwitch** permet de :
 - Renommer les lignes.
 - Modifier la couleur utilisée pour tracer les lignes dans les graphiques.
 
-![Page Lignes d'échantillons BactoSwitch avec quatre lignes](/img/bactoswitch/gui-sample-lines.png "width=637")
+![Page Lignes d'échantillons BactoSwitch avec quatre lignes](/img/gui/fr/bactoswitch-sample-lines.png "width=637")
 
 Appuyez sur **Enregistrer** pour sauvegarder les modifications.
 
@@ -322,11 +322,11 @@ Pour tester ou régler le débit à l’aide des vannes à pointeau intégrées 
 
 Ensuite, dans l’interface utilisateur du BactoSense, ouvrez le menu **Lignes d'échantillons BactoSwitch** (voir [Configuration des lignes](04-installation.md#section-4-6)) et appuyez sur le bouton **Test BactoSwitch**. Le **Panneau de contrôle BactoSwitch** s’ouvre. Les quatre boutons de vanne permettent d’ouvrir uniquement la vanne sélectionnée, les autres étant fermées automatiquement. Pour rouvrir toutes les vannes, appuyez sur le bouton **Ouvrir toutes les vannes** en bas de l’écran.
 
-![Panneau de contrôle BactoSwitch avec toutes les vannes ouvertes](/img/bactoswitch/gui-control-panel-all-valves-open.png "width=637")
+![Panneau de contrôle BactoSwitch avec toutes les vannes ouvertes](/img/gui/fr/bactoswitch-control-panel-all-valves-open.png "width=637")
 
 Lorsqu’une seule vanne est ouverte, la valeur de débit indiquée s’affiche en vert ou en rouge selon que le débit se situe ou non dans la plage spécifiée de 150 – 400 mL/min :
 
-![Panneau de contrôle BactoSwitch avec seule la vanne 4 ouverte](/img/bactoswitch/gui-control-panel-single-valve.png "width=635")
+![Panneau de contrôle BactoSwitch avec seule la vanne 4 ouverte](/img/gui/fr/bactoswitch-control-panel-single-valve.png "width=635")
 
 Pour régler le débit de chaque ligne d’entrée, utilisez les boutons de réglage du BactoSwitch (voir la figure ci-dessous) jusqu’à ce que les débits se situent dans la plage de 150 – 400 mL/min, idéalement autour de 300 mL/min.
 

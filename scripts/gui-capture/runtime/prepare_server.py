@@ -73,6 +73,8 @@ def prepare():
         "hwclock command": "/usr/bin/true", "dummy command": str(dummy),
     }
     (RUNTIME / "config-capture.yaml").write_text(json.dumps(config, indent=2) + "\n")
+    # Newer Bactoservers have no -configFile flag and read config-user.yaml beside the binary.
+    (RUNTIME / "config-user.yaml").write_text(json.dumps(config, indent=2) + "\n")
     (RUNTIME / "settings-capture.yaml").write_text(json.dumps({
         "Instrument ID": "BactoSense Demo", "WEB Service toggle": True,
         "WEB SSL Service toggle": False, "SSL Service toggle": False,
@@ -89,11 +91,13 @@ def start_server():
     environment = dict(os.environ, BACTOSERVER_INTEGRATION_FIXTURE="1",
                        BACTOSERVER_MOCK_API="http://127.0.0.1:18889")
     server_log = (RUNTIME / "server.log").open("a")
-    server = subprocess.Popen([
-        str(RUNTIME / "bactoserver"), "-test", "-port", "127.0.0.1:18889",
-        "-modbus", ":11502", "-variant", "bactosense", "-configFile", "config-capture.yaml",
-    ], cwd=RUNTIME, env=environment, stdout=server_log, stderr=subprocess.STDOUT,
-       start_new_session=True)
+    command = [str(RUNTIME / "bactoserver"), "-test", "-port", "127.0.0.1:18889",
+               "-modbus", ":11502", "-variant", "bactosense"]
+    usage = subprocess.run([command[0], "-h"], cwd=RUNTIME, capture_output=True, text=True)
+    if "-configFile" in usage.stdout + usage.stderr:
+        command += ["-configFile", "config-capture.yaml"]
+    server = subprocess.Popen(command, cwd=RUNTIME, env=environment, stdout=server_log,
+                              stderr=subprocess.STDOUT, start_new_session=True)
     (RUNTIME / "server.pid").write_text(str(server.pid))
     for _ in range(100):
         if server.poll() is not None:

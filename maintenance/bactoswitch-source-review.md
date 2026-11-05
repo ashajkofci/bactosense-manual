@@ -4,9 +4,22 @@ The BactoSwitch manual in `manuals/bactoswitch/` was imported from the 69-page E
 
 ## Figures
 
-The 77 images in `static/img/bactoswitch/` were rendered from the PDF at the visible size of each placed image (its clip region), so callout numbers and arrows drawn over the artwork are kept. GUI screenshots taken through a remote viewer had the viewer’s window bar removed. Two images used twice in the PDF are stored once (`tubing-cut-square.png`, `psu-cover-screws.png`).
+The images in `static/img/bactoswitch/` were rendered from the PDF at the visible size of each placed image (its clip region), so callout numbers and arrows drawn over the artwork are kept. GUI screenshots taken through a remote viewer had the viewer’s window bar removed. Two images used twice in the PDF are stored once (`tubing-cut-square.png`, `psu-cover-screws.png`).
 
-All screenshots are the English captures from the PDF and are shared by every language edition. Localized BactoSwitch screenshots require a capture of the native GUI in each language (see [the screenshot review](gui-screenshot-review.md)); until then, translated text uses the localized control labels verified in `../gui/gui_<locale>.ts`.
+The GUI screenshots are current localized captures, recorded with the BactoSense method ([native runtime](../scripts/gui-capture/runtime/README.md#bactoswitch-manual-screens)): 22 native GUI states and one web interface state per language, published as `static/img/gui/<locale>/bactoswitch-*.png` with highlights computed from the captured control bounds. Their sources, fixture, renders and visual reviews are recorded in `gui-screenshots.json` (catalog `bactoswitch`). Three images keep the English PDF artwork in every language:
+
+- `gui-digital-inputs-line.png` and `gui-digital-inputs-scheduler.png` (5.2.3): the current GUI does not show the **Line** box for the BactoSwitch protocol (see below), so the documented state cannot be captured.
+- `bactocloud-multi-line.png` (5.2.1): a BactoCloud screen, outside the instrument GUI and web interface.
+
+The capture fixture runs in the disposable runtime only. It presents a connected four-valve BactoSwitch through the product's status keys, enables BactoSwitch in the GUI's in-memory settings, assigns the shipped demo series *DWTP TCC after SSF* (105 hourly measurements, 27 February – 25 March 2026) round-robin to the default lines 1–4 without changing any count or plot, and uses unsaved form drafts. All four lines therefore show the same source water.
+
+## Product issues found during capture
+
+| Product | Issue |
+| --- | --- |
+| Bactoserver | `settings-schema.json` has no top-level `sosdEnabled` or `sosdConfig`, so `POST /api/settings` rejects them (“Unknown settings field”). The GUI sends exactly these keys when **Save** is pressed on the BactoSwitch Sample Lines page. |
+| GUI | `SettingsDigitalInputsScreen.qml` shows the **Line** box only when `protocol.indexOf('sosd_auto') > 0`; the protocol key is `sosd_auto` itself (index 0), so the box never appears (since commit `9f223cd2`). |
+| GUI translations | DE, FR, IT and ES show **Water Analysis with BactoSwitch** in English; IT and ES also show the **Alarm** tile in English. FR labels open valves **OUVERTURE** (“opening”) instead of *OUVERT*. The manuals quote the labels as displayed. |
 
 ## Corrections to the source
 

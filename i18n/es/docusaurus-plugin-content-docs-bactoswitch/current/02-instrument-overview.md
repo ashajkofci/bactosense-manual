@@ -64,8 +64,8 @@ La placa de características de BactoSwitch se encuentra en el lateral derecho d
 | 3 | Número de serie | 4 | Código de barras |
 | 5 | Fecha de fabricación | 6 | País de origen |
 | 7 | Requisitos de tensión y potencia | 8 | Marcado CE |
-| 9 | Marcado UKCA | 10 | Conformidad con las normas canadienses sobre<br />compatibilidad electromagnética e interferencias |
-| 11 | Lea las instrucciones y utilice el instrumento<br />con precaución | 12 | Información sobre la eliminación |
+| 9 | Marcado UKCA | 10 | Conformidad con las normas canadienses sobre compatibilidad electromagnética e interferencias |
+| 11 | Lea las instrucciones y utilice el instrumento con precaución | 12 | Información sobre la eliminación |
 
 ## 2.5 Placa de características de la fuente de alimentación de BactoSwitch {#section-2-5}
 
@@ -81,7 +81,7 @@ La placa de características de la fuente de alimentación de BactoSwitch se enc
 | 3 | Referencia (varía según el tipo de enchufe) | 4 | Fecha de fabricación |
 | 5 | Tensión y frecuencia de entrada de servicio | 6 | Consumo de potencia |
 | 7 | Marcado CE | 8 | Marcado UKCA |
-| 9 | Conformidad con las normas canadienses sobre<br />compatibilidad electromagnética e interferencias | 10 | Lea las instrucciones y utilice el instrumento<br />con precaución |
+| 9 | Conformidad con las normas canadienses sobre compatibilidad electromagnética e interferencias | 10 | Lea las instrucciones y utilice el instrumento con precaución |
 | 11 | Información sobre la eliminación |  |  |
 
 ## 2.6 Datos técnicos {#section-2-6}

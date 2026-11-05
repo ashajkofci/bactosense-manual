@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "locale": "en",
   "chapterCount": 21,
-  "blockCount": 940,
+  "blockCount": 941,
   "internalLinkCount": 684,
   "assetCount": 178,
   "maxAssetWidth": 800,
@@ -15,15 +15,15 @@
     },
     {
       "file": "chapters/glossary.json",
-      "sha256": "e39750b2329bc23db27c92dd01313c9645350aaef3ec29b12ae41a0faedfe0a7"
+      "sha256": "88607f6c3fff87b673ea89196fcc95e56b7ca01f99ed3f305fdecb9d77815b3c"
     },
     {
       "file": "chapters/general-user-information.json",
-      "sha256": "032a30765257f88df63efd3917de43b0916e2fc1c58cb83aa23828ff7901c809"
+      "sha256": "4dfc2275a57870ac72519d7090018cdaaadc0005facf9039cb4752d1d2da820c"
     },
     {
       "file": "chapters/instrument-overview.json",
-      "sha256": "82aa99f53cf7e28dde8732bd230bc008a9156cd28c41b5900570a95df3d878a4"
+      "sha256": "e1246f77e27f59c4348484d6ddae6f783c1ef8dd2d4f7412eb6b803aaccefd81"
     },
     {
       "file": "chapters/safety.json",
@@ -31,19 +31,19 @@
     },
     {
       "file": "chapters/installation.json",
-      "sha256": "721584ff84e775ba95b77fe2f8f9fce50d3cbd6b531df2f5faa112cf9ebb191f"
+      "sha256": "b5dc4f59fbde66b887c43c201a82039c405b51b514dc1ee04b25c3622f53018d"
     },
     {
       "file": "chapters/io-box.json",
-      "sha256": "efad4e83af115e4bdc6b5b1d6f2e3aa7b96819786d1f8958fc84bc12006d8b7e"
+      "sha256": "e13c3197ab1a511320788369ca5de61a146603c9a7f704e379823d9b98d425eb"
     },
     {
       "file": "chapters/field-bus-interface.json",
-      "sha256": "d49ee8de5083757be33dded1c0e840e423f73f7417d739351a6b677f8b7d1854"
+      "sha256": "2a8f2330721766b67b936b3882cd9bc10fa50141ece7052dfa976238acea8ac8"
     },
     {
       "file": "chapters/general-operations-and-configurations.json",
-      "sha256": "2d2c16fa46d5d73d779eb18878ac62e4a23ba796e09f8e822f570fa2176a1ff1"
+      "sha256": "ade385f171bae879fce0f687cb1be532f120edffd0280d9089f45596a633f64c"
     },
     {
       "file": "chapters/upgrade-packages.json",
@@ -55,11 +55,11 @@
     },
     {
       "file": "chapters/results-and-data-analysis.json",
-      "sha256": "7f0bd6e37c8cb835647cda8bf29e582af663fd53e42e90694627a00238703740"
+      "sha256": "2436b02141af09a2ceabf910ee64240a094e21025d156a997895e76c7af68891"
     },
     {
       "file": "chapters/data-access-and-export.json",
-      "sha256": "a8d6a41f2afd420a4ce2a08040d30d4bab59aaf4353e0df354be241d49a5b0f1"
+      "sha256": "02756b5de01d187d3997c01e6deb2e3ef871cd6b65f0f96e1bb67d02250255db"
     },
     {
       "file": "chapters/web-user-interface.json",

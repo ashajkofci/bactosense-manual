@@ -98,12 +98,29 @@ TestCase {
         Models.System.cloudModalSuppressUntil=new Date(Date.now()+86400000)
         Models.System.updateModalSuppressUntil=new Date(Date.now()+86400000)
         Translator.selectLanguage(row.name);Models.Dico.updateString()
+        enableBactoSwitch()
         if(ui)ui.destroy()
         var component=Qt.createComponent("qrc:/UILoader.qml")
         compare(component.status,Component.Ready,component.errorString())
         ui=component.createObject(renderWindow.contentItem)
         verify(ui!==null,component.errorString())
         wait(400)
+    }
+    // The settings API cannot store sosdEnabled; enable the BactoSwitch in the GUI model only.
+    function enableBactoSwitch() {
+        Models.Settings.vars.sosdEnabled=true
+        Models.Settings.varsChanged()
+        presentBactoSwitch(0,802)
+    }
+    // A connected four-valve BactoSwitch as the serial driver would report it; macOS has
+    // no driver, so these teaching values live in the GUI's in-memory status model only.
+    function presentBactoSwitch(valves,flow) {
+        Models.Status.vars.sosd_connected="1"
+        Models.Status.vars.sosd_setup_mounted_valve_count="4"
+        Models.Status.vars.sosd_status_global="0"
+        Models.Status.vars.sosd_status_valve_output_state=String(valves)
+        Models.Status.vars.sosd_measure_flow_mlpermin=String(flow)
+        Models.Status.varsChanged()
     }
     function initTestCase() {
         Models.System.saved_port_web=":"+Integration.port
@@ -114,8 +131,8 @@ TestCase {
         receive(resultsLoaded,function(){http.getData()})
         receive(connected,function(){socket.openSocket()})
         compare(http.level,0)
-        verify(Models.Settings.vars.sosdEnabled===true,"Fixture must enable the BactoSwitch")
-        verify(Models.Status.vars.sosd_connected==="1","Fixture must present a connected BactoSwitch")
+        enableBactoSwitch()
+        verify(Models.Status.isBactoSwitchConnected,"Fixture must present a connected BactoSwitch")
     }
     function cleanupTestCase() {
         console.log("BACTOSWITCH_REQUESTS "+JSON.stringify(requests))
@@ -133,13 +150,155 @@ TestCase {
         navigate("settingsScreens/SettingsSosdConfig.qml")
         snapshot("sample-lines")
         navigate("settingsScreens/SettingsTestSosd.qml")
+        presentBactoSwitch(0,802)
         tryVerify(function(){return findText(ui,"802")!==null},5000,"Fixture flow must be shown")
         snapshot("control-panel-all-open")
         // Teaching state in the in-memory status model only: valve 4 open, single-line flow.
-        Models.Status.vars.sosd_status_valve_output_state=8
-        Models.Status.vars.sosd_measure_flow_mlpermin=326
-        Models.Status.varsChanged()
-        wait(300)
+        presentBactoSwitch(7,326)
+        tryVerify(function(){return findText(ui,"326")!==null},5000,"Single-line flow must be shown")
         snapshot("control-panel-single-valve")
+    }
+    function findContains(item,text,type) {
+        if(!item)return null
+        if(item.visible && item.text!==undefined && item.text!==null && item.text.toString().indexOf(text)>=0
+           && (!type || item.toString().indexOf(type)===0))return item
+        var children=item.children || []
+        for(var i=0;i<children.length;++i){var found=findContains(children[i],text,type);if(found)return found}
+        return null
+    }
+    function clickName(name) { click(findChild(ui,name)) }
+    function linesPeriod() {
+        // The real Filter results OK action, restricted to the fixture's BactoSwitch period.
+        Models.Protocols.setBucket("auto")
+        Models.Data.setRangeFilter(new Date(2026,1,27,0,0),new Date(2026,2,25,6,0))
+        wait(300)
+    }
+    // "1 Month" in the display settings, scrolled so the month ends at the last line measurement.
+    function showLinesMonth() {
+        Models.System.selectedChartTimeSpan=2
+        navigate("autoScreens/AutoMainScreen.qml")
+        presentBactoSwitch(0,802)
+        var model=findChild(ui,"autoFullChartModel"), flickable=findChild(ui,"autoFullChartFlickable")
+        tryVerify(function(){return model.dataLength>3},10000,"Chart data")
+        // The chart opens on the newest gate type (CBC); show the lines' TCC series as a user would.
+        if(model.selectedChartData_c.indexOf("TCC")<0){
+            click(findChild(ui,"autoChartTimeSelector"))
+            click(findText(ui,"TCC"))
+            click(findText(ui,Models.Dico.text.Close) || findContains(ui,"Close"))
+            tryVerify(function(){return model.selectedChartData_c.indexOf("TCC")>=0},5000,"TCC series shown")
+        }
+        var first=model.chartValues.timestamps[0], now=model.currentDate.getTime()
+        var end=new Date(2026,2,25,12,0).getTime()
+        flickable.contentX=Math.max(Math.min((end-first)/(now-first)*flickable.contentWidth-flickable.width,
+                                             flickable.contentWidth-flickable.width),0)
+        wait(500)
+    }
+    function rightmostActionButton() {
+        var best=null
+        for(var i=0;i<5;++i){var b=findChild(ui,"actionBarButton"+i);if(b && b.visible && (!best || b.x>best.x))best=b}
+        return best
+    }
+    function test_measure_data() { return test_screens_data() }
+    function test_measure(row) {
+        createUi(row)
+        navigate("globalScreens/HomeScreen.qml")
+        snapshot("home-online")
+        linesPeriod()
+        showLinesMonth()
+        snapshot("plot-lines")
+        click(findChild(ui,"autoChartTimeSelector"))
+        snapshot("display-settings")
+        click(findText(ui,Models.Dico.text.Close) || findContains(ui,"Close"))
+        snapshot("plot-start")
+        clickName("actionBarButton3")
+        presentBactoSwitch(0,802)
+        tryVerify(function(){return screenSource.indexOf("AutoInstructionWizardScreen.qml")>=0},10000,"Start opens the wizard")
+        wait(400)
+        snapshot("wizard-protocols")
+        var protocol=findContains(ui,"BactoSwitch")
+        verify(protocol!==null,"The BactoSwitch protocol must be listed while it is connected")
+        click(protocol)
+        snapshot("wizard-protocol-selected")
+        console.log("BACTOSWITCH_EVIDENCE "+JSON.stringify({locale:localeCode,protocolText:protocol.text.toString()}))
+        click(rightmostActionButton())
+        snapshot("wizard-interval")
+    }
+    function test_results_data() { return test_screens_data() }
+    function test_results(row) {
+        createUi(row)
+        linesPeriod()
+        navigate("globalScreens/ResultListScreen.qml")
+        snapshot("results-list")
+        click(findChild(ui,"resultRow0"))
+        tryVerify(function(){return screenSource.indexOf("SingleResultScreen.qml")>=0},10000,"A row opens its details")
+        wait(400)
+        snapshot("result-details")
+        navigate("globalScreens/ResultListScreen.qml")
+        clickName("actionBarButton0")
+        tryVerify(function(){return screenSource.indexOf("ResultListConfigScreen.qml")>=0},10000,"Filter opens Filter results")
+        wait(400)
+        snapshot("filter-results")
+        clickName("actionBarButton1")
+        tryVerify(function(){return findChild(ui,"modalLoader").source.toString().indexOf("ModalChooseSosdStream")>=0},5000,"Line selector")
+        wait(300)
+        click(findText(ui,"Unnamed line 1"))
+        snapshot("select-line")
+        var modalItem=findChild(ui,"modalLoader").item
+        // Confirm is the right-hand button of the line selector.
+        click(findText(modalItem,Models.Dico.text.Confirm) || findContains(modalItem,"onfirm"))
+        tryVerify(function(){return Models.Data.hasKeyFilter("streamId")},5000,"Line filter applied")
+        clickName("actionBarButton3")
+        tryVerify(function(){return screenSource.indexOf("ResultListScreen.qml")>=0},10000,"OK returns to the list")
+        wait(400)
+        snapshot("results-filtered")
+        showLinesMonth()
+        snapshot("plot-filtered")
+    }
+    function test_plc_data() { return test_screens_data() }
+    function test_plc(row) {
+        createUi(row)
+        navigate("settingsScreens/SettingsAlarmsScreen.qml")
+        var key=Object.keys(Models.Settings.tempAlarms)[0]
+        Models.Settings.tempAlarms[key].useSOSDStream=true
+        Models.Settings.tempAlarms[key].streamId=1
+        Models.Settings.tempAlarmsChanged()
+        navigate("settingsScreens/SettingsAlarmsScreen.qml")
+        snapshot("alarm-line")
+        var inputs=Models.Settings.tempDigitalInputs
+        var first=Object.keys(inputs.digitalInputs)[0]
+        inputs.digitalInputsEnabled=true
+        inputs.digitalInputs[first].enabled=true
+        inputs.digitalInputs[first].autoArgs.protocol="sosd_auto"
+        // The gate set the wizard proposes for this protocol; the input's TCC set is invalid for it.
+        inputs.digitalInputs[first].autoArgs.gates="icc_default"
+        inputs.digitalInputs[first].autoArgs.streamId=0
+        Models.Settings.tempDigitalInputsChanged()
+        navigate("settingsScreens/SettingsDigitalInputsScreen.qml")
+        snapshot("digital-inputs-line")
+        navigate("settingsScreens/SettingsDigitalOutputsScreen.qml")
+        snapshot("digital-outputs")
+        // The source toggle is enabled only with the Modbus service on; GUI model only.
+        Models.Settings.vars.serviceModbus=true
+        Models.Settings.varsChanged()
+        navigate("settingsScreens/SettingsDigitalInputSourceScreen.qml")
+        var modbus=findContains(ui,"Modbus")
+        verify(modbus!==null,"Modbus TCP source")
+        click(modbus)
+        tryVerify(function(){return Models.Settings.tempDigitalInputs.digitalInputSource===1},5000,"Unsaved Modbus TCP source")
+        snapshot("digital-input-source")
+    }
+    // Planning pass: one frame and control tree per remaining screen.
+    function test_explore_data() { return test_screens_data() }
+    function test_explore(row) {
+        createUi(row)
+        var screens=["globalScreens/HomeScreen.qml","autoScreens/AutoMainScreen.qml","globalScreens/ResultListScreen.qml",
+                     "globalScreens/ResultListConfigScreen.qml","settingsScreens/SettingsAlarmsScreen.qml",
+                     "settingsScreens/SettingsDigitalInputsScreen.qml","settingsScreens/SettingsDigitalOutputsScreen.qml",
+                     "settingsScreens/SettingsDigitalInputSourceScreen.qml"]
+        for(var i=0;i<screens.length;++i){
+            navigate(screens[i])
+            presentBactoSwitch(0,802)
+            snapshot("explore-"+screens[i].split("/")[1].replace(".qml","").toLowerCase())
+        }
     }
 }
