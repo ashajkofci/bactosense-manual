@@ -290,16 +290,17 @@ Wählen Sie anschließend **BactoSwitch-Probenlinien**:
 
 ![Online-Modus Einstellungen mit hervorgehobenem Eintrag BactoSwitch-Probenlinien](/img/gui/de/bactoswitch-online-mode-settings-sample-lines.png "width=635")
 
+Der BactoSense erkennt den BactoSwitch automatisch, sobald dieser angeschlossen und mit Strom versorgt ist (siehe [Elektrische Anschlüsse](04-installation.md#section-4-5)); in der oberen Symbolleiste wird dann das BactoSwitch-Symbol angezeigt.
+
 Auf der Seite **BactoSwitch-Probenlinien** können Sie:
 
-- Den BactoSwitch aktivieren oder deaktivieren (aktivieren Sie ihn, um mit dem BactoSwitch zu arbeiten, und deaktivieren Sie ihn, um Messungen ohne den BactoSwitch durchzuführen). Wenn der BactoSwitch aktiviert ist, wird in der oberen Symbolleiste ein BactoSwitch-Symbol angezeigt.
 - Eine Leitung aktivieren oder deaktivieren. Nicht physisch angeschlossene Leitungen müssen mit der Handbetätigung geschlossen werden (wie unter [Installation der Eingangsleitungen](04-installation.md#section-4-4-3) erläutert), und ihr Kontrollkästchen muss hier deaktiviert werden.
 - Die Leitungen umbenennen.
 - Die Farbe ändern, mit der die Leitungen in den Diagrammen dargestellt werden.
 
 ![Seite BactoSwitch-Probenlinien mit vier Leitungen](/img/gui/de/bactoswitch-sample-lines.png "width=637")
 
-Drücken Sie **Speichern**, um die Änderungen zu speichern.
+Drücken Sie **Speichern**, um die Änderungen zu speichern. Solange die [erweiterte Zeitplanung](/bactosense/measurements#section-10-2-4) aktiviert ist, können die Leitungen auf dieser Seite nicht bearbeitet werden.
 
 ## 4.7 Befüllen des Systems mit Wasser {#section-4-7}
 

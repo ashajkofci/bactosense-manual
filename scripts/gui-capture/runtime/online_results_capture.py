@@ -26,6 +26,9 @@ def build_snapshot():
     snapshot = OUTPUT / "runtime/gui-source"
     relative_paths = {"qml.qrc", "image.qrc", "test/integration/main.cpp",
                       "UserActivityFilter.cpp", "UserActivityFilter.h", "QmlTranslator.cpp", "QmlTranslator.h"}
+    # Headers beside the integration main.cpp (e.g. LoginReplyServer.h in newer GUIs).
+    integration_headers = sorted(str(path.relative_to(source)) for path in (source / "test/integration").glob("*.h"))
+    relative_paths.update(integration_headers)
     for resource in ["qml.qrc", "image.qrc"]:
         relative_paths.update(item.text for item in ET.parse(source / resource).iter("file"))
     hashes = {}
@@ -47,7 +50,7 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 11)
 find_package(Qt5 5.12 REQUIRED COMPONENTS QuickTest Quick Widgets)
 set(GUI_ROOT "''' + snapshot.as_posix() + '''")
-add_executable(online-results-capture "${GUI_ROOT}/test/integration/main.cpp"
+add_executable(online-results-capture "${GUI_ROOT}/test/integration/main.cpp"''' + ''.join(' "${GUI_ROOT}/' + header + '"' for header in integration_headers) + '''
  "${GUI_ROOT}/UserActivityFilter.cpp" "${GUI_ROOT}/QmlTranslator.cpp"
  "${GUI_ROOT}/qml.qrc" "${GUI_ROOT}/image.qrc")
 target_link_libraries(online-results-capture PRIVATE Qt5::QuickTest Qt5::Quick Qt5::Widgets)

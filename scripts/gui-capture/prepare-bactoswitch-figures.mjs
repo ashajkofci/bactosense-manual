@@ -14,7 +14,7 @@ const capture = locale => path.join(root, 'output/gui-capture/bactoswitch/native
 const states = ['settings-menu', 'online-mode-settings-menu', 'sample-lines', 'control-panel-all-open', 'control-panel-single-valve',
   'home-online', 'plot-start', 'wizard-protocol-selected', 'wizard-interval', 'plot-lines', 'display-settings', 'results-list',
   'result-details', 'filter-results', 'select-line', 'plot-filtered', 'results-filtered', 'alarm-line', 'digital-outputs',
-  'digital-inputs-line', 'digital-input-source'];
+  'digital-inputs-line', 'digital-inputs-scheduler', 'digital-input-source'];
 const load = async locale => Object.fromEntries(await Promise.all(states.map(async state =>
   [state, JSON.parse(await readFile(path.join(capture(locale), `${state}.json`), 'utf8'))])));
 const english = await load('en');
@@ -26,7 +26,8 @@ async function altTexts(locale) {
   const alts = new Map();
   for (const file of ['04-installation.md', '05-operation.md']) {
     const text = await readFile(path.join(directory, file), 'utf8');
-    for (const [, alt, source] of text.matchAll(/!\[((?:\\.|[^\]\\])*)\]\((\/img\/bactoswitch\/[^\s)]+)/g)) alts.set(source, alt.replace(/\\([[\]])/g, '$1'));
+    // Before the first apply the chapters use the PDF artwork, afterwards the localized figure.
+    for (const [, alt, source] of text.matchAll(/!\[((?:\\.|[^\]\\])*)\]\((\/img\/(?:bactoswitch\/|gui\/[a-z]{2}\/bactoswitch-)[^\s)]+)/g)) alts.set(source, alt.replace(/\\([[\]])/g, '$1'));
   }
   return alts;
 }
@@ -35,11 +36,11 @@ const prepared = [];
 for (const locale of locales) {
   const alts = await altTexts(locale);
   const base = (name, replaced) => {
-    const source = `/img/bactoswitch/${replaced}.png`;
-    if (!alts.has(source)) throw new Error(`${locale}: ${source} is not used in the BactoSwitch chapters.`);
+    const source = `/img/bactoswitch/${replaced}.png`, output = `/img/gui/${locale}/bactoswitch-${name}.png`;
+    const alt = alts.get(output) ?? alts.get(source);
+    if (alt === undefined) throw new Error(`${locale}: neither ${output} nor ${source} is used in the BactoSwitch chapters.`);
     return {id: `${locale}-bactoswitch-${name}`, locale, kind: 'screenshot', catalog: 'bactoswitch',
-      output: `/img/gui/${locale}/bactoswitch-${name}.png`, replaces: [source], sourceIds: [], printedPages: [],
-      originalAnnotations: [], alt: alts.get(source)};
+      output, replaces: [source], sourceIds: [], printedPages: [], originalAnnotations: [], alt};
   };
   const figures = bactoswitchLayouts(locale, await load(locale), english).map(({name, capture: state, replaces, ...layout}) => ({
     ...base(name, replaces), surface: 'native', capture: `output/gui-capture/bactoswitch/native/${locale}/${state}.png`,

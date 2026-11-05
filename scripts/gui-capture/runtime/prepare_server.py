@@ -32,10 +32,14 @@ def redis_command(*parts, port=16389):
 def prepare():
     RUNTIME.mkdir(parents=True, exist_ok=True)
     (RUNTIME / "state").mkdir(exist_ok=True)
-    tracked = subprocess.check_output(
-        ["git", "ls-files", "-z", "--", "mock", "demodata-sigrist", "fonts"],
-        cwd=SERVER_SOURCE,
-    ).decode().split("\0")
+    if (SERVER_SOURCE / ".git").exists():
+        tracked = subprocess.check_output(
+            ["git", "ls-files", "-z", "--", "mock", "demodata-sigrist", "fonts"],
+            cwd=SERVER_SOURCE,
+        ).decode().split("\0")
+    else:  # An exported branch (git archive) holds only tracked files.
+        tracked = [str(path.relative_to(SERVER_SOURCE)) for name in ["mock", "demodata-sigrist", "fonts"]
+                   for path in sorted((SERVER_SOURCE / name).rglob("*")) if path.is_file()]
     for relative in filter(None, tracked):
         destination = RUNTIME / relative
         destination.parent.mkdir(parents=True, exist_ok=True)

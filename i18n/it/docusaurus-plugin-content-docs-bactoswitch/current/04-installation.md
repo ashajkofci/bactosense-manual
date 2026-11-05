@@ -290,16 +290,17 @@ Selezionare quindi **Linee di campionamento BactoSwitch**:
 
 ![Impostazioni della Modalità Online con Linee di campionamento BactoSwitch evidenziato](/img/gui/it/bactoswitch-online-mode-settings-sample-lines.png "width=635")
 
+BactoSense rileva automaticamente BactoSwitch non appena questo è collegato e alimentato (vedere [Collegamenti elettrici](04-installation.md#section-4-5)); nella barra degli strumenti superiore compare quindi l’icona BactoSwitch.
+
 Nella pagina **Linee di campionamento BactoSwitch** è possibile:
 
-- Abilitare o disabilitare BactoSwitch (abilitarlo per lavorare con BactoSwitch, disabilitarlo per eseguire misure senza BactoSwitch). Quando BactoSwitch è abilitato, nella barra degli strumenti superiore compare un’icona BactoSwitch.
 - Abilitare o disabilitare una linea. Le linee non collegate fisicamente devono essere chiuse con il comando manuale (come spiegato nella sezione [Installazione delle linee di ingresso](04-installation.md#section-4-4-3)) e devono essere deselezionate qui.
 - Rinominare le linee.
 - Modificare il colore utilizzato per rappresentare le linee nei grafici.
 
 ![Pagina Linee di campionamento BactoSwitch con quattro linee](/img/gui/it/bactoswitch-sample-lines.png "width=637")
 
-Premere **Salva** per memorizzare le modifiche.
+Premere **Salva** per memorizzare le modifiche. Mentre la [pianificazione avanzata](/bactosense/measurements#section-10-2-4) è attiva, le linee non possono essere modificate in questa pagina.
 
 ## 4.7 Riempimento del sistema con acqua {#section-4-7}
 

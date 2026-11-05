@@ -290,16 +290,17 @@ Sélectionnez ensuite **Lignes d'échantillons BactoSwitch** :
 
 ![Paramètres mode en ligne avec le bouton Lignes d'échantillons BactoSwitch mis en évidence](/img/gui/fr/bactoswitch-online-mode-settings-sample-lines.png "width=635")
 
+Le BactoSense détecte automatiquement le BactoSwitch dès qu’il est raccordé et alimenté (voir [Raccordements électriques](04-installation.md#section-4-5)) ; l’icône BactoSwitch apparaît alors dans la barre d’outils supérieure.
+
 La page **Lignes d'échantillons BactoSwitch** permet de :
 
-- Activer ou désactiver le BactoSwitch (activez-le pour travailler avec le BactoSwitch, désactivez-le pour effectuer des mesures sans le BactoSwitch). L’activation du BactoSwitch affiche une icône BactoSwitch dans la barre d’outils supérieure.
 - Activer ou désactiver une ligne. Les lignes qui ne sont pas physiquement raccordées doivent être fermées à l’aide de la commande manuelle (comme expliqué à la section [Installation des lignes d’entrée](04-installation.md#section-4-4-3)) et doivent être décochées ici.
 - Renommer les lignes.
 - Modifier la couleur utilisée pour tracer les lignes dans les graphiques.
 
 ![Page Lignes d'échantillons BactoSwitch avec quatre lignes](/img/gui/fr/bactoswitch-sample-lines.png "width=637")
 
-Appuyez sur **Enregistrer** pour sauvegarder les modifications.
+Appuyez sur **Enregistrer** pour sauvegarder les modifications. Tant que le [planificateur avancé](/bactosense/measurements#section-10-2-4) est activé, les lignes ne peuvent pas être modifiées sur cette page.
 
 ## 4.7 Mise en eau du système {#section-4-7}
 

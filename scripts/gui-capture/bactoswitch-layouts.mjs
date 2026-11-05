@@ -2,8 +2,6 @@
 // manuals/bactoswitch/ with the localized native or web capture from
 // runtime/bactoswitch_capture.py and web/capture-bactoswitch.mjs. Highlights come
 // from the real control bounds of each language's capture (logical 800 × 480).
-// The Line box figures of section 5.2.3 are not replaced: the current GUI hides
-// the Line box for the BactoSwitch protocol (see maintenance/bactoswitch-source-review.md).
 
 const rect = row => [row.x, row.y, row.width, row.height];
 const tile = row => [row.x - 3, row.y - 3, row.width + 6, row.height + 6];
@@ -49,6 +47,8 @@ export function bactoswitchLayouts(locale, records, english) {
   const lineInput = samePlace('alarm-line', row => row.type.startsWith('InputField') && row.text === 'Line # 2', 'sample line input');
   const modbus = one('digital-input-source', row => row.text.includes('Modbus') && row.type.startsWith('CustomText'), 'Modbus TCP source');
   const running = samePlace('digital-outputs', row => row.text === 'Process running', 'Process running row');
+  const field = (capture, englishText) => samePlace(capture, row => row.type.startsWith('InputField') && row.text === englishText, `${englishText} field`);
+  const schedulerCheck = samePlace('digital-inputs-scheduler', row => row.type.startsWith('CheckBoxButton') && row.x === 466, 'Use scheduler checkbox');
   const span = one('plot-lines', row => row.type.startsWith('CustomText') && row.y > 60 && row.y < 120 && row.x > 300 && row.x < 500, 'time span button text');
 
   return [
@@ -84,6 +84,10 @@ export function bactoswitchLayouts(locale, records, english) {
       highlights: [pad(union(rect(lineCheck), rect(lineInput)), 3)]},
     {name: 'assign-events-process-running', capture: 'digital-outputs', replaces: 'gui-assign-events-to-outputs', sections: ['5.2.3'],
       highlights: [pad(rect(container('digital-outputs', running, {minWidth: 600})), 1)]},
+    {name: 'digital-inputs-line', capture: 'digital-inputs-line', replaces: 'gui-digital-inputs-line', sections: ['5.2.3'],
+      highlights: [rect(field('digital-inputs-line', 'Line #1'))]},
+    {name: 'digital-inputs-scheduler', capture: 'digital-inputs-scheduler', replaces: 'gui-digital-inputs-scheduler', sections: ['5.2.3'],
+      highlights: [pad(rect(schedulerCheck), 3), rect(field('digital-inputs-scheduler', '30 Minute'))]},
     {name: 'digital-input-source-button', capture: 'digital-inputs-line', replaces: 'gui-digital-input-source-button', sections: ['5.2.4'],
       highlights: [rect(named('digital-inputs-line', 'actionBarButton1'))]},
     {name: 'digital-input-source-modbus', capture: 'digital-input-source', replaces: 'gui-digital-input-source-modbus', sections: ['5.2.4'],

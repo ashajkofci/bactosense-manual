@@ -98,7 +98,7 @@ TestCase {
         Models.System.cloudModalSuppressUntil=new Date(Date.now()+86400000)
         Models.System.updateModalSuppressUntil=new Date(Date.now()+86400000)
         Translator.selectLanguage(row.name);Models.Dico.updateString()
-        enableBactoSwitch()
+        presentBactoSwitch(0,802)
         if(ui)ui.destroy()
         var component=Qt.createComponent("qrc:/UILoader.qml")
         compare(component.status,Component.Ready,component.errorString())
@@ -106,14 +106,8 @@ TestCase {
         verify(ui!==null,component.errorString())
         wait(400)
     }
-    // The settings API cannot store sosdEnabled; enable the BactoSwitch in the GUI model only.
-    function enableBactoSwitch() {
-        Models.Settings.vars.sosdEnabled=true
-        Models.Settings.varsChanged()
-        presentBactoSwitch(0,802)
-    }
-    // A connected four-valve BactoSwitch as the serial driver would report it; macOS has
-    // no driver, so these teaching values live in the GUI's in-memory status model only.
+    // The fixture's BactoSwitch status (private Redis, served by /api/status), re-applied to the
+    // in-memory status model so a state change such as the single open valve shows at once.
     function presentBactoSwitch(valves,flow) {
         Models.Status.vars.sosd_connected="1"
         Models.Status.vars.sosd_setup_mounted_valve_count="4"
@@ -131,8 +125,9 @@ TestCase {
         receive(resultsLoaded,function(){http.getData()})
         receive(connected,function(){socket.openSocket()})
         compare(http.level,0)
-        enableBactoSwitch()
-        verify(Models.Status.isBactoSwitchConnected,"Fixture must present a connected BactoSwitch")
+        // Bactoserver v3 publishes the detection result; it must come from the server, not this harness.
+        verify(Models.Status.isBactoSwitchConnected,"The private server must report a connected BactoSwitch")
+        verify(Models.Status.vars.sosd_setup_mounted_valve_count==="4","The private server must report four valves")
     }
     function cleanupTestCase() {
         console.log("BACTOSWITCH_REQUESTS "+JSON.stringify(requests))
@@ -274,7 +269,14 @@ TestCase {
         inputs.digitalInputs[first].autoArgs.streamId=0
         Models.Settings.tempDigitalInputsChanged()
         navigate("settingsScreens/SettingsDigitalInputsScreen.qml")
+        tryVerify(function(){return findContains(ui,"#1","InputField")!==null},5000,"The Line box must be shown for the BactoSwitch protocol")
         snapshot("digital-inputs-line")
+        // Unsaved scheduler draft: measurements every 30 minutes, cycling through the active lines.
+        inputs.digitalInputs[first].autoMode=true
+        inputs.digitalInputs[first].autoInterval=30
+        Models.Settings.tempDigitalInputsChanged()
+        navigate("settingsScreens/SettingsDigitalInputsScreen.qml")
+        snapshot("digital-inputs-scheduler")
         navigate("settingsScreens/SettingsDigitalOutputsScreen.qml")
         snapshot("digital-outputs")
         // The source toggle is enabled only with the Modbus service on; GUI model only.

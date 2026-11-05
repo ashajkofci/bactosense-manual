@@ -290,16 +290,17 @@ Next, select **BactoSwitch sample lines**:
 
 ![Online mode settings with BactoSwitch sample lines highlighted](/img/gui/en/bactoswitch-online-mode-settings-sample-lines.png "width=635")
 
+The BactoSense detects the BactoSwitch automatically as soon as it is connected and powered (see [Electrical connections](04-installation.md#section-4-5)); the BactoSwitch icon then appears in the top toolbar.
+
 On the **BactoSwitch Sample Lines** page you can:
 
-- Enable or disable the BactoSwitch (enable it to work with the BactoSwitch, disable it to perform measurements without the BactoSwitch). Enabling the BactoSwitch shows a BactoSwitch icon in the top toolbar.
 - Enable or disable a line. Lines that are not physically connected must be closed with the manual override (as explained in [Installation of the input lines](04-installation.md#section-4-4-3)) and must be unchecked here.
 - Rename the lines.
 - Change the color that is used to plot the lines in the graphs.
 
 ![BactoSwitch Sample Lines page with four lines](/img/gui/en/bactoswitch-sample-lines.png "width=637")
 
-Press **Save** to store the changes.
+Press **Save** to store the changes. While the [advanced scheduler](/bactosense/measurements#section-10-2-4) is enabled, the lines cannot be edited on this page.
 
 ## 4.7 Priming water in the system {#section-4-7}
 

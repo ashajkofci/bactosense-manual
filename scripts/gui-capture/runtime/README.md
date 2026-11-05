@@ -236,8 +236,9 @@ builds a private executable plus the current Bactoserver binary. `start` runs th
 standard private runtime and seeds the BactoSwitch teaching fixture: the
 `DWTP TCC after SSF` demo series is assigned round-robin to the default lines
 1–4 through the data API, and the product's BactoSwitch status keys are set in
-the private Redis. macOS has no BactoSwitch serial driver and the current
-Bactoserver settings API rejects `sosdEnabled`, so `tst_bactoswitch.qml` enables
+the private Redis. macOS has no BactoSwitch serial driver and the `develop`
+Bactoserver neither exposes `sosd_connected` nor accepts `sosdEnabled` (Bactoserver
+`v3` detects the BactoSwitch automatically), so `tst_bactoswitch.qml` enables
 BactoSwitch and presents a connected four-valve device in the GUI's in-memory
 models only. Valve and flow states (all open at 802 mL/min; valve 4 alone at
 326 mL/min) are set the same way instead of pressing valve buttons.

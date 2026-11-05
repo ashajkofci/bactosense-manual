@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
 """Capture the BactoSwitch manual screens in the actual native GUI.
 
-  bactoswitch_capture.py build                 # private GUI snapshot + Bactoserver binary
+  bactoswitch_capture.py build [--server-ref R] # private GUI snapshot + Bactoserver (default origin/v3)
   bactoswitch_capture.py start                 # disposable runtime + BactoSwitch teaching fixture
   bactoswitch_capture.py capture [--locales …] # native captures, one process per language
   bactoswitch_capture.py cleanup               # stop only the recorded private processes
 
 The runtime is the BactoSense recipe (README.md): unchanged sibling GUI QML and
-Bactoserver code, shipped demo archive, loopback ports, Cocoa OpenGL. macOS has no
-BactoSwitch serial driver, so the fixture presents a connected BactoSwitch through
-the product's own status keys in the private Redis and assigns real demo online
-results to lines 1–4. The current Bactoserver schema has no top-level sosdEnabled
-field (its settings API rejects it), so BactoSwitch is enabled only in the GUI's
-in-memory settings model. Nothing is saved from the GUI and no hardware action runs.
+Bactoserver code, shipped demo archive, loopback ports, Cocoa OpenGL. The Bactoserver
+is an export (git archive) of the requested ref, so the sibling checkout's branch is
+left alone. Bactoserver v3 detects the BactoSwitch on USB and publishes the status key
+sosd_connected; no device is attached here, so the fixture sets the product's
+BactoSwitch status keys in the private Redis and assigns real demo online results to
+lines 1–4. Nothing is saved from the GUI and no hardware action runs.
 """
 import argparse
 import base64
@@ -20,6 +20,7 @@ import datetime
 import json
 import os
 import re
+import shutil
 import socket
 import subprocess
 import time
@@ -38,6 +39,7 @@ runtime.OUTPUT = OUTPUT
 runtime.SERVER = OUTPUT / "runtime/server"
 runtime.EXECUTABLE = OUTPUT / "runtime/qt-build/online-results-capture"
 snapshot.OUTPUT = OUTPUT
+SOURCE = OUTPUT / "bactoserver-source"  # Exported Bactoserver ref used by build and start.
 
 # Real hourly online series of the shipped demo archive; a BactoSwitch cycles its lines.
 SOURCE_SERIES = "DWTP TCC after SSF"
@@ -75,17 +77,28 @@ def verify_private_server():
     return pid
 
 
-def build():
+def prepare_server():
+    module = runtime.helper("prepare_server")
+    module.SERVER_SOURCE = SOURCE
+    return module
+
+
+def build(server_ref):
     OUTPUT.mkdir(parents=True, exist_ok=True)
-    runtime.helper("prepare_server").prepare()
-    subprocess.run(["go", "-C", str(ROOT.parent / "bactoserver"), "build", "-trimpath", "-o",
-                    str(runtime.SERVER / "bactoserver"), "."], check=True)
+    checkout = ROOT.parent / "bactoserver"
+    commit = subprocess.check_output(["git", "rev-parse", server_ref + "^{commit}"], cwd=checkout).decode().strip()
+    shutil.rmtree(SOURCE, ignore_errors=True)
+    SOURCE.mkdir(parents=True)
+    archive = subprocess.Popen(["git", "archive", commit], cwd=checkout, stdout=subprocess.PIPE)
+    subprocess.run(["tar", "-x", "-C", str(SOURCE)], stdin=archive.stdout, check=True)
+    if archive.wait():
+        raise RuntimeError("git archive failed for " + server_ref)
+    prepare_server().prepare()
+    subprocess.run(["go", "-C", str(SOURCE), "build", "-trimpath", "-o", str(runtime.SERVER / "bactoserver"), "."], check=True)
     gui = snapshot.build_snapshot()
     provenance = {
         "purpose": "BactoSwitch manual: unchanged native production screens with a documented teaching fixture",
-        "sources": {"gui": gui, "bactoserver": {
-            "commit": subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT.parent / "bactoserver").decode().strip(),
-            "dirtyStatus": subprocess.check_output(["git", "status", "--porcelain"], cwd=ROOT.parent / "bactoserver").decode()}},
+        "sources": {"gui": gui, "bactoserver": {"ref": server_ref, "commit": commit, "export": "git archive (tracked files only)"}},
         "guiExecutableSha256": runtime.sha(runtime.EXECUTABLE),
         "bactoserverExecutableSha256": runtime.sha(runtime.SERVER / "bactoserver"),
     }
@@ -94,7 +107,7 @@ def build():
 
 
 def start():
-    prepare = runtime.helper("prepare_server")
+    prepare = prepare_server()
     prepare.prepare()
     deadline = time.monotonic() + 75
     while True:
@@ -119,12 +132,12 @@ def start():
         assigned.append({"timestamp": result["timestamp"], "streamId": line["streamId"]})
     provenance = json.loads((OUTPUT / "provenance.json").read_text())
     provenance["fixture"] = {
-        "serverPid": pid, "settings": "Unchanged on the server; sosdEnabled=true in the GUI's in-memory Settings model only",
-        "status": STATUS, "statusSource": "../bactoserver/redis-init.py key names",
+        "serverPid": pid, "settings": "Unchanged shipped settings (default lines 1–4)",
+        "status": STATUS, "statusSource": "Bactoserver redis-init.py key names, exposed by /api/status",
         "results": {"series": SOURCE_SERIES, "count": len(assigned),
                     "assignment": "Round-robin to the shipped default lines 1–4 (streamId 0–3); line name as sample name; all counts, dates and plot files unchanged",
                     "first": assigned[0], "last": assigned[-1]},
-        "guiDrafts": "Valve/flow states and form drafts change only in-memory GUI models; no settings save or hardware action",
+        "guiDrafts": "The single-valve state and the form drafts change only in-memory GUI models; no settings save or hardware action",
     }
     (OUTPUT / "provenance.json").write_text(json.dumps(provenance, indent=2) + "\n")
     print(json.dumps({"serverPid": pid, "resultsAssigned": len(assigned), "series": SOURCE_SERIES}))
@@ -167,9 +180,10 @@ def main():
     parser.add_argument("action", choices=["build", "start", "capture", "cleanup"])
     parser.add_argument("--locales", nargs="+", choices=LOCALES, default=LOCALES)
     parser.add_argument("--test", default="screens")
+    parser.add_argument("--server-ref", default="origin/v3")
     args = parser.parse_args()
     if args.action == "build":
-        build()
+        build(args.server_ref)
     elif args.action == "start":
         start()
     elif args.action == "capture":
