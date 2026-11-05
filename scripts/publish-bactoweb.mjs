@@ -1,3 +1,4 @@
+import { spawn } from 'node:child_process';
 import { copyFile, readdir, readFile, rename, rm, stat } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -6,8 +7,10 @@ import { contentDirectory, pdfFile, principal, sourceLocale } from '../plugins/m
 // Installs the exported BactoSense user manual PDFs as the static downloads of
 // the instrument web interface (bactoweb, Help page, INSTRUCTION MANUAL row).
 // Build the manual first (npm run build); this script never builds anything.
+// --optimize recompresses the images with Ghostscript (150 dpi), which keeps the
+// links, bookmarks and fonts but cuts the 22 MiB Chromium PDFs to about 6 MiB.
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const usage = 'Usage: npm run manual:web -- [--bactoweb <path>] [--locales en,de,fr] [--from public|output] [--dry-run]';
+const usage = 'Usage: npm run manual:web -- [--bactoweb <path>] [--locales en,de,fr] [--from public|output] [--optimize] [--dry-run]';
 
 // Download names referenced by bactoweb/app/views/help.html. Quick guides
 // (UM_40101-*) are separate documents and are not part of this export.
@@ -22,7 +25,7 @@ function fail(message) {
   process.exit(1);
 }
 
-const options = { bactoweb: path.resolve(root, '../bactoweb'), locales: Object.keys(targets), from: 'public', dryRun: false };
+const options = { bactoweb: path.resolve(root, '../bactoweb'), locales: Object.keys(targets), from: 'public', optimize: false, dryRun: false };
 const args = process.argv.slice(2);
 for (let index = 0; index < args.length; index++) {
   const [name, inline] = args[index].split(/=(.*)/s);
@@ -30,6 +33,7 @@ for (let index = 0; index < args.length; index++) {
   if (name === '--bactoweb') options.bactoweb = path.resolve(value());
   else if (name === '--locales') options.locales = value().split(',').filter(Boolean);
   else if (name === '--from') options.from = value();
+  else if (name === '--optimize') options.optimize = true;
   else if (name === '--dry-run') options.dryRun = true;
   else fail(usage);
 }
@@ -76,6 +80,19 @@ function inspectPdf(bytes) {
   return pages;
 }
 
+function ghostscript(input, output) {
+  return new Promise((resolve, reject) => {
+    const child = spawn('gs', ['-q', '-dNOPAUSE', '-dBATCH', '-dSAFER', '-sDEVICE=pdfwrite', '-dCompatibilityLevel=1.5',
+      '-dPDFSETTINGS=/ebook', `-sOutputFile=${output}`, input], { stdio: ['ignore', 'ignore', 'pipe'] });
+    // Skia PDFs make Ghostscript repeat a harmless blending-colour-space warning for every page; show stderr only on failure.
+    let errors = '';
+    child.stderr.on('data', chunk => { errors = (errors + chunk).slice(-2000); });
+    child.once('error', error => reject(error.code === 'ENOENT'
+      ? new Error('Ghostscript (gs) is required for --optimize. Install it (brew install ghostscript) or omit --optimize.') : error));
+    child.once('close', status => status === 0 ? resolve() : reject(new Error(`Ghostscript failed with status ${status}.\n${errors}`)));
+  });
+}
+
 const formatSize = bytes => `${(bytes / 1048576).toFixed(1)} MiB`;
 const plan = [];
 for (const locale of options.locales) {
@@ -93,15 +110,31 @@ for (const locale of options.locales) {
 }
 
 for (const item of plan) {
+  let note = options.optimize && options.dryRun ? ' (would optimize)' : '';
   if (!options.dryRun) {
     const temporary = `${item.destination}.tmp`;
+    let failure;
     try {
-      await copyFile(item.source, temporary);
+      if (options.optimize) {
+        await ghostscript(item.source, temporary);
+        const optimized = await readFile(temporary);
+        let pages;
+        try { pages = inspectPdf(optimized); } catch (error) { throw new Error(`Optimized ${item.locale} PDF is invalid: ${error.message}.`); }
+        if (pages !== item.pages) throw new Error(`Optimized ${item.locale} PDF has ${pages} pages instead of ${item.pages}.`);
+        if (optimized.length < item.size) { item.size = optimized.length; note = ' (optimized)'; }
+        else { await copyFile(item.source, temporary); note = ' (optimization did not reduce it; copied as is)'; }
+      } else {
+        await copyFile(item.source, temporary);
+      }
       await rename(temporary, item.destination);
+    } catch (error) {
+      failure = error;
     } finally {
       await rm(temporary, { force: true });
     }
+    // Report after the temporary file is gone; earlier languages stay installed.
+    if (failure) fail(`${item.locale}: ${failure.message}`);
   }
-  console.log(`${item.locale}  ${path.basename(item.destination)}  ${item.pages} pages  ${item.previous === null ? 'new' : formatSize(item.previous)} -> ${formatSize(item.size)}`);
+  console.log(`${item.locale}  ${path.basename(item.destination)}  ${item.pages} pages  ${item.previous === null ? 'new' : formatSize(item.previous)} -> ${formatSize(item.size)}${note}`);
 }
 console.log(`${options.dryRun ? 'Would install' : 'Installed'} ${plan.length} user manual PDF(s) from ${options.from}/ into ${appDirectory}. Quick guides were not touched; review and commit the change in bactoweb.`);
