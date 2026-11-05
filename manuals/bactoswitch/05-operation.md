@@ -94,11 +94,11 @@ From **Settings**, navigate to **Online mode settings** / **Digital inputs**. Th
 
 In the example below, with the **Use scheduler** option unchecked, when the PLC sets the digital inputs to 1100, a measurement is started immediately on line #1:
 
-![Digital input configuration with line 1 selected](/img/bactoswitch/gui-digital-inputs-line.png "width=641")
+![Digital input configuration with line 1 selected](/img/gui/en/bactoswitch-digital-inputs-line.png "width=641")
 
 To start regular measurements, check the **Use scheduler** option and set the desired interval. All active lines are read sequentially, starting from the selected line (line #1 in this example):
 
-![Digital input configuration with the scheduler enabled](/img/bactoswitch/gui-digital-inputs-scheduler.png "width=633")
+![Digital input configuration with the scheduler enabled](/img/gui/en/bactoswitch-digital-inputs-scheduler.png "width=633")
 
 Reading data from a specific line via the analogue outputs has to be done right after the measurement has finished on that line, e.g. by assigning the **Process running** signal to a specific digital output and triggering the analogue output read-out when the status of that output changes. Note that this is not the default setting. Please refer to [Digital output configuration](/bactosense/io-box#section-6-6) in the BactoSense user manual for more details.
 

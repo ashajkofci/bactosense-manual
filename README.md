@@ -167,11 +167,13 @@ npm run build
 
 For the package-activation and native enrolment figures, run `node scripts/gui-capture/prepare-supplemental.mjs`, then pass its printed figure IDs to `node scripts/gui-capture/render-figures.mjs`. This prepares only the supplemental catalog and preserves unchanged image reviews. Inspect each final image before recording its reviewed hash and applying it. [The navigation review](maintenance/gui-navigation-review.md) records the current routes, localized control labels, role restrictions and source/runtime evidence behind the updated instructions.
 
-The BactoSwitch manual's localized screenshots have their own capture and teaching fixture: follow [the BactoSwitch capture recipe](scripts/gui-capture/runtime/README.md#bactoswitch-manual-screens). [The BactoSwitch source review](maintenance/bactoswitch-source-review.md) lists the three images that keep the PDF artwork and the product issues found during capture.
+The BactoSwitch manual's localized screenshots have their own capture and teaching fixture: follow [the BactoSwitch capture recipe](scripts/gui-capture/runtime/README.md#bactoswitch-manual-screens). [The BactoSwitch source review](maintenance/bactoswitch-source-review.md) lists the BactoCloud image that keeps the PDF artwork and the product issues found during capture.
 
 For chapter 6.6's small output-control captures, run `node scripts/gui-capture/prepare-digital-output-figures.mjs` and render only its 20 printed IDs. [The digital-output review](maintenance/gui-digital-output-review.md) records the actual row values, capture composition, localized instructions and print checks.
 
 For development in a specific language, run `npm start -- --locale de` (or `fr`, `it`, `es`). The development server serves one language at a time; use `npm run build` followed by `npm run serve` to test switching across all five editions. `npm run manual:pdf -- de` regenerates just the German PDFs from an existing build, and `npm run manual:pdf -- bactosense de` only the German BactoSense PDF; without arguments it regenerates every manual in every language. Rebuild the website first after changing Markdown.
+
+To update the user manual downloads of the instrument web interface, run `npm run build`, then `npm run manual:web -- --bactoweb ../bactoweb` (the path defaults to `../bactoweb`). It validates the English, German and French BactoSense PDFs from `public/` and replaces `app/UM_0006-*.pdf` in bactoweb, leaving the quick guides alone. Add `--dry-run` to preview, `--locales de,fr` to update only some languages, or `--from output` to use the latest local build instead of the committed `public/` PDFs. It warns when the manual sources are newer than the PDF. Review and commit the result in bactoweb.
 
 ## On-device manual prototype
 

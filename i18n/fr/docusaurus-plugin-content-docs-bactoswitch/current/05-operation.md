@@ -94,11 +94,11 @@ Depuis **Paramètres**, accédez à **Paramètres mode en ligne** / **Entrées n
 
 Dans l’exemple ci-dessous, avec l’option **Utiliser le planificateur** décochée, lorsque le PLC règle les entrées numériques sur 1100, une mesure est immédiatement lancée sur la ligne n° 1 :
 
-![Configuration des entrées numériques avec la ligne 1 sélectionnée](/img/bactoswitch/gui-digital-inputs-line.png "width=641")
+![Configuration des entrées numériques avec la ligne 1 sélectionnée](/img/gui/fr/bactoswitch-digital-inputs-line.png "width=641")
 
 Pour lancer des mesures régulières, cochez l’option **Utiliser le planificateur** et réglez l’intervalle souhaité. Toutes les lignes actives sont lues séquentiellement, en commençant par la ligne sélectionnée (la ligne n° 1 dans cet exemple) :
 
-![Configuration des entrées numériques avec le planificateur activé](/img/bactoswitch/gui-digital-inputs-scheduler.png "width=633")
+![Configuration des entrées numériques avec le planificateur activé](/img/gui/fr/bactoswitch-digital-inputs-scheduler.png "width=633")
 
 La lecture des données d’une ligne spécifique via les sorties analogiques doit être effectuée juste après la fin de la mesure sur cette ligne, par exemple en affectant le signal **Opération en cours** à une sortie numérique spécifique et en déclenchant la lecture de la sortie analogique lorsque l’état de cette sortie change. Notez qu’il ne s’agit pas du réglage par défaut. Pour plus de détails, veuillez consulter la section [Configuration des sorties numériques](/bactosense/io-box#section-6-6) du manuel d’utilisation du BactoSense.
 

@@ -94,11 +94,11 @@ Da **Impostazioni**, passare a **Impostazioni della Modalità Online** / **Input
 
 Nell’esempio seguente, con l’opzione **Utilizzare lo scheduler** deselezionata, quando il PLC imposta gli ingressi digitali su 1100 viene avviata immediatamente una misura sulla linea n. 1:
 
-![Configurazione degli ingressi digitali con la linea 1 selezionata](/img/bactoswitch/gui-digital-inputs-line.png "width=641")
+![Configurazione degli ingressi digitali con la linea 1 selezionata](/img/gui/it/bactoswitch-digital-inputs-line.png "width=641")
 
 Per avviare misure regolari, selezionare l’opzione **Utilizzare lo scheduler** e impostare l’intervallo desiderato. Tutte le linee attive vengono lette in sequenza, a partire dalla linea selezionata (linea n. 1 in questo esempio):
 
-![Configurazione degli ingressi digitali con lo scheduler abilitato](/img/bactoswitch/gui-digital-inputs-scheduler.png "width=633")
+![Configurazione degli ingressi digitali con lo scheduler abilitato](/img/gui/it/bactoswitch-digital-inputs-scheduler.png "width=633")
 
 La lettura dei dati di una linea specifica tramite le uscite analogiche deve essere eseguita subito dopo il termine della misura su tale linea, ad es. assegnando il segnale **Processo in corso** a una specifica uscita digitale e attivando la lettura dell’uscita analogica quando lo stato di tale uscita cambia. Si noti che questa non è l’impostazione predefinita. Per ulteriori dettagli, consultare la sezione [Configurazione delle uscite digitali](/bactosense/io-box#section-6-6) del manuale d’uso di BactoSense.
 

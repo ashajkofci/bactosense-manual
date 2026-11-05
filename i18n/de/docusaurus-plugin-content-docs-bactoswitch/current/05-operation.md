@@ -94,11 +94,11 @@ Navigieren Sie unter **Einstellungen** zu **Online-Modus Einstellungen** / **Dig
 
 Im folgenden Beispiel ist die Option **Planer verwenden** deaktiviert. Setzt der PLC die digitalen Eingänge auf 1100, wird sofort eine Messung an Leitung Nr. 1 gestartet:
 
-![Konfiguration der digitalen Eingänge mit ausgewählter Leitung 1](/img/bactoswitch/gui-digital-inputs-line.png "width=641")
+![Konfiguration der digitalen Eingänge mit ausgewählter Leitung 1](/img/gui/de/bactoswitch-digital-inputs-line.png "width=641")
 
 Um regelmäßige Messungen zu starten, aktivieren Sie die Option **Planer verwenden** und stellen Sie das gewünschte Intervall ein. Alle aktiven Leitungen werden nacheinander beprobt, beginnend mit der ausgewählten Leitung (in diesem Beispiel Leitung Nr. 1):
 
-![Konfiguration der digitalen Eingänge mit aktiviertem Planer](/img/bactoswitch/gui-digital-inputs-scheduler.png "width=633")
+![Konfiguration der digitalen Eingänge mit aktiviertem Planer](/img/gui/de/bactoswitch-digital-inputs-scheduler.png "width=633")
 
 Daten einer bestimmten Leitung müssen über die analogen Ausgänge unmittelbar nach Abschluss der Messung an dieser Leitung ausgelesen werden, z. B. indem Sie das Signal **Prozess läuft** einem bestimmten digitalen Ausgang zuweisen und das Auslesen der analogen Ausgänge auslösen, wenn sich der Status dieses Ausgangs ändert. Beachten Sie, dass dies nicht die Standardeinstellung ist. Weitere Einzelheiten finden Sie unter [Konfiguration der digitalen Ausgänge](/bactosense/io-box#section-6-6) in der Bedienungsanleitung des BactoSense.
 

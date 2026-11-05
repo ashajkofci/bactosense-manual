@@ -94,11 +94,11 @@ Desde **Ajustes**, vaya a **Ajustes del modo en línea** / **Entradas digitales*
 
 En el ejemplo siguiente, con la opción **Utilizar el programador** desmarcada, cuando el PLC establece las entradas digitales en 1100, se inicia inmediatamente una medición en la línea n.º 1:
 
-![Configuración de las entradas digitales con la línea 1 seleccionada](/img/bactoswitch/gui-digital-inputs-line.png "width=641")
+![Configuración de las entradas digitales con la línea 1 seleccionada](/img/gui/es/bactoswitch-digital-inputs-line.png "width=641")
 
 Para iniciar mediciones periódicas, marque la opción **Utilizar el programador** y ajuste el intervalo deseado. Todas las líneas activas se leen secuencialmente, empezando por la línea seleccionada (la línea n.º 1 en este ejemplo):
 
-![Configuración de las entradas digitales con el programador activado](/img/bactoswitch/gui-digital-inputs-scheduler.png "width=633")
+![Configuración de las entradas digitales con el programador activado](/img/gui/es/bactoswitch-digital-inputs-scheduler.png "width=633")
 
 La lectura de los datos de una línea concreta mediante las salidas analógicas debe realizarse justo después de que haya finalizado la medición en esa línea, p. ej., asignando la señal **Proceso en marcha** a una salida digital concreta y activando la lectura de la salida analógica cuando cambie el estado de esa salida. Tenga en cuenta que este no es el ajuste predeterminado. Para obtener más información, consulte la sección [Configuración de las salidas digitales](/bactosense/io-box#section-6-6) del manual de usuario de BactoSense.
 

@@ -24069,11 +24069,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "ce863b360ae44e142215b0016ada6b353ffd42619b3d8153e1d2b3854665edea",
-        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "sha256": "18c6a577afe7b142ab94e40585e917573efbfeea72f7374fa3736a8adfd66bc3",
+        "reviewedAt": "2026-11-05T11:41:17.352Z",
         "reviewer": "Claude (main session)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
-        "notes": "Settings menu; frame tightly around the Online mode settings tile, label readable."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Settings menu (GUI qt514); Online mode settings tile framed."
       }
     },
     {
@@ -24114,10 +24114,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "fe5a61999f0a78deb5018fc1195fc241c2c00fb6e51276a05200ca296a256cf2",
-        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "sha256": "96e40fb544d674a9461d83a9d5a9906875cc7d26403502ee311ce714e84dcbd8",
+        "reviewedAt": "2026-11-05T11:41:17.352Z",
         "reviewer": "Claude (main session)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "Online mode settings menu; BactoSwitch sample lines tile framed."
       }
     },
@@ -24151,11 +24151,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "73f0d610e718f88beb27567f0bfecb6b483affce6d53449323bc52ff3056480c",
-        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "sha256": "c11c6a56d3dbcbac50bde2f5cbf5d8a49e0d3b7d5e2ff94029d64cc86e0dd73e",
+        "reviewedAt": "2026-11-05T11:41:17.352Z",
         "reviewer": "Claude (main session)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
-        "notes": "Sample Lines page with Enable BactoSwitch ticked and Unnamed line 1–4 with their colours."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Sample Lines page without the former Enable BactoSwitch checkbox; Line 1–4 with names and colours."
       }
     },
     {
@@ -24188,11 +24188,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "3b0d1f6256437e1547d3a0e7769917dc05e827195e6563a3ff8ee796f4c507ce",
-        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "sha256": "454a0d8da9de73bf4d363b1164d4477ed6746c2faf8e32081616ac9ac4704e9a",
+        "reviewedAt": "2026-11-05T11:41:17.352Z",
         "reviewer": "Claude (main session)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
-        "notes": "Control Panel online, flow 802 in black, valves 1–4 OPEN."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Control Panel online (status from Bactoserver v3), flow 802 in black, valves 1–4 OPEN."
       }
     },
     {
@@ -24225,10 +24225,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "4a05776e9ad27882fea8d3e052e3d36cc6b4c49ada1e5c776341d54f12be177e",
-        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "sha256": "fe801a99d1b80f441d4f2d8871dc8cb4ffc91e8d40f91d5d62f4504da7d94b22",
+        "reviewedAt": "2026-11-05T11:41:17.352Z",
         "reviewer": "Claude (main session)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "Valve 4 OPEN, valves 1–3 CLOSED, flow 326 in green."
       }
     },
@@ -24270,11 +24270,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "35b54a43d53360d6a2ab9e1fd3ba0ccb857e56bf04a7152236114ba36416f534",
-        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "sha256": "4c42456a057c79931df487adad0c406f5e2d1545f247d6e2bdcd6a28b205bf76",
+        "reviewedAt": "2026-11-05T11:41:17.352Z",
         "reviewer": "Claude (main session)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
-        "notes": "Home in Online mode; frame follows the real Start button bounds, which include the scheduler status."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Home in Online mode; frame follows the real Start button bounds including the scheduler status."
       }
     },
     {
@@ -24315,11 +24315,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "f8418985a5e87453244ff4d53e5d6bffaf2e58698c9bddb40fa703226501b0da",
-        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "sha256": "0f36a68d148deb3b0c3a1dd1dc7bcd3da721eacf783f68ad2742aa734aa8605e",
+        "reviewedAt": "2026-11-05T11:41:17.352Z",
         "reviewer": "Claude (main session)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
-        "notes": "Plain Online mode plot with four lines; Start framed bottom right (recaptured, popup closed)."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Plain Online mode plot with four lines; Start framed."
       }
     },
     {
@@ -24366,10 +24366,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "aa1d0632062b3f34873f068d1d4fac2b45600a4f6cce81ec425573f9bdfc70bb",
-        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "sha256": "da6e2d415ae3d57d2f4d876eef441276305b64394b5a164f66e8663df0b290d8",
+        "reviewedAt": "2026-11-05T11:41:17.352Z",
         "reviewer": "Claude (main session)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "Water Analysis with BactoSwitch ticked; its row and Next framed."
       }
     },
@@ -24411,11 +24411,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "8a05c5bd40b1898fbfce4eea30fe596bd6a9027ef0d42178fcc86dcc2307007f",
-        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "sha256": "e70e5beaff03677facb2dabc01f42fd494abb9b815916432c373477b32bc893d",
+        "reviewedAt": "2026-11-05T11:41:17.352Z",
         "reviewer": "Claude (main session)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
-        "notes": "Interval step with the default 120 minutes; Start framed."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Interval step (default 120 minutes); Start framed."
       }
     },
     {
@@ -24456,11 +24456,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "015f6e944639d7baa87679efc3bed71a0599585c36dcbfc3410dffd716340089",
-        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "sha256": "8db4da88889e90782a92c929f0ced933be76ad23656d7106fcfea7fc7f6674c2",
+        "reviewedAt": "2026-11-05T11:41:17.352Z",
         "reviewer": "Claude (main session)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
-        "notes": "Four TCC lines #1–#4 with the High TCC threshold; 1 Month span button framed."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Four TCC lines #1–#4 with the High TCC threshold; 1 Month button framed."
       }
     },
     {
@@ -24501,11 +24501,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "053abb3b9a7bb7a376e1f221b3d5b5a388461aabf4e4ba53b32b12c7ce3637e0",
-        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "sha256": "b18bc234025faf24f4ccb2a747459faa891da1fa4af9bc3ccffb617b3d6f54f0",
+        "reviewedAt": "2026-11-05T11:41:17.352Z",
         "reviewer": "Claude (main session)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
-        "notes": "Popup with 1 Month and TCC selected; View results framed bottom left."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Popup with 1 Month and TCC; View results framed."
       }
     },
     {
@@ -24538,11 +24538,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "241c55fa6118037c56ad256f321ceffd54cc96ed00f6c13c656a7c838a143ec1",
-        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "sha256": "c3df6316a8a82268ecf44085660e8d5ea10c8a9f72ce2d33cfc31369cd1b8a8a",
+        "reviewedAt": "2026-11-05T11:41:17.352Z",
         "reviewer": "Claude (main session)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
-        "notes": "Online mode results list of Unnamed line 1–4 with TCC and HNAP values."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Online mode results of Unnamed line 1–4 with TCC and HNAP."
       }
     },
     {
@@ -24575,11 +24575,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "6d37963c99741e56625c2c9f533c3ecaaee0ec895bc8b00fc807bc4af0262aa7",
-        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "sha256": "e480b4796c6dcae1d9d84f6d3adf06996048f873a75cee55b1b83b9e5dcf4502",
+        "reviewedAt": "2026-11-05T11:41:17.352Z",
         "reviewer": "Claude (main session)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
-        "notes": "Details of the Unnamed line 1 TCC measurement of 25 Mar 2026."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Details of the Unnamed line 1 TCC measurement."
       }
     },
     {
@@ -24612,11 +24612,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "7441130d7fe13c5d326ffb1aa77d7fff931548b3e8f821ea76183305e71d9f7c",
-        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "sha256": "252959587f2db9cabf01f9ba5e94adc8db8738b098e94685dc3c9e2f95bcf0cd",
+        "reviewedAt": "2026-11-05T11:41:17.352Z",
         "reviewer": "Claude (main session)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
-        "notes": "Filter results with the 27 Feb–25 Mar 2026 period; no frame."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Filter results with the line period; no frame."
       }
     },
     {
@@ -24657,11 +24657,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "9fd664f9eb2b76d1f27cc04c7a84b11bf5e17c3f1bd92cdfed78a8e78e60ed80",
-        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "sha256": "2fd04d9d412cd91d5b5fe2112e0d911bb71c3437accd96b8910c68078021b569",
+        "reviewedAt": "2026-11-05T11:41:17.352Z",
         "reviewer": "Claude (main session)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
-        "notes": "Same window; Filter by line button framed."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Filter by line framed."
       }
     },
     {
@@ -24708,11 +24708,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "07bc97f7a0c4ca9cb3327476be2a343e79f5bfea91cf4b6bf634916f6fe39721",
-        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "sha256": "a8acc455ea5d12668d071087062589ee97a5e93294dc1026dab1b0dc5041676b",
+        "reviewedAt": "2026-11-05T11:41:17.352Z",
         "reviewer": "Claude (main session)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
-        "notes": "Line picker with Unnamed line 1 ticked; its row and Confirm framed."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Line picker; Unnamed line 1 row and Confirm framed."
       }
     },
     {
@@ -24745,11 +24745,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "a7a1e7cc9335503338b2fad6b5fae89bd91d5c0ffbbf49ffda58276f7c67df77",
-        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "sha256": "59167bf45e620f79d7f15ee8a7b9dc2f1ba9093797bc9a10a9b5e18ce18281f4",
+        "reviewedAt": "2026-11-05T11:41:17.352Z",
         "reviewer": "Claude (main session)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
-        "notes": "Plot showing only TCC #1."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Only TCC #1 plotted."
       }
     },
     {
@@ -24782,11 +24782,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "8fb30250f5d4b4b19e72f3dcde2ca4569a68ccd55a2df1ce74cdca09eabc22cd",
-        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "sha256": "8205334754e115c94b597155feca431dc47587faaa0456ecd7a0a1bf76ddf2a1",
+        "reviewedAt": "2026-11-05T11:41:17.352Z",
         "reviewer": "Claude (main session)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
-        "notes": "List with only Unnamed line 1; bottom bar shows Line #1."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Only Unnamed line 1; bottom bar shows Line #1."
       }
     },
     {
@@ -24827,11 +24827,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "6a1262659d600d603b44736fbd77fa8aab159890415a8ffe01f1125b6215e5f4",
-        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "sha256": "67007f7c92f079d2cd8cff6018056d86b1bfe91a5eef792d0616ca3af511ef34",
+        "reviewedAt": "2026-11-05T11:41:17.352Z",
         "reviewer": "Claude (main session)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
-        "notes": "Alarm configuration draft; Sample line checkbox and Line # 2 framed together."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Sample line checkbox and Line # 2 framed together."
       }
     },
     {
@@ -24872,11 +24872,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "2f896a482fb75717e4d289b631ef2e7a982110860ec628a23237fe183d18863b",
-        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "sha256": "b0c41ab4056533007ce6c594e538c9773323e19abe89f24a1cc08a894a1a035b",
+        "reviewedAt": "2026-11-05T11:41:17.352Z",
         "reviewer": "Claude (main session)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
-        "notes": "Default assignments; Process running row framed across all outputs."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Process running row framed across all outputs."
       }
     },
     {
@@ -24917,11 +24917,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "3a8fc29431c0f579fd4fcf8bee0410b763a50aece71025ab80de75113d691ca9",
-        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "sha256": "086532383db6093a40081187065b86601db3f3f01a2eb50848a8217b55f4aacb",
+        "reviewedAt": "2026-11-05T11:41:17.352Z",
         "reviewer": "Claude (main session)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
-        "notes": "PLC draft with Water Analysis with BactoSwitch and ICC Default Gate; source button framed (recaptured)."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Select digital input source button framed; Line box visible."
       }
     },
     {
@@ -24968,10 +24968,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "e059e91f0080c2d473eb5e2e8e3fcdcb2b18077481ea528a2dfb40a6c746cbed",
-        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "sha256": "8decbe12cbc877d3f779e598672c49c0a76ecf44dd6cc741ea3effe0b4ba7c8b",
+        "reviewedAt": "2026-11-05T11:41:17.352Z",
         "reviewer": "Claude (main session)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "Modbus TCP selected and framed; Back framed."
       }
     },
@@ -25019,11 +25019,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "2533d32e57ab07057573c9c7c30340fa891cb163aabc1a13e01fb41e4e9b39f9",
-        "reviewedAt": "2026-11-05T10:46:34.226Z",
+        "sha256": "3dc65b51328ada19f843cd0f413136a2499e493c6a683298c3ced8be04e97cce",
+        "reviewedAt": "2026-11-05T11:41:17.352Z",
         "reviewer": "Claude (main session)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet; recaptured figures inspected again",
-        "notes": "Web Online mode results filtered by Unnamed; Name and Line ID headers framed, line IDs 1–4 visible."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Web Online mode results filtered by Unnamed (Bactoserver v3); Name and Line ID headers framed."
       }
     },
     {
@@ -25064,11 +25064,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "8f4f592611a1662c2e32ea1c0967e6091e86465374ea35f15eb9d672cdadd0e8",
-        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "sha256": "bf4d3b2022a7d221def42c1f4062ac4d16cd159c912f0fa60c20af5e22c68b50",
+        "reviewedAt": "2026-11-05T11:41:17.445Z",
         "reviewer": "Claude review agent (de)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Einstellungen menu in German; red frame tightly encloses the Online-Modus Einstellungen tile without covering its label; alt text German and accurate."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Einstellungen menu with Home toolbar button; frame tightly encloses the Online-Modus Einstellungen tile without covering its label; alt text German and accurate."
       }
     },
     {
@@ -25109,11 +25109,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "97fdaabe0d640f4df4230132dc58eeb8984b5ab525fd9fb002777132e817e629",
-        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "sha256": "bac3609c863baea89fd3935f9b33d6bdb6882c387de333c3c4a1b4e24dc7cab9",
+        "reviewedAt": "2026-11-05T11:41:17.445Z",
         "reviewer": "Claude review agent (de)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Online-Modus Einstellungen menu; frame tightly encloses the BactoSwitch-Probenlinien tile; Messintervall tile shown disabled (genuine GUI state)."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Online-Modus Einstellungen menu; frame tightly encloses the BactoSwitch-Probenlinien tile; Messintervall tile disabled (genuine GUI state)."
       }
     },
     {
@@ -25146,11 +25146,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "e208d49e6c12453d71debf8daf22a235ae8125ec0f06906a8216506dec0427a5",
-        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "sha256": "36eeb8ae7b1d96f704c6a8ff28a6eb4fd5979fe66b044ef9f23d280a9ce420fb",
+        "reviewedAt": "2026-11-05T11:41:17.445Z",
         "reviewer": "Claude review agent (de)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "BactoSwitch-Probenlinien page with BactoSwitch einschalten ticked, Zeile 1-4 named Unnamed line 1-4 with colours, no frame; 'Alle Änderungen verwerfen' wraps in its narrow button (GUI quirk)."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "BactoSwitch-Probenlinien page without an enable checkbox, Zeile 1-4 ticked with names Unnamed line 1-4 and colours, no frame; 'Alle Änderungen verwerfen' wraps in its narrow button (GUI quirk)."
       }
     },
     {
@@ -25183,11 +25183,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "1cc9e9384eae4d60a600e51a4822e717cc15839de9f4d35ab175ba394750b049",
-        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "sha256": "ee98fb165a726eaa9eceb256b1d131b818d320adebd30c0bcc78f8fc057716f9",
+        "reviewedAt": "2026-11-05T11:41:17.445Z",
         "reviewer": "Claude review agent (de)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "BactoSwitch-Bedienfeld with accessory online, flow 802 in black, all four valves OPEN; the GUI leaves 'OPEN' untranslated while 'GESCHLOSSEN' is German (genuine GUI quirk)."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "BactoSwitch-Bedienfeld with accessory online, flow 802 in black, all four valves OPEN, no frame; 'OPEN' is untranslated in the GUI while 'GESCHLOSSEN' is German (genuine quirk)."
       }
     },
     {
@@ -25220,11 +25220,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "c2810ca311890f7900ecf0292d9cb278d8282b64ad49959fc738f9bd3c36cb2c",
-        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "sha256": "0d8522adb6cfc7a828ed3814d4e86ff00dcfd7b6773a6ecefafaa49416a481d7",
+        "reviewedAt": "2026-11-05T11:41:17.445Z",
         "reviewer": "Claude review agent (de)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Ventil 4 OPEN, Ventile 1-3 GESCHLOSSEN, flow 326 in green, no frame; alt text matches."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Ventil 4 OPEN, Ventile 1-3 GESCHLOSSEN, flow 326 in green, no frame."
       }
     },
     {
@@ -25265,11 +25265,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "6e88f121b58511933df91f0064dc0ca6f10169413dd98a76a3d8bab663a739de",
-        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "sha256": "262bf07b46e33265cf2fc5926432950054fc34c6082a47d8b6a2511d057174df",
+        "reviewedAt": "2026-11-05T11:41:17.445Z",
         "reviewer": "Claude review agent (de)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Re-published 11:44 version: Online-Modus home (BactoSense CORE) with frame tightly around the Start / Intervalle angehalten button, bottom edge intact; mini-plot axis dates '3 Apr' are English-style (GUI quirk)."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Online-Modus home (BactoSense SMART) with frame tightly around the Start / Intervalle angehalten button, all edges visible; mini-plot dates '3 Apr' are English-style (GUI quirk)."
       }
     },
     {
@@ -25310,11 +25310,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "d65c4d9d22d68901ce72a53a3488ea25e873b04500b0c66f088d80abfd503719",
-        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "sha256": "f664ea5df0504fe555c98a905b521e694896a8443414e451dfc2e879d21dc2aa",
+        "reviewedAt": "2026-11-05T11:41:17.445Z",
         "reviewer": "Claude review agent (de)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Re-published 11:44 version shows the plain plot with Start framed at bottom right (all four edges visible); the earlier version on sheet de-2 wrongly had the display-settings popup open."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Plain Online-Modus plot with no popup open and Start framed at bottom right, all edges visible."
       }
     },
     {
@@ -25361,10 +25361,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "ae9cbac493990ce1cd4de5eeee66b2283810d98a1a5c9d42cf68b6517f815028",
-        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "sha256": "1a22c5f86d96e940af397d13206aaa695322dfa87f9b424cb073f3f96ea05e8a",
+        "reviewedAt": "2026-11-05T11:41:17.445Z",
         "reviewer": "Claude review agent (de)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "Water Analysis with BactoSwitch ticked with its row framed, Weiter framed with right and bottom edges visible; protocol names are English data strings as expected."
       }
     },
@@ -25406,11 +25406,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "1f06c26b3e25d3a81584bae734f8cc2582abc3eb078bd2d6b04aad957dc80a82",
-        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "sha256": "e7b71892312512fe6942c69cb0d3a066969bcf631aacadad852d0b8844bb1139",
+        "reviewedAt": "2026-11-05T11:41:17.445Z",
         "reviewer": "Claude review agent (de)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Zeitintervall step (120 Minute, Sofort beginnen ticked) with Start framed; GUI quirks: singular 'Minute', picker neighbours labelled 'Stunde', and 'Advanced' untranslated."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Zeitintervall step (120 Minute, Sofort beginnen ticked) with Start framed; GUI quirks: singular 'Minute', picker neighbours labelled 'Stunde', 'Advanced' untranslated."
       }
     },
     {
@@ -25451,10 +25451,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "43ebf535484ec9d87cce785e3f2603818be24adc9cad392b6d4bc144d5098acb",
-        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "sha256": "525f4eab78859172cbceefb84dc0ad08ceefd9083cf18f429bcb7b27f7da7333",
+        "reviewedAt": "2026-11-05T11:41:17.445Z",
         "reviewer": "Claude review agent (de)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "Four TCC curves #1-#4 with legend; frame tightly encloses the '1 Monat' time-span button at top centre."
       }
     },
@@ -25496,10 +25496,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "bf629fb1ab1befb4431b45704c62f02560719db4b7e32f2e7cb7ff7bbf8ce197",
-        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "sha256": "aad6b81dec232aebada9c2fa7104c6cb903664116708a7a4e7fa6f0ac123ee6a",
+        "reviewedAt": "2026-11-05T11:41:17.445Z",
         "reviewer": "Claude review agent (de)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "Display-settings popup with 1 Monat selected and TCC ticked; Resultate anzeigen framed at bottom left; 'Benutzerdefiniert...' and 'Nach Namen filte...' truncated (GUI quirk)."
       }
     },
@@ -25533,11 +25533,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "bf9f490747f969c6bd6af145dd726e97b6280306e25cbd98815b36ae6bc4e039",
-        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "sha256": "def77a6cfefbaef6abf41d43df03785fd2eab0ef7d0e8e1d6b32dc9b4bb20bc7",
+        "reviewedAt": "2026-11-05T11:41:17.445Z",
         "reviewer": "Claude review agent (de)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Online-Modus-Ergebnisse list of Unnamed line 1-4 with HNAP and TCC values, no frame; alt text accurate."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Online-Modus-Ergebnisse list of Unnamed line 1-4 with HNAP and TCC values, no frame."
       }
     },
     {
@@ -25570,10 +25570,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "d75d3f7cc564dc6504571b5296fc7bf8c359291f7d3fa9c9965bfdf5f522481e",
-        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "sha256": "6a7936a3e1d5a1ffbeac08e32b9197095ea3950bae61bc6d732c0fdd99b438b5",
+        "reviewedAt": "2026-11-05T11:41:17.445Z",
         "reviewer": "Claude review agent (de)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "Ergebnis-Details of Unnamed line 1, TCC 120 510, 25. März 2026 5:31, Konform, no frame."
       }
     },
@@ -25607,10 +25607,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "e4c128227db5d44c59f655f99274a2f566f7b0ba593cd31c561aab4a03039f00",
-        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "sha256": "4711a41b92f13a072cfa5a14e096ebfa515f5ff28532b58f8f4caff3b3f4dae8",
+        "reviewedAt": "2026-11-05T11:41:17.445Z",
         "reviewer": "Claude review agent (de)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "Resultate filtern window with date pickers and Nach Zeilen filtern button, no frame."
       }
     },
@@ -25652,10 +25652,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "54fdab1e8c519a14cdb0c811587072dd123ba950d00c1d709db22926f076a33d",
-        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "sha256": "2453b255e46c0cc02cb68d5c73d35f69587e9d309f6c75188e1d1ec224e5df23",
+        "reviewedAt": "2026-11-05T11:41:17.445Z",
         "reviewer": "Claude review agent (de)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "Same window with Nach Zeilen filtern framed tightly, all edges visible."
       }
     },
@@ -25703,10 +25703,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "920ca1f908ff443cbd3ec1e0a09f0193374d3693ec96e2a1904392deada22924",
-        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "sha256": "f6040ae4a43f8b8f9938d4ab14c0b037e0eb23c84c26602d26cba4af432cb0ef",
+        "reviewedAt": "2026-11-05T11:41:17.445Z",
         "reviewer": "Claude review agent (de)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "Line-picker popup with Unnamed line 1 ticked and its row framed plus Bestätigen framed; GUI mixes Probenlinie/Leitung/Zeile terminology (quirk)."
       }
     },
@@ -25740,10 +25740,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "31f34ea192d8b4cde29f0d7b87bd41c4167774c8b7508a198305af74ba06a4f5",
-        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "sha256": "8e9e57cdbdd455e5d6e0ee150e08f16ea5a8bd9959006efdec5605d93c8afa49",
+        "reviewedAt": "2026-11-05T11:41:17.445Z",
         "reviewer": "Claude review agent (de)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "Plot shows only the TCC #1 curve and legend, no frame."
       }
     },
@@ -25777,10 +25777,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "ffde5e2cf7d483234b8770049118b5954ccaa6c8f58c739e2abfdbe488840de3",
-        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "sha256": "8b2f9a104eaafdf7fb6b1833d797647970bec182b71b1ec2996ba4c15cde2601",
+        "reviewedAt": "2026-11-05T11:41:17.445Z",
         "reviewer": "Claude review agent (de)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "List contains only Unnamed line 1 and the bottom bar shows '... 25. März 2026 5:31 | Zeile #1'."
       }
     },
@@ -25822,10 +25822,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "bf081aced53c2a24392e4202e6b97a4e02fdda1d42b728f7e25d4eb8019f5f00",
-        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "sha256": "06b275ebfc3b78b7349871842ae532b00eb8046826f21299a84cd54ad4665b8c",
+        "reviewedAt": "2026-11-05T11:41:17.445Z",
         "reviewer": "Claude review agent (de)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "Alarmkonfiguration with frame tightly around the Musterzeile checkbox and the 'Zeile # 2' field; 'Musterzeile' is an odd GUI translation of 'Sample line' (quirk)."
       }
     },
@@ -25867,10 +25867,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "20cf24e5943b0060c3308a8ce80f3a51ef7398c3bea76b8a9ff45a9e1abe1fee",
-        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "sha256": "9d922040b39a7f0927763a67b917cdd5651bdaab480b54ee288cdd5870443dc5",
+        "reviewedAt": "2026-11-05T11:41:17.445Z",
         "reviewer": "Claude review agent (de)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "'Weisen Sie die Zustände den Ausgängen zu' with the Prozess läuft row framed across description and output cells."
       }
     },
@@ -25912,11 +25912,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "1557bbf2288060c727e519f5bedd2f4497997b104a1b2fadd76d847308ec8261",
-        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "sha256": "2d66467abec63e549a24654c50c7c564936e0f898b8a1fe510b40ce05d7f525e",
+        "reviewedAt": "2026-11-05T11:41:17.445Z",
         "reviewer": "Claude review agent (de)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Re-published 11:44 version: Konfiguration der digitalen Eingänge (SPS) with the 'Digitale Eingangsquelle wählen (Physische Eingänge)' button framed; Gates now shows a normal ICC Default Gate field (the sheet version showed a red-bordered TCC Default Gate that could be mistaken for a highlight)."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Konfiguration der digitalen Eingänge (SPS) with the 'Digitale Eingangsquelle wählen (Physische Eingänge)' button framed; Gates shows a normal ICC Default Gate field."
       }
     },
     {
@@ -25963,10 +25963,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "8851480c40914b4c9ea79e2c382a36f175ed70f6c12300916befeed5ee315669",
-        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "sha256": "e26c79a6ad86b4ff54fb76c218e36826027ec76abbc7b828d9fa2d24cc0a2a92",
+        "reviewedAt": "2026-11-05T11:41:17.445Z",
         "reviewer": "Claude review agent (de)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "Digitale Eingangsquelle (SPS) with Modbus-TCP selected and framed, and Zurück framed across the full width with all edges visible."
       }
     },
@@ -26014,11 +26014,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "bba2ac72a0988ed775b02dc25d74c79180652498b287fde0d3e7be5e8fe68fa8",
-        "reviewedAt": "2026-11-05T10:46:34.290Z",
+        "sha256": "ffcd3c2dc612fcfdabb8769a896256b0b2a5b3e52d8af6cdb346e459fa7f292c",
+        "reviewedAt": "2026-11-05T11:41:17.445Z",
         "reviewer": "Claude review agent (de)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "German web UI filtered by name 'Unnamed' with frames around the Name and Zeilen-ID headers including their filter fields; table is cut at the right edge (Gate+ column), a capture-width quirk."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "German web UI filtered by name 'Unnamed' with frames around the Name and Zeilen-ID headers and their filter fields; table cut at the right edge (Gate+ column), a capture-width quirk."
       }
     },
     {
@@ -26059,11 +26059,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "b757ee11f29ad8b3cab53ac86a6acd926ddaf9953c74fec82afd43bda7467bd9",
-        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "sha256": "abdd00a76a261cdebeb3dfa12b85490a63c2925af2729022a1b2b9026c1aac20",
+        "reviewedAt": "2026-11-05T11:41:17.517Z",
         "reviewer": "Claude review agent (fr)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Paramètres menu with a tight, unclipped frame around the Paramètres mode en ligne tile; French GUI and alt text."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Paramètres menu (Home button in toolbar) with a tight, complete frame around the Paramètres mode en ligne tile; French GUI and alt text."
       }
     },
     {
@@ -26104,11 +26104,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "7f7f486bbbfb77426b769c2d0dfe17cf92ac4dfa1cc8fabe5b53f0516e6c78b5",
-        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "sha256": "d5d219fc87d6c9f0dee1aea690de294589e6f078be2555a54b369999ac69dc83",
+        "reviewedAt": "2026-11-05T11:41:17.517Z",
         "reviewer": "Claude review agent (fr)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Paramètres mode en ligne menu with the Lignes d'échantillons BactoSwitch tile framed (GUI shrinks its label font to fit); Alarm tile in English as expected."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Paramètres mode en ligne menu with the Lignes d'échantillons BactoSwitch tile framed (label auto-shrunk by the GUI); Alarm tile in English as expected."
       }
     },
     {
@@ -26141,11 +26141,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "cfd3e2a255336f4f26049f3a36da8bc22aaf1a86b9ccf1ece4a79c37ded1d172",
-        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "sha256": "364ea1d9044c6258b3f350c803ef51247b57d7694dddf7666076a084c1a255d4",
+        "reviewedAt": "2026-11-05T11:41:17.517Z",
         "reviewer": "Claude review agent (fr)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Lignes d'échantillons BactoSwitch page, Activer BactoSwitch ticked, four ticked lines Unnamed line 1-4 with colours, no frame."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Lignes d'échantillons BactoSwitch page without an enable checkbox, lines 1-4 ticked with names Unnamed line 1-4 and colours, no frame."
       }
     },
     {
@@ -26178,11 +26178,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "cf3fc01d2d740974780a15b8299d24872a9ab99891ec6ca516f1904021d4cb4c",
-        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "sha256": "036c2774c19aeedb04a1966c63076fa7a0e712b5b33268608fe6dee12a8c837d",
+        "reviewedAt": "2026-11-05T11:41:17.517Z",
         "reviewer": "Claude review agent (fr)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Panneau de contrôle with accessory en ligne, Débit 802 in black and Valve 1-4 all OUVERTURE (GUI quirk: OUVERTURE vs FERMÉ wording), no frame."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Accessory en ligne, Débit 802 in black, Valve 1-4 all OUVERTURE (GUI wording quirk vs FERMÉ), no frame."
       }
     },
     {
@@ -26215,11 +26215,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "da9ec94ed12ae2590dd352ab3fd0912be974798cf5af767cc1d48aadb5402744",
-        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "sha256": "34081a2519cbd0090c72e473185aa3a55c2e1a296f1cc52617e78fc33722ff8b",
+        "reviewedAt": "2026-11-05T11:41:17.517Z",
         "reviewer": "Claude review agent (fr)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Valve 4 OUVERTURE, valves 1-3 FERMÉ, Débit 326 in green, no frame; alt text matches."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Valve 4 OUVERTURE, valves 1-3 FERMÉ, Débit 326 in green, no frame."
       }
     },
     {
@@ -26260,11 +26260,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "bf03bfb1a24e41d26ee3443d4030070e8618cc7e3698c391e91a21b9e55c0e00",
-        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "sha256": "5eb811087456f372066732107c4484fa8d857a4ecee167fac5673bb0a8c8df40",
+        "reviewedAt": "2026-11-05T11:41:17.517Z",
         "reviewer": "Claude review agent (fr)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Home screen in Mode en ligne with all four frame sides intact around the composite Démarrer/Minuteur arrêté button; chart axis dates (3 Apr, 6 Apr) remain an English GUI quirk."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Home screen (BactoSense SMART) in Mode en ligne with all four sides of the frame around the composite Démarrer/Minuteur arrêté button; the chart axis dates in English are a GUI quirk."
       }
     },
     {
@@ -26305,11 +26305,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "ed10317f985d4a9b95476dc26a1c0c6fab7c9f1a9a9ccbcebe7a4d39fe477a6b",
-        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "sha256": "9e71c39935da41aafecbea384c15fe9aec11c4ba1cae8e15eb589c96721e71ff",
+        "reviewedAt": "2026-11-05T11:41:17.517Z",
         "reviewer": "Claude review agent (fr)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Popup now closed: plain online plot with four TCC curves and an unframed 1 Mois button, Démarrer framed bottom right; captured at 11:42:34, after display-settings (11:42:33)."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Plain online plot with four curves and no popup, Démarrer framed bottom right."
       }
     },
     {
@@ -26356,11 +26356,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "3fe2cd0aadc1037dddd72eeaf83df99f42be1bf14483d04fdba0930d737fec8c",
-        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "sha256": "b621645ce9cb56dfebce92e0f141dc05280ea3cd7d8cd269de86387bf4d75a57",
+        "reviewedAt": "2026-11-05T11:41:17.517Z",
         "reviewer": "Claude review agent (fr)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Water Analysis with BactoSwitch ticked with its full row framed and Suivant framed; Fenêtres shows ICC Default Gate."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Water Analysis with BactoSwitch ticked with its row framed, Suivant framed, Fenêtres ICC Default Gate."
       }
     },
     {
@@ -26401,11 +26401,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "c1344a397f609cc23bf06c695a8acf0d2a12246e7e574815f5163c88996c8856",
-        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "sha256": "ab92b9f1f5d13942cd5dcae726c1a4b0278781d76c75209cbf74e37902251e76",
+        "reviewedAt": "2026-11-05T11:41:17.517Z",
         "reviewer": "Claude review agent (fr)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Paramètres de l'intervalle step with Démarrer framed; '120 Minute' and the Heure/Minute picker remain GUI quirks."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Paramètres de l'intervalle step with Démarrer framed; '120 Minute' and Heure/Minute picker rows are GUI quirks."
       }
     },
     {
@@ -26446,10 +26446,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "0f09ad13d092011befef3c19ef8f077eec13fded4122e4949b3a3be3e11ec483",
-        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "sha256": "d7f2d491f41b26882f300772c5afe24db51848891a932dbbbe3652597df02103",
+        "reviewedAt": "2026-11-05T11:41:17.517Z",
         "reviewer": "Claude review agent (fr)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "Four curves with legend TCC #1-#4 and a tight frame around the 1 Mois button at top centre."
       }
     },
@@ -26491,10 +26491,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "70a82e3239a93cbaa5e6ee0cab60373cb1f5509814f53a14c18e46736488e7eb",
-        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "sha256": "8b79ba9c49f0dac39c40d6835d796248adf825e7c85dc92e952f07a2ea3f27c0",
+        "reviewedAt": "2026-11-05T11:41:17.517Z",
         "reviewer": "Claude review agent (fr)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "Display-settings popup with 1 Mois selected and TCC ticked; Résultats framed bottom left."
       }
     },
@@ -26528,11 +26528,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "c1f3153af6ab14e35a00bf5cce7c6425e2e5122fced0b206d1169d0aa2d39e25",
-        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "sha256": "692e094ccdeb954abef8334456c6d5381b0f16a593cf8c65785fc658d12dd95f",
+        "reviewedAt": "2026-11-05T11:41:17.517Z",
         "reviewer": "Claude review agent (fr)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Résultats du mode en ligne list of Unnamed line 1-4 entries with TCC values, unfiltered date range in the bar, no frame."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Résultats du mode en ligne list of Unnamed line 1-4 with TCC values, unfiltered bar, no frame."
       }
     },
     {
@@ -26565,11 +26565,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "f78c30353de409df8113be80beed925ba4e0d03b78d832644fdf726419641dc0",
-        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "sha256": "48445e6f0c132e5cecbaaaa983ec7320746dcc14bc0fc400285c033a24b005e5",
+        "reviewedAt": "2026-11-05T11:41:17.517Z",
         "reviewer": "Claude review agent (fr)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Détails du résultat for Unnamed line 1, TCC [1/mL] 120 510, Conforme, no frame."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Details of Unnamed line 1, TCC [1/mL] 120 510, Conforme, no frame."
       }
     },
     {
@@ -26602,11 +26602,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "39c905e9815545b79e87d2d617ecd57c8eab9871aa6386846f3908c0d2250a5d",
-        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "sha256": "4bed5aeab950c612e4595cc1e920198ad032fb0153754c51802393636aee96cc",
+        "reviewedAt": "2026-11-05T11:41:17.517Z",
         "reviewer": "Claude review agent (fr)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Filtrer les résultats window with dates, Filtrer par nom Aucun, no frame."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Filtrer les résultats window with dates and Filtrer par nom Aucun, no frame."
       }
     },
     {
@@ -26647,10 +26647,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "d61c278144beed2ef552c77f578d10cad0ce4717ab5e1eb0c4d2a0960bd1493d",
-        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "sha256": "bd362c658432021d1d7487299cd9e651388ce9026f7e0fe5b43daff5c61ca1ac",
+        "reviewedAt": "2026-11-05T11:41:17.517Z",
         "reviewer": "Claude review agent (fr)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "Same window with a tight, complete frame around Filtrer par ligne."
       }
     },
@@ -26698,11 +26698,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "1f2479d6c787621b2189602b0ec07da4c750756a34fcad8adbbf4945a91525f1",
-        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "sha256": "fe26b61888f9e7360b663f30e455f26f28a32b9ccc8f2a9d75979d26f1143473",
+        "reviewedAt": "2026-11-05T11:41:17.517Z",
         "reviewer": "Claude review agent (fr)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Line picker with Unnamed line 1 ticked and its row framed, Confirmer framed (GUI quirk: title truncated behind the close button)."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Unnamed line 1 ticked with its row framed and Confirmer framed (popup title truncated behind the close button is a GUI quirk)."
       }
     },
     {
@@ -26735,11 +26735,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "f7a41ff793e927cdae1fce1f275835e725f37a96bb56018d8468e92aeef08220",
-        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "sha256": "48f9badc121541c0e9bc860779e9c355b0867f922f84ef88f59616f3d9b3b1c3",
+        "reviewedAt": "2026-11-05T11:41:17.517Z",
         "reviewer": "Claude review agent (fr)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Plot shows only the red TCC #1 curve with 1 Mois button, no frame."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Plot shows only the red TCC #1 curve, no frame."
       }
     },
     {
@@ -26772,10 +26772,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "b9c30a55adb23f9f204cb9843d0d20e0bb2654630dc6ac3c2c8b50044932421d",
-        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "sha256": "2f764a9f579c0d16fd2a1c9cb4457024ec17c93065fed5c53bfcd7bf7e574b97",
+        "reviewedAt": "2026-11-05T11:41:17.517Z",
         "reviewer": "Claude review agent (fr)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "List contains only Unnamed line 1 and the bottom bar ends with '| Ligne #1'."
       }
     },
@@ -26817,10 +26817,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "38a0c135b59e4f9b75bfd316c86db4a4c4f73b1815f2b188c12ff9ef83f1b5b3",
-        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "sha256": "d968f83042df8f00511bbcd9fbbeba85a06af489ed5c483fc847eb7a138926d7",
+        "reviewedAt": "2026-11-05T11:41:17.517Z",
         "reviewer": "Claude review agent (fr)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "Frame tightly encloses the Ligne d'échantillonnage checkbox and the 'Ligne # 2' field without covering the label."
       }
     },
@@ -26862,11 +26862,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "b854d569749a24ad482056fd1b3db0f95fa19a4ac2e29d971dc76f88b3deb1b9",
-        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "sha256": "8d57962d23a12030a91c248ab5c9a0f8b4c60d8cfef290f12130a76c1b1fd108",
+        "reviewedAt": "2026-11-05T11:41:17.517Z",
         "reviewer": "Claude review agent (fr)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Full Opération en cours row framed in Relation entre événements et sorties ('Etat initial' unaccented is a GUI quirk)."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Full Opération en cours row framed ('Etat initial' unaccented is a GUI quirk)."
       }
     },
     {
@@ -26907,11 +26907,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "77d5e5e7492354e00942827166e2a3feb94d6ff6c9b68d57e60286a8a3e27188",
-        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "sha256": "359f146dacf0cf39fe0a0d85be85bfc127e45888571b17d12f1ee76c3fc35c63",
+        "reviewedAt": "2026-11-05T11:41:17.517Z",
         "reviewer": "Claude review agent (fr)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Fenêtres now shows ICC Default Gate in normal styling, with no red field; only the Sélectionner la source d'entrée numérique (Entrées physiques) button is framed."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Sélectionner la source d'entrée numérique (Entrées physiques) framed; Fenêtres ICC Default Gate in normal styling; new Ligne #1 box visible unframed."
       }
     },
     {
@@ -26958,11 +26958,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "a9245750b2b1599821ccfc690447c6eb4d10aabce2fe6dd1feba6f1ce9f7272a",
-        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "sha256": "0e84b7f1bfc042876dd083b0efed1f5691a00c830cb02befb667796bb058ef45",
+        "reviewedAt": "2026-11-05T11:41:17.517Z",
         "reviewer": "Claude review agent (fr)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Modbus TCP selected and framed, full-width Retour framed, both frames intact."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Modbus TCP selected and framed, full-width Retour framed."
       }
     },
     {
@@ -27009,11 +27009,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "5fe8f114f31f6f34230c3cd11117a3b42d309a36acb63d68541773ff73726111",
-        "reviewedAt": "2026-11-05T10:46:34.351Z",
+        "sha256": "eac3b5dbc8f25ef122e1f89d9f72507da19e18c412fb109583548197af007ca5",
+        "reviewedAt": "2026-11-05T11:41:17.517Z",
         "reviewer": "Claude review agent (fr)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Web results filtered by 'Unnamed' with tight frames around the Nom and ID de ligne headers including their filter fields (web date picker shows English month names)."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Web results filtered by 'Unnamed' with tight frames around the Nom and ID de ligne headers and their filter fields (web date picker month names in English)."
       }
     },
     {
@@ -27054,11 +27054,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "34615376dec33ee7dd7ef755cb6345ed8d9d26dbe8e61c0f16b7bf1fa3baab88",
-        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "sha256": "ad3e29f46da30d7d528afda04b90e19f7a927b66f93382520f1a97ec1c8a1440",
+        "reviewedAt": "2026-11-05T11:41:17.580Z",
         "reviewer": "Claude review agent (it)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Impostazioni menu with the 'Impostazioni della Modalità Online' tile tightly framed, text clear, Italian GUI and alt text."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Impostazioni menu with Home button; 'Impostazioni della Modalità Online' tile tightly framed, Italian GUI and alt text."
       }
     },
     {
@@ -27099,11 +27099,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "f6ef543fb69fd448a6e898f2ed4d2f0d1139a932f8f87850d19fa5a9ec0ef020",
-        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "sha256": "ea27d5ad5283075f59dafe8eeb145c16f4bd8973547b50ca31a56f1cb3c10332",
+        "reviewedAt": "2026-11-05T11:41:17.580Z",
         "reviewer": "Claude review agent (it)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Impostazioni della Modalità Online with the 'Linee di campionamento BactoSwitch' tile framed tightly; 'Programma l'intervallo' greyed out and 'Alarm' tile in English are GUI quirks."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Impostazioni della Modalità Online with the 'Linee di campionamento BactoSwitch' tile tightly framed; greyed 'Programma l'intervallo' and English 'Alarm' are GUI quirks."
       }
     },
     {
@@ -27136,11 +27136,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "d6ac26f1196b08bd777271fb598816f458d4e6f3b6c198e6c7c07d337b4a1c67",
-        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "sha256": "a730257223722517216696d7e76ce478414568b93e347cb5c9022298fb5049a4",
+        "reviewedAt": "2026-11-05T11:41:17.580Z",
         "reviewer": "Claude review agent (it)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Linee di campionamento BactoSwitch page, Abilitare BactoSwitch ticked, Unnamed line 1-4 with colours, no frame."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Linee di campionamento BactoSwitch page without an enable checkbox, Linea 1-4 ticked with Unnamed line 1-4 and colours, no frame."
       }
     },
     {
@@ -27173,11 +27173,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "c4f8fde57a2efb80028426b8b75447f076fbbd27f4c73aa87046bf3526b84022",
-        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "sha256": "61edc59be04b6a3d4659ef53e93a793a88cadeea2d3473dfcc5af955cbc3a21e",
+        "reviewedAt": "2026-11-05T11:41:17.580Z",
         "reviewer": "Claude review agent (it)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Pannello di controllo, accessory 'online', flow 802 in black, Valvola 1-4 all APERTO, no frame (masculine APERTO with 'Valvola' is a GUI quirk)."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Control panel, accessory online, flow 802 in black, Valvola 1-4 all APERTO, no frame (masculine APERTO is a GUI quirk)."
       }
     },
     {
@@ -27210,11 +27210,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "bfd35b6bd7d8434e6fc315fd320ccb7d932f5d15ea27da629c70eab7a4eb0c3c",
-        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "sha256": "62139ab9dfdc56ab94c4fcc9b47ec197e8bb0d7a97a53e79f296ca92d4285800",
+        "reviewedAt": "2026-11-05T11:41:17.580Z",
         "reviewer": "Claude review agent (it)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Valvola 4 APERTO, Valvole 1-3 CHIUSO, flow 326 in green, accessory online, no frame."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Valvola 4 APERTO, Valvole 1-3 CHIUSO, flow 326 in green, no frame."
       }
     },
     {
@@ -27255,11 +27255,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "8e39dd07ffa19ef3a5eb44f94fbdb12c1b8b676a7463e44a8f1008da873b8e86",
-        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "sha256": "72122b3ab3668eb76735a46296225d9113015293785f4c622521cdd0fdfe4374",
+        "reviewedAt": "2026-11-05T11:41:17.580Z",
         "reviewer": "Claude review agent (it)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Home screen (BactoSense CORE, Modalità Online) with the Avvio / Programmazione interrotta button fully and tightly framed; alt text Italian and accurate."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Home screen (BactoSense SMART, Modalità Online) with the Avvio / Programmazione interrotta button fully framed."
       }
     },
     {
@@ -27300,11 +27300,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "c551d51e856aaccbd3bd23d436e349080d1e810d706046f829fb442244b63478",
-        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "sha256": "377a0658da23c9f5eb69b6dfcb4e249878f74c89647b64ebeb082a154b1a99d4",
+        "reviewedAt": "2026-11-05T11:41:17.580Z",
         "reviewer": "Claude review agent (it)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Popup now closed: plain online plot with four TCC curves and Avvio framed at bottom right, frame intact; fixes the earlier popup-open failure."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Plain online plot with no popup, four TCC curves, Avvio framed at bottom right without clipping."
       }
     },
     {
@@ -27351,11 +27351,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "cc91823d4c13a4f7a4c170996002713e744a1c5c912749ee1c4287de3b049192",
-        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "sha256": "a4c4e5df4ae080fb7533dca8eb13e3eb47e7420840919924ca403669cdffc9b7",
+        "reviewedAt": "2026-11-05T11:41:17.580Z",
         "reviewer": "Claude review agent (it)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "'Water Analysis with BactoSwitch' ticked with its row framed and Avanti framed without clipping; Gate ICC Default Gate."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "'Water Analysis with BactoSwitch' ticked with its row framed and Avanti framed; other protocols unticked."
       }
     },
     {
@@ -27396,11 +27396,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "9467d3c31262f84dddd4358b4bf657c7efecc179813450973a9795a6f22f067a",
-        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "sha256": "70769c1e3e62519c9cb016505977cedb99b3966932e142bd8ce41d5cd520aa8b",
+        "reviewedAt": "2026-11-05T11:41:17.580Z",
         "reviewer": "Claude review agent (it)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Interval step (120 Minute, Avvia ora ticked, Semplice) with Avvio framed tightly; 'Ora' on the 119/121 picker rows is a GUI quirk."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Interval step (120 Minute, Avvia ora ticked) with Avvio framed tightly; 'Ora' on picker rows 119/121 is a GUI quirk."
       }
     },
     {
@@ -27441,10 +27441,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "6b64816379426a79b7a502cc612b69141d4204164095ad5560f7272fa8a27417",
-        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "sha256": "f1f335efdaee1aa48da6eef603bbef28ed34a9e94e21ca53a5a52b810ee66083",
+        "reviewedAt": "2026-11-05T11:41:17.580Z",
         "reviewer": "Claude review agent (it)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "Four TCC curves with legend TCC #1-#4 and the '1 Mese' button framed at top centre; overlapping 'Avanti'/'interrotta' labels are a GUI quirk."
       }
     },
@@ -27486,10 +27486,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "9ed3b954e3c3fce67f7bfed65c82e479c9ee29e4e1be865fee580017c657dfd2",
-        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "sha256": "d236bb3c7b3c1ec42377f0c2effebb1b9ab3a81a43b8918dd14d801103af612b",
+        "reviewedAt": "2026-11-05T11:41:17.580Z",
         "reviewer": "Claude review agent (it)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "Display-settings popup with 1 Mese selected and TCC ticked, Visualizza i risultati framed bottom left; 'Registro' for Log and English 'Ratio'/'Counts' are GUI quirks."
       }
     },
@@ -27523,11 +27523,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "3aa1cf4dae2d70e9d4ecf7bfa84260269e1284a15e1112493681ffc228ab2c41",
-        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "sha256": "e4ad335f83a8358d88a7e4ab2095684e126e70b9050daf0ff5ac4bb33061df61",
+        "reviewedAt": "2026-11-05T11:41:17.580Z",
         "reviewer": "Claude review agent (it)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Risultati della Modalità Online list of Unnamed line 1-4 entries with TCC values, no frame."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Results list of Unnamed line 1-4 entries with TCC values, no frame."
       }
     },
     {
@@ -27560,11 +27560,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "fa755caccb93929217054a3a7de6c6e63b25c2ca6a20c7a6f68ece2c6a06e2d8",
-        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "sha256": "845e472a3f7f7bd06d57d332ead5f09ca0526f581414842b75ee9859b69a2743",
+        "reviewedAt": "2026-11-05T11:41:17.580Z",
         "reviewer": "Claude review agent (it)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Dettagli dei risultati for Unnamed line 1, TCC 120 510, 25 mar 2026 5:31, Conforme, no frame."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Details of Unnamed line 1, TCC 120 510, 25 mar 2026 5:31, Conforme, no frame."
       }
     },
     {
@@ -27597,10 +27597,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "7f01d957a4b7e4a26518c0dbc8ce9dcad0acb42fbe6f211f4a273979f35a91e4",
-        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "sha256": "e91d8daae60884187f2a52ebf4603c751649bac71e73720de69eb3310940ce83",
+        "reviewedAt": "2026-11-05T11:41:17.580Z",
         "reviewer": "Claude review agent (it)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "Filtra i risultati window with date range and Filtrare per linea button, no frame."
       }
     },
@@ -27642,11 +27642,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "8e8c3f469ea944fe027a54cd28e4f3ba8e4a78ba38354f3422c23b59ac802726",
-        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "sha256": "007f7f033ae6b2f32bd627b1974bc6c73f0b0bacc411bbeb52104c3ef7577a61",
+        "reviewedAt": "2026-11-05T11:41:17.580Z",
         "reviewer": "Claude review agent (it)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Same Filtra i risultati window with the Filtrare per linea button tightly framed."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Same window with the Filtrare per linea button tightly framed."
       }
     },
     {
@@ -27693,11 +27693,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "11a237c7b7b5a77d5d1e926c7f2a9638673aa4d21278157fcaa7f218adb86878",
-        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "sha256": "4af666579879a501e9f1379089c3e59c7e3f6e8e50af992c0bad83afb5618c12",
+        "reviewedAt": "2026-11-05T11:41:17.580Z",
         "reviewer": "Claude review agent (it)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Line-picker popup with Unnamed line 1 ticked and its row framed, Conferma framed, other lines unticked."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Line-picker popup with Unnamed line 1 ticked and its row framed, Conferma framed."
       }
     },
     {
@@ -27730,11 +27730,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "51d1cd3e1131c6cf449277344d79051fd992f6ad88311a0badfd6be0c5f55d8a",
-        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "sha256": "819dbf38523e46cf88ef022558d4af14224f46354dc9170c6a74462059c621e3",
+        "reviewedAt": "2026-11-05T11:41:17.580Z",
         "reviewer": "Claude review agent (it)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Online plot showing a single red curve with legend TCC #1 only, no frame."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Plot with a single red curve and legend TCC #1 only, no frame."
       }
     },
     {
@@ -27767,11 +27767,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "7c46dfe74ad5beeb36c73124f4bec3c39ea62af73be471f5685d8f2ec6e193b6",
-        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "sha256": "c49a6a82e73bb306de04611afa94babcd1b7753800af17326a3e4beec6ee34cf",
+        "reviewedAt": "2026-11-05T11:41:17.580Z",
         "reviewer": "Claude review agent (it)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Results list containing only Unnamed line 1 entries; bottom bar reads '27 feb 2026 5:31 - 25 mar 2026 5:31 | Linea #1'."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "List with only Unnamed line 1; bottom bar shows '27 feb 2026 5:31 - 25 mar 2026 5:31 | Linea #1'."
       }
     },
     {
@@ -27812,11 +27812,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "5c10898df83880689fd84e257d56dbabc340d409c89dfb0407badfee36b0485e",
-        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "sha256": "843ecdc0850d80849cd1f1801ee5c9f218bd82fca7019f93f4ea5d098cbaf780",
+        "reviewedAt": "2026-11-05T11:41:17.580Z",
         "reviewer": "Claude review agent (it)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Configurazione dell'allarme with the Linea campione checkbox and 'Linea # 2' field enclosed in one tight frame."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Alarm configuration with the Linea campione checkbox and 'Linea # 2' field in one tight frame."
       }
     },
     {
@@ -27857,11 +27857,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "7460fc3698f4b6be9651dc2f007a116d368e5d6949e0597124bcbf5b3608e498",
-        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "sha256": "0bb194bd5a723a856271c05a666d0b5ce0da5e120ef8aa46b54061566bb7103c",
+        "reviewedAt": "2026-11-05T11:41:17.580Z",
         "reviewer": "Claude review agent (it)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Assegna eventi agli output with the full 'Processo in corso' row framed across all four outputs."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Assegna eventi agli output with the full 'Processo in corso' row framed."
       }
     },
     {
@@ -27902,11 +27902,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "229c3c85ecd5f54dbce4c3e4963d383f0d9ddafcdb05982909e102d3899ebe60",
-        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "sha256": "1c1dc52511e18b3033438974a7e14cb225a06b6e61e7936321a7181b3cc05ef3",
+        "reviewedAt": "2026-11-05T11:41:17.580Z",
         "reviewer": "Claude review agent (it)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Digital input configuration (PLC) with Gate now 'ICC Default Gate' in normal text and the 'Seleziona la sorgente di input digitali (Input fisici)' button framed."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Digital input configuration (PLC), Gate ICC Default Gate, with the 'Seleziona la sorgente di input digitali (Input fisici)' button framed; 'Utilizzare lo scheduler' label abuts 'Linea' (GUI quirk)."
       }
     },
     {
@@ -27953,11 +27953,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "37a260406733587ef768f7f86c4f28bbec2f714d249cb805855348d2c93e616e",
-        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "sha256": "3b3c5ce5fa4008c6d7a9b6c758d3438a0d0e85fe037aea2ca54883a42ce04202",
+        "reviewedAt": "2026-11-05T11:41:17.580Z",
         "reviewer": "Claude review agent (it)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Sorgente di input digitali (PLC) with Modbus TCP selected and framed and Indietro framed; alt uses 'ingressi' where the GUI says 'input', minor."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Digital input source with Modbus TCP selected and framed and Indietro framed; alt says 'ingressi' where the GUI says 'input', minor."
       }
     },
     {
@@ -28004,11 +28004,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "34799f6a9c75463a653381bac63bac82d25c216ea04b4ab03b641236ba0f47e1",
-        "reviewedAt": "2026-11-05T10:46:34.420Z",
+        "sha256": "454ae778c1de3ec6ea4f207b5f28237fbfa0519ce1c5b7ee40730a4bd02c98fd",
+        "reviewedAt": "2026-11-05T11:41:17.580Z",
         "reviewer": "Claude review agent (it)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Web online results filtered by 'Unnamed' with Nome and ID linea headers (including filter fields) framed without covering text; English date-range labels and truncated 'Data di campionam...' are web UI quirks."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Web online results filtered by 'Unnamed' with Nome and ID linea headers framed without covering text; English date-range labels are a web UI quirk."
       }
     },
     {
@@ -28049,11 +28049,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "a9ffde7651a0f0a1177e97dc0dab9a3d8e04365fc1952bc9caf8c3e57dcadc4d",
-        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "sha256": "0bc715a3dc65c235421049218a6524b37d0f700dff62c47cdcfdb48aa0553ce8",
+        "reviewedAt": "2026-11-05T11:41:17.637Z",
         "reviewer": "Claude review agent (es)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Ajustes menu with a tight, unclipped frame around the 'Ajustes del modo en línea' tile; Spanish GUI and alt."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Ajustes menu (Home button in toolbar) with a tight, unclipped frame around the 'Ajustes del modo en línea' tile; Spanish alt."
       }
     },
     {
@@ -28094,11 +28094,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "33bcee3a447be1bed1b2b980ff2f3d53d22d16aff65d25f8b7c7f53c426e759f",
-        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "sha256": "2e2ad7803946beba04eb9f0675e29b4cebed30e617b50f96e208ddfb75e5a5d7",
+        "reviewedAt": "2026-11-05T11:41:17.637Z",
         "reviewer": "Claude review agent (es)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Ajustes del modo en línea menu with the 'Líneas de muestra BactoSwitch' tile framed; 'Alarm' tile label is the GUI's own English string."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Ajustes del modo en línea menu with the 'Líneas de muestra BactoSwitch' tile framed; 'Alarm' tile label is a GUI English string."
       }
     },
     {
@@ -28131,11 +28131,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "61a5e1f3cbca4f1dada7cb29d890de1258cd3341bbd033f9e540abd4306640d0",
-        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "sha256": "3a6a7ab7eadb4a413418aedfb9b033ffca2324c4ae3c93525b11ade26cd862ea",
+        "reviewedAt": "2026-11-05T11:41:17.637Z",
         "reviewer": "Claude review agent (es)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Activar BactoSwitch ticked, four lines 'Unnamed line 1-4' with colours, no frame; page title says 'muestras' while the menu tile says 'muestra' (GUI wording inconsistency)."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Lines 1-4 each ticked with 'Unnamed line N' names and red/green/blue/orange colours, no Enable checkbox, no frame; title 'muestras' vs tile 'muestra' is a GUI wording inconsistency."
       }
     },
     {
@@ -28168,10 +28168,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "371894849a5984afeafc78fbb3a5a0f2364440740ecfe4c59a36edc2327d9d48",
-        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "sha256": "298d8c3e7d9db636b85a662961f488e1441b9172e104ff96c01adac555d2c874",
+        "reviewedAt": "2026-11-05T11:41:17.637Z",
         "reviewer": "Claude review agent (es)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "Accessory 'en línea', flow 802 in black, all four valves ABIERTO, no frame."
       }
     },
@@ -28205,10 +28205,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "e98ba25c0ddaeabc4fd72178494bc07355810b4a2f6431f80f53246f8ad58777",
-        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "sha256": "cdad6136b1e695ca25ed837133a90957475479863590cc6508a7370f06a7bf39",
+        "reviewedAt": "2026-11-05T11:41:17.637Z",
         "reviewer": "Claude review agent (es)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "Válvula 4 ABIERTO, válvulas 1-3 CERRADO, flow 326 in green, no frame."
       }
     },
@@ -28250,11 +28250,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "26e0aa549769b32f2485dc6c00426f600f5f01840988446ddc37086acf973e1c",
-        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "sha256": "9d56696b972c76644f1563bf0edee52430bf6e8fc3cf40ff683126f6820d602a",
+        "reviewedAt": "2026-11-05T11:41:17.637Z",
         "reviewer": "Claude review agent (es)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Online-mode home screen with the compound Start button ('Inicio' plus 'Programador detenido') framed to its bounds; Spanish alt."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Online-mode home screen (BactoSense SMART) with the compound Start button ('Inicio' plus 'Programador detenido') framed to its bounds; chart dates ('3 Apr') stay English in the GUI."
       }
     },
     {
@@ -28295,11 +28295,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "956424e9784b272b5d37bd6904f44a10796c51666916c86af08953cc079011d0",
-        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "sha256": "120b9b6165a3dec601772aa21cbb7b69b171d0f034753e2f7a016e2693d26201",
+        "reviewedAt": "2026-11-05T11:41:17.637Z",
         "reviewer": "Claude review agent (es)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Display-settings popup is now closed: plain plot with four TCC curves and Inicio framed at bottom right."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Plain online plot with four TCC curves, no popup, Inicio framed at bottom right."
       }
     },
     {
@@ -28346,11 +28346,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "58a2f3d5a181108e518493b4a503515a78d68efa220c64b0de1743ad189fc8aa",
-        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "sha256": "c1ca8bbe6def5b15f23991c930dea84b301eebc1316712850a89b7caff5e87a7",
+        "reviewedAt": "2026-11-05T11:41:17.637Z",
         "reviewer": "Claude review agent (es)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "'Water Analysis with BactoSwitch' ticked with its row framed and Siguiente framed with all edges visible."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "'Water Analysis with BactoSwitch' ticked with its row framed, Siguiente framed with all edges visible; gate ICC Default Gate."
       }
     },
     {
@@ -28391,11 +28391,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "85b1c24cd0a31d0e2bebc81cfba6af6e94e9da5e7fd38091d867b97e0637b93b",
-        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "sha256": "779b5e76cba3deae687e1cfab3241de0a57c69f301bde5f9e7b51037241c372d",
+        "reviewedAt": "2026-11-05T11:41:17.637Z",
         "reviewer": "Claude review agent (es)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Interval step with Inicio framed; untranslated 'Minute' unit remains a GUI quirk."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Interval step with Inicio framed; untranslated 'Minute' unit is a GUI quirk."
       }
     },
     {
@@ -28436,11 +28436,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "34ee941f8958f94686ecfbed4bfb01ca0cf0074049c0f6d207b1ddd59bfbab0a",
-        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "sha256": "6c913b9809c477a79210d7ea13f82f182fb9c11c76940b0f48db275af9e86149",
+        "reviewedAt": "2026-11-05T11:41:17.637Z",
         "reviewer": "Claude review agent (es)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Four TCC curves #1-#4 with the '1 Mes' time-span button framed at top centre."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Four TCC curves #1-#4 with legend and a tight frame around the '1 Mes' time-span button at top centre."
       }
     },
     {
@@ -28481,11 +28481,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "40e2870b6e3e1a7f941bc1aab0dd9be4ea8852c5da5649f2917fe4ca161a8663",
-        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "sha256": "cb11c8bca31c3fbd0d4127ec3b8657ed27635617e07ad1f62c9aba3139841056",
+        "reviewedAt": "2026-11-05T11:41:17.637Z",
         "reviewer": "Claude review agent (es)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Popup with '1 Mes' selected and TCC ticked, 'Ver resultados' framed bottom left; 'Escala personali...' truncation is a GUI quirk."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Popup with '1 Mes' selected and TCC ticked, 'Ver resultados' framed bottom left; 'Escala personali...' truncation and 'Día 1' are GUI quirks."
       }
     },
     {
@@ -28518,11 +28518,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "a4be0f4fbaf92cc49e4fb671be409e1b3cb1f9346a3cb82b3228ff45b164ae59",
-        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "sha256": "0d72e4566ce3da70b2c6b3fb65be6edfa6b3117a4069cc44a5f053ec34f96b92",
+        "reviewedAt": "2026-11-05T11:41:17.637Z",
         "reviewer": "Claude review agent (es)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Results list of 'Unnamed line N' entries with TCC values, no frame; header 'Radio [%]' is a GUI mistranslation of Ratio."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Results list of 'Unnamed line N' entries with TCC values, no frame; 'Radio [%]' header is a GUI mistranslation of Ratio."
       }
     },
     {
@@ -28555,11 +28555,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "b87a90bd1d5d7a719dbea5bfdcb0dd51f688eab1da10821998ed19d4aed06080",
-        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "sha256": "aeafbd468d9e8156738a919da96c496b945665df73a834808d7730ee5fbdc845",
+        "reviewedAt": "2026-11-05T11:41:17.637Z",
         "reviewer": "Claude review agent (es)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Details of the 'Unnamed line 1' TCC 120 510 measurement (25 mar 2026 5:31), no frame; 'Cambie el nombre de' label is truncated by the GUI."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Details of the 'Unnamed line 1' TCC 120 510 measurement, no frame; 'Cambie el nombre de' is truncated by the GUI."
       }
     },
     {
@@ -28592,11 +28592,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "524fa578104902896b8202f6a36405be27389a7a96f8eb96a6de3eb3c00b56cf",
-        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "sha256": "8a203813e1b6331afd141969123d5ebaf18cab9073d47ec148833031a13e62eb",
+        "reviewedAt": "2026-11-05T11:41:17.637Z",
         "reviewer": "Claude review agent (es)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Filtrar resultados window with date fields, calendar and 'Filtrar por línea' button, no frame."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Filtrar resultados window with dates, calendar and 'Filtrar por línea' button, no frame."
       }
     },
     {
@@ -28637,10 +28637,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "11a1c0f47c5868a18efa1e6cef659f70ff658924a34cc6830a22e637942f1dea",
-        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "sha256": "e1461766d8f62d5eda5560f32b19ef246bc44a99574d7c4ae18669b988545920",
+        "reviewedAt": "2026-11-05T11:41:17.637Z",
         "reviewer": "Claude review agent (es)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "Same window with a tight frame around 'Filtrar por línea'."
       }
     },
@@ -28688,10 +28688,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "4246398c33a9f4c93048d43df2329c986a49b472fc040b99cee1ceae58a2f0fa",
-        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "sha256": "0ebc51e66efba7f8d9e43283740b8233e2edc102422900eb9efec20231de6220",
+        "reviewedAt": "2026-11-05T11:41:17.637Z",
         "reviewer": "Claude review agent (es)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "Line-picker popup with 'Unnamed line 1' ticked and its row framed, Confirmar framed; line 4 row is cut by the list viewport (GUI layout)."
       }
     },
@@ -28725,10 +28725,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "8a3bee1574d63a49af0718a3609143aa6148fe13f2b88db4d64b203227c793a2",
-        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "sha256": "a544dc17d099041c3d681798ae98e5b817a9ffaa4b8af5bbe51159f4fed47c31",
+        "reviewedAt": "2026-11-05T11:41:17.637Z",
         "reviewer": "Claude review agent (es)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "Plot shows only the TCC #1 curve, no frame."
       }
     },
@@ -28762,10 +28762,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "24de3d479c77e697d332441138e52ef2588070f4ccd49f2885217c57ac2d81e1",
-        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "sha256": "e9f98f1d1186a12b72b850329aa10cfe76459fccbb32234a31c06b3dbf5641f6",
+        "reviewedAt": "2026-11-05T11:41:17.637Z",
         "reviewer": "Claude review agent (es)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "List contains only 'Unnamed line 1' and the bottom bar reads '... | Línea #1'."
       }
     },
@@ -28807,11 +28807,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "e1812ac9c10f29d35480e498d0e9b9c96e4781a060a17e5b9394a05fb15ed59a",
-        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "sha256": "7255ec57983693ec814afa6cf89ae8c23f5a7a4531be9d924f2395bfaf30878f",
+        "reviewedAt": "2026-11-05T11:41:17.637Z",
         "reviewer": "Claude review agent (es)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Línea de muestra checkbox and 'Línea # 2' field framed together, unclipped."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Línea de muestra checkbox and 'Línea # 2' field framed together, unclipped; 'Apagado' overflowing its buttons is a GUI quirk."
       }
     },
     {
@@ -28852,10 +28852,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "f7d0a63b5738a8cb53f4905771c0fdb63e77e87b4243c2b9a3baf83e1e31c367",
-        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "sha256": "5a3fdb8411c181d66fd86ba8d8da83f2b29637dab80bb53b83a02e2e6b8bee0f",
+        "reviewedAt": "2026-11-05T11:41:17.637Z",
         "reviewer": "Claude review agent (es)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "'Proceso en marcha' row framed across all four output columns."
       }
     },
@@ -28897,11 +28897,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "4ffe4421f12cca0e15c2fd888a7953ca6a221ae1db2c082cdd1ec9958b346588",
-        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "sha256": "83e395571d8cb6a75c3e6b6192a7a290d13ed1f0df26a41eac4edab259051e63",
+        "reviewedAt": "2026-11-05T11:41:17.637Z",
         "reviewer": "Claude review agent (es)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Compuertas now shows 'ICC Default Gate' in normal styling (no red field); 'Seleccionar fuente de entrada digital (Entradas físicas)' framed, text inside the frame."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "PLC configuration with protocol Water Analysis with BactoSwitch and normal ICC Default Gate field; 'Seleccionar fuente de entrada digital (Entradas físicas)' framed, text inside."
       }
     },
     {
@@ -28948,10 +28948,10 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "a3af6f8be00c2276ed5d9a3cd1a81f229998f4889c1d151f945cc4ff5577b0eb",
-        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "sha256": "7413f6ee2580a30e5a996c727379fa9be6684668736321b729048a1d0f00df6a",
+        "reviewedAt": "2026-11-05T11:41:17.637Z",
         "reviewer": "Claude review agent (es)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
         "notes": "Modbus TCP selected and framed, Volver framed with all edges visible."
       }
     },
@@ -28999,11 +28999,11 @@
       ],
       "review": {
         "status": "reviewed",
-        "sha256": "7ce64cdf10925b8ea42e59effe02aed47f38286b70a9028c20cb6531f9eb3de9",
-        "reviewedAt": "2026-11-05T10:46:34.481Z",
+        "sha256": "788f8b34a6125340e1ebb5ddeb3d950c315b5365a6c5dd1c76cfc7149bf21244",
+        "reviewedAt": "2026-11-05T11:41:17.637Z",
         "reviewer": "Claude review agent (es)",
-        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required; recaptured figures inspected again",
-        "notes": "Web online results filtered by 'Unnamed' with frames around the Nombre and Identificación (truncated 'Identificaci...') headers including their filter cells; date-range picker shows English month names (web UI quirk)."
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Web results filtered by 'Unnamed' with frames around the Nombre and Identificación ('Identificaci...' truncated) headers including filter cells; date picker months in English (web UI quirk)."
       }
     },
     {
@@ -29041,7 +29041,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "e1a0488476d4e113dc5b1a59b3070bd7d44c7e5fca46acd1b6046e16ad71c6d9",
+        "reviewedAt": "2026-11-05T11:41:17.352Z",
+        "reviewer": "Claude (main session)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "PLC draft with Water Analysis with BactoSwitch; the Line box (Line #1) is shown after the GUI fix and framed."
+      }
     },
     {
       "id": "en-bactoswitch-digital-inputs-scheduler",
@@ -29084,7 +29092,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "1d2e41be034795e9e091d6f9e7f0b813d40ac809445f9b8a5d6de0bbf8235441",
+        "reviewedAt": "2026-11-05T11:41:17.352Z",
+        "reviewer": "Claude (main session)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Use scheduler ticked and framed; 30 Minute interval framed; Line #1 kept."
+      }
     },
     {
       "id": "de-bactoswitch-digital-inputs-line",
@@ -29121,7 +29137,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "3c4d360481fa801d19d48d69f21a0c6191a590f335c50ae5f86b04ea402a49fa",
+        "reviewedAt": "2026-11-05T11:41:17.445Z",
+        "reviewer": "Claude review agent (de)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Digital-input configuration (SPS) with protocol Water Analysis with BactoSwitch; frame tightly encloses the 'Zeile #1' field; labels 'Planer verwenden' and 'Leitung' run together (GUI layout quirk)."
+      }
     },
     {
       "id": "de-bactoswitch-digital-inputs-scheduler",
@@ -29164,7 +29188,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "d7c6d52f8003dcadeba8f4e4894942153f023a5c04ed5ad07ff65fb257e73df3",
+        "reviewedAt": "2026-11-05T11:41:17.445Z",
+        "reviewer": "Claude review agent (de)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Same screen with Planer verwenden ticked and framed and the Intervall field '30 Minute' framed, both tight; the unsaved-changes warning wraps in small type (GUI quirk)."
+      }
     },
     {
       "id": "fr-bactoswitch-digital-inputs-line",
@@ -29201,7 +29233,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "e75e6eafde9cce5fdc01b98e96dde53a359ee6ea88a18eaa471666ce8f9cb107",
+        "reviewedAt": "2026-11-05T11:41:17.517Z",
+        "reviewer": "Claude review agent (fr)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Digital input configuration with protocol Water Analysis with BactoSwitch and a tight frame around the 'Ligne #1' box; the Ligne label abuts 'Utiliser le planificateur' (GUI layout quirk)."
+      }
     },
     {
       "id": "fr-bactoswitch-digital-inputs-scheduler",
@@ -29244,7 +29284,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "c05777bd6eb6430c23c8eae571d03f865ae1ea369d0203af29df13d854b59928",
+        "reviewedAt": "2026-11-05T11:41:17.517Z",
+        "reviewer": "Claude review agent (fr)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Utiliser le planificateur ticked with a tight frame around its checkbox, Intervalle '30 Minute' field framed; warning text wraps in a smaller font (GUI quirk)."
+      }
     },
     {
       "id": "it-bactoswitch-digital-inputs-line",
@@ -29281,7 +29329,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "ff75f903a8e5231b746e8ae501beab28c17b7df5eeecd9d1a73de3ed8df029e6",
+        "reviewedAt": "2026-11-05T11:41:17.580Z",
+        "reviewer": "Claude review agent (it)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Digital input configuration (PLC) with protocol Water Analysis with BactoSwitch and the 'Linea #1' box tightly framed; alt Italian and accurate."
+      }
     },
     {
       "id": "it-bactoswitch-digital-inputs-scheduler",
@@ -29324,7 +29380,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "755e593d7a241b3292c0e96d08ac24489775a82d2142f2d308732411fd1532d6",
+        "reviewedAt": "2026-11-05T11:41:17.580Z",
+        "reviewer": "Claude review agent (it)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "Same screen with Utilizzare lo scheduler ticked and both the checkbox and the 'Intervallo 30 Minute' field tightly framed; the shrunken, wrapped unsaved-changes warning is a GUI quirk."
+      }
     },
     {
       "id": "es-bactoswitch-digital-inputs-line",
@@ -29361,7 +29425,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "d66ee6d458c7373e787c16946d4508bafa0cdc8afbf132a6c48d50c411f6885f",
+        "reviewedAt": "2026-11-05T11:41:17.637Z",
+        "reviewer": "Claude review agent (es)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "PLC configuration with protocol Water Analysis with BactoSwitch and a tight, unclipped frame around the 'Línea #1' box; 'Utilizar el programador' label crowds the 'Línea' label (GUI layout)."
+      }
     },
     {
       "id": "es-bactoswitch-digital-inputs-scheduler",
@@ -29404,7 +29476,15 @@
       "pixelSize": [
         1600,
         960
-      ]
+      ],
+      "review": {
+        "status": "reviewed",
+        "sha256": "3cff091300dc5baf14a68d53622b500d43f062c4a226acb68e7715587d36d559",
+        "reviewedAt": "2026-11-05T11:41:17.637Z",
+        "reviewer": "Claude review agent (es)",
+        "method": "visual inspection of the final render at logical 800 × 480 size, four figures per sheet, full image opened where detail required",
+        "notes": "'Utilizar el programador' ticked and tightly framed, Intervalo field '30 Minute' framed; 'Minute' untranslated and the shrunk unsaved-changes warning are GUI quirks."
+      }
     }
   ],
   "reviewSummary": {

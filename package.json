@@ -15,6 +15,7 @@
     "browser:install": "playwright install chromium",
     "manual:pdf": "node scripts/compile-pdf.mjs",
     "manual:device": "node scripts/build-device-manual.mjs",
+    "manual:web": "node scripts/publish-bactoweb.mjs",
     "manual:preview": "node scripts/preview-device-manual.mjs",
     "translations:check": "node scripts/check-translations.mjs",
     "screenshots:prepare": "node scripts/gui-capture/prepare-figures.mjs",
