@@ -14,6 +14,13 @@ let previous;
 try { previous = JSON.parse(await readFile(filename,'utf8')); } catch { previous = {figures:[]}; }
 const entries = new Map(inventory.entries.map(row=>[Number(row.id.replace('gui-source-','')),row]));
 const figures = previous.figures.filter(figure=>figure.locale && !locales.includes(figure.locale) && figure.locale!=='all');
+// Keep the render and review of an unchanged definition. After recapturing a raw state in place,
+// render the figures that use it explicitly: the definition does not change with the pixels.
+const keepReviewed = figure => {
+  const kept=previous.figures.find(row=>row.id===figure.id);
+  const unchanged=kept && JSON.stringify(Object.fromEntries(Object.keys(figure).map(key=>[key,kept[key]])))===JSON.stringify(figure);
+  return unchanged ? kept : figure;
+};
 const pngSize = async capture => {
   const bytes = await readFile(path.join(root,capture));
   if (bytes.subarray(1,4).toString()!=='PNG') throw new Error(`Expected a PNG: ${capture}`);
@@ -50,12 +57,12 @@ for (const locale of locales) {
       for (const panel of geometry.panels) { panel.capture=raw(panel.capture);panel.captureSize=await pngSize(panel.capture); }
     } else { geometry.capture=raw(geometry.capture);geometry.captureSize=await pngSize(geometry.capture); }
     for (const callout of geometry.callouts || []) callout.meaning=geometry.annotationChanges?.[callout.label] || annotations.find(row=>row.label===callout.label)?.meaning || '';
-    figures.push({id:`${locale}-${name}`,locale,kind:'screenshot',surface,
+    figures.push(keepReviewed({id:`${locale}-${name}`,locale,kind:'screenshot',surface,
       output:`/img/gui/${locale}/${name}.png`,
       alt:`BactoSense — ${localizedTitles[locale][index]}`,
       replaces:sourceRows.map(row=>row.source_path),sourceIds:sourceRows.map(row=>row.id),
       printedPages:[...new Set(sourceRows.flatMap(row=>row.printed_pages))],
-      originalAnnotations:annotations,...geometry});
+      originalAnnotations:annotations,...geometry}));
   }
 }
 for (const icon of icons.icons) {
@@ -67,10 +74,7 @@ for (const icon of icons.icons) {
     sourceIds:icons.replacements.filter(row=>replaces.includes(row.old)).map(row=>row.id),
     productionComponent:icon.production_component,
     ...(icon.name==='maintenance-button' ? {contextReplacements:[{source:'/img/manual/asset-a7a911718f1c.png',printedPage:84}]} : {})};
-  // Icons are not recaptured with the screens: keep the render and review of an unchanged definition.
-  const kept=previous.figures.find(row=>row.id===figure.id);
-  const unchanged=kept && JSON.stringify(Object.fromEntries(Object.keys(figure).map(key=>[key,kept[key]])))===JSON.stringify(figure);
-  figures.push(unchanged ? kept : figure);
+  figures.push(keepReviewed(figure));
 }
 // Each capture records the source it ran against.
 const nativeRuns=Object.values(await readJson('output/gui-capture/runtime/native-provenance.json'));
@@ -98,5 +102,7 @@ const manifest={version:1,capturedDate:nativeRuns.map(run=>run.capturedDate).sor
 // refreshing legacy replacements must not drop those document images.
 manifest.figures.push(...previous.figures.filter(figure=>figure.catalog && locales.includes(figure.locale)));
 for (const [key,value] of Object.entries(previous.source || {})) if (key.endsWith('CaptureReports') && key!=='captureReports') manifest.source[key]=value;
+// States recaptured later from another GUI tree, recorded by the recapture (state, locales, source).
+try { manifest.source.guiRecaptures=await readJson('output/gui-capture/runtime/native-recaptures.json'); } catch {}
 await writeFile(filename,JSON.stringify(manifest,null,2)+'\n');
 console.log(`Prepared ${manifest.figures.length} figures. Render and visually review before applying them.`);

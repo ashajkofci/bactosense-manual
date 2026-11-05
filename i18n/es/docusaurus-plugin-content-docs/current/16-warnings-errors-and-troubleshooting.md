@@ -124,7 +124,7 @@ El instrumento registra los errores, las advertencias, las alarmas y la activida
 | **Registro de alarmas** | Alarmas activadas por los resultados de medición, incluidas las alarmas de BactoCloud. Véase [Registro de alarmas](16-warnings-errors-and-troubleshooting.md#section-16-4-3). | Usuarios Basic, Advanced y Admin |
 | **Registro de acceso** | Intentos de inicio de sesión fallidos. Véase [Registro de acceso y auditoría](16-warnings-errors-and-troubleshooting.md#section-16-4-4). | Usuarios Admin, con el Paquete Management |
 | **Auditoria de registro** | Operaciones y cambios de configuración realizados por los usuarios y por el instrumento. Véase [Registro de acceso y auditoría](16-warnings-errors-and-troubleshooting.md#section-16-4-4). | Usuarios Admin, con el Paquete Management |
-| **Results (manual mode)**, **Results (online mode)**, **Resultados de la validación** | Resultados de medición de cada modo. Véase [Filtrado de mediciones](10-measurements.md#section-10-7) y [Resultados y análisis de datos](11-results-and-data-analysis.md). | Usuarios Basic, Advanced y Admin |
+| **Resultados (modo manual)**, **Resultados (modo en línea)**, **Resultados de la validación** | Resultados de medición de cada modo. Véase [Filtrado de mediciones](10-measurements.md#section-10-7) y [Resultados y análisis de datos](11-results-and-data-analysis.md). | Usuarios Basic, Advanced y Admin |
 
 Las entradas más recientes aparecen primero. El **Registro de errores**, el **Registro de advertencias**, el **Registro de alarmas** y la **Auditoria de registro** muestran el **Lapso de tiempo mostrado:** en la barra de acciones. De forma predeterminada abarca desde la entrada más antigua hasta la más reciente; la **Auditoria de registro** muestra los últimos siete días. Pulse el lapso de tiempo para mostrar otro periodo (véase [Cambiar el lapso de tiempo mostrado](16-warnings-errors-and-troubleshooting.md#section-16-4-5)).
 
@@ -148,7 +148,7 @@ El color de la fila indica el tipo de cada entrada: rojo para los errores críti
 - **C01 – Los errores se eliminan automáticamente**: tras un error no crítico, el instrumento completó correctamente un protocolo y considera resueltos los errores anteriores.
 - **C02 – Errores eliminados manualmente**: un usuario pulsó **Eliminar errores** (véase [Borrado de errores](16-warnings-errors-and-troubleshooting.md#section-16-5)).
 
-Si no se registró ningún error en el lapso de tiempo mostrado, aparece **No errors in this date range**.
+Si no se registró ningún error en el lapso de tiempo mostrado, aparece **No hay errores en este intervalo de fechas**.
 
 :::info[Consulte los detalles del evento]
 
@@ -164,7 +164,7 @@ El **Registro de advertencias** enumera las advertencias emitidas durante las me
 - **Descripción**: código y nombre de la advertencia. Los códigos se enumeran en [Advertencias](16-warnings-errors-and-troubleshooting.md#section-16-1).
 - **Contexto**: dónde se produjo la advertencia: **Manual** (modo manual), **Auto** (modo en línea), **Mantenimiento** o **Validación**.
 
-Seleccione una advertencia para ver su descripción. Pulse **Cerrar** para volver al registro. Si no se registró ninguna advertencia en el lapso de tiempo mostrado, aparece **No warnings in this date range**.
+Seleccione una advertencia para ver su descripción. Pulse **Cerrar** para volver al registro. Si no se registró ninguna advertencia en el lapso de tiempo mostrado, aparece **No hay advertencias en este intervalo de fechas**.
 
 ### 16.4.3 Registro de alarmas {#section-16-4-3}
 
@@ -174,7 +174,7 @@ El **Registro de alarmas** enumera las alarmas activadas por los resultados de m
 - **Nombre**: una campana y el nombre de la alarma. La campana es roja para las alarmas del instrumento. En las alarmas de BactoCloud, su color indica la gravedad: rojo para Crítico, naranja para Advertencia y azul para Información.
 - **Alarma**: la fuente, la condición y el umbral de la alarma, por ejemplo *Cartridge Remaining < 10 %*.
 
-Las alarmas de BactoCloud muestran además un símbolo de nube al final de la fila. Para reconocer una alarma de BactoCloud después de revisarla, pulse el botón de marca de verificación junto al símbolo de nube; las alarmas reconocidas muestran en su lugar una marca de verificación. **Acknowledge all** reconoce todas las alarmas de BactoCloud no reconocidas de la lista y solo está disponible mientras quede al menos una. El reconocimiento se registra en BactoCloud: documenta la revisión, pero no resuelve la causa de la alarma.
+Las alarmas de BactoCloud muestran además un símbolo de nube al final de la fila. Para reconocer una alarma de BactoCloud después de revisarla, pulse el botón de marca de verificación junto al símbolo de nube; las alarmas reconocidas muestran en su lugar una marca de verificación. **Reconocer todas** reconoce todas las alarmas de BactoCloud no reconocidas de la lista y solo está disponible mientras quede al menos una. El reconocimiento se registra en BactoCloud: documenta la revisión, pero no resuelve la causa de la alarma.
 
 Seleccione una alarma para abrir el resultado de medición que la activó.
 

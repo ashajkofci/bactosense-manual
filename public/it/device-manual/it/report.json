@@ -7,7 +7,7 @@
   "assetCount": 178,
   "maxAssetWidth": 800,
   "resizedAssetCount": 53,
-  "assetBytes": 11891670,
+  "assetBytes": 11889776,
   "files": [
     {
       "file": "chapters/welcome.json",
@@ -51,7 +51,7 @@
     },
     {
       "file": "chapters/measurements.json",
-      "sha256": "94ffa35fc2efdc63854bb43251a136f11d22fffc1bcccd9fb2fa53e4ea867667"
+      "sha256": "4521e3d83f825593a30854d36b61315004e1747864158752afe264e5203c114e"
     },
     {
       "file": "chapters/results-and-data-analysis.json",
@@ -71,11 +71,11 @@
     },
     {
       "file": "chapters/maintenance.json",
-      "sha256": "ea7105d584095b64c5086ed0379669b4cc36c6f58b301b99d7549e9f83038ec9"
+      "sha256": "6f124a70f375dc763413c3443aaed668536b5721fff85aed5fc5f550599dd09c"
     },
     {
       "file": "chapters/warnings-errors-and-troubleshooting.json",
-      "sha256": "7b900486228e997c0b5892032051b3d4ac45f75513aa3372ca81694e0e2b35c9"
+      "sha256": "20e4fcfc6b828c02eea2659eca8ebb69cb6649af201068ae40f7155f67dbc855"
     },
     {
       "file": "chapters/storage-transport-and-disposal.json",
@@ -506,8 +506,8 @@
     {
       "file": "assets/img/gui/it/advanced-scheduler-new-rule.png",
       "source": "static/img/gui/it/advanced-scheduler-new-rule.png",
-      "sourceSha256": "f3a97343b04eb8793810f0e952bf5b8ef0366164f9ee3baab6423d09772cd9a5",
-      "sha256": "f3a97343b04eb8793810f0e952bf5b8ef0366164f9ee3baab6423d09772cd9a5",
+      "sourceSha256": "ee5ba7c4abaeb0242e4c42b85fe5fd7a1e717597a6a394b8fac10e34630a16c9",
+      "sha256": "ee5ba7c4abaeb0242e4c42b85fe5fd7a1e717597a6a394b8fac10e34630a16c9",
       "bytes": 8989,
       "originalWidth": 472,
       "originalHeight": 126,
@@ -518,9 +518,9 @@
     {
       "file": "assets/img/gui/it/advanced-scheduler-preview-button.png",
       "source": "static/img/gui/it/advanced-scheduler-preview-button.png",
-      "sourceSha256": "9b662d3b74b1b687493c47ca5a4c51634c30efcc1949fd6a4f4327c2db3b6e56",
-      "sha256": "9b662d3b74b1b687493c47ca5a4c51634c30efcc1949fd6a4f4327c2db3b6e56",
-      "bytes": 7176,
+      "sourceSha256": "8f8fc82c6a29e8a001210356ced56d1a51333f54a948b7277e6ce1a93e46cc95",
+      "sha256": "8f8fc82c6a29e8a001210356ced56d1a51333f54a948b7277e6ce1a93e46cc95",
+      "bytes": 7174,
       "originalWidth": 308,
       "originalHeight": 126,
       "width": 308,
@@ -542,9 +542,9 @@
     {
       "file": "assets/img/gui/it/advanced-scheduler-range.png",
       "source": "static/img/gui/it/advanced-scheduler-range.png",
-      "sourceSha256": "bcfa9209f528092d1cc6c36a4cb5122ef2d2c002af1d011edc07057ffcc19014",
-      "sha256": "f27d04b99e28e014c9af0c5e9c8a0a9a0c7fd4aac812c83571be2d3c9f3252dc",
-      "bytes": 61035,
+      "sourceSha256": "fa9c09f71fbefe4dcbb84660e5af1b19575f3adcb318dc995ec2cfbaff18455f",
+      "sha256": "1357d9624952687b6d1a2cb22e0e5a13ecbec1220051bddffd0bf96d20b99958",
+      "bytes": 59623,
       "originalWidth": 974,
       "originalHeight": 224,
       "width": 800,
@@ -554,9 +554,9 @@
     {
       "file": "assets/img/gui/it/advanced-scheduler-rule.png",
       "source": "static/img/gui/it/advanced-scheduler-rule.png",
-      "sourceSha256": "b397b1403590d308bac01a14f2483cc02453a4d5148d8be2891a1d94ca2f6486",
-      "sha256": "6b199db19a850c2bdca8ab62c35048818d64d598d1adaad4557e42ecb8682f92",
-      "bytes": 162671,
+      "sourceSha256": "2698d27d571e38e274fc4a766a8380c4887addac3fa2ebf15d60e317dcdb046a",
+      "sha256": "fdb9d50178cad37b4dd5811cbe15f52b4f9ac52883d423998b4a3b6ed1d2d9a8",
+      "bytes": 161411,
       "originalWidth": 1600,
       "originalHeight": 960,
       "width": 800,
@@ -590,9 +590,9 @@
     {
       "file": "assets/img/gui/it/advanced-scheduler-time-range-button.png",
       "source": "static/img/gui/it/advanced-scheduler-time-range-button.png",
-      "sourceSha256": "b35c373b881e5dbe6dd4e113b12f370a2eface3d4a82c3e063092ac6617087b6",
-      "sha256": "b35c373b881e5dbe6dd4e113b12f370a2eface3d4a82c3e063092ac6617087b6",
-      "bytes": 8777,
+      "sourceSha256": "c13543788abfeceecd259e354f97cdfc70ca54322398cc06a4f705d0d7eb3acc",
+      "sha256": "c13543788abfeceecd259e354f97cdfc70ca54322398cc06a4f705d0d7eb3acc",
+      "bytes": 7443,
       "originalWidth": 290,
       "originalHeight": 68,
       "width": 290,
@@ -878,9 +878,9 @@
     {
       "file": "assets/img/gui/it/online-chart-settings.png",
       "source": "static/img/gui/it/online-chart-settings.png",
-      "sourceSha256": "2b2d735346f49f0f73920755481fe467b8f6077de8d76d1c113b2daadacd792a",
-      "sha256": "a6140c427696e53209f5febc456d31c4c8780ecbb99e2e67457871406d685829",
-      "bytes": 179730,
+      "sourceSha256": "231b993859f35b74fa51e009baa9cf6ddb83412d872e303249e81da7d62eaa34",
+      "sha256": "0d2a866caacad8eb70a9a16fca8b239b8f39674a006271ed8bab9a22f3e32837",
+      "bytes": 180576,
       "originalWidth": 1776,
       "originalHeight": 1136,
       "width": 800,
@@ -986,9 +986,9 @@
     {
       "file": "assets/img/gui/it/support-and-service-information.png",
       "source": "static/img/gui/it/support-and-service-information.png",
-      "sourceSha256": "3517c729943418b299e8dd5e749e72c3b7bba4f3d8e2b917e784e8c2fa3d3584",
-      "sha256": "9e6c20ab21c730ecd5c9ffe14ee9ca1f2569828fc675c09e3a6350252887d87f",
-      "bytes": 128412,
+      "sourceSha256": "4e19dcb9f9613c445328de0d9b0794f7566ba9a383feba074d30866029fe279d",
+      "sha256": "a8ca79d8622c2bc1ae0c10d9c5cd04bf790bc0a09320dcb53afa3ea7df655726",
+      "bytes": 129680,
       "originalWidth": 1600,
       "originalHeight": 960,
       "width": 800,

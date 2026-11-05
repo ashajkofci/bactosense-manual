@@ -124,7 +124,7 @@ Lo strumento registra errori, avvertimenti, allarmi e attività degli utenti nei
 | **Registro degli allarmi** | Allarmi attivati dai risultati delle misurazioni, compresi gli allarmi BactoCloud. Vedere [Registro degli allarmi](16-warnings-errors-and-troubleshooting.md#section-16-4-3). | Utenti Basic, Advanced e Admin |
 | **Registro di accesso** | Tentativi di accesso non riusciti. Vedere [Registro di accesso e audit trail](16-warnings-errors-and-troubleshooting.md#section-16-4-4). | Utenti Admin, con il Pacchetto Management |
 | **Audit trail** | Operazioni e modifiche delle impostazioni eseguite dagli utenti e dallo strumento. Vedere [Registro di accesso e audit trail](16-warnings-errors-and-troubleshooting.md#section-16-4-4). | Utenti Admin, con il Pacchetto Management |
-| **Results (manual mode)**, **Results (online mode)**, **Risultati della convalida** | Risultati delle misurazioni di ciascuna modalità. Vedere [Filtraggio delle misurazioni](10-measurements.md#section-10-7) e [Risultati e analisi dei dati](11-results-and-data-analysis.md). | Utenti Basic, Advanced e Admin |
+| **Risultati (Modalità Manuale)**, **Risultati (Modalità Online)**, **Risultati della convalida** | Risultati delle misurazioni di ciascuna modalità. Vedere [Filtraggio delle misurazioni](10-measurements.md#section-10-7) e [Risultati e analisi dei dati](11-results-and-data-analysis.md). | Utenti Basic, Advanced e Admin |
 
 Le voci più recenti sono elencate per prime. **Registro degli errori**, **Registro degli avvisi**, **Registro degli allarmi** e **Audit trail** mostrano l’**Intervallo di tempo visualizzato:** nella barra delle azioni. Per impostazione predefinita va dalla voce più vecchia alla più recente; l’**Audit trail** mostra gli ultimi sette giorni. Premere l’intervallo per visualizzare un altro periodo (vedere [Modificare l’intervallo di tempo visualizzato](16-warnings-errors-and-troubleshooting.md#section-16-4-5)).
 
@@ -148,7 +148,7 @@ Il colore della riga indica il tipo di ciascuna voce: rosso per gli errori criti
 - **C01 – Errori eliminati automaticamente**: dopo un errore non critico, lo strumento ha completato correttamente un protocollo e considera risolti gli errori precedenti.
 - **C02 – Errori eliminati manualmente**: un utente ha premuto **Cancella gli errori** (vedere [Azzerare gli errori](16-warnings-errors-and-troubleshooting.md#section-16-5)).
 
-Se nell’intervallo di tempo visualizzato non è stato registrato alcun errore, viene visualizzato **No errors in this date range**.
+Se nell’intervallo di tempo visualizzato non è stato registrato alcun errore, viene visualizzato **Nessun errore in questo intervallo di date**.
 
 :::info[Visualizzare i dettagli degli eventi]
 
@@ -164,7 +164,7 @@ Il **Registro degli avvisi** elenca gli avvertimenti emessi durante le misurazio
 - **Descrizione**: codice e nome dell’avvertimento. I codici sono elencati in [Avvertimenti](16-warnings-errors-and-troubleshooting.md#section-16-1).
 - **Contesto**: dove si è verificato l’avvertimento: **Manuale** (modalità manuale), **Automatico** (modalità online), **Manutenzione** o **Convalida**.
 
-Selezionare un avvertimento per visualizzarne la descrizione. Premere **Chiudi** per tornare al registro. Se nell’intervallo di tempo visualizzato non è stato registrato alcun avvertimento, viene visualizzato **No warnings in this date range**.
+Selezionare un avvertimento per visualizzarne la descrizione. Premere **Chiudi** per tornare al registro. Se nell’intervallo di tempo visualizzato non è stato registrato alcun avvertimento, viene visualizzato **Nessun avviso in questo intervallo di date**.
 
 ### 16.4.3 Registro degli allarmi {#section-16-4-3}
 
@@ -174,7 +174,7 @@ Il **Registro degli allarmi** elenca gli allarmi attivati dai risultati delle mi
 - **Nome**: una campana e il nome dell’allarme. La campana è rossa per gli allarmi dello strumento. Per gli allarmi BactoCloud, il colore indica la gravità: rosso per Importante, arancione per Avvertenze e blu per Informazioni.
 - **Allarme**: sorgente, condizione e soglia dell’allarme, ad esempio *Cartridge Remaining < 10 %*.
 
-Gli allarmi BactoCloud mostrano inoltre un simbolo a forma di nuvola alla fine della riga. Per riconoscere un allarme BactoCloud dopo averlo esaminato, premere il pulsante con il segno di spunta accanto al simbolo della nuvola; gli allarmi riconosciuti mostrano invece un segno di spunta. **Acknowledge all** riconosce tutti gli allarmi BactoCloud non ancora riconosciuti nell’elenco ed è disponibile solo finché ne resta almeno uno. Il riconoscimento viene registrato in BactoCloud: documenta la verifica, ma non risolve la causa dell’allarme.
+Gli allarmi BactoCloud mostrano inoltre un simbolo a forma di nuvola alla fine della riga. Per riconoscere un allarme BactoCloud dopo averlo esaminato, premere il pulsante con il segno di spunta accanto al simbolo della nuvola; gli allarmi riconosciuti mostrano invece un segno di spunta. **Riconosci tutti** riconosce tutti gli allarmi BactoCloud non ancora riconosciuti nell’elenco ed è disponibile solo finché ne resta almeno uno. Il riconoscimento viene registrato in BactoCloud: documenta la verifica, ma non risolve la causa dell’allarme.
 
 Selezionare un allarme per aprire il risultato della misurazione che lo ha attivato.
 

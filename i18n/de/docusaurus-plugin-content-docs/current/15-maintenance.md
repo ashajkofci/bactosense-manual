@@ -292,7 +292,7 @@ Die Anleitung ist für Basic-, Advanced- und Admin-Benutzer zugänglich.
 | 1. | Melden Sie sich an und navigieren Sie zur Startseite. |
 | 2. | Drücken Sie **Einstellungen**. |
 | 3. | Drücken Sie **Unterstützung & Service**. |
-| 4. | Drücken Sie unter **Bedienungsanleitungen** auf **User manual**, um das Kapitelverzeichnis zu öffnen. |
+| 4. | Drücken Sie unter **Bedienungsanleitungen** auf **Benutzerhandbuch**, um das Kapitelverzeichnis zu öffnen. |
 
 ### 15.4.2 Lesen und suchen {#section-15-4-2}
 
@@ -300,14 +300,14 @@ Wählen Sie im Inhaltsverzeichnis ein Kapitel aus und scrollen Sie, um es zu les
 
 | STEUERELEMENT | FUNKTION |
 | --- | --- |
-| **Contents** | Zum Kapitelverzeichnis zurückkehren. |
-| **Sections** | Die Überschriften des aktuellen Kapitels anzeigen. Wählen Sie eine Überschrift aus, um zum entsprechenden Abschnitt zu springen, oder drücken Sie **Read**, um zum Text zurückzukehren. |
-| **Search** | Geben Sie mit der Bildschirmtastatur ein Wort oder einen Ausdruck ein und bestätigen Sie die Eingabe. Wählen Sie ein Suchergebnis aus, um die entsprechende Stelle in der Anleitung zu öffnen. |
+| **Inhaltsverzeichnis** | Zum Kapitelverzeichnis zurückkehren. |
+| **Abschnitte** | Die Überschriften des aktuellen Kapitels anzeigen. Wählen Sie eine Überschrift aus, um zum entsprechenden Abschnitt zu springen, oder drücken Sie **Lesen**, um zum Text zurückzukehren. |
+| **Suchen** | Geben Sie mit der Bildschirmtastatur ein Wort oder einen Ausdruck ein und bestätigen Sie die Eingabe. Wählen Sie ein Suchergebnis aus, um die entsprechende Stelle in der Anleitung zu öffnen. |
 | **Back** | Zur vorherigen Leseposition innerhalb der Anleitung zurückkehren, beispielsweise nach dem Öffnen eines Querverweises. |
 | **‹ / ›** | Das vorherige oder nächste Kapitel öffnen. |
 | **A− / A+** | Die Textgröße verkleinern oder vergrößern. |
 
-Drücken Sie auf eine Abbildung, um sie zu vergrößern. Verwenden Sie **+** und **−** zum Zoomen und ziehen Sie die Abbildung, um Details zu betrachten. Drücken Sie **Close**, um zum Text zurückzukehren. Breite Tabellen können horizontal gescrollt werden.
+Drücken Sie auf eine Abbildung, um sie zu vergrößern. Verwenden Sie **+** und **−** zum Zoomen und ziehen Sie die Abbildung, um Details zu betrachten. Drücken Sie **Schliessen**, um zum Text zurückzukehren. Breite Tabellen können horizontal gescrollt werden.
 
 Um die Anleitung zu verlassen und zum Gerätebildschirm zurückzukehren, drücken Sie das Zurück-Steuerelement des Geräts oben links. Bei externen Website-Links wird eine Adresse angezeigt, die Sie auf einem Mobiltelefon oder Computer öffnen können.
 
@@ -317,4 +317,4 @@ Auf Bildschirmen mit kontextbezogener Hilfe wird neben dem Bildschirmtitel ein e
 
 Drücken Sie das Zurück-Steuerelement des Geräts oben links, um die Hilfe zu schließen und zum selben Bildschirm zurückzukehren. Ihre aktuelle Auswahl und noch nicht gespeicherten Eingaben bleiben erhalten.
 
-Die eingebettete Ausgabe wird mit der Gerätesoftware bereitgestellt. Um die Online-Ausgabe aufzurufen, drücken Sie auf dem Bildschirm **Unterstützung & Service** unter **Bedienungsanleitungen** auf **Online documentation** und scannen Sie den QR-Code mit einem Mobiltelefon. Zum Lesen der Online-Ausgabe benötigt dieses Mobiltelefon eine Internetverbindung.
+Die eingebettete Ausgabe wird mit der Gerätesoftware bereitgestellt. Um die Online-Ausgabe aufzurufen, drücken Sie auf dem Bildschirm **Unterstützung & Service** unter **Bedienungsanleitungen** auf **Online-Dokumentation** und scannen Sie den QR-Code mit einem Mobiltelefon. Zum Lesen der Online-Ausgabe benötigt dieses Mobiltelefon eine Internetverbindung.

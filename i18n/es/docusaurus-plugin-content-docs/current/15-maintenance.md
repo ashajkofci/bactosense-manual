@@ -292,7 +292,7 @@ El manual es accesible para los usuarios Basic, Advanced y Admin.
 | 1. | Inicie sesión y vaya a la pantalla Home. |
 | 2. | Pulse **Ajustes**. |
 | 3. | Pulse **Asistencia y servicios**. |
-| 4. | En **Manuales**, pulse **User manual** para abrir la lista de capítulos. |
+| 4. | En **Manuales**, pulse **Manual de usuario** para abrir la lista de capítulos. |
 
 ### 15.4.2 Leer y buscar {#section-15-4-2}
 
@@ -300,14 +300,14 @@ Seleccione un capítulo en el índice de contenidos y desplácese para leerlo. P
 
 | CONTROL | FUNCIÓN |
 | --- | --- |
-| **Contents** | Volver a la lista de capítulos. |
-| **Sections** | Mostrar los títulos del capítulo actual. Seleccione un título para ir a esa sección o pulse **Read** para volver al texto. |
-| **Search** | Introduzca una palabra o expresión con el teclado en pantalla y confirme la entrada. Seleccione un resultado para abrir la ubicación correspondiente en el manual. |
+| **Contenido** | Volver a la lista de capítulos. |
+| **Secciones** | Mostrar los títulos del capítulo actual. Seleccione un título para ir a esa sección o pulse **Leer** para volver al texto. |
+| **Buscar** | Introduzca una palabra o expresión con el teclado en pantalla y confirme la entrada. Seleccione un resultado para abrir la ubicación correspondiente en el manual. |
 | **Back** | Volver a la posición de lectura anterior dentro del manual, por ejemplo, después de seguir una referencia cruzada. |
 | **‹ / ›** | Abrir el capítulo anterior o siguiente. |
 | **A− / A+** | Reducir o aumentar el tamaño del texto. |
 
-Pulse una ilustración para ampliarla. Utilice **+** y **−** para ajustar el zoom, arrastre la imagen para examinar los detalles y pulse **Close** para volver al texto. Las tablas anchas permiten el desplazamiento horizontal.
+Pulse una ilustración para ampliarla. Utilice **+** y **−** para ajustar el zoom, arrastre la imagen para examinar los detalles y pulse **Cerrar** para volver al texto. Las tablas anchas permiten el desplazamiento horizontal.
 
 Para salir del manual y volver a la pantalla del instrumento, pulse el control de retroceso del instrumento situado en la parte superior izquierda. Los enlaces a sitios web externos muestran una dirección para abrir en un teléfono u ordenador.
 
@@ -317,4 +317,4 @@ En las pantallas con ayuda contextual aparece un signo de interrogación dentro 
 
 Pulse el control de retroceso del instrumento situado en la parte superior izquierda para cerrar la ayuda y volver a la misma pantalla. Se conservan sus selecciones actuales y las entradas sin guardar.
 
-La edición integrada se suministra con el software del instrumento. Para consultar la edición en línea, pulse **Online documentation** en **Manuales**, en la pantalla **Asistencia y servicios**, y escanee el código QR con un teléfono. Para leer la edición en línea se necesita una conexión a Internet en ese teléfono.
+La edición integrada se suministra con el software del instrumento. Para consultar la edición en línea, pulse **Documentación en línea** en **Manuales**, en la pantalla **Asistencia y servicios**, y escanee el código QR con un teléfono. Para leer la edición en línea se necesita una conexión a Internet en ese teléfono.

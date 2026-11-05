@@ -124,7 +124,7 @@ L’instrument enregistre les erreurs, les avertissements, les alarmes et l’ac
 | **Journal des alarmes** | Alarmes déclenchées par les résultats de mesure, y compris les alarmes BactoCloud. Voir [Journal des alarmes](16-warnings-errors-and-troubleshooting.md#section-16-4-3). | Utilisateurs Basic, Advanced et Admin |
 | **Journal d'accès** | Tentatives de connexion échouées. Voir [Journal d’accès et journal d’audit](16-warnings-errors-and-troubleshooting.md#section-16-4-4). | Utilisateurs Admin, avec le Management Package |
 | **Journal d'audit** | Opérations et modifications de paramètres effectuées par les utilisateurs et par l’instrument. Voir [Journal d’accès et journal d’audit](16-warnings-errors-and-troubleshooting.md#section-16-4-4). | Utilisateurs Admin, avec le Management Package |
-| **Results (manual mode)**, **Results (online mode)**, **Résultats de validation** | Résultats de mesure de chaque mode. Voir [Filtrage des mesures](10-measurements.md#section-10-7) et [Résultats et analyse des données](11-results-and-data-analysis.md). | Utilisateurs Basic, Advanced et Admin |
+| **Résultats (mode manuel)**, **Résultats (mode en ligne)**, **Résultats de validation** | Résultats de mesure de chaque mode. Voir [Filtrage des mesures](10-measurements.md#section-10-7) et [Résultats et analyse des données](11-results-and-data-analysis.md). | Utilisateurs Basic, Advanced et Admin |
 
 Les entrées les plus récentes figurent en haut de la liste. Le **Journal d'erreurs**, le **Journal d'alertes**, le **Journal des alarmes** et le **Journal d'audit** affichent la **Période affichée:** dans la barre d’actions. Par défaut, elle s’étend de l’entrée la plus ancienne à la plus récente ; le **Journal d'audit** affiche les sept derniers jours. Appuyez sur la période pour en afficher une autre (voir [Modifier la période affichée](16-warnings-errors-and-troubleshooting.md#section-16-4-5)).
 
@@ -148,7 +148,7 @@ La couleur de la ligne indique le type de chaque entrée : rouge pour les erreur
 - **C01 – Erreurs quittancées automatiquement** : après une erreur non critique, l’instrument a terminé un protocole avec succès et considère les erreurs précédentes comme résolues.
 - **C02 – Erreurs quittancées manuellement** : un utilisateur a appuyé sur **Quittancer les erreurs** (voir [Acquitter les erreurs](16-warnings-errors-and-troubleshooting.md#section-16-5)).
 
-Si aucune erreur n’a été enregistrée pendant la période affichée, **No errors in this date range** s’affiche.
+Si aucune erreur n’a été enregistrée pendant la période affichée, **Aucune erreur dans cette plage de dates** s’affiche.
 
 :::info[Consultez les détails des événements]
 
@@ -164,7 +164,7 @@ Le **Journal d'alertes** répertorie les avertissements émis pendant les mesure
 - **Description** : code et nom de l’avertissement. Les codes sont répertoriés dans [Avertissements](16-warnings-errors-and-troubleshooting.md#section-16-1).
 - **Contexte** : contexte de l’avertissement : **Manuel** (mode manuel), **Auto** (mode en ligne), **Maintenance** ou **Validation**.
 
-Sélectionnez un avertissement pour afficher sa description. Appuyez sur **Fermer** pour revenir au journal. Si aucun avertissement n’a été enregistré pendant la période affichée, **No warnings in this date range** s’affiche.
+Sélectionnez un avertissement pour afficher sa description. Appuyez sur **Fermer** pour revenir au journal. Si aucun avertissement n’a été enregistré pendant la période affichée, **Aucun avertissement dans cette plage de dates** s’affiche.
 
 ### 16.4.3 Journal des alarmes {#section-16-4-3}
 
@@ -174,7 +174,7 @@ Le **Journal des alarmes** répertorie les alarmes déclenchées par les résult
 - **Nom** : une cloche et le nom de l’alarme. La cloche est rouge pour les alarmes de l’instrument. Pour les alarmes BactoCloud, sa couleur indique la gravité : rouge pour Critique, orange pour Alerte et bleu pour Info.
 - **Alarme** : la source, la condition et le seuil de l’alarme, par exemple *Cartridge Remaining < 10 %*.
 
-Les alarmes BactoCloud affichent également un symbole de nuage en fin de ligne. Pour acquitter une alarme BactoCloud après l’avoir examinée, appuyez sur le bouton de coche à côté du symbole de nuage ; les alarmes acquittées affichent alors une coche. **Acknowledge all** acquitte toutes les alarmes BactoCloud non acquittées de la liste et n’est disponible que s’il en reste au moins une. L’acquittement est enregistré dans BactoCloud. Il documente l’examen, mais ne résout pas la cause de l’alarme.
+Les alarmes BactoCloud affichent également un symbole de nuage en fin de ligne. Pour acquitter une alarme BactoCloud après l’avoir examinée, appuyez sur le bouton de coche à côté du symbole de nuage ; les alarmes acquittées affichent alors une coche. **Acquitter toutes** acquitte toutes les alarmes BactoCloud non acquittées de la liste et n’est disponible que s’il en reste au moins une. L’acquittement est enregistré dans BactoCloud. Il documente l’examen, mais ne résout pas la cause de l’alarme.
 
 Sélectionnez une alarme pour ouvrir le résultat de mesure qui l’a déclenchée.
 

@@ -124,7 +124,7 @@ Das Gerät zeichnet Fehler, Warnmeldungen, Alarme und Benutzeraktivitäten in Lo
 | **Alarm-Protokoll** | Durch Messergebnisse ausgelöste Alarme, einschließlich BactoCloud-Alarmen. Siehe [Alarm-Protokoll](16-warnings-errors-and-troubleshooting.md#section-16-4-3). | Basic-, Advanced- und Admin-Benutzer |
 | **Zugriffsprotokoll** | Fehlgeschlagene Anmeldeversuche. Siehe [Zugriffsprotokoll und Prüfpfad](16-warnings-errors-and-troubleshooting.md#section-16-4-4). | Admin-Benutzer, mit dem Management Package |
 | **Prüfpfad** | Vorgänge und Einstellungsänderungen durch Benutzer und das Gerät. Siehe [Zugriffsprotokoll und Prüfpfad](16-warnings-errors-and-troubleshooting.md#section-16-4-4). | Admin-Benutzer, mit dem Management Package |
-| **Results (manual mode)**, **Results (online mode)**, **Validationsresultate** | Messergebnisse des jeweiligen Modus. Siehe [Filtern von Messungen](10-measurements.md#section-10-7) und [Ergebnisse und Datenanalyse](11-results-and-data-analysis.md). | Basic-, Advanced- und Admin-Benutzer |
+| **Ergebnisse (manueller Modus)**, **Ergebnisse (Online-Modus)**, **Validationsresultate** | Messergebnisse des jeweiligen Modus. Siehe [Filtern von Messungen](10-measurements.md#section-10-7) und [Ergebnisse und Datenanalyse](11-results-and-data-analysis.md). | Basic-, Advanced- und Admin-Benutzer |
 
 Die neuesten Einträge stehen oben. **Fehlerliste**, **Liste aller Warnungen**, **Alarm-Protokoll** und **Prüfpfad** zeigen in der Aktionsleiste die **Angezeigte Zeitspanne:**. Standardmäßig reicht sie vom ältesten bis zum neuesten Eintrag; der **Prüfpfad** zeigt die letzten sieben Tage. Drücken Sie auf die Zeitspanne, um einen anderen Zeitraum anzuzeigen (siehe [Angezeigte Zeitspanne ändern](16-warnings-errors-and-troubleshooting.md#section-16-4-5)).
 
@@ -148,7 +148,7 @@ Die Zeilenfarbe zeigt den Typ jedes Eintrags: rot für kritische Fehler, gelb f�
 - **C01 – Fehlermeldungen automatisch quittiert**: Nach einem unkritischen Fehler hat das Gerät ein Protokoll erfolgreich abgeschlossen und betrachtet die vorherigen Fehler als behoben.
 - **C02 – Fehlermeldungen manuell quittiert**: Ein Benutzer hat **Fehlermeldung quittieren** gedrückt (siehe [Fehler löschen](16-warnings-errors-and-troubleshooting.md#section-16-5)).
 
-Wurde in der angezeigten Zeitspanne kein Fehler aufgezeichnet, erscheint **No errors in this date range**.
+Wurde in der angezeigten Zeitspanne kein Fehler aufgezeichnet, erscheint **Keine Fehler in diesem Zeitraum**.
 
 :::info[Ereignisdetails anzeigen]
 
@@ -164,7 +164,7 @@ Die **Liste aller Warnungen** enthält die während Messungen ausgegebenen Warnm
 - **Beschreibung**: Code und Name der Warnmeldung. Die Codes sind unter [Warnmeldungen](16-warnings-errors-and-troubleshooting.md#section-16-1) aufgeführt.
 - **Kontext**: wo die Warnmeldung auftrat: **Manuell** (manueller Modus), **Auto** (Online-Modus), **Wartung** oder **Validation**.
 
-Wählen Sie eine Warnmeldung aus, um ihre Beschreibung anzuzeigen. Drücken Sie **Schliessen**, um zur Liste zurückzukehren. Wurde in der angezeigten Zeitspanne keine Warnmeldung aufgezeichnet, erscheint **No warnings in this date range**.
+Wählen Sie eine Warnmeldung aus, um ihre Beschreibung anzuzeigen. Drücken Sie **Schliessen**, um zur Liste zurückzukehren. Wurde in der angezeigten Zeitspanne keine Warnmeldung aufgezeichnet, erscheint **Keine Warnungen in diesem Zeitraum**.
 
 ### 16.4.3 Alarm-Protokoll {#section-16-4-3}
 
@@ -174,7 +174,7 @@ Das **Alarm-Protokoll** listet die durch Messergebnisse ausgelösten Alarme auf.
 - **Name**: ein Glockensymbol und den Namen des Alarms. Bei Gerätealarmen ist die Glocke rot. Bei BactoCloud-Alarmen zeigt ihre Farbe den Schweregrad: rot für Kritisch, orange für Warnung und blau für Infos.
 - **Alarm**: Quelle, Bedingung und Schwellenwert des Alarms, zum Beispiel *Cartridge Remaining < 10 %*.
 
-BactoCloud-Alarme zeigen zusätzlich ein Cloud-Symbol am Zeilenende. Um einen BactoCloud-Alarm nach der Prüfung zu bestätigen, drücken Sie die Häkchen-Taste neben dem Cloud-Symbol; bestätigte Alarme zeigen stattdessen ein Häkchen. **Acknowledge all** bestätigt alle unbestätigten BactoCloud-Alarme der Liste und ist nur verfügbar, solange mindestens einer unbestätigt ist. Die Bestätigung wird in BactoCloud gespeichert. Sie dokumentiert die Prüfung, behebt aber nicht die Ursache des Alarms.
+BactoCloud-Alarme zeigen zusätzlich ein Cloud-Symbol am Zeilenende. Um einen BactoCloud-Alarm nach der Prüfung zu bestätigen, drücken Sie die Häkchen-Taste neben dem Cloud-Symbol; bestätigte Alarme zeigen stattdessen ein Häkchen. **Alle bestätigen** bestätigt alle unbestätigten BactoCloud-Alarme der Liste und ist nur verfügbar, solange mindestens einer unbestätigt ist. Die Bestätigung wird in BactoCloud gespeichert. Sie dokumentiert die Prüfung, behebt aber nicht die Ursache des Alarms.
 
 Wählen Sie einen Alarm aus, um das Messergebnis zu öffnen, das ihn ausgelöst hat.
 

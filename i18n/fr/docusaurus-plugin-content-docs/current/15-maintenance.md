@@ -292,7 +292,7 @@ Le manuel est accessible aux utilisateurs Basic, Advanced et Admin.
 | 1. | Connectez-vous et accédez à l’écran d’accueil. |
 | 2. | Appuyez sur **Paramètres**. |
 | 3. | Appuyez sur **Support & Service**. |
-| 4. | Sous **Manuels**, appuyez sur **User manual** pour ouvrir la liste des chapitres. |
+| 4. | Sous **Manuels**, appuyez sur **Manuel utilisateur** pour ouvrir la liste des chapitres. |
 
 ### 15.4.2 Lire et rechercher {#section-15-4-2}
 
@@ -300,14 +300,14 @@ Sélectionnez un chapitre dans le sommaire et faites défiler le texte pour le l
 
 | COMMANDE | FONCTION |
 | --- | --- |
-| **Contents** | Revenir à la liste des chapitres. |
-| **Sections** | Afficher les titres du chapitre actuel. Sélectionnez un titre pour accéder à cette section, ou appuyez sur **Read** pour revenir au texte. |
-| **Search** | Saisissez un mot ou une expression à l’aide du clavier à l’écran et confirmez la saisie. Sélectionnez un résultat pour ouvrir le passage correspondant dans le manuel. |
+| **Sommaire** | Revenir à la liste des chapitres. |
+| **Sections** | Afficher les titres du chapitre actuel. Sélectionnez un titre pour accéder à cette section, ou appuyez sur **Lire** pour revenir au texte. |
+| **Rechercher** | Saisissez un mot ou une expression à l’aide du clavier à l’écran et confirmez la saisie. Sélectionnez un résultat pour ouvrir le passage correspondant dans le manuel. |
 | **Back** | Revenir à la position de lecture précédente dans le manuel, par exemple après avoir suivi un renvoi. |
 | **‹ / ›** | Ouvrir le chapitre précédent ou suivant. |
 | **A− / A+** | Réduire ou augmenter la taille du texte. |
 
-Appuyez sur une illustration pour l’agrandir. Utilisez **+** et **−** pour zoomer, faites glisser l’image pour examiner les détails, puis appuyez sur **Close** pour revenir au texte. Les tableaux larges peuvent défiler horizontalement.
+Appuyez sur une illustration pour l’agrandir. Utilisez **+** et **−** pour zoomer, faites glisser l’image pour examiner les détails, puis appuyez sur **Fermer** pour revenir au texte. Les tableaux larges peuvent défiler horizontalement.
 
 Pour quitter le manuel et revenir à l’écran de l’instrument, appuyez sur la commande de retour de l’instrument en haut à gauche. Les liens vers des sites externes affichent une adresse à ouvrir sur un téléphone ou un ordinateur.
 
@@ -317,4 +317,4 @@ Sur les écrans proposant une aide contextuelle, un point d’interrogation ento
 
 Appuyez sur la commande de retour de l’instrument en haut à gauche pour fermer l’aide et revenir au même écran. Vos sélections actuelles et vos saisies non enregistrées sont conservées.
 
-L’édition intégrée est fournie avec le logiciel de l’instrument. Pour consulter l’édition en ligne, appuyez sur **Online documentation** sous **Manuels** sur l’écran **Support & Service**, puis scannez le code QR avec un téléphone. La lecture de l’édition en ligne nécessite une connexion Internet sur ce téléphone.
+L’édition intégrée est fournie avec le logiciel de l’instrument. Pour consulter l’édition en ligne, appuyez sur **Documentation en ligne** sous **Manuels** sur l’écran **Support & Service**, puis scannez le code QR avec un téléphone. La lecture de l’édition en ligne nécessite une connexion Internet sur ce téléphone.
