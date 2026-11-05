@@ -231,22 +231,23 @@ python3 scripts/gui-capture/runtime/bactoswitch_capture.py cleanup
 node scripts/gui-capture/prepare-bactoswitch-figures.mjs
 ```
 
-`build` snapshots the sibling GUI resources (recording commit and dirty state) and
-builds a private executable plus the current Bactoserver binary. `start` runs the
-standard private runtime and seeds the BactoSwitch teaching fixture: the
-`DWTP TCC after SSF` demo series is assigned round-robin to the default lines
-1–4 through the data API, and the product's BactoSwitch status keys are set in
-the private Redis. macOS has no BactoSwitch serial driver and the `develop`
-Bactoserver neither exposes `sosd_connected` nor accepts `sosdEnabled` (Bactoserver
-`v3` detects the BactoSwitch automatically), so `tst_bactoswitch.qml` enables
-BactoSwitch and presents a connected four-valve device in the GUI's in-memory
-models only. Valve and flow states (all open at 802 mL/min; valve 4 alone at
-326 mL/min) are set the same way instead of pressing valve buttons.
+`build` snapshots the sibling GUI resources (recording commit and dirty state),
+exports a Bactoserver ref with `git archive` (`--server-ref`, default `origin/v3`,
+so the sibling checkout's branch is left alone) and builds both. `start` runs the
+standard private runtime from that export and seeds the BactoSwitch teaching
+fixture: the `DWTP TCC after SSF` demo series is assigned round-robin to the
+default lines 1–4 through the data API, and the product's BactoSwitch status keys
+(`sosd_connected`, valve count, flow, valve state) are set in the private Redis.
+Bactoserver `v3` detects the BactoSwitch on USB and serves these keys through
+`/api/status`; macOS has no device attached, and `tst_bactoswitch.qml` checks
+that the connection comes from the server. Only the single-open-valve state
+(valve 4 alone at 326 mL/min) is set in the GUI's in-memory status instead of
+pressing valve buttons.
 
-The four tests capture 22 states per language through real clicks: settings
+The four tests capture 24 states per language through real clicks: settings
 menus, Sample Lines and Control Panel; Home, plot, display settings and the
 measurement wizard up to its final **Start** (not pressed); results, details, the
-real Filter flow with the line picker; and unsaved alarm, digital input/output
+real Filter flow with the line picker; and unsaved alarm, digital input (with the Line box and scheduler), output
 and input-source drafts. The results and plot use the product's date filter and
 *1 Month* chart span for the line period. A request guard fails the run on any
 settings save or hardware/run request; each locale's requests are kept in
