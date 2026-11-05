@@ -45,7 +45,7 @@ export const nativeLayouts = [
       label(3,[640,82],[525,82]), label(4,[484,-22],[484,4]),
       label(5,[675,-22],[675,4]), label(6,[760,-22],[760,4]),
       label(7,[65,502],[65,477]), label(8,[292,502],[292,477]), label(9,[731,502],[731,477]),
-      label(10,[829,82],[796,82])],
+      label(10,[829,82],[788,82])],
     annotationChanges: {
       '7':'Results opens the measurement list.',
       '8':'Mode opens the Online (Auto) / Manual choice.',
@@ -83,7 +83,8 @@ export const nativeLayouts = [
     callouts: [label(1,[-22,150],[10,150]), label(2,[-22,202],[10,202]),
       label(3,[-22,254],[10,254]), label(4,[460,111],[422,111]),
       label(5,[526,111],[560,144]), label(6,[650,82],[640,130]),
-      label(7,[700,82],[700,130]), label(8,[760,82],[760,130]),
+      // Badge 8 sits in the right margin: the title bar's help button now occupies its old place.
+      label(7,[700,82],[700,130]), label(8,[822,150],[780,150]),
       label(9,[720,502],[720,478])],
   }),
   native('tcc-gate-definition', 'gate-polygon', [57], {

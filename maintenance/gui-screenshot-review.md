@@ -1,6 +1,6 @@
 # Current GUI screenshot review
 
-Captured and reviewed on 11–12 October 2026 from the local production GUI resources and a disposable demo Bactoserver.
+Captured and reviewed on 11–12 October 2026 from the local production GUI resources and a disposable demo Bactoserver; every screenshot except the 29 shared icons was recaptured on 5 November 2026 (see [the November recapture](#november-2026-recapture)).
 
 The 36 obsolete GUI screenshot assets and 38 obsolete control/status assets are replaced at their existing chapter and table positions in all five editions. Including the procedure supplements, the catalog contains 60 screenshots/crops per language and 29 shared icons: **329 reviewed images**, used by 545 document references. Descriptive paths distinguish both language and screen, for example `/img/gui/fr/alarm-configuration.png`, `/img/gui/en/scientific-package-activation-key.png`, `/img/gui/en/digital-output-critical-error.png`, `/img/gui/en/online-result-details.png` and `/img/gui/icons/maintenance-button.png`. Superseded assets are archived locally in ignored `output/gui-capture/originals/` or the corresponding follow-up review folder and removed from the published assets.
 
@@ -10,14 +10,39 @@ The eight scientific examples and 29 hardware/safety illustrations identified in
 
 | Source | Revision | Capture method |
 | --- | --- | --- |
-| Native GUI | `afa2595ffe3b9d8dda369d22805fef5b266b5547` | Qt 5.15.19 Cocoa OpenGL, production QML and image resources, `grabToImage` at 2× |
-| Native GUI, section 11.1 follow-up | `6360d9fb5ee980c04dc967eaf3a11f6b3958c2f8` plus existing manual-help edits | Fresh private resource snapshot; actual Online result and popup screens, Cocoa OpenGL at 2× |
-| Bactoserver | `26b9cbaad199dc1387d1a8ace72fef02b3fa1c64` | Isolated test-mode server, copied demo archives and disposable settings/databases |
-| Web GUI | `515cb39e9d12493103c3a63319b8964022650365` | Current Angular source/templates/translations/styles, Chromium at 2× |
+| Native GUI | `qt514` `5142b6fed18f647a5ce6d9901c71752d41b1a97d` plus the text-fit patch below, since committed unchanged as `21d7e127edc57c0c9d4dc574d135a957a8e449b2` | Qt 5.15.19 Cocoa OpenGL, production QML and image resources, `grabToImage` at 2× |
+| Native GUI: Online result, activation and digital-output helpers | `5142b6fed18f647a5ce6d9901c71752d41b1a97d` | Unpatched; the text check found no overflowing label on their screens, so the patch would not change them |
+| Bactoserver | `v3` `f36ca33d9e9cdec8002367c975157a155dad902c`, exported with `git archive` | Isolated test-mode server, copied demo archives and disposable settings/databases |
+| Web GUI | `v3` `be39fce3bd255e41ba7d123f41c2a7b9b6302326` | Current Angular source/templates/translations/styles, Chromium at 2× |
+
+The October capture used GUI `afa2595f`, Bactoserver `26b9cbaa` and Bactoweb `515cb39e` (section 11.1: GUI `6360d9fb` with the manual-help edits).
 
 The initial native capture produced 40 real interface states in each language (200 raw screenshots). Web capture produced 15 states/crops in each language (75 raw screenshots). The additive activation/enrolment capture produced six more native states per language (30 raw screenshots); digital-output lower rows add one native capture per language (five raw screenshots), for **310 reviewed raw captures** overall. The UI language is selected through the current interface. Neither sibling application source tree was edited. Web staging uses current application source and only third-party vendor files from the available distribution archive.
 
 Software rendering was rejected during capture because it omitted masked Qt icons. The final native captures use Cocoa OpenGL and include the actual production controls. The fixture's USB helper is the shipped mock, enabled only inside the disposable runtime. The documentation IP is `192.0.2.50`. Owned Qt, API and Redis processes were stopped after capture.
+
+## November 2026 recapture
+
+The GUI (`qt514`) and Bactoserver (`v3`) had moved on since the October capture: 73 QML files and 13 Bactoweb application files changed. All native and web screenshots were recaptured with the same fixture and methods; only the 29 shared icons, whose image resources were unchanged, keep their October renders. Visible GUI changes: the top-left button shows Home one step from Home and Back deeper in the menu, most screens have a contextual-help **?** button in the title bar, **Support & Service** is open to every user role, and the web results grids open on the last six months, so the capture selects **All data** before waiting for rows.
+
+**Text overflow check and GUI patch.** Each native capture now logs the layout metrics of every visible text item ([runtime README](../scripts/gui-capture/runtime/README.md#text-overflow-check)). Across 320 captured states in five languages, six text overflows were confirmed and fixed in `../gui` with the existing text components; the patch (`output/gui-capture/text-overflow/gui-text-fit.patch`, SHA-256 `0b4f8f9c699f…`, 7 files) was uncommitted at capture time and is now `21d7e127` (*Remove GUI overflows*). The later `cd2d18ee` (*Add new translations*, merged in `6aea1fca`) is not in these captures. The main native, scheduler and BactoSwitch display-settings screenshots were captured with a harness built from 5142b6fe plus this patch. 214 GUI QML tests pass on the patched tree.
+
+| Screen | Problem | Fix |
+| --- | --- | --- |
+| Import settings | Header without a width, so `Text.Fit` never shrank it; 49–103 px off-screen in DE/FR/ES | Width bound to the screen margins |
+| Warning log | Description `list_item_2_2_width + 100` ran into the Context column (IT) | Right edge anchored to the Context column |
+| Schedule preview | 72 px labels too narrow for *Messprotokoll* (DE) | 84 px labels; preview fields 315 → 303 px, same right edge |
+| Schedule presets | *Benutzerdefiniert* clipped at Qt's 12 px floor (DE) | `SmallButton` label `minimumPixelSize: 10` |
+| Online chart settings | One-line choices elided in DE/FR/IT/ES | `ThemedChoiceButton` label wraps to two lines within the button |
+| BactoSwitch control panel | Valve label without a width (latent) | Width bound to the button |
+
+Not changed: the advanced scheduler's one-line rule summary is elided in every language and its *every 1h between … and …* text is untranslated; German shows **30 minutes**, **1 hour** and **OPEN** in English.
+
+The manual text follows the GUI: Home screen callout 10 (help), 15.1.1 no longer limits Support & Service to Advanced/Admin users, and the Italian C02 event is quoted as displayed (*Errori eliminati manualmente*).
+
+**Review.** 305 figures were re-rendered: 61 per language, the main, web, activation, digital-output, scheduler and Online-result catalogs plus the five BactoSwitch display-settings figures. One independent subagent per language inspected every final render against its callout meanings and alt text, consulting the previous reviewed render for a few figures; 304 passed. In every language, badge 8 of the gate list covered the new help button (failed in German), so it moved to the right margin; callout 10's dot moved onto the help circle. The primary agent inspected those 10 re-renders. Rendering is deterministic: the other 295 renders kept the exact hashes their reviewers signed. `screenshots:check` verifies 454 reviewed images and 410 callouts.
+
+The review also found the **Time zone (Europe)** label running 12 px under the calendar buttons in French and Spanish (a fixed 200 px width from x = 40; the calendar starts at x = 228). The overflow check does not see text covered by an opaque control. The fix anchors the label to the calendar; it is kept separate as `output/gui-capture/text-overflow/gui-text-fit-timezone.patch` and is not in the captures, so the date-and-time figures still show the clipped label.
 
 ## Demo state and scientific data
 
@@ -34,7 +59,7 @@ The replacements retain the original **375 numbered callouts**, **25 letter/posi
 - TCC gate vertices a–d, coordinate columns 1–3, HNA limit 5 and preview 6 remain paired with the correct legend. The preview uses the real GUI plot.
 - Support and service information is opened from the current direct **Support & Service** menu entry. Its caption and procedure match that entry.
 - The current web navigation uses **Plots** and localized equivalents. Measurement stepping, timestamp slider, actual `fcs` link, ZIP selection and XLSX/CSV/PDF downloads are illustrated with their real controls. GIF export uses up to 60 latest Online mode plots, independently of the slider position. The five timestamp captures now use `web-plots-measurement-time.png`; their reviewed PNG bytes are unchanged.
-- The import-options crop focuses on the three actual checkboxes; the current product's long, clipped instruction line is excluded. No production UI text or layout was altered.
+- The import-options crop focuses on the three actual checkboxes. The instruction line above them ran off-screen in German, French and Spanish until the text-fit patch; the crop still excludes it.
 - Identical legacy System settings artwork had also been used for Maintenance; the replacement in the affected Maintenance row now uses the correct production control.
 - The Settings and System info labels in chapter 13 distinguish the native instrument interface from the current localized web navigation.
 

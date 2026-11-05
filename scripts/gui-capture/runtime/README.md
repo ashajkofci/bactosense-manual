@@ -22,6 +22,18 @@ The API binds to `127.0.0.1:18889`, Redis to `127.0.0.1:16389` database 9.
 Prerequisites for this macOS recipe: Go, Python 3, CMake, Homebrew Redis, and
 Qt 5 with Qt Quick Test, Charts, Graphical Effects, and Virtual Keyboard.
 
+To capture against a Bactoserver branch other than the sibling checkout's, export
+it and point `BACTOSERVER_SOURCE` at the export for every helper (the commit is
+read from its `.source-commit`), then build the server from that tree:
+
+```sh
+mkdir -p output/gui-capture/bactoserver-v3
+git -C ../bactoserver archive origin/v3 | tar -x -C output/gui-capture/bactoserver-v3
+git -C ../bactoserver rev-parse origin/v3 > output/gui-capture/bactoserver-v3/.source-commit
+export BACTOSERVER_SOURCE=$PWD/output/gui-capture/bactoserver-v3
+go -C "$BACTOSERVER_SOURCE" build -trimpath -o "$PWD/output/gui-capture/runtime/server/bactoserver" .
+```
+
 ```sh
 python3 scripts/gui-capture/runtime/prepare_server.py
 go -C ../bactoserver build -trimpath -o "$PWD/output/gui-capture/runtime/server/bactoserver" .
@@ -78,11 +90,16 @@ Prepared teaching examples are limited to the disposable API:
 
 Full fixture payloads, original result data, and fixture-source SHA-256 values
 are recorded privately in
-`output/gui-capture/runtime/capture-fixture-provenance.json`. Current source
-revisions for this run were GUI `afa2595ffe3b9d8dda369d22805fef5b266b5547` and
-Bactoserver `26b9cbaad199dc1387d1a8ace72fef02b3fa1c64`; both sibling worktrees
-were clean. Docker availability was checked according to the GUI guidance,
-but the daemon was unavailable. No sibling GUI or Bactoserver source was edited.
+`output/gui-capture/runtime/capture-fixture-provenance.json`, which also
+records the Bactoserver commit; `capture.py` records the GUI commit and worktree
+per language in `output/gui-capture/runtime/native-provenance.json`.
+`prepare-figures.mjs` accepts only one GUI commit, either clean or with one
+recorded patch. The November 2026 run used GUI `qt514`
+`5142b6fed18f647a5ce6d9901c71752d41b1a97d` with the recorded text-fit patch
+and Bactoserver `v3` `f36ca33d9e9cdec8002367c975157a155dad902c`, exported with
+`git archive` (`BACTOSERVER_SOURCE=output/gui-capture/bactoserver-v3`), so the
+sibling `../bactoserver` checkout keeps its own branch. The October run used GUI
+`afa2595f` and Bactoserver `26b9cbaa`.
 
 Once native and web captures have finished and been reviewed, stop only the
 recorded private processes and remove their tracked temporary databases:
@@ -271,7 +288,9 @@ sized container or the screen, cut by a non-scrolling clip, elided by Qt, or
 overlapping other text in the same layer (screen, modal or bar). Text behind an
 open modal and text scrolled outside a list viewport are ignored. `box` marks a
 text box that extends past its container: harmless while the text fits, but the
-cause of overflow once a translation is longer.
+cause of overflow once a translation is longer. The check compares text with
+text only: text running under an opaque control (a button drawn above it) is
+not reported, so the visual review still matters.
 
 ```sh
 python3 scripts/gui-capture/runtime/text_overflow.py output/gui-capture/runtime/capture-*.log \

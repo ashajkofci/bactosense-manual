@@ -1,17 +1,17 @@
 # Current GUI navigation review
 
-Reviewed on 11 October 2026 for the English, German, French, Italian and Spanish editions. Menu-bearing instructions in chapters 6–17 were checked against the current sibling GUI and web sources, compiled native translation catalogs and the disposable demo interface. The remaining chapters were searched for navigation instructions; chapter 20's Home references now name the Home screen and Settings menu.
+Reviewed on 11 October 2026 for the English, German, French, Italian and Spanish editions; the native route matrix was rerun on 5 November 2026 against the current GUI and Bactoserver (below). Menu-bearing instructions in chapters 6–17 were checked against the current sibling GUI and web sources, compiled native translation catalogs and the disposable demo interface. The remaining chapters were searched for navigation instructions; chapter 20's Home references now name the Home screen and Settings menu.
 
 ## Evidence
 
 | Interface | Revision | Verification |
 | --- | --- | --- |
-| Native GUI | `afa2595ffe3b9d8dda369d22805fef5b266b5547` | Production QML/resources and compiled `.qm` translations; actual mouse clicks through 51 route states per language |
-| Demo Bactoserver | `26b9cbaad199dc1387d1a8ace72fef02b3fa1c64` | Isolated test-mode instance with copied demo data |
-| Web GUI | `515cb39e9d12493103c3a63319b8964022650365` | Current Angular controllers/templates/translations and the previously reviewed local API-backed captures |
+| Native GUI | `qt514` `5142b6fed18f647a5ce6d9901c71752d41b1a97d` (October: `afa2595f`) | Production QML/resources and compiled `.qm` translations; actual mouse clicks through 51 route states per language |
+| Demo Bactoserver | `v3` `f36ca33d9e9cdec8002367c975157a155dad902c` (October: `26b9cbaa`) | Isolated test-mode instance with copied demo data |
+| Web GUI | `v3` `be39fce3bd255e41ba7d123f41c2a7b9b6302326` (October: `515cb39e`) | Current Angular controllers/templates/translations and the local API-backed captures |
 | BactoCloud | Current sibling source | Organization navigation, displayed actions and permission guards; no live account session or cloud operation |
 
-The native runtime passed 255 actual route states across all five languages, including Basic, Advanced and Admin menu differences. Confirmation text and the effects of Save, Apply, export/import, run, reboot and delete were checked in source without executing those actions. Switching measurement modes wrote only private demo mode settings and corresponding audit events. No package was activated and no instrument was enrolled.
+The native runtime passed 255 actual route states across all five languages, including Basic, Advanced and Admin menu differences, in both runs. Since the October run, **Support & Service** appears in every role's Settings menu (Basic included), so section 15.1.1 no longer asks for an Advanced or Admin login. Confirmation text and the effects of Save, Apply, export/import, run, reboot and delete were checked in source without executing those actions. Switching measurement modes wrote only private demo mode settings and corresponding audit events. No package was activated and no instrument was enrolled.
 
 Detailed versioned evidence is in [the native review](gui-navigation-native-review.json), [the additional chapter review](gui-navigation-root-review.json) and [the web/cloud review](gui-navigation-web-review.json). These record section-level changes, source excerpts/hashes, actual localized labels and verification boundaries. Private click logs and the complete route matrix are in ignored `output/gui-capture/activation/navigation-review.json`.
 
