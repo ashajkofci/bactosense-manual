@@ -340,7 +340,7 @@ Los elementos principales de la interfaz de usuario son:
 | 3 | Vista actual | 4 | Iconos de estado de la barra superior, véase [Iconos de estado de la barra superior](../general-operations-and-configurations/#section-8-8-2). |
 | 5 | Función de usuario<br />Hora actual | 6 | Cerrar sesión o apagar |
 | 7 | Resultados: mostrar los resultados de medición del modo seleccionado. | 8 | Modo: elegir el modo en línea para mediciones continuas con el dispositivo de muestreo en línea, o el modo manual para muestras puntuales con el dispositivo de muestreo manual. |
-| 9 | Iniciar: abrir el asistente de medición y elegir un protocolo de análisis (modo manual). |  | \< |
+| 9 | Iniciar: abrir el asistente de medición y elegir un protocolo de análisis (modo manual). | 10 | Ayuda: abrir el manual de usuario en la sección de la vista actual, véase [Ayuda contextual](../maintenance/#section-15-4-3). |
 
 </div>
 

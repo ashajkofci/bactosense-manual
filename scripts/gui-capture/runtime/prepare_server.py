@@ -15,7 +15,16 @@ import types
 import urllib.request
 
 ROOT = Path(__file__).resolve().parents[3]
-SERVER_SOURCE = ROOT.parent / "bactoserver"
+# BACTOSERVER_SOURCE selects another tree, e.g. a branch exported with git archive.
+SERVER_SOURCE = Path(os.environ.get("BACTOSERVER_SOURCE", ROOT.parent / "bactoserver"))
+
+
+def server_commit():
+    """The commit of SERVER_SOURCE; an export records it in .source-commit."""
+    marker = SERVER_SOURCE / ".source-commit"
+    if marker.exists():
+        return marker.read_text().strip()
+    return subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=SERVER_SOURCE).decode().strip()
 RUNTIME = ROOT / "output/gui-capture/runtime/server"
 
 
@@ -145,8 +154,16 @@ def restart_server():
 
 def start():
     for port in [16389, 18889]:
-        with socket.socket() as probe:
-            probe.bind(("127.0.0.1", port))
+        # Closed connections of a previous runtime hold the port in TIME_WAIT for about 30 s.
+        for attempt in range(60):
+            try:
+                with socket.socket() as probe:
+                    probe.bind(("127.0.0.1", port))
+                break
+            except OSError:
+                if attempt == 59:
+                    raise
+                time.sleep(1)
     redis_log = (RUNTIME / "redis.log").open("w")
     redis = subprocess.Popen([
         "/opt/homebrew/bin/redis-server", "--bind", "127.0.0.1", "--port", "16389",

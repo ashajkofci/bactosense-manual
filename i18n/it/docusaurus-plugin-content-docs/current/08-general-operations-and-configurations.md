@@ -340,7 +340,7 @@ Gli elementi principali dell’interfaccia utente sono:
 | 3 | Vista corrente | 4 | Icone di stato della barra superiore, vedere [Icone di stato della barra superiore](../general-operations-and-configurations/#section-8-8-2). |
 | 5 | Ruolo utente Ora corrente | 6 | Disconnessione o spegnimento |
 | 7 | Risultati: visualizzare i risultati delle misurazioni della modalità selezionata. | 8 | Modalità: scegliere la modalità online per misurazioni continue con il dispositivo di campionamento in linea, oppure la modalità manuale per campioni prelevati con il dispositivo di campionamento manuale. |
-| 9 | Misura: aprire l’assistente di misurazione e scegliere un protocollo di analisi (modalità manuale). |  | \< |
+| 9 | Misura: aprire l’assistente di misurazione e scegliere un protocollo di analisi (modalità manuale). | 10 | Aiuto: aprire il manuale d’uso alla sezione della vista corrente, vedere [Aiuto contestuale](../maintenance/#section-15-4-3). |
 
 </div>
 

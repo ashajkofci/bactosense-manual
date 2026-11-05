@@ -93,6 +93,7 @@ def build(server_ref):
     subprocess.run(["tar", "-x", "-C", str(SOURCE)], stdin=archive.stdout, check=True)
     if archive.wait():
         raise RuntimeError("git archive failed for " + server_ref)
+    (SOURCE / ".source-commit").write_text(commit + "\n")
     prepare_server().prepare()
     subprocess.run(["go", "-C", str(SOURCE), "build", "-trimpath", "-o", str(runtime.SERVER / "bactoserver"), "."], check=True)
     gui = snapshot.build_snapshot()

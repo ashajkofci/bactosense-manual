@@ -1,6 +1,7 @@
 import QtQuick 2.12
 import QtQuick.Window 2.12
 import QtTest 1.2
+import "textMetrics.js" as TextMetrics
 import "qrc:/models" as Models
 
 TestCase {
@@ -80,6 +81,7 @@ TestCase {
         render();wait(200)
         var objects=[];tree(ui,objects,0)
         console.log("SCHEDULER_TREE "+locale+" "+state+" "+JSON.stringify(objects))
+        console.log("CAPTURE_TEXT "+locale+"/"+state+" "+JSON.stringify(TextMetrics.collect(ui)))
         var complete=false
         ui.grabToImage(function(result){complete=result.saveToFile(outputRoot+"/"+locale+"/"+state+".png")},Qt.size(1600,960))
         tryVerify(function(){return complete},10000,"Native scheduler image")

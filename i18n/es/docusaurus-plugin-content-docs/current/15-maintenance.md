@@ -51,7 +51,7 @@ Póngase en contacto con el soporte de bNovate o con su colaborador local de ser
 
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN |
 | --- | --- | --- |
-| 1. | Inicie sesión como usuario Advanced o Admin y vaya a la pantalla Home. | ![BactoSense — Botón Inicio](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
+| 1. | Inicie sesión y vaya a la pantalla Home. | ![BactoSense — Botón Inicio](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
 | 2. | Pulse el botón Ajustes. | ![BactoSense — Botón Ajustes](/img/gui/es/home-settings-button.png "width=54 class=manual-icon-settings-button-half") |
 | 3. | Pulse el botón Asistencia y servicios. | ![BactoSense — Información de soporte y mantenimiento](/img/gui/icons/intervention-info-button.png "width=48 class=manual-icon") |
 | 4. | Si se necesita mantenimiento, se adjunta una advertencia al resultado de medición. Programe el mantenimiento preventivo antes de la fecha prevista. |  |

@@ -51,7 +51,7 @@ Contact bNovate support or your local service partner to see available options. 
 
 |  | WORK STEP | ADDITIONAL INFO / IMAGE |
 | --- | --- | --- |
-| 1. | Log in as an Advanced or Admin user, then navigate to the Home screen. | ![BactoSense — Home button](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
+| 1. | Log in and navigate to the Home screen. | ![BactoSense — Home button](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
 | 2. | Press the Settings button. | ![BactoSense — Settings button](/img/gui/en/home-settings-button.png "width=57 class=manual-icon-settings-button-half") |
 | 3. | Press the Support & Service button. | ![BactoSense — Support and maintenance information](/img/gui/icons/intervention-info-button.png "width=48 class=manual-icon") |
 | 4. | If a service is needed, a warning will be attached to the measurement result. Schedule a preventive maintenance before the service due date. |  |

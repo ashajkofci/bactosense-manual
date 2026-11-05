@@ -104,10 +104,12 @@ async function captureLocale(locale) {
     await screen('web-dashboard','Current dashboard; local disposable Admin fixture, actual language selection and real Bactoserver status.');
     record.dashboardText=await page.locator('body').innerText();
 
-    await navigate('results','[ui-grid="manualGridOptions"] .ui-grid-row');
-    // The fixture data is historical: select the real translated All data range.
+    // The fixture data is historical and may predate the default range (the last six months):
+    // wait for the grid, select the real translated All data range, then wait for its rows.
+    await navigate('results','[ui-grid="manualGridOptions"]');
     await page.locator('button[daterangepicker]').first().click();
     await page.locator('.daterangepicker:visible .ranges li').filter({hasText:translations['ALL DATA']}).click();
+    await page.locator('[ui-grid="manualGridOptions"] .ui-grid-row').first().waitFor({state:'visible'});
     await page.waitForFunction(()=>{
       const plot=document.querySelector('.js-plotly-plot');
       return plot&&plot.data&&plot.data.some(series=>series.x&&series.x.length>1);

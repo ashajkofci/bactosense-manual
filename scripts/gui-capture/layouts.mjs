@@ -40,14 +40,17 @@ export const nativeLayouts = [
   native('home-overview', 'home', [26], {
     regions: [{label:'A',box:[0,0,800,60]}, {label:'B',box:[0,60,800,350]}, {label:'C',box:[0,410,800,70]}],
     padding: [44,44,60,44],
+    // The help button (10) sits at the right end of the title bar, so badge 3 moves into its empty middle.
     callouts: [label(1,[40,-22],[40,4]), label(2,[165,-22],[165,4]),
-      label(3,[829,82],[525,82]), label(4,[484,-22],[484,4]),
+      label(3,[640,82],[525,82]), label(4,[484,-22],[484,4]),
       label(5,[675,-22],[675,4]), label(6,[760,-22],[760,4]),
-      label(7,[65,502],[65,477]), label(8,[292,502],[292,477]), label(9,[731,502],[731,477])],
+      label(7,[65,502],[65,477]), label(8,[292,502],[292,477]), label(9,[731,502],[731,477]),
+      label(10,[829,82],[796,82])],
     annotationChanges: {
       '7':'Results opens the measurement list.',
       '8':'Mode opens the Online (Auto) / Manual choice.',
       '9':'Measure starts the manual measurement wizard.',
+      '10':'Help opens the user manual at the section for the current screen.',
     },
   }),
   native('online-results-chart', 'auto-dashboard', [52], { arrows: [{from:[290,120],to:[350,90]}] }),

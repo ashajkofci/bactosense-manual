@@ -32,8 +32,8 @@ def main():
     shutil.copy2(ROOT / "output/gui-capture/runtime/server/bactoserver", runtime.SERVER / "bactoserver")
     provenance = {
         "purpose": "Advanced scheduler documentation: unchanged native production screens, unsaved example, real preview API",
-        "sources": {name: subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT.parent / name).decode().strip()
-                    for name in ["gui", "bactoserver"]},
+        "sources": {"gui": subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT.parent / "gui").decode().strip(),
+                    "bactoserver": prepare.server_commit()},
         "qmlSha256": runtime.sha(HERE / "tst_scheduler.qml"),
         "guiExecutableSha256": runtime.sha(runtime.EXECUTABLE),
         "bactoserverExecutableSha256": runtime.sha(runtime.SERVER / "bactoserver"),

@@ -340,7 +340,7 @@ The main elements of the user interface are:
 | 3 | Current view | 4 | Top bar status icons, see [Top bar status icons](../general-operations-and-configurations/#section-8-8-2). |
 | 5 | User Role<br />Current time | 6 | Logout or power off |
 | 7 | Results: display the measurement results for the selected mode. | 8 | Mode: choose Online mode for continuous measurements using the online sampling device, or Manual mode for measuring grab samples using the manual sampling device. |
-| 9 | Measure: open the measurement wizard and choose an analysis protocol (Manual mode). |  | \< |
+| 9 | Measure: open the measurement wizard and choose an analysis protocol (Manual mode). | 10 | Help: open the user manual at the section for the current screen, see [Contextual help](../maintenance/#section-15-4-3). |
 
 </div>
 

@@ -51,7 +51,7 @@ Bitte wenden Sie sich an den bNovate-Support oder Ihren lokalen Servicepartner, 
 
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG |
 | --- | --- | --- |
-| 1. | Melden Sie sich als Advanced- oder Admin-Benutzer an und navigieren Sie zur Startseite. | ![BactoSense — Schaltfläche Startseite](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
+| 1. | Melden Sie sich an und navigieren Sie zur Startseite. | ![BactoSense — Schaltfläche Startseite](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
 | 2. | Drücken Sie die Taste Einstellungen. | ![BactoSense — Schaltfläche Einstellungen](/img/gui/de/home-settings-button.png "width=80 class=manual-icon-settings-button-half") |
 | 3. | Drücken Sie die Taste Unterstützung & Service. | ![BactoSense — Informationen zu Support und Wartung](/img/gui/icons/intervention-info-button.png "width=48 class=manual-icon") |
 | 4. | Ist ein Service fällig, erhalten die Messergebnisse einen entsprechenden Hinweis. Bitte planen Sie vor Fälligkeit des Service eine Vorsorgewartung ein. |  |

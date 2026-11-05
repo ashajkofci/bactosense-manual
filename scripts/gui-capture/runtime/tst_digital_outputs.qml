@@ -1,6 +1,7 @@
 import QtQuick 2.12
 import QtQuick.Window 2.12
 import QtTest 1.2
+import "textMetrics.js" as TextMetrics
 import "qrc:/models" as Models
 
 TestCase {
@@ -142,6 +143,7 @@ TestCase {
         wait(300);render()
         var objects=[];tree(ui,objects,0)
         console.log("DIGITAL_OUTPUTS_TREE "+row.tag+" "+JSON.stringify(objects))
+        console.log("CAPTURE_TEXT "+row.tag+"/digital-outputs-lower "+JSON.stringify(TextMetrics.collect(ui)))
         console.log("DIGITAL_OUTPUTS_EVIDENCE "+JSON.stringify({locale:row.tag,screen:screenSource,
             scroll:{input:"mouseWheel",contentY:list.contentY,contentHeight:list.contentHeight,viewportHeight:list.height},
             unsavedAlarmEnable:{key:"Alarm 2",enabled:true},digitalOutputs:Models.Settings.tempDigitalOutputs,

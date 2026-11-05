@@ -340,7 +340,7 @@ Les principaux éléments de l’interface utilisateur sont :
 | 3 | Vue actuelle | 4 | Icônes d’état de la barre supérieure, voir [Icônes d’état de la barre supérieure](../general-operations-and-configurations/#section-8-8-2). |
 | 5 | Rôle d’utilisateur<br />Heure actuelle | 6 | Déconnexion ou mise hors tension |
 | 7 | Résultats : afficher les résultats de mesure du mode sélectionné. | 8 | Mode : choisir le mode en ligne pour les mesures continues avec le dispositif d’échantillonnage en ligne, ou le mode manuel pour les échantillons ponctuels avec le dispositif d’échantillonnage manuel. |
-| 9 | Mesurer : ouvrir l’assistant de mesure et choisir un protocole d’analyse (mode manuel). |  | \< |
+| 9 | Mesurer : ouvrir l’assistant de mesure et choisir un protocole d’analyse (mode manuel). | 10 | Aide : ouvrir le manuel d’utilisation à la section de la vue actuelle, voir [Aide contextuelle](../maintenance/#section-15-4-3). |
 
 </div>
 

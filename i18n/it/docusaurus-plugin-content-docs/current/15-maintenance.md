@@ -51,7 +51,7 @@ Contattare l’assistenza bNovate o il partner di assistenza locale per conoscer
 
 |  | FASE OPERATIVA | INFORMAZIONI AGGIUNTIVE / IMMAGINE |
 | --- | --- | --- |
-| 1. | Accedere come utente Advanced o Admin, quindi andare alla schermata Home. | ![BactoSense — Pulsante della schermata iniziale](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
+| 1. | Effettuare l’accesso e andare alla schermata Home. | ![BactoSense — Pulsante della schermata iniziale](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
 | 2. | Premere il pulsante Impostazioni. | ![BactoSense — Pulsante Impostazioni](/img/gui/it/home-settings-button.png "width=77 class=manual-icon-settings-button-half") |
 | 3. | Premere il pulsante Supporto & Assistenza. | ![BactoSense — Informazioni su assistenza e manutenzione](/img/gui/icons/intervention-info-button.png "width=48 class=manual-icon") |
 | 4. | Se è necessario un intervento, al risultato di misura viene associato un avvertimento. Pianificare la manutenzione preventiva prima della scadenza. |  |

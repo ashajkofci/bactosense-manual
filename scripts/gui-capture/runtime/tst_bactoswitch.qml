@@ -1,6 +1,7 @@
 import QtQuick 2.12
 import QtQuick.Window 2.12
 import QtTest 1.2
+import "textMetrics.js" as TextMetrics
 import "qrc:/models" as Models
 
 // BactoSwitch manual screens in the unchanged production GUI. The fixture is in
@@ -86,6 +87,7 @@ TestCase {
         render();wait(250)
         var objects=[];tree(ui,objects,0)
         console.log("BACTOSWITCH_TREE "+localeCode+" "+state+" "+JSON.stringify(objects))
+        console.log("CAPTURE_TEXT "+localeCode+"/"+state+" "+JSON.stringify(TextMetrics.collect(ui)))
         var complete=false
         ui.grabToImage(function(result){complete=result.saveToFile(outputRoot+"/"+localeCode+"/"+state+".png")},Qt.size(1600,960))
         tryVerify(function(){return complete},10000,"Native BactoSwitch image "+state)

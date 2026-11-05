@@ -5,13 +5,14 @@ import copy
 import datetime
 import hashlib
 import json
+import os
 import re
 import subprocess
 import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]
-SOURCE = ROOT.parent / "bactoserver"
+SOURCE = Path(os.environ.get("BACTOSERVER_SOURCE", ROOT.parent / "bactoserver"))
 OUT = ROOT / "output/gui-capture/runtime"
 BASE = "http://127.0.0.1:18889"
 
@@ -34,8 +35,16 @@ def dates(timestamp):
             "date": local.strftime("%Y-%m-%d %H:%M:%S")}
 
 
+def server_commit():
+    """The commit of SOURCE; a git archive export records it in .source-commit."""
+    marker = SOURCE / ".source-commit"
+    if marker.exists():
+        return marker.read_text().strip()
+    return subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=SOURCE).decode().strip()
+
+
 def source_info(relative):
-    return {"path": "../bactoserver/" + relative,
+    return {"path": os.path.relpath(SOURCE / relative, ROOT),
             "sha256": hashlib.sha256((SOURCE / relative).read_bytes()).hexdigest()}
 
 
@@ -97,6 +106,7 @@ def main():
     request("/data/self_check/" + str(check_timestamp), self_check)
     provenance = {
         "api": BASE, "serverPid": pid, "purpose": "Disposable manual teaching examples",
+        "bactoserverCommit": server_commit(),
         "sources": [source_info("mock/data/errors.yaml"),
                     source_info("mock/data/warnings.yaml"),
                     source_info("mock/data/self_check.yaml"),

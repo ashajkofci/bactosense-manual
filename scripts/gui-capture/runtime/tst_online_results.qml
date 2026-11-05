@@ -1,6 +1,7 @@
 import QtQuick 2.12
 import QtQuick.Window 2.12
 import QtTest 1.2
+import "textMetrics.js" as TextMetrics
 import "qrc:/models" as Models
 
 TestCase {
@@ -72,6 +73,7 @@ TestCase {
         wait(300);render()
         var objects=[];tree(ui,objects,0)
         console.log("ONLINE_RESULT_TREE "+locale+" "+state+" "+JSON.stringify(objects))
+        console.log("CAPTURE_TEXT "+locale+"/"+state+" "+JSON.stringify(TextMetrics.collect(ui)))
         var done=false
         ui.grabToImage(function(result){done=result.saveToFile(outputRoot+"/"+locale+"/"+state+".png")},Qt.size(1600,960))
         tryVerify(function(){return done},10000,state)

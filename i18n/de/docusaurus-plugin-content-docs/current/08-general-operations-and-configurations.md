@@ -340,7 +340,7 @@ Die Hauptelemente der Benutzeroberfläche sind:
 | 3 | Aktuelle Ansicht | 4 | Die Symbole auf der oberen Leiste werden unter [Die Symbole auf der oberen Leiste](../general-operations-and-configurations/#section-8-8-2) vorgestellt. |
 | 5 | Benutzerrolle Aktuelle Uhrzeit | 6 | Ausloggen oder Abschalten |
 | 7 | Resultate: Messergebnisse des gewählten Modus anzeigen. | 8 | Modus: Wählen Sie den Online-Modus für fortlaufende Messungen mit dem Online-Probenahmegerät oder den manuellen Modus für Einzelproben mit dem manuellen Probenahmegerät. |
-| 9 | Messen: Messassistenten öffnen und ein Analyseprotokoll wählen (manueller Modus). |  | \< |
+| 9 | Messen: Messassistenten öffnen und ein Analyseprotokoll wählen (manueller Modus). | 10 | Hilfe: Bedienungsanleitung beim Abschnitt zur aktuellen Ansicht öffnen, siehe [Kontextbezogene Hilfe](../maintenance/#section-15-4-3). |
 
 </div>
 

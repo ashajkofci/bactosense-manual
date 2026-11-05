@@ -60,30 +60,43 @@ for (const locale of locales) {
 }
 for (const icon of icons.icons) {
   const replaces=icon.old_source_assets.filter(source=>!['/img/manual/cell-f60b02982fd9.png','/img/manual/cell-71bc4e13a72d.png','/img/manual/cell-2633a4bc793a.png'].includes(source));
-  figures.push({id:`icon-${icon.name}`,locale:'all',kind:'icon',surface:'native',
+  const figure={id:`icon-${icon.name}`,locale:'all',kind:'icon',surface:'native',
     capture:icon.raw_path,captureSize:icon.logical_size,crop:icon.crop,
     output:icon.output,alt:`BactoSense — ${iconTitles[icon.name].en}`,
     alts:Object.fromEntries(Object.entries(iconTitles[icon.name]).map(([locale,title])=>[locale,`BactoSense — ${title}`])),replaces,
     sourceIds:icons.replacements.filter(row=>replaces.includes(row.old)).map(row=>row.id),
     productionComponent:icon.production_component,
-    ...(icon.name==='maintenance-button' ? {contextReplacements:[{source:'/img/manual/asset-a7a911718f1c.png',printedPage:84}]} : {})});
+    ...(icon.name==='maintenance-button' ? {contextReplacements:[{source:'/img/manual/asset-a7a911718f1c.png',printedPage:84}]} : {})};
+  // Icons are not recaptured with the screens: keep the render and review of an unchanged definition.
+  const kept=previous.figures.find(row=>row.id===figure.id);
+  const unchanged=kept && JSON.stringify(Object.fromEntries(Object.keys(figure).map(key=>[key,kept[key]])))===JSON.stringify(figure);
+  figures.push(unchanged ? kept : figure);
 }
-const manifest={version:1,capturedDate:'2026-10-11',locales:['en','de','fr','it','es'],
+// Each capture records the source it ran against.
+const nativeRuns=Object.values(await readJson('output/gui-capture/runtime/native-provenance.json'));
+const guiCommits=[...new Set(nativeRuns.map(run=>run.guiCommit))];
+const guiPatches=[...new Set(nativeRuns.map(run=>JSON.stringify(run.guiPatch || null)))];
+// A modified GUI tree is accepted only as a recorded patch on that commit.
+if (guiCommits.length!==1 || guiPatches.length!==1 || nativeRuns.some(run=>run.guiWorktree && !run.guiPatch))
+  throw new Error('Native captures must come from one GUI commit, clean or with one recorded patch.');
+const guiPatch=JSON.parse(guiPatches[0]);
+const fixture=await readJson('output/gui-capture/runtime/capture-fixture-provenance.json');
+const webSource=await readJson('output/gui-capture/web/source-provenance.json');
+const manifest={version:1,capturedDate:nativeRuns.map(run=>run.capturedDate).sort().at(-1),locales:['en','de','fr','it','es'],
   source:{manual:inventory.source_manual,
-    guiCommit:'afa2595ffe3b9d8dda369d22805fef5b266b5547',
-    bactoserverCommit:'26b9cbaad199dc1387d1a8ace72fef02b3fa1c64',
-    bactowebCommit:'515cb39e9d12493103c3a63319b8964022650365',
+    guiCommit:guiCommits[0],
+    ...(guiPatch ? {guiPatch} : {}),
+    bactoserverCommit:fixture.bactoserverCommit,
+    bactowebCommit:webSource.sourceCommit,
     nativeRenderer:'Qt 5.15 Cocoa OpenGL; grabToImage at 2x, unmodified production QML resources',
     webRenderer:'Playwright Chromium at 2x, current source and current localized interface',
     fixture:'Isolated local Bactoserver test mode with copied demo archives; teaching event and gate fixtures only in the disposable runtime',
-    captureReports:['output/gui-capture/runtime/capture-fixture-provenance.json','output/gui-capture/web/source-provenance.json','output/gui-capture/web/capture-evidence.json'],
+    captureReports:['output/gui-capture/runtime/capture-fixture-provenance.json','output/gui-capture/runtime/native-provenance.json','output/gui-capture/web/source-provenance.json','output/gui-capture/web/capture-evidence.json'],
     originalScreenshotAssets:36,originalControlAssets:38,preservedScientificAssets:8,preservedNonGuiAssets:29},
   figures};
 // Additive procedure catalogs have their own capture and preparation workflows;
 // refreshing legacy replacements must not drop those document images.
 manifest.figures.push(...previous.figures.filter(figure=>figure.catalog && locales.includes(figure.locale)));
-if (previous.source?.supplementalCaptureReports) manifest.source.supplementalCaptureReports=previous.source.supplementalCaptureReports;
-if (previous.source?.digitalOutputCaptureReports) manifest.source.digitalOutputCaptureReports=previous.source.digitalOutputCaptureReports;
-if (previous.source?.onlineResultCaptureReports) manifest.source.onlineResultCaptureReports=previous.source.onlineResultCaptureReports;
+for (const [key,value] of Object.entries(previous.source || {})) if (key.endsWith('CaptureReports') && key!=='captureReports') manifest.source[key]=value;
 await writeFile(filename,JSON.stringify(manifest,null,2)+'\n');
 console.log(`Prepared ${manifest.figures.length} figures. Render and visually review before applying them.`);

@@ -5,8 +5,10 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 11)
 find_package(Qt5 5.12 REQUIRED COMPONENTS QuickTest Quick Widgets)
 get_filename_component(GUI_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/../../../../gui" ABSOLUTE)
+# Header-only helpers beside the integration main.cpp (e.g. LoginReplyServer.h).
+file(GLOB INTEGRATION_HEADERS "${GUI_ROOT}/test/integration/*.h")
 add_executable(gui-capture
-  "${GUI_ROOT}/test/integration/main.cpp"
+  "${GUI_ROOT}/test/integration/main.cpp" ${INTEGRATION_HEADERS}
   "${GUI_ROOT}/UserActivityFilter.cpp"
   "${GUI_ROOT}/QmlTranslator.cpp"
   "${GUI_ROOT}/qml.qrc" "${GUI_ROOT}/image.qrc" "${GUI_ROOT}/manual/manual.qrc")

@@ -146,7 +146,7 @@ Le voci più recenti sono elencate per prime. **Registro degli errori**, **Regis
 Il colore della riga indica il tipo di ciascuna voce: rosso per gli errori critici, giallo per gli errori non critici e blu per gli eventi di azzeramento. I codici di errore iniziano con E e sono elencati in [Errori non critici](16-warnings-errors-and-troubleshooting.md#section-16-2) ed [Errori critici](16-warnings-errors-and-troubleshooting.md#section-16-3). Due eventi registrano l’azzeramento degli errori:
 
 - **C01 – Errori eliminati automaticamente**: dopo un errore non critico, lo strumento ha completato correttamente un protocollo e considera risolti gli errori precedenti.
-- **C02** (errori azzerati manualmente): un utente ha premuto **Cancella gli errori** (vedere [Azzerare gli errori](16-warnings-errors-and-troubleshooting.md#section-16-5)).
+- **C02 – Errori eliminati manualmente**: un utente ha premuto **Cancella gli errori** (vedere [Azzerare gli errori](16-warnings-errors-and-troubleshooting.md#section-16-5)).
 
 Se nell’intervallo di tempo visualizzato non è stato registrato alcun errore, viene visualizzato **No errors in this date range**.
 
@@ -207,7 +207,7 @@ Gli errori critici devono essere azzerati manualmente. Risolvere prima la causa 
 | 1. | Nella schermata Home, premere **Impostazioni** per aprire il menu delle impostazioni. |  |
 | 2. | Premere **Registri**, quindi **Registro degli errori**. |  |
 | 3. | Verificare di aver risolto il problema che ha causato gli errori visualizzati. Premere quindi **Cancella gli errori**. | Il pulsante è disponibile per gli utenti Basic, Advanced e Admin quando nessun protocollo è in esecuzione.<br />![BactoSense — Cancella errori](/img/gui/it/error-log-clear-errors.png "width=245 class=manual-figure") |
-| 4. | In cima al registro viene aggiunto l’evento **C02** (errori azzerati manualmente) e i simboli degli errori precedenti diventano grigi. Lo strumento è nuovamente pronto per l’analisi. |  |
+| 4. | In cima al registro viene aggiunto l’evento **C02 – Errori eliminati manualmente** e i simboli degli errori precedenti diventano grigi. Lo strumento è nuovamente pronto per l’analisi. |  |
 
 ## 16.6 Autodiagnosi automatica {#section-16-6}
 

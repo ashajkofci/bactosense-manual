@@ -51,7 +51,7 @@ Contactez l’assistance bNovate ou votre partenaire local en entretien et en r�
 
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
-| 1. | Connectez-vous en tant qu’utilisateur Advanced ou Admin, puis accédez à l’écran d’accueil. | ![BactoSense — Bouton d’accueil](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
+| 1. | Connectez-vous et accédez à l’écran d’accueil. | ![BactoSense — Bouton d’accueil](/img/gui/icons/home-button.png "width=48 class=manual-icon") |
 | 2. | Appuyez sur le bouton Paramètres. | ![BactoSense — Bouton Paramètres](/img/gui/fr/home-settings-button.png "width=72 class=manual-icon-settings-button-half") |
 | 3. | Appuyez sur le bouton Support & Service. | ![BactoSense — Informations de support et de maintenance](/img/gui/icons/intervention-info-button.png "width=48 class=manual-icon") |
 | 4. | Si un entretien est nécessaire, un avertissement est joint au résultat de mesure. Planifiez une maintenance préventive avant la date d’échéance. |  |

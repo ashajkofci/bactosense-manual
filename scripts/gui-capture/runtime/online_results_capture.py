@@ -90,7 +90,7 @@ def main():
     prepare.prepare()
     shutil.copy2(ROOT / "output/gui-capture/runtime/server/bactoserver", runtime.SERVER / "bactoserver")
     provenance = {"purpose": "Real Online TCC selected result, same-record metrics/dotplot, actual plot touch to Online chart",
-                  "guiSourceSnapshot": gui, "bactoserverCommit": subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT.parent / "bactoserver").decode().strip(),
+                  "guiSourceSnapshot": gui, "bactoserverCommit": prepare.server_commit(),
                   "captureQmlSha256": runtime.sha(HERE / "tst_online_results.qml"), "guiExecutableSha256": runtime.sha(runtime.EXECUTABLE),
                   "bactoserverExecutableSha256": runtime.sha(runtime.SERVER / "bactoserver"),
                   "fixture": "Unmodified shipped demo archive/settings. Only the in-memory GUI mode/bucket/index and chart date selection are changed; no data or scientific values are seeded.",

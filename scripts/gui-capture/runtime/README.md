@@ -259,3 +259,31 @@ control trees (`bactoswitch-layouts.mjs`), reuses each edition's alt text, and
 registers the figures. Render them, review every final image, record verdicts
 with `node scripts/gui-capture/record-reviews.mjs <verdicts.json>` (each verdict
 names the reviewed image's SHA-256), then apply and check as usual.
+
+## Text overflow check
+
+Every native harness logs `CAPTURE_TEXT <locale>/<state>` beside each capture: the
+read-only layout metrics of each visible Qt Quick `Text` item (`textMetrics.js`),
+with its painted size, fit mode, alignment and ancestor rectangles. Nothing in
+the GUI is changed. `text_overflow.py` reads these lines from any capture logs and
+reports text that is painted larger than its box (`self`), outside its nearest
+sized container or the screen, cut by a non-scrolling clip, elided by Qt, or
+overlapping other text in the same layer (screen, modal or bar). Text behind an
+open modal and text scrolled outside a list viewport are ignored. `box` marks a
+text box that extends past its container: harmless while the text fits, but the
+cause of overflow once a translation is longer.
+
+```sh
+python3 scripts/gui-capture/runtime/text_overflow.py output/gui-capture/runtime/capture-*.log \
+  output/gui-capture/{scheduler,bactoswitch,activation,digital-output,online-results}/capture-*.log
+node scripts/gui-capture/text-overflow-crops.mjs elided clipped self container screen overlap
+```
+
+The report is `output/gui-capture/text-overflow/report.json`; the crops outline the
+painted text (red), its box (blue) and its container (green). Confirm each
+finding in the crop before changing the GUI. `CustomText` shrinks with
+`Text.Fit` only within its `width`, so the usual fix is the width: bind it to
+the real container instead of leaving it implicit or fixed. To verify a GUI
+change without replacing the capture harness, build the patched tree into
+another directory and point `GUI_CAPTURE_EXECUTABLE` at it (honored by
+`capture.py` and the scheduler and digital-output helpers).

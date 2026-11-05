@@ -16,7 +16,8 @@ ROOT = Path(__file__).resolve().parents[3]
 HERE = Path(__file__).resolve().parent
 OUTPUT = ROOT / "output/gui-capture/digital-output"
 SERVER = OUTPUT / "runtime/server"
-EXECUTABLE = ROOT / "output/gui-capture/runtime/qt-build/gui-capture"
+# GUI_CAPTURE_EXECUTABLE selects another build of the harness, e.g. of a patched GUI tree.
+EXECUTABLE = Path(os.environ.get("GUI_CAPTURE_EXECUTABLE", ROOT / "output/gui-capture/runtime/qt-build/gui-capture"))
 
 
 def helper(name):
@@ -75,8 +76,8 @@ def main():
     shutil.copy2(ROOT / "output/gui-capture/runtime/server/bactoserver", SERVER / "bactoserver")
     provenance = {"purpose": "Digital-output configuration row examples using real mouse-click navigation and wheel scrolling",
                   "api": "http://127.0.0.1:18889", "redisPort": 16389,
-                  "sources": {name: subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT.parent / name).decode().strip()
-                              for name in ["gui", "bactoserver"]},
+                  "sources": {"gui": subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT.parent / "gui").decode().strip(),
+                              "bactoserver": runtime.server_commit()},
                   "qmlSha256": sha(HERE / "tst_digital_outputs.qml"), "guiExecutableSha256": sha(EXECUTABLE),
                   "bactoserverExecutableSha256": sha(SERVER / "bactoserver"),
                   "fixture": "Private unmodified shipped demo settings. Alarm 2 is enabled only in the unsaved QML form; no API settings write.",

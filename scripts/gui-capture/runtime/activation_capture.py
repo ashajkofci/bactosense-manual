@@ -74,8 +74,8 @@ def prepare():
                   "activationKeyEnteredOrSubmitted": False,
                   "fixture": "Private copy of shipped demo archive/settings and hardware stubs; no licence activation or hardware actions.",
                   "bactoserverBinarySha256": sha(SERVER / "bactoserver"),
-                  "sources": {name: subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT.parent / name).decode().strip()
-                              for name in ["gui", "bactoserver"]}}
+                  "sources": {"gui": subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT.parent / "gui").decode().strip(),
+                              "bactoserver": runtime.server_commit()}}
     (OUTPUT / "provenance.json").write_text(json.dumps(provenance, indent=2) + "\n")
     print("Prepared isolated activation capture; preserved images: " + str(verify_preserved()))
 
