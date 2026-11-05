@@ -193,6 +193,34 @@ Reference basis: DE-PDF and FR-PDF chapters 6, 7 and 12–14. BactoCloud enrolme
 
 Keep **I/O-Box** when quoting the accessory’s literal name; the explanatory noun in prose may follow the table. Keep **Enrol instrument**, **Generate new code**, **Enrol**, **Unenrol**, **Last seen** and **Enrolled since** when identifying current BactoCloud controls or fields. Account registration and instrument enrolment are different actions even where the same base noun is used.
 
+## BactoSwitch
+
+Reference basis: the BactoSwitch manual (`manuals/bactoswitch/`) and its four translations. The general rules above apply; **BactoSwitch** stays unchanged. Control labels come from `../gui/gui_<locale>.ts`, mapped through `gui_en-US.ts` where the displayed English text differs from the catalog key; web interface labels come from `../bactoweb/app/assets/locales/locale-<locale>.json`.
+
+| English | DE | FR | IT | ES |
+| --- | --- | --- | --- | --- |
+| multi-line selector | Mehrleitungs-Umschalter | sélecteur multi-lignes | selettore multilinea | selector multilínea |
+| input line | Eingangsleitung | ligne d’entrée | linea di ingresso | línea de entrada |
+| line selection light | Leitungsauswahlleuchte | voyant de sélection de ligne | spia di selezione linea | indicador luminoso de selección de línea |
+| status light | Statusleuchte | voyant d’état | spia di stato | indicador luminoso de estado |
+| solenoid valve | Magnetventil | électrovanne | elettrovalvola | electroválvula |
+| normally open (valve) | stromlos offen | normalement ouverte | normalmente aperta | normalmente abierta |
+| manual override | Handbetätigung | commande manuelle | comando manuale | accionamiento manual |
+| needle valve | Nadelventil | vanne à pointeau | valvola a spillo | válvula de aguja |
+| pressure regulator | Druckregler | régulateur de pression | regolatore di pressione | regulador de presión |
+| check valve | Rückschlagventil | clapet anti-retour | valvola di non ritorno | válvula antirretorno |
+| flow rate adjustment knob | Drehknopf zur Durchflusseinstellung | bouton de réglage du débit | manopola di regolazione della portata | mando de ajuste del caudal |
+| flow meter | Durchflussmesser | débitmètre | flussimetro | caudalímetro |
+| push-in fitting | Steckanschluss | raccord instantané | raccordo a innesto rapido | racor instantáneo |
+| fitting end-stop | Anschlag | butée du raccord | battuta del raccordo | tope del racor |
+| On/Off valve (at the sampling point) | Ein/Aus-Ventil | robinet d’ouverture/fermeture | valvola di intercettazione | válvula de cierre |
+| tube cutting tool | Schlauchschneider | coupe-tube | tagliatubi | cortatubos |
+| knob screws (front cover) | Griffschrauben | vis moletées | viti a pomello | tornillos de pomo |
+| rear structure | hinterer Rahmen | structure arrière | struttura posteriore | estructura trasera |
+| filling the system with water (4.7) | Befüllen des Systems mit Wasser | mise en eau du système | riempimento del sistema con acqua | llenado del sistema con agua |
+
+Section 4.7 fills the lines with water; it is not the **Prime** protocol. Do not use *Ansaugen / amorçage / adescamento / cebado* there. The drain keeps the general term (**Ablauf / évacuation / scarico / desagüe**).
+
 ## Context and accepted variants
 
 These decisions record recurring source variants and accepted contextual differences. Apply the preferred treatment during updates; exact interface labels remain exceptions.

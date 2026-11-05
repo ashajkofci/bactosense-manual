@@ -4,14 +4,15 @@ import { mkdir, readFile, rename, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { chromium } from 'playwright';
+import manualRegistry from '../plugins/manuals.cjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const COPY = {
-  en: { title: 'BactoSense', documentId: 'Document ID', contents: 'Contents', compiled: 'Compiled on', software: 'Software' },
-  de: { title: 'BactoSense', documentId: 'Dokument-ID', contents: 'Inhalt', compiled: 'Erstellt am', software: 'Software' },
-  fr: { title: 'BactoSense', documentId: 'Identifiant du document', contents: 'Sommaire', compiled: 'Généré le', software: 'Logiciel' },
-  it: { title: 'BactoSense', documentId: 'ID documento', contents: 'Indice', compiled: 'Generato il', software: 'Software' },
-  es: { title: 'BactoSense', documentId: 'ID del documento', contents: 'Índice', compiled: 'Generado el', software: 'Software' },
+  en: { documentId: 'Document ID', contents: 'Contents', compiled: 'Compiled on', software: 'Software' },
+  de: { documentId: 'Dokument-ID', contents: 'Inhalt', compiled: 'Erstellt am', software: 'Software' },
+  fr: { documentId: 'Identifiant du document', contents: 'Sommaire', compiled: 'Généré le', software: 'Logiciel' },
+  it: { documentId: 'ID documento', contents: 'Indice', compiled: 'Generato il', software: 'Software' },
+  es: { documentId: 'ID del documento', contents: 'Índice', compiled: 'Generado el', software: 'Software' },
 };
 const MIME = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.svg': 'image/svg+xml', '.png': 'image/png', '.woff2': 'font/woff2', '.woff': 'font/woff', '.pdf': 'application/pdf', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp' };
 const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
@@ -64,9 +65,9 @@ export async function compileManualPdf(root, manifest) {
   const copy = COPY[manifest.locale];
   if (!copy || !manifest.chapters?.length) throw new Error('Missing PDF language or chapter manifest. Build the website first.');
   const outDir = path.resolve(root, manifest.outDir);
-  const evidenceDir = path.join(root, 'output/pdf', manifest.locale);
+  const evidenceDir = path.join(root, 'output/pdf', manifest.manual, manifest.locale);
   const publicDir = path.join(outDir, 'pdf');
-  const pdfFile = `bactosense-manual-${manifest.locale}.pdf`;
+  const pdfFile = manualRegistry.pdfFile({ id: manifest.manual }, manifest.locale);
   const temporaryPdf = path.join(publicDir, `${pdfFile}.tmp`);
   const generatedAt = new Date();
   const date = new Intl.DateTimeFormat(manifest.htmlLang, { dateStyle: 'long' }).format(generatedAt);
@@ -75,7 +76,7 @@ export async function compileManualPdf(root, manifest) {
   const guiScreenshotAlts = guiFigures.figures.filter(figure => figure.locale === manifest.locale && figure.kind === 'screenshot').map(figure => figure.alt);
   const digitalOutputBaseAlt = guiFigures.figures.find(figure => figure.id === `${manifest.locale}-digital-output-base-state`)?.alt;
   const chapters = await Promise.all(manifest.chapters.map((chapter) => readChapter(outDir, manifest.baseUrl, chapter)));
-  const shell = `<!doctype html><html lang="${escapeHtml(manifest.htmlLang)}" data-theme="light"><head><meta charset="utf-8"><title>${escapeHtml(copy.title)}</title></head><body><main id="manual-pdf"></main></body></html>`;
+  const shell = `<!doctype html><html lang="${escapeHtml(manifest.htmlLang)}" data-theme="light"><head><meta charset="utf-8"><title>${escapeHtml(manifest.title)}</title></head><body><main id="manual-pdf"></main></body></html>`;
   const { server, origin } = await startServer(outDir, manifest.baseUrl, shell);
   const resourceErrors = [];
   let browser;
@@ -109,20 +110,24 @@ export async function compileManualPdf(root, manifest) {
       }
       const cover = document.createElement('section');
       cover.className = 'pdf-cover';
-      const logo = document.createElement('img');
-      logo.src = `${meta.baseUrl}img/manual/asset-53eb3be5b297.png`;
-      logo.alt = 'BactoSense';
-      cover.appendChild(logo);
+      if (meta.logo) {
+        const logo = document.createElement('img');
+        logo.src = `${meta.baseUrl}${meta.logo.replace(/^\//, '')}`;
+        logo.alt = meta.title;
+        cover.appendChild(logo);
+      }
       const title = document.createElement('h1');
-      title.textContent = labels.title;
+      title.textContent = meta.title;
       cover.appendChild(title);
       const language = document.createElement('p');
       language.className = 'pdf-language';
       language.textContent = meta.languageLabel;
       cover.appendChild(language);
-      const version = document.createElement('p');
-      version.textContent = `${labels.software} ${meta.softwareVersion}`;
-      cover.appendChild(version);
+      if (meta.softwareVersion) {
+        const version = document.createElement('p');
+        version.textContent = `${labels.software} ${meta.softwareVersion}`;
+        cover.appendChild(version);
+      }
       const documentId = document.createElement('p');
       documentId.textContent = `${labels.documentId}: ${meta.documentId}`;
       cover.appendChild(documentId);
@@ -131,7 +136,7 @@ export async function compileManualPdf(root, manifest) {
       dateLine.textContent = `${labels.compiled} ${compiledDate}`;
       cover.appendChild(dateLine);
       const online = document.createElement('a');
-      online.href = new URL(meta.baseUrl, meta.siteUrl).href;
+      online.href = new URL(pages[0].permalink, meta.siteUrl).href;
       online.textContent = online.href;
       cover.appendChild(online);
       main.appendChild(cover);
@@ -280,7 +285,7 @@ export async function compileManualPdf(root, manifest) {
     if (resourceErrors.length) throw new Error(`PDF resources did not load:\n${[...new Set(resourceErrors)].join('\n')}`);
     await mkdir(publicDir, { recursive: true });
     await mkdir(evidenceDir, { recursive: true });
-    const footer = `<div style="font-family:Arial,sans-serif;font-size:10px;color:#526474;width:100%;padding:0 18mm;display:flex;justify-content:space-between"><span>BactoSense · ${escapeHtml(manifest.documentId)} · ${escapeHtml(manifest.languageLabel)}</span><span><span class="pageNumber"></span> / <span class="totalPages"></span></span></div>`;
+    const footer = `<div style="font-family:Arial,sans-serif;font-size:10px;color:#526474;width:100%;padding:0 18mm;display:flex;justify-content:space-between"><span>${escapeHtml(manifest.title)} · ${escapeHtml(manifest.documentId)} · ${escapeHtml(manifest.languageLabel)}</span><span><span class="pageNumber"></span> / <span class="totalPages"></span></span></div>`;
     const pdf = await page.pdf({
       path: temporaryPdf,
       format: 'A4',
@@ -329,15 +334,22 @@ export async function compileManualPdf(root, manifest) {
 
 if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
   try {
-    const requestedLocale = process.argv[2];
-    if (process.argv.length > 3 || (requestedLocale && !COPY[requestedLocale])) throw new Error('Usage: npm run manual:pdf -- [en|de|fr|it|es]');
-    const locales = requestedLocale ? [requestedLocale] : Object.keys(COPY);
-    for (const locale of locales) {
-      const manifestPath = path.join(ROOT, 'output/pdf', locale, 'manifest.json');
-      let manifest;
-      try { manifest = JSON.parse(await readFile(manifestPath, 'utf8')); }
-      catch { throw new Error(`Build the ${locale} website first with npm run build. Its PDF manifest is missing.`); }
-      await compileManualPdf(ROOT, manifest);
+    // Arguments select manuals and/or languages, for example: npm run manual:pdf -- bactosense de
+    const requested = process.argv.slice(2);
+    const ids = manualRegistry.manuals.map(manual => manual.id);
+    const unknown = requested.filter(value => !ids.includes(value) && !COPY[value]);
+    if (unknown.length) throw new Error(`Usage: npm run manual:pdf -- [${ids.join('|')}] [${Object.keys(COPY).join('|')}]`);
+    const selectedManuals = requested.some(value => ids.includes(value))
+      ? manualRegistry.manuals.filter(manual => requested.includes(manual.id)) : manualRegistry.manuals;
+    const selectedLocales = requested.filter(value => COPY[value]);
+    for (const manual of selectedManuals) {
+      for (const locale of manual.locales.filter(item => !selectedLocales.length || selectedLocales.includes(item))) {
+        const manifestPath = path.join(ROOT, 'output/pdf', manual.id, locale, 'manifest.json');
+        let manifest;
+        try { manifest = JSON.parse(await readFile(manifestPath, 'utf8')); }
+        catch { throw new Error(`Build the ${locale} website first with npm run build. The ${manual.id} PDF manifest is missing.`); }
+        await compileManualPdf(ROOT, manifest);
+      }
     }
   } catch (error) {
     console.error(error.message);

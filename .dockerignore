@@ -20,5 +20,5 @@ output
 static/pdf/
 
 # Local-only source PDFs and extraction reports.
-/UM_0006-*.pdf
+/UM_*.pdf
 /extraction/

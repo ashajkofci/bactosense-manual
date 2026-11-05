@@ -1,14 +1,12 @@
 import { readFileSync, readdirSync, existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
+import { manuals, contentDirectory, sourceLocale } from '../plugins/manuals.cjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const locales = ['de', 'fr', 'it', 'es'];
 const errors = [];
 const read = file => readFileSync(file, 'utf8');
-const sourceDirectory = path.join(root, 'docs');
-const sources = existsSync(sourceDirectory) ? readdirSync(sourceDirectory).filter(file => /\.mdx?$/.test(file)).sort() : [];
-if (!sources.length) errors.push('en: no English documents found');
 const matches = (text, regex) => [...text.matchAll(regex)].map(match => match[1] ?? match[0]);
 const equal = (a, b) => JSON.stringify(a) === JSON.stringify(b);
 const field = (text, key) => text.match(new RegExp(`^${key}:\\s*(.+)$`, 'm'))?.[1];
@@ -27,36 +25,43 @@ const structure = text => ({
   htmlLinks: matches(text, /\bhref="([^"]+)"/g).sort(),
 });
 const inventory = [];
-for (const locale of locales) {
-  const directory = path.join(root, 'i18n', locale, 'docusaurus-plugin-content-docs', 'current');
-  if (!existsSync(directory)) { errors.push(`${locale}: missing translated documentation directory`); continue; }
-  const files = readdirSync(directory).filter(file => /\.mdx?$/.test(file)).sort();
-  if (!equal(files, sources)) errors.push(`${locale}: translated file inventory differs from English`);
-  for (const filename of sources) {
-    const target = path.join(directory, filename);
-    if (!existsSync(target)) continue;
-    const source = read(path.join(sourceDirectory, filename));
-    const translated = read(target);
-    const label = `${locale}/${filename}`;
-    for (const [language, content] of [['en', source], [locale, translated]]) {
-      for (const image of matches(content, /(?:src="|\]\()(\/img\/[^\s"')>]+)/g)) {
-        const imageLocale = image.match(/^\/img\/gui\/(en|de|fr|it|es)\//)?.[1];
-        if (imageLocale && imageLocale !== language) errors.push(`${label}: ${language} uses a ${imageLocale} GUI capture`);
-        if (image.startsWith('/img/gui/') && !existsSync(path.join(root, 'static', image))) errors.push(`${label}: missing GUI capture ${image}`);
+// Each manual is checked in the languages it lists in manuals.json; other site
+// languages show its English pages.
+for (const manual of manuals) {
+  const sourceDirectory = path.join(root, contentDirectory(manual, sourceLocale));
+  const sources = existsSync(sourceDirectory) ? readdirSync(sourceDirectory).filter(file => /\.mdx?$/.test(file)).sort() : [];
+  if (!sources.length) errors.push(`${manual.id}/en: no English documents found`);
+  for (const locale of manual.locales.filter(locale => locale !== sourceLocale)) {
+    const directory = path.join(root, contentDirectory(manual, locale));
+    if (!existsSync(directory)) { errors.push(`${manual.id}/${locale}: missing translated documentation directory`); continue; }
+    const files = readdirSync(directory).filter(file => /\.mdx?$/.test(file)).sort();
+    if (!equal(files, sources)) errors.push(`${manual.id}/${locale}: translated file inventory differs from English`);
+    for (const filename of sources) {
+      const target = path.join(directory, filename);
+      if (!existsSync(target)) continue;
+      const source = read(path.join(sourceDirectory, filename));
+      const translated = read(target);
+      const label = `${manual.id}/${locale}/${filename}`;
+      for (const [language, content] of [['en', source], [locale, translated]]) {
+        for (const image of matches(content, /(?:src="|\]\()(\/img\/[^\s"')>]+)/g)) {
+          const imageLocale = image.match(/^\/img\/gui\/(en|de|fr|it|es)\//)?.[1];
+          if (imageLocale && imageLocale !== language) errors.push(`${label}: ${language} uses a ${imageLocale} GUI capture`);
+          if (image.startsWith('/img/gui/') && !existsSync(path.join(root, 'static', image))) errors.push(`${label}: missing GUI capture ${image}`);
+        }
       }
+      for (const key of ['slug', 'sidebar_position']) {
+        if (field(source, key) !== field(translated, key)) errors.push(`${label}: ${key} differs`);
+      }
+      if (!translated.startsWith('---\n')) errors.push(`${label}: missing frontmatter`);
+      if (translated === source) errors.push(`${label}: untranslated English document`);
+      if (/@@IT\d+@@|\[INSERT|\[PLACEHOLDER|[\uE000-\uF8FF\uFFFD]/u.test(translated)) errors.push(`${label}: unresolved placeholder or PDF glyph`);
+      if (/(?:manual|pdf)-page-\d+/.test(translated)) errors.push(`${label}: obsolete source-page anchor`);
+      const expected = structure(source), actual = structure(translated);
+      for (const key of Object.keys(expected)) {
+        if (!equal(expected[key], actual[key])) errors.push(`${label}: ${key} differs from English`);
+      }
+      inventory.push({ manual: manual.id, locale, filename, sourceSha256: createHash('sha256').update(source).digest('hex'), translatedSha256: createHash('sha256').update(translated).digest('hex'), images: actual.images.length, notices: actual.notices.length, tables: actual.tableTags.filter(tag=>tag==='table').length + actual.markdownTables.length });
     }
-    for (const key of ['slug', 'sidebar_position']) {
-      if (field(source, key) !== field(translated, key)) errors.push(`${label}: ${key} differs`);
-    }
-    if (!translated.startsWith('---\n')) errors.push(`${label}: missing frontmatter`);
-    if (translated === source) errors.push(`${label}: untranslated English document`);
-    if (/@@IT\d+@@|\[INSERT|\[PLACEHOLDER|[\uE000-\uF8FF\uFFFD]/u.test(translated)) errors.push(`${label}: unresolved placeholder or PDF glyph`);
-    if (/(?:manual|pdf)-page-\d+/.test(translated)) errors.push(`${label}: obsolete source-page anchor`);
-    const expected = structure(source), actual = structure(translated);
-    for (const key of Object.keys(expected)) {
-      if (!equal(expected[key], actual[key])) errors.push(`${label}: ${key} differs from English`);
-    }
-    inventory.push({ locale, filename, sourceSha256: createHash('sha256').update(source).digest('hex'), translatedSha256: createHash('sha256').update(translated).digest('hex'), images: actual.images.length, notices: actual.notices.length, tables: actual.tableTags.filter(tag=>tag==='table').length + actual.markdownTables.length });
   }
 }
 for (const locale of locales) {
@@ -69,4 +74,4 @@ for (const locale of locales) {
 mkdirSync(path.join(root, 'output/translations'), { recursive: true });
 writeFileSync(path.join(root, 'output/translations/coverage.json'), JSON.stringify({ checkedAt: new Date().toISOString(), inventory, errors }, null, 2) + '\n');
 if (errors.length) { console.error(errors.join('\n')); process.exitCode = 1; }
-else console.log(`Validated ${inventory.length} translated documents across ${locales.join(', ')}: complete inventory, stable routes, anchors, tables, notices, images and links.`);
+else console.log(`Validated ${inventory.length} translated documents in ${manuals.map(manual => manual.title).join(', ')}: complete inventory, stable routes, anchors, tables, notices, images and links.`);

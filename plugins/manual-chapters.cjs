@@ -1,8 +1,8 @@
 // Use the same published inventory and ordering for every manual export.
-module.exports = function manualChapters(allContent) {
-  const version = allContent['docusaurus-plugin-content-docs']?.default?.loadedVersions
+module.exports = function manualChapters(allContent, docsPluginId = 'default') {
+  const version = allContent['docusaurus-plugin-content-docs']?.[docsPluginId]?.loadedVersions
     .find(item => item.versionName === 'current');
-  if (!version?.sidebars.manual) throw new Error('Manual export requires the current manual sidebar.');
+  if (!version?.sidebars.manual) throw new Error(`Manual export requires the current manual sidebar of docs plugin ${docsPluginId}.`);
   const docs = new Map(version.docs.map(doc => [doc.id, doc]));
   const ids = [];
   function collect(items) {

@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "locale": "fr",
   "chapterCount": 21,
-  "blockCount": 934,
-  "internalLinkCount": 680,
+  "blockCount": 940,
+  "internalLinkCount": 684,
   "assetCount": 178,
   "maxAssetWidth": 800,
   "resizedAssetCount": 53,
@@ -39,7 +39,7 @@
     },
     {
       "file": "chapters/field-bus-interface.json",
-      "sha256": "38ab54d2fee8324931d6430667ca330e1b56cf51f561fbb6c5301297b77668d6"
+      "sha256": "f3e9c1482a2d26b6ee2280e1f5df43f89d2c190f809d6024651e6ace8aa9dcd2"
     },
     {
       "file": "chapters/general-operations-and-configurations.json",
@@ -47,7 +47,7 @@
     },
     {
       "file": "chapters/upgrade-packages.json",
-      "sha256": "88b42dbb2fe61336820c53a95932a4faecd40ad31eda1569014ff0abaf7a293b"
+      "sha256": "36e0c56224a4f9f6d399029ad8fcc415e173a0093e05f3c69fedb2b01904a428"
     },
     {
       "file": "chapters/measurements.json",
@@ -71,7 +71,7 @@
     },
     {
       "file": "chapters/maintenance.json",
-      "sha256": "81181694442dcaa5cd11738e8f7ed9e2be4f01641ae79d68727f801c2bddd0d5"
+      "sha256": "100d1c6deeb712183355d6834023a3e06a577c180e6eae4458c2a04f95ad66a1"
     },
     {
       "file": "chapters/warnings-errors-and-troubleshooting.json",

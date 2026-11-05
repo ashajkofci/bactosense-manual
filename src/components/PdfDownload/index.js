@@ -2,11 +2,16 @@ import React from 'react';
 import { translate } from '@docusaurus/Translate';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import { useActivePlugin } from '@docusaurus/plugin-content-docs/client';
 
+// Download the PDF of the manual being read, in the current language.
 export default function PdfDownload({ mobile = false }) {
-  const { i18n } = useDocusaurusContext();
-  const filename = `bactosense-manual-${i18n.currentLocale}.pdf`;
+  const { i18n, siteConfig } = useDocusaurusContext();
+  const activePlugin = useActivePlugin({ failfast: false });
+  const manual = siteConfig.customFields.manuals.find(item => item.docsPluginId === activePlugin?.pluginId);
+  const filename = manual?.pdfFiles[i18n.currentLocale];
   const href = useBaseUrl(`pdf/${filename}`);
+  if (!filename) return null;
   return (
     <a
       className={`${mobile ? 'menu__link' : 'navbar__item navbar__link'} manual-pdf-download`}

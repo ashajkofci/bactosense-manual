@@ -1,5 +1,6 @@
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import path from 'node:path';
+import { manuals, contentDirectory, sourceLocale } from '../plugins/manuals.cjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const read = file => readFileSync(path.join(root, file), 'utf8');
@@ -18,13 +19,14 @@ for (const symbol of Object.values(safety.symbols)) {
 }
 const references = new Map();
 let documentCount = 0;
-for (const locale of ['en', 'de', 'fr', 'it', 'es']) {
-  const directory = locale === 'en' ? 'docs' : `i18n/${locale}/docusaurus-plugin-content-docs/current`;
-  const label = locale;
+for (const manual of manuals) for (const locale of manual.locales) {
+  const directory = contentDirectory(manual, locale);
+  const label = `${manual.id}/${locale}`;
   if (!existsSync(path.join(root, directory))) { errors.push(`${label}: missing documentation directory ${directory}`); continue; }
   const docs = readdirSync(path.join(root, directory)).filter(name => /\.mdx?$/.test(name));
   documentCount += docs.length;
-  for (let chapter = 1; chapter <= 20; chapter++) {
+  check(docs.length > 0, `${label}: no documents in ${directory}`);
+  for (let chapter = 1; chapter <= (manual.chapters || 0); chapter++) {
     const prefix = String(chapter).padStart(2, '0') + '-';
     check(docs.filter(file => file.startsWith(prefix)).length === 1, `${label}: expected one document for chapter ${chapter}`);
   }
@@ -40,13 +42,14 @@ for (const locale of ['en', 'de', 'fr', 'it', 'es']) {
       check(noticeTypes.has(type), `${fileLabel}: unknown notice type ${type}`);
     }
     check(!/\/img\/manual\/icon-(?:danger|explosion|warning|gloves|information)\.png/.test(text), `${fileLabel}: use a native notice for standalone safety and information symbols`);
-    if (file.startsWith('02-')) {
+    // The safety-symbol legend is part of the BactoSense manual's section 2.3.
+    if (manual.id === 'bactosense' && file.startsWith('02-')) {
       const legend = text.match(/\{#section-2-3\}([\s\S]*?)\{#section-2-4\}/)?.[1] || '';
       for (const type of Object.keys(safety.admonitions)) {
         if (type === 'info') continue; // Information pictograms are explained in 2.4.
         check(new RegExp(`^:{3,}${type}\\[`, 'm').test(legend), `${fileLabel}: section 2.3 is missing the ${type} symbol`);
       }
-      if (locale === 'en') {
+      if (locale === sourceLocale) {
         const section = text.match(/^## 2\.3[^\n]*\n[\s\S]*?(?=^## 2\.4)/m)?.[0] || '';
         check(section.trim() === read('scripts/editorial/02-safety-symbols.md').trim(), `${fileLabel}: keep the maintained safety legend in sync`);
       }
@@ -65,6 +68,7 @@ if (errors.length) {
   console.error(errors.join('\n'));
   process.exitCode = 1;
 } else {
-  console.log(`Validated ${documentCount} documents, 20 chapters per language across en, de, fr, it, es, and ${references.size} referenced images.`);
+  const summaries = manuals.map(manual => `${manual.title} (${manual.locales.join(', ')}${manual.chapters ? `; ${manual.chapters} chapters each` : ''})`);
+  console.log(`Validated ${documentCount} documents in ${summaries.join(', ')}, and ${references.size} referenced images.`);
   console.log(`${[...references.values()].filter(count => count > 1).length} images are reused across document references.`);
 }

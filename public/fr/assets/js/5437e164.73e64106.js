@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbnovate_manuals=self.webpackChunkbnovate_manuals||[]).push([[7718],{3215(s){s.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"bactoswitch"}')}}]);

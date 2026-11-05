@@ -1,7 +1,15 @@
+const { manuals, principal, sourceLocale, contentDirectory, pdfFile } = require('./plugins/manuals.cjs');
+
+const locales = ['en', 'de', 'fr', 'it', 'es'];
+const manualIds = manuals.map(manual => manual.id);
+const deviceOnly = process.env.MANUAL_DEVICE_ONLY === '1';
+// The instrument GUI export needs only its own manual; the website builds every manual.
+const published = deviceOnly ? manuals.filter(manual => manual.device) : manuals;
+
 /** @type {import('@docusaurus/types').Config} */
 module.exports = {
-  title: 'BactoSense',
-  tagline: 'Rapid Bacterial Monitoring Systems',
+  title: 'bNovate Manuals',
+  tagline: 'Product documentation from bNovate Technologies',
   url: process.env.MANUAL_SITE_URL || 'https://manual.bnovate.net',
   baseUrl: process.env.MANUAL_BASE_PATH || '/',
   trailingSlash: true,
@@ -10,7 +18,7 @@ module.exports = {
   markdown: { hooks: { onBrokenMarkdownLinks: 'throw' } },
   onBrokenAnchors: 'throw',
   i18n: {
-    defaultLocale: 'en', locales: ['en', 'de', 'fr', 'it', 'es'],
+    defaultLocale: sourceLocale, locales,
     localeConfigs: {
       en: { label: 'English', htmlLang: 'en-GB' },
       de: { label: 'Deutsch', htmlLang: 'de-DE' },
@@ -19,40 +27,76 @@ module.exports = {
       es: { label: 'Español', htmlLang: 'es-ES' },
     },
   },
+  customFields: {
+    // Read by the home page and the PDF download button.
+    manuals: published.map(({ id, title, description, docsPluginId, locales: editions }) => ({
+      id, title, description, docsPluginId, locales: editions,
+      pdfFiles: Object.fromEntries(editions.map(locale => [locale, pdfFile({ id }, locale)])),
+    })),
+  },
   themes: [[require.resolve('@easyops-cn/docusaurus-search-local'), {
     indexDocs: true, indexBlog: false, indexPages: false,
-    docsRouteBasePath: '/', language: ['en', 'de', 'fr', 'it', 'es'], hashed: 'filename',
-    docsDir: ['docs', ...['de', 'fr', 'it', 'es'].map(locale => `i18n/${locale}/docusaurus-plugin-content-docs/current`)],
+    docsRouteBasePath: published.map(manual => manual.id), language: locales, hashed: 'filename',
+    docsDir: published.flatMap(manual => manual.locales.map(locale => contentDirectory(manual, locale))),
+    // With several manuals, search the manual being read; the home page searches every manual.
+    ...(published.length > 1 ? {
+      searchContextByPaths: published.map(manual => ({ label: manual.title, path: manual.id })),
+      useAllContextsWithNoSearchContext: true,
+    } : {}),
     explicitSearchResultPath: true, searchResultContextMaxLength: 160,
   }]],
   plugins: [
-    ...(process.env.MANUAL_DEVICE_ONLY === '1' ? [] : [require.resolve('./plugins/manual-pdf.cjs')]),
+    ...published.map(manual => ['@docusaurus/plugin-content-docs', {
+      id: manual.docsPluginId,
+      path: manual.path,
+      routeBasePath: manual.id,
+      sidebarPath: './sidebars.js',
+      admonitions: { keywords: ['explosion', 'gloves'], extendDefaults: true },
+      // Runs before Docusaurus resolves .md links to locale-prefixed permalinks.
+      beforeDefaultRemarkPlugins: [[require('./plugins/manual-links.cjs'), { manualId: manual.id, manualIds }]],
+      remarkPlugins: [require('./plugins/manual-images.cjs'), require('./plugins/manual-table-notices.cjs')],
+      rehypePlugins: [require('./plugins/manual-tables.cjs')],
+    }]),
+    ...(deviceOnly ? [] : [require.resolve('./plugins/manual-pdf.cjs')]),
     require.resolve('./plugins/manual-device.cjs'),
+    // The principal manual was served at the site root before bNovate Manuals:
+    // keep its former chapter URLs (/installation/, /de/installation/, …) working.
+    ['@docusaurus/plugin-client-redirects', {
+      createRedirects(existingPath) {
+        const prefix = `/${principal.id}/`;
+        if (existingPath.startsWith(prefix) && existingPath !== prefix) return [existingPath.slice(principal.id.length + 1)];
+        return undefined;
+      },
+    }],
   ],
   presets: [['classic', {
-    docs: { routeBasePath: '/', sidebarPath: './sidebars.js', admonitions: { keywords: ['explosion', 'gloves'], extendDefaults: true }, remarkPlugins: [require('./plugins/manual-images.cjs'), require('./plugins/manual-table-notices.cjs')], rehypePlugins: [require('./plugins/manual-tables.cjs')] },
+    docs: false,
     blog: false,
     theme: { customCss: './src/css/custom.css' },
   }]],
   themeConfig: {
     colorMode: { defaultMode: 'light', respectPrefersColorScheme: true },
     navbar: {
-      title: 'BactoSense',
+      title: 'bNovate Manuals',
       items: [
-        { type: 'docSidebar', sidebarId: 'manual', label: 'User manual', position: 'left' },
+        ...published.map(manual => ({ type: 'docSidebar', sidebarId: 'manual', docsPluginId: manual.docsPluginId, label: manual.title, position: 'left' })),
         { type: 'custom-pdfDownload', position: 'right' },
         { type: 'localeDropdown', position: 'right' },
       ],
     },
     footer: {
       style: 'dark',
-      links: [{ title: 'BactoSense', items: [
-        { label: 'User manual', to: '/' },
-        { label: 'BactoCloud', href: 'https://www.bactocloud.com' },
-        { label: 'BactoCloud Manual', href: 'https://manual.bactocloud.com' },
-        { label: 'Contact support', href: 'mailto:support@bnovate.com' },
-        { label: 'bNovate Technologies', href: 'https://www.bnovate.com' },
-      ] }],
+      links: [
+        { title: 'Manuals', items: [
+          ...published.map(manual => ({ label: manual.title, to: `/${manual.id}/` })),
+          { label: 'BactoCloud Manual', href: 'https://manual.bactocloud.com' },
+        ] },
+        { title: 'bNovate', items: [
+          { label: 'BactoCloud', href: 'https://www.bactocloud.com' },
+          { label: 'Contact support', href: 'mailto:support@bnovate.com' },
+          { label: 'bNovate Technologies', href: 'https://www.bnovate.com' },
+        ] },
+      ],
       copyright: `© ${new Date().getFullYear()} bNovate Technologies SA`,
     },
     tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 3 },

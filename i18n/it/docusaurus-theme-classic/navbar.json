@@ -1,6 +1,14 @@
 {
-  "item.label.User manual": {
-    "message": "Manuale d’uso",
-    "description": "Navbar item with label User manual"
+  "title": {
+    "message": "bNovate Manuals",
+    "description": "The title in the navbar"
+  },
+  "item.label.BactoSense": {
+    "message": "BactoSense",
+    "description": "Navbar item with label BactoSense"
+  },
+  "item.label.BactoSwitch": {
+    "message": "BactoSwitch",
+    "description": "Navbar item with label BactoSwitch"
   }
 }

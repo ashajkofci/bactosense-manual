@@ -1,9 +1,9 @@
 import { spawn } from 'node:child_process';
 import { cp, readFile, access, mkdir, rename, rm } from 'node:fs/promises';
-import { createRequire } from 'node:module';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { writeDeviceManualResources } from './export-device-manual.mjs';
+import { manuals } from '../plugins/manuals.cjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2);
@@ -21,8 +21,9 @@ if (gui) {
     process.exit(1);
   }
 }
-const configuration = createRequire(import.meta.url)(path.join(root, 'docusaurus.config.js'));
-const locales = configuration.i18n.locales;
+const manual = manuals.find(item => item.device);
+if (!manual) throw new Error('No manual in manuals.json is marked "device": true.');
+const locales = manual.locales;
 if (!locales.includes('en') || locales.some(locale => !/^[a-z]{2}(?:-[a-z0-9]+)*$/i.test(locale)))
   throw new Error('Device manual requires an English fallback and valid configured language IDs.');
 const bundle = path.join(root, 'output/device-manual');

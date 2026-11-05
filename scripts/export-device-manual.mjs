@@ -21,7 +21,7 @@ const plainText = node => {
 // Consume Docusaurus' rendered HTML, so its MDX, admonitions, custom image
 // component, merged table cells and heading IDs have already been resolved.
 // Emit only Qt 5.12 rich text and data: no website scripts run on the device.
-export async function exportDeviceManual({ root, outDir, baseUrl, siteUrl, chapters, manualVersion,
+export async function exportDeviceManual({ root, outDir, baseUrl, siteUrl, chapters, manualVersion, documentId, softwareVersion,
   locale = 'en', languageLabel = locale, bundleDir = path.join(outDir, 'device-manual') }) {
   if (!chapters?.length) throw new Error('Missing device manual chapter inventory.');
   if (!/^[a-z]{2}(?:-[a-z0-9]+)*$/i.test(locale)) throw new Error(`Invalid device locale: ${locale}`);
@@ -259,8 +259,8 @@ export async function exportDeviceManual({ root, outDir, baseUrl, siteUrl, chapt
     files.push({ file: chapter.file, sha256: createHash('sha256').update(`${data}\n`).digest('hex') });
   }
   const index = {
-    schemaVersion: 1, locale, languageLabel, title: chapters[0].title, documentId: 'UM-0006',
-    softwareVersion: '3.2.0', manualVersion,
+    schemaVersion: 1, locale, languageLabel, title: chapters[0].title, documentId,
+    softwareVersion, manualVersion,
     chapters: pages.map(({ blocks, ...chapter }) => ({ ...chapter, blockCount: blocks.length })),
   };
   await writeFile(path.join(staging, 'index.json'), `${JSON.stringify(index)}\n`);

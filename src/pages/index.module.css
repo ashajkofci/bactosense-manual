@@ -1,0 +1,18 @@
+.home { max-width: 72rem; margin: 0 auto; padding: 3.5rem 1rem 4rem; }
+.hero { margin-bottom: 2.5rem; }
+.title { font-size: clamp(2rem, 5vw, 2.75rem); letter-spacing: -0.025em; line-height: 1.15; margin-bottom: 0.5rem; }
+.tagline { color: var(--ifm-color-emphasis-700); font-size: 1.15rem; margin: 0; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr)); gap: 1.25rem; }
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 0.75rem;
+  background: var(--ifm-background-surface-color);
+}
+.cardTitle { font-size: 1.5rem; margin-bottom: 0.6rem; }
+.cardTitle a { color: inherit; }
+.cardDescription { color: var(--ifm-color-emphasis-800); flex-grow: 1; margin-bottom: 1rem; }
+.cardNote { color: var(--ifm-color-emphasis-700); font-size: 0.875rem; margin-bottom: 1rem; }
+.cardActions { display: flex; flex-wrap: wrap; gap: 0.6rem; }

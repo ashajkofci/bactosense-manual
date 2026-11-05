@@ -1,0 +1,50 @@
+[
+  {
+    "id": "bactosense",
+    "title": "BactoSense",
+    "description": {
+      "en": "Rapid Bacterial Monitoring Systems: installation, operation, results, maintenance and troubleshooting.",
+      "de": "Systeme zur schnellen Bakterienüberwachung: Installation, Betrieb, Ergebnisse, Wartung und Fehlerbehebung.",
+      "fr": "Systèmes de surveillance bactérienne rapide : installation, utilisation, résultats, maintenance et dépannage.",
+      "it": "Sistemi di monitoraggio batterico rapido: installazione, funzionamento, risultati, manutenzione e risoluzione dei problemi.",
+      "es": "Sistemas de monitorización bacteriana rápida: instalación, funcionamiento, resultados, mantenimiento y resolución de problemas."
+    },
+    "documentId": "UM-0006",
+    "chapters": 20,
+    "version": "3.2.0",
+    "softwareVersion": "3.2.0",
+    "locales": [
+      "en",
+      "de",
+      "fr",
+      "it",
+      "es"
+    ],
+    "logo": "/img/manual/asset-53eb3be5b297.png",
+    "docsPluginId": "default",
+    "path": "docs",
+    "device": true
+  },
+  {
+    "id": "bactoswitch",
+    "title": "BactoSwitch",
+    "description": {
+      "en": "Multi-line selector for BactoSense: installation, line configuration, operation, maintenance and storage.",
+      "de": "Mehrleitungs-Umschalter für BactoSense: Installation, Leitungskonfiguration, Betrieb, Wartung und Lagerung.",
+      "fr": "Sélecteur multi-lignes pour BactoSense : installation, configuration des lignes, utilisation, maintenance et stockage.",
+      "it": "Selettore multilinea per BactoSense: installazione, configurazione delle linee, funzionamento, manutenzione e conservazione.",
+      "es": "Selector multilínea para BactoSense: instalación, configuración de líneas, funcionamiento, mantenimiento y almacenamiento."
+    },
+    "documentId": "UM-0001",
+    "chapters": 9,
+    "version": "02",
+    "locales": [
+      "en",
+      "de",
+      "fr",
+      "it",
+      "es"
+    ],
+    "logo": "/img/manual/asset-53eb3be5b297.png"
+  }
+]

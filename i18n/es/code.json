@@ -383,5 +383,14 @@
   "theme.admonition.gloves": {
     "message": "Guantes de protección",
     "description": "The default label used for a mandatory protective gloves notice."
+  },
+  "home.tagline": {
+    "message": "Documentación de producto de bNovate Technologies"
+  },
+  "home.manual.open": {
+    "message": "Abrir el manual"
+  },
+  "home.manual.sourceOnly": {
+    "message": "Disponible en inglés"
   }
 }

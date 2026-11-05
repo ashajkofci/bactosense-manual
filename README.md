@@ -1,12 +1,43 @@
-# BactoSense
+# bNovate Manuals
 
-A Docusaurus site based on the structure, typography, local search, and light/dark theme of the sibling `bactocloud-manual` project. This manual covers BactoSense software **3.2.0** and uses document ID **UM-0006**. Its source is the supplied 173-page **UM_0006-01EN** manual (originally published for software 3.1.0). Chapter 14 supplements its IT requirements, registration and instrument enrolment with the reviewed English content and images from `bactocloud-manual`.
+A Docusaurus platform for bNovate product manuals, based on the structure, typography, local search, and light/dark theme of the sibling `bactocloud-manual` project. Every manual shares the same theme, Markdown conventions, notices, tables, search, PDF compilation and languages, and is served below its own URL: `/bactosense/`, `/<manual id>/`. The home page at `/` lists all manuals.
+
+**BactoSense** is the principal manual. It covers BactoSense software **3.2.0** and uses document ID **UM-0006**. Its source is the supplied 173-page **UM_0006-01EN** manual (originally published for software 3.1.0). Chapter 14 supplements its IT requirements, registration and instrument enrolment with the reviewed English content and images from `bactocloud-manual`. Unless a section says otherwise, the editorial, translation, screenshot, extraction and on-device sections below describe the BactoSense manual.
+
+**BactoSwitch**, the multi-line selector for BactoSense, is the second manual (`manuals/bactoswitch/`, document ID **UM-0001**). It was imported from the 69-page **UM_0001-02EN** manual and follows the same notice, table, procedure, glossary and translation rules in all five languages. Its references to the BactoSense manual link to the corresponding `/bactosense/` sections. [The BactoSwitch source review](maintenance/bactoswitch-source-review.md) records the figure export, the corrections made to the source and the open questions. Its screenshots are the English captures from the PDF in every language.
+
+## Manuals
+
+`manuals.json` lists the published manuals; the first entry is the principal manual. Each entry becomes a Docusaurus docs instance at `/<id>/`, a navbar item, a home page card, a footer link and one generated PDF per language.
+
+| Field | Purpose |
+| --- | --- |
+| `id` | URL segment and PDF name (`pdf/<id>-manual-<locale>.pdf`). Lowercase letters, digits and hyphens. |
+| `title`, `description` | Navbar, home page and PDF cover. `description` can be a string or a per-language object. |
+| `documentId`, `version`, `softwareVersion` | PDF cover and footer; `softwareVersion` is optional. |
+| `locales` | Languages the manual is translated into (`en` is required). PDFs and translation checks cover these; other site languages show the English pages. |
+| `logo` | PDF cover image under `static/`. |
+| `path`, `docsPluginId` | Content folder (default `manuals/<id>`) and docs instance id (default `<id>`). BactoSense keeps `docs/` and the `default` instance, so its translations stay in `i18n/<locale>/docusaurus-plugin-content-docs/current/`. |
+| `chapters` | Optional: number of numbered chapters (`01-…` to `NN-…`) that `manual:check` requires in every language. |
+| `device` | Optional: export this manual to the instrument GUI. At most one manual (BactoSense). |
+
+Create a new manual with:
+
+```sh
+npm run manual:new -- bactocontrol "BactoControl" UM-0012 --software 1.0.0
+```
+
+This creates `manuals/bactocontrol/` with an introduction and a first chapter, and appends the manual to `manuals.json`. Write its chapters with the same Markdown, notice and table conventions as BactoSense; put its images in `static/img/<id>/`. Its translations go in `i18n/<locale>/docusaurus-plugin-content-docs-<id>/current/` with the same filenames; add the language to `locales` once translated, so `npm run translations:check` enforces it. The command refuses ids that would shadow a site folder, a language or a former BactoSense URL.
+
+Inside a manual, a root-absolute link addresses that manual's own pages: `[8.4](/general-operations-and-configurations#section-8-4)` renders as `/bactosense/general-operations-and-configurations/#section-8-4` (`plugins/manual-links.cjs`). Links that begin with another manual's id, and static files such as `/img/…` and `/pdf/…`, are left unchanged. With two or more manuals, search covers the manual being read, and the home page searches all of them.
+
+BactoSense was served at the site root before the platform existed. Its former chapter URLs (`/installation/`, `/de/installation/`, …) are kept as redirect pages to `/bactosense/…`, including the section anchor. The PDF downloads keep their URLs (`/pdf/bactosense-manual-<locale>.pdf`).
 
 ## Serve with Apache
 
-The public site is **https://manual.bnovate.net/**. `public/` contains the generated HTML pages, JavaScript, styles, fonts, images, local search index and downloadable PDF. Commit this directory together with the source changes. On the server, updating the checkout with `git pull` updates the public pages directly. Apache serves static files; no Node.js, Chromium, build command or PHP application is needed on the server.
+The public site is **https://manual.bnovate.net/**. `public/` contains the generated HTML pages, JavaScript, styles, fonts, images, local search index and downloadable PDFs. Commit this directory together with the source changes. On the server, updating the checkout with `git pull` updates the public pages directly. Apache serves static files; no Node.js, Chromium, build command or PHP application is needed on the server.
 
-If Apache already serves the repository root, the included root `.htaccess` routes public URLs into `public/` and prevents requests from serving the source tree. Enable `mod_rewrite` and allow `.htaccess` overrides for that directory. Chapter URLs stay at `/bactocloud/`, `/installation/`, and so on.
+If Apache already serves the repository root, the included root `.htaccess` routes public URLs into `public/` and prevents requests from serving the source tree. Enable `mod_rewrite` and allow `.htaccess` overrides for that directory. Chapter URLs are `/bactosense/installation/` and so on.
 
 Alternatively, point Apache directly at `public/`:
 
@@ -43,7 +74,9 @@ npm run serve
 
 ## Content and assets
 
-- `docs/`: the 20 chapters plus the introduction and publisher notice.
+- `manuals.json`: the manual registry; `plugins/manuals.cjs` reads it for the site configuration and scripts.
+- `docs/`: the 20 BactoSense chapters plus the introduction and publisher notice.
+- `manuals/<id>/`: chapters of further manuals, currently `manuals/bactoswitch/` (9 chapters plus the introduction); their translations are in `i18n/<locale>/docusaurus-plugin-content-docs-<id>/current/` and their images in `static/img/<id>/`.
 - `i18n/`: German, French, Italian and Spanish editions, with translated interface labels.
 - `static/img/`: only referenced illustrations, icons, branding and current GUI figures. Full-page PDF facsimiles, redundant table screenshots and unused extraction crops are removed.
 - `public/`: versioned Apache deployment, refreshed by `npm run build`.
@@ -52,7 +85,7 @@ npm run serve
 - `maintenance/gui-*.json`: GUI figure inventories and provenance.
 - `scripts/editorial/`: maintained English content applied during optional source re-extraction: the section 2.3 safety-symbol legend, section 10.2.4 Advanced scheduling, section 10.7 Filtering measurements, section 15.1.2 Intervention log, section 15.4 Embedded manual, sections 16.4 Logs and 16.5 Clearing errors, and chapter 9, 11 and 14 bodies. Chapter 9 retains the illustrated package-activation procedure. Chapter 11 includes the CBC, EBC and NBC supplement; its sources are recorded in `maintenance/cartridge-results-sources.md`.
 - Root-level `UM_0006-*.pdf`: local reference inputs, ignored by Git and excluded from deployment. The website contains only generated PDFs.
-- `output/pdf/<locale>/`: generated PDF copies and reports (ignored).
+- `output/pdf/<manual id>/<locale>/`: generated PDF copies and reports (ignored).
 - `static/pdf/`: ignored copies of the latest generated PDFs for the development server.
 
 Use Markdown for paragraphs, emphasis, lists and tables. HTML remains only for nested tables, `<br />` line breaks inside table cells, and scientific superscripts/subscripts. Headerless Markdown tables use a blank header row, which the site removes during rendering. Sized images use standard Markdown image syntax with a layout title, for example `![Instrument](/img/manual/example.png "width=600 class=manual-figure")`; the image component applies the size and removes the metadata from the tooltip. `npm run manual:format` simplifies equivalent markup across all five editions; review its changes before accepting them. Native admonitions provide warning and information boxes with short custom titles. On the web, images enlarge in a lightbox; close it with Escape, the close button, or a click outside the image. Index links use stable section headings, independent of the original PDF pagination.
@@ -107,7 +140,7 @@ Exact decoded-pixel duplicates share assets. Similar icons are consolidated only
 
 ## Languages and translation maintenance
 
-All 21 documents are translated into German (`de`), French (`fr`), Italian (`it`) and Spanish (`es`) under `i18n/<locale>/docusaurus-plugin-content-docs/current/`. English remains at `/`; translated editions are served at `/de/`, `/fr/`, `/it/` and `/es/`. Filenames, slugs and explicit anchors are shared, so switching language keeps the corresponding chapter. Search and the site interface are localized, and each edition has its own generated PDF.
+All 21 BactoSense documents are translated into German (`de`), French (`fr`), Italian (`it`) and Spanish (`es`) under `i18n/<locale>/docusaurus-plugin-content-docs/current/`. English is served at `/bactosense/`; translated editions at `/de/bactosense/`, `/fr/bactosense/`, `/it/bactosense/` and `/es/bactosense/`. Filenames, slugs and explicit anchors are shared, so switching language keeps the corresponding chapter. Search and the site interface are localized, and each edition has its own generated PDF.
 
 The current English Markdown is the source of truth. The older German and French PDFs were extracted locally and used for terminology; newer instructions, technical details and the BactoCloud chapter were translated from the current content. The terminology decisions and reference document hashes are recorded in the translation glossary; temporary reference extracts are disposable. Instrument and web GUI screenshots, including native instrument enrolment, use the matching interface language in each edition, under `static/img/gui/<locale>/`. Language-independent icons, hardware illustrations, scientific examples and the retained BactoCloud browser supplement image are shared. Device labels and protocol names retain their displayed form so users can identify controls.
 
@@ -134,7 +167,7 @@ For the package-activation and native enrolment figures, run `node scripts/gui-c
 
 For chapter 6.6's small output-control captures, run `node scripts/gui-capture/prepare-digital-output-figures.mjs` and render only its 20 printed IDs. [The digital-output review](maintenance/gui-digital-output-review.md) records the actual row values, capture composition, localized instructions and print checks.
 
-For development in a specific language, run `npm start -- --locale de` (or `fr`, `it`, `es`). The development server serves one language at a time; use `npm run build` followed by `npm run serve` to test switching across all five editions. `npm run manual:pdf -- de` regenerates just the German PDF from an existing build; omitting the locale regenerates all five. Rebuild the website first after changing Markdown.
+For development in a specific language, run `npm start -- --locale de` (or `fr`, `it`, `es`). The development server serves one language at a time; use `npm run build` followed by `npm run serve` to test switching across all five editions. `npm run manual:pdf -- de` regenerates just the German PDFs from an existing build, and `npm run manual:pdf -- bactosense de` only the German BactoSense PDF; without arguments it regenerates every manual in every language. Rebuild the website first after changing Markdown.
 
 ## On-device manual prototype
 
@@ -152,6 +185,11 @@ Documented GUI features can also open a specific section from a small help
 icon in the title bar. Exported images are capped at 800 px wide and keep their
 source filenames and directories.
 
+The export builds only the manual marked `"device": true` in `manuals.json`
+(BactoSense). GUI help references use `manual:<doc id>#<anchor>`, for example
+`manual:measurements#section-10-7`, so they do not depend on the website URL
+(`/bactosense/…`).
+
 Use `npm run manual:device -- --gui /path/to/gui` to install into another GUI
 checkout, or `npm run manual:device -- --bundle-only` to export only to
 `output/device-manual/`.
@@ -162,9 +200,9 @@ for the Docusaurus integration, resource layout, build commands and validation.
 
 ## Generated PDF
 
-The navbar's **Download PDF** downloads the compiled online manual. `npm run build` generates it automatically using local Playwright Chromium, with a cover, linked contents, bookmarks, page numbers, embedded fonts, tables, images and native notices. Generation fails on missing chapters, fonts, images or internal links. It reads the built HTML and never fetches remote assets. The supplied PDFs are retained locally as source references; Download PDF always serves the current language’s generated online manual.
+The navbar's **Download PDF** downloads the compiled online edition of the manual being read; the home page cards link the same files. Each manual gets `pdf/<id>-manual-<locale>.pdf` for every language in its `locales`. `npm run build` generates it automatically using local Playwright Chromium, with a cover, linked contents, bookmarks, page numbers, embedded fonts, tables, images and native notices. Generation fails on missing chapters, fonts, images or internal links. It reads the built HTML and never fetches remote assets. The supplied PDFs are retained locally as source references; Download PDF always serves the current language’s generated online manual.
 
-After a website build, `npm run manual:pdf` regenerates the PDF from that build (use `npm run build` to refresh the Apache deployment and include Markdown changes). The report at `output/pdf/en/report.json` records the included chapters, image count, timestamp and SHA-256. The generated PDF in `public/pdf/` is committed with the deployed website; temporary copies remain ignored.
+After a website build, `npm run manual:pdf` regenerates the PDF from that build (use `npm run build` to refresh the Apache deployment and include Markdown changes). The report at `output/pdf/bactosense/en/report.json` records the included chapters, image count, timestamp and SHA-256. The generated PDF in `public/pdf/` is committed with the deployed website; temporary copies remain ignored.
 
 ## Deployment
 
@@ -179,7 +217,7 @@ docker run --rm -p 8080:80 bactosense-manual
 
 ### Bitbucket pipeline
 
-`bitbucket-pipelines.yml` follows the sibling BactoCloud manual's self-hosted Docker runner setup. It builds and checks the nginx image for branches, publishes `registry.bactocloud.com/bactosense-manual:latest` on `main`, and publishes `v*` tags without the leading `v`. The custom `publish-user-manual` pipeline accepts a `VERSION` (default `latest`). Every image includes the freshly generated PDF.
+`bitbucket-pipelines.yml` follows the sibling BactoCloud manual's self-hosted Docker runner setup. It builds and checks the nginx image for branches, publishes `registry.bactocloud.com/bactosense-manual:latest` on `main` (the image keeps its original name so existing deployments continue to pull it; it contains every manual), and publishes `v*` tags without the leading `v`. The custom `publish-user-manual` pipeline accepts a `VERSION` (default `latest`). Every image includes the freshly generated PDF.
 
 Configure secured repository variables `BNOVATE_REGISTRY_USERNAME` and `BNOVATE_REGISTRY_PASSWORD` with permission to push this image. Set `MANUAL_SITE_URL` to the deployed origin; optionally set `MANUAL_BASE_PATH` (default `/`). The build script forwards these settings into Docker. These publishing credentials are only used for Docker login and are not passed to the image build.
 
@@ -189,6 +227,6 @@ The static site requires no external search service. The original publisher and 
 
 ## Validation
 
-`npm run manual:check` checks chapter presence, unresolved font glyphs, obsolete pagination anchors and referenced image/document files. `npm run translations:check` verifies matching document inventories, routes, semantic headings, Markdown and HTML table structure, notices, images and links across all editions. Docusaurus treats broken internal links and anchors as build failures. Neither check requires source PDFs or extraction dumps.
+Both checks cover every manual in `manuals.json`, in the languages it lists. `npm run manual:check` checks chapter presence, unresolved font glyphs, obsolete pagination anchors and referenced image/document files. `npm run translations:check` verifies matching document inventories, routes, semantic headings, Markdown and HTML table structure, notices, images and links across all editions. Docusaurus treats broken internal links and anchors as build failures. Neither check requires source PDFs or extraction dumps.
 
 For optional source review, `scripts/audit-text.py` compares text tokens by chapter using the editorial source-to-section map. This is a diagnostic, not proof of semantic accuracy: figure labels and the rewritten index can differ intentionally. The former page-geometry visual audit is retired; review the rendered website and generated PDFs for correct figures, table layout and unclipped content.
