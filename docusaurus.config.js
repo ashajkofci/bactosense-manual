@@ -29,8 +29,8 @@ module.exports = {
   },
   customFields: {
     // Read by the home page and the PDF download button.
-    manuals: published.map(({ id, title, description, docsPluginId, locales: editions }) => ({
-      id, title, description, docsPluginId, locales: editions,
+    manuals: published.map(({ id, title, image, docsPluginId, locales: editions }) => ({
+      id, title, image, docsPluginId, locales: editions,
       pdfFiles: Object.fromEntries(editions.map(locale => [locale, pdfFile({ id }, locale)])),
     })),
   },

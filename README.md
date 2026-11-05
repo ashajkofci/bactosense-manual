@@ -13,7 +13,9 @@ A Docusaurus platform for bNovate product manuals, based on the structure, typog
 | Field | Purpose |
 | --- | --- |
 | `id` | URL segment and PDF name (`pdf/<id>-manual-<locale>.pdf`). Lowercase letters, digits and hyphens. |
-| `title`, `description` | Navbar, home page and PDF cover. `description` can be a string or a per-language object. |
+| `title` | Navbar, home page and PDF cover. |
+| `image` | Picture of the instrument on the home page card, under `static/` (for example `/img/home/bactosense.webp`). Optional: without it the card shows only the title. |
+| `description` | Optional summary text (a string or a per-language object). The home page no longer displays it. |
 | `documentId`, `version`, `softwareVersion` | PDF cover and footer; `softwareVersion` is optional. |
 | `locales` | Languages the manual is translated into (`en` is required). PDFs and translation checks cover these; other site languages show the English pages. |
 | `logo` | PDF cover image under `static/`. |

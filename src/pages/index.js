@@ -9,14 +9,18 @@ import styles from './index.module.css';
 function ManualCard({ manual, locale }) {
   const pdf = manual.pdfFiles[locale];
   const pdfHref = useBaseUrl(`pdf/${pdf}`);
-  const description = typeof manual.description === 'string'
-    ? manual.description : manual.description?.[locale] ?? manual.description?.en;
+  const imageSrc = useBaseUrl(manual.image ?? '');
   return (
     <article className={styles.card}>
+      {manual.image && (
+        // Decorative: the manual title below names the instrument.
+        <Link className={styles.cardImage} to={`/${manual.id}/`} tabIndex={-1} aria-hidden="true">
+          <img src={imageSrc} alt="" loading="lazy" />
+        </Link>
+      )}
       <h2 className={styles.cardTitle}>
         <Link to={`/${manual.id}/`}>{manual.title}</Link>
       </h2>
-      {description && <p className={styles.cardDescription}>{description}</p>}
       {!manual.locales.includes(locale) && (
         <p className={styles.cardNote}><Translate id="home.manual.sourceOnly">Available in English</Translate></p>
       )}

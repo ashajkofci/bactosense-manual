@@ -9,6 +9,7 @@
       "it": "Sistemi di monitoraggio batterico rapido: installazione, funzionamento, risultati, manutenzione e risoluzione dei problemi.",
       "es": "Sistemas de monitorización bacteriana rápida: instalación, funcionamiento, resultados, mantenimiento y resolución de problemas."
     },
+    "image": "/img/home/bactosense.webp",
     "documentId": "UM-0006",
     "chapters": 20,
     "version": "3.2.0",
@@ -35,6 +36,7 @@
       "it": "Selettore multilinea per BactoSense: installazione, configurazione delle linee, funzionamento, manutenzione e conservazione.",
       "es": "Selector multilínea para BactoSense: instalación, configuración de líneas, funcionamiento, mantenimiento y almacenamiento."
     },
+    "image": "/img/home/bactoswitch.webp",
     "documentId": "UM-0001",
     "chapters": 9,
     "version": "02",

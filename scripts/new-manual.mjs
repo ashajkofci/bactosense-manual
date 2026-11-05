@@ -78,7 +78,8 @@ console.log(`Created manuals/${id}/ and registered "${title}" in manuals.json.
 Its pages are served at /${id}/; other languages show English until you add translations.
 Next steps:
   - Write chapters in manuals/${id}/ (shared images go in static/img/${id}/).
-  - Edit its description, version and PDF logo in manuals.json.
+  - Edit its version and PDF logo in manuals.json, and add an "image" (instrument
+    picture for the home page card, e.g. /img/home/${id}.webp).
   - To translate, add the language to "locales" and copy the chapters to
     i18n/<locale>/docusaurus-plugin-content-docs-${id}/current/.
   - Run npm run manual:check and npm start, then npm run build.`);
