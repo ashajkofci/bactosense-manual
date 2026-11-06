@@ -20,13 +20,13 @@ slug: /supply-scope-accessories-and-consumables
 
 ## 18.2 Accessories {#section-18-2}
 
-. Accessories can be ordered upon need, for example if you need spare parts. bNovate Technologies recommends to order a second cartridge with your instrument in order to have a replacement cartridge when required.
+Accessories can be ordered upon need, for example if you need spare parts. bNovate Technologies recommends to order a second cartridge with your instrument in order to have a replacement cartridge when required.
 
 **Table 18-2 Accessories for the BactoSense**
 
 | ART. NO. | NAME | IMAGE |
 | --- | --- | --- |
-| 200048 200049 200050 200152 | Power Supply Unit 200048: Type J 200049: Type E 200050: Type G 200152: Type B | ![Illustration for table on manual page 160](/img/manual/cell-30cea9826aaf.png "width=143 class=manual-article-image") |
+| <br>200048<br> 200049<br> 200050<br> 200152 | Power Supply Unit <br>200048: Type J <br>200049: Type E <br>200050: Type G <br>200152: Type B | ![Illustration for table on manual page 160](/img/manual/cell-30cea9826aaf.png "width=143 class=manual-article-image") |
 | 200017 | New TCC Cartridge | ![Illustration for table on manual page 160](/img/manual/cell-5c20365a1e46.png "width=143 class=manual-article-image") |
 | 200053 | New ICC Cartridge | ^ |
 | 200174 | New ICC Cartridge for BactoSense PURE | ^ |
