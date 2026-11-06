@@ -72,7 +72,7 @@ An uninterrupted and stable power supply as specified in [Technical data](03-ins
 
 :::
 
-The power supply comes in an IP67 enclosure and a cable with either a plug type J, type E or  type G. For connecting the BactoSense to power using one of these plugs supplied by  bNovate, follow the instructions in [Connecting using the standard plug of the power supply unit](05-installation.md#section-5-3-1).  For the connection using a different plug or power connectors, use the procedure described  in [Modifying the standard power supply unit with a different connector](05-installation.md#section-5-3-2).
+The power supply comes in an IP67 enclosure and a cable with country-specific plug. For connecting the BactoSense to power using one of these plugs supplied by bNovate, follow the instructions in [Connecting using the standard plug of the power supply unit](05-installation.md#section-5-3-1).  For the connection using a different plug or power connectors, use the procedure described  in [Modifying the standard power supply unit with a different connector](05-installation.md#section-5-3-2).
 
 :::info[Keep the power disconnect accessible]
 
@@ -282,6 +282,10 @@ The BactoSense offers several options for integration and online data access.
 | HTTP and HTTPS | [Retrieve files via HTTP or HTTPS](12-data-access-and-export.md#section-12-3) |
 | Virtual network computing (VNC) user interface relay (remote control) | [GUI relay using VNC](12-data-access-and-export.md#section-12-4) |
 | Web user interface | [Web User Interface](13-web-user-interface.md) |
+| BactoLink | See separate BactoLink user manual |
+| BactoCloud | [BactoCloud](14-bactocloud.md) |
+
+
 
 ![BactoSense — System services](/img/gui/en/system-services.png "width=507")
 
