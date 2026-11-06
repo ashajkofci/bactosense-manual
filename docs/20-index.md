@@ -18,9 +18,9 @@ Select a section number to open the corresponding topic in this manual.
   - Description [6.7](/io-box#section-6-7)
   - Testing [6.8](/io-box#section-6-8)
 - Assembly [5.5](/installation#section-5-5)
-- Audio notifications [8.3.4](/general-operations-and-configurations#section-8-3-4)
+- Audio notifications [8.3.5](/general-operations-and-configurations#section-8-3-5)
 - Automatic power-on [8.3.4](/general-operations-and-configurations#section-8-3-4)
-- Automatic self-check [16.5](/warnings-errors-and-troubleshooting#section-16-5)
+- Automatic self-check [16.6](/warnings-errors-and-troubleshooting#section-16-6)
 - Auto-restart [8.3.4](/general-operations-and-configurations#section-8-3-4)
 
 ## B
@@ -73,16 +73,16 @@ Select a section number to open the corresponding topic in this manual.
   - Customer service [19.1](/contact#section-19-1)
 - Critical errors [16.3](/warnings-errors-and-troubleshooting#section-16-3)
   - Clear errors [16.5](/warnings-errors-and-troubleshooting#section-16-5)
-- CSV [13.5](/web-user-interface#section-13-5)
+- CSV [13.6](/web-user-interface#section-13-6)
 - Customer service [19.1](/contact#section-19-1)
 
 ## D
 
-- Danger [2.5](/general-user-information#section-2-5), [4.5](/safety#section-4-5), [17.2.2](/storage-transport-and-disposal#section-17-2-2)
-  - symbols [4.5](/safety#section-4-5)
+- Danger [2.6](/general-user-information#section-2-6), [4.1](/safety#section-4-1)
+  - symbols [4.4](/safety#section-4-4)
 - Data
   - FTP [12.2](/data-access-and-export#section-12-2)
-  - HTTP and HTTPS [12.2](/data-access-and-export#section-12-2)
+  - HTTP and HTTPS [12.3](/data-access-and-export#section-12-3)
   - USB [12.1](/data-access-and-export#section-12-1)
 - Data analysis [11.1](/results-and-data-analysis#section-11-1)
 - Date [8.7](/general-operations-and-configurations#section-8-7)
@@ -91,7 +91,7 @@ Select a section number to open the corresponding topic in this manual.
 - Demo mode [8.12](/general-operations-and-configurations#section-8-12)
 - Desiccant bag [15.2.6](/maintenance#section-15-2-6), [18.3](/supply-scope-accessories-and-consumables#section-18-3)
 - Detection limit [3.2](/instrument-overview#section-3-2)
-- Device name [8.3.2](/general-operations-and-configurations#section-8-3-2)
+- Device name [8.3.3](/general-operations-and-configurations#section-8-3-3)
 - Digital input
   - Configuration [6.5](/io-box#section-6-5)
 - Digital Inputs [6.4](/io-box#section-6-4)
@@ -99,7 +99,7 @@ Select a section number to open the corresponding topic in this manual.
   - Configuration [6.6](/io-box#section-6-6)
   - Testing [6.8](/io-box#section-6-8)
 - Digital Outputs [6.1.6](/io-box#section-6-1-6), [6.3](/io-box#section-6-3)
-- Disposal [17.3.2](/storage-transport-and-disposal#section-17-3-2)
+- Disposal [17.4](/storage-transport-and-disposal#section-17-4)
 - Dotplot [11.1](/results-and-data-analysis#section-11-1), [13.7](/web-user-interface#section-13-7)
 
 ## E
