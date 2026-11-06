@@ -4,6 +4,7 @@ import { mkdir, readFile, rename, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { chromium } from 'playwright';
+import sharp from 'sharp';
 import manualRegistry from '../plugins/manuals.cjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -15,6 +16,9 @@ const COPY = {
   es: { documentId: 'ID del documento', contents: 'Índice', compiled: 'Generado el', software: 'Software' },
 };
 const MIME = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.svg': 'image/svg+xml', '.png': 'image/png', '.woff2': 'font/woff2', '.woff': 'font/woff', '.pdf': 'application/pdf', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp' };
+// Raster images are embedded at their natural size, which is far above print needs
+// (a 1600 px screenshot in a 3.5 in column is ~450 ppi). Downscale to this density.
+const PDF_IMAGE_PPI = 200;
 const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
 
 async function readChapter(outDir, baseUrl, chapter) {
@@ -86,9 +90,13 @@ export async function compileManualPdf(root, manifest) {
     } catch (error) {
       throw new Error('PDF compilation needs Playwright Chromium. Run npm run browser:install, then build again.', { cause: error });
     }
-    const page = await browser.newPage();
+    // A4 width at 96 dpi, so rendered image widths measured below approximate print widths.
+    const page = await browser.newPage({ viewport: { width: 794, height: 1123 } });
     page.setDefaultTimeout(30000);
+    const downscaled = new Map();
     await page.route('**/*', (route) => {
+      const resized = downscaled.get(route.request().url());
+      if (resized) return route.fulfill({ status: 200, contentType: resized.type, body: resized.body });
       if (new URL(route.request().url()).origin === origin) return route.continue();
       resourceErrors.push(`Non-local resource: ${route.request().url()}`);
       return route.abort();
@@ -282,6 +290,44 @@ export async function compileManualPdf(root, manifest) {
       }
       return { expandedScreenshotRows: expanded, pairedScreenshotCaptions: paired };
     }, guiScreenshotAlts);
+    // Replace oversized screenshots and illustrations with print-density copies.
+    const candidates = await page.evaluate((guiAlts) => [...document.querySelectorAll('.pdf-chapter img')].flatMap((image, index) => {
+      const width = image.getBoundingClientRect().width;
+      if (!/\.png(?:$|\?)/i.test(image.currentSrc) || !width || image.classList.contains('manual-icon')) return [];
+      image.dataset.pdfIndex = String(index);
+      return [{ index, src: image.currentSrc, width, naturalWidth: image.naturalWidth, gui: guiAlts.includes(image.alt) }];
+    }), guiScreenshotAlts);
+    const sources = new Map();
+    for (const candidate of candidates) {
+      const target = Math.ceil(candidate.width / 96 * PDF_IMAGE_PPI);
+      const shrink = candidate.naturalWidth > target * 1.1;
+      if (!shrink && !candidate.gui) continue;
+      const key = `${candidate.src}|${shrink ? target : 0}`;
+      if (!sources.has(key)) {
+        const relative = decodeURIComponent(new URL(candidate.src).pathname.slice(manifest.baseUrl.length));
+        const input = await readFile(path.join(outDir, relative));
+        // Chromium re-encodes every raster losslessly (Flate), so quantised flat-colour UI screenshots
+        // without dithering compress far better; other images are only downscaled.
+        const image = shrink ? sharp(input).resize({ width: target, kernel: 'lanczos3' }) : sharp(input);
+        const entry = { type: 'image/png', body: await image.png(candidate.gui ? { palette: true, quality: 90, dither: 0, effort: 10 } : { compressionLevel: 9, effort: 10 }).toBuffer() };
+        const url = `${origin}${manifest.baseUrl}__pdf_img__/${sources.size}.png`;
+        downscaled.set(url, entry);
+        sources.set(key, url);
+      }
+      candidate.url = sources.get(key);
+    }
+    await page.evaluate(async (replacements) => {
+      const images = [...document.querySelectorAll('.pdf-chapter img[data-pdf-index]')];
+      await Promise.all(images.map(async (image) => {
+        const replacement = replacements[image.dataset.pdfIndex];
+        if (!replacement) return;
+        // The smaller file must keep the original layout size.
+        if (!image.hasAttribute('width')) image.style.width = `${image.naturalWidth}px`;
+        image.src = replacement;
+        image.removeAttribute('srcset');
+        await image.decode();
+      }));
+    }, Object.fromEntries(candidates.filter(c => c.url).map(c => [c.index, c.url])));
     if (resourceErrors.length) throw new Error(`PDF resources did not load:\n${[...new Set(resourceErrors)].join('\n')}`);
     await mkdir(publicDir, { recursive: true });
     await mkdir(evidenceDir, { recursive: true });

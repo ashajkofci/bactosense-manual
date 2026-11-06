@@ -16,8 +16,6 @@ Sistemas de control bacteriano rápido
 
 ![Instrumentos BactoSense mostrados en la portada del manual de usuario](/img/manual/asset-75f5dbc4154e.png)
 
-Esta edición en línea sigue los capítulos del manual de usuario suministrado. Utilice la navegación por capítulos o la búsqueda para encontrar un procedimiento, un ajuste o una tabla de referencia. Las imágenes pueden abrirse a tamaño completo.
-
 ## Primeros pasos
 
 - [Información general para el usuario](02-general-user-information.md)
@@ -57,5 +55,3 @@ Tel. +41 21 552 14 21
 © bNovate Technologies SA. Sujeto a cambios técnicos sin previo aviso.
 
 Este documento ha sido redactado por bNovate Technologies SA. Solo se permite copiar o modificar su contenido o entregar este documento a terceros con el consentimiento expreso de bNovate Technologies SA.
-
-Los datos de contacto y el aviso del editor anteriores se han reproducido del manual original.

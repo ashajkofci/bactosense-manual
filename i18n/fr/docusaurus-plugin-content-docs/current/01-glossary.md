@@ -8,10 +8,10 @@ description: "Manuel d’utilisation BactoSense : Glossaire."
 
 | Terme | Définition |
 | --- | --- |
-| ACC | Nombre de cellules actives. La cartouche ACC mesure les cellules métaboliquement actives au moyen d’un dosage enzymatique. ACC désigne le nombre total de cellules actives à l’intérieur de la fenêtre ACC. |
-| CBC | Nombre de cellules coliformes. Nombre de cellules coliformes dénombrées dans l’échantillon. |
+| ACC | Nombre de cellules actives. La cartouche ACC mesure les cellules métaboliquement actives au moyen d’un dosage enzymatique. ACC désigne le nombre de cellules à l’intérieur de la fenêtre ACC, par millilitre. |
+| CBC | Nombre de bactéries coliformes. La cartouche CBC mesure les coliformes intacts et métaboliquement actifs au moyen d’un dosage enzymatique. CBC désigne le nombre de cellules à l’intérieur de la fenêtre CBC, par millilitre. |
 | Cartouche | Récipient rechargeable contenant les réactifs nécessaires au fonctionnement du BactoSense |
-| EBC | Nombre de cellules E. coli. Nombre de cellules E. coli dénombrées dans l’échantillon. |
+| EBC | Nombre de bactéries E. coli. La cartouche EBC mesure les E. coli intacts et métaboliquement actifs au moyen d’un dosage enzymatique. EBC désigne le nombre de cellules à l’intérieur de la fenêtre EBC, par millilitre. |
 | FCS | Le format de fichier FCS (Flow Cytometry Standard) est une norme de lecture et d’écriture des données issues des expériences de cytométrie en flux. La spécification FCS est traditionnellement développée et maintenue par l’International Society for Advancement of Cytometry (ISAC). Le FCS a longtemps été le seul format de fichier largement adopté en cytométrie en flux. |
 | FL1 | Signal de fluorescence 1 (530 nm) |
 | FL2 | Signal de fluorescence 2 (715 nm) |
@@ -20,11 +20,11 @@ description: "Manuel d’utilisation BactoSense : Glossaire."
 | HNA | Haut taux d’acide nucléique. Bactéries contenant une grande quantité d’ADN, qui émettent une forte fluorescence. |
 | HNAC | Nombre de bactéries à haut taux d’acide nucléique. Nombre de bactéries HNA à l’intérieur de la fenêtre TCC ou ICC et au-dessus de la limite HNA<br/>/ LNA. |
 | HNAP [%] | Pourcentage de bactéries à haut taux d’acide nucléique. Pourcentage de bactéries HNA par rapport au nombre de cellules. |
-| ICC | Nombre de cellules intactes. Nombre total de bactéries intactes à l’intérieur de la fenêtre ICC. |
+| ICC | Nombre de cellules intactes. Nombre total de bactéries intactes à l’intérieur de la fenêtre ICC, par millilitre. |
 | LNA | Faible taux d’acide nucléique. Bactéries contenant moins d’ADN, qui émettent une fluorescence plus faible que les bactéries<br/>HNA. |
 | LNAC | Nombre de bactéries à faible taux d’acide nucléique. Nombre de bactéries LNA à l’intérieur de la fenêtre TCC ou ICC et en dessous de la limite HNA / LNA. |
 | Dispositif d’échantillonnage manuel | Module de connexion permettant l’échantillonnage manuel avec le BactoSense Online. |
-| NBC | Nombre de cellules Enterococcus. Nombre de cellules Enterococcus dénombrées dans l’échantillon. |
+| NBC | Nombre de bactéries Enterococcus. La cartouche NBC mesure les entérocoques intacts et métaboliquement actifs au moyen d’un dosage enzymatique. NBC désigne le nombre de cellules à l’intérieur de la fenêtre NBC, par millilitre. |
 | Dispositif d’échantillonnage en ligne | Module de connexion à une conduite d’eau permettant l’échantillonnage en ligne avec le BactoSense Online. |
 | SSC | Diffusion latérale, également appelée diffusion de la lumière aux grands angles.<br/>Un détecteur mesure la lumière diffusée par les micro-organismes et les autres particules à 90 degrés. |
-| TCC | Nombre total de cellules. Nombre total de bactéries détectées à l’intérieur de la fenêtre TCC. |
+| TCC | Nombre total de cellules. Nombre total de bactéries détectées à l’intérieur de la fenêtre TCC, par millilitre. |

@@ -14,7 +14,7 @@ Document number **UM-0001**
 
 ![BactoSwitch connected to a BactoSense, shown on the cover of the user manual](/img/bactoswitch/bactoswitch-with-bactosense.png "width=654")
 
-The BactoSwitch routes water from up to four sampling points to one BactoSense, one line at a time. This online edition follows the chapters of the supplied user manual. Use the chapter navigation or search to find a procedure, setting, or reference table. Images can be opened at full size.
+The BactoSwitch routes water from up to four sampling points to one BactoSense, one line at a time.
 
 The BactoSwitch is an accessory of the BactoSense. Read the [BactoSense user manual](/bactosense/) as well before installing and operating the BactoSwitch.
 

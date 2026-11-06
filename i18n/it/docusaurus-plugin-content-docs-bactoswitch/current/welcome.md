@@ -16,7 +16,7 @@ Numero del documento **UM-0001**
 
 ![BactoSwitch collegato a un BactoSense, raffigurato sulla copertina del manuale d’uso](/img/bactoswitch/bactoswitch-with-bactosense.png "width=654")
 
-BactoSwitch convoglia l’acqua da un massimo di quattro punti di campionamento verso un unico BactoSense, una linea alla volta. Questa edizione online segue i capitoli del manuale d’uso fornito. Utilizzare la navigazione per capitoli o la ricerca per trovare procedure, impostazioni o tabelle di riferimento. Le immagini possono essere aperte a dimensione intera.
+BactoSwitch convoglia l’acqua da un massimo di quattro punti di campionamento verso un unico BactoSense, una linea alla volta.
 
 BactoSwitch è un accessorio di BactoSense. Prima di installare e utilizzare BactoSwitch, leggere anche il [manuale d’uso di BactoSense](/bactosense/).
 

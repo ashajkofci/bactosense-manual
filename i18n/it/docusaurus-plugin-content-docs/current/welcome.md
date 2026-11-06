@@ -16,8 +16,6 @@ Sistemi per il monitoraggio batterico rapido
 
 ![Strumenti BactoSense sulla copertina del manuale d’uso](/img/manual/asset-75f5dbc4154e.png)
 
-Questa edizione online segue i capitoli del manuale d’uso fornito. Utilizzare la navigazione per capitoli o la ricerca per trovare procedure, impostazioni o tabelle di riferimento. Le immagini possono essere aperte a dimensione intera.
-
 ## Per iniziare
 
 - [Informazioni generali per l’utente](02-general-user-information.md)
@@ -57,5 +55,3 @@ Tel. +41 21 552 14 21
 © bNovate Technologies SA, con riserva di modifiche tecniche senza preavviso.
 
 Questo documento è stato redatto da bNovate Technologies SA. La copia o modifica del contenuto o la consegna a terzi sono consentite solo previo consenso esplicito di bNovate Technologies SA.
-
-I recapiti e le informazioni sull’editore sopra riportati sono riprodotti dal manuale originale.

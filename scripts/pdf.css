@@ -93,8 +93,6 @@ body {
   /* Preserve the HTML width used on the site; auto expands images to their source size. */
   height: auto;
   object-fit: contain;
-  border: 0.25mm solid #d5dfe7;
-  border-radius: 2mm;
 }
 .pdf-chapter .manual-caption {
   display: block;

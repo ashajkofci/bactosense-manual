@@ -14,7 +14,7 @@ Dokumentnummer **UM-0001**
 
 ![Mit einem BactoSense verbundener BactoSwitch, abgebildet auf dem Titelbild der Bedienungsanleitung](/img/bactoswitch/bactoswitch-with-bactosense.png "width=654")
 
-Der BactoSwitch leitet Wasser von bis zu vier Probenahmestellen zu einem BactoSense, jeweils eine Leitung nach der anderen. Diese Onlineausgabe folgt den Kapiteln der mitgelieferten Bedienungsanleitung. Verwenden Sie die Kapitelnavigation oder die Suche, um Verfahren, Einstellungen oder Referenztabellen zu finden. Bilder lassen sich in voller Größe öffnen.
+Der BactoSwitch leitet Wasser von bis zu vier Probenahmestellen zu einem BactoSense, jeweils eine Leitung nach der anderen.
 
 Der BactoSwitch ist ein Zubehör des BactoSense. Lesen Sie vor der Installation und dem Betrieb des BactoSwitch auch die [Bedienungsanleitung des BactoSense](/bactosense/).
 

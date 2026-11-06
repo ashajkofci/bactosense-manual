@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "locale": "es",
   "chapterCount": 21,
-  "blockCount": 942,
+  "blockCount": 940,
   "internalLinkCount": 685,
   "assetCount": 178,
   "maxAssetWidth": 800,
@@ -11,11 +11,11 @@
   "files": [
     {
       "file": "chapters/welcome.json",
-      "sha256": "ff7cc11c89b2f09ee5c50439ad981707cb166121ea5e3bf86c1d1abe821d523a"
+      "sha256": "4bda03db06cdd60dec052952c1f9cf0ad81b0764fb74a6bcd515f55301d8ed31"
     },
     {
       "file": "chapters/glossary.json",
-      "sha256": "cc11c18a4837316e434d3a0ab4a1fec8aec6f893bfeab529aa86a6f90ae9746d"
+      "sha256": "0dfd8c168aadc40b4152bdca54d3dfeee349b59ffe8deb97b977a1a30dd39bd4"
     },
     {
       "file": "chapters/general-user-information.json",

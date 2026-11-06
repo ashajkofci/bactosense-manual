@@ -14,8 +14,6 @@ Systeme zur schnellen Bakterienüberwachung
 
 ![BactoSense-Geräte auf dem Titelbild der Bedienungsanleitung](/img/manual/asset-75f5dbc4154e.png)
 
-Diese Onlineausgabe folgt den Kapiteln der mitgelieferten Bedienungsanleitung. Verwenden Sie die Kapitelnavigation oder die Suche, um Verfahren, Einstellungen oder Referenztabellen zu finden. Bilder lassen sich in voller Größe öffnen.
-
 ## Erste Schritte
 
 - [Allgemeine Benutzerinformationen](02-general-user-information.md)
@@ -55,5 +53,3 @@ Tel. +41 21 552 14 21
 © bNovate Technologies SA. Technische Änderungen ohne vorherige Ankündigung vorbehalten.
 
 Dieses Dokument wurde von bNovate Technologies SA erstellt. Das Kopieren oder Ändern des Inhalts sowie die Weitergabe an Dritte ist nur mit ausdrücklicher Zustimmung von bNovate Technologies SA gestattet.
-
-Die oben genannten Kontaktdaten und der Herausgeberhinweis wurden aus dem Originalhandbuch übernommen.

@@ -14,8 +14,6 @@ Systèmes de surveillance bactérienne rapide
 
 ![Instruments BactoSense présentés sur la couverture du manuel d’utilisation](/img/manual/asset-75f5dbc4154e.png)
 
-Cette édition en ligne reprend les chapitres du manuel d’utilisation fourni. Utilisez la navigation par chapitre ou la recherche pour trouver une procédure, un paramètre ou un tableau de référence. Les images peuvent être ouvertes en taille réelle.
-
 ## Prise en main
 
 - [Informations générales pour l’utilisateur](02-general-user-information.md)
@@ -55,5 +53,3 @@ Tél. +41 21 552 14 21
 © bNovate Technologies SA, sous réserve de modifications techniques sans préavis.
 
 Ce document a été rédigé par bNovate Technologies SA. La copie ou la modification de son contenu, ou sa transmission à des tiers, ne sont autorisées qu’avec le consentement exprès de bNovate Technologies SA.
-
-Les coordonnées et la notice de l’éditeur ci-dessus sont reproduites à partir du manuel source.

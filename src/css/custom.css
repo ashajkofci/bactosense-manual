@@ -39,7 +39,6 @@
 .theme-doc-markdown { max-width: 48rem; }
 .theme-admonition .manual-safety-symbol { width: 1.75rem; height: 1.75rem; vertical-align: middle; }
 .theme-doc-markdown h1 { letter-spacing: -0.025em; line-height: 1.2; }
-.theme-doc-markdown img { border: 1px solid var(--ifm-color-emphasis-200); border-radius: 0.6rem; }
 .manual-screenshot { display: inline-block; max-width: 100%; line-height: 0; border-radius: 0.6rem; cursor: zoom-in; }
 .manual-screenshot:focus-visible { outline: 3px solid var(--ifm-color-primary); outline-offset: 4px; }
 .manual-image { display: block; }

@@ -14,8 +14,6 @@ Rapid Bacterial Monitoring Systems
 
 ![BactoSense instruments shown on the cover of the user manual](/img/manual/asset-75f5dbc4154e.png)
 
-This online edition follows the chapters of the supplied user manual. Use the chapter navigation or search to find a procedure, setting, or reference table. Images can be opened at full size.
-
 ## Getting started
 
 - [General user information](02-general-user-information.md)
@@ -55,5 +53,3 @@ Tel. +41 21 552 14 21
 © bNovate Technologies SA, subject to technical changes without notice.
 
 This document has been written by bNovate Technologies SA. Copying or modifying the content or giving this document to third parties is permitted only with the express consent of bNovate Technologies SA.
-
-The contact details and publisher notice above are reproduced from the source manual.
