@@ -14,6 +14,7 @@ The *Scientific Package* is intended for water research professionals to perform
 
 - Additional gate: Apply an additional configurable polygon gate to the FL1 / FL2 data  directly in the user interface.
 - Light scattering data: Record and display forward and side scatter data for each  detected event. Retrieve data in FCS files for post-processing.
+- Advanced scheduling: Custom measurement scheduling, see [Advanced Scheduling](10-measurements.md#section-10-2-4)
 
 **Additional polygon gate** The freely configurable additional polygon gate has the following properties:
 
@@ -29,6 +30,8 @@ Scattering data is available in the following ways:
 - on the BactoSense user interface as a FSC / SSC dotplot
 - on the web interface as a FSC / SSC dotplot
 - when downloading the dotplots as images
+
+
 
 **Activation of the** **Scientific Package**
 
@@ -52,7 +55,7 @@ The *Management Package* is intended for instrument operation in environments wi
 
 - Advanced user management (role-based access control)
 - Audit trail
-- Advanced scheduler
+- Advanced scheduling: Custom measurement scheduling, see [Advanced Scheduling](10-measurements.md#section-10-2-4)
 
 **Advanced User Management** With the *Advanced User Management* feature, the instrument owner can create different  users and assign different user roles (Basic, Advanced, Admin). This allows to give different  permissions to individual users, and log their activity for the audit trail.
 
