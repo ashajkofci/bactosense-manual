@@ -6,6 +6,7 @@ import path from 'node:path';
 import OpenAI from 'openai';
 import { planSync, syncTranslations, translateWithAgent } from './sync-translations.mjs';
 import { translationErrors } from './translation-structure.mjs';
+import { writeSyncOutputs } from './sync-translations-report.mjs';
 
 const english = `---
 title: Installation
@@ -32,6 +33,7 @@ const translated = english.replace('title: Installation', 'title: Montage').repl
 const manual = { id: 'example', title: 'Example', path: 'manuals/example', docsPluginId: 'default', locales: ['en', 'de'] };
 const target = 'i18n/de/docusaurus-plugin-content-docs/current/01-installation.md';
 const silent = () => {};
+const readReport = async options => JSON.parse(await readFile(path.join(options.root, 'output/translations/sync-report.json'), 'utf8'));
 
 async function fixture(t) {
   const root = await mkdtemp(path.join(os.tmpdir(), 'manual-translation-test-'));
@@ -58,6 +60,17 @@ test('unchanged chapters and human translation edits make no API calls', async t
   await writeFile(path.join(options.root, target), translated + '\nManuell verbessert.\n');
   const plan = await syncTranslations({ ...options, translate: () => assert.fail('Unexpected API call') });
   assert.equal(plan.tasks.length, 0);
+  assert.equal(plan.report.hasWork, false);
+  assert.equal(plan.report.counts.skipped, 1);
+  assert.equal(plan.report.counts.modified, 0);
+  assert.equal(plan.report.counts.apiAttempts, 0);
+  assert.equal((await readReport(options)).status, 'success');
+  const summary = await readFile(path.join(options.root, 'output/translations/sync-report.md'), 'utf8');
+  assert.match(summary, /0 modified, 0 created, 0 removed/);
+  assert.match(summary, /No translations to sync or remove/);
+  const outputs = path.join(options.root, 'output/github-outputs.txt');
+  await writeSyncOutputs(plan.report, outputs);
+  assert.match(await readFile(outputs, 'utf8'), /has_work=false\n/);
   assert.match(await readFile(path.join(options.root, target), 'utf8'), /Manuell verbessert/);
 });
 
@@ -66,7 +79,12 @@ test('a changed English chapter is synced and a second run is a no-op', async t 
   await writeFile(path.join(options.root, 'manuals/example/01-installation.md'), english + '\nNew instruction.\n');
   let calls = 0;
   const translate = async task => { calls++; assert.match(task.source, /New instruction/); return translated + '\nNeue Anweisung.\n'; };
-  assert.equal((await syncTranslations({ ...options, translate })).tasks.length, 1);
+  const first = await syncTranslations({ ...options, translate });
+  assert.equal(first.tasks.length, 1);
+  assert.equal(first.report.counts.modified, 1);
+  assert.equal(first.report.counts.created, 0);
+  assert.equal(first.report.counts.apiAttempts, 1);
+  assert.equal(first.report.files[0].status, 'modified');
   assert.equal((await syncTranslations({ ...options, translate })).tasks.length, 0);
   assert.equal(calls, 1);
 });
@@ -86,6 +104,12 @@ test('dry-run does not translate, delete files or advance the manifest', async t
   const before = await readFile(stateFile, 'utf8');
   await syncTranslations({ ...options, force: true, dryRun: true, translate: () => assert.fail('Unexpected API call') });
   assert.equal(await readFile(stateFile, 'utf8'), before);
+  const report = await readReport(options);
+  assert.equal(report.status, 'dry_run');
+  assert.equal(report.counts.selected, 1);
+  assert.equal(report.counts.apiAttempts, 0);
+  assert.equal(report.counts.modified, 0);
+  assert.equal(report.files[0].status, 'would_translate');
 });
 
 test('each task includes the glossary, product context, introductions and neighboring terminology in reading order', async t => {
@@ -128,6 +152,12 @@ test('one repair is attempted, and invalid batches leave files and state untouch
   assert.equal(calls, 2);
   assert.equal(await readFile(stateFile, 'utf8'), state);
   assert.equal(await readFile(path.join(options.root, target), 'utf8'), translated);
+  const report = await readReport(options);
+  assert.equal(report.status, 'failed');
+  assert.equal(report.counts.modified, 0);
+  assert.equal(report.counts.failed, 1);
+  assert.equal(report.counts.apiAttempts, 2);
+  assert.match(report.files[0].error, /failed validation/);
 });
 
 test('a failed concurrent batch stops starting further paid translations', async t => {
@@ -143,6 +173,10 @@ test('a failed concurrent batch stops starting further paid translations', async
     return translated;
   } }), /failed validation/);
   assert.equal(calls, 3); // Two attempts on the failing chapter; only one already in flight.
+  const report = await readReport(options);
+  assert.equal(report.counts.modified, 0);
+  assert.equal(report.counts.notApplied, 1);
+  assert.equal(report.counts.notStarted, 3);
 });
 
 test('an obsolete translated chapter is removed without touching locale metadata', async t => {
@@ -150,9 +184,44 @@ test('an obsolete translated chapter is removed without touching locale metadata
   const directory = path.dirname(path.join(options.root, target));
   await writeFile(path.join(directory, '02-obsolete.md'), 'Obsolete chapter');
   await writeFile(path.join(directory, 'metadata.json'), '{}');
-  assert.equal((await syncTranslations(options)).removals.length, 1);
+  const plan = await syncTranslations(options);
+  assert.equal(plan.removals.length, 1);
+  assert.equal(plan.report.hasWork, true);
+  assert.equal(plan.report.counts.removed, 1);
   await assert.rejects(readFile(path.join(directory, '02-obsolete.md')), { code: 'ENOENT' });
   assert.equal(await readFile(path.join(directory, 'metadata.json'), 'utf8'), '{}');
+});
+
+test('reports distinguish forced unchanged translations from newly created files by language', async t => {
+  const options = await fixture(t);
+  const logs = [];
+  const plan = await syncTranslations({ ...options, manuals: [{ ...manual, locales: ['en', 'de', 'fr'] }], force: true,
+    log: message => logs.push(message),
+    translate: async task => task.locale === 'de' ? translated : translated.replace('/gui/de/', '/gui/fr/').replace('Sicherheit', 'Sécurité'),
+  });
+  assert.equal(plan.report.counts.selected, 2);
+  assert.equal(plan.report.counts.modified, 0);
+  assert.equal(plan.report.counts.created, 1);
+  assert.equal(plan.report.counts.unchanged, 1);
+  assert.equal(plan.report.counts.apiAttempts, 2);
+  const report = await readReport(options);
+  assert.equal(report.byManualAndLocale.find(row => row.locale === 'de').unchanged, 1);
+  assert.equal(report.byManualAndLocale.find(row => row.locale === 'fr').created, 1);
+  assert(logs.some(line => line.includes('0 modified, 1 created, 0 removed, 1 unchanged after sync')));
+  const outputs = path.join(options.root, 'output/github-outputs.txt');
+  await writeSyncOutputs(report, outputs);
+  assert.match(await readFile(outputs, 'utf8'), /has_work=true\nselected_count=2\nmodified_count=0\ncreated_count=1\n/);
+});
+
+test('reports include planning failures without claiming file modifications', async t => {
+  const options = await fixture(t);
+  await writeFile(path.join(options.root, 'maintenance/translation-sync.json'), '{broken JSON');
+  await assert.rejects(syncTranslations(options));
+  const report = await readReport(options);
+  assert.equal(report.status, 'failed');
+  assert.equal(report.counts.modified, 0);
+  assert.equal(report.counts.apiAttempts, 0);
+  assert(report.error);
 });
 
 test('registry paths outside the checkout are rejected before any API call', async t => {
