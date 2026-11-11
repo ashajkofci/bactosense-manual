@@ -12,7 +12,7 @@ Softwareversion **3.2.0**
 
 Systeme zur schnellen Bakterienüberwachung
 
-![BactoSense-Geräte auf dem Titelbild der Bedienungsanleitung](/img/manual/asset-75f5dbc4154e.png)
+![BactoSense-Geräte auf dem Titelbild der Bedienungsanleitung](/img/manual/asset-75f5dbc4154e.webp)
 
 ## Erste Schritte
 

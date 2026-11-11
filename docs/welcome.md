@@ -12,7 +12,7 @@ Software version **3.2.0**
 
 Rapid Bacterial Monitoring Systems
 
-![BactoSense instruments shown on the cover of the user manual](/img/manual/asset-75f5dbc4154e.png)
+![BactoSense instruments shown on the cover of the user manual](/img/manual/asset-75f5dbc4154e.webp)
 
 ## Getting started
 

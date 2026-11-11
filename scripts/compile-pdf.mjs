@@ -9,11 +9,11 @@ import manualRegistry from '../plugins/manuals.cjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const COPY = {
-  en: { documentId: 'Document ID', contents: 'Contents', compiled: 'Compiled on', software: 'Software' },
-  de: { documentId: 'Dokument-ID', contents: 'Inhalt', compiled: 'Erstellt am', software: 'Software' },
-  fr: { documentId: 'Identifiant du document', contents: 'Sommaire', compiled: 'Généré le', software: 'Logiciel' },
-  it: { documentId: 'ID documento', contents: 'Indice', compiled: 'Generato il', software: 'Software' },
-  es: { documentId: 'ID del documento', contents: 'Índice', compiled: 'Generado el', software: 'Software' },
+  en: { documentId: 'Document ID', contents: 'Contents', compiled: 'Compiled on', software: 'Software', userManual: 'User Manual' },
+  de: { documentId: 'Dokument-ID', contents: 'Inhalt', compiled: 'Erstellt am', software: 'Software', userManual: 'Bedienungsanleitung' },
+  fr: { documentId: 'Identifiant du document', contents: 'Sommaire', compiled: 'Généré le', software: 'Logiciel', userManual: 'Manuel d’utilisation' },
+  it: { documentId: 'ID documento', contents: 'Indice', compiled: 'Generato il', software: 'Software', userManual: 'Manuale d’uso' },
+  es: { documentId: 'ID del documento', contents: 'Índice', compiled: 'Generado el', software: 'Software', userManual: 'Manual de usuario' },
 };
 const MIME = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.svg': 'image/svg+xml', '.png': 'image/png', '.woff2': 'font/woff2', '.woff': 'font/woff', '.pdf': 'application/pdf', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp' };
 // Raster images are embedded at their natural size, which is far above print needs
@@ -125,7 +125,7 @@ export async function compileManualPdf(root, manifest) {
         cover.appendChild(logo);
       }
       const title = document.createElement('h1');
-      title.textContent = meta.title;
+      title.textContent = `${meta.title} ${labels.userManual}`;
       cover.appendChild(title);
       const language = document.createElement('p');
       language.className = 'pdf-language';

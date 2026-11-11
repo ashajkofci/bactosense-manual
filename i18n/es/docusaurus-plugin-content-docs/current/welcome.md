@@ -14,7 +14,7 @@ Sistemas de control bacteriano rápido
 
 **Traducción automática:** Este manual se ha traducido automáticamente. En caso de duda, la versión en inglés es la referencia.
 
-![Instrumentos BactoSense mostrados en la portada del manual de usuario](/img/manual/asset-75f5dbc4154e.png)
+![Instrumentos BactoSense mostrados en la portada del manual de usuario](/img/manual/asset-75f5dbc4154e.webp)
 
 ## Primeros pasos
 
