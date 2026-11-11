@@ -25,7 +25,7 @@ La figura seguente mostra il risultato di una misurazione TCC selezionata in mod
 | 8 | Il pulsante Risultato del re-gate consente di applicare gate diversi ai dati di misurazione. Per i dettagli, consultare la sezione [Rianalisi delle misurazioni con altri gate](../results-and-data-analysis/#section-11-4-1). |
 | 9 | Il pulsante Esporta consente di salvare questo risultato su una chiavetta USB. Ulteriori informazioni sono riportate nella sezione [Esportazione su un’unità USB](../measurements/#section-10-8-1). |
 | 10 | I pulsanti di navigazione a sinistra e a destra della vista del risultato consentono di passare rispettivamente alla misurazione precedente e successiva. |
-| 11 | Toccare il grafico dell’andamento per aprire il grafico della modalità automatica (il grafico completo dei risultati online). Vedere [Consultazione delle misurazioni automatiche in linea](../measurements/#section-10-2-3). |
+| 11 | Toccare il grafico dell’andamento per aprire il grafico della modalità online (il grafico completo dei risultati online). Vedere [Consultazione delle misurazioni automatiche in linea](../measurements/#section-10-2-3). |
 
 :::info[Selezionare più misurazioni]
 
@@ -42,8 +42,8 @@ Seguendo gli standard della citometria a flusso, BactoSense utilizza gate per co
 Si definiscono:
 
 - Gate: linea o poligono applicato a un diagramma a punti per quantificare le popolazioni di cellule misurate.
-- Gruppo di gate, o gating set: insieme di due o più gate utilizzato nella strategia di selezione. I tipi di gate sono fissi, ma gli utenti possono modificare i limiti di ciascuno. Sono diversi per le misurazioni TCC e ICC.
-- Strategia di selezione tramite gate: definisce come combinare i gate per contare le cellule. Ad esempio, HNAC è il numero di cellule all’interno del poligono TCC e al di sopra del limite inferiore HNA. Queste strategie sono diverse per le misurazioni TCC e ICC.
+- Gruppo di gate, o gating set: insieme di tutti i gate utilizzati per una misurazione. I tipi di gate sono fissi, ma gli utenti possono modificare i limiti di ciascuno.
+- Strategia di selezione tramite gate: definisce come combinare i gate per contare le cellule. Ad esempio, HNAC è il numero di cellule all’interno del poligono TCC e al di sopra del limite inferiore HNA.
 
 I gruppi di gate sono specifici per un tipo di cartuccia. Ad esempio, solo i gruppi di tipo TCC possono essere utilizzati con misurazioni eseguite con una cartuccia TCC.
 
@@ -73,13 +73,13 @@ Nella schermata Home, premere Impostazioni, quindi Impostazioni del gate per vis
 
 ## 11.3 Cartucce, gate e parametri dei risultati {#section-11-3}
 
-A seconda della cartuccia utilizzata per una misurazione, vengono misurati parametri differenti. Le sottosezioni seguenti descrivono i set di gate e i parametri dei risultati per TCC (conteggio cellulare totale), ICC (conteggio delle cellule integre), ACC (conteggio delle cellule attive), CBC (conteggio delle cellule coliformi), EBC (conteggio delle cellule di E. coli) e NBC (conteggio delle cellule di Enterococcus).
+A seconda della cartuccia utilizzata per una misurazione, vengono misurati parametri differenti. Le sottosezioni seguenti descrivono i set di gate e i parametri dei risultati per TCC (conteggio cellulare totale), ICC (conteggio delle cellule integre), ACC (conteggio delle cellule attive), CBC (conteggio dei batteri coliformi), EBC (conteggio dei batteri E. coli) e NBC (conteggio dei batteri Enterococcus).
 
 Le cartucce CBC, EBC e NBC sono compatibili con BactoSense ID e BactoSense SMART. Ciascuna utilizza una marcatura enzimatica selettiva e un singolo gate poligonale e fornisce una concentrazione cellulare. Per queste cartucce non vengono calcolate sottopopolazioni HNA o definite in base all’attività.
 
-:::info[Interpretazione dei risultati CBC, EBC e NBC]
+:::info[Interpretazione dei conteggi cellulari]
 
-CBC, EBC e NBC sono concentrazioni cellulari espresse in cellule per millilitro (1/mL). I conteggi cellulari e i risultati delle colture espressi in unità formanti colonia (CFU) misurano proprietà diverse di un campione e non possono essere confrontati direttamente.
+I conteggi cellulari di BactoSense sono concentrazioni cellulari espresse in cellule per millilitro (1/mL). I conteggi cellulari e i risultati delle colture espressi in unità formanti colonia (CFU) misurano proprietà diverse di un campione e di solito forniscono risultati numericamente diversi.
 
 :::
 

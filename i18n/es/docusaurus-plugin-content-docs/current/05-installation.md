@@ -72,7 +72,7 @@ Debe garantizarse una alimentación eléctrica ininterrumpida y estable, conform
 
 :::
 
-La fuente de alimentación se suministra en una carcasa IP67 y con un cable con enchufe de tipo J, E o G. Para conectar BactoSense a la alimentación con uno de estos enchufes suministrados por bNovate, siga las instrucciones de la sección [Conexión mediante el enchufe estándar de la fuente de alimentación](05-installation.md#section-5-3-1). Para la conexión mediante otro enchufe o conectores de alimentación, utilice el procedimiento descrito en la sección [Modificación de la fuente de alimentación estándar con otro conector](05-installation.md#section-5-3-2).
+La fuente de alimentación se suministra en una carcasa IP67 y con un cable con enchufe específico del país. Para conectar BactoSense a la alimentación con uno de estos enchufes suministrados por bNovate, siga las instrucciones de la sección [Conexión mediante el enchufe estándar de la fuente de alimentación](05-installation.md#section-5-3-1). Para la conexión mediante otro enchufe o conectores de alimentación, utilice el procedimiento descrito en la sección [Modificación de la fuente de alimentación estándar con otro conector](05-installation.md#section-5-3-2).
 
 :::info[Mantenga accesible la desconexión de la alimentación]
 
@@ -282,6 +282,8 @@ BactoSense ofrece varias opciones de integración y acceso a los datos en línea
 | HTTP y HTTPS | Sección [Obtención de archivos mediante HTTP o HTTPS](12-data-access-and-export.md#section-12-3) |
 | Transmisión de la interfaz de usuario mediante Virtual Network Computing (VNC)<br/>(control remoto) | Sección [Transmisión de la interfaz gráfica mediante VNC](12-data-access-and-export.md#section-12-4) |
 | Interfaz web de usuario | Capítulo [Interfaz web de usuario](13-web-user-interface.md) |
+| BactoLink | Consulte el manual de usuario de BactoLink, aparte |
+| BactoCloud | Capítulo [BactoCloud](14-bactocloud.md) |
 
 ![BactoSense — Servicios del sistema](/img/gui/es/system-services.png "width=507")
 

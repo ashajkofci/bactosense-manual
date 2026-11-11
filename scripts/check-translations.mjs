@@ -6,7 +6,7 @@ import { manuals, contentDirectory, sourceLocale } from '../plugins/manuals.cjs'
 const root = path.resolve(import.meta.dirname, '..');
 const locales = ['de', 'fr', 'it', 'es'];
 const errors = [];
-const read = file => readFileSync(file, 'utf8');
+const read = file => readFileSync(file, 'utf8').replace(/\r\n/g, '\n');
 const matches = (text, regex) => [...text.matchAll(regex)].map(match => match[1] ?? match[0]);
 const equal = (a, b) => JSON.stringify(a) === JSON.stringify(b);
 const field = (text, key) => text.match(new RegExp(`^${key}:\\s*(.+)$`, 'm'))?.[1];

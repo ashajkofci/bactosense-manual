@@ -68,7 +68,7 @@ Das Typenschild des Netzteils des BactoSense befindet sich auf dem Netzteil und 
 | Eigenschaft | Spezifikation |
 | --- | --- |
 | **ALLGEMEIN** | \< |
-| Betriebsumgebung | Verwendung in Innenräumen |
+| Betriebsumgebung | Verwendung in Innenräumen und geschützten Außenbereichen |
 | Einsatzhöhe | Max. 2000 m (6600 ft) über Meeresspiegel |
 | Betriebstemperatur | 5 °C – 30 °C (41 °F – 86 °F) |
 | Luftfeuchtigkeit im Betrieb | Relative Luftfeuchtigkeit 10 % – 90 % |
@@ -101,21 +101,22 @@ Das Typenschild des Netzteils des BactoSense befindet sich auf dem Netzteil und 
 | **MESSUNG** | \< |
 | Messprinzip | Durchflusszytometrie |
 | Erkennungsbereich | 0 – 5.000.000 Zellen/mL |
-| Quantifizierungsbereich | TCC: 1000 – 2.000.000 Zellen/mL ICC & ACC: 100 – 2.000.000 Zellen/mL |
+| Quantifizierungsbereich | 1000 – 2.000.000 Zellen/mL für TCC 100 – 2.000.000 Zellen/mL für ICC, ACC, CBC, NBC, EBC |
 | Lasertyp und Wellenlänge | Laserdiode 488nm |
 | Fluoreszenz | 530/50 nm FL1 715 LP nm FL2 |
-| Vorwärtsstreuung (FSC) | 488nm (optional je nach Gerät) |
-| Seitenstreuung (SSC) | 488nm (optional je nach Gerät) |
-| Ergebnisparameter | TCC/mL, ICC/mL, LNAC/mL, HNAC/mL, HNAP (%), ACC/mL, HACC/mL, Gate+, abhängig vom verwendeten System und der Kartusche. |
-| Automatisches Messintervall | Alle 30 min bis alle 6 Stunden |
+| Vorwärtsstreuung (FSC) | 488nm, geräteabhängig |
+| Seitenstreuung (SSC) | 488nm, geräteabhängig |
+| Ergebnisparameter | Primäre Ergebnisparameter: TCC, ICC, ACC, CBC, NBC, EBC Sekundäre Ergebnisparameter, abhängig von Kartusche und Konfiguration: HNAP, HNAC, LNAC, HACC, Gate+ |
+| Automatisches Messintervall | Min.: 30 min für TCC, ICC, 45 min für ACC, 60 min für CBC, NBC, EBC Max.: 6 Stunden |
 | **PROBENAHME** | \< |
 | Probenahmentyp | Online oder manuell |
 | Online-Probenahmegerät | Durchfluss durch das Gerät: 200 – 400 mL/min (0.05 – 0.10 gal/min). Druck im Gerät: max. 0.5 bar (7.3 psi). Angesaugtes Volumen: 260 μL. Gemessenes Volumen: 90 μL. Einlassschlauch: • Material: PFA (transparent) • Außendurchmesser: 6.35 mm (1/4”) • Innendurchmesser: 4.35 mm • Max. Länge: 2 m (6.5 ft). Auslassschlauch: • Material: FEP (blau) • Außendurchmesser: 6.35 mm (1/4”) • Innendurchmesser: 4.83 mm • Max. Länge: 2 m (6.5 ft) |
 | Manuelles Probenahmegerät | Probenbehälter: 5 mL-Röhrchen mit Schraubverschluss Probenvolumen: 2 – 5 mL Ansaugvolumen: 260 μL Gemessenes Volumen: 90 μL |
-| Probebedingungen | Temperatur 5 °C – 40 °C (41 °F – 104 °F) Trübung: 0 – 10 NTU, FNU Leitfähigkeit 0 – 100.000 µS/cm bei 20 °C pH-Wert: 5 – 12 Chlor max. 3 mg/L Eisen max. 200 µg/L Mangan max. 50 µg/L |
+| Probebedingungen | Temperatur 5 °C – 40 °C (41 °F – 104 °F) Trübung: 0 – 10 NTU, FNU Leitfähigkeit 0 – 100.000 µS/cm bei 20 °C für TCC, ICC, ACC 50 – 100.000 µS/cm bei 20 °C für CBC, NBC, EBC pH-Wert: 5 – 12 für TCC, ICC, ACC 6 – 12 für CBC, NBC, EBC Chlor max. 3 mg/L Eisen max. 200 µg/L Mangan max. 50 µg/L |
 | **KARTUSCHE** | \< |
-| Kapazität | TCC & ICC: Bis 1000 Messungen ACC: Bis 700 Messungen |
-| Haltbarkeit | TCC & ICC: 9 Monate ACC: 6 Monate |
+| Typen | TCC, Gesamtzellzahl ICC, Intaktzellzahl ACC, Anzahl aktiver Zellen CBC, Anzahl coliformer Bakterien NBC, Anzahl der Enterokokken EBC, Anzahl der E.-coli-Bakterien Kompatibilität abhängig vom BactoSense-Modell |
+| Kapazität | Bis 1000 Messungen für TCC, ICC Bis 700 Messungen für ACC, CBC, NBC, EBC |
+| Haltbarkeit | 9 Monate für TCC, ICC 6 Monate für ACC, CBC, NBC, EBC |
 | Lagertemperatur | 15 °C – 25°C (59 °F – 77 °F) idealerweise bei 15 °C (59 °F) |
 | Lagerluftfeuchtigkeit | Relative Luftfeuchtigkeit 20 % – 60 % |
 | **WARTUNG** | \< |

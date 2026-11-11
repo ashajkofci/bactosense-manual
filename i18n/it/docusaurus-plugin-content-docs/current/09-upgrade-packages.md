@@ -14,6 +14,7 @@ Il *pacchetto Scientific* è destinato ai professionisti della ricerca sulle acq
 
 - Gate aggiuntivo: applicare un ulteriore gate poligonale configurabile ai dati FL1 / FL2 direttamente nell’interfaccia utente.
 - Dati di diffusione della luce: registrare e visualizzare i dati di diffusione in avanti e laterale per ogni evento rilevato. Recuperare i dati nei file FCS per l’elaborazione successiva.
+- Pianificazione avanzata: pianificazione personalizzata delle misurazioni, vedere [Pianificazione avanzata](10-measurements.md#section-10-2-4)
 
 **Gate poligonale aggiuntivo** Il gate poligonale aggiuntivo, liberamente configurabile, presenta le seguenti caratteristiche:
 
@@ -52,7 +53,7 @@ Il *pacchetto Management* è destinato all’utilizzo dello strumento in ambient
 
 - Gestione avanzata degli utenti (controllo degli accessi basato sui ruoli)
 - Audit trail
-- Pianificazione avanzata
+- Pianificazione avanzata: pianificazione personalizzata delle misurazioni, vedere [Pianificazione avanzata](10-measurements.md#section-10-2-4)
 
 **Gestione avanzata degli utenti** Con la funzione *Gestione avanzata degli utenti*, il proprietario dello strumento può creare diversi utenti e assegnare loro ruoli utente differenti (Basic, Advanced, Admin). Ciò consente di attribuire autorizzazioni diverse ai singoli utenti e di registrarne le attività nell’audit trail.
 

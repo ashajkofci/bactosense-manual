@@ -25,7 +25,7 @@ La figure ci-dessous montre le résultat d’une mesure TCC sélectionnée en mo
 | 8 | Le bouton Re-fenêtrer permet d’appliquer un autre jeu de fenêtres aux données de mesure. Pour plus de détails, voir la section [Re-fenêtrage des mesures](../results-and-data-analysis/#section-11-4-1). |
 | 9 | Le bouton Exporter permet d'enregistrer ce résultat sur une clé USB. Pour plus d'informations, voir la section [Exportation vers une clé USB](../measurements/#section-10-8-1). |
 | 10 | Les boutons de navigation situés à gauche et à droite de l'affichage des résultats vous permettent de passer respectivement aux mesures précédentes et suivantes. |
-| 11 | Appuyez sur le graphique de tendance pour ouvrir le graphique du mode automatique (le graphique complet des résultats en ligne). Voir [Consultation des mesures automatiques en ligne](../measurements/#section-10-2-3). |
+| 11 | Appuyez sur le graphique de tendance pour ouvrir le graphique du mode Online (le graphique complet des résultats en ligne). Voir [Consultation des mesures automatiques en ligne](../measurements/#section-10-2-3). |
 
 :::info[Sélectionnez plusieurs mesures]
 
@@ -42,8 +42,8 @@ Conformément aux normes de cytométrie en flux, le BactoSense utilise des fenê
 Définitions :
 
 - Fenêtre : ligne ou polygone appliqué à un nuage de points pour quantifier des populations de cellules mesurées.
-- Jeu de fenêtres : ensemble d’au moins deux fenêtres utilisé pour la stratégie de fenêtrage. Les types de fenêtres sont fixes, mais les utilisateurs peuvent modifier les limites de chaque fenêtre. Ils diffèrent entre les mesures TCC et ICC.
-- Stratégie de fenêtrage : définit la combinaison des fenêtres pour le comptage des cellules. Par exemple, HNAC correspond au nombre de cellules à l’intérieur du polygone TCC et au-dessus de la limite inférieure HNA. Ces stratégies diffèrent entre les mesures TCC et ICC.
+- Jeu de fenêtres : ensemble de toutes les fenêtres utilisées pour une mesure. Les types de fenêtres sont fixes, mais les utilisateurs peuvent modifier les limites de chaque fenêtre.
+- Stratégie de fenêtrage : définit la combinaison des fenêtres pour le comptage des cellules. Par exemple, HNAC correspond au nombre de cellules à l’intérieur du polygone TCC et au-dessus de la limite inférieure HNA.
 
 Les jeux de fenêtres sont spécifiques à un type de cartouche. Par exemple, seuls les jeux de fenêtres de type TCC peuvent être utilisés avec les mesures effectuées avec une cartouche TCC.
 
@@ -73,13 +73,13 @@ Sur l’écran d’accueil, appuyez sur Paramètres, puis sur Fenêtres pour aff
 
 ## 11.3 Cartouches, paramètres des fenêtres et résultats {#section-11-3}
 
-Les paramètres mesurés dépendent de la cartouche utilisée. Les sous-sections suivantes décrivent les jeux de fenêtres et les paramètres des résultats pour TCC (nombre total de cellules), ICC (nombre de cellules intactes), ACC (nombre de cellules actives), CBC (nombre de cellules coliformes), EBC (nombre de cellules E. coli) et NBC (nombre de cellules Enterococcus).
+Les paramètres mesurés dépendent de la cartouche utilisée. Les sous-sections suivantes décrivent les jeux de fenêtres et les paramètres des résultats pour TCC (nombre total de cellules), ICC (nombre de cellules intactes), ACC (nombre de cellules actives), CBC (nombre de bactéries coliformes), EBC (nombre de bactéries E. coli) et NBC (nombre de bactéries Enterococcus).
 
 Les cartouches CBC, EBC et NBC sont compatibles avec BactoSense ID et BactoSense SMART. Chacune utilise un marquage enzymatique sélectif et une seule fenêtre polygonale, et fournit une concentration cellulaire. Aucune sous-population HNA ou définie selon l’activité n’est calculée pour ces cartouches.
 
-:::info[Interprétation des résultats CBC, EBC et NBC]
+:::info[Interprétation des résultats de comptage cellulaire]
 
-CBC, EBC et NBC sont des concentrations cellulaires exprimées en cellules par millilitre (1/mL). Les nombres de cellules et les résultats de culture exprimés en unités formant colonie (CFU) mesurent des propriétés différentes d’un échantillon et ne peuvent pas être comparés directement.
+Les comptages cellulaires du BactoSense sont des concentrations cellulaires exprimées en cellules par millilitre (1/mL). Les nombres de cellules et les résultats de culture exprimés en unités formant colonie (CFU) mesurent des propriétés différentes d’un échantillon et donnent généralement des résultats numériquement différents.
 
 :::
 

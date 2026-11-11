@@ -72,7 +72,7 @@ Une alimentation électrique ininterrompue et stable, conforme aux caractéristi
 
 :::
 
-Le bloc d’alimentation est fourni dans un boîtier IP67 avec un câble équipé d’une fiche de type J, E ou G. Pour raccorder le BactoSense à l’alimentation avec l’une de ces fiches fournies par bNovate, suivez la section [Raccordement à l’aide de la fiche standard du bloc d’alimentation](05-installation.md#section-5-3-1). Pour utiliser une autre fiche ou d’autres connecteurs d’alimentation, suivez la procédure de la section [Modification du bloc d’alimentation standard avec un connecteur différent](05-installation.md#section-5-3-2).
+Le bloc d’alimentation est fourni dans un boîtier IP67 avec un câble équipé d’une fiche spécifique au pays. Pour raccorder le BactoSense à l’alimentation avec l’une de ces fiches fournies par bNovate, suivez la section [Raccordement à l’aide de la fiche standard du bloc d’alimentation](05-installation.md#section-5-3-1). Pour utiliser une autre fiche ou d’autres connecteurs d’alimentation, suivez la procédure de la section [Modification du bloc d’alimentation standard avec un connecteur différent](05-installation.md#section-5-3-2).
 
 :::info[Gardez le dispositif de coupure accessible]
 
@@ -282,6 +282,8 @@ Le BactoSense offre plusieurs options d’intégration et d’accès aux donnée
 | HTTP et HTTPS | Section [Récupération des fichiers via HTTP ou HTTPS](12-data-access-and-export.md#section-12-3) |
 | Relais de l’interface utilisateur du réseau virtuel (VNC) (contrôle à distance) | Section [Utilisation du relais GUI via VNC](12-data-access-and-export.md#section-12-4) |
 | Interface utilisateur web | Chapitre [Interface utilisateur web](13-web-user-interface.md) |
+| BactoLink | Voir le manuel d’utilisation BactoLink séparé |
+| BactoCloud | Chapitre [BactoCloud](14-bactocloud.md) |
 
 ![BactoSense — Services système](/img/gui/fr/system-services.png "width=507")
 
