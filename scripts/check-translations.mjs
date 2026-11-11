@@ -2,6 +2,7 @@ import { readFileSync, readdirSync, existsSync, mkdirSync, writeFileSync } from 
 import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { manuals, contentDirectory, sourceLocale } from '../plugins/manuals.cjs';
+import { structure } from './translation-structure.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const locales = ['de', 'fr', 'it', 'es'];
@@ -10,20 +11,6 @@ const read = file => readFileSync(file, 'utf8').replace(/\r\n/g, '\n');
 const matches = (text, regex) => [...text.matchAll(regex)].map(match => match[1] ?? match[0]);
 const equal = (a, b) => JSON.stringify(a) === JSON.stringify(b);
 const field = (text, key) => text.match(new RegExp(`^${key}:\\s*(.+)$`, 'm'))?.[1];
-const markdownTables = text => [...text.matchAll(/^\|[^\n]+\n\|[\s:|\-]+\|\n(?:\|[^\n]+\n)*/gm)]
-  .map(match => match[0].trim().split('\n').map(row => (row.match(/(?<!\\)\|/g) || []).length - 1));
-const canonicalImage = image => image.replace(/^\/img\/gui\/(?:en|de|fr|it|es)\//, '/img/gui/{locale}/');
-const structure = text => ({
-  anchors: matches(text, /\bid="([^"]+)"/g),
-  headings: matches(text, /\{#([^}]+)\}/g),
-  images: matches(text, /(?:src="|\]\()(\/img\/[^\s"')>]+)/g).map(canonicalImage),
-  tableTags: matches(text, /<(\/?(?:table|thead|tbody|tr|td|th))(?=[\s>])/g),
-  markdownTables: markdownTables(text),
-  spans: matches(text, /\b((?:rowSpan|colSpan)="\d+")/g),
-  notices: [...text.matchAll(/(?:^:{3,}([a-z][\w-]*)\[|<Admonition\s+type="([^"]+)")/gm)].map(match => match[1] || match[2]),
-  markdownLinks: matches(text, /\]\(([^)]+)\)/g).filter(link => !link.startsWith('/img/')).sort(),
-  htmlLinks: matches(text, /\bhref="([^"]+)"/g).sort(),
-});
 const inventory = [];
 // Each manual is checked in the languages it lists in manuals.json; other site
 // languages show its English pages.

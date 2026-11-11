@@ -1,0 +1,137 @@
+name: Sync translations and build manuals
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'manuals/**'
+      - 'manuals.json'
+      - 'maintenance/translation-glossary.md'
+      - 'maintenance/translation-context.md'
+      - 'scripts/sync-translations*'
+      - 'scripts/translation-structure.mjs'
+      - 'scripts/check-translations.mjs'
+      - 'scripts/build-manual.mjs'
+      - 'scripts/compile-pdf.mjs'
+      - 'scripts/export-device-manual.mjs'
+      - 'scripts/publish-apache.mjs'
+      - 'scripts/pdf.css'
+      - 'plugins/**'
+      - 'src/**'
+      - 'static/img/**'
+      - 'maintenance/gui-*.json'
+      - 'docusaurus.config.js'
+      - 'sidebars.js'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/sync-translations.yml'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: Retranslate every chapter, including unchanged sources (uses API credits)
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sync-translations
+  cancel-in-progress: false
+
+jobs:
+  sync-and-build:
+    # API credentials and repository writes are available only on the trusted default branch.
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-24.04
+    environment: agent
+    timeout-minutes: 120
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --include=dev
+
+      - name: Test translation sync
+        run: npm run translations:test
+
+      - name: Sync translated chapters using the OpenAI Agents API
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_TRANSLATION_MODEL: gpt-6.1-terra
+          FORCE_SYNC: ${{ inputs.force || false }}
+        shell: bash
+        run: |
+          args=()
+          if [[ "$FORCE_SYNC" == 'true' ]]; then args+=(--force); fi
+          npm run translations:sync -- "${args[@]}"
+
+      - name: Validate manuals and translations
+        run: |
+          npm run manual:check
+          npm run translations:check
+
+      - name: Install Chromium for PDF generation
+        run: npm run browser:install -- --with-deps --only-shell
+
+      - name: Build all manuals and refresh public deployment
+        run: npm run build
+
+      - name: Commit translations and build, then open or update a pull request
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          BASE_BRANCH: ${{ github.event.repository.default_branch }}
+          SYNC_BRANCH: automation/sync-translations
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git switch -C "$SYNC_BRANCH"
+          git add -- i18n/ public/ maintenance/translation-sync.json
+          if git diff --cached --quiet; then
+            echo 'Translations and build are already committed.' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git diff --cached --check
+          git commit -m 'Sync manual translations and rebuild public site'
+          gh auth setup-git
+          git push --force-with-lease origin "HEAD:refs/heads/$SYNC_BRANCH"
+
+          pr_url=$(gh pr list --base "$BASE_BRANCH" --head "$SYNC_BRANCH" --state open --json url --jq '.[0].url // empty')
+          if [[ -z "$pr_url" ]]; then
+            body_file="$RUNNER_TEMP/translation-sync-pr.md"
+            cat > "$body_file" <<'BODY'
+          Synchronizes translated manual chapters with the current English source using the OpenAI Agents API and the translation glossary. Includes the rebuilt, versioned `public/` site and PDF downloads.
+
+          Validation: translation sync tests, manual checks, translation structure checks, screenshot checks, and the complete `npm run build`.
+
+          Review the translated terminology and safety instructions before merging; structural checks do not establish linguistic correctness.
+          BODY
+            pr_url=$(gh pr create --base "$BASE_BRANCH" --head "$SYNC_BRANCH" \
+              --title 'Sync manual translations and rebuild public site' --body-file "$body_file")
+          fi
+          echo "Saved translations and the generated public site in Git: $pr_url" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload translation and PDF reports
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: translation-build-reports
+          path: |
+            output/translations/
+            output/pdf/**/report.json
+          if-no-files-found: ignore
+          retention-days: 14

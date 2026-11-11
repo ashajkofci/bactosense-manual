@@ -150,6 +150,31 @@ The current English Markdown is the source of truth. The older German and French
 
 Update the four translated counterparts when editing English. Keep corresponding image names, section IDs, table structure, safety-notice types, technical identifiers, values and units intact. Only the GUI screenshot directory's locale segment differs between editions. `npm run translations:check` compares the complete document inventory and structure, validates matching screenshot languages, and runs automatically before builds to prevent silent English chapter fallbacks. This check verifies structural coverage, not linguistic correctness. Its local report is `output/translations/coverage.json`.
 
+## Automated translation sync and build
+
+The [GitHub workflow](.github/workflows/sync-translations.yml) runs on pushes to `main` that change English manuals, the manual registry, the glossary, the sync code or site build inputs. It can also be started from **Actions → Sync translations and build manuals → Run workflow**. The job uses the GitHub environment **`agent`**.
+
+Configure `OPENAI_API_KEY` as a secret in that environment. The key needs `api.agents.read`, `api.agents.write` and `api.responses.write` permissions for the [OpenAI Agents API](https://developers.openai.com/api/docs/guides/agents-api/quickstart). The workflow uses **`gpt-6.1-terra`**. Allow GitHub Actions to create pull requests in the repository's Actions settings; the workflow already requests `contents: write` and `pull-requests: write` for its job.
+
+The sync uses `manuals.json` to locate each manual and its translated editions. `maintenance/translation-sync.json` records the English source hash last synchronized for each translated file, the glossary hash and the translation-context hash. It is initialized to the current translations, so the first run only translates subsequent English changes or missing chapters. A glossary or translation-context change selects all chapters; select **force** for a manual full sync. Existing human translation edits are retained when English, the glossary and the translation context have not changed.
+
+The agent receives the current English chapter, its existing translation, the complete [translation glossary](maintenance/translation-glossary.md), and [translation context](maintenance/translation-context.md) covering products, audience, style and source precedence. It also receives the manual's document/software metadata, English and translated introductions, a bilingual chapter outline, and up to 3,000 characters from each neighboring translated chapter. English and the glossary take precedence over potentially outdated translated context. It returns structured Markdown without access to the runner's shell or credentials. Generated translations must preserve routes, section IDs, links, tables, notice types and localized screenshot paths. One repair is attempted on a structural failure; a failed batch does not advance the manifest. These checks establish structural consistency, not linguistic or scientific accuracy.
+
+After translation, the workflow runs the manual and translation checks, installs Chromium, and runs the complete `npm run build`. It **commits the translations, the sync manifest and the rebuilt `public/` site, including all PDF downloads, to `automation/sync-translations`**, then opens or updates a pull request against the default branch. Merge that pull request to save the build in the main branch and update the deployment checkout. The automation branch is owned by the workflow and is replaced on subsequent runs. Generated files do not trigger another sync, preventing a commit loop. Translation and PDF reports are also retained as workflow artifacts.
+
+Run the same sync locally with an exported API key (the script does not load `.env` automatically):
+
+```sh
+npm run translations:sync -- --dry-run
+npm run translations:sync
+# Retranslate every chapter using API credits:
+npm run translations:sync -- --force
+npm run manual:check
+npm run build
+```
+
+Review translated terminology and safety instructions before merging. Keep the manifest with the corresponding translations so future runs can skip unchanged chapters.
+
 ## Refresh GUI screenshots
 
 The current figures were captured from the sibling `gui`, `bactoserver` and `bactoweb` repositories against a disposable local demo server. They retain the original chapter positions and annotation numbers, with captions and navigation revised where the current GUI changed. Filenames describe the screen or control, for example `home-overview.png`, `digital-input-configuration.png`, `scientific-package-activation-key.png` and `web-plots-measurement-time.png`.

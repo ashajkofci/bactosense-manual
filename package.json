@@ -18,6 +18,8 @@
     "manual:web": "node scripts/publish-bactoweb.mjs",
     "manual:preview": "node scripts/preview-device-manual.mjs",
     "translations:check": "node scripts/check-translations.mjs",
+    "translations:sync": "node scripts/sync-translations.mjs",
+    "translations:test": "node --test scripts/sync-translations.test.mjs",
     "screenshots:prepare": "node scripts/gui-capture/prepare-figures.mjs",
     "screenshots:render": "node scripts/gui-capture/render-figures.mjs",
     "screenshots:apply": "node scripts/gui-capture/apply-figures.mjs",
@@ -39,6 +41,7 @@
   "devDependencies": {
     "cheerio": "1.0.0-rc.12",
     "image-size": "2.0.4",
+    "openai": "7.55.0",
     "playwright": "1.64.0",
     "sharp": "0.35.5"
   }
