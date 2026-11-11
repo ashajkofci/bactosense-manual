@@ -18,9 +18,9 @@ Seleccione un número de sección para abrir el tema correspondiente de este man
   - Descripción [6.7](/io-box#section-6-7)
   - Prueba [6.8](/io-box#section-6-8)
 - Montaje [5.5](/installation#section-5-5)
-- Notificaciones sonoras [8.3.4](/general-operations-and-configurations#section-8-3-4)
+- Notificaciones sonoras [8.3.5](/general-operations-and-configurations#section-8-3-5)
 - Encendido automático [8.3.4](/general-operations-and-configurations#section-8-3-4)
-- Autocomprobación automática [16.5](/warnings-errors-and-troubleshooting#section-16-5)
+- Autocomprobación automática [16.6](/warnings-errors-and-troubleshooting#section-16-6)
 - Reinicio automático [8.3.4](/general-operations-and-configurations#section-8-3-4)
 
 ## B
@@ -73,16 +73,16 @@ Seleccione un número de sección para abrir el tema correspondiente de este man
   - Servicio de atención al cliente [19.1](/contact#section-19-1)
 - Errores críticos [16.3](/warnings-errors-and-troubleshooting#section-16-3)
   - Borrado de errores [16.5](/warnings-errors-and-troubleshooting#section-16-5)
-- CSV [13.5](/web-user-interface#section-13-5)
+- CSV [13.6](/web-user-interface#section-13-6)
 - Servicio de atención al cliente [19.1](/contact#section-19-1)
 
 ## D
 
-- Peligro [2.5](/general-user-information#section-2-5), [4.5](/safety#section-4-5), [17.2.2](/storage-transport-and-disposal#section-17-2-2)
-  - símbolos [4.5](/safety#section-4-5)
+- Peligro [2.6](/general-user-information#section-2-6), [4.1](/safety#section-4-1)
+  - símbolos [4.4](/safety#section-4-4)
 - Datos
   - FTP [12.2](/data-access-and-export#section-12-2)
-  - HTTP y HTTPS [12.2](/data-access-and-export#section-12-2)
+  - HTTP y HTTPS [12.3](/data-access-and-export#section-12-3)
   - USB [12.1](/data-access-and-export#section-12-1)
 - Análisis de datos [11.1](/results-and-data-analysis#section-11-1)
 - Fecha [8.7](/general-operations-and-configurations#section-8-7)
@@ -91,7 +91,7 @@ Seleccione un número de sección para abrir el tema correspondiente de este man
 - Modo de demostración [8.12](/general-operations-and-configurations#section-8-12)
 - Bolsa desecante [15.2.6](/maintenance#section-15-2-6), [18.3](/supply-scope-accessories-and-consumables#section-18-3)
 - Límite de detección [3.2](/instrument-overview#section-3-2)
-- Nombre del dispositivo [8.3.2](/general-operations-and-configurations#section-8-3-2)
+- Nombre del dispositivo [8.3.3](/general-operations-and-configurations#section-8-3-3)
 - Entrada digital
   - Configuración [6.5](/io-box#section-6-5)
 - Entradas digitales [6.4](/io-box#section-6-4)
@@ -99,7 +99,7 @@ Seleccione un número de sección para abrir el tema correspondiente de este man
   - Configuración [6.6](/io-box#section-6-6)
   - Prueba [6.8](/io-box#section-6-8)
 - Salidas digitales [6.1.6](/io-box#section-6-1-6), [6.3](/io-box#section-6-3)
-- Eliminación [17.3.2](/storage-transport-and-disposal#section-17-3-2)
+- Eliminación [17.4](/storage-transport-and-disposal#section-17-4)
 - Diagrama de puntos [11.1](/results-and-data-analysis#section-11-1), [13.7](/web-user-interface#section-13-7)
 
 ## E

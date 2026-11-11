@@ -3,7 +3,7 @@ import path from 'node:path';
 import { manuals, contentDirectory, sourceLocale } from '../plugins/manuals.cjs';
 
 const root = path.resolve(import.meta.dirname, '..');
-const read = file => readFileSync(path.join(root, file), 'utf8');
+const read = file => readFileSync(path.join(root, file), 'utf8').replace(/\r\n/g, '\n');
 const safety = JSON.parse(read('maintenance/safety-symbols.json'));
 const noticeTypes = new Set(['note', 'tip', 'info', ...Object.keys(safety.admonitions)]);
 const errors = [];

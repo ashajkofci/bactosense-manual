@@ -18,9 +18,9 @@ Wählen Sie eine Abschnittsnummer, um das entsprechende Thema in dieser Anleitun
   - Beschreibung [6.7](/io-box#section-6-7)
   - Testen [6.8](/io-box#section-6-8)
 - Montage [5.5](/installation#section-5-5)
-- Akustische Benachrichtigungen [8.3.4](/general-operations-and-configurations#section-8-3-4)
+- Akustische Benachrichtigungen [8.3.5](/general-operations-and-configurations#section-8-3-5)
 - Automatisches Einschalten [8.3.4](/general-operations-and-configurations#section-8-3-4)
-- Automatischer Selbsttest [16.5](/warnings-errors-and-troubleshooting#section-16-5)
+- Automatischer Selbsttest [16.6](/warnings-errors-and-troubleshooting#section-16-6)
 - Automatischer Neustart [8.3.4](/general-operations-and-configurations#section-8-3-4)
 
 ## B
@@ -73,16 +73,16 @@ Wählen Sie eine Abschnittsnummer, um das entsprechende Thema in dieser Anleitun
   - Kundendienst [19.1](/contact#section-19-1)
 - Kritische Fehler [16.3](/warnings-errors-and-troubleshooting#section-16-3)
   - Fehler löschen [16.5](/warnings-errors-and-troubleshooting#section-16-5)
-- CSV [13.5](/web-user-interface#section-13-5)
+- CSV [13.6](/web-user-interface#section-13-6)
 - Kundendienst [19.1](/contact#section-19-1)
 
 ## D
 
-- Gefahr [2.5](/general-user-information#section-2-5), [4.5](/safety#section-4-5), [17.2.2](/storage-transport-and-disposal#section-17-2-2)
-  - Symbole [4.5](/safety#section-4-5)
+- Gefahr [2.6](/general-user-information#section-2-6), [4.1](/safety#section-4-1)
+  - Symbole [4.4](/safety#section-4-4)
 - Daten
   - FTP [12.2](/data-access-and-export#section-12-2)
-  - FTP [12.2](/data-access-and-export#section-12-2)
+  - HTTP und HTTPS [12.3](/data-access-and-export#section-12-3)
   - USB [12.1](/data-access-and-export#section-12-1)
 - Datenanalyse [11.1](/results-and-data-analysis#section-11-1)
 - Datum [8.7](/general-operations-and-configurations#section-8-7)
@@ -91,7 +91,7 @@ Wählen Sie eine Abschnittsnummer, um das entsprechende Thema in dieser Anleitun
 - Demo-Modus [8.12](/general-operations-and-configurations#section-8-12)
 - Trockenmittelbeutel [15.2.6](/maintenance#section-15-2-6), [18.3](/supply-scope-accessories-and-consumables#section-18-3)
 - Nachweisgrenze [3.2](/instrument-overview#section-3-2)
-- Gerätename [8.3.2](/general-operations-and-configurations#section-8-3-2)
+- Gerätename [8.3.3](/general-operations-and-configurations#section-8-3-3)
 - Digitaleingang
   - Konfiguration [6.5](/io-box#section-6-5)
 - Digitale Eingänge [6.4](/io-box#section-6-4)
@@ -99,7 +99,7 @@ Wählen Sie eine Abschnittsnummer, um das entsprechende Thema in dieser Anleitun
   - Konfiguration [6.6](/io-box#section-6-6)
   - Testen [6.8](/io-box#section-6-8)
 - Digitale Ausgänge [6.1.6](/io-box#section-6-1-6), [6.3](/io-box#section-6-3)
-- Entsorgung [17.3.2](/storage-transport-and-disposal#section-17-3-2)
+- Entsorgung [17.4](/storage-transport-and-disposal#section-17-4)
 - Dotplot [11.1](/results-and-data-analysis#section-11-1), [13.7](/web-user-interface#section-13-7)
 
 ## E

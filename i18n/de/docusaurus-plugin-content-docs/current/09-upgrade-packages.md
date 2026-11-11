@@ -14,6 +14,7 @@ Das *Scientific Package* richtet sich an Fachleute aus der Wasserforschung und e
 
 - Zusätzliches Gate: Wenden Sie direkt in der Benutzeroberfläche ein zusätzliches, konfigurierbares Polygon-Gate auf die FL1 / FL2-Daten an.
 - Streulichtdaten: Zeichnen Sie für jedes erkannte Ereignis Vorwärts- und Seitenstreuungsdaten auf und zeigen Sie sie an. Rufen Sie die Daten zur Nachbearbeitung in FCS-Dateien ab.
+- Erweiterte Zeitplanung: Benutzerdefinierte Messplanung, siehe [Erweiterte Zeitplanung](10-measurements.md#section-10-2-4)
 
 **Zusätzliches Polygon-Gate** Das frei konfigurierbare zusätzliche Polygon-Gate hat folgende Eigenschaften:
 
@@ -52,7 +53,7 @@ Das *Management Package* ist für den Gerätebetrieb in Umgebungen mit erhöhten
 
 - Erweiterte Benutzerverwaltung (rollenbasierte Zugriffskontrolle)
 - Audit Trail
-- Erweiterte Zeitplanung
+- Erweiterte Zeitplanung: Benutzerdefinierte Messplanung, siehe [Erweiterte Zeitplanung](10-measurements.md#section-10-2-4)
 
 **Erweiterte Benutzerverwaltung** Mit der Funktion *Erweiterte Benutzerverwaltung* kann der Geräteeigentümer verschiedene Benutzer anlegen und ihnen unterschiedliche Benutzerrollen (Basic, Advanced, Admin) zuweisen. So lassen sich einzelnen Benutzern unterschiedliche Berechtigungen erteilen und ihre Aktivitäten für den Audit Trail protokollieren.
 

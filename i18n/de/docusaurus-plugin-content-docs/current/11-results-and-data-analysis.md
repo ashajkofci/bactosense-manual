@@ -25,7 +25,7 @@ Die folgende Abbildung zeigt das Ergebnis einer ausgewählten TCC-Messung im Onl
 | 8 | Mit dem Resultat neu gaten-Knopf können Messungen neu gegatet werden. Mehr Details dazu unter [Messungen regaten](../results-and-data-analysis/#section-11-4-1). |
 | 9 | Mit dem Exportieren-Knopf können Messungen auf einen USB Stick exportiert werden. Mehr Details dazu unter [Export auf einen USB-Datenträger](../measurements/#section-10-8-1). |
 | 10 | Mit den Navigationspfeilen links und rechts können Sie zur vorherigen und nächsten Messung springen. |
-| 11 | Tippen Sie auf das Trenddiagramm, um das Diagramm für den Auto-Modus (das vollständige Diagramm der Online-Ergebnisse) zu öffnen. Siehe [Ansehen automatischer Onlinemessungen](../measurements/#section-10-2-3). |
+| 11 | Tippen Sie auf das Trenddiagramm, um das Diagramm für den Online-Modus (das vollständige Diagramm der Online-Ergebnisse) zu öffnen. Siehe [Ansehen automatischer Onlinemessungen](../measurements/#section-10-2-3). |
 
 :::info[Mehrere Messungen auswählen]
 
@@ -42,8 +42,8 @@ Den Standards der Durchflusszytometrie folgend, verwendet der BactoSense Gates, 
 Wir definieren:
 
 - Gate: Eine Linie oder ein Vieleck, das auf ein Punktdiagramm angewandt wird, um Populationen gemessener Zellen zu quantifizieren.
-- Set aus Gates oder Gating-Set: Eine Zusammenstellung aus zwei oder mehr Gates zur Verwendung für die Gatingstrategie. Die Gatetypen sind fix, doch können die Benutzer die Grenzen eines jeden Gates ändern. Sie unterscheiden sich für TCC- und ICC-Messungen.
-- Gatingstrategie: Definiert, wie die Gates kombiniert werden, um Zellen zu zählen. Beispielsweise ist HNAC die Anzahl Zellen, die sich innerhalb des TCC-Vielecks befinden und die HNA-Untergrenze überschreiten. Diese Strategien unterscheiden sich für TCC- und ICC-Messungen.
+- Set aus Gates oder Gating-Set: Die Zusammenstellung aller Gates, die für eine Messung verwendet werden. Die Gatetypen sind fix, doch können die Benutzer die Grenzen eines jeden Gates ändern.
+- Gatingstrategie: Definiert, wie die Gates kombiniert werden, um Zellen zu zählen. Beispielsweise ist HNAC die Anzahl Zellen, die sich innerhalb des TCC-Vielecks befinden und die HNA-Untergrenze überschreiten.
 
 Gating Sets sind spezifisch für einen Kartuschentyp. Beispielsweise können für mit einer TCC-Kartusche durchgeführte Messungen nur Gating Sets des Typs TCC verwendet werden.
 
@@ -73,13 +73,13 @@ Drücken Sie auf der Startseite Einstellungen und dann Gate Einstellungen, um di
 
 ## 11.3 Kartuschen, Gates und Ergebnisparameter {#section-11-3}
 
-Je nach der für eine Messung verwendeten Kartusche werden unterschiedliche Parameter ermittelt. Die folgenden Unterabschnitte beschreiben Gate-Sets und Ergebnisparameter für TCC (Gesamtzellzahl), ICC (Intaktzellzahl), ACC (Anzahl aktiver Zellen), CBC (Anzahl coliformer Zellen), EBC (Anzahl der E.-coli-Zellen) und NBC (Enterokokken-Zellzahl).
+Je nach der für eine Messung verwendeten Kartusche werden unterschiedliche Parameter ermittelt. Die folgenden Unterabschnitte beschreiben Gate-Sets und Ergebnisparameter für TCC (Gesamtzellzahl), ICC (Intaktzellzahl), ACC (Anzahl aktiver Zellen), CBC (Anzahl coliformer Bakterien), EBC (Anzahl der E.-coli-Bakterien) und NBC (Anzahl der Enterokokken).
 
 CBC-, EBC- und NBC-Kartuschen sind mit BactoSense ID und BactoSense SMART kompatibel. Jede dieser Kartuschen verwendet eine selektive enzymatische Markierung und ein einzelnes Polygon-Gate und liefert eine Zellkonzentration. Für diese Kartuschen werden keine HNA- oder Aktivitäts-Unterpopulationen berechnet.
 
-:::info[Interpretation der CBC-, EBC- und NBC-Ergebnisse]
+:::info[Interpretation der Zellzahl-Ergebnisse]
 
-CBC, EBC und NBC sind Zellkonzentrationen in Zellen pro Milliliter (1/mL). Zellzahlen und Kulturergebnisse in koloniebildenden Einheiten (CFU) erfassen unterschiedliche Eigenschaften einer Probe und können nicht direkt miteinander verglichen werden.
+Die Zellzahlen des BactoSense sind Zellkonzentrationen in Zellen pro Milliliter (1/mL). Zellzahlen und Kulturergebnisse in koloniebildenden Einheiten (CFU) erfassen unterschiedliche Eigenschaften einer Probe und liefern in der Regel numerisch unterschiedliche Ergebnisse.
 
 :::
 

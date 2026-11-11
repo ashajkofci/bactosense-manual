@@ -68,7 +68,7 @@ La placa de características de la fuente de alimentación de BactoSense se encu
 | Propiedad | Especificación |
 | --- | --- |
 | **GENERAL** | \< |
-| Entorno de funcionamiento | Uso en interiores |
+| Entorno de funcionamiento | Uso en interiores y en exteriores protegidos |
 | Altitud de funcionamiento | Máx. 2000 m (6600 ft) sobre el nivel del mar |
 | Temperatura de funcionamiento | 5 °C – 30 °C (41 °F – 86 °F) |
 | Humedad de funcionamiento | 10 % – 90 % RH |
@@ -101,21 +101,22 @@ La placa de características de la fuente de alimentación de BactoSense se encu
 | **MEDICIÓN** | \< |
 | Principio de medición | Citometría de flujo |
 | Rango de detección | 0 – 5´000´000 células/mL |
-| Rango de cuantificación | TCC: 1000 – 2‘000‘000 células/mL<br />ICC &amp; ACC: 100 – 2‘000‘000 células/mL |
+| Rango de cuantificación | 1000 – 2‘000‘000 células/mL para TCC<br />100 – 2‘000‘000 células/mL para ICC, ACC, CBC, NBC, EBC |
 | Tipo de láser y longitud de onda | Diodo láser de 488 nm |
 | Fluorescencia | 530/50 nm FL1<br />715 LP nm FL2 |
-| Dispersión frontal (FSC) | 488 nm (opcional según el instrumento) |
-| Dispersión lateral (SSC) | 488 nm (opcional según el instrumento) |
-| Parámetros de resultados | TCC/mL, ICC/mL, LNAC/mL, HNAC/mL,<br />HNAP (%), ACC/mL, HACC/mL, Gate+, según el sistema y el cartucho utilizados. |
-| Intervalo de medición automática | Desde cada 30 min hasta cada 6 horas |
+| Dispersión frontal (FSC) | 488 nm, según el instrumento |
+| Dispersión lateral (SSC) | 488 nm, según el instrumento |
+| Parámetros de resultados | Parámetros de resultado primarios:<br />TCC, ICC, ACC, CBC, NBC, EBC<br />Parámetros de resultado secundarios, según el cartucho y la configuración: <br /> HNAP, HNAC, LNAC, HACC, Gate+ |
+| Intervalo de medición automática | Mín.: 30 min para TCC, ICC; 45 min para ACC; 60 min para CBC, NBC, EBC <br /> Máx.: 6 horas |
 | **MUESTREO** | \< |
 | Tipo de muestreo | En línea o manual |
 | Dispositivo de muestreo en línea | Caudal a través del dispositivo:<br />200 – 400 mL/min (0.05 – 0.10 gal/min)<br />Presión en el dispositivo: máx. 0.5 bar (7.3 psi)<br />Volumen aspirado: 260 μL<br />Volumen medido: 90 μL<br />Tubo de entrada<br />• Material: PFA (transparente)<br />• Diámetro exterior: 6.35 mm (1/4”)<br />• Diámetro interior: 4.35 mm<br />• Longitud máx.: 2 m (6.5 ft)<br />Tubo de salida<br />• Material: FEP (azul)<br />• Diámetro exterior: 6.35 mm (1/4”)<br />• Diámetro interior: 4.83 mm<br />• Longitud máx.: 2 m (6.5 ft) |
 | Dispositivo de muestreo manual | Recipiente de muestra: tubo con tapón de rosca de 5 mL<br />Volumen de muestra: 2 – 5 mL<br />Volumen aspirado: 260 μL<br />Volumen medido: 90 μL |
-| Condiciones de la muestra | Temperatura: 5 °C – 40 °C (41 °F – 104 °F)<br />Turbidez: 0 – 10 NTU, FNU<br />Conductividad: 0 – 100'000 µS/cm a 20 °C<br />Valor de pH: 5 – 12<br />Cloro: máx. 3 mg/L<br />Hierro: máx. 200 μg/L<br />Manganeso: máx. 50 μg/L |
+| Condiciones de la muestra | Temperatura: 5 °C – 40 °C (41 °F – 104 °F)<br />Turbidez: 0 – 10 NTU, FNU<br />Conductividad: 0 – 100'000 µS/cm a 20 °C para TCC, ICC, ACC<br />50 – 100'000 µS/cm a 20 °C para CBC, NBC, EBC<br />Valor de pH: 5 – 12 para TCC, ICC, ACC <br />6 – 12 para CBC, NBC, EBC <br />Cloro: máx. 3 mg/L<br />Hierro: máx. 200 μg/L<br />Manganeso: máx. 50 μg/L |
 | **CARTUCHO** | \< |
-| Capacidad | TCC &amp; ICC: hasta 1000 mediciones<br />ACC: hasta 700 mediciones |
-| Validez | TCC &amp; ICC: 9 meses<br />ACC: 6 meses |
+| Tipos | TCC, Total Cell Count (recuento total de células)<br />ICC, Intact Cell Count (recuento de células intactas)<br />ACC, Active Cell Count (recuento de células activas)<br />CBC, Coliform Bacteria Count (recuento de bacterias coliformes)<br />NBC, Enterococcus Bacteria Count (recuento de enterococos)<br />EBC, E. coli Bacteria Count (recuento de E. coli)<br />Compatibilidad según el modelo de BactoSense |
+| Capacidad | Hasta 1000 mediciones para TCC, ICC<br />Hasta 700 mediciones para ACC, CBC, NBC, EBC |
+| Validez | 9 meses para TCC, ICC<br />6 meses para ACC, CBC, NBC, EBC |
 | Temperatura de almacenamiento | 15 °C – 25 °C (59 °F – 77 °F) idealmente a 15 °C (59 °F) |
 | Humedad de almacenamiento | 20 % – 60 % RH |
 | **MANTENIMIENTO** | \< |

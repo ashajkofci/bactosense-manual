@@ -18,9 +18,9 @@ Selezionare un numero di sezione per aprire l’argomento corrispondente in ques
   - Descrizione [6.7](/io-box#section-6-7)
   - Test [6.8](/io-box#section-6-8)
 - Assemblaggio [5.5](/installation#section-5-5)
-- Notifiche sonore [8.3.4](/general-operations-and-configurations#section-8-3-4)
+- Notifiche sonore [8.3.5](/general-operations-and-configurations#section-8-3-5)
 - Accensione automatica [8.3.4](/general-operations-and-configurations#section-8-3-4)
-- Autodiagnosi automatica [16.5](/warnings-errors-and-troubleshooting#section-16-5)
+- Autodiagnosi automatica [16.6](/warnings-errors-and-troubleshooting#section-16-6)
 - Riavvio automatico [8.3.4](/general-operations-and-configurations#section-8-3-4)
 
 ## B
@@ -73,16 +73,16 @@ Selezionare un numero di sezione per aprire l’argomento corrispondente in ques
   - Servizio clienti [19.1](/contact#section-19-1)
 - Errori critici [16.3](/warnings-errors-and-troubleshooting#section-16-3)
   - Azzeramento degli errori [16.5](/warnings-errors-and-troubleshooting#section-16-5)
-- CSV [13.5](/web-user-interface#section-13-5)
+- CSV [13.6](/web-user-interface#section-13-6)
 - Servizio clienti [19.1](/contact#section-19-1)
 
 ## D
 
-- Pericolo [2.5](/general-user-information#section-2-5), [4.5](/safety#section-4-5), [17.2.2](/storage-transport-and-disposal#section-17-2-2)
-  - simboli [4.5](/safety#section-4-5)
+- Pericolo [2.6](/general-user-information#section-2-6), [4.1](/safety#section-4-1)
+  - simboli [4.4](/safety#section-4-4)
 - Dati
   - FTP [12.2](/data-access-and-export#section-12-2)
-  - HTTP e HTTPS [12.2](/data-access-and-export#section-12-2)
+  - HTTP e HTTPS [12.3](/data-access-and-export#section-12-3)
   - USB [12.1](/data-access-and-export#section-12-1)
 - Analisi dei dati [11.1](/results-and-data-analysis#section-11-1)
 - Data [8.7](/general-operations-and-configurations#section-8-7)
@@ -91,7 +91,7 @@ Selezionare un numero di sezione per aprire l’argomento corrispondente in ques
 - Modalità demo [8.12](/general-operations-and-configurations#section-8-12)
 - Sacchetto essiccante [15.2.6](/maintenance#section-15-2-6), [18.3](/supply-scope-accessories-and-consumables#section-18-3)
 - Limite di rilevamento [3.2](/instrument-overview#section-3-2)
-- Nome del dispositivo [8.3.2](/general-operations-and-configurations#section-8-3-2)
+- Nome del dispositivo [8.3.3](/general-operations-and-configurations#section-8-3-3)
 - Ingresso digitale
   - Configurazione [6.5](/io-box#section-6-5)
 - Ingressi digitali [6.4](/io-box#section-6-4)
@@ -99,7 +99,7 @@ Selezionare un numero di sezione per aprire l’argomento corrispondente in ques
   - Configurazione [6.6](/io-box#section-6-6)
   - Test [6.8](/io-box#section-6-8)
 - Uscite digitali [6.1.6](/io-box#section-6-1-6), [6.3](/io-box#section-6-3)
-- Smaltimento [17.3.2](/storage-transport-and-disposal#section-17-3-2)
+- Smaltimento [17.4](/storage-transport-and-disposal#section-17-4)
 - Grafico a punti [11.1](/results-and-data-analysis#section-11-1), [13.7](/web-user-interface#section-13-7)
 
 ## E

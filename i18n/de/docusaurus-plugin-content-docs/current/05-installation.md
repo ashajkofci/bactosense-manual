@@ -72,7 +72,7 @@ Eine unterbrechungsfreie und stabile Spannungsversorgung gemäß den Angaben unt
 
 :::
 
-Das Netzteil wird in einem IP67-Gehäuse und mit einem Kabel mit Stecker vom Typ J, E oder G geliefert. Um den BactoSense mittels eines dieser von bNovate gelieferten Stecker an die Spannungsversorgung anzuschließen, folgen Sie den Anweisungen unter [Verbindung mittels Standardstecker des Netzteils](05-installation.md#section-5-3-1). Soll die Verbindung mit einem anderen Stecker hergestellt werden, befolgen Sie die unter [Modifizierung des Standard-Netzteils mit einem anderen Stecker](05-installation.md#section-5-3-2) beschriebenen Schritte.
+Das Netzteil wird in einem IP67-Gehäuse und mit einem Kabel mit länderspezifischem Stecker geliefert. Um den BactoSense mittels eines dieser von bNovate gelieferten Stecker an die Spannungsversorgung anzuschließen, folgen Sie den Anweisungen unter [Verbindung mittels Standardstecker des Netzteils](05-installation.md#section-5-3-1). Soll die Verbindung mit einem anderen Stecker hergestellt werden, befolgen Sie die unter [Modifizierung des Standard-Netzteils mit einem anderen Stecker](05-installation.md#section-5-3-2) beschriebenen Schritte.
 
 :::info[Netztrennung zugänglich halten]
 
@@ -282,6 +282,8 @@ Der BactoSense bietet verschiedene Optionen der Integration und des Online-Daten
 | HTTP und HTTPS | [Datenabruf über HTTP oder HTTPS](12-data-access-and-export.md#section-12-3) |
 | Fernzugriff auf die Benutzeroberfläche über Virtual Network Computing (VNC) | [GUI-Relay mit VNC](12-data-access-and-export.md#section-12-4) |
 | Web-Benutzeroberfläche | [Web-Benutzeroberfläche](13-web-user-interface.md) |
+| BactoLink | Siehe separate BactoLink-Bedienungsanleitung |
+| BactoCloud | [BactoCloud](14-bactocloud.md) |
 
 ![BactoSense — Systemdienste](/img/gui/de/system-services.png "width=507")
 

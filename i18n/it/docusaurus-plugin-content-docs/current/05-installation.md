@@ -72,7 +72,7 @@ Deve essere garantita un’alimentazione continua e stabile, come specificato ne
 
 :::
 
-L’alimentatore è fornito in un involucro IP67 con un cavo dotato di spina di tipo J, E o G. Per collegare BactoSense all’alimentazione utilizzando una di queste spine fornite da bNovate, seguire le istruzioni della sezione [Collegamento con la spina standard dell’alimentatore](05-installation.md#section-5-3-1). Per il collegamento con una spina o connettori di alimentazione diversi, seguire la procedura descritta nella sezione [Modifica dell’alimentatore standard con un connettore diverso](05-installation.md#section-5-3-2).
+L’alimentatore è fornito in un involucro IP67 con un cavo dotato di spina specifica per il paese. Per collegare BactoSense all’alimentazione utilizzando una di queste spine fornite da bNovate, seguire le istruzioni della sezione [Collegamento con la spina standard dell’alimentatore](05-installation.md#section-5-3-1). Per il collegamento con una spina o connettori di alimentazione diversi, seguire la procedura descritta nella sezione [Modifica dell’alimentatore standard con un connettore diverso](05-installation.md#section-5-3-2).
 
 :::info[Mantenere accessibile il sezionamento dell’alimentazione]
 
@@ -282,6 +282,8 @@ BactoSense offre diverse opzioni di integrazione e accesso online ai dati.
 | HTTP e HTTPS | Sezione [Recupero dei file tramite HTTP o HTTPS](12-data-access-and-export.md#section-12-3) |
 | Trasmissione dell’interfaccia utente tramite Virtual Network Computing (VNC) (controllo remoto) | Sezione [Trasmissione dell’interfaccia grafica tramite VNC](12-data-access-and-export.md#section-12-4) |
 | Interfaccia utente web | Capitolo [Interfaccia utente web](13-web-user-interface.md) |
+| BactoLink | Vedere il manuale d’uso separato di BactoLink |
+| BactoCloud | Capitolo [BactoCloud](14-bactocloud.md) |
 
 ![BactoSense — Servizi di sistema](/img/gui/it/system-services.png "width=507")
 

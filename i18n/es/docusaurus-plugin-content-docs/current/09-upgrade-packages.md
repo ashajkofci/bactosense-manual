@@ -14,6 +14,7 @@ El *Scientific Package* está destinado a los profesionales de la investigación
 
 - Región de análisis adicional: aplique una región poligonal adicional configurable a los datos FL1 / FL2 directamente en la interfaz de usuario.
 - Datos de dispersión de luz: registre y visualice los datos de dispersión frontal y lateral de cada evento detectado. Obtenga los datos en archivos FCS para su procesamiento posterior.
+- Programación avanzada: programación personalizada de mediciones, consulte [Programación avanzada](10-measurements.md#section-10-2-4)
 
 **Región poligonal adicional** La región poligonal adicional, libremente configurable, tiene las siguientes propiedades:
 
@@ -52,7 +53,7 @@ El *Management Package* está destinado al uso del instrumento en entornos con m
 
 - Gestión avanzada de usuarios (control de acceso basado en roles)
 - Pista de auditoría
-- Programación avanzada
+- Programación avanzada: programación personalizada de mediciones, consulte [Programación avanzada](10-measurements.md#section-10-2-4)
 
 **Gestión avanzada de usuarios** Con la función *Gestión avanzada de usuarios*, el propietario del instrumento puede crear distintos usuarios y asignarles diferentes roles de usuario (Basic, Advanced, Admin). Esto permite otorgar permisos distintos a cada usuario y registrar su actividad en la pista de auditoría.
 

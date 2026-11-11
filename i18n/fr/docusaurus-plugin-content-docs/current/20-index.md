@@ -18,9 +18,9 @@ Sélectionnez un numéro de section pour ouvrir la rubrique correspondante de ce
   - Description [6.7](/io-box#section-6-7)
   - Test [6.8](/io-box#section-6-8)
 - Assemblage [5.5](/installation#section-5-5)
-- Notifications sonores [8.3.4](/general-operations-and-configurations#section-8-3-4)
+- Notifications sonores [8.3.5](/general-operations-and-configurations#section-8-3-5)
 - Mise en marche automatique [8.3.4](/general-operations-and-configurations#section-8-3-4)
-- Autovérification automatique [16.5](/warnings-errors-and-troubleshooting#section-16-5)
+- Autovérification automatique [16.6](/warnings-errors-and-troubleshooting#section-16-6)
 - Redémarrage automatique [8.3.4](/general-operations-and-configurations#section-8-3-4)
 
 ## B
@@ -73,16 +73,16 @@ Sélectionnez un numéro de section pour ouvrir la rubrique correspondante de ce
   - Service client [19.1](/contact#section-19-1)
 - Erreurs critiques [16.3](/warnings-errors-and-troubleshooting#section-16-3)
   - Acquittement des erreurs [16.5](/warnings-errors-and-troubleshooting#section-16-5)
-- CSV [13.5](/web-user-interface#section-13-5)
+- CSV [13.6](/web-user-interface#section-13-6)
 - Service client [19.1](/contact#section-19-1)
 
 ## D
 
-- Danger [2.5](/general-user-information#section-2-5), [4.5](/safety#section-4-5), [17.2.2](/storage-transport-and-disposal#section-17-2-2)
-  - symboles [4.5](/safety#section-4-5)
+- Danger [2.6](/general-user-information#section-2-6), [4.1](/safety#section-4-1)
+  - symboles [4.4](/safety#section-4-4)
 - Données
   - FTP [12.2](/data-access-and-export#section-12-2)
-  - HTTP et HTTPS [12.2](/data-access-and-export#section-12-2)
+  - HTTP et HTTPS [12.3](/data-access-and-export#section-12-3)
   - USB [12.1](/data-access-and-export#section-12-1)
 - Analyse des données [11.1](/results-and-data-analysis#section-11-1)
 - Date [8.7](/general-operations-and-configurations#section-8-7)
@@ -91,7 +91,7 @@ Sélectionnez un numéro de section pour ouvrir la rubrique correspondante de ce
 - Mode démo [8.12](/general-operations-and-configurations#section-8-12)
 - Sachet déshydratant [15.2.6](/maintenance#section-15-2-6), [18.3](/supply-scope-accessories-and-consumables#section-18-3)
 - Limite de détection [3.2](/instrument-overview#section-3-2)
-- Nom de l’appareil [8.3.2](/general-operations-and-configurations#section-8-3-2)
+- Nom de l’appareil [8.3.3](/general-operations-and-configurations#section-8-3-3)
 - Entrée numérique
   - Configuration [6.5](/io-box#section-6-5)
 - Entrées numériques [6.4](/io-box#section-6-4)
@@ -99,7 +99,7 @@ Sélectionnez un numéro de section pour ouvrir la rubrique correspondante de ce
   - Configuration [6.6](/io-box#section-6-6)
   - Test [6.8](/io-box#section-6-8)
 - Sorties numériques [6.1.6](/io-box#section-6-1-6), [6.3](/io-box#section-6-3)
-- Élimination [17.3.2](/storage-transport-and-disposal#section-17-3-2)
+- Élimination [17.4](/storage-transport-and-disposal#section-17-4)
 - Nuage de points [11.1](/results-and-data-analysis#section-11-1), [13.7](/web-user-interface#section-13-7)
 
 ## E

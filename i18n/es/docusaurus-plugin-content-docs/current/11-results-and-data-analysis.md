@@ -25,7 +25,7 @@ La figura siguiente muestra el resultado de una medición TCC seleccionada en mo
 | 8 | El botón Resultado de re-gate permite aplicar otras regiones de análisis a los datos de medición. Para obtener más detalles, consulte la sección [Reanálisis de mediciones con otras regiones](../results-and-data-analysis/#section-11-4-1). |
 | 9 | El botón Exportar permite guardar este resultado en una memoria USB. Encontrará más información en la sección [Exportación a una memoria USB](../measurements/#section-10-8-1). |
 | 10 | Los botones de navegación a la izquierda y derecha de la vista de resultados permiten ir a las mediciones anterior y siguiente, respectivamente. |
-| 11 | Pulse el gráfico de tendencias para abrir el gráfico del modo automático (el gráfico completo de resultados en línea). Véase [Revisión de las mediciones automáticas en línea](../measurements/#section-10-2-3). |
+| 11 | Pulse el gráfico de tendencias para abrir el gráfico del modo en línea (el gráfico completo de resultados en línea). Véase [Revisión de las mediciones automáticas en línea](../measurements/#section-10-2-3). |
 
 :::info[Seleccione varias mediciones]
 
@@ -42,8 +42,8 @@ De acuerdo con los estándares de citometría de flujo, BactoSense utiliza regio
 Se definen los siguientes términos:
 
 - Región de análisis (Gate): línea o polígono aplicado a un diagrama de puntos para cuantificar poblaciones de células medidas.
-- Conjunto de regiones de análisis (gating set): colección de dos o más regiones utilizadas en la estrategia de análisis. Los tipos de regiones son fijos, pero los usuarios pueden cambiar los límites de cada una. Son diferentes para las mediciones TCC e ICC.
-- Estrategia de análisis (gating strategy): define cómo se combinan las regiones para contar células. Por ejemplo, HNAC es el número de células que están dentro del polígono TCC y por encima del límite inferior HNA. Estas estrategias son diferentes para las mediciones TCC e ICC.
+- Conjunto de regiones de análisis (gating set): colección de todas las regiones utilizadas en una medición. Los tipos de regiones son fijos, pero los usuarios pueden cambiar los límites de cada una.
+- Estrategia de análisis (gating strategy): define cómo se combinan las regiones para contar células. Por ejemplo, HNAC es el número de células que están dentro del polígono TCC y por encima del límite inferior HNA.
 
 Los conjuntos de regiones son específicos de un tipo de cartucho. Por ejemplo, solo pueden utilizarse conjuntos de tipo TCC con mediciones realizadas con un cartucho TCC.
 
@@ -73,13 +73,13 @@ En la pantalla Home, pulse Ajustes y después Ajustes de la compuerta para ver l
 
 ## 11.3 Cartuchos, regiones de análisis y parámetros de resultados {#section-11-3}
 
-Según el cartucho utilizado en una medición, se miden distintos parámetros. Las subsecciones siguientes describen los conjuntos de regiones de análisis y los parámetros de resultados de TCC (recuento total de células), ICC (recuento de células intactas), ACC (recuento de células activas), CBC (recuento de células coliformes), EBC (recuento de células de E. coli) y NBC (recuento de células de enterococos).
+Según el cartucho utilizado en una medición, se miden distintos parámetros. Las subsecciones siguientes describen los conjuntos de regiones de análisis y los parámetros de resultados de TCC (recuento total de células), ICC (recuento de células intactas), ACC (recuento de células activas), CBC (recuento de bacterias coliformes), EBC (recuento de bacterias de E. coli) y NBC (recuento de bacterias de enterococos).
 
 Los cartuchos CBC, EBC y NBC son compatibles con BactoSense ID y BactoSense SMART. Cada uno utiliza un marcaje enzimático selectivo y una única región poligonal y proporciona una concentración celular. Para estos cartuchos no se calculan subpoblaciones HNA ni definidas según su actividad.
 
-:::info[Interpretación de los resultados CBC, EBC y NBC]
+:::info[Interpretación de los resultados de recuento celular]
 
-CBC, EBC y NBC son concentraciones celulares expresadas en células por mililitro (1/mL). Los recuentos celulares y los resultados de cultivo expresados en unidades formadoras de colonias (CFU) miden propiedades diferentes de una muestra y no pueden compararse directamente.
+Los recuentos celulares de BactoSense son concentraciones celulares expresadas en células por mililitro (1/mL). Los recuentos celulares y los resultados de cultivo expresados en unidades formadoras de colonias (CFU) miden propiedades diferentes de una muestra y normalmente dan resultados numéricamente distintos.
 
 :::
 
@@ -175,7 +175,7 @@ Para obtener más información sobre el ajuste de las regiones, consulte la secc
 
 ### 11.3.4 Cartucho CBC {#section-11-3-4}
 
-CBC significa Coliform Cell Count (recuento de células coliformes). El cartucho CBC mide la concentración de bacterias coliformes mediante un ensayo enzimático basado en la actividad de la β-galactosidasa. La enzima convierte el sustrato del cartucho en un producto fluorescente, lo que permite detectar las células marcadas mediante citometría de flujo.
+CBC significa Coliform Bacteria Count (recuento de bacterias coliformes). El cartucho CBC mide la concentración de bacterias coliformes mediante un ensayo enzimático basado en la actividad de la β-galactosidasa. La enzima convierte el sustrato del cartucho en un producto fluorescente, lo que permite detectar las células marcadas mediante citometría de flujo.
 
 **Tabla 11-7 Conjunto de regiones utilizado para el cartucho CBC.**
 
@@ -201,7 +201,7 @@ Para obtener más información sobre el ajuste de las regiones, consulte la secc
 
 ### 11.3.5 Cartucho EBC {#section-11-3-5}
 
-EBC significa E. coli Cell Count (recuento de células de E. coli). El cartucho EBC mide la concentración de bacterias *Escherichia coli* mediante un ensayo enzimático basado en la actividad de la β-glucuronidasa. La enzima convierte el sustrato del cartucho en un producto fluorescente, lo que permite detectar las células marcadas mediante citometría de flujo.
+EBC significa E. coli Bacteria Count (recuento de bacterias de E. coli). El cartucho EBC mide la concentración de bacterias *Escherichia coli* mediante un ensayo enzimático basado en la actividad de la β-glucuronidasa. La enzima convierte el sustrato del cartucho en un producto fluorescente, lo que permite detectar las células marcadas mediante citometría de flujo.
 
 **Tabla 11-9 Conjunto de regiones utilizado para el cartucho EBC.**
 
@@ -227,7 +227,7 @@ Para obtener más información sobre el ajuste de las regiones, consulte la secc
 
 ### 11.3.6 Cartucho NBC {#section-11-3-6}
 
-NBC significa Enterococcus Cell Count (recuento de células de enterococos). El cartucho NBC mide la concentración de enterococos mediante un ensayo enzimático basado en la actividad de la β-glucosidasa. La enzima convierte el sustrato del cartucho en un producto fluorescente, lo que permite detectar las células marcadas mediante citometría de flujo.
+NBC significa Enterococcus Bacteria Count (recuento de bacterias de enterococos). El cartucho NBC mide la concentración de enterococos mediante un ensayo enzimático basado en la actividad de la β-glucosidasa. La enzima convierte el sustrato del cartucho en un producto fluorescente, lo que permite detectar las células marcadas mediante citometría de flujo.
 
 **Tabla 11-11 Conjunto de regiones utilizado para el cartucho NBC.**
 
