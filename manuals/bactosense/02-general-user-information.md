@@ -34,7 +34,7 @@ Additional associated product documentation can be found in the table below.
 
 ## 2.2 Compliance and applied standards {#section-2-2}
 
-The BactoSense has been designed and manufactured to meet or exceed industry- recognized standards to ensure the safety, performance, and reliability of the product.
+The BactoSense has been designed and manufactured to meet or exceed industry-recognized standards to ensure the safety, performance, and reliability of the product.
 
 ![CE conformity mark](/img/manual/asset-5b67a16d691d.png "width=32 class=compliance-mark")
 

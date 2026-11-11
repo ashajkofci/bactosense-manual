@@ -46,7 +46,7 @@ Before working on the instrument, carefully read the safety points.
 
 ## 4.3 Placement of the BactoSwitch {#section-4-3}
 
-The BactoSwitch can be operated as a bench top instrument on a flat surface, or mounted to a wall or panel.
+The BactoSwitch can be operated as a benchtop instrument on a flat surface, or mounted to a wall or panel.
 
 :::info[Choose a suitable location]
 
@@ -212,7 +212,7 @@ The BactoSwitch and the BactoSense each have their own power supply type, with d
 
 :::
 
-The power supplies come in an IP67 enclosure and a cable with either a plug type J, type E, type G or type B.
+Each power supply comes in an IP67 enclosure with a cable fitted with a type J, type E, type G or type B plug.
 
 *Table 4-2 Part numbers of BactoSwitch and BactoSense power supplies*
 
@@ -272,7 +272,7 @@ The following procedure only applies if the BactoSwitch shall be connected to a 
 | 1. | :::danger[Disconnect the power supply] Ensure that the power supply is not connected to power. ::: Remove the cover of the enclosure by unscrewing the four screws (circles). | ![Four cover screws of the power supply enclosure](/img/bactoswitch/psu-cover-screws.png "width=238") |
 | 2. | Remove the C13 connector (A) and unscrew it to open.<br />![Opened C13 connector](/img/bactoswitch/psu-c13-connector-open.png "width=182") | ![Position of the C13 connector (A)](/img/bactoswitch/psu-c13-connector.png "width=238") |
 | 3. | Open the cable connector (Y) and insert the new cable.<br /><br />Cable lengths and wire cross sections:<br />• 0 – 9 m (0 – 30 ft), 1 mm<sup>2</sup><br />• 9 – 21 m (30 – 69 ft), 1.5 mm<sup>2</sup> (maximal)<br /><br />The cable connector is dimensioned for a cable diameter of 3 – 10 mm (0.12″ – 0.39″). | ![Cable connector (Y) and terminal with N, PE and L wires](/img/bactoswitch/psu-cable-wiring.png "width=238") |
-| 4. | :::danger[Connect protective earth] Tighten the 3 wires (N, PE, L) in the electrical terminal and block the cable isolation. ::: Ensure that a plug with Protective Earth (PE) is used and the device is correctly connected to it. | See the inset in the image above. |
+| 4. | :::danger[Connect protective earth] Tighten the 3 wires (N, PE, L) in the electrical terminal and secure the cable insulation. ::: Ensure that a plug with Protective Earth (PE) is used and the device is correctly connected to it. | See the inset in the image above. |
 | 5. | Close the C13 connector (A) using the screw and plug it into the power supply. Tighten the cable connector. Try to pull the cable to assess whether the cable connector is tight enough. | ![Closed C13 connector (A) in the power supply](/img/bactoswitch/psu-c13-connector-closed.png "width=226") |
 | 6. | Optional: the power supply can be mounted on a wall. M4 screws should be used with a minimum length of 20 mm. With the cover still removed, place the 4 screws and fix the enclosure to the wall. | ![Wall mounting hole distances of the power supply](/img/bactoswitch/psu-wall-mounting.png "width=238") |
 | 7. | Put the cover of the enclosure back and tighten the four screws to seal it. | ![Four cover screws of the power supply enclosure](/img/bactoswitch/psu-cover-screws.png "width=238") |

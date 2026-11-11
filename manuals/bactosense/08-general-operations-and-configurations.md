@@ -8,7 +8,7 @@ description: "BactoSense user manual: General Operations and Configurations."
 
 ## 8.1 Switching on and off {#section-8-1}
 
-The power button of the BactoSense is located on the right hand-side of the instrument.
+The power button of the BactoSense is located on the right-hand side of the instrument.
 
 ![Original manual illustration, printed page 58](/img/manual/asset-9b1ae5aeca7f.png "width=160")
 
@@ -20,7 +20,7 @@ Before switching the BactoSense on, make sure that the instrument is connected t
 
 :::
 
-**Switching on** To switch the BactoSense on, shortly press on the power button. The power button LED  lights up constantly and after a few seconds, the welcome screen is displayed on the user  interface.
+**Switching on** To switch the BactoSense on, briefly press the power button. The power button LED remains lit, and after a few seconds, the welcome screen is displayed on the user interface.
 
 **Switching off** If you are logged in and want to switch the BactoSense off, tap on the logout button on the  top right corner of the user interface and select *Power off*. If you want to switch off from  the login page itself, press the power button for 10 seconds.
 
@@ -50,14 +50,14 @@ Login and logout can be performed using the login button displayed in the top ri
 
 |  | WORK STEP |
 | --- | --- |
-| 1. | Make sure all processes (e.g. measurements or cleanings) have completed. The idle state of the instrument is indicated on the left hand-side of the top bar of the BactoSense user interface. |
+| 1. | Make sure all processes (e.g. measurements or cleaning cycles) have completed. The idle state of the instrument is indicated on the left-hand side of the top bar of the BactoSense user interface. |
 | 2. | Press the logout button in the top right corner of the user interface. |
 | 3. | Select Log out / Lock screen. |
 | 4. | To log in again, follow the procedure described in [Login](08-general-operations-and-configurations.md#section-8-2-1). |
 
 ### 8.2.3 Auto-logout {#section-8-2-3}
 
-It is possible to configure an automated logout after predefined period of inactivity.
+It is possible to configure an automatic logout after a predefined period of inactivity.
 
 |  | WORK STEP | ADDITIONAL INFO / IMAGE |
 | --- | --- | --- |
@@ -70,7 +70,7 @@ It is possible to configure an automated logout after predefined period of inact
 
 ### 8.2.4 Activating advanced user management mode {#section-8-2-4}
 
-With the *Advanced User Management* feature, an instrument admin can create different  users and assign different user roles (Basic, Advanced, Admin). This allows to give different  permissions to individual users, and log their activity for the audit trail.
+With the *Advanced User Management* feature, an instrument admin can create users and assign different user roles (Basic, Advanced, Admin). This allows the admin to give different permissions to individual users and log their activity for the audit trail.
 
 Advanced user management mode is available for BactoSense SMART and PURE, and  BactoSense CORE or BactoSense ID upgraded with the management package (see [Management package](09-upgrade-packages.md#section-9-2)).
 
@@ -88,7 +88,7 @@ Each user role is password protected.
 
 **Setting a password at first login** Upon initial login with any user role, click *OK* when being prompted for a password. This  action will initiate the guided process for configuring your password. The only exception is  the service password, where a preset password is provided.
 
-**Setting and changing a passwords** Each user profile can change its own password. Admin users are allowed to change  passwords from other user profiles. The following procedure describes how to change  passwords.
+**Setting and changing passwords** Each user profile can change its own password. Admin users are allowed to change the passwords of other user profiles. The following procedure describes how to change passwords.
 
 |  | WORK STEP | ADDITIONAL INFO / IMAGES |
 | --- | --- | --- |
@@ -98,7 +98,7 @@ Each user role is password protected.
 
 ### 8.2.6 Changing password settings {#section-8-2-6}
 
-Several password features such as expiration, length etc can be configured.
+Several password requirements, such as expiration and length, can be configured.
 
 |  | WORK STEP | ADDITIONAL INFO / IMAGE |
 | --- | --- | --- |
@@ -232,7 +232,7 @@ You can turn on audible notifications to indicate the end of a manual measuremen
 
 ## 8.4 Import / export settings {#section-8-4}
 
-Settings are exported to a USB drive as per [Export settings, diagnostics, or all to USB device](12-data-access-and-export.md#section-12-1-1). The settings are compiled to a  timestamped file ending with ***.bnv**. In order to import the settings in a new instrument, or  as a backup, it is necessary to copy the ***.bnv** file at the root of the USB drive, or in the  directory the file was exported to. If multiple copies of the settings are located in one USB  drive, the system will use the most recent one.
+Settings are exported to a USB drive as described in [Export settings, diagnostics, or all to USB device](12-data-access-and-export.md#section-12-1-1). The settings are saved in a timestamped file with the `.bnv` extension. To import the settings into a new instrument or restore a backup, copy the `*.bnv` file to the root of the USB drive or to the directory it was exported to. If multiple copies of the settings are located on one USB drive, the system will use the most recent one.
 
 |  | WORK STEP | ADDITIONAL INFO / IMAGE |
 | --- | --- | --- |
@@ -344,7 +344,7 @@ The main elements of the user interface are:
 
 </div>
 
-Depending on the user role, some options may not be visible or disabled.
+Depending on the user role, some options may be hidden or disabled.
 
 ### 8.8.2 Top bar status icons {#section-8-8-2}
 
@@ -363,7 +363,7 @@ Top bar icons are displayed in the bar in the top of the display. They indicate 
 
 ## 8.9 Cartridge management {#section-8-9}
 
-The BactoSense cartridges contain the reagents required for measuring and maintaining the instrument clean. Available cartridge types are TCC (Total Cell Count), ICC (Intact Cell Count), EBC (E. coli Cell Count), ACC (Active Cell Count), CBC (Coliform Cell Count), and NBC (Enterococcus Cell Count). The following sections explain cartridge handling. Cartridge storage, transportation and refill are described in [Storage, Transport and Disposal](17-storage-transport-and-disposal.md).
+The BactoSense cartridges contain the reagents required for measurements and for keeping the instrument clean. Available cartridge types are TCC (Total Cell Count), ICC (Intact Cell Count), EBC (E. coli Cell Count), ACC (Active Cell Count), CBC (Coliform Cell Count), and NBC (Enterococcus Cell Count). The following sections explain cartridge handling. Cartridge storage, transportation and refill are described in [Storage, Transport and Disposal](17-storage-transport-and-disposal.md).
 
 ### 8.9.1 General instructions for cartridge handling {#section-8-9-1}
 
@@ -441,7 +441,7 @@ Strictly follow the procedure in the on-screen wizard.  **Do not remove or insta
 | 3\. | Press the Maintenance button. | Basic users skip this step. |
 | 4\. | Press the Cartridge change button. |  |
 | 5\. | Select Change cartridge. |  |
-| 6\. | :::warning[Follow the cartridge wizard] Confirm to follow the instructions of the on- screen wizard. Only open the cartridge compartment door when instructed.  Adhere to the general cartridge handling instruction in [General instructions for cartridge handling](../general-operations-and-configurations/#section-8-9-1).  Wear nitrile gloves and safety glasses. Tightly seal the fluidic connectors of the old cartridge with the attached  plugs before removing it. Make sure the cartridge compartment door is tightly closed  and secured at the end. ::: | :::warning[Skipping the cartridge wizard] Only very experienced users mastering safe cartridge  operations are allowed to skip the on-screen instructions. In case of TCC or ICC cartridges, make sure the  unused fifth connector is always mounted to the connector rack to prevent contamination. ::: |
+| 6\. | :::warning[Follow the cartridge wizard] Confirm that you will follow the instructions of the on-screen wizard. Only open the cartridge compartment door when instructed. Adhere to the general cartridge handling instructions in [General instructions for cartridge handling](../general-operations-and-configurations/#section-8-9-1). Wear nitrile gloves and safety glasses. Tightly seal the fluidic connectors of the old cartridge with the attached plugs before removing it. Make sure the cartridge compartment door is tightly closed and secured at the end. ::: | :::warning[Skipping the cartridge wizard] Only very experienced users mastering safe cartridge  operations are allowed to skip the on-screen instructions. In case of TCC or ICC cartridges, make sure the  unused fifth connector is always mounted to the connector rack to prevent contamination. ::: |
 | 7\. | Handling the removed cartridge • If you wish to store the removed cartridge, refer to the storage instructions in [Storage of the cartridge](../storage-transport-and-disposal/#section-17-1-3). • If you wish to refill the removed cartridge, refer to the refill instructions in [Returning a cartridge for refill](../storage-transport-and-disposal/#section-17-3-2). |  |
 
 ### 8.9.5 Removing a cartridge {#section-8-9-5}
@@ -460,7 +460,7 @@ Strictly follow the procedure in the on-screen wizard.  **Do not remove or insta
 | 2\. | Press the Maintenance button. | Basic users skip this step. |
 | 3\. | Press the Cartridge change button. |  |
 | 4\. | Select Remove cartridge. |  |
-| 5\. | :::warning[Follow the cartridge wizard] Confirm to follow the instructions of the on- screen wizard. Only open the cartridge compartment door when instructed.  Adhere to the general cartridge handling instruction in [General instructions for cartridge handling](../general-operations-and-configurations/#section-8-9-1).  Wear nitrile gloves and safety glasses. Tightly seal the fluidic connectors of the old cartridge with the attached  plugs before removing it. Make sure the cartridge compartment door is tightly closed  and secured at the end. ::: | :::warning[Skipping the cartridge wizard] Only very experienced users mastering safe cartridge  operations are allowed to skip the on-screen instructions. ::: |
+| 5\. | :::warning[Follow the cartridge wizard] Confirm that you will follow the instructions of the on-screen wizard. Only open the cartridge compartment door when instructed. Adhere to the general cartridge handling instructions in [General instructions for cartridge handling](../general-operations-and-configurations/#section-8-9-1). Wear nitrile gloves and safety glasses. Tightly seal the fluidic connectors of the old cartridge with the attached plugs before removing it. Make sure the cartridge compartment door is tightly closed and secured at the end. ::: | :::warning[Skipping the cartridge wizard] Only very experienced users mastering safe cartridge  operations are allowed to skip the on-screen instructions. ::: |
 | 6\. | Handling of the removed cartridge • If you wish to store the removed cartridge, refer to the storage instructions in [Storage of the cartridge](../storage-transport-and-disposal/#section-17-1-3). • If you wish to refill the removed cartridge, refer to the refill instructions in [Returning a cartridge for refill](../storage-transport-and-disposal/#section-17-3-2). | The top bar of the user interface indicates that no cartridge is connected. In the Settings menu, Maintenance is highlighted; Basic users see the highlighted Cartridge change button directly.<br />![BactoSense — Cartridge not ready](/img/gui/icons/cartridge-not-ready-status.png "width=30 class=manual-icon") |
 
 ### 8.9.6 Installing a cartridge {#section-8-9-6}
@@ -480,8 +480,8 @@ Strictly follow the procedure of the on-screen wizard.  **Do not remove or insta
 | 3\. | Press the Maintenance button. | The Maintenance button is highlighted in orange in case no cartridge is installed. Basic users skip this step. |
 | 4\. | Press the Cartridge change button. |  |
 | 5\. | Select Install cartridge. |  |
-| 6\. | :::warning[Follow the cartridge wizard] Confirm to follow the instructions of the on- screen wizard. Only open the cartridge compartment door when instructed.  Adhere to the general cartridge handling instruction in [General instructions for cartridge handling](../general-operations-and-configurations/#section-8-9-1).  Wear nitrile gloves and safety glasses. Make sure the cartridge compartment door is tightly closed  and secured at the end. ::: | :::warning[Skipping the cartridge wizard] Only very experienced users mastering safe cartridge  operations are allowed to skip the on-screen instructions. In case of TCC or ICC cartridges, make sure the  unused fifth connector is always mounted to the connector rack to prevent contamination. ::: |
-| 7\. | After following through all steps of the on- screen wizard, the new cartridge is properly initialized. | The cartridge status is indicated with a cartridge symbol in the top bar of the user interface, see [Top bar status icons](../general-operations-and-configurations/#section-8-8-2). |
+| 6\. | :::warning[Follow the cartridge wizard] Confirm that you will follow the instructions of the on-screen wizard. Only open the cartridge compartment door when instructed. Adhere to the general cartridge handling instructions in [General instructions for cartridge handling](../general-operations-and-configurations/#section-8-9-1). Wear nitrile gloves and safety glasses. Make sure the cartridge compartment door is tightly closed and secured at the end. ::: | :::warning[Skipping the cartridge wizard] Only very experienced users mastering safe cartridge  operations are allowed to skip the on-screen instructions. In case of TCC or ICC cartridges, make sure the  unused fifth connector is always mounted to the connector rack to prevent contamination. ::: |
+| 7\. | After completing all steps of the on-screen wizard, the new cartridge is properly initialized. | The cartridge status is indicated with a cartridge symbol in the top bar of the user interface, see [Top bar status icons](../general-operations-and-configurations/#section-8-8-2). |
 
 ## 8.10 Switching between sampling devices {#section-8-10}
 
@@ -510,7 +510,7 @@ Avoid contamination of the equipment. Wear nitrile gloves when handling samples,
 | 4. | Remove the online sampling device. Make sure the white sealing plug still sits tightly in the connector of the sampling device. If not, it may have remained in the BactoSense sampling device connector. In this case carefully remove it with tweezers and place it back in the sampling device. |
 | 5. | Disconnect and drain the inlet and outlet tubings from the water source and the sampling device body. |
 | 6. | Inspect the inlet and outlet tubings for contamination and damage. Only reuse clean and intact tubings. |
-| 7. | If you want to store the sampling device, place the device and the tubings separately in a clean and dry plastic bags and follow the storage instructions in [Storage of the sampling devices](17-storage-transport-and-disposal.md#section-17-1-2). |
+| 7. | If you want to store the sampling device, place the device and the tubings in separate clean, dry plastic bags and follow the storage instructions in [Storage of the sampling devices](17-storage-transport-and-disposal.md#section-17-1-2). |
 | 8. | To mount now the manual sampling device, see [Installation of the manual sampling device](05-installation.md#section-5-4). |
 
 ### 8.10.2 Removal of the manual sampling device {#section-8-10-2}

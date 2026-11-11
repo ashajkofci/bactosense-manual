@@ -39,7 +39,7 @@ Before working on the instrument, ensure that you have carefully read the safety
 
 Preventive maintenance of the BactoSense is a scheduled intervention to replace wear parts, update the software and inspect and validate the instrument. Preventive maintenance is important to prevent failures and optimize the performance and reliability. It can only be conducted by service professionals specifically trained by bNovate.
 
-A preventive maintenance is due after the consumption of either 3 cartridges or 1 year, whichever comes first.
+Preventive maintenance is due after the use of 3 cartridges or after 1 year, whichever comes first.
 
 Contact bNovate support or your local service partner to see available options. Contact details can be found in [Contacting customer service](19-contact.md#section-19-1).
 
@@ -137,7 +137,7 @@ This protocol describes how to clean the manual sampling device without the Wash
 
 ### 15.2.4 Clean online sampling device {#section-15-2-4}
 
-The following procedure helps clearing biological contaminations of the online sampling device. In case of persistent biological contaminations or suspected non-biological contaminations, change the online sampling device tubings as described in [Replacing online sampling device tubings](15-maintenance.md#section-15-2-5) and contact support@bnovate.com for assistance.
+The following procedure helps clear biological contamination from the online sampling device. In case of persistent biological contamination or suspected non-biological contamination, change the online sampling device tubing as described in [Replacing online sampling device tubings](15-maintenance.md#section-15-2-5) and contact support@bnovate.com for assistance.
 
 |  | WORK STEP | ADDITIONAL INFO / IMAGES |
 | --- | --- | --- |
@@ -148,11 +148,11 @@ The following procedure helps clearing biological contaminations of the online s
 | 5. | After finishing, press New to return to the protocol list. |  |
 | 6. | Select the Prime protocol and configure 2 replications. |  |
 | 7. | Press Next and Start to launch the priming. |  |
-| 8. | After completion the online sampling device should be clear of minor biological contaminations and you can return to regular operation. In case contaminations persist or if a non- biological contamination is suspected, contact support@bnovate.com for assistance. |  |
+| 8. | After completion, the online sampling device should be clear of minor biological contamination and you can return to regular operation. If contamination persists or non-biological contamination is suspected, contact support@bnovate.com for assistance. |  |
 
 ### 15.2.5 Replacing online sampling device tubings {#section-15-2-5}
 
-The inlet- and outlet tubings of the online sampling device must be exchanged if they show signs of damage or contamination. The required materials are the inlet and outlet tubing and two ferrules. For specifications refer to [Technical data](03-instrument-overview.md#section-3-2), and for the part numbers to [Consumables](18-supply-scope-accessories-and-consumables.md#section-18-3).
+The inlet and outlet tubing of the online sampling device must be replaced if they show signs of damage or contamination. The required materials are the inlet and outlet tubing and two ferrules. For specifications refer to [Technical data](03-instrument-overview.md#section-3-2), and for the part numbers to [Consumables](18-supply-scope-accessories-and-consumables.md#section-18-3).
 
 :::caution[Do not use a spanner]
 

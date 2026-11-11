@@ -6,7 +6,7 @@ sidebar_position: 6
 description: "BactoSense user manual: I/O-Box."
 ---
 
-The IO-box is an accessory to the BactoSense. It can be used to connect the in- and outputs  of the BactoSense to a PLC/SCADA system.
+The I/O-Box is an accessory to the BactoSense. It can be used to connect the inputs and outputs of the BactoSense to a PLC/SCADA system.
 
 As an alternative to the I/O-Box, Modbus TCP can be used. Details can be found in [Modbus TCP](07-field-bus-interface.md#section-7-1).
 
@@ -21,7 +21,7 @@ Carefully read the technical specifications before preparing the integration.
 ### 6.1.1 Digital inputs {#section-6-1-1}
 
 - Use: 4 digital inputs referenced to Common allow the instrument to be controlled by an  external voltage (e.g. voltage coming out of a PLC).
-- Specifications: optocoupler input: forward voltage 1.2 VDC with 3 kΩ in serial, cathode  connected to COMMON, max. 30 mA, max. 50 mW.
+- Specifications: optocoupler input: forward voltage 1.2 VDC with 3 kΩ in series, cathode connected to COMMON, max. 30 mA, max. 50 mW.
 
 Additional notes
 
@@ -57,8 +57,8 @@ Additional notes
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| ① | Position of the digital outputs<br />Terminals 1 – 8<br />Cable requirements:<br />• AWG 12 – 22<br />• Cross section: 0.25 – 2.5 mm2 | ② | Position of the analogue outputs<br />Terminals 9 – 12<br />Cable requirements:<br />• AWG 12 – 22<br />• Cross section: 0.25 – 2.5 mm2 |
-| ③ | Position of the digital inputs<br />Terminals 14 – 18<br />Cable requirements:<br />• AWG 12 – 22<br />• Cross section: 0.25 – 2.5 mm2 |  | \< |
+| ① | Position of the digital outputs<br />Terminals 1 – 8<br />Cable requirements:<br />• AWG 12 – 22<br />• Cross section: 0.25 – 2.5 mm<sup>2</sup> | ② | Position of the analogue outputs<br />Terminals 9 – 12<br />Cable requirements:<br />• AWG 12 – 22<br />• Cross section: 0.25 – 2.5 mm<sup>2</sup> |
+| ③ | Position of the digital inputs<br />Terminals 14 – 18<br />Cable requirements:<br />• AWG 12 – 22<br />• Cross section: 0.25 – 2.5 mm<sup>2</sup> |  | \< |
 
 ### 6.1.6 IO-box reference table {#section-6-1-6}
 
@@ -104,7 +104,7 @@ Review the technical specifications in [Digital inputs](06-io-box.md#section-6-1
 
 ## 6.3 Connecting the outputs without IO-box {#section-6-3}
 
-The BactoSense exposes the outputs on a 12 pin M16 female connector. The use of an IO- box is recommended however. The pinout of the connector is given below.
+The BactoSense exposes the outputs on a 12-pin M16 female connector. However, the use of an I/O-Box is recommended. The pinout of the connector is given below.
 
 ![Original manual illustration, printed page 36](/img/manual/asset-223bcd55d2e3.png "width=160")
 
@@ -121,7 +121,7 @@ The BactoSense exposes the outputs on a 12 pin M16 female connector. The use of 
 
 ## 6.4 Connecting the inputs without IO-box {#section-6-4}
 
-The BactoSense exposes the inputs on a 5 pin M16 female connector. The use of an IO-box  is recommended. The pinout of the connector is given below.
+The BactoSense exposes the inputs on a 5-pin M16 female connector. The use of an I/O-Box is recommended. The pinout of the connector is given below.
 
 ![Original manual illustration, printed page 37](/img/manual/asset-b6ab0aef5737.png "width=120")
 
@@ -194,7 +194,7 @@ The values of digital outputs are modified in the following situations:
 - At the end of a measurement in Online mode, the outputs are changed to indicate errors  and alarms, according to user-defined settings.
 - When Reset is clicked on the output test screen or when Save is pressed on the digital  output settings, the outputs are updated to show the error state only (alarms are  ignored).
 - After manually clearing the errors, the outputs are automatically reset (and therefore  show the new error state and no alarms).
-- At specific times during the measurement, extra signals can be relayed. By default,  neither of them is relayed to the outputs. These are:
+- At specific times during the measurement, extra signals can be relayed. By default, none of them is relayed to the outputs. These are:
 
   - Process running. Active when a protocol is running.
 
@@ -289,7 +289,7 @@ Log in as Admin and use Test outputs while the instrument is idle, with PLC mode
 
 :::caution[Prevent unintended alarms]
 
-The Test outputs interface allows to generate a physical output signal for testing  purposes. Make sure that such tests do not generate an alarm on your control system.
+The Test outputs interface allows you to generate a physical output signal for testing purposes. Make sure that such tests do not generate an alarm on your control system.
 
 :::
 

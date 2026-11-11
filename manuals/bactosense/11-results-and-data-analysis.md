@@ -22,8 +22,8 @@ The figure below shows the result of a selected TCC measurement in Online mode. 
 | 5 | The measurement status field indicates alarms or warnings. Tap an alarm or warning indication to view its details. |
 | 6 | The Delete button removes the measurement permanently (requires confirmation). |
 | 7 | The Rename button can be used to change the measurement name. |
-| 8 | The Re-gate result button allows to apply a different gating to the measurement data. For details refer to [Regate measurements](../results-and-data-analysis/#section-11-4-1). |
-| 9 | The Export button allows to save this result to a USB stick. More information can be found in [Export to a USB drive](../measurements/#section-10-8-1). |
+| 8 | The Re-gate result button allows you to apply a different gating set to the measurement data. For details refer to [Regate measurements](../results-and-data-analysis/#section-11-4-1). |
+| 9 | The Export button allows you to save this result to a USB stick. More information can be found in [Export to a USB drive](../measurements/#section-10-8-1). |
 | 10 | The navigation buttons on the left and right of the result view allow you to navigate to the previous and next measurements, respectively. |
 | 11 | Touch the trend plot to open the Online mode plot (the full Online results chart). See [Reviewing automatic online measurements](../measurements/#section-10-2-3). |
 
@@ -257,14 +257,14 @@ For further information on how to adjust the gates see [Change gates](11-results
 
 Regating is the process of applying a different gating set to existing measurement data.
 
-- A prerequisite for regating is the presence of such additional gating set. On the Home screen, press Settings, then Gate settings to view the available gating sets.
+- A prerequisite for regating is the presence of an alternative gating set. On the Home screen, press Settings, then Gate settings to view the available gating sets.
 - The process of modifying an existing gating set is described in [Edit existing gating sets](11-results-and-data-analysis.md#section-11-4-3).
 
 |  | WORK STEP | ADDITIONAL INFO / IMAGES |
 | --- | --- | --- |
 | 1\. | On the Home screen, press Settings to open the settings menu. |  |
 | 2\. | Press Logs, then Results (manual mode) or Results (online mode), depending on how the measurement was performed. |  |
-| 3\. | To regate a single measurement, select the measurement to see the result details page. To regate multiple measurements (batch), long-press on the measurement, until it is highlighted and a check box appears on the left. Then tap on more measurement to also select them for regating. |  |
+| 3\. | To regate a single measurement, select the measurement to see the result details page. To regate multiple measurements (batch), long-press on a measurement until it is highlighted and a check box appears on the left. Then tap on additional measurements to select them for regating. |  |
 | 4\. | Press Re-gate result in the single-result view, or Re-gate when several measurements are selected. |  |
 | 5\. | Select the desired gating set by checking its box. |  |
 | 6\. | Press the Confirm button to start the regating process. | :::info[Additional information] Depending on the number of measurements, regating can take several minutes. ::: |
@@ -292,7 +292,7 @@ Creating a new gating set from scratch
 | 2. | Press the Gate settings button. |  |
 | 3. | In the action bar at the bottom, press New. |  |
 | 4. | Enter a name for the set of gates and select one of the available templates for the installed cartridge. |  |
-| 5. | Then follow the gate configuration on- screen wizard as describe in the gate editing instructions in [Edit existing gating sets](11-results-and-data-analysis.md#section-11-4-3). |  |
+| 5. | Then follow the on-screen gate configuration wizard as described in [Edit existing gating sets](11-results-and-data-analysis.md#section-11-4-3). |  |
 | 6. | After finishing, you can select the new gating set when creating new measurements, or regate existing measurements, as described in [Regate measurements](11-results-and-data-analysis.md#section-11-4-1). |  |
 
 ### 11.4.3 Edit existing gating sets {#section-11-4-3}
@@ -341,13 +341,13 @@ The BactoSense is delivered with default gate sets that are suitable for the vas
 | 6\. | Press Next and Save. For a new template, confirm with Yes. For an edited set, choose Save or Save as new set in the save dialog. |  |
 | 7\. | Navigate to the result view of the water sample you measured previously. |  |
 | 8\. | On the result view, press the Re-gate result button. |  |
-| 9\. | Select the gate you just created, and re- process the data with the new gate by pressing the button Confirm. |  |
+| 9\. | Select the gate you just created, and reprocess the data with the new gate by pressing the Confirm button. |  |
 | 10\. | Open the FL1 histogram and locate the first valley after the noise peak, i.e. the first minimum after the peak at the extreme left (arrow in the picture). Write down the FL1 value of this minimum (e.g. 3.8). | ![Illustration for table on manual page 109](/img/manual/cell-d44e977152e1.png "width=126 class=manual-figure") |
 | 11\. | Return to Gate settings and again edit your gate. Place the left limits of the gate at the previously determined FL1 value. This will exclude the electrical noise of the optical detectors. If needed, for the FL2 axis, place the points “b” and “c” of the gate just below the debris/background area (generally appearing as straight diagonals). | ![Illustration for table on manual page 109](/img/manual/cell-67de70c6bd1f.png "width=126 class=manual-figure") |
 | 12\. | Save the adjusted gate. |  |
 | 13\. | Navigate again to the result view of the water sample you measured previously. |  |
 | 14\. | On the result view, press the Re-gate result button. |  |
-| 15\. | Select the gate you just created, and re- process the data with the new gate by pressing the button Confirm. |  |
+| 15\. | Select the gate you just created, and reprocess the data with the new gate by pressing the Confirm button. |  |
 | 16\. | To place the HNA lower limit, open again the FL1 histogram and locate the minimum between the LNA and HNA peaks (vertical line on the image). Write down its FL1 value (e.g. 4.8). | ![Illustration for table on manual page 110](/img/manual/cell-3dd4365d2ad3.png "width=126 class=manual-figure") |
 | 17\. | Return to Gate settings and again edit your gate. |  |
 | 18\. | Navigate to the HNA lower limit configuration step. Enter the previously identified HNA lower limit to the FL1 field, press Save and select Save in the save dialog. |  |
@@ -374,7 +374,7 @@ For help with the setup of an advanced data analysis tool chain, please contact 
 
 ## 11.6 Comparison with other flow cytometers {#section-11-6}
 
-To compare results of the BactoSense to another flow cytometer, a reference solution containing auto fluorescent beads can be analyzed. This method allows the user to compare the measurement scales of different devices.
+To compare BactoSense results with those from another flow cytometer, a reference solution containing autofluorescent beads can be analyzed. This method allows the user to compare the measurement scales of different devices.
 
 <div className="manual-narrow-details-scroll manual-narrow-details manual-narrow-details-split">
 
@@ -386,11 +386,11 @@ To compare results of the BactoSense to another flow cytometer, a reference solu
 | 4\. | :::info[Additional information] Press the Home button. Press the Back button as many times as needed for the Home button to appear. ::: | ![BactoSense — Home button](/img/gui/icons/home-button.png "width=48 class=manual-icon") | ![BactoSense — Back button](/img/gui/icons/back-button.png "width=48 class=manual-icon") |
 | 5\. | On the Home screen, press Mode and select Manual mode. Press Back, then Measure to open the measurement wizard. |  | \< |
 | 6\. | Select Prime from the protocol list. | See [Performing a Prime](../measurements/#section-10-9-3). | \< |
-| 7\. | Press the Next and Start button. Let the priming protocol finish. |  | \< |
+| 7\. | Press Next, then Start. Let the priming protocol finish. |  | \< |
 | 8\. | Press New, choose Beads Analysis from the list, then press Next and Start. |  | \< |
 | 9\. | Wait for the results and if necessary, precisely adjust the gate of the FL1 vs FL2 dot plot to count only the 4 populations of beads. It is important to ensure that noise, background, and debris are not counted into the gate. | See [Edit existing gating sets](../results-and-data-analysis/#section-11-4-3) to adjust the gate.<br />![Illustration for table on manual page 112](/img/manual/render-fa85ea9255cb.webp "width=246 class=manual-figure") | \< |
 | 10\. | On the FL1 vs counts histogram, estimate the log value of each peak’s center on the FL1 axis. In this example, we obtain approximately (in log): 1<sup>st</sup> peak = 4.05 2<sup>nd</sup> peak = 4.3 3<sup>rd</sup> peak = 5.35 4<sup>th</sup> peak = 6.2 | ![Illustration for table on manual page 113](/img/manual/cell-c2ba9a559620.png "width=246 class=manual-figure") | \< |
-| 11\. | Measure the same beads with the other flow cytometer you want to compare and repeat the steps 10 and 11. In this example, we obtain approximately (in log): 1<sup>st</sup> peak = log(10<sup>3</sup>) = 3 2<sup>nd</sup> peak = log(2*10<sup>3</sup>) = 3.3 3<sup>rd</sup> peak = log(2.4*10<sup>4</sup>) = 4.4 4<sup>th</sup> peak = log(1.6*10<sup>5</sup>) = 5.2 | ![Illustration for table on manual page 113](/img/manual/cell-4c2343e0bbfe.png "width=246 class=manual-figure") | \< |
+| 11\. | Measure the same beads with the other flow cytometer you want to compare. Apply the gating and peak-estimation steps described in steps 9 and 10 to its results. In this example, we obtain approximately (in log): 1<sup>st</sup> peak = log(10<sup>3</sup>) = 3 2<sup>nd</sup> peak = log(2*10<sup>3</sup>) = 3.3 3<sup>rd</sup> peak = log(2.4*10<sup>4</sup>) = 4.4 4<sup>th</sup> peak = log(1.6*10<sup>5</sup>) = 5.2 | ![Illustration for table on manual page 113](/img/manual/cell-4c2343e0bbfe.png "width=246 class=manual-figure") | \< |
 | 12\. | With the different values obtained for both devices, it is now possible to compare their scales and their measurement windows. |  | \< |
 
 </div>

@@ -145,7 +145,7 @@ To use one constant interval again, press **Back** from the preview to the rules
 
 ## 10.3 Measuring in manual mode {#section-10-3}
 
-Measuring in manual mode describes a configuration, in which the manual sampling device is connected to the BactoSense, and the operator attaches individual grab samples collected in 5 mL screw cap tubes to the instrument.
+Measuring in manual mode describes a configuration in which the manual sampling device is connected to the BactoSense, and the operator attaches individual grab samples collected in 5 mL screw-cap tubes to the instrument.
 
 ### 10.3.1 Performing a measurement in manual mode {#section-10-3-1}
 
@@ -177,7 +177,7 @@ Measurements can be renamed from their result details view.
 |  | WORK STEP |
 | --- | --- |
 | 1. | On the Home screen, press Settings, then Logs, and select Results (manual mode) or Results (online mode). |
-| 2. | In the results list, select the measurement you want to rename. Exception: If you want to rename a group of replicates (see [Working with measurement replicates](10-measurements.md#section-10-5)), long- press on the group of replicates and then press the rename button. |
+| 2. | In the results list, select the measurement you want to rename. Exception: If you want to rename a group of replicates (see [Working with measurement replicates](10-measurements.md#section-10-5)), long-press on the group of replicates and then press the rename button. |
 | 3. | In the result details view, press the Rename button (see [Measurement results](11-results-and-data-analysis.md#section-11-1)). |
 | 4. | A keyboard and text field with the current sample name will appear. Use the keyboard to change the sample name and press OK. |
 
@@ -251,15 +251,17 @@ Maintenance protocols can be executed before or between analysis protocols, to p
 | PROTOCOL NAME | PROTOCOL DESCRIPTION |
 | --- | --- |
 | Clean Optics | Launches a cleaning step that washes all components in contact with the sample inside the BactoSense, except the sampling device. |
-| Clean Sampling Device with Washstation | Cleans the manual sampling device such that the outside filter, the needle's interior and exterior can be fully washed between measurements, after a dirty sample or in case of filter blockage. The Washstation device must be mounted on the manual sampling device and a cartridge must be installed for this protocol to appear. This protocol has a higher disinfection power than the Clean Sampling Device protocol and should therefore be preferred. Using the Washstation is the best way to keep the manual sampling device clean and to avoid cross- contaminations. Instructions for this protocol can be found in [Clean manual sampling device with Washstation](15-maintenance.md#section-15-2-2). |
+| Clean Sampling Device with Washstation | Cleans the manual sampling device such that the outside filter, the needle's interior and exterior can be fully washed between measurements, after a dirty sample or in case of filter blockage. The Washstation device must be mounted on the manual sampling device and a cartridge must be installed for this protocol to appear. This protocol has a higher disinfection power than the Clean Sampling Device protocol and should therefore be preferred. Using the Washstation is the best way to keep the manual sampling device clean and to avoid cross-contamination. Instructions for this protocol can be found in [Clean manual sampling device with Washstation](15-maintenance.md#section-15-2-2). |
 | Clean Sampling Device | Cleans the sampling device so that the external filter and the needle’s interior can be washed after an extremely loaded sample or in case of filter blockage. Instructions for this protocol can be found in [Clean manual sampling device with basic cleaning](15-maintenance.md#section-15-2-3). |
 | Fill Tubing | Fills all tubing carrying reagents from the cartridge, to remove bubbles in the tubing. Cleans optics at the end of the process. |
-| Prime and Clean Optics | Fills the tubing with liquid from the sample. Helps to dilute any residues after a clean sampling device for instance. Is finished by the cleaning step. |
+| Prime and Clean Optics | Fills the tubing with liquid from the sample. Helps to dilute any residues, for example after a Clean Sampling Device protocol. Finishes with a cleaning step. |
 | Prime | Loads sample into the instrument. Instructions can be found in [Performing a Prime](10-measurements.md#section-10-9-3). |
 
 ### 10.9.2 Overview of protocols in Online mode {#section-10-9-2}
 
-Operators can choose between two analysis protocols in Online mode. Table 10-3 Analysis protocols for Online mode
+Operators can choose between two analysis protocols in Online mode.
+
+**Table 10-3 Analysis protocols for Online mode**
 
 | PROTOCOL NAME | PROTOCOL DESCRIPTION |
 | --- | --- |

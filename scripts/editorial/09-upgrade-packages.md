@@ -11,15 +11,15 @@ The *Scientific Package* is intended for water research professionals to perform
 
 - It is available for TCC and ICC cartridges.
 - The result parameter is a cell concentration named “Gate+”.
-- The gate can be adjusted similar to the TCC or ICC default gates. Please refer to [Change gates](11-results-and-data-analysis.md#section-11-4).
+- The gate can be adjusted in the same way as the TCC or ICC default gates. Please refer to [Change gates](11-results-and-data-analysis.md#section-11-4).
 
 **Forward and side scatter detector** The Forward Scatter (FSC) detector measures light that is scattered by bacteria or other  particles. The detector is placed at a small angle to the laser beam’s direction, thus  measuring light signals in “forward” direction.  In contrast, the Side Scatter (SSC) detector is placed at 90 degrees from the beam’s  direction, measuring light scattered towards the side.  The combination of fluorescence and scattering information provides high content data,  enabling applications like microbiological fingerprinting, profiling or anomaly detection. In particular, the scattering detectors permit accurate fingerprinting (BactoScore) to follow changes in the bacterial population.
 
 Scattering data is available in the following ways:
 
 - in the flow cytometry standard (FCS) files. For more information about this file format  please refer to [Advanced data analysis](11-results-and-data-analysis.md#section-11-5).
-- on the BactoSense user interface as a FSC / SSC dotplot
-- on the web interface as a FSC / SSC dotplot
+- on the BactoSense user interface as an FSC / SSC dotplot
+- on the web interface as an FSC / SSC dotplot
 - when downloading the dotplots as images
 
 **Activation of the** **Scientific Package**
@@ -46,7 +46,7 @@ The *Management Package* is intended for instrument operation in environments wi
 - Audit trail
 - Advanced scheduler
 
-**Advanced User Management** With the *Advanced User Management* feature, the instrument owner can create different  users and assign different user roles (Basic, Advanced, Admin). This allows to give different  permissions to individual users, and log their activity for the audit trail.
+**Advanced User Management** With the *Advanced User Management* feature, the instrument owner can create users and assign different user roles (Basic, Advanced, Admin). This allows the owner to give different permissions to individual users and log their activity for the audit trail.
 
 **Audit Trail** The *Audit Trail* is a record of all relevant operations or changes that have been made with  the instrument. It provides a detailed history of actions taken by the user or the instrument  itself.  The *Audit Trail* can be accessed in the following ways:
 

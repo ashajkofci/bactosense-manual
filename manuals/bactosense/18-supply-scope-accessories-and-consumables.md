@@ -20,7 +20,7 @@ slug: /supply-scope-accessories-and-consumables
 
 ## 18.2 Accessories {#section-18-2}
 
-Accessories can be ordered upon need, for example if you need spare parts. bNovate Technologies recommends to order a second cartridge with your instrument in order to have a replacement cartridge when required.
+Accessories can be ordered as needed, for example if you need spare parts. bNovate Technologies recommends ordering a second cartridge with your instrument so that a replacement is available when required.
 
 **Table 18-2 Accessories for the BactoSense**
 

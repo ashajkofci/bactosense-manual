@@ -84,7 +84,7 @@ Virtual Network Computing (VNC) is a graphical desktop-sharing system to remotel
 
 :::caution[Restrict VNC access]
 
-VNC is an insecure protocol and is not recommended outside of a local network or with a VPN connection.
+VNC is an insecure protocol. Use it only on a trusted local network or through a VPN; do not expose it directly to the internet.
 
 :::
 

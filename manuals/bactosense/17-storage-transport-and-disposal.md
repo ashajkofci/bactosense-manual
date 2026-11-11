@@ -111,40 +111,34 @@ Refer to the following transportation instructions to safely transport the Bacto
 
 **Table 17-1 BactoSense transportation instructions**
 
-MODE INSTRUCTIONS
+**Standard shipping**
 
 - Remove the cartridge using the Remove cartridge procedure under Home → Settings → Maintenance → Cartridge change. Basic users open Cartridge change directly from Settings.
 - Pack BactoSense and cartridge in their standard cardboard boxes with foam inserts.
 - Ship on a pallet or skid.
 - Perform an instrument self-check ([Automatic self-check](16-warnings-errors-and-troubleshooting.md#section-16-6)) and an instrument validation using the Validation kit when reinstalling the instrument.
 
-Standard shipping
+**Long distance by car or uneven road by car**
 
 - Remove the cartridge using the Remove cartridge procedure under Home → Settings → Maintenance → Cartridge change. Basic users open Cartridge change directly from Settings.
 - Pack BactoSense and cartridge in their standard cardboard boxes with foam inserts, or alternatively use the transport case (see [Accessories](18-supply-scope-accessories-and-consumables.md#section-18-2)).
 - Perform a Clean sampling device with Washstation when reinstalling the instrument (see [Clean manual sampling device with Washstation](15-maintenance.md#section-15-2-2)).
 
-Long distance by car
-
-or
-
-Uneven road by car
+**Short distance by car, even road, instrument lying on its back**
 
 - Remove the cartridge using the Remove cartridge procedure under Home → Settings → Maintenance → Cartridge change. Basic users open Cartridge change directly from Settings.
 - Transport the BactoSense in the transport case (see [Accessories](18-supply-scope-accessories-and-consumables.md#section-18-2)).
 - Perform a Clean sampling device with Washstation when reinstalling the instrument (see [Clean manual sampling device with Washstation](15-maintenance.md#section-15-2-2)).
 
-Short distance by car, even road, instrument laying on its backside
+**Short distance by car, even road, instrument in upright position**
 
 - Transport in the transport case (see [Accessories](18-supply-scope-accessories-and-consumables.md#section-18-2)), without removing the cartridge.
 - Perform a Fill Tubing process after switching on the instrument again, see [Overview of protocols in manual mode](10-measurements.md#section-10-9-1).
 
-Short distance by car, even road, instrument in upright position
+**Short distance within facility, instrument in upright position**
 
 - Transport in the transport case (see [Accessories](18-supply-scope-accessories-and-consumables.md#section-18-2)) or by hand, without removing the cartridge.
 - Perform a Fill Tubing process after switching on the instrument again, see [Overview of protocols in manual mode](10-measurements.md#section-10-9-1).
-
-Short distance within facility, instrument in upright position
 
 ### 17.2.2 Transport of the cartridge {#section-17-2-2}
 
@@ -173,7 +167,7 @@ In case you return the BactoSense or accessories to bNovate or a distribution pa
 
 Do not return contaminated materials
 
-Instruments that have come into contact with hazardous media must not be sent without prior decontamination and accompanied certificate of decontamination. Contact support@bnovate.com for more information.
+Instruments that have come into contact with hazardous media must be decontaminated before shipment and must be accompanied by a certificate of decontamination. Contact support@bnovate.com for more information.
 
 :::
 
@@ -203,7 +197,9 @@ Preparations
 | 10. | If you ship additional items, label them with the serial number of the BactoSense. |
 | 11. | Indicate with stickers that the contents of the parcels are fragile, shall be kept dry, and shall only be transported in the indicated orientation. |
 
-Return Ship the BactoSense to bNovate or distribution partner, adhering to the general storage temperature and humidity requirements listed in [Technical data](03-instrument-overview.md#section-3-2) and [Storage of the BactoSense](17-storage-transport-and-disposal.md#section-17-1-1).
+**Return**
+
+Ship the BactoSense to bNovate or a distribution partner, adhering to the general storage temperature and humidity requirements listed in [Technical data](03-instrument-overview.md#section-3-2) and [Storage of the BactoSense](17-storage-transport-and-disposal.md#section-17-1-1).
 
 ### 17.3.2 Returning a cartridge for refill {#section-17-3-2}
 
@@ -216,7 +212,9 @@ Preparations
 | 3. | Pack the cartridge in its standard cardboard box. |
 | 4. | Indicate with stickers that the contents of the parcels are fragile, shall be kept dry, and shall only be transported in the indicated orientation. |
 
-Return for Refill Ship the cartridge to bNovate, adhering to the general storage temperature and humidity requirements listed in [Technical data](03-instrument-overview.md#section-3-2) and [Storage of the cartridge](17-storage-transport-and-disposal.md#section-17-1-3).
+**Return for refill**
+
+Ship the cartridge to bNovate, adhering to the general storage temperature and humidity requirements listed in [Technical data](03-instrument-overview.md#section-3-2) and [Storage of the cartridge](17-storage-transport-and-disposal.md#section-17-1-3).
 
 ## 17.4 Recycling and disposal {#section-17-4}
 
@@ -233,6 +231,6 @@ The disposal of the BactoSense, accessories and consumables has to be carried ou
 | Electronics | Printed circuit boards, electro-mechanical components | To be disposed as electronic waste. Follow the local legislation. |
 | Optics | Glass, aluminum | Recycling via centers for recycling glass and waste metal |
 | Housing | Styrene butadiene painted, stainless steel, polystyrene painted, Silica beads (Desiccant bag), filters | Local disposal center |
-| Cartridge | :::caution[Return used cartridges] Do not disassemble nor dispose the cartridge. ::: | Prepare the cartridge according to [Removing a cartridge](../general-operations-and-configurations/#section-8-9-5) and return the cartridge with a declaration to bNovate according to [Returning a cartridge for refill](../storage-transport-and-disposal/#section-17-3-2). |
+| Cartridge | :::caution[Return used cartridges] Do not disassemble or dispose of the cartridge. ::: | Prepare the cartridge according to [Removing a cartridge](../general-operations-and-configurations/#section-8-9-5) and return the cartridge with a declaration to bNovate according to [Returning a cartridge for refill](../storage-transport-and-disposal/#section-17-3-2). |
 
 ::::

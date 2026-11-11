@@ -8,7 +8,7 @@ description: "BactoSwitch user manual: Maintenance."
 
 ## 7.1 Maintenance by the user {#section-7-1}
 
-To ensure proper device functioning, the following maintenance can be undertaken by the user.
+To ensure proper functioning of the device, the following maintenance can be performed by the user.
 
 :::gloves[Wear nitrile gloves]
 
@@ -20,7 +20,7 @@ Avoid contamination of the equipment. Wear nitrile gloves when handling tubings 
 
 **Before performing any maintenance operation**
 
-- Close the On/Off valves at the water pipes connection.
+- Close the On/Off valves at the water pipe connections.
 - Disconnect the mains power supply to avoid any risk of short circuits.
 
 :::
@@ -38,18 +38,18 @@ Contact support@bnovate.com for questions.
 
 ### 7.1.2 Replacement of input tubings {#section-7-1-2}
 
-In the event of persistent biological or non-biological (e.g. iron, manganese) contamination of the tubings, these can be swapped by the user.
+In the event of persistent biological or non-biological (e.g. iron, manganese) contamination of the tubing, the user can replace it.
 
 :::warning[Before replacing tubings]
 
 **Before disconnecting the tubings**
 
-- Close the On/Off valves at the water pipes connection.
+- Close the On/Off valves at the water pipe connections.
 - Disconnect the mains power supply to avoid any risk of short circuits.
 
 :::
 
-## 7.2 Preventive maintenance by service professional {#section-7-2}
+## 7.2 Preventive maintenance by a service professional {#section-7-2}
 
 A yearly preventive maintenance intervention must be scheduled to replace wear parts, update software and firmware, and verify proper functioning of the device. This is important to prevent failures, optimize the performance and reliability, and ensure a long product lifetime.
 

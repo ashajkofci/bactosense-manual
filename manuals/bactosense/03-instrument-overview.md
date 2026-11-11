@@ -26,7 +26,7 @@ An overview of the cartridge can be found in [Cartridge overview](08-general-ope
 
 ### 3.1.1 Type plate of the BactoSense {#section-3-1-1}
 
-The type plate of the BactoSense can be found on the right hand-side of the instrument.
+The type plate of the BactoSense can be found on the right-hand side of the instrument.
 
 ![Original manual illustration, printed page 8](/img/manual/asset-24be208801eb.png "width=537")
 
@@ -92,9 +92,9 @@ The type plate of the BactoSense power supply can be found on the power supply a
 | USB | 2 x USB 3.1, 5 V 1 A per port<br />1 x USB-C |
 | Ethernet | 1 x RJ45 Gigabit Ethernet |
 | Ethernet protocols and options | Web interface<br />Remote desktop (VNC)<br />Modbus TCP<br />HTTP / HTTPS<br />FTP |
-| Digital inputs | 4 x digital inputs, optocoupler input: forward voltage 1.2 VDC with 3 kΩ in serial, cathode connected to COMMON, max. 30 mA, max. 50 mW |
+| Digital inputs | 4 x digital inputs, optocoupler input: forward voltage 1.2 VDC with 3 kΩ in series, cathode connected to COMMON, max. 30 mA, max. 50 mW |
 | Analogue and digital outputs | Analogue outputs:<br />2 x 0/4 – 20 mA, recommended 250 Ω load<br />Digital outputs:<br />4 x digital outputs, freely configurable,<br />SSR output: max. 48 VDC, max. 300 mW,<br />ON-resistance 2 Ω |
-| Display | WVGA, 7.0“capacitive touchscreen |
+| Display | WVGA, 7.0″ capacitive touchscreen |
 | Mobile connectivity | BactoLink connectivity module (optional) |
 | Advanced data analysis | FCS 3.1 file export |
 | Data storage capacity | 128 GB |

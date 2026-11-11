@@ -31,7 +31,7 @@ Carefully follow the procedure below to unpack the BactoSense instrument from it
 
 ## 5.2 Placement of the BactoSense {#section-5-2}
 
-The BactoSense can be operated as a bench top instrument on a flat surface, or mounted to  a wall or panel.
+The BactoSense can be operated as a benchtop instrument on a flat surface, or mounted to a wall or panel.
 
 :::info[Choose a suitable location]
 
@@ -51,7 +51,7 @@ The following procedure describes the mounting of the BactoSense to a vertical w
 |  | WORK STEP | ADDITIONAL INFO / IMAGES |
 | --- | --- | --- |
 | 1\. | Install two M8 screws at the same height, separated horizontally by 265 mm (10.4”) on a wall. The screw head diameter needs to be between 12 mm and 18 mm (0.47” – 0.71”) | :::caution[Secure wall mounting] The fixation must carry at least 60 kg (132 lbs). ::: |
-| 2\. | Adjust the distance of the screws head and the wall according to the picture on the right. X: Wall Y: Screw | ![Procedure illustration, printed page 18](/img/manual/asset-3668009808e6.png "width=256") |
+| 2\. | Adjust the distance between the screw heads and the wall according to the picture on the right. X: Wall Y: Screw | ![Procedure illustration, printed page 18](/img/manual/asset-3668009808e6.png "width=256") |
 | 3\. | Mount the BactoSense on the wall using its wall mounting system (red arrows). Tighten the two screws such that the BactoSense is firmly attached to the wall. | ![Procedure illustration, printed page 18](/img/manual/asset-63d339bcf0dc.png "width=240") |
 
 ## 5.3 Connecting the BactoSense to power {#section-5-3}
@@ -72,7 +72,7 @@ An uninterrupted and stable power supply as specified in [Technical data](03-ins
 
 :::
 
-The power supply comes in an IP67 enclosure and a cable with country-specific plug. For connecting the BactoSense to power using one of these plugs supplied by bNovate, follow the instructions in [Connecting using the standard plug of the power supply unit](05-installation.md#section-5-3-1).  For the connection using a different plug or power connectors, use the procedure described  in [Modifying the standard power supply unit with a different connector](05-installation.md#section-5-3-2).
+The power supply comes in an IP67 enclosure with a cable fitted with a country-specific plug. To connect the BactoSense to power using one of these plugs supplied by bNovate, follow the instructions in [Connecting using the standard plug of the power supply unit](05-installation.md#section-5-3-1). To connect using a different plug or power connector, use the procedure described in [Modifying the standard power supply unit with a different connector](05-installation.md#section-5-3-2).
 
 :::info[Keep the power disconnect accessible]
 
@@ -88,7 +88,7 @@ The following procedure describes how to connect the BactoSense to power using t
 |  | WORK STEP | ADDITIONAL INFO / IMAGES |
 | --- | --- | --- |
 | 1\. | Make sure the power supply unit is dry and does not show any signs of damage. |  |
-| 2\. | Plug the J, E, G or B-type plug of the power supply unit to a power source supplying the indicated voltage. |  |
+| 2\. | Plug the J, E, G or B-type plug of the power supply unit into a power source supplying the indicated voltage. |  |
 | 3\. | Remove the cover of the power connector socket on the BactoSense. |  |
 | 4\. | Insert the power connector plug into the power connector socket. | ![Procedure illustration, printed page 20](/img/manual/asset-93ac2cd7577d.png "width=241") |
 | 5\. | Fasten the power connector plug lock ring (X). If the power connector is connected correctly and the instrument is powered, the instrument power button starts blinking. | ![Procedure illustration, printed page 20](/img/manual/asset-fb64782b7a1f.png "width=240") |
@@ -127,9 +127,9 @@ The following procedure only applies, if the BactoSense shall be connected to a 
 | --- | --- | --- |
 | 1\. | :::danger[Disconnect the power supply] Ensure that the power supply is not connected to power.  Remove the cover of the enclosure by unscrewing the four screws (circles). ::: | ![Procedure illustration, printed page 21](/img/manual/asset-a4e9bfa03293.png "width=241") |
 | 2\. | Remove the C13 connector (A) and unscrew it to open.<br />![Illustration for Remove the C13 connector (A) and unscrew it to open.](/img/manual/asset-3c26b4a767ec.png "width=240") | ![Procedure illustration, printed page 21](/img/manual/asset-27e4522382d5.png "width=241") |
-| 3\. | Open the cable connector (Y) and insert the new cable. Cable lengths and wire cross sections: • 0 – 9 m (0 – 30 ft), 1 mm2 • 9 – 21 m (30 – 69 ft), 1.5 mm2 (maximal) The cable connector is dimensioned for a cable diameter of 3 – 10 mm (0.12” – 0.39”). | .<br />![Illustration for .](/img/manual/asset-00540f644f60.png "width=240") |
-| 4\. | :::danger[Connect protective earth] Tighten the 3 wires (N, PE, L) in the electrical terminal and block the cable isolation. Ensure, that a plug with Protective Earth (PE) is used and the device is  correctly connected to it. ::: | ^ |
-| 5\. | Close the C13 connector (A) using the screw and plug it in the power supply. Tighten the cable connector. Try to pull the cable to assess whether the cable connector is tight enough. | ![Procedure illustration, printed page 22](/img/manual/asset-27e4522382d5.png "width=241") |
+| 3\. | Open the cable connector (Y) and insert the new cable. Cable lengths and wire cross sections: • 0 – 9 m (0 – 30 ft), 1 mm<sup>2</sup> • 9 – 21 m (30 – 69 ft), 1.5 mm<sup>2</sup> (maximum). The cable connector is dimensioned for a cable diameter of 3 – 10 mm (0.12” – 0.39”). | ![Cable connector and terminal wiring](/img/manual/asset-00540f644f60.png "width=240") |
+| 4\. | :::danger[Connect protective earth] Tighten the 3 wires (N, PE, L) in the electrical terminal and secure the cable insulation. Ensure that a plug with Protective Earth (PE) is used and the device is correctly connected to it. ::: | ^ |
+| 5\. | Close the C13 connector (A) using the screw and plug it into the power supply. Tighten the cable connector. Try to pull the cable to assess whether the cable connector is tight enough. | ![Procedure illustration, printed page 22](/img/manual/asset-27e4522382d5.png "width=241") |
 | 6\. | Optional: the power supply can be mounted on a wall. M4 screws should be used with a minimum length of 20 mm. With the cover still removed, place the 4 screws and fix the enclosure to the wall. | ![Procedure illustration, printed page 22](/img/manual/asset-0ee15b02c033.png "width=257") |
 | 7\. | Put the cover of the enclosure back and tighten the four screws to seal it. | ![Procedure illustration, printed page 22](/img/manual/asset-a4e9bfa03293.png "width=239") |
 | 8\. | Connect the power supply unit to power and the instrument as described in [Connecting using the standard plug of the power supply unit](05-installation.md#section-5-3-1). |  |
@@ -153,7 +153,7 @@ Avoid contamination of the equipment. Wear nitrile gloves when handling samples,
 | --- | --- | --- |
 | 1\. | Inspect the manual sampling device • Make sure it is free of dust and fibers. If not, clean it with a lint-free tissue wetted with sterile water or ethanol • Make sure the white sealing plug is sitting tightly in the connector | ![Procedure illustration, printed page 23](/img/manual/asset-990519e959c3.png "width=282 class=manual-sampling-illustration") |
 | 2\. | Attach an empty 5 mL screw-cap tube or the Washstation at the sampling device. | ![Procedure illustration, printed page 23](/img/manual/asset-cdd539f42468.png "width=282 class=manual-sampling-illustration") |
-| 3\. | Carefully insert the connector of the sampling device into the sampling device port on the left hand-side of the BactoSense by inserting the metallic positioning pins located inside of the sampling device connector into the openings on the BactoSense sampling device port. | ![Procedure illustration, printed page 23](/img/manual/asset-7f15e58174d9.png "width=282 class=manual-sampling-illustration") |
+| 3\. | Carefully insert the connector of the sampling device into the sampling device port on the left-hand side of the BactoSense by inserting the metallic positioning pins located inside of the sampling device connector into the openings on the BactoSense sampling device port. | ![Procedure illustration, printed page 23](/img/manual/asset-7f15e58174d9.png "width=282 class=manual-sampling-illustration") |
 | 4\. | :::caution[Tighten by hand only] Then tighten the knurled fixation ring until the sampling device is installed tightly. Finger-tightening only. Do not use any tools. ::: | ![Procedure illustration, printed page 24](/img/manual/asset-0c86ff9377ac.png "width=282 class=manual-sampling-illustration") |
 | 5\. | It is recommended to clean the sampling device after installation. If a Washstation is available, follow the procedure in [Clean manual sampling device with Washstation](../maintenance/#section-15-2-2), otherwise the procedure in [Clean manual sampling device with basic cleaning](../maintenance/#section-15-2-3). |  |
 | 6\. | After the cleaning, it is recommended to perform a Prime prior to measuring the first sample. Follow the procedure in [Performing a Prime](../measurements/#section-10-9-3). |  |
@@ -218,7 +218,7 @@ In this section, the installation of the online sampling device with attached in
 3. Flow valve
 4. Reduction fittings
 
-#### In and outlet tubings
+#### Inlet and outlet tubing
 
 5. Backpressure loop
 6. Tubing fixation
@@ -238,7 +238,7 @@ In this section, the installation of the online sampling device with attached in
 
 1. Make sure the inlet and outlet tubings are firmly attached to the online sampling device.
 
-2. Carefully insert the connector of the sampling device into the sampling device port on the left hand-side of the BactoSense by inserting the metallic positioning pins located inside of the sampling device connector into the openings on the BactoSense sampling device port.
+2. Carefully insert the connector of the sampling device into the sampling device port on the left-hand side of the BactoSense by inserting the metallic positioning pins located inside of the sampling device connector into the openings on the BactoSense sampling device port.
 
     ![Procedure illustration, printed page 28](/img/manual/asset-255f328ed935.png "width=77")
 
