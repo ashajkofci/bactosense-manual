@@ -257,7 +257,10 @@ test('Agents API receives a structured translation task and completed sessions a
   assert.equal(actual, translated);
   assert.equal(seen.request.agent.model, 'test-model');
   assert.deepEqual(seen.request.environment, { type: 'none' });
-  assert.equal(seen.request.agent.text.format.type, 'json_schema');
+  assert.deepEqual(seen.request.agent.text.format, {
+    type: 'json_schema',
+    schema: { type: 'object', properties: { markdown: { type: 'string' } }, required: ['markdown'], additionalProperties: false },
+  });
   assert.deepEqual(seen.deleted, ['sess_test']);
   assert.deepEqual(seen.cancelled, []);
   assert(seen.aborted);
@@ -298,7 +301,9 @@ test('the installed SDK consumes the real Agents API event format without a netw
   assert.equal(requests.length, 2);
   assert.equal(requests[0].url, 'https://api.openai.com/v1/agents/sessions');
   assert.equal(requests[0].headers.get('OpenAI-Beta'), 'agents=v1');
-  assert.equal(JSON.parse(requests[0].body).agent.text.format.strict, true);
-  assert.equal(JSON.parse(requests[0].body).agent.model, 'gpt-6.1-terra');
+  const request = JSON.parse(requests[0].body);
+  // Agents JSON-schema formats accept only type and schema.
+  assert.deepEqual(Object.keys(request.agent.text.format).sort(), ['schema', 'type']);
+  assert.equal(request.agent.model, 'gpt-6.1-terra');
   assert.equal(requests[1].url, 'https://api.openai.com/v1/agents/sessions/sess_wire');
 });

@@ -117,7 +117,7 @@ export async function translateWithAgent(task, { client, model = process.env.OPE
     agent: {
       model, instructions, tools: [], multi_agent: { enabled: false },
       text: { format: {
-        type: 'json_schema', name: 'translated_document', strict: true,
+        type: 'json_schema',
         schema: { type: 'object', properties: { markdown: { type: 'string' } }, required: ['markdown'], additionalProperties: false },
       } },
     },
