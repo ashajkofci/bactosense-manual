@@ -82,9 +82,9 @@ BactoCloud comprend des fonctionnalités qui facilitent particulièrement la vis
 
 L’[interface utilisateur web](/bactosense/web-user-interface) du BactoSense comprend des fonctionnalités permettant de filtrer les données des différentes lignes du BactoSwitch.
 
-Dans l’onglet **Résultats**, partie **Résultats du mode en ligne**, il est possible de filtrer les données par **Nom** ou par **ID de ligne**. Ces champs correspondent aux numéros et aux noms de lignes définis à la section [Configuration des lignes](04-installation.md#section-4-6). Le filtrage s’applique également au graphique du mode en ligne.
+Dans l’onglet **Résultats**, partie **Résultats du mode en ligne**, il est possible de filtrer les données par **Nom** ou par **Stream ID**. **Nom** correspond au nom de la ligne et **Stream ID** au numéro de ligne défini à la section [Configuration des lignes](04-installation.md#section-4-6). Le filtrage s’applique également au graphique du mode en ligne.
 
-![Résultats du mode en ligne dans l’interface utilisateur web filtrés par nom, avec les colonnes Nom et ID de ligne mises en évidence](/img/gui/fr/bactoswitch-web-online-results.png "width=634")
+![Résultats du mode en ligne dans l’interface utilisateur web filtrés par nom, avec les colonnes Nom et Stream ID mises en évidence](/img/gui/fr/bactoswitch-web-online-results.png "width=634")
 
 ### 5.2.3 Contrôle du BactoSwitch via la boîte d’E/S du BactoSense {#section-5-2-3}
 

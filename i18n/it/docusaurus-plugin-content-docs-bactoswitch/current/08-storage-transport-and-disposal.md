@@ -19,7 +19,7 @@ Evitare la contaminazione dell’attrezzatura. Indossare guanti in nitrile quand
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINI |
 | --- | --- | --- |
 | 1. | Terminare qualsiasi serie di misure in corso. |  |
-| 2. | Chiudere le valvole di intercettazione in corrispondenza del collegamento alle tubazioni dell’acqua per arrestare il flusso d’acqua attraverso i tubi di BactoSwitch e il dispositivo di campionamento in linea. |  |
+| 2. | Chiudere le valvole di intercettazione in corrispondenza dei collegamenti alle tubazioni dell’acqua per arrestare il flusso d’acqua attraverso i tubi di BactoSwitch e il dispositivo di campionamento in linea. |  |
 | 3. | Scollegare l’alimentazione di rete di BactoSwitch per evitare qualsiasi rischio di cortocircuito. |  |
 | 4. | Rimuovere la spina del connettore di alimentazione dalla relativa presa e rimontare il tappo di protezione del connettore di alimentazione. |  |
 | 5. | Rimuovere il cavo USB-C sia da BactoSwitch sia da BactoSense e rimontare entrambi i tappi di protezione dei connettori. |  |

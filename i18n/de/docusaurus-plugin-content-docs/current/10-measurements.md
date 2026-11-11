@@ -254,12 +254,14 @@ Wartungsprotokolle können vor oder zwischen Analyseprotokollen durchgeführt we
 | Clean Sampling Device with Washstation (Probenahmegerät mit Washstation reinigen) | Reinigt das manuelle Probenahmegerät, sodass der äußere Filter sowie Innen- und Außenseite der Nadel zwischen Messungen, nach einer verschmutzten Probe oder bei einer Filterverstopfung vollständig gespült werden können. Damit dieses Protokoll erscheint, müssen die Washstation am manuellen Probenahmegerät und eine Kartusche installiert sein. Dieses Protokoll hat eine höhere Desinfektionswirkung als Clean Sampling Device und sollte daher bevorzugt werden. Die Washstation ist die beste Möglichkeit, das manuelle Probenahmegerät sauber zu halten und Kreuzkontaminationen zu vermeiden. Anweisungen zu diesem Protokoll finden Sie unter [Manuelles Probenahmegerät mit Washstation reinigen](15-maintenance.md#section-15-2-2). |
 | Clean Sampling Device (Probenahmegerät reinigen) | Reinigt das Probenahmegerät, sodass der äußere Filter und das Innere der Nadel nach einer stark belasteten Probe oder bei einer Filterverstopfung gespült werden können. Anweisungen zu diesem Protokoll finden Sie unter [Manuelles Probenahmegerät mittels Basisreinigung reinigen](15-maintenance.md#section-15-2-3). |
 | Fill Tubing (Schläuche befüllen) | Befüllt alle reagenzienführenden Schläuche aus der Kartusche, um Luftblasen zu entfernen. Zum Abschluss wird die Optik gereinigt. |
-| Prime and Clean Optics (Ansaugen und Optik reinigen) | Befüllt die Schläuche mit Probenflüssigkeit. Dies verdünnt beispielsweise Rückstände nach einer Reinigung des Probenahmegeräts. Abschließend erfolgt ein Reinigungsschritt. |
+| Prime and Clean Optics (Ansaugen und Optik reinigen) | Befüllt die Schläuche mit Probenflüssigkeit. Dies hilft, Rückstände zu verdünnen, beispielsweise nach dem Protokoll Clean Sampling Device. Abschließend erfolgt ein Reinigungsschritt. |
 | Prime (Ansaugen) | Lädt die Probe in das Gerät. Anweisungen finden Sie unter [Durchführen eines Ansaugens](10-measurements.md#section-10-9-3). |
 
 ### 10.9.2 Übersicht über die Protokolle im Online-Modus {#section-10-9-2}
 
-Im Online-Modus kann der Bediener zwischen zwei Analyseprotokollen wählen. Tabelle 10-3 Analyseprotokolle für den Online-Modus
+Im Online-Modus kann der Bediener zwischen zwei Analyseprotokollen wählen.
+
+**Tabelle 10-3 Analyseprotokolle für den Online-Modus**
 
 | PROTOKOLLNAME | PROTOKOLLBESCHREIBUNG |
 | --- | --- |

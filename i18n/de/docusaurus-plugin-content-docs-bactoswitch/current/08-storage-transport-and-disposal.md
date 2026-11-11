@@ -19,7 +19,7 @@ Vermeiden Sie die Kontaminierung des Geräts. Tragen Sie beim Hantieren mit Schl
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNGEN |
 | --- | --- | --- |
 | 1. | Beenden Sie alle laufenden Messserien. |  |
-| 2. | Schließen Sie die Ein/Aus-Ventile am Anschluss der Wasserleitungen, um den Wasserfluss durch die Schläuche des BactoSwitch und das Online-Probenahmegerät zu stoppen. |  |
+| 2. | Schließen Sie die Ein/Aus-Ventile an den Anschlüssen der Wasserleitungen, um den Wasserfluss durch die Schläuche des BactoSwitch und das Online-Probenahmegerät zu stoppen. |  |
 | 3. | Trennen Sie die Netzstromversorgung des BactoSwitch, um jegliches Kurzschlussrisiko zu vermeiden. |  |
 | 4. | Ziehen Sie den Netzstecker aus der Netzanschlussbuchse und bringen Sie die Schutzkappe des Netzanschlusses wieder an. |  |
 | 5. | Entfernen Sie das USB-C-Kabel vom BactoSwitch und vom BactoSense und bringen Sie die Schutzkappen beider Anschlüsse wieder an. |  |
@@ -72,7 +72,7 @@ Falls Sie den BactoSwitch an bNovate oder einen Distributionspartner zurückgebe
 
 **Geben Sie keine kontaminierten Materialien zurück**
 
-Geräte, die in Kontakt mit gefährlichen Substanzen gekommen sind, dürfen nicht undekontaminiert und ohne Dekontaminationszertifikat verschickt werden. Bitte wenden Sie sich an support@bnovate.com, um weitere Informationen zu erhalten.
+Geräte, die mit gefährlichen Substanzen in Kontakt gekommen sind, müssen vor dem Versand dekontaminiert werden und von einem Dekontaminationszertifikat begleitet sein. Bitte wenden Sie sich an support@bnovate.com, um weitere Informationen zu erhalten.
 
 :::
 

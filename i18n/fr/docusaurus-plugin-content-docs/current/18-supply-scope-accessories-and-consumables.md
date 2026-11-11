@@ -39,7 +39,7 @@ slug: /supply-scope-accessories-and-consumables
 | 200171 | Manuel d’utilisation BactoSense, Allemand |  |
 | 200006 | Dispositif d’échantillonnage manuel | ![Illustration du tableau, page du manuel 160](/img/manual/cell-78e276ee409d.png "width=77 class=manual-article-image") |
 | 200007 | Dispositif d’échantillonnage en ligne | ![Illustration du tableau, page du manuel 160](/img/manual/cell-3f47feb06665.png "width=143 class=manual-article-image") |
-| 200145 | Accès à distance de l’instrument [BactoLink](/other-manuals/bactolink) | ![Illustration du tableau, page du manuel 160](/img/manual/cell-0ae3a8fa20ab.png "width=143 class=manual-article-image") |
+| 200145 | [BactoLink](/other-manuals/bactolink) pour l’accès à distance à l’instrument | ![Illustration du tableau, page du manuel 160](/img/manual/cell-0ae3a8fa20ab.png "width=143 class=manual-article-image") |
 
 | NUMÉRO D’ARTICLE | NOM | IMAGE |
 | --- | --- | --- |

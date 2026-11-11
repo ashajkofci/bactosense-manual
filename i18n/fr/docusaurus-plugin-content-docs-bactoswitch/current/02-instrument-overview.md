@@ -38,7 +38,7 @@ Le comportement des voyants lumineux est résumé dans le tableau 2-1. Les numé
 
 ## 2.3 Principe de fonctionnement {#section-2-3}
 
-Le schéma ci-dessous montre le fonctionnement de base du BactoSwitch (capot avant retiré pour plus de clarté). L’eau de chaque ligne d’entrée (1) traverse un clapet anti-retour (2, non visible), puis un régulateur de pression (3), ensuite une vanne de débit à pointeau (4) et enfin une électrovanne (5). Les lignes d’eau ouvertes (chacune pouvant être ouverte ou fermée) sont ensuite réunies et sortent du BactoSwitch vers le dispositif d’échantillonnage en ligne du BactoSense (6). Après avoir traversé le dispositif d’échantillonnage, l’eau revient vers le BactoSwitch, traverse le débitmètre (7) et s’écoule enfin vers l’évacuation (8).
+Le schéma ci-dessous montre le fonctionnement de base du BactoSwitch (capot avant retiré pour plus de clarté). L’eau de chaque ligne d’entrée (1) traverse un clapet anti-retour (2, non visible), puis un régulateur de pression (3), ensuite une vanne de débit à pointeau (4) et enfin une électrovanne (5). Chaque ligne d’entrée peut être ouverte ou fermée. L’eau des lignes ouvertes se rejoint et sort du BactoSwitch vers le dispositif d’échantillonnage en ligne du BactoSense (6). Après avoir traversé le dispositif d’échantillonnage, l’eau revient vers le BactoSwitch, traverse le débitmètre (7) et s’écoule enfin vers l’évacuation (8).
 
 ![Principe de fonctionnement du BactoSwitch avec le circuit d’eau numéroté](/img/bactoswitch/working-principle.png "width=700")
 

@@ -22,8 +22,8 @@ Die folgende Abbildung zeigt das Ergebnis einer ausgewählten TCC-Messung im Onl
 | 5 | Das Statusfeld der Messung zeigt Alarme oder Warnungen an. Tippen Sie auf eine Alarm- oder Warnungsanzeige, um deren Details anzuzeigen. |
 | 6 | Die Taste Löschen löscht die Messung dauerhaft; eine Bestätigung ist erforderlich. |
 | 7 | Mit dem Umbenennen-Knopf können Messungen umbenannt werden. |
-| 8 | Mit dem Resultat neu gaten-Knopf können Messungen neu gegatet werden. Mehr Details dazu unter [Messungen regaten](../results-and-data-analysis/#section-11-4-1). |
-| 9 | Mit dem Exportieren-Knopf können Messungen auf einen USB Stick exportiert werden. Mehr Details dazu unter [Export auf einen USB-Datenträger](../measurements/#section-10-8-1). |
+| 8 | Mit dem Resultat neu gaten-Knopf können Sie ein anderes Gate-Set auf die Messdaten anwenden. Mehr Details dazu unter [Messungen regaten](../results-and-data-analysis/#section-11-4-1). |
+| 9 | Mit dem Exportieren-Knopf können Sie dieses Ergebnis auf einen USB-Stick exportieren. Mehr Details dazu unter [Export auf einen USB-Datenträger](../measurements/#section-10-8-1). |
 | 10 | Mit den Navigationspfeilen links und rechts können Sie zur vorherigen und nächsten Messung springen. |
 | 11 | Tippen Sie auf das Trenddiagramm, um das Diagramm für den Online-Modus (das vollständige Diagramm der Online-Ergebnisse) zu öffnen. Siehe [Ansehen automatischer Onlinemessungen](../measurements/#section-10-2-3). |
 
@@ -257,7 +257,7 @@ Weitere Informationen zum Anpassen der Gates finden Sie unter [Gates ändern](11
 
 Regating ist der Prozess des Anwendens eines anderen Gating Sets auf bestehende Messdaten.
 
-- Eine Voraussetzung für Regating ist das Vorhandensein eines solchen zusätzlichen Gating Sets. Drücken Sie auf der Startseite Einstellungen und dann Gate Einstellungen, um die verfügbaren Gating-Sets anzuzeigen.
+- Eine Voraussetzung für Regating ist das Vorhandensein eines alternativen Gate-Sets. Drücken Sie auf der Startseite Einstellungen und dann Gate Einstellungen, um die verfügbaren Gating-Sets anzuzeigen.
 - Der Prozess des Bearbeiten eines bestehenden Gating Sets wird unter [Bearbeiten bestehender Gating Sets](11-results-and-data-analysis.md#section-11-4-3) beschrieben.
 
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNGEN |
@@ -386,11 +386,11 @@ Um die Ergebnisse des BactoSense mit einem anderen Durchflusszytometer vergleich
 | 4\. | :::info[Zusätzliche Informationen] Drücken Sie die Taste Home. Drücken Sie die Taste Zurück so oft wie nötig, bis die Taste Home erscheint. ::: | ![BactoSense — Schaltfläche Startseite](/img/gui/icons/home-button.png "width=48 class=manual-icon") | ![BactoSense — Schaltfläche Zurück](/img/gui/icons/back-button.png "width=48 class=manual-icon") |
 | 5\. | Drücken Sie auf der Startseite Modus und wählen Sie „Manueller Modus“. Drücken Sie Zurück und anschließend Messen, um den Messassistenten zu öffnen. |  | \< |
 | 6\. | Wählen Sie Ansaugen aus der Protokollliste. | Siehe [Durchführen eines Ansaugens](../measurements/#section-10-9-3). | \< |
-| 7\. | Drücken Sie die Tasten Weiter und Starten. Lassen Sie das Ansaugprotokoll zu Ende laufen. |  | \< |
+| 7\. | Drücken Sie Weiter und anschließend Start. Lassen Sie das Ansaugprotokoll zu Ende laufen. |  | \< |
 | 8\. | Drücken Sie Neu, wählen Sie Beads Analyse aus der Liste und drücken Sie Weiter und Start. |  | \< |
 | 9\. | Warten Sie die Ergebnisse ab und, falls notwendig, passen Sie das Gate des FL1-vs-FL2-Graphen behutsam so an, dass nur die vier Perlenpopulationen gezählt werden. Stellen Sie sicher, dass Rauschen, Hintergrund und Zelltrümmer im Gate nicht mitgezählt werden. | Zur Anpassung des Gates siehe [Bearbeiten bestehender Gating Sets](../results-and-data-analysis/#section-11-4-3).<br />![Abbildung zur Tabelle auf Handbuchseite 112](/img/manual/render-fa85ea9255cb.webp "width=246 class=manual-figure") | \< |
 | 10\. | Schätzen Sie im FL1/Zellzahl-Histogramm den logarithmischen Wert der Mitte jedes Peaks auf der FL1-Achse. In diesem Beispiel erhalten wir ungefähr (logarithmisch): 1. Peak = 4.05; 2. Peak = 4.3; 3. Peak = 5.35; 4. Peak = 6.2 | ![Abbildung zur Tabelle auf Handbuchseite 113](/img/manual/cell-c2ba9a559620.png "width=246 class=manual-figure") | \< |
-| 11\. | Messen Sie dieselben Perlen mit dem anderen zu vergleichenden Durchflusszytometer und wiederholen Sie die Schritte 10 und 11. In diesem Beispiel erhalten wir ungefähr (logarithmisch): 1. Peak = log(10<sup>3</sup>) = 3 2. Peak = log(2*10<sup>3</sup>) = 3.3 3. Peak = log(2.4*10<sup>4</sup>) = 4.4 4. Peak = log(1.6*10<sup>5</sup>) = 5.2 | ![Abbildung zur Tabelle auf Handbuchseite 113](/img/manual/cell-4c2343e0bbfe.png "width=246 class=manual-figure") | \< |
+| 11\. | Messen Sie dieselben Perlen mit dem anderen zu vergleichenden Durchflusszytometer. Wenden Sie die in den Schritten 9 und 10 beschriebenen Schritte zur Gate-Anpassung und Peak-Schätzung auf dessen Ergebnisse an. In diesem Beispiel erhalten wir ungefähr (logarithmisch): 1. Peak = log(10<sup>3</sup>) = 3 2. Peak = log(2*10<sup>3</sup>) = 3.3 3. Peak = log(2.4*10<sup>4</sup>) = 4.4 4. Peak = log(1.6*10<sup>5</sup>) = 5.2 | ![Abbildung zur Tabelle auf Handbuchseite 113](/img/manual/cell-4c2343e0bbfe.png "width=246 class=manual-figure") | \< |
 | 12\. | Mit den unterschiedlichen Werten für die beiden Geräte ist es nun möglich, ihre Skalen und ihre Messfenster zu vergleichen. |  | \< |
 
 </div>

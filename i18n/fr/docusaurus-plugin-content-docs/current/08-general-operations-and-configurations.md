@@ -50,7 +50,7 @@ La connexion et la déconnexion peuvent être effectuées à l’aide du bouton 
 
 |  | OPÉRATION |
 | --- | --- |
-| 1. | Assurez-vous que tous les processus (mesures, nettoyages, etc.) sont terminés. L’état d’inactivité de l’instrument est indiqué sur le côté gauche de la barre supérieure de l’interface utilisateur BactoSense. |
+| 1. | Assurez-vous que tous les processus (mesures, cycles de nettoyage, etc.) sont terminés. L’état d’inactivité de l’instrument est indiqué sur le côté gauche de la barre supérieure de l’interface utilisateur BactoSense. |
 | 2. | Appuyez sur le bouton de déconnexion dans le coin supérieur droit de l’interface utilisateur. |
 | 3. | Sélectionnez Déconnexion / Verrouiller écran. |
 | 4. | Pour vous reconnecter, suivez la procédure décrite dans la section [Connexion](08-general-operations-and-configurations.md#section-8-2-1). |
@@ -98,7 +98,7 @@ Chaque rôle d’utilisateur est protégé par mot de passe.
 
 ### 8.2.6 Modification des paramètres du mot de passe {#section-8-2-6}
 
-Plusieurs caractéristiques des mots de passe, telles que l'expiration, la longueur, etc. peuvent être configurées.
+Plusieurs exigences relatives aux mots de passe, telles que leur expiration et leur longueur, peuvent être configurées.
 
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
@@ -232,7 +232,7 @@ Vous pouvez activer des notifications sonores pour signaler la fin d’une mesur
 
 ## 8.4 Importation / exportation des paramètres {#section-8-4}
 
-Les paramètres sont exportés sur une clé USB comme indiqué à la section [Exportation des paramètres, des diagnostics ou de toutes les données vers un périphérique USB](12-data-access-and-export.md#section-12-1-1). Ils sont regroupés dans un fichier horodaté se terminant par ***.bnv**. Pour importer les paramètres dans un nouvel instrument ou les restaurer depuis une sauvegarde, copiez le fichier ***.bnv** à la racine de la clé USB ou dans le répertoire dans lequel il a été exporté. Si la clé contient plusieurs copies des paramètres, le système utilise la plus récente.
+Les paramètres sont exportés sur une clé USB comme indiqué à la section [Exportation des paramètres, des diagnostics ou de toutes les données vers un périphérique USB](12-data-access-and-export.md#section-12-1-1). Ils sont enregistrés dans un fichier horodaté portant l’extension `.bnv`. Pour importer les paramètres dans un nouvel instrument ou les restaurer depuis une sauvegarde, copiez le fichier `*.bnv` à la racine de la clé USB ou dans le répertoire dans lequel il a été exporté. Si la clé contient plusieurs copies des paramètres, le système utilise la plus récente.
 
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |

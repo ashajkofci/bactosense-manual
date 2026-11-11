@@ -22,7 +22,7 @@ La figura seguente mostra il risultato di una misurazione TCC selezionata in mod
 | 5 | Il campo di stato della misurazione indica gli allarmi o gli avvertimenti. Toccare un’indicazione di allarme o di avvertimento per visualizzarne i dettagli. |
 | 6 | Il pulsante Cancella elimina definitivamente la misurazione (è richiesta una conferma). |
 | 7 | Il pulsante Rinomina consente di modificare il nome della misurazione. |
-| 8 | Il pulsante Risultato del re-gate consente di applicare gate diversi ai dati di misurazione. Per i dettagli, consultare la sezione [Rianalisi delle misurazioni con altri gate](../results-and-data-analysis/#section-11-4-1). |
+| 8 | Il pulsante Risultato del re-gate consente di applicare un diverso set di gate ai dati di misurazione. Per i dettagli, consultare la sezione [Rianalisi delle misurazioni con altri gate](../results-and-data-analysis/#section-11-4-1). |
 | 9 | Il pulsante Esporta consente di salvare questo risultato su una chiavetta USB. Ulteriori informazioni sono riportate nella sezione [Esportazione su un’unità USB](../measurements/#section-10-8-1). |
 | 10 | I pulsanti di navigazione a sinistra e a destra della vista del risultato consentono di passare rispettivamente alla misurazione precedente e successiva. |
 | 11 | Toccare il grafico dell’andamento per aprire il grafico della modalità online (il grafico completo dei risultati online). Vedere [Consultazione delle misurazioni automatiche in linea](../measurements/#section-10-2-3). |
@@ -257,7 +257,7 @@ Per ulteriori informazioni sulla regolazione dei gate, vedere sezione [Modifica 
 
 La rianalisi con altri gate consiste nell’applicare un gruppo di gate diverso ai dati di misurazione esistenti.
 
-- Un prerequisito è la disponibilità di tale gruppo aggiuntivo. Nella schermata Home, premere Impostazioni, quindi Impostazioni del gate per visualizzare i gruppi di gate disponibili.
+- Un prerequisito è la disponibilità di un set di gate alternativo. Nella schermata Home, premere Impostazioni, quindi Impostazioni del gate per visualizzare i gruppi di gate disponibili.
 - La modifica di un gruppo di gate esistente è descritta nella sezione [Modifica dei gruppi di gate esistenti](11-results-and-data-analysis.md#section-11-4-3).
 
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINI |
@@ -390,7 +390,7 @@ Per confrontare i risultati di BactoSense con quelli di un altro citometro a flu
 | 8\. | Premere Nuovo, scegliere Analisi delle sferette dall’elenco, quindi premere Avanti e Avvio. |  | \< |
 | 9\. | Attendere i risultati e, se necessario, regolare con precisione il gate del diagramma FL1 rispetto a FL2 per contare solo le 4 popolazioni di microsfere. È importante assicurarsi che rumore, fondo e detriti non vengano inclusi nel gate. | Vedere sezione [Modifica dei gruppi di gate esistenti](../results-and-data-analysis/#section-11-4-3) per regolare il gate. ![Illustrazione della tabella a pagina 112 del manuale](/img/manual/render-fa85ea9255cb.webp "width=246 class=manual-figure") | \< |
 | 10\. | Nell’istogramma FL1 rispetto ai conteggi, stimare il valore logaritmico del centro di ogni picco sull’asse FL1. In questo esempio si ottengono approssimativamente (in log): 1<sup>º</sup> picco = 4.05 2<sup>º</sup> picco = 4.3 3<sup>º</sup> picco = 5.35 4<sup>º</sup> picco = 6.2 | ![Illustrazione della tabella a pagina 113 del manuale](/img/manual/cell-c2ba9a559620.png "width=246 class=manual-figure") | \< |
-| 11\. | Misurare le stesse microsfere con l’altro citometro a flusso da confrontare e ripetere i passaggi 10 e 11. In questo esempio si ottengono approssimativamente (in log): 1<sup>º</sup> picco = log(10<sup>3</sup>) = 3 2<sup>º</sup> picco = log(2*10<sup>3</sup>) = 3.3 3<sup>º</sup> picco = log(2.4*10<sup>4</sup>) = 4.4 4<sup>º</sup> picco = log(1.6*10<sup>5</sup>) = 5.2 | ![Illustrazione della tabella a pagina 113 del manuale](/img/manual/cell-4c2343e0bbfe.png "width=246 class=manual-figure") | \< |
+| 11\. | Misurare le stesse microsfere con l’altro citometro a flusso da confrontare. Applicare ai suoi risultati le operazioni di definizione del gate e di stima dei picchi descritte nei passaggi 9 e 10. In questo esempio si ottengono approssimativamente (in log): 1<sup>º</sup> picco = log(10<sup>3</sup>) = 3 2<sup>º</sup> picco = log(2*10<sup>3</sup>) = 3.3 3<sup>º</sup> picco = log(2.4*10<sup>4</sup>) = 4.4 4<sup>º</sup> picco = log(1.6*10<sup>5</sup>) = 5.2 | ![Illustrazione della tabella a pagina 113 del manuale](/img/manual/cell-4c2343e0bbfe.png "width=246 class=manual-figure") | \< |
 | 12\. | Con i diversi valori ottenuti per entrambi i dispositivi, è ora possibile confrontarne le scale e le finestre di misurazione. |  | \< |
 
 </div>

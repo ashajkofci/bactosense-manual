@@ -20,7 +20,7 @@ Pour garantir le bon fonctionnement de l’appareil, l’utilisateur peut effect
 
 **Avant toute opération de maintenance**
 
-- Fermez les robinets d’ouverture/fermeture au niveau du raccordement aux canalisations d’eau.
+- Fermez les robinets d’ouverture/fermeture au niveau des raccordements aux canalisations d’eau.
 - Débranchez l’alimentation secteur pour éviter tout risque de court-circuit.
 
 :::
@@ -44,7 +44,7 @@ En cas de contamination biologique ou non biologique persistante des tuyaux (par
 
 **Avant de débrancher les tuyaux**
 
-- Fermez les robinets d’ouverture/fermeture au niveau du raccordement aux canalisations d’eau.
+- Fermez les robinets d’ouverture/fermeture au niveau des raccordements aux canalisations d’eau.
 - Débranchez l’alimentation secteur pour éviter tout risque de court-circuit.
 
 :::

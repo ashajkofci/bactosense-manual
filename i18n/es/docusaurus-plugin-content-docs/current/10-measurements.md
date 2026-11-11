@@ -254,12 +254,14 @@ Los protocolos de mantenimiento pueden ejecutarse antes de los protocolos de an�
 | Clean Sampling Device with Washstation | Limpia el dispositivo de muestreo manual para lavar por completo el filtro exterior y el interior y exterior de la aguja entre mediciones, después de una muestra sucia o en caso de obstrucción del filtro. Para que aparezca este protocolo, la Washstation debe estar montada en el dispositivo de muestreo manual y debe haber un cartucho instalado. Este protocolo tiene una mayor capacidad de desinfección que Clean Sampling Device y, por tanto, debe utilizarse preferentemente. La Washstation es la mejor forma de mantener limpio el dispositivo de muestreo manual y evitar contaminaciones cruzadas. Encontrará las instrucciones de este protocolo en la sección [Limpieza del dispositivo de muestreo manual con Washstation](15-maintenance.md#section-15-2-2). |
 | Clean Sampling Device | Limpia el dispositivo de muestreo para lavar el filtro externo y el interior de la aguja después de una muestra con una carga muy elevada o en caso de obstrucción del filtro. Encontrará las instrucciones de este protocolo en la sección [Limpieza básica del dispositivo de muestreo manual](15-maintenance.md#section-15-2-3). |
 | Fill Tubing | Llena todos los tubos que transportan reactivos desde el cartucho para eliminar las burbujas. Limpia la óptica al final del proceso. |
-| Prime and Clean Optics | Llena los tubos con líquido de la muestra. Ayuda a diluir los residuos, por ejemplo, después de limpiar el dispositivo de muestreo. Finaliza con la etapa de limpieza. |
+| Prime and Clean Optics | Llena los tubos con líquido de la muestra. Ayuda a diluir los residuos, por ejemplo, después de ejecutar el protocolo Clean Sampling Device. Finaliza con la etapa de limpieza. |
 | Prime | Carga la muestra en el instrumento. Encontrará las instrucciones en la sección [Realización de un cebado (Prime)](10-measurements.md#section-10-9-3). |
 
 ### 10.9.2 Descripción de los protocolos del modo en línea {#section-10-9-2}
 
-Los operadores pueden elegir entre dos protocolos de análisis en modo en línea. Tabla 10-3 Protocolos de análisis del modo en línea.
+Los operadores pueden elegir entre dos protocolos de análisis en modo en línea.
+
+**Tabla 10-3 Protocolos de análisis del modo en línea**
 
 | NOMBRE DEL PROTOCOLO | DESCRIPCIÓN DEL PROTOCOLO |
 | --- | --- |

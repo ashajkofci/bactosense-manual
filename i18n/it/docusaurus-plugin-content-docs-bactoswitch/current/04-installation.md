@@ -212,7 +212,7 @@ BactoSwitch e BactoSense dispongono ciascuno di un proprio tipo di alimentatore,
 
 :::
 
-Gli alimentatori sono forniti in un involucro IP67 con un cavo dotato di spina di tipo J, E, G o B.
+Ogni alimentatore è fornito in un involucro IP67 con un cavo dotato di spina di tipo J, E, G o B.
 
 *Tabella 4-2 Codici articolo degli alimentatori di BactoSwitch e BactoSense*
 
@@ -272,7 +272,7 @@ La procedura seguente si applica solo se BactoSwitch deve essere collegato a una
 | 1. | :::danger[Scollegare l’alimentatore] Assicurarsi che l’alimentatore non sia collegato alla rete. ::: Rimuovere il coperchio dell’involucro svitando le quattro viti (cerchi). | ![Quattro viti del coperchio dell’involucro dell’alimentatore](/img/bactoswitch/psu-cover-screws.png "width=238") |
 | 2. | Rimuovere il connettore C13 (A) e svitarlo per aprirlo.<br />![Connettore C13 aperto](/img/bactoswitch/psu-c13-connector-open.png "width=182") | ![Posizione del connettore C13 (A)](/img/bactoswitch/psu-c13-connector.png "width=238") |
 | 3. | Aprire il pressacavo (Y) e inserire il nuovo cavo.<br /><br />Lunghezze del cavo e sezioni dei conduttori:<br />• 0 – 9 m (0 – 30 ft), 1 mm<sup>2</sup><br />• 9 – 21 m (30 – 69 ft), 1.5 mm<sup>2</sup> (massimo)<br /><br />Il pressacavo è dimensionato per un diametro del cavo di 3 – 10 mm (0.12″ – 0.39″). | ![Pressacavo (Y) e morsetto con i conduttori N, PE e L](/img/bactoswitch/psu-cable-wiring.png "width=238") |
-| 4. | :::danger[Collegare la terra di protezione] Serrare i 3 conduttori (N, PE, L) nel morsetto elettrico e bloccare la guaina isolante del cavo. ::: Assicurarsi di utilizzare una spina con terra di protezione (PE) e che il dispositivo sia correttamente collegato a essa. | Vedere il riquadro nell’immagine sopra. |
+| 4. | :::danger[Collegare la terra di protezione] Serrare i 3 conduttori (N, PE, L) nel morsetto elettrico e fissare la guaina isolante del cavo. ::: Assicurarsi di utilizzare una spina con terra di protezione (PE) e che il dispositivo sia correttamente collegato a essa. | Vedere il riquadro nell’immagine sopra. |
 | 5. | Chiudere il connettore C13 (A) mediante la vite e inserirlo nell’alimentatore. Serrare il pressacavo. Provare a tirare il cavo per verificare che il pressacavo sia serrato a sufficienza. | ![Connettore C13 (A) chiuso nell’alimentatore](/img/bactoswitch/psu-c13-connector-closed.png "width=226") |
 | 6. | Opzionale: l’alimentatore può essere montato a parete. Utilizzare viti M4 con lunghezza minima di 20 mm. Con il coperchio ancora rimosso, posizionare le 4 viti e fissare l’involucro alla parete. | ![Distanze dei fori di fissaggio a parete dell’alimentatore](/img/bactoswitch/psu-wall-mounting.png "width=238") |
 | 7. | Rimontare il coperchio dell’involucro e serrare le quattro viti per sigillarlo. | ![Quattro viti del coperchio dell’involucro dell’alimentatore](/img/bactoswitch/psu-cover-screws.png "width=238") |

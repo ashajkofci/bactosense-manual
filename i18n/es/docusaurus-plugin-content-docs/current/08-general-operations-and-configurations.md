@@ -50,7 +50,7 @@ El inicio y el cierre de sesión se realizan mediante el botón situado en la es
 
 |  | PASO DE TRABAJO |
 | --- | --- |
-| 1. | Asegúrese de que todos los procesos (p. ej., mediciones o limpiezas) hayan finalizado. El estado inactivo del instrumento se indica en el lado izquierdo de la barra superior de la interfaz de BactoSense. |
+| 1. | Asegúrese de que todos los procesos (p. ej., mediciones o ciclos de limpieza) hayan finalizado. El estado inactivo del instrumento se indica en el lado izquierdo de la barra superior de la interfaz de BactoSense. |
 | 2. | Pulse el botón de cierre de sesión situado en la esquina superior derecha de la interfaz. |
 | 3. | Seleccione Cerrar sesión / Bloquear pantalla. |
 | 4. | Para volver a iniciar sesión, siga el procedimiento descrito en la sección [Inicio de sesión](08-general-operations-and-configurations.md#section-8-2-1). |
@@ -98,7 +98,7 @@ Cada función de usuario está protegida por contraseña.
 
 ### 8.2.6 Cambio de los ajustes de contraseñas {#section-8-2-6}
 
-Pueden configurarse varias características de las contraseñas, como la caducidad, la longitud, etc.
+Pueden configurarse varios requisitos de las contraseñas, como la caducidad y la longitud.
 
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN |
 | --- | --- | --- |
@@ -232,7 +232,7 @@ Puede activar notificaciones sonoras para indicar la finalización de una medici
 
 ## 8.4 Importación y exportación de ajustes {#section-8-4}
 
-Los ajustes se exportan a una memoria USB como se indica en la sección [Exportación de ajustes, diagnósticos o todos los datos a USB](12-data-access-and-export.md#section-12-1-1). Se recopilan en un archivo con marca de tiempo y extensión ***.bnv**. Para importar los ajustes en un instrumento nuevo o utilizarlos como copia de seguridad, debe copiarse el archivo ***.bnv** en la raíz de la memoria USB o en el directorio al que se exportó. Si hay varias copias de los ajustes en una memoria USB, el sistema utilizará la más reciente.
+Los ajustes se exportan a una memoria USB como se indica en la sección [Exportación de ajustes, diagnósticos o todos los datos a USB](12-data-access-and-export.md#section-12-1-1). Se guardan en un archivo con marca de tiempo y extensión `.bnv`. Para importar los ajustes en un instrumento nuevo o restaurar una copia de seguridad, copie el archivo `*.bnv` en la raíz de la memoria USB o en el directorio al que se exportó. Si hay varias copias de los ajustes en una memoria USB, el sistema utilizará la más reciente.
 
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN |
 | --- | --- | --- |

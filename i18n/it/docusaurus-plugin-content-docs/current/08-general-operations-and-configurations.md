@@ -50,7 +50,7 @@ L’accesso e la disconnessione possono essere effettuati tramite il pulsante ne
 
 |  | OPERAZIONE |
 | --- | --- |
-| 1. | Assicurarsi che tutti i processi (ad esempio misurazioni o pulizie) siano terminati. Lo stato inattivo dello strumento è indicato sul lato sinistro della barra superiore dell’interfaccia utente di BactoSense. |
+| 1. | Assicurarsi che tutti i processi (ad esempio misurazioni o cicli di pulizia) siano terminati. Lo stato inattivo dello strumento è indicato sul lato sinistro della barra superiore dell’interfaccia utente di BactoSense. |
 | 2. | Premere il pulsante di disconnessione nell’angolo superiore destro dell’interfaccia utente. |
 | 3. | Selezionare Esci / Schermata di blocco. |
 | 4. | Per accedere nuovamente, seguire la procedura descritta nella sezione [Accesso](08-general-operations-and-configurations.md#section-8-2-1). |
@@ -98,7 +98,7 @@ Ogni ruolo utente è protetto da password.
 
 ### 8.2.6 Modifica delle impostazioni delle password {#section-8-2-6}
 
-È possibile configurare varie caratteristiche delle password, come scadenza, lunghezza e altre opzioni.
+È possibile configurare vari requisiti delle password, come la scadenza e la lunghezza.
 
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINE |
 | --- | --- | --- |
@@ -232,7 +232,7 @@ BactoSense dispone di una funzione integrata di riavvio automatico per ripristin
 
 ## 8.4 Importazione / esportazione delle impostazioni {#section-8-4}
 
-Le impostazioni vengono esportate su un’unità USB come descritto nella sezione [Esportazione di impostazioni, diagnostica o tutti i dati su USB](12-data-access-and-export.md#section-12-1-1). Vengono raccolte in un file con data e ora il cui nome termina con ***.bnv**. Per importare le impostazioni in un nuovo strumento o ripristinare una copia di sicurezza, è necessario copiare il file ***.bnv** nella cartella principale dell’unità USB oppure nella cartella in cui è stato esportato. Se su un’unità USB sono presenti più copie delle impostazioni, il sistema utilizza quella più recente.
+Le impostazioni vengono esportate su un’unità USB come descritto nella sezione [Esportazione di impostazioni, diagnostica o tutti i dati su USB](12-data-access-and-export.md#section-12-1-1). Vengono salvate in un file con data e ora e con estensione `.bnv`. Per importare le impostazioni in un nuovo strumento o ripristinare una copia di sicurezza, è necessario copiare il file `*.bnv` nella cartella principale dell’unità USB oppure nella cartella in cui è stato esportato. Se su un’unità USB sono presenti più copie delle impostazioni, il sistema utilizza quella più recente.
 
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINE |
 | --- | --- | --- |

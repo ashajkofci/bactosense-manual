@@ -39,7 +39,7 @@ Antes de trabajar en el instrumento, asegúrese de haber leído atentamente las 
 
 El mantenimiento preventivo de BactoSense es una intervención programada para sustituir piezas de desgaste, actualizar el software e inspeccionar y validar el instrumento. Es esencial para evitar averías y optimizar las prestaciones y la fiabilidad. Solo pueden realizarlo profesionales de servicio formados específicamente por bNovate.
 
-El mantenimiento preventivo debe realizarse después de consumir 3 cartuchos o al cabo de 1 año, lo que ocurra primero.
+El mantenimiento preventivo debe realizarse después de utilizar 3 cartuchos o al cabo de 1 año, lo que ocurra primero.
 
 Póngase en contacto con el soporte de bNovate o con su colaborador local de servicio para conocer las opciones disponibles. Los datos de contacto figuran en la sección [Contacto con el servicio de atención al cliente](19-contact.md#section-19-1).
 

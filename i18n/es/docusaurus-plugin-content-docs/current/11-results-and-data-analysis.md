@@ -22,7 +22,7 @@ La figura siguiente muestra el resultado de una medición TCC seleccionada en mo
 | 5 | El campo de estado de la medición indica alarmas o advertencias. Pulse una indicación de alarma o advertencia para ver sus detalles. |
 | 6 | El botón Borrar elimina la medición de forma permanente (requiere confirmación). |
 | 7 | El botón Cambie el nombre de permite cambiar el nombre de la medición. |
-| 8 | El botón Resultado de re-gate permite aplicar otras regiones de análisis a los datos de medición. Para obtener más detalles, consulte la sección [Reanálisis de mediciones con otras regiones](../results-and-data-analysis/#section-11-4-1). |
+| 8 | El botón Resultado de re-gate permite aplicar un conjunto de regiones de análisis diferente a los datos de medición. Para obtener más detalles, consulte la sección [Reanálisis de mediciones con otras regiones](../results-and-data-analysis/#section-11-4-1). |
 | 9 | El botón Exportar permite guardar este resultado en una memoria USB. Encontrará más información en la sección [Exportación a una memoria USB](../measurements/#section-10-8-1). |
 | 10 | Los botones de navegación a la izquierda y derecha de la vista de resultados permiten ir a las mediciones anterior y siguiente, respectivamente. |
 | 11 | Pulse el gráfico de tendencias para abrir el gráfico del modo en línea (el gráfico completo de resultados en línea). Véase [Revisión de las mediciones automáticas en línea](../measurements/#section-10-2-3). |
@@ -257,7 +257,7 @@ Para obtener más información sobre el ajuste de las regiones, consulte la secc
 
 El reanálisis (regating) consiste en aplicar un conjunto de regiones diferente a datos de medición existentes.
 
-- Para reanalizar, es necesario disponer de ese conjunto adicional. En la pantalla Home, pulse Ajustes y después Ajustes de la compuerta para ver los conjuntos de regiones disponibles.
+- Para reanalizar, es necesario disponer de un conjunto de regiones alternativo. En la pantalla Home, pulse Ajustes y después Ajustes de la compuerta para ver los conjuntos de regiones disponibles.
 - La modificación de un conjunto de regiones existente se describe en la sección [Edición de conjuntos de regiones existentes](11-results-and-data-analysis.md#section-11-4-3).
 
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMÁGENES |
@@ -386,11 +386,11 @@ Para comparar los resultados de BactoSense con los de otro citómetro de flujo, 
 | 4\. | :::info[Información adicional] Pulse el botón Home. Pulse Back tantas veces como sea necesario para que aparezca Home. ::: | ![BactoSense — Botón Inicio](/img/gui/icons/home-button.png "width=48 class=manual-icon") | ![BactoSense — Botón Volver](/img/gui/icons/back-button.png "width=48 class=manual-icon") |
 | 5\. | En la pantalla Home, pulse Modo y seleccione Modo manual. Pulse Volver y, a continuación, Iniciar para abrir el asistente de medición. |  | \< |
 | 6\. | Seleccione Preparar en la lista de protocolos. | Véase la sección [Realización de un cebado (Prime)](../measurements/#section-10-9-3). | \< |
-| 7\. | Pulse los botones Siguiente y Inicio. Espere a que termine el protocolo de cebado. |  | \< |
+| 7\. | Pulse Siguiente y, después, Inicio. Espere a que termine el protocolo de cebado. |  | \< |
 | 8\. | Pulse Nuevo, elija Análisis de perlas en la lista y pulse Siguiente e Inicio. |  | \< |
 | 9\. | Espere a los resultados y, si es necesario, ajuste con precisión la región del diagrama FL1 frente a FL2 para contar solo las 4 poblaciones de microesferas. Asegúrese de que el ruido, el fondo y los residuos no se cuenten dentro de la región. | Consulte la sección [Edición de conjuntos de regiones existentes](../results-and-data-analysis/#section-11-4-3) para ajustar la región.<br />![Ilustración de la tabla de la página 112 del manual](/img/manual/render-fa85ea9255cb.webp "width=246 class=manual-figure") | \< |
 | 10\. | En el histograma FL1 frente a recuentos, estime el valor logarítmico del centro de cada pico en el eje FL1. En este ejemplo, se obtiene aproximadamente (en log): 1.<sup>er</sup> pico = 4.05; 2.<sup>º</sup> pico = 4.3; 3.<sup>er</sup> pico = 5.35; 4.<sup>º</sup> pico = 6.2. | ![Ilustración de la tabla de la página 113 del manual](/img/manual/cell-c2ba9a559620.png "width=246 class=manual-figure") | \< |
-| 11\. | Mida las mismas microesferas con el otro citómetro de flujo que desea comparar y repita los pasos 10 y 11. En este ejemplo, se obtiene aproximadamente (en log): 1.<sup>er</sup> pico = log(10<sup>3</sup>) = 3; 2.<sup>º</sup> pico = log(2*10<sup>3</sup>) = 3.3; 3.<sup>er</sup> pico = log(2.4*10<sup>4</sup>) = 4.4; 4.<sup>º</sup> pico = log(1.6*10<sup>5</sup>) = 5.2. | ![Ilustración de la tabla de la página 113 del manual](/img/manual/cell-4c2343e0bbfe.png "width=246 class=manual-figure") | \< |
+| 11\. | Mida las mismas microesferas con el otro citómetro de flujo que desea comparar. Aplique a sus resultados los pasos de ajuste de la región y estimación de los picos descritos en los pasos 9 y 10. En este ejemplo, se obtiene aproximadamente (en log): 1.<sup>er</sup> pico = log(10<sup>3</sup>) = 3; 2.<sup>º</sup> pico = log(2*10<sup>3</sup>) = 3.3; 3.<sup>er</sup> pico = log(2.4*10<sup>4</sup>) = 4.4; 4.<sup>º</sup> pico = log(1.6*10<sup>5</sup>) = 5.2. | ![Ilustración de la tabla de la página 113 del manual](/img/manual/cell-4c2343e0bbfe.png "width=246 class=manual-figure") | \< |
 | 12\. | Con los distintos valores obtenidos para ambos dispositivos, ya es posible comparar sus escalas y sus ventanas de medición. |  | \< |
 
 </div>

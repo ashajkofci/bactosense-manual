@@ -72,7 +72,7 @@ Deve essere garantita un’alimentazione continua e stabile, come specificato ne
 
 :::
 
-L’alimentatore è fornito in un involucro IP67 con un cavo dotato di spina specifica per il paese. Per collegare BactoSense all’alimentazione utilizzando una di queste spine fornite da bNovate, seguire le istruzioni della sezione [Collegamento con la spina standard dell’alimentatore](05-installation.md#section-5-3-1). Per il collegamento con una spina o connettori di alimentazione diversi, seguire la procedura descritta nella sezione [Modifica dell’alimentatore standard con un connettore diverso](05-installation.md#section-5-3-2).
+L’alimentatore è fornito in un involucro IP67 con un cavo dotato di spina specifica per il paese. Per collegare BactoSense all’alimentazione utilizzando una di queste spine fornite da bNovate, seguire le istruzioni della sezione [Collegamento con la spina standard dell’alimentatore](05-installation.md#section-5-3-1). Per il collegamento con una spina o un connettore di alimentazione diverso, seguire la procedura descritta nella sezione [Modifica dell’alimentatore standard con un connettore diverso](05-installation.md#section-5-3-2).
 
 :::info[Mantenere accessibile il sezionamento dell’alimentazione]
 
@@ -127,7 +127,7 @@ La procedura seguente si applica solo se BactoSense deve essere collegato a una 
 | --- | --- | --- |
 | 1\. | :::danger[Scollegare l’alimentatore] Assicurarsi che l’alimentatore non sia collegato alla rete. Rimuovere il coperchio dell’involucro svitando le quattro viti (cerchi). ::: | ![Illustrazione della procedura, pagina stampata 21](/img/manual/asset-a4e9bfa03293.png "width=241") |
 | 2\. | Rimuovere il connettore C13 (A) e svitarlo per aprirlo. ![Illustrazione della rimozione e apertura del connettore C13 (A).](/img/manual/asset-3c26b4a767ec.png "width=240") | ![Illustrazione della procedura, pagina stampata 21](/img/manual/asset-27e4522382d5.png "width=241") |
-| 3\. | Aprire il pressacavo (Y) e inserire il nuovo cavo. Lunghezze del cavo e sezioni dei conduttori: • 0 – 9 m (0 – 30 ft), 1 mm2 • 9 – 21 m (30 – 69 ft), 1.5 mm2 (massimo). Il pressacavo è dimensionato per un diametro del cavo di 3 – 10 mm (0.12” – 0.39”). | . ![Illustrazione della procedura.](/img/manual/asset-00540f644f60.png "width=240") |
+| 3\. | Aprire il pressacavo (Y) e inserire il nuovo cavo. Lunghezze del cavo e sezioni dei conduttori: • 0 – 9 m (0 – 30 ft), 1 mm<sup>2</sup> • 9 – 21 m (30 – 69 ft), 1.5 mm<sup>2</sup> (massimo). Il pressacavo è dimensionato per un diametro del cavo di 3 – 10 mm (0.12” – 0.39”). | ![Pressacavo e collegamento dei morsetti](/img/manual/asset-00540f644f60.png "width=240") |
 | 4\. | :::danger[Collegare la terra di protezione] Serrare i 3 conduttori (N, PE, L) nel morsetto elettrico e bloccare la guaina isolante del cavo. Assicurarsi di utilizzare una spina con terra di protezione (PE) e che il dispositivo sia correttamente collegato a essa. ::: | ^ |
 | 5\. | Chiudere il connettore C13 (A) mediante la vite e inserirlo nell’alimentatore. Serrare il pressacavo. Provare a tirare il cavo per verificare che il pressacavo sia serrato a sufficienza. | ![Illustrazione della procedura, pagina stampata 22](/img/manual/asset-27e4522382d5.png "width=241") |
 | 6\. | Opzionale: l’alimentatore può essere montato a parete. Utilizzare viti M4 con lunghezza minima di 20 mm. Con il coperchio ancora rimosso, posizionare le 4 viti e fissare l’involucro alla parete. | ![Illustrazione della procedura, pagina stampata 22](/img/manual/asset-0ee15b02c033.png "width=257") |
