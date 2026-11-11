@@ -14,7 +14,7 @@ Sistemi per il monitoraggio batterico rapido
 
 **Traduzione automatica:** Questo manuale è stato tradotto automaticamente. In caso di dubbio, la versione inglese è il riferimento.
 
-![Strumenti BactoSense sulla copertina del manuale d’uso](/img/manual/asset-75f5dbc4154e.png)
+![Strumenti BactoSense sulla copertina del manuale d’uso](/img/manual/asset-75f5dbc4154e.webp)
 
 ## Per iniziare
 
