@@ -22,7 +22,7 @@
     {
       "id": "en-navigation-root-001",
       "locale": "en",
-      "file": "docs/06-io-box.md",
+      "file": "manuals/bactosense/06-io-box.md",
       "old": "Navigate to the Home menu of the BactoSense user interface.",
       "new": "On the Home screen, press Settings.",
       "reason": "The current Home dashboard opens these menus through Settings.",
@@ -32,7 +32,7 @@
     {
       "id": "en-navigation-root-002",
       "locale": "en",
-      "file": "docs/09-upgrade-packages.md",
+      "file": "manuals/bactosense/09-upgrade-packages.md",
       "old": "Navigate to the Home menu of the BactoSense user interface.",
       "new": "On the Home screen, press Settings.",
       "reason": "The current Home dashboard opens these menus through Settings.",
@@ -42,7 +42,7 @@
     {
       "id": "en-navigation-root-003",
       "locale": "en",
-      "file": "docs/06-io-box.md",
+      "file": "manuals/bactosense/06-io-box.md",
       "old": "in the Inputs list",
       "new": "in the Input list",
       "reason": "Match visible current input/output controls and production locale.",
@@ -52,7 +52,7 @@
     {
       "id": "en-navigation-root-004",
       "locale": "en",
-      "file": "docs/06-io-box.md",
+      "file": "manuals/bactosense/06-io-box.md",
       "old": "“Scheduler activated”",
       "new": "“Use scheduler”",
       "reason": "Match visible current input/output controls and production locale.",
@@ -62,7 +62,7 @@
     {
       "id": "en-navigation-root-005",
       "locale": "en",
-      "file": "docs/07-field-bus-interface.md",
+      "file": "manuals/bactosense/07-field-bus-interface.md",
       "old": "- The BactoSense must have the Modbus TCP service activated in the System settings /  System services menu.",
       "new": "- The BactoSense must have the Modbus TCP service activated under Home → Settings → System settings → System services.",
       "reason": "Complete current Modbus service menu route, using production translations.",
@@ -72,7 +72,7 @@
     {
       "id": "en-navigation-root-006",
       "locale": "en",
-      "file": "docs/09-upgrade-packages.md",
+      "file": "manuals/bactosense/09-upgrade-packages.md",
       "old": "- On the user interface. In the *Home Menu*, press on *Logs* and then *Audit trail*.",
       "new": "- On the instrument user interface, open Home → Settings → Logs → Audit trail.",
       "reason": "Audit trail is reached through Home > Settings > Logs.",
@@ -82,7 +82,7 @@
     {
       "id": "en-navigation-root-007",
       "locale": "en",
-      "file": "docs/09-upgrade-packages.md",
+      "file": "manuals/bactosense/09-upgrade-packages.md",
       "old": "Press Save.",
       "new": "Press Save, then acknowledge the confirmation with OK.",
       "reason": "The current configuration save reports Settings changed and requires OK to dismiss.",
@@ -92,7 +92,7 @@
     {
       "id": "en-navigation-root-008",
       "locale": "en",
-      "file": "docs/17-storage-transport-and-disposal.md",
+      "file": "manuals/bactosense/17-storage-transport-and-disposal.md",
       "old": "or can be found on the System info page on the user interface, accessible from the Home menu.",
       "new": "or can be found on the instrument user interface under Home → Settings → System info.",
       "reason": "System info is an instrument screen accessed through Home > Settings, not the old Home menu or web interface.",
@@ -102,7 +102,7 @@
     {
       "id": "en-navigation-root-009",
       "locale": "en",
-      "file": "docs/17-storage-transport-and-disposal.md",
+      "file": "manuals/bactosense/17-storage-transport-and-disposal.md",
       "old": "Remove the cartridge using the Remove cartridge procedure in the Cartridge change menu.",
       "new": "Remove the cartridge using the Remove cartridge procedure under Home → Settings → Maintenance → Cartridge change. Basic users open Cartridge change directly from Settings.",
       "reason": "Complete the role-dependent Cartridge change route without changing the removal procedure.",
@@ -912,7 +912,7 @@
     {
       "id": "en-navigation-root-supplement-090",
       "locale": "en",
-      "file": "docs/06-io-box.md",
+      "file": "manuals/bactosense/06-io-box.md",
       "old": "## 6.8 Digital and analogue output testing {#section-6-8}",
       "new": "## 6.8 Digital and analogue output testing {#section-6-8}\n\nLog in as Admin and use Test outputs while the instrument is idle, with PLC mode disabled.",
       "expected_count": 1,
@@ -1042,7 +1042,7 @@
     {
       "id": "en-navigation-root-supplement-103",
       "locale": "en",
-      "file": "docs/09-upgrade-packages.md",
+      "file": "manuals/bactosense/09-upgrade-packages.md",
       "old": "Activate the package while the instrument is idle, with PLC and Simulation mode disabled.",
       "new": "Activate the package while the instrument is idle, with PLC mode and Demo mode disabled.",
       "expected_count": 2,
@@ -1052,7 +1052,7 @@
     {
       "id": "en-navigation-root-supplement-104",
       "locale": "en",
-      "file": "docs/09-upgrade-packages.md",
+      "file": "manuals/bactosense/09-upgrade-packages.md",
       "old": "After successful activation, press OK in the confirmation message and check that Scientific package shows Activated.",
       "new": "After successful activation, press OK in the confirmation message. If the instrument restarts, wait for it to finish, then open Upgrades again. Check that Scientific package shows Activated.",
       "expected_count": 1,
@@ -1142,7 +1142,7 @@
     {
       "id": "en-navigation-index-home",
       "locale": "en",
-      "file": "docs/20-index.md",
+      "file": "manuals/bactosense/20-index.md",
       "old": "Home menu",
       "new": "Home screen and Settings menu",
       "expected_count": 2,
@@ -1192,7 +1192,7 @@
     {
       "id": "en-settings-control-illustration-118",
       "locale": "en",
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "old": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nAs an Admin user, press Settings on the Home screen to open the settings menu.\n\n</td>\n\n<td>\n\n![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
       "new": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nAs an Admin user, press Settings on the Home screen to open the settings menu.\n\n</td>\n\n<td>\n\n![BactoSense — Settings button](/img/gui/en/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")\n\n</td>\n\n</tr>",
       "expected_count": 1,
@@ -1202,7 +1202,7 @@
     {
       "id": "en-settings-control-illustration-119",
       "locale": "en",
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "old": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nAs an Admin user, press Settings on the Home screen to open the settings menu.\n\n</td>\n\n<td>\n\n![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
       "new": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nAs an Admin user, press Settings on the Home screen to open the settings menu.\n\n</td>\n\n<td>\n\n![BactoSense — Settings button](/img/gui/en/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")\n\n</td>\n\n</tr>",
       "expected_count": 1,
@@ -1212,7 +1212,7 @@
     {
       "id": "en-settings-control-illustration-120",
       "locale": "en",
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "old": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nAs an Admin user, press Settings on the Home screen to open the settings menu.\n\n</td>\n\n<td colSpan=\"2\">\n\n![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
       "new": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nAs an Admin user, press Settings on the Home screen to open the settings menu.\n\n</td>\n\n<td colSpan=\"2\">\n\n![BactoSense — Settings button](/img/gui/en/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")\n\n</td>\n\n</tr>",
       "expected_count": 1,
@@ -1222,7 +1222,7 @@
     {
       "id": "en-settings-control-illustration-121",
       "locale": "en",
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "old": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nAs an Admin user, press Settings on the Home screen to open the settings menu.\n\n</td>\n\n<td colSpan=\"2\">\n\n![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")\n\n</td>\n\n</tr>",
       "new": "<tr>\n\n<td>\n\n1\\.\n\n</td>\n\n<td>\n\nAs an Admin user, press Settings on the Home screen to open the settings menu.\n\n</td>\n\n<td colSpan=\"2\">\n\n![BactoSense — Settings button](/img/gui/en/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")\n\n</td>\n\n</tr>",
       "expected_count": 1,
@@ -1232,7 +1232,7 @@
     {
       "id": "en-settings-control-illustration-122",
       "locale": "en",
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "old": "| 1. | As an Admin user, press Settings on the Home screen to open the settings menu. | ![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\") |\n",
       "new": "| 1. | As an Admin user, press Settings on the Home screen to open the settings menu. | ![BactoSense — Settings button](/img/gui/en/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\") |\n",
       "expected_count": 1,
@@ -1242,7 +1242,7 @@
     {
       "id": "en-settings-control-illustration-123",
       "locale": "en",
-      "file": "docs/11-results-and-data-analysis.md",
+      "file": "manuals/bactosense/11-results-and-data-analysis.md",
       "old": "| 1. | As an Advanced or Admin user, press Settings on the Home screen to open the settings menu. | ![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\") |\n",
       "new": "| 1. | As an Advanced or Admin user, press Settings on the Home screen to open the settings menu. | ![BactoSense — Settings button](/img/gui/en/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\") |\n",
       "expected_count": 1,
@@ -1252,7 +1252,7 @@
     {
       "id": "en-settings-control-illustration-124",
       "locale": "en",
-      "file": "docs/15-maintenance.md",
+      "file": "manuals/bactosense/15-maintenance.md",
       "old": "| 1. | As an Advanced or Admin user, press Settings on the Home screen to open the settings menu. | ![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\") |\n",
       "new": "| 1. | As an Advanced or Admin user, press Settings on the Home screen to open the settings menu. | ![BactoSense — Settings button](/img/gui/en/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\") |\n",
       "expected_count": 1,
@@ -1262,7 +1262,7 @@
     {
       "id": "en-remove-cartridge-empty-info-cell",
       "locale": "en",
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "old": "<td>\n\nt\n\n</td>",
       "new": "<td>\n\n</td>",
       "expected_count": 1,
@@ -1642,7 +1642,7 @@
     {
       "id": "en-web-system-info-settings-control",
       "locale": "en",
-      "file": "docs/13-web-user-interface.md",
+      "file": "manuals/bactosense/13-web-user-interface.md",
       "old": "![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\")",
       "new": "![BactoSense — Settings button](/img/gui/en/home-settings-button.png \"width=57 class=manual-icon-settings-button-half\")",
       "expected_count": 1,

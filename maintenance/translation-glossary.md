@@ -8,7 +8,7 @@ The current English Markdown is authoritative for meaning, procedures, specifica
 
 | Reference | Local source | Use |
 | --- | --- | --- |
-| EN | [Current English chapters](../docs/welcome.md) and [English source PDF](../UM_0006-EN_BactoSense_User_Manual.pdf) | Current content, technical meaning, identifiers and literal UI labels. |
+| EN | [Current English chapters](../manuals/bactosense/welcome.md) and [English source PDF](../UM_0006-EN_BactoSense_User_Manual.pdf) | Current content, technical meaning, identifiers and literal UI labels. |
 | DE-PDF | [German original](../UM_0006-DE_BactoSense_Bedienungsanleitung.pdf), **UM_0006-01DE**, valid from software **3.1.0** | Chapter 1: cytometry; chapters 3–5: hardware and sampling; chapters 8–11: operation and gates; chapters 15–17: maintenance and errors. |
 | FR-PDF | [French original](../UM_0006-FR_BactoSense_Manuel_d'Utilisation.pdf), **UM_0006-01FR**, valid from software **3.1.0** | Corresponding chapters for French terminology, with corrections for inconsistent or misleading wording. |
 | Current translations | [DE](../i18n/de/docusaurus-plugin-content-docs/current/welcome.md), [FR](../i18n/fr/docusaurus-plugin-content-docs/current/welcome.md), [IT](../i18n/it/docusaurus-plugin-content-docs/current/welcome.md), [ES](../i18n/es/docusaurus-plugin-content-docs/current/welcome.md) | Existing usage and consistency review; a variant does not override the preferred terminology below. |

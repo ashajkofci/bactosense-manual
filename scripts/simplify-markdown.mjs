@@ -184,9 +184,9 @@ export function simplifyMarkdown(text, tablePlan) {
   return wrapTables(result).replace(/\n{3,}/g, '\n\n').trimEnd() + '\n';
 }
 
-const directories = ['docs', ...['de', 'fr', 'it', 'es'].map(locale => `i18n/${locale}/docusaurus-plugin-content-docs/current`)];
+const directories = ['manuals/bactosense', ...['de', 'fr', 'it', 'es'].map(locale => `i18n/${locale}/docusaurus-plugin-content-docs/current`)];
 const reports = [], kept = [];
-for (const file of (await readdir(path.join(root, 'docs'))).filter(file => /\.mdx?$/.test(file))) {
+for (const file of (await readdir(path.join(root, 'manuals/bactosense'))).filter(file => /\.mdx?$/.test(file))) {
   const contents = await Promise.all(directories.map(dir => readFile(path.join(root, dir, file), 'utf8')));
   const tableSets = contents.map(text => tableRanges(text).map(([a,b]) => text.slice(a,b)));
   const plan = tableSets[0].map((_, index) => tableSets.every((tables, locale) => {
@@ -201,7 +201,7 @@ for (const file of (await readdir(path.join(root, 'docs'))).filter(file => /\.md
     reports.push({file: `${directories[i]}/${file}`, tablesConverted:plan.filter(Boolean).length, htmlTagsBefore:(contents[i].match(/<\/?[A-Za-z][^>]*>/g)||[]).length,htmlTagsAfter:(updated.match(/<\/?[A-Za-z][^>]*>/g)||[]).length});
   }
 }
-// Reviewed chapter bodies in scripts/editorial/ must stay equal to their docs/ counterparts.
+// Reviewed chapter bodies in scripts/editorial/ must stay equal to their manuals/bactosense/ counterparts.
 const editorialDirectory = path.join(root, 'scripts/editorial');
 for (const file of (await readdir(editorialDirectory)).filter(file => /\.mdx?$/.test(file))) {
   const editorial = path.join(editorialDirectory, file);

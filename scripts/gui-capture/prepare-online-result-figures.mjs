@@ -20,7 +20,7 @@ for (const locale of locales) {
   const index = manifest.figures.findIndex(row => row.id === id || row.id === legacyId);
   if (index < 0) throw new Error(`${locale}: missing the original result figure provenance.`);
   const previous = manifest.figures[index];
-  const docFile = locale === 'en' ? 'docs/11-results-and-data-analysis.md' : `i18n/${locale}/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md`;
+  const docFile = locale === 'en' ? 'manuals/bactosense/11-results-and-data-analysis.md' : `i18n/${locale}/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md`;
   const doc = await readFile(path.join(root, docFile), 'utf8');
   const section = doc.split('{#section-11-1}')[1]?.split(/\n#{1,6} /)[0];
   const output = `/img/gui/${locale}/online-result-details.png`;

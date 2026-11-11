@@ -46,7 +46,7 @@ def main():
     report = []
     with fitz.open(pdf_path) as pdf:
         for name, pages in sorted(chapters.items()):
-            document = ROOT / 'docs' / name
+            document = ROOT / 'manuals/bactosense' / name
             if not document.is_file():
                 raise SystemExit(f'Mapped chapter is missing: {document}')
             source = '\n'.join(

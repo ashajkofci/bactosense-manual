@@ -19,7 +19,7 @@ A Docusaurus platform for bNovate product manuals, based on the structure, typog
 | `documentId`, `version`, `softwareVersion` | PDF cover and footer; `softwareVersion` is optional. |
 | `locales` | Languages the manual is translated into (`en` is required). PDFs and translation checks cover these; other site languages show the English pages. |
 | `logo` | PDF cover image under `static/`. |
-| `path`, `docsPluginId` | Content folder (default `manuals/<id>`) and docs instance id (default `<id>`). BactoSense keeps `docs/` and the `default` instance, so its translations stay in `i18n/<locale>/docusaurus-plugin-content-docs/current/`. |
+| `path`, `docsPluginId` | Content folder (default `manuals/<id>`) and docs instance id (default `<id>`). BactoSense uses `manuals/bactosense/` and keeps the `default` instance, so its translations stay in `i18n/<locale>/docusaurus-plugin-content-docs/current/`. |
 | `chapters` | Optional: number of numbered chapters (`01-…` to `NN-…`) that `manual:check` requires in every language. |
 | `device` | Optional: export this manual to the instrument GUI. At most one manual (BactoSense). |
 
@@ -77,8 +77,8 @@ npm run serve
 ## Content and assets
 
 - `manuals.json`: the manual registry; `plugins/manuals.cjs` reads it for the site configuration and scripts.
-- `docs/`: the 20 BactoSense chapters plus the introduction and publisher notice.
-- `manuals/<id>/`: chapters of further manuals, currently `manuals/bactoswitch/` (9 chapters plus the introduction); their translations are in `i18n/<locale>/docusaurus-plugin-content-docs-<id>/current/` and their images in `static/img/<id>/`.
+- `manuals/bactosense/`: the 20 BactoSense chapters plus the introduction and publisher notice.
+- `manuals/<id>/`: English chapters of each manual, also including `manuals/bactoswitch/` (9 chapters plus the introduction); BactoSwitch translations are in `i18n/<locale>/docusaurus-plugin-content-docs-bactoswitch/current/` and its images in `static/img/bactoswitch/`.
 - `i18n/`: German, French, Italian and Spanish editions, with translated interface labels.
 - `static/img/`: only referenced illustrations, icons, branding and current GUI figures. Full-page PDF facsimiles, redundant table screenshots and unused extraction crops are removed.
 - `public/`: versioned Apache deployment, refreshed by `npm run build`.
@@ -89,6 +89,8 @@ npm run serve
 - Root-level `UM_0006-*.pdf`: local reference inputs, ignored by Git and excluded from deployment. The website contains only generated PDFs.
 - `output/pdf/<manual id>/<locale>/`: generated PDF copies and reports (ignored).
 - `static/pdf/`: ignored copies of the latest generated PDFs for the development server.
+
+Website and PDF builds read the current chapters from `manuals/<id>/` directly. `scripts/editorial/` preserves reviewed BactoSense content when re-extracting the older source PDF; `manual:format` also formats its retained chapter bodies, and `manual:check` checks that its safety-symbol legend matches the English chapter.
 
 Use Markdown for paragraphs, emphasis, lists and tables. HTML remains only for `<br />` line breaks inside table cells that hold separate lines (value lists, `Label:` and value pairs, bullets), the `<div className="…">` wrapper that carries a table's formatting classes, and scientific superscripts/subscripts. Do not use `<br />` to copy the PDF's line wrapping; write the text as one line. A table cannot sit inside another table's cell: place it below the procedure table, or write its values as a sentence. Headerless Markdown tables use a blank header row, which the site removes during rendering. Sized images use standard Markdown image syntax with a layout title, for example `![Instrument](/img/manual/example.png "width=600 class=manual-figure")`; the image component applies the size and removes the metadata from the tooltip. `npm run manual:format` simplifies equivalent markup across all five editions; review its changes before accepting them. Native admonitions provide warning and information boxes with short custom titles. On the web, images enlarge in a lightbox; close it with Escape, the close button, or a click outside the image. Index links use stable section headings, independent of the original PDF pagination.
 
@@ -136,7 +138,7 @@ npm run manual:check
 npm run build
 ```
 
-The extraction and parser scripts overwrite their generated artifacts and chapters. The parsers apply reviewed content from `scripts/editorial/` after extraction; keep the section 2.3 legend, sections 10.2.4, 10.7, 15.1.2, 15.4, 16.4 and 16.5, and chapter 9, 11 and 14 bodies there in sync with their counterparts in `docs/`. `scripts/manual_artwork.py` reapplies the current GUI figure mapping and reviewed chapter-specific English navigation/legend changes from `maintenance/gui-*.json`. Keep other editorial changes in the parser or review the diff before accepting a regeneration. The second parser runs the Markdown simplifier after both chapter passes. Re-extraction can recreate unused artwork; remove unreferenced output again before publishing. Review all translations after changing the English source.
+The extraction and parser scripts overwrite their generated artifacts and chapters. The parsers apply reviewed content from `scripts/editorial/` after extraction; keep the section 2.3 legend, sections 10.2.4, 10.7, 15.1.2, 15.4, 16.4 and 16.5, and chapter 9, 11 and 14 bodies there in sync with their counterparts in `manuals/bactosense/`. `scripts/manual_artwork.py` reapplies the current GUI figure mapping and reviewed chapter-specific English navigation/legend changes from `maintenance/gui-*.json`. Keep other editorial changes in the parser or review the diff before accepting a regeneration. The second parser runs the Markdown simplifier after both chapter passes. Re-extraction can recreate unused artwork; remove unreferenced output again before publishing. Review all translations after changing the English source.
 
 Exact decoded-pixel duplicates share assets. Similar icons are consolidated only after visual comparison; screenshots with different settings, readings or states remain distinct.
 
@@ -173,7 +175,7 @@ For chapter 6.6's small output-control captures, run `node scripts/gui-capture/p
 
 For development in a specific language, run `npm start -- --locale de` (or `fr`, `it`, `es`). The development server serves one language at a time; use `npm run build` followed by `npm run serve` to test switching across all five editions. `npm run manual:pdf -- de` regenerates just the German PDFs from an existing build, and `npm run manual:pdf -- bactosense de` only the German BactoSense PDF; without arguments it regenerates every manual in every language. Rebuild the website first after changing Markdown.
 
-To update the user manual downloads of the instrument web interface, run `npm run build`, then `npm run manual:web -- --optimize` (add `--bactoweb <path>` if the checkout is not `../bactoweb`). It validates the English, German and French BactoSense PDFs from `public/` and replaces `app/UM_0006-*.pdf` in bactoweb, leaving the quick guides alone. `--optimize` recompresses the images with Ghostscript (`brew install ghostscript`) to about 6 MiB per PDF instead of 22 MiB, and checks that the page count is unchanged; without it the PDFs are copied as built. Add `--dry-run` to preview, `--locales de,fr` to update only some languages, or `--from output` to use the latest local build instead of the committed `public/` PDFs. It warns when the manual sources are newer than the PDF. Review and commit the result in bactoweb.
+To update the user manual downloads of the instrument web interface, run `npm run build`, then `npm run manual:web -- --optimize` (add `--bactoweb <path>` if the checkout is not `../bactoweb`). It validates the English, German and French BactoSense PDFs from `public/` and replaces `app/UM_0006-*.pdf` in bactoweb, leaving the quick guides alone. `--optimize` recompresses the images with Ghostscript (`brew install ghostscript` on macOS; use the [Ghostscript Windows installer](https://ghostscript.com/releases/gsdnld.html) on Windows) to about 6 MiB per PDF instead of 22 MiB, and checks that the page count is unchanged; without it the PDFs are copied as built. On Windows it detects `gswin64c.exe` or `gswin32c.exe` on `PATH` or in standard `Program Files/gs` installations. Add `--dry-run` to preview, `--locales de,fr` to update only some languages, or `--from output` to use the latest local build instead of the committed `public/` PDFs. It warns when the manual sources are newer than the PDF. Review and commit the result in bactoweb.
 
 ## On-device manual prototype
 

@@ -3,15 +3,15 @@
   "locale": "es",
   "chapterCount": 21,
   "blockCount": 940,
-  "internalLinkCount": 685,
+  "internalLinkCount": 687,
   "assetCount": 178,
   "maxAssetWidth": 800,
   "resizedAssetCount": 53,
-  "assetBytes": 11840252,
+  "assetBytes": 11680607,
   "files": [
     {
       "file": "chapters/welcome.json",
-      "sha256": "4bda03db06cdd60dec052952c1f9cf0ad81b0764fb74a6bcd515f55301d8ed31"
+      "sha256": "7d3510c3702575a8dca7948d6ae1cce3589195d2612bd6f075b5981b06fd0d23"
     },
     {
       "file": "chapters/glossary.json",
@@ -23,7 +23,7 @@
     },
     {
       "file": "chapters/instrument-overview.json",
-      "sha256": "6c36aab3b2727e6f6cad89b91bf8328daaba35676b84a2c6dfebc8158ef2e9dd"
+      "sha256": "0cbe9d2b7d9c94b3a2830afc8d96b978535b6d29ec98a02f8e803f189d1485a5"
     },
     {
       "file": "chapters/safety.json",
@@ -31,7 +31,7 @@
     },
     {
       "file": "chapters/installation.json",
-      "sha256": "25316e4abf3ce0caac5bc004f9bbafa3c769a40921b5bcc49c7e671beb320467"
+      "sha256": "3a0987b8cc2787bb3707aabf7b4d36f4f066f9138b2fcbca0528e6cb07c8ac21"
     },
     {
       "file": "chapters/io-box.json",
@@ -47,15 +47,15 @@
     },
     {
       "file": "chapters/upgrade-packages.json",
-      "sha256": "dbcf66004bd383f4a483a26c21bbe3c0e69be795563b82ea6d21efb2759d4c8b"
+      "sha256": "24cf41a04d66229bfafb52273f2155d5ca2cb17d515ba43a9bd658c1ed2c103e"
     },
     {
       "file": "chapters/measurements.json",
-      "sha256": "73b4ba952620589223f243973045c733185e7e3cac287f57a0fba1ad8e4f1f71"
+      "sha256": "ed8c91a0e816c95f5a0444514b6269bc3e7ca2e16ed175520eae3a11283baf6e"
     },
     {
       "file": "chapters/results-and-data-analysis.json",
-      "sha256": "74842127b232b37ca239b0433e51ac3c39fce8860c104057ae47a4bc0a30f282"
+      "sha256": "f207a34d3a3483b3438b9856fceae58491745a059adbc47635a5b0017f00d7b7"
     },
     {
       "file": "chapters/data-access-and-export.json",
@@ -91,7 +91,7 @@
     },
     {
       "file": "chapters/index.json",
-      "sha256": "ddeef038c6ac010ffd96c25be8a76125890695449b050dcf332f47b5ec446dd2"
+      "sha256": "b3dcb18d54181a6bfc0ecf23fc18c99387a64816d51b4f16f924900aa5ab986b"
     }
   ],
   "assets": [
@@ -1464,15 +1464,15 @@
       "resized": true
     },
     {
-      "file": "assets/img/manual/asset-75f5dbc4154e.png",
-      "source": "static/img/manual/asset-75f5dbc4154e.png",
-      "sourceSha256": "eca7bbdbedaf990957a6e64806c84f6e30ed8b38ec1a054847a5312f85a5b45c",
-      "sha256": "32894f87855d548d1d49e098f095d50a4c35d3ca3e0db7eeed4bc61371e99832",
-      "bytes": 182105,
-      "originalWidth": 1905,
-      "originalHeight": 1268,
+      "file": "assets/img/manual/asset-75f5dbc4154e.webp",
+      "source": "static/img/manual/asset-75f5dbc4154e.webp",
+      "sourceSha256": "b99fb084fda61b24571940d6d2b0b0fd34b223dbae51005b1173357c5326c488",
+      "sha256": "6aa035ac04ed6266511a5d0e0c4aedfdedc2fdcbac918a46ee8d3cc5ef8c88b1",
+      "bytes": 22460,
+      "originalWidth": 2307,
+      "originalHeight": 823,
       "width": 800,
-      "height": 532,
+      "height": 285,
       "resized": true
     },
     {

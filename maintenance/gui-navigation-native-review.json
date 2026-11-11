@@ -2953,7 +2953,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/08-general-operations-and-configurations.md",
+          "file": "manuals/bactosense/08-general-operations-and-configurations.md",
           "locale": "en",
           "section": "8-1",
           "status": "verified-unchanged",
@@ -3109,7 +3109,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/08-general-operations-and-configurations.md",
+          "file": "manuals/bactosense/08-general-operations-and-configurations.md",
           "locale": "en",
           "section": "8-2-1",
           "status": "verified-unchanged",
@@ -3223,7 +3223,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/08-general-operations-and-configurations.md",
+          "file": "manuals/bactosense/08-general-operations-and-configurations.md",
           "locale": "en",
           "section": "8-2-2",
           "status": "corrected",
@@ -3239,7 +3239,7 @@
           ],
           "changes": [
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-2-2",
               "old": "| 3. | Select Log out Lock screen. |",
@@ -3376,7 +3376,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/08-general-operations-and-configurations.md",
+          "file": "manuals/bactosense/08-general-operations-and-configurations.md",
           "locale": "en",
           "section": "8-2-3",
           "status": "corrected",
@@ -3396,7 +3396,7 @@
           ],
           "changes": [
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-2-3",
               "old": "| 1. | On the Home screen, press Settings to open the settings menu. |  |",
@@ -3571,7 +3571,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/08-general-operations-and-configurations.md",
+          "file": "manuals/bactosense/08-general-operations-and-configurations.md",
           "locale": "en",
           "section": "8-2-4",
           "status": "corrected",
@@ -3589,7 +3589,7 @@
           ],
           "changes": [
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-2-4",
               "old": "| 1. | On the Home screen, press Settings to open the settings menu. |  |",
@@ -3597,7 +3597,7 @@
               "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Match the actual Advanced user management mode checkbox."
             },
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-2-4",
               "old": "| 4. | Check the Advanced user management mode check box. |  |",
@@ -3750,7 +3750,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/08-general-operations-and-configurations.md",
+          "file": "manuals/bactosense/08-general-operations-and-configurations.md",
           "locale": "en",
           "section": "8-2-5",
           "status": "corrected",
@@ -3768,7 +3768,7 @@
           ],
           "changes": [
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-2-5",
               "old": "| 1. | On the Home screen, press Settings, then System settings. |  |\n| 2. | Press on Users and then select the user profile you want to edit. Press Edit after selecting one check box. | Admin users are allowed to change passwords from other user profiles. |\n| 3. | Press on Change PIN, enter the new pin twice and press Save. |  |",
@@ -3913,7 +3913,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/08-general-operations-and-configurations.md",
+          "file": "manuals/bactosense/08-general-operations-and-configurations.md",
           "locale": "en",
           "section": "8-2-6",
           "status": "corrected",
@@ -3933,7 +3933,7 @@
           ],
           "changes": [
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-2-6",
               "old": "| 1. | On the Home screen, press Settings to open the settings menu. |  |",
@@ -4108,7 +4108,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/08-general-operations-and-configurations.md",
+          "file": "manuals/bactosense/08-general-operations-and-configurations.md",
           "locale": "en",
           "section": "8-3-1",
           "status": "corrected",
@@ -4125,7 +4125,7 @@
           ],
           "changes": [
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-3-1",
               "old": "| 1. | On the Home screen, press Settings to open the settings menu. |\n| 2. | Press on System settings, then press Language. |",
@@ -4133,7 +4133,7 @@
               "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Follow the actual System settings > Language route.; Language selection requires the Reload interface action, whose label is localized in the target language."
             },
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-3-1",
               "old": "| 4. | A message appears requesting a reload of the user interface. Confirm the message. |",
@@ -4312,7 +4312,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/08-general-operations-and-configurations.md",
+          "file": "manuals/bactosense/08-general-operations-and-configurations.md",
           "locale": "en",
           "section": "8-3-2",
           "status": "corrected",
@@ -4332,7 +4332,7 @@
           ],
           "changes": [
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-3-2",
               "old": "If time synchronization is enabled, either with NTP servers or through Modbus TCP, your  manual date and time settings will be overridden during the next synchronization.  Settings can be found under **System settings** &gt; **Date &amp; Time** &gt; **Time synchronization settings**. For setting up NTP server, please refer to [Set NTP Servers](08-general-operations-and-configurations.md#section-8-7).",
@@ -4340,7 +4340,7 @@
               "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Use the current Date & time menu label.; The time-sync shortcut must include Home > Settings and the actual localized submenu names.; Select the time zone using the native localized control, rather than an English label in translated instructions."
             },
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-3-2",
               "old": "| 1. | On the Home screen, press Settings to open the settings menu. |",
@@ -4348,7 +4348,7 @@
               "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Use the current Date & time menu label.; The time-sync shortcut must include Home > Settings and the actual localized submenu names.; Select the time zone using the native localized control, rather than an English label in translated instructions."
             },
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-3-2",
               "old": "| 3. | Press the Date &amp; Time button. |",
@@ -4356,7 +4356,7 @@
               "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Use the current Date & time menu label.; The time-sync shortcut must include Home > Settings and the actual localized submenu names.; Select the time zone using the native localized control, rather than an English label in translated instructions."
             },
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-3-2",
               "old": "| 5. | Select the Time zone. |",
@@ -4579,7 +4579,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/08-general-operations-and-configurations.md",
+          "file": "manuals/bactosense/08-general-operations-and-configurations.md",
           "locale": "en",
           "section": "8-3-3",
           "status": "corrected",
@@ -4600,7 +4600,7 @@
           ],
           "changes": [
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-3-3",
               "old": "| 1. | On the Home screen, press Settings to open the settings menu. |",
@@ -4608,7 +4608,7 @@
               "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Device name is an editable text field on System configuration.; The name keyboard must close with OK before saving System configuration."
             },
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-3-3",
               "old": "| 4. | Press the Device name button. |\n| 5. | Enter your individual device name in the input field. |",
@@ -4777,7 +4777,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/08-general-operations-and-configurations.md",
+          "file": "manuals/bactosense/08-general-operations-and-configurations.md",
           "locale": "en",
           "section": "8-3-4",
           "status": "verified-unchanged",
@@ -4954,7 +4954,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/08-general-operations-and-configurations.md",
+          "file": "manuals/bactosense/08-general-operations-and-configurations.md",
           "locale": "en",
           "section": "8-3-5",
           "status": "corrected",
@@ -4972,7 +4972,7 @@
           ],
           "changes": [
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-3-5",
               "old": "| 4. | Activate the Sound notifications option. |",
@@ -5123,7 +5123,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/08-general-operations-and-configurations.md",
+          "file": "manuals/bactosense/08-general-operations-and-configurations.md",
           "locale": "en",
           "section": "8-4",
           "status": "corrected",
@@ -5147,7 +5147,7 @@
           ],
           "changes": [
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-4",
               "old": "| 1. | On the Home screen, press Settings to open the settings menu. | ![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\") |",
@@ -5155,7 +5155,7 @@
               "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Import settings opens a Reboot now / Cancel confirmation before executing.; Match the current Import settings control label."
             },
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-4",
               "old": "| 5. | Press Import settings | ![BactoSense — USB import and export](/img/gui/en/usb-import-and-export.png \"width=263\") |",
@@ -5163,7 +5163,7 @@
               "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Import settings opens a Reboot now / Cancel confirmation before executing.; Match the current Import settings control label."
             },
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-4",
               "old": "| 7. | Press Import settings and wait until the device reboots |  |",
@@ -5392,7 +5392,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/08-general-operations-and-configurations.md",
+          "file": "manuals/bactosense/08-general-operations-and-configurations.md",
           "locale": "en",
           "section": "8-5",
           "status": "corrected",
@@ -5414,7 +5414,7 @@
           ],
           "changes": [
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-5",
               "old": "| 3. | Press Alarms. |  |",
@@ -5591,7 +5591,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/08-general-operations-and-configurations.md",
+          "file": "manuals/bactosense/08-general-operations-and-configurations.md",
           "locale": "en",
           "section": "8-6",
           "status": "corrected",
@@ -5611,7 +5611,7 @@
           ],
           "changes": [
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-6",
               "old": "On the Home screen, press Settings to open the settings menu.",
@@ -5832,7 +5832,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/08-general-operations-and-configurations.md",
+          "file": "manuals/bactosense/08-general-operations-and-configurations.md",
           "locale": "en",
           "section": "8-7",
           "status": "corrected",
@@ -5857,7 +5857,7 @@
           ],
           "changes": [
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-7",
               "old": "Network Time Protocol (NTP) is a computer network protocol which is used to synchronise  time on computers across a network. By default, these are set to synchronise to the  Network Time Foundation servers (ntp.org). You have the possibility to set custom NTP  servers in the *Date and Time* menu.",
@@ -5865,7 +5865,7 @@
               "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Use the current Date & time menu label.; Use the Date & time screen’s Time synchronization settings button, not the differently translated next-page heading.; Test NTP triggers the reachability check; OK saves services settings.; Match the Date & time menu name in the introductory navigation sentence."
             },
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-7",
               "old": "On the Home screen, press Settings to open the settings menu.",
@@ -5873,7 +5873,7 @@
               "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Use the current Date & time menu label.; Use the Date & time screen’s Time synchronization settings button, not the differently translated next-page heading.; Test NTP triggers the reachability check; OK saves services settings.; Match the Date & time menu name in the introductory navigation sentence."
             },
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-7",
               "old": "Press the Date &amp; Time button.",
@@ -5881,7 +5881,7 @@
               "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Use the current Date & time menu label.; Use the Date & time screen’s Time synchronization settings button, not the differently translated next-page heading.; Test NTP triggers the reachability check; OK saves services settings.; Match the Date & time menu name in the introductory navigation sentence."
             },
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-7",
               "old": "Press Time synchronization settings button.",
@@ -5889,7 +5889,7 @@
               "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Use the current Date & time menu label.; Use the Date & time screen’s Time synchronization settings button, not the differently translated next-page heading.; Test NTP triggers the reachability check; OK saves services settings.; Match the Date & time menu name in the introductory navigation sentence."
             },
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-7",
               "old": "By editing and changing a server address and pressing OK, it will automatically ping the server and update the date and time.",
@@ -6228,7 +6228,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/08-general-operations-and-configurations.md",
+          "file": "manuals/bactosense/08-general-operations-and-configurations.md",
           "locale": "en",
           "section": "8-8-1",
           "status": "corrected",
@@ -6246,7 +6246,7 @@
           ],
           "changes": [
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-8-1",
               "old": "### 8.8.1 General structure and home menu {#section-8-8-1}",
@@ -6395,7 +6395,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/08-general-operations-and-configurations.md",
+          "file": "manuals/bactosense/08-general-operations-and-configurations.md",
           "locale": "en",
           "section": "8-9-2",
           "status": "verified-unchanged",
@@ -6489,7 +6489,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/08-general-operations-and-configurations.md",
+          "file": "manuals/bactosense/08-general-operations-and-configurations.md",
           "locale": "en",
           "section": "8-9-4",
           "status": "corrected",
@@ -6507,7 +6507,7 @@
           ],
           "changes": [
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-9-4",
               "old": "Select the Change cartridge option.",
@@ -6714,7 +6714,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/08-general-operations-and-configurations.md",
+          "file": "manuals/bactosense/08-general-operations-and-configurations.md",
           "locale": "en",
           "section": "8-9-5",
           "status": "corrected",
@@ -6734,7 +6734,7 @@
           ],
           "changes": [
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-9-5",
               "old": "Select the Remove cartridge option.",
@@ -6742,7 +6742,7 @@
               "reason": "Maintenance moved from Home into Settings; Basic users use Cartridge change directly.; Match the current cartridge wizard action label."
             },
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-9-5",
               "old": "The top bar of the user interface indicates that no cartridge is connected. The Maintenance button in the Home menu is now dis- played in orange.<br />![BactoSense — Cartridge not ready](/img/gui/icons/cartridge-not-ready-status.png \"width=30 class=manual-icon\")",
@@ -6989,7 +6989,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/08-general-operations-and-configurations.md",
+          "file": "manuals/bactosense/08-general-operations-and-configurations.md",
           "locale": "en",
           "section": "8-9-6",
           "status": "corrected",
@@ -7009,7 +7009,7 @@
           ],
           "changes": [
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-9-6",
               "old": "Select the Install cartridge option.",
@@ -7222,7 +7222,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/08-general-operations-and-configurations.md",
+          "file": "manuals/bactosense/08-general-operations-and-configurations.md",
           "locale": "en",
           "section": "8-11-1",
           "status": "corrected",
@@ -7252,7 +7252,7 @@
           ],
           "changes": [
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-11-1",
               "old": "| 4. | In the BactoSense user interface, navigate to the Home menu. |",
@@ -7260,7 +7260,7 @@
               "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label."
             },
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-11-1",
               "old": "| 6. | Choose the Prime protocol from the list of available protocols. |",
@@ -7268,7 +7268,7 @@
               "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label."
             },
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-11-1",
               "old": "| 11. | Select the Water Analysis protocol from the list of available protocols. |",
@@ -7546,7 +7546,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/08-general-operations-and-configurations.md",
+          "file": "manuals/bactosense/08-general-operations-and-configurations.md",
           "locale": "en",
           "section": "8-12",
           "status": "corrected",
@@ -7566,7 +7566,7 @@
           ],
           "changes": [
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-12",
               "old": "On the Home screen, press Settings to open the settings menu.",
@@ -7574,7 +7574,7 @@
               "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Match the exact current System settings > Demo mode route.; Use the production Activate demo mode checkbox label.; Use the same native checkbox label when returning from Demo mode."
             },
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-12",
               "old": "Enter the System settings button, and then the Demo mode button.",
@@ -7582,7 +7582,7 @@
               "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Match the exact current System settings > Demo mode route.; Use the production Activate demo mode checkbox label.; Use the same native checkbox label when returning from Demo mode."
             },
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-12",
               "old": "Select the Activate demo mode box.",
@@ -7590,7 +7590,7 @@
               "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Match the exact current System settings > Demo mode route.; Use the production Activate demo mode checkbox label.; Use the same native checkbox label when returning from Demo mode."
             },
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-12",
               "old": "To return into normal mode, follow the same procedure, but uncheck the **Activate demo**  **mode** box.",
@@ -7850,7 +7850,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/08-general-operations-and-configurations.md",
+          "file": "manuals/bactosense/08-general-operations-and-configurations.md",
           "locale": "en",
           "section": "8-13",
           "status": "corrected",
@@ -7868,7 +7868,7 @@
           ],
           "changes": [
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-13",
               "old": "On the Home screen, press Settings to open the settings menu.",
@@ -7876,7 +7876,7 @@
               "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Factory reset opens a Yes/No confirmation before making any change."
             },
             {
-              "file": "docs/08-general-operations-and-configurations.md",
+              "file": "manuals/bactosense/08-general-operations-and-configurations.md",
               "locale": "en",
               "section": "8-13",
               "old": "Then press the Reset the device and reboot button.",
@@ -8079,7 +8079,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/10-measurements.md",
+          "file": "manuals/bactosense/10-measurements.md",
           "locale": "en",
           "section": "10-2-1",
           "status": "corrected",
@@ -8106,7 +8106,7 @@
           ],
           "changes": [
             {
-              "file": "docs/10-measurements.md",
+              "file": "manuals/bactosense/10-measurements.md",
               "locale": "en",
               "section": "10-2-1",
               "old": "| 2. | In the BactoSense user interface, navigate to the Home menu. |  |\n| 3. | On the action bar at the bottom, select Online mode and press Start. |  |\n| 4. | Press the Start button. |  |\n| 5. | Under Protocol, make sure the check box for “Online Sampling Device (with Backflush)” is checked. |  |",
@@ -8114,7 +8114,7 @@
               "reason": "Home is a result screen; mode selection is a separate control.; Replace the former footer mode selector with Mode > Online mode > Back; the following Home Start opens the online wizard.; Start on the Online Home screen opens AutoInstructionWizardScreen directly; the later wizard Start executes the schedule.; Match the protocol checkbox label without changing the selected analysis protocol.; The simple schedule checkbox is translated in SchedulerView, not ScheduleIntervalScreen.; Existing advanced schedules can open the weekly editor; Back restores the simple interval flow described here."
             },
             {
-              "file": "docs/10-measurements.md",
+              "file": "manuals/bactosense/10-measurements.md",
               "locale": "en",
               "section": "10-2-1",
               "old": "| 9. | Select the measurement interval using the wheel on the right hand side. | The measurement interval describes the time between different measurements and can be as short as 30 min and as long as 6 hours. |\n| 10. | If needed, you can delay the starting time by unchecking the Start immediately box and choose a specific time to start. | The time setting of the BactoSense is described in [Date and time](08-general-operations-and-configurations.md#section-8-3-2). |",
@@ -8329,7 +8329,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/10-measurements.md",
+          "file": "manuals/bactosense/10-measurements.md",
           "locale": "en",
           "section": "10-2-2",
           "status": "corrected",
@@ -8343,7 +8343,7 @@
           ],
           "changes": [
             {
-              "file": "docs/10-measurements.md",
+              "file": "manuals/bactosense/10-measurements.md",
               "locale": "en",
               "section": "10-2-2",
               "old": "| 1. | Press the Stop button on the user interface. |  |",
@@ -8470,7 +8470,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/10-measurements.md",
+          "file": "manuals/bactosense/10-measurements.md",
           "locale": "en",
           "section": "10-2-3",
           "status": "verified-unchanged",
@@ -8588,7 +8588,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/10-measurements.md",
+          "file": "manuals/bactosense/10-measurements.md",
           "locale": "en",
           "section": "10-3-1",
           "status": "corrected",
@@ -8615,7 +8615,7 @@
           ],
           "changes": [
             {
-              "file": "docs/10-measurements.md",
+              "file": "manuals/bactosense/10-measurements.md",
               "locale": "en",
               "section": "10-3-1",
               "old": "| 4. | In the BactoSense user interface, navigate to the Home menu. |  |",
@@ -8623,7 +8623,7 @@
               "reason": "Completed analysis uses Next to open the detailed result view.; The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label."
             },
             {
-              "file": "docs/10-measurements.md",
+              "file": "manuals/bactosense/10-measurements.md",
               "locale": "en",
               "section": "10-3-1",
               "old": "| 6. | Choose the Water Analysis protocol from the list of available protocols. | If you want technical replicates, select the number of replicates in Replications column. By default, one sample is measured. If more replicates are configured, multiple samples are drawn from the same sample tube. |",
@@ -8631,7 +8631,7 @@
               "reason": "Completed analysis uses Next to open the detailed result view.; The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label."
             },
             {
-              "file": "docs/10-measurements.md",
+              "file": "manuals/bactosense/10-measurements.md",
               "locale": "en",
               "section": "10-3-1",
               "old": "| 12. | After finishing the measurement, view the results. Results are explained in [Measurement results](11-results-and-data-analysis.md#section-11-1). |  |",
@@ -8898,7 +8898,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/10-measurements.md",
+          "file": "manuals/bactosense/10-measurements.md",
           "locale": "en",
           "section": "10-4",
           "status": "corrected",
@@ -8916,7 +8916,7 @@
           ],
           "changes": [
             {
-              "file": "docs/10-measurements.md",
+              "file": "manuals/bactosense/10-measurements.md",
               "locale": "en",
               "section": "10-4",
               "old": "| 1. | Navigate to the Home menu and press Results (Manual) or Results (Online). |",
@@ -9083,7 +9083,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/10-measurements.md",
+          "file": "manuals/bactosense/10-measurements.md",
           "locale": "en",
           "section": "10-5",
           "status": "verified-unchanged",
@@ -9171,7 +9171,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/10-measurements.md",
+          "file": "manuals/bactosense/10-measurements.md",
           "locale": "en",
           "section": "10-7",
           "status": "corrected",
@@ -9187,7 +9187,7 @@
           ],
           "changes": [
             {
-              "file": "docs/10-measurements.md",
+              "file": "manuals/bactosense/10-measurements.md",
               "locale": "en",
               "section": "10-7",
               "old": "| 1. | Navigate to the Home menu and press Results (Manual) or Results (Online). |",
@@ -9330,7 +9330,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/10-measurements.md",
+          "file": "manuals/bactosense/10-measurements.md",
           "locale": "en",
           "section": "10-8-1",
           "status": "corrected",
@@ -9350,7 +9350,7 @@
           ],
           "changes": [
             {
-              "file": "docs/10-measurements.md",
+              "file": "manuals/bactosense/10-measurements.md",
               "locale": "en",
               "section": "10-8-1",
               "old": "| 1. | Navigate to the Home menu and press Results (Manual) or Results (Online). |\n| 2. | In the results list,<br/>• press the Export series button to export a set of measurements or all measurements.<br/>• select a group of replicates and press the Export series button to export this group of replicates.<br/>• select a single measurement and then press Export to export only a single measurement. |",
@@ -9533,7 +9533,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/10-measurements.md",
+          "file": "manuals/bactosense/10-measurements.md",
           "locale": "en",
           "section": "10-9-3",
           "status": "corrected",
@@ -9553,7 +9553,7 @@
           ],
           "changes": [
             {
-              "file": "docs/10-measurements.md",
+              "file": "manuals/bactosense/10-measurements.md",
               "locale": "en",
               "section": "10-9-3",
               "old": "| 2. | In the BactoSense user interface, navigate to the Home menu. |",
@@ -9561,7 +9561,7 @@
               "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label."
             },
             {
-              "file": "docs/10-measurements.md",
+              "file": "manuals/bactosense/10-measurements.md",
               "locale": "en",
               "section": "10-9-3",
               "old": "| 4. | Choose the Prime protocol from the list of available protocols. |",
@@ -9765,7 +9765,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/11-results-and-data-analysis.md",
+          "file": "manuals/bactosense/11-results-and-data-analysis.md",
           "locale": "en",
           "section": "11-1",
           "status": "corrected",
@@ -9793,7 +9793,7 @@
           ],
           "changes": [
             {
-              "file": "docs/11-results-and-data-analysis.md",
+              "file": "manuals/bactosense/11-results-and-data-analysis.md",
               "locale": "en",
               "section": "11-1",
               "old": "| 8 | The Re-Gate result button allows to apply a different gating to the measurement data. For details refer to [Regate measurements](../results-and-data-analysis/#section-11-4-1). |",
@@ -10030,7 +10030,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/11-results-and-data-analysis.md",
+          "file": "manuals/bactosense/11-results-and-data-analysis.md",
           "locale": "en",
           "section": "11-2-1",
           "status": "corrected",
@@ -10042,7 +10042,7 @@
           ],
           "changes": [
             {
-              "file": "docs/11-results-and-data-analysis.md",
+              "file": "manuals/bactosense/11-results-and-data-analysis.md",
               "locale": "en",
               "section": "11-2-1",
               "old": "- The default gates on the BactoSense can be found when pressing on Gate settings in the Home menu of the BactoSense user interface.",
@@ -10191,7 +10191,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/11-results-and-data-analysis.md",
+          "file": "manuals/bactosense/11-results-and-data-analysis.md",
           "locale": "en",
           "section": "11-2-2",
           "status": "corrected",
@@ -10203,7 +10203,7 @@
           ],
           "changes": [
             {
-              "file": "docs/11-results-and-data-analysis.md",
+              "file": "manuals/bactosense/11-results-and-data-analysis.md",
               "locale": "en",
               "section": "11-2-2",
               "old": "A list of all available gating sets on the BactoSense can be found when pressing Gate settings in the Home menu of the BactoSense user interface.",
@@ -10352,7 +10352,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/11-results-and-data-analysis.md",
+          "file": "manuals/bactosense/11-results-and-data-analysis.md",
           "locale": "en",
           "section": "11-4-1",
           "status": "corrected",
@@ -10378,7 +10378,7 @@
           ],
           "changes": [
             {
-              "file": "docs/11-results-and-data-analysis.md",
+              "file": "manuals/bactosense/11-results-and-data-analysis.md",
               "locale": "en",
               "section": "11-4-1",
               "old": "- A prerequisite for regating is the presence of such additional gating set. Find all available gating sets for your cartridge type when pressing Gate settings on the Home menu of the BactoSense user interface.",
@@ -10386,7 +10386,7 @@
               "reason": "Gate settings moved into the Settings menu; gates themselves and regating prerequisites are unchanged.; Open Settings from Home before choosing a historical results bucket.; Logs provides both historical results buckets without changing the active mode.; Single result and multi-selection have distinct re-gate button labels.; Make the complete Home > Settings > Gate settings path explicit without changing gating prerequisites."
             },
             {
-              "file": "docs/11-results-and-data-analysis.md",
+              "file": "manuals/bactosense/11-results-and-data-analysis.md",
               "locale": "en",
               "section": "11-4-1",
               "old": "Navigate to the Home menu of the BactoSense user interface.",
@@ -10394,7 +10394,7 @@
               "reason": "Gate settings moved into the Settings menu; gates themselves and regating prerequisites are unchanged.; Open Settings from Home before choosing a historical results bucket.; Logs provides both historical results buckets without changing the active mode.; Single result and multi-selection have distinct re-gate button labels.; Make the complete Home > Settings > Gate settings path explicit without changing gating prerequisites."
             },
             {
-              "file": "docs/11-results-and-data-analysis.md",
+              "file": "manuals/bactosense/11-results-and-data-analysis.md",
               "locale": "en",
               "section": "11-4-1",
               "old": "Depending on how the measurement was performed, press Results (manual) or Results (Online) to see the list of results.",
@@ -10402,7 +10402,7 @@
               "reason": "Gate settings moved into the Settings menu; gates themselves and regating prerequisites are unchanged.; Open Settings from Home before choosing a historical results bucket.; Logs provides both historical results buckets without changing the active mode.; Single result and multi-selection have distinct re-gate button labels.; Make the complete Home > Settings > Gate settings path explicit without changing gating prerequisites."
             },
             {
-              "file": "docs/11-results-and-data-analysis.md",
+              "file": "manuals/bactosense/11-results-and-data-analysis.md",
               "locale": "en",
               "section": "11-4-1",
               "old": "Then press the Re-gate button.",
@@ -10765,7 +10765,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/11-results-and-data-analysis.md",
+          "file": "manuals/bactosense/11-results-and-data-analysis.md",
           "locale": "en",
           "section": "11-4-2",
           "status": "corrected",
@@ -10793,7 +10793,7 @@
           ],
           "changes": [
             {
-              "file": "docs/11-results-and-data-analysis.md",
+              "file": "manuals/bactosense/11-results-and-data-analysis.md",
               "locale": "en",
               "section": "11-4-2",
               "old": "| 1. | Navigate to the Home menu of the BactoSense user interface. |  |",
@@ -10801,7 +10801,7 @@
               "reason": "Gate settings is inside Settings and is limited to Advanced/Admin.; New opens a template list with the available cartridge types; choose a template appropriate for the installed cartridge; type is determined by the chosen template."
             },
             {
-              "file": "docs/11-results-and-data-analysis.md",
+              "file": "manuals/bactosense/11-results-and-data-analysis.md",
               "locale": "en",
               "section": "11-4-2",
               "old": "| 1. | Navigate to the Home menu of the BactoSense user interface. |  |",
@@ -10809,7 +10809,7 @@
               "reason": "Gate settings is inside Settings and is limited to Advanced/Admin.; New opens a template list with the available cartridge types; choose a template appropriate for the installed cartridge; type is determined by the chosen template."
             },
             {
-              "file": "docs/11-results-and-data-analysis.md",
+              "file": "manuals/bactosense/11-results-and-data-analysis.md",
               "locale": "en",
               "section": "11-4-2",
               "old": "| 4. | In the name field, type a name for the set of gates. In the type field, select for which cartridge type the set of gates will be used. |  |",
@@ -11112,7 +11112,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/11-results-and-data-analysis.md",
+          "file": "manuals/bactosense/11-results-and-data-analysis.md",
           "locale": "en",
           "section": "11-4-3",
           "status": "corrected",
@@ -11136,7 +11136,7 @@
           ],
           "changes": [
             {
-              "file": "docs/11-results-and-data-analysis.md",
+              "file": "manuals/bactosense/11-results-and-data-analysis.md",
               "locale": "en",
               "section": "11-4-3",
               "old": "| 1. | Navigate to the Home menu of the BactoSense user interface. | ![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\") |",
@@ -11144,7 +11144,7 @@
               "reason": "Gate settings is inside Settings and is limited to Advanced/Admin.; Edited custom gates offer Save versus Save as new set; the two choices have different outcomes."
             },
             {
-              "file": "docs/11-results-and-data-analysis.md",
+              "file": "manuals/bactosense/11-results-and-data-analysis.md",
               "locale": "en",
               "section": "11-4-3",
               "old": "| 8. | Press the Save button and confirm. |  |",
@@ -11403,7 +11403,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/11-results-and-data-analysis.md",
+          "file": "manuals/bactosense/11-results-and-data-analysis.md",
           "locale": "en",
           "section": "11-4-4",
           "status": "corrected",
@@ -11433,7 +11433,7 @@
           ],
           "changes": [
             {
-              "file": "docs/11-results-and-data-analysis.md",
+              "file": "manuals/bactosense/11-results-and-data-analysis.md",
               "locale": "en",
               "section": "11-4-4",
               "old": "Navigate to the Home menu of the BactoSense user interface and press the Gate settings button.",
@@ -11441,7 +11441,7 @@
               "reason": "The gate-adjustment strategy must open Settings before Gate settings.; New templates have Yes/No confirmation; existing gate sets have Save/Save as new set choices.; The HNA adjustment updates the existing custom gate through the explicit Save choice."
             },
             {
-              "file": "docs/11-results-and-data-analysis.md",
+              "file": "manuals/bactosense/11-results-and-data-analysis.md",
               "locale": "en",
               "section": "11-4-4",
               "old": "Press Next and Save. Confirm that you wish to Save the new set of gates.",
@@ -11449,7 +11449,7 @@
               "reason": "The gate-adjustment strategy must open Settings before Gate settings.; New templates have Yes/No confirmation; existing gate sets have Save/Save as new set choices.; The HNA adjustment updates the existing custom gate through the explicit Save choice."
             },
             {
-              "file": "docs/11-results-and-data-analysis.md",
+              "file": "manuals/bactosense/11-results-and-data-analysis.md",
               "locale": "en",
               "section": "11-4-4",
               "old": "Navigate to the HNA lower limit configuration step. Enter the previously identified HNA lower limit to the FL1 field, press Save and confirm.",
@@ -11878,7 +11878,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/11-results-and-data-analysis.md",
+          "file": "manuals/bactosense/11-results-and-data-analysis.md",
           "locale": "en",
           "section": "11-5-1",
           "status": "verified-unchanged",
@@ -11961,7 +11961,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/11-results-and-data-analysis.md",
+          "file": "manuals/bactosense/11-results-and-data-analysis.md",
           "locale": "en",
           "section": "11-6",
           "status": "corrected",
@@ -11981,7 +11981,7 @@
           ],
           "changes": [
             {
-              "file": "docs/11-results-and-data-analysis.md",
+              "file": "manuals/bactosense/11-results-and-data-analysis.md",
               "locale": "en",
               "section": "11-6",
               "old": "Choose the Prime protocol from the list.",
@@ -11989,7 +11989,7 @@
               "reason": "New returns from the completed Prime to the protocol selector before Beads Analysis.; Use the production Prime protocol label before the beads comparison."
             },
             {
-              "file": "docs/11-results-and-data-analysis.md",
+              "file": "manuals/bactosense/11-results-and-data-analysis.md",
               "locale": "en",
               "section": "11-6",
               "old": "Choose the Beads Analysis protocol from the list and run it.",
@@ -12228,7 +12228,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/12-data-access-and-export.md",
+          "file": "manuals/bactosense/12-data-access-and-export.md",
           "locale": "en",
           "section": "12-1-1",
           "status": "corrected",
@@ -12248,7 +12248,7 @@
           ],
           "changes": [
             {
-              "file": "docs/12-data-access-and-export.md",
+              "file": "manuals/bactosense/12-data-access-and-export.md",
               "locale": "en",
               "section": "12-1-1",
               "old": "| 1. | On the Home screen, press Settings to open the settings menu. |  |\n| 2. | Press the Maintenance button and then the Special export import button. |  |",
@@ -12423,7 +12423,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/12-data-access-and-export.md",
+          "file": "manuals/bactosense/12-data-access-and-export.md",
           "locale": "en",
           "section": "12-2",
           "status": "corrected",
@@ -12447,7 +12447,7 @@
           ],
           "changes": [
             {
-              "file": "docs/12-data-access-and-export.md",
+              "file": "manuals/bactosense/12-data-access-and-export.md",
               "locale": "en",
               "section": "12-2",
               "old": "| 3. | On the Home screen, press Settings to open the settings menu. |  |",
@@ -12455,7 +12455,7 @@
               "reason": "Services is rendered as System services in the current compiled locale.; Apply saves the service changes; Reboot now appears only when the saved changes require it.; The System services menu is restricted to Admin."
             },
             {
-              "file": "docs/12-data-access-and-export.md",
+              "file": "manuals/bactosense/12-data-access-and-export.md",
               "locale": "en",
               "section": "12-2",
               "old": "| 5. | Press the Services button. |  |",
@@ -12463,7 +12463,7 @@
               "reason": "Services is rendered as System services in the current compiled locale.; Apply saves the service changes; Reboot now appears only when the saved changes require it.; The System services menu is restricted to Admin."
             },
             {
-              "file": "docs/12-data-access-and-export.md",
+              "file": "manuals/bactosense/12-data-access-and-export.md",
               "locale": "en",
               "section": "12-2",
               "old": "| 8. | Press the Apply button to reboot the BactoSense. | Only needed in case you changed the configuration. |",
@@ -12662,7 +12662,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/12-data-access-and-export.md",
+          "file": "manuals/bactosense/12-data-access-and-export.md",
           "locale": "en",
           "section": "12-3",
           "status": "corrected",
@@ -12684,7 +12684,7 @@
           ],
           "changes": [
             {
-              "file": "docs/12-data-access-and-export.md",
+              "file": "manuals/bactosense/12-data-access-and-export.md",
               "locale": "en",
               "section": "12-3",
               "old": "On the Home screen, press Settings to open the settings menu.",
@@ -12692,7 +12692,7 @@
               "reason": "Services is rendered as System services in the current compiled locale.; Apply saves the service changes; Reboot now appears only when the saved changes require it.; The System services menu is restricted to Admin."
             },
             {
-              "file": "docs/12-data-access-and-export.md",
+              "file": "manuals/bactosense/12-data-access-and-export.md",
               "locale": "en",
               "section": "12-3",
               "old": "Press the Services button.",
@@ -12700,7 +12700,7 @@
               "reason": "Services is rendered as System services in the current compiled locale.; Apply saves the service changes; Reboot now appears only when the saved changes require it.; The System services menu is restricted to Admin."
             },
             {
-              "file": "docs/12-data-access-and-export.md",
+              "file": "manuals/bactosense/12-data-access-and-export.md",
               "locale": "en",
               "section": "12-3",
               "old": "Press the Apply button to reboot the BactoSense.",
@@ -12903,7 +12903,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/12-data-access-and-export.md",
+          "file": "manuals/bactosense/12-data-access-and-export.md",
           "locale": "en",
           "section": "12-4",
           "status": "corrected",
@@ -12926,7 +12926,7 @@
           ],
           "changes": [
             {
-              "file": "docs/12-data-access-and-export.md",
+              "file": "manuals/bactosense/12-data-access-and-export.md",
               "locale": "en",
               "section": "12-4",
               "old": "| 3. | On the Home screen, press Settings to open the settings menu. |  |",
@@ -12934,7 +12934,7 @@
               "reason": "Services is rendered as System services in the current compiled locale.; Apply saves the service changes; Reboot now appears only when the saved changes require it.; The System services menu is restricted to Admin.; Disabling a service requires Apply; merely unchecking the VNC option does not persist it."
             },
             {
-              "file": "docs/12-data-access-and-export.md",
+              "file": "manuals/bactosense/12-data-access-and-export.md",
               "locale": "en",
               "section": "12-4",
               "old": "| 5. | Press the Services button. |  |",
@@ -12942,7 +12942,7 @@
               "reason": "Services is rendered as System services in the current compiled locale.; Apply saves the service changes; Reboot now appears only when the saved changes require it.; The System services menu is restricted to Admin.; Disabling a service requires Apply; merely unchecking the VNC option does not persist it."
             },
             {
-              "file": "docs/12-data-access-and-export.md",
+              "file": "manuals/bactosense/12-data-access-and-export.md",
               "locale": "en",
               "section": "12-4",
               "old": "| 8. | Press the Apply button to reboot the BactoSense. | Only needed in case you changed the configuration. |",
@@ -12950,7 +12950,7 @@
               "reason": "Services is rendered as System services in the current compiled locale.; Apply saves the service changes; Reboot now appears only when the saved changes require it.; The System services menu is restricted to Admin.; Disabling a service requires Apply; merely unchecking the VNC option does not persist it."
             },
             {
-              "file": "docs/12-data-access-and-export.md",
+              "file": "manuals/bactosense/12-data-access-and-export.md",
               "locale": "en",
               "section": "12-4",
               "old": "| 11. | Disable the VNC connection in the BactoSense System services page after finishing. | The VNC connection can slow down the user interface on the BactoSense. |",
@@ -13183,7 +13183,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/15-maintenance.md",
+          "file": "manuals/bactosense/15-maintenance.md",
           "locale": "en",
           "section": "15-1-1",
           "status": "corrected",
@@ -13199,7 +13199,7 @@
           ],
           "changes": [
             {
-              "file": "docs/15-maintenance.md",
+              "file": "manuals/bactosense/15-maintenance.md",
               "locale": "en",
               "section": "15-1-1",
               "old": "| 1. | Navigate to the Home screen of the BactoSense user interface. | ![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\") |",
@@ -13342,7 +13342,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/15-maintenance.md",
+          "file": "manuals/bactosense/15-maintenance.md",
           "locale": "en",
           "section": "15-1-2",
           "status": "corrected",
@@ -13358,7 +13358,7 @@
           ],
           "changes": [
             {
-              "file": "docs/15-maintenance.md",
+              "file": "manuals/bactosense/15-maintenance.md",
               "locale": "en",
               "section": "15-1-2",
               "old": "| 1. | Navigate to the Home menu of the BactoSense user interface. | ![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\") |",
@@ -13509,7 +13509,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/15-maintenance.md",
+          "file": "manuals/bactosense/15-maintenance.md",
           "locale": "en",
           "section": "15-2-2",
           "status": "corrected",
@@ -13529,7 +13529,7 @@
           ],
           "changes": [
             {
-              "file": "docs/15-maintenance.md",
+              "file": "manuals/bactosense/15-maintenance.md",
               "locale": "en",
               "section": "15-2-2",
               "old": "| 2. | Navigate to the Home menu of the BactoSense user interface. |  |",
@@ -13537,7 +13537,7 @@
               "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label."
             },
             {
-              "file": "docs/15-maintenance.md",
+              "file": "manuals/bactosense/15-maintenance.md",
               "locale": "en",
               "section": "15-2-2",
               "old": "| 4. | In the list of available protocols, select Clean Sampling Device with Washstation. |  |",
@@ -13736,7 +13736,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/15-maintenance.md",
+          "file": "manuals/bactosense/15-maintenance.md",
           "locale": "en",
           "section": "15-2-3",
           "status": "corrected",
@@ -13764,7 +13764,7 @@
           ],
           "changes": [
             {
-              "file": "docs/15-maintenance.md",
+              "file": "manuals/bactosense/15-maintenance.md",
               "locale": "en",
               "section": "15-2-3",
               "old": "| 3. | Navigate to the Home menu of the BactoSense user interface. |  |",
@@ -13772,7 +13772,7 @@
               "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label.; New returns to the protocol list; select the actual Clean Sampling Device label.; The Home icon returns to the current Home screen; Settings opens the menu."
             },
             {
-              "file": "docs/15-maintenance.md",
+              "file": "manuals/bactosense/15-maintenance.md",
               "locale": "en",
               "section": "15-2-3",
               "old": "| 5. | In the list of available protocols, select Clean Optics. |  |",
@@ -13780,7 +13780,7 @@
               "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label.; New returns to the protocol list; select the actual Clean Sampling Device label.; The Home icon returns to the current Home screen; Settings opens the menu."
             },
             {
-              "file": "docs/15-maintenance.md",
+              "file": "manuals/bactosense/15-maintenance.md",
               "locale": "en",
               "section": "15-2-3",
               "old": "| 9. | Then press the New button to navigate back to the protocol list. In the list of available protocols, select Clean Sampling Device. |  |",
@@ -13788,7 +13788,7 @@
               "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label.; New returns to the protocol list; select the actual Clean Sampling Device label.; The Home icon returns to the current Home screen; Settings opens the menu."
             },
             {
-              "file": "docs/15-maintenance.md",
+              "file": "manuals/bactosense/15-maintenance.md",
               "locale": "en",
               "section": "15-2-3",
               "old": "| 14. | Press the Home button on the top left of the user interface to return to the Home menu. |  |",
@@ -14059,7 +14059,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/15-maintenance.md",
+          "file": "manuals/bactosense/15-maintenance.md",
           "locale": "en",
           "section": "15-2-4",
           "status": "corrected",
@@ -14080,7 +14080,7 @@
           ],
           "changes": [
             {
-              "file": "docs/15-maintenance.md",
+              "file": "manuals/bactosense/15-maintenance.md",
               "locale": "en",
               "section": "15-2-4",
               "old": "| 2. | Enter the Manual Mode and press Start to see the list of available protocols. |  |",
@@ -14088,7 +14088,7 @@
               "reason": "Mode > Manual mode > Back > Measure opens the protocol selector; Start executes the selected protocol.; New returns from completed maintenance to protocol selection."
             },
             {
-              "file": "docs/15-maintenance.md",
+              "file": "manuals/bactosense/15-maintenance.md",
               "locale": "en",
               "section": "15-2-4",
               "old": "| 5. | After finishing, return to the list of protocols. |  |",
@@ -14259,7 +14259,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/15-maintenance.md",
+          "file": "manuals/bactosense/15-maintenance.md",
           "locale": "en",
           "section": "15-2-8",
           "status": "corrected",
@@ -14281,7 +14281,7 @@
           ],
           "changes": [
             {
-              "file": "docs/15-maintenance.md",
+              "file": "manuals/bactosense/15-maintenance.md",
               "locale": "en",
               "section": "15-2-8",
               "old": "| 1. | Navigate to the Home menu in the BactoSense user interface. |",
@@ -14289,7 +14289,7 @@
               "reason": "Maintenance is inside Settings, not directly on Home.; Current BactoSense Delete old measurements uses level_max 1 (Advanced), not Admin only.; Delete measurements opens Yes, delete / No, cancel confirmation before performing deletion.; The current Basic menu hides Maintenance; deleting old measurements is available to Advanced/Admin."
             },
             {
-              "file": "docs/15-maintenance.md",
+              "file": "manuals/bactosense/15-maintenance.md",
               "locale": "en",
               "section": "15-2-8",
               "old": "| 3. | Press the Delete old measurements button. This function is only available for the Admin role. |",
@@ -14297,7 +14297,7 @@
               "reason": "Maintenance is inside Settings, not directly on Home.; Current BactoSense Delete old measurements uses level_max 1 (Advanced), not Admin only.; Delete measurements opens Yes, delete / No, cancel confirmation before performing deletion.; The current Basic menu hides Maintenance; deleting old measurements is available to Advanced/Admin."
             },
             {
-              "file": "docs/15-maintenance.md",
+              "file": "manuals/bactosense/15-maintenance.md",
               "locale": "en",
               "section": "15-2-8",
               "old": "| 6. | Press Delete measurements to permanently delete the data. |",
@@ -14492,7 +14492,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/15-maintenance.md",
+          "file": "manuals/bactosense/15-maintenance.md",
           "locale": "en",
           "section": "15-3",
           "status": "corrected",
@@ -14509,7 +14509,7 @@
           ],
           "changes": [
             {
-              "file": "docs/15-maintenance.md",
+              "file": "manuals/bactosense/15-maintenance.md",
               "locale": "en",
               "section": "15-3",
               "old": "| 3. | Press the Maintenance button. |\n| 4. | Press the System udpate button. Available updates will be shown in a check box list on top. If no update is shown, press the Refresh list button. If still no update is shown, no update is available for your instrument or there is an issue with the internet connection. |\n| 5. | Check the check box of the desired update. |",
@@ -14517,7 +14517,7 @@
               "reason": "The software-update procedure must enter Home > Settings > Maintenance.; Correct the current System update button spelling.; The current update page lists USB/repository sources and uses Refresh list from SettingsSystemUpdate.; Select the actual update-source row; there is no update checkbox.; Update opens a Yes/No confirmation; retain the existing reboot note."
             },
             {
-              "file": "docs/15-maintenance.md",
+              "file": "manuals/bactosense/15-maintenance.md",
               "locale": "en",
               "section": "15-3",
               "old": "| 7. | If you wish to update, press the Update button and follow the instructions. Note: No manual reboot is necessary after the update. |",
@@ -14681,7 +14681,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/16-warnings-errors-and-troubleshooting.md",
+          "file": "manuals/bactosense/16-warnings-errors-and-troubleshooting.md",
           "locale": "en",
           "section": "16-4",
           "status": "corrected",
@@ -14697,7 +14697,7 @@
           ],
           "changes": [
             {
-              "file": "docs/16-warnings-errors-and-troubleshooting.md",
+              "file": "manuals/bactosense/16-warnings-errors-and-troubleshooting.md",
               "locale": "en",
               "section": "16-4",
               "old": "The error and warning log views can be accessed separately through the user interface Home menu when pressing the Logs button.",
@@ -14705,7 +14705,7 @@
               "reason": "Logs is in Settings; current Error log / Warning log labels are localized.; BactoSense Error log clear control uses level_max 2 (Basic) and is disabled during a running protocol."
             },
             {
-              "file": "docs/16-warnings-errors-and-troubleshooting.md",
+              "file": "manuals/bactosense/16-warnings-errors-and-troubleshooting.md",
               "locale": "en",
               "section": "16-4",
               "old": "Button to manually clear errors (only available for Admin and Service users)",
@@ -14874,7 +14874,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/16-warnings-errors-and-troubleshooting.md",
+          "file": "manuals/bactosense/16-warnings-errors-and-troubleshooting.md",
           "locale": "en",
           "section": "16-5",
           "status": "corrected",
@@ -14890,7 +14890,7 @@
           ],
           "changes": [
             {
-              "file": "docs/16-warnings-errors-and-troubleshooting.md",
+              "file": "manuals/bactosense/16-warnings-errors-and-troubleshooting.md",
               "locale": "en",
               "section": "16-5",
               "old": "| 1. | Navigate to the Home menu of the BactoSense user interface. |  |\n| 2. | Press the Logs button, and then the Error log button |  |\n| 3. | Make sure you have resolved the problem leading to the displayed error(s). Then press the Clear Errors button. | ![BactoSense — Clear errors control](/img/gui/en/error-log-clear-errors.png \"width=245 class=manual-figure\") |",
@@ -15033,7 +15033,7 @@
       "notes": "",
       "occurrences": [
         {
-          "file": "docs/16-warnings-errors-and-troubleshooting.md",
+          "file": "manuals/bactosense/16-warnings-errors-and-troubleshooting.md",
           "locale": "en",
           "section": "16-6",
           "status": "corrected",
@@ -15051,7 +15051,7 @@
           ],
           "changes": [
             {
-              "file": "docs/16-warnings-errors-and-troubleshooting.md",
+              "file": "manuals/bactosense/16-warnings-errors-and-troubleshooting.md",
               "locale": "en",
               "section": "16-6",
               "old": "Navigate to the Home menu of the BactoSense user interface.",
@@ -15059,7 +15059,7 @@
               "reason": "Maintenance is under Settings and requires an Advanced or Admin user to be exposed.; Current Self-check has a single Rerun execution button.; The self-check execution control is Rerun in CommonText, not an older Run/Rerun controller translation."
             },
             {
-              "file": "docs/16-warnings-errors-and-troubleshooting.md",
+              "file": "manuals/bactosense/16-warnings-errors-and-troubleshooting.md",
               "locale": "en",
               "section": "16-6",
               "old": "Press the Run or Rerun button to start the self- check. Once execution has terminated, the instrument shows a list of all tests, with a green PASS or red FAIL indicator. Some tests may be skipped: if the system cannot communicate with the cartridge, all the tests that require cartridge communication are skipped.",
@@ -15273,7 +15273,7 @@
   ],
   "changes": [
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-2-2",
       "old": "| 3. | Select Log out Lock screen. |",
@@ -15281,7 +15281,7 @@
       "reason": "Match the current Log out / Lock screen modal control."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-2-3",
       "old": "| 1. | On the Home screen, press Settings to open the settings menu. |  |",
@@ -15289,7 +15289,7 @@
       "reason": "The page is visible to some lower roles, but changing these settings requires Admin."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-2-4",
       "old": "| 1. | On the Home screen, press Settings to open the settings menu. |  |",
@@ -15297,7 +15297,7 @@
       "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Match the actual Advanced user management mode checkbox."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-2-4",
       "old": "| 4. | Check the Advanced user management mode check box. |  |",
@@ -15305,7 +15305,7 @@
       "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Match the actual Advanced user management mode checkbox."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-2-5",
       "old": "| 1. | On the Home screen, press Settings, then System settings. |  |\n| 2. | Press on Users and then select the user profile you want to edit. Press Edit after selecting one check box. | Admin users are allowed to change passwords from other user profiles. |\n| 3. | Press on Change PIN, enter the new pin twice and press Save. |  |",
@@ -15313,7 +15313,7 @@
       "reason": "Basic users have Change password directly in Settings; higher roles use System settings > Users.; Users is opened in the previous step; Edit follows selecting the permitted user profile.; Change PIN permits the current user or a user with a lower role; another Admin PIN is not permitted.; Name the current inline PIN and Confirm PIN controls, followed by Save."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-2-6",
       "old": "| 1. | On the Home screen, press Settings to open the settings menu. |  |",
@@ -15321,7 +15321,7 @@
       "reason": "The page is visible to some lower roles, but changing these settings requires Admin."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-3-1",
       "old": "| 1. | On the Home screen, press Settings to open the settings menu. |\n| 2. | Press on System settings, then press Language. |",
@@ -15329,7 +15329,7 @@
       "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Follow the actual System settings > Language route.; Language selection requires the Reload interface action, whose label is localized in the target language."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-3-1",
       "old": "| 4. | A message appears requesting a reload of the user interface. Confirm the message. |",
@@ -15337,7 +15337,7 @@
       "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Follow the actual System settings > Language route.; Language selection requires the Reload interface action, whose label is localized in the target language."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-3-2",
       "old": "If time synchronization is enabled, either with NTP servers or through Modbus TCP, your  manual date and time settings will be overridden during the next synchronization.  Settings can be found under **System settings** &gt; **Date &amp; Time** &gt; **Time synchronization settings**. For setting up NTP server, please refer to [Set NTP Servers](08-general-operations-and-configurations.md#section-8-7).",
@@ -15345,7 +15345,7 @@
       "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Use the current Date & time menu label.; The time-sync shortcut must include Home > Settings and the actual localized submenu names.; Select the time zone using the native localized control, rather than an English label in translated instructions."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-3-2",
       "old": "| 1. | On the Home screen, press Settings to open the settings menu. |",
@@ -15353,7 +15353,7 @@
       "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Use the current Date & time menu label.; The time-sync shortcut must include Home > Settings and the actual localized submenu names.; Select the time zone using the native localized control, rather than an English label in translated instructions."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-3-2",
       "old": "| 3. | Press the Date &amp; Time button. |",
@@ -15361,7 +15361,7 @@
       "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Use the current Date & time menu label.; The time-sync shortcut must include Home > Settings and the actual localized submenu names.; Select the time zone using the native localized control, rather than an English label in translated instructions."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-3-2",
       "old": "| 5. | Select the Time zone. |",
@@ -15369,7 +15369,7 @@
       "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Use the current Date & time menu label.; The time-sync shortcut must include Home > Settings and the actual localized submenu names.; Select the time zone using the native localized control, rather than an English label in translated instructions."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-3-3",
       "old": "| 1. | On the Home screen, press Settings to open the settings menu. |",
@@ -15377,7 +15377,7 @@
       "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Device name is an editable text field on System configuration.; The name keyboard must close with OK before saving System configuration."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-3-3",
       "old": "| 4. | Press the Device name button. |\n| 5. | Enter your individual device name in the input field. |",
@@ -15385,7 +15385,7 @@
       "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Device name is an editable text field on System configuration.; The name keyboard must close with OK before saving System configuration."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-3-5",
       "old": "| 4. | Activate the Sound notifications option. |",
@@ -15393,7 +15393,7 @@
       "reason": "Use the compiled Sound notifications checkbox label."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-4",
       "old": "| 1. | On the Home screen, press Settings to open the settings menu. | ![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\") |",
@@ -15401,7 +15401,7 @@
       "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Import settings opens a Reboot now / Cancel confirmation before executing.; Match the current Import settings control label."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-4",
       "old": "| 5. | Press Import settings | ![BactoSense — USB import and export](/img/gui/en/usb-import-and-export.png \"width=263\") |",
@@ -15409,7 +15409,7 @@
       "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Import settings opens a Reboot now / Cancel confirmation before executing.; Match the current Import settings control label."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-4",
       "old": "| 7. | Press Import settings and wait until the device reboots |  |",
@@ -15417,7 +15417,7 @@
       "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Import settings opens a Reboot now / Cancel confirmation before executing.; Match the current Import settings control label."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-5",
       "old": "| 3. | Press Alarms. |  |",
@@ -15425,7 +15425,7 @@
       "reason": "The Alarms menu uses Dico.stringAlarm(2).; Dico.stringAlarm(2) resolves the singular compiled label in the current production catalogs; use the actual menu label."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-6",
       "old": "On the Home screen, press Settings to open the settings menu.",
@@ -15433,7 +15433,7 @@
       "reason": "The page is visible to some lower roles, but changing these settings requires Admin."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-7",
       "old": "Network Time Protocol (NTP) is a computer network protocol which is used to synchronise  time on computers across a network. By default, these are set to synchronise to the  Network Time Foundation servers (ntp.org). You have the possibility to set custom NTP  servers in the *Date and Time* menu.",
@@ -15441,7 +15441,7 @@
       "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Use the current Date & time menu label.; Use the Date & time screen’s Time synchronization settings button, not the differently translated next-page heading.; Test NTP triggers the reachability check; OK saves services settings.; Match the Date & time menu name in the introductory navigation sentence."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-7",
       "old": "On the Home screen, press Settings to open the settings menu.",
@@ -15449,7 +15449,7 @@
       "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Use the current Date & time menu label.; Use the Date & time screen’s Time synchronization settings button, not the differently translated next-page heading.; Test NTP triggers the reachability check; OK saves services settings.; Match the Date & time menu name in the introductory navigation sentence."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-7",
       "old": "Press the Date &amp; Time button.",
@@ -15457,7 +15457,7 @@
       "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Use the current Date & time menu label.; Use the Date & time screen’s Time synchronization settings button, not the differently translated next-page heading.; Test NTP triggers the reachability check; OK saves services settings.; Match the Date & time menu name in the introductory navigation sentence."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-7",
       "old": "Press Time synchronization settings button.",
@@ -15465,7 +15465,7 @@
       "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Use the current Date & time menu label.; Use the Date & time screen’s Time synchronization settings button, not the differently translated next-page heading.; Test NTP triggers the reachability check; OK saves services settings.; Match the Date & time menu name in the introductory navigation sentence."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-7",
       "old": "By editing and changing a server address and pressing OK, it will automatically ping the server and update the date and time.",
@@ -15473,7 +15473,7 @@
       "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Use the current Date & time menu label.; Use the Date & time screen’s Time synchronization settings button, not the differently translated next-page heading.; Test NTP triggers the reachability check; OK saves services settings.; Match the Date & time menu name in the introductory navigation sentence."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-8-1",
       "old": "### 8.8.1 General structure and home menu {#section-8-8-1}",
@@ -15481,7 +15481,7 @@
       "reason": "Rename the section to describe the current Home screen and Settings menu, as requested in root review; preserve the section anchor."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-9-4",
       "old": "Select the Change cartridge option.",
@@ -15489,7 +15489,7 @@
       "reason": "Match the current cartridge wizard action label.; Keep step4 as the Cartridge change parent menu tile; step5 selects the separate Change cartridge or Install cartridge workflow."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-9-5",
       "old": "Select the Remove cartridge option.",
@@ -15497,7 +15497,7 @@
       "reason": "Maintenance moved from Home into Settings; Basic users use Cartridge change directly.; Match the current cartridge wizard action label."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-9-5",
       "old": "The top bar of the user interface indicates that no cartridge is connected. The Maintenance button in the Home menu is now dis- played in orange.<br />![BactoSense — Cartridge not ready](/img/gui/icons/cartridge-not-ready-status.png \"width=30 class=manual-icon\")",
@@ -15505,7 +15505,7 @@
       "reason": "Maintenance moved from Home into Settings; Basic users use Cartridge change directly.; Match the current cartridge wizard action label."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-9-6",
       "old": "Select the Install cartridge option.",
@@ -15513,7 +15513,7 @@
       "reason": "Match the current cartridge wizard action label.; Keep step4 as the Cartridge change parent menu tile; step5 selects the separate Change cartridge or Install cartridge workflow."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-11-1",
       "old": "| 4. | In the BactoSense user interface, navigate to the Home menu. |",
@@ -15521,7 +15521,7 @@
       "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-11-1",
       "old": "| 6. | Choose the Prime protocol from the list of available protocols. |",
@@ -15529,7 +15529,7 @@
       "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-11-1",
       "old": "| 11. | Select the Water Analysis protocol from the list of available protocols. |",
@@ -15537,7 +15537,7 @@
       "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-12",
       "old": "On the Home screen, press Settings to open the settings menu.",
@@ -15545,7 +15545,7 @@
       "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Match the exact current System settings > Demo mode route.; Use the production Activate demo mode checkbox label.; Use the same native checkbox label when returning from Demo mode."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-12",
       "old": "Enter the System settings button, and then the Demo mode button.",
@@ -15553,7 +15553,7 @@
       "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Match the exact current System settings > Demo mode route.; Use the production Activate demo mode checkbox label.; Use the same native checkbox label when returning from Demo mode."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-12",
       "old": "Select the Activate demo mode box.",
@@ -15561,7 +15561,7 @@
       "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Match the exact current System settings > Demo mode route.; Use the production Activate demo mode checkbox label.; Use the same native checkbox label when returning from Demo mode."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-12",
       "old": "To return into normal mode, follow the same procedure, but uncheck the **Activate demo**  **mode** box.",
@@ -15569,7 +15569,7 @@
       "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Match the exact current System settings > Demo mode route.; Use the production Activate demo mode checkbox label.; Use the same native checkbox label when returning from Demo mode."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-13",
       "old": "On the Home screen, press Settings to open the settings menu.",
@@ -15577,7 +15577,7 @@
       "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Factory reset opens a Yes/No confirmation before making any change."
     },
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "locale": "en",
       "section": "8-13",
       "old": "Then press the Reset the device and reboot button.",
@@ -15585,7 +15585,7 @@
       "reason": "The page is visible to some lower roles, but changing these settings requires Admin.; Factory reset opens a Yes/No confirmation before making any change."
     },
     {
-      "file": "docs/10-measurements.md",
+      "file": "manuals/bactosense/10-measurements.md",
       "locale": "en",
       "section": "10-2-1",
       "old": "| 2. | In the BactoSense user interface, navigate to the Home menu. |  |\n| 3. | On the action bar at the bottom, select Online mode and press Start. |  |\n| 4. | Press the Start button. |  |\n| 5. | Under Protocol, make sure the check box for “Online Sampling Device (with Backflush)” is checked. |  |",
@@ -15593,7 +15593,7 @@
       "reason": "Home is a result screen; mode selection is a separate control.; Replace the former footer mode selector with Mode > Online mode > Back; the following Home Start opens the online wizard.; Start on the Online Home screen opens AutoInstructionWizardScreen directly; the later wizard Start executes the schedule.; Match the protocol checkbox label without changing the selected analysis protocol.; The simple schedule checkbox is translated in SchedulerView, not ScheduleIntervalScreen.; Existing advanced schedules can open the weekly editor; Back restores the simple interval flow described here."
     },
     {
-      "file": "docs/10-measurements.md",
+      "file": "manuals/bactosense/10-measurements.md",
       "locale": "en",
       "section": "10-2-1",
       "old": "| 9. | Select the measurement interval using the wheel on the right hand side. | The measurement interval describes the time between different measurements and can be as short as 30 min and as long as 6 hours. |\n| 10. | If needed, you can delay the starting time by unchecking the Start immediately box and choose a specific time to start. | The time setting of the BactoSense is described in [Date and time](08-general-operations-and-configurations.md#section-8-3-2). |",
@@ -15601,7 +15601,7 @@
       "reason": "Home is a result screen; mode selection is a separate control.; Replace the former footer mode selector with Mode > Online mode > Back; the following Home Start opens the online wizard.; Start on the Online Home screen opens AutoInstructionWizardScreen directly; the later wizard Start executes the schedule.; Match the protocol checkbox label without changing the selected analysis protocol.; The simple schedule checkbox is translated in SchedulerView, not ScheduleIntervalScreen.; Existing advanced schedules can open the weekly editor; Back restores the simple interval flow described here."
     },
     {
-      "file": "docs/10-measurements.md",
+      "file": "manuals/bactosense/10-measurements.md",
       "locale": "en",
       "section": "10-2-2",
       "old": "| 1. | Press the Stop button on the user interface. |  |",
@@ -15609,7 +15609,7 @@
       "reason": "Stop is on AutoMainScreen; Home has no Stop button."
     },
     {
-      "file": "docs/10-measurements.md",
+      "file": "manuals/bactosense/10-measurements.md",
       "locale": "en",
       "section": "10-3-1",
       "old": "| 4. | In the BactoSense user interface, navigate to the Home menu. |  |",
@@ -15617,7 +15617,7 @@
       "reason": "Completed analysis uses Next to open the detailed result view.; The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label."
     },
     {
-      "file": "docs/10-measurements.md",
+      "file": "manuals/bactosense/10-measurements.md",
       "locale": "en",
       "section": "10-3-1",
       "old": "| 6. | Choose the Water Analysis protocol from the list of available protocols. | If you want technical replicates, select the number of replicates in Replications column. By default, one sample is measured. If more replicates are configured, multiple samples are drawn from the same sample tube. |",
@@ -15625,7 +15625,7 @@
       "reason": "Completed analysis uses Next to open the detailed result view.; The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label."
     },
     {
-      "file": "docs/10-measurements.md",
+      "file": "manuals/bactosense/10-measurements.md",
       "locale": "en",
       "section": "10-3-1",
       "old": "| 12. | After finishing the measurement, view the results. Results are explained in [Measurement results](11-results-and-data-analysis.md#section-11-1). |  |",
@@ -15633,7 +15633,7 @@
       "reason": "Completed analysis uses Next to open the detailed result view.; The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label."
     },
     {
-      "file": "docs/10-measurements.md",
+      "file": "manuals/bactosense/10-measurements.md",
       "locale": "en",
       "section": "10-4",
       "old": "| 1. | Navigate to the Home menu and press Results (Manual) or Results (Online). |",
@@ -15641,7 +15641,7 @@
       "reason": "Both historical buckets are reached through Settings > Logs; Home Results opens only the active mode."
     },
     {
-      "file": "docs/10-measurements.md",
+      "file": "manuals/bactosense/10-measurements.md",
       "locale": "en",
       "section": "10-7",
       "old": "| 1. | Navigate to the Home menu and press Results (Manual) or Results (Online). |",
@@ -15649,7 +15649,7 @@
       "reason": "Both historical buckets are reached through Settings > Logs; Home Results opens only the active mode."
     },
     {
-      "file": "docs/10-measurements.md",
+      "file": "manuals/bactosense/10-measurements.md",
       "locale": "en",
       "section": "10-8-1",
       "old": "| 1. | Navigate to the Home menu and press Results (Manual) or Results (Online). |\n| 2. | In the results list,<br/>• press the Export series button to export a set of measurements or all measurements.<br/>• select a group of replicates and press the Export series button to export this group of replicates.<br/>• select a single measurement and then press Export to export only a single measurement. |",
@@ -15657,7 +15657,7 @@
       "reason": "Both historical buckets are reached through Settings > Logs; Home Results opens only the active mode.; Export series opens ExportConfigScreen; selected replicate groups export through multi-selection Export."
     },
     {
-      "file": "docs/10-measurements.md",
+      "file": "manuals/bactosense/10-measurements.md",
       "locale": "en",
       "section": "10-9-3",
       "old": "| 2. | In the BactoSense user interface, navigate to the Home menu. |",
@@ -15665,7 +15665,7 @@
       "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label."
     },
     {
-      "file": "docs/10-measurements.md",
+      "file": "manuals/bactosense/10-measurements.md",
       "locale": "en",
       "section": "10-9-3",
       "old": "| 4. | Choose the Prime protocol from the list of available protocols. |",
@@ -15673,7 +15673,7 @@
       "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label."
     },
     {
-      "file": "docs/11-results-and-data-analysis.md",
+      "file": "manuals/bactosense/11-results-and-data-analysis.md",
       "locale": "en",
       "section": "11-1",
       "old": "| 8 | The Re-Gate result button allows to apply a different gating to the measurement data. For details refer to [Regate measurements](../results-and-data-analysis/#section-11-4-1). |",
@@ -15681,7 +15681,7 @@
       "reason": "The result-action label comes from CommonText, whose compiled localization differs from old prose translations."
     },
     {
-      "file": "docs/11-results-and-data-analysis.md",
+      "file": "manuals/bactosense/11-results-and-data-analysis.md",
       "locale": "en",
       "section": "11-2-1",
       "old": "- The default gates on the BactoSense can be found when pressing on Gate settings in the Home menu of the BactoSense user interface.",
@@ -15689,7 +15689,7 @@
       "reason": "Gate settings moved into the Settings menu; gates themselves and regating prerequisites are unchanged.; Make the complete Home > Settings > Gate settings path explicit without changing gating prerequisites."
     },
     {
-      "file": "docs/11-results-and-data-analysis.md",
+      "file": "manuals/bactosense/11-results-and-data-analysis.md",
       "locale": "en",
       "section": "11-2-2",
       "old": "A list of all available gating sets on the BactoSense can be found when pressing Gate settings in the Home menu of the BactoSense user interface.",
@@ -15697,7 +15697,7 @@
       "reason": "Gate settings moved into the Settings menu; gates themselves and regating prerequisites are unchanged.; Make the complete Home > Settings > Gate settings path explicit without changing gating prerequisites."
     },
     {
-      "file": "docs/11-results-and-data-analysis.md",
+      "file": "manuals/bactosense/11-results-and-data-analysis.md",
       "locale": "en",
       "section": "11-4-1",
       "old": "- A prerequisite for regating is the presence of such additional gating set. Find all available gating sets for your cartridge type when pressing Gate settings on the Home menu of the BactoSense user interface.",
@@ -15705,7 +15705,7 @@
       "reason": "Gate settings moved into the Settings menu; gates themselves and regating prerequisites are unchanged.; Open Settings from Home before choosing a historical results bucket.; Logs provides both historical results buckets without changing the active mode.; Single result and multi-selection have distinct re-gate button labels.; Make the complete Home > Settings > Gate settings path explicit without changing gating prerequisites."
     },
     {
-      "file": "docs/11-results-and-data-analysis.md",
+      "file": "manuals/bactosense/11-results-and-data-analysis.md",
       "locale": "en",
       "section": "11-4-1",
       "old": "Navigate to the Home menu of the BactoSense user interface.",
@@ -15713,7 +15713,7 @@
       "reason": "Gate settings moved into the Settings menu; gates themselves and regating prerequisites are unchanged.; Open Settings from Home before choosing a historical results bucket.; Logs provides both historical results buckets without changing the active mode.; Single result and multi-selection have distinct re-gate button labels.; Make the complete Home > Settings > Gate settings path explicit without changing gating prerequisites."
     },
     {
-      "file": "docs/11-results-and-data-analysis.md",
+      "file": "manuals/bactosense/11-results-and-data-analysis.md",
       "locale": "en",
       "section": "11-4-1",
       "old": "Depending on how the measurement was performed, press Results (manual) or Results (Online) to see the list of results.",
@@ -15721,7 +15721,7 @@
       "reason": "Gate settings moved into the Settings menu; gates themselves and regating prerequisites are unchanged.; Open Settings from Home before choosing a historical results bucket.; Logs provides both historical results buckets without changing the active mode.; Single result and multi-selection have distinct re-gate button labels.; Make the complete Home > Settings > Gate settings path explicit without changing gating prerequisites."
     },
     {
-      "file": "docs/11-results-and-data-analysis.md",
+      "file": "manuals/bactosense/11-results-and-data-analysis.md",
       "locale": "en",
       "section": "11-4-1",
       "old": "Then press the Re-gate button.",
@@ -15729,7 +15729,7 @@
       "reason": "Gate settings moved into the Settings menu; gates themselves and regating prerequisites are unchanged.; Open Settings from Home before choosing a historical results bucket.; Logs provides both historical results buckets without changing the active mode.; Single result and multi-selection have distinct re-gate button labels.; Make the complete Home > Settings > Gate settings path explicit without changing gating prerequisites."
     },
     {
-      "file": "docs/11-results-and-data-analysis.md",
+      "file": "manuals/bactosense/11-results-and-data-analysis.md",
       "locale": "en",
       "section": "11-4-2",
       "old": "| 1. | Navigate to the Home menu of the BactoSense user interface. |  |",
@@ -15737,7 +15737,7 @@
       "reason": "Gate settings is inside Settings and is limited to Advanced/Admin.; New opens a template list with the available cartridge types; choose a template appropriate for the installed cartridge; type is determined by the chosen template."
     },
     {
-      "file": "docs/11-results-and-data-analysis.md",
+      "file": "manuals/bactosense/11-results-and-data-analysis.md",
       "locale": "en",
       "section": "11-4-2",
       "old": "| 1. | Navigate to the Home menu of the BactoSense user interface. |  |",
@@ -15745,7 +15745,7 @@
       "reason": "Gate settings is inside Settings and is limited to Advanced/Admin.; New opens a template list with the available cartridge types; choose a template appropriate for the installed cartridge; type is determined by the chosen template."
     },
     {
-      "file": "docs/11-results-and-data-analysis.md",
+      "file": "manuals/bactosense/11-results-and-data-analysis.md",
       "locale": "en",
       "section": "11-4-2",
       "old": "| 4. | In the name field, type a name for the set of gates. In the type field, select for which cartridge type the set of gates will be used. |  |",
@@ -15753,7 +15753,7 @@
       "reason": "Gate settings is inside Settings and is limited to Advanced/Admin.; New opens a template list with the available cartridge types; choose a template appropriate for the installed cartridge; type is determined by the chosen template."
     },
     {
-      "file": "docs/11-results-and-data-analysis.md",
+      "file": "manuals/bactosense/11-results-and-data-analysis.md",
       "locale": "en",
       "section": "11-4-3",
       "old": "| 1. | Navigate to the Home menu of the BactoSense user interface. | ![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\") |",
@@ -15761,7 +15761,7 @@
       "reason": "Gate settings is inside Settings and is limited to Advanced/Admin.; Edited custom gates offer Save versus Save as new set; the two choices have different outcomes."
     },
     {
-      "file": "docs/11-results-and-data-analysis.md",
+      "file": "manuals/bactosense/11-results-and-data-analysis.md",
       "locale": "en",
       "section": "11-4-3",
       "old": "| 8. | Press the Save button and confirm. |  |",
@@ -15769,7 +15769,7 @@
       "reason": "Gate settings is inside Settings and is limited to Advanced/Admin.; Edited custom gates offer Save versus Save as new set; the two choices have different outcomes."
     },
     {
-      "file": "docs/11-results-and-data-analysis.md",
+      "file": "manuals/bactosense/11-results-and-data-analysis.md",
       "locale": "en",
       "section": "11-4-4",
       "old": "Navigate to the Home menu of the BactoSense user interface and press the Gate settings button.",
@@ -15777,7 +15777,7 @@
       "reason": "The gate-adjustment strategy must open Settings before Gate settings.; New templates have Yes/No confirmation; existing gate sets have Save/Save as new set choices.; The HNA adjustment updates the existing custom gate through the explicit Save choice."
     },
     {
-      "file": "docs/11-results-and-data-analysis.md",
+      "file": "manuals/bactosense/11-results-and-data-analysis.md",
       "locale": "en",
       "section": "11-4-4",
       "old": "Press Next and Save. Confirm that you wish to Save the new set of gates.",
@@ -15785,7 +15785,7 @@
       "reason": "The gate-adjustment strategy must open Settings before Gate settings.; New templates have Yes/No confirmation; existing gate sets have Save/Save as new set choices.; The HNA adjustment updates the existing custom gate through the explicit Save choice."
     },
     {
-      "file": "docs/11-results-and-data-analysis.md",
+      "file": "manuals/bactosense/11-results-and-data-analysis.md",
       "locale": "en",
       "section": "11-4-4",
       "old": "Navigate to the HNA lower limit configuration step. Enter the previously identified HNA lower limit to the FL1 field, press Save and confirm.",
@@ -15793,7 +15793,7 @@
       "reason": "The gate-adjustment strategy must open Settings before Gate settings.; New templates have Yes/No confirmation; existing gate sets have Save/Save as new set choices.; The HNA adjustment updates the existing custom gate through the explicit Save choice."
     },
     {
-      "file": "docs/11-results-and-data-analysis.md",
+      "file": "manuals/bactosense/11-results-and-data-analysis.md",
       "locale": "en",
       "section": "11-6",
       "old": "Choose the Prime protocol from the list.",
@@ -15801,7 +15801,7 @@
       "reason": "New returns from the completed Prime to the protocol selector before Beads Analysis.; Use the production Prime protocol label before the beads comparison."
     },
     {
-      "file": "docs/11-results-and-data-analysis.md",
+      "file": "manuals/bactosense/11-results-and-data-analysis.md",
       "locale": "en",
       "section": "11-6",
       "old": "Choose the Beads Analysis protocol from the list and run it.",
@@ -15809,7 +15809,7 @@
       "reason": "New returns from the completed Prime to the protocol selector before Beads Analysis.; Use the production Prime protocol label before the beads comparison."
     },
     {
-      "file": "docs/12-data-access-and-export.md",
+      "file": "manuals/bactosense/12-data-access-and-export.md",
       "locale": "en",
       "section": "12-1-1",
       "old": "| 1. | On the Home screen, press Settings to open the settings menu. |  |\n| 2. | Press the Maintenance button and then the Special export import button. |  |",
@@ -15817,7 +15817,7 @@
       "reason": "Maintenance > Special export import uses the current compiled menu labels.; The current Basic menu hides Maintenance; Special export import is available to Advanced/Admin."
     },
     {
-      "file": "docs/12-data-access-and-export.md",
+      "file": "manuals/bactosense/12-data-access-and-export.md",
       "locale": "en",
       "section": "12-2",
       "old": "| 3. | On the Home screen, press Settings to open the settings menu. |  |",
@@ -15825,7 +15825,7 @@
       "reason": "Services is rendered as System services in the current compiled locale.; Apply saves the service changes; Reboot now appears only when the saved changes require it.; The System services menu is restricted to Admin."
     },
     {
-      "file": "docs/12-data-access-and-export.md",
+      "file": "manuals/bactosense/12-data-access-and-export.md",
       "locale": "en",
       "section": "12-2",
       "old": "| 5. | Press the Services button. |  |",
@@ -15833,7 +15833,7 @@
       "reason": "Services is rendered as System services in the current compiled locale.; Apply saves the service changes; Reboot now appears only when the saved changes require it.; The System services menu is restricted to Admin."
     },
     {
-      "file": "docs/12-data-access-and-export.md",
+      "file": "manuals/bactosense/12-data-access-and-export.md",
       "locale": "en",
       "section": "12-2",
       "old": "| 8. | Press the Apply button to reboot the BactoSense. | Only needed in case you changed the configuration. |",
@@ -15841,7 +15841,7 @@
       "reason": "Services is rendered as System services in the current compiled locale.; Apply saves the service changes; Reboot now appears only when the saved changes require it.; The System services menu is restricted to Admin."
     },
     {
-      "file": "docs/12-data-access-and-export.md",
+      "file": "manuals/bactosense/12-data-access-and-export.md",
       "locale": "en",
       "section": "12-3",
       "old": "On the Home screen, press Settings to open the settings menu.",
@@ -15849,7 +15849,7 @@
       "reason": "Services is rendered as System services in the current compiled locale.; Apply saves the service changes; Reboot now appears only when the saved changes require it.; The System services menu is restricted to Admin."
     },
     {
-      "file": "docs/12-data-access-and-export.md",
+      "file": "manuals/bactosense/12-data-access-and-export.md",
       "locale": "en",
       "section": "12-3",
       "old": "Press the Services button.",
@@ -15857,7 +15857,7 @@
       "reason": "Services is rendered as System services in the current compiled locale.; Apply saves the service changes; Reboot now appears only when the saved changes require it.; The System services menu is restricted to Admin."
     },
     {
-      "file": "docs/12-data-access-and-export.md",
+      "file": "manuals/bactosense/12-data-access-and-export.md",
       "locale": "en",
       "section": "12-3",
       "old": "Press the Apply button to reboot the BactoSense.",
@@ -15865,7 +15865,7 @@
       "reason": "Services is rendered as System services in the current compiled locale.; Apply saves the service changes; Reboot now appears only when the saved changes require it.; The System services menu is restricted to Admin."
     },
     {
-      "file": "docs/12-data-access-and-export.md",
+      "file": "manuals/bactosense/12-data-access-and-export.md",
       "locale": "en",
       "section": "12-4",
       "old": "| 3. | On the Home screen, press Settings to open the settings menu. |  |",
@@ -15873,7 +15873,7 @@
       "reason": "Services is rendered as System services in the current compiled locale.; Apply saves the service changes; Reboot now appears only when the saved changes require it.; The System services menu is restricted to Admin.; Disabling a service requires Apply; merely unchecking the VNC option does not persist it."
     },
     {
-      "file": "docs/12-data-access-and-export.md",
+      "file": "manuals/bactosense/12-data-access-and-export.md",
       "locale": "en",
       "section": "12-4",
       "old": "| 5. | Press the Services button. |  |",
@@ -15881,7 +15881,7 @@
       "reason": "Services is rendered as System services in the current compiled locale.; Apply saves the service changes; Reboot now appears only when the saved changes require it.; The System services menu is restricted to Admin.; Disabling a service requires Apply; merely unchecking the VNC option does not persist it."
     },
     {
-      "file": "docs/12-data-access-and-export.md",
+      "file": "manuals/bactosense/12-data-access-and-export.md",
       "locale": "en",
       "section": "12-4",
       "old": "| 8. | Press the Apply button to reboot the BactoSense. | Only needed in case you changed the configuration. |",
@@ -15889,7 +15889,7 @@
       "reason": "Services is rendered as System services in the current compiled locale.; Apply saves the service changes; Reboot now appears only when the saved changes require it.; The System services menu is restricted to Admin.; Disabling a service requires Apply; merely unchecking the VNC option does not persist it."
     },
     {
-      "file": "docs/12-data-access-and-export.md",
+      "file": "manuals/bactosense/12-data-access-and-export.md",
       "locale": "en",
       "section": "12-4",
       "old": "| 11. | Disable the VNC connection in the BactoSense System services page after finishing. | The VNC connection can slow down the user interface on the BactoSense. |",
@@ -15897,7 +15897,7 @@
       "reason": "Services is rendered as System services in the current compiled locale.; Apply saves the service changes; Reboot now appears only when the saved changes require it.; The System services menu is restricted to Admin.; Disabling a service requires Apply; merely unchecking the VNC option does not persist it."
     },
     {
-      "file": "docs/15-maintenance.md",
+      "file": "manuals/bactosense/15-maintenance.md",
       "locale": "en",
       "section": "15-1-1",
       "old": "| 1. | Navigate to the Home screen of the BactoSense user interface. | ![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\") |",
@@ -15905,7 +15905,7 @@
       "reason": "The Basic Settings menu does not expose Support & Service."
     },
     {
-      "file": "docs/15-maintenance.md",
+      "file": "manuals/bactosense/15-maintenance.md",
       "locale": "en",
       "section": "15-1-2",
       "old": "| 1. | Navigate to the Home menu of the BactoSense user interface. | ![BactoSense — Home button](/img/gui/icons/home-button.png \"width=48 class=manual-icon\") |",
@@ -15913,7 +15913,7 @@
       "reason": "Maintenance is inside Settings, not directly on Home.; The current Basic Settings menu does not expose Maintenance."
     },
     {
-      "file": "docs/15-maintenance.md",
+      "file": "manuals/bactosense/15-maintenance.md",
       "locale": "en",
       "section": "15-2-2",
       "old": "| 2. | Navigate to the Home menu of the BactoSense user interface. |  |",
@@ -15921,7 +15921,7 @@
       "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label."
     },
     {
-      "file": "docs/15-maintenance.md",
+      "file": "manuals/bactosense/15-maintenance.md",
       "locale": "en",
       "section": "15-2-2",
       "old": "| 4. | In the list of available protocols, select Clean Sampling Device with Washstation. |  |",
@@ -15929,7 +15929,7 @@
       "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label."
     },
     {
-      "file": "docs/15-maintenance.md",
+      "file": "manuals/bactosense/15-maintenance.md",
       "locale": "en",
       "section": "15-2-3",
       "old": "| 3. | Navigate to the Home menu of the BactoSense user interface. |  |",
@@ -15937,7 +15937,7 @@
       "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label.; New returns to the protocol list; select the actual Clean Sampling Device label.; The Home icon returns to the current Home screen; Settings opens the menu."
     },
     {
-      "file": "docs/15-maintenance.md",
+      "file": "manuals/bactosense/15-maintenance.md",
       "locale": "en",
       "section": "15-2-3",
       "old": "| 5. | In the list of available protocols, select Clean Optics. |  |",
@@ -15945,7 +15945,7 @@
       "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label.; New returns to the protocol list; select the actual Clean Sampling Device label.; The Home icon returns to the current Home screen; Settings opens the menu."
     },
     {
-      "file": "docs/15-maintenance.md",
+      "file": "manuals/bactosense/15-maintenance.md",
       "locale": "en",
       "section": "15-2-3",
       "old": "| 9. | Then press the New button to navigate back to the protocol list. In the list of available protocols, select Clean Sampling Device. |  |",
@@ -15953,7 +15953,7 @@
       "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label.; New returns to the protocol list; select the actual Clean Sampling Device label.; The Home icon returns to the current Home screen; Settings opens the menu."
     },
     {
-      "file": "docs/15-maintenance.md",
+      "file": "manuals/bactosense/15-maintenance.md",
       "locale": "en",
       "section": "15-2-3",
       "old": "| 14. | Press the Home button on the top left of the user interface to return to the Home menu. |  |",
@@ -15961,7 +15961,7 @@
       "reason": "The current Home page is a results screen with Mode and Measure controls.; The protocol selected in the wizard must match its production list label.; New returns to the protocol list; select the actual Clean Sampling Device label.; The Home icon returns to the current Home screen; Settings opens the menu."
     },
     {
-      "file": "docs/15-maintenance.md",
+      "file": "manuals/bactosense/15-maintenance.md",
       "locale": "en",
       "section": "15-2-4",
       "old": "| 2. | Enter the Manual Mode and press Start to see the list of available protocols. |  |",
@@ -15969,7 +15969,7 @@
       "reason": "Mode > Manual mode > Back > Measure opens the protocol selector; Start executes the selected protocol.; New returns from completed maintenance to protocol selection."
     },
     {
-      "file": "docs/15-maintenance.md",
+      "file": "manuals/bactosense/15-maintenance.md",
       "locale": "en",
       "section": "15-2-4",
       "old": "| 5. | After finishing, return to the list of protocols. |  |",
@@ -15977,7 +15977,7 @@
       "reason": "Mode > Manual mode > Back > Measure opens the protocol selector; Start executes the selected protocol.; New returns from completed maintenance to protocol selection."
     },
     {
-      "file": "docs/15-maintenance.md",
+      "file": "manuals/bactosense/15-maintenance.md",
       "locale": "en",
       "section": "15-2-8",
       "old": "| 1. | Navigate to the Home menu in the BactoSense user interface. |",
@@ -15985,7 +15985,7 @@
       "reason": "Maintenance is inside Settings, not directly on Home.; Current BactoSense Delete old measurements uses level_max 1 (Advanced), not Admin only.; Delete measurements opens Yes, delete / No, cancel confirmation before performing deletion.; The current Basic menu hides Maintenance; deleting old measurements is available to Advanced/Admin."
     },
     {
-      "file": "docs/15-maintenance.md",
+      "file": "manuals/bactosense/15-maintenance.md",
       "locale": "en",
       "section": "15-2-8",
       "old": "| 3. | Press the Delete old measurements button. This function is only available for the Admin role. |",
@@ -15993,7 +15993,7 @@
       "reason": "Maintenance is inside Settings, not directly on Home.; Current BactoSense Delete old measurements uses level_max 1 (Advanced), not Admin only.; Delete measurements opens Yes, delete / No, cancel confirmation before performing deletion.; The current Basic menu hides Maintenance; deleting old measurements is available to Advanced/Admin."
     },
     {
-      "file": "docs/15-maintenance.md",
+      "file": "manuals/bactosense/15-maintenance.md",
       "locale": "en",
       "section": "15-2-8",
       "old": "| 6. | Press Delete measurements to permanently delete the data. |",
@@ -16001,7 +16001,7 @@
       "reason": "Maintenance is inside Settings, not directly on Home.; Current BactoSense Delete old measurements uses level_max 1 (Advanced), not Admin only.; Delete measurements opens Yes, delete / No, cancel confirmation before performing deletion.; The current Basic menu hides Maintenance; deleting old measurements is available to Advanced/Admin."
     },
     {
-      "file": "docs/15-maintenance.md",
+      "file": "manuals/bactosense/15-maintenance.md",
       "locale": "en",
       "section": "15-3",
       "old": "| 3. | Press the Maintenance button. |\n| 4. | Press the System udpate button. Available updates will be shown in a check box list on top. If no update is shown, press the Refresh list button. If still no update is shown, no update is available for your instrument or there is an issue with the internet connection. |\n| 5. | Check the check box of the desired update. |",
@@ -16009,7 +16009,7 @@
       "reason": "The software-update procedure must enter Home > Settings > Maintenance.; Correct the current System update button spelling.; The current update page lists USB/repository sources and uses Refresh list from SettingsSystemUpdate.; Select the actual update-source row; there is no update checkbox.; Update opens a Yes/No confirmation; retain the existing reboot note."
     },
     {
-      "file": "docs/15-maintenance.md",
+      "file": "manuals/bactosense/15-maintenance.md",
       "locale": "en",
       "section": "15-3",
       "old": "| 7. | If you wish to update, press the Update button and follow the instructions. Note: No manual reboot is necessary after the update. |",
@@ -16017,7 +16017,7 @@
       "reason": "The software-update procedure must enter Home > Settings > Maintenance.; Correct the current System update button spelling.; The current update page lists USB/repository sources and uses Refresh list from SettingsSystemUpdate.; Select the actual update-source row; there is no update checkbox.; Update opens a Yes/No confirmation; retain the existing reboot note."
     },
     {
-      "file": "docs/16-warnings-errors-and-troubleshooting.md",
+      "file": "manuals/bactosense/16-warnings-errors-and-troubleshooting.md",
       "locale": "en",
       "section": "16-4",
       "old": "The error and warning log views can be accessed separately through the user interface Home menu when pressing the Logs button.",
@@ -16025,7 +16025,7 @@
       "reason": "Logs is in Settings; current Error log / Warning log labels are localized.; BactoSense Error log clear control uses level_max 2 (Basic) and is disabled during a running protocol."
     },
     {
-      "file": "docs/16-warnings-errors-and-troubleshooting.md",
+      "file": "manuals/bactosense/16-warnings-errors-and-troubleshooting.md",
       "locale": "en",
       "section": "16-4",
       "old": "Button to manually clear errors (only available for Admin and Service users)",
@@ -16033,7 +16033,7 @@
       "reason": "Logs is in Settings; current Error log / Warning log labels are localized.; BactoSense Error log clear control uses level_max 2 (Basic) and is disabled during a running protocol."
     },
     {
-      "file": "docs/16-warnings-errors-and-troubleshooting.md",
+      "file": "manuals/bactosense/16-warnings-errors-and-troubleshooting.md",
       "locale": "en",
       "section": "16-5",
       "old": "| 1. | Navigate to the Home menu of the BactoSense user interface. |  |\n| 2. | Press the Logs button, and then the Error log button |  |\n| 3. | Make sure you have resolved the problem leading to the displayed error(s). Then press the Clear Errors button. | ![BactoSense — Clear errors control](/img/gui/en/error-log-clear-errors.png \"width=245 class=manual-figure\") |",
@@ -16041,7 +16041,7 @@
       "reason": "The Error log is reached through Home > Settings > Logs.; Use actual current localized log labels.; Use the current Clear errors control label."
     },
     {
-      "file": "docs/16-warnings-errors-and-troubleshooting.md",
+      "file": "manuals/bactosense/16-warnings-errors-and-troubleshooting.md",
       "locale": "en",
       "section": "16-6",
       "old": "Navigate to the Home menu of the BactoSense user interface.",
@@ -16049,7 +16049,7 @@
       "reason": "Maintenance is under Settings and requires an Advanced or Admin user to be exposed.; Current Self-check has a single Rerun execution button.; The self-check execution control is Rerun in CommonText, not an older Run/Rerun controller translation."
     },
     {
-      "file": "docs/16-warnings-errors-and-troubleshooting.md",
+      "file": "manuals/bactosense/16-warnings-errors-and-troubleshooting.md",
       "locale": "en",
       "section": "16-6",
       "old": "Press the Run or Rerun button to start the self- check. Once execution has terminated, the instrument shows a list of all tests, with a green PASS or red FAIL indicator. Some tests may be skipped: if the system cannot communicate with the cartridge, all the tests that require cartridge communication are skipped.",
@@ -19823,32 +19823,32 @@
   ],
   "files": [
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "sha256_before": "5141899b1011ea18ac887263bc2aea246a6c7042e55065351f67a7f19ebd6d72",
       "sha256_after": "aec30067bb5c4fe3d94e268271ba95543d133d0da1a7a9fdc4744a39f2f59d30"
     },
     {
-      "file": "docs/10-measurements.md",
+      "file": "manuals/bactosense/10-measurements.md",
       "sha256_before": "ad94759c2138b7daa6e8b8d691dfd003b522daf57317cf5369da44943a720499",
       "sha256_after": "76af7f729632e1922b96795dbf2d848a1a82af10645c21fef607a83a23ebc6f7"
     },
     {
-      "file": "docs/11-results-and-data-analysis.md",
+      "file": "manuals/bactosense/11-results-and-data-analysis.md",
       "sha256_before": "b72f4c54924746974beed868e8ee54c43893da29baf7e310308056e246c370ff",
       "sha256_after": "9c92b99a577261096259f6d9603b61cadd902678b682e88de036f0cf658b84a1"
     },
     {
-      "file": "docs/12-data-access-and-export.md",
+      "file": "manuals/bactosense/12-data-access-and-export.md",
       "sha256_before": "6e2c9b32b8d301152a37a9723972dd0ffc50b2cd870d800d0527148150150fc9",
       "sha256_after": "93e1f8f3f67d21ab365eff1e3cc0f493384b88c212d1c207aab15924f0f953f4"
     },
     {
-      "file": "docs/15-maintenance.md",
+      "file": "manuals/bactosense/15-maintenance.md",
       "sha256_before": "0bbc8297bc52fc52e60dc0612b8e89784e69fdbac54cf7d37c25666a358c326a",
       "sha256_after": "b5322976df1841ae61abfc978bebf4f27229870a72d397a7a89b7e0c3fb4d742"
     },
     {
-      "file": "docs/16-warnings-errors-and-troubleshooting.md",
+      "file": "manuals/bactosense/16-warnings-errors-and-troubleshooting.md",
       "sha256_before": "4b17a25daa5e1f938e5ee338ac18230de0d23dad9a5605a484a95602e6a66704",
       "sha256_after": "7fcbb47ea4961559c00774473767246463d44d582af035e90b50620a4df081f4"
     },
@@ -22032,7 +22032,7 @@
   ],
   "integrity_checks": [
     {
-      "file": "docs/08-general-operations-and-configurations.md",
+      "file": "manuals/bactosense/08-general-operations-and-configurations.md",
       "images_unchanged": true,
       "headings_unchanged_except_requested_section_8_8_1_title": true,
       "heading_anchors_unchanged": true,
@@ -22043,7 +22043,7 @@
       "html_table_structure_unchanged": true
     },
     {
-      "file": "docs/10-measurements.md",
+      "file": "manuals/bactosense/10-measurements.md",
       "images_unchanged": true,
       "headings_unchanged_except_requested_section_8_8_1_title": true,
       "heading_anchors_unchanged": true,
@@ -22054,7 +22054,7 @@
       "html_table_structure_unchanged": true
     },
     {
-      "file": "docs/11-results-and-data-analysis.md",
+      "file": "manuals/bactosense/11-results-and-data-analysis.md",
       "images_unchanged": true,
       "headings_unchanged_except_requested_section_8_8_1_title": true,
       "heading_anchors_unchanged": true,
@@ -22065,7 +22065,7 @@
       "html_table_structure_unchanged": true
     },
     {
-      "file": "docs/12-data-access-and-export.md",
+      "file": "manuals/bactosense/12-data-access-and-export.md",
       "images_unchanged": true,
       "headings_unchanged_except_requested_section_8_8_1_title": true,
       "heading_anchors_unchanged": true,
@@ -22076,7 +22076,7 @@
       "html_table_structure_unchanged": true
     },
     {
-      "file": "docs/15-maintenance.md",
+      "file": "manuals/bactosense/15-maintenance.md",
       "images_unchanged": true,
       "headings_unchanged_except_requested_section_8_8_1_title": true,
       "heading_anchors_unchanged": true,
@@ -22087,7 +22087,7 @@
       "html_table_structure_unchanged": true
     },
     {
-      "file": "docs/16-warnings-errors-and-troubleshooting.md",
+      "file": "manuals/bactosense/16-warnings-errors-and-troubleshooting.md",
       "images_unchanged": true,
       "headings_unchanged_except_requested_section_8_8_1_title": true,
       "heading_anchors_unchanged": true,
