@@ -68,7 +68,7 @@ The type plate of the BactoSense power supply can be found on the power supply a
 | Property | Specification |
 | --- | --- |
 | **GENERAL** | \< |
-| Operating environment | Indoor use |
+| Operating environment | Indoor and protected outdoor use |
 | Operating altitude | Max. 2000 m (6600 ft) above sea level |
 | Operating temperature | 5 °C – 30 °C (41 °F – 86 °F) |
 | Operating humidity | 10 % – 90 % RH |
@@ -101,21 +101,22 @@ The type plate of the BactoSense power supply can be found on the power supply a
 | **MEASUREMENT** | \< |
 | Measuring principle | Flow cytometry |
 | Detection range | 0 – 5´000´000 cells/mL |
-| Quantification range | TCC: 1000 – 2‘000‘000 cells/mL<br />ICC &amp; ACC: 100 – 2‘000‘000 cells/mL |
+| Quantification range | 1000 – 2‘000‘000 cells/mL for TCC<br />100 – 2‘000‘000 cells/mL for ICC, ACC, CBC, NBC, EBC |
 | Laser type and wavelength | Laser diode 488 nm |
 | Fluorescence | 530/50 nm FL1<br />715 LP nm FL2 |
-| Forward scatter (FSC) | 488 nm (optional depending on instrument) |
-| Side scatter (SSC) | 488 nm (optional depending on instrument) |
-| Result parameters | TCC/mL, ICC/mL, LNAC/mL, HNAC/mL,<br />HNAP (%), ACC/mL, HACC/mL, Gate+, depending on system and cartridge used. |
-| Automatic measuring interval | From every 30 min to every 6 hours |
+| Forward scatter (FSC) | 488 nm, instrument dependent |
+| Side scatter (SSC) | 488 nm, instrument dependent|
+| Result parameters | Primary result parameters:<br />TCC, ICC, ACC, CBC, NBC, EBC<br />Secondary result parameters, cartridge and configuration-dependent: <br /> HNAP, HNAC, LNAC, HACC, Gate+ |
+| Automatic measuring interval | Min.: 30 min for TCC, ICC, 45 min for ACC, 60 min for CBC, NBC, EBC <br /> Max.: 6 hours |
 | **SAMPLING** | \< |
 | Sampling type | Online or manual |
 | Online sampling device | Flow through device:<br />200 – 400 mL/min (0.05 – 0.10 gal/min)<br />Pressure in device: Max. 0.5 bar (7.3 psi)<br />Aspirated volume: 260 μL<br />Measured volume: 90 μL<br />Inlet tubing<br />• Material: PFA (transparent)<br />• Outer diameter: 6.35 mm (1/4”)<br />• Inner diameter: 4.35 mm<br />• Max. length: 2 m (6.5 ft)<br />Outlet tubing<br />• Material: FEP (blue)<br />• Outer diameter: 6.35 mm (1/4”)<br />• Inner diameter: 4.83 mm<br />• Max. length: 2 m (6.5 ft) |
 | Manual sampling device | Sample container: 5 mL screw-cap tube<br />Sample volume: 2 – 5 mL<br />Aspirated volume: 260 μL<br />Measured volume: 90 μL |
-| Sample conditions | Temperature: 5 °C – 40 °C (41 °F – 104 °F)<br />Turbidity: 0 – 10 NTU, FNU<br />Conductivity: 0 – 100'000 µS/cm at 20 °C<br />pH-value: 5 – 12<br />Chlorine: max. 3 mg/L<br />Iron: max. 200 μg/L<br />Manganese: max. 50 μg/L |
+| Sample conditions | Temperature: 5 °C – 40 °C (41 °F – 104 °F)<br />Turbidity: 0 – 10 NTU, FNU<br />Conductivity: 0 – 100'000 µS/cm at 20 °C for TCC, ICC, ACC<br />50 – 100'000 µS/cm at 20 °C for CBC, NBC, EBC<br />pH-value: 5 – 12 for TCC, ICC, ACC <br />6 – 12 for CBC, NBC, EBC <br />Chlorine: max. 3 mg/L<br />Iron: max. 200 μg/L<br />Manganese: max. 50 μg/L |
 | **CARTRIDGE** | \< |
-| Capacity | TCC &amp; ICC: Up to 1000 measurements<br />ACC: Up to 700 measurements |
-| Validity | TCC &amp; ICC: 9 months<br />ACC: 6 months |
+| Types | TCC, Total Cell Count<br />ICC, Intact Cell Count<br />ACC, Active Cell Count<br />CBC, Coliform Bacteria Count<br />NBC, Enterococcus Bacteria Count<br />EBC, E. coli Bacteria Count<br />Compatibility BactoSense model dependent |
+| Capacity | Up to 1000 measurements for TCC, ICC<br />Up to 700 measurements for ACC, CBC, NBC, EBC |
+| Validity | 9 months for TCC, ICC<br />6 months for ACC, CBC, NBC, EBC |
 | Storage temperature | 15 °C – 25 °C (59 °F – 77 °F) ideally at 15 °C (59 °F) |
 | Storage humidity | 20 % – 60 % RH |
 | **MAINTENANCE** | \< |
