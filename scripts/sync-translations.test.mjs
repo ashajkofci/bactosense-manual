@@ -7,7 +7,7 @@ import OpenAI from 'openai';
 import { planSync, syncTranslations, translateWithOpenAI } from './sync-translations.mjs';
 import { translationErrors } from './translation-structure.mjs';
 import { writeSyncOutputs } from './sync-translations-report.mjs';
-import { createReferenceTools, runResponseWithTools } from './translation-tools.mjs';
+import { createReferenceTools, createResponseConversation, runResponseWithTools } from './translation-tools.mjs';
 
 const english = `---
 title: Installation
@@ -161,7 +161,7 @@ test('one repair is attempted, and invalid batches leave files and state untouch
   assert.match(report.files[0].error, /failed validation/);
 });
 
-test('a failed concurrent batch stops starting further paid translations', async t => {
+test('a failed shared-conversation run stops before starting further translations', async t => {
   const options = await fixture(t);
   for (const number of [2, 3, 4, 5]) {
     await writeFile(path.join(options.root, `manuals/example/0${number}-chapter.md`), english);
@@ -170,14 +170,13 @@ test('a failed concurrent batch stops starting further paid translations', async
   await assert.rejects(syncTranslations({ ...options, force: true, translate: async task => {
     calls++;
     if (task.targetPath === target) return translated.replace(':::warning', ':::info');
-    await new Promise(resolve => setTimeout(resolve, 20));
-    return translated;
+    assert.fail('No further chapter should start after the first chapter fails.');
   } }), /failed validation/);
-  assert.equal(calls, 3); // Two attempts on the failing chapter; only one already in flight.
+  assert.equal(calls, 2);
   const report = await readReport(options);
   assert.equal(report.counts.modified, 0);
-  assert.equal(report.counts.notApplied, 1);
-  assert.equal(report.counts.notStarted, 3);
+  assert.equal(report.counts.notApplied, 0);
+  assert.equal(report.counts.notStarted, 4);
 });
 
 test('an obsolete translated chapter is removed without touching locale metadata', async t => {
@@ -460,4 +459,125 @@ test('malformed tool calls become tool errors and repeated lookups have a finite
   assert.equal(seen[1].tool_choice, 'none');
   assert.equal(audit[0].status, 'error');
   assert.match(JSON.parse(seen[1].input.find(item => item.type === 'function_call_output').output).error, /valid JSON/);
+});
+
+function completedResponse(id, markdown) {
+  return { id, status: 'completed', output_text: JSON.stringify({ markdown }), output: [{
+    id: `msg_${id}`, type: 'message', role: 'assistant', phase: 'final_answer', status: 'completed',
+    content: [{ type: 'output_text', text: JSON.stringify({ markdown }), annotations: [] }],
+  }] };
+}
+
+test('all languages share one sequential conversation, with fresh memory for the next sync run', async t => {
+  const options = await fixture(t);
+  const contexts = [], requests = [];
+  const french = translated.replace('/gui/de/', '/gui/fr/').replace('Sicherheit', 'Sécurité');
+  let active = 0, peak = 0;
+  const client = { responses: { async create(request) {
+    requests.push(request);
+    const task = JSON.parse(request.input.at(-1).content);
+    if (task.locale === 'de') assert.equal(request.input.length, 1, 'Each sync run starts with a fresh conversation.');
+    else {
+      assert.equal(task.locale, 'fr');
+      const previous = request.input.find(item => item.role === 'assistant');
+      assert.equal(JSON.parse(previous.content[0].text).markdown, translated);
+      const validation = request.input.filter(item => item.role === 'user').map(item => JSON.parse(item.content)).find(item => item.translation_validation);
+      assert.equal(validation.locale, 'de');
+      assert.equal(validation.translation_validation, 'passed');
+      assert.equal(task.language, 'French');
+      assert.equal(task.english, english);
+    }
+    return completedResponse(`resp_${requests.length}`, task.locale === 'de' ? translated : french);
+  } } };
+  const translate = async (task, hooks) => {
+    contexts.push(hooks.conversation);
+    peak = Math.max(peak, ++active);
+    try { return await translateWithOpenAI(task, { ...hooks, client }); }
+    finally { active--; }
+  };
+  for (let run = 0; run < 2; run++) {
+    const plan = await syncTranslations({ ...options, manuals: [{ ...manual, locales: ['en', 'de', 'fr'] }], force: true, translate });
+    assert.equal(plan.report.conversation.shared, true);
+    assert.equal(plan.report.conversation.scope, 'sync_run');
+    assert.equal(plan.report.counts.apiAttempts, 2);
+  }
+  assert.equal(peak, 1);
+  assert.equal(contexts[0], contexts[1]);
+  assert.equal(contexts[2], contexts[3]);
+  assert.notEqual(contexts[0], contexts[2]);
+});
+
+test('compaction preserves the latest encrypted memory and final reply for the next chapter', async () => {
+  const conversation = createResponseConversation({ compactThreshold: 1000 });
+  conversation.history.push({ role: 'user', content: 'Older chapter context.' });
+  const compactions = [], requests = [];
+  const latest = { type: 'compaction', id: 'cmp_latest', encrypted_content: 'opaque-current-memory' };
+  const first = completedResponse('resp_compacted', translated);
+  first.output.unshift({ type: 'compaction', id: 'cmp_older', encrypted_content: 'opaque-old-memory' }, latest);
+  const client = { responses: { async create(request) {
+    requests.push(request);
+    assert.deepEqual(request.context_management, [{ type: 'compaction', compact_threshold: 1000 }]);
+    if (requests.length === 1) return first;
+    assert.deepEqual(request.input, [latest, first.output.at(-1), { role: 'user', content: 'Next chapter.' }]);
+    return completedResponse('resp_next', translated);
+  } } };
+  await runResponseWithTools({ client, conversation, request: { model: 'test-model', input: 'First chapter.' }, onCompaction: item => compactions.push(item) });
+  assert.equal(conversation.compactions, 2);
+  assert.equal(compactions.length, 2);
+  assert.deepEqual(conversation.history, [latest, first.output.at(-1)]);
+  await runResponseWithTools({ client, conversation, request: { model: 'test-model', input: 'Next chapter.' } });
+  assert.equal(conversation.history.at(-1).id, 'msg_resp_next');
+  assert.equal(conversation.busy, false);
+});
+
+test('failed tool loops do not poison shared memory with unresolved function calls', async () => {
+  const conversation = createResponseConversation();
+  const remembered = { role: 'user', content: 'Remembered terminology.' };
+  conversation.history.push(remembered);
+  let requests = 0;
+  const client = { responses: { async create() {
+    if (++requests === 2) throw new Error('Connection lost.');
+    return { id: 'resp_tool', status: 'completed', output: [{
+      id: 'fc_pending', type: 'function_call', call_id: 'call_pending', name: 'list_reference_files', arguments: '{"prefix":""}',
+    }] };
+  } } };
+  await assert.rejects(runResponseWithTools({ client, conversation, request: { model: 'test-model', input: 'Read references.' } }), /Connection lost/);
+  assert.deepEqual(conversation.history, [remembered]);
+  assert.equal(conversation.busy, false);
+});
+
+test('simultaneous requests cannot fork the same conversation history', async () => {
+  const conversation = createResponseConversation();
+  let release, requests = 0;
+  const client = { responses: { create() {
+    requests++;
+    return new Promise(resolve => { release = resolve; });
+  } } };
+  const first = runResponseWithTools({ client, conversation, request: { model: 'test-model', input: 'First chapter.' } });
+  await assert.rejects(runResponseWithTools({ client, conversation, request: { model: 'test-model', input: 'Concurrent chapter.' } }), /already processing/);
+  release(completedResponse('resp_one', translated));
+  await first;
+  assert.equal(requests, 1);
+  assert.equal(conversation.busy, false);
+});
+
+test('a later failure preserves the original files despite earlier validated conversation turns', async t => {
+  const options = await fixture(t);
+  const stateFile = path.join(options.root, 'maintenance/translation-sync.json');
+  const before = await readFile(stateFile, 'utf8');
+  await writeFile(path.join(options.root, 'manuals/example/01-installation.md'), english + '\nNew instruction.\n');
+  let requests = 0;
+  const client = { responses: { async create() {
+    if (++requests === 1) return completedResponse('resp_valid', translated + '\nNeue Anweisung.\n');
+    return { id: 'resp_failed', status: 'failed', error: { code: 'server_error', message: 'Model failure.' } };
+  } } };
+  await assert.rejects(syncTranslations({ ...options, manuals: [{ ...manual, locales: ['en', 'de', 'fr'] }],
+    translate: (task, hooks) => translateWithOpenAI(task, { ...hooks, client }),
+  }), /Model failure/);
+  const report = await readReport(options);
+  assert.equal(report.counts.notApplied, 1);
+  assert.equal(report.counts.failed, 1);
+  assert.equal(report.counts.modified, 0);
+  assert.equal(await readFile(path.join(options.root, target), 'utf8'), translated);
+  assert.equal(await readFile(stateFile, 'utf8'), before);
 });

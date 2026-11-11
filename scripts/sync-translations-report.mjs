@@ -10,6 +10,7 @@ export function countTranslations(files) {
     attempted: files.filter(file => file.attempts > 0).length,
     apiAttempts: files.reduce((sum, file) => sum + (file.apiRequests ?? file.attempts), 0),
     referenceLookups: files.reduce((sum, file) => sum + (file.referenceLookups?.length ?? 0), 0),
+    compactions: files.reduce((sum, file) => sum + (file.compactions ?? 0), 0),
     modified: count('modified'), created: count('created'), removed: count('removed'),
     unchanged: count('unchanged'), failed: count('failed'),
     notStarted: count('not_started'), notApplied: count('not_applied'),
@@ -31,8 +32,10 @@ export function formatSyncReport(report) {
       ['Failed translations', counts.failed], ['Not started', counts.notStarted],
       ['Validated but not applied', counts.notApplied], ['API requests (including tool follow-ups and repairs)', counts.apiAttempts],
       ['Reference lookups', counts.referenceLookups],
+      ['Context compactions', counts.compactions],
     ].map(([label, value]) => `| ${label} | ${value} |`), '',
   ];
+  if (report.conversation?.shared) lines.push(`Conversation memory is shared across this sync run. Chapters are processed sequentially; context compacts at ${report.conversation.compactThreshold} tokens.`, '');
   if (report.dryRun) lines.push('Dry run: no API requests were made and no translations were changed.', '');
   if (report.status !== 'failed' && !report.hasWork) lines.push('No translations to sync or remove. Further validation and commit steps can be skipped.', '');
   if (report.error) lines.push(`Error: ${cell(report.error)}`, '');

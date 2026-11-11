@@ -54,28 +54,48 @@ export function createReferenceTools(references = new Map()) {
   };
 }
 
-export async function runResponseWithTools({ client, request, references, onRequest = () => {}, onToolCall = () => {}, signal = AbortSignal.timeout(600_000), maxToolRounds = 6, maxToolCalls = 24 }) {
+export function createResponseConversation({ compactThreshold = 200_000 } = {}) {
+  if (!Number.isInteger(compactThreshold) || compactThreshold < 1000) throw new Error('Compaction threshold must be an integer of at least 1000 tokens.');
+  return { history: [], guidance: new Map(), compactThreshold, compactions: 0, busy: false };
+}
+
+export async function runResponseWithTools({ client, request, references, conversation = createResponseConversation(), onRequest = () => {}, onToolCall = () => {}, onCompaction = () => {}, signal = AbortSignal.timeout(600_000), maxToolRounds = 6, maxToolCalls = 24 }) {
+  if (conversation.busy) throw new Error('This conversation is already processing a translation. Shared conversations must run sequentially.');
   const harness = createReferenceTools(references);
-  const input = typeof request.input === 'string' ? [{ role: 'user', content: request.input }] : [...request.input];
+  const messages = typeof request.input === 'string' ? [{ role: 'user', content: request.input }] : request.input;
+  const input = [...conversation.history, ...messages];
   let response, callCount = 0;
+  conversation.busy = true;
   try {
     for (let round = 0; round <= maxToolRounds; round++) {
       onRequest();
       response = await client.responses.create({
         ...request, store: false, tools: harness.definitions, include: ['reasoning.encrypted_content'],
+        context_management: [{ type: 'compaction', compact_threshold: conversation.compactThreshold }],
         tool_choice: round === maxToolRounds || callCount === maxToolCalls ? 'none' : 'auto',
         input: [...input],
       }, { signal, maxRetries: 0 });
       if (response.status !== 'completed') return response;
       const calls = (response.output ?? []).filter(item => item.type === 'function_call');
-      if (!calls.length) return response;
-      if (round === maxToolRounds || callCount + calls.length > maxToolCalls) {
+      if (calls.length && (round === maxToolRounds || callCount + calls.length > maxToolCalls)) {
         throw Object.assign(new Error('Translation exceeded the reference lookup limit.'), { code: 'reference_lookup_limit' });
       }
       callCount += calls.length;
       // Load the SDK helper only when needed; planning and dry runs need no API SDK.
       const { toResponseInputItems } = await import('openai/lib/responses/ResponseInputItems');
-      input.push(...toResponseInputItems(response.output));
+      const output = toResponseInputItems(response.output ?? []);
+      input.push(...output);
+      const compactedAt = input.findLastIndex(item => item.type === 'compaction');
+      if (compactedAt > 0) input.splice(0, compactedAt);
+      for (const item of output.filter(item => item.type === 'compaction')) {
+        conversation.compactions++;
+        onCompaction({ responseId: response.id, itemId: item.id });
+      }
+      if (!calls.length) {
+        // Commit only complete turns, so failed tool loops cannot leave dangling calls in memory.
+        conversation.history = input;
+        return response;
+      }
       const results = await Promise.all(calls.map(async call => {
         let args, result, status = 'success';
         try {
@@ -93,5 +113,7 @@ export async function runResponseWithTools({ client, request, references, onRequ
   } catch (error) {
     error.translationResponse = response;
     throw error;
+  } finally {
+    conversation.busy = false;
   }
 }
