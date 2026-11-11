@@ -25,7 +25,7 @@ The figure below shows the result of a selected TCC measurement in Online mode. 
 | 8 | The Re-gate result button allows to apply a different gating to the measurement data. For details refer to [Regate measurements](../results-and-data-analysis/#section-11-4-1). |
 | 9 | The Export button allows to save this result to a USB stick. More information can be found in [Export to a USB drive](../measurements/#section-10-8-1). |
 | 10 | The navigation buttons on the left and right of the result view allow you to navigate to the previous and next measurements, respectively. |
-| 11 | Touch the trend plot to open the Auto mode plot (the full Online results chart). See [Reviewing automatic online measurements](../measurements/#section-10-2-3). |
+| 11 | Touch the trend plot to open the Online mode plot (the full Online results chart). See [Reviewing automatic online measurements](../measurements/#section-10-2-3). |
 
 :::info[Select multiple measurements]
 
@@ -42,8 +42,8 @@ Following flow cytometry standards, the BactoSense uses gates to count cells in 
 We define:
 
 - Gate: A line or polygon applied to a dotplot to quantify populations of measured cells.
-- Set of gates, or gating set: A collection of two or more gates, used for the gating strategy. The types of gates are fixed, but users can change the limits of each gate. These are different for TCC and ICC measurements.
-- Gating strategy: Defines how the gates are combined to count cells. For example, HNAC is the number of cells that are inside the TCC polygon and higher than the HNA lower limit. These strategies are different for TCC and ICC measurements.
+- Set of gates, or gating set: The collection of all gates used for a measurement. The types of gates are fixed, but users can change the limits of each gate.
+- Gating strategy: Defines how the gates are combined to count cells. For example, HNAC is the number of cells that are inside the TCC polygon and higher than the HNA lower limit. 
 
 Gating sets are specific for a type of cartridge. As an example, only gating sets of type TCC can be used with measurements performed using a TCC cartridge.
 
@@ -73,13 +73,13 @@ On the Home screen, press Settings, then Gate settings to view the available gat
 
 ## 11.3 Cartridges, gates and result parameters {#section-11-3}
 
-Depending on the cartridge used for a measurement, different parameters are measured. The subsections below describe gating sets and result parameters for TCC (Total Cell Count), ICC (Intact Cell Count), ACC (Active Cell Count), CBC (Coliform Cell Count), EBC (E. coli Cell Count), and NBC (Enterococcus Cell Count).
+Depending on the cartridge used for a measurement, different parameters are measured. The subsections below describe gating sets and result parameters for TCC (Total Cell Count), ICC (Intact Cell Count), ACC (Active Cell Count), CBC (Coliform Bacteria Count), EBC (E. coli Bacteria Count), and NBC (Enterococcus Bacteria Count).
 
 CBC, EBC and NBC cartridges are compatible with BactoSense ID and BactoSense SMART. Each uses selective enzymatic labelling and a single polygon gate, and reports one cell concentration. No HNA or activity subpopulations are calculated for these cartridges.
 
-:::info[Interpreting CBC, EBC and NBC results]
+:::info[Interpreting cell count results]
 
-CBC, EBC and NBC are cell concentrations expressed in cells per millilitre (1/mL). Cell counts and culture results expressed in colony-forming units (CFU) measure different properties of a sample and cannot be compared directly.
+BactoSense cell counts are cell concentrations expressed in cells per millilitre (1/mL). Cell counts and culture results expressed in colony-forming units (CFU) measure different properties of a sample and usually give numerically different results.
 
 :::
 
@@ -382,7 +382,7 @@ To compare results of the BactoSense to another flow cytometer, a reference solu
 | --- | --- | --- | --- |
 | 1\. | It is recommended to use the Validation Kit which contains a ready to use beads solution. | Read the instructions of the Validation Kit for more information. | \< |
 | 2\. | Install the manual sampling device according to the user manual. |  | \< |
-| 3\. | Take of one of the Validation kit’s beads solutions and load it into the sampling device. | Read the instructions of the Validation Kit for more information. | \< |
+| 3\. | Take one of the Validation kit’s beads solutions and load it into the sampling device. | Read the instructions of the Validation Kit for more information. | \< |
 | 4\. | :::info[Additional information] Press the Home button. Press the Back button as many times as needed for the Home button to appear. ::: | ![BactoSense — Home button](/img/gui/icons/home-button.png "width=48 class=manual-icon") | ![BactoSense — Back button](/img/gui/icons/back-button.png "width=48 class=manual-icon") |
 | 5\. | On the Home screen, press Mode and select Manual mode. Press Back, then Measure to open the measurement wizard. |  | \< |
 | 6\. | Select Prime from the protocol list. | See [Performing a Prime](../measurements/#section-10-9-3). | \< |
