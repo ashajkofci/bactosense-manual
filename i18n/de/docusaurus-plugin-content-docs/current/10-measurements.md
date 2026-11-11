@@ -242,7 +242,7 @@ Im manuellen Modus kann der Bediener zwischen zwei Analyseprotokollen wählen.
 | PROTOKOLLNAME | PROTOKOLLBESCHREIBUNG |
 | --- | --- |
 | Wasseranalyse | Analysieren Sie eine Wasserprobe und schließen Sie mit einem Reinigungszyklus ab. Werden mehrere Replikationen durchgeführt, läuft die Reinigung nur einmal ab, nämlich ganz am Ende. Zwischen zwei Replikationen wird automatisch ein Ansaugvorgang durchgeführt. |
-| Perlen-Analyse | Dieses Protokoll dient der Analyse der Kalibrierungsperlen und wird zusammen mit dem Validierungskit benutzt. Das Protokoll endet automatisch mit einem Reinigungszyklus. Werden mehrere Replikationen durchgeführt, läuft die Reinigung nur einmal ab, nämlich ganz am Ende. |
+| Perlen-Analyse | Dieses Protokoll dient der Analyse der Kalibrierungsperlen und wird zusammen mit dem [Validierungskit](/other-manuals/validation-kit) benutzt. Das Protokoll endet automatisch mit einem Reinigungszyklus. Werden mehrere Replikationen durchgeführt, läuft die Reinigung nur einmal ab, nämlich ganz am Ende. |
 
 Wartungsprotokolle können vor oder zwischen Analyseprotokollen durchgeführt werden, um das System vorzubereiten, zu spülen oder zu reinigen. Im manuellen Modus stehen die folgenden Wartungsprotokolle zur Verfügung:
 

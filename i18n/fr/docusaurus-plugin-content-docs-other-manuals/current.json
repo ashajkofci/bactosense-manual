@@ -1,0 +1,11 @@
+{
+  "sidebar.manual.category.Other manuals": {
+    "message": "Autres manuels"
+  },
+  "sidebar.manual.category.Other manuals.link.generated-index.title": {
+    "message": "Autres manuels"
+  },
+  "sidebar.manual.category.Other manuals.link.generated-index.description": {
+    "message": "Guides rapides, kits de réactifs et accessoires. Chaque manuel possède son propre chapitre et son téléchargement PDF."
+  }
+}

@@ -4,9 +4,10 @@ import { mkdtemp, mkdir, readFile, writeFile, rm, unlink } from 'node:fs/promise
 import os from 'node:os';
 import path from 'node:path';
 import OpenAI from 'openai';
-import { planSync, syncTranslations, translateWithAgent } from './sync-translations.mjs';
+import { planSync, syncTranslations, translateWithOpenAI } from './sync-translations.mjs';
 import { translationErrors } from './translation-structure.mjs';
 import { writeSyncOutputs } from './sync-translations-report.mjs';
+import { createReferenceTools, runResponseWithTools } from './translation-tools.mjs';
 
 const english = `---
 title: Installation
@@ -229,81 +230,234 @@ test('registry paths outside the checkout are rejected before any API call', asy
   await assert.rejects(planSync({ ...options, manuals: [{ ...manual, path: '../outside' }] }), /outside the repository/);
 });
 
-function fakeClient({ failure = false, incomplete = false } = {}) {
-  const seen = { deleted: [], cancelled: [], aborted: false };
-  const stream = {
-    withResultCollection() {},
-    controller: { abort() { seen.aborted = true; } },
-    async *[Symbol.asyncIterator]() {
-      yield { type: 'agent.session.created', session: { id: 'sess_test' } };
-      if (!incomplete) yield { type: failure ? 'agent.session.turn.failed' : 'agent.session.turn.completed', turn: { subagent_id: null } };
-    },
-    async finalResult() {
-      if (failure || incomplete) throw new Error(failure ? 'failed turn' : 'incomplete stream');
-      return { session_id: 'sess_test', turn: { status: 'completed' }, output_text: JSON.stringify({ markdown: translated }) };
-    },
-  };
-  const client = { beta: { agents: { sessions: {
-    async create(body) { seen.request = body; return stream; },
-    async delete(id) { seen.deleted.push(id); },
-    events: { async create(id, body) { seen.cancelled.push({ id, body }); } },
-  } } } };
+function fakeClient({ response = {}, error } = {}) {
+  const seen = {};
+  const client = { responses: { async create(body, options) {
+    seen.request = body;
+    seen.options = options;
+    if (error) throw error;
+    return { id: 'resp_test', _request_id: 'req_test', status: 'completed', output_text: JSON.stringify({ markdown: translated }), ...response };
+  } } };
   return { client, seen };
 }
 
-test('Agents API receives a structured translation task and completed sessions are deleted', async () => {
+test('Responses API receives the complete translation task and strict schema without storing responses', async () => {
   const { client, seen } = fakeClient();
-  const actual = await translateWithAgent({ manual: 'Example', locale: 'de', source: english, current: translated, glossary: 'Terms' }, { client, model: 'test-model' });
+  const task = { manual: 'Example', locale: 'de', source: english, current: translated, glossary: 'Terms',
+    context: 'Technical operators.', manualContext: { title: 'Example' }, candidate: 'Previous draft', feedback: 'Repair links.' };
+  const actual = await translateWithOpenAI(task, { client, model: 'test-model' });
   assert.equal(actual, translated);
-  assert.equal(seen.request.agent.model, 'test-model');
-  assert.deepEqual(seen.request.environment, { type: 'none' });
-  assert.deepEqual(seen.request.agent.text.format, {
-    type: 'json_schema',
+  assert.equal(seen.request.model, 'test-model');
+  assert.equal(seen.request.store, false);
+  assert.equal(seen.options.maxRetries, 0);
+  assert(seen.options.signal instanceof AbortSignal);
+  assert.deepEqual(seen.request.text.format, {
+    type: 'json_schema', name: 'translated_document', strict: true,
     schema: { type: 'object', properties: { markdown: { type: 'string' } }, required: ['markdown'], additionalProperties: false },
   });
-  assert.deepEqual(seen.deleted, ['sess_test']);
-  assert.deepEqual(seen.cancelled, []);
-  assert(seen.aborted);
+  assert.deepEqual(seen.request.tools.map(tool => tool.name), ['list_reference_files', 'search_reference_files', 'read_reference_file']);
+  assert.deepEqual(JSON.parse(seen.request.input[0].content), {
+    manual: task.manual, locale: 'de', language: 'German', english, current_translation: translated,
+    glossary: task.glossary, translation_context: task.context, manual_context: task.manualContext,
+    previous_candidate: task.candidate, validation_feedback: task.feedback,
+  });
 });
 
-test('failed or disconnected agent turns are rejected and cancellation is requested', async () => {
-  for (const behavior of [{ failure: true }, { incomplete: true }]) {
-    const { client, seen } = fakeClient(behavior);
-    await assert.rejects(translateWithAgent({ locale: 'de' }, { client }), /failed turn|incomplete stream/);
-    assert.equal(seen.cancelled[0].body.events[0].type, 'agent.session.input.cancel');
-    assert.deepEqual(seen.deleted, ['sess_test']);
+test('failed, incomplete and refused responses are rejected even when partial Markdown is present', async () => {
+  for (const [response, expected, code] of [
+    [{ status: 'failed', error: { code: 'server_error', message: 'The model service failed.' } }, /The model service failed/, 'server_error'],
+    [{ status: 'incomplete', incomplete_details: { reason: 'max_output_tokens' } }, /max_output_tokens/, 'max_output_tokens'],
+    [{ output: [{ type: 'message', content: [{ type: 'refusal', refusal: 'Request refused.' }] }] }, /Request refused/, null],
+    [{ output_text: '' }, /returned no Markdown/, null],
+    [{ output_text: JSON.stringify({ markdown: ' ' }) }, /returned no Markdown/, null],
+    [{ output_text: '{invalid JSON' }, /JSON/, null],
+  ]) {
+    const { client } = fakeClient({ response });
+    await assert.rejects(translateWithOpenAI({ locale: 'de', targetPath: target }, { client }), error => {
+      assert.match(error.message, expected);
+      assert(error.message.includes(target));
+      assert.equal(error.apiError.code, code);
+      assert.equal(error.apiError.responseId, 'resp_test');
+      assert.equal(error.apiError.requestId, 'req_test');
+      return true;
+    });
   }
 });
 
-test('the installed SDK consumes the real Agents API event format without a network request', async () => {
+test('HTTP failures preserve the API error code, request ID and rejected parameter', async () => {
+  const failure = Object.assign(new Error('Unsupported output schema.'), {
+    code: 'invalid_request_error', request_id: 'req_http', param: 'text.format.schema',
+  });
+  const { client } = fakeClient({ error: failure });
+  await assert.rejects(translateWithOpenAI({ locale: 'de' }, { client }), error => {
+    assert.match(error.message, /\[invalid_request_error\] Unsupported output schema/);
+    assert.equal(error.apiError.requestId, 'req_http');
+    assert.equal(error.apiError.param, 'text.format.schema');
+    assert.equal(error.cause, failure);
+    return true;
+  });
+});
+
+test('API diagnostics reach both sync reports while translations and the manifest stay untouched', async t => {
+  const options = await fixture(t);
+  const stateFile = path.join(options.root, 'maintenance/translation-sync.json');
+  const before = await readFile(stateFile, 'utf8');
+  const { client } = fakeClient({ response: { status: 'failed', error: { code: 'server_error', message: 'The model service failed.' } } });
+  await assert.rejects(syncTranslations({ ...options, force: true, translate: task => translateWithOpenAI(task, { client }) }), /server_error/);
+  const report = await readReport(options);
+  assert.equal(report.files[0].apiError.code, 'server_error');
+  assert.equal(report.files[0].apiError.requestId, 'req_test');
+  assert.equal(report.counts.apiAttempts, 1);
+  assert.equal(report.counts.modified, 0);
+  const markdown = await readFile(path.join(options.root, 'output/translations/sync-report.md'), 'utf8');
+  assert.match(markdown, /server_error.*The model service failed/);
+  assert.match(markdown, /req_test/);
+  assert.equal(await readFile(path.join(options.root, target), 'utf8'), translated);
+  assert.equal(await readFile(stateFile, 'utf8'), before);
+});
+
+test('the installed SDK sends reference tool results back through the Responses API without a network request', async () => {
   const requests = [];
-  const turn = { id: 'turn_wire', session_id: 'sess_wire', subagent_id: null, status: 'in_progress' };
-  const events = [
-    { type: 'agent.session.created', session: { id: 'sess_wire' } },
-    { type: 'agent.session.turn.created', turn_id: turn.id, turn },
-    { type: 'agent.session.turn.item.done', turn_id: turn.id, output_index: 0, item: {
-      id: 'msg_wire', turn_id: turn.id, type: 'message', role: 'assistant', status: 'completed', phase: 'final_answer',
-      content: [{ type: 'output_text', text: JSON.stringify({ markdown: translated }), annotations: [] }],
-    } },
-    { type: 'agent.session.turn.completed', turn_id: turn.id, turn: { ...turn, status: 'completed' } },
-    { type: 'agent.session.idle', session: { id: 'sess_wire' } },
-  ];
   const client = new OpenAI({ apiKey: 'test-key', maxRetries: 0, fetch: async (url, init) => {
     requests.push({ url: String(url), method: init.method, headers: new Headers(init.headers), body: init.body });
-    if (init.method === 'DELETE') return Response.json({ id: 'sess_wire', deleted: true });
     assert.equal(init.method, 'POST');
-    return new Response(events.map(event => `event: ${event.type}\ndata: ${JSON.stringify(event)}\n\n`).join(''), {
-      headers: { 'content-type': 'text/event-stream' },
-    });
+    if (requests.length === 1) return Response.json({ id: 'resp_lookup', object: 'response', status: 'completed', output: [{
+      type: 'function_call', id: 'fc_lookup', call_id: 'call_lookup', name: 'read_reference_file',
+      arguments: JSON.stringify({ path: 'maintenance/translation-glossary.md', offset: 0, length: 1000 }), status: 'completed',
+    }] });
+    return Response.json({ id: 'resp_wire', object: 'response', status: 'completed', output: [{
+      id: 'msg_wire', type: 'message', role: 'assistant', status: 'completed',
+      content: [{ type: 'output_text', text: JSON.stringify({ markdown: translated }), annotations: [] }],
+    }] });
   } });
-  const result = await translateWithAgent({ manual: 'Example', locale: 'de', source: english, current: translated, glossary: 'Terms' }, { client });
+  const result = await translateWithOpenAI({ manual: 'Example', locale: 'de', source: english, current: translated, glossary: 'Terms',
+    references: new Map([['maintenance/translation-glossary.md', 'Keep BactoSense unchanged.']]),
+  }, { client });
   assert.equal(result, translated);
   assert.equal(requests.length, 2);
-  assert.equal(requests[0].url, 'https://api.openai.com/v1/agents/sessions');
-  assert.equal(requests[0].headers.get('OpenAI-Beta'), 'agents=v1');
+  assert.equal(requests[0].url, 'https://api.openai.com/v1/responses');
+  assert.equal(requests[0].headers.has('OpenAI-Beta'), false);
   const request = JSON.parse(requests[0].body);
-  // Agents JSON-schema formats accept only type and schema.
-  assert.deepEqual(Object.keys(request.agent.text.format).sort(), ['schema', 'type']);
-  assert.equal(request.agent.model, 'gpt-6.1-terra');
-  assert.equal(requests[1].url, 'https://api.openai.com/v1/agents/sessions/sess_wire');
+  assert.equal(request.text.format.strict, true);
+  assert.equal(request.text.format.name, 'translated_document');
+  assert.equal(request.model, 'gpt-6.1-terra');
+  assert.equal(request.store, false);
+  const continuation = JSON.parse(requests[1].body);
+  const toolOutput = continuation.input.find(item => item.type === 'function_call_output');
+  assert.equal(toolOutput.call_id, 'call_lookup');
+  assert.equal(JSON.parse(toolOutput.output).content, 'Keep BactoSense unchanged.');
+  assert.equal(continuation.store, false);
+  assert.equal(continuation.previous_response_id, undefined);
+});
+
+test('the installed SDK exposes failed response diagnostics and HTTP request IDs', async () => {
+  const client = new OpenAI({ apiKey: 'test-key', maxRetries: 0, fetch: async () => Response.json({
+    id: 'resp_failed', object: 'response', status: 'failed', output: [],
+    error: { code: 'server_error', message: 'An internal model error occurred.' },
+  }, { headers: { 'x-request-id': 'req_failed' } }) });
+  await assert.rejects(translateWithOpenAI({ locale: 'de', targetPath: target }, { client }), error => {
+    assert.match(error.message, /\[server_error\] An internal model error occurred/);
+    assert.equal(error.apiError.responseId, 'resp_failed');
+    assert.equal(error.apiError.requestId, 'req_failed');
+    return true;
+  });
+});
+
+test('reference tools read document snapshots and cannot expose unrelated files or credentials', async t => {
+  const options = await fixture(t);
+  await writeFile(path.join(options.root, '.env'), 'OPENAI_API_KEY=never-return-this');
+  await writeFile(path.join(options.root, 'private.md'), 'Private reference outside the manual inventory.');
+  const plan = await planSync({ ...options, force: true });
+  const harness = createReferenceTools(plan.tasks[0].references);
+  await writeFile(path.join(options.root, target), 'Edited after planning.');
+  const listed = harness.execute('list_reference_files', { prefix: 'manuals/' });
+  assert.deepEqual(listed.files.map(file => file.path), ['manuals/example/01-installation.md']);
+  const read = harness.execute('read_reference_file', { path: target, offset: 0, length: 20 });
+  assert.equal(read.content, translated.slice(0, 20));
+  assert.equal(read.next_offset, 20);
+  const rest = harness.execute('read_reference_file', { path: target, offset: 20, length: 16000 });
+  assert.equal(read.content + rest.content, translated);
+  assert.equal(rest.next_offset, null);
+  for (const filename of ['.env', '../.env', 'manuals/example/../../.env', 'private.md', 'C:\\secret.md', '/etc/passwd']) {
+    assert.throws(() => harness.execute('read_reference_file', { path: filename, offset: 0, length: 100 }), /not an available reference/);
+  }
+  assert.throws(() => harness.execute('run_shell', { command: 'anything' }), /Unknown reference tool/);
+  assert.throws(() => harness.execute('read_reference_file', { path: target, offset: -1, length: 100 }), /offset/);
+  assert.throws(() => harness.execute('read_reference_file', { path: target, offset: 0, length: 16001 }), /length/);
+  assert.throws(() => harness.execute('search_reference_files', { prefix: '', query: '' }), /Search query/);
+});
+
+test('reference search returns literal case-insensitive excerpts with bounded results', () => {
+  const harness = createReferenceTools(new Map([
+    ['manuals/example/chapter.md', 'BactoSense [Safety].\n' + 'BactoSense '.repeat(40)],
+    ['maintenance/translation-glossary.md', 'Keep [Safety] literal.'],
+  ]));
+  const literal = harness.execute('search_reference_files', { query: '[safety]', prefix: 'manuals/' });
+  assert.equal(literal.matches.length, 1);
+  assert.equal(literal.matches[0].offset, 11);
+  assert.match(literal.matches[0].excerpt, /BactoSense \[Safety\]/);
+  const many = harness.execute('search_reference_files', { query: 'bactosense', prefix: '' });
+  assert.equal(many.matches.length, 30);
+  assert.equal(many.truncated, true);
+});
+
+test('tool continuations preserve reasoning and assistant phases, recover denied reads and report every API request', async t => {
+  const options = await fixture(t);
+  const requests = [];
+  const functionCall = (id, name, args) => ({ type: 'function_call', id: `fc_${id}`, call_id: id, name, arguments: JSON.stringify(args) });
+  const reasoning = { type: 'reasoning', id: 'rs_test', summary: [], encrypted_content: 'opaque-reasoning' };
+  const commentary = { type: 'message', id: 'msg_context', role: 'assistant', phase: 'commentary', content: [{ type: 'output_text', text: 'Checking terminology.', annotations: [] }] };
+  const client = { responses: { async create(request) {
+    requests.push(request);
+    if (requests.length === 1) return { id: 'resp_one', status: 'completed', output: [reasoning, commentary,
+      functionCall('call_list', 'list_reference_files', { prefix: 'i18n/de/' }),
+      functionCall('call_search', 'search_reference_files', { prefix: '', query: 'Modbus' }),
+      functionCall('call_denied', 'read_reference_file', { path: '.env', offset: 0, length: 100 }),
+    ] };
+    if (requests.length === 2) {
+      assert.deepEqual(request.input.find(item => item.type === 'reasoning'), reasoning);
+      assert.equal(request.input.find(item => item.type === 'message').phase, 'commentary');
+      const results = request.input.filter(item => item.type === 'function_call_output');
+      assert.equal(results.length, 3);
+      assert.equal(JSON.parse(results.find(item => item.call_id === 'call_list').output).files[0].path, target);
+      assert.match(JSON.parse(results.find(item => item.call_id === 'call_denied').output).error, /not an available reference/);
+      assert.equal(JSON.parse(results.find(item => item.call_id === 'call_search').output).matches[0].path, 'maintenance/translation-glossary.md');
+      return { id: 'resp_two', status: 'completed', output: [functionCall('call_read', 'read_reference_file', { path: target, offset: 0, length: 16000 })] };
+    }
+    assert.equal(JSON.parse(request.input.find(item => item.call_id === 'call_read' && item.type === 'function_call_output').output).content, translated);
+    return { id: 'resp_final', status: 'completed', output_text: JSON.stringify({ markdown: translated }) };
+  } } };
+  const result = await syncTranslations({ ...options, force: true,
+    translate: (task, hooks) => translateWithOpenAI(task, { ...hooks, client }),
+  });
+  assert.equal(result.report.counts.apiAttempts, 3);
+  assert.equal(result.report.counts.referenceLookups, 4);
+  assert.equal(result.report.files[0].attempts, 1);
+  assert.equal(result.report.files[0].referenceLookups[2].status, 'error');
+  assert.equal(result.report.files[0].referenceLookups[3].arguments.path, target);
+  assert(requests.every(request => request.store === false && request.tools.length === 3));
+  const markdown = await readFile(path.join(options.root, 'output/translations/sync-report.md'), 'utf8');
+  assert.match(markdown, /API requests \(including tool follow-ups and repairs\) \| 3/);
+  assert.match(markdown, /Reference lookups \| 4/);
+});
+
+test('malformed tool calls become tool errors and repeated lookups have a finite request limit', async () => {
+  const seen = [], audit = [];
+  const client = { responses: { async create(request) {
+    seen.push(request);
+    return { id: `resp_${seen.length}`, status: 'completed', output: [{
+      type: 'function_call', id: `fc_${seen.length}`, call_id: `call_${seen.length}`, name: 'read_reference_file', arguments: '{broken',
+    }] };
+  } } };
+  await assert.rejects(runResponseWithTools({ client, request: { model: 'test-model', input: 'Read references.' },
+    references: new Map(), maxToolRounds: 1, onToolCall: lookup => audit.push(lookup),
+  }), error => {
+    assert.equal(error.code, 'reference_lookup_limit');
+    assert.equal(error.translationResponse.id, 'resp_2');
+    return true;
+  });
+  assert.equal(seen.length, 2);
+  assert.equal(seen[1].tool_choice, 'none');
+  assert.equal(audit[0].status, 'error');
+  assert.match(JSON.parse(seen[1].input.find(item => item.type === 'function_call_output').output).error, /valid JSON/);
 });

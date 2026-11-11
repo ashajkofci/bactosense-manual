@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Rebuild chapters 1–9 from PDF text, table geometry and figures.
 
-Run parse_second_half.py next; that final pass normalizes both halves with
-simplify-markdown.mjs. Reviewed chapter bodies in scripts/editorial/ override
-PDF-derived content; back up other reviewed documents before regeneration.
+Legacy import utility, no longer used for manual maintenance. Current Markdown
+chapters are authoritative. Run parse_second_half.py next to normalize both
+halves with simplify-markdown.mjs; back up reviewed documents before regeneration.
 """
 import fitz, re, json, html, hashlib
 from native_notices import normalize_notices
@@ -206,8 +206,6 @@ def main():
   for n in range(start,end+1):
    body,audit=page_content(n);coverage.append(audit)
    chunks.append(body)
-  editorial=ROOT/'scripts/editorial'/f'{ch:02}-{slug}.md'
-  if editorial.is_file():chunks=[chunks[0],editorial.read_text().strip()]
   filename=f'manuals/bactosense/{ch:02}-{slug}.md'
   (ROOT/filename).write_text(normalize_artwork(normalize_notices('\n\n'.join(chunks)+'\n'),filename))
  (ROOT/'extraction/first-half-coverage.json').write_text(json.dumps(coverage,indent=2)+'\n')

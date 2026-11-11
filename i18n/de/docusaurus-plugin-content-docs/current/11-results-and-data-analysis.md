@@ -380,9 +380,9 @@ Um die Ergebnisse des BactoSense mit einem anderen Durchflusszytometer vergleich
 
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG | \< |
 | --- | --- | --- | --- |
-| 1\. | Es wird empfohlen, das Validierungskit mit einer gebrauchsfertigen Perlenlösung zu verwenden. | Bitte lesen Sie die Anleitung des Validierungskits für weitere Informationen. | \< |
+| 1\. | Es wird empfohlen, das [Validierungskit](/other-manuals/validation-kit) mit einer gebrauchsfertigen Perlenlösung zu verwenden. | Bitte lesen Sie die Anleitung des Validierungskits für weitere Informationen. | \< |
 | 2\. | Installieren Sie das manuelle Probenahmegerät entsprechend den Anweisungen in der Bedienungsanleitung. |  | \< |
-| 3\. | Nehmen Sie eine der Perlenlösungen des Validierungskits und laden Sie sie in das Probenahmegerät. | Bitte lesen Sie die Anleitung des Validierungskits für weitere Informationen. | \< |
+| 3\. | Nehmen Sie eine der Perlenlösungen des [Validierungskits](/other-manuals/validation-kit) und laden Sie sie in das Probenahmegerät. | Bitte lesen Sie die Anleitung des Validierungskits für weitere Informationen. | \< |
 | 4\. | :::info[Zusätzliche Informationen] Drücken Sie die Taste Home. Drücken Sie die Taste Zurück so oft wie nötig, bis die Taste Home erscheint. ::: | ![BactoSense — Schaltfläche Startseite](/img/gui/icons/home-button.png "width=48 class=manual-icon") | ![BactoSense — Schaltfläche Zurück](/img/gui/icons/back-button.png "width=48 class=manual-icon") |
 | 5\. | Drücken Sie auf der Startseite Modus und wählen Sie „Manueller Modus“. Drücken Sie Zurück und anschließend Messen, um den Messassistenten zu öffnen. |  | \< |
 | 6\. | Wählen Sie Ansaugen aus der Protokollliste. | Siehe [Durchführen eines Ansaugens](../measurements/#section-10-9-3). | \< |

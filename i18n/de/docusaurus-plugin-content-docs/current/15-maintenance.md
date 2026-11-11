@@ -80,7 +80,7 @@ Unter Wartung durch den Benutzer versteht man einfache, gelegentliche Wartungsar
 | WANN | WAS | VERFAHREN |
 | Kartusche abgelaufen oder leer | Kartusche ersetzen | Siehe Kartuschenaustauschprozess unter [Kartuschen wechseln](../general-operations-and-configurations/#section-8-9-4). Siehe Informationen zum Kartuschenversand unter [Rückgabe einer Kartusche zur Wiederbefüllung](../storage-transport-and-disposal/#section-17-3-2). |
 | Das manuelle Probenahmegerät wurde neu installiert. Das Gerät war oder wird für mehr als drei Tage unbenutzt oder ausgeschaltet sein. | Grundreinigung oder Reinigung mit Washstation | Ist eine Washstation verfügbar, siehe [Manuelles Probenahmegerät mit Washstation reinigen](../maintenance/#section-15-2-2). Ansonsten siehe [Manuelles Probenahmegerät mittels Basisreinigung reinigen](../maintenance/#section-15-2-3). |
-| Gerät zeigt Anzeichen von Verschmutzung | Dekontaminierung | Erfordert ein Reinigungskit, siehe List der Verbrauchsmaterialien unter [Verbrauchsmaterial](../supply-scope-accessories-and-consumables/#section-18-3). Siehe Bedienungsanleitung zum Reinigungskit. |
+| Gerät zeigt Anzeichen von Verschmutzung | Dekontaminierung | Erfordert ein [Reinigungskit](/other-manuals/cleaning-kit), siehe List der Verbrauchsmaterialien unter [Verbrauchsmaterial](../supply-scope-accessories-and-consumables/#section-18-3). Siehe Bedienungsanleitung zum Reinigungskit. |
 | Das Online-Probenahmegerät ist verunreinigt. | Reinigung | Siehe Reinigungsverfahren unter [Online-Probenahmegerät reinigen](../maintenance/#section-15-2-4). |
 | Die Schläuche des Online-Probenahmegeräts sind beschädigt oder verschmutzt. | Schläuche ersetzen | Siehe Austauschverfahren unter [Schläuche des Online-Probenahmegerätes ersetzen](../maintenance/#section-15-2-5). |
 | Zellkonzentrationen niedriger als erwartet oder keine Zellen erkannt | Einlassfilter des Probenahmegeräts verstopft Filter ersetzen. | Siehe [Ersetzen des Filters im Probenahmegerät](../maintenance/#section-15-2-7). Siehe Verbrauchsmaterialien unter [Verbrauchsmaterial](../supply-scope-accessories-and-consumables/#section-18-3). |
@@ -110,7 +110,7 @@ Dieses Protokoll beschreibt, wie das manuelle Probenahmegerät mittels der Washs
 | 7. | Montieren Sie die Washstation, indem Sie sie an das manuelle Probenahmegerät anschrauben, ähnlich wie ein Probenröhrchen. Achten Sie darauf, dass Sie sie bis zum Ende des Gewindes einbauen. |  |
 | 8. | Drücken Sie die Taste Start und warten Sie 15 Minuten, bis das Protokoll abgeschlossen ist. |  |
 | 9. | Soll das Gerät inaktiv bleiben oder dekommissioniert werden, lassen Sie die Washstation am manuellen Probenahmegerät angebracht. Möchten Sie weiterhin messen, entfernen Sie die Washstation und schließen Sie mit dem Deckel eines 5-mL-Röhrchens mit Schraubverschluss. |  |
-| 10. | Besteht die Verunreinigung weiterhin, wiederholen Sie den Vorgang mit weiteren Replikationen. Besteht sie danach immer noch, verwenden Sie das Reinigungskit, um das Gerät zu reinigen (siehe [Verbrauchsmaterial](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
+| 10. | Besteht die Verunreinigung weiterhin, wiederholen Sie den Vorgang mit weiteren Replikationen. Besteht sie danach immer noch, verwenden Sie das [Reinigungskit](/other-manuals/cleaning-kit), um das Gerät zu reinigen (siehe [Verbrauchsmaterial](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
 
 ### 15.2.3 Manuelles Probenahmegerät mittels Basisreinigung reinigen {#section-15-2-3}
 
@@ -133,7 +133,7 @@ Dieses Protokoll beschreibt, wie das manuelle Probenahmegerät ohne Washstation 
 | 13. | Sobald das Protokoll abgeschlossen ist, entfernen Sie das 5mL-Röhrchen mit Schraubverschluss und entsorgen Sie es. |  |
 | 14. | Drücken Sie das Startseiten-Symbol oben links in der Benutzeroberfläche, um zur Startseite zurückzukehren. |  |
 | 15. | Möchten Sie mit weiteren Messungen fortfahren, führen Sie zuvor einen Ansaugvorgang durch. Die Anweisungen finden Sie unter [Durchführen eines Ansaugens](10-measurements.md#section-10-9-3). Soll das Gerät inaktiv bleiben oder abgeschaltet werden, so bringen Sie ein frisches Probenröhrchen an das manuelle Probenahmegerät an. |  |
-| 16. | Stellen Sie weiterhin eine Verunreinigung fest, wiederholen Sie den Vorgang mit mehr Replikationen. Besteht sie danach immer noch, verwenden Sie das Reinigungskit, um das Gerät zu reinigen (Verbrauchsmaterialien siehe [Verbrauchsmaterial](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
+| 16. | Stellen Sie weiterhin eine Verunreinigung fest, wiederholen Sie den Vorgang mit mehr Replikationen. Besteht sie danach immer noch, verwenden Sie das [Reinigungskit](/other-manuals/cleaning-kit), um das Gerät zu reinigen (Verbrauchsmaterialien siehe [Verbrauchsmaterial](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
 
 ### 15.2.4 Online-Probenahmegerät reinigen {#section-15-2-4}
 
@@ -229,7 +229,7 @@ Stellen Sie sicher, dass alle von Ihnen und anderen Benutzern erzeugten Daten ge
 
 ## 15.3 Softwareaktualisierungen {#section-15-3}
 
-Softwareaktualisierungen können entweder von einem USB-Stick oder von einem Online- Repository installiert werden, wenn eine Internetverbindung verfügbar ist (z. B. über BactoLink). Software-Updates müssen manuell über die Benutzeroberfläche gestartet werden. Für Updates aus dem Online-Repository gehen Sie wie folgt vor. Für Updates über einen USB-Stick siehe [USB-Update-Stick vorbereiten](#section-15-3-1) und [Update von einem USB-Stick installieren](#section-15-3-2).
+Softwareaktualisierungen können entweder von einem USB-Stick oder von einem Online- Repository installiert werden, wenn eine Internetverbindung verfügbar ist (z. B. über [BactoLink](/other-manuals/bactolink)). Software-Updates müssen manuell über die Benutzeroberfläche gestartet werden. Für Updates aus dem Online-Repository gehen Sie wie folgt vor. Für Updates über einen USB-Stick siehe [USB-Update-Stick vorbereiten](#section-15-3-1) und [Update von einem USB-Stick installieren](#section-15-3-2).
 
 |  | ARBEITSSCHRITT |
 | --- | --- |

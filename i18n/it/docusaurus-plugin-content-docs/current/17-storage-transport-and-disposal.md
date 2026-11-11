@@ -36,7 +36,7 @@ Dopo la conservazione, seguire le istruzioni generali di installazione del capit
 
 :::info[Validare dopo la conservazione]
 
-Se il BactoSense è stato conservato per più di un mese, validarlo con il Validation Kit prima della prima misura per verificarne il corretto funzionamento.
+Se il BactoSense è stato conservato per più di un mese, validarlo con il [Validation Kit](/other-manuals/validation-kit) prima della prima misura per verificarne il corretto funzionamento.
 
 :::
 
@@ -116,7 +116,7 @@ MODALITÀ ISTRUZIONI
 - Rimuovere la cartuccia con la procedura Rimuovi la cartuccia in Home → Impostazioni → Manutenzione → Sostituzione della cartuccia. Gli utenti Basic aprono Sostituzione della cartuccia direttamente da Impostazioni.
 - Imballare il BactoSense e la cartuccia nelle scatole di cartone standard con inserti in schiuma.
 - Spedire su pallet o piattaforma.
-- Alla reinstallazione, eseguire un’autodiagnosi (sezione [Autodiagnosi automatica](16-warnings-errors-and-troubleshooting.md#section-16-6)) e una validazione dello strumento con il Validation Kit.
+- Alla reinstallazione, eseguire un’autodiagnosi (sezione [Autodiagnosi automatica](16-warnings-errors-and-troubleshooting.md#section-16-6)) e una validazione dello strumento con il [Validation Kit](/other-manuals/validation-kit).
 
 Spedizione standard
 

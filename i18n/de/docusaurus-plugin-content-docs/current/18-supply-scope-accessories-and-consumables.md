@@ -39,7 +39,7 @@ slug: /supply-scope-accessories-and-consumables
 | 200171 | Gedruckte BactoSense- Betriebsanleitung, Deutsch |  |
 | 200006 | Manuelles Probenahmegerät | ![Abbildung zur Tabelle auf Handbuchseite 160](/img/manual/cell-78e276ee409d.png "width=77 class=manual-article-image") |
 | 200007 | Online-Probenahmegerät | ![Abbildung zur Tabelle auf Handbuchseite 160](/img/manual/cell-3f47feb06665.png "width=143 class=manual-article-image") |
-| 200145 | BactoLink-Remotezugriff | ![Abbildung zur Tabelle auf Handbuchseite 160](/img/manual/cell-0ae3a8fa20ab.png "width=143 class=manual-article-image") |
+| 200145 | [BactoLink](/other-manuals/bactolink)-Remotezugriff | ![Abbildung zur Tabelle auf Handbuchseite 160](/img/manual/cell-0ae3a8fa20ab.png "width=143 class=manual-article-image") |
 
 | ART.-NR. | NAME | ABBILDUNG |
 | --- | --- | --- |
@@ -61,9 +61,9 @@ Verfügbare Verbrauchsmaterialien sind unten aufgelistet. Sie können bei Ihrem 
 | 200003 | Röhrchen mit Schraubverschluss, 5 mL, 25er-Pack |
 | 200023 | Trockenmittelbeutel |
 | 200025 | Set von 5 Filtern 316L – 25 µm für Probenahmegerät |
-| 200004 | Validierungskit |
-| 200186 | Systemeignungstest-Kit (SST Kit) für BactoSense PURE |
-| 200005 | Reinigungskit |
+| 200004 | [Validierungskit](/other-manuals/validation-kit) |
+| 200186 | [Systemeignungstest-Kit (SST Kit) für BactoSense PURE](/other-manuals/sst-bactosense-pure) |
+| 200005 | [Reinigungskit](/other-manuals/cleaning-kit) |
 | 200019 | TCC-Kartusche wiederbefüllen |
 | 200054 | ICC-Kartusche wiederbefüllen |
 | 200176 | ICC für PURE-Kartusche wiederbefüllen |

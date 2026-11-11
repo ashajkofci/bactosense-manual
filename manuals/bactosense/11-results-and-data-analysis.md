@@ -380,9 +380,9 @@ To compare BactoSense results with those from another flow cytometer, a referenc
 
 |  | WORK STEP | ADDITIONAL INFO / IMAGE | \< |
 | --- | --- | --- | --- |
-| 1\. | It is recommended to use the Validation Kit which contains a ready to use beads solution. | Read the instructions of the Validation Kit for more information. | \< |
+| 1\. | It is recommended to use the [Validation Kit](/other-manuals/validation-kit) which contains a ready to use beads solution. | Read the instructions of the Validation Kit for more information. | \< |
 | 2\. | Install the manual sampling device according to the user manual. |  | \< |
-| 3\. | Take one of the Validation kit’s beads solutions and load it into the sampling device. | Read the instructions of the Validation Kit for more information. | \< |
+| 3\. | Take one of the [Validation kit](/other-manuals/validation-kit)’s beads solutions and load it into the sampling device. | Read the instructions of the Validation Kit for more information. | \< |
 | 4\. | :::info[Additional information] Press the Home button. Press the Back button as many times as needed for the Home button to appear. ::: | ![BactoSense — Home button](/img/gui/icons/home-button.png "width=48 class=manual-icon") | ![BactoSense — Back button](/img/gui/icons/back-button.png "width=48 class=manual-icon") |
 | 5\. | On the Home screen, press Mode and select Manual mode. Press Back, then Measure to open the measurement wizard. |  | \< |
 | 6\. | Select Prime from the protocol list. | See [Performing a Prime](../measurements/#section-10-9-3). | \< |

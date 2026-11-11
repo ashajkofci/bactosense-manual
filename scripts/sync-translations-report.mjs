@@ -8,7 +8,8 @@ export function countTranslations(files) {
     selected: files.filter(file => file.action === 'translate').length,
     skipped: count('skipped'),
     attempted: files.filter(file => file.attempts > 0).length,
-    apiAttempts: files.reduce((sum, file) => sum + file.attempts, 0),
+    apiAttempts: files.reduce((sum, file) => sum + (file.apiRequests ?? file.attempts), 0),
+    referenceLookups: files.reduce((sum, file) => sum + (file.referenceLookups?.length ?? 0), 0),
     modified: count('modified'), created: count('created'), removed: count('removed'),
     unchanged: count('unchanged'), failed: count('failed'),
     notStarted: count('not_started'), notApplied: count('not_applied'),
@@ -28,7 +29,8 @@ export function formatSyncReport(report) {
       ['Translation files checked', counts.checked], ['Selected for sync', counts.selected],
       ['Skipped (source unchanged)', counts.skipped], ['Selected but content unchanged', counts.unchanged],
       ['Failed translations', counts.failed], ['Not started', counts.notStarted],
-      ['Validated but not applied', counts.notApplied], ['API translation attempts (including repairs)', counts.apiAttempts],
+      ['Validated but not applied', counts.notApplied], ['API requests (including tool follow-ups and repairs)', counts.apiAttempts],
+      ['Reference lookups', counts.referenceLookups],
     ].map(([label, value]) => `| ${label} | ${value} |`), '',
   ];
   if (report.dryRun) lines.push('Dry run: no API requests were made and no translations were changed.', '');
@@ -43,9 +45,9 @@ export function formatSyncReport(report) {
   }
   const selected = report.files.filter(file => file.status !== 'skipped');
   if (selected.length) {
-    lines.push('### File details', '', '| File | Result | API attempts |', '| --- | --- | ---: |');
+    lines.push('### File details', '', '| File | Result | API requests | Reference lookups | Error |', '| --- | --- | ---: | ---: | --- |');
     for (const file of selected) {
-      lines.push(`| ${cell(file.targetPath)} | ${cell(file.status.replaceAll('_', ' '))} | ${file.attempts} |`);
+      lines.push(`| ${cell(file.targetPath)} | ${cell(file.status.replaceAll('_', ' '))} | ${file.apiRequests ?? file.attempts} | ${file.referenceLookups?.length ?? 0} | ${cell(file.error ?? '')} |`);
     }
     lines.push('');
   }

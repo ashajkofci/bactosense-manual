@@ -380,9 +380,9 @@ Per confrontare i risultati di BactoSense con quelli di un altro citometro a flu
 
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINE | \< |
 | --- | --- | --- | --- |
-| 1\. | Si consiglia di utilizzare il kit di validazione, che contiene una soluzione di microsfere pronta all’uso. | Leggere le istruzioni del kit di validazione per ulteriori informazioni. | \< |
+| 1\. | Si consiglia di utilizzare il [kit di validazione](/other-manuals/validation-kit), che contiene una soluzione di microsfere pronta all’uso. | Leggere le istruzioni del kit di validazione per ulteriori informazioni. | \< |
 | 2\. | Installare il dispositivo di campionamento manuale secondo il manuale d’uso. |  | \< |
-| 3\. | Prelevare una delle soluzioni di microsfere del kit di validazione e caricarla nel dispositivo di campionamento. | Leggere le istruzioni del kit di validazione per ulteriori informazioni. | \< |
+| 3\. | Prelevare una delle soluzioni di microsfere del [kit di validazione](/other-manuals/validation-kit) e caricarla nel dispositivo di campionamento. | Leggere le istruzioni del kit di validazione per ulteriori informazioni. | \< |
 | 4\. | :::info[Informazioni aggiuntive] Premere Home. Premere Back tante volte quanto necessario per far comparire il pulsante Home. ::: | ![BactoSense — Pulsante della schermata iniziale](/img/gui/icons/home-button.png "width=48 class=manual-icon") | ![BactoSense — Pulsante Indietro](/img/gui/icons/back-button.png "width=48 class=manual-icon") |
 | 5\. | Nella schermata Home, premere Modalità e selezionare Modalità manuale. Premere Indietro, quindi Misura per aprire l’assistente di misurazione. |  | \< |
 | 6\. | Selezionare Prepara dall’elenco dei protocolli. | Vedere sezione [Esecuzione di un adescamento (Prime)](../measurements/#section-10-9-3). | \< |

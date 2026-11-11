@@ -540,9 +540,9 @@ Para realizar una comprobación rápida y completamente automática del estado d
 
 Para evaluar la limpieza de BactoSense y descartar una contaminación, realice el procedimiento de verificación de la limpieza de la sección [Verificación de la limpieza](08-general-operations-and-configurations.md#section-8-11-1).
 
-En entornos de funcionamiento que requieran una prueba de aptitud del sistema, utilice el *System Suitability* *Test Kit (SST Kit)* y siga el procedimiento de su manual de usuario.
+En entornos de funcionamiento que requieran una prueba de aptitud del sistema, utilice el [*System Suitability* *Test Kit (SST Kit)*](/other-manuals/sst-bactosense-pure) y siga el procedimiento de su manual de usuario.
 
-Para otros entornos, se recomienda cualificar el instrumento con el *Validation Kit* en las situaciones siguientes:
+Para otros entornos, se recomienda cualificar el instrumento con el *[Validation Kit](/other-manuals/validation-kit)* en las situaciones siguientes:
 
 - Después de enviar el instrumento o de otro transporte de larga distancia que lo exponga a vibraciones o golpes.
 - Después de almacenar el instrumento durante más de un mes.
@@ -554,7 +554,7 @@ Para otros entornos, se recomienda cualificar el instrumento con el *Validation 
 | --- | --- |
 | 1. | Asegúrese de que el dispositivo de muestreo manual esté firmemente instalado como se describe en la sección [Instalación del dispositivo de muestreo manual](05-installation.md#section-5-4). |
 | 2. | Limpie el dispositivo de muestreo con dos repeticiones: si dispone de una Washstation, siga el procedimiento de la sección [Limpieza del dispositivo de muestreo manual con Washstation](15-maintenance.md#section-15-2-2); en caso contrario, el de la sección [Limpieza básica del dispositivo de muestreo manual](15-maintenance.md#section-15-2-3). |
-| 3. | Prepare la muestra en blanco en un tubo de 5 mL con tapón de rosca. Hay dos opciones: A) utilice agua libre de células, p. ej., una alícuota de solución estéril del Validation Kit. Si utiliza la alícuota de solución estéril del Validation Kit, retire su tapón y colóquela en un tubo vacío de 5 mL con tapón de rosca, como se describe en el manual de usuario del Validation Kit. B) Tome agua mineral sin gas y fíltrela dos veces con un filtro de membrana de tamaño de poro de 0.22 µm o inferior. |
+| 3. | Prepare la muestra en blanco en un tubo de 5 mL con tapón de rosca. Hay dos opciones: A) utilice agua libre de células, p. ej., una alícuota de solución estéril del [Validation Kit](/other-manuals/validation-kit). Si utiliza la alícuota de solución estéril del Validation Kit, retire su tapón y colóquela en un tubo vacío de 5 mL con tapón de rosca, como se describe en el manual de usuario del Validation Kit. B) Tome agua mineral sin gas y fíltrela dos veces con un filtro de membrana de tamaño de poro de 0.22 µm o inferior. |
 | 4. | Vaya a la pantalla Home de la interfaz de usuario de BactoSense. |
 | 5. | En la pantalla Home, pulse Modo y seleccione Modo manual. Pulse Volver y, a continuación, Iniciar para abrir el asistente de medición. |
 | 6. | Seleccione Preparar en la lista de protocolos disponibles. |
@@ -570,7 +570,7 @@ Para otros entornos, se recomienda cualificar el instrumento con el *Validation 
 | 16. | Pulse el botón Inicio y espere a que finalicen las dos mediciones. |
 | 17. | Al finalizar, pulse el botón Siguiente para revisar los resultados. |
 | 18. | Examine los resultados y compárelos con los valores de referencia indicados a continuación. BactoSense está limpio si se cumplen los siguientes criterios: • Para cartuchos TCC: TCC [/mL] &lt; 300 • Para cartuchos ICC: ICC [/mL] &lt; 100. |
-| 19. | Si las concentraciones celulares superan los límites especificados, aplique el procedimiento siguiente: • Repita el procedimiento con una muestra en blanco recién preparada. • Repita el procedimiento después de una descontaminación con el Cleaning Kit (véase la sección [Consumibles](18-supply-scope-accessories-and-consumables.md#section-18-3)). • Si la prueba sigue fallando, póngase en contacto con el soporte de bNovate o con su representante local de servicio. |
+| 19. | Si las concentraciones celulares superan los límites especificados, aplique el procedimiento siguiente: • Repita el procedimiento con una muestra en blanco recién preparada. • Repita el procedimiento después de una descontaminación con el [Cleaning Kit](/other-manuals/cleaning-kit) (véase la sección [Consumibles](18-supply-scope-accessories-and-consumables.md#section-18-3)). • Si la prueba sigue fallando, póngase en contacto con el soporte de bNovate o con su representante local de servicio. |
 | 20. | Al finalizar, coloque un tubo limpio y vacío de 5 mL con tapón de rosca o la Washstation en el dispositivo de muestreo manual. |
 
 ## 8.12 Modo de demostración {#section-8-12}

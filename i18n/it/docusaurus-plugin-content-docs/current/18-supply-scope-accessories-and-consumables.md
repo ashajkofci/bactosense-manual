@@ -39,7 +39,7 @@ slug: /supply-scope-accessories-and-consumables
 | 200171 | Manuale d’uso BactoSense stampato in tedesco |  |
 | 200006 | Dispositivo di campionamento manuale | ![Illustrazione della tabella a pagina 160](/img/manual/cell-78e276ee409d.png "width=77 class=manual-article-image") |
 | 200007 | Dispositivo di campionamento in linea | ![Illustrazione della tabella a pagina 160](/img/manual/cell-3f47feb06665.png "width=143 class=manual-article-image") |
-| 200145 | BactoLink per l’accesso remoto allo strumento | ![Illustrazione della tabella a pagina 160](/img/manual/cell-0ae3a8fa20ab.png "width=143 class=manual-article-image") |
+| 200145 | [BactoLink](/other-manuals/bactolink) per l’accesso remoto allo strumento | ![Illustrazione della tabella a pagina 160](/img/manual/cell-0ae3a8fa20ab.png "width=143 class=manual-article-image") |
 
 | N. ART. | NOME | IMMAGINE |
 | --- | --- | --- |
@@ -61,9 +61,9 @@ Di seguito sono elencati i materiali di consumo disponibili. Possono essere ordi
 | 200003 | Provette da 5 mL con tappo a vite, confezione da 25 pezzi |
 | 200023 | Sacchetto essiccante |
 | 200025 | Set di 5 filtri 316L – 25 µm per il dispositivo di campionamento |
-| 200004 | Validation Kit |
-| 200186 | Kit per il test di idoneità del sistema BactoSense PURE |
-| 200005 | Cleaning Kit |
+| 200004 | [Validation Kit](/other-manuals/validation-kit) |
+| 200186 | [Kit per il test di idoneità del sistema BactoSense PURE](/other-manuals/sst-bactosense-pure) |
+| 200005 | [Cleaning Kit](/other-manuals/cleaning-kit) |
 | 200019 | Ricarica cartuccia TCC |
 | 200054 | Ricarica cartuccia ICC |
 | 200176 | Ricarica cartuccia ICC per BactoSense PURE |

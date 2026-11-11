@@ -540,9 +540,9 @@ To do a fully automated quick check of the instrument status, perform the self-c
 
 To assess the cleanliness of the BactoSense and rule out a contamination, perform the  cleanliness verification procedure in [Cleanliness verification](08-general-operations-and-configurations.md#section-8-11-1).
 
-For operational environments requiring system suitability testing, use the *System Suitability*  *Test Kit (SST Kit)* and follow the procedure in its user manual.
+For operational environments requiring system suitability testing, use the [*System Suitability*  *Test Kit (SST Kit)*](/other-manuals/sst-bactosense-pure) and follow the procedure in its user manual.
 
-For other environments, an instrument qualification using the *Validation kit* is recommended  in the following situations:
+For other environments, an instrument qualification using the *[Validation kit](/other-manuals/validation-kit)* is recommended  in the following situations:
 
 - After shipping the instrument or other long-distance transport, exposing the instrument  to vibration or shock.
 - After storing the instrument for more than one month.
@@ -554,7 +554,7 @@ For other environments, an instrument qualification using the *Validation kit* i
 | --- | --- |
 | 1. | Make sure the manual sampling device is tightly installed as described in [Installation of the manual sampling device](05-installation.md#section-5-4). |
 | 2. | Perform a cleaning of the sampling device with two replications: If a Washstation is available, follow the procedure in [Clean manual sampling device with Washstation](15-maintenance.md#section-15-2-2), otherwise the procedure in [Clean manual sampling device with basic cleaning](15-maintenance.md#section-15-2-3). |
-| 3. | Prepare the blank sample in a 5 mL screw-cap tube. There are two options: A) Use cell-free water, e.g. a sterile solution aliquot from the Validation Kit. If you use the sterile solution aliquot from the Validation Kit, remove the cap of the aliquot and place the aliquot in an empty 5 mL screw-cap tube, as described in the user manual of the Validation Kit. B) Take a still mineral water and filter twice using a membrane filter with a pore size of 0.22 µm or smaller. |
+| 3. | Prepare the blank sample in a 5 mL screw-cap tube. There are two options: A) Use cell-free water, e.g. a sterile solution aliquot from the [Validation Kit](/other-manuals/validation-kit). If you use the sterile solution aliquot from the Validation Kit, remove the cap of the aliquot and place the aliquot in an empty 5 mL screw-cap tube, as described in the user manual of the Validation Kit. B) Take a still mineral water and filter twice using a membrane filter with a pore size of 0.22 µm or smaller. |
 | 4. | Navigate to the Home screen of the BactoSense user interface. |
 | 5. | On the Home screen, press Mode and select Manual mode. Press Back, then Measure to open the measurement wizard. |
 | 6. | Select Prime from the list of available protocols. |
@@ -570,7 +570,7 @@ For other environments, an instrument qualification using the *Validation kit* i
 | 16. | Press the Start button and wait for the two measurements to complete. |
 | 17. | After finishing, press the Next button to review the results. |
 | 18. | Look at the results and compare them to the reference values indicated below. The BactoSense is clean if the following criteria are fulfilled: • For TCC cartridges: TCC [/mL] &lt; 300 • For ICC cartridges: ICC [/mL] &lt; 100 |
-| 19. | If the cell concentrations are higher than the specified limits, apply the following procedure: • Repeat the procedure with a freshly prepared blank sample. • Repeat the procedure after a decontamination using the Cleaning Kit (see [Consumables](18-supply-scope-accessories-and-consumables.md#section-18-3)). • If the test keeps failing, contact bNovate support or your local service representative. |
+| 19. | If the cell concentrations are higher than the specified limits, apply the following procedure: • Repeat the procedure with a freshly prepared blank sample. • Repeat the procedure after a decontamination using the [Cleaning Kit](/other-manuals/cleaning-kit) (see [Consumables](18-supply-scope-accessories-and-consumables.md#section-18-3)). • If the test keeps failing, contact bNovate support or your local service representative. |
 | 20. | After finishing, attach a clean and empty 5 mL screw-cap tube or the Washstation to the manual sampling device. |
 
 ## 8.12 Demo mode {#section-8-12}

@@ -242,7 +242,7 @@ In modalità manuale, gli operatori possono scegliere tra due protocolli di anal
 | NOME DEL PROTOCOLLO | DESCRIZIONE DEL PROTOCOLLO |
 | --- | --- |
 | Water Analysis | Analizza un campione d’acqua e termina con un ciclo di pulizia. Se vengono eseguite più repliche, la pulizia viene effettuata una sola volta, alla fine. Tra le repliche viene eseguito automaticamente un adescamento. |
-| Beads Analysis | Questo protocollo è destinato all’analisi di microsfere di calibrazione ed è utilizzato con il kit di validazione. Termina automaticamente con un ciclo di pulizia. Se vengono eseguite più repliche, la pulizia viene effettuata una sola volta, alla fine. |
+| Beads Analysis | Questo protocollo è destinato all’analisi di microsfere di calibrazione ed è utilizzato con il [kit di validazione](/other-manuals/validation-kit). Termina automaticamente con un ciclo di pulizia. Se vengono eseguite più repliche, la pulizia viene effettuata una sola volta, alla fine. |
 
 I protocolli di manutenzione possono essere eseguiti prima o tra i protocolli di analisi per preparare, risciacquare o pulire il sistema. In modalità manuale sono disponibili i seguenti protocolli di manutenzione:
 

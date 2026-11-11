@@ -282,7 +282,7 @@ Le BactoSense offre plusieurs options d’intégration et d’accès aux donnée
 | HTTP et HTTPS | Section [Récupération des fichiers via HTTP ou HTTPS](12-data-access-and-export.md#section-12-3) |
 | Relais de l’interface utilisateur du réseau virtuel (VNC) (contrôle à distance) | Section [Utilisation du relais GUI via VNC](12-data-access-and-export.md#section-12-4) |
 | Interface utilisateur web | Chapitre [Interface utilisateur web](13-web-user-interface.md) |
-| BactoLink | Voir le manuel d’utilisation BactoLink séparé |
+| [BactoLink](/other-manuals/bactolink) | Voir le manuel d’utilisation BactoLink séparé |
 | BactoCloud | Chapitre [BactoCloud](14-bactocloud.md) |
 
 ![BactoSense — Services système](/img/gui/fr/system-services.png "width=507")

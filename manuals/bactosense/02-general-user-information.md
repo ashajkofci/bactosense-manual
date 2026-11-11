@@ -22,10 +22,10 @@ Additional associated product documentation can be found in the table below.
 
 |  |  |  |
 | --- | --- | --- |
-| 40101 | Quick Guide | Basic information needed to operate the BactoSense. |
-| 40108 | Cleaning Kit<br/>User Manual | Usage of the reagent kit to decontaminate the BactoSense. |
-| UM_0003 | Validation Kit<br/>User Manual | Usage of the reagent kit used to validate proper functioning of the BactoSense. |
-| UM_0004 | SST Kit BactoSense<br/>PURE User Manual | Usage of the reagent kit to perform the system suitability test. |
+| 40101 | [Quick Guide](/other-manuals/quick-guide) | Basic information needed to operate the BactoSense. |
+| 40108 | [Cleaning Kit User Manual](/other-manuals/cleaning-kit) | Usage of the reagent kit to decontaminate the BactoSense. |
+| UM_0003 | [Validation Kit User Manual](/other-manuals/validation-kit) | Usage of the reagent kit used to validate proper functioning of the BactoSense. |
+| UM_0004 | [SST Kit BactoSense PURE User Manual](/other-manuals/sst-bactosense-pure) | Usage of the reagent kit to perform the system suitability test. |
 | 50115 | CE declaration of conformity | Compliance with the underlying directives and standards. |
 | 50116 | UKCA declaration of conformity | Compliance with the underlying directives and standards. |
 | 50117 | CB test report | UL/CSA/FCC compliance report, also under<br/>CH-12116 on https://certificates.iecee.org |

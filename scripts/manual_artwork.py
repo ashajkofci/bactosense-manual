@@ -1,4 +1,4 @@
-"""Apply the online manual's artwork choices after PDF parsing."""
+"""Legacy PDF import normalizer; current Markdown chapters are authoritative."""
 import json
 import re
 from html import escape
@@ -86,13 +86,9 @@ def normalize_gui_artwork(content, source_file=None):
   if source.is_absolute():
    source = source.relative_to(ROOT)
   source = source.as_posix()
-  # Editorial bodies are imported as their corresponding English chapter.
-  files = {source}
-  if source.startswith('scripts/editorial/'):
-   files.add('manuals/bactosense/'+source.removeprefix('scripts/editorial/'))
   updates = json.loads(updates_path.read_text())
   for entry in updates['entries']+updates.get('navigation_import_entries',[]):
-   if entry['locale'] == 'en' and entry['file'] in files:
+   if entry['locale'] == 'en' and entry['file'] == source:
     content = _replace_gui_fragment(content,entry)
  figures = [figure for figure in json.loads(manifest_path.read_text())['figures'] if figure['locale'] in ('en','all')]
  replacements = {source:figure for figure in figures for source in figure['replaces']}
@@ -176,37 +172,6 @@ def normalize_artwork(content, source_file=None):
  if re.search(GLOVES,content):
   raise ValueError('Unmatched gloves icon: inspect its surrounding content')
  content = content.replace('/img/manual/cell-27e561e22ac1.png', '/img/safety/gloves.svg')
- # Keep the reviewed legend, including the mandatory-gloves symbol, on re-import.
- legend = ROOT/'scripts/editorial/02-safety-symbols.md'
- if legend.is_file():
-  content = re.sub(r'^## 2\.3[^\n]*\n.*?(?=^## 2\.4)', lambda _: legend.read_text().rstrip()+'\n\n', content, flags=re.M|re.S)
- # Keep the reviewed scheduler supplement when importing the older source PDF.
- if source_file == 'manuals/bactosense/10-measurements.md' and '{#section-10-2-4}' not in content:
-  scheduler = ROOT/'scripts/editorial/10-advanced-scheduler.md'
-  if scheduler.is_file():
-   content = re.sub(r'(?=^## 10\.3\b)', lambda _: scheduler.read_text().rstrip()+'\n\n', content, count=1, flags=re.M)
- # Replace the older filter steps with the reviewed date, name and BactoSwitch line filters.
- if source_file == 'manuals/bactosense/10-measurements.md':
-  filtering = ROOT/'scripts/editorial/10-filtering-measurements.md'
-  if filtering.is_file():
-   content = re.sub(r'^## 10\.7\b[^\n]*\n.*?(?=^## 10\.8\b)', lambda _: filtering.read_text().rstrip()+'\n\n', content, count=1, flags=re.M|re.S)
- # Replace the older intervention-log step with the reviewed list of log fields.
- if source_file == 'manuals/bactosense/15-maintenance.md':
-  intervention_log = ROOT/'scripts/editorial/15-intervention-log.md'
-  if intervention_log.is_file():
-   content = re.sub(r'^### 15\.1\.2\b[^\n]*\n.*?(?=^## 15\.2\b)', lambda _: intervention_log.read_text().rstrip()+'\n\n', content, count=1, flags=re.M|re.S)
- # Replace the older error and warning log description with the reviewed Logs menu sections.
- if source_file == 'manuals/bactosense/16-warnings-errors-and-troubleshooting.md':
-  logs = ROOT/'scripts/editorial/16-logs.md'
-  if logs.is_file():
-   content = re.sub(r'^## 16\.4\b[^\n]*\n.*?(?=^## 16\.6\b)', lambda _: logs.read_text().rstrip()+'\n\n', content, count=1, flags=re.M|re.S)
- # Keep the embedded-manual instructions when importing the older source PDF.
- if source_file == 'manuals/bactosense/15-maintenance.md' and '{#section-15-4}' not in content:
-  embedded_manual = ROOT/'scripts/editorial/15-embedded-manual.md'
-  if embedded_manual.is_file():
-   content = content.rstrip()+'\n\n'+embedded_manual.read_text().rstrip()+'\n'
- if source_file == 'manuals/bactosense/20-index.md' and '/maintenance#section-15-4' not in content:
-  content = content.replace('## E\n\n', '## E\n\n- Embedded manual [15.4](/maintenance#section-15-4)\n', 1)
  return normalize_gui_artwork(re.sub(r'\n{3,}', '\n\n', content), source_file)
 
 if __name__ == '__main__':

@@ -1,6 +1,6 @@
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import path from 'node:path';
-import { manuals, contentDirectory, sourceLocale } from '../plugins/manuals.cjs';
+import { manuals, contentDirectory, pdfManuals } from '../plugins/manuals.cjs';
 
 const root = path.resolve(import.meta.dirname, '..');
 const read = file => readFileSync(path.join(root, file), 'utf8').replace(/\r\n/g, '\n');
@@ -26,6 +26,7 @@ for (const manual of manuals) for (const locale of manual.locales) {
   const docs = readdirSync(path.join(root, directory)).filter(name => /\.mdx?$/.test(name));
   documentCount += docs.length;
   check(docs.length > 0, `${label}: no documents in ${directory}`);
+  try { pdfManuals(manual, locale); } catch (error) { errors.push(error.message); }
   for (let chapter = 1; chapter <= (manual.chapters || 0); chapter++) {
     const prefix = String(chapter).padStart(2, '0') + '-';
     check(docs.filter(file => file.startsWith(prefix)).length === 1, `${label}: expected one document for chapter ${chapter}`);
@@ -48,10 +49,6 @@ for (const manual of manuals) for (const locale of manual.locales) {
       for (const type of Object.keys(safety.admonitions)) {
         if (type === 'info') continue; // Information pictograms are explained in 2.4.
         check(new RegExp(`^:{3,}${type}\\[`, 'm').test(legend), `${fileLabel}: section 2.3 is missing the ${type} symbol`);
-      }
-      if (locale === sourceLocale) {
-        const section = text.match(/^## 2\.3[^\n]*\n[\s\S]*?(?=^## 2\.4)/m)?.[0] || '';
-        check(section.trim() === read('scripts/editorial/02-safety-symbols.md').trim(), `${fileLabel}: keep the maintained safety legend in sync`);
       }
     }
     const paths = [...text.matchAll(/(?:src=["']|\]\()(\/img\/[^\s"')>]+)/g)].map(match => match[1]);

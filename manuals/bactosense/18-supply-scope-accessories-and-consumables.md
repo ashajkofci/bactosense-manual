@@ -39,7 +39,7 @@ Accessories can be ordered as needed, for example if you need spare parts. bNova
 | 200171 | Printed User Manual BactoSense German |  |
 | 200006 | Manual sampling device | ![Illustration for table on manual page 160](/img/manual/cell-78e276ee409d.png "width=77 class=manual-article-image") |
 | 200007 | Online sampling device | ![Illustration for table on manual page 160](/img/manual/cell-3f47feb06665.png "width=143 class=manual-article-image") |
-| 200145 | BactoLink for remote instrument access | ![Illustration for table on manual page 160](/img/manual/cell-0ae3a8fa20ab.png "width=143 class=manual-article-image") |
+| 200145 | [BactoLink](/other-manuals/bactolink) for remote instrument access | ![Illustration for table on manual page 160](/img/manual/cell-0ae3a8fa20ab.png "width=143 class=manual-article-image") |
 
 | ART. NO. | NAME | IMAGE |
 | --- | --- | --- |
@@ -61,9 +61,9 @@ Available consumables are listed below. They can be ordered from your local sale
 | 200003 | Screw cap tubes 5 mL, 25 pcs set |
 | 200023 | Desiccant bag |
 | 200025 | Set of 5 filters 316L – 25 µm for sampling device |
-| 200004 | Validation Kit |
-| 200186 | System suitability test kit for BactoSense PURE |
-| 200005 | Cleaning Kit |
+| 200004 | [Validation Kit](/other-manuals/validation-kit) |
+| 200186 | [System suitability test kit for BactoSense PURE](/other-manuals/sst-bactosense-pure) |
+| 200005 | [Cleaning Kit](/other-manuals/cleaning-kit) |
 | 200019 | Refill TCC cartridge |
 | 200054 | Refill ICC cartridge |
 | 200176 | Refill ICC for BactoSense PURE cartridge |

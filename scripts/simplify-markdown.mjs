@@ -201,15 +201,6 @@ for (const file of (await readdir(path.join(root, 'manuals/bactosense'))).filter
     reports.push({file: `${directories[i]}/${file}`, tablesConverted:plan.filter(Boolean).length, htmlTagsBefore:(contents[i].match(/<\/?[A-Za-z][^>]*>/g)||[]).length,htmlTagsAfter:(updated.match(/<\/?[A-Za-z][^>]*>/g)||[]).length});
   }
 }
-// Reviewed chapter bodies in scripts/editorial/ must stay equal to their manuals/bactosense/ counterparts.
-const editorialDirectory = path.join(root, 'scripts/editorial');
-for (const file of (await readdir(editorialDirectory)).filter(file => /\.mdx?$/.test(file))) {
-  const editorial = path.join(editorialDirectory, file);
-  const editorialText = await readFile(editorial, 'utf8');
-  if (file !== '14-bactocloud.md' && !/<table\b/.test(editorialText)) continue;
-  const simplifiedEditorial = simplifyMarkdown(editorialText);
-  if (simplifiedEditorial !== editorialText) await writeFile(editorial, simplifiedEditorial);
-}
 await mkdir(path.join(root, 'output/cleanup'), {recursive:true});
 await writeFile(path.join(root, 'output/cleanup/markdown.json'), JSON.stringify(reports,null,2)+'\n');
 if (kept.length) console.log(kept.join('\n'));

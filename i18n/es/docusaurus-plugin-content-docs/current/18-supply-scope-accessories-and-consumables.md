@@ -39,7 +39,7 @@ Los accesorios pueden pedirse según sea necesario, por ejemplo, si necesita rep
 | 200171 | Manual de usuario impreso de BactoSense en alemán |  |
 | 200006 | Dispositivo de muestreo manual | ![Ilustración de la tabla de la página 160 del manual](/img/manual/cell-78e276ee409d.png "width=77 class=manual-article-image") |
 | 200007 | Dispositivo de muestreo en línea | ![Ilustración de la tabla de la página 160 del manual](/img/manual/cell-3f47feb06665.png "width=143 class=manual-article-image") |
-| 200145 | BactoLink para acceso remoto al instrumento | ![Ilustración de la tabla de la página 160 del manual](/img/manual/cell-0ae3a8fa20ab.png "width=143 class=manual-article-image") |
+| 200145 | [BactoLink](/other-manuals/bactolink) para acceso remoto al instrumento | ![Ilustración de la tabla de la página 160 del manual](/img/manual/cell-0ae3a8fa20ab.png "width=143 class=manual-article-image") |
 
 | N.º DE ART. | NOMBRE | IMAGEN |
 | --- | --- | --- |
@@ -61,9 +61,9 @@ Los consumibles disponibles se enumeran a continuación. Pueden solicitarse a su
 | 200003 | Tubos de 5 mL con tapón de rosca, juego de 25 unidades |
 | 200023 | Bolsa desecante |
 | 200025 | Juego de 5 filtros 316L – 25 µm para el dispositivo de muestreo |
-| 200004 | Kit de validación (Validation Kit) |
-| 200186 | Kit de prueba de aptitud del sistema para BactoSense PURE |
-| 200005 | Kit de limpieza (Cleaning Kit) |
+| 200004 | [Kit de validación](/other-manuals/validation-kit) (Validation Kit) |
+| 200186 | [Kit de prueba de aptitud del sistema para BactoSense PURE](/other-manuals/sst-bactosense-pure) |
+| 200005 | [Kit de limpieza](/other-manuals/cleaning-kit) (Cleaning Kit) |
 | 200019 | Recarga de cartucho TCC |
 | 200054 | Recarga de cartucho ICC |
 | 200176 | Recarga de cartucho ICC para BactoSense PURE |

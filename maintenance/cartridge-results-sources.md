@@ -19,6 +19,6 @@ The training deck describes EBC availability as forthcoming. The added subsectio
 
 ## Editorial maintenance
 
-Edit `manuals/bactosense/11-results-and-data-analysis.md` and update its DE, FR, IT and ES counterparts together. Keep the body in `scripts/editorial/11-results-and-data-analysis.md` identical to the English chapter body so optional PDF re-extraction preserves the supplement. The source-page mapping remains unchanged because these new subsections have no corresponding pages in the older source PDF.
+Edit `manuals/bactosense/11-results-and-data-analysis.md` and update its DE, FR, IT and ES counterparts together. The source-page mapping remains unchanged because these new subsections have no corresponding pages in the older source PDF.
 
 The new index entries point to 11.3.4 (CBC), 11.3.5 (EBC) and 11.3.6 (NBC). Tables 11-7 through 11-12 continue the existing numbering without changing earlier sections.

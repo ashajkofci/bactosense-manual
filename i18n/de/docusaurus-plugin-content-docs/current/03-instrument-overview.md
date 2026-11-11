@@ -95,7 +95,7 @@ Das Typenschild des Netzteils des BactoSense befindet sich auf dem Netzteil und 
 | Digitale Eingänge | 4 x digitale Eingänge, Optokopplereingang: Durchlassspannung 1,2VDC mit 3kΩ seriell, Kathode mit COMMON verbunden, max. 30 mA, max. 50mW |
 | Analog- und Digitalausgänge | Analoge Ausgänge: 2 x 0/4 – 20 mA, empfohlene Last 250 Ω. Digitale Ausgänge: 4 digitale Ausgänge, frei konfigurierbar, SSR-Ausgang: max. 48 VDC, max. 300 mW, Einschaltwiderstand 2 Ω |
 | Anzeigen | WVGA, kapazitiver 7,0”-Touchscreen |
-| Mobile Konnektivität | BactoLink-Konnektivitätsmodul (optional) |
+| Mobile Konnektivität | [BactoLink](/other-manuals/bactolink)-Konnektivitätsmodul (optional) |
 | Erweiterte Datenanalyse | FCS-3.1-Dateiexport |
 | Datenspeicherkapazität | 128GB |
 | **MESSUNG** | \< |

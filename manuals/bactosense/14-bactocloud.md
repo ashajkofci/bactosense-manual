@@ -9,7 +9,7 @@ BactoCloud is the secure cloud platform for BactoSense users, enabling real-time
 
 ## 14.1 IT requirements {#section-14-1}
 
-BactoSense initiates an outbound internet connection to BactoCloud. The connection can use BactoLink, a 4G/5G access point or wired internet. Multiple instruments can share an internet connection behind NAT; no VPN or inbound port forwarding is required.
+BactoSense initiates an outbound internet connection to BactoCloud. The connection can use [BactoLink](/other-manuals/bactolink), a 4G/5G access point or wired internet. Multiple instruments can share an internet connection behind NAT; no VPN or inbound port forwarding is required.
 
 | Requirement | Configuration |
 | --- | --- |

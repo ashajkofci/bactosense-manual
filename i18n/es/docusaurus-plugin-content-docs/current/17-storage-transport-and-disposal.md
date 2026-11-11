@@ -36,7 +36,7 @@ Después del almacenamiento, siga las instrucciones generales de instalación de
 
 :::info[Valide después del almacenamiento]
 
-Si BactoSense ha estado almacenado durante más de un mes, valide el instrumento con el Validation Kit antes de la primera medición para garantizar su correcto funcionamiento.
+Si BactoSense ha estado almacenado durante más de un mes, valide el instrumento con el [Validation Kit](/other-manuals/validation-kit) antes de la primera medición para garantizar su correcto funcionamiento.
 
 :::
 
@@ -116,7 +116,7 @@ MODALIDAD E INSTRUCCIONES
 - Retire el cartucho mediante el procedimiento Retire el cartucho en Home → Ajustes → Mantenimiento → Cambio de cartucho. Los usuarios Basic abren Cambio de cartucho directamente desde Ajustes.
 - Embale BactoSense y el cartucho en sus cajas de cartón estándar con insertos de espuma.
 - Envíelos sobre un palé o una plataforma de transporte.
-- Realice una autocomprobación del instrumento (sección [Autocomprobación automática](16-warnings-errors-and-troubleshooting.md#section-16-6)) y una validación con el Validation Kit al reinstalarlo.
+- Realice una autocomprobación del instrumento (sección [Autocomprobación automática](16-warnings-errors-and-troubleshooting.md#section-16-6)) y una validación con el [Validation Kit](/other-manuals/validation-kit) al reinstalarlo.
 
 Envío estándar
 

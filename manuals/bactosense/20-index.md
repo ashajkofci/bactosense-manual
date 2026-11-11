@@ -25,7 +25,7 @@ Select a section number to open the corresponding topic in this manual.
 
 ## B
 
-- BactoLink [18.2](/supply-scope-accessories-and-consumables#section-18-2)
+- [BactoLink](/other-manuals/bactolink) [18.2](/supply-scope-accessories-and-consumables#section-18-2)
 - BactoSense [18.1](/supply-scope-accessories-and-consumables#section-18-1)
   - Maintenance [15.1](/maintenance#section-15-1)
   - Overview [3.1](/instrument-overview#section-3-1)
@@ -48,7 +48,7 @@ Select a section number to open the corresponding topic in this manual.
 - Change cartridges [8.9.4](/general-operations-and-configurations#section-8-9-4)
 - Chemicals [4.1](/safety#section-4-1)
 - Chlorine [10.9.1](/measurements#section-10-9-1)
-- Cleaning kit [2.1](/general-user-information#section-2-1), [15.2](/maintenance#section-15-2), [15.2.2](/maintenance#section-15-2-2), [18.3](/supply-scope-accessories-and-consumables#section-18-3)
+- [Cleaning kit](/other-manuals/cleaning-kit) [2.1](/general-user-information#section-2-1), [15.2](/maintenance#section-15-2), [15.2.2](/maintenance#section-15-2-2), [18.3](/supply-scope-accessories-and-consumables#section-18-3)
 - Clear
   - disk space [15.2.8](/maintenance#section-15-2-8)
 - Concentration [2.5](/general-user-information#section-2-5)
@@ -398,7 +398,7 @@ Select a section number to open the corresponding topic in this manual.
 
 ## V
 
-- Validation kit [2.1](/general-user-information#section-2-1), [8.11](/general-operations-and-configurations#section-8-11), [10.9](/measurements#section-10-9), [17.1](/storage-transport-and-disposal#section-17-1), [18.3](/supply-scope-accessories-and-consumables#section-18-3)
+- [Validation kit](/other-manuals/validation-kit) [2.1](/general-user-information#section-2-1), [8.11](/general-operations-and-configurations#section-8-11), [10.9](/measurements#section-10-9), [17.1](/storage-transport-and-disposal#section-17-1), [18.3](/supply-scope-accessories-and-consumables#section-18-3)
 - VNC [12.4](/data-access-and-export#section-12-4)
 - VPN [4.5](/safety#section-4-5)
 

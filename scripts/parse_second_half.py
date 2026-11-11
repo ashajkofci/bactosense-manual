@@ -2,7 +2,8 @@
 """Rebuild chapters 10–20 from native PDF text, table geometry and source artwork.
 
 Text is reflowed, tables are semantic HTML, and source figures retain annotations.
-Reviewed chapter bodies in scripts/editorial/ override their PDF-derived content.
+Legacy import utility, no longer used for manual maintenance. Current Markdown
+chapters are authoritative.
 Run extraction and parse_first_half.py first, then this script. The final pass
 normalizes all generated Markdown through scripts/simplify-markdown.mjs.
 """
@@ -251,8 +252,6 @@ from manual_artwork import normalize_artwork
 for number,start,end,slug,title in chapters:
  content=index() if number==20 else '\n\n'.join(render_page(num) for num in range(start,end+1))
  content=repair_notices(content)
- editorial=ROOT/'scripts/editorial'/f'{number:02}-{slug}.md'
- if editorial.is_file():content=editorial.read_text().strip()
  header=f'---\ntitle: "{number}. {title}"\nsidebar_label: "{number}. {title}"\nsidebar_position: {number}\nslug: /{slug}\n---\n\n'
  content=content.replace('www.bnovate.com/ distribution-partners','[www.bnovate.com/distribution-partners](https://www.bnovate.com/distribution-partners)')
  content=content.replace('http://ipaddress:port/export/filename.extension?hash=myhash','<code>http&#58;//ipaddress&#58;port/export/filename.extension?hash=myhash</code>').replace('https://ipaddress:port/export/filename.extension?hash=myhash','<code>https&#58;//ipaddress&#58;port/export/filename.extension?hash=myhash</code>')

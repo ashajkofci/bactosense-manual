@@ -36,7 +36,7 @@ Befolgen Sie nach der Lagerung die allgemeinen Installationsanweisungen unter [I
 
 :::info[Nach Lagerung validieren]
 
-Wurde der BactoSense länger als einen Monat gelagert, führen Sie vor der ersten Messung eine Gerätevalidierung mit dem Validierungskit durch, um die ordnungsgemäße Funktion sicherzustellen.
+Wurde der BactoSense länger als einen Monat gelagert, führen Sie vor der ersten Messung eine Gerätevalidierung mit dem [Validierungskit](/other-manuals/validation-kit) durch, um die ordnungsgemäße Funktion sicherzustellen.
 
 :::
 
@@ -116,7 +116,7 @@ ANWEISUNGEN ZUM MODUS
 - Entfernen Sie die Kartusche mit der Prozedur Kartusche entfernen unter Startbildschirm → Einstellungen → Wartung → Kartusche wechseln. Basic-Benutzer öffnen Kartusche wechseln direkt unter Einstellungen.
 - Packen Sie BactoSense und Kartusche in ihre Standardkartons mit Schaumstoffeinlagen.
 - Versand auf einer Palette oder einem Gestell.
-- Führen Sie nach erfolgtem Wiedereinbau einen Geräteselbsttest ([Automatischer Selbsttest](16-warnings-errors-and-troubleshooting.md#section-16-6)) und eine Gerätevalidierung mittels des Validierungskits durch.
+- Führen Sie nach erfolgtem Wiedereinbau einen Geräteselbsttest ([Automatischer Selbsttest](16-warnings-errors-and-troubleshooting.md#section-16-6)) und eine Gerätevalidierung mittels des [Validierungskits](/other-manuals/validation-kit) durch.
 
 Standardversand
 

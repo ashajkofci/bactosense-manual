@@ -47,5 +47,14 @@
       "es"
     ],
     "logo": "/img/manual/asset-53eb3be5b297.png"
+  },
+  {
+    "id": "other-manuals",
+    "title": "Other manuals",
+    "image": "/img/home/bactolink.webp",
+    "pdfMode": "chapter",
+    "sidebarPath": "./sidebars-other-manuals.js",
+    "locales": ["en", "de", "fr", "it", "es"],
+    "logo": "/img/manual/asset-53eb3be5b297.png"
   }
 ]

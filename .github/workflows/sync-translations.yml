@@ -10,6 +10,7 @@ on:
       - 'maintenance/translation-context.md'
       - 'scripts/sync-translations*'
       - 'scripts/translation-structure.mjs'
+      - 'scripts/translation-tools.mjs'
       - 'scripts/check-translations.mjs'
       - 'plugins/manuals.cjs'
       - 'package.json'
@@ -69,7 +70,7 @@ jobs:
         if: steps.plan.outputs.has_work == 'true'
         run: npm run translations:test
 
-      - name: Sync translated chapters using the OpenAI Agents API
+      - name: Sync translated chapters using the OpenAI Responses API
         id: sync
         if: steps.plan.outputs.has_work == 'true'
         env:
@@ -114,7 +115,7 @@ jobs:
 
           body_file="$RUNNER_TEMP/translation-sync-pr.md"
           cat > "$body_file" <<'BODY'
-          Synchronizes translated manual chapters with the current English source using the OpenAI Agents API, translation glossary and manual context.
+          Synchronizes translated manual chapters with the current English source using the OpenAI Responses API, translation glossary and manual context.
 
           Validation: translation sync tests, manual checks and translation structure checks. The separate Build manuals workflow rebuilds the versioned site after this pull request is merged.
 

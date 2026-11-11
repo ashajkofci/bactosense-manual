@@ -380,9 +380,9 @@ Pour comparer les résultats du BactoSense à ceux d’un autre cytomètre en fl
 
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE | \< |
 | --- | --- | --- | --- |
-| 1\. | Il est recommandé d’utiliser le kit de validation qui contient une solution de billes prête à l’emploi. | Lisez les instructions du Kit de validation pour plus d’informations. | \< |
+| 1\. | Il est recommandé d’utiliser le [kit de validation](/other-manuals/validation-kit) qui contient une solution de billes prête à l’emploi. | Lisez les instructions du Kit de validation pour plus d’informations. | \< |
 | 2\. | Installez le dispositif d’échantillonnage manuel conformément au manuel d’utilisation. |  | \< |
-| 3\. | Prélevez une des solutions de billes du kit de validation et chargez-la dans le dispositif d’échantillonnage. | Lisez les instructions du Kit de validation pour plus d’informations. | \< |
+| 3\. | Prélevez une des solutions de billes du [kit de validation](/other-manuals/validation-kit) et chargez-la dans le dispositif d’échantillonnage. | Lisez les instructions du Kit de validation pour plus d’informations. | \< |
 | 4\. | :::info[Informations supplémentaires] Appuyez sur Home. Appuyez sur Back autant de fois que nécessaire pour faire apparaître le bouton Home. ::: | ![BactoSense — Bouton d’accueil](/img/gui/icons/home-button.png "width=48 class=manual-icon") | ![BactoSense — Bouton de retour](/img/gui/icons/back-button.png "width=48 class=manual-icon") |
 | 5\. | Sur l’écran d’accueil, appuyez sur Mode et sélectionnez Mode manuel. Appuyez sur Retour, puis sur Mesurer pour ouvrir l’assistant de mesure. |  | \< |
 | 6\. | Sélectionnez Amorçage dans la liste des protocoles. | Voir le manuel d’utilisation, section [Réalisation d’un amorçage](../measurements/#section-10-9-3). | \< |

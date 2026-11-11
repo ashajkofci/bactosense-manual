@@ -95,7 +95,7 @@ La plaque signalétique du bloc d’alimentation électrique du BactoSense se tr
 | Entrées numériques | 4 x entrées numériques, entrée optocoupleur : tension directe<br />1.2 VDC avec 3 kΩ en série, cathode raccordée à COMMON, max. 30 mA, max.<br />50 mW |
 | Sorties analogiques et numériques | Sorties analogiques : 2 x 0/4 – 20 mA, charge recommandée 250<br />Ω Sorties numériques :<br />4 x sorties numériques, librement configurables, sortie SSR :<br />max. 48 VDC, max. 300 mW, résistance à l’état passant 2 Ω |
 | Écran | WVGA, écran tactile capacitif 7.0“ |
-| Connectivité mobile | Module de connectivité BactoLink (en option) |
+| Connectivité mobile | Module de connectivité [BactoLink](/other-manuals/bactolink) (en option) |
 | Analyse avancée des données | Exportation de fichiers FCS 3.1 |
 | Capacité de stockage des données | 128 GB |
 | **MESURE** | \< |

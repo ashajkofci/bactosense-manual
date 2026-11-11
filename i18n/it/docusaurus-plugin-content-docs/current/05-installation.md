@@ -282,7 +282,7 @@ BactoSense offre diverse opzioni di integrazione e accesso online ai dati.
 | HTTP e HTTPS | Sezione [Recupero dei file tramite HTTP o HTTPS](12-data-access-and-export.md#section-12-3) |
 | Trasmissione dell’interfaccia utente tramite Virtual Network Computing (VNC) (controllo remoto) | Sezione [Trasmissione dell’interfaccia grafica tramite VNC](12-data-access-and-export.md#section-12-4) |
 | Interfaccia utente web | Capitolo [Interfaccia utente web](13-web-user-interface.md) |
-| BactoLink | Vedere il manuale d’uso separato di BactoLink |
+| [BactoLink](/other-manuals/bactolink) | Vedere il manuale d’uso separato di BactoLink |
 | BactoCloud | Capitolo [BactoCloud](14-bactocloud.md) |
 
 ![BactoSense — Servizi di sistema](/img/gui/it/system-services.png "width=507")

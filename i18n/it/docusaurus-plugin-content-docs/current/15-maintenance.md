@@ -80,7 +80,7 @@ La manutenzione da parte dell’utente comprende attività semplici e occasional
 | QUANDO | COSA | PROCEDURA |
 | Cartuccia scaduta o vuota | Sostituire la cartuccia | Vedere la procedura di sostituzione della cartuccia nella sezione [Sostituzione delle cartucce](../general-operations-and-configurations/#section-8-9-4) e le istruzioni di spedizione nella sezione [Restituzione di una cartuccia per la ricarica](../storage-transport-and-disposal/#section-17-3-2). |
 | Il dispositivo di campionamento manuale è appena stato installato. Lo strumento è rimasto o rimarrà inattivo o spento per più di 3 giorni. | Pulizia con Washstation o pulizia di base | Se è disponibile una Washstation, vedere la sezione [Pulire il dispositivo di campionamento manuale con Washstation](../maintenance/#section-15-2-2). Altrimenti vedere la sezione [Pulire il dispositivo di campionamento manuale con pulizia di base](../maintenance/#section-15-2-3). |
-| Lo strumento presenta segni di contaminazione | Decontaminazione | Richiede un Cleaning Kit; vedere l’elenco dei materiali di consumo nella sezione [Materiali di consumo](../supply-scope-accessories-and-consumables/#section-18-3). Consultare il manuale d’uso del Cleaning Kit. |
+| Lo strumento presenta segni di contaminazione | Decontaminazione | Richiede un [Cleaning Kit](/other-manuals/cleaning-kit); vedere l’elenco dei materiali di consumo nella sezione [Materiali di consumo](../supply-scope-accessories-and-consumables/#section-18-3). Consultare il manuale d’uso del Cleaning Kit. |
 | Il dispositivo di campionamento in linea è contaminato. | Pulizia | Vedere la procedura di pulizia nella sezione [Pulire il dispositivo di campionamento in linea](../maintenance/#section-15-2-4). |
 | Il tubo del dispositivo di campionamento in linea è danneggiato o sporco | Sostituire il tubo | Vedere la procedura di sostituzione nella sezione [Sostituire i tubi del dispositivo di campionamento in linea](../maintenance/#section-15-2-5). |
 | Concentrazioni cellulari inferiori al previsto o nessuna cellula misurata | Filtro d’ingresso del dispositivo di campionamento ostruito. Sostituire il filtro. | Vedere la sezione [Sostituire il filtro del dispositivo di campionamento](../maintenance/#section-15-2-7) e l’elenco dei materiali di consumo nella sezione [Materiali di consumo](../supply-scope-accessories-and-consumables/#section-18-3). |
@@ -110,7 +110,7 @@ Questo protocollo descrive come pulire il dispositivo di campionamento manuale c
 | 7. | Montare la Washstation avvitandola sul dispositivo di campionamento manuale, come una provetta per campioni. Avvitarla fino in fondo alla filettatura. |  |
 | 8. | Premere Avvio e attendere 15 min per il completamento del protocollo. |  |
 | 9. | Se lo strumento deve rimanere inattivo o essere messo fuori servizio, lasciare la Washstation collegata al dispositivo di campionamento manuale. Per continuare le misure, rimuovere la Washstation e chiuderla con il tappo di una provetta da 5 mL con tappo a vite. |  |
-| 10. | Se la contaminazione persiste, ripetere la procedura con più ripetizioni. Se persiste ancora, utilizzare il Cleaning Kit per decontaminare lo strumento (vedere sezione [Materiali di consumo](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
+| 10. | Se la contaminazione persiste, ripetere la procedura con più ripetizioni. Se persiste ancora, utilizzare il [Cleaning Kit](/other-manuals/cleaning-kit) per decontaminare lo strumento (vedere sezione [Materiali di consumo](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
 
 ### 15.2.3 Pulire il dispositivo di campionamento manuale con pulizia di base {#section-15-2-3}
 
@@ -133,7 +133,7 @@ Questo protocollo descrive la pulizia del dispositivo di campionamento manuale s
 | 13. | Al termine del protocollo, rimuovere la provetta da 5 mL con tappo a vite e smaltirla. |  |
 | 14. | Premere l’icona Home in alto a sinistra nell’interfaccia per tornare alla schermata Home. |  |
 | 15. | Per proseguire con le misure, eseguire un adescamento (Prime) prima della prima misura. Le istruzioni sono riportate nella sezione [Esecuzione di un adescamento (Prime)](10-measurements.md#section-10-9-3). Se lo strumento rimarrà inattivo o spento, collegare una provetta nuova al dispositivo di campionamento manuale. |  |
-| 16. | Se la contaminazione persiste, ripetere prima la procedura con più ripetizioni. Se persiste ancora, utilizzare il Cleaning Kit per decontaminare lo strumento (vedere materiali di consumo nella sezione [Materiali di consumo](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
+| 16. | Se la contaminazione persiste, ripetere prima la procedura con più ripetizioni. Se persiste ancora, utilizzare il [Cleaning Kit](/other-manuals/cleaning-kit) per decontaminare lo strumento (vedere materiali di consumo nella sezione [Materiali di consumo](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
 
 ### 15.2.4 Pulire il dispositivo di campionamento in linea {#section-15-2-4}
 
@@ -229,7 +229,7 @@ Recuperare tutti i propri dati e quelli degli altri utenti prima di eliminarli d
 
 ## 15.3 Aggiornamento del software {#section-15-3}
 
-Gli aggiornamenti software possono essere installati da una chiavetta USB oppure da un repository online, se è disponibile una connessione Internet (ad esempio tramite BactoLink). Gli aggiornamenti devono essere avviati manualmente dall’interfaccia utente. Per gli aggiornamenti dal repository online, seguire la procedura seguente. Per gli aggiornamenti tramite USB, vedere [Preparare una chiavetta USB di aggiornamento](#section-15-3-1) e [Installare un aggiornamento da una chiavetta USB](#section-15-3-2).
+Gli aggiornamenti software possono essere installati da una chiavetta USB oppure da un repository online, se è disponibile una connessione Internet (ad esempio tramite [BactoLink](/other-manuals/bactolink)). Gli aggiornamenti devono essere avviati manualmente dall’interfaccia utente. Per gli aggiornamenti dal repository online, seguire la procedura seguente. Per gli aggiornamenti tramite USB, vedere [Preparare una chiavetta USB di aggiornamento](#section-15-3-1) e [Installare un aggiornamento da una chiavetta USB](#section-15-3-2).
 
 |  | FASE OPERATIVA |
 | --- | --- |

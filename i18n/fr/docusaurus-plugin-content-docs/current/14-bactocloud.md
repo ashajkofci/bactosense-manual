@@ -9,7 +9,7 @@ BactoCloud est la plateforme cloud sécurisée pour les utilisateurs de BactoSen
 
 ## 14.1 Exigences en matière de technologies de l'information {#section-14-1}
 
-Le BactoSense établit une connexion Internet sortante vers BactoCloud. Celle-ci peut utiliser BactoLink, un point d’accès 4G/5G ou une connexion filaire. Plusieurs instruments peuvent partager une connexion Internet derrière un NAT ; aucun VPN ni transfert de port entrant n’est nécessaire.
+Le BactoSense établit une connexion Internet sortante vers BactoCloud. Celle-ci peut utiliser [BactoLink](/other-manuals/bactolink), un point d’accès 4G/5G ou une connexion filaire. Plusieurs instruments peuvent partager une connexion Internet derrière un NAT ; aucun VPN ni transfert de port entrant n’est nécessaire.
 
 | Exigence | Configuration |
 | --- | --- |

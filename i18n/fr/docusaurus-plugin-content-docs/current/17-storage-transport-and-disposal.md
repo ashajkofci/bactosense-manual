@@ -36,7 +36,7 @@ Après le stockage, suivez les instructions générales d’installation du chap
 
 :::info[Validez après le stockage]
 
-Si le BactoSense a été stocké pendant plus d’un mois, effectuez une validation de l’instrument à l’aide du Kit de validation avant la première mesure pour garantir le bon fonctionnement.
+Si le BactoSense a été stocké pendant plus d’un mois, effectuez une validation de l’instrument à l’aide du [Kit de validation](/other-manuals/validation-kit) avant la première mesure pour garantir le bon fonctionnement.
 
 :::
 
@@ -116,7 +116,7 @@ MODE INSTRUCTIONS
 - Retirez la cartouche en suivant la procédure Retirer la cartouche sous Accueil → Paramètres → Maintenance → Changement cartouche. Les utilisateurs Basic ouvrent Changement cartouche directement depuis Paramètres.
 - Emballez le BactoSense et la cartouche dans leurs boîtes en carton standard avec des inserts en mousse.
 - Expédiez sur une palette ou un plateau.
-- Effectuez une autovérification de l’instrument (section [Autovérification automatique](16-warnings-errors-and-troubleshooting.md#section-16-6)) et une validation de l’instrument en utilisant le kit de validation lors de la réinstallation de l’instrument.
+- Effectuez une autovérification de l’instrument (section [Autovérification automatique](16-warnings-errors-and-troubleshooting.md#section-16-6)) et une validation de l’instrument en utilisant le [kit de validation](/other-manuals/validation-kit) lors de la réinstallation de l’instrument.
 
 Expédition standard
 

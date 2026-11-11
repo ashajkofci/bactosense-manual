@@ -34,5 +34,8 @@
   "copyright": {
     "message": "© 2026 bNovate Technologies SA",
     "description": "The footer copyright"
+  },
+  "link.item.label.Other manuals": {
+    "message": "Altri manuali"
   }
 }

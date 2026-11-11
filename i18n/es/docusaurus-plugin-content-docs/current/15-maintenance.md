@@ -80,7 +80,7 @@ El mantenimiento por el usuario comprende tareas sencillas y ocasionales realiza
 | CUÁNDO | QUÉ | PROCEDIMIENTO |
 | Cartucho caducado o vacío | Sustituir el cartucho | Véase el procedimiento de cambio de cartucho de la sección [Cambio de cartuchos](../general-operations-and-configurations/#section-8-9-4). Véanse las instrucciones de envío del cartucho de la sección [Devolución de un cartucho para su recarga](../storage-transport-and-disposal/#section-17-3-2). |
 | Dispositivo de muestreo manual recién instalado. El instrumento ha estado o va a estar inactivo o apagado durante más de 3 días. | Limpieza con Washstation o limpieza básica | Si dispone de una Washstation, consulte la sección [Limpieza del dispositivo de muestreo manual con Washstation](../maintenance/#section-15-2-2). En caso contrario, consulte la sección [Limpieza básica del dispositivo de muestreo manual](../maintenance/#section-15-2-3). |
-| El instrumento muestra signos de contaminación | Descontaminación | Requiere un Cleaning Kit; véase la lista de consumibles de la sección [Consumibles](../supply-scope-accessories-and-consumables/#section-18-3). Consulte el manual de usuario del Cleaning Kit. |
+| El instrumento muestra signos de contaminación | Descontaminación | Requiere un [Cleaning Kit](/other-manuals/cleaning-kit); véase la lista de consumibles de la sección [Consumibles](../supply-scope-accessories-and-consumables/#section-18-3). Consulte el manual de usuario del Cleaning Kit. |
 | El dispositivo de muestreo en línea está contaminado. | Limpieza | Véase el procedimiento de limpieza de la sección [Limpieza del dispositivo de muestreo en línea](../maintenance/#section-15-2-4). |
 | Los tubos del dispositivo de muestreo en línea están dañados o sucios | Sustituir los tubos | Véase el procedimiento de sustitución de la sección [Sustitución de los tubos del dispositivo de muestreo en línea](../maintenance/#section-15-2-5). |
 | Concentraciones celulares inferiores a las esperadas o ausencia de células medidas | Filtro de entrada del dispositivo de muestreo obstruido. Sustituir el filtro. | Véase la sección [Sustitución del filtro del dispositivo de muestreo](../maintenance/#section-15-2-7). Véase la lista de consumibles de la sección [Consumibles](../supply-scope-accessories-and-consumables/#section-18-3). |
@@ -110,7 +110,7 @@ Este protocolo describe cómo limpiar el dispositivo de muestreo manual con Wash
 | 7. | Monte la Washstation enroscándola en el dispositivo de muestreo manual, de forma similar a un tubo de muestra. Asegúrese de enroscarla hasta el final de la rosca. |  |
 | 8. | Pulse el botón Inicio y espere 15 min a que finalice el protocolo. |  |
 | 9. | Si el instrumento va a quedar inactivo o fuera de servicio, deje la Washstation colocada en el dispositivo de muestreo manual. Si desea seguir midiendo, retire la Washstation y ciérrela con un tapón de un tubo de 5 mL con tapón de rosca. |  |
-| 10. | Si la contaminación persiste, repita el procedimiento con más repeticiones. Si continúa, utilice el Cleaning Kit para descontaminar el instrumento (véase la sección [Consumibles](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
+| 10. | Si la contaminación persiste, repita el procedimiento con más repeticiones. Si continúa, utilice el [Cleaning Kit](/other-manuals/cleaning-kit) para descontaminar el instrumento (véase la sección [Consumibles](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
 
 ### 15.2.3 Limpieza básica del dispositivo de muestreo manual {#section-15-2-3}
 
@@ -133,7 +133,7 @@ Este protocolo describe cómo limpiar el dispositivo de muestreo manual sin Wash
 | 13. | Una vez finalizado el protocolo, retire el tubo de 5 mL con tapón de rosca y deséchelo. |  |
 | 14. | Pulse el icono Home en la parte superior izquierda de la interfaz para volver a la pantalla Home. |  |
 | 15. | Si desea continuar con las mediciones, realice un cebado (Prime) antes de la primera medición. Encontrará las instrucciones en la sección [Realización de un cebado (Prime)](10-measurements.md#section-10-9-3). Si el instrumento va a quedar inactivo o apagado, coloque un tubo de muestra nuevo en el dispositivo de muestreo manual. |  |
-| 16. | Si la contaminación persiste, repita primero el procedimiento con más repeticiones. Si continúa, utilice el Cleaning Kit para descontaminar el instrumento (véanse los consumibles de la sección [Consumibles](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
+| 16. | Si la contaminación persiste, repita primero el procedimiento con más repeticiones. Si continúa, utilice el [Cleaning Kit](/other-manuals/cleaning-kit) para descontaminar el instrumento (véanse los consumibles de la sección [Consumibles](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
 
 ### 15.2.4 Limpieza del dispositivo de muestreo en línea {#section-15-2-4}
 
@@ -229,7 +229,7 @@ Asegúrese de obtener todos los datos de otros usuarios y los suyos antes de eli
 
 ## 15.3 Actualización del software {#section-15-3}
 
-Las actualizaciones de software pueden instalarse desde una memoria USB o desde un repositorio en línea si se dispone de conexión a Internet (p. ej., mediante BactoLink). Deben iniciarse manualmente desde la interfaz de usuario. Para actualizar desde el repositorio en línea, siga el procedimiento siguiente. Para las actualizaciones mediante USB, consulte [Preparar una memoria USB de actualización](#section-15-3-1) e [Instalar una actualización desde una memoria USB](#section-15-3-2).
+Las actualizaciones de software pueden instalarse desde una memoria USB o desde un repositorio en línea si se dispone de conexión a Internet (p. ej., mediante [BactoLink](/other-manuals/bactolink)). Deben iniciarse manualmente desde la interfaz de usuario. Para actualizar desde el repositorio en línea, siga el procedimiento siguiente. Para las actualizaciones mediante USB, consulte [Preparar una memoria USB de actualización](#section-15-3-1) e [Instalar una actualización desde una memoria USB](#section-15-3-2).
 
 |  | PASO DE TRABAJO |
 | --- | --- |

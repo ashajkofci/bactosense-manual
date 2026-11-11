@@ -36,7 +36,7 @@ After storage, follow the general installation instructions described in [Instal
 
 :::info[Validate after storage]
 
-If the BactoSense has been stored for more than one month, perform an instrument validation using the Validation Kit before the first measurement to ensure proper functioning.
+If the BactoSense has been stored for more than one month, perform an instrument validation using the [Validation Kit](/other-manuals/validation-kit) before the first measurement to ensure proper functioning.
 
 :::
 
@@ -116,7 +116,7 @@ Refer to the following transportation instructions to safely transport the Bacto
 - Remove the cartridge using the Remove cartridge procedure under Home → Settings → Maintenance → Cartridge change. Basic users open Cartridge change directly from Settings.
 - Pack BactoSense and cartridge in their standard cardboard boxes with foam inserts.
 - Ship on a pallet or skid.
-- Perform an instrument self-check ([Automatic self-check](16-warnings-errors-and-troubleshooting.md#section-16-6)) and an instrument validation using the Validation kit when reinstalling the instrument.
+- Perform an instrument self-check ([Automatic self-check](16-warnings-errors-and-troubleshooting.md#section-16-6)) and an instrument validation using the [Validation kit](/other-manuals/validation-kit) when reinstalling the instrument.
 
 **Long distance by car or uneven road by car**
 

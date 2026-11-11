@@ -80,7 +80,7 @@ Maintenance by user refers to simple and occasional maintenance activities perfo
 | WHEN | WHAT | PROCEDURE |
 | Cartridge expired or empty | Replace cartridge | See cartridge exchange procedure in [Change cartridges](../general-operations-and-configurations/#section-8-9-4). See cartridge shipping instructions in [Returning a cartridge for refill](../storage-transport-and-disposal/#section-17-3-2). |
 | Manual sampling device is newly installed. Instrument has been or will be idle or switched off for more than 3 days. | Cleaning with Washstation or Basic Cleaning | If Washstation is available, see [Clean manual sampling device with Washstation](../maintenance/#section-15-2-2). Otherwise see [Clean manual sampling device with basic cleaning](../maintenance/#section-15-2-3). |
-| Instrument shows signs of contamination | Decontamination | Requires a Cleaning Kit, see consumables list in [Consumables](../supply-scope-accessories-and-consumables/#section-18-3). See Cleaning Kit user manual. |
+| Instrument shows signs of contamination | Decontamination | Requires a [Cleaning Kit](/other-manuals/cleaning-kit), see consumables list in [Consumables](../supply-scope-accessories-and-consumables/#section-18-3). See Cleaning Kit user manual. |
 | Online sampling device is contaminated. | Cleaning | See cleaning procedure in [Clean online sampling device](../maintenance/#section-15-2-4). |
 | Online sampling device tubing is damaged or dirty | Replace tubing | See replacement process in [Replacing online sampling device tubings](../maintenance/#section-15-2-5). |
 | Cell concentrations lower than expected or no cells measured | Sampling device inlet filter clogged. Replace the filter. | See [Replacement of the sampling device filter](../maintenance/#section-15-2-7). See consumables list in [Consumables](../supply-scope-accessories-and-consumables/#section-18-3). |
@@ -110,7 +110,7 @@ This protocol describes how to clean the manual sampling device using the Washst
 | 7. | Mount the Washstation by screwing it on the manual sampling device, similar to a sample tube. Make sure you install it to the end of the thread. |  |
 | 8. | Press the Start button and wait for 15 min for the protocol to complete. |  |
 | 9. | If the instrument will be idle or decommissioned, leave the Washstation attached to the manual sampling device. If you want to keep on measuring, remove the Washstation and close it with a cap from a 5 mL screw-cap tube. |  |
-| 10. | If the contamination persists, repeat the procedure with more replications. If it still persists, use the Cleaning Kit to decontaminate the instrument (see [Consumables](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
+| 10. | If the contamination persists, repeat the procedure with more replications. If it still persists, use the [Cleaning Kit](/other-manuals/cleaning-kit) to decontaminate the instrument (see [Consumables](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
 
 ### 15.2.3 Clean manual sampling device with basic cleaning {#section-15-2-3}
 
@@ -133,7 +133,7 @@ This protocol describes how to clean the manual sampling device without the Wash
 | 13. | Once the protocol is finished, remove the 5 mL screw-cap tube and discard it. |  |
 | 14. | Press the Home icon at the top left of the user interface to return to the Home screen. |  |
 | 15. | If you want to continue with measurements, perform a Prime prior to the first measurement. The instructions can be found in [Performing a Prime](10-measurements.md#section-10-9-3). If the instrument will be idle or shut off, attach a fresh sample tube to the manual sampling device. |  |
-| 16. | If you face a persisting contamination, first repeat the procedure with more replications. If it still persists, use the Cleaning Kit to decontaminate the instrument (see [Consumables](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
+| 16. | If you face a persisting contamination, first repeat the procedure with more replications. If it still persists, use the [Cleaning Kit](/other-manuals/cleaning-kit) to decontaminate the instrument (see [Consumables](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
 
 ### 15.2.4 Clean online sampling device {#section-15-2-4}
 
@@ -229,7 +229,7 @@ Make sure you retrieve all data from other users and your data before deleting i
 
 ## 15.3 Software update {#section-15-3}
 
-Software updates can either be installed from a USB stick, or from an online repository, if an internet connection is available (e.g. through BactoLink). Software updates must be launched manually from the user interface. For updates from the online repository, follow the procedure below. For updates using a USB stick, see [Prepare a USB update stick](#section-15-3-1) and [Install an update from a USB stick](#section-15-3-2).
+Software updates can either be installed from a USB stick, or from an online repository, if an internet connection is available (e.g. through [BactoLink](/other-manuals/bactolink)). Software updates must be launched manually from the user interface. For updates from the online repository, follow the procedure below. For updates using a USB stick, see [Prepare a USB update stick](#section-15-3-1) and [Install an update from a USB stick](#section-15-3-2).
 
 |  | WORK STEP |
 | --- | --- |

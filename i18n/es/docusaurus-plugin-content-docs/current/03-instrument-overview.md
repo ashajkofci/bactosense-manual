@@ -95,7 +95,7 @@ La placa de características de la fuente de alimentación de BactoSense se encu
 | Entradas digitales | 4 x entradas digitales, entrada con optoacoplador: tensión directa 1.2 VDC con 3 kΩ en serie, cátodo conectado a COMMON, máx. 30 mA, máx. 50 mW |
 | Salidas analógicas y digitales | Salidas analógicas:<br />2 x 0/4 – 20 mA, carga recomendada de 250 Ω<br />Salidas digitales:<br />4 x salidas digitales, libremente configurables,<br />salida SSR: máx. 48 VDC, máx. 300 mW, resistencia en conducción 2 Ω |
 | Pantalla | Pantalla táctil capacitiva WVGA de 7.0 pulgadas |
-| Conectividad móvil | Módulo de conectividad BactoLink (opcional) |
+| Conectividad móvil | Módulo de conectividad [BactoLink](/other-manuals/bactolink) (opcional) |
 | Análisis avanzado de datos | Exportación de archivos FCS 3.1 |
 | Capacidad de almacenamiento de datos | 128 GB |
 | **MEDICIÓN** | \< |

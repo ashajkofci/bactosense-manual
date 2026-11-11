@@ -380,9 +380,9 @@ Para comparar los resultados de BactoSense con los de otro citómetro de flujo, 
 
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN | \< |
 | --- | --- | --- | --- |
-| 1\. | Se recomienda utilizar el Validation Kit, que contiene una solución de microesferas lista para usar. | Lea las instrucciones del Validation Kit para obtener más información. | \< |
+| 1\. | Se recomienda utilizar el [Validation Kit](/other-manuals/validation-kit), que contiene una solución de microesferas lista para usar. | Lea las instrucciones del Validation Kit para obtener más información. | \< |
 | 2\. | Instale el dispositivo de muestreo manual según el manual de usuario. |  | \< |
-| 3\. | Tome una de las soluciones de microesferas del Validation Kit y colóquela en el dispositivo de muestreo. | Lea las instrucciones del Validation Kit para obtener más información. | \< |
+| 3\. | Tome una de las soluciones de microesferas del [Validation Kit](/other-manuals/validation-kit) y colóquela en el dispositivo de muestreo. | Lea las instrucciones del Validation Kit para obtener más información. | \< |
 | 4\. | :::info[Información adicional] Pulse el botón Home. Pulse Back tantas veces como sea necesario para que aparezca Home. ::: | ![BactoSense — Botón Inicio](/img/gui/icons/home-button.png "width=48 class=manual-icon") | ![BactoSense — Botón Volver](/img/gui/icons/back-button.png "width=48 class=manual-icon") |
 | 5\. | En la pantalla Home, pulse Modo y seleccione Modo manual. Pulse Volver y, a continuación, Iniciar para abrir el asistente de medición. |  | \< |
 | 6\. | Seleccione Preparar en la lista de protocolos. | Véase la sección [Realización de un cebado (Prime)](../measurements/#section-10-9-3). | \< |

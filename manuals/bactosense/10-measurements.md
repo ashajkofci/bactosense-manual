@@ -242,7 +242,7 @@ Operators can choose between two analysis protocols in manual mode.
 | PROTOCOL NAME | PROTOCOL DESCRIPTION |
 | --- | --- |
 | Water Analysis | Analyze a water sample and finish with a cleaning cycle. If several replications are executed, the cleaning step is executed only once, at the end. A prime is executed automatically between replicates. |
-| Beads Analysis | This protocol is intended for the analysis of calibration beads and is used with the Validation Kit. The protocol automatically finishes with a cleaning cycle. If several replications are executed, the cleaning step is executed only once, at the end. |
+| Beads Analysis | This protocol is intended for the analysis of calibration beads and is used with the [Validation Kit](/other-manuals/validation-kit). The protocol automatically finishes with a cleaning cycle. If several replications are executed, the cleaning step is executed only once, at the end. |
 
 Maintenance protocols can be executed before or between analysis protocols, to prepare, flush, or clean the system. In manual mode, the following maintenance protocols are available:
 

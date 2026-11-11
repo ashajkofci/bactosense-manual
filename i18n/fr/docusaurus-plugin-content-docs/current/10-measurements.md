@@ -242,7 +242,7 @@ En mode manuel, les opérateurs peuvent choisir entre deux protocoles d’analys
 | NOM DU PROTOCOLE | DESCRIPTION DU PROTOCOLE |
 | --- | --- |
 | Analyse Eau | Analysez un échantillon d’eau et terminez par un cycle de nettoyage. Si plusieurs répétitions sont effectuées, le nettoyage n’est effectué qu’une seule fois, à la fin. Un amorçage est automatiquement exécuté entre les répétitions. |
-| Analyse Billes | Ce protocole est destiné à l’analyse de billes d’étalonnage et est utilisé avec le kit de validation. Le protocole se termine automatiquement par un cycle de nettoyage. Si plusieurs répétitions sont effectuées, le nettoyage n’est effectué qu’une seule fois, à la fin. |
+| Analyse Billes | Ce protocole est destiné à l’analyse de billes d’étalonnage et est utilisé avec le [kit de validation](/other-manuals/validation-kit). Le protocole se termine automatiquement par un cycle de nettoyage. Si plusieurs répétitions sont effectuées, le nettoyage n’est effectué qu’une seule fois, à la fin. |
 
 Les protocoles de maintenance peuvent être exécutés avant ou entre les protocoles d’analyse, pour préparer, rincer ou nettoyer le système. En mode manuel, les protocoles de maintenance suivants sont disponibles :
 

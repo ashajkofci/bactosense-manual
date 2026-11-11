@@ -1,4 +1,4 @@
-const { manuals, principal, sourceLocale, contentDirectory, pdfFile } = require('./plugins/manuals.cjs');
+const { manuals, principal, sourceLocale, contentDirectory, pdfDownloads } = require('./plugins/manuals.cjs');
 
 const locales = ['en', 'de', 'fr', 'it', 'es'];
 const manualIds = manuals.map(manual => manual.id);
@@ -29,9 +29,9 @@ module.exports = {
   },
   customFields: {
     // Read by the home page and the PDF download button.
-    manuals: published.map(({ id, title, image, docsPluginId, locales: editions }) => ({
-      id, title, image, docsPluginId, locales: editions,
-      pdfFiles: Object.fromEntries(editions.map(locale => [locale, pdfFile({ id }, locale)])),
+    manuals: published.map(manual => ({
+      id: manual.id, title: manual.title, image: manual.image, docsPluginId: manual.docsPluginId, locales: manual.locales,
+      ...pdfDownloads(manual),
     })),
   },
   themes: [[require.resolve('@easyops-cn/docusaurus-search-local'), {
@@ -50,10 +50,16 @@ module.exports = {
       id: manual.docsPluginId,
       path: manual.path,
       routeBasePath: manual.id,
-      sidebarPath: './sidebars.js',
+      sidebarPath: manual.sidebarPath || './sidebars.js',
       admonitions: { keywords: ['explosion', 'gloves'], extendDefaults: true },
       // Runs before Docusaurus resolves .md links to locale-prefixed permalinks.
-      beforeDefaultRemarkPlugins: [[require('./plugins/manual-links.cjs'), { manualId: manual.id, manualIds }]],
+      beforeDefaultRemarkPlugins: [[require('./plugins/manual-links.cjs'), {
+        manualId: manual.id, manualIds,
+        ...(deviceOnly ? {
+          externalManualIds: manuals.filter(item => !item.device).map(item => item.id),
+          websiteUrl: new URL(process.env.MANUAL_BASE_PATH || '/', process.env.MANUAL_SITE_URL || 'https://manual.bnovate.net').href,
+        } : {}),
+      }]],
       remarkPlugins: [require('./plugins/manual-images.cjs'), require('./plugins/manual-table-notices.cjs')],
       rehypePlugins: [require('./plugins/manual-tables.cjs')],
     }]),

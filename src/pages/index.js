@@ -5,10 +5,10 @@ import Translate, { translate } from '@docusaurus/Translate';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
+import manualPdfDownload from '../utils/manual-pdf.cjs';
 
-function ManualCard({ manual, locale }) {
-  const pdf = manual.pdfFiles[locale];
-  const pdfHref = useBaseUrl(`pdf/${pdf}`);
+function ManualCard({ manual, locale, baseUrl, sourceLocale }) {
+  const download = manualPdfDownload(manual, locale, baseUrl, sourceLocale);
   const imageSrc = useBaseUrl(manual.image ?? '');
   return (
     <article className={styles.card}>
@@ -19,17 +19,21 @@ function ManualCard({ manual, locale }) {
         </Link>
       )}
       <h2 className={styles.cardTitle}>
-        <Link to={`/${manual.id}/`}>{manual.title}</Link>
+        <Link to={`/${manual.id}/`}>{manual.id === 'other-manuals'
+          ? <Translate id="home.manual.otherManuals">Other manuals</Translate>
+          : manual.title}</Link>
       </h2>
       {!manual.locales.includes(locale) && (
         <p className={styles.cardNote}><Translate id="home.manual.sourceOnly">Available in English</Translate></p>
       )}
       <div className={styles.cardActions}>
         <Link className="button button--primary" to={`/${manual.id}/`}>
-          <Translate id="home.manual.open">Open manual</Translate>
+          {manual.pdfChapters
+            ? <Translate id="home.manual.browse">Browse manuals</Translate>
+            : <Translate id="home.manual.open">Open manual</Translate>}
         </Link>
-        {pdf && (
-          <a className="button button--secondary" href={pdfHref} download={pdf} type="application/pdf">
+        {download && (
+          <a className="button button--secondary" href={download.href} download={download.filename} type="application/pdf">
             <Translate id="manual.pdf.download">Download PDF</Translate>
           </a>
         )}
@@ -50,7 +54,7 @@ export default function Home() {
         </header>
         <section className={styles.grid}>
           {siteConfig.customFields.manuals.map(manual => (
-            <ManualCard key={manual.id} manual={manual} locale={i18n.currentLocale} />
+            <ManualCard key={manual.id} manual={manual} locale={i18n.currentLocale} baseUrl={siteConfig.baseUrl} sourceLocale={i18n.defaultLocale} />
           ))}
         </section>
       </main>
