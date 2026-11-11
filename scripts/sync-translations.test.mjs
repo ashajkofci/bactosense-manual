@@ -8,6 +8,7 @@ import { planSync, syncTranslations, translateWithOpenAI } from './sync-translat
 import { translationErrors } from './translation-structure.mjs';
 import { writeSyncOutputs } from './sync-translations-report.mjs';
 import { createReferenceTools, createResponseConversation, runResponseWithTools } from './translation-tools.mjs';
+import { applyTranslationPatch, planTranslationPatch, sectionSnapshot, splitTranslationSections } from './translation-patches.mjs';
 
 const english = `---
 title: Installation
@@ -235,31 +236,42 @@ function fakeClient({ response = {}, error } = {}) {
     seen.request = body;
     seen.options = options;
     if (error) throw error;
-    return { id: 'resp_test', _request_id: 'req_test', status: 'completed', output_text: JSON.stringify({ markdown: translated }), ...response };
+    return { id: 'resp_test', _request_id: 'req_test', status: 'completed', output_text: JSON.stringify({ edits: [] }), ...response };
   } } };
   return { client, seen };
 }
 
-test('Responses API receives the complete translation task and strict schema without storing responses', async () => {
+test('Responses API receives only changed sections and returns patches with minimal product context', async () => {
   const { client, seen } = fakeClient();
-  const task = { manual: 'Example', locale: 'de', source: english, current: translated, glossary: 'Terms',
-    context: 'Technical operators.', manualContext: { title: 'Example' }, candidate: 'Previous draft', feedback: 'Repair links.' };
+  const original = english + '\n## Unchanged {#unchanged}\n\nUNRELATED ENGLISH CONTENT.\n';
+  const current = translated + '\n## Unverändert {#unchanged}\n\nUNRELATED TRANSLATED CONTENT.\n';
+  const source = original.replace('Disconnect power before cleaning.', 'Disconnect power and remove USB before cleaning.');
+  const task = { manual: 'Example', locale: 'de', source, current, glossary: 'Terms',
+    context: 'Technical operators.', manualContext: { title: 'Example', english_introduction: 'DO NOT INLINE THE INTRODUCTION' }, candidate: current, feedback: 'Repair links.',
+    patchPlan: planTranslationPatch({ source, current, previousSource: original, locale: 'de' }),
+  };
   const actual = await translateWithOpenAI(task, { client, model: 'test-model' });
-  assert.equal(actual, translated);
+  assert.equal(actual, current);
   assert.equal(seen.request.model, 'test-model');
   assert.equal(seen.request.store, false);
   assert.equal(seen.options.maxRetries, 0);
   assert(seen.options.signal instanceof AbortSignal);
-  assert.deepEqual(seen.request.text.format, {
-    type: 'json_schema', name: 'translated_document', strict: true,
-    schema: { type: 'object', properties: { markdown: { type: 'string' } }, required: ['markdown'], additionalProperties: false },
-  });
+  assert.equal(seen.request.text.format.name, 'translation_patch');
+  assert.equal(seen.request.text.format.strict, true);
+  assert.deepEqual(seen.request.text.format.schema.required, ['edits']);
   assert.deepEqual(seen.request.tools.map(tool => tool.name), ['list_reference_files', 'search_reference_files', 'read_reference_file']);
-  assert.deepEqual(JSON.parse(seen.request.input[0].content), {
-    manual: task.manual, locale: 'de', language: 'German', english, current_translation: translated,
-    glossary: task.glossary, translation_context: task.context, manual_context: task.manualContext,
-    previous_candidate: task.candidate, validation_feedback: task.feedback,
-  });
+  assert.deepEqual(JSON.parse(seen.request.input[0].content), { type: 'translation_guidance', glossary: 'Terms', translation_context: task.context });
+  const packet = JSON.parse(seen.request.input.at(-1).content);
+  assert.equal(packet.locale, 'de');
+  assert.equal(packet.sections.length, 1);
+  assert.equal(packet.sections[0].id, 'section-1-1');
+  assert.equal(packet.english, undefined);
+  assert.equal(packet.current_translation, undefined);
+  assert.deepEqual(packet.manual_context, { title: 'Example' });
+  assert.equal(packet.validation_feedback, task.feedback);
+  assert(!JSON.stringify(seen.request).includes('UNRELATED ENGLISH CONTENT'));
+  assert(!JSON.stringify(seen.request).includes('UNRELATED TRANSLATED CONTENT'));
+  assert(!JSON.stringify(seen.request).includes('DO NOT INLINE'));
 });
 
 test('failed, incomplete and refused responses are rejected even when partial Markdown is present', async () => {
@@ -267,12 +279,12 @@ test('failed, incomplete and refused responses are rejected even when partial Ma
     [{ status: 'failed', error: { code: 'server_error', message: 'The model service failed.' } }, /The model service failed/, 'server_error'],
     [{ status: 'incomplete', incomplete_details: { reason: 'max_output_tokens' } }, /max_output_tokens/, 'max_output_tokens'],
     [{ output: [{ type: 'message', content: [{ type: 'refusal', refusal: 'Request refused.' }] }] }, /Request refused/, null],
-    [{ output_text: '' }, /returned no Markdown/, null],
-    [{ output_text: JSON.stringify({ markdown: ' ' }) }, /returned no Markdown/, null],
+    [{ output_text: '' }, /returned no patch/, null],
+    [{ output_text: JSON.stringify({ markdown: ' ' }) }, /Return an edits array/, 'translation_patch_conflict'],
     [{ output_text: '{invalid JSON' }, /JSON/, null],
   ]) {
     const { client } = fakeClient({ response });
-    await assert.rejects(translateWithOpenAI({ locale: 'de', targetPath: target }, { client }), error => {
+    await assert.rejects(translateWithOpenAI({ locale: 'de', source: english, current: translated, targetPath: target }, { client }), error => {
       assert.match(error.message, expected);
       assert(error.message.includes(target));
       assert.equal(error.apiError.code, code);
@@ -288,7 +300,7 @@ test('HTTP failures preserve the API error code, request ID and rejected paramet
     code: 'invalid_request_error', request_id: 'req_http', param: 'text.format.schema',
   });
   const { client } = fakeClient({ error: failure });
-  await assert.rejects(translateWithOpenAI({ locale: 'de' }, { client }), error => {
+  await assert.rejects(translateWithOpenAI({ locale: 'de', source: english, current: translated }, { client }), error => {
     assert.match(error.message, /\[invalid_request_error\] Unsupported output schema/);
     assert.equal(error.apiError.requestId, 'req_http');
     assert.equal(error.apiError.param, 'text.format.schema');
@@ -326,7 +338,7 @@ test('the installed SDK sends reference tool results back through the Responses 
     }] });
     return Response.json({ id: 'resp_wire', object: 'response', status: 'completed', output: [{
       id: 'msg_wire', type: 'message', role: 'assistant', status: 'completed',
-      content: [{ type: 'output_text', text: JSON.stringify({ markdown: translated }), annotations: [] }],
+      content: [{ type: 'output_text', text: JSON.stringify({ edits: [] }), annotations: [] }],
     }] });
   } });
   const result = await translateWithOpenAI({ manual: 'Example', locale: 'de', source: english, current: translated, glossary: 'Terms',
@@ -338,7 +350,7 @@ test('the installed SDK sends reference tool results back through the Responses 
   assert.equal(requests[0].headers.has('OpenAI-Beta'), false);
   const request = JSON.parse(requests[0].body);
   assert.equal(request.text.format.strict, true);
-  assert.equal(request.text.format.name, 'translated_document');
+  assert.equal(request.text.format.name, 'translation_patch');
   assert.equal(request.model, 'gpt-6.1-terra');
   assert.equal(request.store, false);
   const continuation = JSON.parse(requests[1].body);
@@ -354,7 +366,7 @@ test('the installed SDK exposes failed response diagnostics and HTTP request IDs
     id: 'resp_failed', object: 'response', status: 'failed', output: [],
     error: { code: 'server_error', message: 'An internal model error occurred.' },
   }, { headers: { 'x-request-id': 'req_failed' } }) });
-  await assert.rejects(translateWithOpenAI({ locale: 'de', targetPath: target }, { client }), error => {
+  await assert.rejects(translateWithOpenAI({ locale: 'de', source: english, current: translated, targetPath: target }, { client }), error => {
     assert.match(error.message, /\[server_error\] An internal model error occurred/);
     assert.equal(error.apiError.responseId, 'resp_failed');
     assert.equal(error.apiError.requestId, 'req_failed');
@@ -424,7 +436,7 @@ test('tool continuations preserve reasoning and assistant phases, recover denied
       return { id: 'resp_two', status: 'completed', output: [functionCall('call_read', 'read_reference_file', { path: target, offset: 0, length: 16000 })] };
     }
     assert.equal(JSON.parse(request.input.find(item => item.call_id === 'call_read' && item.type === 'function_call_output').output).content, translated);
-    return { id: 'resp_final', status: 'completed', output_text: JSON.stringify({ markdown: translated }) };
+    return { id: 'resp_final', status: 'completed', output_text: JSON.stringify({ edits: [] }) };
   } } };
   const result = await syncTranslations({ ...options, force: true,
     translate: (task, hooks) => translateWithOpenAI(task, { ...hooks, client }),
@@ -468,6 +480,17 @@ function completedResponse(id, markdown) {
   }] };
 }
 
+function completedPatchResponse(id, sections, markdown) {
+  const wanted = new Map(splitTranslationSections(markdown).map(part => [part.id, part.text]));
+  const edits = sections.filter(section => wanted.get(section.id) !== section.current_translation).map(section => ({
+    section_id: section.id, search: section.current_translation, replace: wanted.get(section.id),
+  }));
+  const response = completedResponse(id, '');
+  response.output_text = JSON.stringify({ edits });
+  response.output[0].content[0].text = response.output_text;
+  return response;
+}
+
 test('all languages share one sequential conversation, with fresh memory for the next sync run', async t => {
   const options = await fixture(t);
   const contexts = [], requests = [];
@@ -476,18 +499,19 @@ test('all languages share one sequential conversation, with fresh memory for the
   const client = { responses: { async create(request) {
     requests.push(request);
     const task = JSON.parse(request.input.at(-1).content);
-    if (task.locale === 'de') assert.equal(request.input.length, 1, 'Each sync run starts with a fresh conversation.');
+    if (task.locale === 'de') assert.equal(request.input.length, 2, 'Each sync run starts with guidance and its first task.');
     else {
       assert.equal(task.locale, 'fr');
       const previous = request.input.find(item => item.role === 'assistant');
-      assert.equal(JSON.parse(previous.content[0].text).markdown, translated);
+      assert(Array.isArray(JSON.parse(previous.content[0].text).edits));
       const validation = request.input.filter(item => item.role === 'user').map(item => JSON.parse(item.content)).find(item => item.translation_validation);
       assert.equal(validation.locale, 'de');
       assert.equal(validation.translation_validation, 'passed');
       assert.equal(task.language, 'French');
-      assert.equal(task.english, english);
+      assert(task.sections.some(section => section.english.includes('Disconnect power before cleaning.')));
+      assert.equal(request.input.filter(item => item.role === 'user' && JSON.parse(item.content).type === 'translation_guidance').length, 1);
     }
-    return completedResponse(`resp_${requests.length}`, task.locale === 'de' ? translated : french);
+    return completedPatchResponse(`resp_${requests.length}`, task.sections, task.locale === 'de' ? translated : french);
   } } };
   const translate = async (task, hooks) => {
     contexts.push(hooks.conversation);
@@ -567,8 +591,8 @@ test('a later failure preserves the original files despite earlier validated con
   const before = await readFile(stateFile, 'utf8');
   await writeFile(path.join(options.root, 'manuals/example/01-installation.md'), english + '\nNew instruction.\n');
   let requests = 0;
-  const client = { responses: { async create() {
-    if (++requests === 1) return completedResponse('resp_valid', translated + '\nNeue Anweisung.\n');
+  const client = { responses: { async create(request) {
+    if (++requests === 1) return completedPatchResponse('resp_valid', JSON.parse(request.input.at(-1).content).sections, translated + '\nNeue Anweisung.\n');
     return { id: 'resp_failed', status: 'failed', error: { code: 'server_error', message: 'Model failure.' } };
   } } };
   await assert.rejects(syncTranslations({ ...options, manuals: [{ ...manual, locales: ['en', 'de', 'fr'] }],

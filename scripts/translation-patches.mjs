@@ -50,13 +50,41 @@ function sameStructure(english, translated, locale, id) {
 function changeExcerpt(before, after) {
   if (before === undefined) return null;
   const oldLines = before.split('\n'), newLines = after.split('\n');
+  if (oldLines.length * newLines.length <= 1_000_000) {
+    const width = newLines.length + 1;
+    const lcs = new Uint32Array((oldLines.length + 1) * width);
+    for (let i = oldLines.length - 1; i >= 0; i--) for (let j = newLines.length - 1; j >= 0; j--) {
+      lcs[i * width + j] = oldLines[i] === newLines[j] ? lcs[(i + 1) * width + j + 1] + 1
+        : Math.max(lcs[(i + 1) * width + j], lcs[i * width + j + 1]);
+    }
+    const operations = [];
+    for (let i = 0, j = 0; i < oldLines.length || j < newLines.length;) {
+      if (i < oldLines.length && j < newLines.length && oldLines[i] === newLines[j]) {
+        operations.push({ kind: ' ', old: i, next: j, text: oldLines[i] }); i++; j++;
+      } else if (j < newLines.length && (i === oldLines.length || lcs[i * width + j + 1] >= lcs[(i + 1) * width + j])) {
+        operations.push({ kind: '+', old: i, next: j, text: newLines[j++] });
+      } else operations.push({ kind: '-', old: i, next: j, text: oldLines[i++] });
+    }
+    const ranges = [];
+    operations.forEach((operation, index) => {
+      if (operation.kind === ' ') return;
+      const start = Math.max(0, index - 2), end = Math.min(operations.length, index + 3);
+      if (ranges.length && start <= ranges.at(-1).end) ranges.at(-1).end = end;
+      else ranges.push({ start, end });
+    });
+    return ranges.map(({ start, end }) => ({
+      old_start_line: operations[start].old + 1, new_start_line: operations[start].next + 1,
+      before: operations.slice(start, end).filter(item => item.kind !== '+').map(item => item.text).join('\n'),
+      after: operations.slice(start, end).filter(item => item.kind !== '-').map(item => item.text).join('\n'),
+    }));
+  }
   let first = 0, oldEnd = oldLines.length, newEnd = newLines.length;
   while (first < oldEnd && first < newEnd && oldLines[first] === newLines[first]) first++;
   while (oldEnd > first && newEnd > first && oldLines[oldEnd - 1] === newLines[newEnd - 1]) { oldEnd--; newEnd--; }
-  return {
+  return [{
     before: oldLines.slice(Math.max(0, first - 2), oldEnd + 2).join('\n'),
     after: newLines.slice(Math.max(0, first - 2), newEnd + 2).join('\n'),
-  };
+  }];
 }
 
 export function planTranslationPatch({ source, current, previousSource, previousSnapshot, locale, refreshAll = false }) {
@@ -94,11 +122,12 @@ export function planTranslationPatch({ source, current, previousSource, previous
 const conflict = message => Object.assign(new Error(message), { code: 'translation_patch_conflict' });
 
 export function applyTranslationPatch(plan, patch) {
-  if (!patch || !Array.isArray(patch.edits)) throw conflict('Return an edits array, not a complete Markdown document.');
+  if (!patch || !Array.isArray(patch.edits) || Object.keys(patch).some(key => key !== 'edits')) throw conflict('Return an edits array, not a complete Markdown document.');
   const allowed = new Set(plan.sections.map(section => section.id));
   const result = new Map(plan.target);
   for (const edit of patch.edits) {
     if (!edit || !allowed.has(edit.section_id)) throw conflict(`Patch section ${edit?.section_id} is outside the requested changes.`);
+    if (Object.keys(edit).length !== 3 || Object.keys(edit).some(key => !['section_id', 'search', 'replace'].includes(key))) throw conflict('Patch edits must contain only section_id, search and replace.');
     if (typeof edit.search !== 'string' || typeof edit.replace !== 'string') throw conflict('Patch search and replace fields must be strings.');
     const text = result.get(edit.section_id);
     if (!edit.search) {
@@ -111,7 +140,9 @@ export function applyTranslationPatch(plan, patch) {
     }
   }
   const markdown = plan.order.map(id => result.get(id)).join('');
-  const actual = splitTranslationSections(markdown).map(part => part.id);
+  let actual;
+  try { actual = splitTranslationSections(markdown).map(part => part.id); }
+  catch (error) { throw conflict(`Patch damaged the section layout: ${error.message}`); }
   if (JSON.stringify(actual) !== JSON.stringify(plan.order)) throw conflict('Patch changed section boundaries, heading IDs or YAML frontmatter. Preserve the supplied section layout and separating newlines.');
   return markdown;
 }
