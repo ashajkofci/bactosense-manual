@@ -23,7 +23,7 @@
     },
     {
       "file": "chapters/instrument-overview.json",
-      "sha256": "b43eac1e2eaf8d11314b741f158230ac582b877e8669ab5d10a5a055bd26f4c5"
+      "sha256": "44f992ceea8ec15884507941d70bfff60ef1cfc7f8d1618f37ed10c13656c494"
     },
     {
       "file": "chapters/safety.json",
@@ -31,11 +31,11 @@
     },
     {
       "file": "chapters/installation.json",
-      "sha256": "8d8a42169e3a4e086926b8fd9474ea1746a081e539ee229d0e6dca9a98af6f74"
+      "sha256": "4fb119f83cdb79f945b56ee8255dd293fc057dbbabddaaa90bd5007830d28a4d"
     },
     {
       "file": "chapters/io-box.json",
-      "sha256": "2388e824931e1bd712042562e484c135c48b0d0899c1d74d9e11aeb0bfb8e5a3"
+      "sha256": "7c599e10153ca050a686bb541c12c56d68f2bd1b82f2e8643d1977007ae5c346"
     },
     {
       "file": "chapters/field-bus-interface.json",
@@ -43,23 +43,23 @@
     },
     {
       "file": "chapters/general-operations-and-configurations.json",
-      "sha256": "7ccbe38eea805cad8dbba3ef79f5c474b16d811102b89038dc2b4c1975e524fc"
+      "sha256": "e9cd6be673e647351a09b90cc38ab4cf4db25918c5cb4a57afb7cd119d9e357f"
     },
     {
       "file": "chapters/upgrade-packages.json",
-      "sha256": "ae2b42c334a4996eebbaef6300ae468aa5f2e06088f2ee20b5869f1c069e0c55"
+      "sha256": "df2d944092c1833fb9844d769b0d79d0a0160ff60b32ef9ba84e6e6a03fba339"
     },
     {
       "file": "chapters/measurements.json",
-      "sha256": "3de89b2c2f147050e988956a67440024fa1ae9d57eff480fc7a9b1e0544616b1"
+      "sha256": "ce9a6850019cd6cd27f8e6ee7f86281ae0e4fce3c24ed2e90ca8256329ca0277"
     },
     {
       "file": "chapters/results-and-data-analysis.json",
-      "sha256": "0099fc54a5c9145d68531d7d6c2efc33904ff2ae8fc6860733cd87e517c84c09"
+      "sha256": "88c67180b74ae86eb20b7cec6162329d6a7e6895828ffe6fd634317b58c32aec"
     },
     {
       "file": "chapters/data-access-and-export.json",
-      "sha256": "91ca7f2226dccae6144a322cc2c4810985d2a411ceebdaa26748991925a3df75"
+      "sha256": "fe3d73e0bc10e76dac7048b202df2d0bb9843e782cb3304e52ba74d60e1eba65"
     },
     {
       "file": "chapters/web-user-interface.json",
@@ -71,15 +71,15 @@
     },
     {
       "file": "chapters/maintenance.json",
-      "sha256": "287c8d6869bcdcf0c10db9c418f782a85719cee48946394d34308aa484925d8f"
+      "sha256": "21ffd1bf82e5be771080db93c3be3242513c68e9adb62dcd3958ed621dd80951"
     },
     {
       "file": "chapters/warnings-errors-and-troubleshooting.json",
-      "sha256": "60252e62ac3791f84c673113e53f8012ab97b154f13f67274fefba24f81f89f2"
+      "sha256": "2551b00bc13ad48611c8aa96731c9e0f60ce2f534d1f0feb7a0366dd7beaf5d6"
     },
     {
       "file": "chapters/storage-transport-and-disposal.json",
-      "sha256": "754a2ea3ce6effde4d0d967c09f2623ca6cf5b8aca499e77305118cd68063c8f"
+      "sha256": "b62d48b11fc067acd237bc8cc6a87ab81e5fe76f2ebcf4c38de5c897ccbc27ee"
     },
     {
       "file": "chapters/supply-scope-accessories-and-consumables.json",
