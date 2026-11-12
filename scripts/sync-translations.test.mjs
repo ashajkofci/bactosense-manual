@@ -7,8 +7,9 @@ import OpenAI from 'openai';
 import { planSync, syncTranslations, translateWithOpenAI } from './sync-translations.mjs';
 import { translationErrors } from './translation-structure.mjs';
 import { writeSyncOutputs } from './sync-translations-report.mjs';
-import { createReferenceTools, createResponseConversation, runResponseWithTools } from './translation-tools.mjs';
+import { createReferenceTools, createResponseConversation, responseRetryDelay, runResponseWithTools } from './translation-tools.mjs';
 import { applyTranslationPatch, planTranslationPatch, sectionSnapshot, splitTranslationSections } from './translation-patches.mjs';
+import { reviewTranslation } from './translation-review.mjs';
 
 const english = `---
 title: Installation
@@ -51,7 +52,7 @@ async function fixture(t) {
     await mkdir(path.dirname(path.join(root, filename)), { recursive: true });
     await writeFile(path.join(root, filename), text);
   }
-  const options = { root, manuals: [manual], log: silent };
+  const options = { root, manuals: [manual], log: silent, review: async () => [] };
   const baseline = await planSync(options);
   await writeFile(path.join(root, 'maintenance/translation-sync.json'), JSON.stringify(baseline.nextState, null, 2) + '\n');
   return options;
@@ -138,6 +139,55 @@ test('validation rejects changed links, anchors, notice types, tables and screen
     ['/safety#section-2-1', '/other'], ['section-1-1', 'section-1-2'], [':::warning', ':::info'],
     ['| 1 | Read', '| 1 | extra | Read'], ['/gui/de/', '/gui/en/'], ['slug: /installation', 'slug: /other'],
   ]) assert(translationErrors(english, translated.replace(before, after), 'de').length > 0, `${before} should fail`);
+});
+
+test('technical checks reject changed quantities, ranges, units and inequality directions', () => {
+  const source = english + '\nWait 30 minutes. Limit < 50 C. Range -5-10 mA. Register 0x1234.\n';
+  const candidate = translated + '\n30 Minuten warten. Grenze < 50 C. Bereich -5-10 mA. Register 0x1234.\n';
+  assert.deepEqual(translationErrors(source, candidate, 'de'), []);
+  for (const [before, after] of [['30 Minuten', '300 Minuten'], ['30 Minuten', 'Minuten'], ['< 50', '> 50'], ['-5-10', '-5-100'], ['10 mA', '10 V'], ['0x1234', '0x1235']]) {
+    assert(translationErrors(source, candidate.replace(before, after), 'de').length, `${before} -> ${after}`);
+  }
+});
+
+test('technical checks accept localized decimals, grouping, units and reordered prose', () => {
+  const source = english + '\nWait 30 minutes. Use 1,234.5 mL and 2.5 mA. Limit >= -5 C.\n';
+  const candidates = {
+    de: '2,5 mA verwenden und 1.234,5 mL. 30 Minuten warten. Grenze >= -5 C.',
+    fr: '2,5 mA et 1\u202f234,5 mL. Attendre 30 minutes. Limite >= -5 C.',
+    it: '2,5 mA e 1.234,5 mL. Attendere 30 minuti. Limite >= -5 C.',
+    es: '2,5 mA y 1.234,5 mL. Esperar 30 minutos. L\u00edmite >= -5 C.',
+  };
+  for (const [locale, prose] of Object.entries(candidates)) {
+    assert.deepEqual(translationErrors(source, translated.replace('/gui/de/', `/gui/${locale}/`) + `\n${prose}\n`, locale), [], locale);
+  }
+  assert(translationErrors(source, translated + '\nWait 30 minutes. Use 2.5 mL and 1,234.5 mA. Limit >= -5 C.\n', 'de').length);
+});
+
+test('technical checks preserve table boundaries, versions, scientific notation and apostrophe grouping', () => {
+  const source = english + '\nVersion 1.4.0. <table><tr><td>TCC</td><td>100</td></tr></table>\n0 - 5\u00b4000\u00b4000 cells/mL. 488 nm. 260 \u03bcL. 30 min. 1e-3 mA.\n';
+  const candidate = translated + '\nVersion 1.4.0. <table><tr><td>TCC</td><td>100</td></tr></table>\n0 - 5.000.000 Zellen/mL. 488nm. 260 \u00b5L. 30 Minuten. 0,001 mA.\n';
+  assert.deepEqual(translationErrors(source, candidate, 'de'), []);
+  for (const [before, after] of [['1.4.0', '1.4.1'], ['5.000.000', '50.000.000'], ['0,001 mA', '0,01 mA']]) {
+    assert(translationErrors(source, candidate.replace(before, after), 'de').length);
+  }
+});
+
+test('technical checks accept repeated range units, emphasized quantities and hyphenated identifier suffixes', () => {
+  const source = english + '\n5 C - 40 C. Use 5 mL. RJ45 Gigabit. IP67 connector.\n';
+  const candidate = translated + '\n5-40 C. **5** ml verwenden. RJ45-Gigabit. IP67-Stecker.\n';
+  assert.deepEqual(translationErrors(source, candidate, 'de'), []);
+  assert(translationErrors(source, candidate.replace('5-40 C', '40-5 C'), 'de').length);
+  assert(translationErrors(source, candidate.replace('IP67', 'IP68'), 'de').length);
+});
+
+test('technical checks do not round distinct large integers or precise decimal values into equality', () => {
+  for (const [before, after] of [['9007199254740992', '9007199254740993'], ['1.0000000000000001', '1.0000000000000002']]) {
+    const source = english + `\nLimit ${before} mL.\n`;
+    const candidate = translated + `\nGrenze ${before} mL.\n`;
+    assert.deepEqual(translationErrors(source, candidate, 'de'), []);
+    assert(translationErrors(source, candidate.replace(before, after), 'de').length);
+  }
 });
 
 test('one repair is attempted, and invalid batches leave files and state untouched', async t => {
@@ -308,6 +358,197 @@ test('HTTP failures preserve the API error code, request ID and rejected paramet
   });
 });
 
+test('transient HTTP retries count every attempt and do not repeat reference execution', async () => {
+  const payloads = [], waits = [], retries = [], lookups = [];
+  let attempts = 0;
+  const client = new OpenAI({ apiKey: 'test-key', fetch: async (url, init) => {
+    payloads.push(init.body);
+    if (payloads.length === 1 || payloads.length === 3) return Response.json({ error: { message: 'Temporary failure' } }, {
+      status: payloads.length === 1 ? 429 : 503, headers: { 'retry-after-ms': '25' },
+    });
+    if (payloads.length === 2) return Response.json({ id: 'resp_lookup', object: 'response', status: 'completed', output: [{
+      type: 'function_call', id: 'fc_retry', call_id: 'call_retry', name: 'list_reference_files', arguments: '{"prefix":""}',
+    }] });
+    return Response.json({ id: 'resp_done', object: 'response', status: 'completed', output: [] });
+  } });
+  await runResponseWithTools({ client, request: { model: 'test-model', input: 'Translate.' },
+    onRequest: () => attempts++, onRetry: retry => retries.push(retry), onToolCall: lookup => lookups.push(lookup),
+    sleep: async milliseconds => waits.push(milliseconds),
+  });
+  assert.equal(attempts, 4);
+  assert.equal(lookups.length, 1);
+  assert.equal(retries.length, 2);
+  assert.deepEqual(waits, [25, 25]);
+  assert.equal(payloads[0], payloads[1]);
+  assert.equal(payloads[2], payloads[3]);
+});
+
+test('HTTP retries are bounded and permanent, vetoed and uncertain failures are not replayed', async () => {
+  for (const [failure, expected] of [
+    [{ status: 503 }, 3], [{ status: 429 }, 3], [{ status: 400 }, 1], [{ status: 401 }, 1],
+    [{ status: 429, code: 'insufficient_quota' }, 1], [{ status: 503, headers: { 'x-should-retry': 'false' } }, 1],
+    [{ name: 'APIConnectionError' }, 1], [{ status: 503, name: 'AbortError' }, 1],
+  ]) {
+    let attempts = 0;
+    const error = Object.assign(new Error('Unavailable'), failure);
+    const conversation = createResponseConversation();
+    await assert.rejects(runResponseWithTools({ client: { responses: { create: async () => { throw error; } } },
+      conversation, request: { model: 'test-model', input: 'Translate.' }, onRequest: () => attempts++, sleep: async () => {},
+    }), error);
+    assert.equal(attempts, expected, JSON.stringify(failure));
+    assert.deepEqual(conversation.history, []);
+    assert.equal(conversation.busy, false);
+  }
+});
+
+test('retry delays respect server hints and cancellation interrupts backoff', async () => {
+  const now = Date.parse('2026-01-01T00:00:00Z');
+  assert.equal(responseRetryDelay({ headers: { 'retry-after-ms': '125' } }, 0), 125);
+  assert.equal(responseRetryDelay({ headers: { 'retry-after': '2' } }, 0), 2000);
+  assert.equal(responseRetryDelay({ headers: { 'retry-after': 'Thu, 01 Jan 2026 00:00:03 GMT' } }, 0, { now }), 3000);
+  assert.equal(responseRetryDelay({}, 1, { random: 0 }), 1500);
+  const controller = new AbortController();
+  let attempts = 0;
+  await assert.rejects(runResponseWithTools({ client: { responses: { create: async () => {
+    attempts++; throw Object.assign(new Error('Rate limited'), { status: 429 });
+  } } }, request: { model: 'test-model', input: 'Translate.' }, signal: controller.signal,
+    onRetry: () => controller.abort(),
+  }), { name: 'AbortError' });
+  assert.equal(attempts, 1);
+});
+
+test('semantic reviewer uses an isolated tool-free context and grounded structured findings', async () => {
+  const task = { source: english, candidate: translated, locale: 'de', glossary: 'Keep Modbus.', context: 'Operators.', record: {} };
+  const finding = { section_id: 'section-1-1', category: 'safety', source_quote: 'Disconnect power before cleaning.', candidate_quote: 'Vor der Reinigung die Stromversorgung trennen.', explanation: 'Example finding.' };
+  let calls = 0;
+  const client = { responses: { async create(request) {
+    calls++;
+    assert.equal(request.input.length, 1);
+    assert.deepEqual(request.tools, []);
+    assert.equal(request.tool_choice, 'none');
+    assert.equal(request.store, false);
+    assert.equal(request.text.format.strict, true);
+    const packet = JSON.parse(request.input[0].content);
+    assert.equal(packet.task, 'review_translation');
+    assert.equal(packet.glossary, task.glossary);
+    assert(packet.sections.some(section => section.english.includes('Disconnect power before cleaning.')));
+    return { id: 'resp_review', status: 'completed', output_text: JSON.stringify({ findings: calls === 1 ? [finding] : [] }), output: [] };
+  } } };
+  assert.deepEqual(await reviewTranslation(task, { client }), [finding]);
+  assert.deepEqual(await reviewTranslation(task, { client }), []);
+  assert.equal(task.record.reviewRequests, 2);
+  assert.equal(task.record.apiRequests, 2);
+});
+
+test('semantic reviewer rejects incomplete, refused, malformed and ungrounded results', async () => {
+  for (const response of [
+    { status: 'incomplete', incomplete_details: { reason: 'max_output_tokens' } },
+    { status: 'failed', error: { code: 'server_error', message: 'Review unavailable' } },
+    { output: [{ type: 'message', content: [{ type: 'refusal', refusal: 'Refused' }] }] },
+    { output_text: '' }, { output_text: '{invalid' }, { output_text: '{"findings":[],"extra":true}' },
+    { output_text: JSON.stringify({ findings: [{ section_id: 'section-1-1', category: 'safety', source_quote: 'Invented quote', candidate_quote: '', explanation: 'Incorrect.' }] }) },
+  ]) {
+    const client = { responses: { async create() { return { id: 'resp_review', status: 'completed', output_text: '{"findings":[]}', output: [], ...response }; } } };
+    await assert.rejects(reviewTranslation({ source: english, candidate: translated, locale: 'de' }, { client }), /semantic review failed/);
+  }
+});
+
+test('semantic safety findings repair against original text before publishing references or writing files', async t => {
+  const options = await fixture(t);
+  const broken = translated.replace('Stromversorgung trennen.', 'Stromversorgung nicht trennen.');
+  let translations = 0, reviews = 0;
+  const result = await syncTranslations({ ...options, force: true,
+    translate: async (task, hooks) => {
+      translations++;
+      hooks.onRequest();
+      if (translations === 2) {
+        assert.equal(task.current, translated);
+        assert.match(task.feedback, /Semantic review.*safety/);
+        assert.equal(task.candidate, broken);
+      }
+      return translations === 1 ? broken : translated;
+    },
+    review: async (task, hooks) => {
+      reviews++;
+      assert.equal(await readFile(path.join(options.root, target), 'utf8'), translated);
+      assert.equal(task.references.get(target), translated);
+      const client = { responses: { async create() {
+        return { id: 'resp_safety_review', status: 'completed', output: [], output_text: JSON.stringify({ findings: reviews === 1 ? [{
+          section_id: 'section-1-1', category: 'safety', source_quote: 'Disconnect power before cleaning.',
+          candidate_quote: 'Vor der Reinigung die Stromversorgung nicht trennen.', explanation: 'The translation reverses the requirement to disconnect power.',
+        }] : [] }) };
+      } } };
+      return reviewTranslation(task, { ...hooks, client });
+    },
+  });
+  assert.equal(translations, 2);
+  assert.equal(reviews, 2);
+  assert.equal(result.report.counts.apiAttempts, 4);
+  assert.equal(result.report.counts.reviewRequests, 2);
+  assert.equal(result.report.counts.reviewFindings, 1);
+  assert.equal(result.report.counts.unchanged, 1);
+  assert.equal(await readFile(path.join(options.root, target), 'utf8'), translated);
+});
+
+test('semantic review HTTP retries are counted in reports without repeating the translation', async t => {
+  const options = await fixture(t);
+  let translations = 0, reviews = 0;
+  const client = new OpenAI({ apiKey: 'test-key', fetch: async () => {
+    if (++reviews === 1) return Response.json({ error: { message: 'Rate limited' } }, { status: 429, headers: { 'retry-after-ms': '0' } });
+    return Response.json({ id: 'resp_review_retry', object: 'response', status: 'completed', output: [{
+      id: 'msg_review_retry', type: 'message', role: 'assistant', status: 'completed',
+      content: [{ type: 'output_text', text: '{"findings":[]}', annotations: [] }],
+    }] });
+  } });
+  const result = await syncTranslations({ ...options, force: true,
+    translate: async (task, hooks) => { translations++; hooks.onRequest(); return translated; },
+    review: (task, hooks) => reviewTranslation(task, { ...hooks, client }),
+  });
+  assert.equal(translations, 1);
+  assert.equal(reviews, 2);
+  assert.equal(result.report.counts.apiAttempts, 3);
+  assert.equal(result.report.counts.reviewRequests, 2);
+  assert.equal(result.report.counts.requestRetries, 1);
+  assert.equal(result.report.files[0].requestRetries[0].phase, 'review');
+});
+
+test('technical validation catches quantities moved between sections before semantic review', async t => {
+  const options = await fixture(t);
+  const source = english + '\nWait 30 minutes.\n\n## Second {#second}\n\nWait 10 minutes.\n';
+  const wrong = translated + '\n10 Minuten warten.\n\n## Zweite {#second}\n\n30 Minuten warten.\n';
+  await writeFile(path.join(options.root, 'manuals/example/01-installation.md'), source);
+  const state = await readFile(path.join(options.root, 'maintenance/translation-sync.json'), 'utf8');
+  await assert.rejects(syncTranslations({ ...options, force: true, translate: async () => wrong,
+    review: () => assert.fail('Deterministic failure must not request semantic review'),
+  }), /section-1-1: Technical quantities differ/);
+  assert.equal(await readFile(path.join(options.root, target), 'utf8'), translated);
+  assert.equal(await readFile(path.join(options.root, 'maintenance/translation-sync.json'), 'utf8'), state);
+});
+
+test('unresolved semantic omissions and reviewer failures leave translations and manifest untouched', async t => {
+  for (const failure of ['omission', 'http', 'outside']) {
+    const options = await fixture(t);
+    const stateFile = path.join(options.root, 'maintenance/translation-sync.json');
+    const state = await readFile(stateFile, 'utf8');
+    let calls = 0;
+    await assert.rejects(syncTranslations({ ...options, force: true,
+      translate: async () => { calls++; return translated.replace('Vor der Reinigung die Stromversorgung trennen.', 'Reinigung.'); },
+      review: async task => {
+        if (failure === 'http') {
+          const client = { responses: { async create() { throw Object.assign(new Error('Unauthorized'), { status: 401, request_id: 'req_review_failed' }); } } };
+          return reviewTranslation(task, { client });
+        }
+        return [{ section_id: failure === 'outside' ? 'unselected-section' : 'section-1-1', category: 'omission',
+          source_quote: 'Disconnect power before cleaning.', candidate_quote: '', explanation: 'The disconnection instruction is missing.' }];
+      },
+    }), failure === 'http' ? /semantic review failed.*Unauthorized/ : failure === 'outside' ? /outside the selected sections/ : /failed validation after repair/);
+    assert.equal(calls, failure === 'omission' ? 2 : 1);
+    assert.equal(await readFile(stateFile, 'utf8'), state);
+    assert.equal(await readFile(path.join(options.root, target), 'utf8'), translated);
+    assert.equal((await readReport(options)).counts.modified, 0);
+  }
+});
+
 test('API diagnostics reach both sync reports while translations and the manifest stay untouched', async t => {
   const options = await fixture(t);
   const stateFile = path.join(options.root, 'maintenance/translation-sync.json');
@@ -447,7 +688,7 @@ test('tool continuations preserve reasoning and assistant phases, recover denied
   assert.equal(result.report.files[0].referenceLookups[3].arguments.path, target);
   assert(requests.every(request => request.store === false && request.tools.length === 3));
   const markdown = await readFile(path.join(options.root, 'output/translations/sync-report.md'), 'utf8');
-  assert.match(markdown, /API requests \(including tool follow-ups and repairs\) \| 3/);
+  assert.match(markdown, /API requests \(including reviews, retries, tool follow-ups and repairs\) \| 3/);
   assert.match(markdown, /Reference lookups \| 4/);
 });
 

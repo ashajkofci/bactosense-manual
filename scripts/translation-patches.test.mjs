@@ -148,7 +148,7 @@ test('legacy source hashes can be recovered through Git renames and normalized C
   assert.equal(pending.tasks[0].patchPlan.baseline, 'git');
   assert.deepEqual(pending.tasks[0].record.sections, ['a']);
   assert.equal(JSON.parse(await readFile(path.join(root, 'maintenance/translation-sync.json'), 'utf8')).schemaVersion, 1);
-  await syncTranslations({ ...options, translate: async task => applyTranslationPatch(task.patchPlan, { edits: [{ section_id: 'a', search: '10 Minuten', replace: '20 Minuten' }] }) });
+  await syncTranslations({ ...options, review: async () => [], translate: async task => applyTranslationPatch(task.patchPlan, { edits: [{ section_id: 'a', search: '10 Minuten', replace: '20 Minuten' }] }) });
   const saved = JSON.parse(await readFile(path.join(root, 'maintenance/translation-sync.json'), 'utf8'));
   assert.equal(saved.schemaVersion, 2);
   assert.equal(saved.sourceSections['manuals/current.md'].sha256, sourceHash(changed));

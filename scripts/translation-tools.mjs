@@ -1,3 +1,5 @@
+import { setTimeout as delay } from 'node:timers/promises';
+
 const tool = (name, description, properties) => ({
   type: 'function', name, description, strict: true,
   parameters: { type: 'object', properties, required: Object.keys(properties), additionalProperties: false },
@@ -59,7 +61,40 @@ export function createResponseConversation({ compactThreshold = 200_000 } = {}) 
   return { history: [], guidance: new Map(), compactThreshold, compactions: 0, busy: false };
 }
 
-export async function runResponseWithTools({ client, request, references, conversation = createResponseConversation(), onRequest = () => {}, onToolCall = () => {}, onCompaction = () => {}, signal = AbortSignal.timeout(600_000), maxToolRounds = 6, maxToolCalls = 24 }) {
+export function responseRetryDelay(error, retry, { now = Date.now(), random = Math.random() } = {}) {
+  const headers = new Headers(error.headers);
+  const milliseconds = headers.get('retry-after-ms');
+  if (milliseconds !== null && Number.isFinite(Number(milliseconds)) && Number(milliseconds) >= 0) return Number(milliseconds);
+  const after = headers.get('retry-after');
+  if (after !== null) {
+    if (after.trim() && Number.isFinite(Number(after)) && Number(after) >= 0) return Number(after) * 1000;
+    const date = Date.parse(after);
+    if (Number.isFinite(date)) return Math.max(0, date - now);
+  }
+  return Math.min(30_000, 1000 * 2 ** retry) * (0.75 + random * 0.25);
+}
+
+async function createResponse({ client, payload, signal, onRequest, onRetry, maxRetries, sleep, retryDelay }) {
+  for (let retry = 0; ; retry++) {
+    signal.throwIfAborted();
+    onRequest();
+    try { return await client.responses.create(payload, { signal, maxRetries: 0 }); }
+    catch (error) {
+      const status = error.status;
+      const veto = new Headers(error.headers).get('x-should-retry') === 'false';
+      const permanent = ['insufficient_quota', 'billing_hard_limit_reached', 'invalid_api_key', 'account_deactivated'].includes(error.code ?? error.error?.code);
+      const transient = [408, 409, 429].includes(status) || (status >= 500 && status <= 599);
+      if (signal.aborted || error.name === 'AbortError' || error.name === 'APIUserAbortError' || retry >= maxRetries || veto || permanent || !transient) throw error;
+      const delayMs = retryDelay(error, retry);
+      if (!Number.isFinite(delayMs) || delayMs < 0 || delayMs > 600_000) throw error;
+      onRetry({ retry: retry + 1, status, delayMs, requestId: error.request_id ?? null });
+      await sleep(delayMs, signal);
+    }
+  }
+}
+
+export async function runResponseWithTools({ client, request, references, conversation = createResponseConversation(), onRequest = () => {}, onToolCall = () => {}, onCompaction = () => {}, onRetry = () => {}, signal = AbortSignal.timeout(600_000), maxToolRounds = 6, maxToolCalls = 24, maxRetries = 2, referenceTools = true, sleep = (milliseconds, signal) => delay(milliseconds, undefined, { signal }), retryDelay = responseRetryDelay }) {
+  if (!Number.isInteger(maxRetries) || maxRetries < 0 || maxRetries > 5) throw new Error('Request retries must be an integer from 0 to 5.');
   if (conversation.busy) throw new Error('This conversation is already processing a translation. Shared conversations must run sequentially.');
   const harness = createReferenceTools(references);
   const messages = typeof request.input === 'string' ? [{ role: 'user', content: request.input }] : request.input;
@@ -68,16 +103,16 @@ export async function runResponseWithTools({ client, request, references, conver
   conversation.busy = true;
   try {
     for (let round = 0; round <= maxToolRounds; round++) {
-      onRequest();
-      response = await client.responses.create({
-        ...request, store: false, tools: harness.definitions, include: ['reasoning.encrypted_content'],
+      const payload = {
+        ...request, store: false, tools: referenceTools ? harness.definitions : [], include: ['reasoning.encrypted_content'],
         context_management: [{ type: 'compaction', compact_threshold: conversation.compactThreshold }],
-        tool_choice: round === maxToolRounds || callCount === maxToolCalls ? 'none' : 'auto',
+        tool_choice: !referenceTools || round === maxToolRounds || callCount === maxToolCalls ? 'none' : 'auto',
         input: [...input],
-      }, { signal, maxRetries: 0 });
+      };
+      response = await createResponse({ client, payload, signal, onRequest, onRetry, maxRetries, sleep, retryDelay });
       if (response.status !== 'completed') return response;
       const calls = (response.output ?? []).filter(item => item.type === 'function_call');
-      if (calls.length && (round === maxToolRounds || callCount + calls.length > maxToolCalls)) {
+      if (calls.length && (!referenceTools || round === maxToolRounds || callCount + calls.length > maxToolCalls)) {
         throw Object.assign(new Error('Translation exceeded the reference lookup limit.'), { code: 'reference_lookup_limit' });
       }
       callCount += calls.length;
