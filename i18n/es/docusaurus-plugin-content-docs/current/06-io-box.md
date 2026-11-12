@@ -6,7 +6,7 @@ sidebar_position: 6
 description: "Manual de usuario de BactoSense: Caja de E/S."
 ---
 
-La caja de E/S (IO-box) es un accesorio de BactoSense. Permite conectar las entradas y salidas de BactoSense a un sistema PLC/SCADA.
+La caja de E/S (I/O-Box) es un accesorio de BactoSense. Permite conectar las entradas y salidas de BactoSense a un sistema PLC/SCADA.
 
 Como alternativa a la caja de E/S, puede utilizarse Modbus TCP. Encontrará más información en la sección [Modbus TCP](07-field-bus-interface.md#section-7-1).
 
@@ -57,8 +57,8 @@ Notas adicionales
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| ① | Posición de las salidas digitales<br />Bornes 1 – 8<br />Requisitos del cable:<br />• AWG 12 – 22<br />• Sección: 0.25 – 2.5 mm2 | ② | Posición de las salidas analógicas<br />Bornes 9 – 12<br />Requisitos del cable:<br />• AWG 12 – 22<br />• Sección: 0.25 – 2.5 mm2 |
-| ③ | Posición de las entradas digitales<br />Bornes 14 – 18<br />Requisitos del cable:<br />• AWG 12 – 22<br />• Sección: 0.25 – 2.5 mm2 |  | \< |
+| ① | Posición de las salidas digitales<br />Bornes 1 – 8<br />Requisitos del cable:<br />• AWG 12 – 22<br />• Sección: 0.25 – 2.5 mm<sup>2</sup> | ② | Posición de las salidas analógicas<br />Bornes 9 – 12<br />Requisitos del cable:<br />• AWG 12 – 22<br />• Sección: 0.25 – 2.5 mm<sup>2</sup> |
+| ③ | Posición de las entradas digitales<br />Bornes 14 – 18<br />Requisitos del cable:<br />• AWG 12 – 22<br />• Sección: 0.25 – 2.5 mm<sup>2</sup> |  | \< |
 
 ### 6.1.6 Tabla de referencia de la caja de E/S {#section-6-1-6}
 

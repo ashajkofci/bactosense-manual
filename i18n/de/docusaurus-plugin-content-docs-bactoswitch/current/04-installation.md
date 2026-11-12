@@ -212,7 +212,7 @@ Der BactoSwitch und der BactoSense haben jeweils einen eigenen Netzteiltyp mit u
 
 :::
 
-Die Netzteile werden in einem IP67-Gehäuse und mit einem Kabel mit Stecker vom Typ J, E, G oder B geliefert.
+Jedes Netzteil wird in einem IP67-Gehäuse mit einem Kabel geliefert, das mit einem Stecker vom Typ J, E, G oder B versehen ist.
 
 *Tabelle 4-2 Teilenummern der Netzteile von BactoSwitch und BactoSense*
 
@@ -272,7 +272,7 @@ Die folgenden Schritte finden nur dann Anwendung, wenn der BactoSwitch mit einem
 | 1. | :::danger[Netzteil vom Strom trennen] Stellen Sie sicher, dass das Netzteil nicht mit Strom versorgt wird. ::: Entfernen Sie den Gehäusedeckel, indem Sie die vier Schrauben (Kreise) lösen. | ![Vier Deckelschrauben des Netzteilgehäuses](/img/bactoswitch/psu-cover-screws.png "width=238") |
 | 2. | Entfernen Sie den C13-Anschluss (A) und schrauben Sie ihn auf, um ihn zu öffnen.<br />![Geöffneter C13-Anschluss](/img/bactoswitch/psu-c13-connector-open.png "width=182") | ![Position des C13-Anschlusses (A)](/img/bactoswitch/psu-c13-connector.png "width=238") |
 | 3. | Öffnen Sie die Kabelverschraubung (Y) und führen Sie das neue Kabel ein.<br /><br />Kabellängen und Leiterquerschnitte:<br />• 0 – 9 m (0 – 30 ft), 1 mm<sup>2</sup><br />• 9 – 21 m (30 – 69 ft), 1,5 mm<sup>2</sup> (maximal)<br /><br />Die Kabelverschraubung ist für einen Kabeldurchmesser von 3 – 10 mm (0,12″ – 0,39″) ausgelegt. | ![Kabelverschraubung (Y) und Anschlussklemme mit den Leitern N, PE und L](/img/bactoswitch/psu-cable-wiring.png "width=238") |
-| 4. | :::danger[Schutzleiter anschließen] Befestigen Sie die drei Drähte (N, PE, L) in der elektrischen Anschlussklemme und blockieren Sie die Kabelisolierung. ::: Stellen Sie sicher, dass ein Stecker mit Erdung (Schutzleiter) verwendet wird und dass das Gerät korrekt an diesen angeschlossen ist. | Siehe den Ausschnitt in der obigen Abbildung. |
+| 4. | :::danger[Schutzleiter anschließen] Befestigen Sie die drei Drähte (N, PE, L) in der elektrischen Anschlussklemme und sichern Sie die Kabelisolierung. ::: Stellen Sie sicher, dass ein Stecker mit Erdung (Schutzleiter) verwendet wird und dass das Gerät korrekt an diesen angeschlossen ist. | Siehe den Ausschnitt in der obigen Abbildung. |
 | 5. | Schließen Sie den C13-Anschluss (A) mittels der Schraube und stecken Sie ihn in das Netzteil. Ziehen Sie die Kabelverschraubung fest. Ziehen Sie am Kabel, um herauszufinden, ob die Kabelverschraubung fest genug sitzt. | ![Geschlossener C13-Anschluss (A) im Netzteil](/img/bactoswitch/psu-c13-connector-closed.png "width=226") |
 | 6. | Optional: Das Netzteil kann an einer Wand angebracht werden. Es sollten M4-Schrauben mit einer Mindestlänge von 20 mm verwendet werden. Platzieren Sie die vier Schrauben, ohne dass die Abdeckung montiert ist, und befestigen Sie das Gehäuse an der Wand. | ![Lochabstände für die Wandmontage des Netzteils](/img/bactoswitch/psu-wall-mounting.png "width=238") |
 | 7. | Bringen Sie die Gehäuseabdeckung wieder an und ziehen Sie die vier Schrauben an, um das Gehäuse abzudichten. | ![Vier Deckelschrauben des Netzteilgehäuses](/img/bactoswitch/psu-cover-screws.png "width=238") |

@@ -19,7 +19,7 @@ description: "Manuel d’utilisation BactoSwitch : Stockage, transport et élimi
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
 | 1. | Terminez toute série de mesures en cours. |  |
-| 2. | Fermez les robinets d’ouverture/fermeture au niveau du raccordement aux canalisations d’eau pour arrêter l’écoulement d’eau dans les tuyaux du BactoSwitch et dans le dispositif d’échantillonnage en ligne. |  |
+| 2. | Fermez les robinets d’ouverture/fermeture au niveau des raccordements aux canalisations d’eau pour arrêter l’écoulement d’eau dans les tuyaux du BactoSwitch et dans le dispositif d’échantillonnage en ligne. |  |
 | 3. | Débranchez l’alimentation secteur du BactoSwitch pour éviter tout risque de court-circuit. |  |
 | 4. | Retirez la fiche du connecteur d’alimentation de la prise correspondante et remettez en place le capuchon de protection du connecteur d’alimentation. |  |
 | 5. | Retirez le câble USB-C du BactoSwitch et du BactoSense, puis remettez en place les deux capuchons de protection des connecteurs. |  |

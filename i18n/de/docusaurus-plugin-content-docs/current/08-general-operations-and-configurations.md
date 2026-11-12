@@ -50,7 +50,7 @@ Login und Logout können mittels der Login-Taste in der oberen rechten Ecke der 
 
 |  | ARBEITSSCHRITT |
 | --- | --- |
-| 1. | Stellen Sie sicher, dass alle Prozesse (z.B. Messungen oder Reinigungen) abgeschlossen sind. Der Status „Bereit“ des Geräts wird in der Benutzeroberfläche des BactoSense oben links angezeigt. |
+| 1. | Stellen Sie sicher, dass alle Prozesse (z.B. Messungen oder Reinigungszyklen) abgeschlossen sind. Der Status „Bereit“ des Geräts wird links in der oberen Leiste der BactoSense-Benutzeroberfläche angezeigt. |
 | 2. | Drücken Sie die Taste Logout oben rechts auf der Benutzeroberfläche. |
 | 3. | Wählen Sie Abmelden Bildschirm sperren. |
 | 4. | Um sich erneut einzuloggen, folgen Sie bitte den unter [Anmelden](08-general-operations-and-configurations.md#section-8-2-1) beschriebenen Schritten. |
@@ -98,7 +98,7 @@ Jede Benutzerrolle ist kennwortgeschützt.
 
 ### 8.2.6 Änderung von Kennworteinstellungen {#section-8-2-6}
 
-Kennworteigenschaften wie Gültigkeitsdauer, Länge usw. können eingestellt werden.
+Kennwortanforderungen wie Gültigkeitsdauer und Länge können eingestellt werden.
 
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG |
 | --- | --- | --- |
@@ -232,7 +232,7 @@ Sie können hörbare Benachrichtigungen aktivieren, um das Ende einer Messung od
 
 ## 8.4 Import/Export von Einstellungen {#section-8-4}
 
-Die Einstellungen werden nach den Anweisungen unter [Einstellungen, Diagnosedaten oder alles auf USB-Gerät exportieren](12-data-access-and-export.md#section-12-1-1) auf einen USB-Datenträger exportiert. Sie werden in einer Datei mit Zeitstempel und der Endung **.bnv** zusammengefasst. Um die Einstellungen auf einem neuen Gerät oder als Sicherung zu importieren, kopieren Sie die **.bnv**-Datei in das Stammverzeichnis des USB-Datenträgers oder in das Verzeichnis, in das sie exportiert wurde. Befinden sich mehrere Kopien der Einstellungen auf einem USB-Datenträger, verwendet das System die neueste.
+Die Einstellungen werden nach den Anweisungen unter [Einstellungen, Diagnosedaten oder alles auf USB-Gerät exportieren](12-data-access-and-export.md#section-12-1-1) auf einen USB-Datenträger exportiert. Sie werden in einer Datei mit Zeitstempel und der Endung `.bnv` gespeichert. Um die Einstellungen auf einem neuen Gerät zu importieren oder eine Sicherung wiederherzustellen, kopieren Sie die `*.bnv`-Datei in das Stammverzeichnis des USB-Datenträgers oder in das Verzeichnis, in das sie exportiert wurde. Befinden sich mehrere Kopien der Einstellungen auf einem USB-Datenträger, verwendet das System die neueste.
 
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG |
 | --- | --- | --- |
@@ -363,7 +363,7 @@ Die Symbole auf der oberen Leiste finden Sie am oberen Rand der Anzeige. Sie zei
 
 ## 8.9 Handhabung von Kartuschen {#section-8-9}
 
-Die BactoSense-Kartuschen enthalten die Reagenzien für Messungen und die Reinigung des Geräts. Verfügbare Kartuschentypen sind TCC (Gesamtzellzahl), ICC (Intaktzellzahl), EBC (E.-coli-Zellzahl), ACC (Anzahl aktiver Zellen), CBC (Anzahl coliformer Zellen) und NBC (Enterokokken-Zellzahl). Die folgenden Abschnitte erklären die Handhabung der Kartuschen. Lagerung, Transport und Wiederbefüllung sind unter [Lagerung, Transport und Entsorgung](17-storage-transport-and-disposal.md) beschrieben.
+Die BactoSense-Kartuschen enthalten die Reagenzien für Messungen und zum Sauberhalten des Geräts. Verfügbare Kartuschentypen sind TCC (Gesamtzellzahl), ICC (Intaktzellzahl), EBC (E.-coli-Zellzahl), ACC (Anzahl aktiver Zellen), CBC (Anzahl coliformer Zellen) und NBC (Enterokokken-Zellzahl). Die folgenden Abschnitte erklären die Handhabung der Kartuschen. Lagerung, Transport und Wiederbefüllung sind unter [Lagerung, Transport und Entsorgung](17-storage-transport-and-disposal.md) beschrieben.
 
 ### 8.9.1 Allgemeine Hinweise zur Handhabung von Kartuschen {#section-8-9-1}
 

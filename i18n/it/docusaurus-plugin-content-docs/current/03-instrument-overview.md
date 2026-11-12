@@ -94,7 +94,7 @@ La targhetta identificativa dell’alimentatore di BactoSense si trova sull’al
 | Protocolli e opzioni Ethernet | Interfaccia web Desktop remoto (VNC) Modbus TCP HTTP / HTTPS FTP |
 | Ingressi digitali | 4 x ingressi digitali, ingresso con optoaccoppiatore: tensione diretta 1.2 VDC con 3 kΩ in serie, catodo collegato a COMMON, max. 30 mA, max. 50 mW |
 | Uscite analogiche e digitali | Uscite analogiche: 2 x 0/4 – 20 mA, carico consigliato 250 Ω Uscite digitali: 4 x uscite digitali, liberamente configurabili, uscita SSR: max. 48 VDC, max. 300 mW, resistenza in conduzione 2 Ω |
-| Display | Touchscreen capacitivo WVGA da 7.0“ |
+| Display | Touchscreen capacitivo WVGA da 7.0″ |
 | Connettività mobile | Modulo di connettività [BactoLink](/other-manuals/bactolink) (opzionale) |
 | Analisi avanzata dei dati | Esportazione di file FCS 3.1 |
 | Capacità di memorizzazione dei dati | 128 GB |

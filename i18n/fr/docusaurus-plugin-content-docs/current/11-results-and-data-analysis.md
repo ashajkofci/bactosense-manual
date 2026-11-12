@@ -255,16 +255,16 @@ Pour plus d’informations sur la façon d’ajuster les fenêtres, voir la sect
 
 ### 11.4.1 Re-fenêtrage des mesures {#section-11-4-1}
 
-Le re-fenêtrage est le processus consistant à appliquer un fenêtrage différent aux données de mesure existantes.
+Le re-fenêtrage consiste à appliquer un autre jeu de fenêtres aux données de mesure existantes.
 
-- Une condition préalable au re-fenêtrage est la présence d’un tel fenêtrage supplémentaire. Sur l’écran d’accueil, appuyez sur Paramètres, puis sur Fenêtres pour afficher les jeux de fenêtres disponibles.
+- Le re-fenêtrage nécessite la présence d’un autre jeu de fenêtres. Sur l’écran d’accueil, appuyez sur Paramètres, puis sur Fenêtres pour afficher les jeux de fenêtres disponibles.
 - Le processus de modification d’un fenêtrage existant est décrit dans la section [Modification des fenêtrages existants](11-results-and-data-analysis.md#section-11-4-3).
 
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
 | 1\. | Sur l’écran d’accueil, appuyez sur Paramètres pour ouvrir le menu des paramètres. |  |
 | 2\. | Appuyez sur Journaux, puis sur Results (manual mode) ou Results (online mode) selon le mode de mesure utilisé. |  |
-| 3\. | Pour re-fenêtrer une seule mesure, sélectionnez-la pour afficher la page des détails du résultat. Pour re-fenêtrer plusieurs mesures (lot), appuyez longuement sur la mesure jusqu’à ce qu’elle soit mise en surbrillance et qu’une case à cocher apparaisse à gauche. Appuyez ensuite les mesures souhaitées pour les sélectionner. |  |
+| 3\. | Pour re-fenêtrer une seule mesure, sélectionnez-la pour afficher la page des détails du résultat. Pour re-fenêtrer plusieurs mesures (lot), appuyez longuement sur une mesure jusqu’à ce qu’elle soit mise en surbrillance et qu’une case à cocher apparaisse à gauche. Appuyez ensuite sur les autres mesures souhaitées pour les sélectionner. |  |
 | 4\. | Appuyez sur Re-fenêtrer dans la vue d’une mesure, ou sur Re-Fenêtrer lorsque plusieurs mesures sont sélectionnées. |  |
 | 5\. | Sélectionnez le fenêtrage souhaité en cochant sa case. |  |
 | 6\. | Appuyez sur Confirmer pour lancer le re-fenêtrage. | :::info[Informations supplémentaires] Selon le nombre de mesures, le recalcul avec de nouvelles fenêtres peut prendre plusieurs minutes. ::: |
@@ -386,11 +386,11 @@ Pour comparer les résultats du BactoSense à ceux d’un autre cytomètre en fl
 | 4\. | :::info[Informations supplémentaires] Appuyez sur Home. Appuyez sur Back autant de fois que nécessaire pour faire apparaître le bouton Home. ::: | ![BactoSense — Bouton d’accueil](/img/gui/icons/home-button.png "width=48 class=manual-icon") | ![BactoSense — Bouton de retour](/img/gui/icons/back-button.png "width=48 class=manual-icon") |
 | 5\. | Sur l’écran d’accueil, appuyez sur Mode et sélectionnez Mode manuel. Appuyez sur Retour, puis sur Mesurer pour ouvrir l’assistant de mesure. |  | \< |
 | 6\. | Sélectionnez Amorçage dans la liste des protocoles. | Voir le manuel d’utilisation, section [Réalisation d’un amorçage](../measurements/#section-10-9-3). | \< |
-| 7\. | Appuyez sur les boutons Suivant et Démarrer. Laissez le protocole d’amorçage se terminer. |  | \< |
+| 7\. | Appuyez sur Suivant, puis sur Démarrer. Laissez le protocole d’amorçage se terminer. |  | \< |
 | 8\. | Appuyez sur Nouveau, choisissez Analyse Billes dans la liste, puis appuyez sur Suivant et Démarrer. |  | \< |
 | 9\. | Attendez les résultats et, si nécessaire, ajustez précisément la fenêtre du dotplot FL1 vs FL2 pour ne compter que les 4 populations de billes. Il est important de s’assurer que le bruit, le fond et les débris ne sont pas pris en compte dans la fenêtre. | Voir la section [Modification des fenêtrages existants](../results-and-data-analysis/#section-11-4-3) pour ajuster la fenêtre. ![Illustration du tableau, page du manuel 112](/img/manual/render-fa85ea9255cb.webp "width=246 class=manual-figure") | \< |
 | 10\. | Sur l’histogramme FL1 en fonction du nombre de cellules, estimez la valeur logarithmique du centre de chaque pic sur l’axe FL1. Dans cet exemple, nous obtenons environ (en log) : 1<sup>er</sup> pic = 4.05 2<sup>e</sup> pic = 4.3 3<sup>e</sup> pic = 5.35 4<sup>e</sup> pic = 6.2 | ![Illustration du tableau, page du manuel 113](/img/manual/cell-c2ba9a559620.png "width=246 class=manual-figure") | \< |
-| 11\. | Mesurez les mêmes billes avec l’autre cytomètre en flux à comparer et répétez les étapes 10 et 11. Dans cet exemple, nous obtenons environ (en log) : 1<sup>er</sup> pic = log(10<sup>3</sup>) = 3 2<sup>e</sup> pic = log(2*10<sup>3</sup>) = 3.3 3<sup>e</sup> pic = log(2.4*10<sup>4</sup>) = 4.4 4<sup>e</sup> pic = log(1.6*10<sup>5</sup>) = 5.2 | ![Illustration du tableau, page du manuel 113](/img/manual/cell-4c2343e0bbfe.png "width=246 class=manual-figure") | \< |
+| 11\. | Mesurez les mêmes billes avec l’autre cytomètre en flux à comparer. Appliquez à ses résultats les étapes de fenêtrage et d’estimation des pics décrites aux étapes 9 et 10. Dans cet exemple, nous obtenons environ (en log) : 1<sup>er</sup> pic = log(10<sup>3</sup>) = 3 2<sup>e</sup> pic = log(2*10<sup>3</sup>) = 3.3 3<sup>e</sup> pic = log(2.4*10<sup>4</sup>) = 4.4 4<sup>e</sup> pic = log(1.6*10<sup>5</sup>) = 5.2 | ![Illustration du tableau, page du manuel 113](/img/manual/cell-4c2343e0bbfe.png "width=246 class=manual-figure") | \< |
 | 12\. | Avec les différentes valeurs obtenues pour les deux instruments, il est maintenant possible de comparer leurs échelles et leurs fenêtres de mesure. |  | \< |
 
 </div>

@@ -39,7 +39,7 @@ Avant d’intervenir sur l’instrument, assurez-vous d’avoir lu attentivement
 
 La maintenance préventive du BactoSense est une intervention programmée pour remplacer les pièces d’usure, mettre à jour le logiciel et inspecter et valider l’instrument. La maintenance préventive est importante pour prévenir les défaillances et optimiser les performances et la fiabilité. Elle ne peut être réalisée que par des professionnels en entretien et en réparation spécifiquement formés par bNovate.
 
-Une maintenance préventive est due soit après la consommation de 3 cartouches, soit après 1 an, selon la première éventualité.
+Une maintenance préventive est due après l’utilisation de 3 cartouches ou après 1 an, selon la première éventualité.
 
 Contactez l’assistance bNovate ou votre partenaire local en entretien et en réparation pour voir les options disponibles. Vous trouverez les coordonnées dans la section [Contacter le service client](19-contact.md#section-19-1).
 
@@ -137,7 +137,7 @@ Ce protocole décrit comment nettoyer le dispositif d’échantillonnage manuel 
 
 ### 15.2.4 Nettoyer le dispositif d'échantillonnage en ligne {#section-15-2-4}
 
-La procédure suivante permet d'éliminer les contaminations biologiques du dispositif d'échantillonnage en ligne. En cas de contaminations biologiques persistantes ou de suspicion de contaminations non biologiques, remplacez les tubes du dispositif d'échantillonnage en ligne comme décrit à la section [Remplacement des tuyaux du dispositif d’échantillonnage en ligne](15-maintenance.md#section-15-2-5) et contactez support@bnovate.com pour obtenir de l'aide.
+La procédure suivante aide à éliminer les contaminations biologiques du dispositif d’échantillonnage en ligne. En cas de contaminations biologiques persistantes ou de suspicion de contaminations non biologiques, remplacez les tubes du dispositif d'échantillonnage en ligne comme décrit à la section [Remplacement des tuyaux du dispositif d’échantillonnage en ligne](15-maintenance.md#section-15-2-5) et contactez support@bnovate.com pour obtenir de l'aide.
 
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |

@@ -110,7 +110,7 @@ Dieses Protokoll beschreibt, wie das manuelle Probenahmegerät mittels der Washs
 | 7. | Montieren Sie die Washstation, indem Sie sie an das manuelle Probenahmegerät anschrauben, ähnlich wie ein Probenröhrchen. Achten Sie darauf, dass Sie sie bis zum Ende des Gewindes einbauen. |  |
 | 8. | Drücken Sie die Taste Start und warten Sie 15 Minuten, bis das Protokoll abgeschlossen ist. |  |
 | 9. | Soll das Gerät inaktiv bleiben oder dekommissioniert werden, lassen Sie die Washstation am manuellen Probenahmegerät angebracht. Möchten Sie weiterhin messen, entfernen Sie die Washstation und schließen Sie mit dem Deckel eines 5-mL-Röhrchens mit Schraubverschluss. |  |
-| 10. | Besteht die Verunreinigung weiterhin, wiederholen Sie den Vorgang mit weiteren Replikationen. Besteht sie danach immer noch, verwenden Sie das [Reinigungskit](/other-manuals/cleaning-kit), um das Gerät zu reinigen (siehe [Verbrauchsmaterial](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
+| 10. | Besteht die Verunreinigung weiterhin, wiederholen Sie den Vorgang mit weiteren Replikationen. Besteht sie danach immer noch, verwenden Sie das [Reinigungskit](/other-manuals/cleaning-kit), um das Gerät zu dekontaminieren (siehe [Verbrauchsmaterial](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
 
 ### 15.2.3 Manuelles Probenahmegerät mittels Basisreinigung reinigen {#section-15-2-3}
 
@@ -133,7 +133,7 @@ Dieses Protokoll beschreibt, wie das manuelle Probenahmegerät ohne Washstation 
 | 13. | Sobald das Protokoll abgeschlossen ist, entfernen Sie das 5mL-Röhrchen mit Schraubverschluss und entsorgen Sie es. |  |
 | 14. | Drücken Sie das Startseiten-Symbol oben links in der Benutzeroberfläche, um zur Startseite zurückzukehren. |  |
 | 15. | Möchten Sie mit weiteren Messungen fortfahren, führen Sie zuvor einen Ansaugvorgang durch. Die Anweisungen finden Sie unter [Durchführen eines Ansaugens](10-measurements.md#section-10-9-3). Soll das Gerät inaktiv bleiben oder abgeschaltet werden, so bringen Sie ein frisches Probenröhrchen an das manuelle Probenahmegerät an. |  |
-| 16. | Stellen Sie weiterhin eine Verunreinigung fest, wiederholen Sie den Vorgang mit mehr Replikationen. Besteht sie danach immer noch, verwenden Sie das [Reinigungskit](/other-manuals/cleaning-kit), um das Gerät zu reinigen (Verbrauchsmaterialien siehe [Verbrauchsmaterial](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
+| 16. | Stellen Sie weiterhin eine Verunreinigung fest, wiederholen Sie den Vorgang mit mehr Replikationen. Besteht sie danach immer noch, verwenden Sie das [Reinigungskit](/other-manuals/cleaning-kit), um das Gerät zu dekontaminieren (Verbrauchsmaterialien siehe [Verbrauchsmaterial](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
 
 ### 15.2.4 Online-Probenahmegerät reinigen {#section-15-2-4}
 

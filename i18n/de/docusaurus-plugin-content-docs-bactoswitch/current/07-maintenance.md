@@ -20,7 +20,7 @@ Vermeiden Sie die Kontaminierung des Geräts. Tragen Sie beim Hantieren mit Schl
 
 **Vor allen Wartungsarbeiten**
 
-- Schließen Sie die Ein/Aus-Ventile am Anschluss der Wasserleitungen.
+- Schließen Sie die Ein/Aus-Ventile an den Anschlüssen der Wasserleitungen.
 - Trennen Sie die Netzstromversorgung, um jegliches Kurzschlussrisiko zu vermeiden.
 
 :::
@@ -44,7 +44,7 @@ Bei anhaltender biologischer oder nicht biologischer Kontamination der Schläuch
 
 **Vor dem Trennen der Schläuche**
 
-- Schließen Sie die Ein/Aus-Ventile am Anschluss der Wasserleitungen.
+- Schließen Sie die Ein/Aus-Ventile an den Anschlüssen der Wasserleitungen.
 - Trennen Sie die Netzstromversorgung, um jegliches Kurzschlussrisiko zu vermeiden.
 
 :::

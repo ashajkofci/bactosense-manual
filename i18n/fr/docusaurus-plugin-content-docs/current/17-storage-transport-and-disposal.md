@@ -111,40 +111,35 @@ Reportez-vous aux instructions de transport suivantes pour transporter le BactoS
 
 **Tableau 17-1 Instructions de transport du BactoSense**
 
-MODE INSTRUCTIONS
+**Expédition standard**
 
 - Retirez la cartouche en suivant la procédure Retirer la cartouche sous Accueil → Paramètres → Maintenance → Changement cartouche. Les utilisateurs Basic ouvrent Changement cartouche directement depuis Paramètres.
 - Emballez le BactoSense et la cartouche dans leurs boîtes en carton standard avec des inserts en mousse.
 - Expédiez sur une palette ou un plateau.
 - Effectuez une autovérification de l’instrument (section [Autovérification automatique](16-warnings-errors-and-troubleshooting.md#section-16-6)) et une validation de l’instrument en utilisant le [kit de validation](/other-manuals/validation-kit) lors de la réinstallation de l’instrument.
 
-Expédition standard
+**Transport longue distance en voiture ou sur route irrégulière**
 
 - Retirez la cartouche en suivant la procédure Retirer la cartouche sous Accueil → Paramètres → Maintenance → Changement cartouche. Les utilisateurs Basic ouvrent Changement cartouche directement depuis Paramètres.
 - Emballer le BactoSense et la cartouche dans leur boîte en carton standard avec des inserts en mousse, ou utiliser la mallette de transport (voir les accessoires dans la section [Accessoires](18-supply-scope-accessories-and-consumables.md#section-18-2)).
 - Lors de la réinstallation de l’instrument, effectuez un Nettoyage Échantillonneur avec Washstation (voir la section [Nettoyage du dispositif d’échantillonnage manuel avec la Washstation](15-maintenance.md#section-15-2-2)).
 
-Transport longue distance en voiture
-
-ou
-
-route irrégulière en voiture
+**Transport courte distance en voiture, route régulière, instrument sur le dos**
 
 - Retirez la cartouche en suivant la procédure Retirer la cartouche sous Accueil → Paramètres → Maintenance → Changement cartouche. Les utilisateurs Basic ouvrent Changement cartouche directement depuis Paramètres.
 - Transportez le BactoSense dans la mallette de transport (voir les accessoires dans la section [Accessoires](18-supply-scope-accessories-and-consumables.md#section-18-2)).
 - Lors de la réinstallation de l’instrument, effectuez un Nettoyage Échantillonneur avec Washstation (voir la section [Nettoyage du dispositif d’échantillonnage manuel avec la Washstation](15-maintenance.md#section-15-2-2)).
 
-Transport courte distance en voiture, route régulière, instrument sur le dos
+**Transport courte distance en voiture, route régulière, instrument en position verticale**
 
 - Transportez dans la mallette de transport (voir les accessoires dans la section [Accessoires](18-supply-scope-accessories-and-consumables.md#section-18-2)), sans retirer la cartouche.
 - Effectuez un Remplissage Tubes après avoir rallumé l’instrument. Voir la section [Vue d’ensemble des protocoles en mode manuel](10-measurements.md#section-10-9-1).
 
-Transport courte distance en voiture, route régulière, instrument en position verticale
+**Transport courte distance à l’intérieur de l’installation, instrument en position verticale**
 
 - Transportez dans la mallette de transport (voir les accessoires dans la section [Accessoires](18-supply-scope-accessories-and-consumables.md#section-18-2)) ou à la main, sans retirer la cartouche.
 - Effectuez un Remplissage Tubes après avoir rallumé l’instrument. Voir la section [Vue d’ensemble des protocoles en mode manuel](10-measurements.md#section-10-9-1).
 
-Transport courte distance à l’intérieur de l’installation, instrument en position verticale
 
 ### 17.2.2 Transport de la cartouche {#section-17-2-2}
 
@@ -203,7 +198,9 @@ Préparations
 | 10. | Si vous expédiez des articles supplémentaires, étiquetez-les avec le numéro de série du BactoSense. |
 | 11. | Indiquez à l’aide d’autocollants que le contenu des colis est fragile, doit être conservé au sec et ne doit être transporté que dans le sens indiqué. |
 
-Retour Expédiez le BactoSense à bNovate ou à un partenaire distributeur, en respectant les exigences générales de température et d’humidité de stockage indiquées dans les sections [Données techniques](03-instrument-overview.md#section-3-2) et [Stockage du BactoSense](17-storage-transport-and-disposal.md#section-17-1-1).
+**Retour**
+
+Expédiez le BactoSense à bNovate ou à un partenaire distributeur, en respectant les exigences générales de température et d’humidité de stockage indiquées dans les sections [Données techniques](03-instrument-overview.md#section-3-2) et [Stockage du BactoSense](17-storage-transport-and-disposal.md#section-17-1-1).
 
 ### 17.3.2 Retour d’une cartouche pour recharge {#section-17-3-2}
 
@@ -216,7 +213,9 @@ Préparations
 | 3. | Emballez la cartouche dans sa boîte en carton standard. |
 | 4. | Indiquez à l’aide d’autocollants que le contenu des colis est fragile, doit être conservé au sec et ne doit être transporté que dans le sens indiqué. |
 
-Retour pour recharge Expédiez la cartouche à bNovate pour recharge, en respectant les exigences générales de température et d’humidité de stockage indiquées dans les sections [Données techniques](03-instrument-overview.md#section-3-2) et [Stockage de la cartouche](17-storage-transport-and-disposal.md#section-17-1-3).
+**Retour pour recharge**
+
+Expédiez la cartouche à bNovate pour recharge, en respectant les exigences générales de température et d’humidité de stockage indiquées dans les sections [Données techniques](03-instrument-overview.md#section-3-2) et [Stockage de la cartouche](17-storage-transport-and-disposal.md#section-17-1-3).
 
 ## 17.4 Recyclage et élimination {#section-17-4}
 

@@ -254,12 +254,14 @@ Les protocoles de maintenance peuvent être exécutés avant ou entre les protoc
 | Nettoyage échantillonneur avec Washstation | Nettoie le dispositif d’échantillonnage manuel de manière à ce que le filtre extérieur, l’intérieur et l’extérieur de l’aiguille puissent être entièrement lavés entre les mesures, après un échantillon sale ou en cas de blocage du filtre. Nécessite que la Washstation soit monté sur le dispositif d’échantillonnage manuel et qu’une cartouche soit installée pour que ce protocole apparaisse. Ce protocole a un pouvoir de désinfection supérieur à celui du protocole Nettoyage du dispositif d’échantillonnage et doit donc être privilégié. L’utilisation de la Washstation est le meilleur moyen de garder le dispositif d’échantillonnage manuel propre et d’éviter les contaminations croisées. Vous trouverez les instructions pour ce protocole dans la section [Nettoyage du dispositif d’échantillonnage manuel avec la Washstation](15-maintenance.md#section-15-2-2). |
 | Nettoyage échantillonneur | Nettoie le dispositif d’échantillonnage afin que le filtre externe et l’intérieur de l’aiguille puissent être lavés après un échantillon extrêmement chargé ou en cas de blocage du filtre. Vous trouverez les instructions pour ce protocole dans la section [Nettoyage du dispositif d’échantillonnage manuel avec un nettoyage de base](15-maintenance.md#section-15-2-3). |
 | Remplissage Tubes | Remplit toutes les tubulures transportant les réactifs de la cartouche pour éliminer les bulles d’air. Nettoie les optiques à la fin du processus. |
-| Amorçage et Nettoyage Optique | Remplit la tubulure avec le liquide de l’échantillon. Aide à diluer les résidus après le nettoyage du dispositif d’échantillonnage. Se termine par l’étape de nettoyage. |
+| Amorçage et Nettoyage Optique | Remplit la tubulure avec le liquide de l’échantillon. Aide à diluer les résidus, par exemple après le protocole Nettoyage échantillonneur. Se termine par l’étape de nettoyage. |
 | Amorçage | Charge l’échantillon dans l’instrument. Vous trouverez les instructions dans la section [Réalisation d’un amorçage](10-measurements.md#section-10-9-3). |
 
 ### 10.9.2 Vue d’ensemble des protocoles en mode en ligne {#section-10-9-2}
 
-En mode en ligne, les opérateurs peuvent choisir entre deux protocoles d’analyse. Tableau 10-3 Protocoles d’analyse du mode en ligne
+En mode en ligne, les opérateurs peuvent choisir entre deux protocoles d’analyse.
+
+**Tableau 10-3 Protocoles d’analyse du mode en ligne**
 
 | NOM DU PROTOCOLE | DESCRIPTION DU PROTOCOLE |
 | --- | --- |

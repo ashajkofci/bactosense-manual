@@ -19,7 +19,7 @@ Evite la contaminación del equipo. Utilice guantes de nitrilo al manipular los 
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMÁGENES |
 | --- | --- | --- |
 | 1. | Finalice cualquier serie de mediciones en curso. |  |
-| 2. | Cierre las válvulas de cierre de la conexión a las tuberías de agua para detener el flujo de agua a través de los tubos de BactoSwitch y del dispositivo de muestreo en línea. |  |
+| 2. | Cierre las válvulas de cierre de las conexiones a las tuberías de agua para detener el flujo de agua a través de los tubos de BactoSwitch y del dispositivo de muestreo en línea. |  |
 | 3. | Desconecte la alimentación de red de BactoSwitch para evitar cualquier riesgo de cortocircuito. |  |
 | 4. | Retire la clavija de alimentación de la toma del conector de alimentación y vuelva a colocar la tapa protectora del conector de alimentación. |  |
 | 5. | Retire el cable USB-C de BactoSwitch y de BactoSense y vuelva a colocar las tapas protectoras de ambos conectores. |  |

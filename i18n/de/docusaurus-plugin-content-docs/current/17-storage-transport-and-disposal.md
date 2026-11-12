@@ -111,40 +111,35 @@ Bitte befolgen Sie für einen sicheren Transport des BactoSense die folgenden Tr
 
 **Tabelle 17-1 BactoSense-Transportanweisungen**
 
-ANWEISUNGEN ZUM MODUS
+**Standardversand**
 
 - Entfernen Sie die Kartusche mit der Prozedur Kartusche entfernen unter Startbildschirm → Einstellungen → Wartung → Kartusche wechseln. Basic-Benutzer öffnen Kartusche wechseln direkt unter Einstellungen.
 - Packen Sie BactoSense und Kartusche in ihre Standardkartons mit Schaumstoffeinlagen.
 - Versand auf einer Palette oder einem Gestell.
 - Führen Sie nach erfolgtem Wiedereinbau einen Geräteselbsttest ([Automatischer Selbsttest](16-warnings-errors-and-troubleshooting.md#section-16-6)) und eine Gerätevalidierung mittels des [Validierungskits](/other-manuals/validation-kit) durch.
 
-Standardversand
+**Lange Strecke mit dem Auto oder unebene Straße mit dem Auto**
 
 - Entfernen Sie die Kartusche mit der Prozedur Kartusche entfernen unter Startbildschirm → Einstellungen → Wartung → Kartusche wechseln. Basic-Benutzer öffnen Kartusche wechseln direkt unter Einstellungen.
 - Packen Sie BactoSense und Kartusche in ihre Standardkartons mit Schaumstoffeinlagen. Alternativ verwenden Sie den Transportbehälter (siehe [Zubehör](18-supply-scope-accessories-and-consumables.md#section-18-2)).
 - Führen Sie eine Probenahmegerätereinigung mit Washstation durch, wenn Sie das Gerät aufbauen (siehe [Manuelles Probenahmegerät mit Washstation reinigen](15-maintenance.md#section-15-2-2)).
 
-Weite Strecken über die Straße
-
-oder
-
-Unebene Straße per Kfz
+**Kurze Strecke mit dem Auto, ebene Straße, Gerät liegt auf der Rückseite**
 
 - Entfernen Sie die Kartusche mit der Prozedur Kartusche entfernen unter Startbildschirm → Einstellungen → Wartung → Kartusche wechseln. Basic-Benutzer öffnen Kartusche wechseln direkt unter Einstellungen.
 - Transportieren Sie den BactoSense im Transportbehälter (siehe [Zubehör](18-supply-scope-accessories-and-consumables.md#section-18-2)).
 - Führen Sie eine Probenahmegerätereinigung mit Washstation durch, wenn Sie das Gerät aufbauen (siehe [Manuelles Probenahmegerät mit Washstation reinigen](15-maintenance.md#section-15-2-2)).
 
-Kurze Entfernung per PKW, ebene Straße, Gerät liegt auf der Rückseite
+**Kurze Strecke mit dem Auto, ebene Straße, Gerät steht aufrecht**
+
+- Transport im Transportbehälter (siehe [Zubehör](18-supply-scope-accessories-and-consumables.md#section-18-2)), Kartusche wurde nicht entfernt.
+- Führen Sie nach dem Einschalten des Geräts einen Prozess Schläuche befüllen durch, siehe [Protokollübersicht im manuellen Modus](10-measurements.md#section-10-9-1).
+
+**Kurze Strecke innerhalb des Betriebs, Gerät steht aufrecht**
 
 - Transport im Transportbehälter oder per Hand (siehe [Zubehör](18-supply-scope-accessories-and-consumables.md#section-18-2)), Kartusche wurde nicht entfernt.
 - Führen Sie nach dem Einschalten des Geräts einen Prozess Schläuche befüllen durch, siehe [Protokollübersicht im manuellen Modus](10-measurements.md#section-10-9-1).
 
-Kurze Entfernung per PKW, ebene Straße, Gerät steht aufrecht
-
-- Transport im Transportbehälter oder per Hand (siehe [Zubehör](18-supply-scope-accessories-and-consumables.md#section-18-2)), Kartusche wurde nicht entfernt.
-- Führen Sie nach dem Einschalten des Geräts einen Prozess Schläuche befüllen durch, siehe [Protokollübersicht im manuellen Modus](10-measurements.md#section-10-9-1).
-
-Kurze Entfernung innerhalb eines Gebäudes, Gerät steht aufrecht
 
 ### 17.2.2 Transport der Kartusche {#section-17-2-2}
 
@@ -173,7 +168,7 @@ Falls Sie den BactoSense oder Zubehörteile an bNovate oder einen Distributionsp
 
 Geben Sie keine kontaminierten Materialien zurück
 
-Geräte, die in Kontakt mit gefährlichen Substanzen dürfen nicht undekontaminiert und ohne Dekontaminationszertifikat verschickt werden. Bitte wenden Sie sich an support@bnovate.com, um weitere Informationen zu erhalten.
+Geräte, die mit gefährlichen Substanzen in Kontakt gekommen sind, müssen vor dem Versand dekontaminiert und von einem Dekontaminationszertifikat begleitet werden. Bitte wenden Sie sich an support@bnovate.com, um weitere Informationen zu erhalten.
 
 :::
 
@@ -203,7 +198,9 @@ Vorbereitungen
 | 10. | Verschicken Sie zusätzliche Gegenstände, versehen Sie diese bitte mit der Seriennummer des BactoSense. |
 | 11. | Kennzeichnen Sie mittels Aufklebern, dass der Paketinhalt zerbrechlich ist, trocken zu halten ist und nur in der angegebenen Lage transportiert werden soll. |
 
-Zurück Schicken Sie den BactoSense an bNovate oder einen Distributionspartner und halten Sie die allgemeinen Anforderungen hinsichtlich Lagertemperatur und Luftfeuchtigkeit unter [Technische Daten](03-instrument-overview.md#section-3-2) und [Lagerung des BactoSense](17-storage-transport-and-disposal.md#section-17-1-1) ein.
+**Rückgabe**
+
+Schicken Sie den BactoSense an bNovate oder einen Distributionspartner und halten Sie die allgemeinen Anforderungen hinsichtlich Lagertemperatur und Luftfeuchtigkeit unter [Technische Daten](03-instrument-overview.md#section-3-2) und [Lagerung des BactoSense](17-storage-transport-and-disposal.md#section-17-1-1) ein.
 
 ### 17.3.2 Rückgabe einer Kartusche zur Wiederbefüllung {#section-17-3-2}
 
@@ -216,7 +213,9 @@ Vorbereitungen
 | 3. | Packen Sie die Kartusche in ihre Originalverpackung. |
 | 4. | Kennzeichnen Sie mittels Aufklebern, dass der Paketinhalt zerbrechlich ist, trocken zu halten ist und nur in der angegebenen Lage transportiert werden soll. |
 
-Rückgabe oder Wiederbefüllen Schicken Sie die Kartusche an bNovate und halten Sie die allgemeinen Anforderungen hinsichtlich Lagertemperatur und Luftfeuchtigkeit unter [Technische Daten](03-instrument-overview.md#section-3-2) und [Lagerung der Kartusche](17-storage-transport-and-disposal.md#section-17-1-3) ein.
+**Rückgabe zur Wiederbefüllung**
+
+Schicken Sie die Kartusche an bNovate und halten Sie die allgemeinen Anforderungen hinsichtlich Lagertemperatur und Luftfeuchtigkeit unter [Technische Daten](03-instrument-overview.md#section-3-2) und [Lagerung der Kartusche](17-storage-transport-and-disposal.md#section-17-1-3) ein.
 
 ## 17.4 Recycling und Entsorgung {#section-17-4}
 
@@ -233,6 +232,6 @@ Die Entsorgung des BactoSense, seines Zubehörs und seiner Verbrauchsmaterialien
 | Elektronik | Leiterplatten, elektromechanische Bauteile | Als Elektroschrott entsorgen. Beachten Sie die örtlichen Vorschriften. |
 | Optik | Glas, Aluminium | Recycling als Glasmüll bzw. Altmetall |
 | Gehäuse | Styrol-Butadien lackiert, Edelstahl, Polystyrol lackiert, Siliziumdioxidkügelchen (Trockenmittelbeutel), Filter | Wertstoffhof |
-| Kartusche | :::caution[Gebrauchte Kartuschen zurücksenden] Kartusche bitte nicht auseinandernehmen oder im Hausmüll entsorgen. ::: | Bitte bereiten Sie die Kartusche gemäß [Entfernen einer Kartusche](../general-operations-and-configurations/#section-8-9-5) für die Rückgabe vor und geben Sie sie gemäß [Rückgabe einer Kartusche zur Wiederbefüllung](../storage-transport-and-disposal/#section-17-3-2) an bNovate zurück. |
+| Kartusche | :::caution[Gebrauchte Kartuschen zurücksenden] Nehmen Sie die Kartusche nicht auseinander und entsorgen Sie sie nicht. ::: | Bitte bereiten Sie die Kartusche gemäß [Entfernen einer Kartusche](../general-operations-and-configurations/#section-8-9-5) für die Rückgabe vor und geben Sie sie mit einer Erklärung gemäß [Rückgabe einer Kartusche zur Wiederbefüllung](../storage-transport-and-disposal/#section-17-3-2) an bNovate zurück. |
 
 ::::

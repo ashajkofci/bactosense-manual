@@ -38,7 +38,7 @@ El comportamiento de los indicadores luminosos se resume en la tabla 2-1. Los n�
 
 ## 2.3 Principio de funcionamiento {#section-2-3}
 
-El esquema siguiente muestra el funcionamiento básico de BactoSwitch (con la cubierta frontal retirada para mayor claridad). El agua de cada línea de entrada (1) pasa por una válvula antirretorno (2, no visible), por un regulador de presión (3), a continuación por una válvula de aguja de regulación del caudal (4) y, por último, por una electroválvula (5). Las líneas de agua abiertas (cada línea puede estar abierta o cerrada) se unen a continuación y salen de BactoSwitch hacia el dispositivo de muestreo en línea de BactoSense (6). Tras pasar por el dispositivo de muestreo, el agua vuelve a BactoSwitch, atraviesa el caudalímetro (7) y llega finalmente al desagüe (8).
+El esquema siguiente muestra el funcionamiento básico de BactoSwitch (con la cubierta frontal retirada para mayor claridad). El agua de cada línea de entrada (1) pasa por una válvula antirretorno (2, no visible), por un regulador de presión (3), a continuación por una válvula de aguja de regulación del caudal (4) y, por último, por una electroválvula (5). Cada línea de entrada puede estar abierta o cerrada. El agua de las líneas abiertas se une y sale de BactoSwitch hacia el dispositivo de muestreo en línea de BactoSense (6). Tras pasar por el dispositivo de muestreo, el agua vuelve a BactoSwitch, atraviesa el caudalímetro (7) y llega finalmente al desagüe (8).
 
 ![Principio de funcionamiento de BactoSwitch con el recorrido del agua numerado](/img/bactoswitch/working-principle.png "width=700")
 

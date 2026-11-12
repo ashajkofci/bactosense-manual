@@ -38,7 +38,7 @@ Il comportamento delle spie luminose è riepilogato nella Tabella 2-1. I numeri 
 
 ## 2.3 Principio di funzionamento {#section-2-3}
 
-Lo schema seguente illustra il funzionamento di base di BactoSwitch (coperchio frontale rimosso per maggiore chiarezza). L’acqua di ciascuna linea di ingresso (1) attraversa una valvola di non ritorno (2, non visibile), un regolatore di pressione (3), quindi una valvola a spillo di regolazione del flusso (4) e infine un’elettrovalvola (5). Le linee dell’acqua aperte (ognuna delle quali può essere aperta o chiusa) vengono quindi riunite e l’acqua esce da BactoSwitch verso il dispositivo di campionamento in linea di BactoSense (6). Dopo aver attraversato il dispositivo di campionamento, l’acqua ritorna a BactoSwitch, attraversa il flussimetro (7) e infine raggiunge lo scarico (8).
+Lo schema seguente illustra il funzionamento di base di BactoSwitch (coperchio frontale rimosso per maggiore chiarezza). L’acqua di ciascuna linea di ingresso (1) attraversa una valvola di non ritorno (2, non visibile), un regolatore di pressione (3), quindi una valvola a spillo di regolazione del flusso (4) e infine un’elettrovalvola (5). Ciascuna linea di ingresso può essere aperta o chiusa. L’acqua delle linee aperte confluisce ed esce da BactoSwitch verso il dispositivo di campionamento in linea di BactoSense (6). Dopo aver attraversato il dispositivo di campionamento, l’acqua ritorna a BactoSwitch, attraversa il flussimetro (7) e infine raggiunge lo scarico (8).
 
 ![Principio di funzionamento di BactoSwitch con il percorso dell’acqua numerato](/img/bactoswitch/working-principle.png "width=700")
 

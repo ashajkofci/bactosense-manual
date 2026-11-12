@@ -254,12 +254,14 @@ I protocolli di manutenzione possono essere eseguiti prima o tra i protocolli di
 | Clean Sampling Device with Washstation | Pulisce il dispositivo di campionamento manuale in modo da lavare completamente il filtro esterno e l’interno e l’esterno dell’ago tra le misurazioni, dopo un campione sporco o in caso di ostruzione del filtro. Perché questo protocollo compaia, la Washstation deve essere montata sul dispositivo di campionamento manuale e deve essere installata una cartuccia. Questo protocollo ha un potere disinfettante superiore a Clean Sampling Device e va quindi preferito. L’utilizzo della Washstation è il modo migliore per mantenere pulito il dispositivo di campionamento manuale ed evitare contaminazioni incrociate. Le istruzioni sono riportate nella sezione [Pulire il dispositivo di campionamento manuale con Washstation](15-maintenance.md#section-15-2-2). |
 | Clean Sampling Device | Pulisce il dispositivo di campionamento consentendo di lavare il filtro esterno e l’interno dell’ago dopo un campione estremamente carico o in caso di ostruzione del filtro. Le istruzioni sono riportate nella sezione [Pulire il dispositivo di campionamento manuale con pulizia di base](15-maintenance.md#section-15-2-3). |
 | Fill Tubing | Riempie tutti i tubi che trasportano reagenti dalla cartuccia per rimuovere le bolle. Al termine del processo pulisce l’ottica. |
-| Prime and Clean Optics | Riempie i tubi con il liquido del campione. Aiuta a diluire eventuali residui, ad esempio dopo una pulizia del dispositivo di campionamento. Termina con la fase di pulizia. |
+| Prime and Clean Optics | Riempie i tubi con il liquido del campione. Aiuta a diluire eventuali residui, ad esempio dopo un protocollo Clean Sampling Device. Termina con la fase di pulizia. |
 | Prime | Carica il campione nello strumento. Le istruzioni sono riportate nella sezione [Esecuzione di un adescamento (Prime)](10-measurements.md#section-10-9-3). |
 
 ### 10.9.2 Panoramica dei protocolli in modalità online {#section-10-9-2}
 
-In modalità online, gli operatori possono scegliere tra due protocolli di analisi. Tabella 10-3 Protocolli di analisi per la modalità online
+In modalità online, gli operatori possono scegliere tra due protocolli di analisi.
+
+**Tabella 10-3 Protocolli di analisi per la modalità online**
 
 | NOME DEL PROTOCOLLO | DESCRIZIONE DEL PROTOCOLLO |
 | --- | --- |

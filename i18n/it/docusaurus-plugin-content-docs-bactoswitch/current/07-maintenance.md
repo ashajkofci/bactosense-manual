@@ -20,7 +20,7 @@ Evitare la contaminazione dell’attrezzatura. Indossare guanti in nitrile quand
 
 **Prima di eseguire qualsiasi intervento di manutenzione**
 
-- Chiudere le valvole di intercettazione in corrispondenza del collegamento alle tubazioni dell’acqua.
+- Chiudere le valvole di intercettazione in corrispondenza dei collegamenti alle tubazioni dell’acqua.
 - Scollegare l’alimentazione di rete per evitare qualsiasi rischio di cortocircuito.
 
 :::
@@ -44,7 +44,7 @@ In caso di contaminazione biologica o non biologica persistente (ad es. ferro, m
 
 **Prima di scollegare i tubi**
 
-- Chiudere le valvole di intercettazione in corrispondenza del collegamento alle tubazioni dell’acqua.
+- Chiudere le valvole di intercettazione in corrispondenza dei collegamenti alle tubazioni dell’acqua.
 - Scollegare l’alimentazione di rete per evitare qualsiasi rischio di cortocircuito.
 
 :::

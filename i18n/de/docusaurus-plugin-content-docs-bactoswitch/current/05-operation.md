@@ -82,9 +82,9 @@ BactoCloud enthält Funktionen, mit denen sich die Mehrleitungsdaten eines mit e
 
 Die [Web-Benutzeroberfläche](/bactosense/web-user-interface) des BactoSense enthält Funktionen zum Filtern der Daten der verschiedenen BactoSwitch-Leitungen.
 
-Auf der Registerkarte **Ergebnisse** können Sie im Bereich **Ergebnisse des Online-Modus** die Daten entweder nach **Name** oder nach **Zeilen-ID** filtern. Diese Felder entsprechen den unter [Leitungskonfiguration](04-installation.md#section-4-6) vergebenen Leitungsnummern und -namen. Die Filterung gilt auch für das Diagramm des Online-Modus.
+Auf der Registerkarte **Ergebnisse** können Sie im Bereich **Ergebnisse des Online-Modus** die Daten nach **Name** oder **Stream ID** filtern. **Name** entspricht dem Leitungsnamen und **Stream ID** der unter [Leitungskonfiguration](04-installation.md#section-4-6) festgelegten Leitungsnummer. Die Filterung gilt auch für das Diagramm des Online-Modus.
 
-![Ergebnisse des Online-Modus in der Web-Benutzeroberfläche, nach Name gefiltert, mit hervorgehobenen Spalten Name und Zeilen-ID](/img/gui/de/bactoswitch-web-online-results.png "width=634")
+![Ergebnisse des Online-Modus in der Web-Benutzeroberfläche, nach Name gefiltert, mit hervorgehobenen Spalten Name und Stream ID](/img/gui/de/bactoswitch-web-online-results.png "width=634")
 
 ### 5.2.3 Steuerung des BactoSwitch über die I/O-Box des BactoSense {#section-5-2-3}
 

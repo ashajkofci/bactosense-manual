@@ -20,7 +20,7 @@ Il *pacchetto Scientific* è destinato ai professionisti della ricerca sulle acq
 
 - È disponibile per le cartucce TCC e ICC.
 - Il parametro di risultato è una concentrazione cellulare denominata “Gate+”.
-- Il gate può essere regolato in modo analogo ai gate predefiniti TCC o ICC. Consultare la sezione [Modifica dei gate](11-results-and-data-analysis.md#section-11-4).
+- Il gate può essere regolato nello stesso modo dei gate predefiniti TCC o ICC. Consultare la sezione [Modifica dei gate](11-results-and-data-analysis.md#section-11-4).
 
 **Rilevatori di diffusione in avanti e laterale** Il rilevatore di diffusione in avanti (FSC) misura la luce diffusa dai batteri o da altre particelle. Il rilevatore è posizionato a un piccolo angolo rispetto alla direzione del fascio laser e misura quindi i segnali luminosi in direzione “in avanti”. Il rilevatore di diffusione laterale (SSC), invece, è posizionato a 90 gradi rispetto alla direzione del fascio e misura la luce diffusa lateralmente. La combinazione delle informazioni di fluorescenza e diffusione fornisce dati ad alto contenuto informativo, consentendo applicazioni quali l’impronta microbiologica, la profilazione o il rilevamento di anomalie. In particolare, i rilevatori di diffusione consentono un’impronta precisa (BactoScore) per seguire i cambiamenti nella popolazione batterica.
 
