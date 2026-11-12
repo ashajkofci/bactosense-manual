@@ -363,7 +363,7 @@ Top bar icons are displayed in the bar in the top of the display. They indicate 
 
 ## 8.9 Cartridge management {#section-8-9}
 
-The BactoSense cartridges contain the reagents required for measurements and for keeping the instrument clean. Available cartridge types are TCC (Total Cell Count), ICC (Intact Cell Count), EBC (E. coli Cell Count), ACC (Active Cell Count), CBC (Coliform Cell Count), and NBC (Enterococcus Cell Count). The following sections explain cartridge handling. Cartridge storage, transportation and refill are described in [Storage, Transport and Disposal](17-storage-transport-and-disposal.md).
+The BactoSense cartridges contain the reagents required for measurements and for keeping the instrument clean. Available cartridge types are TCC (Total Cell Count), ICC (Intact Cell Count), ACC (Active Cell Count), EBC (E. coli Bacteria Count), CBC (Coliform Bacteria Count), and NBC (Enterococcus Bacteria Count). The following sections explain cartridge handling. Cartridge storage, transportation and refill are described in [Storage, Transport and Disposal](17-storage-transport-and-disposal.md).
 
 ### 8.9.1 General instructions for cartridge handling {#section-8-9-1}
 
