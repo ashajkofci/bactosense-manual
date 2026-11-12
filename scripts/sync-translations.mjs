@@ -63,12 +63,6 @@ export async function planSync({ root = registry.root, manuals = registry.manual
     for (const locale of manual.locales.filter(locale => locale !== registry.sourceLocale)) {
       const directory = registry.contentDirectory(manual, locale);
       const translations = await Promise.all(chapters.map(chapter => readOptional(workspaceFile(root, path.posix.join(directory, chapter.filename)))));
-      const introduction = chapters.findIndex(chapter => /^welcome\.mdx?$/.test(chapter.filename));
-      const chapterOutline = chapters.map((chapter, index) => ({
-        filename: chapter.filename,
-        english_headings: chapter.source.match(/^#{1,6} .+$/gm) || [],
-        translated_headings: translations[index]?.match(/^#{1,6} .+$/gm) || [],
-      }));
       for (const [index, { filename, sourcePath, source, sourceHash }] of chapters.entries()) {
         const targetPath = path.posix.join(directory, filename);
         const current = translations[index];
@@ -87,17 +81,9 @@ export async function planSync({ root = registry.root, manuals = registry.manual
           try { patchPlan = planTranslationPatch({ source, current, previousSource: baseline, previousSnapshot, locale, refreshAll }); }
           catch (error) { throw new Error(`${targetPath}: ${error.message}`); }
           Object.assign(record, { sections: patchPlan.sections.map(section => section.id), removedSections: patchPlan.removed, baseline: patchPlan.baseline });
-          const neighbors = [index - 1, index + 1].filter(at => at >= 0 && at < chapters.length).map(at => ({
-            filename: chapters[at].filename,
-            // Excerpts establish terminology; the current English task remains authoritative.
-            translated_excerpt: at < index ? translations[at]?.slice(-3000) : translations[at]?.slice(0, 3000),
-          }));
           const manualContext = {
             id: manual.id, title: manual.title, document_id: manual.documentId,
             version: manual.version, software_version: manual.softwareVersion,
-            english_introduction: introduction < 0 ? null : chapters[introduction].source,
-            translated_introduction: introduction < 0 ? null : translations[introduction],
-            chapter_outline: chapterOutline, neighboring_chapters: neighbors,
           };
           tasks.push({ manual: manual.title, locale, sourcePath, targetPath, source, current, glossary, context, manualContext, references, patchPlan, record });
         }
@@ -133,7 +119,10 @@ export async function translateWithOpenAI(task, { client, model = process.env.OP
   if (typeof task.source !== 'string' || !task.source.trim()) throw new Error('Translation task requires English source text.');
   const patchPlan = task.patchPlan ?? planTranslationPatch({ source: task.source, current: task.current ?? null, locale: task.locale, refreshAll: true });
   if (task.record) task.record.apiRequests ??= 0;
-  if (!patchPlan.sections.length) return applyTranslationPatch(patchPlan, { edits: [] });
+  if (!patchPlan.sections.length) {
+    if (task.record) Object.assign(task.record, { patchEdits: 0, patchCharacters: 0 });
+    return applyTranslationPatch(patchPlan, { edits: [] });
+  }
   if (!client) {
     const { default: OpenAI } = await import('openai');
     client = new OpenAI({ maxRetries: 0, timeout: 600_000 });
@@ -172,7 +161,9 @@ export async function translateWithOpenAI(task, { client, model = process.env.OP
     conversation.guidance.set(guidanceKey, guidanceEpoch);
     if (!response.output_text?.trim()) throw new Error(`OpenAI response ${response.id} returned no patch.`);
     const output = JSON.parse(response.output_text);
-    return applyTranslationPatch(patchPlan, output);
+    const candidate = applyTranslationPatch(patchPlan, output);
+    if (task.record) Object.assign(task.record, { patchEdits: output.edits.length, patchCharacters: response.output_text.length });
+    return candidate;
   } catch (error) {
     response ??= error.translationResponse;
     const failure = response?.error ?? error.error;
@@ -212,7 +203,7 @@ export async function syncTranslations({ dryRun = false, concurrency = 1, transl
         if (record.action === 'translate') record.status = 'would_translate';
         if (record.action === 'remove') record.status = 'would_remove';
       }
-      for (const task of plan.tasks) log(`Translate ${task.sourcePath} -> ${task.targetPath}`);
+      for (const task of plan.tasks) log(`Patch ${task.sourcePath} -> ${task.targetPath}; sections: ${task.record.sections.join(', ') || 'none'}; removed: ${task.record.removedSections.join(', ') || 'none'}`);
       for (const filename of plan.removals) log(`Remove ${filename}`);
       return { ...plan, report };
     }
@@ -221,23 +212,25 @@ export async function syncTranslations({ dryRun = false, concurrency = 1, transl
     // Gather and validate the complete batch before modifying files or advancing the manifest.
     for (const task of plan.tasks) {
       task.record.status = 'translating';
-      log(`Translating ${task.targetPath}`);
+      log(`Translating ${task.targetPath}; sections: ${task.record.sections.join(', ') || 'none (layout only)'}`);
       try {
         let candidate, feedback;
         for (let attempt = 0; attempt < 2; attempt++) {
           task.record.attempts++;
-          try { candidate = await translate({ ...task, candidate, feedback }, {
-            conversation,
-            onRequest: () => { task.record.apiRequests = (task.record.apiRequests ?? 0) + 1; },
-            onToolCall: lookup => {
-              (task.record.referenceLookups ??= []).push(lookup);
-              log(`Reference ${task.targetPath}: ${lookup.tool} ${JSON.stringify(lookup.arguments)} (${lookup.status})`);
-            },
-            onCompaction: () => {
-              task.record.compactions = (task.record.compactions ?? 0) + 1;
-              log(`Compacted conversation context while translating ${task.targetPath}`);
-            },
-          }); } catch (error) {
+          try {
+            candidate = await translate({ ...task, candidate, feedback }, {
+              conversation,
+              onRequest: () => { task.record.apiRequests = (task.record.apiRequests ?? 0) + 1; },
+              onToolCall: lookup => {
+                (task.record.referenceLookups ??= []).push(lookup);
+                log(`Reference ${task.targetPath}: ${lookup.tool} ${JSON.stringify(lookup.arguments)} (${lookup.status})`);
+              },
+              onCompaction: () => {
+                task.record.compactions = (task.record.compactions ?? 0) + 1;
+                log(`Compacted conversation context while translating ${task.targetPath}`);
+              },
+            });
+          } catch (error) {
             if (attempt === 0 && error.apiError?.code === 'translation_patch_conflict') {
               feedback = error.message;
               log(`Repairing patch ${task.targetPath}: ${feedback}`);

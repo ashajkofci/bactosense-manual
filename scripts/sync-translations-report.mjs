@@ -6,6 +6,9 @@ export function countTranslations(files) {
   return {
     checked: files.filter(file => file.action !== 'remove').length,
     selected: files.filter(file => file.action === 'translate').length,
+    selectedSections: files.reduce((sum, file) => sum + (file.sections?.length ?? 0), 0),
+    removedSections: files.reduce((sum, file) => sum + (file.removedSections?.length ?? 0), 0),
+    patchEdits: files.reduce((sum, file) => sum + (file.patchEdits ?? 0), 0),
     skipped: count('skipped'),
     attempted: files.filter(file => file.attempts > 0).length,
     apiAttempts: files.reduce((sum, file) => sum + (file.apiRequests ?? file.attempts), 0),
@@ -28,6 +31,8 @@ export function formatSyncReport(report) {
     '| Metric | Count |', '| --- | ---: |',
     ...[
       ['Translation files checked', counts.checked], ['Selected for sync', counts.selected],
+      ['Sections selected', counts.selectedSections], ['Obsolete sections selected for removal', counts.removedSections],
+      ['Returned patch edits', counts.patchEdits],
       ['Skipped (source unchanged)', counts.skipped], ['Selected but content unchanged', counts.unchanged],
       ['Failed translations', counts.failed], ['Not started', counts.notStarted],
       ['Validated but not applied', counts.notApplied], ['API requests (including tool follow-ups and repairs)', counts.apiAttempts],
@@ -48,9 +53,10 @@ export function formatSyncReport(report) {
   }
   const selected = report.files.filter(file => file.status !== 'skipped');
   if (selected.length) {
-    lines.push('### File details', '', '| File | Result | API requests | Reference lookups | Error |', '| --- | --- | ---: | ---: | --- |');
+    lines.push('### File details', '', '| File | Result | Sections | Patch edits | API requests | Reference lookups | Error |', '| --- | --- | --- | ---: | ---: | ---: | --- |');
     for (const file of selected) {
-      lines.push(`| ${cell(file.targetPath)} | ${cell(file.status.replaceAll('_', ' '))} | ${file.apiRequests ?? file.attempts} | ${file.referenceLookups?.length ?? 0} | ${cell(file.error ?? '')} |`);
+      const sections = [...(file.sections ?? []), ...(file.removedSections ?? []).map(id => `${id} (remove)`)].join(', ');
+      lines.push(`| ${cell(file.targetPath)} | ${cell(file.status.replaceAll('_', ' '))} | ${cell(sections)} | ${file.patchEdits ?? 0} | ${file.apiRequests ?? file.attempts} | ${file.referenceLookups?.length ?? 0} | ${cell(file.error ?? '')} |`);
     }
     lines.push('');
   }

@@ -19,7 +19,7 @@
     "manual:preview": "node scripts/preview-device-manual.mjs",
     "translations:check": "node scripts/check-translations.mjs",
     "translations:sync": "node scripts/sync-translations.mjs",
-    "translations:test": "node --test scripts/sync-translations.test.mjs",
+    "translations:test": "node --test scripts/sync-translations.test.mjs scripts/translation-patches.test.mjs",
     "screenshots:prepare": "node scripts/gui-capture/prepare-figures.mjs",
     "screenshots:render": "node scripts/gui-capture/render-figures.mjs",
     "screenshots:apply": "node scripts/gui-capture/apply-figures.mjs",

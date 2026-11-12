@@ -114,7 +114,7 @@ test('dry-run does not translate, delete files or advance the manifest', async t
   assert.equal(report.files[0].status, 'would_translate');
 });
 
-test('each task includes the glossary, product context, introductions and neighboring terminology in reading order', async t => {
+test('tasks use product metadata and expose introductions through reference tools', async t => {
   const options = await fixture(t);
   const sourceWelcome = english.replace('sidebar_position: 1', 'sidebar_position: 0');
   const translatedWelcome = translated.replace('sidebar_position: 1', 'sidebar_position: 0');
@@ -124,11 +124,10 @@ test('each task includes the glossary, product context, introductions and neighb
   const task = plan.tasks.find(task => task.targetPath === target);
   assert.match(task.glossary, /Modbus/);
   assert.match(task.context, /instrument operators/);
-  assert.equal(task.manualContext.english_introduction, sourceWelcome);
-  assert.equal(task.manualContext.translated_introduction, translatedWelcome);
-  assert.equal(task.manualContext.chapter_outline[0].filename, 'welcome.md');
-  assert.equal(task.manualContext.neighboring_chapters[0].filename, 'welcome.md');
-  assert.match(task.manualContext.neighboring_chapters[0].translated_excerpt, /Sicherheit/);
+  assert.equal(task.manualContext.id, 'example');
+  assert.equal(task.manualContext.english_introduction, undefined);
+  assert.equal(task.references.get('manuals/example/welcome.md'), sourceWelcome);
+  assert.equal(task.references.get(path.posix.join(path.posix.dirname(target), 'welcome.md')), translatedWelcome);
   await writeFile(path.join(options.root, 'maintenance/translation-context.md'), 'Updated audience and tone.');
   assert.equal((await planSync(options)).tasks.length, 2);
 });
@@ -490,6 +489,105 @@ function completedPatchResponse(id, sections, markdown) {
   response.output[0].content[0].text = response.output_text;
   return response;
 }
+
+test('an exact-match conflict is repaired against the original sections before any file is written', async t => {
+  const options = await fixture(t);
+  const source = english.replace('Disconnect power before cleaning.', 'Disconnect power before cleaning. Then wait.');
+  const expected = translated.replace('Vor der Reinigung die Stromversorgung trennen.', 'Vor der Reinigung die Stromversorgung trennen. Danach warten.');
+  await writeFile(path.join(options.root, 'manuals/example/01-installation.md'), source);
+  let requests = 0;
+  const client = { responses: { async create(request) {
+    const task = JSON.parse(request.input.at(-1).content);
+    assert.equal(await readFile(path.join(options.root, target), 'utf8'), translated);
+    assert.deepEqual(task.sections.map(section => section.id), ['section-1-1']);
+    if (++requests === 1) {
+      const response = completedPatchResponse('resp_conflict', task.sections, expected);
+      const patch = JSON.parse(response.output_text);
+      patch.edits[0].search = 'This text does not occur in the original translation.';
+      response.output_text = response.output[0].content[0].text = JSON.stringify(patch);
+      return response;
+    }
+    assert.match(task.validation_feedback, /exactly once/);
+    assert.equal(task.previous_candidate_sections, null);
+    assert(!task.sections[0].current_translation.includes('Danach warten.'));
+    return completedPatchResponse('resp_repaired', task.sections, expected);
+  } } };
+  const result = await syncTranslations({ ...options, translate: (task, hooks) => translateWithOpenAI(task, { ...hooks, client }) });
+  assert.equal(await readFile(path.join(options.root, target), 'utf8'), expected);
+  assert.equal(result.report.counts.apiAttempts, 2);
+  assert.equal(result.report.counts.selectedSections, 1);
+  assert.equal(result.report.counts.patchEdits, 1);
+  assert.equal(result.report.files[0].attempts, 2);
+});
+
+test('later translations can read earlier validated results before those files are committed', async t => {
+  const options = await fixture(t);
+  await writeFile(path.join(options.root, 'manuals/example/01-installation.md'), english + '\nNew instruction.\n');
+  const expected = translated + '\nNeue Anweisung.\n';
+  const french = translated.replace('/gui/de/', '/gui/fr/').replace('Sicherheit', 'Sécurité') + '\nNouvelle instruction.\n';
+  let requests = 0, frenchTask;
+  const client = { responses: { async create(request) {
+    assert.equal(await readFile(path.join(options.root, target), 'utf8'), translated);
+    requests++;
+    if (requests === 1) return completedPatchResponse('resp_german', JSON.parse(request.input.at(-1).content).sections, expected);
+    if (requests === 2) {
+      frenchTask = JSON.parse(request.input.at(-1).content);
+      return { id: 'resp_read_staged', status: 'completed', output: [{
+        id: 'fc_read_staged', type: 'function_call', call_id: 'call_read_staged', name: 'read_reference_file',
+        arguments: JSON.stringify({ path: target, offset: 0, length: 16000 }),
+      }] };
+    }
+    assert.equal(JSON.parse(request.input.at(-1).output).content, expected);
+    return completedPatchResponse('resp_french', frenchTask.sections, french);
+  } } };
+  const result = await syncTranslations({ ...options, manuals: [{ ...manual, locales: ['en', 'de', 'fr'] }],
+    translate: (task, hooks) => translateWithOpenAI(task, { ...hooks, client }),
+  });
+  assert.equal(result.report.counts.apiAttempts, 3);
+  assert.equal(result.report.counts.referenceLookups, 1);
+  assert.equal(result.report.counts.modified, 1);
+  assert.equal(result.report.counts.created, 1);
+});
+
+test('section deletion and reordering need no API request when the remaining translation is valid', async t => {
+  const options = await fixture(t);
+  const second = '## Second {#second}\n\nAnother instruction.\n\n';
+  const third = '## Third {#third}\n\nFinal instruction.\n\n';
+  const germanSecond = second.replace('Second', 'Zweiter').replace('Another instruction.', 'Eine weitere Anweisung.');
+  const germanThird = third.replace('Third', 'Dritter').replace('Final instruction.', 'Letzte Anweisung.');
+  const sourceFile = path.join(options.root, 'manuals/example/01-installation.md');
+  await writeFile(sourceFile, english + '\n' + second + third);
+  await writeFile(path.join(options.root, target), translated + '\n' + germanSecond + germanThird);
+  await writeFile(path.join(options.root, 'maintenance/translation-sync.json'), JSON.stringify((await planSync({ ...options, force: true })).nextState));
+  // Remove the first anchored section and move the third before the second.
+  const frontmatter = english.slice(0, english.indexOf('## Safety'));
+  await writeFile(sourceFile, frontmatter + third + second);
+  const client = { responses: { create: () => assert.fail('Layout-only changes must not access the API.') } };
+  const result = await syncTranslations({ ...options, translate: (task, hooks) => translateWithOpenAI(task, { ...hooks, client }) });
+  assert.equal(result.report.counts.apiAttempts, 0);
+  assert.equal(result.report.counts.selectedSections, 0);
+  assert.equal(result.report.counts.removedSections, 1);
+  assert.equal(await readFile(path.join(options.root, target), 'utf8'), translated.slice(0, translated.indexOf('## Sicherheit')) + germanThird + germanSecond);
+});
+
+test('glossary and product guidance are refreshed after shared conversation compaction', async () => {
+  const conversation = createResponseConversation({ compactThreshold: 1000 });
+  const task = { source: english, current: translated, locale: 'de', glossary: 'Keep Modbus.', context: 'Operators.' };
+  let requests = 0;
+  const client = { responses: { async create(request) {
+    const guidance = request.input.filter(item => item.role === 'user' && JSON.parse(item.content).type === 'translation_guidance');
+    assert.equal(guidance.length, 1);
+    assert.equal(JSON.parse(guidance[0].content).glossary, task.glossary);
+    const response = completedPatchResponse(`resp_guidance_${++requests}`, JSON.parse(request.input.at(-1).content).sections, translated);
+    if (requests === 1) response.output.unshift({ type: 'compaction', id: 'cmp_guidance', encrypted_content: 'opaque-memory' });
+    else assert.equal(request.input[0].type, 'compaction');
+    return response;
+  } } };
+  await translateWithOpenAI(task, { client, conversation });
+  await translateWithOpenAI(task, { client, conversation });
+  assert.equal(requests, 2);
+  assert.equal(conversation.compactions, 1);
+});
 
 test('all languages share one sequential conversation, with fresh memory for the next sync run', async t => {
   const options = await fixture(t);
