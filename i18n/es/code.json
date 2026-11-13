@@ -392,5 +392,11 @@
   },
   "home.manual.sourceOnly": {
     "message": "Disponible en inglés"
+  },
+  "home.manual.browse": {
+    "message": "Explorar los manuales"
+  },
+  "home.manual.otherManuals": {
+    "message": "Otros manuales"
   }
 }

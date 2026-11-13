@@ -212,7 +212,7 @@ BactoSwitch y BactoSense tienen cada uno su propio tipo de fuente de alimentaci�
 
 :::
 
-Las fuentes de alimentación se suministran en una carcasa IP67 y con un cable con enchufe de tipo J, E, G o B.
+Cada fuente de alimentación se suministra en una carcasa IP67 con un cable provisto de un enchufe de tipo J, E, G o B.
 
 *Tabla 4-2 Referencias de las fuentes de alimentación de BactoSwitch y BactoSense*
 

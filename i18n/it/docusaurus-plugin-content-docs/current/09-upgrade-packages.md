@@ -14,12 +14,13 @@ Il *pacchetto Scientific* è destinato ai professionisti della ricerca sulle acq
 
 - Gate aggiuntivo: applicare un ulteriore gate poligonale configurabile ai dati FL1 / FL2 direttamente nell’interfaccia utente.
 - Dati di diffusione della luce: registrare e visualizzare i dati di diffusione in avanti e laterale per ogni evento rilevato. Recuperare i dati nei file FCS per l’elaborazione successiva.
+- Pianificazione avanzata: pianificazione personalizzata delle misurazioni, vedere [Pianificazione avanzata](10-measurements.md#section-10-2-4)
 
 **Gate poligonale aggiuntivo** Il gate poligonale aggiuntivo, liberamente configurabile, presenta le seguenti caratteristiche:
 
 - È disponibile per le cartucce TCC e ICC.
 - Il parametro di risultato è una concentrazione cellulare denominata “Gate+”.
-- Il gate può essere regolato in modo analogo ai gate predefiniti TCC o ICC. Consultare la sezione [Modifica dei gate](11-results-and-data-analysis.md#section-11-4).
+- Il gate può essere regolato nello stesso modo dei gate predefiniti TCC o ICC. Consultare la sezione [Modifica dei gate](11-results-and-data-analysis.md#section-11-4).
 
 **Rilevatori di diffusione in avanti e laterale** Il rilevatore di diffusione in avanti (FSC) misura la luce diffusa dai batteri o da altre particelle. Il rilevatore è posizionato a un piccolo angolo rispetto alla direzione del fascio laser e misura quindi i segnali luminosi in direzione “in avanti”. Il rilevatore di diffusione laterale (SSC), invece, è posizionato a 90 gradi rispetto alla direzione del fascio e misura la luce diffusa lateralmente. La combinazione delle informazioni di fluorescenza e diffusione fornisce dati ad alto contenuto informativo, consentendo applicazioni quali l’impronta microbiologica, la profilazione o il rilevamento di anomalie. In particolare, i rilevatori di diffusione consentono un’impronta precisa (BactoScore) per seguire i cambiamenti nella popolazione batterica.
 
@@ -52,7 +53,7 @@ Il *pacchetto Management* è destinato all’utilizzo dello strumento in ambient
 
 - Gestione avanzata degli utenti (controllo degli accessi basato sui ruoli)
 - Audit trail
-- Pianificazione avanzata
+- Pianificazione avanzata: pianificazione personalizzata delle misurazioni, vedere [Pianificazione avanzata](10-measurements.md#section-10-2-4)
 
 **Gestione avanzata degli utenti** Con la funzione *Gestione avanzata degli utenti*, il proprietario dello strumento può creare diversi utenti e assegnare loro ruoli utente differenti (Basic, Advanced, Admin). Ciò consente di attribuire autorizzazioni diverse ai singoli utenti e di registrarne le attività nell’audit trail.
 

@@ -14,12 +14,13 @@ El *Scientific Package* está destinado a los profesionales de la investigación
 
 - Región de análisis adicional: aplique una región poligonal adicional configurable a los datos FL1 / FL2 directamente en la interfaz de usuario.
 - Datos de dispersión de luz: registre y visualice los datos de dispersión frontal y lateral de cada evento detectado. Obtenga los datos en archivos FCS para su procesamiento posterior.
+- Programación avanzada: programación personalizada de mediciones, consulte [Programación avanzada](10-measurements.md#section-10-2-4)
 
 **Región poligonal adicional** La región poligonal adicional, libremente configurable, tiene las siguientes propiedades:
 
 - Está disponible para los cartuchos TCC e ICC.
 - El parámetro de resultado es una concentración celular denominada “Gate+”.
-- La región puede ajustarse de forma similar a las regiones predeterminadas TCC o ICC. Consulte la sección [Cambio de las regiones de análisis](11-results-and-data-analysis.md#section-11-4).
+- La región puede ajustarse de la misma manera que las regiones predeterminadas TCC o ICC. Consulte la sección [Cambio de las regiones de análisis](11-results-and-data-analysis.md#section-11-4).
 
 **Detectores de dispersión frontal y lateral** El detector de dispersión frontal (FSC) mide la luz dispersada por bacterias u otras partículas. El detector está situado formando un ángulo pequeño respecto a la dirección del haz láser y mide así las señales de luz en dirección “frontal”. En cambio, el detector de dispersión lateral (SSC) está situado a 90 grados respecto a la dirección del haz y mide la luz dispersada hacia los lados. La combinación de la información de fluorescencia y de dispersión proporciona datos de alto contenido, lo que permite aplicaciones como la obtención de huellas microbiológicas, la caracterización de perfiles o la detección de anomalías. En particular, los detectores de dispersión permiten obtener una huella precisa (BactoScore) para seguir los cambios en la población bacteriana.
 
@@ -52,7 +53,7 @@ El *Management Package* está destinado al uso del instrumento en entornos con m
 
 - Gestión avanzada de usuarios (control de acceso basado en roles)
 - Pista de auditoría
-- Programación avanzada
+- Programación avanzada: programación personalizada de mediciones, consulte [Programación avanzada](10-measurements.md#section-10-2-4)
 
 **Gestión avanzada de usuarios** Con la función *Gestión avanzada de usuarios*, el propietario del instrumento puede crear distintos usuarios y asignarles diferentes roles de usuario (Basic, Advanced, Admin). Esto permite otorgar permisos distintos a cada usuario y registrar su actividad en la pista de auditoría.
 

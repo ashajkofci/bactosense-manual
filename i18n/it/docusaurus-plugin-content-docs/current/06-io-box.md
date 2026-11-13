@@ -57,8 +57,8 @@ Note aggiuntive
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| ① | Posizione delle uscite digitali Morsetti 1 – 8 Requisiti dei cavi: • AWG 12 – 22 • Sezione: 0.25 – 2.5 mm2 | ② | Posizione delle uscite analogiche Morsetti 9 – 12 Requisiti dei cavi: • AWG 12 – 22 • Sezione: 0.25 – 2.5 mm2 |
-| ③ | Posizione degli ingressi digitali Morsetti 14 – 18 Requisiti dei cavi: • AWG 12 – 22 • Sezione: 0.25 – 2.5 mm2 |  | \< |
+| ① | Posizione delle uscite digitali Morsetti 1 – 8 Requisiti dei cavi: • AWG 12 – 22 • Sezione: 0.25 – 2.5 mm<sup>2</sup> | ② | Posizione delle uscite analogiche Morsetti 9 – 12 Requisiti dei cavi: • AWG 12 – 22 • Sezione: 0.25 – 2.5 mm<sup>2</sup> |
+| ③ | Posizione degli ingressi digitali Morsetti 14 – 18 Requisiti dei cavi: • AWG 12 – 22 • Sezione: 0.25 – 2.5 mm<sup>2</sup> |  | \< |
 
 ### 6.1.6 Tabella di riferimento dell’I/O-Box {#section-6-1-6}
 

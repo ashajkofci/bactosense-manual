@@ -19,7 +19,7 @@ for (const locale of locales) {
   const lower = `output/gui-capture/digital-output/native/${locale}/digital-outputs-lower`;
   const topRecord = JSON.parse(await readFile(path.join(root, `${original}.json`), 'utf8'));
   const lowerRecord = JSON.parse(await readFile(path.join(root, `${lower}.json`), 'utf8'));
-  const docFile = locale === 'en' ? 'docs/06-io-box.md' : `i18n/${locale}/docusaurus-plugin-content-docs/current/06-io-box.md`;
+  const docFile = locale === 'en' ? 'manuals/bactosense/06-io-box.md' : `i18n/${locale}/docusaurus-plugin-content-docs/current/06-io-box.md`;
   const document = await readFile(path.join(root, docFile), 'utf8');
   const section = document.split('{#section-6-6}')[1]?.split(/\n#{1,6} /)[0];
   if (!section) throw new Error(`${locale}: missing section 6.6.`);

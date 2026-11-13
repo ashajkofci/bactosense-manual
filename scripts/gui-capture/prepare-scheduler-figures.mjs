@@ -24,7 +24,7 @@ function retain(figure) {
   prepared.push(figure.id);
 }
 for (const locale of locales) {
-  const directory = locale === 'en' ? 'docs' : `i18n/${locale}/docusaurus-plugin-content-docs/current`;
+  const directory = locale === 'en' ? 'manuals/bactosense' : `i18n/${locale}/docusaurus-plugin-content-docs/current`;
   const chapter = await readFile(path.join(root, directory, '10-measurements.md'), 'utf8');
   for (const state of ['select', 'rule', 'range', 'preview']) {
     const name = `advanced-scheduler-${state}`;

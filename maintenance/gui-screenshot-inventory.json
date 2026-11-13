@@ -94,7 +94,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/05-installation.md",
+          "doc": "manuals/bactosense/05-installation.md",
           "line": 229,
           "printed_page": 30,
           "chapter": 5,
@@ -190,7 +190,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/06-io-box.md",
+          "doc": "manuals/bactosense/06-io-box.md",
           "line": 51,
           "printed_page": 32,
           "chapter": 6,
@@ -289,7 +289,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/06-io-box.md",
+          "doc": "manuals/bactosense/06-io-box.md",
           "line": 60,
           "printed_page": 33,
           "chapter": 6,
@@ -384,7 +384,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/06-io-box.md",
+          "doc": "manuals/bactosense/06-io-box.md",
           "line": 88,
           "printed_page": 35,
           "chapter": 6,
@@ -475,7 +475,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/06-io-box.md",
+          "doc": "manuals/bactosense/06-io-box.md",
           "line": 88,
           "printed_page": 35,
           "chapter": 6,
@@ -566,7 +566,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/06-io-box.md",
+          "doc": "manuals/bactosense/06-io-box.md",
           "line": 88,
           "printed_page": 35,
           "chapter": 6,
@@ -657,7 +657,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/06-io-box.md",
+          "doc": "manuals/bactosense/06-io-box.md",
           "line": 88,
           "printed_page": 35,
           "chapter": 6,
@@ -748,7 +748,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/06-io-box.md",
+          "doc": "manuals/bactosense/06-io-box.md",
           "line": 97,
           "printed_page": 36,
           "chapter": 6,
@@ -843,7 +843,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/06-io-box.md",
+          "doc": "manuals/bactosense/06-io-box.md",
           "line": 110,
           "printed_page": 37,
           "chapter": 6,
@@ -938,7 +938,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/06-io-box.md",
+          "doc": "manuals/bactosense/06-io-box.md",
           "line": 136,
           "printed_page": 39,
           "chapter": 6,
@@ -1060,7 +1060,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/06-io-box.md",
+          "doc": "manuals/bactosense/06-io-box.md",
           "line": 210,
           "printed_page": 43,
           "chapter": 6,
@@ -1182,7 +1182,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/06-io-box.md",
+          "doc": "manuals/bactosense/06-io-box.md",
           "line": 236,
           "printed_page": 45,
           "chapter": 6,
@@ -1314,7 +1314,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 16,
           "printed_page": 58,
           "chapter": 8,
@@ -1409,7 +1409,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 154,
           "printed_page": 66,
           "chapter": 8,
@@ -1525,7 +1525,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 154,
           "printed_page": 66,
           "chapter": 8,
@@ -1730,7 +1730,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 154,
           "printed_page": 66,
           "chapter": 8,
@@ -1741,7 +1741,7 @@
         },
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 199,
           "printed_page": 69,
           "chapter": 8,
@@ -1752,7 +1752,7 @@
         },
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 208,
           "printed_page": 70,
           "chapter": 8,
@@ -1763,7 +1763,7 @@
         },
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 409,
           "printed_page": 83,
           "chapter": 8,
@@ -1774,7 +1774,7 @@
         },
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 422,
           "printed_page": 84,
           "chapter": 8,
@@ -1999,7 +1999,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 154,
           "printed_page": 66,
           "chapter": 8,
@@ -2092,7 +2092,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 154,
           "printed_page": 66,
           "chapter": 8,
@@ -2184,7 +2184,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 169,
           "printed_page": 67,
           "chapter": 8,
@@ -2311,7 +2311,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 180,
           "printed_page": 68,
           "chapter": 8,
@@ -2407,7 +2407,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 199,
           "printed_page": 69,
           "chapter": 8,
@@ -2539,7 +2539,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 199,
           "printed_page": 69,
           "chapter": 8,
@@ -2550,7 +2550,7 @@
         },
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 208,
           "printed_page": 70,
           "chapter": 8,
@@ -2561,7 +2561,7 @@
         },
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 409,
           "printed_page": 83,
           "chapter": 8,
@@ -2572,7 +2572,7 @@
         },
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 422,
           "printed_page": 84,
           "chapter": 8,
@@ -2764,7 +2764,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 199,
           "printed_page": 69,
           "chapter": 8,
@@ -2867,7 +2867,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 208,
           "printed_page": 70,
           "chapter": 8,
@@ -2959,7 +2959,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 208,
           "printed_page": 70,
           "chapter": 8,
@@ -3052,7 +3052,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 208,
           "printed_page": 70,
           "chapter": 8,
@@ -3144,7 +3144,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 217,
           "printed_page": 71,
           "chapter": 8,
@@ -3302,7 +3302,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 240,
           "printed_page": 72,
           "chapter": 8,
@@ -3407,7 +3407,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 240,
           "printed_page": 72,
           "chapter": 8,
@@ -3512,7 +3512,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 240,
           "printed_page": 72,
           "chapter": 8,
@@ -3605,7 +3605,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 240,
           "printed_page": 72,
           "chapter": 8,
@@ -3698,7 +3698,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 240,
           "printed_page": 72,
           "chapter": 8,
@@ -3791,7 +3791,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 240,
           "printed_page": 72,
           "chapter": 8,
@@ -3884,7 +3884,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 240,
           "printed_page": 72,
           "chapter": 8,
@@ -3978,7 +3978,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 240,
           "printed_page": 72,
           "chapter": 8,
@@ -4072,7 +4072,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 240,
           "printed_page": 72,
           "chapter": 8,
@@ -4166,7 +4166,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 240,
           "printed_page": 72,
           "chapter": 8,
@@ -4260,7 +4260,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 240,
           "printed_page": 72,
           "chapter": 8,
@@ -4354,7 +4354,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 240,
           "printed_page": 72,
           "chapter": 8,
@@ -4447,7 +4447,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 255,
           "printed_page": 73,
           "chapter": 8,
@@ -4538,7 +4538,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 255,
           "printed_page": 73,
           "chapter": 8,
@@ -4630,7 +4630,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 255,
           "printed_page": 73,
           "chapter": 8,
@@ -4722,7 +4722,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 255,
           "printed_page": 73,
           "chapter": 8,
@@ -4814,7 +4814,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 255,
           "printed_page": 73,
           "chapter": 8,
@@ -4906,7 +4906,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 255,
           "printed_page": 73,
           "chapter": 8,
@@ -4998,7 +4998,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 255,
           "printed_page": 73,
           "chapter": 8,
@@ -5090,7 +5090,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 255,
           "printed_page": 73,
           "chapter": 8,
@@ -5181,7 +5181,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 270,
           "printed_page": 74,
           "chapter": 8,
@@ -5276,7 +5276,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 287,
           "printed_page": 75,
           "chapter": 8,
@@ -5371,7 +5371,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 327,
           "printed_page": 77,
           "chapter": 8,
@@ -5464,7 +5464,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 409,
           "printed_page": 83,
           "chapter": 8,
@@ -5557,7 +5557,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/08-general-operations-and-configurations.md",
+          "doc": "manuals/bactosense/08-general-operations-and-configurations.md",
           "line": 422,
           "printed_page": 84,
           "chapter": 8,
@@ -5650,7 +5650,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/10-measurements.md",
+          "doc": "manuals/bactosense/10-measurements.md",
           "line": 59,
           "printed_page": 91,
           "chapter": 10,
@@ -5753,7 +5753,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/10-measurements.md",
+          "doc": "manuals/bactosense/10-measurements.md",
           "line": 65,
           "printed_page": 91,
           "chapter": 10,
@@ -5875,7 +5875,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/11-results-and-data-analysis.md",
+          "doc": "manuals/bactosense/11-results-and-data-analysis.md",
           "line": 16,
           "printed_page": 98,
           "chapter": 11,
@@ -6013,7 +6013,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/11-results-and-data-analysis.md",
+          "doc": "manuals/bactosense/11-results-and-data-analysis.md",
           "line": 64,
           "printed_page": 100,
           "chapter": 11,
@@ -6146,7 +6146,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/11-results-and-data-analysis.md",
+          "doc": "manuals/bactosense/11-results-and-data-analysis.md",
           "line": 155,
           "printed_page": 105,
           "chapter": 11,
@@ -6228,7 +6228,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/11-results-and-data-analysis.md",
+          "doc": "manuals/bactosense/11-results-and-data-analysis.md",
           "line": 171,
           "printed_page": 106,
           "chapter": 11,
@@ -6366,7 +6366,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/11-results-and-data-analysis.md",
+          "doc": "manuals/bactosense/11-results-and-data-analysis.md",
           "line": 185,
           "printed_page": 107,
           "chapter": 11,
@@ -6448,7 +6448,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/11-results-and-data-analysis.md",
+          "doc": "manuals/bactosense/11-results-and-data-analysis.md",
           "line": 185,
           "printed_page": 107,
           "chapter": 11,
@@ -6586,7 +6586,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/11-results-and-data-analysis.md",
+          "doc": "manuals/bactosense/11-results-and-data-analysis.md",
           "line": 185,
           "printed_page": 107,
           "chapter": 11,
@@ -6597,7 +6597,7 @@
         },
         {
           "locale": "en",
-          "doc": "docs/11-results-and-data-analysis.md",
+          "doc": "manuals/bactosense/11-results-and-data-analysis.md",
           "line": 239,
           "printed_page": 112,
           "chapter": 11,
@@ -6608,7 +6608,7 @@
         },
         {
           "locale": "en",
-          "doc": "docs/15-maintenance.md",
+          "doc": "manuals/bactosense/15-maintenance.md",
           "line": 62,
           "printed_page": 126,
           "chapter": 15,
@@ -6735,7 +6735,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/11-results-and-data-analysis.md",
+          "doc": "manuals/bactosense/11-results-and-data-analysis.md",
           "line": 185,
           "printed_page": 107,
           "chapter": 11,
@@ -6817,7 +6817,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/11-results-and-data-analysis.md",
+          "doc": "manuals/bactosense/11-results-and-data-analysis.md",
           "line": 185,
           "printed_page": 107,
           "chapter": 11,
@@ -6900,7 +6900,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/11-results-and-data-analysis.md",
+          "doc": "manuals/bactosense/11-results-and-data-analysis.md",
           "line": 195,
           "printed_page": 108,
           "chapter": 11,
@@ -6982,7 +6982,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/11-results-and-data-analysis.md",
+          "doc": "manuals/bactosense/11-results-and-data-analysis.md",
           "line": 195,
           "printed_page": 108,
           "chapter": 11,
@@ -7064,7 +7064,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/11-results-and-data-analysis.md",
+          "doc": "manuals/bactosense/11-results-and-data-analysis.md",
           "line": 201,
           "printed_page": 109,
           "chapter": 11,
@@ -7146,7 +7146,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/11-results-and-data-analysis.md",
+          "doc": "manuals/bactosense/11-results-and-data-analysis.md",
           "line": 201,
           "printed_page": 109,
           "chapter": 11,
@@ -7228,7 +7228,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/11-results-and-data-analysis.md",
+          "doc": "manuals/bactosense/11-results-and-data-analysis.md",
           "line": 207,
           "printed_page": 110,
           "chapter": 11,
@@ -7310,7 +7310,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/11-results-and-data-analysis.md",
+          "doc": "manuals/bactosense/11-results-and-data-analysis.md",
           "line": 239,
           "printed_page": 112,
           "chapter": 11,
@@ -7379,7 +7379,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/11-results-and-data-analysis.md",
+          "doc": "manuals/bactosense/11-results-and-data-analysis.md",
           "line": 239,
           "printed_page": 112,
           "chapter": 11,
@@ -7461,7 +7461,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/11-results-and-data-analysis.md",
+          "doc": "manuals/bactosense/11-results-and-data-analysis.md",
           "line": 245,
           "printed_page": 113,
           "chapter": 11,
@@ -7543,7 +7543,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/11-results-and-data-analysis.md",
+          "doc": "manuals/bactosense/11-results-and-data-analysis.md",
           "line": 245,
           "printed_page": 113,
           "chapter": 11,
@@ -7625,7 +7625,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/12-data-access-and-export.md",
+          "doc": "manuals/bactosense/12-data-access-and-export.md",
           "line": 20,
           "printed_page": 114,
           "chapter": 12,
@@ -7706,7 +7706,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/12-data-access-and-export.md",
+          "doc": "manuals/bactosense/12-data-access-and-export.md",
           "line": 33,
           "printed_page": 115,
           "chapter": 12,
@@ -7793,7 +7793,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/13-web-user-interface.md",
+          "doc": "manuals/bactosense/13-web-user-interface.md",
           "line": 21,
           "printed_page": 119,
           "chapter": 13,
@@ -7876,7 +7876,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/13-web-user-interface.md",
+          "doc": "manuals/bactosense/13-web-user-interface.md",
           "line": 21,
           "printed_page": 119,
           "chapter": 13,
@@ -7958,7 +7958,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/13-web-user-interface.md",
+          "doc": "manuals/bactosense/13-web-user-interface.md",
           "line": 29,
           "printed_page": 120,
           "chapter": 13,
@@ -8076,7 +8076,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/13-web-user-interface.md",
+          "doc": "manuals/bactosense/13-web-user-interface.md",
           "line": 39,
           "printed_page": 120,
           "chapter": 13,
@@ -8170,7 +8170,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/13-web-user-interface.md",
+          "doc": "manuals/bactosense/13-web-user-interface.md",
           "line": 49,
           "printed_page": 121,
           "chapter": 13,
@@ -8252,7 +8252,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/13-web-user-interface.md",
+          "doc": "manuals/bactosense/13-web-user-interface.md",
           "line": 55,
           "printed_page": 121,
           "chapter": 13,
@@ -8340,7 +8340,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/13-web-user-interface.md",
+          "doc": "manuals/bactosense/13-web-user-interface.md",
           "line": 65,
           "printed_page": 122,
           "chapter": 13,
@@ -8428,7 +8428,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/13-web-user-interface.md",
+          "doc": "manuals/bactosense/13-web-user-interface.md",
           "line": 71,
           "printed_page": 122,
           "chapter": 13,
@@ -8521,7 +8521,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/13-web-user-interface.md",
+          "doc": "manuals/bactosense/13-web-user-interface.md",
           "line": 65,
           "printed_page": 122,
           "chapter": 13,
@@ -8609,7 +8609,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/13-web-user-interface.md",
+          "doc": "manuals/bactosense/13-web-user-interface.md",
           "line": 65,
           "printed_page": 122,
           "chapter": 13,
@@ -8702,7 +8702,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/13-web-user-interface.md",
+          "doc": "manuals/bactosense/13-web-user-interface.md",
           "line": 81,
           "printed_page": 123,
           "chapter": 13,
@@ -8785,7 +8785,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/13-web-user-interface.md",
+          "doc": "manuals/bactosense/13-web-user-interface.md",
           "line": 93,
           "printed_page": 123,
           "chapter": 13,
@@ -8867,7 +8867,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/15-maintenance.md",
+          "doc": "manuals/bactosense/15-maintenance.md",
           "line": 56,
           "printed_page": 126,
           "chapter": 15,
@@ -8966,7 +8966,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/15-maintenance.md",
+          "doc": "manuals/bactosense/15-maintenance.md",
           "line": 62,
           "printed_page": 126,
           "chapter": 15,
@@ -9049,7 +9049,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/15-maintenance.md",
+          "doc": "manuals/bactosense/15-maintenance.md",
           "line": 62,
           "printed_page": 126,
           "chapter": 15,
@@ -9158,7 +9158,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/15-maintenance.md",
+          "doc": "manuals/bactosense/15-maintenance.md",
           "line": 72,
           "printed_page": 127,
           "chapter": 15,
@@ -9241,7 +9241,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/15-maintenance.md",
+          "doc": "manuals/bactosense/15-maintenance.md",
           "line": 72,
           "printed_page": 127,
           "chapter": 15,
@@ -9324,7 +9324,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/15-maintenance.md",
+          "doc": "manuals/bactosense/15-maintenance.md",
           "line": 72,
           "printed_page": 127,
           "chapter": 15,
@@ -9406,7 +9406,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/15-maintenance.md",
+          "doc": "manuals/bactosense/15-maintenance.md",
           "line": 100,
           "printed_page": 129,
           "chapter": 15,
@@ -9491,7 +9491,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/15-maintenance.md",
+          "doc": "manuals/bactosense/15-maintenance.md",
           "line": 154,
           "printed_page": 133,
           "chapter": 15,
@@ -9572,7 +9572,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/15-maintenance.md",
+          "doc": "manuals/bactosense/15-maintenance.md",
           "line": 154,
           "printed_page": 133,
           "chapter": 15,
@@ -9653,7 +9653,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/15-maintenance.md",
+          "doc": "manuals/bactosense/15-maintenance.md",
           "line": 160,
           "printed_page": 134,
           "chapter": 15,
@@ -9734,7 +9734,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/15-maintenance.md",
+          "doc": "manuals/bactosense/15-maintenance.md",
           "line": 160,
           "printed_page": 134,
           "chapter": 15,
@@ -9815,7 +9815,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/15-maintenance.md",
+          "doc": "manuals/bactosense/15-maintenance.md",
           "line": 160,
           "printed_page": 134,
           "chapter": 15,
@@ -9896,7 +9896,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/15-maintenance.md",
+          "doc": "manuals/bactosense/15-maintenance.md",
           "line": 170,
           "printed_page": 135,
           "chapter": 15,
@@ -9977,7 +9977,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/15-maintenance.md",
+          "doc": "manuals/bactosense/15-maintenance.md",
           "line": 186,
           "printed_page": 136,
           "chapter": 15,
@@ -10058,7 +10058,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/15-maintenance.md",
+          "doc": "manuals/bactosense/15-maintenance.md",
           "line": 186,
           "printed_page": 136,
           "chapter": 15,
@@ -10139,7 +10139,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/15-maintenance.md",
+          "doc": "manuals/bactosense/15-maintenance.md",
           "line": 186,
           "printed_page": 136,
           "chapter": 15,
@@ -10220,7 +10220,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/16-warnings-errors-and-troubleshooting.md",
+          "doc": "manuals/bactosense/16-warnings-errors-and-troubleshooting.md",
           "line": 18,
           "printed_page": 139,
           "chapter": 16,
@@ -10303,7 +10303,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/16-warnings-errors-and-troubleshooting.md",
+          "doc": "manuals/bactosense/16-warnings-errors-and-troubleshooting.md",
           "line": 40,
           "printed_page": 141,
           "chapter": 16,
@@ -10385,7 +10385,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/16-warnings-errors-and-troubleshooting.md",
+          "doc": "manuals/bactosense/16-warnings-errors-and-troubleshooting.md",
           "line": 74,
           "printed_page": 145,
           "chapter": 16,
@@ -10466,7 +10466,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/16-warnings-errors-and-troubleshooting.md",
+          "doc": "manuals/bactosense/16-warnings-errors-and-troubleshooting.md",
           "line": 108,
           "printed_page": 149,
           "chapter": 16,
@@ -10579,7 +10579,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/16-warnings-errors-and-troubleshooting.md",
+          "doc": "manuals/bactosense/16-warnings-errors-and-troubleshooting.md",
           "line": 114,
           "printed_page": 149,
           "chapter": 16,
@@ -10662,7 +10662,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/16-warnings-errors-and-troubleshooting.md",
+          "doc": "manuals/bactosense/16-warnings-errors-and-troubleshooting.md",
           "line": 114,
           "printed_page": 149,
           "chapter": 16,
@@ -10745,7 +10745,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/16-warnings-errors-and-troubleshooting.md",
+          "doc": "manuals/bactosense/16-warnings-errors-and-troubleshooting.md",
           "line": 114,
           "printed_page": 149,
           "chapter": 16,
@@ -10828,7 +10828,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/16-warnings-errors-and-troubleshooting.md",
+          "doc": "manuals/bactosense/16-warnings-errors-and-troubleshooting.md",
           "line": 136,
           "printed_page": 150,
           "chapter": 16,
@@ -10910,7 +10910,7 @@
       "occurrences": [
         {
           "locale": "en",
-          "doc": "docs/16-warnings-errors-and-troubleshooting.md",
+          "doc": "manuals/bactosense/16-warnings-errors-and-troubleshooting.md",
           "line": 130,
           "printed_page": 150,
           "chapter": 16,

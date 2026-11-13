@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Rebuild chapters 1–9 from PDF text, table geometry and figures.
 
-Run parse_second_half.py next; that final pass normalizes both halves with
-simplify-markdown.mjs. Reviewed chapter bodies in scripts/editorial/ override
-PDF-derived content; back up other reviewed documents before regeneration.
+Legacy import utility, no longer used for manual maintenance. Current Markdown
+chapters are authoritative. Run parse_second_half.py next to normalize both
+halves with simplify-markdown.mjs; back up reviewed documents before regeneration.
 """
 import fitz, re, json, html, hashlib
 from native_notices import normalize_notices
@@ -11,7 +11,7 @@ from manual_artwork import normalize_artwork, WORK_STEP_ASSETS
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 PDF=ROOT/'UM_0006-EN_BactoSense_User_Manual.pdf'
-OUT=ROOT/'docs'; OUT.mkdir(exist_ok=True)
+OUT=ROOT/'manuals/bactosense'; OUT.mkdir(parents=True,exist_ok=True)
 FIG=ROOT/'static/img/figures-first'; FIG.mkdir(parents=True,exist_ok=True)
 pdf=fitz.open(PDF)
 CHAPTERS=[(1,'Glossary','glossary',7,7),(2,'General User Information','general-user-information',8,12),(3,'Instrument Overview','instrument-overview',13,19),(4,'Safety','safety',20,22),(5,'Installation','installation',23,36),(6,'I/O-Box','io-box',37,52),(7,'Field Bus Interface','field-bus-interface',53,63),(8,'General Operations and Configurations','general-operations-and-configurations',64,90),(9,'Upgrade Packages','upgrade-packages',91,93)]
@@ -206,9 +206,7 @@ def main():
   for n in range(start,end+1):
    body,audit=page_content(n);coverage.append(audit)
    chunks.append(body)
-  editorial=ROOT/'scripts/editorial'/f'{ch:02}-{slug}.md'
-  if editorial.is_file():chunks=[chunks[0],editorial.read_text().strip()]
-  filename=f'docs/{ch:02}-{slug}.md'
+  filename=f'manuals/bactosense/{ch:02}-{slug}.md'
   (ROOT/filename).write_text(normalize_artwork(normalize_notices('\n\n'.join(chunks)+'\n'),filename))
  (ROOT/'extraction/first-half-coverage.json').write_text(json.dumps(coverage,indent=2)+'\n')
  print('Generated',len(CHAPTERS),'chapters from',len(coverage),'pages')

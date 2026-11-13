@@ -19,7 +19,7 @@ Avoid contamination of the equipment. Wear nitrile gloves when handling tubings 
 |  | WORK STEP | ADDITIONAL INFO / IMAGES |
 | --- | --- | --- |
 | 1. | Terminate any ongoing measurement series. |  |
-| 2. | Close the On/Off valves at the water pipes connection to stop the water flow through the BactoSwitch tubings and online sampling device. |  |
+| 2. | Close the On/Off valves at the water pipe connections to stop the water flow through the BactoSwitch tubings and online sampling device. |  |
 | 3. | Disconnect the BactoSwitch mains power supply to avoid any risk of short circuits. |  |
 | 4. | Remove the power connector plug from the power connector socket, and reinstall the power connector protection cap. |  |
 | 5. | Remove the USB-C cable from both the BactoSwitch and the BactoSense, and reinstall both connector protection caps. |  |
@@ -72,7 +72,7 @@ In case you return the BactoSwitch to bNovate or a distribution partner, please 
 
 **Do not return contaminated materials**
 
-Instruments that have come into contact with hazardous media must not be sent without prior decontamination and accompanied certificate of decontamination. Contact support@bnovate.com for more information.
+Instruments that have come into contact with hazardous media must be decontaminated before shipment and must be accompanied by a certificate of decontamination. Contact support@bnovate.com for more information.
 
 :::
 

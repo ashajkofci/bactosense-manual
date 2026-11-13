@@ -121,7 +121,7 @@ def normalize_notices(content):
 
 if __name__ == '__main__':
     from pathlib import Path
-    for path in (Path(__file__).resolve().parents[1]/'docs').glob('*.md'):
+    for path in (Path(__file__).resolve().parents[1]/'manuals/bactosense').glob('*.md'):
         original = path.read_text()
         converted = normalize_notices(original)
         if converted != original:

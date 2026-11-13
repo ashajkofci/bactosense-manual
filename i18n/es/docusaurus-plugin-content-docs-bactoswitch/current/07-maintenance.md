@@ -20,7 +20,7 @@ Evite la contaminación del equipo. Utilice guantes de nitrilo al manipular los 
 
 **Antes de realizar cualquier operación de mantenimiento**
 
-- Cierre las válvulas de cierre de la conexión a las tuberías de agua.
+- Cierre las válvulas de cierre de las conexiones a las tuberías de agua.
 - Desconecte la alimentación de red para evitar cualquier riesgo de cortocircuito.
 
 :::
@@ -44,7 +44,7 @@ En caso de contaminación persistente de los tubos, biológica o no biológica (
 
 **Antes de desconectar los tubos**
 
-- Cierre las válvulas de cierre de la conexión a las tuberías de agua.
+- Cierre las válvulas de cierre de las conexiones a las tuberías de agua.
 - Desconecte la alimentación de red para evitar cualquier riesgo de cortocircuito.
 
 :::

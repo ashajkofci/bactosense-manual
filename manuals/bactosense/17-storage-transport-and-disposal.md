@@ -1,0 +1,236 @@
+---
+title: "17. Storage, Transport and Disposal"
+sidebar_label: "17. Storage, Transport and Disposal"
+sidebar_position: 17
+slug: /storage-transport-and-disposal
+---
+
+## 17.1 Storage {#section-17-1}
+
+### 17.1.1 Storage of the BactoSense {#section-17-1-1}
+
+Preparations
+
+|  | WORK STEP |
+| --- | --- |
+| 1. | Make sure the manual sampling device is installed |
+| 2. | Perform a Clean sampling device with Washstation process, as described in [Clean manual sampling device with Washstation](15-maintenance.md#section-15-2-2). Alternatively, if no Washstation is available, follow the procedure in [Clean manual sampling device with basic cleaning](15-maintenance.md#section-15-2-3). |
+| 3. | Leave an empty tube or empty Washstation attached to the manual sampling device. |
+| 4. | Follow the cartridge removal procedure in [Removing a cartridge](08-general-operations-and-configurations.md#section-8-9-5) to safely remove the cartridge. Note: Cartridge removal is not required if the storage conditions of the cartridge can also be fulfilled. |
+| 5. | Power off the BactoSense. |
+| 6. | Unplug the power supply unit from the mains power supply, then unplug the power supply plug from the BactoSense. |
+| 7. | Make sure the USB, Ethernet and power sockets are covered with the attached covers. |
+| 8. | Pack the BactoSense with attached manual sampling device in its standard cardboard box with foam inserts, or in the transport case. |
+
+**Storage**
+
+Store the BactoSense according to the following storage conditions:
+
+- Temperature between 15 °C and 25 °C (59 °F – 77 °F)
+- Relative humidity between 10 % and 70 %
+- Non-vibrating, non-corrosive, dark and clean environment
+
+**Re-installation**
+
+After storage, follow the general installation instructions described in [Installation](05-installation.md).
+
+:::info[Validate after storage]
+
+If the BactoSense has been stored for more than one month, perform an instrument validation using the [Validation Kit](/other-manuals/validation-kit) before the first measurement to ensure proper functioning.
+
+:::
+
+### 17.1.2 Storage of the sampling devices {#section-17-1-2}
+
+Note: The BactoSense should always have a sampling device installed. This procedure refers to storage of additional sampling devices if available.
+
+Preparations
+
+|  | WORK STEP | ADDITIONAL INFO / IMAGES |
+| --- | --- | --- |
+| 1. | Remove and clean the sampling device according to the instructions in [Removal of the manual sampling device](08-general-operations-and-configurations.md#section-8-10-2) (manual sampling device) or [Removal of the online sampling device](08-general-operations-and-configurations.md#section-8-10-1) (online sampling device). | Wear gloves during the process to prevent sampling device contamination. If the tubings of the online sampling device show any signs of contamination or damage, do not reuse and discard. |
+| 2. | Cover the cleaned sampling device with the dedicated cap if available. | ![Illustration for table on manual page 153](/img/manual/cell-8fdb2d0e492f.png "width=66 class=manual-figure") |
+| 3. | Store the clean sampling device in a clean and dry plastic bag. |  |
+
+**Storage**
+
+Store the sampling device according to the following storage conditions:
+
+- Temperature between 5 °C and 40 °C (41 °F – 104 °F)
+- Relative humidity between 10 % and 70 %
+- Non-vibrating, non-corrosive, dark and clean environment
+
+**Re-installation**
+
+After storage, follow the general installation instructions in [Installation of the manual sampling device](05-installation.md#section-5-4) (manual sampling device) or [Installation of the online sampling device](05-installation.md#section-5-5) (online sampling device).
+
+### 17.1.3 Storage of the cartridge {#section-17-1-3}
+
+:::warning[Protect against leaking chemicals]
+
+Wear protective gloves and goggles. Leaking chemicals can cause skin irritation, eye damage and other health hazards. Make sure the liquid connectors of the cartridge are all tightly sealed with the respective plugs.
+
+:::
+
+:::info[Check cartridge expiry]
+
+Check the expiration date of the cartridge. The expiration date is printed on the handle of the cartridge in the format Day/Month/Year, or can be found on the instrument user interface under Home → Settings → System info.
+
+:::
+
+Preparations
+
+|  | WORK STEP |
+| --- | --- |
+| 1. | Wear protective gloves and goggles. |
+| 2. | Follow the cartridge removal procedure in [Removing a cartridge](08-general-operations-and-configurations.md#section-8-9-5) to safely remove the cartridge from the BactoSense. |
+| 3. | Make sure the liquid connectors of the cartridge are all tightly sealed with the respective plugs. |
+| 4. | Pack the cartridge in its original cardboard box with foam inserts. |
+
+**Storage**
+
+Store the cartridge according to the following storage conditions:
+
+- Temperature between 15 °C and 25 °C (59 °F – 77 °F), ideally 15 °C
+- Relative humidity between 20 % and 60 %
+- Non-vibrating, non-corrosive, dark and clean environment
+
+**Re-installation**
+
+After storage, follow the general installation instructions in [Installing a cartridge](08-general-operations-and-configurations.md#section-8-9-6).
+
+## 17.2 Transport {#section-17-2}
+
+### 17.2.1 Transport of the BactoSense {#section-17-2-1}
+
+Refer to the following transportation instructions to safely transport the BactoSense.
+
+- Follow the general preparation steps in [Storage of the BactoSense](17-storage-transport-and-disposal.md#section-17-1-1) to prepare the BactoSense for transport.
+- Note that the storage conditions for humidity and temperature listed in [Technical data](03-instrument-overview.md#section-3-2) and [Storage of the BactoSense](17-storage-transport-and-disposal.md#section-17-1-1) apply.
+- Make sure the manual sampling device is installed for transportation.
+
+**Table 17-1 BactoSense transportation instructions**
+
+**Standard shipping**
+
+- Remove the cartridge using the Remove cartridge procedure under Home → Settings → Maintenance → Cartridge change. Basic users open Cartridge change directly from Settings.
+- Pack BactoSense and cartridge in their standard cardboard boxes with foam inserts.
+- Ship on a pallet or skid.
+- Perform an instrument self-check ([Automatic self-check](16-warnings-errors-and-troubleshooting.md#section-16-6)) and an instrument validation using the [Validation kit](/other-manuals/validation-kit) when reinstalling the instrument.
+
+**Long distance by car or uneven road by car**
+
+- Remove the cartridge using the Remove cartridge procedure under Home → Settings → Maintenance → Cartridge change. Basic users open Cartridge change directly from Settings.
+- Pack BactoSense and cartridge in their standard cardboard boxes with foam inserts, or alternatively use the transport case (see [Accessories](18-supply-scope-accessories-and-consumables.md#section-18-2)).
+- Perform a Clean sampling device with Washstation when reinstalling the instrument (see [Clean manual sampling device with Washstation](15-maintenance.md#section-15-2-2)).
+
+**Short distance by car, even road, instrument lying on its back**
+
+- Remove the cartridge using the Remove cartridge procedure under Home → Settings → Maintenance → Cartridge change. Basic users open Cartridge change directly from Settings.
+- Transport the BactoSense in the transport case (see [Accessories](18-supply-scope-accessories-and-consumables.md#section-18-2)).
+- Perform a Clean sampling device with Washstation when reinstalling the instrument (see [Clean manual sampling device with Washstation](15-maintenance.md#section-15-2-2)).
+
+**Short distance by car, even road, instrument in upright position**
+
+- Transport in the transport case (see [Accessories](18-supply-scope-accessories-and-consumables.md#section-18-2)), without removing the cartridge.
+- Perform a Fill Tubing process after switching on the instrument again, see [Overview of protocols in manual mode](10-measurements.md#section-10-9-1).
+
+**Short distance within facility, instrument in upright position**
+
+- Transport in the transport case (see [Accessories](18-supply-scope-accessories-and-consumables.md#section-18-2)) or by hand, without removing the cartridge.
+- Perform a Fill Tubing process after switching on the instrument again, see [Overview of protocols in manual mode](10-measurements.md#section-10-9-1).
+
+### 17.2.2 Transport of the cartridge {#section-17-2-2}
+
+Preparations
+
+|  | WORK STEP |
+| --- | --- |
+| 1. | Wear protective gloves and goggles |
+| 2. | Follow the procedure in [Removing a cartridge](08-general-operations-and-configurations.md#section-8-9-5) to safely remove the cartridge. |
+| 3. | Make sure the liquid connectors of the cartridge are all tightly sealed with the respective plugs. |
+| 4. | Pack the cartridge in its original cardboard box with foam inserts, or in the transport case if available. |
+
+**Transportation**
+
+Transport the cartridge in normal horizontal position. The cartridge storage conditions listed in [Technical data](03-instrument-overview.md#section-3-2) apply.
+
+**Re-installation**
+
+After transport, follow the general installation instructions in [Installing a cartridge](08-general-operations-and-configurations.md#section-8-9-6).
+
+## 17.3 Returning the BactoSense or accessories {#section-17-3}
+
+In case you return the BactoSense or accessories to bNovate or a distribution partner, please follow the instructions in this section.
+
+:::warning[Decontaminate before returning]
+
+Do not return contaminated materials
+
+Instruments that have come into contact with hazardous media must be decontaminated before shipment and must be accompanied by a certificate of decontamination. Contact support@bnovate.com for more information.
+
+:::
+
+:::caution[Follow the shipping instructions]
+
+Adhere to shipping instructions
+
+bNovate does not take responsibility for deliveries which do not comply with our shipping regulations and will charge for repairs. Please contact support@bnovate.com if the original packaging is no longer available or you need help with packaging.
+
+:::
+
+### 17.3.1 Returning the BactoSense {#section-17-3-1}
+
+Preparations
+
+|  | WORK STEP |
+| --- | --- |
+| 1. | If the instrument has been exposed to hazardous substances, fully decontaminate it and provide a certificate of decontamination. |
+| 2. | Make sure the manual sampling device is installed. |
+| 3. | Perform a Clean sampling device with Washstation process, as described in [Clean manual sampling device with Washstation](15-maintenance.md#section-15-2-2). Alternatively, if no Washstation is available, follow the procedure in [Clean manual sampling device with basic cleaning](15-maintenance.md#section-15-2-3). |
+| 4. | Leave an empty tube or empty Washstation attached to the manual sampling device |
+| 5. | Follow the cartridge removal procedure in [Removing a cartridge](08-general-operations-and-configurations.md#section-8-9-5) to safely remove the cartridge. |
+| 6. | Power off the BactoSense. |
+| 7. | Unplug the power supply unit from the mains power supply, then unplug the power supply plug from the BactoSense. |
+| 8. | Make sure the USB, Ethernet and power sockets are covered with the attached covers. |
+| 9. | Pack the BactoSense with manual sampling device but without cartridge in its standard cardboard box and fixate the box on a pallet or skid. |
+| 10. | If you ship additional items, label them with the serial number of the BactoSense. |
+| 11. | Indicate with stickers that the contents of the parcels are fragile, shall be kept dry, and shall only be transported in the indicated orientation. |
+
+**Return**
+
+Ship the BactoSense to bNovate or a distribution partner, adhering to the general storage temperature and humidity requirements listed in [Technical data](03-instrument-overview.md#section-3-2) and [Storage of the BactoSense](17-storage-transport-and-disposal.md#section-17-1-1).
+
+### 17.3.2 Returning a cartridge for refill {#section-17-3-2}
+
+Preparations
+
+|  | WORK STEP |
+| --- | --- |
+| 1. | If the cartridge has been exposed to hazardous substances, fully decontaminate it and provide a certificate of decontamination. |
+| 2. | Follow the cartridge removal procedure in [Removing a cartridge](08-general-operations-and-configurations.md#section-8-9-5) to safely remove the cartridge. |
+| 3. | Pack the cartridge in its standard cardboard box. |
+| 4. | Indicate with stickers that the contents of the parcels are fragile, shall be kept dry, and shall only be transported in the indicated orientation. |
+
+**Return for refill**
+
+Ship the cartridge to bNovate, adhering to the general storage temperature and humidity requirements listed in [Technical data](03-instrument-overview.md#section-3-2) and [Storage of the cartridge](17-storage-transport-and-disposal.md#section-17-1-3).
+
+## 17.4 Recycling and disposal {#section-17-4}
+
+The disposal of the BactoSense, accessories and consumables has to be carried out in compliance with regional statutory regulations. The BactoSense contains no environmentally damaging sources of radiation.
+
+**Table 17-2 Materials and their recycling or disposal**
+
+::::info[Recycling and disposal]
+
+| CATEGORY | MATERIALS | DISPOSAL POSSIBILITIES |
+| --- | --- | --- |
+| Packaging | Cardboard, wood, paper | Reuse as packaging material or dispose for recycling |
+| ^ | Protective foils, polystyrene shells | Reuse as packaging material or dispose for recycling |
+| Electronics | Printed circuit boards, electro-mechanical components | To be disposed as electronic waste. Follow the local legislation. |
+| Optics | Glass, aluminum | Recycling via centers for recycling glass and waste metal |
+| Housing | Styrene butadiene painted, stainless steel, polystyrene painted, Silica beads (Desiccant bag), filters | Local disposal center |
+| Cartridge | :::caution[Return used cartridges] Do not disassemble or dispose of the cartridge. ::: | Prepare the cartridge according to [Removing a cartridge](../general-operations-and-configurations/#section-8-9-5) and return the cartridge with a declaration to bNovate according to [Returning a cartridge for refill](../storage-transport-and-disposal/#section-17-3-2). |
+
+::::

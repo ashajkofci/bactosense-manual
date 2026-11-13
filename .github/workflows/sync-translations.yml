@@ -1,0 +1,162 @@
+name: Sync manual translations
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'manuals/**'
+      - 'manuals.json'
+      - 'maintenance/translation-glossary.md'
+      - 'maintenance/translation-context.md'
+      - 'scripts/sync-translations*'
+      - 'scripts/translation-*.mjs'
+      - 'scripts/check-translations.mjs'
+      - 'plugins/manuals.cjs'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/sync-translations.yml'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: Retranslate every chapter, including unchanged sources (uses API credits)
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sync-translations
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    # API credentials and repository writes are available only on the trusted default branch.
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-24.04
+    environment: agent
+    timeout-minutes: 120
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          package-manager-cache: false
+
+      - name: Check for translations to sync
+        id: plan
+        env:
+          FORCE_SYNC: ${{ inputs.force || false }}
+        shell: bash
+        run: |
+          args=(--dry-run)
+          if [[ "$FORCE_SYNC" == 'true' ]]; then args+=(--force); fi
+          node scripts/sync-translations.mjs "${args[@]}"
+
+      - name: Install dependencies
+        if: steps.plan.outputs.has_work == 'true'
+        run: npm ci --include=dev
+
+      - name: Test translation sync
+        if: steps.plan.outputs.has_work == 'true'
+        run: npm run translations:test
+
+      - name: Sync translated chapters using the OpenAI Responses API
+        id: sync
+        if: steps.plan.outputs.has_work == 'true'
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_TRANSLATION_MODEL: gpt-6.1-terra
+          FORCE_SYNC: ${{ inputs.force || false }}
+        shell: bash
+        run: |
+          args=()
+          if [[ "$FORCE_SYNC" == 'true' ]]; then args+=(--force); fi
+          npm run translations:sync -- "${args[@]}"
+
+      - name: Validate manuals and translations
+        id: validate
+        if: steps.sync.outputs.has_work == 'true'
+        run: |
+          npm run manual:check
+          npm run translations:check
+
+      - name: Commit translations, then open or update a pull request
+        id: save
+        if: steps.sync.outputs.has_work == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          BASE_BRANCH: ${{ github.event.repository.default_branch }}
+          SYNC_BRANCH: automation/sync-translations
+        shell: bash
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git switch -C "$SYNC_BRANCH"
+          git add -- i18n/ maintenance/translation-sync.json
+          if git diff --cached --quiet; then
+            echo 'Translations are already committed.'
+            exit 0
+          fi
+          git diff --cached --check
+          git commit -m 'Sync manual translations'
+          gh auth setup-git
+          git push --force-with-lease origin "HEAD:refs/heads/$SYNC_BRANCH"
+
+          body_file="$RUNNER_TEMP/translation-sync-pr.md"
+          cat > "$body_file" <<'BODY'
+          Synchronizes translated manual chapters with the current English source using the OpenAI Responses API, translation glossary and manual context.
+
+          Validation: translation sync tests, manual checks and translation structure checks. The separate Build manuals workflow rebuilds the versioned site after this pull request is merged.
+
+          Review the translated terminology and safety instructions before merging; structural checks do not establish linguistic correctness.
+          BODY
+          printf '\n' >> "$body_file"
+          cat output/translations/sync-report.md >> "$body_file"
+          pr_url=$(gh pr list --base "$BASE_BRANCH" --head "$SYNC_BRANCH" --state open --json url --jq '.[0].url // empty')
+          if [[ -z "$pr_url" ]]; then
+            pr_url=$(gh pr create --base "$BASE_BRANCH" --head "$SYNC_BRANCH" \
+              --title 'Sync manual translations' --body-file "$body_file")
+          else
+            gh pr edit "$pr_url" --body-file "$body_file"
+          fi
+          echo "pull_request_url=$pr_url" >> "$GITHUB_OUTPUT"
+
+      - name: Publish translation summary
+        if: always()
+        env:
+          PLAN_RESULT: ${{ steps.plan.outcome }}
+          SYNC_RESULT: ${{ steps.sync.outcome }}
+          VALIDATION_RESULT: ${{ steps.validate.outcome }}
+          SAVE_RESULT: ${{ steps.save.outcome }}
+          PR_URL: ${{ steps.save.outputs.pull_request_url }}
+        shell: bash
+        run: |
+          if [[ -f output/translations/sync-report.md ]]; then
+            cat output/translations/sync-report.md >> "$GITHUB_STEP_SUMMARY"
+          else
+            printf '## Translation sync report\n\nNo report was generated; sync step: %s.\n' "$SYNC_RESULT" >> "$GITHUB_STEP_SUMMARY"
+          fi
+          printf '\n| Step | Result |\n| --- | --- |\n| Check for work | %s |\n| Sync | %s |\n| Validation | %s |\n| Save to Git | %s |\n' \
+            "$PLAN_RESULT" "$SYNC_RESULT" "$VALIDATION_RESULT" "$SAVE_RESULT" >> "$GITHUB_STEP_SUMMARY"
+          if [[ -n "$PR_URL" ]]; then
+            printf '\nTranslation pull request: %s\n' "$PR_URL" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload translation reports
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: translation-sync-reports
+          path: output/translations/
+          if-no-files-found: ignore
+          retention-days: 14

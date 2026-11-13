@@ -36,9 +36,9 @@ Le istruzioni seguenti mostrano come configurare e avviare le misurazioni automa
 | 4. | Premere Avvio nella schermata Home per aprire l’assistente di misurazione online. |  |
 | 5. | In Protocollo, verificare che sia selezionata la casella “Dispositivo di campionamento online (con backflush)”. |  |
 | 6. | Inserire un nome per il campione toccando il campo di testo Nome del campione. |  |
-| 7. | Selezionare il gate da applicare alle misurazioni toccando il campo di testo Gate. | In genere si utilizzano i gate predefiniti TCC e ICC. Utilizzare gate definiti dall’utente se l’applicazione lo richiede. La creazione e la regolazione dei gate sono descritte nel capitolo [Risultati e analisi dei dati](11-results-and-data-analysis.md). |
+| 7. | Selezionare il gate da applicare alle misurazioni toccando il campo di testo Gate. | In genere si utilizzano i gate predefiniti. Utilizzare gate definiti dall’utente se l’applicazione lo richiede. La creazione e la regolazione dei gate sono descritte nel capitolo [Risultati e analisi dei dati](11-results-and-data-analysis.md). |
 | 8. | Premere il pulsante Avanti. |  |
-| 9. | Se viene mostrato l’editor della programmazione settimanale, premere Indietro per tornare alla programmazione a intervalli semplice. Selezionare l’intervallo di misurazione utilizzando la rotella sul lato destro. | L’intervallo di misurazione indica il tempo tra misurazioni successive e può variare da 30 min a 6 ore. |
+| 9. | Se viene mostrato l’editor della programmazione settimanale, premere Indietro per tornare alla programmazione a intervalli semplice. Selezionare l’intervallo di misurazione utilizzando la rotella sul lato destro. | L’intervallo di misurazione indica il tempo tra misurazioni successive. La durata minima va da 30 a 60 minuti, in funzione della cartuccia. La durata massima è di 6 ore. |
 | 10. | Se necessario, ritardare l’avvio deselezionando Avvia ora e scegliendo un orario di avvio specifico. | L’impostazione dell’ora di BactoSense è descritta nella sezione [Data e ora](08-general-operations-and-configurations.md#section-8-3-2). |
 | 11. | Premere il pulsante Avvio. | Durante la misurazione, la stima corrente della concentrazione cellulare viene visualizzata nella barra delle azioni sotto “Last”. |
 | 12. | Dopo ogni misurazione, il grafico della serie temporale viene aggiornato. | Per ulteriori dettagli, premere Visualizza i risultati. |
@@ -160,7 +160,7 @@ Le istruzioni seguenti mostrano come configurare e avviare una misurazione in mo
 | 5. | Nella schermata Home, premere **Modalità**. Nella schermata **Selezione modalità**, toccare **Modalità manuale**. Premere **Indietro**, quindi **Misura** per aprire l’assistente di misurazione. | La modalità attuale è evidenziata. Toccando una modalità, il passaggio avviene immediatamente. Se è attiva una serie in modalità online, confermare **Sei sicuro di voler interrompere la modalità Online?** con **Sì**. Se è in corso una misurazione, premere **Interrompi** per interromperla oppure **Attendere** e selezionare nuovamente la modalità al termine della misurazione. **Modalità manuale** non è selezionabile mentre è attiva la modalità PLC (vedere [Configurazione degli ingressi digitali e modalità PLC](06-io-box.md#section-6-5)). |
 | 6. | Selezionare Analisi dell'acqua dall’elenco dei protocolli disponibili. | Per ottenere repliche tecniche, selezionare il numero di repliche nella colonna Repliche. Per impostazione predefinita, viene misurato un campione. Se sono configurate più repliche, dalla stessa provetta vengono prelevati più campioni. |
 | 7. | Inserire un nome per il campione toccando il campo Nome del campione, digitando il nome e premendo OK. |  |
-| 8. | Verificare che nel campo Gate sia configurato il gate desiderato. Per utilizzarne un altro, toccare il campo Gate e selezionarlo tra le opzioni disponibili (in funzione della cartuccia installata). | In genere si utilizzano i gate predefiniti TCC e ICC. Utilizzare gate definiti dall’utente se l’applicazione lo richiede. La creazione e la regolazione dei gate sono descritte nel capitolo [Risultati e analisi dei dati](11-results-and-data-analysis.md). |
+| 8. | Verificare che nel campo Gate sia configurato il gate desiderato. Per utilizzarne un altro, toccare il campo Gate e selezionarlo tra le opzioni disponibili (in funzione della cartuccia installata). | In genere si utilizzano i gate predefiniti. Utilizzare gate definiti dall’utente se l’applicazione lo richiede. La creazione e la regolazione dei gate sono descritte nel capitolo [Risultati e analisi dei dati](11-results-and-data-analysis.md). |
 | 9. | Premere il pulsante Avanti. |  |
 | 10. | Collegare al dispositivo di campionamento manuale una provetta da 5 mL con tappo a vite contenente 2 – 5 mL di campione. |  |
 | 11. | Premere il pulsante Avvio. | Vengono visualizzate la durata stimata del protocollo e l’ora prevista di conclusione. Lo stato corrente della misurazione è indicato nella barra superiore (ad esempio Initializing, Mixing...). |
@@ -242,7 +242,7 @@ In modalità manuale, gli operatori possono scegliere tra due protocolli di anal
 | NOME DEL PROTOCOLLO | DESCRIZIONE DEL PROTOCOLLO |
 | --- | --- |
 | Water Analysis | Analizza un campione d’acqua e termina con un ciclo di pulizia. Se vengono eseguite più repliche, la pulizia viene effettuata una sola volta, alla fine. Tra le repliche viene eseguito automaticamente un adescamento. |
-| Beads Analysis | Questo protocollo è destinato all’analisi di microsfere di calibrazione ed è utilizzato con il kit di validazione. Termina automaticamente con un ciclo di pulizia. Se vengono eseguite più repliche, la pulizia viene effettuata una sola volta, alla fine. |
+| Beads Analysis | Questo protocollo è destinato all’analisi di microsfere di calibrazione ed è utilizzato con il [kit di validazione](/other-manuals/validation-kit). Termina automaticamente con un ciclo di pulizia. Se vengono eseguite più repliche, la pulizia viene effettuata una sola volta, alla fine. |
 
 I protocolli di manutenzione possono essere eseguiti prima o tra i protocolli di analisi per preparare, risciacquare o pulire il sistema. In modalità manuale sono disponibili i seguenti protocolli di manutenzione:
 
@@ -254,12 +254,14 @@ I protocolli di manutenzione possono essere eseguiti prima o tra i protocolli di
 | Clean Sampling Device with Washstation | Pulisce il dispositivo di campionamento manuale in modo da lavare completamente il filtro esterno e l’interno e l’esterno dell’ago tra le misurazioni, dopo un campione sporco o in caso di ostruzione del filtro. Perché questo protocollo compaia, la Washstation deve essere montata sul dispositivo di campionamento manuale e deve essere installata una cartuccia. Questo protocollo ha un potere disinfettante superiore a Clean Sampling Device e va quindi preferito. L’utilizzo della Washstation è il modo migliore per mantenere pulito il dispositivo di campionamento manuale ed evitare contaminazioni incrociate. Le istruzioni sono riportate nella sezione [Pulire il dispositivo di campionamento manuale con Washstation](15-maintenance.md#section-15-2-2). |
 | Clean Sampling Device | Pulisce il dispositivo di campionamento consentendo di lavare il filtro esterno e l’interno dell’ago dopo un campione estremamente carico o in caso di ostruzione del filtro. Le istruzioni sono riportate nella sezione [Pulire il dispositivo di campionamento manuale con pulizia di base](15-maintenance.md#section-15-2-3). |
 | Fill Tubing | Riempie tutti i tubi che trasportano reagenti dalla cartuccia per rimuovere le bolle. Al termine del processo pulisce l’ottica. |
-| Prime and Clean Optics | Riempie i tubi con il liquido del campione. Aiuta a diluire eventuali residui, ad esempio dopo una pulizia del dispositivo di campionamento. Termina con la fase di pulizia. |
+| Prime and Clean Optics | Riempie i tubi con il liquido del campione. Aiuta a diluire eventuali residui, ad esempio dopo un protocollo Clean Sampling Device. Termina con la fase di pulizia. |
 | Prime | Carica il campione nello strumento. Le istruzioni sono riportate nella sezione [Esecuzione di un adescamento (Prime)](10-measurements.md#section-10-9-3). |
 
 ### 10.9.2 Panoramica dei protocolli in modalità online {#section-10-9-2}
 
-In modalità online, gli operatori possono scegliere tra due protocolli di analisi. Tabella 10-3 Protocolli di analisi per la modalità online
+In modalità online, gli operatori possono scegliere tra due protocolli di analisi.
+
+**Tabella 10-3 Protocolli di analisi per la modalità online**
 
 | NOME DEL PROTOCOLLO | DESCRIZIONE DEL PROTOCOLLO |
 | --- | --- |

@@ -72,7 +72,7 @@ Debe garantizarse una alimentación eléctrica ininterrumpida y estable, conform
 
 :::
 
-La fuente de alimentación se suministra en una carcasa IP67 y con un cable con enchufe de tipo J, E o G. Para conectar BactoSense a la alimentación con uno de estos enchufes suministrados por bNovate, siga las instrucciones de la sección [Conexión mediante el enchufe estándar de la fuente de alimentación](05-installation.md#section-5-3-1). Para la conexión mediante otro enchufe o conectores de alimentación, utilice el procedimiento descrito en la sección [Modificación de la fuente de alimentación estándar con otro conector](05-installation.md#section-5-3-2).
+La fuente de alimentación se suministra en una carcasa IP67 y con un cable con enchufe específico del país. Para conectar BactoSense a la alimentación con uno de estos enchufes suministrados por bNovate, siga las instrucciones de la sección [Conexión mediante el enchufe estándar de la fuente de alimentación](05-installation.md#section-5-3-1). Para la conexión mediante otro enchufe o conector de alimentación, utilice el procedimiento descrito en la sección [Modificación de la fuente de alimentación estándar con otro conector](05-installation.md#section-5-3-2).
 
 :::info[Mantenga accesible la desconexión de la alimentación]
 
@@ -127,7 +127,7 @@ El procedimiento siguiente solo se aplica si BactoSense debe conectarse a una fu
 | --- | --- | --- |
 | 1\. | :::danger[Desconecte la fuente de alimentación] Asegúrese de que la fuente de alimentación no esté conectada a la red. Retire la tapa de la carcasa desenroscando los cuatro tornillos (círculos). ::: | ![Ilustración del procedimiento, página impresa 21](/img/manual/asset-a4e9bfa03293.png "width=241") |
 | 2\. | Retire el conector C13 (A) y desenrósquelo para abrirlo.<br />![Ilustración de la retirada y apertura del conector C13 (A).](/img/manual/asset-3c26b4a767ec.png "width=240") | ![Ilustración del procedimiento, página impresa 21](/img/manual/asset-27e4522382d5.png "width=241") |
-| 3\. | Abra el prensaestopas (Y) e introduzca el cable nuevo. Longitudes de cable y secciones de conductor: • 0 – 9 m (0 – 30 ft), 1 mm2 • 9 – 21 m (30 – 69 ft), 1.5 mm2 (máximo). El prensaestopas está dimensionado para un diámetro de cable de 3 – 10 mm (0.12” – 0.39”). | .<br />![Ilustración del procedimiento.](/img/manual/asset-00540f644f60.png "width=240") |
+| 3\. | Abra el prensaestopas (Y) e introduzca el cable nuevo. Longitudes de cable y secciones de conductor: • 0 – 9 m (0 – 30 ft), 1 mm<sup>2</sup> • 9 – 21 m (30 – 69 ft), 1.5 mm<sup>2</sup> (máximo). El prensaestopas está dimensionado para un diámetro de cable de 3 – 10 mm (0.12” – 0.39”). | ![Prensaestopas y cableado de los bornes](/img/manual/asset-00540f644f60.png "width=240") |
 | 4\. | :::danger[Conecte la tierra de protección] Apriete los 3 conductores (N, PE, L) en el borne eléctrico y sujete el aislamiento del cable. Asegúrese de utilizar un enchufe con tierra de protección (PE) y de que el dispositivo esté correctamente conectado a ella. ::: | ^ |
 | 5\. | Cierre el conector C13 (A) con el tornillo y enchúfelo en la fuente de alimentación. Apriete el prensaestopas. Tire del cable para comprobar si el prensaestopas está suficientemente apretado. | ![Ilustración del procedimiento, página impresa 22](/img/manual/asset-27e4522382d5.png "width=241") |
 | 6\. | Opcional: la fuente de alimentación puede montarse en una pared. Deben utilizarse tornillos M4 de al menos 20 mm de longitud. Con la tapa aún retirada, coloque los 4 tornillos y fije la carcasa a la pared. | ![Ilustración del procedimiento, página impresa 22](/img/manual/asset-0ee15b02c033.png "width=257") |
@@ -282,6 +282,8 @@ BactoSense ofrece varias opciones de integración y acceso a los datos en línea
 | HTTP y HTTPS | Sección [Obtención de archivos mediante HTTP o HTTPS](12-data-access-and-export.md#section-12-3) |
 | Transmisión de la interfaz de usuario mediante Virtual Network Computing (VNC)<br/>(control remoto) | Sección [Transmisión de la interfaz gráfica mediante VNC](12-data-access-and-export.md#section-12-4) |
 | Interfaz web de usuario | Capítulo [Interfaz web de usuario](13-web-user-interface.md) |
+| [BactoLink](/other-manuals/bactolink) | Consulte el manual de usuario de BactoLink, aparte |
+| BactoCloud | Capítulo [BactoCloud](14-bactocloud.md) |
 
 ![BactoSense — Servicios del sistema](/img/gui/es/system-services.png "width=507")
 

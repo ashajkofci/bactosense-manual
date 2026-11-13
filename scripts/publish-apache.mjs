@@ -1,6 +1,6 @@
 import { cp, mkdtemp, readFile, readdir, rename, rm, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import { manuals, pdfFile, sourceLocale } from '../plugins/manuals.cjs';
+import { manuals, pdfFile, pdfManuals, sourceLocale } from '../plugins/manuals.cjs';
 
 export async function publishApacheSite(root, manifest) {
   const source = path.resolve(root, manifest.outDir);
@@ -8,7 +8,7 @@ export async function publishApacheSite(root, manifest) {
   if (source === destination || source.startsWith(`${destination}${path.sep}`)) {
     throw new Error('Build into build/ or another temporary directory; public/ is the generated Apache deployment.');
   }
-  for (const file of ['index.html', '404.html', ...manuals.map(manual => `pdf/${pdfFile(manual, sourceLocale)}`)]) {
+  for (const file of ['index.html', '404.html', ...manuals.flatMap(manual => pdfManuals(manual).map(publication => `pdf/${pdfFile(publication, sourceLocale)}`))]) {
     if (!(await stat(path.join(source, file))).isFile()) throw new Error(`Missing deployment file: ${file}`);
   }
   const entries = await readdir(source);

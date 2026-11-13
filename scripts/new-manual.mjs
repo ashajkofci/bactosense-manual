@@ -12,8 +12,10 @@ const option = name => {
   return index === -1 ? undefined : args.splice(index, 2)[1];
 };
 const softwareVersion = option('--software');
+const collectionId = option('--collection');
+const manualVersion = option('--version') || (collectionId ? '1' : '1.0.0');
 const [id, title, documentId] = args;
-const usage = 'Usage: npm run manual:new -- <id> "<Title>" <document ID> [--software <version>]\nExample: npm run manual:new -- bactocontrol "BactoControl" UM-0012 --software 1.0.0';
+const usage = 'Usage: npm run manual:new -- <id> "<Title>" <document ID> [--software <version>] [--collection <id>] [--version <revision>]\nExample: npm run manual:new -- new-kit "New Kit" UM-0012 --collection other-manuals';
 
 function fail(message) {
   console.error(`${message}\n${usage}`);
@@ -22,6 +24,18 @@ function fail(message) {
 
 if (args.length !== 3 || !id || !title || !documentId) fail('Expected an id, a title and a document ID.');
 if (!/^[a-z][a-z0-9-]*$/.test(id)) fail(`Invalid id "${id}": use lowercase letters, digits and hyphens; it becomes the URL /${id}/.`);
+if (collectionId) {
+  const collection = manuals.find(manual => manual.id === collectionId && manual.pdfMode === 'chapter');
+  if (!collection) fail(`No chapter collection named "${collectionId}" exists.`);
+  const directory = path.join(root, collection.path);
+  const file = path.join(directory, `${id}.md`);
+  if (existsSync(file) || manualRegistry.pdfManuals(collection).some(manual => manual.chapterId === id)) fail(`Chapter "${id}" already exists in ${collectionId}.`);
+  const position = readdirSync(directory).filter(name => /\.mdx?$/.test(name))
+    .reduce((maximum, name) => Math.max(maximum, Number(readFileSync(path.join(directory, name), 'utf8').match(/^sidebar_position:\s*(\d+)/m)?.[1] || 0)), 0) + 1;
+  writeFileSync(file, `---\nid: ${id}\ntitle: ${JSON.stringify(title)}\nsidebar_position: ${position}\nslug: /${id}\ndocument_id: ${JSON.stringify(documentId)}\nmanual_version: ${JSON.stringify(manualVersion)}\n${softwareVersion ? `software_version: ${JSON.stringify(softwareVersion)}\n` : ''}---\n\n## Intended use {#intended-use}\n\nDescribe the intended use of ${title}.\n\n## Instructions {#instructions}\n\nWrite the instructions using Markdown and the shared manual notices, tables and image tags.\n`);
+  console.log(`Created ${path.relative(root, file)}.\nIt will appear at /${collectionId}/${id}/ with its own generated PDF.\nComplete its content, then run npm run manual:check and npm run build.\nTo remove it, delete this Markdown file and rebuild.`);
+  process.exit(0);
+}
 if (manuals.some(manual => manual.id === id)) fail(`A manual with id "${id}" already exists.`);
 
 // The id is the manual's top-level URL. It must not shadow site files, a language
@@ -67,7 +81,7 @@ registry.push({
   title,
   description: { en: `${title} user manual.` },
   documentId,
-  version: '1.0.0',
+  version: manualVersion,
   ...(softwareVersion ? { softwareVersion } : {}),
   locales: [sourceLocale],
   logo: principal.logo,

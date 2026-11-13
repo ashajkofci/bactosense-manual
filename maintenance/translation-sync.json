@@ -1,0 +1,1826 @@
+{
+  "schemaVersion": 2,
+  "glossarySha256": "f71afb13f89ba73f0804967e198880a1870f02aa69914c5941c5ac11be6d13d3",
+  "contextSha256": "88627c0a835a69cd17380f87c45e11cac275349238fb792c07aa12dff76df7be",
+  "sourceSections": {
+    "manuals/bactosense/01-glossary.md": {
+      "sha256": "69c3c10915c8dc0b1490892428260c48558b76f928e5b094343f8713860c7f29",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "0fdd2c43fa4621944e99ca422b9cfd4645a6769ea32b92aecf17f2d3552d0d1b"
+        },
+        {
+          "id": "@body",
+          "sha256": "3babc1a9b3f7e2da1f440b0e900e6f4e2880768f1f8e2ca21799027cc5e201a5"
+        }
+      ]
+    },
+    "manuals/bactosense/02-general-user-information.md": {
+      "sha256": "ab9cc40a4f37eb7c0aed9190c0a324e6bd8001fc8bf58e9fe1160ef2e85403b9",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "94c76925f6410b49d6ebeb9e071b9ed4ca4336c316e36d004931422f4c5223b8"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "id": "section-2-1",
+          "sha256": "6217faa2e6bdaf2a8a892ae0ecc47c4097bd5dba297cbe34bbca1b48ea5a7b56"
+        },
+        {
+          "id": "section-2-2",
+          "sha256": "f3a4eab3096b5cf493c1b296c6eadc6774e4ebe5f5d694a50d07e51a5414570a"
+        },
+        {
+          "id": "section-2-3",
+          "sha256": "e1c586bb254a5bffd164170948d08a3dd379688555c88d4d8c4dad489c717287"
+        },
+        {
+          "id": "section-2-4",
+          "sha256": "4bdfd53f8550fe56625f370f761fdcdf525c8684f6430c079ddc9d89e4cfd7d5"
+        },
+        {
+          "id": "section-2-5",
+          "sha256": "9cfe1f4de6e8e456136659f125c1ee61f8c093f5015a1d158289ceefea546cbc"
+        },
+        {
+          "id": "section-2-6",
+          "sha256": "42b79c02ac76b7ef4686aab6229e2242bda989c3cfbfa04386e3f37c89d40cfe"
+        },
+        {
+          "id": "section-2-7",
+          "sha256": "ec68291379a5bf65fdcb2b47dcbdf1c5b56b6469566cc31c487da865d1216f18"
+        }
+      ]
+    },
+    "manuals/bactosense/03-instrument-overview.md": {
+      "sha256": "351bfb7a129741f58889765e1aedf19b501173934f3115f63a8978c9927da7ec",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "6863f04e26020e77c8d2e99373f890e410941794a42d23ccbe743d5e2af8bd57"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "id": "section-3-1",
+          "sha256": "2335f2306ecefdb18da3b685f0a9b21586bace16a2aff7e7ff819a9f55ae0bfb"
+        },
+        {
+          "id": "section-3-1-1",
+          "sha256": "c93e1753d4f7d1ed7546ad855e53c8c7264bb53fb1e87106ea0a3c10688456e4"
+        },
+        {
+          "id": "section-3-1-2",
+          "sha256": "047191caa34ca40a33e19827399f9e8753e8c06607823fa572163a23f115ab75"
+        },
+        {
+          "id": "section-3-2",
+          "sha256": "6c652e3f3ec068a2b39ae06b32a33ef8a313cf5bb4d8e60142cf8a592c41c6a8"
+        }
+      ]
+    },
+    "manuals/bactosense/04-safety.md": {
+      "sha256": "83121c52c135369110b62cedd1d422e674c67ff802f5520c5d5ce28734453423",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "86ec8a46af91c817c0a593b53ed8551383172095aa75d9a83a6866eaa8320d5b"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "id": "section-4-1",
+          "sha256": "7f14ec872a60ddc1d2a44ec8f67e84c6cbacfa24e86ba0e2f76a38b5cb7b2886"
+        },
+        {
+          "id": "section-4-2",
+          "sha256": "f8dd2d4329ad76b5c2e1d3d52c4ce526f7ceaa4b0b5f5a46f6b9e9e6f82e6496"
+        },
+        {
+          "id": "section-4-3",
+          "sha256": "0bfff5adb88609cdf170e2ba8591d2abd56a115fc7c3b671379bc1a5bb391963"
+        },
+        {
+          "id": "section-4-4",
+          "sha256": "fb2d3730d90b2c3a6924c5b9a2616488de6df8404892ea373da515e09eb5f408"
+        },
+        {
+          "id": "section-4-5",
+          "sha256": "4c43c6a22b25b5318f6e6fe25a3a0fc2061620fdc6fd175e0b37a8d6fe82ae6a"
+        }
+      ]
+    },
+    "manuals/bactosense/05-installation.md": {
+      "sha256": "29f3cc3a5783ea7a63a43881b4dc537d5b9f69047e57dcc4f56252cc578d324f",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "85e4c9d6e64f068da3f27671b6751fb7f11e994754148566c118008faaa20627"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "2f3120a2358764a4c81b30bee4081809ad0ede417d18900c04e230360f09a1ff"
+        },
+        {
+          "id": "section-5-1",
+          "sha256": "d3dec468b15d10bd2dac7dcbe6b1e55c46f542be75258a697fe3471fee999548"
+        },
+        {
+          "id": "section-5-2",
+          "sha256": "e2de6ef7a3fcf83065b45f6eb3e4bc055b1ff1b929567e148e613df294f3f676"
+        },
+        {
+          "id": "section-5-2-1",
+          "sha256": "3a1f4282e3a8f383259e2900a17e2e98341b5b9a1f9dfcdd5602ea1008c51d4f"
+        },
+        {
+          "id": "section-5-3",
+          "sha256": "378fabdaf6d888add6a5582ec4175028fa90a01c9fc12bc11c2e8a0de63c4f45"
+        },
+        {
+          "id": "section-5-3-1",
+          "sha256": "c39c1a6e27cb78ffdd268cc5261f213f95de9fc878158be8723855807be8c09e"
+        },
+        {
+          "id": "section-5-3-2",
+          "sha256": "44412c10edfd6f53df3018de624ffad1f3d2cdf248da8030fdd4720f92db5999"
+        },
+        {
+          "id": "section-5-4",
+          "sha256": "879af21dac9a62e2dc9e08c462922acc06cb9a118949ca7dde6b66181eb0495c"
+        },
+        {
+          "id": "section-5-5",
+          "sha256": "6deb1ff0db60cf8ac24da569f0dbfef37fc833bc9172cbdcb389aa137756ad78"
+        },
+        {
+          "id": "section-5-5-1",
+          "sha256": "c7cdc656e4c8426083bfca0a021d237c22904bcb6f8359594cc727ee59a3ce1e"
+        },
+        {
+          "id": "section-5-5-2",
+          "sha256": "d1c784cefc8e7ef640e16d921ebcccd13e7ff66cbf257ae8cea6359f5952c7d4"
+        },
+        {
+          "id": "section-5-6",
+          "sha256": "bdfc61b6ceac5991e239f95a12d8dbf0f5c4847177297019326a3cae7c671f68"
+        }
+      ]
+    },
+    "manuals/bactosense/06-io-box.md": {
+      "sha256": "c2926f3f37db36861e7269652ee4c44732f857e44ec89f912fc0bd013b949e67",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "a2e93e0b29bd62b26a38dd4dbb71c3808e16b5a917aac3aeb1392a6e93a6d570"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "357778822a82317e738a9cac852d9a0768bdd77db452fc85a51f57ba271c3626"
+        },
+        {
+          "id": "section-6-1",
+          "sha256": "e23326242f6302b2f19ad5502f05221a4ae4e4a23ce9bb1483d8a23497898d37"
+        },
+        {
+          "id": "section-6-1-1",
+          "sha256": "504f9cd8802cabf971ca2adb9fd5792ff0f5b208ccd20cadc21087846bded7c1"
+        },
+        {
+          "id": "section-6-1-2",
+          "sha256": "dc42706f9bf510fe901cd27e439f5416ec05d143a49b978b96713c5d0fe276bb"
+        },
+        {
+          "id": "section-6-1-3",
+          "sha256": "c346bf6b1fffeabfee6b18ac2945a1f4c67edcc41d5260ff8951bb98fc09d92e"
+        },
+        {
+          "id": "section-6-1-4",
+          "sha256": "cdaef2c9d5017d9aff2c59403639bad1b97c6a8973ea72b66557b19fac5eb4cf"
+        },
+        {
+          "id": "section-6-1-5",
+          "sha256": "13d3238b82349502fed81293e7a85e3d0d0ac3116bdc2ab7ac9f587c642f9dff"
+        },
+        {
+          "id": "section-6-1-6",
+          "sha256": "299aad1ed319e23e486bd18162b234da9f2eb0acca5a54670ca9a289bd02e6ca"
+        },
+        {
+          "id": "section-6-2",
+          "sha256": "31fe514acc7342bc862a7009a4c043f1c2bc2aef72119c5171fdc507a4d5e057"
+        },
+        {
+          "id": "section-6-3",
+          "sha256": "cabb59ab6aa00e5ec658ef9dfbcee0bafee76f1b2866c917f00ffc28bac5468c"
+        },
+        {
+          "id": "section-6-4",
+          "sha256": "0aa7f3dc617952c8e6ecb1c7c6980b1bdd2654691441b8d58f0af3a35a36fd66"
+        },
+        {
+          "id": "section-6-5",
+          "sha256": "afaf1178027265bd560fee4b1b93652e4c3ab07eccee862961ce1ba2658444f4"
+        },
+        {
+          "id": "section-6-6",
+          "sha256": "415c38dec009d890226fca4b6c0291e08cb02d78349b41731899d3a912aef7bf"
+        },
+        {
+          "id": "section-6-7",
+          "sha256": "179a64253c20f0224dcb8838c69d056f48821f4ab494d0b92c8a3ab82238db89"
+        },
+        {
+          "id": "section-6-8",
+          "sha256": "39aacb65897d94e8464f47325843a8915608a79bcfbd314a7ddbc8e754db2df6"
+        }
+      ]
+    },
+    "manuals/bactosense/07-field-bus-interface.md": {
+      "sha256": "d74db8cfafa42faaddd86f07e71411e46de3cb944a5e8c291ba170466d08c904",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "979212f89aa120fcbab08357411d20ff638ae9d4a9435949a39f66c36e618e07"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "id": "section-7-1",
+          "sha256": "fe6a3a6b130dcd1c3ecc661e5f193fab81699b33894451dc3a392703b64656d7"
+        },
+        {
+          "id": "section-7-1-1",
+          "sha256": "a0311f2b9146243a312e155edc814595c95f9c537ed4db30e83c029a41a68315"
+        },
+        {
+          "id": "section-7-1-2",
+          "sha256": "667fa4ddd6379945a6d7b14950acb6ccc8cb7813df886b6bf41df0b207a26de0"
+        }
+      ]
+    },
+    "manuals/bactosense/08-general-operations-and-configurations.md": {
+      "sha256": "d123e35d7aca7e9bc0e68ac5b3529534ec471228db4e4f69c2ba28d467b0163b",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "8b86a972ebbc01eba663a3244e3367932250933e2224c27c2706d0208f05c1b4"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "id": "section-8-1",
+          "sha256": "0b459244be97ab9ee9cac60de766c726343f793b5f9d8f20c011d9dc710150c8"
+        },
+        {
+          "id": "section-8-2",
+          "sha256": "ae8530e47b34bdb4188242cae057e1fc7fdf0263275be9c42819cb610fbe1a5e"
+        },
+        {
+          "id": "section-8-2-1",
+          "sha256": "3a832d21e697ab913cbd8ea5c669e1a582b2993c80fdbae4fc9ad8a740b6e7db"
+        },
+        {
+          "id": "section-8-2-2",
+          "sha256": "28cfc688206b567c89ac462ab978341f358e288f6d9bdd78d390059a64bf1ebb"
+        },
+        {
+          "id": "section-8-2-3",
+          "sha256": "bd8546e55d9cbcc600bdf1c685b8dd92a0524a376f46377453bef1fa425d8780"
+        },
+        {
+          "id": "section-8-2-4",
+          "sha256": "23980daaa3be2133ce67a25d532d6942d3d0acc0772bfd180ce3cbcb34c7132b"
+        },
+        {
+          "id": "section-8-2-5",
+          "sha256": "fd2adf844fdc41914ac44368b6cead92a888446d0e3a9048f389286267b8534b"
+        },
+        {
+          "id": "section-8-2-6",
+          "sha256": "5b8a918cf0ba0b93a1d1ed4634aa5f6ab6f7a5a0efda3d41709ed825a9155b01"
+        },
+        {
+          "id": "section-8-2-7",
+          "sha256": "0504a1165aeee1d56a82398c7835b35ac59ef6f820e4228ccc086870a292cdd6"
+        },
+        {
+          "id": "section-8-3",
+          "sha256": "a6ded91de5811fba91a2b34ab6c87545c9cd3ded68017571e2d0d9da91e57b26"
+        },
+        {
+          "id": "section-8-3-1",
+          "sha256": "c9410a09a921eefb6bc86d520fde1a5151f919bff4621da30f79775d18fcfce1"
+        },
+        {
+          "id": "section-8-3-2",
+          "sha256": "423cc6a81c72d7f56259197c4d1ad38e514af6bf832be10ee7d7ec607ed24f75"
+        },
+        {
+          "id": "section-8-3-3",
+          "sha256": "6d8d0fd171265f6f5a20fb7b4bed03701830fc8f817511e8fe90f0a3e7e6f535"
+        },
+        {
+          "id": "section-8-3-4",
+          "sha256": "d2226dbd6438fa00d89e61025c6a51680e61642c2a1c7b4a4ce381ac6cc073fe"
+        },
+        {
+          "id": "section-8-3-5",
+          "sha256": "aa929717944e6ab4331668baf4a2ab49e8e56a74aac3e964ebd74dd10db4494a"
+        },
+        {
+          "id": "section-8-4",
+          "sha256": "9bd19b3022a419c39bc8a2fb57b7cc193f1a44b9f7c7a5f08958b8f15569941b"
+        },
+        {
+          "id": "section-8-5",
+          "sha256": "0fce0ac037542705b6ff0c6675aa02c2a8da06b1b090d11f60db081df42f5eca"
+        },
+        {
+          "id": "section-8-6",
+          "sha256": "a46035b42cc2d311372a7ed2944e80d5b8f27753876dca919792d5ec8ee84dde"
+        },
+        {
+          "id": "section-8-7",
+          "sha256": "6fbe1e27adb02367fe007923b4ede03cbbf914a2791f6dd84382078623fe6f3a"
+        },
+        {
+          "id": "section-8-8",
+          "sha256": "16b233539f0c854e184bef82f728a9f8b3d65aa714c0d671cceb0ee8b422ad47"
+        },
+        {
+          "id": "section-8-8-1",
+          "sha256": "4f49d1919313e018c80f2bf4cf313f400b5c4c0dd87a0a4e3a8e45a79b6d3656"
+        },
+        {
+          "id": "section-8-8-2",
+          "sha256": "da51cf217e89c27dbf3aad6c6a358ef5ada192c5e9aa25876a06bd9b429dadc3"
+        },
+        {
+          "id": "section-8-9",
+          "sha256": "8393d78d5649554f74ad8f3fa1b600e1fe4e4d55d59dfc0f58b70759a923f457"
+        },
+        {
+          "id": "section-8-9-1",
+          "sha256": "ffb3c497890d29c9df2e05b5d9c01b5b15b9592755869fe97af02000f325e2cc"
+        },
+        {
+          "id": "section-8-9-2",
+          "sha256": "b970d0e7f945932f35806413faf4f6c696caa566bd7178bb29c9c08a4c964834"
+        },
+        {
+          "id": "section-8-9-3",
+          "sha256": "f9891b2926d13bd82851ff08474272380f34f50a287fd9f73e0aa3de4f576b0a"
+        },
+        {
+          "id": "section-8-9-4",
+          "sha256": "29a88dac647739a921a6e868ccc00fe7585c8351e2876f64fa1bfbc2f9c8f3e5"
+        },
+        {
+          "id": "section-8-9-5",
+          "sha256": "9dbcae6bad2431b20d1c69f70b7aba6426100759e3e46cd99f4b2ffafd61cd2f"
+        },
+        {
+          "id": "section-8-9-6",
+          "sha256": "c014cc893173de0b5eda32ee18e975d4a75607252f1b3b1b836c6bc5f8602bf0"
+        },
+        {
+          "id": "section-8-10",
+          "sha256": "26e95dc33124a6c92845114e4b6996e2de3023a5cfbfd63e6e8bb62d8b74ab8a"
+        },
+        {
+          "id": "section-8-10-1",
+          "sha256": "c2fb431d8a36f4a533846783c55e2685f63bd3e56711c54fc9000908ff7e449f"
+        },
+        {
+          "id": "section-8-10-2",
+          "sha256": "34280fc3c32d593d9c75094754c139d4ffafbc4fadb0fe18054a20e60c7460d0"
+        },
+        {
+          "id": "section-8-11",
+          "sha256": "a91da6567cfcde23595b0027b829f55e27be44e0ebb41043681ac1da2e5affb4"
+        },
+        {
+          "id": "section-8-11-1",
+          "sha256": "c9d140fdf9bbe331878f2885fc930b5fac8716612ed88d90013931395ac820b7"
+        },
+        {
+          "id": "section-8-12",
+          "sha256": "6297c685202f66cfd754b99585a4146a8ca5fadbadbf60e9143dd579edf307e1"
+        },
+        {
+          "id": "section-8-13",
+          "sha256": "058391aa559a01ec37d5adfadd0278bd3375c2eabdc3b321bd789eb86d3269d5"
+        }
+      ]
+    },
+    "manuals/bactosense/09-upgrade-packages.md": {
+      "sha256": "8ad9ccabc12eb3abaf56f6f7aec5a7ec4d89b57e2cc399481ac7afba1b062859",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "d4a4ec1fce40d5d8abc5911a5194e6001dac1d457de42f3f27d3c1ade47e826d"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "1f10b284c17bd6894cc1a128e86bb5bbc2e26538f8c7ca1a73961c99b65fead6"
+        },
+        {
+          "id": "section-9-1",
+          "sha256": "34aa00862b27c16a38a8568c35fe08d99f066c7925829c418c7bc59776c2576e"
+        },
+        {
+          "id": "section-9-2",
+          "sha256": "cfc0e76770a47adff15dfcb835b84cb5093e1f2882a229290eb8f83603e12512"
+        }
+      ]
+    },
+    "manuals/bactosense/10-measurements.md": {
+      "sha256": "af37e100644a707f75e8190d67cd4ef10fd644f40ba890ff15a5f66dd45f7c99",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "434253bec9c0122e4c16297904b5858b6537a426e0591f907b95cd5a7e743354"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "id": "section-10-1",
+          "sha256": "3a1f882eb97a597eebf86e52792324406277124ca4a130d489d089abdb9f4628"
+        },
+        {
+          "id": "section-10-2",
+          "sha256": "34c47afd917c2bfc69d9392949e47fe4969ed47a3e4349ea1aed7a1436524f75"
+        },
+        {
+          "id": "section-10-2-1",
+          "sha256": "18f6c8737e5fd1a22b2584c1e87f88aa3688ef3cd8ed60f4f168682f11f96336"
+        },
+        {
+          "id": "section-10-2-2",
+          "sha256": "8a84c14057f0847c4f84b82e87fca9c864fc8bb292da20d1d05a00411659923e"
+        },
+        {
+          "id": "section-10-2-3",
+          "sha256": "318616d38a096a4f6a17ad56cec9c71fce569eb593fdb87e33f7014b10064c38"
+        },
+        {
+          "id": "section-10-2-4",
+          "sha256": "ccc0c28c05f71b30ed8108b224ea427ba33bd2cb9282251ec2df1867b09e573d"
+        },
+        {
+          "id": "advanced-scheduler-create",
+          "sha256": "139e9d8da0aff6a3bdf557aa6b8d54821644cbfea6c7752a085fc5903ddac01f"
+        },
+        {
+          "id": "advanced-scheduler-preview",
+          "sha256": "7c59a9b6eb54d853748380eb775359f7244f6f7f8164ed5ccf0d3c0bfaa716d7"
+        },
+        {
+          "id": "advanced-scheduler-change",
+          "sha256": "4f5d89dcd795c706e2a03903d368715f8fccf16382b8b7a5f1a1d66524a9de16"
+        },
+        {
+          "id": "section-10-3",
+          "sha256": "96dfa59cc82270d36da4bd08cad6151d88ab98c4b6920b2cafed15ff99e44ce4"
+        },
+        {
+          "id": "section-10-3-1",
+          "sha256": "0e42ee9718742844fe1ad56c5ac441c888f05ff50691c5366f87c77c56dd70e6"
+        },
+        {
+          "id": "section-10-4",
+          "sha256": "9d5dc3e102e7d52bc62c29578a26bccd5a11e78da7f6e0ed6caa0032a54aeb0d"
+        },
+        {
+          "id": "section-10-5",
+          "sha256": "d5e9ce382d648c8973cc0a8754da149353d8b3c4f6d884e8a805535bbea2713f"
+        },
+        {
+          "id": "section-10-6",
+          "sha256": "db4bbbda28976d0bd3e53e882a80a55a83453846f815f2a3b5b54b633b2bb8ca"
+        },
+        {
+          "id": "section-10-7",
+          "sha256": "51561b23652b756b5cdfc0fe46991b310665ed8d4ebd07baf76ca844e1c38415"
+        },
+        {
+          "id": "section-10-8",
+          "sha256": "432a7fc5e76f606c707ed2db700800e727fdf19f7c54190f1fa069c0faa7f07a"
+        },
+        {
+          "id": "section-10-8-1",
+          "sha256": "9e2adaf65bd952aa6420d095940db7c0c3eae1aac48f504b6df7dc98ceed933e"
+        },
+        {
+          "id": "section-10-9",
+          "sha256": "7ada81224d6911dc7ca831acc2dec9cdb1d9c09c1148f1aca415e6d2cb0a0b4d"
+        },
+        {
+          "id": "section-10-9-1",
+          "sha256": "1d342e5b8f3e856e49ea6db952d335c442755658ef798286e4fc361991b54bc3"
+        },
+        {
+          "id": "section-10-9-2",
+          "sha256": "b62615ecd603b9f6b057ed6b53c5350ef6a03bdce4ccd467031ef5d9e3b01344"
+        },
+        {
+          "id": "section-10-9-3",
+          "sha256": "50709210a397620a14cf284fc546ff263dc77e563191f4a481a8d9dca42f0d3d"
+        }
+      ]
+    },
+    "manuals/bactosense/11-results-and-data-analysis.md": {
+      "sha256": "3137187a31761dec9f478ed2ed228cf2b6c77a6c8713d2b00c10766c5fd141f2",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "9bcfc63583d4ab194bcc562b895219ef0a45c9927715ca5cc8542aa94033efce"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "id": "section-11-1",
+          "sha256": "ad00ae5229a004507aaab05b6581dc86103a5cc17d97cdd41ca1a2fcbf449479"
+        },
+        {
+          "id": "section-11-2",
+          "sha256": "0ba40433bc6c4850d8a937c14bf89a17e70a9a75972c1631bd3afafda1608256"
+        },
+        {
+          "id": "section-11-2-1",
+          "sha256": "2d09a22cdfb65d7b6e2655dbe7c6e4ba28bf8b7465eac962f163240aaa8b18b4"
+        },
+        {
+          "id": "section-11-2-2",
+          "sha256": "d96997f29c1ed80c3fced79145b677f47b29c83241f4bfb6255fd88a1830ddd2"
+        },
+        {
+          "id": "section-11-3",
+          "sha256": "0fafbfbebf08304bc7f6668d8b8ee4bd8506f4a937a20c7995373ab1291f44b8"
+        },
+        {
+          "id": "section-11-3-1",
+          "sha256": "d92c605cd67496dc61f5d001db572b3499b7d4dac1e5a7c3ce29f81dab0a90cc"
+        },
+        {
+          "id": "section-11-3-2",
+          "sha256": "3d22958aad03850934fe474326dd193c8b8c6844c785a062dbcbeba8acdbceb3"
+        },
+        {
+          "id": "section-11-3-3",
+          "sha256": "652d2a23ec064f4caebe3f3717fde1cc177e1d89be43aaaab7c10aa2c46d6f79"
+        },
+        {
+          "id": "section-11-3-4",
+          "sha256": "46b58f79c78bf4a30ce5d7700ca2818ea8c1095e9c030102ef146e7ff79f780d"
+        },
+        {
+          "id": "section-11-3-5",
+          "sha256": "75bc858df9e0d83a0ed3a1da9456463d0ffbf997eeae97e81a2d9776cee968f4"
+        },
+        {
+          "id": "section-11-3-6",
+          "sha256": "61ea6dff351f3857b7be7db07513b9d75aa93429dc6a71482ce440691135dc80"
+        },
+        {
+          "id": "section-11-4",
+          "sha256": "a5d1701f824a0fa485ab2e539a9419df83e58f2c50e6ed774c3cbd292b242fac"
+        },
+        {
+          "id": "section-11-4-1",
+          "sha256": "7b9a03929f3d91b936107b67e98cada84782fcf8b7951ab160331e1009947990"
+        },
+        {
+          "id": "section-11-4-2",
+          "sha256": "f122def4c21aa6589860e8e450e5c8bb84bb4d3912abbedc6b48f55e32e26e71"
+        },
+        {
+          "id": "section-11-4-3",
+          "sha256": "7e8e06c8c901e564da495a2bd4559c08c6cfe1b8d1a38293438433cee53628a1"
+        },
+        {
+          "id": "section-11-4-4",
+          "sha256": "0615c4d395fcd466b37ec53187b97470e645fa5e32726bfa73e0590a418280b4"
+        },
+        {
+          "id": "section-11-5",
+          "sha256": "bbf1448e0cd28738108dd83f54cd72e0e76084700a11f07a98dca4d05f8fbf49"
+        },
+        {
+          "id": "section-11-5-1",
+          "sha256": "a6ac275b55e7b6a1da75836570872148156e94f17f96bd53ba9b1b4c970aedb3"
+        },
+        {
+          "id": "section-11-6",
+          "sha256": "fae14bbe4252b291fcec805d771560e53686f2b870fe2b5bb97566c7a81dcdd5"
+        }
+      ]
+    },
+    "manuals/bactosense/12-data-access-and-export.md": {
+      "sha256": "3673d1f8bc68a7cab9c19ff4be407e72e25c9132a62dff04dacb8beaf7f7c721",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "9a431a099cdace6a268b9b902f59d3062b86f6a692d942ada477532985657f35"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "id": "section-12-1",
+          "sha256": "fc7d90c5db2f3ceb49a4432be48c6a0fe4209a7a430ad6f2743d5af983f12b0c"
+        },
+        {
+          "id": "section-12-1-1",
+          "sha256": "d54553445a0aef639f9b06e83d513c6ac9d3a4932fa7d7fbdc045dfbdb7202b9"
+        },
+        {
+          "id": "section-12-2",
+          "sha256": "c2ae9f352748167db21184825e3cb7f278d54aa4beef2e87f39f09c3350bf3fc"
+        },
+        {
+          "id": "section-12-3",
+          "sha256": "0aebd3d81c813476f85d46b1d95928a7094ea68a79857f75d8b20924165d55a1"
+        },
+        {
+          "id": "section-12-4",
+          "sha256": "9f04d001d97b5497c679fe7f686ab8b2b069f55b7372a8e125bbbcd7d925183b"
+        }
+      ]
+    },
+    "manuals/bactosense/13-web-user-interface.md": {
+      "sha256": "20484d48b8a7971d8be0d00f214913a53275983f404c2650f0035b2bc234deb0",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "c82d954ea3fa3a3427d196b7fe9061b6ff1145df717c0200d156daa74b740e02"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "id": "section-13-1",
+          "sha256": "d8bc35d9652b06a92d3c5b0841ebdc3a6e5018c4414b3fe30bfc2f28565a04dd"
+        },
+        {
+          "id": "section-13-2",
+          "sha256": "bffa085033acd90c19a272eb5c0c76d06d4f20c5d7c4406d8057d9254c16e9d6"
+        },
+        {
+          "id": "section-13-3",
+          "sha256": "7090ddd8c890d269f4d105016700c37b8a4b996210575301375d50ba1b3552a7"
+        },
+        {
+          "id": "section-13-4",
+          "sha256": "77bab420e92fd7b38059dfb924a9d88724bc340ae57b3372dffa4e9c302f5ba6"
+        },
+        {
+          "id": "section-13-5",
+          "sha256": "2e301c3ef04c474fcb5ddf76c6e9d5adebbd52487e3480ff259620a25f6546e5"
+        },
+        {
+          "id": "section-13-6",
+          "sha256": "c76e098d2a6063bdf9cf413ec427b7894601f0a23397902af38510a2c3cd9059"
+        },
+        {
+          "id": "section-13-7",
+          "sha256": "a2be70b025ae90bc7bfc1718adce18d88689e0671e8324fc0d39e094326b233b"
+        },
+        {
+          "id": "section-13-8",
+          "sha256": "73e4b87de36de248c2def548d408db7f2797f69c6f19d39d01e144c004e123d5"
+        },
+        {
+          "id": "section-13-9",
+          "sha256": "ee42bd8cbf17318a5285a535016044c55e75a9b8bc6fb2ea0ec006bed5a44303"
+        },
+        {
+          "id": "section-13-10",
+          "sha256": "540ef319c7c34f359f78d44c342c7e686af11ea71ea0449bf1859e2aecc7dbf8"
+        }
+      ]
+    },
+    "manuals/bactosense/14-bactocloud.md": {
+      "sha256": "f5d5d8bd7a0b64d2d2bf50ac8408b5c54fb18ab9476d0428f97a04c5e18dc443",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "1390e16f642bcffe077c943a3d96bb2790042bb741f632a684d000334429460c"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "d30d50b6c7e205426116303bc839efc655565a4902343c7d42e84c96f024e5c7"
+        },
+        {
+          "id": "section-14-1",
+          "sha256": "25e61dd95ea418fbbeb4d3c3826b5f4eab915ac40bee3f89334e312596e8f696"
+        },
+        {
+          "id": "section-14-2",
+          "sha256": "e6c8c03846bce1bbba2c078ab58c90500cce9936b2266a67c744a1e502229d77"
+        },
+        {
+          "id": "section-14-3",
+          "sha256": "ef60d762af8201211e4d2030da70ef624d437817237ef94da6656c91aff83ffd"
+        },
+        {
+          "id": "section-14-3-1",
+          "sha256": "51112f8b7ce2ebe3e1c5deb050b5743acd196c6f062a018923a889bd9afcc206"
+        },
+        {
+          "id": "section-14-3-2",
+          "sha256": "623c6cac8b7a84d43c91581105ba1b07a6dc3315904bd24e3a28c0f4d0ddaeaf"
+        },
+        {
+          "id": "section-14-3-3",
+          "sha256": "a87a688c797b6ba28d347477ffc2289185c494748fbd9fe898e177fc264262a7"
+        }
+      ]
+    },
+    "manuals/bactosense/15-maintenance.md": {
+      "sha256": "be14a3b4ddede995d37ebcbd6ea982cc42c817135fc4ad3eda997755060edebb",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "9833d0fa4a22615ff268f6edbb9003974580d8f2a3f9c784f57ae5b000ceffc6"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "585638d7e44f364613fefddc8b03ca0ca879bcdb1568e38f295dc873cd28aa79"
+        },
+        {
+          "id": "section-15-1",
+          "sha256": "10192d7037fa42a2660188a16eea8d50678b43adceb8f08134d2f1e3f0974473"
+        },
+        {
+          "id": "section-15-1-1",
+          "sha256": "46b158ad25baeb3c61c4a13783fc88a012ada36223f2172e0d461ea97c506c5c"
+        },
+        {
+          "id": "section-15-1-2",
+          "sha256": "286a8bfb6c082c341e4104b7c24d4eee8d83a70e6ca9651581590f5740910bbf"
+        },
+        {
+          "id": "section-15-2",
+          "sha256": "2dca56a81cf477d16c2ee7bc2bcc61d7a8e960ffc3b2a3dee8fabaa41ca88407"
+        },
+        {
+          "id": "section-15-2-1",
+          "sha256": "2e1cc1bc0b19df0012f55bc72416de5826e3dc436361bb12f2078accf5c4c002"
+        },
+        {
+          "id": "section-15-2-2",
+          "sha256": "2e55f9672fae62f23c2d7fa0b9a79361fbf47aa9c6c4211f5b90cf22f435c1a6"
+        },
+        {
+          "id": "section-15-2-3",
+          "sha256": "4fae79234b087a29350d3bac933d4c6847165168aafedfbdc2835b16188c9ba1"
+        },
+        {
+          "id": "section-15-2-4",
+          "sha256": "04b5480dacdbedad90e60d7648b78de093daeb011e621039e1ccdf3b229325bb"
+        },
+        {
+          "id": "section-15-2-5",
+          "sha256": "db7cf1254d5c8334bd95ef20af3287a308ae1ec002c7613fde30882313951f76"
+        },
+        {
+          "id": "section-15-2-6",
+          "sha256": "9972940dcb0d0b5261cb2e1a6a78d3ab892599c166441204fa160d53c69f649b"
+        },
+        {
+          "id": "section-15-2-7",
+          "sha256": "87d215e2aa5289f26bad9ad70fb368b200a9dbda656992f21deb925cf381b2b2"
+        },
+        {
+          "id": "section-15-2-8",
+          "sha256": "b1b737d4bde80d96722d0103222d5450ec2cad9df9674533e23ddda557a95631"
+        },
+        {
+          "id": "section-15-3",
+          "sha256": "148473c38b7578df323c4b8df107e41d4b224ede8645c817edffb8250f9cf354"
+        },
+        {
+          "id": "section-15-3-1",
+          "sha256": "48be93d3ae6cd38cf797faa9cd6865cff8fe757b009e2833e98e96ae70a2444c"
+        },
+        {
+          "id": "section-15-3-2",
+          "sha256": "51f6d95298044d77b88a7a9da3d493595369eaaa92d4b734be7a7233193e69a3"
+        },
+        {
+          "id": "section-15-4",
+          "sha256": "94c02bb7feb99ccfba8e7e5fdba2981c271468ea1c85766264da0f3167560a01"
+        },
+        {
+          "id": "section-15-4-1",
+          "sha256": "35a158800c4488c2f1c406dbc3b9a532deea84632cffab655e8d5cbe51219f4f"
+        },
+        {
+          "id": "section-15-4-2",
+          "sha256": "b4241996386d00e079ef15234d9ccddf44767f898d17e94b4693f367f058c148"
+        },
+        {
+          "id": "section-15-4-3",
+          "sha256": "efd764347a0565cab0382aa8988f6966d04eee4a0f9a6970e3153938b012e2d7"
+        }
+      ]
+    },
+    "manuals/bactosense/16-warnings-errors-and-troubleshooting.md": {
+      "sha256": "019c4e73760ba26ea9e5d13da4e89f6b5e2543bbbbff03fb93cca1e49c4ad57e",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "1cb7fe944c27d2d87f5537e417b4ccf6d6f92f17854bfae04562899e2efd171b"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "28845215978c3764efa847123b24e52ac9ce0f554680e3d91e3895b778af918e"
+        },
+        {
+          "id": "section-16-1",
+          "sha256": "8e85dc913e2a558dacdd334ca2cb911be8fb77c5a38713415617e354b6ee22b5"
+        },
+        {
+          "id": "section-16-2",
+          "sha256": "a79ac5936f23b19bf5419bc9ce93558a3195539b7cdb6c1d8e8b668f8ffe0dce"
+        },
+        {
+          "id": "section-16-3",
+          "sha256": "b3e7460692476b0072faeb0dfde4153e1afd020178e1cd67d6cfadf67d910985"
+        },
+        {
+          "id": "section-16-4",
+          "sha256": "82389dfe410ffc3be6fd94b2793b583d6f549131ce131f963d8dc60f29af5ae0"
+        },
+        {
+          "id": "section-16-4-1",
+          "sha256": "d4fb7e853b7c01b04d96b9dcffbe8cded93df819929c042b48d4e4b91fe604a9"
+        },
+        {
+          "id": "section-16-4-2",
+          "sha256": "947bec317d77c444a71cc559ae9e9bf64dd81e63afe582eb40028dbb4e7bdecf"
+        },
+        {
+          "id": "section-16-4-3",
+          "sha256": "87520c5f1ff292e4d0186671fae36719d1b2a235d9ade085118f8eb55199b543"
+        },
+        {
+          "id": "section-16-4-4",
+          "sha256": "aff6d3b751b005c578a1f75a61f40a039da738abac463f945c9b94ad4aa67002"
+        },
+        {
+          "id": "section-16-4-5",
+          "sha256": "b4cbdc2f0cc3f0ce9bebea638675bd250453ea1b4b7429c18bf62a03de8ab802"
+        },
+        {
+          "id": "section-16-5",
+          "sha256": "ef05923fe754327348cdcdd65c6dc4492f5ac646cbee83578141c069c0bfa1af"
+        },
+        {
+          "id": "section-16-6",
+          "sha256": "0c60b01d1d2c6fd7bfda591fb79f2410f44f6a61871706b71b6ee7e8e7d5c26e"
+        },
+        {
+          "id": "section-16-7",
+          "sha256": "2a4ed6f2149ba89384f8712049d8b8a5a161ff320a3654b188a8c9939939de4c"
+        },
+        {
+          "id": "section-16-8",
+          "sha256": "09e459057eff460260caded32cc350b87d12dd7b657883c9cadf170807ba9933"
+        }
+      ]
+    },
+    "manuals/bactosense/17-storage-transport-and-disposal.md": {
+      "sha256": "5c44ddd245e9bd6bf27bfabe8ee1a7afbb97cabf32284fac8dd05736f6f98429",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "200029b135b3b5320be63032bcbab079c2076f9bab79b7318f4a09063746dbd3"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "id": "section-17-1",
+          "sha256": "6554068f0c3a9cc4c1ecfae1ab7d5d5865c2e6b180140cdc893cced811c1ac66"
+        },
+        {
+          "id": "section-17-1-1",
+          "sha256": "e4fba39c6fe5cde45a954bc8b08b0f593a6176090243ea28380207754b847143"
+        },
+        {
+          "id": "section-17-1-2",
+          "sha256": "dee3f7ed6647ae908bd080495200ebf3236f70e8f65ff2a4227b6e034cef80a1"
+        },
+        {
+          "id": "section-17-1-3",
+          "sha256": "35204049815e88bc7478f1dc249aa8760286abe63a661169da004f462ee2e681"
+        },
+        {
+          "id": "section-17-2",
+          "sha256": "865324efc070bdfb53bec6ddbef22c446a35d7527c318777650beac3081f445e"
+        },
+        {
+          "id": "section-17-2-1",
+          "sha256": "632e931978f12faae6e126be54091b1b968eba49b88481b80e4beb6454e1f5d6"
+        },
+        {
+          "id": "section-17-2-2",
+          "sha256": "6ab7b83dfcdbef1798333e31eb2a18b74e4debc2bc031bfe3aaa36d7b4a17ea5"
+        },
+        {
+          "id": "section-17-3",
+          "sha256": "7fb09af301e01b4bc07edc75daaeff76975047a655940597f5e26177e083057b"
+        },
+        {
+          "id": "section-17-3-1",
+          "sha256": "b5361f2081c961a9efa813a5ba08e1b6fdbe4d3431c6c8255c82c51aff249c38"
+        },
+        {
+          "id": "section-17-3-2",
+          "sha256": "5ce105ca57787afd5a81f93dded4d27afa38e48fbb300651751f894de1ee5302"
+        },
+        {
+          "id": "section-17-4",
+          "sha256": "36cf53ce159ebabaea51033537c90f5a1e8d2a11c6d6d4e3406d9422b3a6c38e"
+        }
+      ]
+    },
+    "manuals/bactosense/18-supply-scope-accessories-and-consumables.md": {
+      "sha256": "4eba2a92ea4c03a5ea3c0f2a826fe5a5360445c374ef768f3e094b5cd2a22036",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "846b0e54225c7b968e3893ee730b884947a0ba266b517ee158477d1f47f79be0"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "id": "section-18-1",
+          "sha256": "92cd777c6550783860e02f47b9624f9e09f8c3c6ea2654a5f3e30beaa05012d9"
+        },
+        {
+          "id": "section-18-2",
+          "sha256": "72a8335e459ba6ae9e75877c8ea95a506c0628fc283780754b00bcfca85bc530"
+        },
+        {
+          "id": "section-18-3",
+          "sha256": "58cea7f8f3f4019b23bb6289cdaa4a5e67318c634010bd212293bfdb22eedc99"
+        }
+      ]
+    },
+    "manuals/bactosense/19-contact.md": {
+      "sha256": "37ce620a62cc9fd7c31527669222f556bfa2b68454dd3d63ad0f10ef2bb524d5",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "a8c69d367b867ef071d0738e70ef1f10e37111462c2ef379710eb300866e871a"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "id": "section-19-1",
+          "sha256": "31c61471c8d8f3fc5a86dfe9a00b9c7877827ddd15cc26b0b6739e9fe6ea7aec"
+        }
+      ]
+    },
+    "manuals/bactosense/20-index.md": {
+      "sha256": "970b935fdd45ad249d471e33e38052672eb53d915bf122c0091991766f247802",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "8765a3bea1d7d87cf49730980d4a4c32f1adad1931eb0ee6932b9042b781dcc4"
+        },
+        {
+          "id": "@body",
+          "sha256": "e875503cf28b6fe84b038c41c8de0d8f5cd135a710bbcc737b2c964c4a4dc5f4"
+        }
+      ]
+    },
+    "manuals/bactosense/welcome.md": {
+      "sha256": "2dd221402c0b70538d6aa3ea6dd0acd051f5c87f99eb276cc98c9c7790f1e0cc",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "5f6f453eb3b38c8c80d56f77abbeff160a32b7e341b5de7c4ac1fae4b67db56b"
+        },
+        {
+          "id": "@body",
+          "sha256": "c9d428c78a4a163170de2ec297c93b6afdb733d0d57e4ab9a3d40c220cc20510"
+        }
+      ]
+    },
+    "manuals/bactoswitch/01-general-user-information.md": {
+      "sha256": "2fa1002cfe4048a1df794e50b4459fc816e02046981685159f7f5e91f4b0ab11",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "f11c8967cfa9ab59cc45692e44fe078f4f4020e38eab820f142d3ea5358c1623"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "id": "section-1-1",
+          "sha256": "fcb96ddd196b5c49511b8aa2738b65aeec924d9e8324462b615c6d51367ed91f"
+        },
+        {
+          "id": "section-1-2",
+          "sha256": "55fbac058e8f990b0aa8e303ff61c5e1fa05f585870431e83972f715fe91cf6f"
+        },
+        {
+          "id": "section-1-3",
+          "sha256": "fea22e3826cf13d89bb02127815b6788e35a443017ad31ca88daf4897d6815e6"
+        },
+        {
+          "id": "section-1-4",
+          "sha256": "d213100b1bb7a6a4aec0cefe4b8cd6292a78f5fd0dae04a18fa2905822403c34"
+        },
+        {
+          "id": "section-1-5",
+          "sha256": "15aa04210c85088da6187237693b93f4dde5c1500b8a6905fd3be90a1029a2de"
+        },
+        {
+          "id": "section-1-6",
+          "sha256": "d091d7ac1b59754dade585cd5c2a004559c0fa40b1779b4db0fe2b5daafa87cb"
+        },
+        {
+          "id": "section-1-7",
+          "sha256": "968c795340ed501b44889512a694ef3edd185911270b6a4c6ee6f6112386a5c0"
+        }
+      ]
+    },
+    "manuals/bactoswitch/02-instrument-overview.md": {
+      "sha256": "f82cb161f7e40370e05bcea8f3ad81aefedd634a92ce518f9b0a2143773a1e77",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "33ce35c482cd48eb3461d7f1a00bd18240b702e8222233b6d6864187b0533b25"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "id": "section-2-1",
+          "sha256": "e280cfd28e93ecf155f46d19437a2eddb4023dd03ff36cb19b5896056c7e7893"
+        },
+        {
+          "id": "section-2-2",
+          "sha256": "b5af9725886eebdedb24f55d2d07e65a2a1bf8bd99362c605fbe90975eb96626"
+        },
+        {
+          "id": "section-2-3",
+          "sha256": "9951f335869ce1b94a36a6dca75673016886f2846f5218272dc88fb93de6d50e"
+        },
+        {
+          "id": "section-2-4",
+          "sha256": "7d8bfacd9beadc5bb379b79a21720ec85e4db0d4df5a61d12383700168bf96aa"
+        },
+        {
+          "id": "section-2-5",
+          "sha256": "c3751e5cc69f70ee02aa6f75905db4e68965f67326bd797f4cabdda8f9d22065"
+        },
+        {
+          "id": "section-2-6",
+          "sha256": "e3e50beca0b632c6b0878e65757ca42d5d4850eabf8cedc6f10d1980f545a474"
+        }
+      ]
+    },
+    "manuals/bactoswitch/03-safety.md": {
+      "sha256": "3b1a419b4a9905abaa65e7f95563c19bf6b5dd0d82ce732fb6f87d6d50153e91",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "9347893f3de66c39aeab72aef8bc9158a1ad3d057224ab9d378fca3e3beaa30a"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "id": "section-3-1",
+          "sha256": "d9a11ea3534e3f9789765c3256ddbe69277b020961cffbac645712ed525650ce"
+        },
+        {
+          "id": "section-3-2",
+          "sha256": "f3b913bb5c6f62e2b8cd293c30d7801f822e9a2b38311a429baf335b6de1e326"
+        },
+        {
+          "id": "section-3-3",
+          "sha256": "c93301c568224c4d301a8e0faa49d1b38cf582f593ca976991f4613d5b572886"
+        }
+      ]
+    },
+    "manuals/bactoswitch/04-installation.md": {
+      "sha256": "f4b8781e85a7893f537c4189ecd5f89c73ec23074d8c239dcb357d0cb9cf4688",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "cea271152ebce62452b3357eeec1a696da272ba4badce23de920a479885eca22"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "22be3e6f9177c6ad076b47d31393ebdaf8ead7c07c6c566b5ad7973e086480a3"
+        },
+        {
+          "id": "section-4-1",
+          "sha256": "1741d5cf1a12cec679faa2f6f4d7d96d165b2138bab831891b989d3eca3a4673"
+        },
+        {
+          "id": "section-4-2",
+          "sha256": "b72e24e0afd13cbeb93bbf146071b91f864c29f9deebd1790ed66f810a1f8907"
+        },
+        {
+          "id": "section-4-3",
+          "sha256": "37970496f1793eb4916262e9e174a94492953772a8424b69a8504535a03e2f63"
+        },
+        {
+          "id": "section-4-3-1",
+          "sha256": "d2354178e6dfcec973a850ab36037759bb7c98d908843ce11fe20a60f60bee59"
+        },
+        {
+          "id": "section-4-4",
+          "sha256": "a7061cd13120d173aeb089aa5ee6cb6b8658a02125e3987b0766f6c284728d1e"
+        },
+        {
+          "id": "section-4-4-1",
+          "sha256": "e3bfea901c3122ecb82ca21b8b3341769c790f937b79c40f3f33aab6274106af"
+        },
+        {
+          "id": "section-4-4-2",
+          "sha256": "f19503dbb13b1c428f268d9b85fca2f2113dc3656c1cf2f8959d7323e4866c72"
+        },
+        {
+          "id": "section-4-4-3",
+          "sha256": "d2b9c50a96a207eb69d2c59de5e6dbaed09dbacf4db4afb1e5c6d1c37b87d43a"
+        },
+        {
+          "id": "section-4-5",
+          "sha256": "764a238e8dcf4bbec7c592ca0f2481ef291800d6f67027bf613aec5e377fd1f9"
+        },
+        {
+          "id": "section-4-5-1",
+          "sha256": "39447ced92ef4d210a615341b32edf3e3a50398fe764d0f78b70e3d86d41ee74"
+        },
+        {
+          "id": "section-4-6",
+          "sha256": "b7b8a1dbe51f208d4d71bb4e00115a8a1985536976621235c1b9f14aef78e659"
+        },
+        {
+          "id": "section-4-7",
+          "sha256": "73e676e3545b55dcb1d361995c91fc389b43a34e261fd66fd13bf9383a61b2a8"
+        },
+        {
+          "id": "section-4-8",
+          "sha256": "508683ba601f893ea4863034f8a11df57fd366402068917908021a4fefcaf0ec"
+        }
+      ]
+    },
+    "manuals/bactoswitch/05-operation.md": {
+      "sha256": "c64c4d98918f27c07a29e5a0b11de60a7ce567f152f55482db919e0e55a5f6fb",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "fdaadd9ea6b9260451fb88485c14dc8bd469782f231966f2ee742e2401fca780"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "id": "section-5-1",
+          "sha256": "98a1a3f38d1c03a93da50d2d217aaeefb5d2ae099739d7c02c97d0d97f98d3e5"
+        },
+        {
+          "id": "section-5-1-1",
+          "sha256": "55127110f02469bc6cdbea9b47d8d746de0dfe041350d63d5fccf3bfa82a0cd2"
+        },
+        {
+          "id": "section-5-1-2",
+          "sha256": "918593d61d7dba5a89a3cd760b90d8d070cfdf81090afcb8318020800b843285"
+        },
+        {
+          "id": "section-5-1-3",
+          "sha256": "b507052425b6ab6990cadacc515d8154dd0282971896c55bf262a4317258fdf5"
+        },
+        {
+          "id": "section-5-2",
+          "sha256": "17955999a9fc1f8bca48211f36ea3547948a5c6db9d70c4fcac1086be43a6b71"
+        },
+        {
+          "id": "section-5-2-1",
+          "sha256": "d331b7061d100377358751402c627139a5f2316cb4f1e1d49188fb458b1b3933"
+        },
+        {
+          "id": "section-5-2-2",
+          "sha256": "e3ffbf511e5e40b0daa41129323d6836a49000e8fff434e68be176a71f1e462f"
+        },
+        {
+          "id": "section-5-2-3",
+          "sha256": "0d846e844a351d1fa8d3ecd94809816e4b0b66a51836847e3b1242b3212d597a"
+        },
+        {
+          "id": "section-5-2-4",
+          "sha256": "7d7843fa254f838888e46a8f1c6022307017842a96c5a6a9f05942a7980a2e79"
+        }
+      ]
+    },
+    "manuals/bactoswitch/06-warning-and-error-messages.md": {
+      "sha256": "cbab40171afb1fc58e8e1ab462b3da4c45bbc7d7726b5c00688f986f40a2216b",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "85d67065bb551afb72f442ee4fbbf75c14244449dd080dd4257d9fb886f814f7"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "id": "section-6-1",
+          "sha256": "0c0a3b9e5a1af15472c588b77946566b0ee4ef7cb375d4d9688a5297a0cdf5f6"
+        },
+        {
+          "id": "section-6-2",
+          "sha256": "634c6fd7076ef580c27791828bd5a337b2f4621cda6056ee2086b069b03e932f"
+        }
+      ]
+    },
+    "manuals/bactoswitch/07-maintenance.md": {
+      "sha256": "67ecd99c1e5cbe0d3b0efa7f225d62a7ee90e4717585fbd8b43865dfc0df2703",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "216e669f8e5c6a35a570deef25801011ba6e2e4acb53f324af79c1dd56f8a7d5"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "id": "section-7-1",
+          "sha256": "d61d02a75a798648abd5462e7ac4f0bae2a310b406375fc8835d1bed737f2ea5"
+        },
+        {
+          "id": "section-7-1-1",
+          "sha256": "374de8e9575170b925a0d7e4a2b81cb3f6e9961bb44bd76e8f326229851a1bd7"
+        },
+        {
+          "id": "section-7-1-2",
+          "sha256": "61718c35f524635c0cd4391f844d61afdc55bf3bb35355c00fbe3dd70986df84"
+        },
+        {
+          "id": "section-7-2",
+          "sha256": "a0dbf9b5c5a2fde294ca868962b51cee1aeeaaabe0b8471e2aed9c518517ae3d"
+        }
+      ]
+    },
+    "manuals/bactoswitch/08-storage-transport-and-disposal.md": {
+      "sha256": "51ff7cc42614b4ae2d3fbb1939e186d6fcbf7507d157e45a42ffc59b6ef20df0",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "8fcf2811ddc52a2a0e8eac867d085e74301a4650b0d84441b421639c177e74dc"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "id": "section-8-1",
+          "sha256": "c7c4dc99e4d9c0000ef5e1b26ecdea93a1267746f544f9e4cdaa0c78b321fafe"
+        },
+        {
+          "id": "section-8-2",
+          "sha256": "d3670c634604b697b6a445522ba820a4395d49945faa1c9e9b3dda7776ad5630"
+        },
+        {
+          "id": "section-8-3",
+          "sha256": "2b7b8a9332dd088762fe6a38028c7158e646a2e6730c083e5a7928c24cca7317"
+        },
+        {
+          "id": "section-8-4",
+          "sha256": "ef2555a95b98de8ee7abe87efedb89778469ad185c18c6e162daa032e0193c3c"
+        }
+      ]
+    },
+    "manuals/bactoswitch/09-contact.md": {
+      "sha256": "75a85c8988dcaae1c83c56d6eb45792e84ce1422dbef1c4844a1766a35ee45a3",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "29f61ede7491f48833a0b1ee0ae253dae8e84bf0241b40fa417910fe9cfa0df6"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "id": "section-9-1",
+          "sha256": "21f1a479698cbb1ca8c75d87e371ca36e5ed33aef99f7980e130088d30614a86"
+        }
+      ]
+    },
+    "manuals/bactoswitch/welcome.md": {
+      "sha256": "679532c17462a3e63ad8a14ce8141c6bd95db5450b68e1b2fe72dae115d3a997",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "49b531f5aeda297a5a6851f97a96351b249f65f0b6519842f58362f303edba58"
+        },
+        {
+          "id": "@body",
+          "sha256": "3afda7c788b383499b48496cacbb304b5af8f4d9a9dc86ef825a6a26d593081b"
+        }
+      ]
+    },
+    "manuals/other-manuals/bactolink.md": {
+      "sha256": "8fe9539b0e76ffade2984c926d7c4af0e7438cb6e178c8072f307e4263060313",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "47b76a5cbeb8b2d468b9488b3d4153ee4d4ff2c7487d8e7d3d998e2144cbe063"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "8842560ed26254e14408473b3999a1a109d736502a08a935f33e35c27c25407c"
+        },
+        {
+          "id": "general-user-information",
+          "sha256": "e46ad81516d62f1de25bebf83d027e843b18fc48cbe2ca0e7e3fa0629b8815ed"
+        },
+        {
+          "id": "intended-use",
+          "sha256": "df4980fa1bba85d3285783ec7ef2bbe28d04648d22e8061f9d91bb445ef85ff3"
+        },
+        {
+          "id": "pictograms",
+          "sha256": "728e6605e623b803468e69a83b684fdf36f573ea13c8aff66a2b167fba0b2a23"
+        },
+        {
+          "id": "prerequisites",
+          "sha256": "7a47636367ed7dfea18d51bb39d7e5c5508db15d27298ef0307b7ab9ce9e359d"
+        },
+        {
+          "id": "poe-injector",
+          "sha256": "6e31fef3f987ea6439a2d684ada90979ebd8bba24c894bbfaf434ec9cef370c1"
+        },
+        {
+          "id": "antenna",
+          "sha256": "1629f130b5aea88c0cfc24abb5a4c7da905093a0794e8690dd007543c67a0e33"
+        },
+        {
+          "id": "installation",
+          "sha256": "7136ece536d31cff3f938a27a60048736408004ae14171628839db201fac7ae3"
+        },
+        {
+          "id": "instrument-connections",
+          "sha256": "f2f31c1a2c9d3bd2da7872e14355bbfcf2c40c7f6aa438fde2b4923e8d5a458c"
+        },
+        {
+          "id": "antenna-connection",
+          "sha256": "68107a9bea1c164b46d3e945bbf6243fd2866b12267b57189ab85d8fa1f6c334"
+        },
+        {
+          "id": "mounting",
+          "sha256": "ae922b34f98f1614a0b2328d94b14bfde23c5d021a355371089926aa39b54895"
+        },
+        {
+          "id": "first-installation",
+          "sha256": "c77ad2956c14d2e0c8004a4e77e76f848d68dc7872ef6e5c1303757ba7268e40"
+        },
+        {
+          "id": "reconfiguration",
+          "sha256": "2cfb8e8409a6cf27e31e11c497457fdaca2aac7cac763501b0a8c0c729def1f7"
+        },
+        {
+          "id": "remote-connections",
+          "sha256": "35773acd730f49888626a5ca8d29e11951ab1f6733fd0c12a1e530892473dbd1"
+        },
+        {
+          "id": "webui",
+          "sha256": "7f5df2da6a0c35ddc6d57f819de14018274475a5380de243324d9949e42fa40b"
+        },
+        {
+          "id": "gui-relay",
+          "sha256": "ed5abe2568585a0586b13212b8eef7e62a4bc0ce96f3ebc2b46a96f40fdfab16"
+        },
+        {
+          "id": "troubleshooting",
+          "sha256": "7dc686c5fe0757c2b568492defcaeb7f32507fbf9852732b6137e3b61f9d3acc"
+        },
+        {
+          "id": "contact",
+          "sha256": "e1f13d2616fa34c85ece73e6c541e100855fd507824821b9a800ecda721ca07e"
+        }
+      ]
+    },
+    "manuals/other-manuals/cleaning-kit.md": {
+      "sha256": "b318d0f3405ba1e1c5b0e104510baa39b33984fe2f6f8de8c796792f742279e0",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "ca2b2be423dd1f29e76110c91553460679926767d57ac819395a0a072ba52eac"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "id": "general-information",
+          "sha256": "cfd10765a6ce5df6d156cf916c40e792c1ea0a89d2b5a35422adefe7201d382a"
+        },
+        {
+          "id": "safety",
+          "sha256": "86bac3fc486ebd053c1ac34e8888de0f7f56a165a4541cd279d9e31cb51b81dd"
+        },
+        {
+          "id": "contents",
+          "sha256": "e87301e97ddcd6e1d19bf6a1d5a8ec09bed6862b70e4cf85cb1389649ffc9959"
+        },
+        {
+          "id": "when-to-use",
+          "sha256": "021ad2094ba1e0b3d426cf6e30b34bf355793b2b41afff1fe6c2fef3e20d00b1"
+        },
+        {
+          "id": "biological-contamination",
+          "sha256": "441594dbf5e02a9db48b1f5cb8e172ac0d66e8e6e84c6e50fa7dfc118966742e"
+        },
+        {
+          "id": "non-biological-contamination",
+          "sha256": "14e0fd7ce36c307b833c6660bed85b5dc92a75af230b3738e4d5985199fcae70"
+        },
+        {
+          "id": "after-cleaning",
+          "sha256": "05341432d7a31e0acaa8e95ee8af941b42015a4676a44b850b40f366f4a76c01"
+        }
+      ]
+    },
+    "manuals/other-manuals/quick-guide.md": {
+      "sha256": "c42b67bdfd1c7e86e3804bb18d62cefde8fc681f6b53f5e3379a09ea9dd7028b",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "a5f0a49dac23e144e8ea0b7bc8393b71d905c469ca7e923179219f5f2b00ef68"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "f2d526a8e22f6447d8b851d6e0c6570fbab35395f534592b5c06f3ef17140cda"
+        },
+        {
+          "id": "before-getting-started",
+          "sha256": "020b75feeea9caa1e6564f68b1d5b38420598315c6ec6ce6039a5f61f51ae0fc"
+        },
+        {
+          "id": "auto-mode",
+          "sha256": "369e7d3dd6b319c1412705b492caa9a17d8be81866be9f146f7eaeced79b7e43"
+        },
+        {
+          "id": "manual-mode",
+          "sha256": "48edfdf154a260eda54a2583e74be44142c233c00d7a582828056c01ce8f210e"
+        },
+        {
+          "id": "results",
+          "sha256": "cefd8a3944bce4f0b3400f48d4df771784f76c67befbce5f017d72458da01e2f"
+        },
+        {
+          "id": "cartridges",
+          "sha256": "72d8596f06ef0f765d071e84c559a9a429e8e9b006f1e9135a1db66f6684f496"
+        },
+        {
+          "id": "storage",
+          "sha256": "a54ee610d0e61683f98640a3ec3ca55addaa99282416c21df19b116a264befd6"
+        },
+        {
+          "id": "qualification",
+          "sha256": "c5fad4bf250f46e44359258b5bc5273296170d64ec351c3e6ae2b64421589dbd"
+        },
+        {
+          "id": "cleaning",
+          "sha256": "575738127dd1377d8fdc8f428af6cfd781132581cdb0fa12ae4aeb95eae81e00"
+        },
+        {
+          "id": "icons",
+          "sha256": "918a31e58f00b820389c172e25a690a31ccd4f4afce1520cdf33b5616b0d158d"
+        },
+        {
+          "id": "contact",
+          "sha256": "33b2b59212903429523a5770f527530db52633e941d02d074f1a188cdf46002a"
+        }
+      ]
+    },
+    "manuals/other-manuals/sst-aquasense.md": {
+      "sha256": "3c012d3b4964608b9ea83d111430364368f5d8747832cf32a4ffba012eaddb3a",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "5cb532a0383900c3273af3dc3913bd469b7982c3ea6486a60676e8359535387c"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "id": "general-information",
+          "sha256": "47f27dea80ed33cdeb1b6af3e743894c9f94aeebc73c6087562445f8388eb2ea"
+        },
+        {
+          "id": "safety",
+          "sha256": "0340a23acb4d2f73134e308d7ceba8b7acc33559c384185752b64819fde36a8c"
+        },
+        {
+          "id": "contents",
+          "sha256": "0b72966556c6315222a6888e3b1a9b413ed70c07c36d671da58c58e53447ba37"
+        },
+        {
+          "id": "when-to-use",
+          "sha256": "fcd938ce58324a03b7fa84abae28d8f2df7187ad0227573c006c3ade640ea3d2"
+        },
+        {
+          "id": "preparations",
+          "sha256": "d287e71e87ae5bf955087cdde0dbff63d8d35013991545e184cb1e2e2074863f"
+        },
+        {
+          "id": "optical-validation",
+          "sha256": "dac396f0c17eb7a35c404459c17d6c0fcafab8a1e22fb890fd18ef5335f454fd"
+        },
+        {
+          "id": "reference-validation",
+          "sha256": "ba2d85b072ebad75ae5ed8c47ab980659404eac640c9ae90cf575608139dfd47"
+        },
+        {
+          "id": "sterile-validation",
+          "sha256": "9219ad0f1b51545e99441fa8b76bbecd4973813d520db52ae91aa888148519f2"
+        }
+      ]
+    },
+    "manuals/other-manuals/sst-bactosense-pure.md": {
+      "sha256": "c45beafa5b12bd0010b924f53b9d1f8f74b9ee9177426fe17cb84d95b323caa3",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "121af0a1305e72252124b9fb569528332157e3a138bf11778a197f8375ec4bd8"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "id": "general-information",
+          "sha256": "cce7b1eea57cacd54e9a1d59ec88b59d078c46949accf6874a57db46e2d7665a"
+        },
+        {
+          "id": "safety",
+          "sha256": "64bc9ae27817cabc1f23e44cce0dc40c7cdc303ab1c362dd433af7e41c03f7d0"
+        },
+        {
+          "id": "contents",
+          "sha256": "abe28a38af98b1b238d7997abff81cb8ab4d433116c18d5038efeb4da4e87aca"
+        },
+        {
+          "id": "when-to-use",
+          "sha256": "fcd938ce58324a03b7fa84abae28d8f2df7187ad0227573c006c3ade640ea3d2"
+        },
+        {
+          "id": "preparations",
+          "sha256": "08f3c0d5e05e3c1204e34def0f2632e5ea714f8da4261ac2c8bbc36f2bc0ffa3"
+        },
+        {
+          "id": "optical-validation",
+          "sha256": "ca1201e785b8ba655b7dd2e350ba071c2fec6491310a70cb6494abb4cfe58cf2"
+        },
+        {
+          "id": "reference-validation",
+          "sha256": "4cd81855ad5174e37603ee508433f3fe7c2482894c03d3046e9637e47f6a443b"
+        },
+        {
+          "id": "sterile-validation",
+          "sha256": "758d77422d9b77d06bbf11249a4f23721bd68de14ccc5aa85e575424e898ccb3"
+        }
+      ]
+    },
+    "manuals/other-manuals/validation-kit.md": {
+      "sha256": "23a1c770fec9cd34a4ca84ecb0f6cdcd9275c7b1ea3cd3c81bd1b5c55cae3a37",
+      "sections": [
+        {
+          "id": "@frontmatter",
+          "sha256": "9ab132ac1b126d4467f59c72dd5e09b81e510422b8b08c5ccee4b3e32d8ba106"
+        },
+        {
+          "id": "@preamble",
+          "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+        },
+        {
+          "id": "general-information",
+          "sha256": "d935304601fb205d9d88caa37d7ac47276e28f436d41cc55ca6b166584a22319"
+        },
+        {
+          "id": "safety",
+          "sha256": "52d6669a0f4ac0b4516f09041696ddd89131fb0ae5d51797ae39519071cd5def"
+        },
+        {
+          "id": "contents",
+          "sha256": "4eb31b22dea55b0b89b85986ef055162e067f837d7c11f36440f8d27cf2e8849"
+        },
+        {
+          "id": "when-to-use",
+          "sha256": "eeeb37ecbe9e572d94cbc641b971e6d41b4c5338e77f7c30c4de6390af63e020"
+        },
+        {
+          "id": "preparations",
+          "sha256": "e85f5bcac1fd12f8a9c45f1dceed728ebb14408d8d77cf46dcd337f4f110b2a7"
+        },
+        {
+          "id": "optical-validation",
+          "sha256": "904a1de1fd1b4981e0d2b0f7e90f7f3210ceca7e3110bf5495052eeefe6e4c9b"
+        },
+        {
+          "id": "reference-validation",
+          "sha256": "f5b8d3607a61b244cdbf5c8c42d01aa5c0bd1dec90276ad5a7c52cf210ce845d"
+        },
+        {
+          "id": "sterile-validation",
+          "sha256": "4d01660f5344393122c13cd2ffce45618bf0ff9b8eefd4a49f42f2f49abe036d"
+        }
+      ]
+    }
+  },
+  "translations": {
+    "i18n/de/docusaurus-plugin-content-docs-bactoswitch/current/01-general-user-information.md": "2fa1002cfe4048a1df794e50b4459fc816e02046981685159f7f5e91f4b0ab11",
+    "i18n/de/docusaurus-plugin-content-docs-bactoswitch/current/02-instrument-overview.md": "f82cb161f7e40370e05bcea8f3ad81aefedd634a92ce518f9b0a2143773a1e77",
+    "i18n/de/docusaurus-plugin-content-docs-bactoswitch/current/03-safety.md": "3b1a419b4a9905abaa65e7f95563c19bf6b5dd0d82ce732fb6f87d6d50153e91",
+    "i18n/de/docusaurus-plugin-content-docs-bactoswitch/current/04-installation.md": "f4b8781e85a7893f537c4189ecd5f89c73ec23074d8c239dcb357d0cb9cf4688",
+    "i18n/de/docusaurus-plugin-content-docs-bactoswitch/current/05-operation.md": "c64c4d98918f27c07a29e5a0b11de60a7ce567f152f55482db919e0e55a5f6fb",
+    "i18n/de/docusaurus-plugin-content-docs-bactoswitch/current/06-warning-and-error-messages.md": "cbab40171afb1fc58e8e1ab462b3da4c45bbc7d7726b5c00688f986f40a2216b",
+    "i18n/de/docusaurus-plugin-content-docs-bactoswitch/current/07-maintenance.md": "67ecd99c1e5cbe0d3b0efa7f225d62a7ee90e4717585fbd8b43865dfc0df2703",
+    "i18n/de/docusaurus-plugin-content-docs-bactoswitch/current/08-storage-transport-and-disposal.md": "51ff7cc42614b4ae2d3fbb1939e186d6fcbf7507d157e45a42ffc59b6ef20df0",
+    "i18n/de/docusaurus-plugin-content-docs-bactoswitch/current/09-contact.md": "75a85c8988dcaae1c83c56d6eb45792e84ce1422dbef1c4844a1766a35ee45a3",
+    "i18n/de/docusaurus-plugin-content-docs-bactoswitch/current/welcome.md": "679532c17462a3e63ad8a14ce8141c6bd95db5450b68e1b2fe72dae115d3a997",
+    "i18n/de/docusaurus-plugin-content-docs-other-manuals/current/bactolink.md": "8fe9539b0e76ffade2984c926d7c4af0e7438cb6e178c8072f307e4263060313",
+    "i18n/de/docusaurus-plugin-content-docs-other-manuals/current/cleaning-kit.md": "b318d0f3405ba1e1c5b0e104510baa39b33984fe2f6f8de8c796792f742279e0",
+    "i18n/de/docusaurus-plugin-content-docs-other-manuals/current/quick-guide.md": "c42b67bdfd1c7e86e3804bb18d62cefde8fc681f6b53f5e3379a09ea9dd7028b",
+    "i18n/de/docusaurus-plugin-content-docs-other-manuals/current/sst-aquasense.md": "3c012d3b4964608b9ea83d111430364368f5d8747832cf32a4ffba012eaddb3a",
+    "i18n/de/docusaurus-plugin-content-docs-other-manuals/current/sst-bactosense-pure.md": "c45beafa5b12bd0010b924f53b9d1f8f74b9ee9177426fe17cb84d95b323caa3",
+    "i18n/de/docusaurus-plugin-content-docs-other-manuals/current/validation-kit.md": "23a1c770fec9cd34a4ca84ecb0f6cdcd9275c7b1ea3cd3c81bd1b5c55cae3a37",
+    "i18n/de/docusaurus-plugin-content-docs/current/01-glossary.md": "69c3c10915c8dc0b1490892428260c48558b76f928e5b094343f8713860c7f29",
+    "i18n/de/docusaurus-plugin-content-docs/current/02-general-user-information.md": "ab9cc40a4f37eb7c0aed9190c0a324e6bd8001fc8bf58e9fe1160ef2e85403b9",
+    "i18n/de/docusaurus-plugin-content-docs/current/03-instrument-overview.md": "351bfb7a129741f58889765e1aedf19b501173934f3115f63a8978c9927da7ec",
+    "i18n/de/docusaurus-plugin-content-docs/current/04-safety.md": "83121c52c135369110b62cedd1d422e674c67ff802f5520c5d5ce28734453423",
+    "i18n/de/docusaurus-plugin-content-docs/current/05-installation.md": "29f3cc3a5783ea7a63a43881b4dc537d5b9f69047e57dcc4f56252cc578d324f",
+    "i18n/de/docusaurus-plugin-content-docs/current/06-io-box.md": "c2926f3f37db36861e7269652ee4c44732f857e44ec89f912fc0bd013b949e67",
+    "i18n/de/docusaurus-plugin-content-docs/current/07-field-bus-interface.md": "d74db8cfafa42faaddd86f07e71411e46de3cb944a5e8c291ba170466d08c904",
+    "i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md": "d123e35d7aca7e9bc0e68ac5b3529534ec471228db4e4f69c2ba28d467b0163b",
+    "i18n/de/docusaurus-plugin-content-docs/current/09-upgrade-packages.md": "8ad9ccabc12eb3abaf56f6f7aec5a7ec4d89b57e2cc399481ac7afba1b062859",
+    "i18n/de/docusaurus-plugin-content-docs/current/10-measurements.md": "af37e100644a707f75e8190d67cd4ef10fd644f40ba890ff15a5f66dd45f7c99",
+    "i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md": "3137187a31761dec9f478ed2ed228cf2b6c77a6c8713d2b00c10766c5fd141f2",
+    "i18n/de/docusaurus-plugin-content-docs/current/12-data-access-and-export.md": "3673d1f8bc68a7cab9c19ff4be407e72e25c9132a62dff04dacb8beaf7f7c721",
+    "i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md": "20484d48b8a7971d8be0d00f214913a53275983f404c2650f0035b2bc234deb0",
+    "i18n/de/docusaurus-plugin-content-docs/current/14-bactocloud.md": "f5d5d8bd7a0b64d2d2bf50ac8408b5c54fb18ab9476d0428f97a04c5e18dc443",
+    "i18n/de/docusaurus-plugin-content-docs/current/15-maintenance.md": "be14a3b4ddede995d37ebcbd6ea982cc42c817135fc4ad3eda997755060edebb",
+    "i18n/de/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md": "019c4e73760ba26ea9e5d13da4e89f6b5e2543bbbbff03fb93cca1e49c4ad57e",
+    "i18n/de/docusaurus-plugin-content-docs/current/17-storage-transport-and-disposal.md": "5c44ddd245e9bd6bf27bfabe8ee1a7afbb97cabf32284fac8dd05736f6f98429",
+    "i18n/de/docusaurus-plugin-content-docs/current/18-supply-scope-accessories-and-consumables.md": "4eba2a92ea4c03a5ea3c0f2a826fe5a5360445c374ef768f3e094b5cd2a22036",
+    "i18n/de/docusaurus-plugin-content-docs/current/19-contact.md": "37ce620a62cc9fd7c31527669222f556bfa2b68454dd3d63ad0f10ef2bb524d5",
+    "i18n/de/docusaurus-plugin-content-docs/current/20-index.md": "970b935fdd45ad249d471e33e38052672eb53d915bf122c0091991766f247802",
+    "i18n/de/docusaurus-plugin-content-docs/current/welcome.md": "2dd221402c0b70538d6aa3ea6dd0acd051f5c87f99eb276cc98c9c7790f1e0cc",
+    "i18n/es/docusaurus-plugin-content-docs-bactoswitch/current/01-general-user-information.md": "2fa1002cfe4048a1df794e50b4459fc816e02046981685159f7f5e91f4b0ab11",
+    "i18n/es/docusaurus-plugin-content-docs-bactoswitch/current/02-instrument-overview.md": "f82cb161f7e40370e05bcea8f3ad81aefedd634a92ce518f9b0a2143773a1e77",
+    "i18n/es/docusaurus-plugin-content-docs-bactoswitch/current/03-safety.md": "3b1a419b4a9905abaa65e7f95563c19bf6b5dd0d82ce732fb6f87d6d50153e91",
+    "i18n/es/docusaurus-plugin-content-docs-bactoswitch/current/04-installation.md": "f4b8781e85a7893f537c4189ecd5f89c73ec23074d8c239dcb357d0cb9cf4688",
+    "i18n/es/docusaurus-plugin-content-docs-bactoswitch/current/05-operation.md": "c64c4d98918f27c07a29e5a0b11de60a7ce567f152f55482db919e0e55a5f6fb",
+    "i18n/es/docusaurus-plugin-content-docs-bactoswitch/current/06-warning-and-error-messages.md": "cbab40171afb1fc58e8e1ab462b3da4c45bbc7d7726b5c00688f986f40a2216b",
+    "i18n/es/docusaurus-plugin-content-docs-bactoswitch/current/07-maintenance.md": "67ecd99c1e5cbe0d3b0efa7f225d62a7ee90e4717585fbd8b43865dfc0df2703",
+    "i18n/es/docusaurus-plugin-content-docs-bactoswitch/current/08-storage-transport-and-disposal.md": "51ff7cc42614b4ae2d3fbb1939e186d6fcbf7507d157e45a42ffc59b6ef20df0",
+    "i18n/es/docusaurus-plugin-content-docs-bactoswitch/current/09-contact.md": "75a85c8988dcaae1c83c56d6eb45792e84ce1422dbef1c4844a1766a35ee45a3",
+    "i18n/es/docusaurus-plugin-content-docs-bactoswitch/current/welcome.md": "679532c17462a3e63ad8a14ce8141c6bd95db5450b68e1b2fe72dae115d3a997",
+    "i18n/es/docusaurus-plugin-content-docs-other-manuals/current/bactolink.md": "8fe9539b0e76ffade2984c926d7c4af0e7438cb6e178c8072f307e4263060313",
+    "i18n/es/docusaurus-plugin-content-docs-other-manuals/current/cleaning-kit.md": "b318d0f3405ba1e1c5b0e104510baa39b33984fe2f6f8de8c796792f742279e0",
+    "i18n/es/docusaurus-plugin-content-docs-other-manuals/current/quick-guide.md": "c42b67bdfd1c7e86e3804bb18d62cefde8fc681f6b53f5e3379a09ea9dd7028b",
+    "i18n/es/docusaurus-plugin-content-docs-other-manuals/current/sst-aquasense.md": "3c012d3b4964608b9ea83d111430364368f5d8747832cf32a4ffba012eaddb3a",
+    "i18n/es/docusaurus-plugin-content-docs-other-manuals/current/sst-bactosense-pure.md": "c45beafa5b12bd0010b924f53b9d1f8f74b9ee9177426fe17cb84d95b323caa3",
+    "i18n/es/docusaurus-plugin-content-docs-other-manuals/current/validation-kit.md": "23a1c770fec9cd34a4ca84ecb0f6cdcd9275c7b1ea3cd3c81bd1b5c55cae3a37",
+    "i18n/es/docusaurus-plugin-content-docs/current/01-glossary.md": "69c3c10915c8dc0b1490892428260c48558b76f928e5b094343f8713860c7f29",
+    "i18n/es/docusaurus-plugin-content-docs/current/02-general-user-information.md": "ab9cc40a4f37eb7c0aed9190c0a324e6bd8001fc8bf58e9fe1160ef2e85403b9",
+    "i18n/es/docusaurus-plugin-content-docs/current/03-instrument-overview.md": "351bfb7a129741f58889765e1aedf19b501173934f3115f63a8978c9927da7ec",
+    "i18n/es/docusaurus-plugin-content-docs/current/04-safety.md": "83121c52c135369110b62cedd1d422e674c67ff802f5520c5d5ce28734453423",
+    "i18n/es/docusaurus-plugin-content-docs/current/05-installation.md": "29f3cc3a5783ea7a63a43881b4dc537d5b9f69047e57dcc4f56252cc578d324f",
+    "i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md": "c2926f3f37db36861e7269652ee4c44732f857e44ec89f912fc0bd013b949e67",
+    "i18n/es/docusaurus-plugin-content-docs/current/07-field-bus-interface.md": "d74db8cfafa42faaddd86f07e71411e46de3cb944a5e8c291ba170466d08c904",
+    "i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md": "d123e35d7aca7e9bc0e68ac5b3529534ec471228db4e4f69c2ba28d467b0163b",
+    "i18n/es/docusaurus-plugin-content-docs/current/09-upgrade-packages.md": "8ad9ccabc12eb3abaf56f6f7aec5a7ec4d89b57e2cc399481ac7afba1b062859",
+    "i18n/es/docusaurus-plugin-content-docs/current/10-measurements.md": "af37e100644a707f75e8190d67cd4ef10fd644f40ba890ff15a5f66dd45f7c99",
+    "i18n/es/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md": "3137187a31761dec9f478ed2ed228cf2b6c77a6c8713d2b00c10766c5fd141f2",
+    "i18n/es/docusaurus-plugin-content-docs/current/12-data-access-and-export.md": "3673d1f8bc68a7cab9c19ff4be407e72e25c9132a62dff04dacb8beaf7f7c721",
+    "i18n/es/docusaurus-plugin-content-docs/current/13-web-user-interface.md": "20484d48b8a7971d8be0d00f214913a53275983f404c2650f0035b2bc234deb0",
+    "i18n/es/docusaurus-plugin-content-docs/current/14-bactocloud.md": "f5d5d8bd7a0b64d2d2bf50ac8408b5c54fb18ab9476d0428f97a04c5e18dc443",
+    "i18n/es/docusaurus-plugin-content-docs/current/15-maintenance.md": "be14a3b4ddede995d37ebcbd6ea982cc42c817135fc4ad3eda997755060edebb",
+    "i18n/es/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md": "019c4e73760ba26ea9e5d13da4e89f6b5e2543bbbbff03fb93cca1e49c4ad57e",
+    "i18n/es/docusaurus-plugin-content-docs/current/17-storage-transport-and-disposal.md": "5c44ddd245e9bd6bf27bfabe8ee1a7afbb97cabf32284fac8dd05736f6f98429",
+    "i18n/es/docusaurus-plugin-content-docs/current/18-supply-scope-accessories-and-consumables.md": "4eba2a92ea4c03a5ea3c0f2a826fe5a5360445c374ef768f3e094b5cd2a22036",
+    "i18n/es/docusaurus-plugin-content-docs/current/19-contact.md": "37ce620a62cc9fd7c31527669222f556bfa2b68454dd3d63ad0f10ef2bb524d5",
+    "i18n/es/docusaurus-plugin-content-docs/current/20-index.md": "970b935fdd45ad249d471e33e38052672eb53d915bf122c0091991766f247802",
+    "i18n/es/docusaurus-plugin-content-docs/current/welcome.md": "2dd221402c0b70538d6aa3ea6dd0acd051f5c87f99eb276cc98c9c7790f1e0cc",
+    "i18n/fr/docusaurus-plugin-content-docs-bactoswitch/current/01-general-user-information.md": "2fa1002cfe4048a1df794e50b4459fc816e02046981685159f7f5e91f4b0ab11",
+    "i18n/fr/docusaurus-plugin-content-docs-bactoswitch/current/02-instrument-overview.md": "f82cb161f7e40370e05bcea8f3ad81aefedd634a92ce518f9b0a2143773a1e77",
+    "i18n/fr/docusaurus-plugin-content-docs-bactoswitch/current/03-safety.md": "3b1a419b4a9905abaa65e7f95563c19bf6b5dd0d82ce732fb6f87d6d50153e91",
+    "i18n/fr/docusaurus-plugin-content-docs-bactoswitch/current/04-installation.md": "f4b8781e85a7893f537c4189ecd5f89c73ec23074d8c239dcb357d0cb9cf4688",
+    "i18n/fr/docusaurus-plugin-content-docs-bactoswitch/current/05-operation.md": "c64c4d98918f27c07a29e5a0b11de60a7ce567f152f55482db919e0e55a5f6fb",
+    "i18n/fr/docusaurus-plugin-content-docs-bactoswitch/current/06-warning-and-error-messages.md": "cbab40171afb1fc58e8e1ab462b3da4c45bbc7d7726b5c00688f986f40a2216b",
+    "i18n/fr/docusaurus-plugin-content-docs-bactoswitch/current/07-maintenance.md": "67ecd99c1e5cbe0d3b0efa7f225d62a7ee90e4717585fbd8b43865dfc0df2703",
+    "i18n/fr/docusaurus-plugin-content-docs-bactoswitch/current/08-storage-transport-and-disposal.md": "51ff7cc42614b4ae2d3fbb1939e186d6fcbf7507d157e45a42ffc59b6ef20df0",
+    "i18n/fr/docusaurus-plugin-content-docs-bactoswitch/current/09-contact.md": "75a85c8988dcaae1c83c56d6eb45792e84ce1422dbef1c4844a1766a35ee45a3",
+    "i18n/fr/docusaurus-plugin-content-docs-bactoswitch/current/welcome.md": "679532c17462a3e63ad8a14ce8141c6bd95db5450b68e1b2fe72dae115d3a997",
+    "i18n/fr/docusaurus-plugin-content-docs-other-manuals/current/bactolink.md": "8fe9539b0e76ffade2984c926d7c4af0e7438cb6e178c8072f307e4263060313",
+    "i18n/fr/docusaurus-plugin-content-docs-other-manuals/current/cleaning-kit.md": "b318d0f3405ba1e1c5b0e104510baa39b33984fe2f6f8de8c796792f742279e0",
+    "i18n/fr/docusaurus-plugin-content-docs-other-manuals/current/quick-guide.md": "c42b67bdfd1c7e86e3804bb18d62cefde8fc681f6b53f5e3379a09ea9dd7028b",
+    "i18n/fr/docusaurus-plugin-content-docs-other-manuals/current/sst-aquasense.md": "3c012d3b4964608b9ea83d111430364368f5d8747832cf32a4ffba012eaddb3a",
+    "i18n/fr/docusaurus-plugin-content-docs-other-manuals/current/sst-bactosense-pure.md": "c45beafa5b12bd0010b924f53b9d1f8f74b9ee9177426fe17cb84d95b323caa3",
+    "i18n/fr/docusaurus-plugin-content-docs-other-manuals/current/validation-kit.md": "23a1c770fec9cd34a4ca84ecb0f6cdcd9275c7b1ea3cd3c81bd1b5c55cae3a37",
+    "i18n/fr/docusaurus-plugin-content-docs/current/01-glossary.md": "69c3c10915c8dc0b1490892428260c48558b76f928e5b094343f8713860c7f29",
+    "i18n/fr/docusaurus-plugin-content-docs/current/02-general-user-information.md": "ab9cc40a4f37eb7c0aed9190c0a324e6bd8001fc8bf58e9fe1160ef2e85403b9",
+    "i18n/fr/docusaurus-plugin-content-docs/current/03-instrument-overview.md": "351bfb7a129741f58889765e1aedf19b501173934f3115f63a8978c9927da7ec",
+    "i18n/fr/docusaurus-plugin-content-docs/current/04-safety.md": "83121c52c135369110b62cedd1d422e674c67ff802f5520c5d5ce28734453423",
+    "i18n/fr/docusaurus-plugin-content-docs/current/05-installation.md": "29f3cc3a5783ea7a63a43881b4dc537d5b9f69047e57dcc4f56252cc578d324f",
+    "i18n/fr/docusaurus-plugin-content-docs/current/06-io-box.md": "c2926f3f37db36861e7269652ee4c44732f857e44ec89f912fc0bd013b949e67",
+    "i18n/fr/docusaurus-plugin-content-docs/current/07-field-bus-interface.md": "d74db8cfafa42faaddd86f07e71411e46de3cb944a5e8c291ba170466d08c904",
+    "i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md": "d123e35d7aca7e9bc0e68ac5b3529534ec471228db4e4f69c2ba28d467b0163b",
+    "i18n/fr/docusaurus-plugin-content-docs/current/09-upgrade-packages.md": "8ad9ccabc12eb3abaf56f6f7aec5a7ec4d89b57e2cc399481ac7afba1b062859",
+    "i18n/fr/docusaurus-plugin-content-docs/current/10-measurements.md": "af37e100644a707f75e8190d67cd4ef10fd644f40ba890ff15a5f66dd45f7c99",
+    "i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md": "3137187a31761dec9f478ed2ed228cf2b6c77a6c8713d2b00c10766c5fd141f2",
+    "i18n/fr/docusaurus-plugin-content-docs/current/12-data-access-and-export.md": "3673d1f8bc68a7cab9c19ff4be407e72e25c9132a62dff04dacb8beaf7f7c721",
+    "i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md": "20484d48b8a7971d8be0d00f214913a53275983f404c2650f0035b2bc234deb0",
+    "i18n/fr/docusaurus-plugin-content-docs/current/14-bactocloud.md": "f5d5d8bd7a0b64d2d2bf50ac8408b5c54fb18ab9476d0428f97a04c5e18dc443",
+    "i18n/fr/docusaurus-plugin-content-docs/current/15-maintenance.md": "be14a3b4ddede995d37ebcbd6ea982cc42c817135fc4ad3eda997755060edebb",
+    "i18n/fr/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md": "019c4e73760ba26ea9e5d13da4e89f6b5e2543bbbbff03fb93cca1e49c4ad57e",
+    "i18n/fr/docusaurus-plugin-content-docs/current/17-storage-transport-and-disposal.md": "5c44ddd245e9bd6bf27bfabe8ee1a7afbb97cabf32284fac8dd05736f6f98429",
+    "i18n/fr/docusaurus-plugin-content-docs/current/18-supply-scope-accessories-and-consumables.md": "4eba2a92ea4c03a5ea3c0f2a826fe5a5360445c374ef768f3e094b5cd2a22036",
+    "i18n/fr/docusaurus-plugin-content-docs/current/19-contact.md": "37ce620a62cc9fd7c31527669222f556bfa2b68454dd3d63ad0f10ef2bb524d5",
+    "i18n/fr/docusaurus-plugin-content-docs/current/20-index.md": "970b935fdd45ad249d471e33e38052672eb53d915bf122c0091991766f247802",
+    "i18n/fr/docusaurus-plugin-content-docs/current/welcome.md": "2dd221402c0b70538d6aa3ea6dd0acd051f5c87f99eb276cc98c9c7790f1e0cc",
+    "i18n/it/docusaurus-plugin-content-docs-bactoswitch/current/01-general-user-information.md": "2fa1002cfe4048a1df794e50b4459fc816e02046981685159f7f5e91f4b0ab11",
+    "i18n/it/docusaurus-plugin-content-docs-bactoswitch/current/02-instrument-overview.md": "f82cb161f7e40370e05bcea8f3ad81aefedd634a92ce518f9b0a2143773a1e77",
+    "i18n/it/docusaurus-plugin-content-docs-bactoswitch/current/03-safety.md": "3b1a419b4a9905abaa65e7f95563c19bf6b5dd0d82ce732fb6f87d6d50153e91",
+    "i18n/it/docusaurus-plugin-content-docs-bactoswitch/current/04-installation.md": "f4b8781e85a7893f537c4189ecd5f89c73ec23074d8c239dcb357d0cb9cf4688",
+    "i18n/it/docusaurus-plugin-content-docs-bactoswitch/current/05-operation.md": "c64c4d98918f27c07a29e5a0b11de60a7ce567f152f55482db919e0e55a5f6fb",
+    "i18n/it/docusaurus-plugin-content-docs-bactoswitch/current/06-warning-and-error-messages.md": "cbab40171afb1fc58e8e1ab462b3da4c45bbc7d7726b5c00688f986f40a2216b",
+    "i18n/it/docusaurus-plugin-content-docs-bactoswitch/current/07-maintenance.md": "67ecd99c1e5cbe0d3b0efa7f225d62a7ee90e4717585fbd8b43865dfc0df2703",
+    "i18n/it/docusaurus-plugin-content-docs-bactoswitch/current/08-storage-transport-and-disposal.md": "51ff7cc42614b4ae2d3fbb1939e186d6fcbf7507d157e45a42ffc59b6ef20df0",
+    "i18n/it/docusaurus-plugin-content-docs-bactoswitch/current/09-contact.md": "75a85c8988dcaae1c83c56d6eb45792e84ce1422dbef1c4844a1766a35ee45a3",
+    "i18n/it/docusaurus-plugin-content-docs-bactoswitch/current/welcome.md": "679532c17462a3e63ad8a14ce8141c6bd95db5450b68e1b2fe72dae115d3a997",
+    "i18n/it/docusaurus-plugin-content-docs-other-manuals/current/bactolink.md": "8fe9539b0e76ffade2984c926d7c4af0e7438cb6e178c8072f307e4263060313",
+    "i18n/it/docusaurus-plugin-content-docs-other-manuals/current/cleaning-kit.md": "b318d0f3405ba1e1c5b0e104510baa39b33984fe2f6f8de8c796792f742279e0",
+    "i18n/it/docusaurus-plugin-content-docs-other-manuals/current/quick-guide.md": "c42b67bdfd1c7e86e3804bb18d62cefde8fc681f6b53f5e3379a09ea9dd7028b",
+    "i18n/it/docusaurus-plugin-content-docs-other-manuals/current/sst-aquasense.md": "3c012d3b4964608b9ea83d111430364368f5d8747832cf32a4ffba012eaddb3a",
+    "i18n/it/docusaurus-plugin-content-docs-other-manuals/current/sst-bactosense-pure.md": "c45beafa5b12bd0010b924f53b9d1f8f74b9ee9177426fe17cb84d95b323caa3",
+    "i18n/it/docusaurus-plugin-content-docs-other-manuals/current/validation-kit.md": "23a1c770fec9cd34a4ca84ecb0f6cdcd9275c7b1ea3cd3c81bd1b5c55cae3a37",
+    "i18n/it/docusaurus-plugin-content-docs/current/01-glossary.md": "69c3c10915c8dc0b1490892428260c48558b76f928e5b094343f8713860c7f29",
+    "i18n/it/docusaurus-plugin-content-docs/current/02-general-user-information.md": "ab9cc40a4f37eb7c0aed9190c0a324e6bd8001fc8bf58e9fe1160ef2e85403b9",
+    "i18n/it/docusaurus-plugin-content-docs/current/03-instrument-overview.md": "351bfb7a129741f58889765e1aedf19b501173934f3115f63a8978c9927da7ec",
+    "i18n/it/docusaurus-plugin-content-docs/current/04-safety.md": "83121c52c135369110b62cedd1d422e674c67ff802f5520c5d5ce28734453423",
+    "i18n/it/docusaurus-plugin-content-docs/current/05-installation.md": "29f3cc3a5783ea7a63a43881b4dc537d5b9f69047e57dcc4f56252cc578d324f",
+    "i18n/it/docusaurus-plugin-content-docs/current/06-io-box.md": "c2926f3f37db36861e7269652ee4c44732f857e44ec89f912fc0bd013b949e67",
+    "i18n/it/docusaurus-plugin-content-docs/current/07-field-bus-interface.md": "d74db8cfafa42faaddd86f07e71411e46de3cb944a5e8c291ba170466d08c904",
+    "i18n/it/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md": "d123e35d7aca7e9bc0e68ac5b3529534ec471228db4e4f69c2ba28d467b0163b",
+    "i18n/it/docusaurus-plugin-content-docs/current/09-upgrade-packages.md": "8ad9ccabc12eb3abaf56f6f7aec5a7ec4d89b57e2cc399481ac7afba1b062859",
+    "i18n/it/docusaurus-plugin-content-docs/current/10-measurements.md": "af37e100644a707f75e8190d67cd4ef10fd644f40ba890ff15a5f66dd45f7c99",
+    "i18n/it/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md": "3137187a31761dec9f478ed2ed228cf2b6c77a6c8713d2b00c10766c5fd141f2",
+    "i18n/it/docusaurus-plugin-content-docs/current/12-data-access-and-export.md": "3673d1f8bc68a7cab9c19ff4be407e72e25c9132a62dff04dacb8beaf7f7c721",
+    "i18n/it/docusaurus-plugin-content-docs/current/13-web-user-interface.md": "20484d48b8a7971d8be0d00f214913a53275983f404c2650f0035b2bc234deb0",
+    "i18n/it/docusaurus-plugin-content-docs/current/14-bactocloud.md": "f5d5d8bd7a0b64d2d2bf50ac8408b5c54fb18ab9476d0428f97a04c5e18dc443",
+    "i18n/it/docusaurus-plugin-content-docs/current/15-maintenance.md": "be14a3b4ddede995d37ebcbd6ea982cc42c817135fc4ad3eda997755060edebb",
+    "i18n/it/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md": "019c4e73760ba26ea9e5d13da4e89f6b5e2543bbbbff03fb93cca1e49c4ad57e",
+    "i18n/it/docusaurus-plugin-content-docs/current/17-storage-transport-and-disposal.md": "5c44ddd245e9bd6bf27bfabe8ee1a7afbb97cabf32284fac8dd05736f6f98429",
+    "i18n/it/docusaurus-plugin-content-docs/current/18-supply-scope-accessories-and-consumables.md": "4eba2a92ea4c03a5ea3c0f2a826fe5a5360445c374ef768f3e094b5cd2a22036",
+    "i18n/it/docusaurus-plugin-content-docs/current/19-contact.md": "37ce620a62cc9fd7c31527669222f556bfa2b68454dd3d63ad0f10ef2bb524d5",
+    "i18n/it/docusaurus-plugin-content-docs/current/20-index.md": "970b935fdd45ad249d471e33e38052672eb53d915bf122c0091991766f247802",
+    "i18n/it/docusaurus-plugin-content-docs/current/welcome.md": "2dd221402c0b70538d6aa3ea6dd0acd051f5c87f99eb276cc98c9c7790f1e0cc"
+  }
+}

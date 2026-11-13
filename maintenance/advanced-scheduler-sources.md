@@ -1,6 +1,6 @@
 # Advanced scheduling, section 10.2.4
 
-The reviewed supplement adds the native instrument workflow to chapter 10 without renumbering section 10.2.3 (reviewing automatic online measurements). English was reviewed before translation into German, French, Italian and Spanish. The older source PDF does not describe this editor; `scripts/editorial/10-advanced-scheduler.md` is reapplied by `scripts/manual_artwork.py` during optional re-extraction.
+The reviewed supplement adds the native instrument workflow to chapter 10 without renumbering section 10.2.3 (reviewing automatic online measurements). English was reviewed before translation into German, French, Italian and Spanish. The older source PDF does not describe this editor; maintain the supplement directly in `manuals/bactosense/10-measurements.md` and its four translations.
 
 ## Source evidence
 

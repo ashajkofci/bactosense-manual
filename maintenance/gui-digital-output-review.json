@@ -55,7 +55,7 @@
   "changes": [
     {
       "locale": "en",
-      "file": "docs/06-io-box.md",
+      "file": "manuals/bactosense/06-io-box.md",
       "section": "6.6",
       "step": 4,
       "column": 2,
@@ -64,7 +64,7 @@
     },
     {
       "locale": "en",
-      "file": "docs/06-io-box.md",
+      "file": "manuals/bactosense/06-io-box.md",
       "section": "6.6",
       "step": 4,
       "column": 3,
@@ -73,7 +73,7 @@
     },
     {
       "locale": "en",
-      "file": "docs/06-io-box.md",
+      "file": "manuals/bactosense/06-io-box.md",
       "section": "6.6",
       "step": 5,
       "column": 2,
@@ -82,7 +82,7 @@
     },
     {
       "locale": "en",
-      "file": "docs/06-io-box.md",
+      "file": "manuals/bactosense/06-io-box.md",
       "section": "6.6",
       "step": 5,
       "column": 3,
@@ -91,7 +91,7 @@
     },
     {
       "locale": "en",
-      "file": "docs/06-io-box.md",
+      "file": "manuals/bactosense/06-io-box.md",
       "section": "6.6",
       "step": 6,
       "column": 2,
@@ -100,7 +100,7 @@
     },
     {
       "locale": "en",
-      "file": "docs/06-io-box.md",
+      "file": "manuals/bactosense/06-io-box.md",
       "section": "6.6",
       "step": 6,
       "column": 3,
@@ -109,7 +109,7 @@
     },
     {
       "locale": "en",
-      "file": "docs/06-io-box.md",
+      "file": "manuals/bactosense/06-io-box.md",
       "section": "6.6",
       "step": 7,
       "column": 2,
@@ -118,7 +118,7 @@
     },
     {
       "locale": "en",
-      "file": "docs/06-io-box.md",
+      "file": "manuals/bactosense/06-io-box.md",
       "section": "6.6",
       "step": 7,
       "column": 3,

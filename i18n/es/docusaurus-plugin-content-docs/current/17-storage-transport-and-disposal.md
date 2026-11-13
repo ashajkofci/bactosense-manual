@@ -36,7 +36,7 @@ Después del almacenamiento, siga las instrucciones generales de instalación de
 
 :::info[Valide después del almacenamiento]
 
-Si BactoSense ha estado almacenado durante más de un mes, valide el instrumento con el Validation Kit antes de la primera medición para garantizar su correcto funcionamiento.
+Si BactoSense ha estado almacenado durante más de un mes, valide el instrumento con el [Validation Kit](/other-manuals/validation-kit) antes de la primera medición para garantizar su correcto funcionamiento.
 
 :::
 
@@ -111,40 +111,34 @@ Siga las instrucciones siguientes para transportar BactoSense de forma segura.
 
 **Tabla 17-1 Instrucciones de transporte de BactoSense**
 
-MODALIDAD E INSTRUCCIONES
+**Envío estándar**
 
 - Retire el cartucho mediante el procedimiento Retire el cartucho en Home → Ajustes → Mantenimiento → Cambio de cartucho. Los usuarios Basic abren Cambio de cartucho directamente desde Ajustes.
 - Embale BactoSense y el cartucho en sus cajas de cartón estándar con insertos de espuma.
 - Envíelos sobre un palé o una plataforma de transporte.
-- Realice una autocomprobación del instrumento (sección [Autocomprobación automática](16-warnings-errors-and-troubleshooting.md#section-16-6)) y una validación con el Validation Kit al reinstalarlo.
+- Realice una autocomprobación del instrumento (sección [Autocomprobación automática](16-warnings-errors-and-troubleshooting.md#section-16-6)) y una validación con el [Validation Kit](/other-manuals/validation-kit) al reinstalarlo.
 
-Envío estándar
+**Trayecto largo en coche o trayecto en coche por una carretera irregular**
 
 - Retire el cartucho mediante el procedimiento Retire el cartucho en Home → Ajustes → Mantenimiento → Cambio de cartucho. Los usuarios Basic abren Cambio de cartucho directamente desde Ajustes.
 - Embale BactoSense y el cartucho en sus cajas de cartón estándar con insertos de espuma o utilice el maletín de transporte (véanse los accesorios de la sección [Accesorios](18-supply-scope-accessories-and-consumables.md#section-18-2)).
 - Ejecute Clean sampling device with Washstation al reinstalar el instrumento (véase la sección [Limpieza del dispositivo de muestreo manual con Washstation](15-maintenance.md#section-15-2-2)).
 
-Trayecto largo en coche
-
-o
-
-Trayecto en coche por una carretera irregular
+**Trayecto corto en coche, carretera uniforme, instrumento apoyado sobre su parte posterior**
 
 - Retire el cartucho mediante el procedimiento Retire el cartucho en Home → Ajustes → Mantenimiento → Cambio de cartucho. Los usuarios Basic abren Cambio de cartucho directamente desde Ajustes.
 - Transporte BactoSense en el maletín de transporte (véanse los accesorios de la sección [Accesorios](18-supply-scope-accessories-and-consumables.md#section-18-2)).
 - Ejecute Clean sampling device with Washstation al reinstalar el instrumento (véase la sección [Limpieza del dispositivo de muestreo manual con Washstation](15-maintenance.md#section-15-2-2)).
 
-Trayecto corto en coche, carretera uniforme, instrumento apoyado sobre su parte posterior
+**Trayecto corto en coche, carretera uniforme, instrumento en posición vertical**
 
 - Transpórtelo en el maletín de transporte (véanse los accesorios de la sección [Accesorios](18-supply-scope-accessories-and-consumables.md#section-18-2)), sin retirar el cartucho.
 - Ejecute un proceso Fill Tubing después de volver a encender el instrumento; véase la sección [Descripción de los protocolos del modo manual](10-measurements.md#section-10-9-1).
 
-Trayecto corto en coche, carretera uniforme, instrumento en posición vertical
+**Trayecto corto dentro de la instalación, instrumento en posición vertical**
 
 - Transpórtelo en el maletín de transporte (véanse los accesorios de la sección [Accesorios](18-supply-scope-accessories-and-consumables.md#section-18-2)) o a mano, sin retirar el cartucho.
 - Ejecute un proceso Fill Tubing después de volver a encender el instrumento; véase la sección [Descripción de los protocolos del modo manual](10-measurements.md#section-10-9-1).
-
-Trayecto corto dentro de la instalación, instrumento en posición vertical
 
 ### 17.2.2 Transporte del cartucho {#section-17-2-2}
 
@@ -203,7 +197,9 @@ Preparación
 | 10. | Si envía otros artículos, etiquételos con el número de serie de BactoSense. |
 | 11. | Indique mediante etiquetas que el contenido de los paquetes es frágil, debe mantenerse seco y solo debe transportarse en la orientación indicada. |
 
-Devolución: envíe BactoSense a bNovate o al distribuidor respetando los requisitos generales de temperatura y humedad de almacenamiento de las secciones [Datos técnicos](03-instrument-overview.md#section-3-2) y [Almacenamiento de BactoSense](17-storage-transport-and-disposal.md#section-17-1-1).
+**Devolución**
+
+Envíe BactoSense a bNovate o al distribuidor respetando los requisitos generales de temperatura y humedad de almacenamiento de las secciones [Datos técnicos](03-instrument-overview.md#section-3-2) y [Almacenamiento de BactoSense](17-storage-transport-and-disposal.md#section-17-1-1).
 
 ### 17.3.2 Devolución de un cartucho para su recarga {#section-17-3-2}
 
@@ -216,7 +212,9 @@ Preparación
 | 3. | Embale el cartucho en su caja de cartón estándar. |
 | 4. | Indique mediante etiquetas que el contenido de los paquetes es frágil, debe mantenerse seco y solo debe transportarse en la orientación indicada. |
 
-Devolución para recarga: envíe el cartucho a bNovate respetando los requisitos generales de temperatura y humedad de almacenamiento de las secciones [Datos técnicos](03-instrument-overview.md#section-3-2) y [Almacenamiento del cartucho](17-storage-transport-and-disposal.md#section-17-1-3).
+**Devolución para recarga**
+
+Envíe el cartucho a bNovate respetando los requisitos generales de temperatura y humedad de almacenamiento de las secciones [Datos técnicos](03-instrument-overview.md#section-3-2) y [Almacenamiento del cartucho](17-storage-transport-and-disposal.md#section-17-1-3).
 
 ## 17.4 Reciclaje y eliminación {#section-17-4}
 

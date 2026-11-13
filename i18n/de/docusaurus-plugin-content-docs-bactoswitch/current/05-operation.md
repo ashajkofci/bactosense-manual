@@ -52,9 +52,9 @@ Durch Drücken der Schaltfläche **Filter** in der Liste **Online-Modus-Ergebnis
 
 ![Fenster Resultate filtern](/img/gui/de/bactoswitch-filter-results.png "width=635")
 
-Zusätzlich zur Filterung nach Start- und Enddatum sowie nach Messungsname können Sie die Ergebnisse über die Schaltfläche **Nach Zeilen filtern** nach BactoSwitch-Leitung filtern.
+Zusätzlich zur Filterung nach Start- und Enddatum sowie nach Messungsname können Sie die Ergebnisse über die Schaltfläche **Nach Probenleitung filtern** nach BactoSwitch-Probenleitung filtern.
 
-![Fenster Resultate filtern mit hervorgehobener Schaltfläche Nach Zeilen filtern](/img/gui/de/bactoswitch-filter-by-line-button.png "width=638")
+![Fenster Resultate filtern mit hervorgehobener Schaltfläche Nach Probenleitung filtern](/img/gui/de/bactoswitch-filter-by-line-button.png "width=638")
 
 ![Auswahl einer BactoSwitch-Probenleitung](/img/gui/de/bactoswitch-select-line.png "width=635")
 
@@ -82,15 +82,15 @@ BactoCloud enthält Funktionen, mit denen sich die Mehrleitungsdaten eines mit e
 
 Die [Web-Benutzeroberfläche](/bactosense/web-user-interface) des BactoSense enthält Funktionen zum Filtern der Daten der verschiedenen BactoSwitch-Leitungen.
 
-Auf der Registerkarte **Ergebnisse** können Sie im Bereich **Ergebnisse des Online-Modus** die Daten entweder nach **Name** oder nach **Zeilen-ID** filtern. Diese Felder entsprechen den unter [Leitungskonfiguration](04-installation.md#section-4-6) vergebenen Leitungsnummern und -namen. Die Filterung gilt auch für das Diagramm des Online-Modus.
+Auf der Registerkarte **Ergebnisse** können Sie im Bereich **Ergebnisse des Online-Modus** die Daten nach **Name** oder **Stream ID** filtern. **Name** entspricht dem Leitungsnamen und **Stream ID** der unter [Leitungskonfiguration](04-installation.md#section-4-6) festgelegten Leitungsnummer. Die Filterung gilt auch für das Diagramm des Online-Modus.
 
-![Ergebnisse des Online-Modus in der Web-Benutzeroberfläche, nach Name gefiltert, mit hervorgehobenen Spalten Name und Zeilen-ID](/img/gui/de/bactoswitch-web-online-results.png "width=634")
+![Ergebnisse des Online-Modus in der Web-Benutzeroberfläche, nach Name gefiltert, mit hervorgehobenen Spalten Name und Stream ID](/img/gui/de/bactoswitch-web-online-results.png "width=634")
 
 ### 5.2.3 Steuerung des BactoSwitch über die I/O-Box des BactoSense {#section-5-2-3}
 
 Der Betrieb des BactoSwitch kann über den BactoSense und die optionale I/O-Box mit einem Programmable Logic Controller (PLC) gesteuert werden. Ausführlichere Informationen finden Sie unter [Konfiguration digitaler Eingänge und PLC-Modus](/bactosense/io-box#section-6-5) in der Bedienungsanleitung des BactoSense. Hier werden nur die Besonderheiten des BactoSwitch-Betriebs erläutert.
 
-Navigieren Sie unter **Einstellungen** zu **Online-Modus Einstellungen** / **Digitale Eingänge**. Die BactoSwitch-Leitung kann über das Feld **Leitung** ausgewählt werden.
+Navigieren Sie unter **Einstellungen** zu **Online-Modus Einstellungen** / **Digitale Eingänge**. Die BactoSwitch-Leitung kann über das Feld **Probenleitung** ausgewählt werden.
 
 Im folgenden Beispiel ist die Option **Planer verwenden** deaktiviert. Setzt der PLC die digitalen Eingänge auf 1100, wird sofort eine Messung an Leitung Nr. 1 gestartet:
 

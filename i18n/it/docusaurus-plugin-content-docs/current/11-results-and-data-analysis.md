@@ -22,10 +22,10 @@ La figura seguente mostra il risultato di una misurazione TCC selezionata in mod
 | 5 | Il campo di stato della misurazione indica gli allarmi o gli avvertimenti. Toccare un’indicazione di allarme o di avvertimento per visualizzarne i dettagli. |
 | 6 | Il pulsante Cancella elimina definitivamente la misurazione (è richiesta una conferma). |
 | 7 | Il pulsante Rinomina consente di modificare il nome della misurazione. |
-| 8 | Il pulsante Risultato del re-gate consente di applicare gate diversi ai dati di misurazione. Per i dettagli, consultare la sezione [Rianalisi delle misurazioni con altri gate](../results-and-data-analysis/#section-11-4-1). |
+| 8 | Il pulsante Risultato del re-gate consente di applicare un diverso set di gate ai dati di misurazione. Per i dettagli, consultare la sezione [Rianalisi delle misurazioni con altri gate](../results-and-data-analysis/#section-11-4-1). |
 | 9 | Il pulsante Esporta consente di salvare questo risultato su una chiavetta USB. Ulteriori informazioni sono riportate nella sezione [Esportazione su un’unità USB](../measurements/#section-10-8-1). |
 | 10 | I pulsanti di navigazione a sinistra e a destra della vista del risultato consentono di passare rispettivamente alla misurazione precedente e successiva. |
-| 11 | Toccare il grafico dell’andamento per aprire il grafico della modalità automatica (il grafico completo dei risultati online). Vedere [Consultazione delle misurazioni automatiche in linea](../measurements/#section-10-2-3). |
+| 11 | Toccare il grafico dell’andamento per aprire il grafico della modalità online (il grafico completo dei risultati online). Vedere [Consultazione delle misurazioni automatiche in linea](../measurements/#section-10-2-3). |
 
 :::info[Selezionare più misurazioni]
 
@@ -42,8 +42,8 @@ Seguendo gli standard della citometria a flusso, BactoSense utilizza gate per co
 Si definiscono:
 
 - Gate: linea o poligono applicato a un diagramma a punti per quantificare le popolazioni di cellule misurate.
-- Gruppo di gate, o gating set: insieme di due o più gate utilizzato nella strategia di selezione. I tipi di gate sono fissi, ma gli utenti possono modificare i limiti di ciascuno. Sono diversi per le misurazioni TCC e ICC.
-- Strategia di selezione tramite gate: definisce come combinare i gate per contare le cellule. Ad esempio, HNAC è il numero di cellule all’interno del poligono TCC e al di sopra del limite inferiore HNA. Queste strategie sono diverse per le misurazioni TCC e ICC.
+- Gruppo di gate, o gating set: insieme di tutti i gate utilizzati per una misurazione. I tipi di gate sono fissi, ma gli utenti possono modificare i limiti di ciascuno.
+- Strategia di selezione tramite gate: definisce come combinare i gate per contare le cellule. Ad esempio, HNAC è il numero di cellule all’interno del poligono TCC e al di sopra del limite inferiore HNA.
 
 I gruppi di gate sono specifici per un tipo di cartuccia. Ad esempio, solo i gruppi di tipo TCC possono essere utilizzati con misurazioni eseguite con una cartuccia TCC.
 
@@ -73,13 +73,13 @@ Nella schermata Home, premere Impostazioni, quindi Impostazioni del gate per vis
 
 ## 11.3 Cartucce, gate e parametri dei risultati {#section-11-3}
 
-A seconda della cartuccia utilizzata per una misurazione, vengono misurati parametri differenti. Le sottosezioni seguenti descrivono i set di gate e i parametri dei risultati per TCC (conteggio cellulare totale), ICC (conteggio delle cellule integre), ACC (conteggio delle cellule attive), CBC (conteggio delle cellule coliformi), EBC (conteggio delle cellule di E. coli) e NBC (conteggio delle cellule di Enterococcus).
+A seconda della cartuccia utilizzata per una misurazione, vengono misurati parametri differenti. Le sottosezioni seguenti descrivono i set di gate e i parametri dei risultati per TCC (conteggio cellulare totale), ICC (conteggio delle cellule integre), ACC (conteggio delle cellule attive), CBC (conteggio dei batteri coliformi), EBC (conteggio dei batteri E. coli) e NBC (conteggio dei batteri Enterococcus).
 
 Le cartucce CBC, EBC e NBC sono compatibili con BactoSense ID e BactoSense SMART. Ciascuna utilizza una marcatura enzimatica selettiva e un singolo gate poligonale e fornisce una concentrazione cellulare. Per queste cartucce non vengono calcolate sottopopolazioni HNA o definite in base all’attività.
 
-:::info[Interpretazione dei risultati CBC, EBC e NBC]
+:::info[Interpretazione dei conteggi cellulari]
 
-CBC, EBC e NBC sono concentrazioni cellulari espresse in cellule per millilitro (1/mL). I conteggi cellulari e i risultati delle colture espressi in unità formanti colonia (CFU) misurano proprietà diverse di un campione e non possono essere confrontati direttamente.
+I conteggi cellulari di BactoSense sono concentrazioni cellulari espresse in cellule per millilitro (1/mL). I conteggi cellulari e i risultati delle colture espressi in unità formanti colonia (CFU) misurano proprietà diverse di un campione e di solito forniscono risultati numericamente diversi.
 
 :::
 
@@ -257,7 +257,7 @@ Per ulteriori informazioni sulla regolazione dei gate, vedere sezione [Modifica 
 
 La rianalisi con altri gate consiste nell’applicare un gruppo di gate diverso ai dati di misurazione esistenti.
 
-- Un prerequisito è la disponibilità di tale gruppo aggiuntivo. Nella schermata Home, premere Impostazioni, quindi Impostazioni del gate per visualizzare i gruppi di gate disponibili.
+- Un prerequisito è la disponibilità di un set di gate alternativo. Nella schermata Home, premere Impostazioni, quindi Impostazioni del gate per visualizzare i gruppi di gate disponibili.
 - La modifica di un gruppo di gate esistente è descritta nella sezione [Modifica dei gruppi di gate esistenti](11-results-and-data-analysis.md#section-11-4-3).
 
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINI |
@@ -380,9 +380,9 @@ Per confrontare i risultati di BactoSense con quelli di un altro citometro a flu
 
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINE | \< |
 | --- | --- | --- | --- |
-| 1\. | Si consiglia di utilizzare il kit di validazione, che contiene una soluzione di microsfere pronta all’uso. | Leggere le istruzioni del kit di validazione per ulteriori informazioni. | \< |
+| 1\. | Si consiglia di utilizzare il [kit di validazione](/other-manuals/validation-kit), che contiene una soluzione di microsfere pronta all’uso. | Leggere le istruzioni del kit di validazione per ulteriori informazioni. | \< |
 | 2\. | Installare il dispositivo di campionamento manuale secondo il manuale d’uso. |  | \< |
-| 3\. | Prelevare una delle soluzioni di microsfere del kit di validazione e caricarla nel dispositivo di campionamento. | Leggere le istruzioni del kit di validazione per ulteriori informazioni. | \< |
+| 3\. | Prelevare una delle soluzioni di microsfere del [kit di validazione](/other-manuals/validation-kit) e caricarla nel dispositivo di campionamento. | Leggere le istruzioni del kit di validazione per ulteriori informazioni. | \< |
 | 4\. | :::info[Informazioni aggiuntive] Premere Home. Premere Back tante volte quanto necessario per far comparire il pulsante Home. ::: | ![BactoSense — Pulsante della schermata iniziale](/img/gui/icons/home-button.png "width=48 class=manual-icon") | ![BactoSense — Pulsante Indietro](/img/gui/icons/back-button.png "width=48 class=manual-icon") |
 | 5\. | Nella schermata Home, premere Modalità e selezionare Modalità manuale. Premere Indietro, quindi Misura per aprire l’assistente di misurazione. |  | \< |
 | 6\. | Selezionare Prepara dall’elenco dei protocolli. | Vedere sezione [Esecuzione di un adescamento (Prime)](../measurements/#section-10-9-3). | \< |
@@ -390,7 +390,7 @@ Per confrontare i risultati di BactoSense con quelli di un altro citometro a flu
 | 8\. | Premere Nuovo, scegliere Analisi delle sferette dall’elenco, quindi premere Avanti e Avvio. |  | \< |
 | 9\. | Attendere i risultati e, se necessario, regolare con precisione il gate del diagramma FL1 rispetto a FL2 per contare solo le 4 popolazioni di microsfere. È importante assicurarsi che rumore, fondo e detriti non vengano inclusi nel gate. | Vedere sezione [Modifica dei gruppi di gate esistenti](../results-and-data-analysis/#section-11-4-3) per regolare il gate. ![Illustrazione della tabella a pagina 112 del manuale](/img/manual/render-fa85ea9255cb.webp "width=246 class=manual-figure") | \< |
 | 10\. | Nell’istogramma FL1 rispetto ai conteggi, stimare il valore logaritmico del centro di ogni picco sull’asse FL1. In questo esempio si ottengono approssimativamente (in log): 1<sup>º</sup> picco = 4.05 2<sup>º</sup> picco = 4.3 3<sup>º</sup> picco = 5.35 4<sup>º</sup> picco = 6.2 | ![Illustrazione della tabella a pagina 113 del manuale](/img/manual/cell-c2ba9a559620.png "width=246 class=manual-figure") | \< |
-| 11\. | Misurare le stesse microsfere con l’altro citometro a flusso da confrontare e ripetere i passaggi 10 e 11. In questo esempio si ottengono approssimativamente (in log): 1<sup>º</sup> picco = log(10<sup>3</sup>) = 3 2<sup>º</sup> picco = log(2*10<sup>3</sup>) = 3.3 3<sup>º</sup> picco = log(2.4*10<sup>4</sup>) = 4.4 4<sup>º</sup> picco = log(1.6*10<sup>5</sup>) = 5.2 | ![Illustrazione della tabella a pagina 113 del manuale](/img/manual/cell-4c2343e0bbfe.png "width=246 class=manual-figure") | \< |
+| 11\. | Misurare le stesse microsfere con l’altro citometro a flusso da confrontare. Applicare ai suoi risultati le operazioni di definizione del gate e di stima dei picchi descritte nei passaggi 9 e 10. In questo esempio si ottengono approssimativamente (in log): 1<sup>º</sup> picco = log(10<sup>3</sup>) = 3 2<sup>º</sup> picco = log(2*10<sup>3</sup>) = 3.3 3<sup>º</sup> picco = log(2.4*10<sup>4</sup>) = 4.4 4<sup>º</sup> picco = log(1.6*10<sup>5</sup>) = 5.2 | ![Illustrazione della tabella a pagina 113 del manuale](/img/manual/cell-4c2343e0bbfe.png "width=246 class=manual-figure") | \< |
 | 12\. | Con i diversi valori ottenuti per entrambi i dispositivi, è ora possibile confrontarne le scale e le finestre di misurazione. |  | \< |
 
 </div>

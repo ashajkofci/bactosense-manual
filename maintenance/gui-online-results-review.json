@@ -76,7 +76,7 @@
   "changes": [
     {
       "locale": "en",
-      "file": "docs/11-results-and-data-analysis.md",
+      "file": "manuals/bactosense/11-results-and-data-analysis.md",
       "section": "11.1",
       "kind": "introduction",
       "old": "The figure below shows the result of a selected measurement. From here, the user can delete or rename the measurement, look up older results (and export them), or export the result. Expert users can repeat the cell counting with new gates. Some user interface elements or actions are only available to specific user roles (Basic, Advanced or Admin).",
@@ -84,7 +84,7 @@
     },
     {
       "locale": "en",
-      "file": "docs/11-results-and-data-analysis.md",
+      "file": "manuals/bactosense/11-results-and-data-analysis.md",
       "section": "11.1",
       "kind": "image",
       "old": "![BactoSense — ICC result details and plots](/img/gui/en/icc-result-details.png \"width=674 class=manual-figure\")",
@@ -92,7 +92,7 @@
     },
     {
       "locale": "en",
-      "file": "docs/11-results-and-data-analysis.md",
+      "file": "manuals/bactosense/11-results-and-data-analysis.md",
       "section": "11.1",
       "kind": "caption",
       "old": "*Figure 11-1 Display of an ICC measurement result.*",
@@ -100,7 +100,7 @@
     },
     {
       "locale": "en",
-      "file": "docs/11-results-and-data-analysis.md",
+      "file": "manuals/bactosense/11-results-and-data-analysis.md",
       "section": "11.1",
       "kind": "status-legend",
       "old": "| 5 | The optional warnings field indicates whether any warnings were generated during the measurement. Tap on the field to learn more. |",
@@ -108,7 +108,7 @@
     },
     {
       "locale": "en",
-      "file": "docs/11-results-and-data-analysis.md",
+      "file": "manuals/bactosense/11-results-and-data-analysis.md",
       "section": "11.1",
       "kind": "plot-touch-legend",
       "old": "",

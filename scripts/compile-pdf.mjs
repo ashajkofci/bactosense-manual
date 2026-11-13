@@ -9,11 +9,11 @@ import manualRegistry from '../plugins/manuals.cjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const COPY = {
-  en: { documentId: 'Document ID', contents: 'Contents', compiled: 'Compiled on', software: 'Software' },
-  de: { documentId: 'Dokument-ID', contents: 'Inhalt', compiled: 'Erstellt am', software: 'Software' },
-  fr: { documentId: 'Identifiant du document', contents: 'Sommaire', compiled: 'Généré le', software: 'Logiciel' },
-  it: { documentId: 'ID documento', contents: 'Indice', compiled: 'Generato il', software: 'Software' },
-  es: { documentId: 'ID del documento', contents: 'Índice', compiled: 'Generado el', software: 'Software' },
+  en: { documentId: 'Document ID', contents: 'Contents', compiled: 'Compiled on', software: 'Software', userManual: 'User Manual' },
+  de: { documentId: 'Dokument-ID', contents: 'Inhalt', compiled: 'Erstellt am', software: 'Software', userManual: 'Bedienungsanleitung' },
+  fr: { documentId: 'Identifiant du document', contents: 'Sommaire', compiled: 'Généré le', software: 'Logiciel', userManual: 'Manuel d’utilisation' },
+  it: { documentId: 'ID documento', contents: 'Indice', compiled: 'Generato il', software: 'Software', userManual: 'Manuale d’uso' },
+  es: { documentId: 'ID del documento', contents: 'Índice', compiled: 'Generado el', software: 'Software', userManual: 'Manual de usuario' },
 };
 const MIME = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.svg': 'image/svg+xml', '.png': 'image/png', '.woff2': 'font/woff2', '.woff': 'font/woff', '.pdf': 'application/pdf', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.webp': 'image/webp' };
 // Raster images are embedded at their natural size, which is far above print needs
@@ -71,7 +71,7 @@ export async function compileManualPdf(root, manifest) {
   const outDir = path.resolve(root, manifest.outDir);
   const evidenceDir = path.join(root, 'output/pdf', manifest.manual, manifest.locale);
   const publicDir = path.join(outDir, 'pdf');
-  const pdfFile = manualRegistry.pdfFile({ id: manifest.manual }, manifest.locale);
+  const pdfFile = manualRegistry.pdfFile({ documentId: manifest.documentId, title: manifest.title }, manifest.locale);
   const temporaryPdf = path.join(publicDir, `${pdfFile}.tmp`);
   const generatedAt = new Date();
   const date = new Intl.DateTimeFormat(manifest.htmlLang, { dateStyle: 'long' }).format(generatedAt);
@@ -125,7 +125,7 @@ export async function compileManualPdf(root, manifest) {
         cover.appendChild(logo);
       }
       const title = document.createElement('h1');
-      title.textContent = meta.title;
+      title.textContent = `${meta.title} ${labels.userManual}`;
       cover.appendChild(title);
       const language = document.createElement('p');
       language.className = 'pdf-language';
@@ -156,7 +156,7 @@ export async function compileManualPdf(root, manifest) {
       contents.appendChild(contentsTitle);
       const list = document.createElement('ol');
       contents.appendChild(list);
-      main.appendChild(contents);
+      if (pages.length > 1) main.appendChild(contents);
       const titles = [];
       for (const [index, chapter] of pages.entries()) {
         const parsed = parser.parseFromString(chapter.html, 'text/html');
@@ -222,7 +222,7 @@ export async function compileManualPdf(root, manifest) {
       for (const anchor of main.querySelectorAll('a[href^="#"]')) {
         if (!document.getElementById(anchor.getAttribute('href').slice(1))) throw new Error(`Unresolved PDF link: ${anchor.getAttribute('href')}.`);
       }
-      return { titles, imageCount: main.querySelectorAll('.pdf-chapter img').length, tableCount: main.querySelectorAll('.pdf-chapter table').length, noticeCount: main.querySelectorAll('.pdf-chapter .theme-admonition').length };
+      return { titles, hasContents: Boolean(main.querySelector('.pdf-contents')), imageCount: main.querySelectorAll('.pdf-chapter img').length, tableCount: main.querySelectorAll('.pdf-chapter table').length, noticeCount: main.querySelectorAll('.pdf-chapter .theme-admonition').length };
     }, { chapters, manifest, copy, date, digitalOutputBaseAlt });
     await page.waitForFunction(() => [...document.querySelectorAll('link[rel="stylesheet"]')].every((link) => link.sheet));
     await page.addStyleTag({ content: css });
@@ -358,6 +358,7 @@ export async function compileManualPdf(root, manifest) {
       manualVersion: manifest.manualVersion,
       generatedAt: generatedAt.toISOString(),
       chapters: assembled.titles,
+      hasContents: assembled.hasContents,
       imageCount: assembled.imageCount,
       expandedScreenshotRows,
       pairedScreenshotCaptions,
@@ -388,13 +389,15 @@ if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.ar
     const selectedManuals = requested.some(value => ids.includes(value))
       ? manualRegistry.manuals.filter(manual => requested.includes(manual.id)) : manualRegistry.manuals;
     const selectedLocales = requested.filter(value => COPY[value]);
-    for (const manual of selectedManuals) {
-      for (const locale of manual.locales.filter(item => !selectedLocales.length || selectedLocales.includes(item))) {
-        const manifestPath = path.join(ROOT, 'output/pdf', manual.id, locale, 'manifest.json');
-        let manifest;
-        try { manifest = JSON.parse(await readFile(manifestPath, 'utf8')); }
-        catch { throw new Error(`Build the ${locale} website first with npm run build. The ${manual.id} PDF manifest is missing.`); }
-        await compileManualPdf(ROOT, manifest);
+    for (const group of selectedManuals) {
+      for (const locale of group.locales.filter(item => !selectedLocales.length || selectedLocales.includes(item))) {
+        for (const manual of manualRegistry.pdfManuals(group, locale)) {
+          const manifestPath = path.join(ROOT, 'output/pdf', manual.id, locale, 'manifest.json');
+          let manifest;
+          try { manifest = JSON.parse(await readFile(manifestPath, 'utf8')); }
+          catch { throw new Error(`Build the ${locale} website first with npm run build. The ${manual.id} PDF manifest is missing.`); }
+          await compileManualPdf(ROOT, manifest);
+        }
       }
     }
   } catch (error) {

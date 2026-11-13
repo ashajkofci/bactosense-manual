@@ -50,7 +50,7 @@ Login und Logout können mittels der Login-Taste in der oberen rechten Ecke der 
 
 |  | ARBEITSSCHRITT |
 | --- | --- |
-| 1. | Stellen Sie sicher, dass alle Prozesse (z.B. Messungen oder Reinigungen) abgeschlossen sind. Der Status „Bereit“ des Geräts wird in der Benutzeroberfläche des BactoSense oben links angezeigt. |
+| 1. | Stellen Sie sicher, dass alle Prozesse (z.B. Messungen oder Reinigungszyklen) abgeschlossen sind. Der Status „Bereit“ des Geräts wird links in der oberen Leiste der BactoSense-Benutzeroberfläche angezeigt. |
 | 2. | Drücken Sie die Taste Logout oben rechts auf der Benutzeroberfläche. |
 | 3. | Wählen Sie Abmelden Bildschirm sperren. |
 | 4. | Um sich erneut einzuloggen, folgen Sie bitte den unter [Anmelden](08-general-operations-and-configurations.md#section-8-2-1) beschriebenen Schritten. |
@@ -98,7 +98,7 @@ Jede Benutzerrolle ist kennwortgeschützt.
 
 ### 8.2.6 Änderung von Kennworteinstellungen {#section-8-2-6}
 
-Kennworteigenschaften wie Gültigkeitsdauer, Länge usw. können eingestellt werden.
+Kennwortanforderungen wie Gültigkeitsdauer und Länge können eingestellt werden.
 
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG |
 | --- | --- | --- |
@@ -232,7 +232,7 @@ Sie können hörbare Benachrichtigungen aktivieren, um das Ende einer Messung od
 
 ## 8.4 Import/Export von Einstellungen {#section-8-4}
 
-Die Einstellungen werden nach den Anweisungen unter [Einstellungen, Diagnosedaten oder alles auf USB-Gerät exportieren](12-data-access-and-export.md#section-12-1-1) auf einen USB-Datenträger exportiert. Sie werden in einer Datei mit Zeitstempel und der Endung **.bnv** zusammengefasst. Um die Einstellungen auf einem neuen Gerät oder als Sicherung zu importieren, kopieren Sie die **.bnv**-Datei in das Stammverzeichnis des USB-Datenträgers oder in das Verzeichnis, in das sie exportiert wurde. Befinden sich mehrere Kopien der Einstellungen auf einem USB-Datenträger, verwendet das System die neueste.
+Die Einstellungen werden nach den Anweisungen unter [Einstellungen, Diagnosedaten oder alles auf USB-Gerät exportieren](12-data-access-and-export.md#section-12-1-1) auf einen USB-Datenträger exportiert. Sie werden in einer Datei mit Zeitstempel und der Endung `.bnv` gespeichert. Um die Einstellungen auf einem neuen Gerät zu importieren oder eine Sicherung wiederherzustellen, kopieren Sie die `*.bnv`-Datei in das Stammverzeichnis des USB-Datenträgers oder in das Verzeichnis, in das sie exportiert wurde. Befinden sich mehrere Kopien der Einstellungen auf einem USB-Datenträger, verwendet das System die neueste.
 
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG |
 | --- | --- | --- |
@@ -363,7 +363,7 @@ Die Symbole auf der oberen Leiste finden Sie am oberen Rand der Anzeige. Sie zei
 
 ## 8.9 Handhabung von Kartuschen {#section-8-9}
 
-Die BactoSense-Kartuschen enthalten die Reagenzien für Messungen und die Reinigung des Geräts. Verfügbare Kartuschentypen sind TCC (Gesamtzellzahl), ICC (Intaktzellzahl), EBC (E.-coli-Zellzahl), ACC (Anzahl aktiver Zellen), CBC (Anzahl coliformer Zellen) und NBC (Enterokokken-Zellzahl). Die folgenden Abschnitte erklären die Handhabung der Kartuschen. Lagerung, Transport und Wiederbefüllung sind unter [Lagerung, Transport und Entsorgung](17-storage-transport-and-disposal.md) beschrieben.
+Die BactoSense-Kartuschen enthalten die Reagenzien für Messungen und zum Sauberhalten des Geräts. Verfügbare Kartuschentypen sind TCC (Gesamtzellzahl), ICC (Intaktzellzahl), EBC (E.-coli-Zellzahl), ACC (Anzahl aktiver Zellen), CBC (Anzahl coliformer Zellen) und NBC (Enterokokken-Zellzahl). Die folgenden Abschnitte erklären die Handhabung der Kartuschen. Lagerung, Transport und Wiederbefüllung sind unter [Lagerung, Transport und Entsorgung](17-storage-transport-and-disposal.md) beschrieben.
 
 ### 8.9.1 Allgemeine Hinweise zur Handhabung von Kartuschen {#section-8-9-1}
 
@@ -540,9 +540,9 @@ Um eine vollautomatische Schnellprüfung des Gerätestatus durchzuführen, führ
 
 Um die Sauberkeit des BactoSense zu bewerten und eine Verunreinigung auszuschließen, führen Sie die [Überprüfung der Sauberkeit](08-general-operations-and-configurations.md#section-8-11-1) durch.
 
-Verwenden Sie in Betriebsumgebungen, die einen Systemeignungstest erfordern, das *System Suitability Test Kit (SST Kit)* und folgen Sie dem Verfahren in dessen Bedienungsanleitung.
+Verwenden Sie in Betriebsumgebungen, die einen Systemeignungstest erfordern, das [*System Suitability Test Kit (SST Kit)*](/other-manuals/sst-bactosense-pure) und folgen Sie dem Verfahren in dessen Bedienungsanleitung.
 
-Für andere Betriebsumgebungen wird eine Gerätequalifizierung mit dem *Validierungskit*in folgenden Situationen empfohlen:
+Für andere Betriebsumgebungen wird eine Gerätequalifizierung mit dem *[Validierungskit](/other-manuals/validation-kit)*in folgenden Situationen empfohlen:
 
 - Nach dem Versand des Geräts oder einem anderen Langstreckentransport, bei dem das Gerät Vibrationen oder Stößen ausgesetzt wurde.
 - Nachdem das Gerät mehr als einen Monat gelagert wurde.
@@ -554,7 +554,7 @@ Für andere Betriebsumgebungen wird eine Gerätequalifizierung mit dem *Validier
 | --- | --- |
 | 1. | Bitte stellen Sie sicher, dass das manuelle Probenahmegerät korrekt gemäß [Installation des manuellen Probenahmegeräts](05-installation.md#section-5-4) installiert ist. |
 | 2. | Führen Sie eine Reinigung des Probenahmegeräts mit zwei Replikationen durch: Ist eine Washstation verfügbar, folgen Sie den Anweisungen unter [Manuelles Probenahmegerät mit Washstation reinigen](15-maintenance.md#section-15-2-2), andernfalls denen unter [Manuelles Probenahmegerät mittels Basisreinigung reinigen](15-maintenance.md#section-15-2-3). |
-| 3. | Bereiten Sie die Blindprobe in einem 5-mL-Röhrchen mit Schraubverschluss vor. Es gibt zwei Möglichkeiten: A) Verwenden Sie zellfreies Wasser, z. B. ein Aliquot steriler Lösung aus dem Validierungskit. Entfernen Sie hierfür den Deckel des Aliquots und setzen Sie es wie in der Bedienungsanleitung des Validierungskits beschrieben in ein leeres 5-mL-Röhrchen mit Schraubverschluss. B) Filtern Sie stilles Mineralwasser zweimal mit einem Membranfilter mit einer Porengröße von 0.22 µm oder kleiner. |
+| 3. | Bereiten Sie die Blindprobe in einem 5-mL-Röhrchen mit Schraubverschluss vor. Es gibt zwei Möglichkeiten: A) Verwenden Sie zellfreies Wasser, z. B. ein Aliquot steriler Lösung aus dem [Validierungskit](/other-manuals/validation-kit). Entfernen Sie hierfür den Deckel des Aliquots und setzen Sie es wie in der Bedienungsanleitung des Validierungskits beschrieben in ein leeres 5-mL-Röhrchen mit Schraubverschluss. B) Filtern Sie stilles Mineralwasser zweimal mit einem Membranfilter mit einer Porengröße von 0.22 µm oder kleiner. |
 | 4. | Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense. |
 | 5. | Drücken Sie auf der Startseite Modus und wählen Sie „Manueller Modus“. Drücken Sie Zurück und anschließend Messen, um den Messassistenten zu öffnen. |
 | 6. | Wählen Sie Ansaugen aus der Liste der verfügbaren Protokolle. |
@@ -570,7 +570,7 @@ Für andere Betriebsumgebungen wird eine Gerätequalifizierung mit dem *Validier
 | 16. | Drücken Sie die Taste Start und warten Sie, bis die beiden Messungen abgeschlossen sind. |
 | 17. | Wenn Sie fertig sind, drücken Sie die Taste Weiter, um sich die Ergebnisse anzusehen. |
 | 18. | Vergleichen Sie die Ergebnisse mit den nachstehenden Referenzwerten. Der BactoSense ist sauber, wenn folgende Kriterien erfüllt sind: • TCC-Kartuschen: TCC [/mL] &lt; 300 • ICC-Kartuschen: ICC [/mL] &lt; 100 |
-| 19. | Liegen die Zellkonzentrationen über den angegebenen Grenzen, gehen Sie folgendermaßen vor: • Wiederholen Sie das Verfahren mit einer frisch vorbereiteten Blindprobe. • Wiederholen Sie das Verfahren nach einer Dekontaminierung mit dem Reinigungskit (siehe [Verbrauchsmaterial](18-supply-scope-accessories-and-consumables.md#section-18-3)). • Schlägt der Test weiterhin fehl, wenden Sie sich an den bNovate-Support oder Ihren lokalen Servicepartner. |
+| 19. | Liegen die Zellkonzentrationen über den angegebenen Grenzen, gehen Sie folgendermaßen vor: • Wiederholen Sie das Verfahren mit einer frisch vorbereiteten Blindprobe. • Wiederholen Sie das Verfahren nach einer Dekontaminierung mit dem [Reinigungskit](/other-manuals/cleaning-kit) (siehe [Verbrauchsmaterial](18-supply-scope-accessories-and-consumables.md#section-18-3)). • Schlägt der Test weiterhin fehl, wenden Sie sich an den bNovate-Support oder Ihren lokalen Servicepartner. |
 | 20. | Nachdem Sie fertig sind, setzen Sie ein sauberes und leeres 5-mL- Schraubverschlussröhrchen bzw. die Washstation auf das manuelle Probenahmegerät auf. |
 
 ## 8.12 Demo-Modus {#section-8-12}

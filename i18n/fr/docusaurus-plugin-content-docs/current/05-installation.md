@@ -51,7 +51,7 @@ La procédure suivante décrit le montage du BactoSense sur un mur ou un panneau
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
 | 1\. | Installez deux vis M8 à la même hauteur, espacées horizontalement de 265 mm (10,4 po) sur un mur. Le diamètre de la tête de vis doit être compris entre 12 mm et 18 mm (0,47 po et 0,71 po) | :::caution[Fixation murale sûre] La fixation doit supporter au moins 60 kg (132 lbs). ::: |
-| 2\. | Ajustez la distance entre la tête de vis et le mur selon l’image de droite. X : Mur Y : Vis | ![Illustration de la procédure, page imprimée 18](/img/manual/asset-3668009808e6.png "width=256") |
+| 2\. | Ajustez la distance entre les têtes de vis et le mur selon l’image de droite. X : Mur Y : Vis | ![Illustration de la procédure, page imprimée 18](/img/manual/asset-3668009808e6.png "width=256") |
 | 3\. | Montez le BactoSense sur le mur en utilisant son système de fixation mural (flèches rouges). Serrez les deux vis de manière à ce que le BactoSense soit fermement fixé au mur. | ![Illustration de la procédure, page imprimée 18](/img/manual/asset-63d339bcf0dc.png "width=240") |
 
 ## 5.3 Raccordement du BactoSense à l’alimentation électrique {#section-5-3}
@@ -72,7 +72,7 @@ Une alimentation électrique ininterrompue et stable, conforme aux caractéristi
 
 :::
 
-Le bloc d’alimentation est fourni dans un boîtier IP67 avec un câble équipé d’une fiche de type J, E ou G. Pour raccorder le BactoSense à l’alimentation avec l’une de ces fiches fournies par bNovate, suivez la section [Raccordement à l’aide de la fiche standard du bloc d’alimentation](05-installation.md#section-5-3-1). Pour utiliser une autre fiche ou d’autres connecteurs d’alimentation, suivez la procédure de la section [Modification du bloc d’alimentation standard avec un connecteur différent](05-installation.md#section-5-3-2).
+Le bloc d’alimentation est fourni dans un boîtier IP67 avec un câble équipé d’une fiche spécifique au pays. Pour raccorder le BactoSense à l’alimentation avec l’une de ces fiches fournies par bNovate, suivez la section [Raccordement à l’aide de la fiche standard du bloc d’alimentation](05-installation.md#section-5-3-1). Pour utiliser une autre fiche ou d’autres connecteurs d’alimentation, suivez la procédure de la section [Modification du bloc d’alimentation standard avec un connecteur différent](05-installation.md#section-5-3-2).
 
 :::info[Gardez le dispositif de coupure accessible]
 
@@ -127,7 +127,7 @@ La procédure suivante s’applique uniquement si le BactoSense doit être conne
 | --- | --- | --- |
 | 1\. | :::danger[Débranchez l’alimentation] Assurez-vous que le bloc d’alimentation n’est pas raccordé au secteur. Retirez le couvercle du boîtier en dévissant les quatre vis (cercles). ::: | ![Illustration de la procédure, page imprimée 21](/img/manual/asset-a4e9bfa03293.png "width=241") |
 | 2\. | Retirez le connecteur C13 (A) et dévissez-le pour l’ouvrir. ![Illustration du retrait et de l’ouverture du connecteur C13 (A).](/img/manual/asset-3c26b4a767ec.png "width=240") | ![Illustration de la procédure, page imprimée 21](/img/manual/asset-27e4522382d5.png "width=241") |
-| 3\. | Ouvrez le presse-étoupe (Y) et insérez le nouveau câble. Longueurs de câble et sections des conducteurs : • 0 – 9 m (0 – 30 ft), 1 mm2 • 9 – 21 m (30 – 69 ft), 1.5 mm2 (maximum) Le presse-étoupe est dimensionné pour un diamètre de câble de 3 – 10 mm (0.12” – 0.39”). | . ![Illustration de la procédure.](/img/manual/asset-00540f644f60.png "width=240") |
+| 3\. | Ouvrez le presse-étoupe (Y) et insérez le nouveau câble. Longueurs de câble et sections des conducteurs : • 0 – 9 m (0 – 30 ft), 1 mm<sup>2</sup> • 9 – 21 m (30 – 69 ft), 1.5 mm<sup>2</sup> (maximum). Le presse-étoupe est dimensionné pour un diamètre de câble de 3 – 10 mm (0.12” – 0.39”). | ![Presse-étoupe et câblage des bornes](/img/manual/asset-00540f644f60.png "width=240") |
 | 4\. | :::danger[Raccordez la terre de protection] Serrez les 3 conducteurs (N, PE, L) dans la borne électrique et immobilisez la gaine du câble. Assurez-vous d’utiliser une fiche avec terre de protection (PE) et d’y raccorder correctement l’appareil. ::: | ^ |
 | 5\. | Refermez le connecteur C13 (A) avec la vis et branchez-le dans le bloc d’alimentation. Serrez le presse-étoupe. Tirez légèrement sur le câble pour vérifier que le presse-étoupe est suffisamment serré. | ![Illustration de la procédure, page imprimée 22](/img/manual/asset-27e4522382d5.png "width=241") |
 | 6\. | En option : le bloc d’alimentation peut être fixé au mur. Utilisez des vis M4 d’une longueur minimale de 20 mm. Le couvercle étant encore retiré, mettez les 4 vis en place et fixez le boîtier au mur. | ![Illustration de la procédure, page imprimée 22](/img/manual/asset-0ee15b02c033.png "width=257") |
@@ -218,7 +218,7 @@ Cette section décrit l’installation du dispositif d’échantillonnage en lig
 3. Vanne de débit
 4. Raccords de réduction
 
-#### Tubulures d’entrée et de sortie
+#### Tuyaux d’entrée et de sortie
 
 5. Boucle de contre-pression
 6. Fixation des tubulures
@@ -282,6 +282,8 @@ Le BactoSense offre plusieurs options d’intégration et d’accès aux donnée
 | HTTP et HTTPS | Section [Récupération des fichiers via HTTP ou HTTPS](12-data-access-and-export.md#section-12-3) |
 | Relais de l’interface utilisateur du réseau virtuel (VNC) (contrôle à distance) | Section [Utilisation du relais GUI via VNC](12-data-access-and-export.md#section-12-4) |
 | Interface utilisateur web | Chapitre [Interface utilisateur web](13-web-user-interface.md) |
+| [BactoLink](/other-manuals/bactolink) | Voir le manuel d’utilisation BactoLink séparé |
+| BactoCloud | Chapitre [BactoCloud](14-bactocloud.md) |
 
 ![BactoSense — Services système](/img/gui/fr/system-services.png "width=507")
 

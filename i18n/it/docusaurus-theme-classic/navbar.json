@@ -10,5 +10,8 @@
   "item.label.BactoSwitch": {
     "message": "BactoSwitch",
     "description": "Navbar item with label BactoSwitch"
+  },
+  "item.label.Other manuals": {
+    "message": "Altri manuali"
   }
 }

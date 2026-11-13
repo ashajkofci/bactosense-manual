@@ -36,7 +36,7 @@ Dopo la conservazione, seguire le istruzioni generali di installazione del capit
 
 :::info[Validare dopo la conservazione]
 
-Se il BactoSense è stato conservato per più di un mese, validarlo con il Validation Kit prima della prima misura per verificarne il corretto funzionamento.
+Se il BactoSense è stato conservato per più di un mese, validarlo con il [Validation Kit](/other-manuals/validation-kit) prima della prima misura per verificarne il corretto funzionamento.
 
 :::
 
@@ -111,40 +111,35 @@ Seguire le istruzioni seguenti per trasportare il BactoSense in sicurezza.
 
 **Tabella 17-1 Istruzioni di trasporto del BactoSense**
 
-MODALITÀ ISTRUZIONI
+**Spedizione standard**
 
 - Rimuovere la cartuccia con la procedura Rimuovi la cartuccia in Home → Impostazioni → Manutenzione → Sostituzione della cartuccia. Gli utenti Basic aprono Sostituzione della cartuccia direttamente da Impostazioni.
 - Imballare il BactoSense e la cartuccia nelle scatole di cartone standard con inserti in schiuma.
 - Spedire su pallet o piattaforma.
-- Alla reinstallazione, eseguire un’autodiagnosi (sezione [Autodiagnosi automatica](16-warnings-errors-and-troubleshooting.md#section-16-6)) e una validazione dello strumento con il Validation Kit.
+- Alla reinstallazione, eseguire un’autodiagnosi (sezione [Autodiagnosi automatica](16-warnings-errors-and-troubleshooting.md#section-16-6)) e una validazione dello strumento con il [Validation Kit](/other-manuals/validation-kit).
 
-Spedizione standard
+**Lunga distanza in auto o strada dissestata in auto**
 
 - Rimuovere la cartuccia con la procedura Rimuovi la cartuccia in Home → Impostazioni → Manutenzione → Sostituzione della cartuccia. Gli utenti Basic aprono Sostituzione della cartuccia direttamente da Impostazioni.
 - Imballare il BactoSense e la cartuccia nelle scatole di cartone standard con inserti in schiuma oppure utilizzare la valigetta di trasporto (vedere accessori nella sezione [Accessori](18-supply-scope-accessories-and-consumables.md#section-18-2)).
 - Alla reinstallazione, eseguire Clean sampling device with Washstation (vedere sezione [Pulire il dispositivo di campionamento manuale con Washstation](15-maintenance.md#section-15-2-2)).
 
-Lunga distanza in auto
-
-oppure
-
-Strada dissestata in auto
+**Breve distanza in auto, strada regolare, strumento appoggiato sul lato posteriore**
 
 - Rimuovere la cartuccia con la procedura Rimuovi la cartuccia in Home → Impostazioni → Manutenzione → Sostituzione della cartuccia. Gli utenti Basic aprono Sostituzione della cartuccia direttamente da Impostazioni.
 - Trasportare il BactoSense nella valigetta di trasporto (vedere accessori nella sezione [Accessori](18-supply-scope-accessories-and-consumables.md#section-18-2)).
 - Alla reinstallazione, eseguire Clean sampling device with Washstation (vedere sezione [Pulire il dispositivo di campionamento manuale con Washstation](15-maintenance.md#section-15-2-2)).
 
-Breve distanza in auto, strada regolare, strumento appoggiato sul lato posteriore
+**Breve distanza in auto, strada regolare, strumento in posizione verticale**
 
 - Trasportare nella valigetta (vedere accessori nella sezione [Accessori](18-supply-scope-accessories-and-consumables.md#section-18-2)) senza rimuovere la cartuccia.
 - Dopo aver riacceso lo strumento, eseguire Fill Tubing; vedere sezione [Panoramica dei protocolli in modalità manuale](10-measurements.md#section-10-9-1).
 
-Breve distanza in auto, strada regolare, strumento in posizione verticale
+**Breve distanza all’interno della struttura, strumento in posizione verticale**
 
 - Trasportare nella valigetta (vedere accessori nella sezione [Accessori](18-supply-scope-accessories-and-consumables.md#section-18-2)) o a mano, senza rimuovere la cartuccia.
 - Dopo aver riacceso lo strumento, eseguire Fill Tubing; vedere sezione [Panoramica dei protocolli in modalità manuale](10-measurements.md#section-10-9-1).
 
-Breve distanza all’interno della struttura, strumento in posizione verticale
 
 ### 17.2.2 Trasporto della cartuccia {#section-17-2-2}
 
@@ -203,7 +198,9 @@ Preparativi
 | 10. | Etichettare eventuali articoli aggiuntivi con il numero di serie del BactoSense. |
 | 11. | Applicare etichette che indichino che il contenuto è fragile, deve essere mantenuto asciutto e trasportato solo nell’orientamento indicato. |
 
-Restituzione: spedire il BactoSense a bNovate o al distributore rispettando i requisiti generali di temperatura e umidità di conservazione delle sezioni [Dati tecnici](03-instrument-overview.md#section-3-2) e [Conservazione del BactoSense](17-storage-transport-and-disposal.md#section-17-1-1).
+**Restituzione**
+
+Spedire il BactoSense a bNovate o al distributore rispettando i requisiti generali di temperatura e umidità di conservazione delle sezioni [Dati tecnici](03-instrument-overview.md#section-3-2) e [Conservazione del BactoSense](17-storage-transport-and-disposal.md#section-17-1-1).
 
 ### 17.3.2 Restituzione di una cartuccia per la ricarica {#section-17-3-2}
 
@@ -216,7 +213,9 @@ Preparativi
 | 3. | Imballare la cartuccia nella scatola di cartone standard. |
 | 4. | Applicare etichette che indichino che il contenuto è fragile, deve essere mantenuto asciutto e trasportato solo nell’orientamento indicato. |
 
-Restituzione per ricarica: spedire la cartuccia a bNovate rispettando i requisiti generali di temperatura e umidità di conservazione delle sezioni [Dati tecnici](03-instrument-overview.md#section-3-2) e [Conservazione della cartuccia](17-storage-transport-and-disposal.md#section-17-1-3).
+**Restituzione per ricarica**
+
+Spedire la cartuccia a bNovate rispettando i requisiti generali di temperatura e umidità di conservazione delle sezioni [Dati tecnici](03-instrument-overview.md#section-3-2) e [Conservazione della cartuccia](17-storage-transport-and-disposal.md#section-17-1-3).
 
 ## 17.4 Riciclaggio e smaltimento {#section-17-4}
 

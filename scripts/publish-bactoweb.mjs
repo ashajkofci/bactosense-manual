@@ -80,17 +80,42 @@ function inspectPdf(bytes) {
   return pages;
 }
 
-function ghostscript(input, output) {
-  return new Promise((resolve, reject) => {
-    const child = spawn('gs', ['-q', '-dNOPAUSE', '-dBATCH', '-dSAFER', '-sDEVICE=pdfwrite', '-dCompatibilityLevel=1.5',
-      '-dPDFSETTINGS=/ebook', `-sOutputFile=${output}`, input], { stdio: ['ignore', 'ignore', 'pipe'] });
-    // Skia PDFs make Ghostscript repeat a harmless blending-colour-space warning for every page; show stderr only on failure.
-    let errors = '';
-    child.stderr.on('data', chunk => { errors = (errors + chunk).slice(-2000); });
-    child.once('error', error => reject(error.code === 'ENOENT'
-      ? new Error('Ghostscript (gs) is required for --optimize. Install it (brew install ghostscript) or omit --optimize.') : error));
-    child.once('close', status => status === 0 ? resolve() : reject(new Error(`Ghostscript failed with status ${status}.\n${errors}`)));
-  });
+async function ghostscript(input, output) {
+  const candidates = process.platform === 'win32' ? ['gswin64c.exe', 'gswin32c.exe', 'gs'] : ['gs'];
+  if (process.platform === 'win32') {
+    const roots = new Set([process.env.ProgramW6432, process.env.ProgramFiles, process.env['ProgramFiles(x86)']].filter(Boolean));
+    for (const directory of roots) {
+      const installations = await readdir(path.join(directory, 'gs')).catch(error => {
+        if (error.code === 'ENOENT' || error.code === 'ENOTDIR') return [];
+        throw error;
+      });
+      installations.sort((left, right) => right.localeCompare(left, undefined, { numeric: true }));
+      for (const installation of installations) {
+        for (const executable of ['gswin64c.exe', 'gswin32c.exe']) {
+          candidates.push(path.join(directory, 'gs', installation, 'bin', executable));
+        }
+      }
+    }
+  }
+  for (const executable of candidates) {
+    try {
+      await new Promise((resolve, reject) => {
+        const child = spawn(executable, ['-q', '-dNOPAUSE', '-dBATCH', '-dSAFER', '-sDEVICE=pdfwrite', '-dCompatibilityLevel=1.5',
+          '-dPDFSETTINGS=/ebook', `-sOutputFile=${output}`, input], { stdio: ['ignore', 'ignore', 'pipe'], windowsHide: true });
+        // Skia PDFs make Ghostscript repeat a harmless blending-colour-space warning for every page; show stderr only on failure.
+        let errors = '';
+        child.stderr.on('data', chunk => { errors = (errors + chunk).slice(-2000); });
+        child.once('error', reject);
+        child.once('close', status => status === 0 ? resolve() : reject(new Error(`Ghostscript failed with status ${status}.\n${errors}`)));
+      });
+      return;
+    } catch (error) {
+      if (error.code !== 'ENOENT') throw error;
+    }
+  }
+  throw new Error(process.platform === 'win32'
+    ? 'Ghostscript is required for --optimize. Install Ghostscript for Windows from https://ghostscript.com/releases/gsdnld.html (standard Program Files installation), add gswin64c.exe or gswin32c.exe to PATH, or omit --optimize.'
+    : 'Ghostscript (gs) is required for --optimize. Install it (brew install ghostscript) or omit --optimize.');
 }
 
 const formatSize = bytes => `${(bytes / 1048576).toFixed(1)} MiB`;

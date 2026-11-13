@@ -212,7 +212,7 @@ Le BactoSwitch et le BactoSense disposent chacun de leur propre type de bloc d�
 
 :::
 
-Les blocs d’alimentation sont fournis dans un boîtier IP67 avec un câble équipé d’une fiche de type J, E, G ou B.
+Chaque bloc d’alimentation est fourni dans un boîtier IP67 avec un câble équipé d’une fiche de type J, E, G ou B.
 
 *Tableau 4-2 Références des blocs d’alimentation du BactoSwitch et du BactoSense*
 

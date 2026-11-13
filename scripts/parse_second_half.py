@@ -2,7 +2,8 @@
 """Rebuild chapters 10–20 from native PDF text, table geometry and source artwork.
 
 Text is reflowed, tables are semantic HTML, and source figures retain annotations.
-Reviewed chapter bodies in scripts/editorial/ override their PDF-derived content.
+Legacy import utility, no longer used for manual maintenance. Current Markdown
+chapters are authoritative.
 Run extraction and parse_first_half.py first, then this script. The final pass
 normalizes all generated Markdown through scripts/simplify-markdown.mjs.
 """
@@ -12,7 +13,7 @@ import fitz,pdfplumber
 from PIL import Image
 ROOT=Path(__file__).resolve().parents[1]
 PDF=ROOT/'UM_0006-EN_BactoSense_User_Manual.pdf'
-OUT=ROOT/'docs';OUT.mkdir(exist_ok=True)
+OUT=ROOT/'manuals/bactosense';OUT.mkdir(parents=True,exist_ok=True)
 FIG=ROOT/'static/img/figures-second';FIG.mkdir(parents=True,exist_ok=True)
 chapters=[(10,94,103,'measurements','Measurements'),(11,104,119,'results-and-data-analysis','Results and Data Analysis'),(12,120,124,'data-access-and-export','Data Access and Export'),(13,125,129,'web-user-interface','Web User Interface'),(14,130,130,'bactocloud','BactoCloud'),(15,131,144,'maintenance','Maintenance'),(16,145,157,'warnings-errors-and-troubleshooting','Warnings, Errors and Troubleshooting'),(17,158,164,'storage-transport-and-disposal','Storage, Transport and Disposal'),(18,165,168,'supply-scope-accessories-and-consumables','Supply Scope, Accessories and Consumables'),(19,169,169,'contact','Contact'),(20,170,172,'index','Index')]
 doc=fitz.open(PDF);plumb=pdfplumber.open(PDF)
@@ -251,12 +252,10 @@ from manual_artwork import normalize_artwork
 for number,start,end,slug,title in chapters:
  content=index() if number==20 else '\n\n'.join(render_page(num) for num in range(start,end+1))
  content=repair_notices(content)
- editorial=ROOT/'scripts/editorial'/f'{number:02}-{slug}.md'
- if editorial.is_file():content=editorial.read_text().strip()
  header=f'---\ntitle: "{number}. {title}"\nsidebar_label: "{number}. {title}"\nsidebar_position: {number}\nslug: /{slug}\n---\n\n'
  content=content.replace('www.bnovate.com/ distribution-partners','[www.bnovate.com/distribution-partners](https://www.bnovate.com/distribution-partners)')
  content=content.replace('http://ipaddress:port/export/filename.extension?hash=myhash','<code>http&#58;//ipaddress&#58;port/export/filename.extension?hash=myhash</code>').replace('https://ipaddress:port/export/filename.extension?hash=myhash','<code>https&#58;//ipaddress&#58;port/export/filename.extension?hash=myhash</code>')
- filename=f'docs/{number:02}-{slug}.md'
+ filename=f'manuals/bactosense/{number:02}-{slug}.md'
  (ROOT/filename).write_text(normalize_artwork(normalize_notices(header+content+'\n'),filename))
  print(number,title,flush=True)
 (ROOT/'extraction/chapters-10-20-audit.json').write_text(json.dumps(audit,indent=2)+'\n')

@@ -72,7 +72,7 @@ Eine unterbrechungsfreie und stabile Spannungsversorgung gemäß den Angaben unt
 
 :::
 
-Das Netzteil wird in einem IP67-Gehäuse und mit einem Kabel mit Stecker vom Typ J, E oder G geliefert. Um den BactoSense mittels eines dieser von bNovate gelieferten Stecker an die Spannungsversorgung anzuschließen, folgen Sie den Anweisungen unter [Verbindung mittels Standardstecker des Netzteils](05-installation.md#section-5-3-1). Soll die Verbindung mit einem anderen Stecker hergestellt werden, befolgen Sie die unter [Modifizierung des Standard-Netzteils mit einem anderen Stecker](05-installation.md#section-5-3-2) beschriebenen Schritte.
+Das Netzteil wird in einem IP67-Gehäuse und mit einem Kabel mit länderspezifischem Stecker geliefert. Um den BactoSense mittels eines dieser von bNovate gelieferten Stecker an die Spannungsversorgung anzuschließen, folgen Sie den Anweisungen unter [Verbindung mittels Standardstecker des Netzteils](05-installation.md#section-5-3-1). Soll die Verbindung mit einem anderen Stecker hergestellt werden, befolgen Sie die unter [Modifizierung des Standard-Netzteils mit einem anderen Stecker](05-installation.md#section-5-3-2) beschriebenen Schritte.
 
 :::info[Netztrennung zugänglich halten]
 
@@ -127,9 +127,9 @@ Die folgenden Schritte finden nur dann Anwendung, wenn der BactoSense mit andere
 | --- | --- | --- |
 | 1\. | :::danger[Netzteil vom Strom trennen] Stellen Sie sicher, dass das Netzteil nicht mit Strom versorgt wird. Entfernen Sie den Gehäusedeckel, indem Sie die vier Schrauben (Kreise) lösen. ::: | ![Abbildung zum Arbeitsschritt, gedruckte Seite 21](/img/manual/asset-a4e9bfa03293.png "width=241") |
 | 2\. | Entfernen Sie den C13-Anschluss (A) und schrauben Sie ihn ab.<br />![Abbildung zum Entfernen und Aufschrauben des C13-Steckers (A).](/img/manual/asset-3c26b4a767ec.png "width=240") | ![Abbildung zum Arbeitsschritt, gedruckte Seite 21](/img/manual/asset-27e4522382d5.png "width=241") |
-| 3\. | Öffnen Sie die Kabelverschraubung (Y) und führen Sie das neue Kabel ein. Kabellängen und Leiterquerschnitte: • 0 – 9 m (0 – 30 ft), 1 mm2 • 9 – 21 m (30 – 69 ft), 1.5 mm2 (maximal). Die Kabelverschraubung ist für einen Kabeldurchmesser von 3 – 10 mm (0.12” – 0.39”) ausgelegt. | .<br />![Abbildung zum Arbeitsschritt.](/img/manual/asset-00540f644f60.png "width=240") |
-| 4\. | :::danger[Schutzleiter anschließen] Befestigen Sie die drei Drähte (N, PE, L) in der elektrischen Anschlussklemme und blockieren Sie die Kabelisolierung. Stellen Sie sicher, dass ein Stecker mit Erdung (Schutzleiter) verwendet wird und dass das Gerät korrekt an diesen angeschlossen ist. ::: | ^ |
-| 5\. | Schließen Sie den C13-Anschluss (A) mittels der Schraube und stechen Sie ihn in die Spannungsversorgung. Befestigen Sie den Kabelsteckverbinder. Ziehen Sie am Kabel, um herauszufinden, ob der Kabelsteckverbinder eng genug ist. | ![Abbildung zum Arbeitsschritt, gedruckte Seite 22](/img/manual/asset-27e4522382d5.png "width=241") |
+| 3\. | Öffnen Sie die Kabelverschraubung (Y) und führen Sie das neue Kabel ein. Kabellängen und Leiterquerschnitte: • 0 – 9 m (0 – 30 ft), 1 mm<sup>2</sup> • 9 – 21 m (30 – 69 ft), 1.5 mm<sup>2</sup> (maximal). Die Kabelverschraubung ist für einen Kabeldurchmesser von 3 – 10 mm (0.12” – 0.39”) ausgelegt. | ![Kabelverschraubung und Klemmenverdrahtung](/img/manual/asset-00540f644f60.png "width=240") |
+| 4\. | :::danger[Schutzleiter anschließen] Ziehen Sie die drei Drähte (N, PE, L) in der elektrischen Anschlussklemme fest und sichern Sie die Kabelisolierung. Stellen Sie sicher, dass ein Stecker mit Erdung (Schutzleiter) verwendet wird und dass das Gerät korrekt an diesen angeschlossen ist. ::: | ^ |
+| 5\. | Schließen Sie den C13-Anschluss (A) mit der Schraube und stecken Sie ihn in das Netzteil. Ziehen Sie die Kabelverschraubung fest. Ziehen Sie am Kabel, um zu prüfen, ob die Kabelverschraubung fest genug sitzt. | ![Abbildung zum Arbeitsschritt, gedruckte Seite 22](/img/manual/asset-27e4522382d5.png "width=241") |
 | 6\. | Optional: Die Spannungsversorgung kann an einer Wand angebracht werden. Es sollten M4-Schrauben mit einer Mindestlänge von 20 mm verwendet werden. Platzieren Sie die vier Schrauben, ohne dass die Abdeckung montiert ist, und befestigen Sie das Gehäuse an der Wand. | ![Abbildung zum Arbeitsschritt, gedruckte Seite 22](/img/manual/asset-0ee15b02c033.png "width=257") |
 | 7\. | Bringen Sie wieder die Gehäuseabdeckung und ziehen Sie die vier Schrauben an, um sie zu befestigen. | ![Abbildung zum Arbeitsschritt, gedruckte Seite 22](/img/manual/asset-a4e9bfa03293.png "width=239") |
 | 8\. | Verbinden Sie das Netzteil mit der Spannungsversorgung und dem Gerät, wie unter [Verbindung mittels Standardstecker des Netzteils](05-installation.md#section-5-3-1) beschrieben. |  |
@@ -282,6 +282,8 @@ Der BactoSense bietet verschiedene Optionen der Integration und des Online-Daten
 | HTTP und HTTPS | [Datenabruf über HTTP oder HTTPS](12-data-access-and-export.md#section-12-3) |
 | Fernzugriff auf die Benutzeroberfläche über Virtual Network Computing (VNC) | [GUI-Relay mit VNC](12-data-access-and-export.md#section-12-4) |
 | Web-Benutzeroberfläche | [Web-Benutzeroberfläche](13-web-user-interface.md) |
+| [BactoLink](/other-manuals/bactolink) | Siehe separate BactoLink-Bedienungsanleitung |
+| BactoCloud | [BactoCloud](14-bactocloud.md) |
 
 ![BactoSense — Systemdienste](/img/gui/de/system-services.png "width=507")
 

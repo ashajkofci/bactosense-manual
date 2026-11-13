@@ -3,15 +3,15 @@
   "locale": "it",
   "chapterCount": 21,
   "blockCount": 940,
-  "internalLinkCount": 685,
+  "internalLinkCount": 682,
   "assetCount": 178,
   "maxAssetWidth": 800,
   "resizedAssetCount": 53,
-  "assetBytes": 11889776,
+  "assetBytes": 11730131,
   "files": [
     {
       "file": "chapters/welcome.json",
-      "sha256": "02c33aef05701a20788b5053f341930b6551515b4c67b03ccb603acb05a6acfb"
+      "sha256": "5358f58d8586aa051f45dd5287043880bb57051057309cd512807d647a6729c2"
     },
     {
       "file": "chapters/glossary.json",
@@ -19,11 +19,11 @@
     },
     {
       "file": "chapters/general-user-information.json",
-      "sha256": "2144c1de1248fd731d4acba0359f5c5d24b57ef04e6207cc14f9bb8837db55b4"
+      "sha256": "36d11322a41361e4a945b5f4fa00c6e17b944c09f6243c22fca0d643b4afd8c8"
     },
     {
       "file": "chapters/instrument-overview.json",
-      "sha256": "070ce3cde969758370a1f96842a0e31cb30cf0a51f3385410c266e12e24005a5"
+      "sha256": "44f992ceea8ec15884507941d70bfff60ef1cfc7f8d1618f37ed10c13656c494"
     },
     {
       "file": "chapters/safety.json",
@@ -31,11 +31,11 @@
     },
     {
       "file": "chapters/installation.json",
-      "sha256": "db52bac102824d7224258c69000fdebd0603be7b7743150730be65f9effe0826"
+      "sha256": "4fb119f83cdb79f945b56ee8255dd293fc057dbbabddaaa90bd5007830d28a4d"
     },
     {
       "file": "chapters/io-box.json",
-      "sha256": "2388e824931e1bd712042562e484c135c48b0d0899c1d74d9e11aeb0bfb8e5a3"
+      "sha256": "7c599e10153ca050a686bb541c12c56d68f2bd1b82f2e8643d1977007ae5c346"
     },
     {
       "file": "chapters/field-bus-interface.json",
@@ -43,23 +43,23 @@
     },
     {
       "file": "chapters/general-operations-and-configurations.json",
-      "sha256": "6f23e3dcea0fac9c6dd6659ea79c5eb94fd38c2d3c5adcf9e66d9c8c1a427f83"
+      "sha256": "e9cd6be673e647351a09b90cc38ab4cf4db25918c5cb4a57afb7cd119d9e357f"
     },
     {
       "file": "chapters/upgrade-packages.json",
-      "sha256": "632f1cce59ba0196cb2abdd0909fa614f1d59fb0b7d72a77af8915463d8d46c8"
+      "sha256": "df2d944092c1833fb9844d769b0d79d0a0160ff60b32ef9ba84e6e6a03fba339"
     },
     {
       "file": "chapters/measurements.json",
-      "sha256": "4521e3d83f825593a30854d36b61315004e1747864158752afe264e5203c114e"
+      "sha256": "ce9a6850019cd6cd27f8e6ee7f86281ae0e4fce3c24ed2e90ca8256329ca0277"
     },
     {
       "file": "chapters/results-and-data-analysis.json",
-      "sha256": "6e920e650cd62ed7468d74ef686d6612962004b1917c1a88fc499f39ebb8aac2"
+      "sha256": "88c67180b74ae86eb20b7cec6162329d6a7e6895828ffe6fd634317b58c32aec"
     },
     {
       "file": "chapters/data-access-and-export.json",
-      "sha256": "91ca7f2226dccae6144a322cc2c4810985d2a411ceebdaa26748991925a3df75"
+      "sha256": "fe3d73e0bc10e76dac7048b202df2d0bb9843e782cb3304e52ba74d60e1eba65"
     },
     {
       "file": "chapters/web-user-interface.json",
@@ -67,23 +67,23 @@
     },
     {
       "file": "chapters/bactocloud.json",
-      "sha256": "f14061b42caf6b8b6ffa15783a45cb52438d6e12337513c808235fc76600a20e"
+      "sha256": "9b5db3ac26ac263cdda2805eebeb55363d5530a50af63b0c4f538ba0ea61711c"
     },
     {
       "file": "chapters/maintenance.json",
-      "sha256": "6f124a70f375dc763413c3443aaed668536b5721fff85aed5fc5f550599dd09c"
+      "sha256": "21ffd1bf82e5be771080db93c3be3242513c68e9adb62dcd3958ed621dd80951"
     },
     {
       "file": "chapters/warnings-errors-and-troubleshooting.json",
-      "sha256": "20e4fcfc6b828c02eea2659eca8ebb69cb6649af201068ae40f7155f67dbc855"
+      "sha256": "2551b00bc13ad48611c8aa96731c9e0f60ce2f534d1f0feb7a0366dd7beaf5d6"
     },
     {
       "file": "chapters/storage-transport-and-disposal.json",
-      "sha256": "c604fe378542e0f9281b23722184ae5bb9e60c3236da150b71d0b929f104d035"
+      "sha256": "b62d48b11fc067acd237bc8cc6a87ab81e5fe76f2ebcf4c38de5c897ccbc27ee"
     },
     {
       "file": "chapters/supply-scope-accessories-and-consumables.json",
-      "sha256": "d57130e3ad7950ea2cc9517d49ccb87d6cf9f2e90cbecd496794060c105cc4f3"
+      "sha256": "c8818c121ae508373093204afe63deb859dc848022cb9cd5ecf7b82cab41a96e"
     },
     {
       "file": "chapters/contact.json",
@@ -91,7 +91,7 @@
     },
     {
       "file": "chapters/index.json",
-      "sha256": "010e88d6f6c13c1f1e4fe5e531bb244b765c03f15988b1855479e0a04163c3cd"
+      "sha256": "bd5c3b342beb95d41a0f07555a37bf75801ad4067b69e0e62d54841ff868447f"
     }
   ],
   "assets": [
@@ -1464,15 +1464,15 @@
       "resized": true
     },
     {
-      "file": "assets/img/manual/asset-75f5dbc4154e.png",
-      "source": "static/img/manual/asset-75f5dbc4154e.png",
-      "sourceSha256": "eca7bbdbedaf990957a6e64806c84f6e30ed8b38ec1a054847a5312f85a5b45c",
-      "sha256": "32894f87855d548d1d49e098f095d50a4c35d3ca3e0db7eeed4bc61371e99832",
-      "bytes": 182105,
-      "originalWidth": 1905,
-      "originalHeight": 1268,
+      "file": "assets/img/manual/asset-75f5dbc4154e.webp",
+      "source": "static/img/manual/asset-75f5dbc4154e.webp",
+      "sourceSha256": "b99fb084fda61b24571940d6d2b0b0fd34b223dbae51005b1173357c5326c488",
+      "sha256": "6aa035ac04ed6266511a5d0e0c4aedfdedc2fdcbac918a46ee8d3cc5ef8c88b1",
+      "bytes": 22460,
+      "originalWidth": 2307,
+      "originalHeight": 823,
       "width": 800,
-      "height": 532,
+      "height": 285,
       "resized": true
     },
     {

@@ -25,3 +25,4 @@ static/pdf/
 # Local source PDFs and extraction reports used for regeneration and audits.
 /UM_*.pdf
 /extraction/
+/4010*.pdf

@@ -14,6 +14,7 @@ Le *Scientific Package* s’adresse aux professionnels de la recherche sur l’e
 
 - Fenêtre supplémentaire : appliquez une fenêtre polygonale configurable supplémentaire aux données FL1 / FL2 directement dans l’interface utilisateur.
 - Données de diffusion lumineuse : enregistrez et affichez les données de diffusion vers l’avant et de diffusion latérale pour chaque événement détecté. Récupérez les données dans des fichiers FCS pour le post-traitement.
+- Planification avancée : planification personnalisée des mesures, voir [Planification avancée](10-measurements.md#section-10-2-4)
 
 **Fenêtre polygonale supplémentaire** La fenêtre polygonale supplémentaire librement configurable présente les propriétés suivantes :
 
@@ -52,7 +53,7 @@ Le *Management Package* est destiné à l’utilisation de l’instrument dans d
 
 - Gestion avancée des utilisateurs (contrôle d’accès basé sur les rôles)
 - Journal d’audit
-- Planification avancée
+- Planification avancée : planification personnalisée des mesures, voir [Planification avancée](10-measurements.md#section-10-2-4)
 
 **Gestion avancée des utilisateurs** Avec la fonction *Gestion avancée des utilisateurs*, le propriétaire de l’instrument peut créer différents utilisateurs et leur attribuer différents rôles utilisateur (Basic, Advanced, Admin). Cela permet d’accorder des autorisations différentes à chaque utilisateur et d’enregistrer son activité dans le journal d’audit.
 

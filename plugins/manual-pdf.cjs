@@ -1,16 +1,24 @@
 const { mkdir, writeFile, readdir, rm } = require('node:fs/promises');
 const path = require('node:path');
-const { manuals, pdfFile } = require('./manuals.cjs');
+const { manuals, pdfFile, pdfManuals } = require('./manuals.cjs');
 
 module.exports = function manualPdfPlugin(context) {
   const locale = context.i18n.currentLocale;
   const editions = manuals.filter(manual => manual.locales.includes(locale));
+  const publications = editions.flatMap(manual => pdfManuals(manual, locale));
   const chapters = new Map();
 
   return {
     name: 'manual-pdf',
     allContentLoaded({ allContent }) {
-      for (const manual of editions) chapters.set(manual.id, require('./manual-chapters.cjs')(allContent, manual.docsPluginId));
+      for (const manual of editions) {
+        const inventory = require('./manual-chapters.cjs')(allContent, manual.docsPluginId);
+        for (const publication of pdfManuals(manual, locale)) {
+          const selected = publication.chapterId ? inventory.filter(chapter => chapter.id === publication.chapterId) : inventory;
+          if (!selected.length) throw new Error(`Missing PDF chapter for ${publication.id}.`);
+          chapters.set(publication.id, selected);
+        }
+      }
     },
     async postBuild({ outDir, baseUrl, siteConfig }) {
       // Development keeps every manual and language in static/pdf; publish only this language's editions here.
@@ -19,14 +27,15 @@ module.exports = function manualPdfPlugin(context) {
         if (error.code === 'ENOENT') return [];
         throw error;
       });
-      const expected = new Set(editions.map(manual => pdfFile(manual, locale)));
+      const expected = new Set(publications.map(manual => pdfFile(manual, locale)));
+      if (expected.size !== publications.length) throw new Error('PDF document IDs and titles must produce unique filenames.');
       for (const file of downloads) {
-        if (/^[a-z][a-z0-9-]*-manual-[a-z]{2}\.pdf$/.test(file) && !expected.has(file)) {
+        if (/\.pdf$/i.test(file) && !expected.has(file)) {
           await rm(path.join(pdfDirectory, file));
         }
       }
       const { compileManualPdf } = await import('../scripts/compile-pdf.mjs');
-      for (const manual of editions) {
+      for (const manual of publications) {
         const manifest = {
           manual: manual.id,
           title: manual.title,

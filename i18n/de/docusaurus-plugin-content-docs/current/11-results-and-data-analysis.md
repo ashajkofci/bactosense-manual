@@ -22,18 +22,18 @@ Die folgende Abbildung zeigt das Ergebnis einer ausgewählten TCC-Messung im Onl
 | 5 | Das Statusfeld der Messung zeigt Alarme oder Warnungen an. Tippen Sie auf eine Alarm- oder Warnungsanzeige, um deren Details anzuzeigen. |
 | 6 | Die Taste Löschen löscht die Messung dauerhaft; eine Bestätigung ist erforderlich. |
 | 7 | Mit dem Umbenennen-Knopf können Messungen umbenannt werden. |
-| 8 | Mit dem Resultat neu gaten-Knopf können Messungen neu gegatet werden. Mehr Details dazu unter [Messungen regaten](../results-and-data-analysis/#section-11-4-1). |
-| 9 | Mit dem Exportieren-Knopf können Messungen auf einen USB Stick exportiert werden. Mehr Details dazu unter [Export auf einen USB-Datenträger](../measurements/#section-10-8-1). |
+| 8 | Mit dem Resultat neu gaten-Knopf können Sie ein anderes Gate-Set auf die Messdaten anwenden. Mehr Details dazu unter [Messungen regaten](../results-and-data-analysis/#section-11-4-1). |
+| 9 | Mit dem Exportieren-Knopf können Sie dieses Ergebnis auf einen USB-Stick exportieren. Mehr Details dazu unter [Export auf einen USB-Datenträger](../measurements/#section-10-8-1). |
 | 10 | Mit den Navigationspfeilen links und rechts können Sie zur vorherigen und nächsten Messung springen. |
-| 11 | Tippen Sie auf das Trenddiagramm, um das Diagramm für den Auto-Modus (das vollständige Diagramm der Online-Ergebnisse) zu öffnen. Siehe [Ansehen automatischer Onlinemessungen](../measurements/#section-10-2-3). |
+| 11 | Tippen Sie auf das Trenddiagramm, um das Diagramm für den Online-Modus (das vollständige Diagramm der Online-Ergebnisse) zu öffnen. Siehe [Ansehen automatischer Onlinemessungen](../measurements/#section-10-2-3). |
 
 :::info[Mehrere Messungen auswählen]
 
-Mehrfachauswahl und gemeinsame Aktionen: Halten Sie in der Messungsliste eine Messung gedrückt, um die Mehrfachauswahl zu aktivieren. Wählen Sie anschließend Löschen / Neu-gaten oder Exportieren.
+Mehrfachauswahl und gemeinsame Aktionen: Halten Sie in der Messungsliste eine Messung gedrückt, um die Mehrfachauswahl zu aktivieren. Wählen Sie anschließend Löschen / Gates erneut anwenden oder Exportieren.
 
 :::
 
-Um nur bestimmte Messungen in der Ergebnisliste anzuzeigen, filtern Sie nach Datum, Name oder BactoSwitch-Probenlinie; siehe [Filtern von Messungen](../measurements/#section-10-7).
+Um nur bestimmte Messungen in der Ergebnisliste anzuzeigen, filtern Sie nach Datum, Name oder BactoSwitch-Probenleitung; siehe [Filtern von Messungen](../measurements/#section-10-7).
 
 ## 11.2 Einführung in Gates {#section-11-2}
 
@@ -42,8 +42,8 @@ Den Standards der Durchflusszytometrie folgend, verwendet der BactoSense Gates, 
 Wir definieren:
 
 - Gate: Eine Linie oder ein Vieleck, das auf ein Punktdiagramm angewandt wird, um Populationen gemessener Zellen zu quantifizieren.
-- Set aus Gates oder Gating-Set: Eine Zusammenstellung aus zwei oder mehr Gates zur Verwendung für die Gatingstrategie. Die Gatetypen sind fix, doch können die Benutzer die Grenzen eines jeden Gates ändern. Sie unterscheiden sich für TCC- und ICC-Messungen.
-- Gatingstrategie: Definiert, wie die Gates kombiniert werden, um Zellen zu zählen. Beispielsweise ist HNAC die Anzahl Zellen, die sich innerhalb des TCC-Vielecks befinden und die HNA-Untergrenze überschreiten. Diese Strategien unterscheiden sich für TCC- und ICC-Messungen.
+- Set aus Gates oder Gating-Set: Die Zusammenstellung aller Gates, die für eine Messung verwendet werden. Die Gatetypen sind fix, doch können die Benutzer die Grenzen eines jeden Gates ändern.
+- Gatingstrategie: Definiert, wie die Gates kombiniert werden, um Zellen zu zählen. Beispielsweise ist HNAC die Anzahl Zellen, die sich innerhalb des TCC-Vielecks befinden und die HNA-Untergrenze überschreiten.
 
 Gating Sets sind spezifisch für einen Kartuschentyp. Beispielsweise können für mit einer TCC-Kartusche durchgeführte Messungen nur Gating Sets des Typs TCC verwendet werden.
 
@@ -51,13 +51,13 @@ Gating Sets sind spezifisch für einen Kartuschentyp. Beispielsweise können fü
 
 Der BactoSense verfügt über voreingestellte Gating Sets für alle verfügbaren Kartuschentypen. Diese Gating Sets nennt man Default-Gating-Sets. Sie wurden sorgfältig entwickelt, um mit einer Vielzahl an Proben einsetzbar zu sein.
 
-- Drücken Sie auf der Startseite Einstellungen und dann Gate Einstellungen, um die verfügbaren Gating-Sets anzuzeigen.
+- Drücken Sie auf der Startseite Einstellungen und dann Gate-Einstellungen, um die verfügbaren Gating-Sets anzuzeigen.
 - Standard-Gating-Sets können weder bearbeitet noch gelöscht werden.
 - Neue Gating Sets können erstellt werden, indem Sie eine Kopie eines existierenden Gating Sets anlegen, wie unter [Erstellen eines neuen Gating Sets](11-results-and-data-analysis.md#section-11-4-2) beschrieben.
 
 ### 11.2.2 Liste verfügbarer Gating Sets und Vorgänge {#section-11-2-2}
 
-Drücken Sie auf der Startseite Einstellungen und dann Gate Einstellungen, um die verfügbaren Gating-Sets anzuzeigen.
+Drücken Sie auf der Startseite Einstellungen und dann Gate-Einstellungen, um die verfügbaren Gating-Sets anzuzeigen.
 
 ![BactoSense — Liste der Gates](/img/gui/de/gate-settings-list.png "width=599 class=manual-figure")
 
@@ -73,13 +73,13 @@ Drücken Sie auf der Startseite Einstellungen und dann Gate Einstellungen, um di
 
 ## 11.3 Kartuschen, Gates und Ergebnisparameter {#section-11-3}
 
-Je nach der für eine Messung verwendeten Kartusche werden unterschiedliche Parameter ermittelt. Die folgenden Unterabschnitte beschreiben Gate-Sets und Ergebnisparameter für TCC (Gesamtzellzahl), ICC (Intaktzellzahl), ACC (Anzahl aktiver Zellen), CBC (Anzahl coliformer Zellen), EBC (Anzahl der E.-coli-Zellen) und NBC (Enterokokken-Zellzahl).
+Je nach der für eine Messung verwendeten Kartusche werden unterschiedliche Parameter ermittelt. Die folgenden Unterabschnitte beschreiben Gate-Sets und Ergebnisparameter für TCC (Gesamtzellzahl), ICC (Intaktzellzahl), ACC (Anzahl aktiver Zellen), CBC (Anzahl coliformer Bakterien), EBC (Anzahl der E.-coli-Bakterien) und NBC (Anzahl der Enterokokken).
 
 CBC-, EBC- und NBC-Kartuschen sind mit BactoSense ID und BactoSense SMART kompatibel. Jede dieser Kartuschen verwendet eine selektive enzymatische Markierung und ein einzelnes Polygon-Gate und liefert eine Zellkonzentration. Für diese Kartuschen werden keine HNA- oder Aktivitäts-Unterpopulationen berechnet.
 
-:::info[Interpretation der CBC-, EBC- und NBC-Ergebnisse]
+:::info[Interpretation der Zellzahl-Ergebnisse]
 
-CBC, EBC und NBC sind Zellkonzentrationen in Zellen pro Milliliter (1/mL). Zellzahlen und Kulturergebnisse in koloniebildenden Einheiten (CFU) erfassen unterschiedliche Eigenschaften einer Probe und können nicht direkt miteinander verglichen werden.
+Die Zellzahlen des BactoSense sind Zellkonzentrationen in Zellen pro Milliliter (1/mL). Zellzahlen und Kulturergebnisse in koloniebildenden Einheiten (CFU) erfassen unterschiedliche Eigenschaften einer Probe und liefern in der Regel numerisch unterschiedliche Ergebnisse.
 
 :::
 
@@ -257,7 +257,7 @@ Weitere Informationen zum Anpassen der Gates finden Sie unter [Gates ändern](11
 
 Regating ist der Prozess des Anwendens eines anderen Gating Sets auf bestehende Messdaten.
 
-- Eine Voraussetzung für Regating ist das Vorhandensein eines solchen zusätzlichen Gating Sets. Drücken Sie auf der Startseite Einstellungen und dann Gate Einstellungen, um die verfügbaren Gating-Sets anzuzeigen.
+- Eine Voraussetzung für Regating ist das Vorhandensein eines alternativen Gate-Sets. Drücken Sie auf der Startseite Einstellungen und dann Gate-Einstellungen, um die verfügbaren Gating-Sets anzuzeigen.
 - Der Prozess des Bearbeiten eines bestehenden Gating Sets wird unter [Bearbeiten bestehender Gating Sets](11-results-and-data-analysis.md#section-11-4-3) beschrieben.
 
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNGEN |
@@ -265,7 +265,7 @@ Regating ist der Prozess des Anwendens eines anderen Gating Sets auf bestehende 
 | 1\. | Drücken Sie auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. |  |
 | 2\. | Drücken Sie Logs und je nach Messart Results (manual mode) oder Results (online mode). |  |
 | 3\. | Um eine Einzelmessung zu regaten, wählen Sie die Messung aus, um die Ergebnisdetailseite zu sehen. Um mehrere Messungen (Batch) zu regaten, drücken Sie lange auf die Messung, bis sie markiert ist und links ein Ankreuzkästchen erscheint. Tippen Sie dann weitere Messungen an, um auch diese zum Regaten auszuwählen. |  |
-| 4\. | Drücken Sie in der Einzelresultatansicht Resultat neu gaten oder bei mehreren ausgewählten Messungen Neu-gaten. |  |
+| 4\. | Drücken Sie in der Einzelresultatansicht Resultat neu gaten oder bei mehreren ausgewählten Messungen Gates erneut anwenden. |  |
 | 5\. | Wählen Sie den das gewünschte Gating Set, indem Sie das entsprechende Kästchen ankreuzen. |  |
 | 6\. | Drücken Sie Bestätigen, um die erneute Gate-Auswertung zu starten. | :::info[Zusätzliche Informationen] Je nach Anzahl der Messungen kann die erneute Gate-Auswertung mehrere Minuten dauern. ::: |
 | 7\. | Drücken Sie nach Ende des Vorgangs OK. |  |
@@ -279,7 +279,7 @@ Erstellen eines neuen Gating-Sets aus einer Kopie
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNGEN |
 | --- | --- | --- |
 | 1. | Drücken Sie als Advanced- oder Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. |  |
-| 2. | Drücken Sie die Taste Gate Einstellungen. |  |
+| 2. | Drücken Sie die Taste Gate-Einstellungen. |  |
 | 3. | Identifizieren Sie in der Liste der verfügbaren Gating Sets das Gating Set, von dem Sie eine Kopie erstellen wollen, um das neue Gating Set zu erstellen. | Stellen Sie sicher, dass der Gatingtyp (z.B. TCC, ICC) zu Ihrer Zielanwendung passt. |
 | 4. | Drücken Sie das Kopieren-Symbol, um eine Kopie des Gating Sets zu erstellen. |  |
 | 5. | In der neu erstellten Kopie drücken Sie das Bearbeiten-Symbol und folgen den Bearbeitungsanweisungen unter [Bearbeiten bestehender Gating Sets](11-results-and-data-analysis.md#section-11-4-3). | ![BactoSense — Gate bearbeiten](/img/gui/icons/edit-gate-button.png "width=48 class=manual-icon") |
@@ -289,7 +289,7 @@ Erstellen eines neuen Gating-Sets von Grund auf
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNGEN |
 | --- | --- | --- |
 | 1. | Drücken Sie als Advanced- oder Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. |  |
-| 2. | Drücken Sie die Taste Gate Einstellungen. |  |
+| 2. | Drücken Sie die Taste Gate-Einstellungen. |  |
 | 3. | Drücken Sie unten in der Aktionsleiste Neu. |  |
 | 4. | Geben Sie einen Namen für das Gating-Set ein und wählen Sie eine der verfügbaren Vorlagen für die eingesetzte Kartusche. |  |
 | 5. | Folgen Sie dann dem Gatekonfigurations- assistenten auf dem Bildschirm, wie in den Gatebearbeitungsanweisungen unter [Bearbeiten bestehender Gating Sets](11-results-and-data-analysis.md#section-11-4-3) beschrieben. |  |
@@ -316,7 +316,7 @@ Die folgenden Schritte beschreiben, wie Sie ein Gate anpassen:
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG |
 | --- | --- | --- |
 | 1. | Drücken Sie als Advanced- oder Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. | ![BactoSense — Schaltfläche Einstellungen](/img/gui/de/home-settings-button.png "width=57 class=manual-icon-settings-button-half") |
-| 2. | Drücken Sie die Taste Gate Einstellungen. | ![BactoSense — Gate-Einstellungen](/img/gui/icons/gate-settings-button.png "width=48 class=manual-icon") |
+| 2. | Drücken Sie die Taste Gate-Einstellungen. | ![BactoSense — Gate-Einstellungen](/img/gui/icons/gate-settings-button.png "width=48 class=manual-icon") |
 | 3. | Drücken Sie die Taste Bearbeiten des zu bearbeitenden Gates. | ![BactoSense — Gate bearbeiten](/img/gui/icons/edit-gate-button.png "width=48 class=manual-icon") |
 | 4. | Falls gewünscht, ändern Sie den Namen und drücken dann die Taste Weiter. |  |
 | 5. | Passen Sie die Anzahl und die Positionen der Ecken des Vielecks an (für TCC und ICC schauen Sie unter [Strategie zur Anpassung von Gates für TCC und ICC](11-results-and-data-analysis.md#section-11-4-4) nach). Ein Vieleck-Gate kann zwischeb 3 und 6 Ecken haben. | ![BactoSense — ICC-Gatedefinition](/img/gui/de/icc-gate-definition.png "width=282 class=manual-figure") |
@@ -334,7 +334,7 @@ Der BactoSense wird mit Standard-Gate-Sets geliefert, die sich für die Mehrheit
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG |
 | --- | --- | --- |
 | 1\. | Messen Sie mittels des Standard- Wasseranalyse-Protokolls eine Wasserprobe. Auf der Ergebnisseite zeigt das FL1-vs-FL2- Punktdiagramm: 1) LNA- und HNA-Zellen im Wasser 2) Elektrisches Rauschen von den optischen Detektoren 3) Schmutz/Hintergrundrauschen (Dies kann beschädigte Zellen, Ansammlungen oder andere Partikel umfassen) | ![Abbildung zur Tabelle auf Handbuchseite 108](/img/manual/cell-564a3512838d.png "width=126 class=manual-figure") |
-| 2\. | Drücken Sie auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. Drücken Sie die Taste Gate Einstellungen. |  |
+| 2\. | Drücken Sie auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. Drücken Sie die Taste Gate-Einstellungen. |  |
 | 3\. | Führen Sie je nach Bedarf eine der folgenden Aktionen aus: • Neues Gating-Set erstellen • Vorhandenes Gating-Set bearbeiten • Vorhandenes Gating-Set kopieren und die Kopie bearbeiten |  |
 | 4\. | Diesem Gateset einen Namen geben und Weiter drücken. |  |
 | 5\. | Platzieren Sie das Vieleck-Gate an beiden Enden (links und rechts). Sie könnten zum Beispiel diese vier Punkte verwenden: (FL1; FL2) = (3.0; 0.0), (3.0; 6.1), (6.5; 6.1), (6.5; 0.0) | ![Abbildung zur Tabelle auf Handbuchseite 108](/img/manual/cell-374bfaa7d23b.png "width=126 class=manual-figure") |
@@ -380,17 +380,17 @@ Um die Ergebnisse des BactoSense mit einem anderen Durchflusszytometer vergleich
 
 |  | ARBEITSSCHRITT | ZUSÄTZLICHE INFORMATIONEN / ABBILDUNG | \< |
 | --- | --- | --- | --- |
-| 1\. | Es wird empfohlen, das Validierungskit mit einer gebrauchsfertigen Perlenlösung zu verwenden. | Bitte lesen Sie die Anleitung des Validierungskits für weitere Informationen. | \< |
+| 1\. | Es wird empfohlen, das [Validierungskit](/other-manuals/validation-kit) mit einer gebrauchsfertigen Perlenlösung zu verwenden. | Bitte lesen Sie die Anleitung des Validierungskits für weitere Informationen. | \< |
 | 2\. | Installieren Sie das manuelle Probenahmegerät entsprechend den Anweisungen in der Bedienungsanleitung. |  | \< |
-| 3\. | Nehmen Sie eine der Perlenlösungen des Validierungskits und laden Sie sie in das Probenahmegerät. | Bitte lesen Sie die Anleitung des Validierungskits für weitere Informationen. | \< |
+| 3\. | Nehmen Sie eine der Perlenlösungen des [Validierungskits](/other-manuals/validation-kit) und laden Sie sie in das Probenahmegerät. | Bitte lesen Sie die Anleitung des Validierungskits für weitere Informationen. | \< |
 | 4\. | :::info[Zusätzliche Informationen] Drücken Sie die Taste Home. Drücken Sie die Taste Zurück so oft wie nötig, bis die Taste Home erscheint. ::: | ![BactoSense — Schaltfläche Startseite](/img/gui/icons/home-button.png "width=48 class=manual-icon") | ![BactoSense — Schaltfläche Zurück](/img/gui/icons/back-button.png "width=48 class=manual-icon") |
 | 5\. | Drücken Sie auf der Startseite Modus und wählen Sie „Manueller Modus“. Drücken Sie Zurück und anschließend Messen, um den Messassistenten zu öffnen. |  | \< |
 | 6\. | Wählen Sie Ansaugen aus der Protokollliste. | Siehe [Durchführen eines Ansaugens](../measurements/#section-10-9-3). | \< |
-| 7\. | Drücken Sie die Tasten Weiter und Starten. Lassen Sie das Ansaugprotokoll zu Ende laufen. |  | \< |
+| 7\. | Drücken Sie Weiter und anschließend Start. Lassen Sie das Ansaugprotokoll zu Ende laufen. |  | \< |
 | 8\. | Drücken Sie Neu, wählen Sie Beads Analyse aus der Liste und drücken Sie Weiter und Start. |  | \< |
 | 9\. | Warten Sie die Ergebnisse ab und, falls notwendig, passen Sie das Gate des FL1-vs-FL2-Graphen behutsam so an, dass nur die vier Perlenpopulationen gezählt werden. Stellen Sie sicher, dass Rauschen, Hintergrund und Zelltrümmer im Gate nicht mitgezählt werden. | Zur Anpassung des Gates siehe [Bearbeiten bestehender Gating Sets](../results-and-data-analysis/#section-11-4-3).<br />![Abbildung zur Tabelle auf Handbuchseite 112](/img/manual/render-fa85ea9255cb.webp "width=246 class=manual-figure") | \< |
 | 10\. | Schätzen Sie im FL1/Zellzahl-Histogramm den logarithmischen Wert der Mitte jedes Peaks auf der FL1-Achse. In diesem Beispiel erhalten wir ungefähr (logarithmisch): 1. Peak = 4.05; 2. Peak = 4.3; 3. Peak = 5.35; 4. Peak = 6.2 | ![Abbildung zur Tabelle auf Handbuchseite 113](/img/manual/cell-c2ba9a559620.png "width=246 class=manual-figure") | \< |
-| 11\. | Messen Sie dieselben Perlen mit dem anderen zu vergleichenden Durchflusszytometer und wiederholen Sie die Schritte 10 und 11. In diesem Beispiel erhalten wir ungefähr (logarithmisch): 1. Peak = log(10<sup>3</sup>) = 3 2. Peak = log(2*10<sup>3</sup>) = 3.3 3. Peak = log(2.4*10<sup>4</sup>) = 4.4 4. Peak = log(1.6*10<sup>5</sup>) = 5.2 | ![Abbildung zur Tabelle auf Handbuchseite 113](/img/manual/cell-4c2343e0bbfe.png "width=246 class=manual-figure") | \< |
+| 11\. | Messen Sie dieselben Perlen mit dem anderen zu vergleichenden Durchflusszytometer. Wenden Sie die in den Schritten 9 und 10 beschriebenen Schritte zur Gate-Anpassung und Peak-Schätzung auf dessen Ergebnisse an. In diesem Beispiel erhalten wir ungefähr (logarithmisch): 1. Peak = log(10<sup>3</sup>) = 3 2. Peak = log(2*10<sup>3</sup>) = 3.3 3. Peak = log(2.4*10<sup>4</sup>) = 4.4 4. Peak = log(1.6*10<sup>5</sup>) = 5.2 | ![Abbildung zur Tabelle auf Handbuchseite 113](/img/manual/cell-4c2343e0bbfe.png "width=246 class=manual-figure") | \< |
 | 12\. | Mit den unterschiedlichen Werten für die beiden Geräte ist es nun möglich, ihre Skalen und ihre Messfenster zu vergleichen. |  | \< |
 
 </div>

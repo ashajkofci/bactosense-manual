@@ -36,9 +36,9 @@ Les instructions suivantes montrent comment configurer et lancer des mesures aut
 | 4. | Appuyez sur Démarrer sur l’écran d’accueil pour ouvrir l’assistant de mesure en ligne. |  |
 | 5. | Sous Protocole, assurez-vous que la case “Échantillonneur en ligne (avec rétro-lavage)” est cochée. |  |
 | 6. | Saisissez un nom d’échantillon en appuyant sur le champ Nom de l'échantillon. |  |
-| 7. | Sélectionnez la fenêtre à appliquer aux mesures en appuyant sur le champ Fenêtres. | Les fenêtres TCC et ICC par défaut sont généralement utilisées. Utilisez des fenêtres personnalisées si votre application l’exige. La création et l’ajustement des fenêtres sont décrits au chapitre [Résultats et analyse des données](11-results-and-data-analysis.md). |
+| 7. | Sélectionnez la fenêtre à appliquer aux mesures en appuyant sur le champ Fenêtres. | Les fenêtres par défaut sont généralement utilisées. Utilisez des fenêtres personnalisées si votre application l’exige. La création et l’ajustement des fenêtres sont décrits au chapitre [Résultats et analyse des données](11-results-and-data-analysis.md). |
 | 8. | Appuyez sur le bouton Suivant. |  |
-| 9. | Si l’éditeur de programme hebdomadaire est affiché, appuyez sur Retour pour revenir au programme à intervalles simple. Sélectionnez l’intervalle de mesure avec la molette à droite. | L’intervalle de mesure correspond au temps entre deux mesures et peut aller de 30 min à 6 heures. |
+| 9. | Si l’éditeur de programme hebdomadaire est affiché, appuyez sur Retour pour revenir au programme à intervalles simple. Sélectionnez l’intervalle de mesure avec la molette à droite. | L’intervalle de mesure correspond au temps entre deux mesures. La durée minimale varie de 30 à 60 minutes selon la cartouche. La durée maximale est de 6 heures. |
 | 10. | Si nécessaire, retardez le démarrage en décochant Démarrage immédiat et en choisissant une heure de démarrage. | Le réglage de l’heure du BactoSense est décrit à la section [Date et heure](08-general-operations-and-configurations.md#section-8-3-2). |
 | 11. | Appuyez sur le bouton Démarrer. | Pendant la mesure, l’estimation actuelle de la concentration cellulaire est affichée dans la barre d’action sous « Last ». |
 | 12. | Après chaque mesure, le graphique de la série temporelle est actualisé. | Pour plus de détails, appuyez sur Résultats. |
@@ -160,7 +160,7 @@ Les instructions suivantes expliquent comment configurer et démarrer une mesure
 | 5. | Sur l’écran d’accueil, appuyez sur **Mode**. Sur l’écran **Sélection du mode**, appuyez sur **Mode manuel**. Appuyez sur **Retour**, puis sur **Mesurer** pour ouvrir l’assistant de mesure. | Le mode actuel est mis en évidence. Le changement est immédiat dès que vous appuyez sur un mode. Si une série en mode en ligne est active, confirmez **Voulez-vous vraiment arrêter le mode en ligne ?** avec **Oui**. Si une mesure est en cours, appuyez sur **Interrompre** pour l’arrêter, ou sur **Attendre**, puis sélectionnez à nouveau le mode une fois la mesure terminée. **Mode manuel** ne peut pas être sélectionné tant que le mode PLC est actif (voir [Configuration des entrées numériques et du mode PLC](06-io-box.md#section-6-5)). |
 | 6. | Sélectionnez Analyse Eau dans la liste des protocoles disponibles. | Pour effectuer des répétitions techniques, sélectionnez leur nombre dans la colonne Réplications. Par défaut, un échantillon est mesuré. Si plusieurs répétitions sont configurées, plusieurs échantillons sont prélevés dans le même tube. |
 | 7. | Saisissez un nom d’échantillon en tapant dans le champ de texte Nom de l’échantillon, en entrant le nom et en appuyant sur OK. |  |
-| 8. | Vérifiez que la fenêtre souhaitée est configurée dans le champ Fenêtres. Pour en utiliser une autre, appuyez sur ce champ et sélectionnez-la parmi les options disponibles (selon la cartouche installée). | Les fenêtres TCC et ICC par défaut sont généralement utilisées. Utilisez des fenêtres personnalisées si votre application l’exige. La création et l’ajustement des fenêtres sont décrits au chapitre [Résultats et analyse des données](11-results-and-data-analysis.md). |
+| 8. | Vérifiez que la fenêtre souhaitée est configurée dans le champ Fenêtres. Pour en utiliser une autre, appuyez sur ce champ et sélectionnez-la parmi les options disponibles (selon la cartouche installée). | Les fenêtres par défaut sont généralement utilisées. Utilisez des fenêtres personnalisées si votre application l’exige. La création et l’ajustement des fenêtres sont décrits au chapitre [Résultats et analyse des données](11-results-and-data-analysis.md). |
 | 9. | Appuyez sur le bouton Suivant. |  |
 | 10. | Fixez au dispositif d’échantillonnage manuel un tube à bouchon fileté de 5 mL contenant 2 – 5 mL d’échantillon. |  |
 | 11. | Appuyez sur le bouton Démarrer. | La durée estimée du protocole et l’heure de fin prévue sont affichées. L’état actuel de la mesure est indiqué dans la barre supérieure (par exemple Initializing, Mixing…). |
@@ -242,7 +242,7 @@ En mode manuel, les opérateurs peuvent choisir entre deux protocoles d’analys
 | NOM DU PROTOCOLE | DESCRIPTION DU PROTOCOLE |
 | --- | --- |
 | Analyse Eau | Analysez un échantillon d’eau et terminez par un cycle de nettoyage. Si plusieurs répétitions sont effectuées, le nettoyage n’est effectué qu’une seule fois, à la fin. Un amorçage est automatiquement exécuté entre les répétitions. |
-| Analyse Billes | Ce protocole est destiné à l’analyse de billes d’étalonnage et est utilisé avec le kit de validation. Le protocole se termine automatiquement par un cycle de nettoyage. Si plusieurs répétitions sont effectuées, le nettoyage n’est effectué qu’une seule fois, à la fin. |
+| Analyse Billes | Ce protocole est destiné à l’analyse de billes d’étalonnage et est utilisé avec le [kit de validation](/other-manuals/validation-kit). Le protocole se termine automatiquement par un cycle de nettoyage. Si plusieurs répétitions sont effectuées, le nettoyage n’est effectué qu’une seule fois, à la fin. |
 
 Les protocoles de maintenance peuvent être exécutés avant ou entre les protocoles d’analyse, pour préparer, rincer ou nettoyer le système. En mode manuel, les protocoles de maintenance suivants sont disponibles :
 
@@ -254,12 +254,14 @@ Les protocoles de maintenance peuvent être exécutés avant ou entre les protoc
 | Nettoyage échantillonneur avec Washstation | Nettoie le dispositif d’échantillonnage manuel de manière à ce que le filtre extérieur, l’intérieur et l’extérieur de l’aiguille puissent être entièrement lavés entre les mesures, après un échantillon sale ou en cas de blocage du filtre. Nécessite que la Washstation soit monté sur le dispositif d’échantillonnage manuel et qu’une cartouche soit installée pour que ce protocole apparaisse. Ce protocole a un pouvoir de désinfection supérieur à celui du protocole Nettoyage du dispositif d’échantillonnage et doit donc être privilégié. L’utilisation de la Washstation est le meilleur moyen de garder le dispositif d’échantillonnage manuel propre et d’éviter les contaminations croisées. Vous trouverez les instructions pour ce protocole dans la section [Nettoyage du dispositif d’échantillonnage manuel avec la Washstation](15-maintenance.md#section-15-2-2). |
 | Nettoyage échantillonneur | Nettoie le dispositif d’échantillonnage afin que le filtre externe et l’intérieur de l’aiguille puissent être lavés après un échantillon extrêmement chargé ou en cas de blocage du filtre. Vous trouverez les instructions pour ce protocole dans la section [Nettoyage du dispositif d’échantillonnage manuel avec un nettoyage de base](15-maintenance.md#section-15-2-3). |
 | Remplissage Tubes | Remplit toutes les tubulures transportant les réactifs de la cartouche pour éliminer les bulles d’air. Nettoie les optiques à la fin du processus. |
-| Amorçage et Nettoyage Optique | Remplit la tubulure avec le liquide de l’échantillon. Aide à diluer les résidus après le nettoyage du dispositif d’échantillonnage. Se termine par l’étape de nettoyage. |
+| Amorçage et Nettoyage Optique | Remplit la tubulure avec le liquide de l’échantillon. Aide à diluer les résidus, par exemple après le protocole Nettoyage échantillonneur. Se termine par l’étape de nettoyage. |
 | Amorçage | Charge l’échantillon dans l’instrument. Vous trouverez les instructions dans la section [Réalisation d’un amorçage](10-measurements.md#section-10-9-3). |
 
 ### 10.9.2 Vue d’ensemble des protocoles en mode en ligne {#section-10-9-2}
 
-En mode en ligne, les opérateurs peuvent choisir entre deux protocoles d’analyse. Tableau 10-3 Protocoles d’analyse du mode en ligne
+En mode en ligne, les opérateurs peuvent choisir entre deux protocoles d’analyse.
+
+**Tableau 10-3 Protocoles d’analyse du mode en ligne**
 
 | NOM DU PROTOCOLE | DESCRIPTION DU PROTOCOLE |
 | --- | --- |

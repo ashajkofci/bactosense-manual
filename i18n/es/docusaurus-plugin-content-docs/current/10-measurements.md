@@ -36,9 +36,9 @@ Las instrucciones siguientes muestran cómo configurar e iniciar mediciones auto
 | 4. | Pulse Inicio en la pantalla Home para abrir el asistente de medición en línea. |  |
 | 5. | En Protocolo, asegúrese de que esté marcada la casilla “Dispositivo de muestreo en línea (con lavado a contracorriente)”. |  |
 | 6. | Introduzca un nombre de muestra pulsando el campo de texto Nombre de la muestra. |  |
-| 7. | Seleccione la región de análisis que desea aplicar a las mediciones pulsando el campo de texto Compuertas. | Generalmente se utilizan las regiones predeterminadas TCC e ICC. Utilice regiones definidas por el usuario si su aplicación lo requiere. La creación y el ajuste de las regiones se describen en el capítulo [Resultados y análisis de datos](11-results-and-data-analysis.md). |
+| 7. | Seleccione la región de análisis que desea aplicar a las mediciones pulsando el campo de texto Compuertas. | Generalmente se utilizan las regiones predeterminadas. Utilice regiones definidas por el usuario si su aplicación lo requiere. La creación y el ajuste de las regiones se describen en el capítulo [Resultados y análisis de datos](11-results-and-data-analysis.md). |
 | 8. | Pulse el botón Siguiente. |  |
-| 9. | Si aparece el editor de la programación semanal, pulse Volver para volver a la programación sencilla por intervalos. Seleccione el intervalo de medición con la rueda situada a la derecha. | El intervalo de medición es el tiempo entre mediciones y puede ser de un mínimo de 30 min y un máximo de 6 horas. |
+| 9. | Si aparece el editor de la programación semanal, pulse Volver para volver a la programación sencilla por intervalos. Seleccione el intervalo de medición con la rueda situada a la derecha. | El intervalo de medición es el tiempo entre mediciones. La duración mínima oscila entre 30 y 60 minutos, según el cartucho. La duración máxima es de 6 horas. |
 | 10. | Si es necesario, retrase el inicio desmarcando Inicio inmediato y eligiendo una hora de inicio específica. | El ajuste de la hora de BactoSense se describe en la sección [Fecha y hora](08-general-operations-and-configurations.md#section-8-3-2). |
 | 11. | Pulse el botón Inicio. | Durante la medición, la estimación actual de la concentración celular se muestra en la barra de acciones, en “Last”. |
 | 12. | Después de cada medición, se actualiza el gráfico de la serie temporal. | Para obtener más detalles, pulse el botón Ver resultados. |
@@ -160,7 +160,7 @@ Las instrucciones siguientes muestran cómo configurar e iniciar una medición e
 | 5. | En la pantalla Home, pulse **Modo**. En la pantalla **Selección de modo**, pulse **Modo manual**. Pulse **Volver** y, a continuación, **Iniciar** para abrir el asistente de medición. | El modo actual aparece resaltado. Al pulsar un modo, el cambio es inmediato. Si hay una serie activa en modo en línea, confirme **¿Está seguro de que desea detener el modo online?** con **Sí**. Si hay una medición en curso, pulse **Detenerlo** para cancelarla, o **Espere** y vuelva a seleccionar el modo cuando haya terminado. **Modo manual** no se puede seleccionar mientras el modo PLC esté activo (consulte [Configuración de las entradas digitales y modo PLC](06-io-box.md#section-6-5)). |
 | 6. | Seleccione Análisis del agua en la lista de protocolos disponibles. | Si desea réplicas técnicas, seleccione el número de réplicas en la columna Réplicas. Por defecto, se mide una muestra. Si se configuran más réplicas, se extraen varias muestras del mismo tubo. |
 | 7. | Introduzca un nombre de muestra pulsando el campo de texto Nombre de la muestra, escribiendo el nombre y pulsando OK. |  |
-| 8. | Compruebe que la región de análisis deseada esté configurada en el campo Compuertas. Si desea utilizar otra región, pulse el campo Compuertas y seleccione la región deseada entre las opciones disponibles (según el cartucho instalado). | Generalmente se utilizan las regiones predeterminadas TCC e ICC. Utilice regiones definidas por el usuario si su aplicación lo requiere. La creación y el ajuste de las regiones se describen en el capítulo [Resultados y análisis de datos](11-results-and-data-analysis.md). |
+| 8. | Compruebe que la región de análisis deseada esté configurada en el campo Compuertas. Si desea utilizar otra región, pulse el campo Compuertas y seleccione la región deseada entre las opciones disponibles (según el cartucho instalado). | Generalmente se utilizan las regiones predeterminadas. Utilice regiones definidas por el usuario si su aplicación lo requiere. La creación y el ajuste de las regiones se describen en el capítulo [Resultados y análisis de datos](11-results-and-data-analysis.md). |
 | 9. | Pulse el botón Siguiente. |  |
 | 10. | Coloque un tubo de 5 mL con tapón de rosca que contenga 2 – 5 mL de muestra en el dispositivo de muestreo manual. |  |
 | 11. | Pulse el botón Inicio. | Se muestran la duración estimada del protocolo y la hora prevista de finalización. El estado actual de la medición aparece en la barra superior (p. ej., Initializing, Mixing...). |
@@ -242,7 +242,7 @@ Los operadores pueden elegir entre dos protocolos de análisis en modo manual.
 | NOMBRE DEL PROTOCOLO | DESCRIPCIÓN DEL PROTOCOLO |
 | --- | --- |
 | Water Analysis | Analiza una muestra de agua y termina con un ciclo de limpieza. Si se ejecutan varias réplicas, la etapa de limpieza se realiza una sola vez, al final. Entre réplicas se ejecuta automáticamente un cebado. |
-| Beads Analysis | Este protocolo está destinado al análisis de microesferas de calibración y se utiliza con el Validation Kit. El protocolo finaliza automáticamente con un ciclo de limpieza. Si se ejecutan varias réplicas, la etapa de limpieza se realiza una sola vez, al final. |
+| Beads Analysis | Este protocolo está destinado al análisis de microesferas de calibración y se utiliza con el [Validation Kit](/other-manuals/validation-kit). El protocolo finaliza automáticamente con un ciclo de limpieza. Si se ejecutan varias réplicas, la etapa de limpieza se realiza una sola vez, al final. |
 
 Los protocolos de mantenimiento pueden ejecutarse antes de los protocolos de análisis o entre ellos, para preparar, enjuagar o limpiar el sistema. En modo manual están disponibles los siguientes protocolos de mantenimiento:
 
@@ -254,12 +254,14 @@ Los protocolos de mantenimiento pueden ejecutarse antes de los protocolos de an�
 | Clean Sampling Device with Washstation | Limpia el dispositivo de muestreo manual para lavar por completo el filtro exterior y el interior y exterior de la aguja entre mediciones, después de una muestra sucia o en caso de obstrucción del filtro. Para que aparezca este protocolo, la Washstation debe estar montada en el dispositivo de muestreo manual y debe haber un cartucho instalado. Este protocolo tiene una mayor capacidad de desinfección que Clean Sampling Device y, por tanto, debe utilizarse preferentemente. La Washstation es la mejor forma de mantener limpio el dispositivo de muestreo manual y evitar contaminaciones cruzadas. Encontrará las instrucciones de este protocolo en la sección [Limpieza del dispositivo de muestreo manual con Washstation](15-maintenance.md#section-15-2-2). |
 | Clean Sampling Device | Limpia el dispositivo de muestreo para lavar el filtro externo y el interior de la aguja después de una muestra con una carga muy elevada o en caso de obstrucción del filtro. Encontrará las instrucciones de este protocolo en la sección [Limpieza básica del dispositivo de muestreo manual](15-maintenance.md#section-15-2-3). |
 | Fill Tubing | Llena todos los tubos que transportan reactivos desde el cartucho para eliminar las burbujas. Limpia la óptica al final del proceso. |
-| Prime and Clean Optics | Llena los tubos con líquido de la muestra. Ayuda a diluir los residuos, por ejemplo, después de limpiar el dispositivo de muestreo. Finaliza con la etapa de limpieza. |
+| Prime and Clean Optics | Llena los tubos con líquido de la muestra. Ayuda a diluir los residuos, por ejemplo, después de ejecutar el protocolo Clean Sampling Device. Finaliza con la etapa de limpieza. |
 | Prime | Carga la muestra en el instrumento. Encontrará las instrucciones en la sección [Realización de un cebado (Prime)](10-measurements.md#section-10-9-3). |
 
 ### 10.9.2 Descripción de los protocolos del modo en línea {#section-10-9-2}
 
-Los operadores pueden elegir entre dos protocolos de análisis en modo en línea. Tabla 10-3 Protocolos de análisis del modo en línea.
+Los operadores pueden elegir entre dos protocolos de análisis en modo en línea.
+
+**Tabla 10-3 Protocolos de análisis del modo en línea**
 
 | NOMBRE DEL PROTOCOLO | DESCRIPCIÓN DEL PROTOCOLO |
 | --- | --- |

@@ -68,7 +68,7 @@ La targhetta identificativa dell’alimentatore di BactoSense si trova sull’al
 | Proprietà | Specifica |
 | --- | --- |
 | **GENERALE** | \< |
-| Ambiente di funzionamento | Uso in ambienti interni |
+| Ambiente di funzionamento | Uso in ambienti interni e all’aperto in zone protette |
 | Altitudine di funzionamento | Max. 2000 m (6600 ft) sul livello del mare |
 | Temperatura di funzionamento | 5 °C – 30 °C (41 °F – 86 °F) |
 | Umidità di funzionamento | 10 % – 90 % RH |
@@ -94,28 +94,29 @@ La targhetta identificativa dell’alimentatore di BactoSense si trova sull’al
 | Protocolli e opzioni Ethernet | Interfaccia web Desktop remoto (VNC) Modbus TCP HTTP / HTTPS FTP |
 | Ingressi digitali | 4 x ingressi digitali, ingresso con optoaccoppiatore: tensione diretta 1.2 VDC con 3 kΩ in serie, catodo collegato a COMMON, max. 30 mA, max. 50 mW |
 | Uscite analogiche e digitali | Uscite analogiche: 2 x 0/4 – 20 mA, carico consigliato 250 Ω Uscite digitali: 4 x uscite digitali, liberamente configurabili, uscita SSR: max. 48 VDC, max. 300 mW, resistenza in conduzione 2 Ω |
-| Display | Touchscreen capacitivo WVGA da 7.0“ |
-| Connettività mobile | Modulo di connettività BactoLink (opzionale) |
+| Display | Touchscreen capacitivo WVGA da 7.0″ |
+| Connettività mobile | Modulo di connettività [BactoLink](/other-manuals/bactolink) (opzionale) |
 | Analisi avanzata dei dati | Esportazione di file FCS 3.1 |
 | Capacità di memorizzazione dei dati | 128 GB |
 | **MISURAZIONE** | \< |
 | Principio di misurazione | Citometria a flusso |
 | Intervallo di rilevamento | 0 – 5´000´000 cellule/mL |
-| Intervallo di quantificazione | TCC: 1000 – 2‘000‘000 cellule/mL ICC &amp; ACC: 100 – 2‘000‘000 cellule/mL |
+| Intervallo di quantificazione | 1000 – 2‘000‘000 cellule/mL per TCC<br />100 – 2‘000‘000 cellule/mL per ICC, ACC, CBC, NBC, EBC |
 | Tipo di laser e lunghezza d’onda | Diodo laser 488 nm |
 | Fluorescenza | 530/50 nm FL1 715 LP nm FL2 |
-| Diffusione in avanti (FSC) | 488 nm (opzionale in base allo strumento) |
-| Diffusione laterale (SSC) | 488 nm (opzionale in base allo strumento) |
-| Parametri dei risultati | TCC/mL, ICC/mL, LNAC/mL, HNAC/mL, HNAP (%), ACC/mL, HACC/mL, Gate+, in funzione del sistema e della cartuccia utilizzati. |
-| Intervallo di misurazione automatica | Da ogni 30 min a ogni 6 ore |
+| Diffusione in avanti (FSC) | 488 nm, in base allo strumento |
+| Diffusione laterale (SSC) | 488 nm, in base allo strumento |
+| Parametri dei risultati | Parametri dei risultati primari:<br />TCC, ICC, ACC, CBC, NBC, EBC<br />Parametri dei risultati secondari, in funzione della cartuccia e della configurazione:<br />HNAP, HNAC, LNAC, HACC, Gate+ |
+| Intervallo di misurazione automatica | Min.: 30 min per TCC, ICC; 45 min per ACC; 60 min per CBC, NBC, EBC<br />Max.: 6 ore |
 | **CAMPIONAMENTO** | \< |
 | Tipo di campionamento | In linea o manuale |
 | Dispositivo di campionamento in linea | Portata attraverso il dispositivo: 200 – 400 mL/min (0.05 – 0.10 gal/min) Pressione nel dispositivo: max. 0.5 bar (7.3 psi) Volume aspirato: 260 μL Volume misurato: 90 μL Tubo di ingresso • Materiale: PFA (trasparente) • Diametro esterno: 6.35 mm (1/4”) • Diametro interno: 4.35 mm • Lunghezza max.: 2 m (6.5 ft) Tubo di uscita • Materiale: FEP (blu) • Diametro esterno: 6.35 mm (1/4”) • Diametro interno: 4.83 mm • Lunghezza max.: 2 m (6.5 ft) |
 | Dispositivo di campionamento manuale | Contenitore del campione: provetta da 5 mL con tappo a vite Volume del campione: 2 – 5 mL Volume aspirato: 260 μL Volume misurato: 90 μL |
-| Condizioni del campione | Temperatura: 5 °C – 40 °C (41 °F – 104 °F) Torbidità: 0 – 10 NTU, FNU Conducibilità: 0 – 100'000 µS/cm a 20 °C Valore pH: 5 – 12 Cloro: max. 3 mg/L Ferro: max. 200 μg/L Manganese: max. 50 μg/L |
+| Condizioni del campione | Temperatura: 5 °C – 40 °C (41 °F – 104 °F) Torbidità: 0 – 10 NTU, FNU Conducibilità: 0 – 100'000 µS/cm a 20 °C per TCC, ICC, ACC<br />50 – 100'000 µS/cm a 20 °C per CBC, NBC, EBC Valore pH: 5 – 12 per TCC, ICC, ACC<br />6 – 12 per CBC, NBC, EBC Cloro: max. 3 mg/L Ferro: max. 200 μg/L Manganese: max. 50 μg/L |
 | **CARTUCCIA** | \< |
-| Capacità | TCC &amp; ICC: fino a 1000 misurazioni ACC: fino a 700 misurazioni |
-| Validità | TCC &amp; ICC: 9 mesi ACC: 6 mesi |
+| Tipi | TCC, Total Cell Count (conteggio cellulare totale)<br />ICC, Intact Cell Count (conteggio delle cellule intatte)<br />ACC, Active Cell Count (conteggio delle cellule attive)<br />CBC, Coliform Bacteria Count (conteggio dei batteri coliformi)<br />NBC, Enterococcus Bacteria Count (conteggio degli enterococchi)<br />EBC, E. coli Bacteria Count (conteggio di E. coli)<br />Compatibilità in base al modello di BactoSense |
+| Capacità | Fino a 1000 misurazioni per TCC, ICC<br />Fino a 700 misurazioni per ACC, CBC, NBC, EBC |
+| Validità | 9 mesi per TCC, ICC<br />6 mesi per ACC, CBC, NBC, EBC |
 | Temperatura di conservazione | 15 °C – 25 °C (59 °F – 77 °F), idealmente a 15 °C (59 °F) |
 | Umidità di conservazione | 20 % – 60 % RH |
 | **MANUTENZIONE** | \< |

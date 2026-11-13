@@ -50,7 +50,7 @@ L’accesso e la disconnessione possono essere effettuati tramite il pulsante ne
 
 |  | OPERAZIONE |
 | --- | --- |
-| 1. | Assicurarsi che tutti i processi (ad esempio misurazioni o pulizie) siano terminati. Lo stato inattivo dello strumento è indicato sul lato sinistro della barra superiore dell’interfaccia utente di BactoSense. |
+| 1. | Assicurarsi che tutti i processi (ad esempio misurazioni o cicli di pulizia) siano terminati. Lo stato inattivo dello strumento è indicato sul lato sinistro della barra superiore dell’interfaccia utente di BactoSense. |
 | 2. | Premere il pulsante di disconnessione nell’angolo superiore destro dell’interfaccia utente. |
 | 3. | Selezionare Esci / Schermata di blocco. |
 | 4. | Per accedere nuovamente, seguire la procedura descritta nella sezione [Accesso](08-general-operations-and-configurations.md#section-8-2-1). |
@@ -98,7 +98,7 @@ Ogni ruolo utente è protetto da password.
 
 ### 8.2.6 Modifica delle impostazioni delle password {#section-8-2-6}
 
-È possibile configurare varie caratteristiche delle password, come scadenza, lunghezza e altre opzioni.
+È possibile configurare vari requisiti delle password, come la scadenza e la lunghezza.
 
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINE |
 | --- | --- | --- |
@@ -232,7 +232,7 @@ BactoSense dispone di una funzione integrata di riavvio automatico per ripristin
 
 ## 8.4 Importazione / esportazione delle impostazioni {#section-8-4}
 
-Le impostazioni vengono esportate su un’unità USB come descritto nella sezione [Esportazione di impostazioni, diagnostica o tutti i dati su USB](12-data-access-and-export.md#section-12-1-1). Vengono raccolte in un file con data e ora il cui nome termina con ***.bnv**. Per importare le impostazioni in un nuovo strumento o ripristinare una copia di sicurezza, è necessario copiare il file ***.bnv** nella cartella principale dell’unità USB oppure nella cartella in cui è stato esportato. Se su un’unità USB sono presenti più copie delle impostazioni, il sistema utilizza quella più recente.
+Le impostazioni vengono esportate su un’unità USB come descritto nella sezione [Esportazione di impostazioni, diagnostica o tutti i dati su USB](12-data-access-and-export.md#section-12-1-1). Vengono salvate in un file con data e ora e con estensione `.bnv`. Per importare le impostazioni in un nuovo strumento o ripristinare una copia di sicurezza, è necessario copiare il file `*.bnv` nella cartella principale dell’unità USB oppure nella cartella in cui è stato esportato. Se su un’unità USB sono presenti più copie delle impostazioni, il sistema utilizza quella più recente.
 
 |  | OPERAZIONE | INFORMAZIONI AGGIUNTIVE / IMMAGINE |
 | --- | --- | --- |
@@ -540,9 +540,9 @@ Per eseguire un controllo rapido e completamente automatico dello stato dello st
 
 Per valutare la pulizia di BactoSense ed escludere contaminazioni, eseguire la procedura di verifica della pulizia nella sezione [Verifica della pulizia](08-general-operations-and-configurations.md#section-8-11-1).
 
-Per gli ambienti operativi che richiedono test di idoneità del sistema, utilizzare il *kit per il test di idoneità del sistema*  *(SST Kit)* e seguire la procedura nel relativo manuale d’uso.
+Per gli ambienti operativi che richiedono test di idoneità del sistema, utilizzare il [*kit per il test di idoneità del sistema*  *(SST Kit)*](/other-manuals/sst-bactosense-pure) e seguire la procedura nel relativo manuale d’uso.
 
-Per gli altri ambienti, si consiglia di qualificare lo strumento utilizzando il *kit di validazione* nelle seguenti situazioni:
+Per gli altri ambienti, si consiglia di qualificare lo strumento utilizzando il *[kit di validazione](/other-manuals/validation-kit)* nelle seguenti situazioni:
 
 - Dopo la spedizione dello strumento o altri trasporti su lunghe distanze che lo espongono a vibrazioni o urti.
 - Dopo aver conservato lo strumento per più di un mese.
@@ -554,7 +554,7 @@ Per gli altri ambienti, si consiglia di qualificare lo strumento utilizzando il 
 | --- | --- |
 | 1. | Assicurarsi che il dispositivo di campionamento manuale sia saldamente installato come descritto nella sezione [Installazione del dispositivo di campionamento manuale](05-installation.md#section-5-4). |
 | 2. | Pulire il dispositivo di campionamento con due ripetizioni: se è disponibile una Washstation, seguire la procedura della sezione [Pulire il dispositivo di campionamento manuale con Washstation](15-maintenance.md#section-15-2-2); altrimenti quella della sezione [Pulire il dispositivo di campionamento manuale con pulizia di base](15-maintenance.md#section-15-2-3). |
-| 3. | Preparare il campione bianco in una provetta da 5 mL con tappo a vite. Sono disponibili due opzioni: A) utilizzare acqua priva di cellule, ad esempio un’aliquota di soluzione sterile del kit di validazione. Se si utilizza questa aliquota, rimuoverne il tappo e inserirla in una provetta vuota da 5 mL con tappo a vite, come descritto nel manuale del kit. B) utilizzare acqua minerale naturale non gassata e filtrarla due volte con un filtro a membrana avente pori di 0.22 µm o inferiori. |
+| 3. | Preparare il campione bianco in una provetta da 5 mL con tappo a vite. Sono disponibili due opzioni: A) utilizzare acqua priva di cellule, ad esempio un’aliquota di soluzione sterile del [kit di validazione](/other-manuals/validation-kit). Se si utilizza questa aliquota, rimuoverne il tappo e inserirla in una provetta vuota da 5 mL con tappo a vite, come descritto nel manuale del kit. B) utilizzare acqua minerale naturale non gassata e filtrarla due volte con un filtro a membrana avente pori di 0.22 µm o inferiori. |
 | 4. | Accedere alla schermata Home dell’interfaccia utente di BactoSense. |
 | 5. | Nella schermata Home, premere Modalità e selezionare Modalità manuale. Premere Indietro, quindi Misura per aprire l’assistente di misurazione. |
 | 6. | Selezionare Prepara dall’elenco dei protocolli disponibili. |
@@ -570,7 +570,7 @@ Per gli altri ambienti, si consiglia di qualificare lo strumento utilizzando il 
 | 16. | Premere Avvio e attendere il completamento delle due misurazioni. |
 | 17. | Al termine, premere Avanti per esaminare i risultati. |
 | 18. | Esaminare i risultati e confrontarli con i valori di riferimento seguenti. BactoSense è pulito se sono soddisfatti i seguenti criteri: • Per cartucce TCC: TCC [/mL] &lt; 300 • Per cartucce ICC: ICC [/mL] &lt; 100 |
-| 19. | Se le concentrazioni cellulari sono superiori ai limiti specificati, applicare la seguente procedura: • Ripetere la procedura con un campione bianco appena preparato. • Ripetere la procedura dopo una decontaminazione con il kit di pulizia (vedere sezione [Materiali di consumo](18-supply-scope-accessories-and-consumables.md#section-18-3)). • Se il test continua a fallire, contattare l’assistenza bNovate o il rappresentante locale. |
+| 19. | Se le concentrazioni cellulari sono superiori ai limiti specificati, applicare la seguente procedura: • Ripetere la procedura con un campione bianco appena preparato. • Ripetere la procedura dopo una decontaminazione con il [kit di pulizia](/other-manuals/cleaning-kit) (vedere sezione [Materiali di consumo](18-supply-scope-accessories-and-consumables.md#section-18-3)). • Se il test continua a fallire, contattare l’assistenza bNovate o il rappresentante locale. |
 | 20. | Al termine, collegare al dispositivo di campionamento manuale una provetta pulita e vuota da 5 mL con tappo a vite o la Washstation. |
 
 ## 8.12 Modalità demo {#section-8-12}

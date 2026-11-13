@@ -38,7 +38,7 @@ The behaviour of the light indicators is summarized in Table 2-1. Numbers refer 
 
 ## 2.3 Working principle {#section-2-3}
 
-The scheme below shows the basic operation of the BactoSwitch (front cover removed for clarity). Water from each input line (1) flows through a check valve (2, not visible), through a pressure regulator (3), then through a needle flow valve (4) and finally through a solenoid valve (5). The open water lines (each of which can be open or closed) are then merged and flow out of the BactoSwitch to the online sampling device of the BactoSense (6). After flowing through the sampling device, water flows back to the BactoSwitch, through the flowmeter (7), and finally to the drain (8).
+The scheme below shows the basic operation of the BactoSwitch (front cover removed for clarity). Water from each input line (1) flows through a check valve (2, not visible), through a pressure regulator (3), then through a needle flow valve (4) and finally through a solenoid valve (5). Each input line can be open or closed. Water from the open lines combines and flows out of the BactoSwitch to the online sampling device of the BactoSense (6). After flowing through the sampling device, water flows back to the BactoSwitch, through the flowmeter (7), and finally to the drain (8).
 
 ![BactoSwitch working principle with the numbered water path](/img/bactoswitch/working-principle.png "width=700")
 

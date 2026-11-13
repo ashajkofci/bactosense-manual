@@ -1,17 +1,18 @@
 import React from 'react';
 import { translate } from '@docusaurus/Translate';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import { useActivePlugin } from '@docusaurus/plugin-content-docs/client';
+import { useActivePlugin, useActiveDocContext } from '@docusaurus/plugin-content-docs/client';
+import manualPdfDownload from '../../utils/manual-pdf.cjs';
 
 // Download the PDF of the manual being read, in the current language.
 export default function PdfDownload({ mobile = false }) {
   const { i18n, siteConfig } = useDocusaurusContext();
   const activePlugin = useActivePlugin({ failfast: false });
+  const { activeDoc } = useActiveDocContext(activePlugin?.pluginId ?? siteConfig.customFields.manuals[0].docsPluginId);
   const manual = siteConfig.customFields.manuals.find(item => item.docsPluginId === activePlugin?.pluginId);
-  const filename = manual?.pdfFiles[i18n.currentLocale];
-  const href = useBaseUrl(`pdf/${filename}`);
-  if (!filename) return null;
+  const download = manualPdfDownload(manual, i18n.currentLocale, siteConfig.baseUrl, i18n.defaultLocale, activeDoc?.id);
+  if (!download) return null;
+  const { filename, href } = download;
   return (
     <a
       className={`${mobile ? 'menu__link' : 'navbar__item navbar__link'} manual-pdf-download`}

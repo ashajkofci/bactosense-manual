@@ -22,10 +22,10 @@ Zusätzliche zugehörige Produktdokumentation finden Sie in der nachstehenden Ta
 
 |  |  |  |
 | --- | --- | --- |
-| 40101 | Schnellstartanleitung | Grundlegende Informationen für den Betrieb des BactoSense. |
-| 40108 | Bedienungsanleitung für das Reinigungskit | Verwendung des Reagenzienkits zur Dekontaminierung des BactoSense. |
-| UM_0003 | Bedienungsanleitung für das Validierungskit | Verwendung des Reagenzienkits zur Überprüfung der ordnungsgemäßen Funktion des BactoSense. |
-| UM_0004 | Bedienungsanleitung für das SST Kit BactoSense PURE | Verwendung des Reagenzienkits zur Durchführung des Systemeignungstests. |
+| 40101 | [Schnellstartanleitung](/other-manuals/quick-guide) | Grundlegende Informationen für den Betrieb des BactoSense. |
+| 40108 | [Bedienungsanleitung für das Reinigungskit](/other-manuals/cleaning-kit) | Verwendung des Reagenzienkits zur Dekontaminierung des BactoSense. |
+| UM_0003 | [Bedienungsanleitung für das Validierungskit](/other-manuals/validation-kit) | Verwendung des Reagenzienkits zur Überprüfung der ordnungsgemäßen Funktion des BactoSense. |
+| UM_0004 | [Bedienungsanleitung für das SST Kit BactoSense PURE](/other-manuals/sst-bactosense-pure) | Verwendung des Reagenzienkits zur Durchführung des Systemeignungstests. |
 | 50115 | CE-Konformitätserklärung | Einhaltung der zugrunde liegenden Richtlinien und Normen. |
 | 50116 | UKCA-Konformitätserklärung | Einhaltung der zugrunde liegenden Richtlinien und Normen. |
 | 50117 | CB-Prüfbericht | UL/CSA/FCC-Konformitätsbericht, auch unter CH-12116 auf https://certificates.iecee.org |

@@ -39,7 +39,7 @@ Avant d’intervenir sur l’instrument, assurez-vous d’avoir lu attentivement
 
 La maintenance préventive du BactoSense est une intervention programmée pour remplacer les pièces d’usure, mettre à jour le logiciel et inspecter et valider l’instrument. La maintenance préventive est importante pour prévenir les défaillances et optimiser les performances et la fiabilité. Elle ne peut être réalisée que par des professionnels en entretien et en réparation spécifiquement formés par bNovate.
 
-Une maintenance préventive est due soit après la consommation de 3 cartouches, soit après 1 an, selon la première éventualité.
+Une maintenance préventive est due après l’utilisation de 3 cartouches ou après 1 an, selon la première éventualité.
 
 Contactez l’assistance bNovate ou votre partenaire local en entretien et en réparation pour voir les options disponibles. Vous trouverez les coordonnées dans la section [Contacter le service client](19-contact.md#section-19-1).
 
@@ -80,7 +80,7 @@ La maintenance par l’utilisateur désigne les activités de maintenance simple
 | QUAND | QUOI | PROCÉDURE |
 | Cartouche expirée ou vide | Remplacer la cartouche | Voir la procédure de remplacement de la cartouche à la section [Remplacement des cartouches](../general-operations-and-configurations/#section-8-9-4). Voir les instructions d’expédition de la cartouche à la section [Retour d’une cartouche pour recharge](../storage-transport-and-disposal/#section-17-3-2). |
 | Le dispositif d’échantillonnage manuel est nouvellement installé. L’instrument est resté ou restera inutilisé ou éteint pendant plus de 3 jours. | Nettoyage avec la Washstation ou nettoyage de base | Si la Washstation est disponible, voir la section [Nettoyage du dispositif d’échantillonnage manuel avec la Washstation](../maintenance/#section-15-2-2). Sinon, voir la section [Nettoyage du dispositif d’échantillonnage manuel avec un nettoyage de base](../maintenance/#section-15-2-3). |
-| L’instrument présente des signes de contamination | Décontamination | Nécessite un kit de nettoyage, voir la liste des consommables dans la section [Consommables](../supply-scope-accessories-and-consumables/#section-18-3). Voir le manuel d’utilisation du kit de nettoyage. |
+| L’instrument présente des signes de contamination | Décontamination | Nécessite un [kit de nettoyage](/other-manuals/cleaning-kit), voir la liste des consommables dans la section [Consommables](../supply-scope-accessories-and-consumables/#section-18-3). Voir le manuel d’utilisation du kit de nettoyage. |
 | Le dispositif d'échantillonnage en ligne est contaminé. | Nettoyage | Voir la procédure de [nettoyage du dispositif d’échantillonnage en ligne](../maintenance/#section-15-2-4). |
 | Le tuyau du dispositif d’échantillonnage en ligne est endommagé ou sale | Remplacer le tuyau | Voir le processus de remplacement à la section [Remplacement des tuyaux du dispositif d’échantillonnage en ligne](../maintenance/#section-15-2-5). |
 | Concentrations cellulaires inférieures aux attentes ou absence de cellules mesurées | Le filtre d’entrée du dispositif d’échantillonnage est obstrué. Remplacer le filtre. | Voir la section [Remplacement du filtre du dispositif d’échantillonnage](../maintenance/#section-15-2-7). Voir la liste des consommables à la section [Consommables](../supply-scope-accessories-and-consumables/#section-18-3). |
@@ -110,7 +110,7 @@ Ce protocole décrit comment nettoyer le dispositif d’échantillonnage manuel 
 | 7. | Montez la Washstation en la vissant sur le dispositif d’échantillonnage manuel, comme vous le feriez avec un tube à échantillon. Assurez-vous de la visser complètement. |  |
 | 8. | Appuyez sur le bouton Démarrer et attendez 15 minutes pour que le protocole se termine. |  |
 | 9. | Si l’instrument doit rester inactif ou être mis hors service, laissez la Washstation attachée au dispositif d’échantillonnage manuel. Si vous souhaitez poursuivre les mesures, retirez la Washstation et fermez-la avec le bouchon d’un tube à bouchon fileté de 5 mL. |  |
-| 10. | Si la contamination persiste, répétez la procédure avec plus de répétitions. Si le problème persiste, utilisez le Kit de nettoyage pour décontaminer l’instrument (voir section [Consommables](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
+| 10. | Si la contamination persiste, répétez la procédure avec plus de répétitions. Si le problème persiste, utilisez le [Kit de nettoyage](/other-manuals/cleaning-kit) pour décontaminer l’instrument (voir section [Consommables](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
 
 ### 15.2.3 Nettoyage du dispositif d’échantillonnage manuel avec un nettoyage de base {#section-15-2-3}
 
@@ -133,11 +133,11 @@ Ce protocole décrit comment nettoyer le dispositif d’échantillonnage manuel 
 | 13. | Une fois le protocole terminé, retirez le tube à bouchon fileté de 5 mL et jetez-le. |  |
 | 14. | Appuyez sur l’icône d’accueil en haut à gauche de l’interface pour revenir à l’écran d’accueil. |  |
 | 15. | Pour poursuivre les mesures, effectuez un Prime avant la première mesure. Les instructions figurent à la section [Réalisation d’un amorçage](10-measurements.md#section-10-9-3). Si l’instrument doit rester inactif ou être éteint, fixez un tube neuf au dispositif d’échantillonnage manuel. |  |
-| 16. | Si la contamination persiste, répétez d’abord la procédure avec davantage de répétitions. Si elle persiste encore, utilisez le kit de nettoyage pour décontaminer l’instrument (voir les consommables à la section [Consommables](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
+| 16. | Si la contamination persiste, répétez d’abord la procédure avec davantage de répétitions. Si elle persiste encore, utilisez le [kit de nettoyage](/other-manuals/cleaning-kit) pour décontaminer l’instrument (voir les consommables à la section [Consommables](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
 
 ### 15.2.4 Nettoyer le dispositif d'échantillonnage en ligne {#section-15-2-4}
 
-La procédure suivante permet d'éliminer les contaminations biologiques du dispositif d'échantillonnage en ligne. En cas de contaminations biologiques persistantes ou de suspicion de contaminations non biologiques, remplacez les tubes du dispositif d'échantillonnage en ligne comme décrit à la section [Remplacement des tuyaux du dispositif d’échantillonnage en ligne](15-maintenance.md#section-15-2-5) et contactez support@bnovate.com pour obtenir de l'aide.
+La procédure suivante aide à éliminer les contaminations biologiques du dispositif d’échantillonnage en ligne. En cas de contaminations biologiques persistantes ou de suspicion de contaminations non biologiques, remplacez les tubes du dispositif d'échantillonnage en ligne comme décrit à la section [Remplacement des tuyaux du dispositif d’échantillonnage en ligne](15-maintenance.md#section-15-2-5) et contactez support@bnovate.com pour obtenir de l'aide.
 
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
@@ -229,7 +229,7 @@ Assurez-vous de récupérer toutes les données des autres utilisateurs et vos p
 
 ## 15.3 Mise à jour du système {#section-15-3}
 
-Les mises à jour du logiciel peuvent être installées à partir d'une clé USB ou d'un référentiel en ligne, si une connexion internet est disponible (par exemple via BactoLink). Les mises à jour logicielles doivent être lancées manuellement à partir de l'interface utilisateur. Pour les mises à jour à partir du référentiel en ligne, suivez la procédure ci-dessous. Pour les mises à jour à l'aide d'une clé USB, voir [Préparer une clé USB de mise à jour](#section-15-3-1) et [Installer une mise à jour depuis une clé USB](#section-15-3-2).
+Les mises à jour du logiciel peuvent être installées à partir d'une clé USB ou d'un référentiel en ligne, si une connexion internet est disponible (par exemple via [BactoLink](/other-manuals/bactolink)). Les mises à jour logicielles doivent être lancées manuellement à partir de l'interface utilisateur. Pour les mises à jour à partir du référentiel en ligne, suivez la procédure ci-dessous. Pour les mises à jour à l'aide d'une clé USB, voir [Préparer une clé USB de mise à jour](#section-15-3-1) et [Installer une mise à jour depuis une clé USB](#section-15-3-2).
 
 |  | OPÉRATION |
 | --- | --- |

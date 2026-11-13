@@ -50,7 +50,7 @@ La connexion et la déconnexion peuvent être effectuées à l’aide du bouton 
 
 |  | OPÉRATION |
 | --- | --- |
-| 1. | Assurez-vous que tous les processus (mesures, nettoyages, etc.) sont terminés. L’état d’inactivité de l’instrument est indiqué sur le côté gauche de la barre supérieure de l’interface utilisateur BactoSense. |
+| 1. | Assurez-vous que tous les processus (mesures, cycles de nettoyage, etc.) sont terminés. L’état d’inactivité de l’instrument est indiqué sur le côté gauche de la barre supérieure de l’interface utilisateur BactoSense. |
 | 2. | Appuyez sur le bouton de déconnexion dans le coin supérieur droit de l’interface utilisateur. |
 | 3. | Sélectionnez Déconnexion / Verrouiller écran. |
 | 4. | Pour vous reconnecter, suivez la procédure décrite dans la section [Connexion](08-general-operations-and-configurations.md#section-8-2-1). |
@@ -98,7 +98,7 @@ Chaque rôle d’utilisateur est protégé par mot de passe.
 
 ### 8.2.6 Modification des paramètres du mot de passe {#section-8-2-6}
 
-Plusieurs caractéristiques des mots de passe, telles que l'expiration, la longueur, etc. peuvent être configurées.
+Plusieurs exigences relatives aux mots de passe, telles que leur expiration et leur longueur, peuvent être configurées.
 
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
@@ -232,7 +232,7 @@ Vous pouvez activer des notifications sonores pour signaler la fin d’une mesur
 
 ## 8.4 Importation / exportation des paramètres {#section-8-4}
 
-Les paramètres sont exportés sur une clé USB comme indiqué à la section [Exportation des paramètres, des diagnostics ou de toutes les données vers un périphérique USB](12-data-access-and-export.md#section-12-1-1). Ils sont regroupés dans un fichier horodaté se terminant par ***.bnv**. Pour importer les paramètres dans un nouvel instrument ou les restaurer depuis une sauvegarde, copiez le fichier ***.bnv** à la racine de la clé USB ou dans le répertoire dans lequel il a été exporté. Si la clé contient plusieurs copies des paramètres, le système utilise la plus récente.
+Les paramètres sont exportés sur une clé USB comme indiqué à la section [Exportation des paramètres, des diagnostics ou de toutes les données vers un périphérique USB](12-data-access-and-export.md#section-12-1-1). Ils sont enregistrés dans un fichier horodaté portant l’extension `.bnv`. Pour importer les paramètres dans un nouvel instrument ou les restaurer depuis une sauvegarde, copiez le fichier `*.bnv` à la racine de la clé USB ou dans le répertoire dans lequel il a été exporté. Si la clé contient plusieurs copies des paramètres, le système utilise la plus récente.
 
 |  | OPÉRATION | INFORMATIONS SUPPLÉMENTAIRES/IMAGE |
 | --- | --- | --- |
@@ -540,9 +540,9 @@ Pour effectuer une vérification rapide entièrement automatisée de l’état d
 
 Pour évaluer la propreté du BactoSense et exclure une contamination, effectuez la procédure de vérification de la propreté de la section [Vérification de la propreté](08-general-operations-and-configurations.md#section-8-11-1).
 
-Pour les environnements nécessitant un test d’adéquation du système, utilisez le *kit de test d’adéquation*  *du système (kit SST)* et suivez la procédure de son manuel d’utilisation.
+Pour les environnements nécessitant un test d’adéquation du système, utilisez le [*kit de test d’adéquation*  *du système (kit SST)*](/other-manuals/sst-bactosense-pure) et suivez la procédure de son manuel d’utilisation.
 
-Dans les autres environnements, une qualification de l’instrument à l’aide du *kit de validation* est recommandée dans les situations suivantes :
+Dans les autres environnements, une qualification de l’instrument à l’aide du *[kit de validation](/other-manuals/validation-kit)* est recommandée dans les situations suivantes :
 
 - Après l’expédition de l’instrument ou un autre transport sur une longue distance ayant exposé l’instrument à des vibrations ou à des chocs.
 - Après avoir stocké l'instrument pendant plus d'un mois.
@@ -554,7 +554,7 @@ Dans les autres environnements, une qualification de l’instrument à l’aide 
 | --- | --- |
 | 1. | Assurez-vous que le dispositif d’échantillonnage manuel est bien installé comme décrit dans la section [Installation du dispositif d’échantillonnage manuel](05-installation.md#section-5-4). |
 | 2. | Effectuez un nettoyage du dispositif d’échantillonnage avec deux répétitions : Si une Washstation est disponible, suivez la procédure de la section [Nettoyage du dispositif d’échantillonnage manuel avec la Washstation](15-maintenance.md#section-15-2-2), sinon suivez la procédure de la section [Nettoyage du dispositif d’échantillonnage manuel avec un nettoyage de base](15-maintenance.md#section-15-2-3). |
-| 3. | Préparez l’échantillon blanc dans un tube à bouchon fileté de 5 mL. Deux options sont possibles : A) Utilisez de l’eau sans cellules, par exemple une aliquote de solution stérile provenant du kit de validation. Si vous utilisez l’aliquote de solution stérile du kit de validation, retirez le capuchon de l’aliquote et placez l’aliquote dans un tube à bouchon fileté vide de 5 mL, comme décrit dans le manuel d’utilisation du kit de validation. B) Prenez de l’eau minérale plate et filtrez-la deux fois à l’aide d’un filtre à membrane avec une taille de pore de 0,22 µm ou moins. |
+| 3. | Préparez l’échantillon blanc dans un tube à bouchon fileté de 5 mL. Deux options sont possibles : A) Utilisez de l’eau sans cellules, par exemple une aliquote de solution stérile provenant du [kit de validation](/other-manuals/validation-kit). Si vous utilisez l’aliquote de solution stérile du kit de validation, retirez le capuchon de l’aliquote et placez l’aliquote dans un tube à bouchon fileté vide de 5 mL, comme décrit dans le manuel d’utilisation du kit de validation. B) Prenez de l’eau minérale plate et filtrez-la deux fois à l’aide d’un filtre à membrane avec une taille de pore de 0,22 µm ou moins. |
 | 4. | Accédez à l’écran d’accueil de l’interface utilisateur du BactoSense. |
 | 5. | Sur l’écran d’accueil, appuyez sur Mode et sélectionnez Mode manuel. Appuyez sur Retour, puis sur Mesurer pour ouvrir l’assistant de mesure. |
 | 6. | Sélectionnez Amorçage dans la liste des protocoles disponibles. |
@@ -570,7 +570,7 @@ Dans les autres environnements, une qualification de l’instrument à l’aide 
 | 16. | Appuyez sur le bouton Démarrer et attendez que les deux mesures soient terminées. |
 | 17. | Une fois terminé, appuyez sur le bouton Suivant pour consulter les résultats. |
 | 18. | Examinez les résultats et comparez-les aux valeurs de référence indiquées ci-dessous. Le BactoSense est propre si les critères suivants sont remplis : • Pour les cartouches TCC: TCC [/mL] &lt; 300 • Pour les cartouches ICC: ICC [/mL] &lt; 100 |
-| 19. | Si les concentrations en cellules sont supérieures aux limites spécifiées, appliquez la procédure suivante : • Répétez la procédure avec un échantillon vierge fraîchement préparé. • Répétez la procédure après une décontamination à l’aide du kit de nettoyage (voir section [Consommables](18-supply-scope-accessories-and-consumables.md#section-18-3)). • Si le test échoue toujours, contactez le service d’assistance bNovate ou votre représentant local. |
+| 19. | Si les concentrations en cellules sont supérieures aux limites spécifiées, appliquez la procédure suivante : • Répétez la procédure avec un échantillon vierge fraîchement préparé. • Répétez la procédure après une décontamination à l’aide du [kit de nettoyage](/other-manuals/cleaning-kit) (voir section [Consommables](18-supply-scope-accessories-and-consumables.md#section-18-3)). • Si le test échoue toujours, contactez le service d’assistance bNovate ou votre représentant local. |
 | 20. | Une fois terminé, fixez un tube à bouchon fileté propre et vide de 5 mL ou la Washstation au dispositif d’échantillonnage manuel. |
 
 ## 8.12 Mode démo {#section-8-12}

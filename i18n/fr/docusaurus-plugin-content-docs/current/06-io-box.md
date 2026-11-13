@@ -57,8 +57,8 @@ Notes complémentaires
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| ① | Position des sorties numériques Bornes 1 – 8<br />Exigences en matière de<br />câble : • AWG<br />12 – 22 •<br />Section transversale : 0,25 – 2,5 mm2 | ② | Position des sorties analogiques Bornes 9 – 12<br />Exigences en matière de<br />câble : • AWG<br />12 – 22<br />• Section transversale : 0,25 – 2,5 mm2 |
-| ③ | Position des entrées numériques Bornes 14 –<br />18 Exigences en matière de<br />câble : • AWG<br />12 – 22 •<br />Section transversale : 0,25 – 2,5 mm2 |  | \< |
+| ① | Position des sorties numériques<br />Bornes 1 – 8<br />Exigences relatives au câble :<br />• AWG 12 – 22<br />• Section : 0,25 – 2,5 mm<sup>2</sup> | ② | Position des sorties analogiques<br />Bornes 9 – 12<br />Exigences relatives au câble :<br />• AWG 12 – 22<br />• Section : 0,25 – 2,5 mm<sup>2</sup> |
+| ③ | Position des entrées numériques<br />Bornes 14 – 18<br />Exigences relatives au câble :<br />• AWG 12 – 22<br />• Section : 0,25 – 2,5 mm<sup>2</sup> |  | \< |
 
 ### 6.1.6 Tableau de référence de la boîte d’E/S {#section-6-1-6}
 

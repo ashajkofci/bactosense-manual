@@ -57,8 +57,8 @@ Zusätzliche Informationen
 
 |  |  |  |  |
 | --- | --- | --- | --- |
-| ① | Position der digitalen Ausgänge. Klemmen 1 – 8. Kabelanforderungen: • AWG 12 – 22 • Querschnitt: 0.25 – 2.5 mm2 | ② | Position der analogen Ausgänge. Klemmen 9 – 12. Kabelanforderungen: • AWG 12 – 22 • Querschnitt: 0.25 – 2.5 mm2 |
-| ③ | Position der digitalen Eingänge. Klemmen 14 – 18. Kabelanforderungen: • AWG 12 – 22 • Querschnitt: 0.25 – 2.5 mm2 |  | \< |
+| ① | Position der digitalen Ausgänge. Klemmen 1 – 8. Kabelanforderungen: • AWG 12 – 22 • Querschnitt: 0.25 – 2.5 mm<sup>2</sup> | ② | Position der analogen Ausgänge. Klemmen 9 – 12. Kabelanforderungen: • AWG 12 – 22 • Querschnitt: 0.25 – 2.5 mm<sup>2</sup> |
+| ③ | Position der digitalen Eingänge. Klemmen 14 – 18. Kabelanforderungen: • AWG 12 – 22 • Querschnitt: 0.25 – 2.5 mm<sup>2</sup> |  | \< |
 
 ### 6.1.6 Referenztabelle der IO-Box {#section-6-1-6}
 
@@ -104,7 +104,7 @@ Lesen Sie die technischen Spezifikationen unter [Digitale Eingänge](06-io-box.m
 
 ## 6.3 Anschluss der Ausgänge ohne IO-Box {#section-6-3}
 
-Der BactoSense stellt die Ausgänge über einen 12-adrigen, weiblichen M16-Anschluss bereit. Es wird jedoch empfohlen, eine IO-Box zu verwenden. Die Pinbelegung des Steckers ist unten angegeben.
+Der BactoSense stellt die Ausgänge über eine 12-polige M16-Buchse bereit. Es wird jedoch empfohlen, eine IO-Box zu verwenden. Die Pinbelegung des Steckers ist unten angegeben.
 
 ![Abbildung aus dem Originalhandbuch, gedruckte Seite 36](/img/manual/asset-223bcd55d2e3.png "width=160")
 
@@ -121,7 +121,7 @@ Der BactoSense stellt die Ausgänge über einen 12-adrigen, weiblichen M16-Ansch
 
 ## 6.4 Anschluss der Eingänge ohne IO-Box {#section-6-4}
 
-Der BactoSense stellt die Eingänge über einen 5-adrigen, weiblichen M16-Anschluss bereit. Es wird empfohlen, eine IO-Box zu verwenden. Die Pinbelegung des Steckers ist unten angegeben.
+Der BactoSense stellt die Eingänge über eine 5-polige M16-Buchse bereit. Es wird empfohlen, eine IO-Box zu verwenden. Die Pinbelegung des Steckers ist unten angegeben.
 
 ![Abbildung aus dem Originalhandbuch, gedruckte Seite 37](/img/manual/asset-b6ab0aef5737.png "width=120")
 

@@ -84,7 +84,7 @@ Virtual Network Computing (VNC) est un système de partage de bureau graphique p
 
 :::caution[Limitez l’accès VNC]
 
-VNC est un protocole non sécurisé et son utilisation est déconseillée en dehors d’un réseau local ou avec une connexion VPN.
+VNC est un protocole non sécurisé. Utilisez-le uniquement sur un réseau local de confiance ou via un VPN ; ne l’exposez pas directement à Internet.
 
 :::
 

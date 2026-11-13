@@ -62,7 +62,7 @@ System services with HTTP/HTTPS/Modbus TCP/VNC/FTP toggles and their communicati
 
 Required context: Complete communication-services overview; native Qt capture. Can share capture with Fig12-1 if both references retain matching features.
 
-References: en `docs/05-installation.md:229` (printed p30); de `i18n/de/docusaurus-plugin-content-docs/current/05-installation.md:229` (printed p30); es `i18n/es/docusaurus-plugin-content-docs/current/05-installation.md:229` (printed p30); fr `i18n/fr/docusaurus-plugin-content-docs/current/05-installation.md:229` (printed p30).
+References: en `manuals/bactosense/05-installation.md:229` (printed p30); de `i18n/de/docusaurus-plugin-content-docs/current/05-installation.md:229` (printed p30); es `i18n/es/docusaurus-plugin-content-docs/current/05-installation.md:229` (printed p30); fr `i18n/fr/docusaurus-plugin-content-docs/current/05-installation.md:229` (printed p30).
 
 ### gui-source-009: digital-inputs
 
@@ -74,7 +74,7 @@ Callouts: 1 — Enabled/disabled toggle; 2 — Sample name, Protocol and Gates f
 
 Required context: Admin role; configurable input state visible; all callouts must land on their current controls.
 
-References: en `docs/06-io-box.md:136` (printed p39); de `i18n/de/docusaurus-plugin-content-docs/current/06-io-box.md:136` (printed p39); es `i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md:136` (printed p39); fr `i18n/fr/docusaurus-plugin-content-docs/current/06-io-box.md:136` (printed p39).
+References: en `manuals/bactosense/06-io-box.md:136` (printed p39); de `i18n/de/docusaurus-plugin-content-docs/current/06-io-box.md:136` (printed p39); es `i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md:136` (printed p39); fr `i18n/fr/docusaurus-plugin-content-docs/current/06-io-box.md:136` (printed p39).
 
 ### gui-source-010: analog-outputs
 
@@ -86,7 +86,7 @@ Callouts: 1 — Output-port selection; 2 — Result-source selector; 3 — 4 mA 
 
 Required context: Admin role; all 5 original legend meanings remain valid; ports and units must remain legible.
 
-References: en `docs/06-io-box.md:210` (printed p43); de `i18n/de/docusaurus-plugin-content-docs/current/06-io-box.md:210` (printed p43); es `i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md:210` (printed p43); fr `i18n/fr/docusaurus-plugin-content-docs/current/06-io-box.md:210` (printed p43).
+References: en `manuals/bactosense/06-io-box.md:210` (printed p43); de `i18n/de/docusaurus-plugin-content-docs/current/06-io-box.md:210` (printed p43); es `i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md:210` (printed p43); fr `i18n/fr/docusaurus-plugin-content-docs/current/06-io-box.md:210` (printed p43).
 
 ### gui-source-011: test-outputs
 
@@ -98,7 +98,7 @@ Callouts: 1 — Digital-output values; 2 — Digital-output Test button; 3 — T
 
 Required context: Use demo backend only; every callout must identify the right current Test control; do not trigger physical outputs.
 
-References: en `docs/06-io-box.md:236` (printed p45); de `i18n/de/docusaurus-plugin-content-docs/current/06-io-box.md:236` (printed p45); es `i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md:236` (printed p45); fr `i18n/fr/docusaurus-plugin-content-docs/current/06-io-box.md:236` (printed p45).
+References: en `manuals/bactosense/06-io-box.md:236` (printed p45); de `i18n/de/docusaurus-plugin-content-docs/current/06-io-box.md:236` (printed p45); es `i18n/es/docusaurus-plugin-content-docs/current/06-io-box.md:236` (printed p45); fr `i18n/fr/docusaurus-plugin-content-docs/current/06-io-box.md:236` (printed p45).
 
 ### gui-source-013: import-settings
 
@@ -108,7 +108,7 @@ Import-settings options with measurement/language/network categories and Cancel/
 
 Required context: Same categories described in table; do not actually import/reboot.
 
-References: en `docs/08-general-operations-and-configurations.md:154` (printed p66); de `i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:154` (printed p66); es `i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:154` (printed p66); fr `i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:154` (printed p66).
+References: en `manuals/bactosense/08-general-operations-and-configurations.md:154` (printed p66); de `i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:154` (printed p66); es `i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:154` (printed p66); fr `i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:154` (printed p66).
 
 ### gui-source-017: special-import-export
 
@@ -118,7 +118,7 @@ Special import/export screen with a demo USB storage entry selected, folder-name
 
 Required context: Show available storage; do not show an empty USB list as a successful settings-import example.
 
-References: en `docs/08-general-operations-and-configurations.md:154` (printed p66); de `i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:154` (printed p66); es `i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:154` (printed p66); fr `i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:154` (printed p66).
+References: en `manuals/bactosense/08-general-operations-and-configurations.md:154` (printed p66); de `i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:154` (printed p66); es `i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:154` (printed p66); fr `i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:154` (printed p66).
 
 ### gui-source-018: alarms
 
@@ -130,7 +130,7 @@ Callouts: 1 — Alarm selection and enabled state; 2 — Selected alarm name; 3 
 
 Required context: Advanced/Admin role; exactly six source legends; use a meaningful demo threshold and consistent source units.
 
-References: en `docs/08-general-operations-and-configurations.md:169` (printed p67); de `i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:169` (printed p67); es `i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:169` (printed p67); fr `i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:169` (printed p67).
+References: en `manuals/bactosense/08-general-operations-and-configurations.md:169` (printed p67); de `i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:169` (printed p67); es `i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:169` (printed p67); fr `i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:169` (printed p67).
 
 ### gui-source-019: alarm-source
 
@@ -140,7 +140,7 @@ Open source-selection dialog and select Cartridge Remaining.
 
 Required context: Caption explicitly describes cartridge filling level, so Cartridge Remaining must be the selected source; show Confirm/Cancel if they remain current.
 
-References: en `docs/08-general-operations-and-configurations.md:180` (printed p68); de `i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:180` (printed p68); es `i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:180` (printed p68); fr `i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:180` (printed p68).
+References: en `manuals/bactosense/08-general-operations-and-configurations.md:180` (printed p68); de `i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:180` (printed p68); es `i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:180` (printed p68); fr `i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:180` (printed p68).
 
 ### gui-source-022: network
 
@@ -152,7 +152,7 @@ Callouts: 1 — DHCP checkbox; 2 — Static IP configuration fields.
 
 Required context: Both labels are referenced in adjacent A/B steps; static fields may be disabled under DHCP but visible; use fictitious/local demo addresses.
 
-References: en `docs/08-general-operations-and-configurations.md:199` (printed p69); de `i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:199` (printed p69); es `i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:199` (printed p69); fr `i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:199` (printed p69).
+References: en `manuals/bactosense/08-general-operations-and-configurations.md:199` (printed p69); de `i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:199` (printed p69); es `i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:199` (printed p69); fr `i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:199` (printed p69).
 
 ### gui-source-023: date-time
 
@@ -162,7 +162,7 @@ Date/time calendar and Time synchronization settings control.
 
 Required context: Step 4 needs the exact button that opens synchronization settings; calendar date can be current demo date.
 
-References: en `docs/08-general-operations-and-configurations.md:208` (printed p70); de `i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:208` (printed p70); es `i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:208` (printed p70); fr `i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:208` (printed p70).
+References: en `manuals/bactosense/08-general-operations-and-configurations.md:208` (printed p70); de `i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:208` (printed p70); es `i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:208` (printed p70); fr `i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:208` (printed p70).
 
 ### gui-source-025: time-sync
 
@@ -172,7 +172,7 @@ NTP server source selected and two NTP server fields visible.
 
 Required context: Step 6 says Update NTP servers; show NTP fields and source selector, not only date/time overview.
 
-References: en `docs/08-general-operations-and-configurations.md:208` (printed p70); de `i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:208` (printed p70); es `i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:208` (printed p70); fr `i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:208` (printed p70).
+References: en `manuals/bactosense/08-general-operations-and-configurations.md:208` (printed p70); de `i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:208` (printed p70); es `i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:208` (printed p70); fr `i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:208` (printed p70).
 
 ### gui-source-026: home-structure
 
@@ -184,7 +184,7 @@ Callouts: 1 — Home or return button; 2 — Operating mode and instrument/proce
 
 Required context: COMPATIBILITY CHANGE: current HomeScreen is latest-result dashboard; Settings tile menu is now separate. Auto/manual choice lives behind Mode. Update adjacent legend/procedure text or use clearly labelled companion panels; do not point 7/8 at unrelated controls. Keep A/B/C region frames plus all valid callouts; current menu label is Settings.
 
-References: en `docs/08-general-operations-and-configurations.md:217` (printed p71); de `i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:217` (printed p71); es `i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:217` (printed p71); fr `i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:217` (printed p71).
+References: en `manuals/bactosense/08-general-operations-and-configurations.md:217` (printed p71); de `i18n/de/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:217` (printed p71); es `i18n/es/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:217` (printed p71); fr `i18n/fr/docusaurus-plugin-content-docs/current/08-general-operations-and-configurations.md:217` (printed p71).
 
 ### gui-source-052: auto-results-chart
 
@@ -196,7 +196,7 @@ Callouts: arrow — Chart settings gear.
 
 Required context: Preserve arrow to exact gear button; chart must contain populated demo measurements.
 
-References: en `docs/10-measurements.md:59` (printed p91); de `i18n/de/docusaurus-plugin-content-docs/current/10-measurements.md:59` (printed p91); es `i18n/es/docusaurus-plugin-content-docs/current/10-measurements.md:59` (printed p91); fr `i18n/fr/docusaurus-plugin-content-docs/current/10-measurements.md:59` (printed p91).
+References: en `manuals/bactosense/10-measurements.md:59` (printed p91); de `i18n/de/docusaurus-plugin-content-docs/current/10-measurements.md:59` (printed p91); es `i18n/es/docusaurus-plugin-content-docs/current/10-measurements.md:59` (printed p91); fr `i18n/fr/docusaurus-plugin-content-docs/current/10-measurements.md:59` (printed p91).
 
 ### gui-source-053: auto-chart-settings
 
@@ -208,7 +208,7 @@ Callouts: 1 — Percentage scale upper/lower limits on left; 2 — Counts scale 
 
 Required context: 5 source legends; controls must correspond to actual current chart settings; if layout changed update text while preserving purpose.
 
-References: en `docs/10-measurements.md:65` (printed p91); de `i18n/de/docusaurus-plugin-content-docs/current/10-measurements.md:65` (printed p91); es `i18n/es/docusaurus-plugin-content-docs/current/10-measurements.md:65` (printed p91); fr `i18n/fr/docusaurus-plugin-content-docs/current/10-measurements.md:65` (printed p91).
+References: en `manuals/bactosense/10-measurements.md:65` (printed p91); de `i18n/de/docusaurus-plugin-content-docs/current/10-measurements.md:65` (printed p91); es `i18n/es/docusaurus-plugin-content-docs/current/10-measurements.md:65` (printed p91); fr `i18n/fr/docusaurus-plugin-content-docs/current/10-measurements.md:65` (printed p91).
 
 ### gui-source-054: icc-result-composite
 
@@ -220,7 +220,7 @@ Callouts: 1 — Main ICC/HNAP result metrics; tap opens all results; 2 — All-r
 
 Required context: Use actual ICC data/gate, populated dotplot and warning indicator; Admin role so operations present. Old source is internally inconsistent: popup says Beads Analysis while caption/main panel says ICC. New panels must use one consistent ICC result. Retain hand/tap cues or equivalent arrows on interactive metric, plot and navigation targets; do not cover data.
 
-References: en `docs/11-results-and-data-analysis.md:16` (printed p98); de `i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md:16` (printed p98); fr `i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md:16` (printed p98).
+References: en `manuals/bactosense/11-results-and-data-analysis.md:16` (printed p98); de `i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md:16` (printed p98); fr `i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md:16` (printed p98).
 
 ### gui-source-055: gate-settings
 
@@ -232,7 +232,7 @@ Callouts: 1 — Custom ICC gating set; 2 — ICC default gate; 3 — ICC double 
 
 Required context: Exact legend distinguishes custom versus default and double gate; seed a clearly fictional custom ICC gate if demo lacks it. Do not show editable/deletable defaults as normal behavior.
 
-References: en `docs/11-results-and-data-analysis.md:64` (printed p100); de `i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md:64` (printed p100); fr `i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md:64` (printed p100).
+References: en `manuals/bactosense/11-results-and-data-analysis.md:64` (printed p100); de `i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md:64` (printed p100); fr `i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md:64` (printed p100).
 
 ### gui-source-057: tcc-gate-editor-composite
 
@@ -244,7 +244,7 @@ Callouts: 1 — Gate-point coordinate list with rows a–d; 2 — Remove-point c
 
 Required context: Both panels must show the SAME polygon coordinates and HNA limit; keep 1–6 and a–d. Current UI editor may differ from tumbler; adapt callout 4 to real current coordinate editor and change adjacent sentence if no first-FL1 selection exists.
 
-References: en `docs/11-results-and-data-analysis.md:171` (printed p106); de `i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md:171` (printed p106); fr `i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md:171` (printed p106).
+References: en `manuals/bactosense/11-results-and-data-analysis.md:171` (printed p106); de `i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md:171` (printed p106); fr `i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md:171` (printed p106).
 
 ### gui-source-058: icc-gate-polygon
 
@@ -254,7 +254,7 @@ ICC gate polygon-coordinate editor.
 
 Required context: Table step 5 specifically adjusts polygon corners; show coordinate editor, not gate list or HNA-only page.
 
-References: en `docs/11-results-and-data-analysis.md:185` (printed p107); de `i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md:185` (printed p107); fr `i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md:185` (printed p107).
+References: en `manuals/bactosense/11-results-and-data-analysis.md:185` (printed p107); de `i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md:185` (printed p107); fr `i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md:185` (printed p107).
 
 ### gui-source-061: hna-limit
 
@@ -264,7 +264,7 @@ HNA lower-limit step of gate wizard; FL1 value visible with Preview and Save.
 
 Required context: Table step 7 specifically enters HNA limit; current FL1 value need not equal old 5.10 unless preserved text requires it.
 
-References: en `docs/11-results-and-data-analysis.md:185` (printed p107); de `i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md:185` (printed p107); fr `i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md:185` (printed p107).
+References: en `manuals/bactosense/11-results-and-data-analysis.md:185` (printed p107); de `i18n/de/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md:185` (printed p107); fr `i18n/fr/docusaurus-plugin-content-docs/current/11-results-and-data-analysis.md:185` (printed p107).
 
 ### gui-source-072: special-import-export
 
@@ -274,7 +274,7 @@ Special import/export screen with selected demo USB, folder name and Export diag
 
 Required context: Table step 4 describes folder name and step 5 export actions; show correct controls, may share capture with p66 if state/permissions match.
 
-References: en `docs/12-data-access-and-export.md:20` (printed p114); de `i18n/de/docusaurus-plugin-content-docs/current/12-data-access-and-export.md:20` (printed p114); fr `i18n/fr/docusaurus-plugin-content-docs/current/12-data-access-and-export.md:20` (printed p114).
+References: en `manuals/bactosense/12-data-access-and-export.md:20` (printed p114); de `i18n/de/docusaurus-plugin-content-docs/current/12-data-access-and-export.md:20` (printed p114); fr `i18n/fr/docusaurus-plugin-content-docs/current/12-data-access-and-export.md:20` (printed p114).
 
 ### gui-source-073: system-services
 
@@ -284,7 +284,7 @@ System services with HTTP/HTTPS/Modbus TCP/VNC/FTP enable controls and ports 80/
 
 Required context: Native Qt instrument screen, not web UI. Can share capture with Fig5-4 if complete controls/state match. FTP image originally disabled; prose says enable it in next step. Either show configuration overview or enable demo FTP consistently.
 
-References: en `docs/12-data-access-and-export.md:33` (printed p115); de `i18n/de/docusaurus-plugin-content-docs/current/12-data-access-and-export.md:33` (printed p115); fr `i18n/fr/docusaurus-plugin-content-docs/current/12-data-access-and-export.md:33` (printed p115).
+References: en `manuals/bactosense/12-data-access-and-export.md:33` (printed p115); de `i18n/de/docusaurus-plugin-content-docs/current/12-data-access-and-export.md:33` (printed p115); fr `i18n/fr/docusaurus-plugin-content-docs/current/12-data-access-and-export.md:33` (printed p115).
 
 ### gui-source-076: web-dashboard
 
@@ -296,7 +296,7 @@ Callouts: 1 — Left navigation menu; 2 — Instrument state; 3 — Latest-resul
 
 Required context: This is local instrument web interface, not BactoCloud. Capture populated fictional demo; use actual active/progress state for label 6; preserve 1–6 and source frames/lines or clear equivalent callouts.
 
-References: en `docs/13-web-user-interface.md:29` (printed p120); de `i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md:29` (printed p120); fr `i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md:29` (printed p120).
+References: en `manuals/bactosense/13-web-user-interface.md:29` (printed p120); de `i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md:29` (printed p120); fr `i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md:29` (printed p120).
 
 ### gui-source-077: web-fcs-download
 
@@ -308,7 +308,7 @@ Callouts: X — FCS link (named Position X in table); arrow — Enlarged selecte
 
 Required context: Keep Position X marker on actual current fcs download control and keep row context. Composite must come from one results capture; no invented data/download labels.
 
-References: en `docs/13-web-user-interface.md:39` (printed p120); de `i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md:39` (printed p120); fr `i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md:39` (printed p120).
+References: en `manuals/bactosense/13-web-user-interface.md:39` (printed p120); de `i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md:39` (printed p120); fr `i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md:39` (printed p120).
 
 ### gui-source-078: web-zip-download
 
@@ -318,7 +318,7 @@ Auto mode results section header with selected date range and Download Zip butto
 
 Required context: Crop must include date range + ZIP action, because table describes both.
 
-References: en `docs/13-web-user-interface.md:49` (printed p121); de `i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md:49` (printed p121); fr `i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md:49` (printed p121).
+References: en `manuals/bactosense/13-web-user-interface.md:49` (printed p121); de `i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md:49` (printed p121); fr `i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md:49` (printed p121).
 
 ### gui-source-079: web-all-results-download
 
@@ -330,7 +330,7 @@ Callouts: arrow — Download-results panel.
 
 Required context: Show correct formats/sections and source region in same capture; preserve download action semantics.
 
-References: en `docs/13-web-user-interface.md:55` (printed p121); de `i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md:55` (printed p121); fr `i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md:55` (printed p121).
+References: en `manuals/bactosense/13-web-user-interface.md:55` (printed p121); de `i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md:55` (printed p121); fr `i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md:55` (printed p121).
 
 ### gui-source-080: web-dotplots
 
@@ -342,7 +342,7 @@ Callouts: arrow — Dotplots navigation entry.
 
 Required context: Arrow must point to current Dotplots entry; capture real plots from demo.
 
-References: en `docs/13-web-user-interface.md:65` (printed p122); de `i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md:65` (printed p122); fr `i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md:65` (printed p122).
+References: en `manuals/bactosense/13-web-user-interface.md:65` (printed p122); de `i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md:65` (printed p122); fr `i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md:65` (printed p122).
 
 ### gui-source-081: web-measurement-interval
 
@@ -354,7 +354,7 @@ Callouts: arrow-1 — Settings navigation entry; arrow-2 — Measurement-interva
 
 Required context: Must be Auto mode; actual current interval field + Save visible.
 
-References: en `docs/13-web-user-interface.md:71` (printed p122); de `i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md:71` (printed p122); fr `i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md:71` (printed p122).
+References: en `manuals/bactosense/13-web-user-interface.md:71` (printed p122); de `i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md:71` (printed p122); fr `i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md:71` (printed p122).
 
 ### gui-source-082: web-dotplots-play
 
@@ -366,7 +366,7 @@ Callouts: arrow — Play button.
 
 Required context: Arrow to real current Play control; match dotplots screenshot theme and dataset used for p122 navigation/range.
 
-References: en `docs/13-web-user-interface.md:65` (printed p122); de `i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md:65` (printed p122); fr `i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md:65` (printed p122).
+References: en `manuals/bactosense/13-web-user-interface.md:65` (printed p122); de `i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md:65` (printed p122); fr `i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md:65` (printed p122).
 
 ### gui-source-083: web-dotplots-range
 
@@ -378,7 +378,7 @@ Callouts: arrow-1 — Previous/next stepping controls; arrow-2 — Date-range sl
 
 Required context: Preserve two arrows and full slider date context; match same demo/viewport as Play crop.
 
-References: en `docs/13-web-user-interface.md:65` (printed p122); de `i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md:65` (printed p122); fr `i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md:65` (printed p122).
+References: en `manuals/bactosense/13-web-user-interface.md:65` (printed p122); de `i18n/de/docusaurus-plugin-content-docs/current/13-web-user-interface.md:65` (printed p122); fr `i18n/fr/docusaurus-plugin-content-docs/current/13-web-user-interface.md:65` (printed p122).
 
 ### gui-source-086: intervention-info
 
@@ -388,7 +388,7 @@ Service due date, valve/plunger lifetime and support contact information.
 
 Required context: Use current bNovate support info rendered by demo; service date need not reproduce obsolete 2022 date.
 
-References: en `docs/15-maintenance.md:56` (printed p126); de `i18n/de/docusaurus-plugin-content-docs/current/15-maintenance.md:56` (printed p126); fr `i18n/fr/docusaurus-plugin-content-docs/current/15-maintenance.md:56` (printed p126).
+References: en `manuals/bactosense/15-maintenance.md:56` (printed p126); de `i18n/de/docusaurus-plugin-content-docs/current/15-maintenance.md:56` (printed p126); fr `i18n/fr/docusaurus-plugin-content-docs/current/15-maintenance.md:56` (printed p126).
 
 ### gui-source-102: warning-details
 
@@ -398,7 +398,7 @@ Warning detail screen with title, warning icon, explanation, measurement context
 
 Required context: Use a real demo warning code; preferably W04 High baseline signal in SSC to match source. Do not fabricate a warning popup from unrelated screenshot; date/result context must belong to selected warning.
 
-References: en `docs/16-warnings-errors-and-troubleshooting.md:18` (printed p139); de `i18n/de/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md:18` (printed p139); fr `i18n/fr/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md:18` (printed p139).
+References: en `manuals/bactosense/16-warnings-errors-and-troubleshooting.md:18` (printed p139); de `i18n/de/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md:18` (printed p139); fr `i18n/fr/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md:18` (printed p139).
 
 ### gui-source-103: noncritical-error-details
 
@@ -408,7 +408,7 @@ Non-critical E15 Empty sample error detail with amber warning/error glyph and re
 
 Required context: Non-critical severity; source example E15/no sample detected. Use same or another real documented non-critical code with matching explanation.
 
-References: en `docs/16-warnings-errors-and-troubleshooting.md:40` (printed p141); de `i18n/de/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md:40` (printed p141); fr `i18n/fr/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md:40` (printed p141).
+References: en `manuals/bactosense/16-warnings-errors-and-troubleshooting.md:40` (printed p141); de `i18n/de/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md:40` (printed p141); fr `i18n/fr/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md:40` (printed p141).
 
 ### gui-source-104: critical-error-details
 
@@ -418,7 +418,7 @@ Critical E04 Missing cartridge detail with red critical glyph and remedy.
 
 Required context: Critical severity; source example E04 missing cartridge. Do not use non-critical icon/details for this row.
 
-References: en `docs/16-warnings-errors-and-troubleshooting.md:74` (printed p145); de `i18n/de/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md:74` (printed p145); fr `i18n/fr/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md:74` (printed p145).
+References: en `manuals/bactosense/16-warnings-errors-and-troubleshooting.md:74` (printed p145); de `i18n/de/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md:74` (printed p145); fr `i18n/fr/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md:74` (printed p145).
 
 ### gui-source-105: error-log
 
@@ -430,7 +430,7 @@ Callouts: 1 — Event date/time column; 2 — Event-type/severity icon column; 3
 
 Required context: Admin/Service role for Clear Errors; show all three documented event types. Current displayed log and range must contain the same events, not a stale empty list.
 
-References: en `docs/16-warnings-errors-and-troubleshooting.md:108` (printed p149); de `i18n/de/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md:108` (printed p149); fr `i18n/fr/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md:108` (printed p149).
+References: en `manuals/bactosense/16-warnings-errors-and-troubleshooting.md:108` (printed p149); de `i18n/de/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md:108` (printed p149); fr `i18n/fr/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md:108` (printed p149).
 
 ### gui-source-109: self-check
 
@@ -440,7 +440,7 @@ Completed automatic self-check result with PASS/FAIL/SKIP indicators and Run/Rer
 
 Required context: Completed demo self-check, not a loading/failure spinner; statuses must come from demo execution or declared deterministic demo fixture.
 
-References: en `docs/16-warnings-errors-and-troubleshooting.md:136` (printed p150); de `i18n/de/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md:136` (printed p150); fr `i18n/fr/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md:136` (printed p150).
+References: en `manuals/bactosense/16-warnings-errors-and-troubleshooting.md:136` (printed p150); de `i18n/de/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md:136` (printed p150); fr `i18n/fr/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md:136` (printed p150).
 
 ### gui-source-110: error-log-clear
 
@@ -452,7 +452,7 @@ Callouts: frame — Clear Errors button.
 
 Required context: Use same underlying log as Fig16-1 if permissions/state match; highlight exact current button. No need to execute clearing for the screenshot.
 
-References: en `docs/16-warnings-errors-and-troubleshooting.md:130` (printed p150); de `i18n/de/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md:130` (printed p150); fr `i18n/fr/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md:130` (printed p150).
+References: en `manuals/bactosense/16-warnings-errors-and-troubleshooting.md:130` (printed p150); de `i18n/de/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md:130` (printed p150); fr `i18n/fr/docusaurus-plugin-content-docs/current/16-warnings-errors-and-troubleshooting.md:130` (printed p150).
 
 ## Control/status artwork
 

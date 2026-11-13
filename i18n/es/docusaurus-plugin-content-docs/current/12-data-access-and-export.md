@@ -84,7 +84,7 @@ Virtual Network Computing (VNC) es un sistema de uso compartido del escritorio g
 
 :::caution[Restrinja el acceso VNC]
 
-VNC es un protocolo inseguro y no se recomienda utilizarlo fuera de una red local ni con una conexión VPN.
+VNC es un protocolo inseguro. Utilícelo únicamente en una red local de confianza o a través de una VPN; no lo exponga directamente a Internet.
 
 :::
 

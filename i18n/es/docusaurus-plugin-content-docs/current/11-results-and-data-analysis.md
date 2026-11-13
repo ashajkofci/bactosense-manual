@@ -22,10 +22,10 @@ La figura siguiente muestra el resultado de una medición TCC seleccionada en mo
 | 5 | El campo de estado de la medición indica alarmas o advertencias. Pulse una indicación de alarma o advertencia para ver sus detalles. |
 | 6 | El botón Borrar elimina la medición de forma permanente (requiere confirmación). |
 | 7 | El botón Cambie el nombre de permite cambiar el nombre de la medición. |
-| 8 | El botón Resultado de re-gate permite aplicar otras regiones de análisis a los datos de medición. Para obtener más detalles, consulte la sección [Reanálisis de mediciones con otras regiones](../results-and-data-analysis/#section-11-4-1). |
+| 8 | El botón Resultado de re-gate permite aplicar un conjunto de regiones de análisis diferente a los datos de medición. Para obtener más detalles, consulte la sección [Reanálisis de mediciones con otras regiones](../results-and-data-analysis/#section-11-4-1). |
 | 9 | El botón Exportar permite guardar este resultado en una memoria USB. Encontrará más información en la sección [Exportación a una memoria USB](../measurements/#section-10-8-1). |
 | 10 | Los botones de navegación a la izquierda y derecha de la vista de resultados permiten ir a las mediciones anterior y siguiente, respectivamente. |
-| 11 | Pulse el gráfico de tendencias para abrir el gráfico del modo automático (el gráfico completo de resultados en línea). Véase [Revisión de las mediciones automáticas en línea](../measurements/#section-10-2-3). |
+| 11 | Pulse el gráfico de tendencias para abrir el gráfico del modo en línea (el gráfico completo de resultados en línea). Véase [Revisión de las mediciones automáticas en línea](../measurements/#section-10-2-3). |
 
 :::info[Seleccione varias mediciones]
 
@@ -42,8 +42,8 @@ De acuerdo con los estándares de citometría de flujo, BactoSense utiliza regio
 Se definen los siguientes términos:
 
 - Región de análisis (Gate): línea o polígono aplicado a un diagrama de puntos para cuantificar poblaciones de células medidas.
-- Conjunto de regiones de análisis (gating set): colección de dos o más regiones utilizadas en la estrategia de análisis. Los tipos de regiones son fijos, pero los usuarios pueden cambiar los límites de cada una. Son diferentes para las mediciones TCC e ICC.
-- Estrategia de análisis (gating strategy): define cómo se combinan las regiones para contar células. Por ejemplo, HNAC es el número de células que están dentro del polígono TCC y por encima del límite inferior HNA. Estas estrategias son diferentes para las mediciones TCC e ICC.
+- Conjunto de regiones de análisis (gating set): colección de todas las regiones utilizadas en una medición. Los tipos de regiones son fijos, pero los usuarios pueden cambiar los límites de cada una.
+- Estrategia de análisis (gating strategy): define cómo se combinan las regiones para contar células. Por ejemplo, HNAC es el número de células que están dentro del polígono TCC y por encima del límite inferior HNA.
 
 Los conjuntos de regiones son específicos de un tipo de cartucho. Por ejemplo, solo pueden utilizarse conjuntos de tipo TCC con mediciones realizadas con un cartucho TCC.
 
@@ -73,13 +73,13 @@ En la pantalla Home, pulse Ajustes y después Ajustes de la compuerta para ver l
 
 ## 11.3 Cartuchos, regiones de análisis y parámetros de resultados {#section-11-3}
 
-Según el cartucho utilizado en una medición, se miden distintos parámetros. Las subsecciones siguientes describen los conjuntos de regiones de análisis y los parámetros de resultados de TCC (recuento total de células), ICC (recuento de células intactas), ACC (recuento de células activas), CBC (recuento de células coliformes), EBC (recuento de células de E. coli) y NBC (recuento de células de enterococos).
+Según el cartucho utilizado en una medición, se miden distintos parámetros. Las subsecciones siguientes describen los conjuntos de regiones de análisis y los parámetros de resultados de TCC (recuento total de células), ICC (recuento de células intactas), ACC (recuento de células activas), CBC (recuento de bacterias coliformes), EBC (recuento de bacterias de E. coli) y NBC (recuento de bacterias de enterococos).
 
 Los cartuchos CBC, EBC y NBC son compatibles con BactoSense ID y BactoSense SMART. Cada uno utiliza un marcaje enzimático selectivo y una única región poligonal y proporciona una concentración celular. Para estos cartuchos no se calculan subpoblaciones HNA ni definidas según su actividad.
 
-:::info[Interpretación de los resultados CBC, EBC y NBC]
+:::info[Interpretación de los resultados de recuento celular]
 
-CBC, EBC y NBC son concentraciones celulares expresadas en células por mililitro (1/mL). Los recuentos celulares y los resultados de cultivo expresados en unidades formadoras de colonias (CFU) miden propiedades diferentes de una muestra y no pueden compararse directamente.
+Los recuentos celulares de BactoSense son concentraciones celulares expresadas en células por mililitro (1/mL). Los recuentos celulares y los resultados de cultivo expresados en unidades formadoras de colonias (CFU) miden propiedades diferentes de una muestra y normalmente dan resultados numéricamente distintos.
 
 :::
 
@@ -175,7 +175,7 @@ Para obtener más información sobre el ajuste de las regiones, consulte la secc
 
 ### 11.3.4 Cartucho CBC {#section-11-3-4}
 
-CBC significa Coliform Cell Count (recuento de células coliformes). El cartucho CBC mide la concentración de bacterias coliformes mediante un ensayo enzimático basado en la actividad de la β-galactosidasa. La enzima convierte el sustrato del cartucho en un producto fluorescente, lo que permite detectar las células marcadas mediante citometría de flujo.
+CBC significa Coliform Bacteria Count (recuento de bacterias coliformes). El cartucho CBC mide la concentración de bacterias coliformes mediante un ensayo enzimático basado en la actividad de la β-galactosidasa. La enzima convierte el sustrato del cartucho en un producto fluorescente, lo que permite detectar las células marcadas mediante citometría de flujo.
 
 **Tabla 11-7 Conjunto de regiones utilizado para el cartucho CBC.**
 
@@ -201,7 +201,7 @@ Para obtener más información sobre el ajuste de las regiones, consulte la secc
 
 ### 11.3.5 Cartucho EBC {#section-11-3-5}
 
-EBC significa E. coli Cell Count (recuento de células de E. coli). El cartucho EBC mide la concentración de bacterias *Escherichia coli* mediante un ensayo enzimático basado en la actividad de la β-glucuronidasa. La enzima convierte el sustrato del cartucho en un producto fluorescente, lo que permite detectar las células marcadas mediante citometría de flujo.
+EBC significa E. coli Bacteria Count (recuento de bacterias de E. coli). El cartucho EBC mide la concentración de bacterias *Escherichia coli* mediante un ensayo enzimático basado en la actividad de la β-glucuronidasa. La enzima convierte el sustrato del cartucho en un producto fluorescente, lo que permite detectar las células marcadas mediante citometría de flujo.
 
 **Tabla 11-9 Conjunto de regiones utilizado para el cartucho EBC.**
 
@@ -227,7 +227,7 @@ Para obtener más información sobre el ajuste de las regiones, consulte la secc
 
 ### 11.3.6 Cartucho NBC {#section-11-3-6}
 
-NBC significa Enterococcus Cell Count (recuento de células de enterococos). El cartucho NBC mide la concentración de enterococos mediante un ensayo enzimático basado en la actividad de la β-glucosidasa. La enzima convierte el sustrato del cartucho en un producto fluorescente, lo que permite detectar las células marcadas mediante citometría de flujo.
+NBC significa Enterococcus Bacteria Count (recuento de bacterias de enterococos). El cartucho NBC mide la concentración de enterococos mediante un ensayo enzimático basado en la actividad de la β-glucosidasa. La enzima convierte el sustrato del cartucho en un producto fluorescente, lo que permite detectar las células marcadas mediante citometría de flujo.
 
 **Tabla 11-11 Conjunto de regiones utilizado para el cartucho NBC.**
 
@@ -257,7 +257,7 @@ Para obtener más información sobre el ajuste de las regiones, consulte la secc
 
 El reanálisis (regating) consiste en aplicar un conjunto de regiones diferente a datos de medición existentes.
 
-- Para reanalizar, es necesario disponer de ese conjunto adicional. En la pantalla Home, pulse Ajustes y después Ajustes de la compuerta para ver los conjuntos de regiones disponibles.
+- Para reanalizar, es necesario disponer de un conjunto de regiones alternativo. En la pantalla Home, pulse Ajustes y después Ajustes de la compuerta para ver los conjuntos de regiones disponibles.
 - La modificación de un conjunto de regiones existente se describe en la sección [Edición de conjuntos de regiones existentes](11-results-and-data-analysis.md#section-11-4-3).
 
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMÁGENES |
@@ -380,17 +380,17 @@ Para comparar los resultados de BactoSense con los de otro citómetro de flujo, 
 
 |  | PASO DE TRABAJO | INFORMACIÓN ADICIONAL / IMAGEN | \< |
 | --- | --- | --- | --- |
-| 1\. | Se recomienda utilizar el Validation Kit, que contiene una solución de microesferas lista para usar. | Lea las instrucciones del Validation Kit para obtener más información. | \< |
+| 1\. | Se recomienda utilizar el [Validation Kit](/other-manuals/validation-kit), que contiene una solución de microesferas lista para usar. | Lea las instrucciones del Validation Kit para obtener más información. | \< |
 | 2\. | Instale el dispositivo de muestreo manual según el manual de usuario. |  | \< |
-| 3\. | Tome una de las soluciones de microesferas del Validation Kit y colóquela en el dispositivo de muestreo. | Lea las instrucciones del Validation Kit para obtener más información. | \< |
+| 3\. | Tome una de las soluciones de microesferas del [Validation Kit](/other-manuals/validation-kit) y colóquela en el dispositivo de muestreo. | Lea las instrucciones del Validation Kit para obtener más información. | \< |
 | 4\. | :::info[Información adicional] Pulse el botón Home. Pulse Back tantas veces como sea necesario para que aparezca Home. ::: | ![BactoSense — Botón Inicio](/img/gui/icons/home-button.png "width=48 class=manual-icon") | ![BactoSense — Botón Volver](/img/gui/icons/back-button.png "width=48 class=manual-icon") |
 | 5\. | En la pantalla Home, pulse Modo y seleccione Modo manual. Pulse Volver y, a continuación, Iniciar para abrir el asistente de medición. |  | \< |
 | 6\. | Seleccione Preparar en la lista de protocolos. | Véase la sección [Realización de un cebado (Prime)](../measurements/#section-10-9-3). | \< |
-| 7\. | Pulse los botones Siguiente y Inicio. Espere a que termine el protocolo de cebado. |  | \< |
+| 7\. | Pulse Siguiente y, después, Inicio. Espere a que termine el protocolo de cebado. |  | \< |
 | 8\. | Pulse Nuevo, elija Análisis de perlas en la lista y pulse Siguiente e Inicio. |  | \< |
 | 9\. | Espere a los resultados y, si es necesario, ajuste con precisión la región del diagrama FL1 frente a FL2 para contar solo las 4 poblaciones de microesferas. Asegúrese de que el ruido, el fondo y los residuos no se cuenten dentro de la región. | Consulte la sección [Edición de conjuntos de regiones existentes](../results-and-data-analysis/#section-11-4-3) para ajustar la región.<br />![Ilustración de la tabla de la página 112 del manual](/img/manual/render-fa85ea9255cb.webp "width=246 class=manual-figure") | \< |
 | 10\. | En el histograma FL1 frente a recuentos, estime el valor logarítmico del centro de cada pico en el eje FL1. En este ejemplo, se obtiene aproximadamente (en log): 1.<sup>er</sup> pico = 4.05; 2.<sup>º</sup> pico = 4.3; 3.<sup>er</sup> pico = 5.35; 4.<sup>º</sup> pico = 6.2. | ![Ilustración de la tabla de la página 113 del manual](/img/manual/cell-c2ba9a559620.png "width=246 class=manual-figure") | \< |
-| 11\. | Mida las mismas microesferas con el otro citómetro de flujo que desea comparar y repita los pasos 10 y 11. En este ejemplo, se obtiene aproximadamente (en log): 1.<sup>er</sup> pico = log(10<sup>3</sup>) = 3; 2.<sup>º</sup> pico = log(2*10<sup>3</sup>) = 3.3; 3.<sup>er</sup> pico = log(2.4*10<sup>4</sup>) = 4.4; 4.<sup>º</sup> pico = log(1.6*10<sup>5</sup>) = 5.2. | ![Ilustración de la tabla de la página 113 del manual](/img/manual/cell-4c2343e0bbfe.png "width=246 class=manual-figure") | \< |
+| 11\. | Mida las mismas microesferas con el otro citómetro de flujo que desea comparar. Aplique a sus resultados los pasos de ajuste de la región y estimación de los picos descritos en los pasos 9 y 10. En este ejemplo, se obtiene aproximadamente (en log): 1.<sup>er</sup> pico = log(10<sup>3</sup>) = 3; 2.<sup>º</sup> pico = log(2*10<sup>3</sup>) = 3.3; 3.<sup>er</sup> pico = log(2.4*10<sup>4</sup>) = 4.4; 4.<sup>º</sup> pico = log(1.6*10<sup>5</sup>) = 5.2. | ![Ilustración de la tabla de la página 113 del manual](/img/manual/cell-4c2343e0bbfe.png "width=246 class=manual-figure") | \< |
 | 12\. | Con los distintos valores obtenidos para ambos dispositivos, ya es posible comparar sus escalas y sus ventanas de medición. |  | \< |
 
 </div>

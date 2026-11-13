@@ -82,9 +82,9 @@ BactoCloud includes features that make it particularly easy to visualize multi-l
 
 The [web user interface](/bactosense/web-user-interface) of the BactoSense contains functionalities that allow filtering data from the different BactoSwitch lines.
 
-In the **Results** tab, in the **Online mode results** part, it is possible to filter the data either by the **Name** or the **Line ID**. Those fields correspond to the line numbers and names given in [Line configuration](04-installation.md#section-4-6). Filtering also applies to the Online mode graph.
+In the **Results** tab, in the **Online mode results** section, it is possible to filter the data by **Name** or **Stream ID**. **Name** corresponds to the line name, and **Stream ID** corresponds to the line number set in [Line configuration](04-installation.md#section-4-6). Filtering also applies to the Online mode graph.
 
-![Online mode results in the web user interface filtered by name, with the Name and Line ID columns highlighted](/img/gui/en/bactoswitch-web-online-results.png "width=634")
+![Online mode results in the web user interface filtered by name, with the Name and Stream ID columns highlighted](/img/gui/en/bactoswitch-web-online-results.png "width=634")
 
 ### 5.2.3 BactoSwitch control via BactoSense I/O-Box {#section-5-2-3}
 

@@ -65,7 +65,7 @@ Die folgenden Schritte beschreiben, wie Sie Details zu den letzten Interventione
 | 1. | Drücken Sie als Advanced- oder Admin-Benutzer auf der Startseite Einstellungen, um das Einstellungsmenü zu öffnen. | ![BactoSense — Schaltfläche Einstellungen](/img/gui/de/home-settings-button.png "width=57 class=manual-icon-settings-button-half") |
 | 2. | Drücken Sie die Taste Wartung. | ![BactoSense — Wartungsmenü](/img/gui/icons/maintenance-button.png "width=48 class=manual-icon") |
 | 3. | Drücken Sie die Taste **Liste aller Wartungen**. | ![BactoSense — Wartungsprotokoll](/img/gui/icons/intervention-log-button.png "width=48 class=manual-icon") |
-| 4. | In dieser Ansicht werden zurückliegende Dienstinterventionen aufgelistet. Jeder Eintrag zeigt:<br />• **Wartungsdatum** und **Operator**: wann und von wem die Wartung durchgeführt wurde.<br />• **Ersetzte Teile**: das ersetzte Ventil, die Spritze und der Mixer; ein Strich (-) kennzeichnet ein nicht ersetztes Teil.<br />• **Nächste Wartung**: das bei der Intervention festgelegte Fälligkeitsdatum der nächsten Wartung.<br />• **Lebensdauer Ventil** und **Lebensdauer Spritze**: die Anzahl Bewegungen, nach der Ventil und Spritze gewartet werden müssen, wie bei der Intervention festgelegt.<br />• **Kommentar**: Notizen der Servicefachkraft. | Drücken Sie **Zurück**, um zum Menü Wartung zurückzukehren. |
+| 4. | In dieser Ansicht werden zurückliegende Dienstinterventionen aufgelistet. Jeder Eintrag zeigt:<br />• **Wartungsdatum** und **Operator**: wann und von wem die Wartung durchgeführt wurde.<br />• **Ersetzte Teile**: das ersetzte Ventil, der Spritzenkolben und der Mixer; ein Strich (-) kennzeichnet ein nicht ersetztes Teil.<br />• **Nächste Wartung**: das bei der Intervention festgelegte Fälligkeitsdatum der nächsten Wartung.<br />• **Lebensdauer Ventil** und **Lebensdauer Spritze**: die Anzahl Bewegungen, nach der Ventil und Spritze gewartet werden müssen, wie bei der Intervention festgelegt.<br />• **Kommentar**: Notizen der Servicefachkraft. | Drücken Sie **Zurück**, um zum Menü Wartung zurückzukehren. |
 
 ## 15.2 Wartung durch den Benutzer {#section-15-2}
 
@@ -80,7 +80,7 @@ Unter Wartung durch den Benutzer versteht man einfache, gelegentliche Wartungsar
 | WANN | WAS | VERFAHREN |
 | Kartusche abgelaufen oder leer | Kartusche ersetzen | Siehe Kartuschenaustauschprozess unter [Kartuschen wechseln](../general-operations-and-configurations/#section-8-9-4). Siehe Informationen zum Kartuschenversand unter [Rückgabe einer Kartusche zur Wiederbefüllung](../storage-transport-and-disposal/#section-17-3-2). |
 | Das manuelle Probenahmegerät wurde neu installiert. Das Gerät war oder wird für mehr als drei Tage unbenutzt oder ausgeschaltet sein. | Grundreinigung oder Reinigung mit Washstation | Ist eine Washstation verfügbar, siehe [Manuelles Probenahmegerät mit Washstation reinigen](../maintenance/#section-15-2-2). Ansonsten siehe [Manuelles Probenahmegerät mittels Basisreinigung reinigen](../maintenance/#section-15-2-3). |
-| Gerät zeigt Anzeichen von Verschmutzung | Dekontaminierung | Erfordert ein Reinigungskit, siehe List der Verbrauchsmaterialien unter [Verbrauchsmaterial](../supply-scope-accessories-and-consumables/#section-18-3). Siehe Bedienungsanleitung zum Reinigungskit. |
+| Gerät zeigt Anzeichen von Verschmutzung | Dekontaminierung | Erfordert ein [Reinigungskit](/other-manuals/cleaning-kit), siehe List der Verbrauchsmaterialien unter [Verbrauchsmaterial](../supply-scope-accessories-and-consumables/#section-18-3). Siehe Bedienungsanleitung zum Reinigungskit. |
 | Das Online-Probenahmegerät ist verunreinigt. | Reinigung | Siehe Reinigungsverfahren unter [Online-Probenahmegerät reinigen](../maintenance/#section-15-2-4). |
 | Die Schläuche des Online-Probenahmegeräts sind beschädigt oder verschmutzt. | Schläuche ersetzen | Siehe Austauschverfahren unter [Schläuche des Online-Probenahmegerätes ersetzen](../maintenance/#section-15-2-5). |
 | Zellkonzentrationen niedriger als erwartet oder keine Zellen erkannt | Einlassfilter des Probenahmegeräts verstopft Filter ersetzen. | Siehe [Ersetzen des Filters im Probenahmegerät](../maintenance/#section-15-2-7). Siehe Verbrauchsmaterialien unter [Verbrauchsmaterial](../supply-scope-accessories-and-consumables/#section-18-3). |
@@ -104,13 +104,13 @@ Dieses Protokoll beschreibt, wie das manuelle Probenahmegerät mittels der Washs
 | 1. | Bitte stellen Sie sicher, dass das manuelle Probenahmegerät korrekt gemäß [Installation des manuellen Probenahmegeräts](05-installation.md#section-5-4) installiert ist. |  |
 | 2. | Navigieren Sie zur Startseite der Benutzeroberfläche des BactoSense. |  |
 | 3. | Drücken Sie auf der Startseite Modus und wählen Sie „Manueller Modus“. Drücken Sie Zurück und anschließend Messen, um den Messassistenten zu öffnen. |  |
-| 4. | Wählen Sie Probenahme mit Washstation reinigen aus der Liste der verfügbaren Protokolle. |  |
+| 4. | Wählen Sie Probenahmegerät mit Washstation reinigen aus der Liste der verfügbaren Protokolle. |  |
 | 5. | Stellen Sie sicher, dass in der Spalte Wiederholungen 1 Wiederholung eingestellt ist. | Für eine intensivere Reinigung können mehrere Wiederholungen durchgeführt werden. |
 | 6. | Drücken Sie die Taste Weiter. |  |
 | 7. | Montieren Sie die Washstation, indem Sie sie an das manuelle Probenahmegerät anschrauben, ähnlich wie ein Probenröhrchen. Achten Sie darauf, dass Sie sie bis zum Ende des Gewindes einbauen. |  |
 | 8. | Drücken Sie die Taste Start und warten Sie 15 Minuten, bis das Protokoll abgeschlossen ist. |  |
 | 9. | Soll das Gerät inaktiv bleiben oder dekommissioniert werden, lassen Sie die Washstation am manuellen Probenahmegerät angebracht. Möchten Sie weiterhin messen, entfernen Sie die Washstation und schließen Sie mit dem Deckel eines 5-mL-Röhrchens mit Schraubverschluss. |  |
-| 10. | Besteht die Verunreinigung weiterhin, wiederholen Sie den Vorgang mit weiteren Replikationen. Besteht sie danach immer noch, verwenden Sie das Reinigungskit, um das Gerät zu reinigen (siehe [Verbrauchsmaterial](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
+| 10. | Besteht die Verunreinigung weiterhin, wiederholen Sie den Vorgang mit weiteren Replikationen. Besteht sie danach immer noch, verwenden Sie das [Reinigungskit](/other-manuals/cleaning-kit), um das Gerät zu dekontaminieren (siehe [Verbrauchsmaterial](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
 
 ### 15.2.3 Manuelles Probenahmegerät mittels Basisreinigung reinigen {#section-15-2-3}
 
@@ -126,14 +126,14 @@ Dieses Protokoll beschreibt, wie das manuelle Probenahmegerät ohne Washstation 
 | 6. | Stellen Sie sicher, dass in der Spalte Wiederholungen 1 Wiederholung eingestellt ist. | Stellen Sie für eine intensivere Reinigung mehr Wiederholungen ein. |
 | 7. | Drücken Sie die Taste Weiter. |  |
 | 8. | Drücken Sie die Taste Start und warten Sie 5 Minuten, bis das Protokoll abgeschlossen ist. |  |
-| 9. | Drücken Sie Neu, um zur Protokollliste zurückzukehren, und wählen Sie Probenahme reinigen. |  |
+| 9. | Drücken Sie Neu, um zur Protokollliste zurückzukehren, und wählen Sie Probenahmegerät reinigen. |  |
 | 10. | Stellen Sie sicher, dass in der Spalte Wiederholungen 1 Wiederholung eingestellt ist. | Stellen Sie für eine intensivere Reinigung mehr Wiederholungen ein. |
 | 11. | Drücken Sie die Taste Weiter. |  |
 | 12. | Drücken Sie die Taste Start und warten Sie 5 Minuten, bis das Protokoll abgeschlossen ist. |  |
 | 13. | Sobald das Protokoll abgeschlossen ist, entfernen Sie das 5mL-Röhrchen mit Schraubverschluss und entsorgen Sie es. |  |
 | 14. | Drücken Sie das Startseiten-Symbol oben links in der Benutzeroberfläche, um zur Startseite zurückzukehren. |  |
 | 15. | Möchten Sie mit weiteren Messungen fortfahren, führen Sie zuvor einen Ansaugvorgang durch. Die Anweisungen finden Sie unter [Durchführen eines Ansaugens](10-measurements.md#section-10-9-3). Soll das Gerät inaktiv bleiben oder abgeschaltet werden, so bringen Sie ein frisches Probenröhrchen an das manuelle Probenahmegerät an. |  |
-| 16. | Stellen Sie weiterhin eine Verunreinigung fest, wiederholen Sie den Vorgang mit mehr Replikationen. Besteht sie danach immer noch, verwenden Sie das Reinigungskit, um das Gerät zu reinigen (Verbrauchsmaterialien siehe [Verbrauchsmaterial](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
+| 16. | Stellen Sie weiterhin eine Verunreinigung fest, wiederholen Sie den Vorgang mit mehr Replikationen. Besteht sie danach immer noch, verwenden Sie das [Reinigungskit](/other-manuals/cleaning-kit), um das Gerät zu dekontaminieren (Verbrauchsmaterialien siehe [Verbrauchsmaterial](18-supply-scope-accessories-and-consumables.md#section-18-3)). |  |
 
 ### 15.2.4 Online-Probenahmegerät reinigen {#section-15-2-4}
 
@@ -143,7 +143,7 @@ Das folgende Verfahren hilft bei der Beseitigung von biologischen Verunreinigung
 | --- | --- | --- |
 | 1. | Vergewissern Sie sich, dass das Online- Probenahmegerät korrekt installiert ist, und die Wasserdurchflussbedingungen erfüllt sind (siehe [Einbau des Online-Probenahmegeräts in den BactoSense](05-installation.md#section-5-5-2)). | Wichtig: Stellen Sie sicher, dass der Auslassschlauch mit einem Abfluss verbunden ist, da Reinigungsflüssigkeit in das Online- Probenahmegerät gelangt. |
 | 2. | Drücken Sie auf der Startseite Modus und wählen Sie „Manueller Modus“. Drücken Sie Zurück und anschließend Messen, um den Messassistenten zu öffnen. |  |
-| 3. | Wählen Sie Probenahme reinigen und konfigurieren Sie 5 Wiederholungen. |  |
+| 3. | Wählen Sie Probenahmegerät reinigen und konfigurieren Sie 5 Wiederholungen. |  |
 | 4. | Drücken Sie Weiter und Start, um das Protokoll zu starten. |  |
 | 5. | Drücken Sie nach Abschluss Neu, um zur Protokollliste zurückzukehren. |  |
 | 6. | Wählen Sie Ansaugen und konfigurieren Sie 2 Wiederholungen. |  |
@@ -229,7 +229,7 @@ Stellen Sie sicher, dass alle von Ihnen und anderen Benutzern erzeugten Daten ge
 
 ## 15.3 Softwareaktualisierungen {#section-15-3}
 
-Softwareaktualisierungen können entweder von einem USB-Stick oder von einem Online- Repository installiert werden, wenn eine Internetverbindung verfügbar ist (z. B. über BactoLink). Software-Updates müssen manuell über die Benutzeroberfläche gestartet werden. Für Updates aus dem Online-Repository gehen Sie wie folgt vor. Für Updates über einen USB-Stick siehe [USB-Update-Stick vorbereiten](#section-15-3-1) und [Update von einem USB-Stick installieren](#section-15-3-2).
+Softwareaktualisierungen können entweder von einem USB-Stick oder von einem Online- Repository installiert werden, wenn eine Internetverbindung verfügbar ist (z. B. über [BactoLink](/other-manuals/bactolink)). Software-Updates müssen manuell über die Benutzeroberfläche gestartet werden. Für Updates aus dem Online-Repository gehen Sie wie folgt vor. Für Updates über einen USB-Stick siehe [USB-Update-Stick vorbereiten](#section-15-3-1) und [Update von einem USB-Stick installieren](#section-15-3-2).
 
 |  | ARBEITSSCHRITT |
 | --- | --- |

@@ -12,7 +12,7 @@ Version du logiciel **3.2.0**
 
 Systèmes de surveillance bactérienne rapide
 
-![Instruments BactoSense présentés sur la couverture du manuel d’utilisation](/img/manual/asset-75f5dbc4154e.png)
+![Instruments BactoSense présentés sur la couverture du manuel d’utilisation](/img/manual/asset-75f5dbc4154e.webp)
 
 ## Prise en main
 
