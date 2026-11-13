@@ -21,16 +21,16 @@ The following warning messages can be displayed:
 
 | ERROR CODE | NAME | DESCRIPTION | CAUSES / WHAT TO DO |
 | --- | --- | --- | --- |
-| W01 | Cartridge expired | Cartridge reagents have expired. Measurement accuracy could be affected. | • Please replace the cartridge as soon as possible. |
+| W01 | Cartridge expired | Cartridge reagents have expired. Cell counts may be underestimated. Please replace the cartridge as soon as possible. | • Please replace the cartridge as soon as possible. |
 | W02-04 | High baseline signal in FL1 / FL2 / SSC | Baseline signals are too high. This is usually due to bubbles or particles in suspension in the sample. Measurement accuracy could be affected. | • Check the inlet tubing for any signs of deposits.<br/>• Check the water connections, be sure that they are all tight (no air entry).<br/>• If the warning persists, please perform cleaning of instrument with the cleaning kit. |
-| W05 | Incubator temperature off target | Temperature during incubation was more than 2 °C off target. Cell counts may be affected. The incubator may be defective. | • If the problem persists, please contact customer service. |
-| W06 | No events detected | No events detected during the measurement. | • If the problem persists, please contact customer service. |
-| W07 | TCC out of range | TCC is above the specification limit of BactoSense of 2’000’000 cells/ml. | • Please dilute the sample to ensure accuracy of the measurement. |
-| W08 | Air bubbles detected | The sample appears to contain air bubbles. | • Check sampling device is installed properly.<br/>• Check the sample for bubbles.<br/>• If using online sampling device, check water is supplied at correct pressure. |
+| W05 | Incubator temperature off target | Temperature during incubation was more than 2°C off target. Cell counts may be underestimated. The incubator may be defective. If the problem persists, please call customer service. | • If the problem persists, please contact customer service. |
+| W06 | No events detected | No events detected during the measurement. The photodetectors are probably defective. If the problem persists, please call customer service. | • If the problem persists, please contact customer service. |
+| W07 | Cell count out of range | Cell count is above 2'000'000 cells/mL, the specification limit of the device. Please dilute the sample to ensure measurement accuracy. | • Please dilute the sample to ensure accuracy of the measurement. |
+| W08 | Air bubbles detected | The instrument detected more than 10% volume in bubbles. Measurement precision could suffer. | • Check sampling device is installed properly.<br/>• Check the sample for bubbles.<br/>• If using online sampling device, check water is supplied at correct pressure. |
 | W10 | Enclosure too cold | Enclosure is too cold, rapid heating has been activated before continuing protocol. | • Instrument cannot safely operate if internal temperature is too cold.<br/>• Rapid heating attempts to heat the enclosure to ensure safe operations.<br/>• Measurements will start once internal temperature is sufficient. |
 | W11 | Service required | Service of the instrument is required. Measurement precision can no longer be guaranteed. Continued operation can lead to leaks, which can damage the instrument. | • Next service date is overdue.<br/>• Valve and plunger have reached end of life.<br/>• Please contact your service representative. |
 | W13 | Laser end of life | Laser has reached end of life. | • Please contact your service representative. |
-| W14 | Non-critical power cut | The instrument was powered off unexpectedly. | • Ensure the cleanliness of the instrument.<br/>• If the issue occurs frequently, install an uninterruptible power supply |
+| W14 | Non-critical power cut | The instrument was powered off unexpectedly without a cleaning cycle. Measurement precision could be degraded. | • Ensure the cleanliness of the instrument.<br/>• If the issue occurs frequently, install an uninterruptible power supply |
 
 ## 16.2 Non-critical errors {#section-16-2}
 
@@ -49,25 +49,25 @@ The following non-critical error messages can be displayed:
 | E01 | Cartridge door open | Cartridge door is open and prevents measurements from running. | • Close door and retry the measurement. |
 | E08 | Enclosure too damp | Enclosure humidity is too high for safe operation. | • Replace desiccant bag, by unscrewing the large cap on the left-hand-side of the instrument (see [Replacement of the desiccant bag](15-maintenance.md#section-15-2-6)).<br/>• If the problem persists, please contact customer service. |
 | E09 | System overheated | Inside temperature is too high for safe operation. | • Reduce ambient temperature or increase measurement interval to allow instrument to cool down. |
-| E14 | Laser too hot | Laser temperature is too high for safe operation. | • Reduce ambient temperature or increase measurement interval to allow instrument to cool down. |
-| E15 | Mixer inflation error | Underpressure detected during mix or dispense. | • Missing sample.<br/>• Air in the input.<br/>• Leak in the system.<br/>• Please execute the Clean Optics protocol (see [Overview of protocols in manual mode](10-measurements.md#section-10-9-1)). |
-| E18 | Pump underpressure error | Underpressure detected during dispense. | • Missing sample.<br/>• Air in the input.<br/>• Leak in the system.<br/>• Please execute the Clean Optics protocol (see [Overview of protocols in manual mode](10-measurements.md#section-10-9-1)). |
-| E19 | System overheated | The inner temperature is too high for operation. | • Reduce ambient temperature, or increase measurement interval to allow instrument to cool down. |
-| E33 | Processing memory overflow | Signal processing circuits memory has overflown. | • Please execute the Clean Optics protocol (see [Overview of protocols in manual mode](10-measurements.md#section-10-9-1)).<br/>• Retry the measurement. |
+| E14 | System overheated | Laser temperature is too high for safe operation. | • Reduce ambient temperature or increase measurement interval to allow instrument to cool down. |
+| E15 | Empty sample error | Underpressure detected during mix or dispense. | • Missing sample.<br/>• Air in the input.<br/>• Leak in the system.<br/>• Please execute the Clean Optics protocol (see [Overview of protocols in manual mode](10-measurements.md#section-10-9-1)). |
+| E18 | Under-pressure detected | Underpressure detected during dispense. | • Missing sample.<br/>• Air in the input.<br/>• Leak in the system.<br/>• Please execute the Clean Optics protocol (see [Overview of protocols in manual mode](10-measurements.md#section-10-9-1)). |
+| E19 | System overheated | The incubator chamber temperature is too high for safe operation. | • Reduce ambient temperature, or increase measurement interval to allow instrument to cool down. |
+| E33 | Processing memory overflow | Signal processing circuits memory has overflowed. | • Please execute the Clean Optics protocol (see [Overview of protocols in manual mode](10-measurements.md#section-10-9-1)).<br/>• Retry the measurement. |
 | E42 | Enclosure too cold despite heating | Enclosure temperature remains too cold after heating procedure. | • Ambient temperature is less than 5 °C (41 °F).<br/>• Increase ambient temperature. |
 | E44 | Pump module startup error | The pump module failed to power on correctly. | • Simply retry the measurement. |
 | E45 | Low valid volume ratio error | The valid volume ratio is too low. This can be caused by a too elevated bacterial content in the water or turbidity/debris. | • The accuracy of the measurement is probably very low. Repeat the measurement while diluting the sample with clear water. |
 | E46 | Cartridge is still busy | The cartridge was still initializing when the measurement started. | • Non-critical error. Repeat the measurement. If the problem persists, contact a service technician. |
-| E48 | Microfluidic subsystem busy | The microfluidic controller is performing another task while the measurement was taken. | • Non-critical error. Repeat the measurement. If the problem persists, contact a service technician. |
+| E48 | Microfluidic subsystem busy | The microfluidic controller was performing another task when the measurement was taken. | • Non-critical error. Repeat the measurement. If the problem persists, contact a service technician. |
 | E49 | GPIO Timeout error | The processing board is waiting for another module to respond. | • Non-critical error. Repeat the measurement. If the problem persists, contact a service technician. |
 | E50 | Pump motion blocked | The motion of the pump is blocked. | • Non-critical error. Repeat the measurement. If the problem persists, contact a service technician. |
-| E51 | Unable to get temperature reading | Unable to get temperature reading. The control loop is thus disabled. | • Non-critical error. Repeat the measurement. If the problem persists, contact a service technician. |
+| E51 | Unable to get temperature reading. The control loop is thus disabled. | Unable to get temperature reading. The control loop is thus disabled. | • Non-critical error. Repeat the measurement. If the problem persists, contact a service technician. |
 | E52 | Cartridge valve motion blocked | The motion of the cartridge valve is blocked. | • Non-critical error. Repeat the measurement. If the problem persists, contact customer service. |
-| E55 | M7 not connected | The acquisition processor cannot be initialized. | • Reboot the instrument.<br/>• If the problem persists, contact customer service. |
-| E56 | Empty acquisition | No events detected during acquisition | • Clean the sampling device using the Washstation, then perform a measurement of clean water.<br/>• If the problem persists, contact customer service. |
-| E57 | Cartridge busy (special command busy) | Communication with the cartridge failed. | • Non-critical error. Repeat the measurement.<br/>• If the problem persists, contact customer service. |
-| E58 | Cartridge busy (timeout) | Communication with the cartridge failed. | • Check the electronic connector between the cartridge and the instrument.<br/>• Repeat the measurement.<br/>• If the problem persists, contact customer service. |
-| E59 | Valve sensor error | Unable to read valve position. | • Please contact customer service. |
+| E55 | The acquisition processor cannot be initialized. | The acquisition processor cannot be initialized. This can be caused by an acquisition error or a firmware corruption. | • Reboot the instrument.<br/>• If the problem persists, contact customer service. |
+| E56 | No events detected during acquisition | No events were detected during the acquisition. This can be caused by a high turbidity of the sample or defective detectors. | • Clean the sampling device using the Washstation, then perform a measurement of clean water.<br/>• If the problem persists, contact customer service. |
+| E57 | Cartridge busy | Communication with the cartridge failed. | • Non-critical error. Repeat the measurement.<br/>• If the problem persists, contact customer service. |
+| E58 | Cartridge busy | Communication with the cartridge failed. | • Check the electronic connector between the cartridge and the instrument.<br/>• Repeat the measurement.<br/>• If the problem persists, contact customer service. |
+| E59 | Unable to read valve position | Unable to read valve position. The sensor cable may be disconnected. | • Please contact customer service. |
 
 ## 16.3 Critical errors {#section-16-3}
 
@@ -84,34 +84,34 @@ The following critical error messages can be displayed:
 | ERROR CODE | NAME | DESCRIPTION | CAUSES / WHAT TO DO |
 | --- | --- | --- | --- |
 | E00 | General error | Unhandled error. | • Please contact customer service |
-| E02 | Cartridge empty | Cartridge is empty. | • Replace cartridge (see [Change cartridges](08-general-operations-and-configurations.md#section-8-9-4)) |
-| E04 | Cartridge missing | Cartridge is missing. | • Insert a cartridge (see [Installing a cartridge](08-general-operations-and-configurations.md#section-8-9-6)) |
+| E02 | Empty cartridge | Cartridge is empty. | • Replace cartridge (see [Change cartridges](08-general-operations-and-configurations.md#section-8-9-4)) |
+| E04 | Missing cartridge or door open | Cartridge is missing. | • Insert a cartridge (see [Installing a cartridge](08-general-operations-and-configurations.md#section-8-9-6)) |
 | E05 | Full waste bag | Cartridge waste bag is full. | • Replace cartridge (see [Change cartridges](08-general-operations-and-configurations.md#section-8-9-4)) |
 | E06 | Cartridge communication impossible | Cartridge is disconnected, door is open, or cartridge electronics are damaged. | • Make sure the cartridge’s electronic cable is connected properly, and that the door is properly closed.<br/>• If that doesn’t help, replace the cartridge and inform customer service. |
 | E07 | Storage disk full | Insufficient storage space to continue operation. | • Delete old measurements and try again (see [Clearing of disk space](15-maintenance.md#section-15-2-8))<br/>• This will delete the measurements permanently from the device.<br/>• Export measurements as backup solution. |
 | E12 | FPGA initialization error | Failed to initialize the signal processing chip. | • Reboot the instrument. |
 | E16 | Processing error | An error was discovered while processing the signals. | • The accuracy of the latest result is not guaranteed. Please repeat the analysis. |
-| E17 | Overpressure detected | Overpressure detected during dispense. | • Likely cause: The output filter is probably clogged.<br/>• Optical flow cell blocked.<br/>• Please call customer service. |
-| E20 | Abnormal shutdown | Protocol interrupted for unknown reasons, usually due to a power cut. | • Usually indicates a power cut, or other external interruption to the measurement.<br/>• Perform a Clean Optics and Clean Sampling Device protocol before starting a new measurement (see [Overview of protocols in manual mode](10-measurements.md#section-10-9-1)). |
-| E23 | Temperature Sensor Communication Error | Communication with temperature sensor on IO board failed. | • Please contact customer service. |
-| E24 | Laser Communication Error | Communication with optical unit failed. | • Please contact customer service. |
-| E25 | Pump Communication Error | Communication with pump module impossible. | • Please contact customer service. |
-| E26 | Power Supply Communication Error | Communication with power supply module impossible. | • Please contact customer service. |
-| E27 | Pump Communication timeout | Communication with pump module timed out. | • The cartridge door is open.<br/>• A cable is disconnected.<br/>• A circuit board is damaged, either in the pump or cartridge. |
+| E17 | Over-pressure detected | Overpressure detected during dispense. | • Likely cause: The output filter is probably clogged.<br/>• Optical flow cell blocked.<br/>• Please call customer service. |
+| E20 | Abrupt shutdown | Protocol interrupted for unknown reasons, usually due to a power cut. | • Usually indicates a power cut, or other external interruption to the measurement.<br/>• Perform a Clean Optics and Clean Sampling Device protocol before starting a new measurement (see [Overview of protocols in manual mode](10-measurements.md#section-10-9-1)). |
+| E23 | Temperature sensor communication error | Communication with temperature sensor on IO board failed. | • Please contact customer service. |
+| E24 | Laser communication error | Communication with optical unit failed. | • Please contact customer service. |
+| E25 | Pump communication error | Communication with syringe-pump module impossible. | • Please contact customer service. |
+| E26 | Power supply communication error | Communication with power supply module impossible. | • Please contact customer service. |
+| E27 | Pump communication timeout | Communication with pump module timed out. | • The cartridge door is open.<br/>• A cable is disconnected.<br/>• A circuit board is damaged, either in the pump or cartridge. |
 | E28 | Empty dye supply | Dye tube connected to cartridge is empty. | • The tube is disconnected.<br/>• Cartridge is defective.<br/>• Repeat the cartridge change procedure, making sure that all tubes are properly connected. |
 | E29 | Empty rinse fluid supply | Rinse fluid tube connected to cartridge is empty. | • The tube is disconnected.<br/>• Cartridge is defective.<br/>• Repeat the cartridge change procedure, making sure that all tubes are properly connected. |
-| E30 | Empty bleach supply | Bleach tube connected to cartridge is empty | • The tube is disconnected.<br/>• Cartridge is defective.<br/>• Repeat the cartridge change procedure, making sure that all tubes are properly connected. |
+| E30 | Empty bleach supply | Bleach tube connected to cartridge is empty. | • The tube is disconnected.<br/>• Cartridge is defective.<br/>• Repeat the cartridge change procedure, making sure that all tubes are properly connected. |
 | E31 | Cartridge electronics failure | Cartridge level can no longer be determined accurately. | • Replace cartridge and contact customer service. |
 | E32 | Incompatible cartridge | Cartridge type is incompatible with this instrument or software. | • Make sure that you have the correct cartridge type for this instrument. |
 | E33 | Processing memory overflow | Signal processing circuits memory has overflowed. | • Please execute the Clean Optics protocol (see [Overview of protocols in manual mode](10-measurements.md#section-10-9-1)).<br/>• Retry the measurement. |
-| E38 | Cartridge not ready error | The new cartridge has not been initialized correctly | • Execute the “Cartridge Change” procedure (see [Change cartridges](08-general-operations-and-configurations.md#section-8-9-4)). |
+| E38 | Cartridge not ready error | The new cartridge has not been initialized correctly. | • Execute the “Cartridge Change” procedure (see [Change cartridges](08-general-operations-and-configurations.md#section-8-9-4)). |
 | E39 | Laser current limit reached | The laser has reached its upper current limit; indicating end of life. | • The laser needs to be replaced. Contact a service technician. |
-| E40 | Set of gates not found | Reference to the set of gates selected for the measurement cannot be found in the instrument settings. | • The set of gates has been deleted.<br/>• Change the set of gates and retry the measurement. |
-| E41 | Set of gates incompatible | The set of gates selected for the measurement cannot be used with this cartridge. | • Correct cartridge change procedure was not followed.<br/>• Incorrect digital input configuration.<br/>• Change the set of gates and retry the measurement. |
+| E40 | Gate set not found | Reference to the set of gates selected for the measurement cannot be found in the instrument settings. | • The set of gates has been deleted.<br/>• Change the set of gates and retry the measurement. |
+| E41 | Gate set incompatible | The set of gates selected for the measurement cannot be used with this cartridge. | • Correct cartridge change procedure was not followed.<br/>• Incorrect digital input configuration.<br/>• Change the set of gates and retry the measurement. |
 | E43 | External temperature too low | Ambient temperature is outside of the instrument specifications. | • Increase ambient temperature.<br/>• Trying to operate or store the instrument below 5 °C (41 °F) can cause damage to the device. |
 | E47 | Unable to find main reference magnet during homing | During initialization, the valve did not home properly. | • Please contact customer service. |
 | E53 | Unable to communicate with motor | The communication to the motor controller of the mixer is defective. | • Please contact customer service. |
-| E54 | Laser temperature sensor error | Unable to get the laser temperature. | • Please contact customer service. |
+| E54 | Unable to get the laser temperature | The NTC sensor in the optical module must be defective or disconnected. | • Please contact customer service. |
 
 ## 16.4 Logs {#section-16-4}
 
