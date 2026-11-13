@@ -17,7 +17,7 @@ The figure below shows the result of a selected TCC measurement in Online mode. 
 | --- | --- |
 | 1 | Main result parameters, depending on cartridge type used. Find more information in [Cartridges, gates and result parameters](../results-and-data-analysis/#section-11-3). Tap the information icon beside the main result to display all result parameters (2). |
 | 2 | Result information window with all available result parameters and the main dotplot. |
-| 3 | Main dotplot in the result information window. The FL1 vs FL2 dotplot shows all detected events according to the amplitude of their fluorescence signals FL1 (535 nm, X-axis) and FL2 (715 nm, Y-axis). The red polygon and vertical line show the configured gate. For details refer to [Cartridges, gates and result parameters](../results-and-data-analysis/#section-11-3). Tap this dotplot preview to open a pop-up with access to all dotplots (4). |
+| 3 | Main dotplot in the result information window. The FL1 vs FL2 dotplot shows all detected events according to the amplitude of their fluorescence signals FL1 (530 nm, X-axis) and FL2 (715 nm, Y-axis). The red polygon and vertical line show the configured gate. For details refer to [Cartridges, gates and result parameters](../results-and-data-analysis/#section-11-3). Tap this dotplot preview to open a pop-up with access to all dotplots (4). |
 | 4 | Pop-up window with access to all dotplots. The FL1 vs SSC dotplot shows only cells inside the FL1 - FL2 polygon gate, according to their fluorescence signal FL1 (535 nm) and scattered light signal SSC (488 nm). The FL1 histogram shows all cells inside the FL1 - FL2 polygon gate, binned according to their fluorescence in FL1. The available dotplots depend on your instrument model and configuration. |
 | 5 | The measurement status field indicates alarms or warnings. Tap an alarm or warning indication to view its details. |
 | 6 | The Delete button removes the measurement permanently (requires confirmation). |
@@ -175,7 +175,7 @@ For further information on how to adjust the gates see [Change gates](11-results
 
 ### 11.3.4 CBC cartridge {#section-11-3-4}
 
-CBC refers to Coliform Cell Count. The CBC cartridge measures the concentration of coliform bacteria using an enzymatic assay based on β-galactosidase activity. The enzyme converts the cartridge substrate into a fluorescent product, enabling detection of the labelled cells by flow cytometry.
+CBC refers to Coliform Bacteria Count. The CBC cartridge measures the concentration of coliform bacteria using an enzymatic assay based on β-galactosidase activity. The enzyme converts the cartridge substrate into a fluorescent product, enabling detection of the labelled cells by flow cytometry.
 
 **Table 11-7 Gating set used for the CBC cartridge.**
 
@@ -193,7 +193,7 @@ CBC refers to Coliform Cell Count. The CBC cartridge measures the concentration 
 
 | PARAMETER | UNIT | NAME | DESCRIPTION |
 | --- | --- | --- | --- |
-| CBC | 1/mL | Coliform Cell Count | Concentration of labelled coliform cells inside the CBC gate, calculated from the cell count and analysed sample volume. |
+| CBC | 1/mL | Coliform Bacteria Count | Concentration of labelled coliform cells inside the CBC gate, calculated from the cell count and analysed sample volume. |
 
 </div>
 
@@ -201,7 +201,7 @@ For further information on how to adjust the gates see [Change gates](11-results
 
 ### 11.3.5 EBC cartridge {#section-11-3-5}
 
-EBC refers to E. coli Cell Count. The EBC cartridge measures the concentration of *Escherichia coli* bacteria using an enzymatic assay based on β-glucuronidase activity. The enzyme converts the cartridge substrate into a fluorescent product, enabling detection of the labelled cells by flow cytometry.
+EBC refers to E. coli Bacteria Count. The EBC cartridge measures the concentration of *Escherichia coli* bacteria using an enzymatic assay based on β-glucuronidase activity. The enzyme converts the cartridge substrate into a fluorescent product, enabling detection of the labelled cells by flow cytometry.
 
 **Table 11-9 Gating set used for the EBC cartridge.**
 
@@ -219,7 +219,7 @@ EBC refers to E. coli Cell Count. The EBC cartridge measures the concentration o
 
 | PARAMETER | UNIT | NAME | DESCRIPTION |
 | --- | --- | --- | --- |
-| EBC | 1/mL | E. coli Cell Count | Concentration of labelled E. coli cells inside the EBC gate, calculated from the cell count and analysed sample volume. |
+| EBC | 1/mL | E. coli Bacteria Count | Concentration of labelled E. coli cells inside the EBC gate, calculated from the cell count and analysed sample volume. |
 
 </div>
 
@@ -227,7 +227,7 @@ For further information on how to adjust the gates see [Change gates](11-results
 
 ### 11.3.6 NBC cartridge {#section-11-3-6}
 
-NBC refers to Enterococcus Cell Count. The NBC cartridge measures the concentration of enterococci using an enzymatic assay based on β-glucosidase activity. The enzyme converts the cartridge substrate into a fluorescent product, enabling detection of the labelled cells by flow cytometry.
+NBC refers to Enterococcus Bacteria Count. The NBC cartridge measures the concentration of enterococci using an enzymatic assay based on β-glucosidase activity. The enzyme converts the cartridge substrate into a fluorescent product, enabling detection of the labelled cells by flow cytometry.
 
 **Table 11-11 Gating set used for the NBC cartridge.**
 
@@ -245,7 +245,7 @@ NBC refers to Enterococcus Cell Count. The NBC cartridge measures the concentrat
 
 | PARAMETER | UNIT | NAME | DESCRIPTION |
 | --- | --- | --- | --- |
-| NBC | 1/mL | Enterococcus Cell Count | Concentration of labelled enterococci inside the NBC gate, calculated from the cell count and analysed sample volume. |
+| NBC | 1/mL | Enterococcus Bacteria Count | Concentration of labelled enterococci inside the NBC gate, calculated from the cell count and analysed sample volume. |
 
 </div>
 

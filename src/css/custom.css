@@ -266,3 +266,7 @@
   .theme-doc-markdown th:first-child, .theme-doc-markdown td:first-child { min-width: 4rem; }
   .theme-doc-markdown th:last-child, .theme-doc-markdown td:last-child { min-width: 15rem; }
 }
+/* Cover image on the BactoSwitch welcome page: centered, with extra white space around it. */
+.theme-doc-markdown .manual-cover-image { text-align: center; margin: 2rem 0; }
+.theme-doc-markdown .manual-cover-image p { margin-bottom: 0; }
+.theme-doc-markdown .manual-cover-image img { max-width: 100%; }

@@ -14,7 +14,7 @@ slug: /web-user-interface
 
 ## 13.2 Connect to the web user interface {#section-13-2}
 
-An **admin** must first enable HTTP or HTTPS web access under **Settings → System settings → System services**, apply the changes and reboot when prompted. See [Retrieve files via HTTP or HTTPS](12-data-access-and-export.md#section-12-3) for the service settings and ports.
+As **admin** user, ensure HTTP or HTTPS web access are enabled under **Settings → System settings → System services**. If you need to enable, apply the changes and reboot when prompted. See [Retrieve files via HTTP or HTTPS](12-data-access-and-export.md#section-12-3) for the service settings and ports.
 
 <div className="manual-narrow-details-scroll manual-narrow-details manual-narrow-details-split">
 

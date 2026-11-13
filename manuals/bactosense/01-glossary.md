@@ -23,8 +23,8 @@ description: "BactoSense user manual: Glossary."
 | ICC | Intact Cell Count. Total number of intact bacteria inside of the ICC gate, per milliliter. |
 | LNA | Low Nucleic Acid. Bacteria with a lower amount of DNA which produce a weaker fluorescence emission than HNA bacteria. |
 | LNAC | Low Nucleic Acid Count. The number of LNA bacteria inside the TCC or ICC gate below the HNA / LNA limit. |
-| Manual Sampling Device | Connection module, allowing manual sampling with the BactoSense Online. |
+| Manual Sampling Device | Connection module, allowing manual sampling with the BactoSense. |
 | NBC | Enterococcus Bacteria Count. The NBC cartridge measures intact and metabolically active enterococci using an enzymatic assay. NBC is the number of cells inside the NBC gate, per milliliter. |
-| Online Sampling Device | Connection module to a water line, allowing online sampling with the BactoSense Online. |
+| Online Sampling Device | Connection module to a water line, allowing online sampling with the BactoSense. |
 | SSC | Side scatter, also known as Large Angle Light Scattering. A detector measures the light scattered from microorganisms and other particles at 90 degrees. |
 | TCC | Total Cell Count. Total number of bacteria detected inside the TCC gate, per milliliter. |

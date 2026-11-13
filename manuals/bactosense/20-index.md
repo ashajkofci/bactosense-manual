@@ -41,7 +41,7 @@ Select a section number to open the corresponding topic in this manual.
   - Removal [8.9.5](/general-operations-and-configurations#section-8-9-5)
   - Storage [17.1.3](/storage-transport-and-disposal#section-17-1-3)
   - Transport [17.2.2](/storage-transport-and-disposal#section-17-2-2)
-- CBC (Coliform Cell Count) [11.3.4](/results-and-data-analysis#section-11-3-4)
+- CBC (Coliform Bacteria Count) [11.3.4](/results-and-data-analysis#section-11-3-4)
 - CE [2.2](/general-user-information#section-2-2)
 - Certification
   - CE [2.2](/general-user-information#section-2-2)
@@ -105,7 +105,7 @@ Select a section number to open the corresponding topic in this manual.
 ## E
 
 - Embedded manual [15.4](/maintenance#section-15-4)
-- EBC (E. coli Cell Count) [11.3.5](/results-and-data-analysis#section-11-3-5)
+- EBC (E. coli Bacteria Count) [11.3.5](/results-and-data-analysis#section-11-3-5)
 - Electrical installation
   - power [5.3](/installation#section-5-3)
 - Errors
@@ -239,7 +239,7 @@ Select a section number to open the corresponding topic in this manual.
 
 ## N
 
-- NBC (Enterococcus Cell Count) [11.3.6](/results-and-data-analysis#section-11-3-6)
+- NBC (Enterococcus Bacteria Count) [11.3.6](/results-and-data-analysis#section-11-3-6)
 - Network configuration [8.6](/general-operations-and-configurations#section-8-6)
 - New gate [11.4.2](/results-and-data-analysis#section-11-4-2)
 - Non-critical errors [16.2](/warnings-errors-and-troubleshooting#section-16-2)
