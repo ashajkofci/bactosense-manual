@@ -12,7 +12,11 @@ Multi-Line Selector for BactoSense
 
 Document number **UM-0001**
 
-![BactoSwitch connected to a BactoSense, shown on the cover of the user manual](/img/bactoswitch/bactoswitch-with-bactosense.png "width=654")
+<div className="manual-cover-image">
+
+![BactoSwitch connected to a BactoSense, shown on the cover of the user manual](/img/manual/bactoswitch.png "width=480")
+
+</div>
 
 The BactoSwitch routes water from up to four sampling points to one BactoSense, one line at a time.
 
