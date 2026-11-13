@@ -70,7 +70,7 @@ The following values can be read with Modbus function 3 or 4 and written with Mo
 | 300023<br />400023 | 0x0016 | UInt32 LSB | ^ | ^ |
 | 300024<br />400024 | 0x0017 | UInt32 MSB | Fill serial no |  |
 | 300025<br />400025 | 0x0018 | UInt32 LSB |  | ^ |
-| 300026<br />400026 | 0x0019 | Uint16 | Cartridge type | 1 = TCC<br />1002 = ICC<br />1030 = ACC<br />1003 = ICC-BWT |
+| 300026<br />400026 | 0x0019 | Uint16 | Cartridge type | 1 = TCC<br />1002 = ICC<br />1003 = ICC-BWT<br />1030 = ACC<br />310 = CBC<br />320 = NBC<br />330 = EBC|
 | 300027<br />400027 | 0x001A | UInt16: Year | Cartridge expiration date | UTC date |
 | 300028<br />400028 | 0x001B | UInt16: Month | ^ | ^ |
 | 300029<br />400029 | 0x001c | UInt16: Day | ^ | ^ |

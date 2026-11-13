@@ -264,7 +264,7 @@ Only **Admin** users can edit the analogue 4 .. 20 mA outputs.
 | --- | --- | --- | --- |
 | 1 | Output port selection | 2 | Source: Defines which measurement result is transmitted by this output port. |
 | 3 | Lower limit 4 mA: Which value of the measurement result should correspond to 4 mA. | 4 | Upper limit 20 mA: Which value of the measurement result should correspond to 20 mA. |
-| 5 | If selected, interpolates the chosen cell count value range with a logarithmic scale as follows:<br />`ratio = 1 + 9 × (counts − low) / (high − low)`<br />`output = 4 mA + log<sub>10</sub>(ratio) × 16 mA`<br /><br />counts: Measured cell count<br />low: Lower cell count limit<br />high: Higher cell count limit<br />output: Current amplitude in mA |  | \< |
+| 5 | If selected, interpolates the chosen cell count value range with a logarithmic scale as follows:<br />`ratio = 1 + 9 × (counts − low) / (high − low)`<br />`output = 4 mA + log₁₀(ratio) × 16 mA`<br /><br />counts: Measured cell count<br />low: Lower cell count limit<br />high: Higher cell count limit<br />output: Current amplitude in mA |  | \< |
 
 The following procedure describes how to adjust the analogue outputs.
 
